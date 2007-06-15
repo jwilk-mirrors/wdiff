@@ -1,0 +1,211 @@
+# Makefile for GNU wdiff.
+# Copyright (C) 1992, 1993, 1994 Free Software Foundation, Inc.
+# Francois Pinard <pinard@iro.umontreal.ca>, 1992.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+PRODUCT = @PRODUCT@
+VERSION = @VERSION@
+PROGRAMS = @PROGRAMS@
+
+SHELL = /bin/sh
+srcdir = @srcdir@
+VPATH = @srcdir@
+
+AR = ar
+CC = @CC@
+CFLAGS = @CFLAGS@
+CPPFLAGS = @CPPFLAGS@
+DEFS = @DEFS@
+INSTALL = @INSTALL@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+MAKEINFO = makeinfo
+RANLIB = @RANLIB@
+TEXI2DVI = texi2dvi
+
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+transform = @program_transform_name@
+bindir = $(exec_prefix)/bin
+infodir = $(prefix)/info
+mandir = $(prefix)/man/man1
+manext = .1
+
+COMPILE = $(CC) -c $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
+LINK = $(CC) $(LDFLAGS) -o $@
+
+.SUFFIXES:
+.SUFFIXES: .c .o
+.c.o:
+	$(COMPILE) $<
+
+ANSI2KNR = @ANSI2KNR@
+O = .@U@o
+
+.SUFFIXES: ._c ._o
+.c._c:
+	./ansi2knr --varargs $< > $@
+._c._o:
+	@echo $(COMPILE) $<
+	@rm -f _$*.c
+	@ln $< _$*.c && $(COMPILE) _$*.c && mv _$*.o $@ && rm _$*.c
+.c._o:
+	./ansi2knr --varargs $< > $*._c
+	@echo $(COMPILE) $*._c
+	@rm -f _$*.c
+	@ln $*._c _$*.c && $(COMPILE) _$*.c && mv _$*.o $@ && rm _$*.c
+
+INCLUDES = -I. -I$(srcdir)
+
+HEADERS =
+SOURCES = wdiff.c readpipe.c writepipe.c
+OBJECTS = wdiff$O readpipe$O writepipe$O
+LIBHDRS = getopt.h pathmax.h
+LIBSRCS = error.c getopt.c getopt1.c alloca.c strstr.c xmalloc.c
+LIBOBJS = error.o getopt.o getopt1.o @ALLOCA@ @LIBOBJS@
+
+DISTFILES = README NEWS TODO THANKS COPYING INSTALL ChangeLog \
+configure.in aclocal.m4 acconfig.h mkinstalldirs install-sh Makefile.in \
+wdiff.texi texinfo.tex wdiff.1 ansi2knr.c ansi2knr.1 c-boxes.el \
+$(HEADERS) $(SOURCES) $(LIBHDRS) $(LIBSRCS) cbars.sh check_it \
+stamp-h.in config.h.in configure stamp-vti version.texi wdiff.info TAGS BACKLOG
+
+all: wdiff.info $(PROGRAMS)
+
+info: wdiff.info
+
+wdiff.info: wdiff.texi version.texi
+	cd $(srcdir) && $(MAKEINFO) --no-split wdiff.texi
+
+dvi: wdiff.dvi
+
+wdiff.dvi: wdiff.texi
+	$(TEXI2DVI) $(srcdir)/wdiff.texi
+
+version.texi: stamp-vti
+stamp-vti: wdiff.texi configure.in
+	echo "@set EDITION $(VERSION)" > version.tmp
+	echo "@set UPDATED `date '+%B %Y'`" >> version.tmp
+	echo "@set VERSION $(VERSION)" >> version.tmp
+	if cmp -s version.tmp $(srcdir)/version.texi; then rm version.tmp; \
+	else mv version.tmp $(srcdir)/version.texi; fi
+	date > $(srcdir)/stamp-vti
+
+wdiff: $(OBJECTS) libwd.a
+	$(LINK) $(OBJECTS) libwd.a $(LIBS)
+
+cbars: cbars.sh
+	sed -e 's|@bindir@|$(bindir)|' cbars.sh > cbars
+	
+$(OBJECTS): $(ANSI2KNR) config.h
+wdiff$O: getopt.h pathmax.h
+
+ansi2knr: ansi2knr.o
+	$(LINK) ansi2knr.o $(LIBS)
+
+libwd.a: $(LIBOBJS)
+	rm -f libwd.a
+	$(AR) cru libwd.a $(LIBOBJS)
+	$(RANLIB) libwd.a
+
+$(LIBOBJS): config.h
+getopt.o getopt1.o: getopt.h
+
+check: wdiff
+	$(srcdir)/check_it
+
+install: all
+	$(srcdir)/mkinstalldirs $(bindir) $(infodir)
+	for name in $(PROGRAMS); do \
+	  $(INSTALL_PROGRAM) $$name \
+		$(bindir)/`echo $$name | sed '$(transform)'`; \
+	done
+	$(INSTALL_DATA) $(srcdir)/wdiff.info $(infodir)/wdiff.info
+
+uninstall:
+	for name in $(PROGRAMS); do
+	  rm -f $(bindir)/`echo $$name | sed '$(transform)'`; \
+	done
+	rm -f $(infodir)/wdiff.info
+
+# man page installation is kept separate from install.  Better think
+# GNU and switch to Info.  The following is for irreductible fellows.
+
+install-man:
+	$(srcdir)/mkinstalldirs $(mandir)
+	$(INSTALL_DATA) $(srcdir)/wdiff.1 \
+		$(mandir)/`echo wdiff | sed '$(transform)'`$(manext)
+
+uninstall-man:
+	rm -f $(mandir)/`echo wdiff | sed '$(transform)'`$(manext); \
+
+tags: TAGS
+
+TAGS: $(HEADERS) $(SOURCES) $(LIBHDRS) $(LIBSRCS)
+	cd $(srcdir) && etags $(HEADERS) $(SOURCES) $(LIBHDRS) $(LIBSRCS)
+
+mostlyclean:
+	rm -f *.aux *.cp *.cps *.dvi *.fn *.fns *.ky *.log *.pg *.toc *.tp *.vr
+	rm -f *.a *.o *._c *._o core core.*
+	rm -f test.out
+
+clean: mostlyclean
+	rm -f cbars wdiff
+
+distclean: clean
+	rm -f ansi2knr
+	rm -f Makefile config.cache config.h config.log stamp-h config.status
+
+realclean: distclean
+	rm -f stamp-vti version.texi wdiff.info
+	rm -f TAGS
+
+dist: $(DISTFILES)
+	rm -rf $(PRODUCT)-$(VERSION)
+	mkdir $(PRODUCT)-$(VERSION)
+	chmod 777 $(PRODUCT)-$(VERSION)
+	@echo "Copying distribution files"
+	@for file in $(DISTFILES); do \
+	  ln $(srcdir)/$$file $(PRODUCT)-$(VERSION) 2> /dev/null \
+	    || cp -p $(srcdir)/$$file $(PRODUCT)-$(VERSION); \
+	done
+	chmod -R a+r $(PRODUCT)-$(VERSION)
+	tar chozf $(PRODUCT)-$(VERSION).tar.gz $(PRODUCT)-$(VERSION)
+	rm -rf $(PRODUCT)-$(VERSION)
+
+# For an explanation of the following Makefile rules, see node
+# `Automatic Remaking' in GNU Autoconf documentation.
+Makefile: Makefile.in config.status
+	CONFIG_FILES=$@ CONFIG_HEADERS= ./config.status
+config.status: configure
+	./config.status --recheck
+configure: configure.in aclocal.m4
+	cd $(srcdir) && autoconf
+
+config.h: stamp-h
+stamp-h: config.h.in config.status
+	CONFIG_FILES= CONFIG_HEADERS=config.h ./config.status
+	date > stamp-h
+config.h.in: stamp-h.in
+stamp-h.in: configure.in aclocal.m4 acconfig.h
+	cd $(srcdir) && autoheader
+	date > $(srcdir)/stamp-h.in
+
+# Tell versions [3.59,3.63) of GNU make not to export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

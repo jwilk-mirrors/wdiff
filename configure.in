@@ -1,0 +1,91 @@
+# Configure template for GNU wdiff.
+# Copyright (C) 1994 Free Software Foundation, Inc.
+# Process this file with autoconf to produce a configure script.
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software Foundation,
+# Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+AC_INIT(wdiff.c)
+AC_CONFIG_HEADER(config.h)
+AC_ARG_PROGRAM
+
+PRODUCT=wdiff
+VERSION=0.5
+PROGRAMS="wdiff"
+AC_DEFINE_UNQUOTED(PRODUCT, "$PRODUCT")
+AC_DEFINE_UNQUOTED(VERSION, "$VERSION")
+AC_SUBST(PRODUCT)
+AC_SUBST(VERSION)
+AC_SUBST(PROGRAMS)
+
+AC_PATH_PROGS(DIFF, gnudiff diffgnu gdiff diff, diff)
+case "$DIFF" in
+  *gdiff)
+    # Carefully avoid gdiff for X as found on SGI systems.
+    DISPLAY= gdiff /dev/null /dev/null > /dev/null 2>&1 || DIFF=diff
+    ;;
+esac
+AC_PATH_PROGS(PAGER, less more)
+AC_DEFINE_UNQUOTED(DIFF_PROGRAM, "$DIFF")
+AC_DEFINE_UNQUOTED(PAGER_PROGRAM, "$PAGER")
+
+AC_PROG_CC
+AC_PROG_INSTALL
+AC_PROG_RANLIB
+
+AC_AIX
+AC_ISC_POSIX
+AC_MINIX
+fp_C_PROTOTYPES
+AC_C_CONST
+
+AC_CHECK_HEADERS(string.h termcap.h unistd.h)
+AC_HEADER_STDC
+AC_TYPE_SIGNAL
+
+AC_CHECK_FUNCS(strerror tputs)
+AC_FUNC_ALLOCA
+test "$ALLOCA" = alloca.o && LIBOBJS="$LIBOBJS xmalloc.o"
+AC_FUNC_VPRINTF
+AC_REPLACE_FUNCS(strstr)
+
+# Irix requires -lmalloc for some unknown reason.
+AC_CHECK_LIB(malloc, malloc)
+
+AC_MSG_CHECKING(for Xenix)
+AC_EGREP_CPP(yes,
+[#if defined(M_XENIX) && !defined(M_UNIX)
+  yes
+#endif], [
+  AC_MSG_RESULT(yes)
+  LIBS="$LIBS -ltermlib"
+], [
+  AC_MSG_RESULT(no)
+  LIBS="$LIBS -ltermcap"
+])
+
+AC_MSG_CHECKING(if cbars is wanted)
+AC_ARG_ENABLE(cbars,
+[  --enable-cbars          enable installation of cbars],
+[if test "$enableval" = yes; then
+  AC_MSG_RESULT(yes)
+  PROGRAMS="$PROGRAMS cbars"
+else
+  AC_MSG_RESULT(no)
+fi], [AC_MSG_RESULT(no)])
+
+fp_WITH_DMALLOC
+
+AC_OUTPUT(Makefile,
+[test -z "$CONFIG_HEADERS" || date > stamp-h])

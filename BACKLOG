@@ -1,0 +1,84 @@
+# Summary of pending email for GNU wdiff 0.5.
+# Last updated: Sunday, November 06, 1994.
+
+rmail/announce
+ 1. 01 Nov 94 <pinard@IRO.UMontreal.CA> Prerelease: GNU wdiff 0.4.1
+
+rmail/changebars
+ 1. 16 Aug 92 <pinard> Changebars [was: Word difference finder (1/5)]
+ 2. 23 Aug 92 <mcgill-vision!cs.bu.edu!jbw> Changebars [was: Re: comparison wit
+ 3. 04 Jan 93 <mcgill-vision!lsid.hp.com!ericb> wdiff-0.04
+ 4. 05 Jan 93 <mcgill-vision!iro.umontreal.ca!pinard> wdiff-0.04
+
+rmail/configuration
+ 1. 09 May 94 <jsacco@ssl.com> your other three ...
+ 2. 09 May 94 <pinard> Re: your other three ...
+ 3. 09 May 94 <jsacco@adam.ssl.com> Re: your other three ...
+ 4. 09 May 94 <pinard> Re: your other three ...
+ 5. 10 May 94 <rms@gnu.ai.mit.edu> Re: building emacs-19.23 with glibc
+
+rmail/delimiters
+ 1. 23 Dec 92 <mcgill-vision!chico.harvard.edu!ohl> wdiff *is* useful!
+ 2. 24 Feb 93 <bfriesen@iphase.com> Wdiff suggestion
+ 3. 27 Feb 93 <pinard> Wdiff suggestion
+ 4. 01 Mar 93 <bfriesen@iphase.com> Re: Wdiff suggestion
+ 5. 28 Jul 93 <thoth@mole.cis.ufl.edu> wdiff
+ 6. 20 Aug 93 <earlie@blazng.enet.dec.com> wdiff
+ 7. 20 Aug 93 <pinard@iro.umontreal.ca> wdiff
+ 8. 20 Aug 93 <earlie@blazng.enet.dec.com> Re: wdiff
+ 9. 09 May 94 <kb@cs.umb.edu> wdiff and hyphens
+
+rmail/emacslisp
+ 1. 03 Jan 94 <ceder@lysator.liu.se> Re: wdiff under Emacs 19
+
+rmail/ignore
+ 1. 29 Aug 93 <dodd@roebling.poly.edu> wdiff, version 0.04
+ 2. 30 Aug 93 <pinard@iro.umontreal.ca> wdiff, version 0.04
+ 3. 23 Dec 92 <mcgill-vision!chico.harvard.edu!ohl> wdiff *is* useful!
+
+rmail/integration
+ 1. 24 Dec 92 <pinard> Announce: wdiff release 0.04
+ 2. 24 Dec 92 <mcgill-vision!gnu.ai.mit.edu!rms> Announce: wdiff release 0.04
+ 3. 25 Dec 92 <mcgill-vision!gnu.ai.mit.edu!rms> Announce: wdiff release 0.04
+ 4. 26 Feb 93 <bfriesen@iphase.com> Wdiff suggestion
+ 5. 27 Feb 93 <pinard> Wdiff suggestion
+ 6. 01 Mar 93 <bfriesen@iphase.com> Re: Wdiff suggestion
+ 7. 25 Dec 93 <pinard> diff and wdiff
+ 8. 29 Dec 93 <eggert@twinsun.com> Re: diff and wdiff
+ 9. 29 Mar 94 <pinard> wdiff into diff? and collaborating [was: GNU diffutils 2
+10. 22 Apr 94 <gildea@x.org> wdiff with comment chars, stdin
+11. 22 Apr 94 <pinard> Re: wdiff with comment chars, stdin
+12. 09 May 94 <pinard> Re: wdiff and hyphens
+13. 10 May 94 <pinard> Re: wdiff and hyphens
+14. 19 Jul 94 <m1nxb00@FRB.GOV> wdiff: kudos and gripe.
+15. 19 Jul 94 <pinard> Re: wdiff: kudos and gripe.
+16. 29 Dec 93 <eggert@twinsun.com> Re: diff and wdiff
+
+rmail/manpage
+ 1. 09 Dec 92 <mcgill-vision!epcc.ed.ac.uk!cmb> Re: man page for wdiff
+ 2. 22 Dec 92 <mcgill-vision!chico.harvard.edu!ohl> wdiff bugs/typos
+
+rmail/output
+ 1. 30 Dec 92 <mcgill-vision!swe.ncsl.nist.gov!bagwill> Re: wdiff enhancement r
+ 2. 05 Jan 93 <mcgill-vision!lysator.liu.se!ceder> wdiff under Emacs 19
+ 3. 05 Jan 93 <mcgill-vision!iro.umontreal.ca!pinard> wdiff under Emacs 19
+ 4. 12 Jan 93 <mcgill-vision!IRO.UMontreal.CA!iro.umontreal.ca!uunet.uu.net!gsg
+ 5. 07 May 93 <bagwill@swe.ncsl.nist.gov> Re: wdiff later than 0.04? 
+ 6. 14 Nov 93 <Dave@yost.com> diff
+ 7. 26 Dec 93 <pinard> error in wdiff 0.04 patch I sent you yesterday
+
+rmail/spiff
+ 1. 24 Aug 92 <pinard> What spiff does
+ 2. 25 Aug 92 <mcgill-vision!gnu.ai.mit.edu!rms> What spiff does
+ 3. 26 Aug 92 <mcgill-vision!gnu.ai.mit.edu!rms> What spiff does
+
+rmail/unidiffs
+ 1. 22 Nov 92 <mcgill-vision!lysator.liu.se!ceder> wdiff - something like unidi
+ 2. 23 Nov 92 <mcgill-vision!lysator.liu.se!ceder> wdiff - something like unidi
+ 3. 24 Nov 92 <mcgill-vision!lysator.liu.se!ceder> wdiff - something like unidi
+ 4. 24 Dec 92 <pinard> Announce: wdiff release 0.04
+ 5. 24 Dec 92 <pinard> Announce: wdiff release 0.04
+ 6. 28 May 93 <karl@cs.umb.edu> wdiff default behavior
+ 7. 30 May 93 <pinard@iro.umontreal.ca> wdiff default behavior
+ 8. 25 Aug 93 <djm@eng.umd.edu> wdiff and context
+ 9. 26 Aug 93 <pinard@iro.umontreal.ca> wdiff and context
