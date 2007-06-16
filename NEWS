@@ -1,6 +1,10 @@
 GNU wdiff NEWS - User visible changes.
-Copyright (C) 1992, 1994 Free Software Foundation, Inc.
+Copyright (C) 1992, 1994, 2007 Free Software Foundation, Inc.
 
+Version 0.5.1 - June 2007, by Denver Gingerich
+
+* No user-visible changes; see ChangeLog for details
+
 Version 0.5 - November 1994, by Franc,ois Pinard
 
 * Option --ignore-case (-i) will fold case while comparing.

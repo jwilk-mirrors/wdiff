@@ -1,3 +1,16 @@
+Sat Jun 16 20:58:00 2007  Denver Gingerich (denver@ossguy.com)
+
+	* Version 0.5.1.
+
+	* acconfig.h, aclocal.m4, cbars.sh, c-boxes.el, checkit, configure,
+	configure.in: Add license notices.
+
+	* COPYING: Update to new revision of GPL (version 2, revision 3).
+
+	* error.c, getopt1.c, getopt.c, getopt.h, Makefile.in, pathmax.h,
+	readpipe.c, strstr.c, texinfo.tex, wdiff.c, writepipe.c, xmalloc.c:
+	Update license notices to reflect new FSF address.
+
 Sat Nov  5 15:57:59 1994  Francois Pinard  (pinard@icule)
 
 	* Version 0.5.

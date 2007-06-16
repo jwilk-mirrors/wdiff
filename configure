@@ -433,7 +433,7 @@ test "$program_transform_name" = "" && program_transform_name="s,x,x,"
 
 
 PRODUCT=wdiff
-VERSION=0.5
+VERSION=0.5.1
 PROGRAMS="wdiff"
 cat >> confdefs.h <<EOF
 #define PRODUCT "$PRODUCT"
