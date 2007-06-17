@@ -38,7 +38,7 @@ terminals and pagers (notably with `less').  `wdiff' is particularily
 useful when two texts differ only by a few words and paragraphs have
 been refilled.
 
-   This is release 0.5.1.
+   This is release 0.5.3.
 
 * Menu:
 

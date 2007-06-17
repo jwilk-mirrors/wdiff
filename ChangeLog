@@ -1,6 +1,6 @@
-Sat Jun 16 20:58:00 2007  Denver Gingerich (denver@ossguy.com)
+Sun Jun 17 17:42:47 2007  Denver Gingerich (denver@ossguy.com)
 
-	* Version 0.5.1.
+	* Version 0.5.3.
 
 	* acconfig.h, aclocal.m4, cbars.sh, c-boxes.el, checkit, configure,
 	configure.in: Add license notices.
