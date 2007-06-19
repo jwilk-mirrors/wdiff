@@ -19,7 +19,7 @@
 AC_INIT(src/wdiff.c)
 AC_PREREQ(2.12)
 AM_CONFIG_HEADER(config.h)
-AM_INIT_AUTOMAKE(wdiff, 0.5.4-pre1)
+AM_INIT_AUTOMAKE(wdiff, 0.5.4-pre2)
 AT_CONFIG(../src)
 ALL_LINGUAS="cs de es fr nl no pl ru sv"
 
