@@ -1,84 +1,178 @@
-# Summary of pending email for GNU wdiff 0.5.
-# Last updated: Sunday, November 06, 1994.
+# Summary of pending email for GNU wdiff 0.5.4.
+# Last updated on 1999-07-05.
 
-rmail/announce
- 1. 01 Nov 94 <pinard@IRO.UMontreal.CA> Prerelease: GNU wdiff 0.4.1
+# This file summarises almost all pending email pertaining to this package.
+# I think users deserve to know where maintenance stands for what they use.
+# When I will process a report from you, you may reasonably expect some
+# feedback from me.  I understand it may be frustrating to see a release
+# made without your suggestion or correction in it, I apologise for this:
+# I have to draw a line at times, and still make releases once in a while.
 
-rmail/changebars
- 1. 16 Aug 92 <pinard> Changebars [was: Word difference finder (1/5)]
- 2. 23 Aug 92 <mcgill-vision!cs.bu.edu!jbw> Changebars [was: Re: comparison wit
- 3. 04 Jan 93 <mcgill-vision!lsid.hp.com!ericb> wdiff-0.04
- 4. 05 Jan 93 <mcgill-vision!iro.umontreal.ca!pinard> wdiff-0.04
+# When diffs have been provided, an asterisk sometimes replaces the initial
+# dot.  All dates are written according to ISO 8601, as far as possible.
 
-rmail/configuration
- 1. 09 May 94 <jsacco@ssl.com> your other three ...
- 2. 09 May 94 <pinard> Re: your other three ...
- 3. 09 May 94 <jsacco@adam.ssl.com> Re: your other three ...
- 4. 09 May 94 <pinard> Re: your other three ...
- 5. 10 May 94 <rms@gnu.ai.mit.edu> Re: building emacs-19.23 with glibc
+../rmail/agrep
+ 1. 1992-02-13 Charlie Reiman: Re: Anyone here order an agrep?
+ 2. 1992-02-20 Larry McVoy: Re: Anyone here order an agrep?
+ 3. 1992-03-12 aaron konstam: Re: grep -vs- egrep -vs- fgrep (Was: Re: thanks)
+ 4. 1992-04-03 Jeffrey B. McGough: agrep 2.01 stdin exitcode bug (FIX)
+ 5. 1992-11-28 Nelson H. F. Beebe: Re: Errata in wdiff.texi 0.03
+ 6. 1993-05-16 Udi Manber: Re: book review...
+ 7. 1993-11-08 Simon Marshall: (none)
+ 8. 1994-05-10 mailhot@IRO.UMontreal.CA: Annonce glimpse-1.0 (fwd)
 
-rmail/delimiters
- 1. 23 Dec 92 <mcgill-vision!chico.harvard.edu!ohl> wdiff *is* useful!
- 2. 24 Feb 93 <bfriesen@iphase.com> Wdiff suggestion
- 3. 27 Feb 93 <pinard> Wdiff suggestion
- 4. 01 Mar 93 <bfriesen@iphase.com> Re: Wdiff suggestion
- 5. 28 Jul 93 <thoth@mole.cis.ufl.edu> wdiff
- 6. 20 Aug 93 <earlie@blazng.enet.dec.com> wdiff
- 7. 20 Aug 93 <pinard@iro.umontreal.ca> wdiff
- 8. 20 Aug 93 <earlie@blazng.enet.dec.com> Re: wdiff
- 9. 09 May 94 <kb@cs.umb.edu> wdiff and hyphens
+../rmail/changebars
+ 1. 1992-08-16 Francois Pinard: Changebars [was: Word difference finder (1/5)]
+ 2. 1992-08-23 Joe Wells: Changebars [was: Re: comparison with spiff]
+ 3. 1993-01-04 Eric Backus: wdiff-0.04
+ 4. 1993-01-05 Francois Pinard: wdiff-0.04
 
-rmail/emacslisp
- 1. 03 Jan 94 <ceder@lysator.liu.se> Re: wdiff under Emacs 19
+../rmail/dense-format
+ 1. 1993-01-05 Francois Pinard: wdiff under Emacs 19
+ 2. 1993-01-05 mcgill-vision!lysator.liu.se!ceder: wdiff under Emacs 19
 
-rmail/ignore
- 1. 29 Aug 93 <dodd@roebling.poly.edu> wdiff, version 0.04
- 2. 30 Aug 93 <pinard@iro.umontreal.ca> wdiff, version 0.04
- 3. 23 Dec 92 <mcgill-vision!chico.harvard.edu!ohl> wdiff *is* useful!
+../rmail/diffing
+ 1. 1998-11-18 Paul Eggert: Re: GNU diff student maintenance
 
-rmail/integration
- 1. 24 Dec 92 <pinard> Announce: wdiff release 0.04
- 2. 24 Dec 92 <mcgill-vision!gnu.ai.mit.edu!rms> Announce: wdiff release 0.04
- 3. 25 Dec 92 <mcgill-vision!gnu.ai.mit.edu!rms> Announce: wdiff release 0.04
- 4. 26 Feb 93 <bfriesen@iphase.com> Wdiff suggestion
- 5. 27 Feb 93 <pinard> Wdiff suggestion
- 6. 01 Mar 93 <bfriesen@iphase.com> Re: Wdiff suggestion
- 7. 25 Dec 93 <pinard> diff and wdiff
- 8. 29 Dec 93 <eggert@twinsun.com> Re: diff and wdiff
- 9. 29 Mar 94 <pinard> wdiff into diff? and collaborating [was: GNU diffutils 2
-10. 22 Apr 94 <gildea@x.org> wdiff with comment chars, stdin
-11. 22 Apr 94 <pinard> Re: wdiff with comment chars, stdin
-12. 09 May 94 <pinard> Re: wdiff and hyphens
-13. 10 May 94 <pinard> Re: wdiff and hyphens
-14. 19 Jul 94 <m1nxb00@FRB.GOV> wdiff: kudos and gripe.
-15. 19 Jul 94 <pinard> Re: wdiff: kudos and gripe.
-16. 29 Dec 93 <eggert@twinsun.com> Re: diff and wdiff
+../rmail/documentation
+ 1. 1994-11-12 Francois Pinard: Re: wdiff patch
+ 2. 1994-11-28 Francois Pinard: Re: GNUifying unify.[1c] (BIS) [was: unidiffs v
+ 3. 1997-02-25 François Pinard: Mini-problem with xxgdb
+ 4. 1997-02-25 Burchard Steinbild: Re: Mini-problem with xxgdb
+ 5. 1997-02-26 arnold@skeeve.atl.ga.us: Re: Still playing with mdiff
+ 6. 1997-02-26 François Pinard: Re: Still playing with mdiff
+ 7. 1997-02-26 arnold@skeeve.atl.ga.us: Re: Still playing with mdiff
+ 8. 1997-03-03 François Pinard: Re: A patch to po-mode.el for XEmacs
+ 9. 1997-03-04 François Pinard: Detecting repetitions
+10. 1998-10-14 François Pinard: Re: thanks!
+11. 1998-10-14 François Pinard: Re: thanks!
 
-rmail/manpage
- 1. 09 Dec 92 <mcgill-vision!epcc.ed.ac.uk!cmb> Re: man page for wdiff
- 2. 22 Dec 92 <mcgill-vision!chico.harvard.edu!ohl> wdiff bugs/typos
+../rmail/ignoring
+ 1. 1992-12-23 Thorsten Ohl: wdiff *is* useful!
+ 2. 1993-08-29 Lawrence R. Dodd: wdiff, version 0.04
+ 3. 1995-06-19 Gerhard Bosch: about wdiff
+ 4. 1994-04-22 gildea@x.org: wdiff with comment chars, stdin
+ 5. 1994-04-22 Francois Pinard: Re: wdiff with comment chars, stdin
+ 6. 1994-05-09 Francois Pinard: Re: wdiff and hyphens
+ 7. 1994-05-10 Francois Pinard: Re: wdiff and hyphens
+ 8. 1994-05-09 kb@cs.umb.edu: wdiff and hyphens
 
-rmail/output
- 1. 30 Dec 92 <mcgill-vision!swe.ncsl.nist.gov!bagwill> Re: wdiff enhancement r
- 2. 05 Jan 93 <mcgill-vision!lysator.liu.se!ceder> wdiff under Emacs 19
- 3. 05 Jan 93 <mcgill-vision!iro.umontreal.ca!pinard> wdiff under Emacs 19
- 4. 12 Jan 93 <mcgill-vision!IRO.UMontreal.CA!iro.umontreal.ca!uunet.uu.net!gsg
- 5. 07 May 93 <bagwill@swe.ncsl.nist.gov> Re: wdiff later than 0.04? 
- 6. 14 Nov 93 <Dave@yost.com> diff
- 7. 26 Dec 93 <pinard> error in wdiff 0.04 patch I sent you yesterday
+../rmail/line-format
+ 1. 1993-02-26 Bob Friesenhahn: Wdiff suggestion
+ 2. 1993-02-27 Francois Pinard: Wdiff suggestion
+ 3. 1993-03-01 Bob Friesenhahn: Re: Wdiff suggestion
 
-rmail/spiff
- 1. 24 Aug 92 <pinard> What spiff does
- 2. 25 Aug 92 <mcgill-vision!gnu.ai.mit.edu!rms> What spiff does
- 3. 26 Aug 92 <mcgill-vision!gnu.ai.mit.edu!rms> What spiff does
+../rmail/line-markers
+ 1. 1995-01-09 Paul Lew: RE: cvs diff question
+ 2* 1995-01-10 Paul Lew: RE: cvs diff question
+ 3. 1994-11-12 Francois Pinard: Re: wdiff patch
+ 4* 1994-11-12 Paul Lew: wdiff patch
+ 5. 1993-12-26 Francois Pinard: error in wdiff 0.04 patch I sent you yesterday
+ 6* 1993-01-12 Paul Lew: modification to wdiff version 0.04
 
-rmail/unidiffs
- 1. 22 Nov 92 <mcgill-vision!lysator.liu.se!ceder> wdiff - something like unidi
- 2. 23 Nov 92 <mcgill-vision!lysator.liu.se!ceder> wdiff - something like unidi
- 3. 24 Nov 92 <mcgill-vision!lysator.liu.se!ceder> wdiff - something like unidi
- 4. 24 Dec 92 <pinard> Announce: wdiff release 0.04
- 5. 24 Dec 92 <pinard> Announce: wdiff release 0.04
- 6. 28 May 93 <karl@cs.umb.edu> wdiff default behavior
- 7. 30 May 93 <pinard@iro.umontreal.ca> wdiff default behavior
- 8. 25 Aug 93 <djm@eng.umd.edu> wdiff and context
- 9. 26 Aug 93 <pinard@iro.umontreal.ca> wdiff and context
+../rmail/list-admin
+ 1. 1998-11-14 Mail Delivery Subsystem: Returned mail: Host unknown (Name serve
+ 2. 1998-11-16 Mail Delivery Subsystem: Returned mail: Host unknown (Name serve
+ 3. 1998-11-19 Mail Delivery Subsystem: Returned mail: Host unknown (Name serve
+
+../rmail/list-announce
+ 1. 1994-11-01 pinard@IRO.UMontreal.CA: Prerelease: GNU wdiff 0.4.1
+ 2. 1994-11-06 pinard@iro.umontreal.ca: Release: GNU wdiff 0.5
+ 3. 1994-12-01 pinard@IRO.UMontreal.CA: Prerelease: GNU wdiff 0.5.1
+ 4. 1996-12-29 Majordomo@IRO.UMontreal.CA: Majordomo results
+ 5. 1997-02-12 François Pinard: Prerelease: GNU wdiff 0.5.2
+ 6. 1997-03-26 François Pinard: Disappearance of wdiff as a separate package
+ 7. 1997-03-26 Paul Eggert: Re: Disappearance of wdiff as a separate package
+ 8. 1997-03-27 François Pinard: Merging GNU wdiff into GNU diff utilities
+ 9. 1997-05-16 François Pinard: Re: July 1997 GNU's Bulletin: @item @code{wdiff
+10. 1998-01-09 François Pinard: Re: Patch for wdiff 0.5
+11. 1998-02-07 François Pinard: Re: bug in wdiff 0.5
+12. 1998-10-07 François Pinard: Re: request for wdiff 0.5.2
+13. 1998-11-16 François Pinard: Prerelease: Free wdiff 0.5e
+14. 1998-11-14 François Pinard: Prerelease: Free wdiff 0.5d
+15. 1998-11-18 François Pinard: Prerelease: Free wdiff 0.5f
+16. 1998-11-18 François Pinard: Prerelease: Free wdiff 0.5f
+
+../rmail/options
+ 1. 1993-11-14 Dave Yost: diff
+
+../rmail/recursive
+ 1. 1994-07-19 m1nxb00@FRB.GOV: wdiff: kudos and gripe.
+ 2. 1994-07-19 Francois Pinard: Re: wdiff: kudos and gripe.
+
+../rmail/reported-bugs
+ 1. 1997-02-11 Achim Stahlberger: "Feature" of wdiff
+ 2. 1997-02-13 François Pinard: wdiff --version non =?ISO-8859-1?Q?r=E9gulier?=
+ 3. 1997-02-12 Paul Fox: Re: Prerelease: GNU wdiff 0.5.2
+ 4. 1997-02-13 François Pinard: Re: Prerelease: GNU wdiff 0.5.2
+ 5. 1997-02-13 Paul Fox: Re: Prerelease: GNU wdiff 0.5.2
+ 6. 1997-02-14 K. Berry: Re: wdiff --copyright
+ 7. 1997-02-13 Kaveh R. Ghazi: wdiff-0.5.2 report ...
+ 8. 1997-02-14 François Pinard: Re: wdiff --copyright
+ 9. 1997-02-20 Santiago Vila Doncel: wdiff-0.5.2.es.po.gz
+10. 1997-02-04 Ulrich Drepper: Re: make-3.75.de.po
+11. 1997-02-18 Pierre-Yves FOUCOU: Essai: Re: New PO file for `wdiff-0.5.2'
+12. 1997-02-20 Santiago Vila Doncel: wdiff-0.5.2.es.po.gz
+13. 1998-01-03 Eric Battersby: bug in wdiff 0.5
+14. 1998-01-03 François Pinard: Re: bug in wdiff 0.5
+15. 1998-01-09 bob@hadron.demon.co.uk: Patch for wdiff 0.5
+16. 1998-06-17 Erick Branderhorst: wdiff-0.5c has no rx.h
+17. 1998-06-17 Erick Branderhorst: wdiff-0.5c has no rx.h
+18. 1998-06-28 François Pinard: Re: wdiff-0.5c has no rx.h
+
+../rmail/spiff
+ 1. 1992-08-24 Francois Pinard: What spiff does
+ 2. 1992-08-25 Richard Stallman: What spiff does
+ 3. 1992-08-26 Richard Stallman: What spiff does
+ 4. 1997-03-27 Nelson H. F. Beebe: Re: wdiff/mdiff/diff plans
+ 5. 1997-03-27 François Pinard: Re: wdiff/mdiff/diff plans
+
+../rmail/tcl-tk
+ 1. 1992-12-30 Bob Bagwill: Re: wdiff enhancement request
+ 2. 1993-05-07 Bob Bagwill: Re: wdiff later than 0.04?
+ 3. 1999-04-12 Ora-News: O'Reilly Releases "TCL/TK In a Nutshell"
+
+../rmail/unidiffs
+ 1. 1992-11-22 mcgill-vision!lysator.liu.se!ceder: wdiff - something like unidi
+ 2* 1992-11-23 mcgill-vision!lysator.liu.se!ceder: wdiff - something like unid
+ 3. 1992-11-24 mcgill-vision!lysator.liu.se!ceder: wdiff - something like unidi
+ 4. 1992-12-24 Francois Pinard: Announce: wdiff release 0.04
+ 5. 1992-12-24 Francois Pinard: Announce: wdiff release 0.04
+ 6. 1993-05-28 Karl Berry: wdiff default behavior
+ 7. 1993-08-25 David J. MacKenzie: wdiff and context
+ 8. 1993-08-26 Francois Pinard: wdiff and context
+
+../rmail/word-nature
+ 1. 1992-12-23 Thorsten Ohl: wdiff *is* useful!
+ 2. 1993-02-24 Bob Friesenhahn: Wdiff suggestion
+ 3. 1993-02-27 Francois Pinard: Wdiff suggestion
+ 4. 1993-03-01 Bob Friesenhahn: Re: Wdiff suggestion
+ 5. 1993-07-28 Robert Forsman: wdiff
+ 6. 1993-08-20 Eugene Earlie HLO2-2/H13 dtn 225-6334 508-568-6334: wdiff
+ 7. 1993-08-20 Francois Pinard: wdiff
+ 8. 1998-02-12 Vladimir Alexiev: word boundaries in wdiff 0.5
+ 9. 1998-02-12 François Pinard: Re: word boundaries in wdiff 0.5
+10. 1998-02-12 Vladimir Alexiev: Re: word boundaries in wdiff 0.5
+11. 1998-04-14 Akim Demaille: wdiff & Re: A word on --enable-maintainer-mode
+12. 1998-04-14 François Pinard: Re: wdiff & Re: A word on --enable-maintainer-m
+13. 1998-04-14 Akim Demaille: Re: wdiff & Re: A word on --enable-maintainer-mod
+14. 1998-05-26 Vladimir Alexiev: patch for wdiff: ignore punctuation
+15. 1998-04-14 Akim Demaille: Re: wdiff & Re: A word on --enable-maintainer-mod
+
+../admin/bug-akim/RMAIL
+ 1. 1998-11-20 Akim Demaille: mdiff 0.5f dumps core
+
+../admin/gary-fritz/RMAIL
+ 1. 1995-05-02 Gary Fritz: wdiff question
+ 2. 1995-05-02 François Pinard: Re: wdiff question
+ 3. 1995-05-03 Gary Fritz: Re: wdiff question
+ 4. 1995-05-03 Gary Fritz: Re: wdiff question
+ 5. 1995-05-03 François Pinard: Re: wdiff question
+ 6. 1995-05-04 Gary Fritz: Son of wdiff
+ 7. 1995-05-04 François Pinard: Re: Son of wdiff
+ 8. 1995-05-04 Gary Fritz: Re: Son of wdiff
+ 9. 1995-05-04 François Pinard: Re: Son of wdiff
+10. 1995-05-04 Gary Fritz: Re: Son of wdiff
+
+../admin/os2/RMAIL
+ 1. 1994-11-16 Kai Uwe Rommel: Re: OS/2 patch for recode 3.4

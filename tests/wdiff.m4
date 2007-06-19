@@ -1,0 +1,118 @@
+#							-*- shell-script -*-
+
+AT_DEFINE(OLD_WDIFF, 1)
+
+AT_SETUP(wdiff output formats)
+dnl      --------------------
+
+AT_DATA(wdiff-a.txt,
+[This is input1
+The quick brown fox jumps over the lazy dog.
+The hurried orange fox jumps over the lazy dog.
+A slow green panda walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+])
+
+AT_DATA(wdiff-b.txt,
+[This is input2
+The quick brown fox jumps over the lazy dog.
+The slow red fox jumps over the lazy dog.
+A slow, short green giraffe walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+])
+
+AT_CHECK([wdiff ifdef([OLD_WDIFF], , -q) wdiff-a.txt wdiff-b.txt], 1,
+[This is [-input1-] {+input2+}
+The quick brown fox jumps over the lazy dog.
+The [-hurried orange-] {+slow red+} fox jumps over the lazy dog.
+A [-slow-] {+slow, short+} green [-panda-] {+giraffe+} walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+])
+
+AT_CHECK([wdiff -ifdef([OLD_WDIFF], , q)1 wdiff-a.txt wdiff-b.txt], 1,
+[This is {+input2+}
+The quick brown fox jumps over the lazy dog.
+The {+slow red+} fox jumps over the lazy dog.
+A {+slow, short+} green {+giraffe+} walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+])
+
+AT_CHECK([wdiff -ifdef([OLD_WDIFF], , q)2 wdiff-a.txt wdiff-b.txt], 1,
+[This is [-input1-]
+The quick brown fox jumps over the lazy dog.
+The [-hurried orange-] fox jumps over the lazy dog.
+A [-slow-] green [-panda-] walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+])
+
+AT_CHECK([wdiff -ifdef([OLD_WDIFF], , q)3 wdiff-a.txt wdiff-b.txt], 1,
+[
+======================================================================
+ [-input1-] {+input2+}
+======================================================================
+ [-hurried orange-] {+slow red+}
+======================================================================
+ [-slow-] {+slow, short+}
+======================================================================
+ [-panda-] {+giraffe+}
+======================================================================
+])
+
+AT_CHECK([wdiff -ifdef([OLD_WDIFF], , q)12 wdiff-a.txt wdiff-b.txt], 1,
+[This is
+======================================================================
+
+The quick brown fox jumps over the lazy dog.
+The
+======================================================================
+ fox jumps over the lazy dog.
+A
+======================================================================
+ green
+======================================================================
+ walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+])
+
+AT_CHECK([wdiff -ifdef([OLD_WDIFF], , q)13 wdiff-a.txt wdiff-b.txt], 1,
+[
+======================================================================
+ input2
+======================================================================
+ slow red
+======================================================================
+ slow, short
+======================================================================
+ giraffe
+======================================================================
+])
+
+AT_CHECK([wdiff -ifdef([OLD_WDIFF], , q)23 wdiff-a.txt wdiff-b.txt], 1,
+[
+======================================================================
+ input1
+======================================================================
+ hurried orange
+======================================================================
+ slow
+======================================================================
+ panda
+======================================================================
+])
+
+AT_CHECK([wdiff -ifdef([OLD_WDIFF], , q)123 wdiff-a.txt wdiff-b.txt], 1)
+
+AT_CHECK([wdiff -ifdef([OLD_WDIFF], , q)123s wdiff-a.txt wdiff-b.txt], 1,
+[wdiff-a.txt: 39 words  34 87% common  0 0% deleted  5 12% changed
+wdiff-b.txt: 40 words  34 85% common  0 0% inserted  6 15% changed
+])
+
+AT_CHECK([wdiff ifdef([OLD_WDIFF], , -q) -w\( -x\) -y\<\< -z\>\> wdiff-a.txt wdiff-b.txt], 1,
+[This is (input1) <<input2>>
+The quick brown fox jumps over the lazy dog.
+The (hurried orange) <<slow red>> fox jumps over the lazy dog.
+A (slow) <<slow, short>> green (panda) <<giraffe>> walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+])
+
+AT_CLEANUP()

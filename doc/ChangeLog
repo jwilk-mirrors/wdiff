@@ -1,0 +1,62 @@
+1999-07-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.am: Move over man page preparation to src/.
+
+1999-06-17  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.texi (Top): Use @ifnottex instead of @ifinfo.
+
+1998-11-16  François Pinard  <pinard@iro.umontreal.ca>
+
+	* help2man: New file, from elsewhere.
+	* Makefile.am (EXTRA_DIST): Adjusted.
+	(mdiff.1, unify.1, wdiff.1): New goals.
+	(man_MANS): Install short man pages.
+
+1997-02-11  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.am: New file.
+	* wdiff.1: Deleted.  The sent disclaimer was not satisfying to FSF
+	headquarters, and Colin did not feel like sending another one.
+	* unify.1: Deleted, contents merged into the manual.
+
+1995-06-22  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in (DISTFILES): Distribute unify.1 for the time being.
+	Reported by Joshua R. Poulson.
+
+1994-11-28  François Pinard  <pinard@iro.umontreal.ca>
+
+	* unify.1: New file.
+
+1993-12-24  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: General cleanup.  Handle -I$(srcdir) with
+	$(MAKEINFO).
+
+1992-12-23  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Some cleanup before the release.
+	* (dvi, wdiff.dvi): New goals.
+
+1992-12-21  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.1: New for 0.04, replaces the previous copy.
+	* Makefile.in: Install the man page.
+	Reported by Colin Brough.
+
+1992-12-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Define MAKEINFO as makeinfo, use it.
+	Reported by David Zuhn.
+
+	* Makefile.in (realclean): Remove wdiff.info.
+	Reported by Karl Berry.
+
+1992-11-28  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.1: New.  This man page reflects wdiff at 0.03 level.
+	* Makefile.in: Distribute it.
+	Reported by Colin M. Brough.
+
+	* Makefile.in (texclean): New.

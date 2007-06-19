@@ -1,25 +1,14 @@
-TODO file for GNU wdiff
+* TODO file for GNU `wdiff'			allout -*- outline -*-
 
-Tell <pinard@iro.umontreal.ca> if you feel like volunteering for any
+Tell <wdiff-bugs@iro.umontreal.ca> if you feel like volunteering for any
 of these ideas, listed more or less in decreasing order of priority.
+Some TODO items are implicit from received email.  See file BACKLOG.
+Significant contributions require written assignments and disclaimers.
 
-* Check how wdiff.dvi prints.
+.@ ChangeLog
 
-* Implement a clever combination of these two ideas: (1) have a wpatch
+.* Select by options exactly what is whitespace.
+
+.* Implement a clever combination of these two ideas: (1) have a wpatch
 program (Zhuo Zang <zzang@stat.ufl.edu>, 1992-08-13); (2) use unified
 diff format (Per Cederqvist <ceder@lysator.liu.se>, 1992-11-22).
-
-* Detect and configure termcap better.
-
-* Support systems with terminfo and without termcap.
-
-* Select by options exactly what is whitespace.
-
-* Merge some spiff features into wdiff.
-
-* Merge all of wdiff into GNU diff.
-
-Local Variables:
-mode: outline
-outline-regexp: " *[-+*.] \\|"
-End:

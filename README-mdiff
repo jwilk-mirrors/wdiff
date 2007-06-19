@@ -1,0 +1,88 @@
+Quite random notes (really!) about `mdiff'.
+
+
+The `mdiff' program is still very experimental, but is meant to be a
+replacement for both `diff' and `wdiff'.  It is the solution I'm finally
+came to, for the fact `wdiff' was seemingly not going to be integrated in
+`diff'.  In fact, `wdiff2' is ready to replace the old one, being a mere
+front-end to `mdiff', which will do the real work without calling `diff'
+externally.  Also, `mdiff' has the capability of studying more than two
+files simultaneously, or even only one, and is able to report about blocks
+which has been exchanged, moved far away, or otherwise repeated.
+
+There is a new category of lines: those who ought to match (they are
+not ignored like white lines) but still, are not significant enough
+to participate in reaching the threshold for making a cluster member.
+Examples are C lines containing only braces.  Easily too, was added some
+optional tolerance to mismatches, without very notable decrease of speed
+(one optimisation gets slightly broken, this is correctable through a
+supplementary fast pass over all members, once they have been all found).
+
+Thinking more about it, I feel like reimplementing `diff' output formats
+within `mdiff' as kind of special cases, for when we compare only two
+input files, and we disallow cross blocks matching (that is, we do not
+allow `... A ... B ...' in one file and `... B ... A ...' in the other,
+as either A or B should be considered as wholly remove from on file and
+reinserted in the other -- you know this problem).  My intuition tells me
+that it is possible to develop a fairly fast algorithm for achieving non
+crossed block matches, once all cluster members are already identified as
+`mdiff' does.  I also guess, without being completely sure of it, that
+it might not be too inordinately slow for finding the *optimal* solution
+if we really need it (optimal in the total length of all differences) --
+at least, I have two algorithms in head for this.
+
+So, `mdiff' might be `diff' as a minimum.  But the added capacity of
+doing cross block matching is appealing.  I have a few simple ideas
+about how to report cross blocks in the `diff' output.  And of course,
+the capability of handling a single file, or more than two files at once,
+is also interesting in itself.  It often happened that I had to study many
+versions (more than two) of a single source, all at once.  There might be
+better to do than comparing only two sources at a time as I did before.
+It should not be very hard to devise some multi-`diff' output format.
+
+In fact, `mdiff' may solve the pending problem of `wdiff'/`diff' integration,
+which does not look like imminent.  It would be far much easier for me to
+achieve `wdiff'/`mdiff' integration than `wdiff'/`diff'.  It might start
+by just extending `mdiff' to handle other units than lines, I suspect
+it is an easy job.  In fact, `mdiff' would allow experimentation on the
+`diff' engine mainly, while `wdiff' would stay more oriented towards output
+formats which are not line oriented.  Good things might happen by better
+exploring how those two programs could be usefully merged.
+
+I want `mdiff' to be able to produce more `diff'-like output, and also
+for option decoding be a superset of both `diff' and `wdiff', yet almost
+no option is really supported yet.  I also rewrote a new `wdiff' program
+that just studies its options, translates them for `mdiff', and launches
+`mdiff' under the scene.
+
+`mdiff' is a bit difficult algorithmically, and I needed to spice the
+program with a few assert's and dumping routines for being able to trap
+and understand problems, most being related to semi-overlapping clusters.
+The number of files is irrelevant, once past three files :-).
+
+When there are only a few (say no more than six or seven) nearly identical
+files, it makes sense to extend `unidiff' output to list all files
+in parallel.  When given hundreds of files, it becomes non-sensical,
+it might be more convenient to just list them all, whole, annotated with
+cross-references, which `mdiff' now does.  Yet, there is no reason `mdiff'
+would not try supporting the feature.  When there are really many input
+files, one might nevertheless want merged `diff' output.  We then have
+to read all files in parallel, fastly running out of file descriptors.
+I could devise a scheme for closing and reopening files all the time,
+using some paging algorithm to allocate descriptors to files as needed,
+but this is ugly, and probably not worth doing.
+
+I could also do as in the official `diff', and swallow all files in memory,
+or mmap them whenever possible.  Swallowing two files is tolerable,
+yet unnice.  Swallowing hundreds of files at once looks bad to me.
+I could maybe swallow files given that the total length is in the order
+of the physical memory size (to avoid thrashing somewhat), or execute two
+sequential reading passes over them if the total length exceeds the physical
+memory length, yet I do not know how to evaluate physical memory portably.
+
+As `mdiff' works now, it does two sequential passes over all input files,
+and works on checksum summaries of files between passes.  Maybe I should
+swallow files in memory or `mmap' them, if either their total size is
+small enough, or else, if merged output has been requested and their are
+more files to read than file descriptors available.  Both thresholds would
+need to be portably defined.

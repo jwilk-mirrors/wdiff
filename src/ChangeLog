@@ -1,0 +1,487 @@
+1999-07-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* mdiff.c, wdiff.c (main, usage, initialize_strings): Implement -K.
+	* wdiff2.c (main, usage): Idem.
+	* mdiff.c, wdiff.c (launch_output_program): Transmit -X to less if -K.
+	Reported by Charles C. Fu.
+
+	* mdiff.c (main): Say -z instead of -t in diagnostic message.
+
+	* Makefile.am: Prepare for fp_WITH_GETTEXT.
+	Reported by Richard Stallman.
+
+	* Makefile.am: Prepare man pages here instead of within doc/.
+
+1999-03-07  François Pinard  <pinard@iro.umontreal.ca>
+
+	* mdiff.c, wdiff.c: Use %s in error calls.
+	Reported by Jim Meyering.
+
+1998-12-11  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Do not declare strstr if already defined.
+	Reported by Santiago Vila Doncel.
+
+1998-11-24  François Pinard  <pinard@iro.umontreal.ca>
+
+	* mdiff.c (usage): Correct a typo.  Expand HTs.  Split big strings.
+	* wdiff.c (main): Use the mdiff formulation of the same message.
+	* mdiff.c, wdiff.c (initialize_strings): Use a formulation for a
+	message which is independant of csh.
+	Reported by Santiago Vila Doncel.
+
+1998-11-19  François Pinard  <pinard@iro.umontreal.ca>
+
+	* mdiff.c (usage): Correct a typo.
+	Reported by Santiago Vila Doncel.
+
+1998-11-16  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff2.c: New name for wdiff-new.c.
+	* Makefile.am: Adjusted.  Compile it, but do not install it.
+	Compile mdiff, but do not install it.
+
+	* mdiff.c (usage), unify.c (usage), wdiff.c (usage), wdiff2.c
+	(usage): Explain the purpose of programs.
+	* wdiff.c (main): Give more information with --version.
+	* wdiff.c (usage), wdiff2.c (usage): Say where to report bugs.
+	Reported by Akim Demaille.
+
+	* Makefile.am: Recompile programs if config.status change, so
+	version is guaranteed to be adjusted in executables.
+
+1998-11-16  Akim Demaille  <demaille@inf.enst.fr>
+
+	* mdiff.c: Do not include rx.h, as Rx is no longer supported.
+	Define CHAR_SET_SIZE.  Remove Sword, unused.
+
+	* Makefile.am (LDADD): libintl might need rpl_xrealloc.  Link
+ 	libwd last.
+
+1998-11-13  François Pinard  <pinard@iro.umontreal.ca>
+
+	* mdiff.c (main), unify.c (main), wdiff.c (main): Call them Free.
+
+	* mdiff.c (usage): Add some missing \n\ in multi-line strings.
+
+	* wdiff-new.c: New file.  Well, uh, not really!
+	* Makefile.am (EXTRA_DIST): Distribute it.
+
+1997-04-29  François Pinard  <pinard@iro.umontreal.ca>
+
+	* mdiff.c (usage): Change bug reporting address.
+	* unify.c (usage): Idem.
+
+1997-02-25  François Pinard  <pinard@iro.umontreal.ca>
+
+	* unify.c: Adjust version string to GNU standards.
+
+1997-02-18  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff-new.c: New file.  Rename options and call mdiff.
+	* system.h: Declare xstrdup.
+
+1997-02-16  François Pinard  <pinard@iro.umontreal.ca>
+
+	* unify.c (usage): Corrected bug reporting address.
+	Reported by Santiago Vila Doncel.
+
+1997-02-13  François Pinard  <pinard@iro.umontreal.ca>
+
+	* mdiff.c: Deeply revised and extended, changes are far too
+	numerous to be detailed here.  Introduce a new line type for
+	lines containing only special symbols.	Introduce mergings and
+	merged listings, segments and overlaps.  Add decoding for all
+	diff options, with none implemented to start with.  Blend in
+	wdiff code, renaming options to avoid clashes with diff's.
+
+1997-02-12  François Pinard  <pinard@iro.umontreal.ca>
+
+	* cbars.in: New name for cbars.sh, adjusted for exec_prefix.
+
+	* wdiff.c (usage): Do not capitalise the word copyright.
+	Reported by Karl Berry.
+
+	* wdiff.c: Adjust for inclusion of proper LIB.h, for LIB in
+	termcap, termlib, curses and ncurses.
+
+1997-02-11  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.am: New files.
+
+	* unify.c: More clean up.  Add long options and usage help.
+
+	* mdiff.c: New file.
+
+1997-01-09  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (main): Avoid closing input_file twice.
+	Reported by Ambrose Li, H.J. Lu, Nicola Bernardini, Paul Lew and
+	Ulrich Drepper.
+
+1995-12-30  François Pinard  <pinard@iro.umontreal.ca>
+
+	* system.h, wdiff.c: Replace __P by PARAMS, to respect ANSI C.
+
+1995-12-20  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (launch_input_program): Use -i, not -c, for asking
+	diff to ignore case.
+	Reported by Aaron Ucko.
+
+1995-06-22  François Pinard  <pinard@iro.umontreal.ca>
+
+	* system.h: Use <sys/types.h>, so unify can take advantage of it.
+	* wdiff.c: Delete <sys/types.h>.
+	Reported by Joseph E. Sacco and Joshua R. Poulson.
+
+1995-05-02  François Pinard  <pinard@iro.umontreal.ca>
+
+	* unify.c (generate_output, main): Use comma operator when
+	assignment in test.
+
+1995-03-19  François Pinard  <pinard@iro.umontreal.ca>
+
+	* system.h: Use WITH_CATALOGS to define _() differently.
+
+1995-02-19  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Support an ID file.  Do not distribute TAGS.
+	Reported by Greg McGary.
+
+1995-02-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in (maintainer-clean): New name for realclean.
+
+1994-12-03  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Do not unprotoize libintl.c, now done in sources.
+
+	* Makefile.in (clean): Delete unify.
+
+	* wdiff.c: Use EXIT_SUCCESS whenever possible.
+
+	* wdiff.c (print_copyright): Use stdout, not stderr.  Use fputs
+	instead of printf.
+
+1994-12-01  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Rename PRODUCT to PACKAGE.
+
+	* configure.in, Makefile.in, system.h, wdiff.c: Ajust localization
+	mechanics as per sharutils'.
+
+1994-11-28  François Pinard  <pinard@iro.umontreal.ca>
+
+	* unify.c: New file (once known as diffcvt).
+	* system.h: New.
+	* wdiff.c: Move some declarations to system.h, include it.
+	* configure.in: Add unify to PROGRAMS.
+	* Makefile.in: Adjust according to preceeding changes.
+	Reported by Wayne Davison.
+
+1994-11-26  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Rename _ to __P.  Declare _ as a macro returning its
+	argument, or else, include <libintl.h> and declare _ as gettext.
+	Possibly include <locale.h> and call setlocale.  Use _ macro over
+	all localizable strings.
+
+1994-11-19  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (main): Explicitly diagnose missing file arguments.
+	Reported by Karl Berry.
+
+1994-11-07  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in (stamp-vti): Use new date -r option.
+
+	* wdiff.c: Add recognition for --auto-pager, --avoid-wraps
+	and --less-mode, which were forgotten in longopts.  Also repair
+	--version and -V, by replacing 'v' by 'V' in the option switch.
+	Reported by Andreas Schwab, Charles C. Fu, Jim Meyering, Karl
+	Heuer, Kawakami Akira, Piet van Oostrum, Tony Leneis and Vern
+	Paxson.
+
+1994-11-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (putc_for_tputs): Compile only if HAVE_TPUTS.
+	(initialize_strings): Declare locals only when HAVE_TPUTS.
+	Reported by Joseph E. Sacco.
+
+	* Makefile.in (realclean): Also remove stamp-vti.
+
+1994-11-02  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Have --ignore-case correspond to -i instead of -c.
+	Reported by Roland McGrath and Vern Paxson.
+
+1994-11-01  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Use PRODUCT and VERSION instead of version.
+	* wdiff.h: Interface with dmalloc if WITH_DMALLOC.
+
+1994-07-08  François Pinard  <pinard@iro.umontreal.ca>
+
+	* ansi2knr.1: New file, from elsewhere.
+	* Makefile.in (DISTFILES): Distribute it.
+
+1993-12-26  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (usage): Renamed from usage_and_exit.  Accept the exit
+	status as parameter.  If error, only suggest --help on stderr.  If
+	no error, provide full help on stdout rather than on stderr.
+	Adjust callers.
+
+	* (main): Rename -V back into -v.
+	For -v, write version on stdout rather than on stderr.
+	For -C and -v, exit with status 0 instead of 2.
+
+1993-01-31  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (usage_and_exit, main): Rename -v into -V.
+	Avoid double parenthese in `while ((option_char ...'.
+	Add const to argv specification.
+
+1993-01-17  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Put $(CFLAGS) after $(CPPFLAGS), so the installer
+	can override automatically configured choices.
+	Reported by Karl Berry.
+
+1993-01-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Make almost all functions `static'.
+	Reported by Jim Meyering.
+
+1993-01-01  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Reinstate $(CPPFLAGS), use it.  Richard wants it
+	there.
+
+	* Makefile.in: Have all $(OBJECTS) depend upon config.h.
+	Replace $(DEFS) by -DHAVE_CONFIG_H everywhere.
+	Always use -I. calling the C compiler, for config.h to be found.
+	* ansi2knr.c, wdiff.c: Conditionnaly include config.h.
+
+1992-12-30  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (split_file_into_words): Check and diagnose if the given
+	path is a directory.
+	Reported by Paul Eggert.
+
+	* wdiff.c (main): Always refuse -t if not HAVE_TPUTS.
+
+	* wdiff.c (split_file_into_words): Interpret "-" as meaning
+	standard input, for any or both input files.  Take a temporary
+	copy in this case.  Instead of closing file, flush it.
+	(reformat_diff_output): Instead of opening files, rewind them.
+	Reported by Ze'ev "Steed" Shtadler (Israel).
+
+	* wdiff.c (main): Allow "" and "-" for representing standard input,
+	but consistently store NULL as file name in these cases.  Disallow
+	having standard input twice.
+
+	* wdiff.c: Use error() instead of perror(), everywhere.  Include
+	<errno.h> and declare errno if not defined.
+
+	* wdiff.c: Implement -c for ignore_case.  I should have delayed
+	this until the integration of wdiff into diff, but I personnaly
+	needed it right now! :-)
+
+	* wdiff.c (launch_output_program): Restrict the search for "less"
+	to the basename of the program.
+	Define strrchr to rindex when including <strings.h>.
+	Reported by Paul Eggert.
+
+	* wdiff.c: (main): Exit program before producing statistics
+	whenever the program is interrupted.
+	Rename `jump_trigger' to `interrupted' everywhere.
+	Reported by Paul Eggert.
+
+1992-12-29  Karl Berry  <karl@cs.umb.edu>
+
+	* wdiff.c: Include <sys/types.h> before <signal.h>.
+
+1992-12-23  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (split_file_into_words): Call tmpnam just before opening
+	the file.  On the Next, successive calls to tmpnam will return
+	different values only if the file is opened in between.
+	(main): Allocate temp_name statically, and initialize it to "".
+	On certain systems, tmpnam(NULL) causes a segmentation violation.
+	Length will be L_tmpman or else, PATH_MAX from pathmax.h.  Check
+	temp_name before unlinking, in case of an intervening signal.
+	Reported by Thorsten Ohl.
+
+	* Makefile.in (_wdiff.o): Use -I$(srcdir).
+
+	* wdiff.c: Added two missing `break;'.
+	Reported by Thorsten Ohl.
+
+1992-12-22  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Remove $(CPPDEFS) from the implicit rules.
+
+1992-12-09  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in, wdiff.c: Replace USG by HAVE_STRING_H.
+	Reported by David Zuhn.
+
+	* Makefile.in (configure): Go to $(srcdir) before autoconf.
+	Reported by David Zuhn.
+
+1992-12-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Initialize the version[] string.
+	* version.c: Deleted.
+	* Makefile.in: Adjusted.
+
+1992-11-28  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in (clean, distclean): Remove clutter for ansi2knr.
+	Reported by Pierre Gaumond.
+
+1992-11-22  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (usage_and_exit): Use OLD_FILE and NEW_FILE in usage
+	message, instead of FILE_1 and FILE_2.
+	Reported by Per Cederqvist.
+
+	* Never launch pager by default.  So, I'm adding option -a.
+	Reported by Richard Stallman.
+
+	* wdiff.c: New -a option and autopager variable.
+	(main): Initialize and decode it.
+	(usage_and_exit): Announce it.
+	(launch_output_program): Implement it.
+
+	* wdiff.c: New -l option.
+	Rename pager_is_less to overstrike_for_less.
+	(main): Initialized and decode it.
+	(usage_and_exit): Announce it.
+	* wdiff.c: Rename is_printer to overstrike.
+	* wdiff.c: Rename is_display to find_termcap.
+	(main): Delay its initialization, so -l can force it to 0.
+
+	* wdiff.c: New -n option and no_wrapping variable.
+	(main): Initialize and decode it.
+	(usage_and_exit): Announce it.
+	(copy_whitespace): Implement it.
+	Reported by Joe Wells.
+
+1992-11-21  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Never define const as empty, let configure do it.  Also
+	remove volatile declaration as empty, it is unused.
+	* wdiff.c, version.c: Add a few const's.
+
+	* wdiff.c: Remove `const' to `char *strstr();' declaration.
+	Reported by Roland McGrath.
+
+1992-11-19  Jim Meyering  <meyering@idefix.comco.com>
+
+	* configure.in: Add AC_UNISTD_H.  Fix test for ANSI-ness.
+
+	* version.c: Remove copyright and print_copyright.
+
+	* wdiff.c: Add declaration of error.
+	(print_copyright): Moved copyright stuff here and declared static.
+	(reformat_diff_output): Add a do-nothing case for COPY_NORMAL
+	and a default that aborts to avoid warnings form gcc -Wall.
+	(complete_output_program): Add a default clause that aborts
+	to avoid warnings form gcc -Wall.
+
+1992-11-18  Jim Meyering  <meyering@idefix.comco.com>
+
+	* Makefile.in: Add another layer of double quotes so PAGER
+	and DIFF may contain spaces.  Before, with PAGER='less -i'
+	compilation failed with unterminated string.
+
+1992-10-06  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Use exec_prefix.  Add `uninstall'.
+
+1992-08-20  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: With STDC_HEADERS, use <string.h>, not <strings.h>.
+
+1992-08-19  François Pinard  <pinard@iro.umontreal.ca>
+
+	* ansi2knr.c: New, from Ghostscript distribution.
+	* unproto.l: Deleted.
+	* Makefile.in: Use ansi2knr instead of unproto.
+	* configure.in: Do not check anymore for `lex' or bad `const's.
+	* wdiff.c: Undefine `const' and `volatile' if not __STDC__.
+
+	* wdiff.c: Do not declare tgetstr without HAVE_TPUTS.
+
+1992-08-18  François Pinard  <pinard@iro.umontreal.ca>
+
+	* unproto.l: New, from ~/src.  Note that flex is required.
+	* Makefile.in: Add U, apply unproto to wdiff.c and version.c if
+	not __STDC__.
+
+1992-08-17  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Insure exit code values: 0 if no differences found, 1
+	if any difference found, 2 for other reasons or errors.  Execute
+	`diff' even in the case absolutely no output will result.
+
+	* wdiff.c: Removed spurious comma after last enum item.
+
+1992-08-16  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (usage_and_exit): Added -s description.
+
+1992-08-15  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Added -s option to produce statistics at end of output.
+
+	* wdiff.c: Copy common code from the left side instead of the
+	right side if only the common code and deleted words are wanted;
+	this makes the output spacing nicer.  Also, correct a bug by which
+	added words were shown as common code for this option set.
+
+	* wdiff.c: PAGER_PROGRAM was previously defaulted to "more", it is
+	now left undefined.  As currently set, the auto-configurator will
+	pick one, however, and force it into the program.
+
+	* wdiff.c: Avoid all emphasis if all of the output would be
+	emphasized the same way.
+
+	* wdiff.c: Avoid overstriking whitespace unless the pager is less.
+
+	* wdiff.c: Do termcap initialization and completion strings.  If a
+	pager is used, insure they are sent to stdout, never to the pager.
+
+	* wdiff.c: If PAGER is defined, but to the empty string, avoid
+	using any pager, instead of using a default PAGER.
+
+1992-08-14  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c: Remove the `signal (SIGCLD, SIG_IGN);' which is a
+	System V-ism, and rather wait() explicitely.
+
+	* wdiff.c: Declare tgetstr if <termcap.h> not included.
+
+1992-08-12  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff.c (setup_signals): Do not intercept SIGQUIT.
+
+	* wdiff.c: Automatically pipe through `more' or `less' if writing
+	to terminal, using environment variable $PAGER to override PAGER
+	definition.  Force terminal mode, but if the pager is `less', use
+	printer mode.  Modify copy_whitespace for overstriking whitespace
+	with itself in printer mode: `less' understands this.
+	* Makefile.in: Transmit PAGER to program.
+
+	* wdiff.c: Options -wxyz renamed from old -1234.  New options -123
+	acting a little like in comm utility, old -d option deleted.
+
+	* wdiff.c: Check for HAVE_TPUTS instead of HAVE_TERMCAP_H in many
+	places.
+
+1992-08-11  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Initial packaging.

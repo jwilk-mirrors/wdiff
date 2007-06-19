@@ -1,0 +1,9 @@
+1999-07-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* gettext.m4: New file, from elsewhere.
+	* Makefile.am (EXTRA_DIST): Adjusted.
+
+1998-11-13  François Pinard  <pinard@iro.umontreal.ca>
+
+	* atconfig.m4, malloc.m4, realloc.m4: New files, from elsewhere.
+	* Makefile.am: New file.

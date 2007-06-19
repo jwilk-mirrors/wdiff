@@ -1,0 +1,75 @@
+1999-07-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.am: Prepare for fp_WITH_GETTEXT.
+
+1998-11-16  Akim Demaille  <demaille@inf.enst.fr>
+
+	* regex.c, regex.h: Updated, from elsewhere.
+
+1998-11-13  François Pinard  <pinard@iro.umontreal.ca>
+
+	* malloc.c, realloc.c, xalloc.h: New files, from elsewhere.
+	* Makefile.am (noinst_HEADERS): Adjusted.
+
+1997-02-13  François Pinard  <pinard@iro.umontreal.ca>
+
+	* getline.c, getline.h: New files, from elsewhere.
+
+1997-02-11  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.am: New file.
+
+1994-12-01  François Pinard  <pinard@iro.umontreal.ca>
+
+	* xstrdup.c: New, from elsewhere.
+	* Makefile.in: Adjusted.
+
+1994-11-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Force readpipe.c and writepipe.c through ansi2knr
+	for non-ANSI compilers.
+	* readpipe.c, writepipe.c: Use <stdarg.h> when ANSI, instead of only
+	<varargs.h>.  This ANSIfies those modules.
+
+1993-12-24  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: General cleanup.  Add libwd.a, LIBHDRS, LIBSRCS,
+	LIBOBJS, AR, RANLIB.
+
+1993-01-01  François Pinard  <pinard@iro.umontreal.ca>
+
+	* error.c, readpipe.c, writepipe.c, xmalloc.c: Conditionnaly
+	include config.h.
+
+1992-12-30  François Pinard  <pinard@iro.umontreal.ca>
+
+	* xmalloc.c: New (once again), from elsewhere.
+	* Makefile.in: Distribute xmalloc.c.  Define ALLOCA=@ALLOCA@.
+
+1992-12-23  François Pinard  <pinard@iro.umontreal.ca>
+
+	* pathmax.h: New, from elsewhere.
+	* Makefile.in: Distribute pathmax.h, adjust dependencies.
+	* xstrdup.c, xmalloc.c: Deleted, not needed anymore.
+
+1992-12-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* readpipe.c: Beware that file descriptor 1 might not be opened.
+	writepipe.c: Beware that file descriptor 0 might not be opened.
+	Reported by Paul Eggert.
+
+1992-11-19  Jim Meyering  <meyering@idefix.comco.com>
+
+	* readpipe.c, writepipe.c: Include unistd.h.
+	Parenthesize assignment used in boolean context.
+
+1992-08-17  François Pinard  <pinard@iro.umontreal.ca>
+
+	* alloca.c: New, from other GNU sources.
+	* Makefile.in: Distribute alloca.c, compile it if necessary.
+
+1992-08-12  François Pinard  <pinard@iro.umontreal.ca>
+
+	* strstr.c: Borrowed somewhere from GNU.
+	* writepipe.c: New, provided by David MacKenzie.
+	* Makefile.in: Handle strstr.c.

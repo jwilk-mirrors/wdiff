@@ -1,27 +1,61 @@
-GNU wdiff has originally been written by Franc,ois Pinard.  Other
-people contributed to GNU wdiff by reporting problems, suggesting
-various improvements or submitting actual code.  Here is a list of
-these people.  Help me keeping it complete and exempt of errors.
+GNU wdiff has originally been written by Francois Pinard.  Other people
+contributed to GNU wdiff by reporting problems, suggesting various
+improvements or submitting actual code.  Here is a list of these people.
+Help me keeping it complete and exempt of errors.  See various ChangeLogs
+for a detailed description of contributions.
 
+Aaron Ucko		amu@mit.edu
+			http://www.mit.edu/~amu/
+Ambrose Li		acli@ada.ddns.org
+Andreas Schwab		schwab@issan.informatik.uni-dortmund.de
 Andy Norman		ange@hplb.hpl.hp.com
-Colin Brough		cmb@epcc.ed.ac.uk
-David Zuhn		zoo@cygnus.com
-Franc,ois Pinard	pinard@iro.umontreal.ca
+			http://www-uk.hpl.hp.com/people/ange
+Charles C. Fu		ccwf@bacchus.com
+			http://www.klab.caltech.edu/~ccwf/
+Colin Brough
+David Zuhn		zoo@armadillo.com
+			http://www.armadillo.com/zoo/
+Francois Pinard		pinard@iro.umontreal.ca
+			http://www.iro.umontreal.ca/~pinard
+Greg McGary
+H.J. Lu			hjl@lucon.org
 James Ganong		jeg@ced.berkeley.edu
-Jim Meyering		meyering@acm.org
+Jim Meyering		meyering@na-net.ornl.gov
 Joe Wells		jbw@cs.bu.edu
-Joseph E. Sacco		jsacco@ssl.com
+Joseph E. Sacco
+Joshua R. Poulson	jrp@plaza.ds.adp.com
 Karl Berry		karl@cs.umb.edu
+			http://www.cs.umb.edu/~karl/
+Karl Heuer		kwzh@gnu.org
+Kaveh R. Ghazi
+Kawakami Akira		kawakami@mita.nel.co.jp
 Larry Virden		lvirden@cas.org
+			http://purl.org/net/lvirden/
+Lukas Petrlik		luki@kiv.zcu.cz
+Massimo Dal Zotto	dz@cs.unitn.it
+			http://www.cs.unitn.it/~dz/
 Nelson H.F. Beebe	beebe@math.utah.edu
+			http://www.math.utah.edu/~beebe
+Nicola Bernardini	nicb@axnet.it
 Paul Eggert		eggert@twinsun.com
 Paul Fox		pgf@cayman.com
 Per Cederqvist		ceder@lysator.liu.se
+			http://www.lysator.liu.se/~ceder/
 Pierre Gaumond		gaumondp@ere.umontreal.ca
-Richard Stallman	rms@prep.ai.mit.edu
-Robert Chassell		bob@gnu.ai.mit.edu
-Roland McGrath		roland@gnu.ai.mit.edu
-Steve Fisk		fisk@polar.bowdoin.edu
-Thorsten Ohl		ohl@physics.harvard.edu
-Ze'ev Shtadler		steed@iil.intel.com
-Zhuo Zang		zzang@stat.ufl.edu
+Piet van Oostrum	piet@cs.uu.nl
+			http://www.cs.uu.nl/~piet
+Richard Stallman	rms@gnu.org
+Robert Chassell		bob@gnu.org
+			http://www.rattlesnake.com
+Roland McGrath		roland@gnu.org
+			http://www.frob.com/~roland/
+Santiago Vila Doncel	sanvila@unex.es
+Steve Fisk		fisk@bowdoin.edu
+			http://www.bowdoin.edu/~fisk
+Thorsten Ohl
+Tony Leneis		tony@plaza.ds.adp.com
+Ulrich Drepper		drepper@gnu.org
+Vern Paxson		vern@ee.lbl.gov
+Wayne Davison
+Ze'ev Shtadler
+Zhuo Zang

@@ -29,6 +29,9 @@
 /* Define if you have the vprintf function.  */
 #undef HAVE_VPRINTF
 
+/* Define as __inline if that's what the C compiler calls it.  */
+#undef inline
+
 /* Define if on MINIX.  */
 #undef _MINIX
 
@@ -42,12 +45,15 @@
 /* Define as the return type of signal handlers (int or void).  */
 #undef RETSIGTYPE
 
+/* Define to `unsigned' if <sys/types.h> doesn't define.  */
+#undef size_t
+
 /* If using the C implementation of alloca, define if you know the
    direction of stack growth for your system; otherwise it will be
    automatically deduced at run-time.
-	STACK_DIRECTION > 0 => grows toward higher addresses
-	STACK_DIRECTION < 0 => grows toward lower addresses
-	STACK_DIRECTION = 0 => direction of growth unknown
+ STACK_DIRECTION > 0 => grows toward higher addresses
+ STACK_DIRECTION < 0 => grows toward lower addresses
+ STACK_DIRECTION = 0 => direction of growth unknown
  */
 #undef STACK_DIRECTION
 
@@ -57,27 +63,72 @@
 /* Define to the path of the `diff' utility.  */
 #undef DIFF_PROGRAM
 
+/* Define to 1 if NLS is requested.  */
+#undef ENABLE_NLS
+
+/* Define as 1 if you have dcgettext.  */
+#undef HAVE_DCGETTEXT
+
+/* Define as 1 if you have gettext and don't want to use GNU gettext.  */
+#undef HAVE_GETTEXT
+
+/* Define if your locale.h file contains LC_MESSAGES.  */
+#undef HAVE_LC_MESSAGES
+
+/* Define to 1 if tputs function is available.  */
+#undef HAVE_TPUTS
+
+/* Define to the installation directory for locales.  */
+#undef LOCALEDIR
+
 /* Define to the path of the `less' or `more' utility.  */
 #undef PAGER_PROGRAM
 
-/* Define to the name of the distribution.  */
-#undef PRODUCT
-
-/* Define to 1 if ANSI function prototypes are usable.  */
-#undef PROTOTYPES
-
-/* Define to the version of the distribution.  */
-#undef VERSION
-
-/* Define to 1 for better use of the debugging malloc library.  See 
+/* Define to 1 for better use of the debugging malloc library.  See
    site ftp.antaire.com in antaire/src, file dmalloc/dmalloc.tar.gz.  */
 #undef WITH_DMALLOC
+
+/* Define to rpl_malloc if the replacement function should be used.  */
+#undef malloc
+
+/* Define to rpl_realloc if the replacement function should be used.  */
+#undef realloc
+
+/* Define if you have the DONE_WORKING_MALLOC_CHECK function.  */
+#undef HAVE_DONE_WORKING_MALLOC_CHECK
+
+/* Define if you have the DONE_WORKING_REALLOC_CHECK function.  */
+#undef HAVE_DONE_WORKING_REALLOC_CHECK
+
+/* Define if you have the dcgettext function.  */
+#undef HAVE_DCGETTEXT
+
+/* Define if you have the gettext function.  */
+#undef HAVE_GETTEXT
+
+/* Define if you have the setlocale function.  */
+#undef HAVE_SETLOCALE
+
+/* Define if you have the stpcpy function.  */
+#undef HAVE_STPCPY
 
 /* Define if you have the strerror function.  */
 #undef HAVE_STRERROR
 
-/* Define if you have the tputs function.  */
-#undef HAVE_TPUTS
+/* Define if you have the strstr function.  */
+#undef HAVE_STRSTR
+
+/* Define if you have the <curses.h> header file.  */
+#undef HAVE_CURSES_H
+
+/* Define if you have the <libintl.h> header file.  */
+#undef HAVE_LIBINTL_H
+
+/* Define if you have the <locale.h> header file.  */
+#undef HAVE_LOCALE_H
+
+/* Define if you have the <ncurses.h> header file.  */
+#undef HAVE_NCURSES_H
 
 /* Define if you have the <string.h> header file.  */
 #undef HAVE_STRING_H
@@ -85,8 +136,36 @@
 /* Define if you have the <termcap.h> header file.  */
 #undef HAVE_TERMCAP_H
 
+/* Define if you have the <termlib.h> header file.  */
+#undef HAVE_TERMLIB_H
+
 /* Define if you have the <unistd.h> header file.  */
 #undef HAVE_UNISTD_H
 
+/* Define if you have the curses library (-lcurses).  */
+#undef HAVE_LIBCURSES
+
 /* Define if you have the malloc library (-lmalloc).  */
 #undef HAVE_LIBMALLOC
+
+/* Define if you have the ncurses library (-lncurses).  */
+#undef HAVE_LIBNCURSES
+
+/* Define if you have the termcap library (-ltermcap).  */
+#undef HAVE_LIBTERMCAP
+
+/* Define if you have the termlib library (-ltermlib).  */
+#undef HAVE_LIBTERMLIB
+
+/* Name of package */
+#undef PACKAGE
+
+/* Version number of package */
+#undef VERSION
+
+/* Define if compiler has function prototypes */
+#undef PROTOTYPES
+
+/* Define if using the dmalloc debugging malloc package */
+#undef WITH_DMALLOC
+

@@ -1,0 +1,702 @@
+#!/bin/sh
+# Validation suite for the GNU `wdiff' and friends.	-*- shell-script -*-
+# Copyright (C) 1998 Progiciels Bourbeau-Pinard inc.
+# Francois Pinard <pinard@iro.umontreal.ca>, 1998.
+
+. ./atconfig
+# Snippet (3
+
+at_usage="Usage: $0 OPTION...
+
+  -e  Abort the full suite and inhibit normal clean up if a test fails
+  -n  Do not redirect stdout and stderr and do not test their contents
+  -s  Inhibit verbosity while generating or executing debugging scripts
+  -v  Force more detailed output, default for debugging scripts unless -s
+  -x  Have the shell to trace command execution; also implies option -n"
+
+while test $# -gt 0; do
+  case "$1" in
+    --help) echo "$at_usage"; exit 0 ;;
+    --version) echo "$0 ($at_package) $at_version"; exit 0 ;;
+    -e) at_stop_on_error=1; shift ;;
+    -n) at_no_redirs=1; shift ;;
+    -s) at_verbose=; at_silent=1; shift ;;
+    -v) at_verbose=1; at_silent=; shift ;;
+    -x) at_traceon='set -vx'; at_traceoff='set +vx'; at_no_redirs=1; shift ;;
+    *) echo 1>&2 "Try \`$0 --help' for more information."; exit 1 ;;
+  esac
+done
+
+# In the testing suite, we only want to know if the test succeeded or failed.
+# But in debugging scripts, we want more information, so we prefer `diff -u'
+# to the silent `cmp', even if it may happen that we compare binary files.
+# Option `-u' might be less portable, so either change it or use GNU `diff'.
+
+if test -n "$at_verbose"; then
+  at_diff='diff -u'
+else
+  at_diff='cmp -s'
+fi
+
+# Each generated debugging script, containing a single test group, cleans
+# up files at the beginning only, not at the end.  This is so we can repeat
+# the script many times and browse left over files.  To cope with such left
+# over files, the full test suite cleans up both before and after test groups.
+# Snippet )3
+
+if test -n "`wdiff --version | sed -n s/$at_package.*$at_version/OK/p`"; then
+  at_banner="Testing suite for $at_package, version $at_version"
+  at_dashes=`echo $at_banner | sed s/./=/g`
+  echo "$at_dashes"
+  echo "$at_banner"
+  echo "$at_dashes"
+else
+  echo '======================================================='
+  echo 'ERROR: Not using the proper version, no tests performed'
+  echo '======================================================='
+  exit 1
+fi
+
+# Remove any debugging script resulting from a previous run.
+rm -f debug-*.sh
+
+at_failed_list=
+at_ignore_count=0
+
+# FIXME: Tests ignored.
+#							-*- shell-script -*-
+
+if test -z "$at_stop_on_error" || test -z "$at_failed_list"; then
+# Snippet (c1(
+
+rm -rf stdout stderr
+# Snippet )c1)
+  echo cluster.m4:3 > at-check-line
+  if test -n "$at_verbose"; then
+    echo 'testing mdiff clustering'
+    echo $at_n "     $at_c"
+  fi
+  echo $at_n "1. $srcdir/cluster.m4:3       $at_c"
+  if test -z "$at_skip_mode"; then
+    (
+# Snippet (d1(
+# Testing mdiff clustering
+# Snippet )d1)
+# Snippet (s1(
+# starting from `cluster.m4:3'.
+$at_traceon
+
+# Tests not ready, ignore all them for now!
+exit 77
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/cluster.m4:12: testing..."
+echo cluster.m4:12 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+echo | mdiff -G -
+
+test $? = 0 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "@@@ <stdin>
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/cluster.m4:28: testing..."
+echo cluster.m4:28 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+mdiff -G - <<EOF
+a
+a
+b
+EOF
+
+test $? = 0 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "@@@ <stdin>
+.-
+|     1 a
+\`-> :2 [2/2]
+.-> :1 [1/2]
+|     2 a
+\`-
+      3 b
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/cluster.m4:62: testing..."
+echo cluster.m4:62 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+mdiff -G - <<EOF
+a
+a
+b
+a
+a
+b
+EOF
+
+test $? = 0 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "@@@ <stdin>
+.-
+|.-
+||.-
+|||   1 a
+||\`-> :2 [2/4]
+||.-> :1 [1/4]
+|||   2 a
+||\`-> :4 [3/4]
+|\`-> :4 [2/2]
+|     3 b
+\`-> :4 [2/2]
+.-> :1 [1/2]
+|.-> :1 [1/2]
+||.-> :2 [2/4]
+|||   4 a
+||\`-> :5 [4/4]
+||.-> :4 [3/4]
+|||   5 a
+||\`-
+|\`-
+|     6 b
+\`-
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/cluster.m4:90: testing..."
+echo cluster.m4:90 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+mdiff -G - <<EOF
+a
+a
+b
+a
+b
+c
+EOF
+]
+test $? = 0 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "@@@ <stdin>
+.-
+|     1 a
+\`-> :2 [2/3]
+.-
+|.-> :1 [1/3]
+||    2 a
+|\`-> :4 [3/3]
+|     3 b
+\`-> :4 [2/2]
+.-> :2 [1/2]
+|.-> :2 [2/3]
+||    4 a
+|\`-
+|     5 b
+\`-
+      6 c
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/cluster.m4:112: testing..."
+echo cluster.m4:112 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+mdiff -G - <<EOF
+a
+a
+a
+a
+EOF
+]
+test $? = 0 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "@@@ <stdin>
+.-
+|     1 a
+\`-> :2 [2/4]
+.-> :1 [1/4]
+|     2 a
+\`-> :3 [3/4]
+.-> :2 [2/4]
+|     3 a
+\`-> :4 [4/4]
+.-> :3 [3/4]
+|     4 a
+\`-
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/cluster.m4:160: testing..."
+echo cluster.m4:160 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+mdiff -G - <<EOF
+a
+a
+b
+a
+a
+b
+a
+a
+a
+EOF
+
+test $? = 0 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "@@@ <stdin>
+.-
+|.-
+||.-
+|||   1 a
+||\`-> :2 [2/7]
+||.-> :1 [1/7]
+|||   2 a
+||\`-> :4 [3/7]
+|\`-> :4 [2/3]
+|     3 b
+\`-> :4 [2/2]
+.-> :1 [1/2]
+|.-> :1 [1/3]
+||.-> :2 [2/7]
+|||   4 a
+||\`-> :5 [4/7]
+||.-> :4 [3/7]
+|||   5 a
+||\`-> :7 [5/7]
+|\`-> :7 [3/3]
+|     6 b
+\`-
+.-> :4 [2/3]
+|.-> :5 [4/7]
+||    7 a
+|\`-> :8 [6/7]
+|.-> :7 [5/7]
+||    8 a
+|\`-> :9 [7/7]
+\`-
+.-> :8 [6/7]
+|     9 a
+\`-
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+# Snippet )s1)
+    )
+    case $? in
+      0) echo ok
+	 ;;
+      77) echo "ignored near \``cat at-check-line`'"
+	  at_ignore_count=`expr $at_ignore_count + 1`
+	  ;;
+      *) echo "FAILED near \``cat at-check-line`'"
+	 at_failed_list="$at_failed_list 1"
+	 ;;
+    esac
+  else
+     echo 'ignored (skipped)'
+     at_ignore_count=`expr $at_ignore_count + 1`
+  fi
+  at_test_count=1
+  if test -z "$at_stop_on_error" || test -z "$at_failed_list"; then
+    rm -rf stdout stderr
+  fi
+fi
+
+#							-*- shell-script -*-
+
+if test -z "$at_stop_on_error" || test -z "$at_failed_list"; then
+# Snippet (c2(
+
+rm -rf wdiff-a.txt wdiff-b.txt stdout stderr
+# Snippet )c2)
+  echo wdiff.m4:5 > at-check-line
+  if test -n "$at_verbose"; then
+    echo 'testing wdiff output formats'
+    echo $at_n "     $at_c"
+  fi
+  echo $at_n "2. $srcdir/wdiff.m4:5         $at_c"
+  if test -z "$at_skip_mode"; then
+    (
+# Snippet (d2(
+# Testing wdiff output formats
+# Snippet )d2)
+# Snippet (s2(
+# starting from `wdiff.m4:5'.
+$at_traceon
+
+cat > wdiff-a.txt <<'EOF'
+This is input1
+The quick brown fox jumps over the lazy dog.
+The hurried orange fox jumps over the lazy dog.
+A slow green panda walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+EOF
+
+cat > wdiff-b.txt <<'EOF'
+This is input2
+The quick brown fox jumps over the lazy dog.
+The slow red fox jumps over the lazy dog.
+A slow, short green giraffe walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+EOF
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:30: testing..."
+echo wdiff.m4:30 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff  wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "This is [-input1-] {+input2+}
+The quick brown fox jumps over the lazy dog.
+The [-hurried orange-] {+slow red+} fox jumps over the lazy dog.
+A [-slow-] {+slow, short+} green [-panda-] {+giraffe+} walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:38: testing..."
+echo wdiff.m4:38 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff -1 wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "This is {+input2+}
+The quick brown fox jumps over the lazy dog.
+The {+slow red+} fox jumps over the lazy dog.
+A {+slow, short+} green {+giraffe+} walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:46: testing..."
+echo wdiff.m4:46 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff -2 wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "This is [-input1-]
+The quick brown fox jumps over the lazy dog.
+The [-hurried orange-] fox jumps over the lazy dog.
+A [-slow-] green [-panda-] walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:59: testing..."
+echo wdiff.m4:59 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff -3 wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "
+======================================================================
+ [-input1-] {+input2+}
+======================================================================
+ [-hurried orange-] {+slow red+}
+======================================================================
+ [-slow-] {+slow, short+}
+======================================================================
+ [-panda-] {+giraffe+}
+======================================================================
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:75: testing..."
+echo wdiff.m4:75 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff -12 wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "This is
+======================================================================
+
+The quick brown fox jumps over the lazy dog.
+The
+======================================================================
+ fox jumps over the lazy dog.
+A
+======================================================================
+ green
+======================================================================
+ walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:88: testing..."
+echo wdiff.m4:88 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff -13 wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "
+======================================================================
+ input2
+======================================================================
+ slow red
+======================================================================
+ slow, short
+======================================================================
+ giraffe
+======================================================================
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:101: testing..."
+echo wdiff.m4:101 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff -23 wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "
+======================================================================
+ input1
+======================================================================
+ hurried orange
+======================================================================
+ slow
+======================================================================
+ panda
+======================================================================
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:103: testing..."
+echo wdiff.m4:103 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff -123 wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  test ! -s stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:108: testing..."
+echo wdiff.m4:108 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff -123s wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "wdiff-a.txt: 39 words  34 87% common  0 0% deleted  5 12% changed
+wdiff-b.txt: 40 words  34 85% common  0 0% inserted  6 15% changed
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+test -n "$at_verbose" \
+  && echo "$srcdir/wdiff.m4:116: testing..."
+echo wdiff.m4:116 > at-check-line
+test -z "$at_no_redirs" && exec 5>&1 6>&2 1>stdout 2>stderr
+$at_traceon
+wdiff  -w\( -x\) -y\<\< -z\>\> wdiff-a.txt wdiff-b.txt
+test $? = 1 || exit 1
+$at_traceoff
+if test -z "$at_no_redirs"; then
+  exec 1>&5 2>&6
+  echo $at_n "This is (input1) <<input2>>
+The quick brown fox jumps over the lazy dog.
+The (hurried orange) <<slow red>> fox jumps over the lazy dog.
+A (slow) <<slow, short>> green (panda) <<giraffe>> walks around a sleeping cat.
+The middling red fox jumps over the lazy dog.
+$at_c" | $at_diff - stdout || exit 1
+  test ! -s stderr || exit 1
+fi
+$at_traceon
+
+$at_traceoff
+# Snippet )s2)
+    )
+    case $? in
+      0) echo ok
+	 ;;
+      77) echo "ignored near \``cat at-check-line`'"
+	  at_ignore_count=`expr $at_ignore_count + 1`
+	  ;;
+      *) echo "FAILED near \``cat at-check-line`'"
+	 at_failed_list="$at_failed_list 2"
+	 ;;
+    esac
+  else
+     echo 'ignored (skipped)'
+     at_ignore_count=`expr $at_ignore_count + 1`
+  fi
+  at_test_count=2
+  if test -z "$at_stop_on_error" || test -z "$at_failed_list"; then
+    rm -rf wdiff-a.txt wdiff-b.txt stdout stderr
+  fi
+fi
+
+# Wrap up the testing suite with summary statistics.
+
+rm -f at-check-line
+at_fail_count=0
+if test -z "$at_failed_list"; then
+  if test "$at_ignore_count" = 0; then
+    at_banner="All $at_test_count tests were successful"
+  else
+    at_banner="All $at_test_count tests were successful ($at_ignore_count ignored)"
+  fi
+else
+  echo
+  echo $at_n "Writing \`debug-NN.sh' scripts, NN =$at_c"
+  for at_group in $at_failed_list; do
+    echo $at_n " $at_group$at_c"
+    ( echo '#!/bin/sh'
+      sed -n '/^# Snippet (1/,/^# Snippet )1/p' atconfig
+      test -z "$at_silent" && echo 'at_verbose=1'
+      sed -n '/^# Snippet (2/,/^# Snippet )2/p' atconfig
+      sed -n "/^# Snippet (3/,/^# Snippet )3/p" $0
+      sed -n "/^# Snippet (c$at_group(/,/^# Snippet )c$at_group)/p" $0
+      at_desc="`sed -n \
+        '/^# Snippet (d'$at_group'(/,/^# Snippet )d'$at_group')/p' $0 \
+        | sed -n '2s/^# //p'`"
+      echo 'if test -n "$at_verbose"; then'
+      echo '  at_banner="$0: '$at_desc'"'
+      echo '  at_dashes=`echo $at_banner | sed s/./=/g`'
+      echo '  echo'
+      echo '  echo "$at_dashes"'
+      echo '  echo "$at_banner"'
+      echo '  echo "$at_dashes"'
+      echo 'fi'
+      echo
+      sed -n "/^# Snippet (d$at_group(/,/^# Snippet )d$at_group)/p" $0
+      sed -n "/^# Snippet (s$at_group(/,/^# Snippet )s$at_group)/p" $0
+      echo 'exit 0'
+    ) | grep -v '^# Snippet' > debug-$at_group.sh
+    chmod +x debug-$at_group.sh
+    at_fail_count=`expr $at_fail_count + 1`
+  done
+  echo ', done'
+  if test -n "$at_stop_on_error"; then
+    at_banner='ERROR: One of the tests failed, inhibiting subsequent tests'
+  else
+    at_banner="ERROR: Suite unsuccessful, $at_fail_count of $at_test_count tests failed"
+  fi
+fi
+at_dashes=`echo $at_banner | sed s/./=/g`
+echo
+echo "$at_dashes"
+echo "$at_banner"
+echo "$at_dashes"
+
+if test -n "$at_failed_list"; then
+  if test -z "$at_silent"; then
+    echo
+    echo 'When reporting failed tests to maintainers, do not merely list test'
+    echo 'numbers, as the numbering changes between releases and pretests.'
+    echo 'Be careful to give at least all the information you got about them.'
+    echo 'You may investigate any problem if you feel able to do so, in which'
+    echo 'case the generated debugging scripts provide good starting points.'
+    echo "Go on and modify them at will.  \`./debug-NN --help' gives usage"
+    echo 'information.  Now, failed tests will be executed again, verbosely.'
+    for at_group in $at_failed_list; do
+      ./debug-$at_group.sh
+    done
+  fi
+  exit 1
+fi
+
+exit 0

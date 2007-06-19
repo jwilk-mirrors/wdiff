@@ -1,0 +1,1168 @@
+\input texinfo
+@c %**start of header
+@setfilename wdiff.info
+@settitle A word difference finder (and others)
+@finalout
+@c %**end of header
+
+@include version.texi
+
+@ifinfo
+@format
+START-INFO-DIR-ENTRY
+* wdiff and diff tools: (wdiff).        GNU wdiff and diff related tools.
+* mdiff: (wdiff)mdiff invocation.               Line cluster finder.
+* unify: (wdiff)unify invocation.               Diff format converter.
+* wdiff: (wdiff)wdiff invocation.               Word difference finder.
+END-INFO-DIR-ENTRY
+@end format
+@end ifinfo
+
+@ifinfo
+This file documents the @code{wdiff} command, which compares two files,
+finding which words have been deleted or added to the first for getting
+the second.  It also documents some other @code{diff} related tools.
+
+Copyright (C) 1992, 1994, 1997, 1998, 1999 Free Software Foundation, Inc.
+
+Permission is granted to make and distribute verbatim copies of
+this manual provided the copyright notice and this permission notice
+are preserved on all copies.
+
+@ignore
+Permission is granted to process this file through TeX and print the
+results, provided the printed document carries copying permission
+notice identical to this one except for the removal of this paragraph
+(this paragraph not being relevant to the printed manual).
+
+@end ignore
+Permission is granted to copy and distribute modified versions of this
+manual under the conditions for verbatim copying, provided that the entire
+resulting derived work is distributed under the terms of a permission
+notice identical to this one.
+
+Permission is granted to copy and distribute translations of this manual
+into another language, under the above conditions for modified versions,
+except that this permission notice may be stated in a translation approved
+by the Foundation.
+@end ifinfo
+
+@titlepage
+@title GNU wdiff, version @value{VERSION}
+@subtitle A word difference finder (and others)
+@subtitle Edition @value{EDITION}, @value{UPDATED}
+@author Fran@,{c}ois Pinard
+
+@page
+@vskip 0pt plus 1filll
+Copyright @copyright{} 1992, 1994, 1997, 1998 Free Software Foundation, Inc.
+
+Permission is granted to make and distribute verbatim copies of
+this manual provided the copyright notice and this permission notice
+are preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this
+manual under the conditions for verbatim copying, provided that the entire
+resulting derived work is distributed under the terms of a permission
+notice identical to this one.
+
+Permission is granted to copy and distribute translations of this manual
+into another language, under the above conditions for modified versions,
+except that this permission notice may be stated in a translation approved
+by the Foundation.
+@end titlepage
+
+@ifnottex
+@node Top, Overview, (dir), (dir)
+@top GNU @code{wdiff}
+
+These Info pages document @code{wdiff}, a word difference finder, together
+with some other @code{diff} related tools.
+
+This is for release @value{VERSION}.
+
+@menu
+* Overview::                    Overview
+* mdiff::                       The line cluster finder
+* wdiff::                       The word difference finder
+* unify::                       The diff format converter
+* Compatibility::               How @code{mdiff} differs
+
+@detailmenu
+
+ --- The Detailed Node Listing ---
+
+The multi-difference finder
+
+* mdiff invocation::            Invoking @code{mdiff}
+* Examples::                    Actual examples of @code{mdiff} usage
+* Efficiency::                  Resource considerations and efficiency
+
+The word difference finder
+
+* wdiff invocation::            Invoking @code{wdiff}
+
+The diff format converter
+
+* unify invocation::            Invoking @code{unify}
+
+How @code{mdiff} differs
+
+* diff Compatibility::          Differences with @code{diff}
+* wdiff Compatibility::         Differences with @code{wdiff}
+@end detailmenu
+@end menu
+
+@end ifnottex
+
+@node Overview, mdiff, Top, Top
+@chapter Overview
+
+@c @item @b{@code{wdiff}} @value{hfillkludge} (UtilT, SrcCD)
+@c
+@code{mdiff} studies one or more input files altogether, and discovers
+blocks of items which repeat at more than one place.  Items may be lines,
+words, or units defined by user.  When in word mode, @code{mdiff} compares
+two files, finding which words have been deleted or added to the first
+in order to create the second, which is useful when two texts differ
+only by a few words and paragraphs have been refilled.  The program has
+many output formats and interacts well with terminals and pagers (notably
+with @code{less}).
+
+@code{unify} is able to convert context diffs to unidiff format, or the
+other way around.  Some people just prefer one format and despise the
+other, it is a religious issue.  This program brings peace back to Earth.
+
+@code{wdiff}, which originally gave the name to the package, is now
+obsolete, and exists merely a front-end to GNU @code{mdiff}.
+
+@code{wdiff} and @code{mdiff} were written by Fran@,{c}ois Pinard, while
+@code{unify} has been contributed by Wayne Davison.  Please report bugs to
+@w{@file{wdiff-bugs@@iro.umontreal.ca}}.  Include the version number, which
+you can find by running the program with @samp{--version}.  Please include
+in your message sufficient input to reproduce what you got, the output you
+indeed expected, and careful explanations about the nature of the problem.
+
+@node mdiff, wdiff, Overview, Top
+@chapter The multi-difference finder
+
+The name @code{mdiff} stands for @emph{multi-}@code{diff}, and has the
+purpose of encompassing the functionnality of a few other @code{diff}-type
+programs.  The prefix @emph{multi-} also stands for the fact the program
+is often able to study more than two input files at once.
+
+The theory of operation is simple.  The program splits all input files
+into a sequence of items, which may be lines or words.  @code{mdiff} is
+then said to operate either in @dfn{line mode} or in @dfn{word mode}.
+It then tries to find sequences of items which are repeated in the
+input files.  Such common sequences are called @dfn{clusters} of items,
+and each occurrence of a repetition is called a cluster @dfn{member}.
+What remains, once all cluster members are conceptually removed from all
+input files, is a set of @dfn{differences}.  The role of @code{mdiff}
+is to conveniently list either cluster members and differences.
+
+When input files are very similar, it is likely that clusters will
+encompass many items (lines or words) and differences will be small.  So,
+most listing options inhibit the printing of cluster members.  However,
+one may ask for the few beginning or ending items of cluster members
+to be printed nevertheless, as a way to provide a kind of feedback
+or @dfn{context} of the difference, those context items are sometimes
+said to be at the @dfn{horizon} of the difference.  In merged listings,
+cluster members may just not be printed, except maybe for a few context
+items at the beginning of the member (just after a difference), and a
+few context items at the end of the member (just before a difference).
+
+When cluster members are short, or if you prefer, when the differences
+are not far away from each other, it is quite possible that the required
+context items often cover the full extent of the cluster members, which
+then are not inhibited anymore when this happens.  A run of differences
+intermixed with such non-suppressed members is called a @dfn{hunk}.
+Some reports produced by @code{mdiff} are showned as a list of hunks,
+and it is to be understood that common items are elided between hunks.
+However, each hunk in itself has no item missing, and each item of the
+hunk is analysed as pertaining either to only one of the input file or
+to many of them.  Each hunk is preceded by a header, which explains the
+line position of all input files prior to the hunk itself.  By comparing
+a hunk header with the previous hunk header, the user can have a hint
+about how much printing was spared.
+
+When two input files are quite similar, clusters are usually presented in
+the same order in all files.  If a cluster member @var{A} in the first
+file corresponds to a cluster member @var{A} in the second file, it is
+likely that another cluster member @var{B} which appears @emph{after}
+@var{A} in the first file will correspond to a cluster member @var{B}
+in the second file which appears @emph{after} @var{A} as well.  So, in
+many cases, while producing merged listing of files, cluster members may
+be made to naturally correspond to one another.  However, this is not
+always true, in particular when the second file has been produced from
+the first by moving a big chunk of code away from its original position.
+In such cases, we say that members have @dfn{crossed}.  When members are
+crossed and @code{mdiff} has to make a merged listing, it selects one
+cluster member as being @emph{naturally} associated with its correspondant
+(either the pair of @var{A}'s or the pair of @var{B}'s) and then consider
+the other cluster as being part of a difference.  The crossed nature of
+the member may still be analysed and reported, or it may be ignored.
+
+The standard @code{diff} program is meant for when there are exactly two
+input files, for which crossed members should be ignored.  @code{mdiff}
+output format has been designed in such a way that it should resemble
+@code{diff} output for this precise case.  However, @code{diff} formats are
+not sufficient for representing all cases which @code{mdiff} may address,
+and this is not mature yet.  That is why @code{mdiff}, in its current
+state, still experiments with output formats, which are subject to change.
+
+When the input files are not very similar, or rather different, merged
+listings are not very significant nor useful, and may even be rather
+confusing.  The best to do in such cases is using @code{mdiff} for making
+an annotated relisting of all input files, in which cluster members are
+properly identified and referred to one another.
+
+Statistics.
+
+@example
+Read summary: 137 files, 41975 lines
+Work summary: 439 clusters, 1608 members, 8837 duplicate lines
+@end example
+
+@noindent
+The summary lines, triggered by the @samp{-s} option, say that about 8837
+non-ignorable lines could be removed over the 41975 which has been read,
+by using functions, @code{#include}, @code{#define}, or similar devices.
+
+If one manages to execute @code{mdiff} within GNU Emacs so the output
+described above is collected into the @code{*compilation*} buffer, the
+command @kbd{C-`} (@samp{@w{M-x next-error}}) will proceed to the next
+cluster member in the other window, and similarily for other compilation
+mode commands.  This is a useful way for handling @code{mdiff} output.
+
+Each line in the hunk, after the header, comes from the compared files,
+but is shifted right so the first column (or the first few columns)
+of each line gives information about where the line is coming from.
+A space indicates a line which is common to all files.  In case there
+are only two input files, a minus sign indicates a line from the first
+file and a plus sign a line from the second file.  Else, a letter from
+@samp{a} to @samp{z}, or more than one letter if there are more than
+26 files, indicates to which file the line pertains.  If a line or a
+block of line pertains to many files but not to all of them, the first
+column holds a vertical bar, and the line or block of lines is bracketed
+between @samp{@@/} and @samp{@@\} lines, which are kind of comments within
+the hunk.  The initial bracket lists all file letters that are related
+to the incoming line.
+
+I initially wrote @code{mdiff} specifically to help cleaning a C++
+project which was a bit large, and in which many big monolithic classes
+were derived from each other most probably by rough copying followed by
+local modifications.  I intended to fragment most common clusters and
+segregate the parts into virtual methods in outer classes, and override
+these methods, as appropriate, with less common variants within inner
+classes.  @code{mdiff} was good at pointing me to exactly where I should
+look at.  Of course, it never did the cleanup for me, but it helped doing
+the research about what should be done.  Reusing @code{mdiff} over the
+half-cleaned project gave me more fine grained analysis of what was left
+to consider.
+
+@menu
+* mdiff invocation::            Invoking @code{mdiff}
+* Examples::
+* Efficiency::                  Resource considerations and efficiency
+@end menu
+
+@node mdiff invocation, Examples, mdiff, mdiff
+@section Invoking @code{mdiff}
+
+The format for running the @code{mdiff} program is:
+
+@example
+mdiff @var{option} @dots{} @var{file} @dots{}
+@end example
+
+@code{mdiff} read all input @var{file}s and produces its results on
+standard output.  Optionally, standard error might receive a progress
+report or a few statistics.
+
+@code{wdiff} compares files @var{old_file} and @var{new_file} and
+produces an annotated copy of @var{new_file} on standard output.  The
+empty string or the string @samp{-} denotes standard input, but standard
+input cannot be used twice in the same invocation.  The complete path of
+a file should be given, a directory name is not accepted.  @code{wdiff}
+will exit with a status of 0 if no differences were found, a status of 1
+if any differences were found, or a status of 2 for any error.
+
+In this documentation, @dfn{deleted text} refers to text in
+@var{old_file} which is not in @var{new_file}, while @dfn{inserted text}
+refers to text on @var{new_file} which is not in @var{old_file}.
+
+@code{mdiff} supports the following command line options:
+
+@table @samp
+@item --version
+Merely prints the version numbers on standard output, and exits without
+doing anything else.
+
+@item --help
+Merely prints a page of help on standard output, and exits without doing
+anything else.
+
+@item --statistics
+@itemx -s
+First tells the number of files read, and the number of lines found
+in this file.  Then says how many clusters have been found, how many
+members are covered by all clusters.  It also gives a number of lines
+which could have been spared if all reported repetitions were avoided,
+and this count excludes lines which are ignorable.  All this output is
+directed to standard error.
+
+@item --threshold=@var{number}
+@itemx -t @var{number}
+Specifies the minimum number of non-ignorable lines which are required for
+two runs of lines to compare as equal.  No cluster member may ever have
+less than @var{number} lines.  By default, clusters have 4 lines or more.
+
+@item --help
+@itemx -h
+Print an informative help message describing the options.
+
+@item --version
+@itemx -V
+Print the version number of @code{wdiff} on the standard error output.
+
+@item --no-deleted
+@itemx -1
+Avoid producing deleted words on the output.  If neither @samp{-1} or
+@samp{-2} is selected, the original right margin may be exceeded for
+some lines.
+
+@item --no-inserted
+@itemx -2
+Avoid producing inserted words on the output.  When this flag is given,
+the whitespace in the output is taken from @var{old_file} instead of
+@var{new_file}.  If neither @samp{-1} or @samp{-2} is selected, the
+original right margin may be exceeded for some lines.
+
+@item --no-common
+@itemx -3
+Avoid producing common words on the output.  When this option is not
+selected, common words and whitespace are taken from @var{new_file},
+unless option @samp{-2} is given, in which case common words and
+whitespace are rather taken from @var{old_file}.  When selected,
+differences are separated from one another by lines of dashes.
+Moreover, if this option is selected at the same time as @samp{-1} or
+@samp{-2}, then none of the output will have any emphasis, i.e. no bold
+or underlining.  Finally, if this option is not selected, but both
+@samp{-1} and @samp{-2} are, then sections of common words between
+differences are segregated by lines of dashes.
+
+@item --ignore-case
+@itemx -c
+Do not consider case difference while comparing words.  Each lower case
+letter is seen as identical to its upper case equivalent for the purpose
+of deciding if two words are the same.
+
+@item --statistics
+@itemx -s
+On completion, for each file, the total number of words, the number of
+common words between the files, the number of words deleted or inserted
+and the number of words that have changed is output.  (A changed word is
+one that has been replaced or is part of a replacement.)  Except for the
+total number of words, all of the numbers are followed by a percentage
+relative to the total number of words in the file.
+
+@item --auto-pager
+@itemx -a
+Some initiatives which were previously automatically taken in previous
+versions of @code{wdiff} are now put under the control of this option.
+By using it, a pager is interposed whenever the @code{wdiff} output is
+directed to the user's terminal.  Without this option, no pager will be
+called, the user is then responsible for explicitly piping @code{wdiff}
+output into a pager, if required.
+
+The pager is selected by the value of the @code{PAGER} environment
+variable when @code{wdiff} is run.  If @code{PAGER} is not defined at
+run time, then a default pager, selected at installation time, will be
+used instead.  A defined but empty value of @code{PAGER} means no pager
+at all.
+
+When a pager is interposed through the use of this option,
+one of the options @samp{-l} or @samp{-t} is also selected, depending on
+whether the string @samp{less} appears in the pager's name or not.
+
+It is often useful to define @samp{wdiff} as an alias for @samp{wdiff
+-a}.  However, this @emph{hides} the normal @code{wdiff} behaviour.  The
+default behaviour may be restored simply by piping the output from
+@code{wdiff} through @code{cat}.  This dissociates the output from the
+user's terminal.
+
+@item --printer
+@itemx -p
+Use over-striking to emphasize parts of the output.  Each character of the
+deleted text is underlined by writing an underscore @samp{_} first,
+then a backspace and then the letter to be underlined.  Each character of the
+inserted text is emboldened by writing it twice, with a backspace in
+between.  This option is not selected by default.
+
+@item --less-mode
+@itemx -l
+Use over-striking to emphasize parts of output.  This option works as
+option @code{-p}, but also over-strikes whitespace associated with
+inserted text.  @code{less} shows such whitespace using reverse video.
+This option is not selected by default.  However, it is automatically
+turned on whenever @code{wdiff} launches the pager @code{less}.  See
+option @samp{-a}.
+
+This option is commonly used in conjunction with @code{less}:
+
+@example
+wdiff -l @var{old_file} @var{new_file} | less
+@end example
+
+@item --terminal
+@itemx -t
+Force the production of @code{termcap} strings for emphasising parts of
+output, even if the standard output is not associated with a terminal.
+The @samp{TERM} environment variable must contain the name of a valid
+@code{termcap} entry.  If the terminal description permits, underlining
+is used for marking deleted text, while bold or reverse video is used
+for marking inserted text.  This option is not selected by default.
+However, it is automatically turned on whenever @code{wdiff} launches a
+pager, and it is known that the pager is @emph{not} @code{less}.  See
+option @samp{-a}.
+
+This option is commonly used when @code{wdiff} output is not redirected,
+but sent directly to the user terminal, as in:
+
+@example
+wdiff -t @var{old_file} @var{new_file}
+@end example
+
+A common kludge uses @code{wdiff} together with the pager @code{more},
+as in:
+
+@example
+wdiff -t @var{old_file} @var{new_file} | more
+@end example
+
+However, some versions of @code{more} use @code{termcap} emphasis for
+their own purposes, so strange interactions are possible.
+
+@item --start-delete @var{argument}
+@itemx -w @var{argument}
+Use @var{argument} as the @dfn{start delete} string.  This string will
+be output prior to any sequence of deleted text, to mark where it
+starts.  By default, no start delete string is used unless there is no
+other means of distinguishing where such text starts; in this case the
+default start delete string is @samp{[-}.
+
+@item --end-delete @var{argument}
+@itemx -x @var{argument}
+Use @var{argument} as the @dfn{end delete} string.  This string will be
+output after any sequence of deleted text, to mark where it ends.  By
+default, no end delete string is used unless there is no other means of
+distinguishing where such text ends; in this case the default end delete
+string is @samp{-]}.
+
+@item --start-insert @var{argument}
+@itemx -y @var{argument}
+Use @var{argument} as the @dfn{start insert} string.  This string will
+be output prior to any sequence of inserted text, to mark where it
+starts.  By default, no start insert string is used unless there is no
+other means of distinguishing where such text starts; in this case the
+default start insert string is @samp{@{+}.
+
+@item --end-insert @var{argument}
+@itemx -z @var{argument}
+Use @var{argument} as the @dfn{end insert} string.  This string will be
+output after any sequence of inserted text, to mark where it ends.  By
+default, no end insert string is used unless there is no other means of
+distinguishing where such text ends; in this case the default end insert
+string is @samp{+@}}.
+
+@item --avoid-wraps
+@itemx -n
+Avoid spanning the end of line while showing deleted or inserted text.
+Any single fragment of deleted or inserted text spanning many lines will
+be considered as being made up of many smaller fragments not containing
+a newline.  So deleted text, for example, will have an end delete string
+at the end of each line, just before the new line, and a start delete
+string at the beginning of the next line.  A long paragraph of inserted
+text will have each line bracketed between start insert and end insert
+strings.  This behaviour is not selected by default.
+
+@end table
+
+Some choices are hard-wired into the program, but might well become options
+in later releases.  For example:
+
+@itemize @bullet
+@item
+No cluster may span a file boundary, that is, start near the end of one
+input file and continue at the beginning of the next file.
+
+@item
+A cluster may have many members from the same file.
+
+@item
+White space is ignored between the beginning of a line and the first
+non-white character.
+
+@item
+White space is significant when embedded in a line, or when ending a line.
+
+@item
+Lines having no significant part (only white lines for now) are
+@dfn{ignorable}.  Such ignorable lines are logically considered as not
+being part of the input files for the sake of comparisons.
+
+@item
+Comments from the C language are not especially ignored.  Unless ignored
+for other reasons (being white lines), they are indeed significant lines.
+
+@item
+No cluster member may ever directly start nor end with ignorable lines.
+However, ignorable lines may still be embedded within a cluster member.
+
+@item
+In the generated output, clusters containing the biggest number of
+ignorable lines are output first, while smaller clusters appear last.
+All lines pertaining to a single cluster are output together.  Within a
+cluster, members are listed in the order of the initial reading of
+input files.
+
+@end itemize
+
+Note that options @samp{-p}, @samp{-t}, and @samp{-[wxyz]} are not
+mutually exclusive.  If you use a combination of them, you will merely
+accumulate the effect of each.  Option @samp{-l} is a variant of option
+@samp{-p}.
+
+@node Examples, Efficiency, mdiff invocation, mdiff
+@section Actual examples of @code{mdiff} usage
+
+This section presents a few examples of usage, most of them have been
+contributed by @code{wdiff} users.
+
+@itemize @bullet
+@item Change bars example.
+
+@itemize @bullet
+
+@item
+This example comes from a discussion with Joe Wells,
+@samp{jbw@@cs.bu.edu}.
+
+The following command produces a copy of @var{new_file}, shifted right
+one space to accommodate change bars since the last revision, ignoring
+those changes coming only from paragraph refilling.  Any line with new
+or changed text will get a @samp{|} in column 1.  However, deleted text
+is not shown nor marked.
+
+@example
+wdiff -1n @var{old_file} @var{new_file} |
+  sed -e 's/^/  /;/@{+/s/^ /|/;s/@{+//g;s/+@}//g'
+@end example
+
+Here is how it works.  Word differences are found, paying attention only
+to additions, as requested by option @samp{-1}.  For bigger changes
+which span line boundaries, the insert bracket strings are repeated on
+each output line, as requested by option @samp{-n}.  This output is then
+reformatted with a @code{sed} script which shifts the text right two
+columns, turns the initial space into a bar only if there is some new
+text on that line, then removes all insert bracket strings.
+
+@end itemize
+
+@item @code{La@TeX{}} example.
+
+@itemize @bullet
+@item
+
+This example has been provided by Steve Fisk,
+@samp{fisk@@polar.bowdoin.edu}.
+
+The following uses La@TeX{} to put deleted text in boxes, and new text
+in double boxes:
+
+@example
+wdiff -w "\fbox@{" -x "@}" -y "\fbox@{\fbox@{" -z "@}@}" @dots{}
+@end example
+
+@noindent
+works nicely.
+
+@end itemize
+
+@item @code{troff} example.
+
+@itemize @bullet
+
+@item
+This example comes from Paul Fox, @samp{pgf@@cayman.com}.
+
+Using @code{wdiff}, with some @code{troff}-specific delimiters gives
+@emph{much} better output.  The delimiters I used:
+
+@example
+wdiff -w'\s-5' -x'\s0' -y'\fB' -z'\fP' @dots{}
+@end example
+
+This makes the pointsize of deletions 5 points smaller than normal, and
+emboldens insertions.  Fantastic!
+
+I experimented with:
+
+@example
+wdiff -w'\fI' -x'\fP' -y'\fB' -z'\fP'
+@end example
+
+since that's more like the defaults you use for terminals or printers,
+but since I actually use italics for emphasis in my documents, I thought
+the point size thing was clearer.
+
+I tried it on code, and it works surprisingly well there, too...
+
+@item
+Marty Leisner @samp{leisner@@eso.mc.xerox.com} says:
+
+In the previous example, you had smaller text being taken out and bold
+face inserted.  I had smaller text being taken out and larger text being
+inserted, I'm using bold face for other things, so this is more clear.
+
+@example
+wdiff -w '\s-3' -x'\s0' -y'\s+3' -z'\s0'
+@end example
+
+@end itemize
+
+@end itemize
+
+On a related note, GNU Emacs users might notice that the interactive
+function @code{compare-windows} ignores changes in whitespace, if it is
+given a numeric argument.  If the variable @code{compare-ignore-case}
+is non-@code{nil}, it ignores differences in case as well.  So, in a way,
+this offers a kind of incremental version of @code{wdiff}.
+
+@node Efficiency,  , Examples, mdiff
+@section Resource considerations and efficiency
+
+@table @asis
+@item Memory consumption
+
+@code{mdiff} can easily handle medium-sized project.  For a 32 bits
+architecture, the memory requirements may computed like this:
+
+@itemize @bullet
+@item
+8 bytes per file
+@item
+8 bytes per line
+@item
+4 bytes per cluster
+@item
+8 bytes per cluster member
+@end itemize
+
+@item Time consumption
+
+To evaluate the speed, consider the example shown above
+(@pxref{mdiff}), and yielding these statistics:
+
+@example
+Read summary: 137 files, 41975 lines
+Work summary: 439 clusters, 1608 members @dots{}
+@end example
+
+@noindent
+Once many files in the memory cache, and redirecting the output to
+@file{/dev/null}, the processing takes 3 seconds of real time on an
+Intel 486/100, which looks good.  I was indeed afraid of some hidden
+O(@var{n}^2) behaviour@footnote{@var{n} is the total number of lines.},
+even if the program is mostly O(@var{n}*log(@var{n})).  Maybe one will
+discover or construct cases putting @code{mdiff} on its knees.  So far,
+@code{mdiff} seemingly behaves well for the little problems given to it.
+If we devise and generate a more traditional @code{diff}-like output,
+in which all input files are relisted, this will add some time to the
+processing, but it will be only linear with regard with the total length
+of input files.
+
+There is a clever optimized sorting algorithm for @emph{all} substrings
+of a file, which might be generalised to handle words or lines for
+@code{mdiff}.  But since the program is already faster than we initially
+expected, there is no emergency to resort to using such an algorithm.
+
+@item Trading complexity for clarity
+
+When lines repeat a lot, there are surprisingly many ways to relate blocks
+of lines, and reporting them @emph{all} can make very hairy listings.
+Any choice about reporting similarities, or not, is somewhat arbitrary,
+but we ought to make some of such choices for the program to be practical.
+Some of these choices are detailed here.
+
+If all members of a given cluster @var{A} are proper subsets of all
+members of another given cluster @var{B}, then cluster @var{A} is wholly
+forgotten.  However, let's presume for example that there are more members
+in @var{A} than in @var{B}.  Then, some members of @var{A} necessarily
+appear unrelated to any member of @var{B}.  In such case, it has been
+decided more useful to report @emph{all} occurrences of @var{A} members,
+even those embedded within occurrences of @var{B} members.  When only
+interested in members @var{B}, annotations pertaining to @var{A} may be
+perceived as clutter.  However, when interested in members of @var{A},
+getting all of them is probably the most useful choice.
+
+It sometimes happen that members of a very same cluster overlap.  In the
+string @samp{@w{a a a}}, there are two overlapping members for the cluster
+represented by the string @samp{@w{a a}}, one from the first two @samp{a},
+another from the last two @samp{a}.  In such cases, one member of such
+an overlap is automatically chopped so the overlap does not occur.
+
+White lines and items containing only delimiters are the possible source of
+a lot of complexity, if these are fully taken as significant.  Since this
+does not add much to clarity, they are better ignored, usually, through
+using @samp{--ignore-blank-lines} (@samp{-B}) or @samp{--ignore-delimiters}
+(@samp{-j}).  Increasing the value of @samp{--minimum-size=@var{items}}
+(@samp{@w{-J @var{items}}}) option also cut off complexity in favor of
+clarity, yet some small matches may then go unnoticed.  Exactly how to
+best adjust the @var{items} value is left for the user to decide.
+
+@end table
+
+@node wdiff, unify, mdiff, Top
+@chapter The word difference finder
+
+The program @code{wdiff} is a front end to @code{mdiff} for comparing
+files on a word per word basis.
+
+In the first releases of the package, @code{wdiff} was a front-end to
+@code{diff} as found in the GNU @code{diffutils} package.  Many users
+suggested features, which were in turn inviting for the integration of
+@code{wdiff} into @code{diffutils}.  Collaboration proved to be rather
+difficult.  After a few years, the @code{wdiff} author finally gave in
+and created @code{mdiff} as a way to break out of the situation and for
+becoming able to proceed with users' suggestions.
+
+A word is anything between whitespace.  This is useful for comparing two
+texts in which a few words have been changed and for which paragraphs
+have been refilled.
+
+@menu
+* wdiff invocation::            Invoking @code{wdiff}
+@end menu
+
+@node wdiff invocation,  , wdiff, wdiff
+@section Invoking @code{wdiff}
+
+The format for running the @code{wdiff} program is:
+
+@example
+wdiff @var{option} @dots{} @var{old_file} @var{new_file}
+@end example
+
+@code{wdiff} compares files @var{old_file} and @var{new_file} and
+produces an annotated copy of @var{new_file} on standard output.  The
+empty string or the string @samp{-} denotes standard input, but standard
+input cannot be used twice in the same invocation.  The complete path of
+a file should be given, a directory name is not accepted.  @code{wdiff}
+will exit with a status of 0 if no differences were found, a status of 1
+if any differences were found, or a status of 2 for any error.
+
+In this documentation, @dfn{deleted text} refers to text in
+@var{old_file} which is not in @var{new_file}, while @dfn{inserted text}
+refers to text on @var{new_file} which is not in @var{old_file}.
+
+@code{wdiff} supports the following command line options:
+
+@table @samp
+@item --help
+@itemx -h
+Print an informative help message describing the options.
+
+@item --version
+@itemx -V
+Print the version number of @code{wdiff} on the standard error output.
+
+@item --no-deleted
+@itemx -1
+Avoid producing deleted words on the output.  If neither @samp{-1} or
+@samp{-2} is selected, the original right margin may be exceeded for
+some lines.
+
+@item --no-inserted
+@itemx -2
+Avoid producing inserted words on the output.  When this flag is given,
+the whitespace in the output is taken from @var{old_file} instead of
+@var{new_file}.  If neither @samp{-1} or @samp{-2} is selected, the
+original right margin may be exceeded for some lines.
+
+@item --no-common
+@itemx -3
+Avoid producing common words on the output.  When this option is not
+selected, common words and whitespace are taken from @var{new_file},
+unless option @samp{-2} is given, in which case common words and
+whitespace are rather taken from @var{old_file}.  When selected,
+differences are separated from one another by lines of dashes.
+Moreover, if this option is selected at the same time as @samp{-1} or
+@samp{-2}, then none of the output will have any emphasis, i.e. no bold
+or underlining.  Finally, if this option is not selected, but both
+@samp{-1} and @samp{-2} are, then sections of common words between
+differences are segregated by lines of dashes.
+
+@item --ignore-case
+@itemx -c
+Do not consider case difference while comparing words.  Each lower case
+letter is seen as identical to its upper case equivalent for the purpose
+of deciding if two words are the same.
+
+@item --statistics
+@itemx -s
+On completion, for each file, the total number of words, the number of
+common words between the files, the number of words deleted or inserted
+and the number of words that have changed is output.  (A changed word is
+one that has been replaced or is part of a replacement.)  Except for the
+total number of words, all of the numbers are followed by a percentage
+relative to the total number of words in the file.
+
+@item --auto-pager
+@itemx -a
+Some initiatives which were previously automatically taken in previous
+versions of @code{wdiff} are now put under the control of this option.
+By using it, a pager is interposed whenever the @code{wdiff} output is
+directed to the user's terminal.  Without this option, no pager will be
+called, the user is then responsible for explicitly piping @code{wdiff}
+output into a pager, if required.
+
+The pager is selected by the value of the @code{PAGER} environment
+variable when @code{wdiff} is run.  If @code{PAGER} is not defined at
+run time, then a default pager, selected at installation time, will be
+used instead.  A defined but empty value of @code{PAGER} means no pager
+at all.
+
+When a pager is interposed through the use of this option,
+one of the options @samp{-l} or @samp{-t} is also selected, depending on
+whether the string @samp{less} appears in the pager's name or not.
+
+It is often useful to define @samp{wdiff} as an alias for @samp{wdiff
+-a}.  However, this @emph{hides} the normal @code{wdiff} behaviour.  The
+default behaviour may be restored simply by piping the output from
+@code{wdiff} through @code{cat}.  This dissociates the output from the
+user's terminal.
+
+@item --printer
+@itemx -p
+Use over-striking to emphasize parts of the output.  Each character of the
+deleted text is underlined by writing an underscore @samp{_} first,
+then a backspace and then the letter to be underlined.  Each character of the
+inserted text is emboldened by writing it twice, with a backspace in
+between.  This option is not selected by default.
+
+@item --less-mode
+@itemx -l
+Use over-striking to emphasize parts of output.  This option works as
+option @code{-p}, but also over-strikes whitespace associated with
+inserted text.  @code{less} shows such whitespace using reverse video.
+This option is not selected by default.  However, it is automatically
+turned on whenever @code{wdiff} launches the pager @code{less}.  See
+option @samp{-a}.
+
+This option is commonly used in conjunction with @code{less}:
+
+@example
+wdiff -l @var{old_file} @var{new_file} | less
+@end example
+
+@item --terminal
+@itemx -t
+Force the production of @code{termcap} strings for emphasising parts of
+output, even if the standard output is not associated with a terminal.
+The @samp{TERM} environment variable must contain the name of a valid
+@code{termcap} entry.  If the terminal description permits, underlining
+is used for marking deleted text, while bold or reverse video is used
+for marking inserted text.  This option is not selected by default.
+However, it is automatically turned on whenever @code{wdiff} launches a
+pager, and it is known that the pager is @emph{not} @code{less}.  See
+option @samp{-a}.
+
+This option is commonly used when @code{wdiff} output is not redirected,
+but sent directly to the user terminal, as in:
+
+@example
+wdiff -t @var{old_file} @var{new_file}
+@end example
+
+A common kludge uses @code{wdiff} together with the pager @code{more},
+as in:
+
+@example
+wdiff -t @var{old_file} @var{new_file} | more
+@end example
+
+However, some versions of @code{more} use @code{termcap} emphasis for
+their own purposes, so strange interactions are possible.
+
+@item --start-delete @var{argument}
+@itemx -w @var{argument}
+Use @var{argument} as the @dfn{start delete} string.  This string will
+be output prior to any sequence of deleted text, to mark where it
+starts.  By default, no start delete string is used unless there is no
+other means of distinguishing where such text starts; in this case the
+default start delete string is @samp{[-}.
+
+@item --end-delete @var{argument}
+@itemx -x @var{argument}
+Use @var{argument} as the @dfn{end delete} string.  This string will be
+output after any sequence of deleted text, to mark where it ends.  By
+default, no end delete string is used unless there is no other means of
+distinguishing where such text ends; in this case the default end delete
+string is @samp{-]}.
+
+@item --start-insert @var{argument}
+@itemx -y @var{argument}
+Use @var{argument} as the @dfn{start insert} string.  This string will
+be output prior to any sequence of inserted text, to mark where it
+starts.  By default, no start insert string is used unless there is no
+other means of distinguishing where such text starts; in this case the
+default start insert string is @samp{@{+}.
+
+@item --end-insert @var{argument}
+@itemx -z @var{argument}
+Use @var{argument} as the @dfn{end insert} string.  This string will be
+output after any sequence of inserted text, to mark where it ends.  By
+default, no end insert string is used unless there is no other means of
+distinguishing where such text ends; in this case the default end insert
+string is @samp{+@}}.
+
+@item --avoid-wraps
+@itemx -n
+Avoid spanning the end of line while showing deleted or inserted text.
+Any single fragment of deleted or inserted text spanning many lines will
+be considered as being made up of many smaller fragments not containing
+a newline.  So deleted text, for example, will have an end delete string
+at the end of each line, just before the new line, and a start delete
+string at the beginning of the next line.  A long paragraph of inserted
+text will have each line bracketed between start insert and end insert
+strings.  This behaviour is not selected by default.
+@end table
+
+Note that options @samp{-p}, @samp{-t}, and @samp{-[wxyz]} are not
+mutually exclusive.  If you use a combination of them, you will merely
+accumulate the effect of each.  Option @samp{-l} is a variant of option
+@samp{-p}.
+
+@node unify, Compatibility, wdiff, Top
+@chapter The diff format converter
+
+The program @code{unify} has the purpose of manipulating context diffs
+and unified context diffs.  @code{unify} will accept either a regular
+context diff (old- or new-style) or a unified context diff as input,
+and generate either a unified diff or a new-style context diff as output.
+
+Various other options allow you to echo the non-diff (comment) lines to
+stderr, modify the diff by removing the comment lines, and/or tweak the
+diff into a format that is good for releasing patches.
+
+I think most people prefer unified context diffs in general.  But some
+of us just have trouble reading unidiffs, unless they get very simple.
+Usual context diffs show how the code was @emph{before}, and then, how
+the code is @emph{after}.  Some people just prefer understanding twice
+thoroughly, than once fuzzily.  The tool is useful for those who handle
+a lot of diffs from various sources, and want them in a uniform format.
+
+@menu
+* unify invocation::            Invoking @code{unify}
+@end menu
+
+@node unify invocation,  , unify, unify
+@section Invoking @code{unify}
+
+The format for running the @code{unify} program is:
+
+@example
+unify @var{option} @dots{} [@var{file}]
+@end example
+
+The program reads the diff to convert from @var{file}, or if the
+source file is not mentioned, it will be read from the standard input.
+The default is to output the diff in the opposite style of whatever was
+input, that is, regular context diffs will become unified context diffs,
+and unified context diffs will become unified context diffs, but this
+can be overridden by options.
+
+@code{unify} supports the following command line options:
+
+@table @samp
+@item --version
+Merely prints the version numbers on standard output, and exits without
+doing anything else.
+
+@item --help
+Merely prints a page of help on standard output, and exits without doing
+anything else.
+
+@item --context-diffs
+@itemx -c
+Forces context diff output.
+
+@item --echo-comments
+@itemx -e
+Echoes non-diff (comment) lines to stderr.  If a comment line is
+being stripped via the @samp{-p} option, it is echoed with a preceding
+@samp{!!! }.  If all comments are being stripped (via the @samp{-s}
+option), no special designation is given.
+
+@item --old-diffs
+@itemx -o
+Is used to force a context diff to be interpreted as being of the
+old-style even if it has the extra trailing asterisks that normally mark
+the new-style.  This is only needed if @code{unify} fails to work with
+your version of @code{diff}.
+
+@item --patch-format
+@itemx -p
+Turns on patch-output mode.  This will do two things:
+
+@enumerate
+@item
+Transform a header like:
+
+@example
+*** orig/file	Sat May  5 02:59:37 1990
+--- ./file	Sat May  5 03:00:08 1990
+@end example
+
+@noindent
+into a line of @samp{Index: file} --- we choose the shorter name and strip
+a leading @samp{./} sequence if present.
+
+@item
+Strip lines that begin with @samp{@w{Only in }}, @samp{@w{Common subdir}},
+@samp{@w{Binary files}} or @samp{@w{diff -}}.
+
+@end enumerate
+
+@item -P
+Is the same as @samp{-p}.
+
+@item --strip-comments
+@itemx -s
+Strips non-diff lines (comments).
+
+@item --unidiffs
+@itemx -u
+Forces unified diff output.
+
+@item -U
+Is the same as @samp{-up}.
+
+@item --use-equals
+@itemx -=
+Will use a @samp{=} prefix in a unified diff for lines that are common
+to both files instead of using a leading space.  Though this is harder to
+read, it is less likely to be mangled by trailing-space-stripping sites
+when posted to Usenet.
+
+@end table
+
+@node Compatibility,  , unify, Top
+@chapter How @code{mdiff} differs
+
+The GNU project already has a @code{diff} program which is part of the
+@code{diffutils} package.  There also are various non-GNU @code{diff}
+programs provided by various constructors.  There was a previous
+version of @code{wdiff} which was using GNU @code{diff} under the scene.
+The following sections compare @code{mdiff} specifications with both GNU
+@code{diff} and with @code{wdiff}.
+
+@menu
+* diff Compatibility::          Differences with @code{diff}
+* wdiff Compatibility::         Differences with @code{wdiff}
+@end menu
+
+@node diff Compatibility, wdiff Compatibility, Compatibility, Compatibility
+@section Differences with @code{diff}
+
+GNU @code{diff} is a program which matured for a long while, and for which
+algorithms are based on computer science literature.  It is a fast program.
+By comparison, @code{mdiff} is not more than a program kludged up rapidly
+to satisfy a few precise needs.  It only tries not being inordinately slow.
+
+Most @code{diff} options are accepted by @code{mdiff} under the same
+short and long option names, and is able to produce resembling output,
+for making @code{mdiff} easier to learn and less surprising to users.
+Yet, some differences exist in option decoding and output format.  Since
+@code{diff} and @code{wdiff} use different matching algorithms, it is
+very likely that the differences will not be exactly analyzed identically.
+
+@itemize @bullet
+@item
+A few @code{diff} options, which either accept no argument or require
+a mandatory one, are implemented in @code{mdiff} as options accepting
+an optional argument.  This may yield some surprises, for example,
+@samp{-c4bir} would be accepted by @code{diff} and rejected by
+@code{mdiff}, yet it may rewritten @samp{-birc4} for both.  See below.
+
+@item
+Options @samp{-c} and @samp{-u} in @code{diff} ask for regular context
+and unified context output, respectively, without specifying the number
+of lines in the context.  @code{diff} has @samp{@w{-C @var{number}}} and
+@samp{@w{-U @var{number}}} options for asking for regular or unified context
+diffs with @var{number} context lines.  If @samp{-c4} asks for four lines
+of context, the @samp{4} is not really an argument of @samp{-c}, and this
+is really interpreted as @samp{@w{-c -4}}, where @samp{-@var{number}} is
+meant to be a deprecated option for choosing the number of context lines,
+option which @code{mdiff} does not implement.  In @code{mdiff}, @samp{-c}
+and @samp{-u} are really two options which are allowed to receive an
+optional argument, so the number of lines may, or may not be given, at
+the choice of the user.  In @code{mdiff}, options @samp{-C} and @samp{-U}
+are completely equivalent to @samp{-c} and @samp{-u}, and are provided
+only for the sake of compatibility.
+
+@item
+Option @samp{-v} in @code{diff} means @samp{--version}, while it
+means @samp{--verbose} in @code{mdiff}.  There is no short form for
+@samp{--version} in @code{mdiff}.
+
+@end itemize
+
+@node wdiff Compatibility,  , diff Compatibility, Compatibility
+@section Differences with @code{wdiff}
+
+Even if @code{mdiff} is meant to fully support @code{wdiff}, options have
+been shuffled around so @code{mdiff} could better merge both @code{diff}
+and @code{wdiff} options in a common scheme.  @code{diff} habits were
+almost always favored in this option reorganisation.
+
+In fact, @code{wdiff} is now a mere front-end to @code{mdiff} that only
+rewrites the options.  The following notes apply.
+
+@itemize @bullet
+@item
+Some options are just transmitted unchanged, these are @samp{-1},
+@samp{-2}, @samp{-3} and @samp{-i}.
+
+@item
+Option @samp{-c} also gets turned into @samp{-i}, to be compatible with
+@code{wdiff} versions up to @samp{0.4}.
+
+@item
+Simple option @samp{-a} in @code{wdiff} becomes @samp{-A} in @code{mdiff},
+@samp{-l} becomes @samp{-k}, @samp{-n} becomes @samp{-m}, @samp{-p} becomes
+@samp{-o}, @samp{-s} becomes @samp{-v} and @samp{-t} becomes @samp{-z}.
+
+@item
+Options introducing strings, which are @samp{-w}, @samp{-x}, @samp{-y}
+and @samp{-z} in @code{wdiff}, respectively become @samp{-Y}, @samp{-Z},
+@samp{-Q} and @samp{-R} in @code{mdiff}.
+
+@item
+Options @samp{-C}, @samp{-h} and @samp{-v} are processed directly by
+@code{wdiff} and are not transmitted to @code{mdiff}.
+
+@item
+Further, the @samp{-C} option of @code{wdiff} has no equivalent in
+@code{mdiff}.
+
+@item
+A new option @samp{-q} inhibits the message which explains how @code{mdiff}
+might have been directly called.
+
+@end itemize
+
+@contents
+@bye

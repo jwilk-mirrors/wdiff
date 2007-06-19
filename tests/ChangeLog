@@ -1,0 +1,69 @@
+1999-01-04  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.am (clean-local): Delete debug-*.sh, not FAIL-*.sh.
+
+1998-11-16  François Pinard  <pinard@iro.umontreal.ca>
+
+	* atgeneral.m4: Output FAIL-NN.sh:1: so M-x next-error works on it.
+	Change quotes to {{ and }} instead of { and }, such occur in output.
+
+	* atconfig.in, atgeneral.m4, test-one: New files, from elsewhere.
+	* after, before, preset.in, version.sh: Deleted.
+	* suite.m4: New file.
+	* Makefile.am: Adjusted.
+
+	* wdiff.m4: New file, made up of wdiff* test files.
+	* wdiff01.sh, wdiff02.sh, wdiff03.sh, wdiff04.sh, wdiff05.sh,
+	wdiff06.sh, wdiff07.sh, wdiff08.sh, wdiff09.sh, wdiff10.sh,
+	wdiff-1a.txt, wdiff-1b.txt: Deleted.
+
+	* cluster.m4: New file, made up of clust* test files.
+	* clust01.m4, clust02.m4, clust03.m4, clust04.m4, clust05.m4,
+	clust06.m4: Deleted.
+
+1997-03-03  François Pinard  <pinard@iro.umontreal.ca>
+
+	* clust01.sh, clust02.sh, clust03.sh, clust04.sh, clust05.sh:
+	New files.
+	* Makefile.am: Adjusted.
+
+1997-02-25  François Pinard  <pinard@iro.umontreal.ca>
+
+	* wdiff01.sh, wdiff02.sh, wdiff03.sh, wdiff04.sh, wdiff05.sh,
+	wdiff06.sh, wdiff07.sh, wdiff08.sh, wdiff09.sh, wdiff10.sh: Add
+	-q option on all wdiff calls.
+
+	* version.sh: Adjust for GNU standard change.
+
+1997-02-11  François Pinard  <pinard@iro.umontreal.ca>
+
+	* preset.in, before, after: New files.
+	* wdiff01.sh, wdiff02.sh, wdiff03.sh, wdiff04.sh, wdiff05.sh,
+	wdiff06.sh, wdiff07.sh, wdiff08.sh, wdiff09.sh, wdiff10.sh: New
+	tests, adapted from the previous check-it contents.
+	* check-it: Deleted.
+	* Makefile.am: New file.
+
+1992-12-23  François Pinard  <pinard@iro.umontreal.ca>
+
+	* check_it: New script, using test data from a bug report by
+	Robert J. Chassell <bob@gnu.ai.mit.edu>.
+	* testinput1, testinput2, testoutput: Deleted.
+	* Makefile.in: Adjusted.
+
+1992-11-28  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in (check): Add a `Check successful' message.
+
+1992-11-17  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefefile.in (check): Warn that `exit status 1' is expected.
+	Reported by Larry W. Virden.
+
+1992-08-18  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Correct check goal to ignore error from wdiff.
+
+1992-08-14  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.in: Have check goal works, now that -d is gone.

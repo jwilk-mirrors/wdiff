@@ -1,6 +1,16 @@
 GNU wdiff NEWS - User visible changes.
-Copyright (C) 1992, 1994, 2007 Free Software Foundation, Inc.
+Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007 Free Software Foundation, Inc.
 
+Version 0.5.4 - June 2007, by Denver Gingerich
+
+* Integrated following changes from 0.5g (Francois Pinard, November 1998):
+ * Messages from programs may be output in many natural languages.
+ * Short `man' pages get installed for `mdiff', `unidiff' and `wdiff'.
+ * The original man page for `wdiff' gets withdrawn, for legalistic reasons.
+ * New `unify' converts context diffs to unidiffs or vice-versa.
+ * New `mdiff' finds identical line clusters in one or more files.
+ * A new `-K' option inhibits termcap initialization and termination.
+
 Version 0.5.3 - June 2007, by Denver Gingerich
 
 * No user-visible changes; see ChangeLog for details

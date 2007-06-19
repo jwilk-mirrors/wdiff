@@ -1,0 +1,302 @@
+# Перевод сообщений для wdiff
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Oleg S. Tihonov <tihonov@ffke-campus-gw.mipt.ru>, 1998.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wdiff 0.5.2\n"
+"POT-Creation-Date: 1997-02-12 20:21-0500\n"
+"PO-Revision-Date: 1998-12-05 18:59+03:00\n"
+"Last-Translator: Oleg S. Tihonov <tihonov@ffke-campus.mipt.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/mdiff.c:197
+#, c-format
+msgid "Reading %s ..."
+msgstr "Чтение %s ..."
+
+#: src/mdiff.c:230
+#, c-format
+msgid " %d lines\n"
+msgstr " %d строк\n"
+
+#: src/mdiff.c:558 src/unify.c:271 src/wdiff.c:1100
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Попробуйте `%s --help' для получения более подробного описания.\n"
+
+#: src/mdiff.c:563
+#, c-format
+msgid "\nUsage: %s [OPTION]... FILE...\n"
+msgstr "\nИспользование: %s [КЛЮЧ]... ФАЙЛ...\n"
+
+#: src/mdiff.c:566
+msgid ""
+"\n"
+"  -t, --threshold=LINES   do not consider clusters of less than LINES lines\n"
+"  -s, --statistics        produce statistics on stdout\n"
+"  -v, --verbose           report progress of operations on stderr\n"
+"      --help              display this help and exit\n"
+"      --version           output version information and exit\n"
+msgstr ""
+"\n"
+"  -t, --threshold=ЧИСЛО   не рассматривать кластеры короче заданного ЧИСЛА строк\n"
+"  -s, --statistics        печатать на стандартный вывод статистические сведения\n"
+"  -v, --verbose           печатать промежуточные результаты в стандартный поток\n"
+"                          ошибок\n"
+"      --help              показать эту справку и выйти\n"
+"      --version           показать информацию о версии и выйти\n"
+
+#: src/mdiff.c:574
+msgid "\nReport bugs to <wdiff-bugs@gnu.ai.mit.edu>.\n"
+msgstr "\nОб ошибках сообщайте <wdiff-bugs@gnu.ai.mit.edu>.\n"
+
+#: src/mdiff.c:645 src/unify.c:407
+msgid ""
+"This is free software; see the source for copying conditions.  There is NO\n"
+"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+msgstr ""
+"Это свободная программа; подробности об условиях распространения смотрите\n"
+"в исходном тексте.  Мы НЕ предоставляем гарантий; даже гарантий\n"
+"КОММЕРЧЕСКОЙ ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.\n"
+
+#: src/mdiff.c:649
+msgid "\nWritten by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+msgstr "\nАвтор программы -- Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+
+#: src/mdiff.c:666
+#, c-format
+msgid "Read summary: %d files, %d lines\n"
+msgstr "Всего прочитано: файлов: %d, строк: %d\n"
+
+#: src/mdiff.c:670
+msgid "Sorting ..."
+msgstr "Сортировка ..."
+
+#: src/mdiff.c:673 src/mdiff.c:679
+msgid " done\n"
+msgstr " завершено.\n"
+
+#: src/mdiff.c:676
+msgid "Clustering ..."
+msgstr "Кластеризация ..."
+
+#: src/mdiff.c:691
+#, c-format
+msgid "Work summary: %d clusters, %d members, %d duplicate lines\n"
+msgstr "Всего найдено: кластеров: %d, членов: %d, дублированных строк: %d\n"
+
+#: src/unify.c:142
+#, c-format
+msgid "Could not find a name for the diff at line %ld"
+msgstr "Невозможно найти имя файла в строке %ld"
+
+#: src/unify.c:276
+#, c-format
+msgid "\nUsage: %s [OPTION]... [FILE]\n"
+msgstr "\nИспользование: %s [КЛЮЧ]... [ФАЙЛ]\n"
+
+#: src/unify.c:279
+msgid ""
+"\n"
+"  -c, --context-diffs    force output to context diffs\n"
+"  -e, --echo-comments    echo comments to standard error\n"
+"  -o, --old-diffs        output old-style diffs, no matter what\n"
+"  -p, --patch-format     generate patch format\n"
+"  -P                     same as -p\n"
+"  -s, --strip-comments   strip comment lines\n"
+"  -u, --unidiffs         force output to unidiffs\n"
+"  -U                     same as -p and -u\n"
+"  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
+"      --help             display this help and exit\n"
+"      --version          output version information and exit\n"
+"\n"
+"If FILE is not specified, read standard input.\n"
+msgstr ""
+"\n"
+"  -c, --context-diffs    выводить контекстные различия\n"
+"  -e, --echo-comments    выводить комментарии в стандартный поток ошибок\n"
+"  -o, --old-diffs        выводить в различия устаревшей форме\n"
+"  -p, --patch-format     выводить в формате patch\n"
+"  -P                     синоним -p\n"
+"  -s, --strip-comments   удалять строки комментариев\n"
+"  -u, --unidiffs         выводить объединенные различия\n"
+"  -U                     синоним -p -u\n"
+"  -=, --use-equals       заменять пробелы в объединенных различиях знаками\n"
+"                         равенства\n"
+"      --help             показать эту справку и выйти\n"
+"      --version          показать информацию о версии и выйти\n"
+"\n"
+"Если ФАЙЛ не задан или задан как -, читает стандартный ввод\n"
+
+#: src/unify.c:295
+msgid "\nReport bugs to <recode-bugs@gnu.ai.mit.edu>.\n"
+msgstr "\nОб ошибках сообщайте <recode-bugs@gnu.ai.mit.edu>.\n"
+
+#: src/unify.c:388
+#, c-format
+msgid "Unable to open `%s'"
+msgstr "Невозможно открыть `%s'"
+
+#: src/unify.c:394
+msgid "Only one filename allowed"
+msgstr "Можно задать только один файл"
+
+#: src/unify.c:411
+msgid "\nWritten by Wayne Davison <davison@borland.com>.\n"
+msgstr "\nАвтор программы -- Wayne Davison <davison@borland.com>.\n"
+
+#: src/unify.c:550
+#, c-format
+msgid "Invalid unified diff header at line %ld"
+msgstr "Неверный заголовок объединенного фрагмента различия в строке %ld"
+
+#: src/unify.c:592
+#, c-format
+msgid "Malformed unified diff at line %ld"
+msgstr "Неправильная объединенная запись различия в строке %ld"
+
+#: src/unify.c:623
+#, c-format
+msgid "Context diff missing `old' header at line %ld"
+msgstr "Пропущен заголовок `старой части' контекстного фрагмента различия в строке %ld"
+
+#: src/unify.c:667 src/unify.c:686 src/unify.c:757 src/unify.c:775
+#, c-format
+msgid "Malformed context diff at line %ld"
+msgstr "Неправильная контекстная запись различия в строке %ld"
+
+#: src/unify.c:722
+#, c-format
+msgid "Context diff missing `new' header at line %ld"
+msgstr "Пропущен заголовок `новой части' контекстного фрагмента различия в строке %ld"
+
+#: src/wdiff.c:242
+msgid "Specify a terminal type with `setenv TERM <yourtype>'."
+msgstr "Укажите тип терминала с помощью `setenv TERM <ваш тип>'."
+
+#: src/wdiff.c:245
+msgid "Could not access the termcap data base."
+msgstr "Невозможно получить доступ к базе данных termcap."
+
+#: src/wdiff.c:247
+#, c-format
+msgid "Terminal type `%s' is not defined."
+msgstr "Тип терминала `%s' не определен."
+
+#: src/wdiff.c:583
+msgid "Directories not supported"
+msgstr "Каталоги не поддерживаются"
+
+#: src/wdiff.c:1040 src/wdiff.c:1052
+#, c-format
+msgid "%s: %d words"
+msgstr "%s: %d слов"
+
+#: src/wdiff.c:1043 src/wdiff.c:1055
+msgid "  %d %d%% common"
+msgstr "  %d %d%% общих"
+
+#: src/wdiff.c:1045
+msgid "  %d %d%% deleted"
+msgstr "  %d %d%% удалено"
+
+#: src/wdiff.c:1047 src/wdiff.c:1059
+msgid "  %d %d%% changed"
+msgstr "  %d %d%% изменено"
+
+#: src/wdiff.c:1057
+msgid "  %d %d%% inserted"
+msgstr "  %d %d%% вставлено"
+
+#: src/wdiff.c:1075
+msgid ""
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2, or (at your option)\n"
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software Foundation,\n"
+"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+msgstr ""
+"Это свободная программа; вы можете распространять и/или изменять ее при\n"
+"соблюдении условий Универсальной Общественной Лицензии GNU, опубликованной\n"
+"Фондом Свободного Программного Обеспечения, версии 2 или любой более поздней\n"
+"(по вашему усмотрению).\n"
+"\n"
+"Эта программа распространяется в надежде, что она будет полезной, но БЕЗ\n"
+"КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий КОММЕРЧЕСКОЙ ЦЕННОСТИ\n"
+"или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.  Для получения более подробной информации\n"
+"смотрите Универсальную Общественную Лицензию GNU.\n"
+"\n"
+"Вы должны были получить копию Универсальной Общественной Лицензии GNU вместе с\n"
+"этой программой, если нет, напишите Free Software Foundation, Inc., 59 Temple\n"
+"Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+
+#: src/wdiff.c:1104
+#, c-format
+msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
+msgstr "Использование: %s [КЛЮЧ]... ФАЙЛ1 ФАЙЛ2\n"
+
+#: src/wdiff.c:1107
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -V, --version              print program version then exit\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Аргументы, обязательные для длинных ключей, обязательны и для коротких.\n"
+"\n"
+"  -C, --copyright            показать информацию об авторских правах и выйти\n"
+"  -V, --version              показать информацию о версии и выйти\n"
+"  -1, --no-deleted           не выводить удаленные слова\n"
+"  -2, --no-inserted          не выводить вставленные слова\n"
+"  -3, --no-common            не выводить общие слова\n"
+"  -a, --auto-pager           автоматически вызывать программу просмотра\n"
+"  -h, --help                 показать эту справку и выйти\n"
+"  -i, --ignore-case          игнорировать регистр букв\n"
+"  -l, --less-mode            режим вывода, удобный при использовании less\n"
+"  -n, --avoid-wraps          не продолжать поля через новую строку\n"
+"  -p, --printer              выделять подчеркиванием части вывода\n"
+"  -s, --statistics           показать сколько слов было удалено, вставлено и т.д\n"
+"  -t, --terminal             выводить с использованием termcap\n"
+"  -w, --start-delete=СТРОКА  СТРОКА, задающая начало удаляемой области\n"
+"  -x, --end-delete=СТРОКА    СТРОКА, задающая конец удаляемой области\n"
+"  -y, --start-insert=СТРОКА  СТРОКА, задающая начало вставляемой области\n"
+"  -z, --end-insert=СТРОКА    СТРОКА, задающая конец вставляемой области\n"
+
+#: src/wdiff.c:1236
+msgid "Cannot use -t, termcap not available."
+msgstr "Невозможно применить -t, termcap недоступна."
+
+#: src/wdiff.c:1261
+msgid "Missing file arguments"
+msgstr "Пропущены аргументы, задающие файлы"
+
+#: src/wdiff.c:1289
+msgid "Both files cannot be standard input."
+msgstr "Оба файла не могут быть стандартным вводом."

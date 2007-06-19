@@ -11,15 +11,80 @@ product, and specifications might change in future releases.
 Below, you will find various installation hints on special systems.
 Look further down for a mini-FAQ (frequently asked questions).
 
+See file `ABOUT-NLS' for how to customise this program to your language.
 See file `BACKLOG' for a summary of pending mail and articles.
 See file `COPYING' for copying conditions.
 See file `INSTALL' for compilation and installation instructions.
 See file `NEWS' for a list of major changes in the current release.
 See file `THANKS' for a list of contributors.
 
-Your feedback will help us to make a better and more portable
-product.  Mail suggestions and bug reports (including documentation
-errors) for this program to `bug-gnu-utils@prep.ai.mit.edu'.
+The canonical distribution point for wdiff is:
+
+  ftp://ftp.gnu.org/gnu/wdiff/
+
+The main web site for wdiff is at:
+
+  http://www.gnu.org/software/wdiff/
+
+.--------------.
+| Introduction |
+`--------------'
+
+Additional included utilities
+
+* `mdiff' studies one or many input files altogether, and discovers
+blocks of lines which repeat at more than one place.  This program is
+still very experimental.  Even if much development is needed, it is
+quite useful as it stands.
+
+* The `unify' program converts between context diffs to unified diffs,
+and vice-versa.  Some people just prefer one format and despise the
+other, it is a religious issue.  This program brings peace back on
+earth.  It has been contributed by Wayne Davison, from Borland.
+
+Configure options
+
+* Besides those configure options documented in files `INSTALL' and
+`ABOUT-NLS', one extra option may be accepted after `./configure':
+
+ - `--with-dmalloc'
+
+     to trigger a debugging feature for looking at memory management
+     problems, it pre-requires Gray Watson's package, which is available
+     as `ftp://ftp.letters.com/src/dmalloc/dmalloc.tar.gz'.
+
+Maintenance tools
+
+* For comprehensive modifications to `wdiff, you might need tools
+beyond those used in simple installations.  If not done already, get:
+
+        ftp://ftp.cygnus.com/pub/home/drepper/gettext-0.10.35.tar.gz
+        ftp://ftp.seindal.dk/pub/rene/gnu/m4-1.4l.tar.gz
+        ftp://ftp.gnu.org/pub/gnu/perl/perl-5.003.tar.gz
+        ftp://ftp.gnu.org/pub/gnu/autoconf/autoconf-2.12.tar.gz  + PATCHES-AC
+        ftp://ftp.cygnus.com/pub/tromey/automake-1.3b.tar.gz
+        ftp://ftp.gnu.org/pub/gnu/tar/tar-1.12.tar.gz
+
+* Do not forget applying the `PATCHES-AC' file (beware: it is not official)
+appropriately.  Make sure GNU `m4' is fully installed before you start
+installing Autoconf.  Have Perl installed before Automake.
+
+Mailing lists and collaboration
+
+* Your feedback will help us to make a better and more portable package.
+Consider documentation errors as bugs, and report them as such.  If you
+develop anything pertaining to `wdiff' or have suggestions, let us know
+and share your findings by writing at `wdiff-bugs@gnu.org'.  To subscribe
+to the list, see http://lists.gnu.org/mailman/listinfo/wdiff-bugs.
+
+* Please follow these tips when submitting a bug report: A bug report is
+an adequate description of the problem: your input, what you expected,
+what you got, and why this is wrong.  Diffs are welcome, but they only
+describe a solution, from which the problem might be uneasy to infer.
+If needed, submit actual data files with your report.  Small data
+files are preferred.  Big files may sometimes be necessary, but do
+not send them on the mailing list; rather take special arrangement
+with the maintainer.
 
 .-------.
 | Hints |

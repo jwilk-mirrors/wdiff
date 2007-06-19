@@ -1,6 +1,15 @@
-Sun Jun 17 17:42:47 2007  Denver Gingerich (denver@ossguy.com)
+2007-06-19  Denver Gingerich (denver@ossguy.com)
 
-	* Version 0.5.3.
+	* Version 0.5.4.
+
+	* ChangeLog: relevant entries moved from root ChangeLog to ChangeLog
+	files in subdirectories (such as src, lib, etc.)
+
+	* : TODO: add relevant entries here
+
+2007-06-17  Denver Gingerich (denver@ossguy.com)
+
+	* Version 0.5.3, changes are relative to Version 0.5 (see 1994-11-05).
 
 	* acconfig.h, aclocal.m4, cbars.sh, c-boxes.el, checkit, configure,
 	configure.in: Add license notices.
@@ -11,259 +20,203 @@ Sun Jun 17 17:42:47 2007  Denver Gingerich (denver@ossguy.com)
 	readpipe.c, strstr.c, texinfo.tex, wdiff.c, writepipe.c, xmalloc.c:
 	Update license notices to reflect new FSF address.
 
-Sat Nov  5 15:57:59 1994  Francois Pinard  (pinard@icule)
+1999-07-05  François Pinard  <pinard@iro.umontreal.ca>
 
-	* Version 0.5.
+	* configure.in: Do not call fp_PROG_ECHO, as AT_CONFIG does it.
 
-	* wdiff.c (putc_for_tputs): Compile only if HAVE_TPUTS.
-	(initialize_strings): Declare locals only when HAVE_TPUTS.
-	Reported by Joseph E. Sacco.
+	* Makefile.am, acconfig.h, configure.in: Prepare for fp_WITH_GETTEXT.
 
-	* Makefile.in (realclean): Also remove stamp-vti.
+1998-12-07  François Pinard  <pinard@iro.umontreal.ca>
 
-	* Makefile.in: Force readpipe.c and writepipe.c through ansi2knr
-	for non-ANSI compilers.
-	readpipe.c, writepipe.c: Use <stdarg.h> when ANSI, instead of only
-	<varargs.h>.  This ANSIfies those modules.
+	* configure.in (ALL_LINGUAS): Add Russian.
 
-Wed Nov  2 00:51:02 1994  Francois Pinard  (pinard@icule)
+1998-11-18  François Pinard  <pinard@iro.umontreal.ca>
 
-	* wdiff.c: Have --ignore-case correspond to -i instead of -c.
-	Reported by Roland McGrath.
+	* configure.in: Version 0.5g.
+
+1998-11-16  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Version 0.5e.
+
+	* configure.in: Use AT_CONFIG.
+	Substitute tests/atconfig rather than tests/preset.
+
+1998-11-13  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Makefile.am (SUBDIRS): Add m4.  Use -I m4 on aclocal.
+
+	* PATCHES-AC: New file, from elsewhere.
+	* Makefile.am (EXTRA_DIST): Adjusted.
+
+	* README-mdiff: New file.
+	* Makefile.am (EXTRA_DIST): Adjusted.
+
+	* configure.in: Substitute in m4/Makefile.
+	Use jmFUNC_MALLOC and jm_FUNC_REALLOC.
+	* acconfig.h: Describe malloc and realloc.
+
+	* missing: New file, from elsewhere.
+
+	* configure.in: Version 0.5d.
+
+1997-02-12  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Derive src/cbars from src/cbars.in.
+
+	* configure.in: Derive tests/preset from tests/preset.in.
+	Check how to use echo with newlines suppressed.
+	* acinclude.m4: Add definition for fp_PROG_ECHO.
+
+	* configure.in: Cleanup tputs detection.  Do not just consider we
+	need -ltermlib on Xenix and -ltermcap everywhere else.  Instead,
+	check for LIB.h only if tputs if found in -lLIB, for LIB in
+	termcap, termlib, curses and ncurses.
+	* acconfig.h: Add documentation for HAVE_TPUTS.
+
+1997-02-11  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Adjusted for Automake, and latest PO files.
+	* Makefile.am: New files.
+	* acinclude.m4: New file, assembled from Jim's collection.
+	* acconfig.h: Adjusted for gettext.
+
+1996-09-06  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in (ALL_LINGUAS): Add nl, pl.  Replace cz by cs.
+
+1995-06-22  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Use AC_TYPE_SIZE_T.
+
+1995-03-26  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Define SCRIPTS separately from PROGRAMS.  Use
+	fp_PROG_INSTALL instead of AC_PROG_INSTALL.
+	* Makefile.in: Adjusted accordingly.
+
+1995-03-19  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Remove GLOCALE, add LINGUAS, use fp_WITH_CATALOGS.
+	* Makefile.in: Modify accordingly.
+	* acconfig.h: Add description for WITH_CATALOGS.
+
+1995-02-24  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Put gdiff test in parentheses, because Bourne
+	shell otherwise complains about an inexisting program.
+	Reported by Kaveh R. Ghazi.
+
+1995-02-21  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in, Makefile.in: Replace `date' by `echo timestamp'.
+	Reported by Greg McGary and Jim Meyering.
+
+1994-12-01  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in, Makefile.in, acconfig.h: Rename PRODUCT to PACKAGE.
+
+1994-11-26  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Check for <libintl.h> and <locale.h>.
+
+1994-11-11  François Pinard  <pinard@iro.umontreal.ca>
+
+	* configure.in: Check libraries before functions, else there is
+	little chance that tputs will ever be found in -ltermcap.
+	Reported by Andreas Schwab.
+
+1994-11-05  François Pinard  <pinard@iro.umontreal.ca>
+
+	* Release 0.5.
+
+1994-11-02  François Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Check for const only after having found possible
 	ANSIfying compiler flags, this is of no use to check it before.
 
-Tue Nov  1 11:25:26 1994  Francois Pinard  (pinard@icule)
+1994-11-01  François Pinard  <pinard@iro.umontreal.ca>
 
-	* Makefile.in: Clean up, following the one in GNU sharutils.  I
-	will not detail all the changes here.
+	* Makefile.in: Clean up, following the one in shar utilities.
+	I will not detail all the changes here.
 	* configure.in: Likewise.
-	* wdiff.c: Use PRODUCT and VERSION instead of version.
 	* acconfig.h: New file.
-	* wdiff.h: Interface with dmalloc if WITH_DMALLOC.
 
-Fri Jul  8 00:18:54 1994  Francois Pinard  (pinard@icule)
-
-	* ansi2knr.1: New file, from elsewhere.
-	* Makefile.in (DISTFILES): Distribute it.
-
-Wed Apr 13 14:39:47 1994  Francois Pinard  (pinard@icule)
+1994-04-13  François Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (Makefile, etc.): Adapt for Autoconf 1.8.
 
-Tue Mar 22 08:39:29 1994  Francois Pinard  (pinard at icule)
+1994-03-22  François Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Use AC_PROGRAMS_PATH instead of AC_PROGRAMS_CHECK,
 	while defining DIFF and PAGER.  Add diff to the programs tested,
 	so its full path is saved.  Avoiding SGI gdiff, define DIFF to
 	non-pathed diff, instead of empty.
 
-Sun Dec 26 16:38:50 1993  Francois Pinard  (pinard@icule)
+1993-12-24  François Pinard  <pinard@iro.umontreal.ca>
 
-	* wdiff.c (usage): Renamed from usage_and_exit.  Accept the exist
-	status as parameter.  If error, only suggest --help on stderr.  If
-	no error, provide full help on stdout rather than on stderr.
-	Adjust callers.
-
-	(main): Rename -V back into -v.
-	For -v, write version on stdout rather than on stderr.
-	For -C and -v, exit with status 0 instead of 2.
-
-Fri Dec 24 17:01:56 1993  Francois Pinard  (pinard@icule)
-
-	* Makefile.in: General cleanup.  Add libwd.a, LIBHDRS, LIBSRCS,
-	LIBOBJS, AR, RANLIB.  Handle .stamp-h.in, -I$(srcdir) with
-	$(MAKEINFO), mkinstalldirs, install.sh, FAQ and HINTS.
+	* Makefile.in: General cleanup.  Handle .stamp-h.in,
+	mkinstalldirs, install.sh, FAQ and HINTS.
 	* configure.in: Check for ranlib.
 	* mkinstalldirs, install.sh: New, from elsewhere.
 
 	* FAQ, HINTS: New files, for alleviating README a little.
 
-Wed Jun  9 15:01:53 1993  Francois Pinard  (pinard@icule)
+1993-06-09  François Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (dist): Replace "echo `pwd`" by a mere "pwd".
 	Create a gzip file.
 
-Sat Feb 27 09:35:40 1993  Francois Pinard  (pinard@icule)
+1993-02-27  François Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Use AC_HAVE_LIBRARY for -lmalloc, instead of
 	explicit code.
 
-Sat Feb  6 15:01:03 1993  Francois Pinard  (pinard@icule)
+1993-02-06  François Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: In dist goal, ensure 777 mode for directories, so
 	older tar's will restore file modes properly.
 
-Sun Jan 31 17:14:46 1993  Francois Pinard  (pinard@icule)
-
-	* wdiff.c (usage_and_exit, main): Rename -v into -V.
-	Avoid double parenthese in `while ((option_char ...'.
-	Add const to argv specification.
-
-Sun Jan 17 15:52:45 1993  Francois Pinard  (pinard@icule)
-
-	* Makefile.in: Put $(CFLAGS) after $(CPPFLAGS), so the installer
-	can override automatically configured choices.
-	Reported by Karl Berry.
-
-Thu Jan  7 20:06:23 1993  Francois Pinard  (pinard at icule)
+1993-01-07  François Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: Replace -DHAVE_CONFIG_H back to $(DEFS), since
 	Autoconf now handles this appropriately.
 
-Tue Jan  5 20:58:04 1993  Francois Pinard  (pinard at icule)
-
-	* wdiff.c: Make almost all functions `static'.
-	Reported by Jim Meyering.
-
-Fri Jan  1 14:51:11 1993  Francois Pinard  (pinard at icule)
-
-	* Makefile.in: Reinstate $(CPPFLAGS), use it.  Richard wants it
-	there.
+1993-01-01  François Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: Using autoheader, derive config.h.in from
 	configure.in.  Distribute config.h.in.
 	Use config.status for reconstructing config.h from config.h.in.
-	Have all $(OBJECTS) depend upon config.h.
-	Replace $(DEFS) by -DHAVE_CONFIG_H everywhere.
-	Always use -I. calling the C compiler, for config.h to be found.
 	Remove config.h in distclean.
 	* configure.in: Create config.h from config.h.in.
-	* ansi2knr.c, error.c, readpipe.c, wdiff.c, writepipe.c,
-	xmalloc.c: Conditionnaly include config.h.
 
-Wed Dec 30 15:08:39 1992  Francois Pinard  (pinard at icule)
+1992-12-30  François Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Force xmalloc.o in whenever alloca.o is needed.
-	* xmalloc.c: New (once again), from elsewhere.
-	* Makefile.in: Distribute xmalloc.c.  Define ALLOCA=@ALLOCA@.
 	Reported by Nelson H.F. Beebe.
 
-	* wdiff.c (split_file_into_words): Check and diagnose if the given
-	path is a directory.
-	Reported by Paul Eggert.
-
-	* wdiff.c (main): Always refuse -t if not HAVE_TPUTS.
-
-	* wdiff.c (split_file_into_words): Interpret "-" as meaning
-	standard input, for any or both input files.  Take a temporary
-	copy in this case.  Instead of closing file, flush it.
-	(reformat_diff_output): Instead of opening files, rewind them.
-	Reported by Ze'ev "Steed" Shtadler (Israel).
-
-	*wdiff.c (main): Allow "" and "-" for representing standard input,
-	but consistently store NULL as file name in these cases.  Disallow
-	having standard input twice.
-
-	* wdiff.c: Use error() instead of perror(), everywhere.  Include
-	<errno.h> and declare errno if not defined.
 	* configure.in: Use AC_VPRINTF, check for strerror().
 
-	* wdiff.c: Implement -c for ignore_case.  I should have delayed
-	this until the integration of wdiff into diff, but I personnaly
-	needed it right now! :-)
+1992-12-23  François Pinard  <pinard@iro.umontreal.ca>
 
-	* wdiff.c (launch_output_program): Restrict the search for "less"
-	to the basename of the program.
-	Define strrchr to rindex when including <strings.h>.
-	Reported by Paul Eggert.
-
-	* wdiff.c: (main): Exit program before producing statistics
-	whenever the program is interrupted.
-	Rename `jump_trigger' to `interrupted' everywhere.
-	Reported by Paul Eggert.
-
-Tue Dec 29 07:17:59 1992  Karl Berry  (karl@cs.umb.edu)
-
-	* wdiff.c: Include <sys/types.h> before <signal.h>.
-
-Wed Dec 23 11:10:32 1992  Francois Pinard  (pinard at icule)
-
-	* Version 0.04.
-
-	* wdiff.c (split_file_into_words): Call tmpnam just before opening
-	the file.  On the Next, successive calls to tmpnam will return
-	different values only if the file is opened in between.
-	(main): Allocate temp_name statically, and initialize it to "".
-	On certain systems, tmpnam(NULL) causes a segmentation violation.
-	Length will be L_tmpman or else, PATH_MAX from pathmax.h.  Check
-	temp_name before unlinking, in case of an intervening signal.
-	* pathmax.h: New, from elsewhere.
-	* Makefile.in: Distribute pathmax.h, adjust dependencies.
-	* xstrdup.c, xmalloc.c: Deleted, not needed anymore.
-	Reported by Thorsten Ohl.
+	* Release 0.04.
 
 	* Makefile.in: Some cleanup before the release.
-	* (dvi, wdiff.dvi): New goals.
-	* (_wdiff.o): Use -I$(srcdir).
 
-	* wdiff.c: Added two missing `break;'.
-	Reported by Thorsten Ohl.
-
-	* check_it: New script, using test data from a bug report by
-	Robert J. Chassell <bob@gnu.ai.mit.edu>.
-	* testinput1, testinput2, testoutput: Deleted.
-	* Makefile.in: Adjusted.
-
-Tue Dec 22 00:02:41 1992  Francois Pinard  (pinard at icule)
-
-	* Makefile.in: Remove $(CPPDEFS) from the implicit rules.
-
-Mon Dec 21 23:24:39 1992  Francois Pinard  (pinard at icule)
+1992-12-21  François Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: Distribute the THANKS file.
 
-	* wdiff.1: New for 0.04, replaces the previous copy.
-	* Makefile.in: Install the man page.
-	Reported by Colin Brough.
-
-	Makefile.in: Do not distribute collate.el, which lacks the
+	* Makefile.in: Do not distribute collate.el, which lacks the
 	required Copyright assignment to the FSF.
 
-Wed Dec  9 08:43:47 1992  Francois Pinard  (pinard at icule)
+1992-12-05  François Pinard  <pinard@iro.umontreal.ca>
 
-	* From David D `zoo' Zuhn <zoo@cygnus.com>:
-	configure.in, wdiff.c: Replace USG by HAVE_STRING_H.
+	* Makefile.in (realclean): Remove configure.
 
-	* From David D `zoo' Zuhn <zoo@cygnus.com>:
-	Makefile.in (configure): Go to $(srcdir) before autoconf.
+	* configure.in: Use AC_ISC_POSIX for defining -posix if necessary.
+	Reported by Karl Berry.
 
-Sat Dec  5 15:45:25 1992  Francois Pinard  (pinard at icule)
-
-	* wdiff.c: Initialize the version[] string.
-	* version.c: Deleted.
-	* Makefile.in: Adjusted.
-
-	* From Paul Eggert <eggert@twinsun.com>:
-	readpipe.c: Beware that file descriptor 1 might not be opened.
-	writepipe.c: Beware that file descriptor 0 might not be opened.
-
-	* From David D `zoo' Zuhn <zoo@cygnus.com>:
-	Makefile.in: Define MAKEINFO as makeinfo, use it.
-
-	* From Karl Berry <karl@cs.umb.edu>:
-	Makefile.in (realclean): Remove wdiff.info.
-
-	Makefile.in (realclean): Remove configure.
-
-	* From Karl Berry <karl@cs.umb.edu>:
-	configure.in: Use AC_ISC_POSIX for defining -posix if necessary.
-
-Sat Nov 28 12:13:04 1992  Francois Pinard  (pinard at icule)
-
-	* From Pierre Gaumond <gaumondp@ere.umontreal.ca>:
-	Makefile.in (clean, distclean): Remove clutter for ansi2knr.
-
-	* Makefile.in (texclean): New.
-
-	* Makefile.in (check): Add a `Check successful' message.
-
-	* wdiff.1: New.  This man page reflects wdiff at 0.03 level.
-	* Makefile.in: Distribute it.
-	Reported by Colin M. Brough.
-
-Mon Nov 23 08:48:41 1992  Francois Pinard  (pinard at icule)
+1992-11-23  François Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (dist): Get .fname from the current directory name,
 	instead of from version.c.  I need updating many files manually,
@@ -272,98 +225,29 @@ Mon Nov 23 08:48:41 1992  Francois Pinard  (pinard at icule)
 	* cbars.sh: New.  By default, cbars is not part of PROGS.
 	* Makefile.in: Prepare, install, and distribute it.
 
-Sun Nov 22 08:54:43 1992  Francois Pinard  (pinard at icule)
-
-	* wdiff.c (usage_and_exit): Use OLD_FILE and NEW_FILE in usage
-	message, instead of FILE_1 and FILE_2.
-	Reported by Per Cederqvist.
-
-	* Never launch pager by default.  So, I'm adding option -a.
-	Reported by Richard Stallman.
-
-	* wdiff.c: New -a option and autopager variable.
-	(main): Initialize and decode it.
-	(usage_and_exit): Announce it.
-	(launch_output_program): Implement it.
-
-	* wdiff.c: New -l option.
-	Rename pager_is_less to overstrike_for_less.
-	(main): Initialized and decode it.
-	(usage_and_exit): Announce it.
-	* wdiff.c: Rename is_printer to overstrike.
-	* wdiff.c: Rename is_display to find_termcap.
-	(main): Delay its initialization, so -l can force it to 0.
-
-	* wdiff.c: New -n option and no_wrapping variable.
-	(main): Initialize and decode it.
-	(usage_and_exit): Announce it.
-	(copy_whitespace): Implement it.
-	Reported by Joe Wells.
-
-Sat Nov 21 16:35:15 1992  Francois Pinard  (pinard at icule)
+1992-11-21  François Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Use AC_CONST.
-	* wdiff.c: Never define const as empty, let configure do it.  Also
-	remove volatile declaration as empty, it is unused.
-	* wdiff.c, version.c: Add a few const's.
-
-	* wdiff.c: Remove `const' to `char *strstr();' declaration.
-	Reported by Roland McGrath.
 
 	* configure.in: Avoid gdiff for X as found on SGI systems.  The
 	test presumes gdiff returns non-zero status if DISPLAY is defined
 	to be empty.
 	Reported by Jim Meyering.
 
-Thu Nov 19 10:29:20 CST 1992  Jim Meyering  (meyering@idefix.comco.com)
-
-	* configure.in: Add AC_UNISTD_H.  Fix test for ANSI-ness.
-
-	* readpipe.c writepipe.c: Include unistd.h.
-	Parenthesize assignment used in boolean context.
-
-	* version.c: Remove copyright and print_copyright.
-
-	* wdiff.c: Add declaration of error.
-	(print_copyright): Moved copyright stuff here and declared static.
-	(reformat_diff_output): Add a do-nothing case for COPY_NORMAL
-	and a default that aborts to avoid warnings form gcc -Wall.
-	(complete_output_program): Add a default clause that aborts
-	to avoid warnings form gcc -Wall.
-
-Wed Nov 18 09:28:12 1992  Jim Meyering  (meyering@idefix.comco.com)
-
-	* Makefile.in: Add another layer of double quotes so PAGER
-	and DIFF may contain spaces.  Before, with PAGER='less -i'
-	compilation failed with unterminated string.
-
-Tue Nov 17 18:47:23 1992  Francois Pinard  (pinard at icule)
-
-	* Makefefile.in (check): Warn that `exit status 1' is expected.
-	Reported by Larry W. Virden.
-
-Fri Nov 13 00:01:25 1992  Francois Pinard  (pinard at icule)
+1992-11-13  François Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (dist): chmod a+r before making the tar file.
 
 	* aclocal.m4: Update FP_STDC_CHECK, replacing by FP_PROTOTYPES.
 	* configure.in: Adjust accordingly.
 
-Tue Oct  6 12:55:10 1992  Francois Pinard  (pinard at icule)
-
-	* Makefile.in: Use exec_prefix.  Add `uninstall'.
-
-Sun Aug 23 08:30:30 1992  Francois Pinard  (pinard at icule)
+1992-08-23  François Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Split FP_STDC_CHECK out into aclocal.m4.
 	* aclocal.m4: New.
 	* Makefile.in: Distribute aclocal.m4.
 
-Thu Aug 20 08:13:12 1992  Francois Pinard  (pinard at icule)
-
-	* wdiff.c: With STDC_HEADERS, use <string.h>, not <strings.h>.
-
-Wed Aug 19 11:45:52 1992  Francois Pinard  (pinard at icule)
+1992-08-19  François Pinard  <pinard@iro.umontreal.ca>
 
 	* collatew.el: New, generalizes Emacs LISP `compage-windows'.
 	* Makefile.in: Distribute collatew.el.
@@ -372,112 +256,33 @@ Wed Aug 19 11:45:52 1992  Francois Pinard  (pinard at icule)
 	* configure.in: To define DIFF, also try gnudiff and diffgnu, not
 	only gdiff and diff.
 
-	* ansi2knr.c: New, from Ghostscript distribution.
-	* unproto.l: Deleted.
-	* Makefile.in: Use ansi2knr instead of unproto.
-	* configure.in: Do not check anymore for `lex' or bad `const's.
-	* wdiff.c: Undefine `const' and `volatile' if not __STDC__.
+1992-08-18  François Pinard  <pinard@iro.umontreal.ca>
 
-	* wdiff.c: Do not declare tgetstr without HAVE_TPUTS.
-
-Tue Aug 18 03:57:06 1992  Francois Pinard  (pinard at icule)
+	* Release 0.03 to alt.sources and ftp.uu.net:/tmp.
 
-	* Version 0.03 to alt.sources and ftp.uu.net:/tmp.
-
-	* Makefile.in: Correct check goal to ignore error from wdiff.
-
-	* unproto.l: New, from ~/src.  Note that flex is required.
 	* configure.in: Add FP_STDC_CHECK, then use it.  Add AC_PROG_LEX.
-	* Makefile.in: Add U, apply unproto to wdiff.c and version.c if
-	not __STDC__.
 
 	* Makefile.in: Various corrections for being truly able to make in
 	subdirectories.
 
-Mon Aug 17 14:00:03 1992  Francois Pinard  (pinard at icule)
+1992-08-17  François Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Check for improper `const' support.
 
-	* wdiff.c: Insure exit code values: 0 if no differences found, 1
-	if any difference found, 2 for other reasons or errors.  Execute
-	`diff' even in the case absolutely no output will result.
-
-	* wdiff.c: Removed spurious comma after last enum item.
-
-	* alloca.c: New, from other GNU sources.
 	* configure.in: Check for alloca.
-	* Makefile.in: Distribute alloca.c, compile it if necessary.
 
-Sun Aug 16 09:28:50 1992  Francois Pinard  (pinard at icule)
+1992-08-12  François Pinard  <pinard@iro.umontreal.ca>
 
-	* wdiff.c (usage_and_exit): Added -s description.
-
-Sat Aug 15 09:27:31 1992  Francois Pinard  (pinard at icule)
+	* Release 0.01 to alt.sources and ftp.uu.net:/tmp.
 
-	* Version 0.02 to alt.sources and ftp.uu.net:/tmp.
-
-	* wdiff.c: Added -s option to produce statistics at end of output.
-
-	* wdiff.c: Copy common code from the left side instead of the
-	right side if only the common code and deleted words are wanted;
-	this makes the output spacing nicer.  Also, correct a bug by which
-	added words were shown as common code for this option set.
-
-	* wdiff.c: PAGER_PROGRAM was previously defaulted to "more", it is
-	now left undefined.  As currently set, the auto-configurator will
-	pick one, however, and force it into the program.
-
-	* wdiff.c: Avoid all emphasis if all of the output would be
-	emphasized the same way.
-
-	* wdiff.c: Avoid overstriking whitespace unless the pager is less.
-
-	* wdiff.c: Do termcap initialization and completion strings.  If a
-	pager is used, insure they are sent to stdout, never to the pager.
-
-	* wdiff.c: If PAGER is defined, but to the empty string, avoid
-	using any pager, instead of using a default PAGER.
-
-Fri Aug 14 19:22:30 1992  Francois Pinard  (pinard at icule)
-
-	* wdiff.c: Remove the `signal (SIGCLD, SIG_IGN);' which is a
-	System V-ism, and rather wait() explicitely.
-
-	* wdiff.c: Declare tgetstr if <termcap.h> not included.
-
-	* Makefile.in: Have check goal works, now that -d is gone.
-
-Wed Aug 12 01:01:37 1992  Francois Pinard  (pinard at icule)
-
-	* Version 0.01 to alt.sources and ftp.uu.net:/tmp.
-
-	* wdiff.c(setup_signals): Do not intercept SIGQUIT.
-
-	* wdiff.c: Automatically pipe through `more' or `less' if writing
-	to terminal, using environment variable $PAGER to override PAGER
-	definition.  Force terminal mode, but if the pager is `less', use
-	printer mode.  Modify copy_whitespace for overstriking whitespace
-	with itself in printer mode: `less' understands this.
-	* strstr.c: Borrowed somewhere from GNU.
-	* writepipe.c: New, provided by David MacKenzie.
 	* configure.in: Try defining PAGER to less or more.  Also use our
 	strstr if necessary.
-	* Makefile.in: Transmit PAGER to program.  Also handle strstr.c.
 
 	* configure.in: Try defining DIFF to gdiff or diff.
 	* Makefile.in: Transmit DIFF to wdiff.c, which handles it already.
 
-	* wdiff.c: Options -wxyz renamed from old -1234.  New options -123
-	acting a little like in GNU comm utility, old -d option deleted.
-
-	* wdiff.c: Check for HAVE_TPUTS instead of HAVE_TERMCAP_H in many
-	places.
 	* configure.in: Use -ltermlib on LIBS for Xenix, -ltermcap
 	otherwise; once this done, test for `tputs' availability.
 
 	* COPYING.LIB: New.
 	* Makefile.in: Distributing COPYING.LIB.
-
-Tue Aug 11 15:10:37 1992  Francois Pinard  (pinard at icule)
-
-	* Version 0.0 to alt.sources.
