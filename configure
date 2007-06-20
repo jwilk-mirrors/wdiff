@@ -401,6 +401,12 @@ EOF
   esac
 done
 
+# reset timestamps to appropriate values; this is necessary if grabbed from CVS
+touch -t 199907051830.30 configure.in
+touch -t 199907051827.48 acconfig.h
+touch -t 199810122254.57 i18n/Makefile.am
+touch -t 199907051842.55 m4/gettext.m4
+
 if test -n "$ac_prev"; then
   { echo "configure: error: missing argument to --`echo $ac_prev | sed 's/_/-/g'`" 1>&2; exit 1; }
 fi
@@ -704,7 +710,7 @@ fi
 
 PACKAGE=wdiff
 
-VERSION=0.5g
+VERSION=0.5.4-pre3
 
 if test "`cd $srcdir && pwd`" != "`pwd`" && test -f $srcdir/config.status; then
   { echo "configure: error: source directory already configured; run "make distclean" there first" 1>&2; exit 1; }
