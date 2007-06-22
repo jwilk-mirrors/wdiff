@@ -215,7 +215,7 @@ This program also tells how `mdiff' could have been called directly.\n"),
 	     stdout);
       fputs (_("\
 \n\
-Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"),
+Report bugs to <wdiff-bugs@gnu.org>.\n"),
 	     stdout);
     }
   exit (status);

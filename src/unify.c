@@ -296,7 +296,7 @@ If FILE is not specified, read standard input.\n"),
 	     stdout);
       fputs (_("\
 \n\
-Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"),
+Report bugs to <wdiff-bugs@gnu.org>.\n"),
 	       stdout);
     }
   exit (status);

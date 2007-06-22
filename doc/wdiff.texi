@@ -138,7 +138,7 @@ obsolete, and exists merely a front-end to GNU @code{mdiff}.
 
 @code{wdiff} and @code{mdiff} were written by Fran@,{c}ois Pinard, while
 @code{unify} has been contributed by Wayne Davison.  Please report bugs to
-@w{@file{wdiff-bugs@@iro.umontreal.ca}}.  Include the version number, which
+@w{@file{wdiff-bugs@@gnu.org}}.  Include the version number, which
 you can find by running the program with @samp{--version}.  Please include
 in your message sufficient input to reproduce what you got, the output you
 indeed expected, and careful explanations about the nature of the problem.

@@ -37,7 +37,7 @@ GNU `wdiff'
    These Info pages document `wdiff', a word difference finder, together
 with some other `diff' related tools.
 
-   This is for release 0.5.4-pre3.
+   This is for release 0.5.90.
 
 * Menu:
 
@@ -94,7 +94,7 @@ obsolete, and exists merely a front-end to GNU `mdiff'.
 
    `wdiff' and `mdiff' were written by Franc,ois Pinard, while `unify'
 has been contributed by Wayne Davison.  Please report bugs to
-`wdiff-bugs@iro.umontreal.ca'.  Include the version number, which you
+`wdiff-bugs@gnu.org'.  Include the version number, which you
 can find by running the program with `--version'.  Please include in
 your message sufficient input to reproduce what you got, the output you
 indeed expected, and careful explanations about the nature of the

@@ -1146,7 +1146,7 @@ Mandatory arguments to long options are mandatory for short options too.\n\
   -z, --end-insert=STRING    string to mark end of insert region\n"));
       fputs (_("\
 \n\
-Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"),
+Report bugs to <wdiff-bugs@gnu.org>.\n"),
 	     stdout);
     }
   exit (status);
