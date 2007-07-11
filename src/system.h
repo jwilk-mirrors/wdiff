@@ -60,24 +60,13 @@ extern int errno;
 # endif
 #endif
 
-#if HAVE_LOCALE_H
-# include <locale.h>
-#else
-# define setlocale(Category, Locale)
-#endif
-
-#if ENABLE_NLS
-# include <libintl.h>
-# define _(Text) gettext (Text)
-#else
-# define _(Text) (Text)
-#endif
-
 #include "error.h"
+#include "xalloc.h"
 
-voidstar xmalloc PARAMS ((size_t));
-voidstar xrealloc PARAMS ((voidstar, size_t));
-voidstar xstrdup PARAMS ((const char *));
+/* Internationalization.  */
+#include "gettext.h"
+#define _(str) gettext (str)
+#define N_(str) gettext_noop (str)
 
 /* Debugging the memory allocator.  */
 

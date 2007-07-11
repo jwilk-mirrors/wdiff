@@ -1,0 +1,4 @@
+#							-*- shell-script -*-
+
+# Tests not ready, see CVS history of cluster.m4 for the tests
+exit 77

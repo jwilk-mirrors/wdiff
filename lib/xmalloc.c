@@ -1,5 +1,8 @@
 /* xmalloc.c -- malloc with out of memory checking
-   Copyright (C) 1990, 91, 92, 93, 94, 95, 96, 97 Free Software Foundation, Inc.
+
+   Copyright (C) 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998,
+   1999, 2000, 2002, 2003, 2004, 2005, 2006 Free Software Foundation,
+   Inc.
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -15,119 +18,106 @@
    along with this program; if not, write to the Free Software Foundation,
    Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
 
-#if HAVE_CONFIG_H
-# include <config.h>
+#include <config.h>
+
+#if ! HAVE_INLINE
+# define static_inline
 #endif
-
-#include <sys/types.h>
-
-#if STDC_HEADERS
-# include <stdlib.h>
-#else
-void *calloc ();
-void *malloc ();
-void *realloc ();
-void free ();
-#endif
-
-#if ENABLE_NLS
-# include <libintl.h>
-# define _(Text) gettext (Text)
-#else
-# define textdomain(Domain)
-# define _(Text) Text
-#endif
-#define N_(Text) Text
-
-#include "error.h"
 #include "xalloc.h"
+#undef static_inline
 
-#ifndef EXIT_FAILURE
-# define EXIT_FAILURE 1
+#include <stdlib.h>
+#include <string.h>
+
+#ifndef SIZE_MAX
+# define SIZE_MAX ((size_t) -1)
 #endif
 
-/* Prototypes for functions defined here.  */
-#if defined (__STDC__) && __STDC__
-void *xmalloc (size_t n);
-void *xcalloc (size_t n, size_t s);
-void *xrealloc (void *p, size_t n);
-#endif
-
-#ifndef HAVE_DONE_WORKING_MALLOC_CHECK
-you must run the autoconf test for a properly working malloc -- see malloc.m4
-#endif
-
-#ifndef HAVE_DONE_WORKING_REALLOC_CHECK
-you must run the autoconf test for a properly working realloc -- see realloc.m4
-#endif
-
-/* Exit value when the requested amount of memory is not available.
-   The caller may set it to some other value.  */
-int xalloc_exit_failure = EXIT_FAILURE;
-
-/* FIXME: describe */
-char *const xalloc_msg_memory_exhausted = N_("Memory exhausted");
-
-/* FIXME: describe */
-void (*xalloc_fail_func) () = 0;
-
-#if __STDC__ && (HAVE_VPRINTF || HAVE_DOPRNT)
-void error (int, int, const char *, ...);
+/* 1 if calloc is known to be compatible with GNU calloc.  This
+   matters if we are not also using the calloc module, which defines
+   HAVE_CALLOC and supports the GNU API even on non-GNU platforms.  */
+#if defined HAVE_CALLOC || defined __GLIBC__
+enum { HAVE_GNU_CALLOC = 1 };
 #else
-void error ();
+enum { HAVE_GNU_CALLOC = 0 };
 #endif
-
-static void
-xalloc_fail ()
-{
-  if (xalloc_fail_func)
-    (*xalloc_fail_func) ();
-  error (xalloc_exit_failure, 0, xalloc_msg_memory_exhausted);
-}
 
 /* Allocate N bytes of memory dynamically, with error checking.  */
 
 void *
-xmalloc (n)
-     size_t n;
+xmalloc (size_t n)
 {
-  void *p;
-
-  p = malloc (n);
-  if (p == 0)
-    xalloc_fail ();
+  void *p = malloc (n);
+  if (!p && n != 0)
+    xalloc_die ();
   return p;
 }
 
 /* Change the size of an allocated block of memory P to N bytes,
-   with error checking.
-   If P is NULL, run xmalloc.  */
+   with error checking.  */
 
 void *
-xrealloc (p, n)
-     void *p;
-     size_t n;
+xrealloc (void *p, size_t n)
 {
   p = realloc (p, n);
-  if (p == 0)
-    xalloc_fail ();
+  if (!p && n != 0)
+    xalloc_die ();
   return p;
 }
 
-#ifdef NOT_USED
-
-/* Allocate memory for N elements of S bytes, with error checking.  */
+/* If P is null, allocate a block of at least *PN bytes; otherwise,
+   reallocate P so that it contains more than *PN bytes.  *PN must be
+   nonzero unless P is null.  Set *PN to the new block's size, and
+   return the pointer to the new block.  *PN is never set to zero, and
+   the returned pointer is never null.  */
 
 void *
-xcalloc (n, s)
-     size_t n, s;
+x2realloc (void *p, size_t *pn)
+{
+  return x2nrealloc (p, pn, 1);
+}
+
+/* Allocate S bytes of zeroed memory dynamically, with error checking.
+   There's no need for xnzalloc (N, S), since it would be equivalent
+   to xcalloc (N, S).  */
+
+void *
+xzalloc (size_t s)
+{
+  return memset (xmalloc (s), 0, s);
+}
+
+/* Allocate zeroed memory for N elements of S bytes, with error
+   checking.  S must be nonzero.  */
+
+void *
+xcalloc (size_t n, size_t s)
 {
   void *p;
-
-  p = calloc (n, s);
-  if (p == 0)
-    xalloc_fail ();
+  /* Test for overflow, since some calloc implementations don't have
+     proper overflow checks.  But omit overflow and size-zero tests if
+     HAVE_GNU_CALLOC, since GNU calloc catches overflow and never
+     returns NULL if successful.  */
+  if ((! HAVE_GNU_CALLOC && xalloc_oversized (n, s))
+      || (! (p = calloc (n, s)) && (HAVE_GNU_CALLOC || n != 0)))
+    xalloc_die ();
   return p;
 }
 
-#endif /* NOT_USED */
+/* Clone an object P of size S, with error checking.  There's no need
+   for xnmemdup (P, N, S), since xmemdup (P, N * S) works without any
+   need for an arithmetic overflow check.  */
+
+void *
+xmemdup (void const *p, size_t s)
+{
+  return memcpy (xmalloc (s), p, s);
+}
+
+/* Clone STRING.  */
+
+char *
+xstrdup (char const *string)
+{
+  return xmemdup (string, strlen (string) + 1);
+}

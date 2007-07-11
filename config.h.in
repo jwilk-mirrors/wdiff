@@ -1,171 +1,120 @@
-/* config.h.in.  Generated automatically from configure.in by autoheader.  */
+/* config.h.in.  Generated from configure.ac by autoheader.  */
 
-/* Define if on AIX 3.
-   System headers sometimes define this.
-   We just want to avoid a redefinition error message.  */
-#ifndef _ALL_SOURCE
-#undef _ALL_SOURCE
-#endif
-
-/* Define if using alloca.c.  */
-#undef C_ALLOCA
-
-/* Define to empty if the keyword does not work.  */
-#undef const
-
-/* Define to one of _getb67, GETB67, getb67 for Cray-2 and Cray-YMP systems.
-   This function is required for alloca.c support on those systems.  */
-#undef CRAY_STACKSEG_END
-
-/* Define if you have alloca, as a function or macro.  */
-#undef HAVE_ALLOCA
-
-/* Define if you have <alloca.h> and it should be used (not on Ultrix).  */
-#undef HAVE_ALLOCA_H
-
-/* Define if you don't have vprintf but do have _doprnt.  */
-#undef HAVE_DOPRNT
-
-/* Define if you have the vprintf function.  */
-#undef HAVE_VPRINTF
-
-/* Define as __inline if that's what the C compiler calls it.  */
-#undef inline
-
-/* Define if on MINIX.  */
-#undef _MINIX
-
-/* Define if the system does not provide POSIX.1 features except
-   with this defined.  */
-#undef _POSIX_1_SOURCE
-
-/* Define if you need to in order for stat and other things to work.  */
-#undef _POSIX_SOURCE
-
-/* Define as the return type of signal handlers (int or void).  */
-#undef RETSIGTYPE
-
-/* Define to `unsigned' if <sys/types.h> doesn't define.  */
-#undef size_t
-
-/* If using the C implementation of alloca, define if you know the
-   direction of stack growth for your system; otherwise it will be
-   automatically deduced at run-time.
- STACK_DIRECTION > 0 => grows toward higher addresses
- STACK_DIRECTION < 0 => grows toward lower addresses
- STACK_DIRECTION = 0 => direction of growth unknown
- */
-#undef STACK_DIRECTION
-
-/* Define if you have the ANSI C header files.  */
-#undef STDC_HEADERS
-
-/* Define to the path of the `diff' utility.  */
-#undef DIFF_PROGRAM
-
-/* Define to 1 if NLS is requested.  */
+/* Define to 1 if translation of program messages to the user's native
+   language is requested. */
 #undef ENABLE_NLS
 
-/* Define as 1 if you have dcgettext.  */
+/* Define to 1 if you have the MacOS X function CFLocaleCopyCurrent in the
+   CoreFoundation framework. */
+#undef HAVE_CFLOCALECOPYCURRENT
+
+/* Define to 1 if you have the MacOS X function CFPreferencesCopyAppValue in
+   the CoreFoundation framework. */
+#undef HAVE_CFPREFERENCESCOPYAPPVALUE
+
+/* Define if the GNU dcgettext() function is already present or preinstalled.
+   */
 #undef HAVE_DCGETTEXT
 
-/* Define as 1 if you have gettext and don't want to use GNU gettext.  */
+/* Define to 1 if you have the declaration of `getdelim', and to 0 if you
+   don't. */
+#undef HAVE_DECL_GETDELIM
+
+/* Define to 1 if you have the declaration of `getline', and to 0 if you
+   don't. */
+#undef HAVE_DECL_GETLINE
+
+/* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
+   don't. */
+#undef HAVE_DECL_STRERROR_R
+
+/* Define to 1 if you have the `flockfile' function. */
+#undef HAVE_FLOCKFILE
+
+/* Define to 1 if you have the `funlockfile' function. */
+#undef HAVE_FUNLOCKFILE
+
+/* Define to 1 if you have the `getdelim' function. */
+#undef HAVE_GETDELIM
+
+/* Define if the GNU gettext() function is already present or preinstalled. */
 #undef HAVE_GETTEXT
 
-/* Define if your locale.h file contains LC_MESSAGES.  */
-#undef HAVE_LC_MESSAGES
+/* Define if you have the iconv() function. */
+#undef HAVE_ICONV
 
-/* Define to 1 if tputs function is available.  */
-#undef HAVE_TPUTS
+/* Define to 1 if the compiler supports one of the keywords 'inline',
+   '__inline__', '__inline' and effectively inlines functions marked as such.
+   */
+#undef HAVE_INLINE
 
-/* Define to the installation directory for locales.  */
-#undef LOCALEDIR
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
 
-/* Define to the path of the `less' or `more' utility.  */
-#undef PAGER_PROGRAM
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
 
-/* Define to 1 for better use of the debugging malloc library.  See
-   site ftp.antaire.com in antaire/src, file dmalloc/dmalloc.tar.gz.  */
-#undef WITH_DMALLOC
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
 
-/* Define to rpl_malloc if the replacement function should be used.  */
-#undef malloc
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
 
-/* Define to rpl_realloc if the replacement function should be used.  */
-#undef realloc
+/* Define to 1 if you have the `strerror_r' function. */
+#undef HAVE_STRERROR_R
 
-/* Define if you have the DONE_WORKING_MALLOC_CHECK function.  */
-#undef HAVE_DONE_WORKING_MALLOC_CHECK
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
 
-/* Define if you have the DONE_WORKING_REALLOC_CHECK function.  */
-#undef HAVE_DONE_WORKING_REALLOC_CHECK
-
-/* Define if you have the dcgettext function.  */
-#undef HAVE_DCGETTEXT
-
-/* Define if you have the gettext function.  */
-#undef HAVE_GETTEXT
-
-/* Define if you have the setlocale function.  */
-#undef HAVE_SETLOCALE
-
-/* Define if you have the stpcpy function.  */
-#undef HAVE_STPCPY
-
-/* Define if you have the strerror function.  */
-#undef HAVE_STRERROR
-
-/* Define if you have the strstr function.  */
-#undef HAVE_STRSTR
-
-/* Define if you have the <curses.h> header file.  */
-#undef HAVE_CURSES_H
-
-/* Define if you have the <libintl.h> header file.  */
-#undef HAVE_LIBINTL_H
-
-/* Define if you have the <locale.h> header file.  */
-#undef HAVE_LOCALE_H
-
-/* Define if you have the <ncurses.h> header file.  */
-#undef HAVE_NCURSES_H
-
-/* Define if you have the <string.h> header file.  */
+/* Define to 1 if you have the <string.h> header file. */
 #undef HAVE_STRING_H
 
-/* Define if you have the <termcap.h> header file.  */
-#undef HAVE_TERMCAP_H
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
 
-/* Define if you have the <termlib.h> header file.  */
-#undef HAVE_TERMLIB_H
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
 
-/* Define if you have the <unistd.h> header file.  */
+/* Define to 1 if you have the <unistd.h> header file. */
 #undef HAVE_UNISTD_H
-
-/* Define if you have the curses library (-lcurses).  */
-#undef HAVE_LIBCURSES
-
-/* Define if you have the malloc library (-lmalloc).  */
-#undef HAVE_LIBMALLOC
-
-/* Define if you have the ncurses library (-lncurses).  */
-#undef HAVE_LIBNCURSES
-
-/* Define if you have the termcap library (-ltermcap).  */
-#undef HAVE_LIBTERMCAP
-
-/* Define if you have the termlib library (-ltermlib).  */
-#undef HAVE_LIBTERMLIB
 
 /* Name of package */
 #undef PACKAGE
 
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Define to 1 if strerror_r returns char *. */
+#undef STRERROR_R_CHAR_P
+
 /* Version number of package */
 #undef VERSION
 
-/* Define if compiler has function prototypes */
-#undef PROTOTYPES
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# undef _GNU_SOURCE
+#endif
 
-/* Define if using the dmalloc debugging malloc package */
-#undef WITH_DMALLOC
+/* Define to a replacement function name for getline(). */
+#undef getline
 
+/* Define to `__inline__' or `__inline' if that's what the C compiler
+   calls it, or to nothing if 'inline' is not supported under any name.  */
+#ifndef __cplusplus
+#undef inline
+#endif

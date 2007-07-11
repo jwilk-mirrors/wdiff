@@ -1,7 +1,5 @@
-/* Begin of libgettext.h */
-
-/* Message catalogs for internationalization.
-   Copyright (C) 1995, 1996, 1997, 1998 Free Software Foundation, Inc.
+/* Convenience header for conditional use of GNU <libintl.h>.
+   Copyright (C) 1995-1998, 2000-2002, 2004-2006 Free Software Foundation, Inc.
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -13,165 +11,260 @@
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
 
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software Foundation,
+   You should have received a copy of the GNU General Public License along
+   with this program; if not, write to the Free Software Foundation,
    Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
 
-/* Because on some systems (e.g. Solaris) we sometimes have to include
-   the systems libintl.h as well as this file we have more complex
-   include protection above.  But the systems header might perhaps also
-   define _LIBINTL_H and therefore we have to protect the definition here.  */
+#ifndef _LIBGETTEXT_H
+#define _LIBGETTEXT_H 1
 
-#if !defined _LIBINTL_H || !defined _LIBGETTEXT_H
-#ifndef _LIBINTL_H
-# define _LIBINTL_H	1
-#endif
-#define _LIBGETTEXT_H	1
-
-/* We define an additional symbol to signal that we use the GNU
-   implementation of gettext.  */
-#define __USE_GNU_GETTEXT 1
-
-#include <sys/types.h>
-
-#if HAVE_LOCALE_H
-# include <locale.h>
-#endif
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-#ifndef PARAMS
-# if __STDC__ || defined __cplusplus
-#  define PARAMS(args) args
-# else
-#  define PARAMS(args) ()
-# endif
-#endif
-
-#ifndef NULL
-# if !defined __cplusplus || defined __GNUC__
-#  define NULL ((void *) 0)
-# else
-#  define NULL (0)
-# endif
-#endif
-
-#if !HAVE_LC_MESSAGES
-/* This value determines the behaviour of the gettext() and dgettext()
-   function.  But some system does not have this defined.  Define it
-   to a default value.  */
-# define LC_MESSAGES (-1)
-#endif
-
-/* Declarations for gettext-using-catgets interface.  Derived from
-   Jim Meyering's libintl.h.  */
-struct _msg_ent
-{
-  const char *_msg;
-  int _msg_number;
-};
-
-#if HAVE_CATGETS
-/* These two variables are defined in the automatically by po-to-tbl.sed
-   generated file `cat-id-tbl.c'.  */
-extern const struct _msg_ent _msg_tbl[];
-extern int _msg_tbl_length;
-#endif
-
-/* For automatical extraction of messages sometimes no real
-   translation is needed.  Instead the string itself is the result.  */
-#define gettext_noop(Str) (Str)
-
-/* Look up MSGID in the current default message catalog for the current
-   LC_MESSAGES locale.  If not found, returns MSGID itself (the default
-   text).  */
-extern char *gettext PARAMS ((const char *__msgid));
-static char *gettext__ PARAMS ((const char *__msgid));
-
-/* Look up MSGID in the DOMAINNAME message catalog for the current
-   LC_MESSAGES locale.  */
-extern char *dgettext PARAMS ((const char *__domainname, const char *__msgid));
-static char *dgettext__ PARAMS ((const char *__domainname,
-				 const char *__msgid));
-
-/* Look up MSGID in the DOMAINNAME message catalog for the current CATEGORY
-   locale.  */
-extern char *dcgettext PARAMS ((const char *__domainname, const char *__msgid,
-				int __category));
-extern char *dcgettext__ PARAMS ((const char *__domainname,
-				  const char *__msgid, int __category));
-
-/* Set the current default message catalog to DOMAINNAME.
-   If DOMAINNAME is null, return the current default.
-   If DOMAINNAME is "", reset to the default of "messages".  */
-extern char *textdomain PARAMS ((const char *__domainname));
-static char *textdomain__ PARAMS ((const char *__domainname));
-
-/* Specify that the DOMAINNAME message catalog will be found
-   in DIRNAME rather than in the system locale data base.  */
-extern char *bindtextdomain PARAMS ((const char *__domainname,
-				  const char *__dirname));
-static char *bindtextdomain__ PARAMS ((const char *__domainname,
-				    const char *__dirname));
-
+/* NLS can be disabled through the configure --disable-nls option.  */
 #if ENABLE_NLS
 
-/* Solaris 2.3 has the gettext function but dcgettext is missing.
-   So we omit this optimization for Solaris 2.3.  BTW, Solaris 2.4
-   has dcgettext.  */
-# if !HAVE_CATGETS && (!HAVE_GETTEXT || HAVE_DCGETTEXT)
+/* Get declarations of GNU message catalog functions.  */
+# include <libintl.h>
 
-#  define gettext(Msgid)						      \
-     dgettext (NULL, Msgid)
-
-#  define dgettext(Domainname, Msgid)					      \
-     dcgettext (Domainname, Msgid, LC_MESSAGES)
-
-#  if defined __GNUC__ && __GNUC__ == 2 && __GNUC_MINOR__ >= 7
-/* This global variable is defined in loadmsgcat.c.  We need a sign,
-   whether a new catalog was loaded, which can be associated with all
-   translations.  */
-extern int _nl_msg_cat_cntr;
-
-#   define dcgettext(Domainname, Msgid, Category)			      \
-  (__extension__							      \
-   ({									      \
-     char *__result;							      \
-     if (__builtin_constant_p (Msgid))					      \
-       {								      \
-	 static char *__translation__;					      \
-	 static int __catalog_counter__;				      \
-	 if (! __translation__ || __catalog_counter__ != _nl_msg_cat_cntr)    \
-	   {								      \
-	     __translation__ =						      \
-	       dcgettext__ (Domainname, Msgid, Category);		      \
-	     __catalog_counter__ = _nl_msg_cat_cntr;			      \
-	   }								      \
-	 __result = __translation__;					      \
-       }								      \
-     else								      \
-       __result = dcgettext__ (Domainname, Msgid, Category);		      \
-     __result;								      \
-    }))
-#  endif
+/* You can set the DEFAULT_TEXT_DOMAIN macro to specify the domain used by
+   the gettext() and ngettext() macros.  This is an alternative to calling
+   textdomain(), and is useful for libraries.  */
+# ifdef DEFAULT_TEXT_DOMAIN
+#  undef gettext
+#  define gettext(Msgid) \
+     dgettext (DEFAULT_TEXT_DOMAIN, Msgid)
+#  undef ngettext
+#  define ngettext(Msgid1, Msgid2, N) \
+     dngettext (DEFAULT_TEXT_DOMAIN, Msgid1, Msgid2, N)
 # endif
 
 #else
 
-# define gettext(Msgid) (Msgid)
-# define dgettext(Domainname, Msgid) (Msgid)
-# define dcgettext(Domainname, Msgid, Category) (Msgid)
-# define textdomain(Domainname) ((char *) Domainname)
-# define bindtextdomain(Domainname, Dirname) ((char *) Dirname)
+/* Solaris /usr/include/locale.h includes /usr/include/libintl.h, which
+   chokes if dcgettext is defined as a macro.  So include it now, to make
+   later inclusions of <locale.h> a NOP.  We don't include <libintl.h>
+   as well because people using "gettext.h" will not include <libintl.h>,
+   and also including <libintl.h> would fail on SunOS 4, whereas <locale.h>
+   is OK.  */
+#if defined(__sun)
+# include <locale.h>
+#endif
+
+/* Many header files from the libstdc++ coming with g++ 3.3 or newer include
+   <libintl.h>, which chokes if dcgettext is defined as a macro.  So include
+   it now, to make later inclusions of <libintl.h> a NOP.  */
+#if defined(__cplusplus) && defined(__GNUG__) && (__GNUC__ >= 3)
+# include <cstdlib>
+# if (__GLIBC__ >= 2) || _GLIBCXX_HAVE_LIBINTL_H
+#  include <libintl.h>
+# endif
+#endif
+
+/* Disabled NLS.
+   The casts to 'const char *' serve the purpose of producing warnings
+   for invalid uses of the value returned from these functions.
+   On pre-ANSI systems without 'const', the config.h file is supposed to
+   contain "#define const".  */
+# define gettext(Msgid) ((const char *) (Msgid))
+# define dgettext(Domainname, Msgid) ((void) (Domainname), gettext (Msgid))
+# define dcgettext(Domainname, Msgid, Category) \
+    ((void) (Category), dgettext (Domainname, Msgid))
+# define ngettext(Msgid1, Msgid2, N) \
+    ((N) == 1 \
+     ? ((void) (Msgid2), (const char *) (Msgid1)) \
+     : ((void) (Msgid1), (const char *) (Msgid2)))
+# define dngettext(Domainname, Msgid1, Msgid2, N) \
+    ((void) (Domainname), ngettext (Msgid1, Msgid2, N))
+# define dcngettext(Domainname, Msgid1, Msgid2, N, Category) \
+    ((void) (Category), dngettext(Domainname, Msgid1, Msgid2, N))
+# define textdomain(Domainname) ((const char *) (Domainname))
+# define bindtextdomain(Domainname, Dirname) \
+    ((void) (Domainname), (const char *) (Dirname))
+# define bind_textdomain_codeset(Domainname, Codeset) \
+    ((void) (Domainname), (const char *) (Codeset))
 
 #endif
 
+/* A pseudo function call that serves as a marker for the automated
+   extraction of messages, but does not call gettext().  The run-time
+   translation is done at a different place in the code.
+   The argument, String, should be a literal string.  Concatenated strings
+   and other string expressions won't work.
+   The macro's expansion is not parenthesized, so that it is suitable as
+   initializer for static 'char[]' or 'const char[]' variables.  */
+#define gettext_noop(String) String
+
+/* The separator between msgctxt and msgid in a .mo file.  */
+#define GETTEXT_CONTEXT_GLUE "\004"
+
+/* Pseudo function calls, taking a MSGCTXT and a MSGID instead of just a
+   MSGID.  MSGCTXT and MSGID must be string literals.  MSGCTXT should be
+   short and rarely need to change.
+   The letter 'p' stands for 'particular' or 'special'.  */
+#ifdef DEFAULT_TEXT_DOMAIN
+# define pgettext(Msgctxt, Msgid) \
+   pgettext_aux (DEFAULT_TEXT_DOMAIN, Msgctxt GETTEXT_CONTEXT_GLUE Msgid, Msgid, LC_MESSAGES)
+#else
+# define pgettext(Msgctxt, Msgid) \
+   pgettext_aux (NULL, Msgctxt GETTEXT_CONTEXT_GLUE Msgid, Msgid, LC_MESSAGES)
+#endif
+#define dpgettext(Domainname, Msgctxt, Msgid) \
+  pgettext_aux (Domainname, Msgctxt GETTEXT_CONTEXT_GLUE Msgid, Msgid, LC_MESSAGES)
+#define dcpgettext(Domainname, Msgctxt, Msgid, Category) \
+  pgettext_aux (Domainname, Msgctxt GETTEXT_CONTEXT_GLUE Msgid, Msgid, Category)
+#ifdef DEFAULT_TEXT_DOMAIN
+# define npgettext(Msgctxt, Msgid, MsgidPlural, N) \
+   npgettext_aux (DEFAULT_TEXT_DOMAIN, Msgctxt GETTEXT_CONTEXT_GLUE Msgid, Msgid, MsgidPlural, N, LC_MESSAGES)
+#else
+# define npgettext(Msgctxt, Msgid, MsgidPlural, N) \
+   npgettext_aux (NULL, Msgctxt GETTEXT_CONTEXT_GLUE Msgid, Msgid, MsgidPlural, N, LC_MESSAGES)
+#endif
+#define dnpgettext(Domainname, Msgctxt, Msgid, MsgidPlural, N) \
+  npgettext_aux (Domainname, Msgctxt GETTEXT_CONTEXT_GLUE Msgid, Msgid, MsgidPlural, N, LC_MESSAGES)
+#define dcnpgettext(Domainname, Msgctxt, Msgid, MsgidPlural, N, Category) \
+  npgettext_aux (Domainname, Msgctxt GETTEXT_CONTEXT_GLUE Msgid, Msgid, MsgidPlural, N, Category)
+
+#ifdef __GNUC__
+__inline
+#else
 #ifdef __cplusplus
+inline
+#endif
+#endif
+static const char *
+pgettext_aux (const char *domain,
+	      const char *msg_ctxt_id, const char *msgid,
+	      int category)
+{
+  const char *translation = dcgettext (domain, msg_ctxt_id, category);
+  if (translation == msg_ctxt_id)
+    return msgid;
+  else
+    return translation;
 }
+
+#ifdef __GNUC__
+__inline
+#else
+#ifdef __cplusplus
+inline
+#endif
+#endif
+static const char *
+npgettext_aux (const char *domain,
+	       const char *msg_ctxt_id, const char *msgid,
+	       const char *msgid_plural, unsigned long int n,
+	       int category)
+{
+  const char *translation =
+    dcngettext (domain, msg_ctxt_id, msgid_plural, n, category);
+  if (translation == msg_ctxt_id || translation == msgid_plural)
+    return (n == 1 ? msgid : msgid_plural);
+  else
+    return translation;
+}
+
+/* The same thing extended for non-constant arguments.  Here MSGCTXT and MSGID
+   can be arbitrary expressions.  But for string literals these macros are
+   less efficient than those above.  */
+
+#include <string.h>
+
+#define _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS \
+  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !__STRICT_ANSI__) \
+   /* || __STDC_VERSION__ >= 199901L */ )
+
+#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+#include <stdlib.h>
 #endif
 
-#endif
+#define pgettext_expr(Msgctxt, Msgid) \
+  dcpgettext_expr (NULL, Msgctxt, Msgid, LC_MESSAGES)
+#define dpgettext_expr(Domainname, Msgctxt, Msgid) \
+  dcpgettext_expr (Domainname, Msgctxt, Msgid, LC_MESSAGES)
 
-/* End of libgettext.h */
+#ifdef __GNUC__
+__inline
+#else
+#ifdef __cplusplus
+inline
+#endif
+#endif
+static const char *
+dcpgettext_expr (const char *domain,
+		 const char *msgctxt, const char *msgid,
+		 int category)
+{
+  size_t msgctxt_len = strlen (msgctxt) + 1;
+  size_t msgid_len = strlen (msgid) + 1;
+  const char *translation;
+#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+  char msg_ctxt_id[msgctxt_len + msgid_len];
+#else
+  char buf[1024];
+  char *msg_ctxt_id =
+    (msgctxt_len + msgid_len <= sizeof (buf)
+     ? buf
+     : (char *) malloc (msgctxt_len + msgid_len));
+  if (msg_ctxt_id != NULL)
+#endif
+    {
+      memcpy (msg_ctxt_id, msgctxt, msgctxt_len - 1);
+      msg_ctxt_id[msgctxt_len - 1] = '\004';
+      memcpy (msg_ctxt_id + msgctxt_len, msgid, msgid_len);
+      translation = dcgettext (domain, msg_ctxt_id, category);
+#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      if (msg_ctxt_id != buf)
+	free (msg_ctxt_id);
+#endif
+      if (translation != msg_ctxt_id)
+	return translation;
+    }
+  return msgid;
+}
+
+#define npgettext_expr(Msgctxt, Msgid, MsgidPlural, N) \
+  dcnpgettext_expr (NULL, Msgctxt, Msgid, MsgidPlural, N, LC_MESSAGES)
+#define dnpgettext_expr(Domainname, Msgctxt, Msgid, MsgidPlural, N) \
+  dcnpgettext_expr (Domainname, Msgctxt, Msgid, MsgidPlural, N, LC_MESSAGES)
+
+#ifdef __GNUC__
+__inline
+#else
+#ifdef __cplusplus
+inline
+#endif
+#endif
+static const char *
+dcnpgettext_expr (const char *domain,
+		  const char *msgctxt, const char *msgid,
+		  const char *msgid_plural, unsigned long int n,
+		  int category)
+{
+  size_t msgctxt_len = strlen (msgctxt) + 1;
+  size_t msgid_len = strlen (msgid) + 1;
+  const char *translation;
+#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+  char msg_ctxt_id[msgctxt_len + msgid_len];
+#else
+  char buf[1024];
+  char *msg_ctxt_id =
+    (msgctxt_len + msgid_len <= sizeof (buf)
+     ? buf
+     : (char *) malloc (msgctxt_len + msgid_len));
+  if (msg_ctxt_id != NULL)
+#endif
+    {
+      memcpy (msg_ctxt_id, msgctxt, msgctxt_len - 1);
+      msg_ctxt_id[msgctxt_len - 1] = '\004';
+      memcpy (msg_ctxt_id + msgctxt_len, msgid, msgid_len);
+      translation = dcngettext (domain, msg_ctxt_id, msgid_plural, n, category);
+#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      if (msg_ctxt_id != buf)
+	free (msg_ctxt_id);
+#endif
+      if (!(translation == msg_ctxt_id || translation == msgid_plural))
+	return translation;
+    }
+  return (n == 1 ? msgid : msgid_plural);
+}
+
+#endif /* _LIBGETTEXT_H */
