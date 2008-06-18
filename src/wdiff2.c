@@ -225,7 +225,7 @@ Report bugs to <wdiff-bugs@gnu.org>.\n"),
 | Main program.	 |
 `---------------*/
 
-void
+int
 main (int argc, char *const argv[])
 {
   int option_char;		/* option character */
