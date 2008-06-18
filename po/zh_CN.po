@@ -1,124 +1,125 @@
-# Swedish messages for wdiff
-# Copyright � 1996, 2001 Free Software Foundation, Inc.
-# Jan Dj�rv <Jan.Djarv@mbox200.swipnet.se>, 1996, 2001.
-# Revision: 1.12
+# Simplified Chinese translation for wdiff.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# Meng Jie <zuxyhere@eastday.com>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "POT-Creation-Date: 1999-07-05 20:35-0400\n"
-"PO-Revision-Date: 2001-08-24 21:50+0200\n"
-"Last-Translator: Jan Dj�rv <Jan.Djarv@mbox200.swipnet.se>\n"
-"Language-Team: Swedish <sv@li.org>\n"
+"PO-Revision-Date: 2006-01-15 02:25+0800\n"
+"Last-Translator: Meng Jie <zuxyhere@eastday.com>\n"
+"Language-Team: Chinese (simplified) <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: src/mdiff.c:398
 #, c-format
 msgid "%s (for regexp `%s')"
-msgstr "%s (f�r regulj�rt uttryck \"%s\")"
+msgstr "%s (对于正规表示式 “%s”)"
 
 #: src/mdiff.c:917 src/wdiff.c:1329
 msgid "Only one file may be standard input."
-msgstr "Endast en fil kan vara standard in."
+msgstr "只有一个文件可以是标准输入。"
 
 #: src/mdiff.c:932 src/wdiff.c:592
 msgid "Directories not supported"
-msgstr "Kataloger st�ds inte"
+msgstr "不支持目录操作"
 
 #: src/mdiff.c:1075
 #, c-format
 msgid "Reading %s"
-msgstr "L�ser %s"
+msgstr "读取 %s"
 
 #: src/mdiff.c:1198
 #, c-format
 msgid ", %d items\n"
-msgstr ", %d poster\n"
+msgstr "，%d 个条目\n"
 
 #: src/mdiff.c:1276
 #, c-format
 msgid "Read summary: %d files, %d items\n"
-msgstr "L�ssummering: %d filer, %d poster\n"
+msgstr "读取小结：%d 个文件，%d 条目\n"
 
 #: src/mdiff.c:1671
 msgid "Sorting"
-msgstr "Sorterar"
+msgstr "排序"
 
 #: src/mdiff.c:1688
 msgid ", clustering"
-msgstr ", grupperar"
+msgstr ""
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
 msgid ", done\n"
-msgstr ", klar\n"
+msgstr "，完成\n"
 
 #: src/mdiff.c:1907
 msgid "Sorting members"
-msgstr "Sorterar medlemmar"
+msgstr "排序成员"
 
 #: src/mdiff.c:1939
 #, c-format
 msgid "Work summary: %d clusters, %d members\n"
-msgstr "Arbetssummering: %d grupper, %d medlemmar\n"
+msgstr ""
 
 #: src/mdiff.c:2317
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Arbetssummering: %d grupper, %d medlemmar, %d �verlappningar\n"
+msgstr ""
 
 #: src/mdiff.c:2372 src/wdiff.c:243
 msgid "Select a terminal through the TERM environment variable."
-msgstr "V�lj terminaltyp genom att s�tta milj�variabeln TERM."
+msgstr "从 TERM 环境变量中选择一个终端类型。"
 
 #: src/mdiff.c:2375 src/wdiff.c:246
 msgid "Could not access the termcap data base."
-msgstr "Kan inte l�sa termcap-databasen."
+msgstr "无法访问 termcap 数据库。"
 
 #: src/mdiff.c:2377 src/wdiff.c:248
 #, c-format
 msgid "Terminal type `%s' is not defined."
-msgstr "Terminaltyp \"%s\" �r inte definierad."
+msgstr "终端类型‘%s’未定义。"
 
 #: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
 #, c-format
 msgid "%s: %d words"
-msgstr "%s: %d ord"
+msgstr "%s: %d 个词"
 
 #: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
 msgid "  %d %d%% common"
-msgstr "  %d %d%% gemensamma"
+msgstr "  %d %d%% 共同"
 
 #: src/mdiff.c:3759 src/wdiff.c:1060
 msgid "  %d %d%% deleted"
-msgstr "  %d %d%% borttagna"
+msgstr "  %d %d%% 删除"
 
 #: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
 msgid "  %d %d%% changed"
-msgstr "  %d %d%% �ndrade"
+msgstr "  %d %d%% 更改"
 
 #: src/mdiff.c:3771 src/wdiff.c:1072
 msgid "  %d %d%% inserted"
-msgstr "  %d %d%% tillagda"
+msgstr "  %d %d%% 插入"
 
 #: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "F�rs�k med \"%s --help\" f�r mer information.\n"
+msgstr "请尝试执行‘%s --help’以得到更多信息。\n"
 
 #: src/mdiff.c:3804
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff - L�ser flera filer och letar efter liknande sekvenser, d�refter\n"
-"visas en m�jligen detaljerad lista med skillnader och likheter.\n"
 
 #: src/mdiff.c:3808
 #, c-format
-msgid "\nUsage: %s [OPTION]... [FILE]...\n"
-msgstr "\nAnv�ndning: %s [FLAGGA]... [FIL]...\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]...\n"
+msgstr ""
+"\n"
+"用法：%s [选项]... [文件]...\n"
 
 #: src/mdiff.c:3812
 msgid ""
@@ -130,11 +131,11 @@ msgid ""
 "      --version          output version information and exit\n"
 msgstr ""
 "\n"
-"Arbetsl�gen:\n"
-"  -h                      (ignorerad)\n"
-"  -v, --verbose           rapportera en del statistik p� standard fel\n"
-"      --help              visa denna hj�lptext och avsluta\n"
-"      --version           visa versionsinformation och avsluta\n"
+"操作模式:\n"
+"  -h                     (忽略)\n"
+"  -v，--verbose          在标准错误上报告一些统计信息\n"
+"      --help             显示本帮助信息并退出\n"
+"      --version          显示版本信息并退出\n"
 
 #: src/mdiff.c:3819
 msgid ""
@@ -146,13 +147,6 @@ msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
-"\n"
-"Formatera resultat:\n"
-"  -T, --initial-tab       skriv TAB inst�llet f�r inledande mellanslag\n"
-"  -l, --paginate          skicka resultatet genom \"pr\" f�r sidindelning\n"
-"  -S, --string[=STR�NG]   s�k �ven efter STR�NG\n"
-"  -V, --show-links        ange fil- och radreferenser i annoteringar\n"
-"  -t, --expand-tabs       ers�tt tabulatortecken med mellanslag i reultatet\n"
 
 #: src/mdiff.c:3828
 msgid ""
@@ -160,9 +154,6 @@ msgid ""
 "Debugging:\n"
 "  -0, --debugging   output many details about what is going on\n"
 msgstr ""
-"\n"
-"Fels�kning:\n"
-"  -0, --debugging   skriv ut m�nga detaljer om vad som h�nder\n"
 
 #: src/mdiff.c:3833
 msgid ""
@@ -180,20 +171,6 @@ msgid ""
 "  -O, --item-regexp=REGEXP    compare items as defined by REGEXP\n"
 "  -W, --word-mode             compare words instead of lines\n"
 msgstr ""
-"\n"
-"Flaggor f�r ordl�ge:\n"
-"\n"
-"  -1, --no-deleted           visa inte borttagna ord\n"
-"  -2, --no-inserted          visa inte tillagda ord\n"
-"  -3, --no-common            visa inte gemensamma ord\n"
-"  -A, --auto-pager           ge resultatet till en sidvisare\n"
-"  -k, --less-mode            speciell variant av -o f�r \"less\"\n"
-"  -m, --avoid-wraps          l�t inte f�lt l�pa �ver flera rader\n"
-"  -o, --printer              dubbelskrift som f�r skrivare\n"
-"  -z, --terminal             anv�nd termcap f�r att markera ord\n"
-"  -K, --no-init-term         som -z, men inga termcap-start/slutstr�ngar\n"
-"  -O, --item-regexp=REGEXP   j�mf�r poster som definieras av REGEXP\n"
-"  -W, --word-mode            j�mf�r ord ist�llet f�r rader\n"
 
 #: src/mdiff.c:3849
 msgid ""
@@ -205,15 +182,6 @@ msgid ""
 "*  -q, --brief                 only says if files differ (binary default)\n"
 "*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"
 msgstr ""
-"\n"
-"J�mf�ra filer:\n"
-"*  -H, --speed-large-files     jobba fortare, f�r m�nga sm� skillnader\n"
-"*  -a, --text                  rapportera radskillnader\n"
-"*                                (standardv�rde f�r textfiler)\n"
-"*  -d, --minimal               f�rs�k mera f�r ett mindre antal skillnader\n"
-"*  -q, --brief                 rapportera bara om filer skiljer sig\n"
-"*                                (standardv�rde f�r bin�rfiler)\n"
-"*      --horizon-lines=ANTAL   visa ANTAL rader i gemensamma prefix/suffix\n"
 
 #: src/mdiff.c:3859
 msgid ""
@@ -227,16 +195,6 @@ msgid ""
 "*  -s, --report-identical-files    report when two files are the same\n"
 "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
 msgstr ""
-"\n"
-"J�mf�ra kataloger:\n"
-"*  -N, --new-file                  behandla saknade filer som tomma\n"
-"*  -P, --unidirectional-new-file   behandla saknade gamla filer som tomma\n"
-"*  -S, --starting-file=FIL         forts�tt katalogj�mf�relse vid FIL\n"
-"*  -X, --exclude-from=FIL          ignorera filer som matchar m�nster fr�n FIL\n"
-"*  -r, --recursive                 j�mf�r underkataloger rekursivt\n"
-"*  -s, --report-identical-files    rapportera n�r tv� filer �r likadana\n"
-"*  -x, --exclude=M�NSTER           ignorera filer (kataloger) som matchar\n"
-"                                   M�NSTER\n"
 
 #: src/mdiff.c:3871
 msgid ""
@@ -248,14 +206,6 @@ msgid ""
 "  -i, --ignore-case                    ignore case differences\n"
 "  -w, --ignore-all-space               ignore white space\n"
 msgstr ""
-"\n"
-"Ignorera text:\n"
-"  -B, --ignore-blank-lines             ignorera blanka rader\n"
-"*  -I, --ignore-matching-lines=REGUTTR  ignorera rader som matchar\n"
-"*                                       regulj�ruttryck REGUTTR\n"
-"  -b, --ignore-space-change            ignorera skillnader i blanktecken\n"
-"  -i, --ignore-case                    versaler och gemener j�mf�rs lika\n"
-"  -w, --ignore-all-space               ignorera alla blanktecken\n"
 
 #: src/mdiff.c:3879
 msgid ""
@@ -265,11 +215,6 @@ msgid ""
 "  -J, --minimum-size=ITEMS   ignore clusters not having that many ITEMS\n"
 "  -j, --ignore-delimiters    do not count items having only delimiters\n"
 msgstr ""
-"\n"
-"Gruppering:\n"
-"  -G, --relist-files         lista alla infiler med annotationer\n"
-"  -J, --minimum-size=ANTAL   ignorera grupper som inte har ANTAL delar\n"
-"  -j, --ignore-delimiters    r�kna inte delar som bara har avskiljare\n"
 
 #: src/mdiff.c:3887
 msgid ""
@@ -285,17 +230,6 @@ msgid ""
 "*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n"
 "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 msgstr ""
-"\n"
-"Detajerade utformat:\n"
-"*  -D, --ifdef=NAMN                      skriv \"#ifdef NAMN\"-format\n"
-"*      --changed-group-format=FORMAT     anv�nd FORMAT f�r �ndrade rader\n"
-"*      --new-group-format=FORMAT         anv�nd FORMAT f�r insatta rader\n"
-"*      --new-line-format=FORMAT          anv�nd FORMAT f�r insatt rad\n"
-"*      --old-group-format=FORMAT         anv�nd FORMAT f�r borttagna rader\n"
-"*      --old-line-format=FORMAT          anv�nd FORMAT f�r borttagen rad\n"
-"*      --unchanged-group-format=FORMAT   anv�nd FORMAT f�r of�r�ndrade rader\n"
-"*      --unchanged-line-format=FORMAT    anv�nd FORMAT f�r of�r�ndrad rad\n"
-"*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 
 #: src/mdiff.c:3901
 msgid ""
@@ -306,12 +240,6 @@ msgid ""
 "*  -f, --forward-ed       mix between -e and -n (not very useful)\n"
 "*  -n, --rcs              output RCS format (internally used by RCS)\n"
 msgstr ""
-"\n"
-"Skriptlika format:\n"
-"  (ingen av -CDUcefnuy)   skriv normalt \"diff\"-format\n"
-"*  -e, --ed               skriv ett giltigt \"ed\"-skript\n"
-"*  -f, --forward-ed       blandning mellan -e och -n (inte s�rskilt anv�ndbart)\n"
-"*  -n, --rcs              skriv RCS-format (internt anv�nt av RCS)\n"
 
 #: src/mdiff.c:3910
 msgid ""
@@ -320,11 +248,6 @@ msgid ""
 "*  -F, --show-function-line=REGEXP   show previous context matching REGEXP\n"
 "*  -p, --show-c-function             show which C function for each change\n"
 msgstr ""
-"\n"
-"Sammanhangsformat och enat format:\n"
-"*  -F, --show-function-line=REGUTTR  visa f�reg�ende sammanhang som matchar\n"
-"*                                    regulj�ruttryck REGUTTR\n"
-"*  -p, --show-c-function             visa vilken C-funktion f�r varje �ndring\n"
 
 #: src/mdiff.c:3917
 msgid ""
@@ -336,16 +259,6 @@ msgid ""
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
-"\n"
-"*  -C, --context=RADER         som -c, men v�lj ocks� antal rader omgivning\n"
-"*  -L, --label=M�RKE           anv�nd till/fr�n M�RKE ist�llet f�r filnamn\n"
-"*                              (tv� g�nger)\n"
-"*  -U, --unified=RADER         som -u, men v�lj ocks� antal rader omgivning\n"
-"*  -c, --context               skriv sammanhangsdiff (standardv�rde\n"
-"*                              3 sammanhangsrader)\n"
-"*  -u, --unified               skriv enad diff (standardv�rde\n"
-"*                              3 sammanhangsrader)\n"
-"*  -RADER                      (obsolet: v�lj antal sammanhangsrader)\n"
 
 #: src/mdiff.c:3927
 msgid ""
@@ -357,13 +270,6 @@ msgid ""
 "*      --sdiff-merge-assist      (internally used by `sdiff')\n"
 "*      --suppress-common-lines   do not print common lines\n"
 msgstr ""
-"\n"
-"Format f�r sida vid sida:\n"
-"*  -W, --width=BREDD             anv�nd BREDD som kolumnbredd\n"
-"*  -y, --side-by-side            anv�nd format f�r sida vid sida\n"
-"*      --left-column             skriv endast v�nster kolumn n�r gemensamma\n"
-"*      --sdiff-merge-assist      (internt anv�nt av \"sdiff\")\n"
-"*      --suppress-common-lines   skriv inte gemensamma rader\n"
 
 #: src/mdiff.c:3937
 msgid ""
@@ -380,22 +286,12 @@ msgid ""
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
-"\n"
-"FORMAT best�r av tecken som visas som sig sj�lva, f�rutom:\n"
-"  %%%%           ett enstaka %%\n"
-"  %%c'C'        citerat tecken C\n"
-"  %%c'\\O'       tecken som har v�rdet O, fr�n 1 till 3 oktala siffror\n"
-"  %%(A=B?T:E)   if A is B then T else E; A B tal eller VARIABEL, T E FORMAT\n"
-"  %%FN          anv�nd SPECIF-specifikation F f�r att skriva VARIABEL-v�rde N\n"
-"  %%<           [grupp] gammal, varje rad genom --old-line-format\n"
-"  %%>           [grupp] ny, varje rad genom --new-line-format\n"
-"  %%=           [group] of�r�ndrad, varje rad genom --unchanged-line-format\n"
-"  %%l           [rad] utan dess m�jliga avslutande nyradstecken\n"
-"  %%L           [rad] med dess m�jliga avslutande nyradstecken\n"
 
 #: src/mdiff.c:3952
-msgid "\nSPECIF is [-][W[.D]]{doxX} as in C printf\n"
-msgstr "\nSPECIF �r [-][W[.D]]{doxX} som i C printf\n"
+msgid ""
+"\n"
+"SPECIF is [-][W[.D]]{doxX} as in C printf\n"
+msgstr ""
 
 #: src/mdiff.c:3957
 msgid ""
@@ -407,13 +303,6 @@ msgid ""
 "  {mM}   line number just after group\n"
 "  {nN}   number of lines in the group\n"
 msgstr ""
-"\n"
-"VARIABEL �r {eflmn} f�r gammal grupp eller {EFLMN} f�r ny grupp\n"
-"  {eE}   radnumret just f�re gruppen\n"
-"  {fF}   f�rsta radnumret i gruppen\n"
-"  {lL}   sista radnumret i gruppen\n"
-"  {mM}   radnumret just efter gruppen\n"
-"  {nN}   antal rader i gruppen\n"
 
 #: src/mdiff.c:3967
 msgid ""
@@ -436,22 +325,20 @@ msgid ""
 "  -F, --show-function-line=RE show the most recent line matching RE\n"
 msgstr ""
 "\n"
-"Normala diff-flaggor:\n"
-"  -i, --ignore-case         versaler och gemener j�mf�rs lika\n"
-"  -w, --ignore-all-space    ignorera alla blanktecken\n"
-"  -b, --ignore-space-change ignorera skillnader i blanktecken\n"
-"  -B, --ignore-blank-lines  ignorera skillnader som �r blanka rader\n"
-"  -I, --ignore-matching-lines=RE ignorera skillnader vars rad matchar RE\n"
-"  -a, --text                betrakta alla filer som text\n"
-"  -c, --context[=ANTAL]     visa vanlig sammanhangsdiff,\n"
-"                            med ANTAL sammanhangsrader\n"
-"  -u, --unified[=ANTAL]     visa enad diff\n"
-"                            med ANTAL sammanhangsrader\n"
-"  -C, --context=ANTAL       visa ANTAL rader av kopierad omgivning\n"
-"  -U, --unified=ANTAL       visa ANTAL rader av gemensam omgivning\n"
-"  -L, --label=M�RKE         anv�nd M�RKE ist�llet f�r filnamn\n"
-"  -p, --show-c-function     visa vilken C-funktion som skillnaden �r i\n"
-"  -F, --show-function-line=RE visa n�rmast f�reg�ende rad som matchar RE\n"
+"标准的 diff 选项：\n"
+"  -i, --ignore-case         忽略大小写\n"
+"  -w, --ignore-all-space    忽略所有空白符\n"
+"  -b, --ignore-space-change 忽略空白符的多少\n"
+"  -B, --ignore-blank-lines  忽略空白行\n"
+"  -I, --ignore-matching-lines=RE ignore changes whose lines all match RE\n"
+"  -a, --text                将所有文件视作文本\n"
+"  -c, --context[=N]         输出正规上下文 diff，带 N 行上下文\n"
+"  -u, --unified[=N]         输入统一上下文 diff，带 N 行上下文\n"
+"  -C, --context=N           输入 N 行复制上下文\n"
+"  -U, --unified=N           输出 N 行统一上下文\n"
+"  -L, --label=标号          使用“标号”而不是文件名\n"
+"  -p, --show-c-function     显示有改变的 C 函数\n"
+"  -F, --show-function-line=RE show the most recent line matching RE\n"
 
 #: src/mdiff.c:3986
 msgid ""
@@ -469,20 +356,19 @@ msgid ""
 "  -l, --paginate            pass the output through `pr' to paginate it\n"
 "  -t, --expand-tabs         expand tabs to spaces in output\n"
 msgstr ""
-"  -q, --brief               rapportera bara om filer skiljer sig\n"
-"  -e, --ed                  skriv ett giltigt \"ed\"-skript\n"
-"  -n, --rcs                 skriv RCS-format\n"
-"  -y, --side-by-side        visa i tv� kolumner\n"
-"  -w, --width=ANTAL         skriv som mest ANTAL tecken per rad,\n"
-"                            (standardv�rde 130)\n"
-"      --left-column         visa bara v�nster kolumn f�r gemensamma rader\n"
-"      --suppress-common-lines visa inga gemensamma rader\n"
-"  -D, --ifdef=NAMN          skriv sammanslagen fil med \"#ifdef NAMN\"\n"
-"      --GTYPE-group-format=GFMT GTYPE indata grupper GFMT\n"
-"      --line-format=LFMT    alla indata rader med LFMT\n"
-"      --LTYPE-line-format=LFMT LTYPE indata rader med LFMT\n"
-"  -l, --paginate            skicka resultatet genom \"pr\" f�r sidindelning\n"
-"  -t, --expand-tabs         ers�tt tabulatortecken med mellanslag i reultatet\n"
+"  -q, --brief               只输出文件是否不同\n"
+"  -e, --ed                  输出一个 ed 脚本\n"
+"  -n, --rcs                 输出为 RCS 格式\n"
+"  -y, --side-by-side        输出两列\n"
+"  -w, --width=数            指定每行最多的字符数(默认为 130)\n"
+"      --left-column         只在左边一列输出相同的行\n"
+"      --suppress-common-lines 不输出相同的行\n"
+"  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
+"      --GTYPE-group-format=GFMT GTYPE input groups with GFMT\n"
+"      --line-format=LFMT    all input lines with LFMT\n"
+"      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"
+"  -l, --paginate            pass the output through `pr' to paginate it\n"
+"  -t, --expand-tabs         输出中将制表符扩展为空格\n"
 
 #: src/mdiff.c:4001
 msgid ""
@@ -498,22 +384,12 @@ msgid ""
 "  -d, --minimal             try hard to find a smaller set of changes\n"
 "  -H, --speed-large-files   assume large files and many scattered small changes\n"
 msgstr ""
-"  -T, --initial-tab         inled varje rad med TAB\n"
-"  -r, --recursive           j�mf�r underkataloger rekursivt\n"
-"  -N, --new-file            behandla saknade filer som tomma\n"
-"  -P, --unidirectional-new-file behandla saknad f�rsta fil som tom\n"
-"  -s, --report-identical-files rapportera n�r tv� filer �r likadana\n"
-"  -x, --exclude=M�NSTER     ignorera filer som matchar M�NSTER\n"
-"  -X, --exclude-from=FIL    ignorera filer som matchar m�nster fr�n FIL\n"
-"  -S, --starting-file=FIL   b�rja katalogj�mf�relse med FIL\n"
-"      --horizon-lines=ANTAL visa ANTAL rader i gemensamma prefix/suffix\n"
-"  -d, --minimal             f�rs�k mera f�r att hitta mindre antal skillnader\n"
-"  -H, --speed-large-files   f�ruts�tt stora filer och m�nga spridda sm�\n"
-"                            skillnader\n"
 
 #: src/mdiff.c:4016
-msgid "\nBy default, context diffs have an horizon of two lines.\n"
-msgstr "\nNormalt har sammanhangsdiff en horisont p� tv� rader.\n"
+msgid ""
+"\n"
+"By default, context diffs have an horizon of two lines.\n"
+msgstr ""
 
 #: src/mdiff.c:4022
 msgid ""
@@ -531,19 +407,6 @@ msgid ""
 "      E  F-1\n"
 "      M  L+1\n"
 msgstr ""
-"\n"
-"LTYPE �r \"old\", \"new\" eller \"unchanged\". GTYPE �r LTYPE eller \"changed\".\n"
-"GFMT kan inneh�lla:\n"
-"  %<  rader fr�n FIL1\n"
-"  %>  rader fr�n FIL2\n"
-"  %=  rader gemensamma i FIL1 och FIL2\n"
-"  %[-][BREDD][.[PREC]]{doxX}BOKSTAV  printf-liknande format f�r BOKSTAV\n"
-"    BOKSTAV �r som f�ljer f�r ny grupp, sm� bokst�ver f�r gammal grupp:\n"
-"      F  f�rsta radnumret\n"
-"      L  sista radnumret\n"
-"      N  antal rader = L-F+1\n"
-"      E  F-1\n"
-"      M  L+1\n"
 
 #: src/mdiff.c:4037
 msgid ""
@@ -556,14 +419,6 @@ msgid ""
 "  %c'C'  the single character C\n"
 "  %c'\\OOO'  the character with octal code OOO\n"
 msgstr ""
-"LFMT kan inneh�lla:\n"
-"  %L  en hel rad\n"
-"  %l  en hel rad, fast utan avslutande nyradstecken\n"
-"  %[-][BREDD][.[PREC]]{doxX}n  printf-liknande format f�r radnumret\n"
-"GFMT eller LFMT kan inneh�lla:\n"
-"  %%  %\n"
-"  %c'C'  det enskilda tecknet C\n"
-"  %c'\\OOO'  tecknet med oktalv�rde OOO\n"
 
 #: src/mdiff.c:4049
 msgid ""
@@ -571,63 +426,76 @@ msgid ""
 "Old mdiff options:\n"
 "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
 msgstr ""
-"\n"
-"Gamla mdiff-flaggor:\n"
-"*  -f, --fuzz-items=POSTER    inte fler �n POSTER som ej matchar i en grupp\n"
 
 #: src/mdiff.c:4055
-msgid "\nWith no FILE, or when FILE is -, read standard input.\n"
-msgstr "\nUtan FIL eller om FIL �r -, l�s standard in\n"
-
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
-msgid "\nReport bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
+msgid ""
+"\n"
+"With no FILE, or when FILE is -, read standard input.\n"
 msgstr ""
 "\n"
-"Rapportera fel till <wdiff-bugs@iro.umontreal.ca>\n"
-"Rapportera fel eller synpunkter p� �vers�ttningen till <sv@li.org>.\n"
+"如果没有指定<文件>或<文件>是 -，则从标准输入读取资料。\n"
+
+#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
+msgid ""
+"\n"
+"Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr ""
+"\n"
+"请向 <wdiff-bugs@iro.umontreal.ca> 报告程序缺陷。\n"
 
 #: src/mdiff.c:4370
 msgid "Cannot use -z, termcap not available."
-msgstr "Kan inte anv�nda -z, termcap finns inte tillg�ngligt."
+msgstr "无法使用 -z，termcap 不可用。"
 
 #: src/mdiff.c:4409
 msgid "Word merging for two files only (so far)"
-msgstr "Ordsammanslagning finns endast f�r tv� filer (�n s� l�nge)"
+msgstr "单词合并目前只能用于两个文件"
 
 #: src/mdiff.c:4425
-msgid "\nCopyright (C) 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright � 1997 Free Software Foundation, Inc.\n"
+msgid ""
+"\n"
+"Copyright (C) 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"版权所有 (C) 1997 自由软件基金会\n"
 
 #: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Detta �r fri programvara; se k�llkoden f�r kopieringsvillkor.  Det finns\n"
-"INGEN garanti; inte ens f�r S�LJBARHET eller L�MPLIGHET F�R N�GOT SPECIELLT\n"
-"�NDAM�L.\n"
+"本程序是自由软件；请参看源代码的版权声明。本软件不提供任何担保；包括没有适销性和\n"
+"某一专用目的下的适用性担保。\n"
 
 #: src/mdiff.c:4433 src/wdiff.c:1229
-msgid "\nWritten by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
-msgstr "\nSkriven av Fran�ois Pinard <pinard@iro.umontreal.ca>.\n"
+msgid ""
+"\n"
+"Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+msgstr ""
+"\n"
+"由 Franc,ois Pinard <pinard@iro.umontreal.ca> 编写。\n"
 
 #: src/mdiff.c:4469
 msgid "Options -123RSYZ meaningful only when two inputs."
-msgstr "Flaggorna -123RSYZ �r bara meningsfulla med tv� indatak�llor."
+msgstr ""
 
 #: src/unify.c:142
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
-msgstr "Kan inte hitta ett namn f�r diff p� rad %ld"
+msgstr ""
 
 #: src/unify.c:275
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr "unify - Konvertera sammanhangsdiff till enad diff, eller vice versa.\n"
+msgstr ""
 
 #: src/unify.c:278
 #, c-format
-msgid "\nUsage: %s [OPTION]... [FILE]\n"
-msgstr "\nAnv�ndning: %s [FLAGGA]... [FIL]\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]\n"
+msgstr ""
+"\n"
+"用法：%s [选项] [文件]\n"
 
 #: src/unify.c:281
 msgid ""
@@ -647,62 +515,69 @@ msgid ""
 "If FILE is not specified, read standard input.\n"
 msgstr ""
 "\n"
-"  -c, --context-diffs    visa resultatet som saammanhangsdiff\n"
-"  -e, --echo-comments    skriv kommentarer till standard error\n"
-"  -o, --old-diffs        visa under alla omst�ndigheter skillnader p� gammal\n"
-"                         stil, \n"
-"  -p, --patch-format     generera format f�r \"patch\"\n"
-"  -P                     samma som -p\n"
-"  -s, --strip-comments   ta bort kommentarsrader\n"
-"  -u, --unidiffs         visa resultatet som enad diff\n"
-"  -U                     samma som -p och -u\n"
-"  -=, --use-equals       ers�tt mellanslag med likhetstecken i enad diff\n"
-"      --help             visa denna hj�lptext och avsluta\n"
-"      --version          visa versionsinformation och avsluta\n"
+"  -c，--context-diffs    强制输出上下文格式 diff\n"
+"  -e，--echo-comments    将注释输出到标准错误设备上\n"
+"  -o，--old-diffs        输出旧式风格的 diff\n"
+"  -p，--patch-format     生成 patch 格式\n"
+"  -P                     与 -p 相同\n"
+"  -s，--strip-comments   剥离注释行\n"
+"  -u，--unidiffs         强制输出 unidiff\n"
+"  -U                     same as -p and -u\n"
+"  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
+"      --help             display this help and exit\n"
+"      --version          output version information and exit\n"
 "\n"
-"Om FIL inte anges l�ses standard in\n"
+"If FILE is not specified, read standard input.\n"
 
 #: src/unify.c:390
 #, c-format
 msgid "Unable to open `%s'"
-msgstr "Kan inte �ppna \"%s\""
+msgstr "无法打开‘%s’"
 
 #: src/unify.c:396
 msgid "Only one filename allowed"
-msgstr "Endast ett filnamn till�tet"
+msgstr "只接受一个文件名"
 
 #: src/unify.c:405
-msgid "\nCopyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright � 1994, 1997 Free Software Foundation, Inc.\n"
+msgid ""
+"\n"
+"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"版权所有 (C) 1994，1997 自由软件基金会\n"
 
 #: src/unify.c:413
-msgid "\nWritten by Wayne Davison <davison@borland.com>.\n"
-msgstr "\nSkriven av Wayne Davison <davison@borland.com>.\n"
+msgid ""
+"\n"
+"Written by Wayne Davison <davison@borland.com>.\n"
+msgstr ""
+"\n"
+"由 Wayne Davison <davison@borland.com> 编写。\n"
 
 #: src/unify.c:552
 #, c-format
 msgid "Invalid unified diff header at line %ld"
-msgstr "Korrupt huvud f�r enad diff p� rad %ld"
+msgstr "第 %ld 行的 unidiff 头无效"
 
 #: src/unify.c:594
 #, c-format
 msgid "Malformed unified diff at line %ld"
-msgstr "Korrupt enad diff p� rad %ld"
+msgstr "第 %ld 行 unidiff 格式不对"
 
 #: src/unify.c:625
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
-msgstr "Sammanhangsdiff saknar \"gammalt\" huvud p� rad %ld"
+msgstr "第 %ld 行的上下文 diff 缺少‘old’头"
 
 #: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
 #, c-format
 msgid "Malformed context diff at line %ld"
-msgstr "Korrupt sammanhangsdiff p� rad %ld"
+msgstr "第 %ld 行上下文 diff 格式不对"
 
 #: src/unify.c:724
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
-msgstr "Sammanhangsdiff saknar \"nytt\" huvud p� rad %ld"
+msgstr "第 %ld 行的上下文 diff 缺少‘new’头"
 
 #: src/wdiff.c:1090
 msgid ""
@@ -720,32 +595,29 @@ msgid ""
 "along with this program; if not, write to the Free Software Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 msgstr ""
-"F�ljande text �r en informell �vers�ttning som enbart tillhandah�lls i\n"
-"informativt syfte. F�r alla juridiska tolkningar g�ller den engelska\n"
-"originaltexten.\n"
+"此程序是自由软件；您可以在自由软件基金会发布的 GNU 通用公共许可证的条款下\n"
+"重新分发和(或)修改它；您可以选择使用 GPL 第二版，或(按照您的意愿)任何更新\n"
+"的版本。\n"
 "\n"
-"Detta program �r fri programvara.  Du kan distribuera det och/eller modifiera\n"
-"det under villkoren i GNU General Public License, publicerad av\n"
-"Free Software Foundation, antingen version 2 eller (om du s� vill)\n"
-"n�gon senare version.\n"
+"该程序分发的目的是为了其他人可以使用它，但是没有任何担保；也没有对其适销性\n"
+"和某一特定目的下的适用性的担保。请查阅 GNU 通用公共许可证来获得更多的信息。\n"
 "\n"
-"Detta program distribueras i hopp om att det ska vara anv�ndbart,\n"
-"men UTAN N�GON SOM HELST GARANTI, �ven utan den underf�rst�dda garantin\n"
-"om S�LJBARHET eller L�MPLIGHET F�R N�GOT SPECIELLT �NDAM�L. Se GNU General\n"
-"Public License f�r ytterligare information.\n"
-"\n"
-"Du b�r ha f�tt en kopia av GNU General Public License\n"
-"tillsammans med detta program. Om inte, skriv till Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"你应该已经跟本程序一起收到一份 GNU 通用公共许可证；如果没有，请写信至：\n"
+"Free Software Foundation, Inc., \n"
+"59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
 #: src/wdiff.c:1119
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr "wdiff - J�mf�r ord i tv� filer och rapportera skillnader.\n"
+msgstr "wdiff - 比较两个文件中的词汇并报告区别。\n"
 
 #: src/wdiff.c:1122
 #, c-format
-msgid "\nUsage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "\nAnv�ndning: %s [FLAGGA]... FIL1 FIL2\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... FILE1 FILE2\n"
+msgstr ""
+"\n"
+"用法：%s [选项]... 文件1 文件2\n"
 
 #: src/wdiff.c:1126
 msgid ""
@@ -770,35 +642,39 @@ msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"Obligatoriska argument f�r l�nga flaggor �r obligatoriska �ven f�r korta.\n"
+"长选项必须用的参数在使用短选项时也是必须的。\n"
 "\n"
-"  -C, --copyright            visa copyrightinformation och avsluta\n"
-"  -K, --no-init-term         som -z, men inga termcap-start/slutstr�ngar\n"
-"  -V, --version              visa versionsinformation och avsluta\n"
-"  -1, --no-deleted           visa inte borttagna ord\n"
-"  -2, --no-inserted          visa inte tillagda ord\n"
-"  -3, --no-common            visa inte gemensamma ord\n"
-"  -a, --auto-pager           ge resultatet till en sidvisare\n"
-"  -h, --help                 visa denna hj�lptext och avsluta\n"
-"  -i, --ignore-case          versaler och gemener j�mf�rs lika\n"
-"  -l, --less-mode            speciell variant av -p f�r \"less\"\n"
-"  -n, --avoid-wraps          l�t inte f�lt l�pa �ver flera rader\n"
-"  -p, --printer              dubbelskrift som f�r skrivare\n"
-"  -s, --statistics           skriv antal ord som �r borttagna, insatta, o.s.v.\n"
-"  -t, --terminal             anv�nd termcap f�r att markera ord\n"
-"  -w, --start-delete=STR�NG  STR�NG markerar b�rjan p� en borttagen sekvens\n"
-"  -x, --end-delete=STR�NG    STR�NG markerar slutet p� en borttagen sekvens\n"
-"  -y, --start-insert=STR�NG  STR�NG markerar b�rjan p� en tillagd sekvens\n"
-"  -z, --end-insert=STR�NG    STR�NG markerar slutet p� en tillagd sekvens\n"
+"  -C, --copyright            打印版权信息并退出\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -V, --version              打印程序版本并退出\n"
+"  -1, --no-deleted           不输出被删除的词\n"
+"  -2, --no-inserted          不输出插入的词\n"
+"  -3, --no-common            不输出相同的词\n"
+"  -a, --auto-pager           自动调用分页程序\n"
+"  -h, --help                 打印此帮助\n"
+"  -i, --ignore-case          比较时忽略字符大小写\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          字段不跨行\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -w, --start-delete=字符串  标记删除区域起始的字符串\n"
+"  -x, --end-delete=字符串    标记删除区域结束的字符串\n"
+"  -y, --start-insert=字符串  标记插入区域起始的字符串\n"
+"  -z, --end-insert=字符串    标记插入区域结束的字符串\n"
 
 #: src/wdiff.c:1221
-msgid "\nCopyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright � 1992, 1997 Free Software Foundation, Inc.\n"
+msgid ""
+"\n"
+"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"版权所有 (C) 1992，1997 自由软件基金会\n"
 
 #: src/wdiff.c:1276
 msgid "Cannot use -t, termcap not available."
-msgstr "Kan inte anv�nda -t, termcap finns inte tillg�ngligt."
+msgstr "无法使用 -t，termcap 不可用。"
 
 #: src/wdiff.c:1301
 msgid "Missing file arguments"
-msgstr "Filargument saknas"
+msgstr "缺少文件参数"

@@ -1,89 +1,88 @@
+# Translation of wdiff-0.5g to Dutch.
 # Dutch messages for GNU wdiff.
-# Copyright (C) 1996 Free Software Foundation, Inc.
-# Erick Branderhorst <branderh@debian.org>, 1996.
+# Copyright (C) 1996, 2007 Free Software Foundation, Inc.
 #
+# Erick Branderhorst <branderh@debian.org>, 1996.
+# Benno Schulenberg <benno@vertaalt.nl>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5.2\n"
+"Project-Id-Version: wdiff-0.5g\n"
 "POT-Creation-Date: 1999-07-05 20:35-0400\n"
-"PO-Revision-Date: 1997-02-13 22:30 \n"
-"Last-Translator: Erick Branderhorst <branderh@debian.org>\n"
-"Language-Team: Dutch <nl@li.org>\n"
+"PO-Revision-Date: 2007-09-06 22:57+0200\n"
+"Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
-"Content-Transfer-Encoding: 8-bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/mdiff.c:398
 #, c-format
 msgid "%s (for regexp `%s')"
-msgstr ""
+msgstr "%s (voor reguliere expressie '%s')"
 
 #: src/mdiff.c:917 src/wdiff.c:1329
-#, fuzzy
 msgid "Only one file may be standard input."
-msgstr "Niet allebei de bestanden kunnen standaardinvoer zijn."
+msgstr "Slechts Ã©Ã©n bestand kan standaardinvoer zijn."
 
 #: src/mdiff.c:932 src/wdiff.c:592
 msgid "Directories not supported"
-msgstr "Directories worden niet ondersteund"
+msgstr "Mappen vergelijken is niet mogelijk"
 
 #: src/mdiff.c:1075
-#, fuzzy, c-format
+#, c-format
 msgid "Reading %s"
-msgstr "Lezen van %s ..."
+msgstr "Lezen van %s..."
 
 #: src/mdiff.c:1198
-#, fuzzy, c-format
+#, c-format
 msgid ", %d items\n"
-msgstr " %d regels\n"
+msgstr ", %d items\n"
 
 #: src/mdiff.c:1276
-#, fuzzy, c-format
+#, c-format
 msgid "Read summary: %d files, %d items\n"
-msgstr "Lees samenvatting: %d bestanden, %d regels\n"
+msgstr "Leessamenvatting: %d bestanden, %d items\n"
 
 #: src/mdiff.c:1671
-#, fuzzy
 msgid "Sorting"
-msgstr "Sorteren ..."
+msgstr "Sorteren..."
 
 #: src/mdiff.c:1688
-#, fuzzy
 msgid ", clustering"
-msgstr "Clusteren ..."
+msgstr ", clusteren..."
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
-#, fuzzy
 msgid ", done\n"
-msgstr " klaar\n"
+msgstr ", voltooid\n"
 
 #: src/mdiff.c:1907
-#, fuzzy
 msgid "Sorting members"
-msgstr "Sorteren ..."
+msgstr "Sorteren van leden..."
 
 #: src/mdiff.c:1939
-#, fuzzy, c-format
+#, c-format
 msgid "Work summary: %d clusters, %d members\n"
-msgstr "Werksamenvatting: %d clusters, %d deelnemers, %d dubbele regels\n"
+msgstr "Werksamenvatting: %d clusters, %d leden\n"
 
 #: src/mdiff.c:2317
-#, fuzzy, c-format
+#, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Werksamenvatting: %d clusters, %d deelnemers, %d dubbele regels\n"
+msgstr "Werksamenvatting: %d clusters, %d leden, %d overlappen\n"
 
 #: src/mdiff.c:2372 src/wdiff.c:243
 msgid "Select a terminal through the TERM environment variable."
-msgstr ""
+msgstr "Kies een terminal via de omgevingsvariabele TERM."
 
 #: src/mdiff.c:2375 src/wdiff.c:246
 msgid "Could not access the termcap data base."
-msgstr "Kan geen toegang krijgen tot termcap database."
+msgstr "Kan geen toegang krijgen tot de termcap-database."
 
 #: src/mdiff.c:2377 src/wdiff.c:248
 #, c-format
 msgid "Terminal type `%s' is not defined."
-msgstr "Terminaltype `%s' is niet gedefinieerd."
+msgstr "Terminaltype '%s' is niet gedefinieerd."
 
 #: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
 #, c-format
@@ -100,7 +99,7 @@ msgstr "  %d %d%% verwijderd"
 
 #: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
 msgid "  %d %d%% changed"
-msgstr "  %d %d%% is gewijzigd"
+msgstr "  %d %d%% gewijzigd"
 
 #: src/mdiff.c:3771 src/wdiff.c:1072
 msgid "  %d %d%% inserted"
@@ -109,25 +108,26 @@ msgstr "  %d %d%% ingevoegd"
 #: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "Probeer `%s --help' voor meer informatie.\n"
+msgstr "Typ '%s --help' voor meer informatie.\n"
 
 #: src/mdiff.c:3804
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
+"mdiff - Bestudeert meerdere bestanden en zoekt naar gelijkenissen,\n"
+"en produceert dan een opsomming van verschillen en overeenkomsten.\n"
 
 #: src/mdiff.c:3808
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Usage: %s [OPTION]... [FILE]...\n"
 msgstr ""
 "\n"
-"Aanroep: %s [OPTIE]... BESTAND...\n"
+"Gebruik:  %s [OPTIE]... BESTAND...\n"
 
 #: src/mdiff.c:3812
-#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
@@ -137,12 +137,11 @@ msgid ""
 "      --version          output version information and exit\n"
 msgstr ""
 "\n"
-"  -t, --threshold=REGELS  doe niets met clusters van minder dan REGELS "
-"regels\n"
-"  -s, --statistics        toon statistiek via standaarduitvoer\n"
-"  -v, --verbose           toon progressie van akties via foutenuitvoer\n"
-"      --help              toon hulptekst en beëindig programma\n"
-"      --version           toon versie-informatie en beëindig programma\n"
+"Werkingsmodus:\n"
+"  -v, --verbose          enkele statistieken rapporteren\n"
+"  -h                     (genegeerd)\n"
+"      --help             deze hulptekst tonen en stoppen\n"
+"      --version          versie-informatie tonen en stoppen\n"
 
 #: src/mdiff.c:3819
 msgid ""
@@ -163,7 +162,6 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3833
-#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
@@ -179,29 +177,19 @@ msgid ""
 "  -O, --item-regexp=REGEXP    compare items as defined by REGEXP\n"
 "  -W, --word-mode             compare words instead of lines\n"
 msgstr ""
-"Verplichte argument voor lange opties zijn ook verplicht voor korte opties.\n"
 "\n"
-"  -C, --copyright            toon kopierecht en beëindig programma\n"
-"  -V, --version              toon versie-informatie en beëindig programma\n"
-"  -1, --no-deleted           onderdruk uitvoer van verwijderde woorden\n"
-"  -2, --no-inserted          onderdruk uitvoer van ingevoegde woorden\n"
-"  -3, --no-common            onderdruk uitvoer van gemeenschappelijke "
-"woorden\n"
-"  -a, --auto-pager           roep automatisch een `pager' aan\n"
-"  -h, --help                 toon hulp-tekst en beëindig programma\n"
-"  -i, --ignore-case          negeer verschil tussen hoofd en kleine letters\n"
-"  -l, --less-mode            variatie van printer mode voor \"less\"\n"
-"  -n, --avoid-wraps          voorkom verder schrijven door nieuwe regels\n"
-"  -p, --printer              overschrijf als bij printers\n"
-"  -s, --statistics           hoeveel woorden zijn verwijderd, ingevoegd, e."
-"d.\n"
-"  -t, --terminal             gebruik termcap voor terminal beeldschermen\n"
-"  -w, --start-delete=STRING  string om begin te verwijderen stuk te "
-"markeren\n"
-"  -x, --end-delete=STRING    string om einde te verwijderen stuk te "
-"markeren\n"
-"  -y, --start-insert=STRING  string om begin in te voegen stuk te markeren\n"
-"  -z, --end-insert=STRING    string om einde in te voegen stuk te markeren\n"
+"Woordmodus:\n"
+"  -1, --no-deleted           verwijderde woorden niet weergeven\n"
+"  -2, --no-inserted          ingevoegde woorden niet weergeven\n"
+"  -3, --no-common            gemeenschappelijke woorden niet weergeven\n"
+"  -A, --auto-pager           automatisch een 'pager' aanroepen\n"
+"  -k, --less-mode            uitvoermodus voor 'less'\n"
+"  -m, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
+"  -o, --printer              'overstrike' gebruiken als bij printers\n"
+"  -z, --terminal             voor beeldschermen termcap gebruiken\n"
+"  -K, --no-init-term         als '-z', maar zonder 'init'- of 'term'-reeksen\n"
+"  -O, --item-regexp=REG.EXP. items vergelijken volgens deze expressie\n"
+"  -W, --word-mode            woorden in plaats van regels vergelijken\n"
 
 #: src/mdiff.c:3849
 msgid ""
@@ -284,11 +272,9 @@ msgstr ""
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name "
-"(twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context "
-"lines)\n"
+"*  -c, --context               output context diffs (default 3 context lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
@@ -315,8 +301,7 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-"
-"format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
@@ -365,8 +350,7 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per "
-"line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -389,8 +373,7 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small "
-"changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small changes\n"
 msgstr ""
 
 #: src/mdiff.c:4016
@@ -440,24 +423,26 @@ msgid ""
 "\n"
 "With no FILE, or when FILE is -, read standard input.\n"
 msgstr ""
+"\n"
+"Als BESTAND '-' is, of als er geen BESTAND gegeven is,\n"
+"wordt standaardinvoer gelezen.\n"
 
 #: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
-#, fuzzy
 msgid ""
 "\n"
 "Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
 msgstr ""
 "\n"
-"Meld fouten via <wdiff-bugs@gnu.ai.mit.edu>.\n"
+"Rapporteer gebreken in het programma aan <wdiff-bugs@iro.umontreal.ca>;\n"
+"meld fouten in de vertaling aan <vertaling@vrijschrift.org>.\n"
 
 #: src/mdiff.c:4370
-#, fuzzy
 msgid "Cannot use -z, termcap not available."
-msgstr "Kan -t niet gebruiken, termcap is niet beschikbaar."
+msgstr "Kan optie '-z' niet gebruiken; termcap is niet beschikbaar."
 
 #: src/mdiff.c:4409
 msgid "Word merging for two files only (so far)"
-msgstr ""
+msgstr "Samenvoegen op woordniveau werkt alleen voor twee bestanden (voorlopig)"
 
 #: src/mdiff.c:4425
 msgid ""
@@ -465,14 +450,14 @@ msgid ""
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Kopierecht (C) 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1997 Free Software Foundation, Inc.\n"
 
 #: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Dit is vrije programmatuur; zie de broncode voor kopieervoorwaarden.\n"
+"Dit is vrije programmatuur; zie de brontekst voor de kopieervoorwaarden.\n"
 "Er is GEEN garantie; zelfs niet voor VERKOOPBAARHEID of GESCHIKTHEID\n"
 "VOOR EEN BEPAALD DOEL.\n"
 
@@ -482,20 +467,20 @@ msgid ""
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 msgstr ""
 "\n"
-"Geschreven door Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+"Geschreven door FranÃ§ois Pinard <pinard@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4469
 msgid "Options -123RSYZ meaningful only when two inputs."
-msgstr ""
+msgstr "Opties '-123RSYZ' zijn alleen zinvol bij twee invoeren."
 
 #: src/unify.c:142
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
-msgstr "Kan geen naam voor verschil vinden op regel %ld"
+msgstr "Kan geen naam vinden voor het verschil op regel %ld"
 
 #: src/unify.c:275
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr ""
+msgstr "unify - Transformeert context-diffs naar uni-diffs, of omgekeerd.\n"
 
 #: src/unify.c:278
 #, c-format
@@ -504,7 +489,7 @@ msgid ""
 "Usage: %s [OPTION]... [FILE]\n"
 msgstr ""
 "\n"
-"Aanroep: %s [OPTIE]... [BESTAND]\n"
+"Gebruik:  %s [OPTIE]... [BESTAND]\n"
 
 #: src/unify.c:281
 msgid ""
@@ -524,28 +509,28 @@ msgid ""
 "If FILE is not specified, read standard input.\n"
 msgstr ""
 "\n"
-"  -c, --context-diffs    forceer uitvoer als context verschillen\n"
-"  -e, --echo-comments    toon commentaar via foutenuitvoer\n"
-"  -o, --old-diffs        toon oude-stijl verschillen, maakt niet uit wat\n"
-"  -p, --patch-format     genereer patch formaat\n"
-"  -P                     zelfde als -p\n"
-"  -s, --strip-comments   verwijder commentaar regels\n"
-"  -u, --unidiffs         forceer uitvoer als unidiffs\n"
-"  -U                     zelfde als -p en -u\n"
-"  -=, --use-equals       vervang spaties door gelijke tekens in unidiffs\n"
-"      --help             toon hulptekst en beëindig programma\n"
-"      --version          toon versie-informatie en beëindig programma\n"
+"  -c, --context-diffs    als uitvoer context-diffs produceren\n"
+"  -e, --echo-comments    commentaar echoÃ«n via standaardfoutenuitvoer\n"
+"  -o, --old-diffs        als uitvoer antieke diffs produceren\n"
+"  -p, --patch-format     uitvoer in patch-opmaak produceren\n"
+"  -P                     hetzelfde als '-p'\n"
+"  -s, --strip-comments   commentaarregels weglaten\n"
+"  -u, --unidiffs         als uitvoer uni-diffs produceren\n"
+"  -U                     hetzelfde als '-p' en '-u' samen\n"
+"  -=, --use-equals       in uni-diffs spaties vervangen door gelijktekens\n"
+"      --help             deze hulptekst tonen en stoppen\n"
+"      --version          versie-informatie tonen en stoppen\n"
 "\n"
-"Als BESTAND niet gespecificeerd is, lees standaardinvoer.\n"
+"Als er geen BESTAND gegeven is, wordt standaardinvoer gelezen.\n"
 
 #: src/unify.c:390
 #, c-format
 msgid "Unable to open `%s'"
-msgstr "Kan `%s' niet openen"
+msgstr "Kan '%s' niet openen"
 
 #: src/unify.c:396
 msgid "Only one filename allowed"
-msgstr "Slecht een bestandsnaam is toegestaan"
+msgstr "Slechts Ã©Ã©n bestandsnaam is toegestaan"
 
 #: src/unify.c:405
 msgid ""
@@ -553,7 +538,7 @@ msgid ""
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Kopierecht (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
 #: src/unify.c:413
 msgid ""
@@ -566,27 +551,27 @@ msgstr ""
 #: src/unify.c:552
 #, c-format
 msgid "Invalid unified diff header at line %ld"
-msgstr "Ongeldige geünificeerd verschil `header' op regel %ld"
+msgstr "Ongeldige kopregels van uni-diff op regel %ld"
 
 #: src/unify.c:594
 #, c-format
 msgid "Malformed unified diff at line %ld"
-msgstr "Korrupt geünificeerd verschil op regel %ld"
+msgstr "Verkeerd gevormde uni-diff op regel %ld"
 
 #: src/unify.c:625
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
-msgstr "Contextverschil onbreekt `oude' `header' op regel %ld"
+msgstr "'Old'-kopregel ontbreekt in context-diff op regel %ld"
 
 #: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
 #, c-format
 msgid "Malformed context diff at line %ld"
-msgstr "Korrupt contextverschil op regel %ld"
+msgstr "Verkeerd gevormde context-diff op regel %ld"
 
 #: src/unify.c:724
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
-msgstr "Contextverschil ontbreekt `nieuwe' `header' op regel %ld"
+msgstr "'New'-kopregel ontbreekt in context-diff op regel %ld"
 
 #: src/wdiff.c:1090
 msgid ""
@@ -604,34 +589,35 @@ msgid ""
 "along with this program; if not, write to the Free Software Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 msgstr ""
-"Dit programma is vrije programmatuur; je kan het herdistribueren en/of\n"
-"modificeren onder de voorwaarden van de GNU General Public License\n"
-"zoals gepubliceerd door de Free Software Foundation; versie 2, of (als\n"
-"je wilt) enig latere versie.\n"
+"Dit programma is vrije software; u mag het verder verspreiden en/of\n"
+"wijzigen onder de voorwaarden van de GNU General Public License zoals\n"
+"gepubliceerd door de Free Software Foundation, naar keuze ofwel onder\n"
+"versie 2 ofwel onder een nieuwere versie van die licentie.\n"
 "\n"
-"Dit programma is gedistribueerd in de hoop dat het bruikbaar is, maar\n"
-"ZONDER ENIGE GARANTIE; zonder zelfs de geïmpliceerde garantie van\n"
-"VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de GNU\n"
-"General Public License voor meer informatie.\n"
+"Dit programma wordt uitgegeven in de hoop dat het nuttig is,\n"
+"maar ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie\n"
+"van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.\n"
+"Zie de GNU General Public License voor meer details.\n"
 "\n"
-"Samen met dit programma moet je een copy ontvangen hebben van de GNU\n"
-"General Public License; als dit niet zo is, schrijf dan naar de Free\n"
-"Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA\n"
-"02111-1307, USA.\n"
+"Bij dit programma hoort u een kopie van de GNU General Public License\n"
+"ontvangen te hebben; is dit niet het geval, schrijf dan naar\n"
+"Free Software Foundation, Inc.,  51 Franklin Street, fifth floor,\n"
+"Boston, MA 02110-1301,  USA.\n"
 
 #: src/wdiff.c:1119
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr ""
+msgstr "wdiff - Vergelijkt woorden in twee bestanden en rapporteert verschillen.\n"
 
 #: src/wdiff.c:1122
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "Gebruik: %s [OPTIE]... BESTAND1 BESTAND2\n"
+msgstr ""
+"\n"
+"Gebruik:  %s [OPTIE]... BESTAND1 BESTAND2\n"
 
 #: src/wdiff.c:1126
-#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
@@ -654,57 +640,38 @@ msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"Verplichte argument voor lange opties zijn ook verplicht voor korte opties.\n"
+"(De argumenten bij lange opties gelden ook voor de korte vormen.)\n"
 "\n"
-"  -C, --copyright            toon kopierecht en beëindig programma\n"
-"  -V, --version              toon versie-informatie en beëindig programma\n"
-"  -1, --no-deleted           onderdruk uitvoer van verwijderde woorden\n"
-"  -2, --no-inserted          onderdruk uitvoer van ingevoegde woorden\n"
-"  -3, --no-common            onderdruk uitvoer van gemeenschappelijke "
-"woorden\n"
-"  -a, --auto-pager           roep automatisch een `pager' aan\n"
-"  -h, --help                 toon hulp-tekst en beëindig programma\n"
-"  -i, --ignore-case          negeer verschil tussen hoofd en kleine letters\n"
-"  -l, --less-mode            variatie van printer mode voor \"less\"\n"
-"  -n, --avoid-wraps          voorkom verder schrijven door nieuwe regels\n"
-"  -p, --printer              overschrijf als bij printers\n"
-"  -s, --statistics           hoeveel woorden zijn verwijderd, ingevoegd, e."
-"d.\n"
-"  -t, --terminal             gebruik termcap voor terminal beeldschermen\n"
-"  -w, --start-delete=STRING  string om begin te verwijderen stuk te "
-"markeren\n"
-"  -x, --end-delete=STRING    string om einde te verwijderen stuk te "
-"markeren\n"
-"  -y, --start-insert=STRING  string om begin in te voegen stuk te markeren\n"
-"  -z, --end-insert=STRING    string om einde in te voegen stuk te markeren\n"
+"  -C, --copyright            auteursrecht tonen en stoppen\n"
+"  -V, --version              versie-informatie tonen en stoppen\n"
+"  -1, --no-deleted           verwijderde woorden niet weergeven\n"
+"  -2, --no-inserted          ingevoegde woorden niet weergeven\n"
+"  -3, --no-common            gemeenschappelijke woorden niet weergeven\n"
+"  -a, --auto-pager           automatisch een 'pager' aanroepen\n"
+"  -h, --help                 deze hulptekst tonen en stoppen\n"
+"  -i, --ignore-case          verschil tussen hoofd- en kleine letters negeren\n"
+"  -l, --less-mode            uitvoermodus voor 'less'\n"
+"  -n, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
+"  -p, --printer              'overstrike' gebruiken als bij printers\n"
+"  -s, --statistics           aantal verwijderingen, invoegingen, enz. tonen\n"
+"  -t, --terminal             voor beeldschermen termcap gebruiken\n"
+"  -w, --start-delete=STRING  markering voor begin van verwijderd stuk\n"
+"  -x, --end-delete=STRING    markering voor einde van verwijderd stuk\n"
+"  -y, --start-insert=STRING  markering voor begin van ingevoegd stuk\n"
+"  -z, --end-insert=STRING    markering voor einde van ingevoegd stuk\n"
 
 #: src/wdiff.c:1221
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Kopierecht (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
 #: src/wdiff.c:1276
 msgid "Cannot use -t, termcap not available."
-msgstr "Kan -t niet gebruiken, termcap is niet beschikbaar."
+msgstr "Kan optie '-t' niet gebruiken; termcap is niet beschikbaar."
 
 #: src/wdiff.c:1301
 msgid "Missing file arguments"
 msgstr "Ontbrekende bestandsargumenten"
-
-#~ msgid "Specify a terminal type with `setenv TERM <yourtype>'."
-#~ msgstr "Specificeer een terminal type met `setenv TERM <typ>'."
-
-#, fuzzy
-#~ msgid "Both files cannot be standard input."
-#~ msgstr "Niet allebei de bestanden kunnen standaardinvoer zijn."
-
-#~ msgid ""
-#~ "\n"
-#~ "Report bugs to <recode-bugs@gnu.ai.mit.edu>.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Meld fouten via <recode-bugs@gnu.ai.mit.edu>.\n"
