@@ -1,4 +1,4 @@
-This is wdiff.info, produced by makeinfo version 3.12i from wdiff.texi.
+This is wdiff.info, produced by makeinfo version 4.8 from wdiff.texi.
 
 START-INFO-DIR-ENTRY
 * wdiff and diff tools: (wdiff).        GNU wdiff and diff related tools.
@@ -34,7 +34,7 @@ File: wdiff.info,  Node: Top,  Next: Overview,  Prev: (dir),  Up: (dir)
 GNU `wdiff'
 ***********
 
-   These Info pages document `wdiff', a word difference finder, together
+These Info pages document `wdiff', a word difference finder, together
 with some other `diff' related tools.
 
    This is for release 0.5.91.
@@ -72,10 +72,10 @@ How `mdiff' differs
 
 File: wdiff.info,  Node: Overview,  Next: mdiff,  Prev: Top,  Up: Top
 
-Overview
-********
+1 Overview
+**********
 
-   `mdiff' studies one or more input files altogether, and discovers
+`mdiff' studies one or more input files altogether, and discovers
 blocks of items which repeat at more than one place.  Items may be
 lines, words, or units defined by user.  When in word mode, `mdiff'
 compares two files, finding which words have been deleted or added to
@@ -94,19 +94,19 @@ obsolete, and exists merely a front-end to GNU `mdiff'.
 
    `wdiff' and `mdiff' were written by Franc,ois Pinard, while `unify'
 has been contributed by Wayne Davison.  Please report bugs to
-`wdiff-bugs@gnu.org'.  Include the version number, which you
-can find by running the program with `--version'.  Please include in
-your message sufficient input to reproduce what you got, the output you
+`wdiff-bugs@gnu.org'.  Include the version number, which you can find
+by running the program with `--version'.  Please include in your
+message sufficient input to reproduce what you got, the output you
 indeed expected, and careful explanations about the nature of the
 problem.
 
 
 File: wdiff.info,  Node: mdiff,  Next: wdiff,  Prev: Overview,  Up: Top
 
-The multi-difference finder
-***************************
+2 The multi-difference finder
+*****************************
 
-   The name `mdiff' stands for _multi-_`diff', and has the purpose of
+The name `mdiff' stands for _multi-_`diff', and has the purpose of
 encompassing the functionnality of a few other `diff'-type programs.
 The prefix _multi-_ also stands for the fact the program is often able
 to study more than two input files at once.
@@ -228,10 +228,10 @@ to consider.
 
 File: wdiff.info,  Node: mdiff invocation,  Next: Examples,  Prev: mdiff,  Up: mdiff
 
-Invoking `mdiff'
-================
+2.1 Invoking `mdiff'
+====================
 
-   The format for running the `mdiff' program is:
+The format for running the `mdiff' program is:
 
      mdiff OPTION ... FILE ...
 
@@ -282,7 +282,7 @@ NEW_FILE which is not in OLD_FILE.
      Print an informative help message describing the options.
 
 `--version'
-`-V'
+`-v'
      Print the version number of `wdiff' on the standard error output.
 
 `--no-deleted'
@@ -442,6 +442,7 @@ NEW_FILE which is not in OLD_FILE.
      line bracketed between start insert and end insert strings.  This
      behaviour is not selected by default.
 
+
    Some choices are hard-wired into the program, but might well become
 options in later releases.  For example:
 
@@ -482,10 +483,10 @@ accumulate the effect of each.  Option `-l' is a variant of option `-p'.
 
 File: wdiff.info,  Node: Examples,  Next: Efficiency,  Prev: mdiff invocation,  Up: mdiff
 
-Actual examples of `mdiff' usage
-================================
+2.2 Actual examples of `mdiff' usage
+====================================
 
-   This section presents a few examples of usage, most of them have been
+This section presents a few examples of usage, most of them have been
 contributed by `wdiff' users.
 
    * Change bars example.
@@ -568,8 +569,8 @@ offers a kind of incremental version of `wdiff'.
 
 File: wdiff.info,  Node: Efficiency,  Prev: Examples,  Up: mdiff
 
-Resource considerations and efficiency
-======================================
+2.3 Resource considerations and efficiency
+==========================================
 
 Memory consumption
      `mdiff' can easily handle medium-sized project.  For a 32 bits
@@ -585,7 +586,7 @@ Memory consumption
 
 Time consumption
      To evaluate the speed, consider the example shown above (*note
-     mdiff::.), and yielding these statistics:
+     mdiff::), and yielding these statistics:
 
           Read summary: 137 files, 41975 lines
           Work summary: 439 clusters, 1608 members ...
@@ -643,18 +644,19 @@ Trading complexity for clarity
      Exactly how to best adjust the ITEMS value is left for the user
      to decide.
 
-   --------- Notes en bas de page ---------
+
+   ---------- Footnotes ----------
 
    (1) N is the total number of lines.
 
 
 File: wdiff.info,  Node: wdiff,  Next: unify,  Prev: mdiff,  Up: Top
 
-The word difference finder
-**************************
+3 The word difference finder
+****************************
 
-   The program `wdiff' is a front end to `mdiff' for comparing files on
-a word per word basis.
+The program `wdiff' is a front end to `mdiff' for comparing files on a
+word per word basis.
 
    In the first releases of the package, `wdiff' was a front-end to
 `diff' as found in the GNU `diffutils' package.  Many users suggested
@@ -675,10 +677,10 @@ paragraphs have been refilled.
 
 File: wdiff.info,  Node: wdiff invocation,  Prev: wdiff,  Up: wdiff
 
-Invoking `wdiff'
-================
+3.1 Invoking `wdiff'
+====================
 
-   The format for running the `wdiff' program is:
+The format for running the `wdiff' program is:
 
      wdiff OPTION ... OLD_FILE NEW_FILE
 
@@ -701,7 +703,7 @@ NEW_FILE which is not in OLD_FILE.
      Print an informative help message describing the options.
 
 `--version'
-`-V'
+`-v'
      Print the version number of `wdiff' on the standard error output.
 
 `--no-deleted'
@@ -868,14 +870,13 @@ accumulate the effect of each.  Option `-l' is a variant of option `-p'.
 
 File: wdiff.info,  Node: unify,  Next: Compatibility,  Prev: wdiff,  Up: Top
 
-The diff format converter
-*************************
+4 The diff format converter
+***************************
 
-   The program `unify' has the purpose of manipulating context diffs
-and unified context diffs.  `unify' will accept either a regular
-context diff (old- or new-style) or a unified context diff as input,
-and generate either a unified diff or a new-style context diff as
-output.
+The program `unify' has the purpose of manipulating context diffs and
+unified context diffs.  `unify' will accept either a regular context
+diff (old- or new-style) or a unified context diff as input, and
+generate either a unified diff or a new-style context diff as output.
 
    Various other options allow you to echo the non-diff (comment) lines
 to stderr, modify the diff by removing the comment lines, and/or tweak
@@ -895,10 +896,10 @@ a lot of diffs from various sources, and want them in a uniform format.
 
 File: wdiff.info,  Node: unify invocation,  Prev: unify,  Up: unify
 
-Invoking `unify'
-================
+4.1 Invoking `unify'
+====================
 
-   The format for running the `unify' program is:
+The format for running the `unify' program is:
 
      unify OPTION ... [FILE]
 
@@ -974,13 +975,14 @@ can be overridden by options.
      harder to read, it is less likely to be mangled by
      trailing-space-stripping sites when posted to Usenet.
 
+
 
 File: wdiff.info,  Node: Compatibility,  Prev: unify,  Up: Top
 
-How `mdiff' differs
-*******************
+5 How `mdiff' differs
+*********************
 
-   The GNU project already has a `diff' program which is part of the
+The GNU project already has a `diff' program which is part of the
 `diffutils' package.  There also are various non-GNU `diff' programs
 provided by various constructors.  There was a previous version of
 `wdiff' which was using GNU `diff' under the scene.  The following
@@ -995,10 +997,10 @@ sections compare `mdiff' specifications with both GNU `diff' and with
 
 File: wdiff.info,  Node: diff Compatibility,  Next: wdiff Compatibility,  Prev: Compatibility,  Up: Compatibility
 
-Differences with `diff'
-=======================
+5.1 Differences with `diff'
+===========================
 
-   GNU `diff' is a program which matured for a long while, and for which
+GNU `diff' is a program which matured for a long while, and for which
 algorithms are based on computer science literature.  It is a fast
 program.  By comparison, `mdiff' is not more than a program kludged up
 rapidly to satisfy a few precise needs.  It only tries not being
@@ -1040,10 +1042,10 @@ the differences will not be exactly analyzed identically.
 
 File: wdiff.info,  Node: wdiff Compatibility,  Prev: diff Compatibility,  Up: Compatibility
 
-Differences with `wdiff'
-========================
+5.2 Differences with `wdiff'
+============================
 
-   Even if `mdiff' is meant to fully support `wdiff', options have been
+Even if `mdiff' is meant to fully support `wdiff', options have been
 shuffled around so `mdiff' could better merge both `diff' and `wdiff'
 options in a common scheme.  `diff' habits were almost always favored
 in this option reorganisation.
@@ -1077,19 +1079,19 @@ rewrites the options.  The following notes apply.
 
 
 Tag Table:
-Node: Top1345
-Node: Overview2405
-Node: mdiff3769
-Node: mdiff invocation10619
-Node: Examples21344
-Node: Efficiency24534
+Node: Top1343
+Node: Overview2402
+Node: mdiff3758
+Node: mdiff invocation10609
+Node: Examples21340
+Node: Efficiency24535
 Ref: Efficiency-Footnote-128229
 Node: wdiff28269
-Node: wdiff invocation29162
-Node: unify37453
-Node: unify invocation38549
-Node: Compatibility40912
-Node: diff Compatibility41494
-Node: wdiff Compatibility43768
+Node: wdiff invocation29163
+Node: unify37459
+Node: unify invocation38556
+Node: Compatibility40925
+Node: diff Compatibility41508
+Node: wdiff Compatibility43787
 
 End Tag Table
