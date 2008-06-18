@@ -1,7 +1,12 @@
 This is wdiff.info, produced by makeinfo version 4.8 from wdiff.texi.
 
+INFO-DIR-SECTION Text creation and manipulation
 START-INFO-DIR-ENTRY
-* wdiff and diff tools: (wdiff).        GNU wdiff and diff related tools.
+* Word differences: (wdiff).    GNU wdiff and diff related tools.
+END-INFO-DIR-ENTRY
+
+INFO-DIR-SECTION Individual utilities
+START-INFO-DIR-ENTRY
 * mdiff: (wdiff)mdiff invocation.               Line cluster finder.
 * unify: (wdiff)unify invocation.               Diff format converter.
 * wdiff: (wdiff)wdiff invocation.               Word difference finder.
@@ -1079,19 +1084,19 @@ rewrites the options.  The following notes apply.
 
 
 Tag Table:
-Node: Top1343
-Node: Overview2402
-Node: mdiff3758
-Node: mdiff invocation10609
-Node: Examples21340
-Node: Efficiency24535
-Ref: Efficiency-Footnote-128229
-Node: wdiff28269
-Node: wdiff invocation29163
-Node: unify37459
-Node: unify invocation38556
-Node: Compatibility40925
-Node: diff Compatibility41508
-Node: wdiff Compatibility43787
+Node: Top1462
+Node: Overview2521
+Node: mdiff3877
+Node: mdiff invocation10728
+Node: Examples21459
+Node: Efficiency24654
+Ref: Efficiency-Footnote-128348
+Node: wdiff28388
+Node: wdiff invocation29282
+Node: unify37578
+Node: unify invocation38675
+Node: Compatibility41044
+Node: diff Compatibility41627
+Node: wdiff Compatibility43906
 
 End Tag Table
