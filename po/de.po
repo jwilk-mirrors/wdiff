@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GNU ptx 0.5.1\n"
-"POT-Creation-Date: 1998-11-16 15:11-0500\n"
+"POT-Creation-Date: 1999-07-05 20:35-0400\n"
 "PO-Revision-Date: 1994-12-02 22:45\n"
 "Last-Translator: Ulrich Drepper <drepper@gnu.ai.mit.edu>\n"
 "Language-Team: German <de@li.org>\n"
@@ -13,114 +13,114 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: src/mdiff.c:394
+#: src/mdiff.c:398
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr ""
 
-#: src/mdiff.c:913
+#: src/mdiff.c:917 src/wdiff.c:1329
 #, fuzzy
 msgid "Only one file may be standard input."
 msgstr "Nicht beide Dateien können gleichzeitig Standard Eingabe sein."
 
-#: src/mdiff.c:928 src/wdiff.c:580
+#: src/mdiff.c:932 src/wdiff.c:592
 msgid "Directories not supported"
 msgstr "Verzeichnisse sind nicht unterstützt"
 
-#: src/mdiff.c:1071
+#: src/mdiff.c:1075
 #, c-format
 msgid "Reading %s"
 msgstr ""
 
-#: src/mdiff.c:1194
+#: src/mdiff.c:1198
 #, c-format
 msgid ", %d items\n"
 msgstr ""
 
-#: src/mdiff.c:1272
+#: src/mdiff.c:1276
 #, c-format
 msgid "Read summary: %d files, %d items\n"
 msgstr ""
 
-#: src/mdiff.c:1667
+#: src/mdiff.c:1671
 msgid "Sorting"
 msgstr ""
 
-#: src/mdiff.c:1684
+#: src/mdiff.c:1688
 msgid ", clustering"
 msgstr ""
 
-#: src/mdiff.c:1853 src/mdiff.c:1916
+#: src/mdiff.c:1857 src/mdiff.c:1920
 msgid ", done\n"
 msgstr ""
 
-#: src/mdiff.c:1903
+#: src/mdiff.c:1907
 msgid "Sorting members"
 msgstr ""
 
-#: src/mdiff.c:1935
+#: src/mdiff.c:1939
 #, c-format
 msgid "Work summary: %d clusters, %d members\n"
 msgstr ""
 
-#: src/mdiff.c:2313
+#: src/mdiff.c:2317
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr ""
 
-#: src/mdiff.c:2368 src/wdiff.c:239
-msgid "Specify a terminal type with `setenv TERM <yourtype>'."
-msgstr "Setze einen Terminal Typ mit `setenv TERM <eigener-Typ>'."
+#: src/mdiff.c:2372 src/wdiff.c:243
+msgid "Select a terminal through the TERM environment variable."
+msgstr ""
 
-#: src/mdiff.c:2371 src/wdiff.c:242
+#: src/mdiff.c:2375 src/wdiff.c:246
 msgid "Could not access the termcap data base."
 msgstr "Konnte auf die 'termcap' Datenbank nicht zugreifen."
 
-#: src/mdiff.c:2373 src/wdiff.c:244
+#: src/mdiff.c:2377 src/wdiff.c:248
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "Terminal Typ `%s' ist nicht definiert."
 
-#: src/mdiff.c:3736 src/mdiff.c:3748 src/wdiff.c:1037 src/wdiff.c:1049
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d Worte"
 
-#: src/mdiff.c:3739 src/mdiff.c:3751 src/wdiff.c:1040 src/wdiff.c:1052
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
 msgid "  %d %d%% common"
 msgstr "  %d %d%% gleich"
 
-#: src/mdiff.c:3741 src/wdiff.c:1042
+#: src/mdiff.c:3759 src/wdiff.c:1060
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% gelöscht"
 
-#: src/mdiff.c:3743 src/mdiff.c:3755 src/wdiff.c:1044 src/wdiff.c:1056
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% verändert"
 
-#: src/mdiff.c:3753 src/wdiff.c:1054
+#: src/mdiff.c:3771 src/wdiff.c:1072
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% eingefügt"
 
-#: src/mdiff.c:3782 src/unify.c:271 src/wdiff.c:1097
+#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "`%s --help' gibt weitere Informationen.\n"
 
-#: src/mdiff.c:3786
+#: src/mdiff.c:3804
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
 
-#: src/mdiff.c:3790
+#: src/mdiff.c:3808
 #, fuzzy, c-format
 msgid ""
 "\n"
 "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Aufruf: %s [OPTION]... DATEI-1 DATEI-2\n"
 
-#: src/mdiff.c:3794
+#: src/mdiff.c:3812
 msgid ""
 "\n"
 "Operation modes:\n"
@@ -130,25 +130,25 @@ msgid ""
 "      --version          output version information and exit\n"
 msgstr ""
 
-#: src/mdiff.c:3801
+#: src/mdiff.c:3819
 msgid ""
 "\n"
 "Formatting output:\n"
 "  -T, --initial-tab       produce TAB instead of initial space\n"
 "  -l, --paginate          paginate output through `pr'\n"
 "  -S, --string[=STRING]   take note of another user STRING\n"
-"  -V, --show-links        give file an line references in annotations\n"
+"  -V, --show-links        give file and line references in annotations\n"
 "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
-#: src/mdiff.c:3810
+#: src/mdiff.c:3828
 msgid ""
 "\n"
 "Debugging:\n"
 "  -0, --debugging   output many details about what is going on\n"
 msgstr ""
 
-#: src/mdiff.c:3815
+#: src/mdiff.c:3833
 #, fuzzy
 msgid ""
 "\n"
@@ -161,6 +161,7 @@ msgid ""
 "  -m, --avoid-wraps           do not extend fields through newlines\n"
 "  -o, --printer               overstrike as for printers\n"
 "  -z, --terminal              use termcap as for terminal displays\n"
+"  -K, --no-init-term          like -z, but no termcap init/term strings\n"
 "  -O, --item-regexp=REGEXP    compare items as defined by REGEXP\n"
 "  -W, --word-mode             compare words instead of lines\n"
 msgstr ""
@@ -185,7 +186,7 @@ msgstr ""
 "  -y, --start-insert=STRING  STRING am Beginn von eingefügten Bereichen\n"
 "  -z, --end-insert=STRING    STRING am Ende von eingefügten Bereichen\n"
 
-#: src/mdiff.c:3830
+#: src/mdiff.c:3849
 msgid ""
 "\n"
 "Comparing files:\n"
@@ -196,7 +197,7 @@ msgid ""
 "*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"
 msgstr ""
 
-#: src/mdiff.c:3840
+#: src/mdiff.c:3859
 msgid ""
 "\n"
 "Comparing directories:\n"
@@ -209,7 +210,7 @@ msgid ""
 "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
 msgstr ""
 
-#: src/mdiff.c:3852
+#: src/mdiff.c:3871
 msgid ""
 "\n"
 "Ignoring text:\n"
@@ -220,7 +221,7 @@ msgid ""
 "  -w, --ignore-all-space               ignore white space\n"
 msgstr ""
 
-#: src/mdiff.c:3860
+#: src/mdiff.c:3879
 msgid ""
 "\n"
 "Clustering:\n"
@@ -229,7 +230,7 @@ msgid ""
 "  -j, --ignore-delimiters    do not count items having only delimiters\n"
 msgstr ""
 
-#: src/mdiff.c:3868
+#: src/mdiff.c:3887
 msgid ""
 "\n"
 "Detailed output formats:\n"
@@ -244,7 +245,7 @@ msgid ""
 "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 msgstr ""
 
-#: src/mdiff.c:3882
+#: src/mdiff.c:3901
 msgid ""
 "\n"
 "Script-like formats:\n"
@@ -254,7 +255,7 @@ msgid ""
 "*  -n, --rcs              output RCS format (internally used by RCS)\n"
 msgstr ""
 
-#: src/mdiff.c:3891
+#: src/mdiff.c:3910
 msgid ""
 "\n"
 "Context and unified formats:\n"
@@ -262,7 +263,7 @@ msgid ""
 "*  -p, --show-c-function             show which C function for each change\n"
 msgstr ""
 
-#: src/mdiff.c:3898
+#: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
@@ -275,18 +276,18 @@ msgid ""
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
 
-#: src/mdiff.c:3908
+#: src/mdiff.c:3927
 msgid ""
 "\n"
 "Side by side format:\n"
-"*  -W, --width=COLUMNS           use width of COLONS\n"
+"*  -W, --width=COLUMNS           use width of COLUMNS\n"
 "*  -y, --side-by-side            use side by side output format\n"
 "*      --left-column             print only left column line when common\n"
 "*      --sdiff-merge-assist      (internally used by `sdiff')\n"
 "*      --suppress-common-lines   do not print common lines\n"
 msgstr ""
 
-#: src/mdiff.c:3918
+#: src/mdiff.c:3937
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -297,19 +298,19 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through "
-"--unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
 
-#: src/mdiff.c:3933
+#: src/mdiff.c:3952
 msgid ""
 "\n"
 "SPECIF is [-][W[.D]]{doxX} as in C printf\n"
 msgstr ""
 
-#: src/mdiff.c:3938
+#: src/mdiff.c:3957
 msgid ""
 "\n"
 "VARIABLE is {eflmn} for old group or {EFLMN} for new group\n"
@@ -320,7 +321,7 @@ msgid ""
 "  {nN}   number of lines in the group\n"
 msgstr ""
 
-#: src/mdiff.c:3948
+#: src/mdiff.c:3967
 msgid ""
 "\n"
 "Standard diff options:\n"
@@ -331,14 +332,18 @@ msgid ""
 "  -I, --ignore-matching-lines=RE ignore changes whose lines all match RE\n"
 "  -a, --text                treat all files as text\n"
 "  -c, --context[=NUMBER]    output regular context diffs,\n"
-"\t\t\t    changing to NUMBER lines of context\n"
+"                            changing to NUMBER lines of context\n"
 "  -u, --unified[=NUMBER]    output unified context diffs or unidiffs,\n"
-"\t\t\t    with NUMBER lines of context\n"
+"                            with NUMBER lines of context\n"
 "  -C, --context=NUM         output NUM lines of copied context\n"
 "  -U, --unified=NUM         output NUM lines of unified context\n"
 "  -L, --label=LABEL         use LABEL instead of file name\n"
 "  -p, --show-c-function     show which C function each change is in\n"
 "  -F, --show-function-line=RE show the most recent line matching RE\n"
+msgstr ""
+
+#: src/mdiff.c:3986
+msgid ""
 "  -q, --brief               output only whether files differ\n"
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
@@ -353,6 +358,10 @@ msgid ""
 "      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"
 "  -l, --paginate            pass the output through `pr' to paginate it\n"
 "  -t, --expand-tabs         expand tabs to spaces in output\n"
+msgstr ""
+
+#: src/mdiff.c:4001
+msgid ""
 "  -T, --initial-tab         make tabs line up by prepending a tab\n"
 "  -r, --recursive           recursively compare any subdirectories found\n"
 "  -N, --new-file            treat absent files as empty\n"
@@ -367,13 +376,13 @@ msgid ""
 "changes\n"
 msgstr ""
 
-#: src/mdiff.c:3993
+#: src/mdiff.c:4016
 msgid ""
 "\n"
 "By default, context diffs have an horizon of two lines.\n"
 msgstr ""
 
-#: src/mdiff.c:3999
+#: src/mdiff.c:4022
 msgid ""
 "\n"
 "LTYPE is `old', `new', or `unchanged'.  GTYPE is LTYPE or `changed'.\n"
@@ -388,6 +397,10 @@ msgid ""
 "      N  number of lines = L-F+1\n"
 "      E  F-1\n"
 "      M  L+1\n"
+msgstr ""
+
+#: src/mdiff.c:4037
+msgid ""
 "LFMT may contain:\n"
 "  %L  contents of line\n"
 "  %l  contents of line, excluding any trailing newline\n"
@@ -398,52 +411,53 @@ msgid ""
 "  %c'\\OOO'  the character with octal code OOO\n"
 msgstr ""
 
-#: src/mdiff.c:4024
+#: src/mdiff.c:4049
 msgid ""
 "\n"
 "Old mdiff options:\n"
 "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
 msgstr ""
 
-#: src/mdiff.c:4030
+#: src/mdiff.c:4055
 msgid ""
 "\n"
 "With no FILE, or when FILE is -, read standard input.\n"
 msgstr ""
 
-#: src/mdiff.c:4034 src/unify.c:297 src/wdiff.c:1128
+#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
 msgid ""
 "\n"
 "Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
 msgstr ""
 
-#: src/mdiff.c:4341 src/wdiff.c:1253
-msgid "Cannot use -t, termcap not available."
+#: src/mdiff.c:4370
+#, fuzzy
+msgid "Cannot use -z, termcap not available."
 msgstr "Kann -t nicht benutzen, da 'termcap' nicht verfügbar ist."
 
-#: src/mdiff.c:4380
+#: src/mdiff.c:4409
 msgid "Word merging for two files only (so far)"
 msgstr ""
 
-#: src/mdiff.c:4396
+#: src/mdiff.c:4425
 msgid ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 
-#: src/mdiff.c:4400 src/unify.c:409 src/wdiff.c:1206
+#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
 
-#: src/mdiff.c:4404 src/wdiff.c:1210
+#: src/mdiff.c:4433 src/wdiff.c:1229
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 msgstr ""
 
-#: src/mdiff.c:4440
+#: src/mdiff.c:4469
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr ""
 
@@ -528,7 +542,7 @@ msgstr "Unstimmige Kontext-Differenz in Zeile %ld.\n"
 msgid "Context diff missing `new' header at line %ld"
 msgstr "Kontext-Differenz enthält keine 'neuen' Kopfzeilen in Zeile %ld.\n"
 
-#: src/wdiff.c:1072
+#: src/wdiff.c:1090
 #, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
@@ -560,29 +574,30 @@ msgstr ""
 "\"GNU General Public License\" können weitere Einzelheiten nachgelesen\n"
 "werden.\n"
 "\n"
-"Sie sollten mit diesem Programm eine Kopie der \"GNU General Public "
-"License\"\n"
+"Sie sollten mit diesem Programm eine Kopie der \"GNU General Public License"
+"\"\n"
 "erhalten haben;  wenn nicht, schreiben Sie an die Free Software Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 "\n"
 
-#: src/wdiff.c:1101
+#: src/wdiff.c:1119
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr ""
 
-#: src/wdiff.c:1104
+#: src/wdiff.c:1122
 #, fuzzy, c-format
 msgid ""
 "\n"
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 msgstr "Aufruf: %s [OPTION]... DATEI-1 DATEI-2\n"
 
-#: src/wdiff.c:1108
+#: src/wdiff.c:1126
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 "  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
@@ -621,20 +636,26 @@ msgstr ""
 "  -y, --start-insert=STRING  STRING am Beginn von eingefügten Bereichen\n"
 "  -z, --end-insert=STRING    STRING am Ende von eingefügten Bereichen\n"
 
-#: src/wdiff.c:1202
+#: src/wdiff.c:1221
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 
-#: src/wdiff.c:1278
+#: src/wdiff.c:1276
+msgid "Cannot use -t, termcap not available."
+msgstr "Kann -t nicht benutzen, da 'termcap' nicht verfügbar ist."
+
+#: src/wdiff.c:1301
 msgid "Missing file arguments"
 msgstr "Dateiargument fehlt"
 
-#: src/wdiff.c:1306
+#~ msgid "Specify a terminal type with `setenv TERM <yourtype>'."
+#~ msgstr "Setze einen Terminal Typ mit `setenv TERM <eigener-Typ>'."
+
 #, fuzzy
-msgid "Both files cannot be standard input."
-msgstr "Nicht beide Dateien können gleichzeitig Standard Eingabe sein."
+#~ msgid "Both files cannot be standard input."
+#~ msgstr "Nicht beide Dateien können gleichzeitig Standard Eingabe sein."
 
 #~ msgid "Unknown option: '%c'\n"
 #~ msgstr "Unbekannte Option: '%c'\n"

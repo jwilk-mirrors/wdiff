@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GNU wdiff 0.5.2\n"
-"POT-Creation-Date: 1998-11-16 15:11-0500\n"
+"POT-Creation-Date: 1999-07-05 20:35-0400\n"
 "PO-Revision-Date: 1997-04-27 16:49+0200\n"
 "Last-Translator: Santiago Vila Doncel <sanvila@unex.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -13,12 +13,12 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: src/mdiff.c:394
+#: src/mdiff.c:398
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr ""
 
-#: src/mdiff.c:913
+#: src/mdiff.c:917 src/wdiff.c:1329
 #, fuzzy
 msgid "Only one file may be standard input."
 msgstr "Los dos ficheros no pueden ser la entrada estándar"
@@ -27,72 +27,62 @@ msgstr "Los dos ficheros no pueden ser la entrada estándar"
 # ## No me acaba de gustar, pero lo dejaré como posibilidad.
 # ## Reconsidéralo, please em
 # ## Vale, pero con un pequeño cambio. sv+
-#: src/mdiff.c:928 src/wdiff.c:580
+#: src/mdiff.c:932 src/wdiff.c:592
 msgid "Directories not supported"
 msgstr "No se admiten directorios"
 
-#: src/mdiff.c:1071
+#: src/mdiff.c:1075
 #, fuzzy, c-format
 msgid "Reading %s"
 msgstr "Leyendo %s ..."
 
-#: src/mdiff.c:1194
+#: src/mdiff.c:1198
 #, fuzzy, c-format
 msgid ", %d items\n"
 msgstr " %d líneas\n"
 
-#: src/mdiff.c:1272
+#: src/mdiff.c:1276
 #, fuzzy, c-format
 msgid "Read summary: %d files, %d items\n"
 msgstr "Leídos en total: %d ficheros, %d líneas\n"
 
-#: src/mdiff.c:1667
+#: src/mdiff.c:1671
 #, fuzzy
 msgid "Sorting"
 msgstr "Ordenando ..."
 
 # ## ¡Arrea! ¿Cómo traduzco yo esto?
 # ## Bueno, parece que así queda más o menos decente.
-#: src/mdiff.c:1684
+#: src/mdiff.c:1688
 #, fuzzy
 msgid ", clustering"
 msgstr "Agrupando ..."
 
-#: src/mdiff.c:1853 src/mdiff.c:1916
+#: src/mdiff.c:1857 src/mdiff.c:1920
 #, fuzzy
 msgid ", done\n"
 msgstr " hecho\n"
 
-#: src/mdiff.c:1903
+#: src/mdiff.c:1907
 #, fuzzy
 msgid "Sorting members"
 msgstr "Ordenando ..."
 
-#: src/mdiff.c:1935
+#: src/mdiff.c:1939
 #, fuzzy, c-format
 msgid "Work summary: %d clusters, %d members\n"
 msgstr "Resumen: %d grupos, %d miembros, %d líneas duplicadas\n"
 
-#: src/mdiff.c:2313
+#: src/mdiff.c:2317
 #, fuzzy, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Resumen: %d grupos, %d miembros, %d líneas duplicadas\n"
 
-# Antes puse <su-tipo>, pero en español queda fatal.
-#
-# A mí esto no me mola, porque queda muy bien para la gente de csh,
-# pero a los basheros (como yo :) no les llega ... ¿sugerencias? ipg
-# Pues yo sugiero también poner los dos ...
-#
-# Tienes toda la razón, pero de momento hay que traducir la cadena dada.
-# (La fidelidad al original ante todo). Eso sí, en cuanto salga
-# la próxima versión de prueba se lo decimos al autor.
-# FIXME. Comunicar al autor.
-#: src/mdiff.c:2368 src/wdiff.c:239
-msgid "Specify a terminal type with `setenv TERM <yourtype>'."
-msgstr "Especifique un tipo de terminal con `setenv TERM <tipo>'."
+#: src/mdiff.c:2372 src/wdiff.c:243
+msgid "Select a terminal through the TERM environment variable."
+msgstr ""
 
-#: src/mdiff.c:2371 src/wdiff.c:242
+#: src/mdiff.c:2375 src/wdiff.c:246
 msgid "Could not access the termcap data base."
 msgstr "No se pudo acceder a la base de datos termcap"
 
@@ -120,12 +110,12 @@ msgstr "No se pudo acceder a la base de datos termcap"
 #
 # Así queda mucho más claro. Lo prefiero :) ipg
 #
-#: src/mdiff.c:2373 src/wdiff.c:244
+#: src/mdiff.c:2377 src/wdiff.c:248
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "El tipo de terminal `%s' no está definido"
 
-#: src/mdiff.c:3736 src/mdiff.c:3748 src/wdiff.c:1037 src/wdiff.c:1049
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d palabras"
@@ -136,37 +126,37 @@ msgstr "%s: %d palabras"
 #
 # " %d %d%% en común" CB
 # No veo bien la diferencia. sv
-#: src/mdiff.c:3739 src/mdiff.c:3751 src/wdiff.c:1040 src/wdiff.c:1052
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
 msgid "  %d %d%% common"
 msgstr "  %d %d%% comunes"
 
 # femenino, porque son `palabras'
 # plural otra vez, por ser tanto por ciento
 #
-#: src/mdiff.c:3741 src/wdiff.c:1042
+#: src/mdiff.c:3759 src/wdiff.c:1060
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% borradas"
 
-#: src/mdiff.c:3743 src/mdiff.c:3755 src/wdiff.c:1044 src/wdiff.c:1056
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% cambiadas"
 
-#: src/mdiff.c:3753 src/wdiff.c:1054
+#: src/mdiff.c:3771 src/wdiff.c:1072
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% insertadas"
 
-#: src/mdiff.c:3782 src/unify.c:271 src/wdiff.c:1097
+#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Pruebe `%s --help' para más información.\n"
 
-#: src/mdiff.c:3786
+#: src/mdiff.c:3804
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
 
-#: src/mdiff.c:3790
+#: src/mdiff.c:3808
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -175,7 +165,7 @@ msgstr ""
 "\n"
 "Modo de empleo: %s [OPCIÓN]... FICHERO...\n"
 
-#: src/mdiff.c:3794
+#: src/mdiff.c:3812
 #, fuzzy
 msgid ""
 "\n"
@@ -195,18 +185,18 @@ msgstr ""
 "      --help              muestra esta ayuda y finaliza\n"
 "      --version           muestra la versión y finaliza\n"
 
-#: src/mdiff.c:3801
+#: src/mdiff.c:3819
 msgid ""
 "\n"
 "Formatting output:\n"
 "  -T, --initial-tab       produce TAB instead of initial space\n"
 "  -l, --paginate          paginate output through `pr'\n"
 "  -S, --string[=STRING]   take note of another user STRING\n"
-"  -V, --show-links        give file an line references in annotations\n"
+"  -V, --show-links        give file and line references in annotations\n"
 "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
-#: src/mdiff.c:3810
+#: src/mdiff.c:3828
 msgid ""
 "\n"
 "Debugging:\n"
@@ -240,7 +230,7 @@ msgstr ""
 # Si eso fuera mejor, entonces el original habría puesto "TEXT", que
 # también existe. Supongo que si el original dice STRING, es porque admite
 # cualquier cadena, sin limitarse a caracteres alfanuméricos o cosas así. sv
-#: src/mdiff.c:3815
+#: src/mdiff.c:3833
 #, fuzzy
 msgid ""
 "\n"
@@ -253,6 +243,7 @@ msgid ""
 "  -m, --avoid-wraps           do not extend fields through newlines\n"
 "  -o, --printer               overstrike as for printers\n"
 "  -z, --terminal              use termcap as for terminal displays\n"
+"  -K, --no-init-term          like -z, but no termcap init/term strings\n"
 "  -O, --item-regexp=REGEXP    compare items as defined by REGEXP\n"
 "  -W, --word-mode             compare words instead of lines\n"
 msgstr ""
@@ -287,7 +278,7 @@ msgstr ""
 "  -z, --end-insert=CADENA    cadena para marcar el final de una región\n"
 "                             insertada\n"
 
-#: src/mdiff.c:3830
+#: src/mdiff.c:3849
 msgid ""
 "\n"
 "Comparing files:\n"
@@ -298,7 +289,7 @@ msgid ""
 "*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"
 msgstr ""
 
-#: src/mdiff.c:3840
+#: src/mdiff.c:3859
 msgid ""
 "\n"
 "Comparing directories:\n"
@@ -311,7 +302,7 @@ msgid ""
 "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
 msgstr ""
 
-#: src/mdiff.c:3852
+#: src/mdiff.c:3871
 msgid ""
 "\n"
 "Ignoring text:\n"
@@ -322,7 +313,7 @@ msgid ""
 "  -w, --ignore-all-space               ignore white space\n"
 msgstr ""
 
-#: src/mdiff.c:3860
+#: src/mdiff.c:3879
 msgid ""
 "\n"
 "Clustering:\n"
@@ -331,7 +322,7 @@ msgid ""
 "  -j, --ignore-delimiters    do not count items having only delimiters\n"
 msgstr ""
 
-#: src/mdiff.c:3868
+#: src/mdiff.c:3887
 msgid ""
 "\n"
 "Detailed output formats:\n"
@@ -346,7 +337,7 @@ msgid ""
 "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 msgstr ""
 
-#: src/mdiff.c:3882
+#: src/mdiff.c:3901
 msgid ""
 "\n"
 "Script-like formats:\n"
@@ -356,7 +347,7 @@ msgid ""
 "*  -n, --rcs              output RCS format (internally used by RCS)\n"
 msgstr ""
 
-#: src/mdiff.c:3891
+#: src/mdiff.c:3910
 msgid ""
 "\n"
 "Context and unified formats:\n"
@@ -364,7 +355,7 @@ msgid ""
 "*  -p, --show-c-function             show which C function for each change\n"
 msgstr ""
 
-#: src/mdiff.c:3898
+#: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
@@ -377,18 +368,18 @@ msgid ""
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
 
-#: src/mdiff.c:3908
+#: src/mdiff.c:3927
 msgid ""
 "\n"
 "Side by side format:\n"
-"*  -W, --width=COLUMNS           use width of COLONS\n"
+"*  -W, --width=COLUMNS           use width of COLUMNS\n"
 "*  -y, --side-by-side            use side by side output format\n"
 "*      --left-column             print only left column line when common\n"
 "*      --sdiff-merge-assist      (internally used by `sdiff')\n"
 "*      --suppress-common-lines   do not print common lines\n"
 msgstr ""
 
-#: src/mdiff.c:3918
+#: src/mdiff.c:3937
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -399,19 +390,19 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through "
-"--unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
 
-#: src/mdiff.c:3933
+#: src/mdiff.c:3952
 msgid ""
 "\n"
 "SPECIF is [-][W[.D]]{doxX} as in C printf\n"
 msgstr ""
 
-#: src/mdiff.c:3938
+#: src/mdiff.c:3957
 msgid ""
 "\n"
 "VARIABLE is {eflmn} for old group or {EFLMN} for new group\n"
@@ -422,7 +413,7 @@ msgid ""
 "  {nN}   number of lines in the group\n"
 msgstr ""
 
-#: src/mdiff.c:3948
+#: src/mdiff.c:3967
 msgid ""
 "\n"
 "Standard diff options:\n"
@@ -433,14 +424,18 @@ msgid ""
 "  -I, --ignore-matching-lines=RE ignore changes whose lines all match RE\n"
 "  -a, --text                treat all files as text\n"
 "  -c, --context[=NUMBER]    output regular context diffs,\n"
-"\t\t\t    changing to NUMBER lines of context\n"
+"                            changing to NUMBER lines of context\n"
 "  -u, --unified[=NUMBER]    output unified context diffs or unidiffs,\n"
-"\t\t\t    with NUMBER lines of context\n"
+"                            with NUMBER lines of context\n"
 "  -C, --context=NUM         output NUM lines of copied context\n"
 "  -U, --unified=NUM         output NUM lines of unified context\n"
 "  -L, --label=LABEL         use LABEL instead of file name\n"
 "  -p, --show-c-function     show which C function each change is in\n"
 "  -F, --show-function-line=RE show the most recent line matching RE\n"
+msgstr ""
+
+#: src/mdiff.c:3986
+msgid ""
 "  -q, --brief               output only whether files differ\n"
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
@@ -455,6 +450,10 @@ msgid ""
 "      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"
 "  -l, --paginate            pass the output through `pr' to paginate it\n"
 "  -t, --expand-tabs         expand tabs to spaces in output\n"
+msgstr ""
+
+#: src/mdiff.c:4001
+msgid ""
 "  -T, --initial-tab         make tabs line up by prepending a tab\n"
 "  -r, --recursive           recursively compare any subdirectories found\n"
 "  -N, --new-file            treat absent files as empty\n"
@@ -469,13 +468,13 @@ msgid ""
 "changes\n"
 msgstr ""
 
-#: src/mdiff.c:3993
+#: src/mdiff.c:4016
 msgid ""
 "\n"
 "By default, context diffs have an horizon of two lines.\n"
 msgstr ""
 
-#: src/mdiff.c:3999
+#: src/mdiff.c:4022
 msgid ""
 "\n"
 "LTYPE is `old', `new', or `unchanged'.  GTYPE is LTYPE or `changed'.\n"
@@ -490,6 +489,10 @@ msgid ""
 "      N  number of lines = L-F+1\n"
 "      E  F-1\n"
 "      M  L+1\n"
+msgstr ""
+
+#: src/mdiff.c:4037
+msgid ""
 "LFMT may contain:\n"
 "  %L  contents of line\n"
 "  %l  contents of line, excluding any trailing newline\n"
@@ -500,20 +503,20 @@ msgid ""
 "  %c'\\OOO'  the character with octal code OOO\n"
 msgstr ""
 
-#: src/mdiff.c:4024
+#: src/mdiff.c:4049
 msgid ""
 "\n"
 "Old mdiff options:\n"
 "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
 msgstr ""
 
-#: src/mdiff.c:4030
+#: src/mdiff.c:4055
 msgid ""
 "\n"
 "With no FILE, or when FILE is -, read standard input.\n"
 msgstr ""
 
-#: src/mdiff.c:4034 src/unify.c:297 src/wdiff.c:1128
+#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
 #, fuzzy
 msgid ""
 "\n"
@@ -522,15 +525,16 @@ msgstr ""
 "\n"
 "Comunicar `bugs' a <wdiff-bugs@gnu.ai.mit.edu>.\n"
 
-#: src/mdiff.c:4341 src/wdiff.c:1253
-msgid "Cannot use -t, termcap not available."
+#: src/mdiff.c:4370
+#, fuzzy
+msgid "Cannot use -z, termcap not available."
 msgstr "No se puede usar -t, termcap no está disponible"
 
-#: src/mdiff.c:4380
+#: src/mdiff.c:4409
 msgid "Word merging for two files only (so far)"
 msgstr ""
 
-#: src/mdiff.c:4396
+#: src/mdiff.c:4425
 msgid ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
@@ -539,7 +543,7 @@ msgstr ""
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
 
 # Lo pongo igual que en recode.
-#: src/mdiff.c:4400 src/unify.c:409 src/wdiff.c:1206
+#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -548,7 +552,7 @@ msgstr ""
 "No hay NINGUNA garantía; ni siquiera de COMERCIABILIDAD o IDONEIDAD PARA UN\n"
 "FIN DETERMINADO.\n"
 
-#: src/mdiff.c:4404 src/wdiff.c:1210
+#: src/mdiff.c:4433 src/wdiff.c:1229
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -556,7 +560,7 @@ msgstr ""
 "\n"
 "Escrito por François Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4440
+#: src/mdiff.c:4469
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr ""
 
@@ -674,7 +678,7 @@ msgstr "Diff de contexto sin cabecera `new' en la línea %ld"
 # Usar y extender este término (que ya usan los franceses)
 # ayudará a evitar que le llamen "software gratis"
 # Además, "free software" quedaba "demasiado en inglés".
-#: src/wdiff.c:1072
+#: src/wdiff.c:1090
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -705,11 +709,11 @@ msgstr ""
 "a la Free Software Foundation, Inc., 59 Temple Place - Suite 330,\n"
 "Boston, MA 02111-1307, EE.UU.\n"
 
-#: src/wdiff.c:1101
+#: src/wdiff.c:1119
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr ""
 
-#: src/wdiff.c:1104
+#: src/wdiff.c:1122
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -743,11 +747,13 @@ msgstr "Modo de empleo: %s [OPCIÓN]... FICHERO1 FICHERO2\n"
 # Si eso fuera mejor, entonces el original habría puesto "TEXT", que
 # también existe. Supongo que si el original dice STRING, es porque admite
 # cualquier cadena, sin limitarse a caracteres alfanuméricos o cosas así. sv
-#: src/wdiff.c:1108
+#: src/wdiff.c:1126
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 "  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
@@ -796,7 +802,7 @@ msgstr ""
 "  -z, --end-insert=CADENA    cadena para marcar el final de una región\n"
 "                             insertada\n"
 
-#: src/wdiff.c:1202
+#: src/wdiff.c:1221
 #, fuzzy
 msgid ""
 "\n"
@@ -804,6 +810,10 @@ msgid ""
 msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+
+#: src/wdiff.c:1276
+msgid "Cannot use -t, termcap not available."
+msgstr "No se puede usar -t, termcap no está disponible"
 
 # No se referirá a que no se ha dado al menos un nombre de fichero ? EM
 # Sí, pero hay que dar *dos*, si se da uno o ninguno, faltan argumentos. SV
@@ -816,13 +826,25 @@ msgstr ""
 # Faltan argumentos de tipo FICHERO.
 # Pero no me gusta ninguna de las anteriores SV
 # Al final he optado por una solución intermedia.
-#: src/wdiff.c:1278
+#: src/wdiff.c:1301
 msgid "Missing file arguments"
 msgstr "Faltan argumentos (ficheros)"
 
-#: src/wdiff.c:1306
-msgid "Both files cannot be standard input."
-msgstr "Los dos ficheros no pueden ser la entrada estándar"
+# Antes puse <su-tipo>, pero en español queda fatal.
+#
+# A mí esto no me mola, porque queda muy bien para la gente de csh,
+# pero a los basheros (como yo :) no les llega ... ¿sugerencias? ipg
+# Pues yo sugiero también poner los dos ...
+#
+# Tienes toda la razón, pero de momento hay que traducir la cadena dada.
+# (La fidelidad al original ante todo). Eso sí, en cuanto salga
+# la próxima versión de prueba se lo decimos al autor.
+# FIXME. Comunicar al autor.
+#~ msgid "Specify a terminal type with `setenv TERM <yourtype>'."
+#~ msgstr "Especifique un tipo de terminal con `setenv TERM <tipo>'."
+
+#~ msgid "Both files cannot be standard input."
+#~ msgstr "Los dos ficheros no pueden ser la entrada estándar"
 
 # ## FIXME. ¿Cómo puede ser esto?
 # ## Esta claro que François usa mucho el cut&paste ;) em
