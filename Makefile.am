@@ -87,7 +87,7 @@ installcheck-local:
 	  $(TESTSUITEFLAGS) AUTOTEST_PATH="$(exec_prefix)/bin"
 
 # We need to remove any file droppings left behind by testsuite
-clean-local: clean-local-legacy
+clean-local:
 	-$(CD_TESTDIR); \
 	test -f $$abs_srcdir/$(TESTSUITE) && \
 	    $(SHELL) $$abs_srcdir/$(TESTSUITE) --clean
