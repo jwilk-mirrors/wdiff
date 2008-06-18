@@ -323,7 +323,7 @@ less than @var{number} lines.  By default, clusters have 4 lines or more.
 Print an informative help message describing the options.
 
 @item --version
-@itemx -V
+@itemx -v
 Print the version number of @code{wdiff} on the standard error output.
 
 @item --no-deleted
@@ -775,7 +775,7 @@ refers to text on @var{new_file} which is not in @var{old_file}.
 Print an informative help message describing the options.
 
 @item --version
-@itemx -V
+@itemx -v
 Print the version number of @code{wdiff} on the standard error output.
 
 @item --no-deleted

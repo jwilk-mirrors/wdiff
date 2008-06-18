@@ -117,7 +117,7 @@ struct option const longopts[] =
   {"start-insert", 1, NULL, 'y'},
   {"statistics"  , 0, NULL, 's'},
   {"terminal"    , 0, NULL, 't'},
-  {"version"     , 0, NULL, 'V'},
+  {"version"     , 0, NULL, 'v'},
   {NULL          , 0, NULL, 0}
 };
 
@@ -1128,7 +1128,6 @@ Mandatory arguments to long options are mandatory for short options too.\n\
 \n\
   -C, --copyright            print copyright then exit\n\
   -K, --no-init-term         like -t, but no termcap init/term strings\n\
-  -V, --version              print program version then exit\n\
   -1, --no-deleted           inhibit output of deleted words\n\
   -2, --no-inserted          inhibit output of inserted words\n\
   -3, --no-common            inhibit output of common words\n\
@@ -1140,6 +1139,7 @@ Mandatory arguments to long options are mandatory for short options too.\n\
   -p, --printer              overstrike as for printers\n\
   -s, --statistics           say how many words deleted, inserted etc.\n\
   -t, --terminal             use termcap as for terminal displays\n\
+  -v, --version              print program version then exit\n\
   -w, --start-delete=STRING  string to mark beginning of delete region\n\
   -x, --end-delete=STRING    string to mark end of delete region\n\
   -y, --start-insert=STRING  string to mark beginning of insert region\n\
@@ -1195,7 +1195,7 @@ main (int argc, char *const argv[])
   count_changed_left = 0;
   count_changed_right = 0;
 
-  while (option_char = getopt_long (argc, argv, "123CKVahilnpstw:x:y:z:",
+  while (option_char = getopt_long (argc, argv, "123CKahilnpstvw:x:y:z:",
 				    longopts, NULL),
 	 option_char != EOF)
     switch (option_char)
@@ -1214,22 +1214,6 @@ main (int argc, char *const argv[])
 
       case 'C':
 	print_copyright ();
-	exit (EXIT_SUCCESS);
-
-      case 'V':
-	printf ("wdiff (GNU %s) %s\n", PACKAGE, VERSION);
-	fputs (_("\
-\n\
-Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"),
-	     stdout);
-	fputs (_("\
-This is free software; see the source for copying conditions.  There is NO\n\
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"),
-	     stdout);
-	fputs (_("\
-\n\
-Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
-	     stdout);
 	exit (EXIT_SUCCESS);
 
       case 'a':
@@ -1275,6 +1259,22 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
 	error (EXIT_FAILURE, 0,
 	       _("Cannot use -t, termcap not available."));
 #endif
+
+      case 'v':
+	printf ("wdiff (GNU %s) %s\n", PACKAGE, VERSION);
+	fputs (_("\
+\n\
+Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"),
+	     stdout);
+	fputs (_("\
+This is free software; see the source for copying conditions.  There is NO\n\
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"),
+	     stdout);
+	fputs (_("\
+\n\
+Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
+	     stdout);
+	exit (EXIT_SUCCESS);
 
       case 'w':
 	user_delete_start = optarg;

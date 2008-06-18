@@ -162,7 +162,7 @@ struct option const longopts[] =
   {"start-insert", required_argument, NULL, 'y'},
   {"statistics", no_argument, NULL, 's'},
   {"terminal", no_argument, NULL, 't'},
-  {"version", no_argument, NULL, 'V'},
+  {"version", no_argument, NULL, 'v'},
   {0, 0, 0, 0}
 };
 
@@ -191,7 +191,6 @@ Mandatory arguments to long options are mandatory for short options too.\n\
 \n\
   -C, --copyright            print copyright then exit\n\
   -K, --no-init-term         like -t, but no termcap init/term strings\n\
-  -V, --version              print program version then exit\n\
   -1, --no-deleted           inhibit output of deleted words\n\
   -2, --no-inserted          inhibit output of inserted words\n\
   -3, --no-common            inhibit output of common words\n\
@@ -204,6 +203,7 @@ Mandatory arguments to long options are mandatory for short options too.\n\
   -q, --quiet                inhibit the `mdiff' call message\n\
   -s, --statistics           say how many words deleted, inserted etc.\n\
   -t, --terminal             use termcap as for terminal displays\n\
+  -v, --version              print program version then exit\n\
   -w, --start-delete=STRING  string to mark beginning of delete region\n\
   -x, --end-delete=STRING    string to mark end of delete region\n\
   -y, --start-insert=STRING  string to mark beginning of insert region\n\
@@ -238,7 +238,7 @@ main (int argc, char *const argv[])
 
   /* Decode arguments.  */
 
-  while (option_char = getopt_long (argc, argv, "123CKVachidlnpqstw:x:y:z:",
+  while (option_char = getopt_long (argc, argv, "123CKachidlnpqstvw:x:y:z:",
 				    longopts, NULL),
 	 option_char != EOF)
     switch (option_char)
@@ -262,10 +262,6 @@ main (int argc, char *const argv[])
       case 'K':
 	add_simple_option ('K');
 	break;
-
-      case 'V':
-	print_version ();
-	exit (EXIT_SUCCESS);
 
       case 'a':
 	add_simple_option ('A');
@@ -302,6 +298,10 @@ main (int argc, char *const argv[])
       case 't':
 	add_simple_option ('z');
 	break;
+
+      case 'v':
+	print_version ();
+	exit (EXIT_SUCCESS);
 
       case 'w':
 	add_option_with_argument ('Y', optarg);
