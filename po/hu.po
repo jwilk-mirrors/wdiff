@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
-"POT-Creation-Date: 1999-07-05 20:35-0400\n"
+"Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
+"POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2002-05-13 13:32+0200\n"
 "Last-Translator: Emese Kovács <emese@gnome.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
@@ -19,11 +20,11 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (regexphez `%s')"
 
-#: src/mdiff.c:917 src/wdiff.c:1329
+#: src/mdiff.c:917 src/wdiff.c:1386
 msgid "Only one file may be standard input."
 msgstr "Csak egy fájl lehet szabványos bemenet."
 
-#: src/mdiff.c:932 src/wdiff.c:592
+#: src/mdiff.c:932 src/wdiff.c:643
 msgid "Directories not supported"
 msgstr "A könyvtárak nem támogatottak"
 
@@ -43,18 +44,22 @@ msgid "Read summary: %d files, %d items\n"
 msgstr "Olvasás összefoglalása: %d fájl, %d elem\n"
 
 #: src/mdiff.c:1671
+#, c-format
 msgid "Sorting"
 msgstr "Rendezés"
 
 #: src/mdiff.c:1688
+#, c-format
 msgid ", clustering"
 msgstr ", csoportosítás"
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
+#, c-format
 msgid ", done\n"
 msgstr ", kész\n"
 
 #: src/mdiff.c:1907
+#, c-format
 msgid "Sorting members"
 msgstr "Tagok rendezése"
 
@@ -68,41 +73,45 @@ msgstr "Munka összefoglalása: %d csoport, %d tag\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Munka összefoglalása: %d csoport, %d tag, %d átfedés\n"
 
-#: src/mdiff.c:2372 src/wdiff.c:243
+#: src/mdiff.c:2372 src/wdiff.c:245
 msgid "Select a terminal through the TERM environment variable."
 msgstr "Válassz terminált a TERM változó segítségével."
 
-#: src/mdiff.c:2375 src/wdiff.c:246
+#: src/mdiff.c:2375 src/wdiff.c:248
 msgid "Could not access the termcap data base."
 msgstr "A termcap adatbázis nem elérhetõ."
 
-#: src/mdiff.c:2377 src/wdiff.c:248
+#: src/mdiff.c:2377 src/wdiff.c:250
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "`%s' típusú terminál nincs definiálva."
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d szó"
 
-#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
+#, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% közös"
 
-#: src/mdiff.c:3759 src/wdiff.c:1060
+#: src/mdiff.c:3759 src/wdiff.c:1115
+#, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% törölve"
 
-#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
+#, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% változott"
 
-#: src/mdiff.c:3771 src/wdiff.c:1072
+#: src/mdiff.c:3771 src/wdiff.c:1127
+#, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% beszúrva"
 
-#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Próbáld a `%s --help'-et.\n"
@@ -156,7 +165,8 @@ msgstr ""
 "  -l, --paginate          kimenet oldalszámozása a `pr' segítségével\n"
 "  -S, --string[=SZTRING]  másik felhasználói SZTRING-et is figyelembe vesz\n"
 "  -V, --show-links        annotációban fájl- és sorszámhivatkozások\n"
-"  -t, --expand-tabs       tabulátor karaktert szóközzé alakítja a kimenetben\n"
+"  -t, --expand-tabs       tabulátor karaktert szóközzé alakítja a "
+"kimenetben\n"
 
 #: src/mdiff.c:3828
 msgid ""
@@ -194,7 +204,8 @@ msgstr ""
 "  -m, --avoid-wraps           a mezõket nem terjeszti az újsorokon túl\n"
 "  -o, --printer               'overstrike' mint nyomtatóknál\n"
 "  -z, --terminal              termcap mint terminál kiíratásnál\n"
-"  -K, --no-init-term          mint -z, de init/termcap karakterláncok nélkül\n"
+"  -K, --no-init-term          mint -z, de init/termcap karakterláncok "
+"nélkül\n"
 "  -O, --item-regexp=REGEXP    elemek összehasonlítása REGEXP alapján\n"
 "  -W, --word-mode             szavakat hasonlít össze sorok helyett\n"
 
@@ -211,11 +222,13 @@ msgstr ""
 "\n"
 "Fájlok összehasonlítása:\n"
 "*  -H, --speed-large-files     gyorsabb, sok, kis különbség esetén\n"
-"*  -a, --text                  sorkülönbség jelzése (szövegfájlnál alapértelmezett)\n"
+"*  -a, --text                  sorkülönbség jelzése (szövegfájlnál "
+"alapértelmezett)\n"
 "*  -d, --minimal               próbál kevesebb különbséget találni\n"
 "*  -q, --brief                 csak azt jelenti, hogy a fájlok különböznek\n"
 "                                (bináris fájlnál alapértelmezett)\n"
-"*      --horizon-lines=SOR     SOR sor megtartása a közös elõ- és utótagokban\n"
+"*      --horizon-lines=SOR     SOR sor megtartása a közös elõ- és "
+"utótagokban\n"
 
 #: src/mdiff.c:3859
 msgid ""
@@ -233,7 +246,8 @@ msgstr ""
 "Könyvtárak összehasonlítása:\n"
 "*  -N, --new-file                  hiányzó fájlt üresnek veszi\n"
 "*  -P, --unidirectional-new-file   hiányzó régi fájlt üresnek veszi\n"
-"*  -S, --starting-file=FÁJL        könyvtár-összehasonlítás folytatása FÁJLTÓL\n"
+"*  -S, --starting-file=FÁJL        könyvtár-összehasonlítás folytatása "
+"FÁJLTÓL\n"
 "*  -X, --exclude-from=FÁJL         FÁJLBAN található mintákra illeszkedõ\n"
 "                                    fájlok kihagyása\n"
 "*  -r, --recursive                 alkönyvtárak rekurzív összehasonlítása\n"
@@ -256,7 +270,8 @@ msgstr ""
 "  -B, --ignore-blank-lines             Üres sorok figyelmen kívül hagyása\n"
 "  -I, --ignore-matching-lines=REGEXP   REGEXP-re illeszkedõ sorok kihagyása\n"
 "  -b, --ignore-space-change            szóköz, tabulátor és sortörés\n"
-"                                        változásának figyelmen kívül hagyása\n"
+"                                        változásának figyelmen kívül "
+"hagyása\n"
 "  -i, --ignore-case                    kis- és nagybetû megegyezik\n"
 "  -w, --ignore-all-space               minden szóköz, tabulátor és sortörés\n"
 "                                        figyelmen kívül hagyása\n"
@@ -296,10 +311,14 @@ msgstr ""
 "*  -D, --ifdef=NÉV                       `#ifdef NÉV' formátum kiírása\n"
 "*      --changed-group-format=FORMAT     FORMAT használata megváltozott\n"
 "                                          sor esetén\n"
-"*      --new-group-format=FORMAT         FORMAT használata beszúrt sor esetén\n"
-"*      --new-line-format=FORMAT          FORMAT használata beszúrt sor esetén\n"
-"*      --old-group-format=FORMAT         FORMAT használata törölt sor esetén\n"
-"*      --old-line-format=FORMAT          FORMAT használata törölt sor esetén\n"
+"*      --new-group-format=FORMAT         FORMAT használata beszúrt sor "
+"esetén\n"
+"*      --new-line-format=FORMAT          FORMAT használata beszúrt sor "
+"esetén\n"
+"*      --old-group-format=FORMAT         FORMAT használata törölt sor "
+"esetén\n"
+"*      --old-line-format=FORMAT          FORMAT használata törölt sor "
+"esetén\n"
 "*      --unchanged-group-format=FORMAT   FORMAT használata változatlan\n"
 "                                          sor esetén\n"
 "*      --unchanged-line-format=FORMAT    FORMAT használata változatlan\n"
@@ -333,23 +352,28 @@ msgstr ""
 "Szövegkörnyezeti és egyesített (unified) formátumok:\n"
 "*  -F, --show-function-line=REGEXP   REGEXP-re illeszkedõ elõzõ környezet\n"
 "                                      muatatása\n"
-"*  -p, --show-c-function             megmutatja, melyik C függvény változott\n"
+"*  -p, --show-c-function             megmutatja, melyik C függvény "
+"változott\n"
 
 #: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name "
+"(twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -c, --context               output context diffs (default 3 context "
+"lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
 "\n"
-"*  -C, --context=SOR         mint -c, környezethossz beállítása (sorok száma)\n"
+"*  -C, --context=SOR         mint -c, környezethossz beállítása (sorok "
+"száma)\n"
 "*  -L, --label=CÍMKE         forrás és cél CÍMKE használata fájlnév\n"
 "                              helyett (kétszer)\n"
-"*  -U, --unified=SOR         mint -u, környezethossz beállítása (sorok száma)\n"
+"*  -U, --unified=SOR         mint -u, környezethossz beállítása (sorok "
+"száma)\n"
 "*  -c, --context             diff kiírása szövegkörnyezettel\n"
 "                              (alapértelmezésben 3 sor)\n"
 "*  -u, --unified             unidiff kiírása szövegkörnyezettel\n"
@@ -375,6 +399,7 @@ msgstr ""
 "*      --suppress-common-lines   közös sorok elhagyása\n"
 
 #: src/mdiff.c:3937
+#, c-format
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -385,7 +410,8 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
@@ -394,9 +420,11 @@ msgstr ""
 "  %%%%           egy darab %%\n"
 "  %%c'C'        idézett C karakter\n"
 "  %%c'\\O'       O értékû karakter, 1-tõl 3 oktális számjegy\n"
-"  %%(A=B?T:E)   ha A egyenlõ B-vel akkor T különben E; A B szám vagy VÁLTOZÓ;\n"
+"  %%(A=B?T:E)   ha A egyenlõ B-vel akkor T különben E; A B szám vagy "
+"VÁLTOZÓ;\n"
 "                 T és E FORMAT típusú\n"
-"  %%FN          F SPECIF specifikáció használata N értékû VÁLTOZÓ kiírásához\n"
+"  %%FN          F SPECIF specifikáció használata N értékû VÁLTOZÓ "
+"kiírásához\n"
 "  %%<           [csoport] régi, minden sort --old-line-format kapcsolóval\n"
 "  %%>           [csoport] új, minden sort --new-line-format kapcsolóval\n"
 "  %%=           [csoport] változatlan, minden sort --unchanged-line-format\n"
@@ -478,7 +506,8 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per "
+"line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -492,7 +521,8 @@ msgstr ""
 "  -e, --ed                  érvényes `ed' szkript kiírása\n"
 "  -n, --rcs                 RCS formátumú diff-et ír ki\n"
 "  -y, --side-by-side        két oszlopot ír ki\n"
-"  -w, --width=SZÁM          legfeljebb SZÁM (alapértelmezésben 130) karakter\n"
+"  -w, --width=SZÁM          legfeljebb SZÁM (alapértelmezésben 130) "
+"karakter\n"
 "                             soronként\n"
 "      --left-column         közös sor esetén csak bal olszlop\n"
 "      --suppress-common-lines   közös sorok elhagyása\n"
@@ -501,7 +531,8 @@ msgstr ""
 "      --line-format=LFMT    minden bemeneti sor LFMT-vel\n"
 "      --LTYPE-line-format=LFMT  LTYPE bemeneti fájlok LFMT-vel\n"
 "  -l, --paginate            kimenet oldalszámozása a `pr' segítségével\n"
-"  -t, --expand-tabs         tabulátor karaktert szóközzé alakítja a kimenetben\n"
+"  -t, --expand-tabs         tabulátor karaktert szóközzé alakítja a "
+"kimenetben\n"
 
 #: src/mdiff.c:4001
 msgid ""
@@ -515,7 +546,8 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small "
+"changes\n"
 msgstr ""
 "  -T, --initial-tab         TAB-ot kezdõ szóköz helyett\n"
 "  -r, --recursive           alkönyvtárak rekurzív összehasonlítása\n"
@@ -556,7 +588,8 @@ msgid ""
 "      M  L+1\n"
 msgstr ""
 "\n"
-"LTYPE lehet `old', `new', vagy `unchanged'. GTYPE lehet LTYPE vagy `changed'.\n"
+"LTYPE lehet `old', `new', vagy `unchanged'. GTYPE lehet LTYPE vagy "
+"`changed'.\n"
 "GFMT tartalmazhat:\n"
 "  %<  sorok FÁJL1-bõl\n"
 "  %>  sorok FÁJL2-bõl\n"
@@ -608,10 +641,11 @@ msgstr ""
 "\n"
 "Szabványos bemenetrõl olvas, ha FÁJL nincs megadva vagy -. \n"
 
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#, fuzzy
 msgid ""
 "\n"
-"Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "\n"
 "A hibákat jelentsd a <wdiff-bugs@iro.umontreal.ca> címen.\n"
@@ -624,7 +658,7 @@ msgstr "-z kapcsoló használata nem lehetséges, termcap nem elérhetõ."
 msgid "Word merging for two files only (so far)"
 msgstr "Szóösszefésülés csak két fájlal (egyelõre)"
 
-#: src/mdiff.c:4425
+#: src/mdiff.c:4425 src/wdiff2.c:129
 msgid ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
@@ -632,16 +666,17 @@ msgstr ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Ez szabad szoftver; a sokszorosításra vonatkozó feltételeket lásd a forrásban.\n"
+"Ez szabad szoftver; a sokszorosításra vonatkozó feltételeket lásd a "
+"forrásban.\n"
 "SEMMILYEN garanciát nem vállalunk, még azt sem állítjuk, hogy ez a program\n"
 "KERESKEDELMI CÉLOKRA ALKALMAS vagy HASZNÁLHATÓ EGY ADOTT FELADATRA.\n"
 
-#: src/mdiff.c:4433 src/wdiff.c:1229
+#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -653,16 +688,16 @@ msgstr ""
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "A -123RSYZ kapcsolók csak akkor értelmezettek, ha két bemenet van."
 
-#: src/unify.c:142
+#: src/unify.c:143
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
 msgstr "A megadott sornál a diff neve nem található. Sor: %ld"
 
-#: src/unify.c:275
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unify - Szövegkörnyezeti diffet alakít unidiffé, vagy fordítva.\n"
 
-#: src/unify.c:278
+#: src/unify.c:279
 #, c-format
 msgid ""
 "\n"
@@ -671,7 +706,7 @@ msgstr ""
 "\n"
 "Használat: %s [KAPCSOLÓ]... [FÁJL]\n"
 
-#: src/unify.c:281
+#: src/unify.c:282
 msgid ""
 "\n"
 "  -c, --context-diffs    force output to context diffs\n"
@@ -697,22 +732,23 @@ msgstr ""
 "  -s, --strip-comments   megjegyzések törlése\n"
 "  -u, --unidiffs         mindenképp unidiff kiírása\n"
 "  -U                     mint -p és -u\n"
-"  -=, --use-equals       szóközöket egyenlõségjelekre cseréli az unidiffekben\n"
+"  -=, --use-equals       szóközöket egyenlõségjelekre cseréli az "
+"unidiffekben\n"
 "      --help             emlékeztetõt ír ki\n"
 "      --version          kiírja a program nevét és változatát\n"
 "\n"
 "Ha FÁJL nincs megadva, a szabványos bementrõl olvas.\n"
 
-#: src/unify.c:390
+#: src/unify.c:391
 #, c-format
 msgid "Unable to open `%s'"
 msgstr "`%s' megnyitása sikertelen."
 
-#: src/unify.c:396
+#: src/unify.c:397
 msgid "Only one filename allowed"
 msgstr "Csak egy fájlnév megengedett"
 
-#: src/unify.c:405
+#: src/unify.c:406
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -720,7 +756,7 @@ msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:413
+#: src/unify.c:414
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -728,32 +764,39 @@ msgstr ""
 "\n"
 "Írta Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:552
+#: src/unify.c:553
 #, c-format
 msgid "Invalid unified diff header at line %ld"
 msgstr "Érvénytelen unidiff fejléc a következõ sorban: %ld"
 
-#: src/unify.c:594
+#: src/unify.c:595
 #, c-format
 msgid "Malformed unified diff at line %ld"
 msgstr "Rossz formátumú unidiff a következõ sorban: %ld"
 
-#: src/unify.c:625
+#: src/unify.c:626
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
-msgstr "A szövegkörnyezeti diffbõl hiányzik a `régi' fejléc a következõ sorban: %ld"
+msgstr ""
+"A szövegkörnyezeti diffbõl hiányzik a `régi' fejléc a következõ sorban: %ld"
 
-#: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
 #, c-format
 msgid "Malformed context diff at line %ld"
 msgstr "Rossz formátumú szövegkörnyezeti diff a következõ sorban: %ld"
 
-#: src/unify.c:724
+#: src/unify.c:725
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
-msgstr "A szövegkörnyezeti diffbõl hiányzik az `új' fejléc a következõ sorban: %ld"
+msgstr ""
+"A szövegkörnyezeti diffbõl hiányzik az `új' fejléc a következõ sorban: %ld"
 
-#: src/wdiff.c:1090
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr ""
+
+#: src/wdiff.c:1145 src/wdiff2.c:108
+#, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -767,7 +810,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
 "Ez a program szabad szoftver; továbbadhatod és/vagy módosíthatod\n"
 "a Free Software Foundation által kiadott GNU General Public License\n"
@@ -783,11 +826,12 @@ msgstr ""
 "egy példányát. Ha mégsem így történt, írj a Free Software Foundation-nek:\n"
 "59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1119
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr "wdiff - két fájl szavait hasonlítja össze és jelenti a különbségeket.\n"
+msgstr ""
+"wdiff - két fájl szavait hasonlítja össze és jelenti a különbségeket.\n"
 
-#: src/wdiff.c:1122
+#: src/wdiff.c:1177 src/wdiff2.c:185
 #, c-format
 msgid ""
 "\n"
@@ -796,13 +840,13 @@ msgstr ""
 "\n"
 "Használat: %s [KAPCSOLÓ]... FÁJL1 FÁJL2\n"
 
-#: src/wdiff.c:1126
+#: src/wdiff.c:1181
+#, fuzzy, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
@@ -814,12 +858,14 @@ msgid ""
 "  -p, --printer              overstrike as for printers\n"
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 "  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"Ha egy hosszú kapcsolóhoz kötelezõ argumentumot megadni, akkor ez a megfelelõ\n"
+"Ha egy hosszú kapcsolóhoz kötelezõ argumentumot megadni, akkor ez a "
+"megfelelõ\n"
 "rövid kapcsolónál is kötelezõ.\n"
 "\n"
 "  -C, --copyright            kiírja a copyright információkat\n"
@@ -841,7 +887,11 @@ msgstr ""
 "  -y, --start-insert=SZTRING SZTRING jelöli a beszúrandó rész elejét\n"
 "  -z, --end-insert=SZTRING   SZTRING jelöli a beszúrandó rész végét\n"
 
-#: src/wdiff.c:1221
+#: src/wdiff.c:1317
+msgid "Cannot use -t, termcap not available."
+msgstr "-z kapcsoló használata nem lehetséges, termcap nem elérhetõ."
+
+#: src/wdiff.c:1322
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
@@ -849,10 +899,79 @@ msgstr ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1276
-msgid "Cannot use -t, termcap not available."
-msgstr "-z kapcsoló használata nem lehetséges, termcap nem elérhetõ."
-
-#: src/wdiff.c:1301
+#: src/wdiff.c:1358 src/wdiff2.c:325
 msgid "Missing file arguments"
 msgstr "Hiányzó fájlargumentumok"
+
+#: src/wdiff2.c:181
+msgid ""
+"wdiff - Compute word differences by internally launching `mdiff -W'.\n"
+"This program exists mainly to support the now oldish `wdiff' syntax.\n"
+msgstr ""
+
+#: src/wdiff2.c:189
+#, fuzzy
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -q, --quiet                inhibit the `mdiff' call message\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Ha egy hosszú kapcsolóhoz kötelezõ argumentumot megadni, akkor ez a "
+"megfelelõ\n"
+"rövid kapcsolónál is kötelezõ.\n"
+"\n"
+"  -C, --copyright            kiírja a copyright információkat\n"
+"  -K, --no-init-term         mint -t, de init/termcap karakterláncok nélkül\n"
+"  -V, --version              kiírja a program nevét és változatát\n"
+"  -1, --no-deleted           megakadályozza a törölt szavak kiírását\n"
+"  -2, --no-inserted          megakadályozza a beszúrt szavak kiírását\n"
+"  -3, --no-common            megakadályozza a közös szavak kiírását\n"
+"  -a, --auto-pager           automatikusan lapozót indít\n"
+"  -h, --help                 emlékeztetõt ír ki\n"
+"  -i, --ignore-case          kis- és nagybetû megegyezik\n"
+"  -l, --less-mode            kiírató mód a \"less-hez\"\n"
+"  -n, --avoid-wraps          a mezõket nem terjeszti az újsorokon túl\n"
+"  -p, --printer              'overstrike' mint nyomtatóknál\n"
+"  -s, --statistics           megmondja hány törölt, beszúrt stb. szó van\n"
+"  -t, --terminal             termcap használata, mint terminál kiíratásnál\n"
+"  -w, --start-delete=SZTRING SZTRING jelöli a törlendõ rész elejét\n"
+"  -x, --end-delete=SZTRING   SZTRING jelöli a törlendõ rész végét\n"
+"  -y, --start-insert=SZTRING SZTRING jelöli a beszúrandó rész elejét\n"
+"  -z, --end-insert=SZTRING   SZTRING jelöli a beszúrandó rész végét\n"
+
+#: src/wdiff2.c:212
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
+msgstr ""
+
+#: src/wdiff2.c:336
+#, fuzzy, c-format
+msgid "Launching `%s"
+msgstr "%s olvasása"
+
+#: lib/error.c:125
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/xalloc-die.c:35
+msgid "memory exhausted"
+msgstr ""

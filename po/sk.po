@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
-"POT-Creation-Date: 1999-07-05 20:35-0400\n"
+"Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
+"POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2001-06-23 18:20 +02:00\n"
 "Last-Translator: Stanislav Meduna <stano@meduna.org>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -18,11 +19,11 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (pre regexp `%s')"
 
-#: src/mdiff.c:917 src/wdiff.c:1329
+#: src/mdiff.c:917 src/wdiff.c:1386
 msgid "Only one file may be standard input."
 msgstr "©tandardným vstupom mô¾e by» iba jeden súbor."
 
-#: src/mdiff.c:932 src/wdiff.c:592
+#: src/mdiff.c:932 src/wdiff.c:643
 msgid "Directories not supported"
 msgstr "Adresáre nie sú podporované"
 
@@ -42,18 +43,22 @@ msgid "Read summary: %d files, %d items\n"
 msgstr "Naèítané: %d súborov, %d polo¾iek\n"
 
 #: src/mdiff.c:1671
+#, c-format
 msgid "Sorting"
 msgstr "Triedi sa"
 
 #: src/mdiff.c:1688
+#, c-format
 msgid ", clustering"
 msgstr ", zluèuje sa"
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
+#, c-format
 msgid ", done\n"
 msgstr ", hotovo\n"
 
 #: src/mdiff.c:1907
+#, c-format
 msgid "Sorting members"
 msgstr "Triedia sa èleny"
 
@@ -67,41 +72,45 @@ msgstr "Spracované: %d oddielov, %d èlenov\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Spracované: %d oddielov, %d èlenov, %d presahov\n"
 
-#: src/mdiff.c:2372 src/wdiff.c:243
+#: src/mdiff.c:2372 src/wdiff.c:245
 msgid "Select a terminal through the TERM environment variable."
 msgstr "Vyberte terminál prostredníctvom premennej prostredia TERM."
 
-#: src/mdiff.c:2375 src/wdiff.c:246
+#: src/mdiff.c:2375 src/wdiff.c:248
 msgid "Could not access the termcap data base."
 msgstr "Nemo¾no pristupova» k báze dát termcap."
 
-#: src/mdiff.c:2377 src/wdiff.c:248
+#: src/mdiff.c:2377 src/wdiff.c:250
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "Typ terminálu `%s' nie je definovaný."
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d slov"
 
-#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
+#, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% be¾né"
 
-#: src/mdiff.c:3759 src/wdiff.c:1060
+#: src/mdiff.c:3759 src/wdiff.c:1115
+#, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% vymazané"
 
-#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
+#, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% zmenené"
 
-#: src/mdiff.c:3771 src/wdiff.c:1072
+#: src/mdiff.c:3771 src/wdiff.c:1127
+#, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% vlo¾ené"
 
-#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Skúste `%s --help' pre viac informácií.\n"
@@ -116,11 +125,17 @@ msgstr ""
 
 #: src/mdiff.c:3808
 #, c-format
-msgid "\nUsage: %s [OPTION]... [FILE]...\n"
-msgstr "\nPou¾itie: %s [VO¥BA]... [SÚBOR]...\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]...\n"
+msgstr ""
+"\n"
+"Pou¾itie: %s [VO¥BA]... [SÚBOR]...\n"
 
 #: src/mdiff.c:3812
+#, fuzzy
 msgid ""
+"\n"
 "Operation modes:\n"
 "  -h                     (ignored)\n"
 "  -v, --verbose          report a few statistics on stderr\n"
@@ -184,7 +199,8 @@ msgstr ""
 "  -3, --no-common             zamedzí výstupu be¾ných slov\n"
 "  -A, --auto-pager            automaticky volá stránkovaè\n"
 "  -k, --less-mode             varianta re¾imu tlaèiarne pre \"less\"\n"
-"  -m, --avoid-wraps           nerozoznávaj polia medzi dvoma novými riadkami\n"
+"  -m, --avoid-wraps           nerozoznávaj polia medzi dvoma novými "
+"riadkami\n"
 "  -o, --printer               pre¹krtávanie ako pre tlaèiareò\n"
 "  -z, --terminal              pou¾i termcap ako pre terminálové displeje\n"
 "  -K, --no-init-term          ako -z, ale bez termcap init/term re»azcov\n"
@@ -204,11 +220,14 @@ msgstr ""
 "\n"
 "Comparing files:\n"
 "*  -H, --speed-large-files     rýchlej¹í re¾im pre veµa malých zmien\n"
-"*  -a, --text                  vypisuje rozdiely v riadkoch (prednast. pre text)\n"
+"*  -a, --text                  vypisuje rozdiely v riadkoch (prednast. pre "
+"text)\n"
 "*  -d, --minimal               skú¹a dôkladnejs¹ie - men¹í poèet zmien\n"
-"*  -q, --brief                 iba oznámi, èi sa súbory lí¹ia (prednast. pre\n"
+"*  -q, --brief                 iba oznámi, èi sa súbory lí¹ia (prednast. "
+"pre\n"
 "                               binárne súbory)\n"
-"      --horizon-lines=POÈ      zachová POÈet zhodných úvodných a koncových riadkov\n"
+"      --horizon-lines=POÈ      zachová POÈet zhodných úvodných a koncových "
+"riadkov\n"
 
 #: src/mdiff.c:3859
 msgid ""
@@ -225,12 +244,16 @@ msgstr ""
 "\n"
 "Porovnávanie adresárov:\n"
 "*  -N, --new-file                  pova¾uje chýbajúce súbory za prázdne\n"
-"*  -P, --unidirectional-new-file   pova¾uje chýbajúce staré súbory za prázdne\n"
-"*  -S, --starting-file=SÚBOR       pokraèuje v porovnávaní adresárov od SÚBORu\n"
-"*  -X, --exclude-from=SÚBOR        ignoruje súbory vyhovujúce vzorom v SÚBORe\n"
+"*  -P, --unidirectional-new-file   pova¾uje chýbajúce staré súbory za "
+"prázdne\n"
+"*  -S, --starting-file=SÚBOR       pokraèuje v porovnávaní adresárov od "
+"SÚBORu\n"
+"*  -X, --exclude-from=SÚBOR        ignoruje súbory vyhovujúce vzorom v "
+"SÚBORe\n"
 "*  -r, --recursive                 rekurzívne porovnáva podadresáre\n"
 "*  -s, --report-identical-files    oznámi, keï sú súbory zhodné\n"
-"*  -x, --exclude=VZOR              ignoruje súbory (adresáre) vyhovujúce VZORu\n"
+"*  -x, --exclude=VZOR              ignoruje súbory (adresáre) vyhovujúce "
+"VZORu\n"
 
 #: src/mdiff.c:3871
 msgid ""
@@ -262,8 +285,10 @@ msgstr ""
 "\n"
 "Zluèovanie:\n"
 "  -G, --relist-files         vypí¹e v¹etky vstupné súbory s anotáciami\n"
-"  -J, --minimum-size=POÈET   ignoruje bloky neobsahujúce aspoò POÈET polo¾iek\n"
-"  -j, --ignore-delimiters    ignoruje polo¾ky pozostávajúce iba z oddeµovaèov\n"
+"  -J, --minimum-size=POÈET   ignoruje bloky neobsahujúce aspoò POÈET "
+"polo¾iek\n"
+"  -j, --ignore-delimiters    ignoruje polo¾ky pozostávajúce iba z "
+"oddeµovaèov\n"
 
 #: src/mdiff.c:3887
 msgid ""
@@ -287,8 +312,10 @@ msgstr ""
 "*      --new-line-format=FORMÁT          pou¾ije FORMÁT pre vlo¾ený riadok\n"
 "*      --old-group-format=FORMÁT         pou¾ije FORMÁT pre zmazané riadky\n"
 "*      --old-line-format=FORMÁT          pou¾ije FORMÁT pre zmazaný riadok\n"
-"*      --unchanged-group-format=FORMÁT   pou¾ije FORMÁT pre nezmenené riadky\n"
-"*      --unchanged-line-format=FORMÁT    pou¾ije FORMÁT pre nezmenený riadok\n"
+"*      --unchanged-group-format=FORMÁT   pou¾ije FORMÁT pre nezmenené "
+"riadky\n"
+"*      --unchanged-line-format=FORMÁT    pou¾ije FORMÁT pre nezmenený "
+"riadok\n"
 "*      --line-format=FORMÁT              --{old,new,unchanged}-line-format\n"
 
 #: src/mdiff.c:3901
@@ -318,25 +345,30 @@ msgstr ""
 "Kontextové a and unifikované formáty:\n"
 "*  -F, --show-function-line=REGEXP   zobrazí predchádzajúci kontext\n"
 "                                     vyhovujúci REGEXP\n"
-"*  -p, --show-c-function             zobrazí pre ka¾dú zmenu príslu¹nú C funkciu\n"
+"*  -p, --show-c-function             zobrazí pre ka¾dú zmenu príslu¹nú C "
+"funkciu\n"
 
 #: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name "
+"(twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -c, --context               output context diffs (default 3 context "
+"lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
 "\n"
 "*  -C, --context=RIADKOV       ako -c, navy¹e ¹pecifikuje veµkos» kontextu\n"
 "                               v riadkoch\n"
-"*  -L, --label=NÁZOV           pou¾i» z/na NÁZOV namiesto názvu súboru (dvakrát)\n"
+"*  -L, --label=NÁZOV           pou¾i» z/na NÁZOV namiesto názvu súboru "
+"(dvakrát)\n"
 "*  -U, --unified=RIADKOV       ako -u, navy¹e ¹pecifikuje veµkos» kontextu\n"
 "                               v riadkoch\n"
-"*  -c, --context               produkuje kontextový diff (3 riadky kontextu,\n"
+"*  -c, --context               produkuje kontextový diff (3 riadky "
+"kontextu,\n"
 "                               ak nebolo zadané inak)\n"
 "*  -u, --unified               produkuje unidiff (3 riadky kontextu)\n"
 "*  -RIADKOV                    (zastarané: poèet riadkov kontextu)\n"
@@ -355,11 +387,13 @@ msgstr ""
 "Formát pre jeden súbor vedµa druhého:\n"
 "*  -W, --width=STÅPCOV           pou¾ije ¹írku STÅPCOV\n"
 "*  -y, --side-by-side            zobrazí jeden súbor vedµa druhého\n"
-"*      --left-column             vypí¹e iba µavý ståpec, pokiaµ sú riadky zhodné\n"
+"*      --left-column             vypí¹e iba µavý ståpec, pokiaµ sú riadky "
+"zhodné\n"
 "*      --sdiff-merge-assist      (pou¾ité `sdiff')\n"
 "*      --suppress-common-lines   nevypisuje zhodné riadky\n"
 
 #: src/mdiff.c:3937
+#, c-format
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -370,7 +404,8 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
@@ -379,17 +414,23 @@ msgstr ""
 "  %%%%           jedno %%\n"
 "  %%c'C'        citovaný znak C\n"
 "  %%c'\\O'       znak s hodnotou O, od 1 do 3 oktalových èíslic\n"
-"  %%(A=B?T:E)   ak A je B tak T inak E; A B èísla alebo PREMENNÁ; T E FORMÁT\n"
+"  %%(A=B?T:E)   ak A je B tak T inak E; A B èísla alebo PREMENNÁ; T E "
+"FORMÁT\n"
 "  %%FN          pou¾ije ©PECIF ¹pecifikáciu F pre výpis PREMENNEJ hodnoty N\n"
 "  %%<           [skupina] staré, ka¾dý riadok pomocou --old-line-format\n"
 "  %%>           [skupina] nové, ka¾dý riadok pomocou --new-line-format\n"
-"  %%=           [skupina] nezmenené,ka¾dý riadok pomocou --unchanged-line-format\n"
+"  %%=           [skupina] nezmenené,ka¾dý riadok pomocou --unchanged-line-"
+"format\n"
 "  %%l           [riadok] bez jeho mo¾ného koncového znaku nového riadku\n"
 "  %%L           [riadok] s jeho mo¾ným koncovým znakom nového riadku\n"
 
 #: src/mdiff.c:3952
-msgid "\nSPECIF is [-][W[.D]]{doxX} as in C printf\n"
-msgstr "\n©PECIF je [-][W[.D]]{doxX} ako v C printf\n"
+msgid ""
+"\n"
+"SPECIF is [-][W[.D]]{doxX} as in C printf\n"
+msgstr ""
+"\n"
+"©PECIF je [-][W[.D]]{doxX} ako v C printf\n"
 
 #: src/mdiff.c:3957
 msgid ""
@@ -435,11 +476,13 @@ msgstr ""
 "  -w, --ignore-all-space    ignoruje v¹etky prázdne znaky\n"
 "  -b, --ignore-space-change ignoruje rozdiel v poète prázdnych znakov\n"
 "  -B, --ignore-blank-lines  ignoruje zmeny obsahujúce iba prázdne riadky\n"
-"  -I, --ignore-matching-lines=RE ignoruje zmeny, kde v¹etky znaky vyhovujú RE\n"
+"  -I, --ignore-matching-lines=RE ignoruje zmeny, kde v¹etky znaky vyhovujú "
+"RE\n"
 "  -a, --text                pova¾uje v¹etky súbory za textové\n"
 "  -c, --context[=POÈET]     produkuje regulérny kontextový diff,\n"
 "                            s POÈTOM riadkov kontextu\n"
-"  -u, --unified[=POÈET]     produkuje unifikovaný kontextový diffs (unidiff)\n"
+"  -u, --unified[=POÈET]     produkuje unifikovaný kontextový diffs "
+"(unidiff)\n"
 "                            s POÈTOM riadkov kontextu\n"
 "  -C, --context=POÈET       produkuje POÈET riadkov kopírovaného kontextu\n"
 "  -U, --unified=POÈET       produkuje POÈET riadkov unifikovaného kontextu\n"
@@ -453,7 +496,8 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per "
+"line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -490,7 +534,8 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small "
+"changes\n"
 msgstr ""
 "  -T, --initial-tab         zarovná riadky pridaním tabulátoru na zaèiatok\n"
 "  -r, --recursive           rekurzívne porovná podadresáre\n"
@@ -500,13 +545,19 @@ msgstr ""
 "  -x, --exclude=VZOR        vynechá súbory vyhovujúce VZORu\n"
 "  -X, --exclude-from=SÚBOR  vynechá súbory vyhovujúce vzorom v SÚBORe\n"
 "  -S, --starting-file=SÚBOR pri porovnávaní adresárov zaène SÚBORom\n"
-"      --horizon-lines=POÈ   zachová POÈet zhodných úvodných a koncových riadkov\n"
+"      --horizon-lines=POÈ   zachová POÈet zhodných úvodných a koncových "
+"riadkov\n"
 "  -d, --minimal             sna¾í sa nájs» èo najmen¹iu sadu zmien\n"
-"  -H, --speed-large-files   predpokladá veµké súbory s mnohými malými zmenami\n"
+"  -H, --speed-large-files   predpokladá veµké súbory s mnohými malými "
+"zmenami\n"
 
 #: src/mdiff.c:4016
-msgid "\nBy default, context diffs have an horizon of two lines.\n"
-msgstr "\nPrednastavený horizont pre kontextový diff sú dva riadky.\n"
+msgid ""
+"\n"
+"By default, context diffs have an horizon of two lines.\n"
+msgstr ""
+"\n"
+"Prednastavený horizont pre kontextový diff sú dva riadky.\n"
 
 #: src/mdiff.c:4022
 msgid ""
@@ -530,8 +581,10 @@ msgstr ""
 "  %<  riadky zo SÚBORu1\n"
 "  %>  riadky zo SÚBORu2\n"
 "  %=  riadky zhodné v SÚBORe1 a SÚBORe2\n"
-"  %[-][©ÍRKA][.[PRESNOS«]]{doxX}PÍSMENO  ¹pecifikácia podµa printf pre PÍSMENo\n"
-"    PÍSMENá sú nasledujúce pre novú skupinu, malé písmená pre starú skupinu:\n"
+"  %[-][©ÍRKA][.[PRESNOS«]]{doxX}PÍSMENO  ¹pecifikácia podµa printf pre "
+"PÍSMENo\n"
+"    PÍSMENá sú nasledujúce pre novú skupinu, malé písmená pre starú "
+"skupinu:\n"
 "      F  èíslo prvého riadku\n"
 "      L  èíslo posledného riadku\n"
 "      N  poèet riadkov = L-F+1\n"
@@ -552,7 +605,8 @@ msgstr ""
 "LFMT mô¾e obsahova»:\n"
 "  %L  obsah riadku\n"
 "  %l  obsah riadku bez akýchkoµvek ukonèujúcich znakov nového riadku\n"
-"  %[-][©ÍRKA][.[PRESN]]{doxX}n  ¹pecifikácia podµa printf pre èíslo vst. riadku\n"
+"  %[-][©ÍRKA][.[PRESN]]{doxX}n  ¹pecifikácia podµa printf pre èíslo vst. "
+"riadku\n"
 "Buï GFMT alebo LFMT ô¾u obsahova»:\n"
 "  %%  %\n"
 "  %c'C'  znak C\n"
@@ -566,15 +620,25 @@ msgid ""
 msgstr ""
 "\n"
 "Staré voµby mdiff:\n"
-"*  -f, --fuzz-items=POÈET     nie viac ako POÈET nevyhovujúcich POLO®IEK v bloku\n"
+"*  -f, --fuzz-items=POÈET     nie viac ako POÈET nevyhovujúcich POLO®IEK v "
+"bloku\n"
 
 #: src/mdiff.c:4055
-msgid "\nWith no FILE, or when FILE is -, read standard input.\n"
-msgstr "\nPokiaµ SÚBOR nie je zadaný alebo je -, naèíta sa ¹tandardný vstup.\n"
+msgid ""
+"\n"
+"With no FILE, or when FILE is -, read standard input.\n"
+msgstr ""
+"\n"
+"Pokiaµ SÚBOR nie je zadaný alebo je -, naèíta sa ¹tandardný vstup.\n"
 
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
-msgid "\nReport bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
-msgstr "\nChyby hláste na adrese <wdiff-bugs@iro.montreal.ca>.\n"
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#, fuzzy
+msgid ""
+"\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
+msgstr ""
+"\n"
+"Chyby hláste na adrese <wdiff-bugs@iro.montreal.ca>.\n"
 
 #: src/mdiff.c:4370
 msgid "Cannot use -z, termcap not available."
@@ -584,11 +648,15 @@ msgstr "Nemo¾no pou¾i» -z, termcap nie je dostupný."
 msgid "Word merging for two files only (so far)"
 msgstr "Zluèovanie slov funguje iba pre dva súbory (zatiaµ)."
 
-#: src/mdiff.c:4425
-msgid "\nCopyright (C) 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright (C) 1997 Free Software Foundation, Inc.\n"
+#: src/mdiff.c:4425 src/wdiff2.c:129
+msgid ""
+"\n"
+"Copyright (C) 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Copyright (C) 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -597,29 +665,37 @@ msgstr ""
 "¹írenia. Neexistuje ®IADNA ZÁRUKA, ani OBCHODOVATE¥NOSTI alebo\n"
 "VHODNOSTI NA KONKRÉTNY ÚÈEL.\n"
 
-#: src/mdiff.c:4433 src/wdiff.c:1229
-msgid "\nWritten by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
-msgstr "\nVytvoril Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
+msgid ""
+"\n"
+"Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+msgstr ""
+"\n"
+"Vytvoril Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4469
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "Voµby -123RSYZ majú význam iba pre dva vstupy."
 
-#: src/unify.c:142
+#: src/unify.c:143
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
 msgstr "Nemo¾no nájs» meno pre diff na riadku %ld"
 
-#: src/unify.c:275
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unify - Transformuje kontextové diff-y na unidiff-y alebo naopak.\n"
 
-#: src/unify.c:278
+#: src/unify.c:279
 #, c-format
-msgid "\nUsage: %s [OPTION]... [FILE]\n"
-msgstr "\nPou¾itie: %s [VO¥BA]... [SÚBOR]\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]\n"
+msgstr ""
+"\n"
+"Pou¾itie: %s [VO¥BA]... [SÚBOR]\n"
 
-#: src/unify.c:281
+#: src/unify.c:282
 msgid ""
 "\n"
 "  -c, --context-diffs    force output to context diffs\n"
@@ -649,49 +725,62 @@ msgstr ""
 "      --help             vypísa» túto pomoc a skonèi»\n"
 "      --version          vypísa» informáciu o verzii a skonèi»\n"
 
-#: src/unify.c:390
+#: src/unify.c:391
 #, c-format
 msgid "Unable to open `%s'"
 msgstr "Nemo¾no otvori» '%s'"
 
-#: src/unify.c:396
+#: src/unify.c:397
 msgid "Only one filename allowed"
 msgstr "Je povolené iba jedno meno súboru"
 
-#: src/unify.c:405
-msgid "\nCopyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+#: src/unify.c:406
+msgid ""
+"\n"
+"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:413
-msgid "\nWritten by Wayne Davison <davison@borland.com>.\n"
-msgstr "\nVytvoril Wayne Davison <davison@borland.com>.\n"
+#: src/unify.c:414
+msgid ""
+"\n"
+"Written by Wayne Davison <davison@borland.com>.\n"
+msgstr ""
+"\n"
+"Vytvoril Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:552
+#: src/unify.c:553
 #, c-format
 msgid "Invalid unified diff header at line %ld"
 msgstr "Neznáma unifikovaná hlavièka na riadku %ld"
 
-#: src/unify.c:594
+#: src/unify.c:595
 #, c-format
 msgid "Malformed unified diff at line %ld"
 msgstr "Zdeformovaný unifikovaný diff na riadku %ld"
 
-#: src/unify.c:625
+#: src/unify.c:626
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
 msgstr "V kontextovom diff-súbore chýba 'stará' hlavièka na riadku %ld"
 
-#: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
 #, c-format
 msgid "Malformed context diff at line %ld"
 msgstr "Zdeformovaný kontextový diff-súbor na riadku %ld"
 
-#: src/unify.c:724
+#: src/unify.c:725
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
 msgstr "V kontextovom diff-súbore chýba 'nová' hlavièka na riadku %ld"
 
-#: src/wdiff.c:1090
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr ""
+
+#: src/wdiff.c:1145 src/wdiff2.c:108
+#, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -705,38 +794,45 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
-"  Tento program je voµné programové vybavenie; mô¾ete ho ¹íri» a modifikova»\n"
+"  Tento program je voµné programové vybavenie; mô¾ete ho ¹íri» a "
+"modifikova»\n"
 "podµa podmienok V¹eobecnej verejnej licencie GNU, vydávanej Free Software\n"
 "Foundation; a to buï verzie 2 tejto licencie alebo (podµa vá¹ho uvá¾enia),\n"
 "ktorejkoµvek neskor¹ej verzie.\n"
 "\n"
-"  Tento program je roz¹irovaný v nádeji, ¾e bude u¾itoèný, av¹ak BEZ AKEJKO¥VEK\n"
+"  Tento program je roz¹irovaný v nádeji, ¾e bude u¾itoèný, av¹ak BEZ "
+"AKEJKO¥VEK\n"
 "ZÁRUKY; neposkytujú sa ani odvodené záruky PREDAJNOSTI alebo VHODNOSTI PRE\n"
 "NEJAKÝ KONKRÉTNY ÚÈEL. Ïaµ¹ie podrobnosti nájdete vo V¹eobecnej verejnej\n"
 "licencii GNU.\n"
 "\n"
 "  Kópia V¹eobecnej verejnej licencie GNU mala by» dodaná spolu s týmto\n"
-"programom; pokiaµ sa tak nestalo, napí¹te do Free Software Foundation, Inc.,\n"
+"programom; pokiaµ sa tak nestalo, napí¹te do Free Software Foundation, "
+"Inc.,\n"
 "59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1119
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Porovná slová v dvoch súboroch a vypí¹e zmeny.\n"
 
-#: src/wdiff.c:1122
+#: src/wdiff.c:1177 src/wdiff2.c:185
 #, c-format
-msgid "\nUsage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "\nPou¾itie: %s [VO¥BA]... SÚBOR1 SÚBOR2\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... FILE1 FILE2\n"
+msgstr ""
+"\n"
+"Pou¾itie: %s [VO¥BA]... SÚBOR1 SÚBOR2\n"
 
-#: src/wdiff.c:1126
+#: src/wdiff.c:1181
+#, fuzzy, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
@@ -748,6 +844,7 @@ msgid ""
 "  -p, --printer              overstrike as for printers\n"
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 "  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
@@ -767,21 +864,98 @@ msgstr ""
 "  -l, --less-mode            variácia módu výstupu pre \"less\"\n"
 "  -n, --avoid-wraps          nerozoznávaj polia medzi dvoma novými riadkami\n"
 "  -p, --printer              tlaè ako pre tlaèiareò\n"
-"  -s, --statistics           povedz, koµko slov bolo zmazaných, vlo¾ených atï.\n"
+"  -s, --statistics           povedz, koµko slov bolo zmazaných, vlo¾ených "
+"atï.\n"
 "  -t, --terminal             pou¾i termcap ako pre terminálové displeje\n"
 "  -w, --start-delete=STRING  re»azec na oznaèenie zaèiatku zmazanej oblasti\n"
 "  -x, --end-delete=STRING    re»azec na oznaèenie konca zmazanej oblasti\n"
 "  -y, --start-insert=STRING  re»azec na oznaèenie zaèiatku vlo¾enia oblasti\n"
 "  -z, --end-insert=STRING    re»azec na oznaèenie konca vlo¾enia oblasti\n"
 
-#: src/wdiff.c:1221
-msgid "\nCopyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
-
-#: src/wdiff.c:1276
+#: src/wdiff.c:1317
 msgid "Cannot use -t, termcap not available."
 msgstr "Nemo¾no pou¾i» -t, termcap nie je dostupný."
 
-#: src/wdiff.c:1301
+#: src/wdiff.c:1322
+msgid ""
+"\n"
+"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+
+#: src/wdiff.c:1358 src/wdiff2.c:325
 msgid "Missing file arguments"
 msgstr "Chýbajú súborové parametre"
+
+#: src/wdiff2.c:181
+msgid ""
+"wdiff - Compute word differences by internally launching `mdiff -W'.\n"
+"This program exists mainly to support the now oldish `wdiff' syntax.\n"
+msgstr ""
+
+#: src/wdiff2.c:189
+#, fuzzy
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -q, --quiet                inhibit the `mdiff' call message\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Povinné parametre pre dlhé voµby sú povinné aj pre krátke voµby.\n"
+"\n"
+"  -C, --copyright            vypí¹e copyright a skonèí\n"
+"  -K, --no-init-term         ako -t, ale bez re»azcov init/term termcap-u\n"
+"  -V, --version              vypí¹e verziu programu a skonèí\n"
+"  -1, --no-deleted           zamedzí výstupu zmazaných slov\n"
+"  -2, --no-inserted          zamedzí výstupu vlo¾ených slov\n"
+"  -3, --no-common            zamedzí výstupu be¾ných slov\n"
+"  -a, --auto-pager           automaticky volá stránkovaè\n"
+"  -h, --help                 vypí¹e túto nápovedu\n"
+"  -i, --ignore-case          zanedbá veµkos» písmen pri porovnávaní\n"
+"  -l, --less-mode            variácia módu výstupu pre \"less\"\n"
+"  -n, --avoid-wraps          nerozoznávaj polia medzi dvoma novými riadkami\n"
+"  -p, --printer              tlaè ako pre tlaèiareò\n"
+"  -s, --statistics           povedz, koµko slov bolo zmazaných, vlo¾ených "
+"atï.\n"
+"  -t, --terminal             pou¾i termcap ako pre terminálové displeje\n"
+"  -w, --start-delete=STRING  re»azec na oznaèenie zaèiatku zmazanej oblasti\n"
+"  -x, --end-delete=STRING    re»azec na oznaèenie konca zmazanej oblasti\n"
+"  -y, --start-insert=STRING  re»azec na oznaèenie zaèiatku vlo¾enia oblasti\n"
+"  -z, --end-insert=STRING    re»azec na oznaèenie konca vlo¾enia oblasti\n"
+
+#: src/wdiff2.c:212
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
+msgstr ""
+
+#: src/wdiff2.c:336
+#, fuzzy, c-format
+msgid "Launching `%s"
+msgstr "Èíta sa %s"
+
+#: lib/error.c:125
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/xalloc-die.c:35
+msgid "memory exhausted"
+msgstr ""

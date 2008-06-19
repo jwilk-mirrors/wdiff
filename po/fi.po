@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
-"POT-Creation-Date: 1999-07-05 20:35-0400\n"
+"Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
+"POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2007-11-04 01:54+0200\n"
 "Last-Translator: Jorma Karvonen <karvjorm@users.sf.net>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -19,11 +20,11 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (kohteelle regexp ”%s”)"
 
-#: src/mdiff.c:917 src/wdiff.c:1329
+#: src/mdiff.c:917 src/wdiff.c:1386
 msgid "Only one file may be standard input."
 msgstr "Vain yksi tiedosto voi olla vakiosyöte."
 
-#: src/mdiff.c:932 src/wdiff.c:592
+#: src/mdiff.c:932 src/wdiff.c:643
 msgid "Directories not supported"
 msgstr "Hakemistoja ei ole tuettu"
 
@@ -43,18 +44,22 @@ msgid "Read summary: %d files, %d items\n"
 msgstr "Lukemisyhteenveto: %d tiedostoa, %d alkiota\n"
 
 #: src/mdiff.c:1671
+#, c-format
 msgid "Sorting"
 msgstr "Lajitellaan"
 
 #: src/mdiff.c:1688
+#, c-format
 msgid ", clustering"
 msgstr ", klusteroidaan"
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
+#, c-format
 msgid ", done\n"
 msgstr ", valmis\n"
 
 #: src/mdiff.c:1907
+#, c-format
 msgid "Sorting members"
 msgstr "Lajitellaan jäseniä"
 
@@ -68,41 +73,45 @@ msgstr "Työyhteenveto: %d klusteria, %d jäsentä\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Työyhteenveto: %d klusteria, %d jäsentä, %d on päällekkäin\n"
 
-#: src/mdiff.c:2372 src/wdiff.c:243
+#: src/mdiff.c:2372 src/wdiff.c:245
 msgid "Select a terminal through the TERM environment variable."
 msgstr "Valitse pääte TERM-ympäristömuuttujan kautta."
 
-#: src/mdiff.c:2375 src/wdiff.c:246
+#: src/mdiff.c:2375 src/wdiff.c:248
 msgid "Could not access the termcap data base."
 msgstr "Ei ollut pääsyä termcap-tietokantaan."
 
-#: src/mdiff.c:2377 src/wdiff.c:248
+#: src/mdiff.c:2377 src/wdiff.c:250
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "Päätetyyppiä ”%s” ei ole määritelty."
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d sanaa"
 
-#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
+#, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% yhteistä"
 
-#: src/mdiff.c:3759 src/wdiff.c:1060
+#: src/mdiff.c:3759 src/wdiff.c:1115
+#, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% poistettua"
 
-#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
+#, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% muutettua"
 
-#: src/mdiff.c:3771 src/wdiff.c:1072
+#: src/mdiff.c:3771 src/wdiff.c:1127
+#, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% lisättyä"
 
-#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Lisätietoja ”%s --help”-käskyllä.\n"
@@ -112,7 +121,8 @@ msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff - Tutkii useita tiedostoja ja etsii samanlaisia sekvenssejä. Se tuottaa\n"
+"mdiff - Tutkii useita tiedostoja ja etsii samanlaisia sekvenssejä. Se "
+"tuottaa\n"
 "sitten yksityiskohtaisen luettelon erilaisuuksista ja samanlaisuuksista.\n"
 
 #: src/mdiff.c:3808
@@ -152,11 +162,13 @@ msgid ""
 msgstr ""
 "\n"
 "Muotoillaan tulostetta:\n"
-"  -T, --initial-tab         tuota sarkainmerkkejä eikä alustavia välilyöntejä\n"
+"  -T, --initial-tab         tuota sarkainmerkkejä eikä alustavia "
+"välilyöntejä\n"
 "  -l, --paginate            sivuta tuloste ohjelman ”pr” kautta\n"
 "  -S, --string[=MERKKIJONO] ota huomioon toinen käyttäjäMERKKIJONO\n"
 "  -V, --show-links          anna tiedosto- ja riviviitteet annotaatioissa\n"
-"  -t, --expand-tabs         laajenna sarkainmerkit välilyönneiksi tulosteessa\n"
+"  -t, --expand-tabs         laajenna sarkainmerkit välilyönneiksi "
+"tulosteessa\n"
 
 #: src/mdiff.c:3828
 msgid ""
@@ -194,7 +206,8 @@ msgstr ""
 "  -m, --avoid-wraps           älä laajenna kenttiä uusilla riveillä\n"
 "  -o, --printer               ylikirjoita kuten tulostimille\n"
 "  -z, --terminal              käytä ”termcap”:iä kuten päätenäytöille\n"
-"  -K, --no-init-term          kuten valitsin ”-z”, mutta ei termcap-alustus-/päättymismerkkijonoja\n"
+"  -K, --no-init-term          kuten valitsin ”-z”, mutta ei termcap-alustus-/"
+"päättymismerkkijonoja\n"
 "  -O, --item-regexp=REGEXP    vertaa alkioita kuten REGEXP on määritellyt\n"
 "  -W, --word-mode             vertaa sanoja eikä rivejä\n"
 
@@ -210,11 +223,14 @@ msgid ""
 msgstr ""
 "\n"
 "Verrataan tiedostoja:\n"
-"*  -H, --speed-large-files     nopeampi silloin kun on lukuisia pieniä muutoksia\n"
+"*  -H, --speed-large-files     nopeampi silloin kun on lukuisia pieniä "
+"muutoksia\n"
 "*  -a, --text                  raportoi rivieroista (tekstitiedosto-oletus)\n"
 "*  -d, --minimal               yritä kovemmin pienelle muutosjoukolle\n"
-"*  -q, --brief                 sanoo ainoastaan, että tiedostot ovat erilaisia (binäärioletus)\n"
-"*      --horizon-lines=RIVIÄ   pitää RIVIÄ riviä yhteisissä  prefikseissä/suffikseissa\n"
+"*  -q, --brief                 sanoo ainoastaan, että tiedostot ovat "
+"erilaisia (binäärioletus)\n"
+"*      --horizon-lines=RIVIÄ   pitää RIVIÄ riviä yhteisissä  prefikseissä/"
+"suffikseissa\n"
 
 #: src/mdiff.c:3859
 msgid ""
@@ -231,12 +247,16 @@ msgstr ""
 "\n"
 "Vertaillaan hakemistoja:\n"
 "*  -N, --new-file                  pidä puuttuvia tiedostoja tyhjänä\n"
-"*  -P, --unidirectional-new-file   pidä puuttuvia vanhoja tiedostoja tyhjinä\n"
-"*  -S, --starting-file=TIEDOSTO    aloita uudelleen hakemistovertailu TIEDOSTOlla\n"
-"*  -X, --exclude-from=TIEDOSTO     älä ota huomioon TIEDOSTOn täsmääviä tiedostomalleja\n"
+"*  -P, --unidirectional-new-file   pidä puuttuvia vanhoja tiedostoja "
+"tyhjinä\n"
+"*  -S, --starting-file=TIEDOSTO    aloita uudelleen hakemistovertailu "
+"TIEDOSTOlla\n"
+"*  -X, --exclude-from=TIEDOSTO     älä ota huomioon TIEDOSTOn täsmääviä "
+"tiedostomalleja\n"
 "*  -r, --recursive                 vertaa alihakemistoja rekursiivisesti\n"
 "*  -s, --report-identical-files    raportoi kun kaksi tiedostoa ovat samat\n"
-"*  -x, --exclude=MALLI             ei oteta huomioon tiedostoja (hakemistoja), jotka täsmäävät MALLIin\n"
+"*  -x, --exclude=MALLI             ei oteta huomioon tiedostoja "
+"(hakemistoja), jotka täsmäävät MALLIin\n"
 
 #: src/mdiff.c:3871
 msgid ""
@@ -251,8 +271,10 @@ msgstr ""
 "\n"
 "Teksti, jota ei oteta huomioon:\n"
 "  -B, --ignore-blank-lines             ei oteta huomioon tyhjiä rivejä\n"
-"*  -I, --ignore-matching-lines=REGEXP  ei oteta huomioon rivejä, jotka täsmäävät REGEXP:n kanssa\n"
-"  -b, --ignore-space-change            ei oteta huomioon tyhjätilamerkkien määrää\n"
+"*  -I, --ignore-matching-lines=REGEXP  ei oteta huomioon rivejä, jotka "
+"täsmäävät REGEXP:n kanssa\n"
+"  -b, --ignore-space-change            ei oteta huomioon tyhjätilamerkkien "
+"määrää\n"
 "  -i, --ignore-case                    ei oteta huomioon merkkikokoeroja\n"
 "  -w, --ignore-all-space               ei oteta huomioon tyhjätilamerkkejä\n"
 
@@ -267,8 +289,10 @@ msgstr ""
 "\n"
 "Klusteroidaan:\n"
 "  -G, --relist-files         luettele kaikki syötetiedostot annotaatioilla\n"
-"  -J, --minimum-size=ALKIOTA ei oteta huomioon klustereita, joissa ei ole vähintään ALKIOTA alkiota\n"
-"  -j, --ignore-delimiters    älä laske alkioita, joissa on vain erotinmerkkejä\n"
+"  -J, --minimum-size=ALKIOTA ei oteta huomioon klustereita, joissa ei ole "
+"vähintään ALKIOTA alkiota\n"
+"  -j, --ignore-delimiters    älä laske alkioita, joissa on vain "
+"erotinmerkkejä\n"
 
 #: src/mdiff.c:3887
 msgid ""
@@ -292,9 +316,12 @@ msgstr ""
 "*      --new-line-format=MUOTO          käytä MUOTOa lisätylle riville\n"
 "*      --old-group-format=MUOTO         käytä MUOTOa poistetuille riveille\n"
 "*      --old-line-format=MUOTO          käytä MUOTOa poistetulle riville\n"
-"*      --unchanged-group-format=MUOTO   käytä MUOTOa muuttumattomille riveille\n"
-"*      --unchanged-line-format=MUOTO    käytä MUOTOa muuttumattomalle riville\n"
-"*      --line-format=MUOTO              --{vanha,uusi,muuttumaton}-rivimuoto\n"
+"*      --unchanged-group-format=MUOTO   käytä MUOTOa muuttumattomille "
+"riveille\n"
+"*      --unchanged-line-format=MUOTO    käytä MUOTOa muuttumattomalle "
+"riville\n"
+"*      --line-format=MUOTO              --{vanha,uusi,muuttumaton}-"
+"rivimuoto\n"
 
 #: src/mdiff.c:3901
 msgid ""
@@ -309,8 +336,10 @@ msgstr ""
 "Skripti-kaltaiset muodot:\n"
 "  (ei mikään valitsimista ”-CDUcefnuy”) tulosta tavalliset erot\n"
 "*  -e, --ed                             tulosta voimassa oleva ”ed”-skripti\n"
-"*  -f, --forward-ed                     sekoita keskenään valitsimet ”-e” ja ”-n” (ei ole kovin hyödyllinen)\n"
-"*  -n, --rcs                            tulosta RCS-muoto (RCS käyttää sisäisesti)\n"
+"*  -f, --forward-ed                     sekoita keskenään valitsimet ”-e” ja "
+"”-n” (ei ole kovin hyödyllinen)\n"
+"*  -n, --rcs                            tulosta RCS-muoto (RCS käyttää "
+"sisäisesti)\n"
 
 #: src/mdiff.c:3910
 msgid ""
@@ -321,26 +350,36 @@ msgid ""
 msgstr ""
 "\n"
 "Konteksti- ja yhteismuodot:\n"
-"*  -F, --show-function-line=REGEXP   näytä edellinen REGEXP-täsmäävä konteksti\n"
-"*  -p, --show-c-function             näytä jokaiselle muutokselle, mikä C-funktio on kyseessä\n"
+"*  -F, --show-function-line=REGEXP   näytä edellinen REGEXP-täsmäävä "
+"konteksti\n"
+"*  -p, --show-c-function             näytä jokaiselle muutokselle, mikä C-"
+"funktio on kyseessä\n"
 
 #: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name "
+"(twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -c, --context               output context diffs (default 3 context "
+"lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
 "\n"
-"*  -C, --context=RIVIÄ         kuten valitsin ”-c”, valitse myös kontekstikoko riveillä\n"
-"*  -L, --label=TUNNISTE        käytä kohteesta/kohteeseen TUNNISTEtta eikä tiedostonimeä (kahdesti)\n"
-"*  -U, --unified=TUNNISTE      kuten valitsin ”-u”, valitse myös kontekstikoko riveillä\n"
-"*  -c, --context               tulosta kontekstierot (oletus 3 kontekstiriviä)\n"
-"*  -u, --unified               tulosta ei-kontekstierot (oletus 3 kontekstiriviä)\n"
-"*  -LINES                      (jäänyt pois käytöstä: valitse kontekstikoko riveillä)\n"
+"*  -C, --context=RIVIÄ         kuten valitsin ”-c”, valitse myös "
+"kontekstikoko riveillä\n"
+"*  -L, --label=TUNNISTE        käytä kohteesta/kohteeseen TUNNISTEtta eikä "
+"tiedostonimeä (kahdesti)\n"
+"*  -U, --unified=TUNNISTE      kuten valitsin ”-u”, valitse myös "
+"kontekstikoko riveillä\n"
+"*  -c, --context               tulosta kontekstierot (oletus 3 "
+"kontekstiriviä)\n"
+"*  -u, --unified               tulosta ei-kontekstierot (oletus 3 "
+"kontekstiriviä)\n"
+"*  -LINES                      (jäänyt pois käytöstä: valitse kontekstikoko "
+"riveillä)\n"
 
 #: src/mdiff.c:3927
 msgid ""
@@ -361,6 +400,7 @@ msgstr ""
 "*      --suppress-common-lines   älä tulosta yhteisiä rivejä\n"
 
 #: src/mdiff.c:3937
+#, c-format
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -371,7 +411,8 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
@@ -380,11 +421,15 @@ msgstr ""
 "  %%%%          yksinäinen %%\n"
 "  %%c'C'        lainattu merkki C\n"
 "  %%c'\\O'      merkillä on arvo O, yhdestä kolmeen oktaalilukua\n"
-"  %%(A=B?T:E)   jos A on B silloin T tai E; A B numero tai MUUTTUJA; T E MUOTO\n"
+"  %%(A=B?T:E)   jos A on B silloin T tai E; A B numero tai MUUTTUJA; T E "
+"MUOTO\n"
 "  %%FN          käytä SPECIF-määrittelyä F MUUTTUJAn arvon N tulostamiseksi\n"
-"  %%<           [ryhmä] vanha, jokainen rivi valitsimen ”--old-line-format” kautta\n"
-"  %%>           [ryhmä] uusi, jokainen rivi valitsimen ”--new-line-format” kautta\n"
-"  %%=           [ryhmä] muuttumaton, jokainen rivi valitsimen ”--unchanged-line-format” kautta\n"
+"  %%<           [ryhmä] vanha, jokainen rivi valitsimen ”--old-line-format” "
+"kautta\n"
+"  %%>           [ryhmä] uusi, jokainen rivi valitsimen ”--new-line-format” "
+"kautta\n"
+"  %%=           [ryhmä] muuttumaton, jokainen rivi valitsimen ”--unchanged-"
+"line-format” kautta\n"
 "  %%l           [rivi] ilman sen mahdollista jättörivinvaihtoa\n"
 "  %%L           [rivi] mahdollisen jättörivinvaihdon kanssa\n"
 
@@ -438,18 +483,23 @@ msgstr ""
 "Vakioerovalitsimet:\n"
 "  -i, --ignore-case              pidä eri merkkikokoja samana\n"
 "  -w, --ignore-all-space         älä ota huomioon kaikkia tyhjämerkkejä\n"
-"  -b, --ignore-space-change      älä ota huomioon muutoksia tyhjätilamerkkien lukumäärässä\n"
-"  -B, --ignore-blank-lines       älä ota huomioon muutoksia, joiden kaikki rivit ovat tyhjiä\n"
-"  -I, --ignore-matching-lines=RE älä ota huomioon muutoksia, joiden kaikki rivit täsmäävät RE:n kanssa\n"
+"  -b, --ignore-space-change      älä ota huomioon muutoksia "
+"tyhjätilamerkkien lukumäärässä\n"
+"  -B, --ignore-blank-lines       älä ota huomioon muutoksia, joiden kaikki "
+"rivit ovat tyhjiä\n"
+"  -I, --ignore-matching-lines=RE älä ota huomioon muutoksia, joiden kaikki "
+"rivit täsmäävät RE:n kanssa\n"
 "  -a, --text                     käsittele kaikki tiedostot teksteinä\n"
 "  -c, --context[=NUMERO]         tulosta säännölliset kontekstierot\n"
 "                                 muuttaen kontekstin NUMEROriveiksi\n"
-"  -u, --unified[=NUMERO]         tulosta yhdistyneet kontekstierot tai kontekstinmukaiset,\n"
+"  -u, --unified[=NUMERO]         tulosta yhdistyneet kontekstierot tai "
+"kontekstinmukaiset,\n"
 "                                 kontekstin NUMEROriveillä\n"
 "  -C, --context=NUM              tulosta NUM riviä kopioitua tekstiä\n"
 "  -U, --unified=NUM              tulosta NUM riviä yhdistynyttä kontekstia\n"
 "  -L, --label=LABEL              käytä TUNNISTEtta eikä tiedostonimeä\n"
-"  -p, --show-c-function          näytä missä C-funktiossa jokainen muutos on\n"
+"  -p, --show-c-function          näytä missä C-funktiossa jokainen muutos "
+"on\n"
 "  -F, --show-function-line=RE    näytä viimeisin täsmäävä RE-rivi\n"
 
 #: src/mdiff.c:3986
@@ -458,7 +508,8 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per "
+"line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -472,15 +523,20 @@ msgstr ""
 "  -e, --ed                      tulosta ”ed”-skripti\n"
 "  -n, --rcs                     tulosta RCS-muotoinen ero\n"
 "  -y, --side-by-side            tulosta kahdessa sarakkeessa\n"
-"  -w, --width=NUM               tulosta enimmillään NUM (oletus 130) merkkiä rivillä\n"
-"      --left-column             tulosta vain vasen sarake yhteisistä riveistä\n"
+"  -w, --width=NUM               tulosta enimmillään NUM (oletus 130) merkkiä "
+"rivillä\n"
+"      --left-column             tulosta vain vasen sarake yhteisistä "
+"riveistä\n"
 "      --suppress-common-lines   älä tulosta yhteisiä rivejä\n"
-"  -D, --ifdef=NIMI              tulosta lomitettu tiedosto ”#ifdef NIMI”-erojen näyttämiseksi\n"
+"  -D, --ifdef=NIMI              tulosta lomitettu tiedosto ”#ifdef NIMI”-"
+"erojen näyttämiseksi\n"
 "      --GTYPE-group-format=GFMT GTYPE syöteryhmät GFMT:llä\n"
 "      --line-format=LFMT        kaikki syöterivit LFMT:llä\n"
 "      --LTYPE-line-format=LFMT  LTYPE syöterivit LFMT:llä\n"
-"  -l, --paginate                välitä tuloste ”pr”:n kautta sen sivuttamiseksi\n"
-"  -t, --expand-tabs             laajenna sarakainmerkit välilyönneiksi tulosteessa\n"
+"  -l, --paginate                välitä tuloste ”pr”:n kautta sen "
+"sivuttamiseksi\n"
+"  -t, --expand-tabs             laajenna sarakainmerkit välilyönneiksi "
+"tulosteessa\n"
 
 #: src/mdiff.c:4001
 msgid ""
@@ -494,19 +550,29 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small "
+"changes\n"
 msgstr ""
-"  -T, --initial-tab             aseta sarkaimet tasaan edeltävän rivin sarkaimen kanssa\n"
-"  -r, --recursive               vertaa kaikki löydetyt alihakemistot rekursiivisesti\n"
+"  -T, --initial-tab             aseta sarkaimet tasaan edeltävän rivin "
+"sarkaimen kanssa\n"
+"  -r, --recursive               vertaa kaikki löydetyt alihakemistot "
+"rekursiivisesti\n"
 "  -N, --new-file                pidä poissa olevia tiedostoja tyhjinä\n"
-"  -P, --unidirectional-new-file pidä poissaolevia ensimmäisiä tiedostoja tyhjinä\n"
+"  -P, --unidirectional-new-file pidä poissaolevia ensimmäisiä tiedostoja "
+"tyhjinä\n"
 "  -s, --report-identical-files  raportoi kun kaksi tiedostoa ovat samoja\n"
-"  -x, --exclude=MALLI           älä ota huomioon tiedostoja, jotka täsmäävät MALLIn kanssa\n"
-"  -X, --exclude-from=TIEDOSTO   älä ota huomioon tiedostoja, jotka täsmäävät minkä tahansa mallin kanssa TIEDOSTOssa\n"
-"  -S, --starting-file=TIEDOSTO  aloita TIEDOSTOlla kun verrataan hakemistoja\n"
-"      --horizon-lines=NUM       pidä yhteisen prefiksin ja suffiksin NUM riviä\n"
-"  -d, --minimal                 yritä kovasti löytää muutosten pienin joukko\n"
-"  -H, --speed-large-files       otaksu laajat tiedostot ja monia hajallaan olevia pieniä muutoksia\n"
+"  -x, --exclude=MALLI           älä ota huomioon tiedostoja, jotka täsmäävät "
+"MALLIn kanssa\n"
+"  -X, --exclude-from=TIEDOSTO   älä ota huomioon tiedostoja, jotka täsmäävät "
+"minkä tahansa mallin kanssa TIEDOSTOssa\n"
+"  -S, --starting-file=TIEDOSTO  aloita TIEDOSTOlla kun verrataan "
+"hakemistoja\n"
+"      --horizon-lines=NUM       pidä yhteisen prefiksin ja suffiksin NUM "
+"riviä\n"
+"  -d, --minimal                 yritä kovasti löytää muutosten pienin "
+"joukko\n"
+"  -H, --speed-large-files       otaksu laajat tiedostot ja monia hajallaan "
+"olevia pieniä muutoksia\n"
 
 #: src/mdiff.c:4016
 msgid ""
@@ -533,13 +599,16 @@ msgid ""
 "      M  L+1\n"
 msgstr ""
 "\n"
-"LTYPE on ”vanha”, ”uusi”, tai ”muuttumaton”.  GTYPE on LTYPE tai ”muuttunut”.\n"
+"LTYPE on ”vanha”, ”uusi”, tai ”muuttumaton”.  GTYPE on LTYPE tai "
+"”muuttunut”.\n"
 "GFMT voi sisältää:\n"
 "  %<  riviä tiedostosta TIEDOSTO1\n"
 "  %>  riviä tiedostosta TIEDOSTO2\n"
 "  %=  riviä, jotka ovat yhteisiä tiedostoille TIEDOSTO1 ja TIEDOSTO2\n"
-"  %[-][LEVEYS][.[TARKKUUS]]{doxX}KIRJAIN  printf-tyylinen määrittely kohteelle KIRJAIN\n"
-"    KIRJAIN-kohteet ovat kuten seuraavat uusille ryhmille, pieni merkkikoko vanhoille ryhmille:\n"
+"  %[-][LEVEYS][.[TARKKUUS]]{doxX}KIRJAIN  printf-tyylinen määrittely "
+"kohteelle KIRJAIN\n"
+"    KIRJAIN-kohteet ovat kuten seuraavat uusille ryhmille, pieni merkkikoko "
+"vanhoille ryhmille:\n"
 "      F  ensimmäinen rivinumero\n"
 "      L  viimeinen rivinumero\n"
 "      N  rivien lukumäärä = L-F+1\n"
@@ -560,7 +629,8 @@ msgstr ""
 "LFMT voi sisältää:\n"
 "  %L  rivin sisällön\n"
 "  %l  rivin sisällön, kaikki jättörivinvaihdot pois jätettynä\n"
-"  %[-][LEVEYS][.[TARKKUUS]]{doxX}n  printf-tyylinen määrittely syöttörivinumeroille\n"
+"  %[-][LEVEYS][.[TARKKUUS]]{doxX}n  printf-tyylinen määrittely "
+"syöttörivinumeroille\n"
 "Joko GFMT tai LFMT voi sisältää:\n"
 "  %%  %\n"
 "  %c'C'  yksittäinen merkki C\n"
@@ -574,7 +644,8 @@ msgid ""
 msgstr ""
 "\n"
 "Vanhat mdiff-valitsimet:\n"
-"*  -f, --fuzz-items=ALKIOT    ei enempää kuin ALKIOT-määrä ei-täsmääviä klusterissa\n"
+"*  -f, --fuzz-items=ALKIOT    ei enempää kuin ALKIOT-määrä ei-täsmääviä "
+"klusterissa\n"
 
 #: src/mdiff.c:4055
 msgid ""
@@ -584,10 +655,11 @@ msgstr ""
 "\n"
 "Kun ei ole TIEDOSTOa, tai kun TIEDOSTO on -, lue vakiosyöte.\n"
 
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#, fuzzy
 msgid ""
 "\n"
-"Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "\n"
 "Ilmoita virheistä osoitteeseen <wdiff-bugs@iro.umontreal.ca>.\n"
@@ -600,7 +672,7 @@ msgstr "Ei voi käyttää valitsinta ”-z”, termcap ei ole käytössä."
 msgid "Word merging for two files only (so far)"
 msgstr "Sanalomittuminen vain kahdelle tiedostolle (toistaiseksi)"
 
-#: src/mdiff.c:4425
+#: src/mdiff.c:4425 src/wdiff2.c:129
 msgid ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
@@ -608,7 +680,7 @@ msgstr ""
 "\n"
 "Tekijänoikeudet © 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -618,7 +690,7 @@ msgstr ""
 "hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.\n"
 "Katso GPL-lisenssistä lisää yksityiskohtia.\n"
 
-#: src/mdiff.c:4433 src/wdiff.c:1229
+#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -630,16 +702,16 @@ msgstr ""
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "Valitsimet -123RSYZ ovat merkityksellisiä vain kun syötteitä on kaksi."
 
-#: src/unify.c:142
+#: src/unify.c:143
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
 msgstr "Ei voitu löytää nimeä erolle rivillä %ld"
 
-#: src/unify.c:275
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unify - Muunna kontekstierot kontekstinmukaisiksi tai päinvastoin.\n"
 
-#: src/unify.c:278
+#: src/unify.c:279
 #, c-format
 msgid ""
 "\n"
@@ -648,7 +720,7 @@ msgstr ""
 "\n"
 "Käyttö: %s [VALITSIN]... [TIEDOSTO]\n"
 
-#: src/unify.c:281
+#: src/unify.c:282
 msgid ""
 "\n"
 "  -c, --context-diffs    force output to context diffs\n"
@@ -674,22 +746,23 @@ msgstr ""
 "  -s, --strip-comments   riisu kommenttirivit\n"
 "  -u, --unidiffs         pakota tuloste samanlaisiin\n"
 "  -U                     sama kuin valitsimet ”-p” ja ”-u”\n"
-"  -=, --use-equals       korvaa välilyönnit yhtäläisyysmerkeillä samanlaisissa\n"
+"  -=, --use-equals       korvaa välilyönnit yhtäläisyysmerkeillä "
+"samanlaisissa\n"
 "      --help             näytä tämä opaste ja poistu\n"
 "      --version          tulosta versiotiedot ja poistu\n"
 "\n"
 "Jos TIEDOSTOa ei ole määritelty, lue vakiosyötteestä.\n"
 
-#: src/unify.c:390
+#: src/unify.c:391
 #, c-format
 msgid "Unable to open `%s'"
 msgstr "Ei voitu avata `%s'"
 
-#: src/unify.c:396
+#: src/unify.c:397
 msgid "Only one filename allowed"
 msgstr "Vain yksi tiedostonimi on sallittu"
 
-#: src/unify.c:405
+#: src/unify.c:406
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -697,7 +770,7 @@ msgstr ""
 "\n"
 "Tekijänoikeudet © 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:413
+#: src/unify.c:414
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -705,32 +778,37 @@ msgstr ""
 "\n"
 "Kirjoittaja: Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:552
+#: src/unify.c:553
 #, c-format
 msgid "Invalid unified diff header at line %ld"
 msgstr "Virheellinen yhdistetty ero-otsake rivillä %ld"
 
-#: src/unify.c:594
+#: src/unify.c:595
 #, c-format
 msgid "Malformed unified diff at line %ld"
 msgstr "Vääränmuotoinen yhdistetty ero rivillä %ld"
 
-#: src/unify.c:625
+#: src/unify.c:626
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
 msgstr "Kontekstiero puuttuu ”vanha” otsake rivillä %ld"
 
-#: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
 #, c-format
 msgid "Malformed context diff at line %ld"
 msgstr "Vääränmuotoinen kontekstiero rivillä %ld"
 
-#: src/unify.c:724
+#: src/unify.c:725
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
 msgstr "Kontekstiero puuttuu ”uusi”-otsake rivillä %ld"
 
-#: src/wdiff.c:1090
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr ""
+
+#: src/wdiff.c:1145 src/wdiff2.c:108
+#, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -744,10 +822,11 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
 "Tämä ohjelma on vapaa ohjelma; voit jakaa sitä edelleen ja/tai muokata\n"
-"sitä Free Software Foundationin GNU General Public-lisenssin ehtojen mukaisesti;\n"
+"sitä Free Software Foundationin GNU General Public-lisenssin ehtojen "
+"mukaisesti;\n"
 "joko version 2 tai (valintasi mukaan) minkä tahansa myöhäisemmän version\n"
 "mukaisesti.\n"
 "\n"
@@ -760,11 +839,11 @@ msgstr ""
 "jos näin ei ole, kirjoita osoitteeseen Free Softwware Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1119
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Vertailee sanoja kahdessa tiedostossa ja ilmoittaa eroista.\n"
 
-#: src/wdiff.c:1122
+#: src/wdiff.c:1177 src/wdiff2.c:185
 #, c-format
 msgid ""
 "\n"
@@ -773,13 +852,13 @@ msgstr ""
 "\n"
 "Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
 
-#: src/wdiff.c:1126
+#: src/wdiff.c:1181
+#, fuzzy, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
@@ -791,15 +870,18 @@ msgid ""
 "  -p, --printer              overstrike as for printers\n"
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 "  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille valitsimille.\n"
+"Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille "
+"valitsimille.\n"
 "\n"
 "  -C, --copyright            tulosta tekijänoikeustiedot ja poistu\n"
-"  -K, --no-init-term         kuten valitsin ”-t”, mutta ei termcap alustus-/päättymismerkkijonoja\n"
+"  -K, --no-init-term         kuten valitsin ”-t”, mutta ei termcap alustus-/"
+"päättymismerkkijonoja\n"
 "  -V, --version              tulosta ohjelman versiotiedot ja poistu\n"
 "  -1, --no-deleted           estä poistettujen sanojen tulostus\n"
 "  -2, --no-inserted          estä lisättyjen sanojen tulostus\n"
@@ -810,14 +892,19 @@ msgstr ""
 "  -l, --less-mode            tulostintilan variaatio kohteelle ”less”\n"
 "  -n, --avoid-wraps          älä laajenna kentiä uusilla riveillä\n"
 "  -p, --printer              karsi mitä tulee tulostimiin\n"
-"  -s, --statistics           sano kuinka monta sanaa on poistettu, lisätty jne.\n"
+"  -s, --statistics           sano kuinka monta sanaa on poistettu, lisätty "
+"jne.\n"
 "  -t, --terminal             käytä termcap mitä tulee päätenäytöille\n"
 "  -w, --start-delete=STRING  merkkijono, joka merkitsee poistoalueen alun\n"
 "  -x, --end-delete=STRING    merkkijono, joka merkitsee poistoalueen lopun\n"
 "  -y, --start-insert=STRING  merkkijono, joka merkitsee lisäysalueen alun\n"
 "  -z, --end-insert=STRING    merkkijono, joka merkitsee lisäysalueen lopun\n"
 
-#: src/wdiff.c:1221
+#: src/wdiff.c:1317
+msgid "Cannot use -t, termcap not available."
+msgstr "Ei voida käyttää valitsinta ”-t”, termcap ei ole käytettävissä."
+
+#: src/wdiff.c:1322
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
@@ -825,10 +912,80 @@ msgstr ""
 "\n"
 "Tekijänoikeudet © 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1276
-msgid "Cannot use -t, termcap not available."
-msgstr "Ei voida käyttää valitsinta ”-t”, termcap ei ole käytettävissä."
-
-#: src/wdiff.c:1301
+#: src/wdiff.c:1358 src/wdiff2.c:325
 msgid "Missing file arguments"
 msgstr "Puuttuvat tiedostoargumentit"
+
+#: src/wdiff2.c:181
+msgid ""
+"wdiff - Compute word differences by internally launching `mdiff -W'.\n"
+"This program exists mainly to support the now oldish `wdiff' syntax.\n"
+msgstr ""
+
+#: src/wdiff2.c:189
+#, fuzzy
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -q, --quiet                inhibit the `mdiff' call message\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille "
+"valitsimille.\n"
+"\n"
+"  -C, --copyright            tulosta tekijänoikeustiedot ja poistu\n"
+"  -K, --no-init-term         kuten valitsin ”-t”, mutta ei termcap alustus-/"
+"päättymismerkkijonoja\n"
+"  -V, --version              tulosta ohjelman versiotiedot ja poistu\n"
+"  -1, --no-deleted           estä poistettujen sanojen tulostus\n"
+"  -2, --no-inserted          estä lisättyjen sanojen tulostus\n"
+"  -3, --no-common            estä yhteisten sanojen tulostus\n"
+"  -a, --auto-pager           kutsuu automaattisesti sivuttajaa\n"
+"  -h, --help                 tulosta tämä opaste\n"
+"  -i, --ignore-case          sekoita kirjainkoko vertailtaessa\n"
+"  -l, --less-mode            tulostintilan variaatio kohteelle ”less”\n"
+"  -n, --avoid-wraps          älä laajenna kentiä uusilla riveillä\n"
+"  -p, --printer              karsi mitä tulee tulostimiin\n"
+"  -s, --statistics           sano kuinka monta sanaa on poistettu, lisätty "
+"jne.\n"
+"  -t, --terminal             käytä termcap mitä tulee päätenäytöille\n"
+"  -w, --start-delete=STRING  merkkijono, joka merkitsee poistoalueen alun\n"
+"  -x, --end-delete=STRING    merkkijono, joka merkitsee poistoalueen lopun\n"
+"  -y, --start-insert=STRING  merkkijono, joka merkitsee lisäysalueen alun\n"
+"  -z, --end-insert=STRING    merkkijono, joka merkitsee lisäysalueen lopun\n"
+
+#: src/wdiff2.c:212
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
+msgstr ""
+
+#: src/wdiff2.c:336
+#, fuzzy, c-format
+msgid "Launching `%s"
+msgstr "Luetaan %s"
+
+#: lib/error.c:125
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/xalloc-die.c:35
+msgid "memory exhausted"
+msgstr ""

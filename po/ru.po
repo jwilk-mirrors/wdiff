@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
-"POT-Creation-Date: 1999-07-05 20:35-0400\n"
+"Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
+"POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2001-06-14 14:16+04:00\n"
 "Last-Translator: Oleg S. Tihonov <tihonov@ffke-campus.mipt.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -18,11 +19,11 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (для регулярного выражения `%s')"
 
-#: src/mdiff.c:917 src/wdiff.c:1329
+#: src/mdiff.c:917 src/wdiff.c:1386
 msgid "Only one file may be standard input."
 msgstr "Только один файл может быть стандартным вводом."
 
-#: src/mdiff.c:932 src/wdiff.c:592
+#: src/mdiff.c:932 src/wdiff.c:643
 msgid "Directories not supported"
 msgstr "Каталоги не поддерживаются"
 
@@ -42,18 +43,22 @@ msgid "Read summary: %d files, %d items\n"
 msgstr "Всего прочитано: файлов: %d, элементов: %d\n"
 
 #: src/mdiff.c:1671
+#, c-format
 msgid "Sorting"
 msgstr "Сортировка"
 
 #: src/mdiff.c:1688
+#, c-format
 msgid ", clustering"
 msgstr ", кластеризация"
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
+#, c-format
 msgid ", done\n"
 msgstr ", завершено\n"
 
 #: src/mdiff.c:1907
+#, c-format
 msgid "Sorting members"
 msgstr "Сортировка членов"
 
@@ -67,41 +72,45 @@ msgstr "Всего найдено: кластеров: %d, членов: %d\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Всего найдено: кластеров: %d, членов: %d, перекрытий: %d\n"
 
-#: src/mdiff.c:2372 src/wdiff.c:243
+#: src/mdiff.c:2372 src/wdiff.c:245
 msgid "Select a terminal through the TERM environment variable."
 msgstr "Укажите тип терминала через переменную среды TERM."
 
-#: src/mdiff.c:2375 src/wdiff.c:246
+#: src/mdiff.c:2375 src/wdiff.c:248
 msgid "Could not access the termcap data base."
 msgstr "Невозможно получить доступ к базе данных termcap."
 
-#: src/mdiff.c:2377 src/wdiff.c:248
+#: src/mdiff.c:2377 src/wdiff.c:250
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "Тип терминала `%s' не определен."
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d слов"
 
-#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
+#, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% общих"
 
-#: src/mdiff.c:3759 src/wdiff.c:1060
+#: src/mdiff.c:3759 src/wdiff.c:1115
+#, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% удалено"
 
-#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
+#, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% изменено"
 
-#: src/mdiff.c:3771 src/wdiff.c:1072
+#: src/mdiff.c:3771 src/wdiff.c:1127
+#, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% вставлено"
 
-#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Попробуйте `%s --help' для получения более подробного описания.\n"
@@ -117,8 +126,12 @@ msgstr ""
 
 #: src/mdiff.c:3808
 #, c-format
-msgid "\nUsage: %s [OPTION]... [FILE]...\n"
-msgstr "\nИспользование: %s [КЛЮЧ]... [ФАЙЛ]...\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]...\n"
+msgstr ""
+"\n"
+"Использование: %s [КЛЮЧ]... [ФАЙЛ]...\n"
 
 #: src/mdiff.c:3812
 msgid ""
@@ -132,7 +145,8 @@ msgstr ""
 "\n"
 "Режимы работы:\n"
 "  -h                      (игнорируется)\n"
-"  -v, --verbose           печатать промежуточные результаты в стандартный поток\n"
+"  -v, --verbose           печатать промежуточные результаты в стандартный "
+"поток\n"
 "                          ошибок\n"
 "      --help              показать эту справку и выйти\n"
 "      --version           показать информацию о версии и выйти\n"
@@ -188,7 +202,8 @@ msgstr ""
 "  -2, --no-inserted           не выводить вставленные слова\n"
 "  -3, --no-common             не выводить общие слова\n"
 "  -A, --auto-pager            автоматически вызывать программу просмотра\n"
-"  -k, --less-mode             режим вывода, удобный при использовании \"less\"\n"
+"  -k, --less-mode             режим вывода, удобный при использовании \"less"
+"\"\n"
 "  -m, --avoid-wraps           не продолжать поля через новую строку\n"
 "  -o, --printer               выделять перечеркиванием, как для принтера\n"
 "  -z, --terminal              выводить с использованием termcap\n"
@@ -209,14 +224,18 @@ msgid ""
 msgstr ""
 "\n"
 "Сравнение:\n"
-"*  -H, --speed-large-files     работать быстрее, для случая большого количества\n"
+"*  -H, --speed-large-files     работать быстрее, для случая большого "
+"количества\n"
 "                               мелких различий\n"
-"*  -a, --text                  сообщать о различиях строк (по умолчанию для \n"
+"*  -a, --text                  сообщать о различиях строк (по умолчанию "
+"для \n"
 "                               текстовых файлов)\n"
-"*  -d, --minimal               стараться найти наименьшее множество различий\n"
+"*  -d, --minimal               стараться найти наименьшее множество "
+"различий\n"
 "*  -q, --brief                 печатать только, различаются ли файлы (по \n"
 "                               умолчанию для двоичных файлов)\n"
-"*      --horizon-lines=ЧИСЛО   сохранять указанное ЧИСЛО общих префиксов/постфиксов\n"
+"*      --horizon-lines=ЧИСЛО   сохранять указанное ЧИСЛО общих префиксов/"
+"постфиксов\n"
 
 #: src/mdiff.c:3859
 msgid ""
@@ -233,13 +252,16 @@ msgstr ""
 "\n"
 "Сравнение каталогов:\n"
 "*  -N, --new-file                  считать несуществующие файлы пустыми\n"
-"*  -P, --unidirectional-new-file   считать несуществующие старые файлы пустыми\n"
+"*  -P, --unidirectional-new-file   считать несуществующие старые файлы "
+"пустыми\n"
 "*  -S, --starting-file=ФАЙЛ        продолжить сравнение каталогов с ФАЙЛА\n"
-"*  -X, --exclude-from=ФАЙЛ         игнорировать файлы, чьи имена соответствуют\n"
+"*  -X, --exclude-from=ФАЙЛ         игнорировать файлы, чьи имена "
+"соответствуют\n"
 "                                   образцам из ФАЙЛА\n"
 "*  -r, --recursive                 рекурсивно сравнивать подкаталоги\n"
 "*  -s, --report-identical-files    сообщать, когда два файла не отличаются\n"
-"*  -x, --exclude=ОБРАЗЕЦ           игнорировать файлы (каталоги), чьи имена \n"
+"*  -x, --exclude=ОБРАЗЕЦ           игнорировать файлы (каталоги), чьи "
+"имена \n"
 "                                   соответствуют указанному ОБРАЗЦУ\n"
 
 #: src/mdiff.c:3871
@@ -255,10 +277,13 @@ msgstr ""
 "\n"
 "Игнорирование текста:\n"
 "  -B, --ignore-blank-lines             игнорировать пустые строки\n"
-"*  -I, --ignore-matching-lines=РВ      игнорировать строки, соответствующие \n"
+"*  -I, --ignore-matching-lines=РВ      игнорировать строки, "
+"соответствующие \n"
 "                                       регулярному выражению РВ\n"
-"  -b, --ignore-space-change            игнорировать количество пробельных знаков\n"
-"  -i, --ignore-case                    игнорировать различия в регистре букв\n"
+"  -b, --ignore-space-change            игнорировать количество пробельных "
+"знаков\n"
+"  -i, --ignore-case                    игнорировать различия в регистре "
+"букв\n"
 "  -w, --ignore-all-space               игнорировать пробельные знаки\n"
 
 #: src/mdiff.c:3879
@@ -272,9 +297,11 @@ msgstr ""
 "\n"
 "Кластеризация:\n"
 "  -G, --relist-files         перечислить все входные файлы с аннотациями\n"
-"  -J, --minimum-size=ЧИСЛО   игнорировать кластеры, в которых меньше указанного\n"
+"  -J, --minimum-size=ЧИСЛО   игнорировать кластеры, в которых меньше "
+"указанного\n"
 "                             ЧИСЛА элементов\n"
-"  -j, --ignore-delimiters    не считать элементы, содержащие только разделители\n"
+"  -j, --ignore-delimiters    не считать элементы, содержащие только "
+"разделители\n"
 
 #: src/mdiff.c:3887
 msgid ""
@@ -294,12 +321,16 @@ msgstr ""
 "Форматы подробного вывода:\n"
 "*  -D, --ifdef=ИМЯ                       выводить в формате `#ifdef ИМЯ'\n"
 "*      --changed-group-format=ФОРМАТ     задает ФОРМАТ для измененных строк\n"
-"*      --new-group-format=ФОРМАТ         задает ФОРМАТ для вставленных строк\n"
-"*      --new-line-format=ФОРМАТ          задает ФОРМАТ для вставленной строки\n"
+"*      --new-group-format=ФОРМАТ         задает ФОРМАТ для вставленных "
+"строк\n"
+"*      --new-line-format=ФОРМАТ          задает ФОРМАТ для вставленной "
+"строки\n"
 "*      --old-group-format=ФОРМАТ         задает ФОРМАТ для удаленных строк\n"
 "*      --old-line-format=ФОРМАТ          задает ФОРМАТ для удаленной строки\n"
-"*      --unchanged-group-format=ФОРМАТ   задает ФОРМАТ для неизмененных строк\n"
-"*      --unchanged-line-format=ФОРМАТ    задает ФОРМАТ для неизмененной строки\n"
+"*      --unchanged-group-format=ФОРМАТ   задает ФОРМАТ для неизмененных "
+"строк\n"
+"*      --unchanged-line-format=ФОРМАТ    задает ФОРМАТ для неизмененной "
+"строки\n"
 "*      --line-format=ФОРМАТ              --{old,new,unchanged}-line-format\n"
 
 #: src/mdiff.c:3901
@@ -328,24 +359,29 @@ msgid ""
 msgstr ""
 "\n"
 "Контекстные и объединенные форматы:\n"
-"*  -F, --show-function-line=РВ       показать контекст сверху. соответствующий\n"
+"*  -F, --show-function-line=РВ       показать контекст сверху. "
+"соответствующий\n"
 "                                     регулярному выражению РВ\n"
-"*  -p, --show-c-function             показать функцию Си, которой принадлежит\n"
+"*  -p, --show-c-function             показать функцию Си, которой "
+"принадлежит\n"
 "                                     каждое изменение\n"
 
 #: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name "
+"(twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -c, --context               output context diffs (default 3 context "
+"lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
 "\n"
 "*  -C, --context=ЧИСЛО         как -c, также задает число строк контекста\n"
-"*  -L, --label=МЕТКА           использовать МЕТКУ принадлежности, вместо имени \n"
+"*  -L, --label=МЕТКА           использовать МЕТКУ принадлежности, вместо "
+"имени \n"
 "                               файла (дважды)\n"
 "*  -U, --unified=ЧИСЛО         как -u, также задает число строк контекста\n"
 "*  -c, --context               выводить в контекстном формате diff (по \n"
@@ -368,11 +404,13 @@ msgstr ""
 "Двусторонний формат:\n"
 "*  -W, --width=ЧИСЛО             задает ширину в столбцах\n"
 "*  -y, --side-by-side            использовать двусторонний выходной формат\n"
-"*      --left-column             печатать только левую колонку для общих строк\n"
+"*      --left-column             печатать только левую колонку для общих "
+"строк\n"
 "*      --sdiff-merge-assist      (внутренне используется в `sdiff')\n"
 "*      --suppress-common-lines   не печатать общие строки\n"
 
 #: src/mdiff.c:3937
+#, c-format
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -383,7 +421,8 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
@@ -392,18 +431,25 @@ msgstr ""
 "  %%%%           один знак %%\n"
 "  %%c'C'        экранированный знак C\n"
 "  %%c'\\O'       знак со значением O, от 1 до 3 восьмеричных цифр\n"
-"  %%(A=B?T:E)   если A есть B, то T, иначе E; A B -- это числа или ПЕРЕМЕННЫЕ;\n"
+"  %%(A=B?T:E)   если A есть B, то T, иначе E; A B -- это числа или "
+"ПЕРЕМЕННЫЕ;\n"
 "                T E -- это ФОРМАТЫ\n"
-"  %%FN          использовать для печати значения ПЕРЕМЕННОЙ N спецификацию F\n"
+"  %%FN          использовать для печати значения ПЕРЕМЕННОЙ N спецификацию "
+"F\n"
 "  %%<           [группа] старое, каждая строка через --old-line-format\n"
 "  %%>           [группа] новое, каждая строка через --new-line-format\n"
-"  %%=           [группа] неизмененное, каждая строка через --unchanged-line-format\n"
+"  %%=           [группа] неизмененное, каждая строка через --unchanged-line-"
+"format\n"
 "  %%l           [строка] без необязательного завершающего перевода строки\n"
 "  %%L           [строка] возможно, с завершающим переводом строки\n"
 
 #: src/mdiff.c:3952
-msgid "\nSPECIF is [-][W[.D]]{doxX} as in C printf\n"
-msgstr "\nСпецификация -- это [-][W[.D]]{doxX} как в Си-функции printf\n"
+msgid ""
+"\n"
+"SPECIF is [-][W[.D]]{doxX} as in C printf\n"
+msgstr ""
+"\n"
+"Спецификация -- это [-][W[.D]]{doxX} как в Си-функции printf\n"
 
 #: src/mdiff.c:3957
 msgid ""
@@ -447,9 +493,12 @@ msgstr ""
 "Стандартные ключи diff:\n"
 "  -i, --ignore-case         не различать заглавные и строчные буквы\n"
 "  -w, --ignore-all-space    игнорировать все пробельные знаки\n"
-"  -b, --ignore-space-change игнорировать различие в количестве пробельных знаков\n"
-"  -B, --ignore-blank-lines  игнорировать различия, состоящие из пустых строк\n"
-"  -I, --ignore-matching-lines=РВ игнорировать различия, чьи строки соответствуют\n"
+"  -b, --ignore-space-change игнорировать различие в количестве пробельных "
+"знаков\n"
+"  -B, --ignore-blank-lines  игнорировать различия, состоящие из пустых "
+"строк\n"
+"  -I, --ignore-matching-lines=РВ игнорировать различия, чьи строки "
+"соответствуют\n"
 "                            регулярному выражению РВ\n"
 "  -a, --text                считать все файлы текстовыми\n"
 "  -c, --context[=ЧИСЛО]     выводить в обычном контекстном формате diff,\n"
@@ -470,7 +519,8 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per "
+"line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -484,7 +534,8 @@ msgstr ""
 "  -e, --ed                  выводить сценарий ed\n"
 "  -n, --rcs                 выводить в формате RCS\n"
 "  -y, --side-by-side        выводить в две колонки\n"
-"  -w, --width=ЧИСЛО         выводить не более ЧИСЛА (по умолчанию 130) знаков\n"
+"  -w, --width=ЧИСЛО         выводить не более ЧИСЛА (по умолчанию 130) "
+"знаков\n"
 "                            на строку\n"
 "      --left-column         выводить только левую колонку для общих строк\n"
 "      --suppress-common-lines не выводить общие строки\n"
@@ -492,7 +543,8 @@ msgstr ""
 "      --ТИПГ-group-format=ФМТГ печатать входные группы ТИПГ в формате ФМТГ\n"
 "      --line-format=ФМТС    печатать все входные строки в формате ФМТС\n"
 "      --ТИПС-line-format=ФМТС печатать входные строки ТИПС в формате ФМТС\n"
-"  -l, --paginate            прогнать вывод через `pr' для разбиения на страницы\n"
+"  -l, --paginate            прогнать вывод через `pr' для разбиения на "
+"страницы\n"
 "  -t, --expand-tabs         раскрывать при выводе табуляцию в пробелы\n"
 
 #: src/mdiff.c:4001
@@ -507,7 +559,8 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small "
+"changes\n"
 msgstr ""
 "  -T, --initial-tab         выравнивать табуляцию, добавляя TAB в начало\n"
 "  -r, --recursive           рекурсивно сравнивать подкаталоги\n"
@@ -518,14 +571,20 @@ msgstr ""
 "  -X, --exclude-from=ФАЙЛ   исключить файлы, соответствующие какому-либо\n"
 "                            образцу из ФАЙЛА\n"
 "  -S, --starting-file=ФАЙЛ  при сравнении каталогов начать с ФАЙЛА\n"
-"      --horizon-lines=ЧИСЛО сохранять ЧИСЛО строк общих префиксов/постфиксов\n"
+"      --horizon-lines=ЧИСЛО сохранять ЧИСЛО строк общих префиксов/"
+"постфиксов\n"
 "  -d, --minimal             стараться найти наименьшее множество различий\n"
-"  -H, --speed-large-files   предполагать, что файлы велики и содержат большое\n"
+"  -H, --speed-large-files   предполагать, что файлы велики и содержат "
+"большое\n"
 "                            количество мелких различий\n"
 
 #: src/mdiff.c:4016
-msgid "\nBy default, context diffs have an horizon of two lines.\n"
-msgstr "\nПо умолчанию, контекстный формат diffs имеет горизонт в две строки.\n"
+msgid ""
+"\n"
+"By default, context diffs have an horizon of two lines.\n"
+msgstr ""
+"\n"
+"По умолчанию, контекстный формат diffs имеет горизонт в две строки.\n"
 
 #: src/mdiff.c:4022
 msgid ""
@@ -550,7 +609,8 @@ msgstr ""
 "  %<  строки из ФАЙЛА1\n"
 "  %>  строки из ФАЙЛА2\n"
 "  %=  строки, общие для ФАЙЛА1 и ФАЙЛА2\n"
-"  %[-][ШИРИНА][.[ТОЧНОСТЬ]]{doxX}БУКВА  спецификация для БУКВЫ в стиле printf\n"
+"  %[-][ШИРИНА][.[ТОЧНОСТЬ]]{doxX}БУКВА  спецификация для БУКВЫ в стиле "
+"printf\n"
 "    далее показаны БУКВЫ для новой группы, для старой те же, но строчные\n"
 "      F  номер первой строки\n"
 "      L  номер последней строки\n"
@@ -587,15 +647,25 @@ msgid ""
 msgstr ""
 "\n"
 "Старые ключи mdiff:\n"
-"*  -f, --fuzz-items=ЧИСЛО     не более ЧИСЛА не совпадающих элементов на кластер\n"
+"*  -f, --fuzz-items=ЧИСЛО     не более ЧИСЛА не совпадающих элементов на "
+"кластер\n"
 
 #: src/mdiff.c:4055
-msgid "\nWith no FILE, or when FILE is -, read standard input.\n"
-msgstr "\nЕсли ФАЙЛ не задан, или задан как -, читает стандартный ввод.\n"
+msgid ""
+"\n"
+"With no FILE, or when FILE is -, read standard input.\n"
+msgstr ""
+"\n"
+"Если ФАЙЛ не задан, или задан как -, читает стандартный ввод.\n"
 
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
-msgid "\nReport bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
-msgstr "\nОб ошибках сообщайте по адресу <wdiff-bugs@iro.umontreal.ca>.\n"
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#, fuzzy
+msgid ""
+"\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
+msgstr ""
+"\n"
+"Об ошибках сообщайте по адресу <wdiff-bugs@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4370
 msgid "Cannot use -z, termcap not available."
@@ -605,11 +675,15 @@ msgstr "Невозможно применить -z, termcap недоступна."
 msgid "Word merging for two files only (so far)"
 msgstr "Объединение по словам работает только для двух файлов (пока)."
 
-#: src/mdiff.c:4425
-msgid "\nCopyright (C) 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright (C) 1997 Free Software Foundation, Inc.\n"
+#: src/mdiff.c:4425 src/wdiff2.c:129
+msgid ""
+"\n"
+"Copyright (C) 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Copyright (C) 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -618,29 +692,39 @@ msgstr ""
 "в исходном тексте.  Мы НЕ предоставляем гарантий; даже гарантий\n"
 "КОММЕРЧЕСКОЙ ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.\n"
 
-#: src/mdiff.c:4433 src/wdiff.c:1229
-msgid "\nWritten by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
-msgstr "\nАвтор программы -- Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
+msgid ""
+"\n"
+"Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+msgstr ""
+"\n"
+"Автор программы -- Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4469
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "Ключи -123RSYZ имеют смысл, только если заданы два входных файла."
 
-#: src/unify.c:142
+#: src/unify.c:143
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
 msgstr "Невозможно найти имя файла в строке %ld"
 
-#: src/unify.c:275
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr "unify - Преобразует вывод diff из контекстного формата в объединенный и наоборот.\n"
+msgstr ""
+"unify - Преобразует вывод diff из контекстного формата в объединенный и "
+"наоборот.\n"
 
-#: src/unify.c:278
+#: src/unify.c:279
 #, c-format
-msgid "\nUsage: %s [OPTION]... [FILE]\n"
-msgstr "\nИспользование: %s [КЛЮЧ]... [ФАЙЛ]\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]\n"
+msgstr ""
+"\n"
+"Использование: %s [КЛЮЧ]... [ФАЙЛ]\n"
 
-#: src/unify.c:281
+#: src/unify.c:282
 msgid ""
 "\n"
 "  -c, --context-diffs    force output to context diffs\n"
@@ -673,49 +757,65 @@ msgstr ""
 "\n"
 "Если ФАЙЛ не задан или задан как -, читает стандартный ввод\n"
 
-#: src/unify.c:390
+#: src/unify.c:391
 #, c-format
 msgid "Unable to open `%s'"
 msgstr "Невозможно открыть `%s'"
 
-#: src/unify.c:396
+#: src/unify.c:397
 msgid "Only one filename allowed"
 msgstr "Можно задать только один файл"
 
-#: src/unify.c:405
-msgid "\nCopyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+#: src/unify.c:406
+msgid ""
+"\n"
+"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:413
-msgid "\nWritten by Wayne Davison <davison@borland.com>.\n"
-msgstr "\nАвтор программы -- Wayne Davison <davison@borland.com>.\n"
+#: src/unify.c:414
+msgid ""
+"\n"
+"Written by Wayne Davison <davison@borland.com>.\n"
+msgstr ""
+"\n"
+"Автор программы -- Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:552
+#: src/unify.c:553
 #, c-format
 msgid "Invalid unified diff header at line %ld"
 msgstr "Неверный заголовок объединенного фрагмента различия в строке %ld"
 
-#: src/unify.c:594
+#: src/unify.c:595
 #, c-format
 msgid "Malformed unified diff at line %ld"
 msgstr "Неправильная объединенная запись различия в строке %ld"
 
-#: src/unify.c:625
+#: src/unify.c:626
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
-msgstr "Пропущен заголовок `старой части' контекстного фрагмента различия в строке %ld"
+msgstr ""
+"Пропущен заголовок `старой части' контекстного фрагмента различия в строке %"
+"ld"
 
-#: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
 #, c-format
 msgid "Malformed context diff at line %ld"
 msgstr "Неправильная контекстная запись различия в строке %ld"
 
-#: src/unify.c:724
+#: src/unify.c:725
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
-msgstr "Пропущен заголовок `новой части' контекстного фрагмента различия в строке %ld"
+msgstr ""
+"Пропущен заголовок `новой части' контекстного фрагмента различия в строке %ld"
 
-#: src/wdiff.c:1090
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr ""
+
+#: src/wdiff.c:1145 src/wdiff2.c:108
+#, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -729,38 +829,47 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
 "Это свободная программа; вы можете распространять и/или изменять ее при\n"
 "соблюдении условий Универсальной Общественной Лицензии GNU, опубликованной\n"
-"Фондом Свободного Программного Обеспечения, версии 2 или любой более поздней\n"
+"Фондом Свободного Программного Обеспечения, версии 2 или любой более "
+"поздней\n"
 "(по вашему усмотрению).\n"
 "\n"
 "Эта программа распространяется в надежде, что она будет полезной, но БЕЗ\n"
-"КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий КОММЕРЧЕСКОЙ ЦЕННОСТИ\n"
-"или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.  Для получения более подробной информации\n"
+"КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий КОММЕРЧЕСКОЙ "
+"ЦЕННОСТИ\n"
+"или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.  Для получения более подробной "
+"информации\n"
 "смотрите Универсальную Общественную Лицензию GNU.\n"
 "\n"
-"Вы должны были получить копию Универсальной Общественной Лицензии GNU вместе с\n"
-"этой программой, если нет, напишите Free Software Foundation, Inc., 59 Temple\n"
+"Вы должны были получить копию Универсальной Общественной Лицензии GNU вместе "
+"с\n"
+"этой программой, если нет, напишите Free Software Foundation, Inc., 59 "
+"Temple\n"
 "Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1119
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Сравнивает слова в двух файлах и сообщает о различиях.\n"
 
-#: src/wdiff.c:1122
+#: src/wdiff.c:1177 src/wdiff2.c:185
 #, c-format
-msgid "\nUsage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "\nИспользование: %s [КЛЮЧ]... ФАЙЛ1 ФАЙЛ2\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... FILE1 FILE2\n"
+msgstr ""
+"\n"
+"Использование: %s [КЛЮЧ]... ФАЙЛ1 ФАЙЛ2\n"
 
-#: src/wdiff.c:1126
+#: src/wdiff.c:1181
+#, fuzzy, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
@@ -772,6 +881,7 @@ msgid ""
 "  -p, --printer              overstrike as for printers\n"
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 "  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
@@ -779,7 +889,8 @@ msgid ""
 msgstr ""
 "Аргументы, обязательные для длинных ключей, обязательны и для коротких.\n"
 "\n"
-"  -C, --copyright            показать информацию об авторских правах и выйти\n"
+"  -C, --copyright            показать информацию об авторских правах и "
+"выйти\n"
 "  -K, --no-init-term         как -t, но без строк termcap init/term\n"
 "  -V, --version              показать информацию о версии и выйти\n"
 "  -1, --no-deleted           не выводить удаленные слова\n"
@@ -791,21 +902,99 @@ msgstr ""
 "  -l, --less-mode            режим вывода, удобный при использовании less\n"
 "  -n, --avoid-wraps          не продолжать поля через новую строку\n"
 "  -p, --printer              выделять подчеркиванием части вывода\n"
-"  -s, --statistics           показать сколько слов было удалено, вставлено и т.д\n"
+"  -s, --statistics           показать сколько слов было удалено, вставлено и "
+"т.д\n"
 "  -t, --terminal             выводить с использованием termcap\n"
 "  -w, --start-delete=СТРОКА  СТРОКА, задающая начало удаляемой области\n"
 "  -x, --end-delete=СТРОКА    СТРОКА, задающая конец удаляемой области\n"
 "  -y, --start-insert=СТРОКА  СТРОКА, задающая начало вставляемой области\n"
 "  -z, --end-insert=СТРОКА    СТРОКА, задающая конец вставляемой области\n"
 
-#: src/wdiff.c:1221
-msgid "\nCopyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
-msgstr "\nCopyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
-
-#: src/wdiff.c:1276
+#: src/wdiff.c:1317
 msgid "Cannot use -t, termcap not available."
 msgstr "Невозможно применить -t, termcap недоступна."
 
-#: src/wdiff.c:1301
+#: src/wdiff.c:1322
+msgid ""
+"\n"
+"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+
+#: src/wdiff.c:1358 src/wdiff2.c:325
 msgid "Missing file arguments"
 msgstr "Пропущены аргументы, задающие файлы"
+
+#: src/wdiff2.c:181
+msgid ""
+"wdiff - Compute word differences by internally launching `mdiff -W'.\n"
+"This program exists mainly to support the now oldish `wdiff' syntax.\n"
+msgstr ""
+
+#: src/wdiff2.c:189
+#, fuzzy
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -q, --quiet                inhibit the `mdiff' call message\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Аргументы, обязательные для длинных ключей, обязательны и для коротких.\n"
+"\n"
+"  -C, --copyright            показать информацию об авторских правах и "
+"выйти\n"
+"  -K, --no-init-term         как -t, но без строк termcap init/term\n"
+"  -V, --version              показать информацию о версии и выйти\n"
+"  -1, --no-deleted           не выводить удаленные слова\n"
+"  -2, --no-inserted          не выводить вставленные слова\n"
+"  -3, --no-common            не выводить общие слова\n"
+"  -a, --auto-pager           автоматически вызывать программу просмотра\n"
+"  -h, --help                 показать эту справку и выйти\n"
+"  -i, --ignore-case          игнорировать регистр букв\n"
+"  -l, --less-mode            режим вывода, удобный при использовании less\n"
+"  -n, --avoid-wraps          не продолжать поля через новую строку\n"
+"  -p, --printer              выделять подчеркиванием части вывода\n"
+"  -s, --statistics           показать сколько слов было удалено, вставлено и "
+"т.д\n"
+"  -t, --terminal             выводить с использованием termcap\n"
+"  -w, --start-delete=СТРОКА  СТРОКА, задающая начало удаляемой области\n"
+"  -x, --end-delete=СТРОКА    СТРОКА, задающая конец удаляемой области\n"
+"  -y, --start-insert=СТРОКА  СТРОКА, задающая начало вставляемой области\n"
+"  -z, --end-insert=СТРОКА    СТРОКА, задающая конец вставляемой области\n"
+
+#: src/wdiff2.c:212
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
+msgstr ""
+
+#: src/wdiff2.c:336
+#, fuzzy, c-format
+msgid "Launching `%s"
+msgstr "Чтение %s"
+
+#: lib/error.c:125
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/xalloc-die.c:35
+msgid "memory exhausted"
+msgstr ""

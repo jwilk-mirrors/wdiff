@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
-"POT-Creation-Date: 1999-07-05 20:35-0400\n"
+"Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
+"POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2002-05-04 18:55+0200\n"
 "Last-Translator: Jordi Mallach <jordi@sindominio.net>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
@@ -18,11 +19,11 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (per a la expreg «%s»)"
 
-#: src/mdiff.c:917 src/wdiff.c:1329
+#: src/mdiff.c:917 src/wdiff.c:1386
 msgid "Only one file may be standard input."
 msgstr "Només un fitxer pot ser la entrada estàndar."
 
-#: src/mdiff.c:932 src/wdiff.c:592
+#: src/mdiff.c:932 src/wdiff.c:643
 msgid "Directories not supported"
 msgstr "Els directoris no estan suportats"
 
@@ -42,18 +43,22 @@ msgid "Read summary: %d files, %d items\n"
 msgstr "Resum de la lectura: %d fixers, %d elements\n"
 
 #: src/mdiff.c:1671
+#, c-format
 msgid "Sorting"
 msgstr "Ordenant"
 
 #: src/mdiff.c:1688
+#, c-format
 msgid ", clustering"
 msgstr ", agrupant"
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
+#, c-format
 msgid ", done\n"
 msgstr ", fet\n"
 
 #: src/mdiff.c:1907
+#, c-format
 msgid "Sorting members"
 msgstr "Ordenant membres"
 
@@ -67,41 +72,45 @@ msgstr "Resum del treball: %d clùsters, %d membres\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Resum del treball: %d clùsters, %d membres, %d línies duplicades\n"
 
-#: src/mdiff.c:2372 src/wdiff.c:243
+#: src/mdiff.c:2372 src/wdiff.c:245
 msgid "Select a terminal through the TERM environment variable."
 msgstr "Seleccioneu una terminal mitjançant la variable d'ambient TERM."
 
-#: src/mdiff.c:2375 src/wdiff.c:246
+#: src/mdiff.c:2375 src/wdiff.c:248
 msgid "Could not access the termcap data base."
 msgstr "No s'ha pogut accedir a la base de dades de termcap"
 
-#: src/mdiff.c:2377 src/wdiff.c:248
+#: src/mdiff.c:2377 src/wdiff.c:250
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "El tipus de terminal «%s» no està definit."
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d paraules"
 
-#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
+#, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% comunes"
 
-#: src/mdiff.c:3759 src/wdiff.c:1060
+#: src/mdiff.c:3759 src/wdiff.c:1115
+#, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% esborrades"
 
-#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
+#, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% canviades"
 
-#: src/mdiff.c:3771 src/wdiff.c:1072
+#: src/mdiff.c:3771 src/wdiff.c:1127
+#, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% inserides"
 
-#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Proveu «%s --help» per a mes informació.\n"
@@ -154,7 +163,8 @@ msgstr ""
 "  -T, --initial-tab       produeix un TAB en lloc de un espai inicial\n"
 "  -l, --paginate          pagina el resultat a través de `pr`\n"
 "  -S, --string[=CADENA]   pren nota de una altra CADENA d'usuari\n"
-"  -V, --show-links        dona referències de fitxer i línia en les anotacions\n"
+"  -V, --show-links        dona referències de fitxer i línia en les "
+"anotacions\n"
 "  -t, --expand-tabs       expandeix tabs a espais en el resultat\n"
 
 #: src/mdiff.c:3828
@@ -190,10 +200,12 @@ msgstr ""
 "  -3, --no-common             no mostra les paraules comuns\n"
 "  -A, --auto-pager            crida a un paginador automàticament\n"
 "  -k, --less-mode             variació del mode d'impresió per a «less»\n"
-"  -m, --avoid-wraps           no exté els camps més enllà del final de línia\n"
+"  -m, --avoid-wraps           no exté els camps més enllà del final de "
+"línia\n"
 "  -o, --printer               utilitza sobreimpresió com a les impresores\n"
 "  -z, --terminal              utilitza termcap per a mostrar per terminal\n"
-"  -K, --no-init-term          com -z, però sense cadenes d'inici/fi de termcap\n"
+"  -K, --no-init-term          com -z, però sense cadenes d'inici/fi de "
+"termcap\n"
 "  -O, --item-regexp=EXPREG    compara elements definits per EXPREG\n"
 "  -W, --word-mode             compara paraules en lloc de línies\n"
 
@@ -209,10 +221,12 @@ msgid ""
 msgstr ""
 "\n"
 "Comparació de fitxers:\n"
-"*  -H, --speed-large-files     anar més ràpid, per a quan hi ha molts canvis\n"
+"*  -H, --speed-large-files     anar més ràpid, per a quan hi ha molts "
+"canvis\n"
 "                               xicotets.\n"
 "*  -a, --text                  informa de les diferències en les línies\n"
-"                               (forma predeterminada per a fitxers de texte)\n"
+"                               (forma predeterminada per a fitxers de "
+"texte)\n"
 "*  -q, --brief                 només diu si els fitxers difereixen\n"
 "                               (forma predeterminada per a fitxers binaris)\n"
 "*      --horizon-lines=LÍNIES  manté LÍNIES línies en els prefixes/sufixes\n"
@@ -274,8 +288,10 @@ msgid ""
 msgstr ""
 "\n"
 "Agrupament:\n"
-"  -G, --relist-files         llista tots els fitxers d'entrada amb anotacions\n"
-"  -J, --minimum-size=ELEMENTS descarta els grups que no tinguen tants ELEMENTS\n"
+"  -G, --relist-files         llista tots els fitxers d'entrada amb "
+"anotacions\n"
+"  -J, --minimum-size=ELEMENTS descarta els grups que no tinguen tants "
+"ELEMENTS\n"
 "  -j, --ignore-delimiters    no conta els elements que només tinguen\n"
 "                             delimitadors\n"
 
@@ -337,7 +353,8 @@ msgid ""
 msgstr ""
 "\n"
 "Formats contextual i unificat:\n"
-"*  -F, --show-function-line=EXPREG   mostra el context previ que encaixe amb\n"
+"*  -F, --show-function-line=EXPREG   mostra el context previ que encaixe "
+"amb\n"
 "                                     EXPREG\n"
 "*  -p, --show-c-function             mostra la funció C a la qual correspón\n"
 "                                     cada canvi\n"
@@ -346,9 +363,11 @@ msgstr ""
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name "
+"(twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -c, --context               output context diffs (default 3 context "
+"lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
@@ -359,8 +378,10 @@ msgstr ""
 "                               nom del fitxer (per duplicat)\n"
 "*  -U, --unified=LÍNIES        com -u, també selecciona la mida del context\n"
 "                               en línies\n"
-"*  -c, --context               produeix diffs contextuals (per defecte 3 línies)\n"
-"*  -u, --unified               produeix diffs unificats (per defecte 3 línies)\n"
+"*  -c, --context               produeix diffs contextuals (per defecte 3 "
+"línies)\n"
+"*  -u, --unified               produeix diffs unificats (per defecte 3 "
+"línies)\n"
 "*  -LÍNIES                     (obsoleta: selecciona la mida del context en\n"
 "                               línies\n"
 
@@ -377,12 +398,15 @@ msgstr ""
 "\n"
 "Format de costat a costat:\n"
 "*  -W, --width=COLUMNES          utilitza un ample de COLUMNES\n"
-"*  -y, --side-by-side            utilitza el format d'eixida de costat a costat\n"
-"*      --left-column             només mostra la columna esquerra quan és comú\n"
+"*  -y, --side-by-side            utilitza el format d'eixida de costat a "
+"costat\n"
+"*      --left-column             només mostra la columna esquerra quan és "
+"comú\n"
 "*      --sdiff-merge-assist      (utilitzat internament per «sdiff»)\n"
 "*      --suppress-common-lines   no mostra les línies comuns.\n"
 
 #: src/mdiff.c:3937
+#, c-format
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -393,16 +417,19 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
 "\n"
-"FORMAT es composa de caràcters que es representen per ells mateixos, excepte:\n"
+"FORMAT es composa de caràcters que es representen per ells mateixos, "
+"excepte:\n"
 "  %%%%            un simple %%\n"
 "  %%c'C'         el caràcter C entre cometes\n"
 "  %%c'\\O'        el caràcter que te valor O, de 1 a 3 dígits octals\n"
-"  %%(A=B?T:E)    si A és B aleshores T i si no E; A B són números o VARIABLE;\n"
+"  %%(A=B?T:E)    si A és B aleshores T i si no E; A B són números o "
+"VARIABLE;\n"
 "                 T i E són FORMAT\n"
 "  %%FN           utilitza l'especificació SPECIF F per a mostrar el valor N\n"
 "                 de VARIABLE\n"
@@ -463,20 +490,23 @@ msgstr ""
 "Opcions estàndar de diff:\n"
 "  -i, --ignore-case         considera iguals majúscules i minúscules\n"
 "  -w, --ignore-all-space    ignora els espais en blanc\n"
-"  -b, --ignore-space-change ignora els canvis en la quantitat de espai en blanc\n"
+"  -b, --ignore-space-change ignora els canvis en la quantitat de espai en "
+"blanc\n"
 "  -B, --ignore-blank-lines  ignora els canvis en línies totalment en blanc\n"
 "  -I. --ignore-matching-lines=ER ignora els canvis en línies que\n"
 "                                 coincideixen amb ER\n"
 "  -a, --text                tracta tots els fitxers com text\n"
 "  -c, --context[=NÚMERO]    produeix diffs contextuals normals,\n"
 "                            canviant a NÚMERO línies de context\n"
-"  -u, --unified[=NÚMERO]    produeix diffs contextuals unificats o unidiffs,\n"
+"  -u, --unified[=NÚMERO]    produeix diffs contextuals unificats o "
+"unidiffs,\n"
 "                            amb NÚMERO línies de context\n"
 "  -C, --context=NÚM         produeix NÚM línies de context copiat\n"
 "  -U, --unified=NÚM         produeix NÚM línies de context unificat\n"
 "  -L, --label=ETIQUETA      utilitza ETIQUETA en comptes del nom del fitxer\n"
 "  -p, --show-c-function     mostra en quina funció de C està cada canvi\n"
-"  -F, --show-function-line=ER mostra la línia més recent que coincideixe amb RE\n"
+"  -F, --show-function-line=ER mostra la línia més recent que coincideixe amb "
+"RE\n"
 
 #: src/mdiff.c:3986
 msgid ""
@@ -484,7 +514,8 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per "
+"line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -498,14 +529,18 @@ msgstr ""
 "  -e, --ed                  produeix un script ed\n"
 "  -n, --rcs                 produeix un diff en format RCS\n"
 "  -y, --side-by-side        mostra en dos columnes\n"
-"  -w, --width=NÚM           mostra com a molt NÚM (per defecte 130) caràcters                             per línia\n"
-"      --left-column         mostra només la columna esquerra dels fitxers comuns\n"
+"  -w, --width=NÚM           mostra com a molt NÚM (per defecte 130) "
+"caràcters                             per línia\n"
+"      --left-column         mostra només la columna esquerra dels fitxers "
+"comuns\n"
 "      --suppress-common-lines no mostra les línies comuns\n"
-"  -D, --ifdef=NOM           mostra un fitxer fusionat amb diffs «#ifdef NOM»\n"
+"  -D, --ifdef=NOM           mostra un fitxer fusionat amb diffs «#ifdef "
+"NOM»\n"
 "      --GTYPE-group-format=GFMT grups d'entrada GTYPE amb GFMT\n"
 "      --line-format=LFMT    totes les línies d'entrada amb LFMT\n"
 "      --LTYPE-line-format=LFMT línies d'entrada LTYPE amb LFMT\n"
-"  -l, --paginate            passa l'eixida a través de «pr» per a paginar-ho\n"
+"  -l, --paginate            passa l'eixida a través de «pr» per a paginar-"
+"ho\n"
 "  -t, --expand-tabs         expadeix les tabulacions a espais en l'eixida\n"
 
 #: src/mdiff.c:4001
@@ -520,12 +555,15 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small "
+"changes\n"
 msgstr ""
 "  -T, --initial-tab         alínia els tabs afegint un tab al principi\n"
-"  -r, --recursive           compara recursivament qualsevol directori trobats\n"
+"  -r, --recursive           compara recursivament qualsevol directori "
+"trobats\n"
 "  -N, --new-file            tracta els fitxers absents com buits\n"
-"  -P, --unidirectional-new-file tracta els fitxers primers absents com buits\n"
+"  -P, --unidirectional-new-file tracta els fitxers primers absents com "
+"buits\n"
 "  -s, --report-identical-files informa quan dos fitxers són el mateix\n"
 "  -x, --exclude=PAT         exclueix fitxers que coincideixen amb PAT\n"
 "  -X, --exclude-from=FITXER exclueix fitxers que coincideixen amb qualsevol\n"
@@ -615,10 +653,11 @@ msgstr ""
 "\n"
 "Sense FITXER, o quan FITXER és -, llig l'entrada estàndar.\n"
 
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#, fuzzy
 msgid ""
 "\n"
-"Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "\n"
 "Informeu d'errors a <wdiff-bugs@iro.umontreal.ca>.\n"
@@ -631,7 +670,7 @@ msgstr "No es pot fer servir -z, termcap no està disponible."
 msgid "Word merging for two files only (so far)"
 msgstr "Fusió de paraules per a dos fitxers només (de moment)"
 
-#: src/mdiff.c:4425
+#: src/mdiff.c:4425 src/wdiff2.c:129
 msgid ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
@@ -639,16 +678,17 @@ msgstr ""
 "\n"
 "Copyright © 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Aquest és programari lliure; vegeu el codi font per les condicions de còpia.\n"
+"Aquest és programari lliure; vegeu el codi font per les condicions de "
+"còpia.\n"
 "No hi ha CAP garantia; ni tan sols de COMERCIABILITAT o ADEQUACIÓ A UN\n"
 "PROPÒSIT PARTICULAR.\n"
 
-#: src/mdiff.c:4433 src/wdiff.c:1229
+#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -660,16 +700,17 @@ msgstr ""
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "Les opcions -123RSYZ només tenen sentit quan hi ha dos entrades"
 
-#: src/unify.c:142
+#: src/unify.c:143
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
 msgstr "No s'ha trobat un nom per a la diferència en la línia %ld"
 
-#: src/unify.c:275
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr "unify - Transforma diffs contextuals en diffs unificats, o viceversa.\n"
+msgstr ""
+"unify - Transforma diffs contextuals en diffs unificats, o viceversa.\n"
 
-#: src/unify.c:278
+#: src/unify.c:279
 #, c-format
 msgid ""
 "\n"
@@ -678,7 +719,7 @@ msgstr ""
 "\n"
 "Ús: %s [OPCIÓ]... [FITXER]\n"
 
-#: src/unify.c:281
+#: src/unify.c:282
 msgid ""
 "\n"
 "  -c, --context-diffs    force output to context diffs\n"
@@ -697,26 +738,28 @@ msgid ""
 msgstr ""
 "\n"
 "  -c, --context-diffs    força la producció de diffs contextuals\n"
-"  -e, --echo-comments    mostra els comentaris per la eixida d'error estàndar\n"
+"  -e, --echo-comments    mostra els comentaris per la eixida d'error "
+"estàndar\n"
 "  -o, --old-diffs        produeix diffs a l'estil vell, pase el que pase\n"
 "  -p, --patch-format     genera en format de pedaç\n"
 "  -P                     igual que -p\n"
 "  -s, --strip-comments   elimina les línies de comentaris\n"
 "  -u, --unidiffs         força la producció d'unidiffs\n"
-"  -=, --use-equals       reemplaça els espais per signes d'igualtat en unidiffs\n"
+"  -=, --use-equals       reemplaça els espais per signes d'igualtat en "
+"unidiffs\n"
 "      --help             mostra aquesta ajuda i eix\n"
 "      --version          mostra la informació sobre la versió i eix\n"
 
-#: src/unify.c:390
+#: src/unify.c:391
 #, c-format
 msgid "Unable to open `%s'"
 msgstr "No es pot obrir «%s»"
 
-#: src/unify.c:396
+#: src/unify.c:397
 msgid "Only one filename allowed"
 msgstr "Només es permet un nom de fitxer"
 
-#: src/unify.c:405
+#: src/unify.c:406
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -724,7 +767,7 @@ msgstr ""
 "\n"
 "Copyright © 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:413
+#: src/unify.c:414
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -732,32 +775,37 @@ msgstr ""
 "\n"
 "Escrit per Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:552
+#: src/unify.c:553
 #, c-format
 msgid "Invalid unified diff header at line %ld"
 msgstr "Capçalera de diff unificat errónia en la línia %ld"
 
-#: src/unify.c:594
+#: src/unify.c:595
 #, c-format
 msgid "Malformed unified diff at line %ld"
 msgstr "Diff unificat erroni en la línia %ld"
 
-#: src/unify.c:625
+#: src/unify.c:626
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
 msgstr "Diff contextuals sense capçalera «old» en la línia %ld"
 
-#: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
 #, c-format
 msgid "Malformed context diff at line %ld"
 msgstr "Diff contextual erroni en la línia %ld"
 
-#: src/unify.c:724
+#: src/unify.c:725
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
 msgstr "Diff contextual sense capçalera «new» en la línia %ld"
 
-#: src/wdiff.c:1090
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr ""
+
+#: src/wdiff.c:1145 src/wdiff2.c:108
+#, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -771,7 +819,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
 "Aquest és programari lliure; podeu redistribuir-lo i/o modificar-lo\n"
 "sota els termes de la Llicència Pública General GNU tal i com ha estat\n"
@@ -787,11 +835,12 @@ msgstr ""
 "Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,\n"
 "MA  02111, USA.\n"
 
-#: src/wdiff.c:1119
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr "wdiff - Compara paraules en dos fitxers i informa de les diferències.\n"
+msgstr ""
+"wdiff - Compara paraules en dos fitxers i informa de les diferències.\n"
 
-#: src/wdiff.c:1122
+#: src/wdiff.c:1177 src/wdiff2.c:185
 #, c-format
 msgid ""
 "\n"
@@ -800,13 +849,13 @@ msgstr ""
 "\n"
 "Ús: %s [OPCIÓ]... FITXER1 FITXER2\n"
 
-#: src/wdiff.c:1126
+#: src/wdiff.c:1181
+#, fuzzy, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
@@ -818,37 +867,48 @@ msgid ""
 "  -p, --printer              overstrike as for printers\n"
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 "  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"Els arguments obligatoris per a opcions llargues també són obligatores per a\n"
+"Els arguments obligatoris per a opcions llargues també són obligatores per "
+"a\n"
 "les opcions curtes.\n"
 "\n"
 "  -C, --copyright            mostra el copyright i eix\n"
-"  -K, --no-init-term         com -t, però sense cadenes d'inici/fi de termcap\n"
+"  -K, --no-init-term         com -t, però sense cadenes d'inici/fi de "
+"termcap\n"
 "  -V, --version              mostra la versió del programa i eix\n"
 "  -1, --no-deleted           no mostra les paraules esborrades\n"
 "  -2, --no-inserted          no mostra les paraules insertades\n"
 "  -3, --no-common            no mostra les paraules comuns\n"
 "  -a, --auto-pager           crida a un paginador automàticament\n"
 "  -h, --help                 mostra aquesta ajuda\n"
-"  -i, --ignore-case          no distingueix majúscules i minúscules al comparar\n"
+"  -i, --ignore-case          no distingueix majúscules i minúscules al "
+"comparar\n"
 "  -l, --less-mode            variació del mode d'impressió per a «less»\n"
 "  -n, --avoid-wraps          no extén camps més enllà del final de línia\n"
 "  -p, --printer              utilitza sobreimpressió com a les impresores\n"
 "  -s, --statistics           informa de quantes paraules borrades,\n"
 "                             insertades, etc.\n"
-"  -t, --terminal             utilitza termcap com per a mostrar per terminal\n"
+"  -t, --terminal             utilitza termcap com per a mostrar per "
+"terminal\n"
 "  -w, --start-delete=CADENA  cadena per a marcar el principi de la regió\n"
 "                             esborrada\n"
-"  -x, --end-delete=CADENA    cadena per a marcar el final de la regió esborrada\n"
+"  -x, --end-delete=CADENA    cadena per a marcar el final de la regió "
+"esborrada\n"
 "  -y, --start-insert=CADENA  cadena per a marcar el principi de la regió\n"
 "                             insertada\n"
-"  -z, --end-insert=CADENA    cadena per a marcar el final de la regió insertada\n"
+"  -z, --end-insert=CADENA    cadena per a marcar el final de la regió "
+"insertada\n"
 
-#: src/wdiff.c:1221
+#: src/wdiff.c:1317
+msgid "Cannot use -t, termcap not available."
+msgstr "No es pot fer servir -t, termcap no està disponible"
+
+#: src/wdiff.c:1322
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
@@ -856,10 +916,87 @@ msgstr ""
 "\n"
 "Copyright © 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1276
-msgid "Cannot use -t, termcap not available."
-msgstr "No es pot fer servir -t, termcap no està disponible"
-
-#: src/wdiff.c:1301
+#: src/wdiff.c:1358 src/wdiff2.c:325
 msgid "Missing file arguments"
 msgstr "Falten fitxers com arguments"
+
+#: src/wdiff2.c:181
+msgid ""
+"wdiff - Compute word differences by internally launching `mdiff -W'.\n"
+"This program exists mainly to support the now oldish `wdiff' syntax.\n"
+msgstr ""
+
+#: src/wdiff2.c:189
+#, fuzzy
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -q, --quiet                inhibit the `mdiff' call message\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Els arguments obligatoris per a opcions llargues també són obligatores per "
+"a\n"
+"les opcions curtes.\n"
+"\n"
+"  -C, --copyright            mostra el copyright i eix\n"
+"  -K, --no-init-term         com -t, però sense cadenes d'inici/fi de "
+"termcap\n"
+"  -V, --version              mostra la versió del programa i eix\n"
+"  -1, --no-deleted           no mostra les paraules esborrades\n"
+"  -2, --no-inserted          no mostra les paraules insertades\n"
+"  -3, --no-common            no mostra les paraules comuns\n"
+"  -a, --auto-pager           crida a un paginador automàticament\n"
+"  -h, --help                 mostra aquesta ajuda\n"
+"  -i, --ignore-case          no distingueix majúscules i minúscules al "
+"comparar\n"
+"  -l, --less-mode            variació del mode d'impressió per a «less»\n"
+"  -n, --avoid-wraps          no extén camps més enllà del final de línia\n"
+"  -p, --printer              utilitza sobreimpressió com a les impresores\n"
+"  -s, --statistics           informa de quantes paraules borrades,\n"
+"                             insertades, etc.\n"
+"  -t, --terminal             utilitza termcap com per a mostrar per "
+"terminal\n"
+"  -w, --start-delete=CADENA  cadena per a marcar el principi de la regió\n"
+"                             esborrada\n"
+"  -x, --end-delete=CADENA    cadena per a marcar el final de la regió "
+"esborrada\n"
+"  -y, --start-insert=CADENA  cadena per a marcar el principi de la regió\n"
+"                             insertada\n"
+"  -z, --end-insert=CADENA    cadena per a marcar el final de la regió "
+"insertada\n"
+
+#: src/wdiff2.c:212
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
+msgstr ""
+
+#: src/wdiff2.c:336
+#, fuzzy, c-format
+msgid "Launching `%s"
+msgstr "Llegint %s"
+
+#: lib/error.c:125
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/xalloc-die.c:35
+msgid "memory exhausted"
+msgstr ""

@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
-"POT-Creation-Date: 1999-07-05 20:35-0400\n"
+"Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
+"POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2001-06-18 10:26+02:00\n"
 "Last-Translator: Toomas Soome <tsoome@ut.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -18,11 +19,11 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (regulaaravaldisele `%s')"
 
-#: src/mdiff.c:917 src/wdiff.c:1329
+#: src/mdiff.c:917 src/wdiff.c:1386
 msgid "Only one file may be standard input."
 msgstr "Standardsisendiks saab olla ainult üks fail."
 
-#: src/mdiff.c:932 src/wdiff.c:592
+#: src/mdiff.c:932 src/wdiff.c:643
 msgid "Directories not supported"
 msgstr "Kataloogid pole lubatud"
 
@@ -42,18 +43,22 @@ msgid "Read summary: %d files, %d items\n"
 msgstr "Lugemise kokkuvõte: %d faili, %d elementi\n"
 
 #: src/mdiff.c:1671
+#, c-format
 msgid "Sorting"
 msgstr "Järjestan"
 
 #: src/mdiff.c:1688
+#, c-format
 msgid ", clustering"
 msgstr ", klasterdan"
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
+#, c-format
 msgid ", done\n"
 msgstr ", valmis\n"
 
 #: src/mdiff.c:1907
+#, c-format
 msgid "Sorting members"
 msgstr "Järjestan liikmeid"
 
@@ -67,41 +72,45 @@ msgstr "Töö kokkuvõte: %d klastrit, %d liiget\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Töö kokkuvõte: %d klastrit, %d liiget, %d kattuvat\n"
 
-#: src/mdiff.c:2372 src/wdiff.c:243
+#: src/mdiff.c:2372 src/wdiff.c:245
 msgid "Select a terminal through the TERM environment variable."
 msgstr "Kasutage terminali määramiseks keskkonnamuutujat TERM."
 
-#: src/mdiff.c:2375 src/wdiff.c:246
+#: src/mdiff.c:2375 src/wdiff.c:248
 msgid "Could not access the termcap data base."
 msgstr "Termcap andmebaasile pole juurdepääsu."
 
-#: src/mdiff.c:2377 src/wdiff.c:248
+#: src/mdiff.c:2377 src/wdiff.c:250
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "Terminali tüüp `%s' pole defineeritud."
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d sõna"
 
-#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
+#, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% ühiseid"
 
-#: src/mdiff.c:3759 src/wdiff.c:1060
+#: src/mdiff.c:3759 src/wdiff.c:1115
+#, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% kustutatud"
 
-#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
+#, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% muudetud"
 
-#: src/mdiff.c:3771 src/wdiff.c:1072
+#: src/mdiff.c:3771 src/wdiff.c:1127
+#, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% lisatud"
 
-#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Lisainfo saamiseks proovige `%s --help'.\n"
@@ -116,8 +125,12 @@ msgstr ""
 
 #: src/mdiff.c:3808
 #, c-format
-msgid "\nUsage: %s [OPTION]... [FILE]...\n"
-msgstr "\nKasuta: %s [VÕTI]... [FAIL]...\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]...\n"
+msgstr ""
+"\n"
+"Kasuta: %s [VÕTI]... [FAIL]...\n"
 
 #: src/mdiff.c:3812
 msgid ""
@@ -228,7 +241,8 @@ msgstr ""
 "*  -N, --new-file                  märgi puuduvad failid tühjadeks\n"
 "*  -P, --unidirectional-new-file   märgi puuduvad vanad failid tühjadeks\n"
 "*  -S, --starting-file=FAIL        jätka kataloogide võrdlemist FAILIST\n"
-"*  -X, --exclude-from=FAIL         ignoreeri faile vastavalt loetud mustritele\n"
+"*  -X, --exclude-from=FAIL         ignoreeri faile vastavalt loetud "
+"mustritele\n"
 "*  -r, --recursive                 võrdle katalooge rekursiivselt\n"
 "*  -s, --report-identical-files    teata, kui kaks faili on sama sisuga\n"
 "*  -x, --exclude=MUSTER            ignoreeri MUSTRILE vastavaid faile (kat)\n"
@@ -263,7 +277,8 @@ msgstr ""
 "Klasterdamine:\n"
 "  -G, --relist-files         esita kõik sisendfailid kommentaaridega\n"
 "  -J, --minimum-size=ELEM    ignoreeri väiksema mahuga elemente\n"
-"  -j, --ignore-delimiters    ära loenda ainult eraldajaid sisaldavaid elemente\n"
+"  -j, --ignore-delimiters    ära loenda ainult eraldajaid sisaldavaid "
+"elemente\n"
 
 #: src/mdiff.c:3887
 msgid ""
@@ -316,16 +331,20 @@ msgid ""
 msgstr ""
 "\n"
 "Kontekst ja unifitseeritud vormindus:\n"
-"*  -F, --show-function-line=REGEXP   näita eelmist REGEXP vastavat konteksti\n"
-"*  -p, --show-c-function             näita, millises C funktsioonis muutus on\n"
+"*  -F, --show-function-line=REGEXP   näita eelmist REGEXP vastavat "
+"konteksti\n"
+"*  -p, --show-c-function             näita, millises C funktsioonis muutus "
+"on\n"
 
 #: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name "
+"(twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -c, --context               output context diffs (default 3 context "
+"lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
@@ -334,7 +353,8 @@ msgstr ""
 "*  -L, --label=MÄRGEND         kasuta faili nime asemel MÄRGENDIT\n"
 "*  -U, --unified=RIDU          nagu -u, määra ka konteksti suurus\n"
 "*  -c, --context               väljasta konteksti erinevused (3 rida)\n"
-"*  -u, --unified               väljasta erinevused unidiff vorminduses (3 rida)\n"
+"*  -u, --unified               väljasta erinevused unidiff vorminduses (3 "
+"rida)\n"
 "*  -RIDU                       (aegunud: määra konteksti suurus ridades)\n"
 
 #: src/mdiff.c:3927
@@ -351,12 +371,14 @@ msgstr ""
 "Kõrvutiesitus:\n"
 "*  -W, --width=VEERGE            laius on VEERGE\n"
 "*  -y, --side-by-side            kasuta kõrvutiesitust\n"
-"*      --left-column             ühiste ridade korral väljasta vaid vasak veerg\n"
+"*      --left-column             ühiste ridade korral väljasta vaid vasak "
+"veerg\n"
 "\n"
 "*      --sdiff-merge-assist      (kasutatakse sisemiselt `sdiff' poolt)\n"
 "*      --suppress-common-lines   ära väljasta ühiseid ridu\n"
 
 #: src/mdiff.c:3937
+#, c-format
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -367,7 +389,8 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
@@ -376,9 +399,11 @@ msgstr ""
 "  %%%%           sümbol %%\n"
 "  %%c'C'        kvooditud sümbol C\n"
 "  %%c'\\O'       sümbol väärtusega O, 1 kuni 3 kaheksandnumbrit\n"
-"  %%(A=B?T:E)   kui A võrdub B siis T muidu E; A ja B on number või MUUTUJA;\n"
+"  %%(A=B?T:E)   kui A võrdub B siis T muidu E; A ja B on number või "
+"MUUTUJA;\n"
 "                T ja E on FORMAAT\n"
-"  %%FN          kasuta MUUTUJA väärtuse N väljastamiseks SPETSIF määrangut F\n"
+"  %%FN          kasuta MUUTUJA väärtuse N väljastamiseks SPETSIF määrangut "
+"F\n"
 "  %%<           [grupp] vana, iga rida kasutab --old-line-format\n"
 "  %%>           [grupp] uus, iga rida kasutab --new-line-format\n"
 "  %%=           [grupp] muutmata, iga rida kasutab --unchanged-line-format\n"
@@ -386,8 +411,12 @@ msgstr ""
 "  %%L           [rida] koos võimaliku reavahetusega\n"
 
 #: src/mdiff.c:3952
-msgid "\nSPECIF is [-][W[.D]]{doxX} as in C printf\n"
-msgstr "\nSPETSIF on [-][W[.D]]{doxX}, nagu C printf korral\n"
+msgid ""
+"\n"
+"SPECIF is [-][W[.D]]{doxX} as in C printf\n"
+msgstr ""
+"\n"
+"SPETSIF on [-][W[.D]]{doxX}, nagu C printf korral\n"
 
 #: src/mdiff.c:3957
 msgid ""
@@ -451,7 +480,8 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per "
+"line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -465,10 +495,12 @@ msgstr ""
 "  -e, --ed                  väljasta ed skript\n"
 "  -n, --rcs                 väljasta erinevused RCS vorminduses\n"
 "  -y, --side-by-side        väljasta kahes veerus\n"
-"  -w, --width=NUM           väljasta maks. NUM (vaikimisi 130) sümbolit reale\n"
+"  -w, --width=NUM           väljasta maks. NUM (vaikimisi 130) sümbolit "
+"reale\n"
 "      --left-column         väljasta ühine rida ainult vasakusse veergu\n"
 "      --suppress-common-lines ära väljasta ühiseid ridu\n"
-"  -D, --ifdef=NIMI          väljasta mestitud fail `#ifdef NIMI' vorminduses\n"
+"  -D, --ifdef=NIMI          väljasta mestitud fail `#ifdef NIMI' "
+"vorminduses\n"
 "      --GTYPE-group-format=GFMT GTYPE sisendi grupid formaadiga GFMT\n"
 "      --line-format=LFMT    kõik sisendi read formaadiga LFMT\n"
 "      --LTYPE-line-format=LFMT LTYPE sisendi read formaadiga LFMT\n"
@@ -487,7 +519,8 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small "
+"changes\n"
 msgstr ""
 "  -T, --initial-tab         lisa rea algusse tabulaator\n"
 "  -r, --recursive           võrdle katalooge rekursiivselt\n"
@@ -502,8 +535,12 @@ msgstr ""
 "  -H, --speed-large-files   tööta paljude muutuste korral kiiremini\n"
 
 #: src/mdiff.c:4016
-msgid "\nBy default, context diffs have an horizon of two lines.\n"
-msgstr "\nVaikimisi on konteksti erinevustega lisatud kaks rida konteksti.\n"
+msgid ""
+"\n"
+"By default, context diffs have an horizon of two lines.\n"
+msgstr ""
+"\n"
+"Vaikimisi on konteksti erinevustega lisatud kaks rida konteksti.\n"
 
 #: src/mdiff.c:4022
 msgid ""
@@ -563,15 +600,25 @@ msgid ""
 msgstr ""
 "\n"
 "Vana mdiff võtmed:\n"
-"*  -f, --fuzz-items=ELEM      mitte rohkem kui ELEM mittesobivat klastri elementi\n"
+"*  -f, --fuzz-items=ELEM      mitte rohkem kui ELEM mittesobivat klastri "
+"elementi\n"
 
 #: src/mdiff.c:4055
-msgid "\nWith no FILE, or when FILE is -, read standard input.\n"
-msgstr "\nKui FAIL puudub või on -, loen standardsisendit.\n"
+msgid ""
+"\n"
+"With no FILE, or when FILE is -, read standard input.\n"
+msgstr ""
+"\n"
+"Kui FAIL puudub või on -, loen standardsisendit.\n"
 
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
-msgid "\nReport bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
-msgstr "\nVigadest teatage aadressil <wdiff-bugs@iro.umontreal.ca>.\n"
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#, fuzzy
+msgid ""
+"\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
+msgstr ""
+"\n"
+"Vigadest teatage aadressil <wdiff-bugs@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4370
 msgid "Cannot use -z, termcap not available."
@@ -581,11 +628,15 @@ msgstr "Võtit -z ei saa kasutada, termcap faili pole."
 msgid "Word merging for two files only (so far)"
 msgstr "Sõnade mestimist saab kasutada (veel) ainult kahe faili korral"
 
-#: src/mdiff.c:4425
-msgid "\nCopyright (C) 1997 Free Software Foundation, Inc.\n"
-msgstr "\nAutoriõigus (C) 1997 Free Software Foundation, Inc.\n"
+#: src/mdiff.c:4425 src/wdiff2.c:129
+msgid ""
+"\n"
+"Copyright (C) 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Autoriõigus (C) 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -595,29 +646,38 @@ msgstr ""
 "väljendatud garantiid TURUVÄÄRTUSELE või KINDLA EESMÄRGIGA \n"
 "KASUTAMISE sobivusele.\n"
 
-#: src/mdiff.c:4433 src/wdiff.c:1229
-msgid "\nWritten by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
-msgstr "\nKirjutanud François Pinard <pinard@iro.umontreal.ca>.\n"
+#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
+msgid ""
+"\n"
+"Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+msgstr ""
+"\n"
+"Kirjutanud François Pinard <pinard@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4469
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "Võtmeid -123RSYZ saab kasutada ainult kahe sisendfaili olemasolul."
 
-#: src/unify.c:142
+#: src/unify.c:143
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
 msgstr "Erinevustel real %ld pole nime"
 
-#: src/unify.c:275
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr "unify - Teisendab konteksti erinevused unidiff esitusse või vastupidi.\n"
+msgstr ""
+"unify - Teisendab konteksti erinevused unidiff esitusse või vastupidi.\n"
 
-#: src/unify.c:278
+#: src/unify.c:279
 #, c-format
-msgid "\nUsage: %s [OPTION]... [FILE]\n"
-msgstr "\nKasuta: %s [VÕTI]... FAIL...\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]\n"
+msgstr ""
+"\n"
+"Kasuta: %s [VÕTI]... FAIL...\n"
 
-#: src/unify.c:281
+#: src/unify.c:282
 msgid ""
 "\n"
 "  -c, --context-diffs    force output to context diffs\n"
@@ -649,49 +709,62 @@ msgstr ""
 "\n"
 "Kui faili ei antud, loe standardsisendit.\n"
 
-#: src/unify.c:390
+#: src/unify.c:391
 #, c-format
 msgid "Unable to open `%s'"
 msgstr "`%s' ei saa avada"
 
-#: src/unify.c:396
+#: src/unify.c:397
 msgid "Only one filename allowed"
 msgstr "Lubatud on ainult üks failinimi"
 
-#: src/unify.c:405
-msgid "\nCopyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
-msgstr "\nAutoriõigus (C) 1994, 1997 Free Software Foundation, Inc.\n"
+#: src/unify.c:406
+msgid ""
+"\n"
+"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Autoriõigus (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:413
-msgid "\nWritten by Wayne Davison <davison@borland.com>.\n"
-msgstr "\nKirjutanud Wayne Davison <davison@borland.com>.\n"
+#: src/unify.c:414
+msgid ""
+"\n"
+"Written by Wayne Davison <davison@borland.com>.\n"
+msgstr ""
+"\n"
+"Kirjutanud Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:552
+#: src/unify.c:553
 #, c-format
 msgid "Invalid unified diff header at line %ld"
 msgstr "Vigane unifitseeritud erinevuse päis real %ld"
 
-#: src/unify.c:594
+#: src/unify.c:595
 #, c-format
 msgid "Malformed unified diff at line %ld"
 msgstr "Vigane unifitseeritud erinevus real %ld"
 
-#: src/unify.c:625
+#: src/unify.c:626
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
 msgstr "Real %ld puudub konteksti erinevuse `vana' päis"
 
-#: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
 #, c-format
 msgid "Malformed context diff at line %ld"
 msgstr "Vigane konteksti erinevus real %ld"
 
-#: src/unify.c:724
+#: src/unify.c:725
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
 msgstr "Real %ld puudub konteksti erinevuse `uus' päis"
 
-#: src/wdiff.c:1090
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr ""
+
+#: src/wdiff.c:1145 src/wdiff2.c:108
+#, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -705,7 +778,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
 "See programm on vaba tarkvara; seda võib levitada või modifitseerida\n"
 "vastavalt Free Sofrtware Foundation poolt avaldatud GNU üldise avaliku\n"
@@ -714,29 +787,34 @@ msgstr ""
 "\n"
 "Seda programmi levitatakse lootuses et see on kasutatav, ILMA IGASUGUSE\n"
 "garantiita;isegi ilma mõtteliselt väljendatud garantiita TURUVÄÄRTUSELE või\n"
-"SOBIVUSELE KINDLAKS EESMÄRGIKS. Detailide suhtes vaadake GNU üldist avalikku\n"
+"SOBIVUSELE KINDLAKS EESMÄRGIKS. Detailide suhtes vaadake GNU üldist "
+"avalikku\n"
 "litsentsi.\n"
 "\n"
 "Te peaksite saama selle programmiga koos ka GNU üldise avaliku litsensi\n"
 "koopia; kui ei, kirjutage palun aadressil Free Software Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1119
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Võrdleb sõnu kahes failis ja teatab erinevustest.\n"
 
-#: src/wdiff.c:1122
+#: src/wdiff.c:1177 src/wdiff2.c:185
 #, c-format
-msgid "\nUsage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "\nKasutage: %s [VÕTI]... FAIL1 FAIL2\n"
+msgid ""
+"\n"
+"Usage: %s [OPTION]... FILE1 FILE2\n"
+msgstr ""
+"\n"
+"Kasutage: %s [VÕTI]... FAIL1 FAIL2\n"
 
-#: src/wdiff.c:1126
+#: src/wdiff.c:1181
+#, fuzzy, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
@@ -748,6 +826,7 @@ msgid ""
 "  -p, --printer              overstrike as for printers\n"
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 "  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
@@ -774,14 +853,89 @@ msgstr ""
 "  -y, --start-insert=SÕNE    lisamisregiooni alguse marker\n"
 "  -z, --end-insert=SÕNE      lisamisregiooni lõpu marker\n"
 
-#: src/wdiff.c:1221
-msgid "\nCopyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
-msgstr "\nAutoriõigus (C) 1992, 1997 Free Software Foundation, Inc.\n"
-
-#: src/wdiff.c:1276
+#: src/wdiff.c:1317
 msgid "Cannot use -t, termcap not available."
 msgstr "Võtit -t ei saa kasutada, termcap faili pole."
 
-#: src/wdiff.c:1301
+#: src/wdiff.c:1322
+msgid ""
+"\n"
+"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Autoriõigus (C) 1992, 1997 Free Software Foundation, Inc.\n"
+
+#: src/wdiff.c:1358 src/wdiff2.c:325
 msgid "Missing file arguments"
 msgstr "Argumentides puuduvad failid"
+
+#: src/wdiff2.c:181
+msgid ""
+"wdiff - Compute word differences by internally launching `mdiff -W'.\n"
+"This program exists mainly to support the now oldish `wdiff' syntax.\n"
+msgstr ""
+
+#: src/wdiff2.c:189
+#, fuzzy
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -q, --quiet                inhibit the `mdiff' call message\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Kohustuslikud argumendid pikkadel võtmetel on kohustuslikud ka lühikestel.\n"
+"\n"
+"  -C, --copyright            esita autoriõigused ja lõpeta töö\n"
+"  -K, --no-init-term         nagu -t, aga termcap init/term sõnedeta\n"
+"  -V, --version              esita versiooniinfo ja lõpeta töö\n"
+"  -1, --no-deleted           ära väljasta kustutatud sõnu\n"
+"  -2, --no-inserted          ära väljasta lisatud sõnu\n"
+"  -3, --no-common            ära väljasta ühiseid sõnu\n"
+"  -a, --auto-pager           kasuta automaatselt lehitsejat\n"
+"  -h, --help                 esita see abiinfo\n"
+"  -i, --ignore-case          võrdle tõstutundetult\n"
+"  -l, --less-mode            kasuta \"less\" moodi\n"
+"  -n, --avoid-wraps          ära kasuta mitmerealisi välju\n"
+"  -p, --printer              ülekirjutamine nagu trükkalites\n"
+"  -s, --statistics           esita töö statistikat\n"
+"  -t, --terminal             kasuta termcap terminali infot\n"
+"  -w, --start-delete=SÕNE    kustutamisregiooni alguse marker\n"
+"  -x, --end-delete=SÕNE      kustutamisregiooni lõpu marker\n"
+"  -y, --start-insert=SÕNE    lisamisregiooni alguse marker\n"
+"  -z, --end-insert=SÕNE      lisamisregiooni lõpu marker\n"
+
+#: src/wdiff2.c:212
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
+msgstr ""
+
+#: src/wdiff2.c:336
+#, fuzzy, c-format
+msgid "Launching `%s"
+msgstr "Loen %s"
+
+#: lib/error.c:125
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/xalloc-die.c:35
+msgid "memory exhausted"
+msgstr ""

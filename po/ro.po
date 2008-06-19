@@ -8,7 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
-"POT-Creation-Date: 1999-07-05 20:35-0400\n"
+"Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
+"POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2003-04-25 18:00-0500\n"
 "Last-Translator: Laurentiu Buzdugan <buzdugan@voyager.net>\n"
 "Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
@@ -22,11 +23,11 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (pentru regexp `%s')"
 
-#: src/mdiff.c:917 src/wdiff.c:1329
+#: src/mdiff.c:917 src/wdiff.c:1386
 msgid "Only one file may be standard input."
 msgstr "Un singur fiºier poate fi intrare standard."
 
-#: src/mdiff.c:932 src/wdiff.c:592
+#: src/mdiff.c:932 src/wdiff.c:643
 msgid "Directories not supported"
 msgstr "Directoarele nu sunt suportate"
 
@@ -46,18 +47,22 @@ msgid "Read summary: %d files, %d items\n"
 msgstr "Rezumat citire: %d fiºiere, %d elemente\n"
 
 #: src/mdiff.c:1671
+#, c-format
 msgid "Sorting"
 msgstr "Sortez"
 
 #: src/mdiff.c:1688
+#, c-format
 msgid ", clustering"
 msgstr ", clustering"
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
+#, c-format
 msgid ", done\n"
 msgstr ", terminat\n"
 
 #: src/mdiff.c:1907
+#, c-format
 msgid "Sorting members"
 msgstr "Membrii sortare"
 
@@ -71,41 +76,45 @@ msgstr "Rezumat lucru: %d clustere, %d membrii\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Rezumat lucru: %d clustere, %d membrii, %d suprapuneri\n"
 
-#: src/mdiff.c:2372 src/wdiff.c:243
+#: src/mdiff.c:2372 src/wdiff.c:245
 msgid "Select a terminal through the TERM environment variable."
 msgstr "Selectaþi un terminal setând variabila de mediu TERM."
 
-#: src/mdiff.c:2375 src/wdiff.c:246
+#: src/mdiff.c:2375 src/wdiff.c:248
 msgid "Could not access the termcap data base."
 msgstr "Nu pot accesa baza de date termcap."
 
-#: src/mdiff.c:2377 src/wdiff.c:248
+#: src/mdiff.c:2377 src/wdiff.c:250
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "Tipul de terminal `%s' nu este definit."
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d cuvinte"
 
-#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
+#, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% comune"
 
-#: src/mdiff.c:3759 src/wdiff.c:1060
+#: src/mdiff.c:3759 src/wdiff.c:1115
+#, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% ºterse"
 
-#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
+#, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% schimbate"
 
-#: src/mdiff.c:3771 src/wdiff.c:1072
+#: src/mdiff.c:3771 src/wdiff.c:1127
+#, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% inserate"
 
-#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Încercaþi `%s --help' pentru informaþii suplimentare.\n"
@@ -114,7 +123,9 @@ msgstr "Încercaþi `%s --help' pentru informaþii suplimentare.\n"
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
-msgstr "mdiff - Studiazã multiple fiºiere ºi cautã pentru secvenþe similare, iar apoi produce liste detaliate cu diferenþele ºi similaritãþile.\n"
+msgstr ""
+"mdiff - Studiazã multiple fiºiere ºi cautã pentru secvenþe similare, iar "
+"apoi produce liste detaliate cu diferenþele ºi similaritãþile.\n"
 
 #: src/mdiff.c:3808
 #, c-format
@@ -156,7 +167,8 @@ msgstr ""
 "  -T, --initial-tab       pune TAB în loc de spaþiul iniþial\n"
 "  -l, --paginate          pagineazã ieºirea prin `pr'\n"
 "  -S, --string[=STRING]   observã un alt ªIR definit de utilizator\n"
-"  -V, --show-links        aratã referinþe despre fiºier ºi linie în adnotãri\n"
+"  -V, --show-links        aratã referinþe despre fiºier ºi linie în "
+"adnotãri\n"
 "  -t, --expand-tabs       expandeazã tab-urile ca spaþii în ieºire\n"
 
 #: src/mdiff.c:3828
@@ -192,7 +204,8 @@ msgstr ""
 "  -3, --no-common             nu afiºa cuvintele comune\n"
 "  -A, --auto-pager            cheamã automat un paginator\n"
 "  -k, --less-mode             variaþia modului imprimantã pentru \"less\"\n"
-"  -m, --avoid-wraps           nu extinde câmpurile prin caractere linie nouã\n"
+"  -m, --avoid-wraps           nu extinde câmpurile prin caractere linie "
+"nouã\n"
 "  -o, --printer               suprascrie ca pentru imprimantã\n"
 "  -z, --terminal              foloseºte termcap ca pentru display terminal\n"
 "  -K, --no-init-term          ca ºi -z, dar nici un ºir termcap init/term\n"
@@ -211,10 +224,14 @@ msgid ""
 msgstr ""
 "\n"
 "Comparing files:\n"
-"*  -H, --speed-large-files     mai repede, pentru când sunt necesare numeroase mici schimbãri\n"
-"*  -a, --text                  reporteazã diferenþe pe linii (implicit pentru fiºiere text)\n"
-"*  -d, --minimal               încearcã mai temeinic pentru un set mai mic de diferenþe\n"
-"*  -q, --brief                 spune numai dacã fiºierere diferã (implicit pentru fiºiere binare)\n"
+"*  -H, --speed-large-files     mai repede, pentru când sunt necesare "
+"numeroase mici schimbãri\n"
+"*  -a, --text                  reporteazã diferenþe pe linii (implicit "
+"pentru fiºiere text)\n"
+"*  -d, --minimal               încearcã mai temeinic pentru un set mai mic "
+"de diferenþe\n"
+"*  -q, --brief                 spune numai dacã fiºierere diferã (implicit "
+"pentru fiºiere binare)\n"
 "*      --horizon-lines=LINII   pãstrazã LINII în prefixe/sufixe comune\n"
 
 #: src/mdiff.c:3859
@@ -233,11 +250,15 @@ msgstr ""
 "Comparare directoare:\n"
 "*  -N, --new-file                 considerã fiºierele lipsã ca fiind goale\n"
 "*  -P, --unidirectional-new-file  considerã fiºierele vechi ca fiind goale\n"
-"*  -S, --starting-file=FIªIER     reîncepe comparaþia directoarelor cu FIªIER\n"
-"*  -X, --exclude-from=FIªIER      ignorã fiºiere ce se potrivesc cu tiparele gãsite în FIªIER\n"
+"*  -S, --starting-file=FIªIER     reîncepe comparaþia directoarelor cu "
+"FIªIER\n"
+"*  -X, --exclude-from=FIªIER      ignorã fiºiere ce se potrivesc cu tiparele "
+"gãsite în FIªIER\n"
 "*  -r, --recursive                comparã directoarele recursiv\n"
-"*  -s, --report-identical-files   reporteazã când douã fiºiere sunt identice\n"
-"*  -x, --exclude=TIPAR            ignore fiºiere (directoare) ce potrivesc TIPAR\n"
+"*  -s, --report-identical-files   reporteazã când douã fiºiere sunt "
+"identice\n"
+"*  -x, --exclude=TIPAR            ignore fiºiere (directoare) ce potrivesc "
+"TIPAR\n"
 
 #: src/mdiff.c:3871
 msgid ""
@@ -288,13 +309,20 @@ msgstr ""
 "\n"
 "Formate de ieºire detaliate:\n"
 "*  -D, --ifdef=NAME                      afiºeazã format `#ifdef NAME'\n"
-"*      --changed-group-format=FORMAT     foloseºte FORMAT pentru linii schimbate\n"
-"*      --new-group-format=FORMAT         foloseºte FORMAT pentru linii inserate\n"
-"*      --new-line-format=FORMAT          foloseºte FORMAT pentru linii inserate\n"
-"*      --old-group-format=FORMAT         foloseºte FORMAT pentru linii ºterse\n"
-"*      --old-line-format=FORMAT          foloseºte FORMAT pentru linii ºterse\n"
-"*      --unchanged-group-format=FORMAT   foloseºte FORMAT pentru linii neschimbate\n"
-"*      --unchanged-line-format=FORMAT    foloseºte FORMAT pentru linii neschimbate\n"
+"*      --changed-group-format=FORMAT     foloseºte FORMAT pentru linii "
+"schimbate\n"
+"*      --new-group-format=FORMAT         foloseºte FORMAT pentru linii "
+"inserate\n"
+"*      --new-line-format=FORMAT          foloseºte FORMAT pentru linii "
+"inserate\n"
+"*      --old-group-format=FORMAT         foloseºte FORMAT pentru linii "
+"ºterse\n"
+"*      --old-line-format=FORMAT          foloseºte FORMAT pentru linii "
+"ºterse\n"
+"*      --unchanged-group-format=FORMAT   foloseºte FORMAT pentru linii "
+"neschimbate\n"
+"*      --unchanged-line-format=FORMAT    foloseºte FORMAT pentru linii "
+"neschimbate\n"
 "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 
 #: src/mdiff.c:3901
@@ -322,26 +350,34 @@ msgid ""
 msgstr ""
 "\n"
 "Formate context ºi unificate:\n"
-"*  -F, --show-function-line=REGEXP   aratã contextul precedent ce potriveºte REGEXP\n"
-"*  -p, --show-c-function             aratã care funcþie C pentru fiecare schimbare\n"
+"*  -F, --show-function-line=REGEXP   aratã contextul precedent ce potriveºte "
+"REGEXP\n"
+"*  -p, --show-c-function             aratã care funcþie C pentru fiecare "
+"schimbare\n"
 
 #: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name "
+"(twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -c, --context               output context diffs (default 3 context "
+"lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
 "\n"
 "*  -C, --context=LINII         ca -c, selecteazã numãr linii context\n"
-"*  -L, --label=ETICHETÃ        foloseºte din/cãtre ETICHETÃ în loc de nume fiºier (de douã ori)\n"
+"*  -L, --label=ETICHETÃ        foloseºte din/cãtre ETICHETÃ în loc de nume "
+"fiºier (de douã ori)\n"
 "*  -U, --unified=LINII         ca -u, selecteazã numãr linii context\n"
-"*  -c, --context               aratã diferenþele în context (implicit 3linii de context\n"
-"*  -u, --unified               afiºeazã unidiffs (implicit 3 linii de context)\n"
-"*  -LINII                      (vechi: selecteazã numãr de linii de context)\n"
+"*  -c, --context               aratã diferenþele în context (implicit 3linii "
+"de context\n"
+"*  -u, --unified               afiºeazã unidiffs (implicit 3 linii de "
+"context)\n"
+"*  -LINII                      (vechi: selecteazã numãr de linii de "
+"context)\n"
 
 #: src/mdiff.c:3927
 msgid ""
@@ -357,11 +393,13 @@ msgstr ""
 "Format unul lângã altul:\n"
 "*  -W, --width=COLOANE           foloseºte numãr COLOANE\n"
 "*  -y, --side-by-side            foloseºte format ieºire unul lângã altul\n"
-"*      --left-column             afiºeazã numai linia pe coloana din stânga când sunt identice\n"
+"*      --left-column             afiºeazã numai linia pe coloana din stânga "
+"când sunt identice\n"
 "*      --sdiff-merge-assist      (folosit intern de `sdiff')\n"
 "*      --suppress-common-lines   nu afiºa liniile identice\n"
 
 #: src/mdiff.c:3937
+#, c-format
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -372,7 +410,8 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
@@ -381,8 +420,10 @@ msgstr ""
 "  %%%%           un singur %%\n"
 "  %%c'C'        caracterul C în ghilimele\n"
 "  %%c'\\O'       caracter având valoarea O, de la 1 la 3 cifre în octal\n"
-"  %%(A=B?T:E)   dacã A este B atunci T altfel E; A B numãr VARIABILE; T E FORMAT\n"
-"  %%FN          foloseºte specificaþia SPECIF F pentru a afiºa valoarea VARIABILEI N\n"
+"  %%(A=B?T:E)   dacã A este B atunci T altfel E; A B numãr VARIABILE; T E "
+"FORMAT\n"
+"  %%FN          foloseºte specificaþia SPECIF F pentru a afiºa valoarea "
+"VARIABILEI N\n"
 "  %%<           [grup] vechi, fiecare linie prin --old-line-format\n"
 "  %%>           [grup] nou, fiecare linie prin --new-line-format\n"
 "  %%=           [grup] neschimbat, fiecare prin --unchanged-line-format\n"
@@ -441,7 +482,8 @@ msgstr ""
 "  -w, --ignore-all-space    ignorã toate spaþiile albe\n"
 "  -b, --ignore-space-change ignore schimbãrile în numãrul spaþiilor albe\n"
 "  -B, --ignore-blank-lines  ignorã schimbãrile a cãror linii sunt goale\n"
-"  -I, --ignore-matching-lines=ER ignorã schimbãrile a cãror linii se potrivesc cu ER (expresie regularã)\n"
+"  -I, --ignore-matching-lines=ER ignorã schimbãrile a cãror linii se "
+"potrivesc cu ER (expresie regularã)\n"
 "  -a, --text                trateazã toate fiºierele ca text\n"
 "  -c, --context[=NUMÃR]     ieºire context diff regular,\n"
 "                            schimbã numãrul liniilor context ca NUMÃR\n"
@@ -451,7 +493,8 @@ msgstr ""
 "  -U, --unified=NUM         ieºire NUM linii de context unificat\n"
 "  -L, --label=ETICHETÃ      foloseºte ETICHETÃ în loc de nume fiºier\n"
 "  -p, --show-c-function     aratã în ce funcþie C este schimbarea\n"
-"  -F, --show-function-line=ER aratã cea mai recentã linia ce se potriveºte cu ER\n"
+"  -F, --show-function-line=ER aratã cea mai recentã linia ce se potriveºte "
+"cu ER\n"
 
 #: src/mdiff.c:3986
 msgid ""
@@ -459,7 +502,8 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per "
+"line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -473,10 +517,13 @@ msgstr ""
 "  -e, --ed                  ieºire un script ed\n"
 "  -n, --rcs                 ieºire un diff în format RCS\n"
 "  -y, --side-by-side        ieºire pe douã coloane\n"
-"  -w, --width=NUM           ieºire de cel mult NUM (implicit 130) caractere pe linie\n"
-"      --left-column         afiºeazã numai coloana din stânga pentru linii identice\n"
+"  -w, --width=NUM           ieºire de cel mult NUM (implicit 130) caractere "
+"pe linie\n"
+"      --left-column         afiºeazã numai coloana din stânga pentru linii "
+"identice\n"
 "      --suppress-common-lines nu afiºa liniile comune\n"
-"  -D, --ifdef=NUME          afiºeazã fiºierul combinat pentru a arãta differenþele `#ifdef NAME'\n"
+"  -D, --ifdef=NUME          afiºeazã fiºierul combinat pentru a arãta "
+"differenþele `#ifdef NAME'\n"
 "      --GTYPE-group-format=GFMT GTYPE grupuri intrare cu GFMT\n"
 "      --line-format=LFMT    toale liniile de intrare cu LFMT\n"
 "      --LTYPE-line-format=LFMT LTYPE linii intrare cu LFMT\n"
@@ -495,7 +542,8 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small "
+"changes\n"
 msgstr ""
 "  -T, --initial-tab         aliniazã tab-urile prefixând cu un tab\n"
 "  -r, --recursive           comparã recursiv orice subdirectoare gãsite\n"
@@ -503,11 +551,15 @@ msgstr ""
 "  -P, --unidirectional-new-file trateazã fiºierele absente ca goale\n"
 "  -s, --report-identical-files reporteazã când douã fiºiere sunt identice\n"
 "  -x, --exclude=TIPAR         exclude fiºierele care se potrivesc cu TIPAR\n"
-"  -X, --exclude-from=FIªIER exclude fiºiere ce se potrivesc cu tiparele specificate în FIªIER\n"
+"  -X, --exclude-from=FIªIER exclude fiºiere ce se potrivesc cu tiparele "
+"specificate în FIªIER\n"
 "  -S, --starting-file=FIªIER începe cu FIªIER când compari directoare\n"
-"      --horizon-lines=NUM   pãstreazã NUM linii ale prefixelor ºi sufixelor comune\n"
-"  -d, --minimal             încearcã din greu sã gãseºti un set mai mic de diferenþe\n"
-"  -H, --speed-large-files   presupune fiºiere mari ºi multe schimbãri mici ºi împrãºtiate\n"
+"      --horizon-lines=NUM   pãstreazã NUM linii ale prefixelor ºi sufixelor "
+"comune\n"
+"  -d, --minimal             încearcã din greu sã gãseºti un set mai mic de "
+"diferenþe\n"
+"  -H, --speed-large-files   presupune fiºiere mari ºi multe schimbãri mici "
+"ºi împrãºtiate\n"
 
 #: src/mdiff.c:4016
 msgid ""
@@ -561,7 +613,8 @@ msgstr ""
 "LFMT poate conþine:\n"
 "  %L  conþinutul liniei\n"
 "  %l  conþinutul liniei, fãrã eventualul caracter linie_nouã\n"
-"  %[-][LÃÞIME][.[PREC]]{doxX}n  specificaþie gen printf pentru numãrul liniei de intrare\n"
+"  %[-][LÃÞIME][.[PREC]]{doxX}n  specificaþie gen printf pentru numãrul "
+"liniei de intrare\n"
 "Fie GFMT fie LFMT poate conþine:\n"
 "  %%  %\n"
 "  %c'C'  caracterul C\n"
@@ -575,7 +628,8 @@ msgid ""
 msgstr ""
 "\n"
 "Opþiuni mdiff vechi:\n"
-"*  -f, --fuzz-items=ELEM     nu mai mult de ELEM ce nu se potrivesc într-un cluster\n"
+"*  -f, --fuzz-items=ELEM     nu mai mult de ELEM ce nu se potrivesc într-un "
+"cluster\n"
 
 #: src/mdiff.c:4055
 msgid ""
@@ -585,10 +639,11 @@ msgstr ""
 "\n"
 "Farã FIªIER, sau când FIªIER este -, citeºte intrarea standard.\n"
 
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#, fuzzy
 msgid ""
 "\n"
-"Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "\n"
 "Raportaþi bug-uri la <wdiff-bugs@iro.umontreal.ca>.\n"
@@ -601,7 +656,7 @@ msgstr "Nu se poate folosi -z, termcap nu este disponibil."
 msgid "Word merging for two files only (so far)"
 msgstr "Cuvinte combinate pentru douã doar douã fiºiere (pânã acum)"
 
-#: src/mdiff.c:4425
+#: src/mdiff.c:4425 src/wdiff2.c:129
 msgid ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
@@ -609,16 +664,17 @@ msgstr ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Acesta este software liber; vedeþi codul sursã pentru condiþii despre copiere.\n"
+"Acesta este software liber; vedeþi codul sursã pentru condiþii despre "
+"copiere.\n"
 "Nu existã nici o garanþie; nici chiar pentru VANDABILITATE sau POTRIVIRE\n"
 "PENTRU UN SCOP ANUME.\n"
 
-#: src/mdiff.c:4433 src/wdiff.c:1229
+#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -630,16 +686,16 @@ msgstr ""
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "Opþiunile -123RSYZ au sens numai când sunt douã intrãri"
 
-#: src/unify.c:142
+#: src/unify.c:143
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
 msgstr "Nu am putut gãsi un nume pentru diff la linia %ld"
 
-#: src/unify.c:275
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unificã - Transformã contextele diff în unidiff, sau vice-versa.\n"
 
-#: src/unify.c:278
+#: src/unify.c:279
 #, c-format
 msgid ""
 "\n"
@@ -648,7 +704,7 @@ msgstr ""
 "\n"
 "Folosire: %s [OPÞIUNE]... FIªIER\n"
 
-#: src/unify.c:281
+#: src/unify.c:282
 msgid ""
 "\n"
 "  -c, --context-diffs    force output to context diffs\n"
@@ -680,16 +736,16 @@ msgstr ""
 "\n"
 "Dacã FIªIER nu este specificat, citeºte intrarea standard.\n"
 
-#: src/unify.c:390
+#: src/unify.c:391
 #, c-format
 msgid "Unable to open `%s'"
 msgstr "Nu pot deschide `%s'"
 
-#: src/unify.c:396
+#: src/unify.c:397
 msgid "Only one filename allowed"
 msgstr "Un singur nume de fiºier permis"
 
-#: src/unify.c:405
+#: src/unify.c:406
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -697,7 +753,7 @@ msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:413
+#: src/unify.c:414
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -705,32 +761,37 @@ msgstr ""
 "\n"
 "Scris de Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:552
+#: src/unify.c:553
 #, c-format
 msgid "Invalid unified diff header at line %ld"
 msgstr "Header diff unificat invalid la linia %ld"
 
-#: src/unify.c:594
+#: src/unify.c:595
 #, c-format
 msgid "Malformed unified diff at line %ld"
 msgstr "Diff unificat malformat la linia %ld"
 
-#: src/unify.c:625
+#: src/unify.c:626
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
 msgstr "Contextului diff îi lipseºte `vechiul' header la linia %ld"
 
-#: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
 #, c-format
 msgid "Malformed context diff at line %ld"
 msgstr "Context diff malformat la linia %ld"
 
-#: src/unify.c:724
+#: src/unify.c:725
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
 msgstr "Contextului diff îi lipseºte `noul' header la linia %ld"
 
-#: src/wdiff.c:1090
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr ""
+
+#: src/wdiff.c:1145 src/wdiff2.c:108
+#, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -744,7 +805,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
 "Acesta program este software liber; îl puteþi redistribui ºi/sau modifica\n"
 "conform termenilor Licenþei Publice Generale GNU în forma publicatã de\n"
@@ -760,11 +821,11 @@ msgstr ""
 "împreunã cu acest program; dacã nu, scrieþi la Free Software Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1119
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Comparã cuvinte din douã fiºiere ºi raporteazã diferenþele.\n"
 
-#: src/wdiff.c:1122
+#: src/wdiff.c:1177 src/wdiff2.c:185
 #, c-format
 msgid ""
 "\n"
@@ -773,13 +834,13 @@ msgstr ""
 "\n"
 "Folosire: %s [OPÞIUNE]... FIªIER1 FIªIER2\n"
 
-#: src/wdiff.c:1126
+#: src/wdiff.c:1181
+#, fuzzy, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
@@ -791,12 +852,14 @@ msgid ""
 "  -p, --printer              overstrike as for printers\n"
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 "  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"Argumentele obligatorii pentru opþiunile lungi sunt obligatorii ºi pentru opþiunile scurte.\n"
+"Argumentele obligatorii pentru opþiunile lungi sunt obligatorii ºi pentru "
+"opþiunile scurte.\n"
 "\n"
 "  -C, --copyright            afiºeazã copyright-ul ºi terminã\n"
 "  -K, --no-init-term         ca -t, dar fãrã ºiruri termcap init/term\n"
@@ -817,7 +880,11 @@ msgstr ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 
-#: src/wdiff.c:1221
+#: src/wdiff.c:1317
+msgid "Cannot use -t, termcap not available."
+msgstr "Nu se poate folosi -t, termcap nu este disponibil"
+
+#: src/wdiff.c:1322
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
@@ -825,10 +892,78 @@ msgstr ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1276
-msgid "Cannot use -t, termcap not available."
-msgstr "Nu se poate folosi -t, termcap nu este disponibil"
-
-#: src/wdiff.c:1301
+#: src/wdiff.c:1358 src/wdiff2.c:325
 msgid "Missing file arguments"
 msgstr "Lipsesc argumentele fiºier"
+
+#: src/wdiff2.c:181
+msgid ""
+"wdiff - Compute word differences by internally launching `mdiff -W'.\n"
+"This program exists mainly to support the now oldish `wdiff' syntax.\n"
+msgstr ""
+
+#: src/wdiff2.c:189
+#, fuzzy
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -q, --quiet                inhibit the `mdiff' call message\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Argumentele obligatorii pentru opþiunile lungi sunt obligatorii ºi pentru "
+"opþiunile scurte.\n"
+"\n"
+"  -C, --copyright            afiºeazã copyright-ul ºi terminã\n"
+"  -K, --no-init-term         ca -t, dar fãrã ºiruri termcap init/term\n"
+"  -V, --version              afiºeazã versiunea programului ºi terminã\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+
+#: src/wdiff2.c:212
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
+msgstr ""
+
+#: src/wdiff2.c:336
+#, fuzzy, c-format
+msgid "Launching `%s"
+msgstr "Citesc %s"
+
+#: lib/error.c:125
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/xalloc-die.c:35
+msgid "memory exhausted"
+msgstr ""

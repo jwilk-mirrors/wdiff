@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
-"POT-Creation-Date: 1999-07-05 20:35-0400\n"
+"Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
+"POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2002-11-17 22:56GMT+8\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -19,11 +20,11 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (untuk regexp `%s')"
 
-#: src/mdiff.c:917 src/wdiff.c:1329
+#: src/mdiff.c:917 src/wdiff.c:1386
 msgid "Only one file may be standard input."
 msgstr "Hanya satu fail boleh dijadikan masukan piawai."
 
-#: src/mdiff.c:932 src/wdiff.c:592
+#: src/mdiff.c:932 src/wdiff.c:643
 msgid "Directories not supported"
 msgstr "Direktori tidak disokong"
 
@@ -43,18 +44,22 @@ msgid "Read summary: %d files, %d items\n"
 msgstr "Ringkasan bacaan: %d fail, %d perkara\n"
 
 #: src/mdiff.c:1671
+#, c-format
 msgid "Sorting"
 msgstr "Isihan"
 
 #: src/mdiff.c:1688
+#, c-format
 msgid ", clustering"
 msgstr ", gugusan"
 
 #: src/mdiff.c:1857 src/mdiff.c:1920
+#, c-format
 msgid ", done\n"
 msgstr ", selesai\n"
 
 #: src/mdiff.c:1907
+#, c-format
 msgid "Sorting members"
 msgstr "Mengisih ahli"
 
@@ -68,41 +73,45 @@ msgstr "Ringkasan kerja: %d gugusan, %d ahli\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Ringkasan kerja: %d gugusan, %d ahli, %d bertindih\n"
 
-#: src/mdiff.c:2372 src/wdiff.c:243
+#: src/mdiff.c:2372 src/wdiff.c:245
 msgid "Select a terminal through the TERM environment variable."
 msgstr "Pilih terminal daripada pembolehubah persekitaran TERM."
 
-#: src/mdiff.c:2375 src/wdiff.c:246
+#: src/mdiff.c:2375 src/wdiff.c:248
 msgid "Could not access the termcap data base."
 msgstr "Tidak dapat mencapai pengkalan data termcap."
 
-#: src/mdiff.c:2377 src/wdiff.c:248
+#: src/mdiff.c:2377 src/wdiff.c:250
 #, c-format
 msgid "Terminal type `%s' is not defined."
 msgstr "Jenis terminal `%s' tidak ditakrifkan."
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1055 src/wdiff.c:1067
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d perkataan"
 
-#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1058 src/wdiff.c:1070
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
+#, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% biasa"
 
-#: src/mdiff.c:3759 src/wdiff.c:1060
+#: src/mdiff.c:3759 src/wdiff.c:1115
+#, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% dipadam"
 
-#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1062 src/wdiff.c:1074
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
+#, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% diubah"
 
-#: src/mdiff.c:3771 src/wdiff.c:1072
+#: src/mdiff.c:3771 src/wdiff.c:1127
+#, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% dimasukkan"
 
-#: src/mdiff.c:3800 src/unify.c:271 src/wdiff.c:1115
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Cuba `%s --help' untuk lebih maklumat.\n"
@@ -194,8 +203,10 @@ msgstr ""
 "  -m, --avoid-wraps           jangan sambung medan melalui baris baru\n"
 "  -o, --printer               overstrike seperti untuk pencetak\n"
 "  -z, --terminal              guna termcap sebagai paparan terminal\n"
-"  -K, --no-init-term          seperti -z, tetap tiada termcap init/rentetan term\n"
-"  -O, --item-regexp=REGEXP    banding perkara seperti dinyatakan oleh REGEXP\n"
+"  -K, --no-init-term          seperti -z, tetap tiada termcap init/rentetan "
+"term\n"
+"  -O, --item-regexp=REGEXP    banding perkara seperti dinyatakan oleh "
+"REGEXP\n"
 "  -W, --word-mode             banding perkataan selain daripada baris\n"
 
 #: src/mdiff.c:3849
@@ -210,11 +221,15 @@ msgid ""
 msgstr ""
 "\n"
 "Perbandingan fail:\n"
-"*  -H, --speed-large-files     lebih laju, untuk apabila beberapa perubahan kecil\n"
+"*  -H, --speed-large-files     lebih laju, untuk apabila beberapa perubahan "
+"kecil\n"
 "*  -a, --text                  lapor perbezaan baris (default fail teks)\n"
-"*  -d, --minimal               cuba lebih gigih untuk set perubahan yang kecil\n"
-"*  -q, --brief                 hanya nyatakan jika fail berbeza (default binari)\n"
-"*      --horizon-lines=BARIS   kekalkan BARIS baris dalam awalan/akhiran biasa\n"
+"*  -d, --minimal               cuba lebih gigih untuk set perubahan yang "
+"kecil\n"
+"*  -q, --brief                 hanya nyatakan jika fail berbeza (default "
+"binari)\n"
+"*      --horizon-lines=BARIS   kekalkan BARIS baris dalam awalan/akhiran "
+"biasa\n"
 
 #: src/mdiff.c:3859
 msgid ""
@@ -230,9 +245,12 @@ msgid ""
 msgstr ""
 "\n"
 "Perbandingan direktori:\n"
-"*  -N, --new-file                  ambil kira fail tidak wujud sebagai kosong\n"
-"*  -P, --unidirectional-new-file   ambil kira fail lama tidak wujud sebagai kosong\n"
-"*  -S, --starting-file=FAIL        sambung perbandingan direktori dengan FAIL\n"
+"*  -N, --new-file                  ambil kira fail tidak wujud sebagai "
+"kosong\n"
+"*  -P, --unidirectional-new-file   ambil kira fail lama tidak wujud sebagai "
+"kosong\n"
+"*  -S, --starting-file=FAIL        sambung perbandingan direktori dengan "
+"FAIL\n"
 "*  -X, --exclude-from=FAIL         abai corak sepadan fail daripada FAIL\n"
 "*  -r, --recursive                 banding subdirektori berulang-ulang\n"
 "*  -s, --report-identical-files    lapor apabbila dua fail adalah sama\n"
@@ -288,12 +306,16 @@ msgstr ""
 "Format keluaran terperinci:\n"
 "*  -D, --ifdef=NAMA                      keluarkan format `#ifdef NAMA'\n"
 "*      --changed-group-format=FORMAT     guna FORMAT untuk baris ditukar\n"
-"*      --new-group-format=FORMAT         guna FORMAT untuk baris-baris dimasukkan\n"
+"*      --new-group-format=FORMAT         guna FORMAT untuk baris-baris "
+"dimasukkan\n"
 "*      --new-line-format=FORMAT          guna FORMAT untuk baris dimasukkan\n"
-"*      --old-group-format=FORMAT         guna FORMAT untuk baris-baris dipadam\n"
+"*      --old-group-format=FORMAT         guna FORMAT untuk baris-baris "
+"dipadam\n"
 "*      --old-line-format=FORMAT          guna FORMAT untuk baris dipadam\n"
-"*      --unchanged-group-format=FORMAT   guna FORMAT untuk baris-baris tidak ditukar\n"
-"*      --unchanged-line-format=FORMAT    guna FORMAT untuk baris tidak ditukar\n"
+"*      --unchanged-group-format=FORMAT   guna FORMAT untuk baris-baris tidak "
+"ditukar\n"
+"*      --unchanged-line-format=FORMAT    guna FORMAT untuk baris tidak "
+"ditukar\n"
 "*      --line-format=FORMAT              --{old,new,unchanged}-format-baris\n"
 
 #: src/mdiff.c:3901
@@ -322,23 +344,30 @@ msgstr ""
 "\n"
 "Format konteks dam penggabungan:\n"
 "*  -F, --show-function-line=REGEXP   tunjuk konteks sebelum sepadan REGEXP\n"
-"*  -p, --show-c-function             tunjuk fungsi C yang mana untuk setiap perubahan\n"
+"*  -p, --show-c-function             tunjuk fungsi C yang mana untuk setiap "
+"perubahan\n"
 
 #: src/mdiff.c:3917
 msgid ""
 "\n"
 "*  -C, --context=LINES         as -c, also select context size in lines\n"
-"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name "
+"(twice)\n"
 "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -c, --context               output context diffs (default 3 context "
+"lines)\n"
 "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 "*  -LINES                      (obsolete: select context size in lines)\n"
 msgstr ""
 "\n"
-"*  -C, --context=BARIS         seperti -c, juga memilih saiz konteks dalam baris\n"
-"*  -L, --label=LABEL           guna dari/ke LABEL selain daripada nama fail (dua kali)\n"
-"*  -U, --unified=BARIS         seperti -u, juga memilih saiz konteks dalam baris\n"
-"*  -c, --context               keluarkan diff konteks (default 3 baris konteks)\n"
+"*  -C, --context=BARIS         seperti -c, juga memilih saiz konteks dalam "
+"baris\n"
+"*  -L, --label=LABEL           guna dari/ke LABEL selain daripada nama fail "
+"(dua kali)\n"
+"*  -U, --unified=BARIS         seperti -u, juga memilih saiz konteks dalam "
+"baris\n"
+"*  -c, --context               keluarkan diff konteks (default 3 baris "
+"konteks)\n"
 "*  -u, --unified               keluarkan unidiffs (default 3 baris konteks)\n"
 "*  -BARIS                      (lapuk: pilih saiz konteks dalam baris)\n"
 
@@ -361,6 +390,7 @@ msgstr ""
 "*      --suppress-common-lines   jangan cetak baris yang sama\n"
 
 #: src/mdiff.c:3937
+#, c-format
 msgid ""
 "\n"
 "FORMAT is made up of characters standing for themselves, except:\n"
@@ -371,7 +401,8 @@ msgid ""
 "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 "  %%<           [group] old, each line through --old-line-format\n"
 "  %%>           [group] new, each line through --new-line-format\n"
-"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-"
+"format\n"
 "  %%l           [line] without its possible trailing newline\n"
 "  %%L           [line] with its possible trailing newline\n"
 msgstr ""
@@ -380,11 +411,14 @@ msgstr ""
 "  %%%%           hanya satu %%\n"
 "  %%c'C'        petikan aksara C\n"
 "  %%c'\\O'       aksara mempunyai nilai O, daripada 1 hingga 3 digit oktal\n"
-"  %%(A=B?T:E)   jika A adalah B maka T lain E; A B nombor atau PEMBOLEHUBAH; T E FORMAT\n"
-"  %%FN          guna SPECIF spesifikasi F untuk mencetak PEMBOLEHUBAH nilai N\n"
+"  %%(A=B?T:E)   jika A adalah B maka T lain E; A B nombor atau PEMBOLEHUBAH; "
+"T E FORMAT\n"
+"  %%FN          guna SPECIF spesifikasi F untuk mencetak PEMBOLEHUBAH nilai "
+"N\n"
 "  %%<           [kumpul] lama, setiap baris melalui --old-line-format\n"
 "  %%>           [kumpul] baru, setiap baris melalui --new-line-format\n"
-"  %%=           [kumpul] tiada perubahan, setiap baris melalui --unchanged-line-format\n"
+"  %%=           [kumpul] tiada perubahan, setiap baris melalui --unchanged-"
+"line-format\n"
 "  %%l           [baris] tanpa kemungkinan barisbaru mengikuti\n"
 "  %%L           [baris] dengan kemungkinan barisbaru mengikuti\n"
 
@@ -407,7 +441,8 @@ msgid ""
 "  {nN}   number of lines in the group\n"
 msgstr ""
 "\n"
-"PEMBOLEHUBAH ialah {eflmn} untuk kumpulan lama atau {EFLMN} untuk kumpulan baru\n"
+"PEMBOLEHUBAH ialah {eflmn} untuk kumpulan lama atau {EFLMN} untuk kumpulan "
+"baru\n"
 "  {eE}   nombor baris sebelum kumpulan\n"
 "  {fF}   nombor baris pertama kumpulan\n"
 "  {lL}   nombor baris terakhir kumpulan\n"
@@ -440,7 +475,8 @@ msgstr ""
 "  -w, --ignore-all-space    abai semua ruang kosong\n"
 "  -b, --ignore-space-change abai perubahan dalam jumlah ruang kosong\n"
 "  -B, --ignore-blank-lines  abai perubahan dimana baris adalah kosong\n"
-"  -I, --ignore-matching-lines=RE abai perubahan dimana baris adalah sepadan RE\n"
+"  -I, --ignore-matching-lines=RE abai perubahan dimana baris adalah sepadan "
+"RE\n"
 "  -a, --text                layan semua fail sebagai teks\n"
 "  -c, --context[=NOMBOR]    keluarkan diff konteks biasa,\n"
 "                            menukar kepada NOMBOR baris konteks\n"
@@ -449,7 +485,8 @@ msgstr ""
 "  -C, --context=NOM         keluarkan NOM baris salinan konteks\n"
 "  -U, --unified=NOM         keluarkan NOM baris konteks unified\n"
 "  -L, --label=LABEL         guna LABEL selain dari nama fail\n"
-"  -p, --show-c-function     tunjuk fungsi C yang mana dalam setiap perubahan\n"
+"  -p, --show-c-function     tunjuk fungsi C yang mana dalam setiap "
+"perubahan\n"
 "  -F, --show-function-line=RE tunjuk baris terbaru sepadan RE\n"
 
 #: src/mdiff.c:3986
@@ -458,7 +495,8 @@ msgid ""
 "  -e, --ed                  output an ed script\n"
 "  -n, --rcs                 output an RCS format diff\n"
 "  -y, --side-by-side        output in two columns\n"
-"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per "
+"line\n"
 "      --left-column         output only the left column of common lines\n"
 "      --suppress-common-lines do not output common lines\n"
 "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
@@ -472,10 +510,12 @@ msgstr ""
 "  -e, --ed                  hasilkan skrip ed\n"
 "  -n, --rcs                 hasilkan format diff RCS\n"
 "  -y, --side-by-side        keluarkan dalam dua lajur\n"
-"  -w, --width=NOM           keluarkan paling banyak NOM (default 130) aksara per baris\n"
+"  -w, --width=NOM           keluarkan paling banyak NOM (default 130) aksara "
+"per baris\n"
 "      --left-column         keluarkan hanya lajur kiri baris sama\n"
 "      --suppress-common-lines jangan keluarkan baris yang sama\n"
-"  -D, --ifdef=NAMA          keluarkan fail tergabung untuk menunjukkan diff `#ifdef NAMA'\n"
+"  -D, --ifdef=NAMA          keluarkan fail tergabung untuk menunjukkan diff "
+"`#ifdef NAMA'\n"
 "      --GTYPE-group-format=GFMT kumpulan masukan GTYPE dengan GFMT\n"
 "      --line-format=LFMT    semua baris masukan dengan LFMT\n"
 "      --LTYPE-line-format=LFMT baris masukan LTYPE dengan LFMT\n"
@@ -494,18 +534,24 @@ msgid ""
 "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
 "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 "  -d, --minimal             try hard to find a smaller set of changes\n"
-"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small "
+"changes\n"
 msgstr ""
 "  -T, --initial-tab         jadikan tab berbaris dengan menambah awalan tab\n"
-"  -r, --recursive           banding berulang sebarang subdirektori yang dijumpai\n"
+"  -r, --recursive           banding berulang sebarang subdirektori yang "
+"dijumpai\n"
 "  -N, --new-file            layan fail tidak wujud sebagai kosong\n"
-"  -P, --unidirectional-new-file layan fail tidak wujud pertama sebagai kosong\n"
+"  -P, --unidirectional-new-file layan fail tidak wujud pertama sebagai "
+"kosong\n"
 "  -s, --report-identical-files lapor apabila dua fail adalah sama\n"
 "  -x, --exclude=PAT         asingkan fail yang sepadan PAT\n"
-"  -X, --exclude-from=FAIL   asingkan fail yang sepadan sebarang corak dalam FAIL\n"
+"  -X, --exclude-from=FAIL   asingkan fail yang sepadan sebarang corak dalam "
+"FAIL\n"
 "  -S, --starting-file=FAIL  mula dengan FAIL apabila membanding direktori\n"
-"      --horizon-lines=NOM   simpan NOM baris bagi prefiks dan suffiks yang sama\n"
-"  -d, --minimal             usaha keras untuk mencari set perbezaan yang kecil\n"
+"      --horizon-lines=NOM   simpan NOM baris bagi prefiks dan suffiks yang "
+"sama\n"
+"  -d, --minimal             usaha keras untuk mencari set perbezaan yang "
+"kecil\n"
 "  -H, --speed-large-files   andaikan fail besar dan banyak perbezaan kecil\n"
 
 #: src/mdiff.c:4016
@@ -533,13 +579,15 @@ msgid ""
 "      M  L+1\n"
 msgstr ""
 "\n"
-"LTYPE adalah `old', `new', atau `unchanged'.  GTYPE adalah LTYPE atau `changed'.\n"
+"LTYPE adalah `old', `new', atau `unchanged'.  GTYPE adalah LTYPE atau "
+"`changed'.\n"
 "GFMT boleh mengandungi:\n"
 "  %<  baris dari FAIL1\n"
 "  %>  baris dari FAIL2\n"
 "  %=  baris sama pada FAIL1 dan FAIL2\n"
 "  %[-][LEBAR][.[PREC]]{doxX}HURUF  spec gaya-printf untuk HURUF\n"
-"    HURUF adalah seperti berikut untuk kumpulan baru, huruf kecil untuk kumpulan lama:\n"
+"    HURUF adalah seperti berikut untuk kumpulan baru, huruf kecil untuk "
+"kumpulan lama:\n"
 "      F  nombor baris pertama\n"
 "      L  nombor baris akhir\n"
 "      N  jumlah baris = L-F+1\n"
@@ -574,7 +622,8 @@ msgid ""
 msgstr ""
 "\n"
 "Pilihan mdiff lama:\n"
-"*  -f, --fuzz-items=ITEM     tidak lebih daripada ITEM tidak sepadan dalam gugusan\n"
+"*  -f, --fuzz-items=ITEM     tidak lebih daripada ITEM tidak sepadan dalam "
+"gugusan\n"
 
 #: src/mdiff.c:4055
 msgid ""
@@ -584,10 +633,11 @@ msgstr ""
 "\n"
 "Dengan tiada FAIL, atau apabila FAILE adalah -, baca masukan piawai.\n"
 
-#: src/mdiff.c:4059 src/unify.c:297 src/wdiff.c:1147
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#, fuzzy
 msgid ""
 "\n"
-"Report bugs to <wdiff-bugs@iro.umontreal.ca>.\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "\n"
 "Lapor pepijat kepada <wdiff-bugs@iro.umontreal.ca>.\n"
@@ -600,7 +650,7 @@ msgstr "Tidak boleh menggunakan -z, termcap tiada."
 msgid "Word merging for two files only (so far)"
 msgstr "Gabungan perkataan untuk dua fail sahaja (setakat ini)"
 
-#: src/mdiff.c:4425
+#: src/mdiff.c:4425 src/wdiff2.c:129
 msgid ""
 "\n"
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
@@ -608,15 +658,16 @@ msgstr ""
 "\n"
 "Hakcipta (C) 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4429 src/unify.c:409 src/wdiff.c:1225
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
 "Ini adalah perisian bebas; lihat sumber untuk syarat menyalin.  TIADA\n"
-"jaminan disediakan; tidak juga untuk KEBOLEHDAGANGAN atau KEUPAYAAN UNTUK SESUATU TUJUAN KHUSUS.\n"
+"jaminan disediakan; tidak juga untuk KEBOLEHDAGANGAN atau KEUPAYAAN UNTUK "
+"SESUATU TUJUAN KHUSUS.\n"
 
-#: src/mdiff.c:4433 src/wdiff.c:1229
+#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -628,16 +679,16 @@ msgstr ""
 msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "Pilihan -123RSYZ bermakna apabila hanya dua masukan."
 
-#: src/unify.c:142
+#: src/unify.c:143
 #, c-format
 msgid "Could not find a name for the diff at line %ld"
 msgstr "Tidak dapat mencari nama untuk diff pada baris %ld"
 
-#: src/unify.c:275
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unify - Mengubah diff konteks kepada unidiff, atau sebaliknya.\n"
 
-#: src/unify.c:278
+#: src/unify.c:279
 #, c-format
 msgid ""
 "\n"
@@ -646,7 +697,7 @@ msgstr ""
 "\n"
 "Penggunaan: %s [PILIHAN]... [FAIL]\n"
 
-#: src/unify.c:281
+#: src/unify.c:282
 msgid ""
 "\n"
 "  -c, --context-diffs    force output to context diffs\n"
@@ -678,16 +729,16 @@ msgstr ""
 "\n"
 "Jika FAIL tidak dinyatakan, baca masukan piawai.\n"
 
-#: src/unify.c:390
+#: src/unify.c:391
 #, c-format
 msgid "Unable to open `%s'"
 msgstr "Tidak dapat membuka `%s'"
 
-#: src/unify.c:396
+#: src/unify.c:397
 msgid "Only one filename allowed"
 msgstr "Hanya satu namafail dibenarkan"
 
-#: src/unify.c:405
+#: src/unify.c:406
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -695,7 +746,7 @@ msgstr ""
 "\n"
 "Hakcipta (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:413
+#: src/unify.c:414
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -703,32 +754,37 @@ msgstr ""
 "\n"
 "Ditulis oleh Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:552
+#: src/unify.c:553
 #, c-format
 msgid "Invalid unified diff header at line %ld"
 msgstr "Header diff unified tidak sah pada baris %ld"
 
-#: src/unify.c:594
+#: src/unify.c:595
 #, c-format
 msgid "Malformed unified diff at line %ld"
 msgstr "Diff unified cacat pada baris %ld"
 
-#: src/unify.c:625
+#: src/unify.c:626
 #, c-format
 msgid "Context diff missing `old' header at line %ld"
 msgstr "Diff konteks kehilangan header `old' pada baris %ld"
 
-#: src/unify.c:669 src/unify.c:688 src/unify.c:759 src/unify.c:777
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
 #, c-format
 msgid "Malformed context diff at line %ld"
 msgstr "Diff konteks cacat pada baris %ld"
 
-#: src/unify.c:724
+#: src/unify.c:725
 #, c-format
 msgid "Context diff missing `new' header at line %ld"
 msgstr "Diff konteks kehilangan header `new' pada baris %ld"
 
-#: src/wdiff.c:1090
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr ""
+
+#: src/wdiff.c:1145 src/wdiff2.c:108
+#, fuzzy
 msgid ""
 "This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -742,10 +798,12 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program; if not, write to the Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
-"Program ini adalah perisian bebas; anda boleh menyebarkannya dan/atau mengubahsuainya\n"
-"dibawah syarat-syarat GNU General Public License seperti yang diterbitkan oleh\n"
+"Program ini adalah perisian bebas; anda boleh menyebarkannya dan/atau "
+"mengubahsuainya\n"
+"dibawah syarat-syarat GNU General Public License seperti yang diterbitkan "
+"oleh\n"
 "Free Software Foundation; sama ada versi ke 2, atau (atas pilihan anda)\n"
 "sebarang versi selepasnya.\n"
 "\n"
@@ -758,11 +816,12 @@ msgstr ""
 "bersama program ini; jika tidak, tulis kepada Free Software Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1119
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr "wdiff - Membandingkan perkataan dalam dua fail dan melaporkan perbezaan.\n"
+msgstr ""
+"wdiff - Membandingkan perkataan dalam dua fail dan melaporkan perbezaan.\n"
 
-#: src/wdiff.c:1122
+#: src/wdiff.c:1177 src/wdiff2.c:185
 #, c-format
 msgid ""
 "\n"
@@ -771,13 +830,13 @@ msgstr ""
 "\n"
 "Penggunaan: %s [PILIHAN]... FAIL1 FAIL2\n"
 
-#: src/wdiff.c:1126
+#: src/wdiff.c:1181
+#, fuzzy, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 "\n"
 "  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -V, --version              print program version then exit\n"
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
@@ -789,15 +848,18 @@ msgid ""
 "  -p, --printer              overstrike as for printers\n"
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 "  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"Hujah mandatori kepada pilihan panjang adalah mandatori untuk pilihan pendek juga.\n"
+"Hujah mandatori kepada pilihan panjang adalah mandatori untuk pilihan pendek "
+"juga.\n"
 "\n"
 "  -C, --copyright              cetak hakcipta kemudian keluar\n"
-"  -K, --no-init-term           seperti -t, tetapi tiada termcap init/rentetan term\n"
+"  -K, --no-init-term           seperti -t, tetapi tiada termcap init/"
+"rentetan term\n"
 "  -V, --version                cetak versi program kemudian keluar\n"
 "  -1, --no-deleted             halang keluaran perkataan dipadam\n"
 "  -2, --no-inserted            halang keluaran perkataan dimasukkan\n"
@@ -808,14 +870,23 @@ msgstr ""
 "  -l, --less-mode              variasi mod pencetak untuk \"less\"\n"
 "  -n, --avoid-wraps            jangan sambung medan menerusi barisbaru\n"
 "  -p, --printer                overstrike seperti untuk pencetak\n"
-"  -s, --statistics             nyatakan jumlah perkataan dipadam, dimasukkan dsb.\n"
+"  -s, --statistics             nyatakan jumlah perkataan dipadam, dimasukkan "
+"dsb.\n"
 "  -t, --terminal               guna termcap sebagai paparan terminal\n"
-"  -w, --start-delete=RENTETAN  rentetan untuk menanda permulaan bahagian dipadam\n"
-"  -x, --end-delete=RENTETAN    rentetan untuk menanda penamat bahagian dipadam\n"
-"  -y, --start-insert=RENTETAN  rentetan untuk menanda permulaan bahagian dimasukkan\n"
-"  -z, --end-insert=RENTETAN    rentetan untuk menanda penamat bahagian dimasukkan\n"
+"  -w, --start-delete=RENTETAN  rentetan untuk menanda permulaan bahagian "
+"dipadam\n"
+"  -x, --end-delete=RENTETAN    rentetan untuk menanda penamat bahagian "
+"dipadam\n"
+"  -y, --start-insert=RENTETAN  rentetan untuk menanda permulaan bahagian "
+"dimasukkan\n"
+"  -z, --end-insert=RENTETAN    rentetan untuk menanda penamat bahagian "
+"dimasukkan\n"
 
-#: src/wdiff.c:1221
+#: src/wdiff.c:1317
+msgid "Cannot use -t, termcap not available."
+msgstr "Tidak boleh menggunakan -t, termcap tiada."
+
+#: src/wdiff.c:1322
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
@@ -823,10 +894,84 @@ msgstr ""
 "\n"
 "Hakcipta (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1276
-msgid "Cannot use -t, termcap not available."
-msgstr "Tidak boleh menggunakan -t, termcap tiada."
-
-#: src/wdiff.c:1301
+#: src/wdiff.c:1358 src/wdiff2.c:325
 msgid "Missing file arguments"
 msgstr "Hujah fail tiada"
+
+#: src/wdiff2.c:181
+msgid ""
+"wdiff - Compute word differences by internally launching `mdiff -W'.\n"
+"This program exists mainly to support the now oldish `wdiff' syntax.\n"
+msgstr ""
+
+#: src/wdiff2.c:189
+#, fuzzy
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -C, --copyright            print copyright then exit\n"
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
+"  -q, --quiet                inhibit the `mdiff' call message\n"
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
+msgstr ""
+"Hujah mandatori kepada pilihan panjang adalah mandatori untuk pilihan pendek "
+"juga.\n"
+"\n"
+"  -C, --copyright              cetak hakcipta kemudian keluar\n"
+"  -K, --no-init-term           seperti -t, tetapi tiada termcap init/"
+"rentetan term\n"
+"  -V, --version                cetak versi program kemudian keluar\n"
+"  -1, --no-deleted             halang keluaran perkataan dipadam\n"
+"  -2, --no-inserted            halang keluaran perkataan dimasukkan\n"
+"  -3, --no-common              halang keluaran perkataan yang sama\n"
+"  -a, --auto-pager             panggil pager secara automatik\n"
+"  -h, --help                   cetak bantuan ini\n"
+"  -i, --ignore-case            abai case aksara ketika membanding\n"
+"  -l, --less-mode              variasi mod pencetak untuk \"less\"\n"
+"  -n, --avoid-wraps            jangan sambung medan menerusi barisbaru\n"
+"  -p, --printer                overstrike seperti untuk pencetak\n"
+"  -s, --statistics             nyatakan jumlah perkataan dipadam, dimasukkan "
+"dsb.\n"
+"  -t, --terminal               guna termcap sebagai paparan terminal\n"
+"  -w, --start-delete=RENTETAN  rentetan untuk menanda permulaan bahagian "
+"dipadam\n"
+"  -x, --end-delete=RENTETAN    rentetan untuk menanda penamat bahagian "
+"dipadam\n"
+"  -y, --start-insert=RENTETAN  rentetan untuk menanda permulaan bahagian "
+"dimasukkan\n"
+"  -z, --end-insert=RENTETAN    rentetan untuk menanda penamat bahagian "
+"dimasukkan\n"
+
+#: src/wdiff2.c:212
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
+msgstr ""
+
+#: src/wdiff2.c:336
+#, fuzzy, c-format
+msgid "Launching `%s"
+msgstr "Membaca %s"
+
+#: lib/error.c:125
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/xalloc-die.c:35
+msgid "memory exhausted"
+msgstr ""
