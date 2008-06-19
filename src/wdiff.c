@@ -92,7 +92,6 @@ const char *tgetstr ();
 char *getenv ();
 FILE *readpipe PARAMS ((const char *, ...));
 FILE *writepipe PARAMS ((const char *, ...));
-char *tmpnam ();
 
 /* Declarations.  */
 
@@ -157,10 +156,13 @@ copy_mode;
 jmp_buf signal_label;		/* where to jump when signal received */
 int interrupted;		/* set when some signal has been received */
 
-/* Guarantee some value for L_tmpnam.  */
+/* Guarantee some value for L_tmpnam and P_tmpdir.  */
 #ifndef L_tmpnam
 # include "pathmax.h"
 # define L_tmpnam PATH_MAX
+#endif
+#ifndef P_tmpdir
+# define P_tmpdir "/tmp"
 #endif
 
 typedef struct side SIDE;	/* all variables for one side */
@@ -551,6 +553,50 @@ copy_word (SIDE *side, FILE *file)
 }
 
 /*-------------------------------------------------------------------------.
+| Create a template filename suitable for mkstemp given the temporary	   |
+| directory settings of the system.  The method used here closely follows  |
+| the method used in glibc's tmpfile implementation.			   |
+`-------------------------------------------------------------------------*/
+
+static char *
+create_template_filename (char *tmpl, size_t tmpl_len)
+{
+  struct stat stat_buffer;	/* for checking if file is directory */
+  const char* dir;
+  size_t dirlen;
+
+  dir = getenv ("TMPDIR");
+  if (dir && (stat (dir, &stat_buffer) == 0)
+      && ((stat_buffer.st_mode & S_IFMT) == S_IFDIR))
+    /* nothing */ ;
+  else if ((stat (P_tmpdir, &stat_buffer) == 0)
+           && ((stat_buffer.st_mode & S_IFMT) == S_IFDIR))
+    dir = P_tmpdir;
+  else if ((stat ("/tmp", &stat_buffer) == 0)
+           && ((stat_buffer.st_mode & S_IFMT) == S_IFDIR))
+    dir = "/tmp";
+  else
+    {
+      errno = ENOENT;
+      return NULL;
+    }
+
+  dirlen = strlen (dir);
+  while (dirlen > 1 && dir[dirlen - 1] == '/')
+    dirlen--;			/* remove trailing slashes */
+
+  /* check we have room for "${dir}/wdiff.XXXXXX\0" */
+  if (tmpl_len < dirlen + 1 + 12 + 1)
+    {
+      errno = EINVAL;
+      return NULL;
+    }
+
+  sprintf(tmpl, "%.*s/wdiff.XXXXXX", (int) dirlen, dir);
+  return tmpl;
+}
+
+/*-------------------------------------------------------------------------.
 | For a given SIDE, turn original input file in another one, in which each |
 | word is on one line.							   |
 `-------------------------------------------------------------------------*/
@@ -559,6 +605,7 @@ static void
 split_file_into_words (SIDE *side)
 {
   struct stat stat_buffer;	/* for checking if file is directory */
+  int fd;                /* for file descriptors returned by mkstemp */
 
   /* Open files.  */
 
@@ -570,8 +617,12 @@ split_file_into_words (SIDE *side)
 	 this temporary local file.  Once done, prepare it for reading.
 	 We do not need the file name itself anymore.  */
 
-      tmpnam (side->temp_name);
-      side->file = fopen (side->temp_name, "w+");
+      if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
+	error (EXIT_FAILURE, 0, _("No suitable temporary directory exists"));
+      if ((fd = mkstemp (side->temp_name)) == -1)
+        error (EXIT_FAILURE, errno, "%s", side->temp_name);
+
+      side->file = fdopen (fd, "w+");
       if (side->file == NULL)
 	error (EXIT_FAILURE, errno, "%s", side->temp_name);
       if (unlink (side->temp_name) != 0)
@@ -597,8 +648,12 @@ split_file_into_words (SIDE *side)
   side->character = getc (side->file);
   side->position = 0;
 
-  tmpnam (side->temp_name);
-  side->temp_file = fopen (side->temp_name, "w");
+  if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
+    error (EXIT_FAILURE, 0, _("No suitable temporary directory exists"));
+  if ((fd = mkstemp (side->temp_name)) == -1)
+    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+
+  side->temp_file = fdopen (fd, "w");
   if (side->temp_file == NULL)
     error (EXIT_FAILURE, errno, "%s", side->temp_name);
 
