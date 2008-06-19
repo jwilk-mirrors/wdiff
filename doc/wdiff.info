@@ -266,29 +266,12 @@ NEW_FILE which is not in OLD_FILE.
      Merely prints a page of help on standard output, and exits without
      doing anything else.
 
-`--statistics'
-`-s'
-     First tells the number of files read, and the number of lines found
-     in this file.  Then says how many clusters have been found, how
-     many members are covered by all clusters.  It also gives a number
-     of lines which could have been spared if all reported repetitions
-     were avoided, and this count excludes lines which are ignorable.
-     All this output is directed to standard error.
-
 `--threshold=NUMBER'
 `-t NUMBER'
      Specifies the minimum number of non-ignorable lines which are
      required for two runs of lines to compare as equal.  No cluster
      member may ever have less than NUMBER lines.  By default, clusters
      have 4 lines or more.
-
-`--help'
-`-h'
-     Print an informative help message describing the options.
-
-`--version'
-`-v'
-     Print the version number of `wdiff' on the standard error output.
 
 `--no-deleted'
 `-1'
@@ -317,23 +300,13 @@ NEW_FILE which is not in OLD_FILE.
      differences are segregated by lines of dashes.
 
 `--ignore-case'
-`-c'
+`-i'
      Do not consider case difference while comparing words.  Each lower
      case letter is seen as identical to its upper case equivalent for
      the purpose of deciding if two words are the same.
 
-`--statistics'
-`-s'
-     On completion, for each file, the total number of words, the
-     number of common words between the files, the number of words
-     deleted or inserted and the number of words that have changed is
-     output.  (A changed word is one that has been replaced or is part
-     of a replacement.)  Except for the total number of words, all of
-     the numbers are followed by a percentage relative to the total
-     number of words in the file.
-
 `--auto-pager'
-`-a'
+`-A'
      Some initiatives which were previously automatically taken in
      previous versions of `wdiff' are now put under the control of this
      option.  By using it, a pager is interposed whenever the `wdiff'
@@ -738,7 +711,7 @@ NEW_FILE which is not in OLD_FILE.
      differences are segregated by lines of dashes.
 
 `--ignore-case'
-`-c'
+`-i'
      Do not consider case difference while comparing words.  Each lower
      case letter is seen as identical to its upper case equivalent for
      the purpose of deciding if two words are the same.
@@ -1088,15 +1061,15 @@ Node: Top1462
 Node: Overview2521
 Node: mdiff3877
 Node: mdiff invocation10728
-Node: Examples21459
-Node: Efficiency24654
-Ref: Efficiency-Footnote-128348
-Node: wdiff28388
-Node: wdiff invocation29282
-Node: unify37578
-Node: unify invocation38675
-Node: Compatibility41044
-Node: diff Compatibility41627
-Node: wdiff Compatibility43906
+Node: Examples20398
+Node: Efficiency23593
+Ref: Efficiency-Footnote-127287
+Node: wdiff27327
+Node: wdiff invocation28221
+Node: unify36517
+Node: unify invocation37614
+Node: Compatibility39983
+Node: diff Compatibility40566
+Node: wdiff Compatibility42845
 
 End Tag Table

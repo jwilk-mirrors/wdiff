@@ -292,28 +292,11 @@ doing anything else.
 Merely prints a page of help on standard output, and exits without doing
 anything else.
 
-@item --statistics
-@itemx -s
-First tells the number of files read, and the number of lines found
-in this file.  Then says how many clusters have been found, how many
-members are covered by all clusters.  It also gives a number of lines
-which could have been spared if all reported repetitions were avoided,
-and this count excludes lines which are ignorable.  All this output is
-directed to standard error.
-
 @item --threshold=@var{number}
 @itemx -t @var{number}
 Specifies the minimum number of non-ignorable lines which are required for
 two runs of lines to compare as equal.  No cluster member may ever have
 less than @var{number} lines.  By default, clusters have 4 lines or more.
-
-@item --help
-@itemx -h
-Print an informative help message describing the options.
-
-@item --version
-@itemx -v
-Print the version number of @code{wdiff} on the standard error output.
 
 @item --no-deleted
 @itemx -1
@@ -342,22 +325,13 @@ or underlining.  Finally, if this option is not selected, but both
 differences are segregated by lines of dashes.
 
 @item --ignore-case
-@itemx -c
+@itemx -i
 Do not consider case difference while comparing words.  Each lower case
 letter is seen as identical to its upper case equivalent for the purpose
 of deciding if two words are the same.
 
-@item --statistics
-@itemx -s
-On completion, for each file, the total number of words, the number of
-common words between the files, the number of words deleted or inserted
-and the number of words that have changed is output.  (A changed word is
-one that has been replaced or is part of a replacement.)  Except for the
-total number of words, all of the numbers are followed by a percentage
-relative to the total number of words in the file.
-
 @item --auto-pager
-@itemx -a
+@itemx -A
 Some initiatives which were previously automatically taken in previous
 versions of @code{wdiff} are now put under the control of this option.
 By using it, a pager is interposed whenever the @code{wdiff} output is
@@ -794,7 +768,7 @@ or underlining.  Finally, if this option is not selected, but both
 differences are segregated by lines of dashes.
 
 @item --ignore-case
-@itemx -c
+@itemx -i
 Do not consider case difference while comparing words.  Each lower case
 letter is seen as identical to its upper case equivalent for the purpose
 of deciding if two words are the same.
