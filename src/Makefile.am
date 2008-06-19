@@ -1,5 +1,5 @@
-bin_PROGRAMS = unify wdiff
-noinst_PROGRAMS = mdiff wdiff2
+bin_PROGRAMS = unify wdiff mdiff
+noinst_PROGRAMS = wdiff2
 
 unify_SOURCES = unify.c system.h
 wdiff_SOURCES = wdiff.c readpipe.c writepipe.c system.h
