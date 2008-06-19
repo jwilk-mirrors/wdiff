@@ -1,4 +1,4 @@
-AC_INIT([GNU wdiff], [0.5.91], [wdiff-bugs@gnu.org])
+AC_INIT([GNU wdiff], [0.5.92], [wdiff-bugs@gnu.org])
 AM_INIT_AUTOMAKE([-Wall -Werror])
 
 AC_CONFIG_HEADERS([config.h])

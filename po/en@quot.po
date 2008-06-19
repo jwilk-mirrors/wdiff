@@ -27,7 +27,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU wdiff 0.5.91\n"
+"Project-Id-Version: GNU wdiff 0.5.92\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2008-06-19 16:55-0400\n"
 "PO-Revision-Date: 2008-06-19 16:55-0400\n"
