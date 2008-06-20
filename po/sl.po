@@ -2,13 +2,13 @@
 # Copyright (C) 2007 Free Software Foundation, Inc.
 # Matej Urbančič <matej.urban@gmail.com>, 2005.
 # Primož Peterlin <primoz.peterlin@biofiz.mf.uni-lj.si>, 2007.
-# $Id: sl.po,v 1.4 2008/06/20 19:53:44 denverg Exp $
+# $Id: sl.po,v 1.5 2008/06/20 20:44:33 denverg Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2008-06-20 15:49-0400\n"
+"POT-Creation-Date: 2008-06-20 16:41-0400\n"
 "PO-Revision-Date: 2007-10-16 13:21+0200\n"
 "Last-Translator: Primoz PETERLIN <primoz.peterlin@biofiz.mf.uni-lj.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -846,10 +846,16 @@ msgid ""
 "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
-#: src/wdiff2.c:343
+#. TRANSLATORS: This and the next string are one message.
+#: src/wdiff2.c:344
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "Berem %s"
+
+#: src/wdiff2.c:347
+#, c-format
+msgid "'\n"
+msgstr ""
 
 #: lib/error.c:125
 msgid "Unknown system error"

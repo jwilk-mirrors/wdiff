@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2008-06-20 15:49-0400\n"
+"POT-Creation-Date: 2008-06-20 16:41-0400\n"
 "PO-Revision-Date: 2005-03-14 05:10+0200\n"
 "Last-Translator: Deniz Akkus Kanca <deniz@arayan.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
@@ -910,10 +910,16 @@ msgid ""
 "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
-#: src/wdiff2.c:343
+#. TRANSLATORS: This and the next string are one message.
+#: src/wdiff2.c:344
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "%s okunuyor"
+
+#: src/wdiff2.c:347
+#, c-format
+msgid "'\n"
+msgstr ""
 
 #: lib/error.c:125
 msgid "Unknown system error"

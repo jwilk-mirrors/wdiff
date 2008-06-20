@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2008-06-20 15:49-0400\n"
+"POT-Creation-Date: 2008-06-20 16:41-0400\n"
 "PO-Revision-Date: 2005-07-22 16:30+0800\n"
 "Last-Translator: Wei-Lun Chao <chaoweilun@pcmail.com.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -705,10 +705,16 @@ msgid ""
 "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
-#: src/wdiff2.c:343
+#. TRANSLATORS: This and the next string are one message.
+#: src/wdiff2.c:344
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "正在讀取 %s"
+
+#: src/wdiff2.c:347
+#, c-format
+msgid "'\n"
+msgstr ""
 
 #: lib/error.c:125
 msgid "Unknown system error"
