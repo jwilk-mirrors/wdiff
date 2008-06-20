@@ -37,16 +37,23 @@ DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	texinfo.tex
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/absolute-header.m4 \
+	$(top_srcdir)/m4/alloca.m4 $(top_srcdir)/m4/codeset.m4 \
 	$(top_srcdir)/m4/error.m4 $(top_srcdir)/m4/exitfail.m4 \
-	$(top_srcdir)/m4/getdelim.m4 $(top_srcdir)/m4/getline.m4 \
-	$(top_srcdir)/m4/gettext.m4 $(top_srcdir)/m4/gnulib-comp.m4 \
-	$(top_srcdir)/m4/iconv.m4 $(top_srcdir)/m4/inline.m4 \
-	$(top_srcdir)/m4/lib-ld.m4 $(top_srcdir)/m4/lib-link.m4 \
-	$(top_srcdir)/m4/lib-prefix.m4 $(top_srcdir)/m4/nls.m4 \
-	$(top_srcdir)/m4/onceonly_2_57.m4 $(top_srcdir)/m4/po.m4 \
-	$(top_srcdir)/m4/progtest.m4 $(top_srcdir)/m4/stdlib_h.m4 \
-	$(top_srcdir)/m4/unistd_h.m4 $(top_srcdir)/m4/xalloc.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/extensions.m4 $(top_srcdir)/m4/getdelim.m4 \
+	$(top_srcdir)/m4/getline.m4 $(top_srcdir)/m4/getopt.m4 \
+	$(top_srcdir)/m4/gettext.m4 $(top_srcdir)/m4/glibc21.m4 \
+	$(top_srcdir)/m4/gnulib-comp.m4 $(top_srcdir)/m4/iconv.m4 \
+	$(top_srcdir)/m4/inline.m4 $(top_srcdir)/m4/lib-ld.m4 \
+	$(top_srcdir)/m4/lib-link.m4 $(top_srcdir)/m4/lib-prefix.m4 \
+	$(top_srcdir)/m4/localcharset.m4 $(top_srcdir)/m4/longlong.m4 \
+	$(top_srcdir)/m4/nls.m4 $(top_srcdir)/m4/onceonly_2_57.m4 \
+	$(top_srcdir)/m4/po.m4 $(top_srcdir)/m4/progtest.m4 \
+	$(top_srcdir)/m4/regex.m4 $(top_srcdir)/m4/ssize_t.m4 \
+	$(top_srcdir)/m4/stdbool.m4 $(top_srcdir)/m4/stdint.m4 \
+	$(top_srcdir)/m4/stdlib_h.m4 $(top_srcdir)/m4/ulonglong.m4 \
+	$(top_srcdir)/m4/unistd_h.m4 $(top_srcdir)/m4/wchar.m4 \
+	$(top_srcdir)/m4/wctype.m4 $(top_srcdir)/m4/wint_t.m4 \
+	$(top_srcdir)/m4/xalloc.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(install_sh) -d
@@ -74,9 +81,14 @@ am__vpath_adj = case $$p in \
   esac;
 am__strip_dir = `echo $$p | sed -e 's|^.*/||'`;
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+ABSOLUTE_STDINT_H = @ABSOLUTE_STDINT_H@
 ABSOLUTE_STDLIB_H = @ABSOLUTE_STDLIB_H@
 ABSOLUTE_UNISTD_H = @ABSOLUTE_UNISTD_H@
+ABSOLUTE_WCHAR_H = @ABSOLUTE_WCHAR_H@
+ABSOLUTE_WCTYPE_H = @ABSOLUTE_WCTYPE_H@
 ACLOCAL = @ACLOCAL@
+ALLOCA = @ALLOCA@
+ALLOCA_H = @ALLOCA_H@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
@@ -84,6 +96,11 @@ AUTOM4TE = @AUTOM4TE@
 AUTOMAKE = @AUTOMAKE@
 AUTOTEST = @AUTOTEST@
 AWK = @AWK@
+BITSIZEOF_PTRDIFF_T = @BITSIZEOF_PTRDIFF_T@
+BITSIZEOF_SIG_ATOMIC_T = @BITSIZEOF_SIG_ATOMIC_T@
+BITSIZEOF_SIZE_T = @BITSIZEOF_SIZE_T@
+BITSIZEOF_WCHAR_T = @BITSIZEOF_WCHAR_T@
+BITSIZEOF_WINT_T = @BITSIZEOF_WINT_T@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -97,6 +114,8 @@ ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
 EXEEXT = @EXEEXT@
+GETOPT_H = @GETOPT_H@
+GLIBC21 = @GLIBC21@
 GMSGFMT = @GMSGFMT@
 GMSGFMT_015 = @GMSGFMT_015@
 GNULIB_CHOWN = @GNULIB_CHOWN@
@@ -116,10 +135,24 @@ HAVE_DECL_GETLOGIN_R = @HAVE_DECL_GETLOGIN_R@
 HAVE_DUP2 = @HAVE_DUP2@
 HAVE_FTRUNCATE = @HAVE_FTRUNCATE@
 HAVE_GETSUBOPT = @HAVE_GETSUBOPT@
+HAVE_INTTYPES_H = @HAVE_INTTYPES_H@
+HAVE_ISWCNTRL = @HAVE_ISWCNTRL@
+HAVE_LONG_LONG_INT = @HAVE_LONG_LONG_INT@
 HAVE_MKDTEMP = @HAVE_MKDTEMP@
 HAVE_READLINK = @HAVE_READLINK@
+HAVE_SIGNED_SIG_ATOMIC_T = @HAVE_SIGNED_SIG_ATOMIC_T@
+HAVE_SIGNED_WCHAR_T = @HAVE_SIGNED_WCHAR_T@
+HAVE_SIGNED_WINT_T = @HAVE_SIGNED_WINT_T@
 HAVE_SLEEP = @HAVE_SLEEP@
+HAVE_STDINT_H = @HAVE_STDINT_H@
+HAVE_SYS_BITYPES_H = @HAVE_SYS_BITYPES_H@
+HAVE_SYS_INTTYPES_H = @HAVE_SYS_INTTYPES_H@
+HAVE_SYS_TYPES_H = @HAVE_SYS_TYPES_H@
 HAVE_UNISTD_H = @HAVE_UNISTD_H@
+HAVE_UNSIGNED_LONG_LONG_INT = @HAVE_UNSIGNED_LONG_LONG_INT@
+HAVE_WCTYPE_H = @HAVE_WCTYPE_H@
+HAVE_WINT_T = @HAVE_WINT_T@
+HAVE__BOOL = @HAVE__BOOL@
 HELP2MAN = @HELP2MAN@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
@@ -152,6 +185,7 @@ PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 POSUB = @POSUB@
+PTRDIFF_T_SUFFIX = @PTRDIFF_T_SUFFIX@
 RANLIB = @RANLIB@
 REPLACE_CHOWN = @REPLACE_CHOWN@
 REPLACE_FCHDIR = @REPLACE_FCHDIR@
@@ -160,9 +194,17 @@ REPLACE_LSEEK = @REPLACE_LSEEK@
 REPLACE_MKSTEMP = @REPLACE_MKSTEMP@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
+SIG_ATOMIC_T_SUFFIX = @SIG_ATOMIC_T_SUFFIX@
+SIZE_T_SUFFIX = @SIZE_T_SUFFIX@
+STDBOOL_H = @STDBOOL_H@
+STDINT_H = @STDINT_H@
 STRIP = @STRIP@
 USE_NLS = @USE_NLS@
 VERSION = @VERSION@
+WCHAR_H = @WCHAR_H@
+WCHAR_T_SUFFIX = @WCHAR_T_SUFFIX@
+WCTYPE_H = @WCTYPE_H@
+WINT_T_SUFFIX = @WINT_T_SUFFIX@
 XGETTEXT = @XGETTEXT@
 XGETTEXT_015 = @XGETTEXT_015@
 abs_builddir = @abs_builddir@

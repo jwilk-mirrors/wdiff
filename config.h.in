@@ -1,14 +1,54 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+/* Define this to an absolute name of <stdint.h>. */
+#undef ABSOLUTE_STDINT_H
+
 /* Define this to an absolute name of <stdlib.h>. */
 #undef ABSOLUTE_STDLIB_H
 
 /* Define this to an absolute name of <unistd.h>. */
 #undef ABSOLUTE_UNISTD_H
 
+/* Define this to an absolute name of <wchar.h>. */
+#undef ABSOLUTE_WCHAR_H
+
+/* Define this to an absolute name of <wctype.h>. */
+#undef ABSOLUTE_WCTYPE_H
+
+/* Define to the number of bits in type 'ptrdiff_t'. */
+#undef BITSIZEOF_PTRDIFF_T
+
+/* Define to the number of bits in type 'sig_atomic_t'. */
+#undef BITSIZEOF_SIG_ATOMIC_T
+
+/* Define to the number of bits in type 'size_t'. */
+#undef BITSIZEOF_SIZE_T
+
+/* Define to the number of bits in type 'wchar_t'. */
+#undef BITSIZEOF_WCHAR_T
+
+/* Define to the number of bits in type 'wint_t'. */
+#undef BITSIZEOF_WINT_T
+
+/* Define to one of `_getb67', `GETB67', `getb67' for Cray-2 and Cray-YMP
+   systems. This function is required for `alloca.c' support on those systems.
+   */
+#undef CRAY_STACKSEG_END
+
+/* Define to 1 if using `alloca.c'. */
+#undef C_ALLOCA
+
 /* Define to 1 if translation of program messages to the user's native
    language is requested. */
 #undef ENABLE_NLS
+
+/* Define to 1 if you have 'alloca' after including <alloca.h>, a header that
+   may be supplied by this distribution. */
+#undef HAVE_ALLOCA
+
+/* Define HAVE_ALLOCA_H for backward compatibility with older code that
+   includes <alloca.h> only if HAVE_ALLOCA_H is defined. */
+#undef HAVE_ALLOCA_H
 
 /* Define to 1 if you have the MacOS X function CFLocaleCopyCurrent in the
    CoreFoundation framework. */
@@ -22,13 +62,25 @@
    */
 #undef HAVE_DCGETTEXT
 
+/* Define to 1 if you have the declaration of `getc_unlocked', and to 0 if you
+   don't. */
+#undef HAVE_DECL_GETC_UNLOCKED
+
 /* Define to 1 if you have the declaration of `getdelim', and to 0 if you
    don't. */
 #undef HAVE_DECL_GETDELIM
 
+/* Define to 1 if you have the declaration of `getenv', and to 0 if you don't.
+   */
+#undef HAVE_DECL_GETENV
+
 /* Define to 1 if you have the declaration of `getline', and to 0 if you
    don't. */
 #undef HAVE_DECL_GETLINE
+
+/* Define to 1 if you have the declaration of `isblank', and to 0 if you
+   don't. */
+#undef HAVE_DECL_ISBLANK
 
 /* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
    don't. */
@@ -42,6 +94,12 @@
 
 /* Define to 1 if you have the `getdelim' function. */
 #undef HAVE_GETDELIM
+
+/* Define to 1 if you have the <getopt.h> header file. */
+#undef HAVE_GETOPT_H
+
+/* Define to 1 if you have the `getopt_long_only' function. */
+#undef HAVE_GETOPT_LONG_ONLY
 
 /* Define if the GNU gettext() function is already present or preinstalled. */
 #undef HAVE_GETTEXT
@@ -57,8 +115,42 @@
 /* Define to 1 if you have the <inttypes.h> header file. */
 #undef HAVE_INTTYPES_H
 
+/* Define to 1 if you have the `iswcntrl' function. */
+#undef HAVE_ISWCNTRL
+
+/* Define to 1 if you have the `iswctype' function. */
+#undef HAVE_ISWCTYPE
+
+/* Define if you have <langinfo.h> and nl_langinfo(CODESET). */
+#undef HAVE_LANGINFO_CODESET
+
+/* Define to 1 if you have the <locale.h> header file. */
+#undef HAVE_LOCALE_H
+
+/* Define to 1 if the system has the type `long long int'. */
+#undef HAVE_LONG_LONG_INT
+
+/* Define to 1 if your system has a GNU libc compatible `malloc' function, and
+   to 0 otherwise. */
+#undef HAVE_MALLOC
+
+/* Define to 1 if you have the `mbrtowc' function. */
+#undef HAVE_MBRTOWC
+
 /* Define to 1 if you have the <memory.h> header file. */
 #undef HAVE_MEMORY_H
+
+/* Define to 1 if 'sig_atomic_t' is a signed integer type. */
+#undef HAVE_SIGNED_SIG_ATOMIC_T
+
+/* Define to 1 if 'wchar_t' is a signed integer type. */
+#undef HAVE_SIGNED_WCHAR_T
+
+/* Define to 1 if 'wint_t' is a signed integer type. */
+#undef HAVE_SIGNED_WINT_T
+
+/* Define to 1 if stdbool.h conforms to C99. */
+#undef HAVE_STDBOOL_H
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #undef HAVE_STDINT_H
@@ -75,6 +167,12 @@
 /* Define to 1 if you have the <string.h> header file. */
 #undef HAVE_STRING_H
 
+/* Define to 1 if you have the <sys/bitypes.h> header file. */
+#undef HAVE_SYS_BITYPES_H
+
+/* Define to 1 if you have the <sys/inttypes.h> header file. */
+#undef HAVE_SYS_INTTYPES_H
+
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #undef HAVE_SYS_STAT_H
 
@@ -83,6 +181,27 @@
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #undef HAVE_UNISTD_H
+
+/* Define to 1 if the system has the type `unsigned long long int'. */
+#undef HAVE_UNSIGNED_LONG_LONG_INT
+
+/* Define to 1 if you have the <wchar.h> header file. */
+#undef HAVE_WCHAR_H
+
+/* Define to 1 if you have the `wcrtomb' function. */
+#undef HAVE_WCRTOMB
+
+/* Define to 1 if you have the `wcscoll' function. */
+#undef HAVE_WCSCOLL
+
+/* Define to 1 if you have the <wctype.h> header file. */
+#undef HAVE_WCTYPE_H
+
+/* Define if you have the 'wint_t' type. */
+#undef HAVE_WINT_T
+
+/* Define to 1 if the system has the type `_Bool'. */
+#undef HAVE__BOOL
 
 /* Name of package */
 #undef PACKAGE
@@ -102,6 +221,26 @@
 /* Define to the version of this package. */
 #undef PACKAGE_VERSION
 
+/* Define to l, ll, u, ul, ull, etc., as suitable for constants of type
+   'ptrdiff_t'. */
+#undef PTRDIFF_T_SUFFIX
+
+/* Define to l, ll, u, ul, ull, etc., as suitable for constants of type
+   'sig_atomic_t'. */
+#undef SIG_ATOMIC_T_SUFFIX
+
+/* Define to l, ll, u, ul, ull, etc., as suitable for constants of type
+   'size_t'. */
+#undef SIZE_T_SUFFIX
+
+/* If using the C implementation of alloca, define if you know the
+   direction of stack growth for your system; otherwise it will be
+   automatically deduced at runtime.
+	STACK_DIRECTION > 0 => grows toward higher addresses
+	STACK_DIRECTION < 0 => grows toward lower addresses
+	STACK_DIRECTION = 0 => direction of growth unknown */
+#undef STACK_DIRECTION
+
 /* Define to 1 if you have the ANSI C header files. */
 #undef STDC_HEADERS
 
@@ -111,10 +250,53 @@
 /* Version number of package */
 #undef VERSION
 
+/* Define to l, ll, u, ul, ull, etc., as suitable for constants of type
+   'wchar_t'. */
+#undef WCHAR_T_SUFFIX
+
+/* Define to l, ll, u, ul, ull, etc., as suitable for constants of type
+   'wint_t'. */
+#undef WINT_T_SUFFIX
+
+/* Define to 1 if on AIX 3.
+   System headers sometimes define this.
+   We just want to avoid a redefinition error message.  */
+#ifndef _ALL_SOURCE
+# undef _ALL_SOURCE
+#endif
+
 /* Enable GNU extensions on systems that have them.  */
 #ifndef _GNU_SOURCE
 # undef _GNU_SOURCE
 #endif
+
+/* Define to 1 if on MINIX. */
+#undef _MINIX
+
+/* Define to 2 if the system does not provide POSIX.1 features except with
+   this defined. */
+#undef _POSIX_1_SOURCE
+
+/* Define to 1 if you need to in order for `stat' and other things to work. */
+#undef _POSIX_SOURCE
+
+/* Define if you want regoff_t to be at least as wide POSIX requires. */
+#undef _REGEX_LARGE_OFFSETS
+
+/* Enable extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# undef __EXTENSIONS__
+#endif
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# undef _POSIX_PTHREAD_SEMANTICS
+#endif
+#ifndef _TANDEM_SOURCE
+# undef _TANDEM_SOURCE
+#endif
+
+/* Define to rpl_ if the getopt replacement functions and variables should be
+   used. */
+#undef __GETOPT_PREFIX
 
 /* Define to a replacement function name for getline(). */
 #undef getline
@@ -124,3 +306,58 @@
 #ifndef __cplusplus
 #undef inline
 #endif
+
+/* Define to rpl_malloc if the replacement function should be used. */
+#undef malloc
+
+/* Define to rpl_re_comp if the replacement should be used. */
+#undef re_comp
+
+/* Define to rpl_re_compile_fastmap if the replacement should be used. */
+#undef re_compile_fastmap
+
+/* Define to rpl_re_compile_pattern if the replacement should be used. */
+#undef re_compile_pattern
+
+/* Define to rpl_re_exec if the replacement should be used. */
+#undef re_exec
+
+/* Define to rpl_re_match if the replacement should be used. */
+#undef re_match
+
+/* Define to rpl_re_match_2 if the replacement should be used. */
+#undef re_match_2
+
+/* Define to rpl_re_search if the replacement should be used. */
+#undef re_search
+
+/* Define to rpl_re_search_2 if the replacement should be used. */
+#undef re_search_2
+
+/* Define to rpl_re_set_registers if the replacement should be used. */
+#undef re_set_registers
+
+/* Define to rpl_re_set_syntax if the replacement should be used. */
+#undef re_set_syntax
+
+/* Define to rpl_re_syntax_options if the replacement should be used. */
+#undef re_syntax_options
+
+/* Define to rpl_regcomp if the replacement should be used. */
+#undef regcomp
+
+/* Define to rpl_regerror if the replacement should be used. */
+#undef regerror
+
+/* Define to rpl_regexec if the replacement should be used. */
+#undef regexec
+
+/* Define to rpl_regfree if the replacement should be used. */
+#undef regfree
+
+/* Define to equivalent of C99 restrict keyword, or to nothing if this is not
+   supported. Do not define if restrict is supported directly. */
+#undef restrict
+
+/* Define as a signed type of the same size as size_t. */
+#undef ssize_t
