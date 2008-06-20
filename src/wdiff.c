@@ -1185,13 +1185,15 @@ Mandatory arguments to long options are mandatory for short options too.\n\
   -K, --no-init-term         like -t, but no termcap init/term strings\n\
   -1, --no-deleted           inhibit output of deleted words\n\
   -2, --no-inserted          inhibit output of inserted words\n\
-  -3, --no-common            inhibit output of common words\n\
+  -3, --no-common            inhibit output of common words\n"));
+      printf (_("\
   -a, --auto-pager           automatically calls a pager\n\
   -h, --help                 print this help\n\
   -i, --ignore-case          fold character case while comparing\n\
   -l, --less-mode            variation of printer mode for \"less\"\n\
   -n, --avoid-wraps          do not extend fields through newlines\n\
-  -p, --printer              overstrike as for printers\n\
+  -p, --printer              overstrike as for printers\n"));
+      printf (_("\
   -s, --statistics           say how many words deleted, inserted etc.\n\
   -t, --terminal             use termcap as for terminal displays\n\
   -v, --version              print program version then exit\n\
