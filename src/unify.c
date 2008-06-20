@@ -340,7 +340,7 @@ main (int argc, char *const *argv)
 
   /* Decode command options.  */
 
-  while (option_char = getopt_long (argc, argv, "=ceopPsUu",
+  while (option_char = getopt_long (argc, (char **) argv, "=ceopPsUu",
 				    long_options, NULL),
 	 option_char != EOF)
     switch (option_char)

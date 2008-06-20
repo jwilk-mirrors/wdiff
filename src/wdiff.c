@@ -1252,8 +1252,8 @@ main (int argc, char *const argv[])
   count_changed_left = 0;
   count_changed_right = 0;
 
-  while (option_char = getopt_long (argc, argv, "123CKahilnpstvw:x:y:z:",
-				    longopts, NULL),
+  while (option_char = getopt_long (argc, (char **) argv,
+				    "123CKahilnpstvw:x:y:z:", longopts, NULL),
 	 option_char != EOF)
     switch (option_char)
       {

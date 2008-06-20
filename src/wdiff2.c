@@ -238,8 +238,9 @@ main (int argc, char *const argv[])
 
   /* Decode arguments.  */
 
-  while (option_char = getopt_long (argc, argv, "123CKachidlnpqstvw:x:y:z:",
-				    longopts, NULL),
+  while (option_char = getopt_long (argc, (char **) argv,
+				    "123CKachidlnpqstvw:x:y:z:", longopts,
+				    NULL),
 	 option_char != EOF)
     switch (option_char)
       {

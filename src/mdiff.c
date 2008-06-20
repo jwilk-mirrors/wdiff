@@ -4093,7 +4093,7 @@ main (int argc, char *const *argv)
 
   /* Decode command options.  */
 
-  while (option_char = getopt_long (argc, argv, OPTION_STRING,
+  while (option_char = getopt_long (argc, (char **) argv, OPTION_STRING,
 				    long_options, NULL),
 	 option_char != EOF)
     switch (option_char)
