@@ -1,5 +1,5 @@
 # DO NOT EDIT! GENERATED AUTOMATICALLY!
-# Copyright (C) 2004-2006 Free Software Foundation, Inc.
+# Copyright (C) 2004-2007 Free Software Foundation, Inc.
 #
 # This file is free software, distributed under the terms of the GNU
 # General Public License.  As a special exception to the GNU General
@@ -44,7 +44,11 @@ AC_DEFUN([gl_INIT],
   gl_EXITFAIL
   gl_FUNC_GETDELIM
   gl_FUNC_GETLINE
+  AC_SUBST([LIBINTL])
+  AC_SUBST([LTLIBINTL])
   gl_INLINE
+  gl_STDLIB_H
+  gl_UNISTD_H
   gl_XALLOC
   LIBGNU_LIBDEPS="$gl_libdeps"
   AC_SUBST([LIBGNU_LIBDEPS])
@@ -87,9 +91,9 @@ AC_DEFUN([gl_LIBSOURCES],
 # This macro records the list of files which have been installed by
 # gnulib-tool and may be removed by future gnulib-tool invocations.
 AC_DEFUN([gl_FILE_LIST], [
+  build-aux/link-warning.h
   lib/error.c
   lib/error.h
-  lib/exit.h
   lib/exitfail.c
   lib/exitfail.h
   lib/getdelim.c
@@ -97,14 +101,20 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/getline.c
   lib/getline.h
   lib/gettext.h
+  lib/stdlib_.h
+  lib/unistd_.h
   lib/xalloc-die.c
   lib/xalloc.h
   lib/xmalloc.c
+  m4/absolute-header.m4
   m4/error.m4
   m4/exitfail.m4
   m4/getdelim.m4
   m4/getline.m4
+  m4/gnulib-common.m4
   m4/inline.m4
   m4/onceonly_2_57.m4
+  m4/stdlib_h.m4
+  m4/unistd_h.m4
   m4/xalloc.m4
 ])
