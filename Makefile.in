@@ -38,15 +38,17 @@ DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	ChangeLog INSTALL NEWS THANKS TODO config.guess config.rpath \
 	config.sub depcomp install-sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/m4/error.m4 \
-	$(top_srcdir)/m4/exitfail.m4 $(top_srcdir)/m4/getdelim.m4 \
-	$(top_srcdir)/m4/getline.m4 $(top_srcdir)/m4/gettext.m4 \
-	$(top_srcdir)/m4/gnulib-comp.m4 $(top_srcdir)/m4/iconv.m4 \
-	$(top_srcdir)/m4/inline.m4 $(top_srcdir)/m4/lib-ld.m4 \
-	$(top_srcdir)/m4/lib-link.m4 $(top_srcdir)/m4/lib-prefix.m4 \
-	$(top_srcdir)/m4/nls.m4 $(top_srcdir)/m4/onceonly_2_57.m4 \
-	$(top_srcdir)/m4/po.m4 $(top_srcdir)/m4/progtest.m4 \
-	$(top_srcdir)/m4/xalloc.m4 $(top_srcdir)/configure.ac
+am__aclocal_m4_deps = $(top_srcdir)/m4/absolute-header.m4 \
+	$(top_srcdir)/m4/error.m4 $(top_srcdir)/m4/exitfail.m4 \
+	$(top_srcdir)/m4/getdelim.m4 $(top_srcdir)/m4/getline.m4 \
+	$(top_srcdir)/m4/gettext.m4 $(top_srcdir)/m4/gnulib-comp.m4 \
+	$(top_srcdir)/m4/iconv.m4 $(top_srcdir)/m4/inline.m4 \
+	$(top_srcdir)/m4/lib-ld.m4 $(top_srcdir)/m4/lib-link.m4 \
+	$(top_srcdir)/m4/lib-prefix.m4 $(top_srcdir)/m4/nls.m4 \
+	$(top_srcdir)/m4/onceonly_2_57.m4 $(top_srcdir)/m4/po.m4 \
+	$(top_srcdir)/m4/progtest.m4 $(top_srcdir)/m4/stdlib_h.m4 \
+	$(top_srcdir)/m4/unistd_h.m4 $(top_srcdir)/m4/xalloc.m4 \
+	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
@@ -79,6 +81,8 @@ DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
+ABSOLUTE_STDLIB_H = @ABSOLUTE_STDLIB_H@
+ABSOLUTE_UNISTD_H = @ABSOLUTE_UNISTD_H@
 ACLOCAL = @ACLOCAL@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
@@ -102,7 +106,27 @@ EGREP = @EGREP@
 EXEEXT = @EXEEXT@
 GMSGFMT = @GMSGFMT@
 GMSGFMT_015 = @GMSGFMT_015@
+GNULIB_CHOWN = @GNULIB_CHOWN@
+GNULIB_DUP2 = @GNULIB_DUP2@
+GNULIB_FCHDIR = @GNULIB_FCHDIR@
+GNULIB_FTRUNCATE = @GNULIB_FTRUNCATE@
+GNULIB_GETCWD = @GNULIB_GETCWD@
+GNULIB_GETLOGIN_R = @GNULIB_GETLOGIN_R@
+GNULIB_GETSUBOPT = @GNULIB_GETSUBOPT@
+GNULIB_LSEEK = @GNULIB_LSEEK@
+GNULIB_MKDTEMP = @GNULIB_MKDTEMP@
+GNULIB_MKSTEMP = @GNULIB_MKSTEMP@
+GNULIB_READLINK = @GNULIB_READLINK@
+GNULIB_SLEEP = @GNULIB_SLEEP@
 GREP = @GREP@
+HAVE_DECL_GETLOGIN_R = @HAVE_DECL_GETLOGIN_R@
+HAVE_DUP2 = @HAVE_DUP2@
+HAVE_FTRUNCATE = @HAVE_FTRUNCATE@
+HAVE_GETSUBOPT = @HAVE_GETSUBOPT@
+HAVE_MKDTEMP = @HAVE_MKDTEMP@
+HAVE_READLINK = @HAVE_READLINK@
+HAVE_SLEEP = @HAVE_SLEEP@
+HAVE_UNISTD_H = @HAVE_UNISTD_H@
 HELP2MAN = @HELP2MAN@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
@@ -136,6 +160,11 @@ PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 POSUB = @POSUB@
 RANLIB = @RANLIB@
+REPLACE_CHOWN = @REPLACE_CHOWN@
+REPLACE_FCHDIR = @REPLACE_FCHDIR@
+REPLACE_GETCWD = @REPLACE_GETCWD@
+REPLACE_LSEEK = @REPLACE_LSEEK@
+REPLACE_MKSTEMP = @REPLACE_MKSTEMP@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@

@@ -614,6 +614,7 @@ ac_includes_default="\
 # include <unistd.h>
 #endif"
 
+gl_header_list=
 gt_needs=
 ac_subst_vars='SHELL
 PATH_SEPARATOR
@@ -698,6 +699,35 @@ GL_COND_LIBTOOL_FALSE
 CPP
 GREP
 EGREP
+LIBINTL
+LTLIBINTL
+GNULIB_GETSUBOPT
+GNULIB_MKDTEMP
+GNULIB_MKSTEMP
+HAVE_GETSUBOPT
+HAVE_MKDTEMP
+REPLACE_MKSTEMP
+ABSOLUTE_STDLIB_H
+GNULIB_CHOWN
+GNULIB_DUP2
+GNULIB_FCHDIR
+GNULIB_FTRUNCATE
+GNULIB_GETCWD
+GNULIB_GETLOGIN_R
+GNULIB_LSEEK
+GNULIB_READLINK
+GNULIB_SLEEP
+HAVE_DUP2
+HAVE_FTRUNCATE
+HAVE_READLINK
+HAVE_SLEEP
+HAVE_DECL_GETLOGIN_R
+REPLACE_CHOWN
+REPLACE_FCHDIR
+REPLACE_GETCWD
+REPLACE_LSEEK
+HAVE_UNISTD_H
+ABSOLUTE_UNISTD_H
 LIBGNU_LIBDEPS
 LIBGNU_LTLIBDEPS
 HELP2MAN
@@ -721,8 +751,6 @@ INTL_MACOSX_LIBS
 LIBICONV
 LTLIBICONV
 INTLLIBS
-LIBINTL
-LTLIBINTL
 POSUB
 LIBOBJS
 LTLIBOBJS
@@ -1692,6 +1720,8 @@ echo "$as_me: creating cache $cache_file" >&6;}
   >$cache_file
 fi
 
+gl_header_list="$gl_header_list stdlib.h"
+gl_header_list="$gl_header_list unistd.h"
 gt_needs="$gt_needs "
 # Check that the precious variables saved in the cache have kept the same
 # value.
@@ -4534,6 +4564,194 @@ _ACEOF
 esac
 
 
+  GNULIB_GETSUBOPT=0;
+  GNULIB_MKDTEMP=0;
+  GNULIB_MKSTEMP=0;
+    HAVE_GETSUBOPT=1;
+  HAVE_MKDTEMP=1;
+  REPLACE_MKSTEMP=0;
+
+
+
+
+
+
+for ac_header in $gl_header_list
+do
+as_ac_Header=`echo "ac_cv_header_$ac_header" | $as_tr_sh`
+if { as_var=$as_ac_Header; eval "test \"\${$as_var+set}\" = set"; }; then
+  { echo "$as_me:$LINENO: checking for $ac_header" >&5
+echo $ECHO_N "checking for $ac_header... $ECHO_C" >&6; }
+if { as_var=$as_ac_Header; eval "test \"\${$as_var+set}\" = set"; }; then
+  echo $ECHO_N "(cached) $ECHO_C" >&6
+fi
+ac_res=`eval echo '${'$as_ac_Header'}'`
+	       { echo "$as_me:$LINENO: result: $ac_res" >&5
+echo "${ECHO_T}$ac_res" >&6; }
+else
+  # Is the header compilable?
+{ echo "$as_me:$LINENO: checking $ac_header usability" >&5
+echo $ECHO_N "checking $ac_header usability... $ECHO_C" >&6; }
+cat >conftest.$ac_ext <<_ACEOF
+/* confdefs.h.  */
+_ACEOF
+cat confdefs.h >>conftest.$ac_ext
+cat >>conftest.$ac_ext <<_ACEOF
+/* end confdefs.h.  */
+$ac_includes_default
+#include <$ac_header>
+_ACEOF
+rm -f conftest.$ac_objext
+if { (ac_try="$ac_compile"
+case "(($ac_try" in
+  *\"* | *\`* | *\\*) ac_try_echo=\$ac_try;;
+  *) ac_try_echo=$ac_try;;
+esac
+eval "echo \"\$as_me:$LINENO: $ac_try_echo\"") >&5
+  (eval "$ac_compile") 2>conftest.er1
+  ac_status=$?
+  grep -v '^ *+' conftest.er1 >conftest.err
+  rm -f conftest.er1
+  cat conftest.err >&5
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); } && {
+	 test -z "$ac_c_werror_flag" ||
+	 test ! -s conftest.err
+       } && test -s conftest.$ac_objext; then
+  ac_header_compiler=yes
+else
+  echo "$as_me: failed program was:" >&5
+sed 's/^/| /' conftest.$ac_ext >&5
+
+	ac_header_compiler=no
+fi
+
+rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
+{ echo "$as_me:$LINENO: result: $ac_header_compiler" >&5
+echo "${ECHO_T}$ac_header_compiler" >&6; }
+
+# Is the header present?
+{ echo "$as_me:$LINENO: checking $ac_header presence" >&5
+echo $ECHO_N "checking $ac_header presence... $ECHO_C" >&6; }
+cat >conftest.$ac_ext <<_ACEOF
+/* confdefs.h.  */
+_ACEOF
+cat confdefs.h >>conftest.$ac_ext
+cat >>conftest.$ac_ext <<_ACEOF
+/* end confdefs.h.  */
+#include <$ac_header>
+_ACEOF
+if { (ac_try="$ac_cpp conftest.$ac_ext"
+case "(($ac_try" in
+  *\"* | *\`* | *\\*) ac_try_echo=\$ac_try;;
+  *) ac_try_echo=$ac_try;;
+esac
+eval "echo \"\$as_me:$LINENO: $ac_try_echo\"") >&5
+  (eval "$ac_cpp conftest.$ac_ext") 2>conftest.er1
+  ac_status=$?
+  grep -v '^ *+' conftest.er1 >conftest.err
+  rm -f conftest.er1
+  cat conftest.err >&5
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); } >/dev/null && {
+	 test -z "$ac_c_preproc_warn_flag$ac_c_werror_flag" ||
+	 test ! -s conftest.err
+       }; then
+  ac_header_preproc=yes
+else
+  echo "$as_me: failed program was:" >&5
+sed 's/^/| /' conftest.$ac_ext >&5
+
+  ac_header_preproc=no
+fi
+
+rm -f conftest.err conftest.$ac_ext
+{ echo "$as_me:$LINENO: result: $ac_header_preproc" >&5
+echo "${ECHO_T}$ac_header_preproc" >&6; }
+
+# So?  What about this header?
+case $ac_header_compiler:$ac_header_preproc:$ac_c_preproc_warn_flag in
+  yes:no: )
+    { echo "$as_me:$LINENO: WARNING: $ac_header: accepted by the compiler, rejected by the preprocessor!" >&5
+echo "$as_me: WARNING: $ac_header: accepted by the compiler, rejected by the preprocessor!" >&2;}
+    { echo "$as_me:$LINENO: WARNING: $ac_header: proceeding with the compiler's result" >&5
+echo "$as_me: WARNING: $ac_header: proceeding with the compiler's result" >&2;}
+    ac_header_preproc=yes
+    ;;
+  no:yes:* )
+    { echo "$as_me:$LINENO: WARNING: $ac_header: present but cannot be compiled" >&5
+echo "$as_me: WARNING: $ac_header: present but cannot be compiled" >&2;}
+    { echo "$as_me:$LINENO: WARNING: $ac_header:     check for missing prerequisite headers?" >&5
+echo "$as_me: WARNING: $ac_header:     check for missing prerequisite headers?" >&2;}
+    { echo "$as_me:$LINENO: WARNING: $ac_header: see the Autoconf documentation" >&5
+echo "$as_me: WARNING: $ac_header: see the Autoconf documentation" >&2;}
+    { echo "$as_me:$LINENO: WARNING: $ac_header:     section \"Present But Cannot Be Compiled\"" >&5
+echo "$as_me: WARNING: $ac_header:     section \"Present But Cannot Be Compiled\"" >&2;}
+    { echo "$as_me:$LINENO: WARNING: $ac_header: proceeding with the preprocessor's result" >&5
+echo "$as_me: WARNING: $ac_header: proceeding with the preprocessor's result" >&2;}
+    { echo "$as_me:$LINENO: WARNING: $ac_header: in the future, the compiler will take precedence" >&5
+echo "$as_me: WARNING: $ac_header: in the future, the compiler will take precedence" >&2;}
+    ( cat <<\_ASBOX
+## --------------------------------- ##
+## Report this to wdiff-bugs@gnu.org ##
+## --------------------------------- ##
+_ASBOX
+     ) | sed "s/^/$as_me: WARNING:     /" >&2
+    ;;
+esac
+{ echo "$as_me:$LINENO: checking for $ac_header" >&5
+echo $ECHO_N "checking for $ac_header... $ECHO_C" >&6; }
+if { as_var=$as_ac_Header; eval "test \"\${$as_var+set}\" = set"; }; then
+  echo $ECHO_N "(cached) $ECHO_C" >&6
+else
+  eval "$as_ac_Header=\$ac_header_preproc"
+fi
+ac_res=`eval echo '${'$as_ac_Header'}'`
+	       { echo "$as_me:$LINENO: result: $ac_res" >&5
+echo "${ECHO_T}$ac_res" >&6; }
+
+fi
+if test `eval echo '${'$as_ac_Header'}'` = yes; then
+  cat >>confdefs.h <<_ACEOF
+#define `echo "HAVE_$ac_header" | $as_tr_cpp` 1
+_ACEOF
+
+fi
+
+done
+
+
+
+
+
+
+
+  GNULIB_CHOWN=0;
+  GNULIB_DUP2=0;
+  GNULIB_FCHDIR=0;
+  GNULIB_FTRUNCATE=0;
+  GNULIB_GETCWD=0;
+  GNULIB_GETLOGIN_R=0;
+  GNULIB_LSEEK=0;
+  GNULIB_READLINK=0;
+  GNULIB_SLEEP=0;
+    HAVE_DUP2=1;
+  HAVE_FTRUNCATE=1;
+  HAVE_READLINK=1;
+  HAVE_SLEEP=1;
+  HAVE_DECL_GETLOGIN_R=1;
+  REPLACE_CHOWN=0;
+  REPLACE_FCHDIR=0;
+  REPLACE_GETCWD=0;
+  REPLACE_LSEEK=0;
+
+
+
+
+
+
+
+
 
 
 
@@ -5299,6 +5517,8 @@ done
 
 
 
+
+
   { echo "$as_me:$LINENO: checking whether the compiler generally respects inline" >&5
 echo $ECHO_N "checking whether the compiler generally respects inline... $ECHO_C" >&6; }
 if test "${gl_cv_c_inline_effective+set}" = set; then
@@ -5362,6 +5582,94 @@ cat >>confdefs.h <<\_ACEOF
 _ACEOF
 
   fi
+
+
+
+    { echo "$as_me:$LINENO: checking absolute name of <stdlib.h>" >&5
+echo $ECHO_N "checking absolute name of <stdlib.h>... $ECHO_C" >&6; }
+if test "${gl_cv_absolute_stdlib_h+set}" = set; then
+  echo $ECHO_N "(cached) $ECHO_C" >&6
+else
+
+  :
+
+
+
+
+    if test $ac_cv_header_stdlib_h = yes; then
+      cat >conftest.$ac_ext <<_ACEOF
+/* confdefs.h.  */
+_ACEOF
+cat confdefs.h >>conftest.$ac_ext
+cat >>conftest.$ac_ext <<_ACEOF
+/* end confdefs.h.  */
+#include <stdlib.h>
+_ACEOF
+      gl_cv_absolute_stdlib_h=`(eval "$ac_cpp conftest.$ac_ext") 2>&5 |
+sed -n '\#/stdlib.h#{s#.*"\(.*/stdlib.h\)".*#\1#;s#^/[^/]#//&#;p;q;}'`
+    fi
+
+fi
+{ echo "$as_me:$LINENO: result: $gl_cv_absolute_stdlib_h" >&5
+echo "${ECHO_T}$gl_cv_absolute_stdlib_h" >&6; }
+cat >>confdefs.h <<_ACEOF
+#define ABSOLUTE_STDLIB_H "$gl_cv_absolute_stdlib_h"
+_ACEOF
+
+
+  ABSOLUTE_STDLIB_H=\"$gl_cv_absolute_stdlib_h\"
+
+
+
+
+
+
+  :
+
+
+
+
+
+  if test $ac_cv_header_unistd_h = yes; then
+    HAVE_UNISTD_H=1
+      { echo "$as_me:$LINENO: checking absolute name of <unistd.h>" >&5
+echo $ECHO_N "checking absolute name of <unistd.h>... $ECHO_C" >&6; }
+if test "${gl_cv_absolute_unistd_h+set}" = set; then
+  echo $ECHO_N "(cached) $ECHO_C" >&6
+else
+
+  :
+
+
+
+
+    if test $ac_cv_header_unistd_h = yes; then
+      cat >conftest.$ac_ext <<_ACEOF
+/* confdefs.h.  */
+_ACEOF
+cat confdefs.h >>conftest.$ac_ext
+cat >>conftest.$ac_ext <<_ACEOF
+/* end confdefs.h.  */
+#include <unistd.h>
+_ACEOF
+      gl_cv_absolute_unistd_h=`(eval "$ac_cpp conftest.$ac_ext") 2>&5 |
+sed -n '\#/unistd.h#{s#.*"\(.*/unistd.h\)".*#\1#;s#^/[^/]#//&#;p;q;}'`
+    fi
+
+fi
+{ echo "$as_me:$LINENO: result: $gl_cv_absolute_unistd_h" >&5
+echo "${ECHO_T}$gl_cv_absolute_unistd_h" >&6; }
+cat >>confdefs.h <<_ACEOF
+#define ABSOLUTE_UNISTD_H "$gl_cv_absolute_unistd_h"
+_ACEOF
+
+
+    ABSOLUTE_UNISTD_H=\"$gl_cv_absolute_unistd_h\"
+  else
+    HAVE_UNISTD_H=0
+  fi
+
+
 
 
   gl_LIBOBJS="$gl_LIBOBJS xmalloc.$ac_objext"
@@ -8154,20 +8462,20 @@ GL_COND_LIBTOOL_FALSE!$GL_COND_LIBTOOL_FALSE$ac_delim
 CPP!$CPP$ac_delim
 GREP!$GREP$ac_delim
 EGREP!$EGREP$ac_delim
-LIBGNU_LIBDEPS!$LIBGNU_LIBDEPS$ac_delim
-LIBGNU_LTLIBDEPS!$LIBGNU_LTLIBDEPS$ac_delim
-HELP2MAN!$HELP2MAN$ac_delim
-USE_NLS!$USE_NLS$ac_delim
-MSGFMT!$MSGFMT$ac_delim
-GMSGFMT!$GMSGFMT$ac_delim
-MSGFMT_015!$MSGFMT_015$ac_delim
-GMSGFMT_015!$GMSGFMT_015$ac_delim
-XGETTEXT!$XGETTEXT$ac_delim
-XGETTEXT_015!$XGETTEXT_015$ac_delim
-MSGMERGE!$MSGMERGE$ac_delim
-build!$build$ac_delim
-build_cpu!$build_cpu$ac_delim
-build_vendor!$build_vendor$ac_delim
+LIBINTL!$LIBINTL$ac_delim
+LTLIBINTL!$LTLIBINTL$ac_delim
+GNULIB_GETSUBOPT!$GNULIB_GETSUBOPT$ac_delim
+GNULIB_MKDTEMP!$GNULIB_MKDTEMP$ac_delim
+GNULIB_MKSTEMP!$GNULIB_MKSTEMP$ac_delim
+HAVE_GETSUBOPT!$HAVE_GETSUBOPT$ac_delim
+HAVE_MKDTEMP!$HAVE_MKDTEMP$ac_delim
+REPLACE_MKSTEMP!$REPLACE_MKSTEMP$ac_delim
+ABSOLUTE_STDLIB_H!$ABSOLUTE_STDLIB_H$ac_delim
+GNULIB_CHOWN!$GNULIB_CHOWN$ac_delim
+GNULIB_DUP2!$GNULIB_DUP2$ac_delim
+GNULIB_FCHDIR!$GNULIB_FCHDIR$ac_delim
+GNULIB_FTRUNCATE!$GNULIB_FTRUNCATE$ac_delim
+GNULIB_GETCWD!$GNULIB_GETCWD$ac_delim
 _ACEOF
 
   if test `sed -n "s/.*$ac_delim\$/X/p" conf$$subs.sed | grep -c X` = 97; then
@@ -8209,6 +8517,35 @@ _ACEOF
 ac_delim='%!_!# '
 for ac_last_try in false false false false false :; do
   cat >conf$$subs.sed <<_ACEOF
+GNULIB_GETLOGIN_R!$GNULIB_GETLOGIN_R$ac_delim
+GNULIB_LSEEK!$GNULIB_LSEEK$ac_delim
+GNULIB_READLINK!$GNULIB_READLINK$ac_delim
+GNULIB_SLEEP!$GNULIB_SLEEP$ac_delim
+HAVE_DUP2!$HAVE_DUP2$ac_delim
+HAVE_FTRUNCATE!$HAVE_FTRUNCATE$ac_delim
+HAVE_READLINK!$HAVE_READLINK$ac_delim
+HAVE_SLEEP!$HAVE_SLEEP$ac_delim
+HAVE_DECL_GETLOGIN_R!$HAVE_DECL_GETLOGIN_R$ac_delim
+REPLACE_CHOWN!$REPLACE_CHOWN$ac_delim
+REPLACE_FCHDIR!$REPLACE_FCHDIR$ac_delim
+REPLACE_GETCWD!$REPLACE_GETCWD$ac_delim
+REPLACE_LSEEK!$REPLACE_LSEEK$ac_delim
+HAVE_UNISTD_H!$HAVE_UNISTD_H$ac_delim
+ABSOLUTE_UNISTD_H!$ABSOLUTE_UNISTD_H$ac_delim
+LIBGNU_LIBDEPS!$LIBGNU_LIBDEPS$ac_delim
+LIBGNU_LTLIBDEPS!$LIBGNU_LTLIBDEPS$ac_delim
+HELP2MAN!$HELP2MAN$ac_delim
+USE_NLS!$USE_NLS$ac_delim
+MSGFMT!$MSGFMT$ac_delim
+GMSGFMT!$GMSGFMT$ac_delim
+MSGFMT_015!$MSGFMT_015$ac_delim
+GMSGFMT_015!$GMSGFMT_015$ac_delim
+XGETTEXT!$XGETTEXT$ac_delim
+XGETTEXT_015!$XGETTEXT_015$ac_delim
+MSGMERGE!$MSGMERGE$ac_delim
+build!$build$ac_delim
+build_cpu!$build_cpu$ac_delim
+build_vendor!$build_vendor$ac_delim
 build_os!$build_os$ac_delim
 host!$host$ac_delim
 host_cpu!$host_cpu$ac_delim
@@ -8218,8 +8555,6 @@ INTL_MACOSX_LIBS!$INTL_MACOSX_LIBS$ac_delim
 LIBICONV!$LIBICONV$ac_delim
 LTLIBICONV!$LTLIBICONV$ac_delim
 INTLLIBS!$INTLLIBS$ac_delim
-LIBINTL!$LIBINTL$ac_delim
-LTLIBINTL!$LTLIBINTL$ac_delim
 POSUB!$POSUB$ac_delim
 LIBOBJS!$LIBOBJS$ac_delim
 LTLIBOBJS!$LTLIBOBJS$ac_delim
@@ -8227,7 +8562,7 @@ gl_LIBOBJS!$gl_LIBOBJS$ac_delim
 gl_LTLIBOBJS!$gl_LTLIBOBJS$ac_delim
 _ACEOF
 
-  if test `sed -n "s/.*$ac_delim\$/X/p" conf$$subs.sed | grep -c X` = 16; then
+  if test `sed -n "s/.*$ac_delim\$/X/p" conf$$subs.sed | grep -c X` = 43; then
     break
   elif $ac_last_try; then
     { { echo "$as_me:$LINENO: error: could not make $CONFIG_STATUS" >&5

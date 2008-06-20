@@ -1,5 +1,11 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+/* Define this to an absolute name of <stdlib.h>. */
+#undef ABSOLUTE_STDLIB_H
+
+/* Define this to an absolute name of <unistd.h>. */
+#undef ABSOLUTE_UNISTD_H
+
 /* Define to 1 if translation of program messages to the user's native
    language is requested. */
 #undef ENABLE_NLS
