@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2008-06-19 16:55-0400\n"
+"POT-Creation-Date: 2008-06-20 15:02-0400\n"
 "PO-Revision-Date: 2002-06-26 19:51GMT -3\n"
 "Last-Translator: Halley Pacheco de Oliveira <halleypo@ig.com.br>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
@@ -925,7 +925,7 @@ msgstr ""
 "\n"
 "Direitos Autorais (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1358 src/wdiff2.c:325
+#: src/wdiff.c:1358 src/wdiff2.c:326
 msgid "Missing file arguments"
 msgstr "Faltando os argumentos de arquivo"
 
@@ -990,7 +990,7 @@ msgid ""
 "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
-#: src/wdiff2.c:336
+#: src/wdiff2.c:337
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "Lendo %s"

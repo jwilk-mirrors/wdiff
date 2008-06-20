@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2008-06-19 16:55-0400\n"
+"POT-Creation-Date: 2008-06-20 15:02-0400\n"
 "PO-Revision-Date: 2005-07-22 16:30+0800\n"
 "Last-Translator: Wei-Lun Chao <chaoweilun@pcmail.com.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -675,7 +675,7 @@ msgstr ""
 "\n"
 "版權所有 (C) 1992, 1997 自由軟體基金會。\n"
 
-#: src/wdiff.c:1358 src/wdiff2.c:325
+#: src/wdiff.c:1358 src/wdiff2.c:326
 msgid "Missing file arguments"
 msgstr "缺少引數"
 
@@ -716,7 +716,7 @@ msgid ""
 "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
-#: src/wdiff2.c:336
+#: src/wdiff2.c:337
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "正在讀取 %s"

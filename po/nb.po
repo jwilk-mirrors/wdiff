@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2008-06-19 16:55-0400\n"
+"POT-Creation-Date: 2008-06-20 15:02-0400\n"
 "PO-Revision-Date: 2004-02-13 02:14\n"
 "Last-Translator: Eivind Tagseth <eivindt@multinet.no>\n"
 "Language-Team: Norwegian Bokmaal <i18n-nb@lister.ping.uio.no>\n"
@@ -873,7 +873,7 @@ msgid ""
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 
-#: src/wdiff.c:1358 src/wdiff2.c:325
+#: src/wdiff.c:1358 src/wdiff2.c:326
 msgid "Missing file arguments"
 msgstr "Mangler filargumenter"
 
@@ -937,7 +937,7 @@ msgid ""
 "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
-#: src/wdiff2.c:336
+#: src/wdiff2.c:337
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "Leser %s"
