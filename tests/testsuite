@@ -850,7 +850,7 @@ fi
 # List of tests.
 if $at_list_p; then
   cat <<_ATEOF
-GNU wdiff 0.5.92 test suite: wdiff test groups:
+GNU wdiff 0.5.93 test suite: wdiff test groups:
 
  NUM: FILE-NAME:LINE     TEST-GROUP-NAME
       KEYWORDS
@@ -874,7 +874,7 @@ _ATEOF
   exit 0
 fi
 if $at_version_p; then
-  echo "$as_me (GNU wdiff 0.5.92)"
+  echo "$as_me (GNU wdiff 0.5.93)"
   cat <<\_ACEOF
 
 Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006 Free Software
@@ -958,13 +958,13 @@ exec 5>>"$at_suite_log"
 # Banners and logs.
 cat <<\_ASBOX
 ## ----------------------------------- ##
-## GNU wdiff 0.5.92 test suite: wdiff. ##
+## GNU wdiff 0.5.93 test suite: wdiff. ##
 ## ----------------------------------- ##
 _ASBOX
 {
   cat <<\_ASBOX
 ## ----------------------------------- ##
-## GNU wdiff 0.5.92 test suite: wdiff. ##
+## GNU wdiff 0.5.93 test suite: wdiff. ##
 ## ----------------------------------- ##
 _ASBOX
   echo
@@ -1972,7 +1972,7 @@ _ASBOX
   echo "Please send \`${at_testdir+${at_testdir}/}$as_me.log' and all information you think might help:"
   echo
   echo "   To: <wdiff-bugs@gnu.org>"
-  echo "   Subject: [GNU wdiff 0.5.92] $as_me:$at_fail_list${at_fail_list:+ failed${at_xpass_list:+,}}$at_xpass_list${at_xpass_list:+ passed unexpectedly}"
+  echo "   Subject: [GNU wdiff 0.5.93] $as_me:$at_fail_list${at_fail_list:+ failed${at_xpass_list:+,}}$at_xpass_list${at_xpass_list:+ passed unexpectedly}"
   echo
   if test $at_debug_p = false; then
     echo
