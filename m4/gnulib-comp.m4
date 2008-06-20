@@ -26,6 +26,7 @@ AC_DEFUN([gl_EARLY],
   m4_pattern_allow([^gl_LTLIBOBJS$])dnl a variable
   AC_REQUIRE([AC_PROG_RANLIB])
   AC_REQUIRE([AC_GNU_SOURCE])
+  AC_REQUIRE([gl_USE_SYSTEM_EXTENSIONS])
 ])
 
 # This macro should be invoked from ./configure.ac, in the section
@@ -40,15 +41,25 @@ AC_DEFUN([gl_INIT],
   gl_libdeps=
   gl_ltlibdeps=
   gl_source_base='lib'
+  gl_FUNC_ALLOCA
   gl_ERROR
   gl_EXITFAIL
   gl_FUNC_GETDELIM
   gl_FUNC_GETLINE
+  gl_GETOPT
   AC_SUBST([LIBINTL])
   AC_SUBST([LTLIBINTL])
   gl_INLINE
+  gl_LOCALCHARSET
+  AC_FUNC_MALLOC
+  gl_REGEX
+  gt_TYPE_SSIZE_T
+  AM_STDBOOL_H
+  gl_STDINT_H
   gl_STDLIB_H
   gl_UNISTD_H
+  gl_WCHAR_H
+  gl_WCTYPE_H
   gl_XALLOC
   LIBGNU_LIBDEPS="$gl_libdeps"
   AC_SUBST([LIBGNU_LIBDEPS])
@@ -92,6 +103,9 @@ AC_DEFUN([gl_LIBSOURCES],
 # gnulib-tool and may be removed by future gnulib-tool invocations.
 AC_DEFUN([gl_FILE_LIST], [
   build-aux/link-warning.h
+  lib/alloca.c
+  lib/alloca_.h
+  lib/config.charset
   lib/error.c
   lib/error.h
   lib/exitfail.c
@@ -100,21 +114,55 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/getdelim.h
   lib/getline.c
   lib/getline.h
+  lib/getopt.c
+  lib/getopt1.c
+  lib/getopt_.h
+  lib/getopt_int.h
   lib/gettext.h
+  lib/localcharset.c
+  lib/localcharset.h
+  lib/malloc.c
+  lib/ref-add.sin
+  lib/ref-del.sin
+  lib/regcomp.c
+  lib/regex.c
+  lib/regex.h
+  lib/regex_internal.c
+  lib/regex_internal.h
+  lib/regexec.c
+  lib/stdbool_.h
+  lib/stdint_.h
   lib/stdlib_.h
   lib/unistd_.h
+  lib/wchar_.h
+  lib/wctype_.h
   lib/xalloc-die.c
   lib/xalloc.h
   lib/xmalloc.c
   m4/absolute-header.m4
+  m4/alloca.m4
+  m4/codeset.m4
   m4/error.m4
   m4/exitfail.m4
+  m4/extensions.m4
   m4/getdelim.m4
   m4/getline.m4
+  m4/getopt.m4
+  m4/glibc21.m4
   m4/gnulib-common.m4
   m4/inline.m4
+  m4/localcharset.m4
+  m4/longlong.m4
   m4/onceonly_2_57.m4
+  m4/regex.m4
+  m4/ssize_t.m4
+  m4/stdbool.m4
+  m4/stdint.m4
   m4/stdlib_h.m4
+  m4/ulonglong.m4
   m4/unistd_h.m4
+  m4/wchar.m4
+  m4/wctype.m4
+  m4/wint_t.m4
   m4/xalloc.m4
 ])

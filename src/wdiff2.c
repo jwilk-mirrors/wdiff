@@ -27,7 +27,7 @@
 #undef EXIT_FAILURE
 #define EXIT_FAILURE 2		/* any other reason for exit */
 
-#include "getopt.h"
+#include <getopt.h>
 
 const char *program_name;	/* name of executing program */
 

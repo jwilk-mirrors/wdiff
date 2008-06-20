@@ -95,7 +95,7 @@ const char *tgetstr ();
 #endif
 
 #include "getline.h"
-#include "getopt.h"
+#include <getopt.h>
 
 char *getenv ();
 FILE *readpipe PARAMS ((const char *, ...));

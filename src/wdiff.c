@@ -87,7 +87,7 @@ const char *tgetstr ();
 # include <unistd.h>
 #endif
 
-#include "getopt.h"
+#include <getopt.h>
 
 char *getenv ();
 FILE *readpipe PARAMS ((const char *, ...));

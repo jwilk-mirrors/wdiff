@@ -21,7 +21,7 @@
    Originally written by Wayne Davison <davison@borland.com>.  */
 
 #include "system.h"
-#include "getopt.h"
+#include <getopt.h>
 #include <string.h>
 
 /* FIXME: Programs should not have such limits.  */
