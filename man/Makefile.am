@@ -1,4 +1,4 @@
-man_MANS = mdiff.1 unify.1 wdiff.1
+dist_man_MANS = mdiff.1 unify.1 wdiff.1
 
 # The man pages depend on the --help strings and the version number.
 common_mandeps = $(top_srcdir)/configure.ac
