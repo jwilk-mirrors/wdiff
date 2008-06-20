@@ -340,10 +340,11 @@ main (int argc, char *const argv[])
     {
       int counter;
 
+      /* TRANSLATORS: This and the next string are one message. */
       fprintf (stderr, _("Launching `%s"), MDIFF_PROGRAM);
       for (counter = 1; counter < arguments; counter++)
 	fprintf (stderr, " %s", argument_list[counter]);
-      fprintf (stderr, "'\n");
+      fprintf (stderr, _("'\n"));
     }
 
   add_argument (NULL);
