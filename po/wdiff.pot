@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2008-06-20 15:02-0400\n"
+"POT-Creation-Date: 2008-06-20 15:49-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr ""
 
-#: src/mdiff.c:917 src/wdiff.c:1386
+#: src/mdiff.c:917 src/wdiff.c:1388
 msgid "Only one file may be standard input."
 msgstr ""
 
@@ -414,7 +414,7 @@ msgid ""
 "With no FILE, or when FILE is -, read standard input.\n"
 msgstr ""
 
-#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1202 src/wdiff2.c:216
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1204 src/wdiff2.c:222
 msgid ""
 "\n"
 "Report bugs to <wdiff-bugs@gnu.org>.\n"
@@ -434,13 +434,13 @@ msgid ""
 "Copyright (C) 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 
-#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1326 src/wdiff2.c:133
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1328 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
 
-#: src/mdiff.c:4433 src/wdiff.c:1330 src/wdiff2.c:137
+#: src/mdiff.c:4433 src/wdiff.c:1332 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -562,7 +562,7 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 msgstr ""
 
-#: src/wdiff.c:1181
+#: src/wdiff.c:1181 src/wdiff2.c:189
 #, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
@@ -572,12 +572,22 @@ msgid ""
 "  -1, --no-deleted           inhibit output of deleted words\n"
 "  -2, --no-inserted          inhibit output of inserted words\n"
 "  -3, --no-common            inhibit output of common words\n"
+msgstr ""
+
+#: src/wdiff.c:1189 src/wdiff2.c:198
+#, c-format
+msgid ""
 "  -a, --auto-pager           automatically calls a pager\n"
 "  -h, --help                 print this help\n"
 "  -i, --ignore-case          fold character case while comparing\n"
 "  -l, --less-mode            variation of printer mode for \"less\"\n"
 "  -n, --avoid-wraps          do not extend fields through newlines\n"
 "  -p, --printer              overstrike as for printers\n"
+msgstr ""
+
+#: src/wdiff.c:1196 src/wdiff2.c:209
+#, c-format
+msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 "  -t, --terminal             use termcap as for terminal displays\n"
 "  -v, --version              print program version then exit\n"
@@ -587,17 +597,17 @@ msgid ""
 "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
 
-#: src/wdiff.c:1317
+#: src/wdiff.c:1319
 msgid "Cannot use -t, termcap not available."
 msgstr ""
 
-#: src/wdiff.c:1322
+#: src/wdiff.c:1324
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 
-#: src/wdiff.c:1358 src/wdiff2.c:326
+#: src/wdiff.c:1360 src/wdiff2.c:332
 msgid "Missing file arguments"
 msgstr ""
 
@@ -607,38 +617,17 @@ msgid ""
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
 
-#: src/wdiff2.c:189
-msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
-"\n"
-"  -C, --copyright            print copyright then exit\n"
-"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -1, --no-deleted           inhibit output of deleted words\n"
-"  -2, --no-inserted          inhibit output of inserted words\n"
-"  -3, --no-common            inhibit output of common words\n"
-"  -a, --auto-pager           automatically calls a pager\n"
-"  -h, --help                 print this help\n"
-"  -i, --ignore-case          fold character case while comparing\n"
-"  -l, --less-mode            variation of printer mode for \"less\"\n"
-"  -n, --avoid-wraps          do not extend fields through newlines\n"
-"  -p, --printer              overstrike as for printers\n"
-"  -q, --quiet                inhibit the `mdiff' call message\n"
-"  -s, --statistics           say how many words deleted, inserted etc.\n"
-"  -t, --terminal             use termcap as for terminal displays\n"
-"  -v, --version              print program version then exit\n"
-"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-"  -x, --end-delete=STRING    string to mark end of delete region\n"
-"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-"  -z, --end-insert=STRING    string to mark end of insert region\n"
+#: src/wdiff2.c:206
+msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
 msgstr ""
 
-#: src/wdiff2.c:212
+#: src/wdiff2.c:218
 msgid ""
 "\n"
 "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
-#: src/wdiff2.c:337
+#: src/wdiff2.c:343
 #, c-format
 msgid "Launching `%s"
 msgstr ""
