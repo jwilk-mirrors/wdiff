@@ -78,7 +78,7 @@ CD_TESTDIR	= abs_srcdir=`$(lt__cd) $(srcdir) && pwd`; cd tests
 check-local: tests/atconfig $(srcdir)/$(TESTSUITE) $(bin_SCRIPTS)
 	$(CD_TESTDIR); \
 	CONFIG_SHELL="$(SHELL)" $(SHELL) $$abs_srcdir/$(TESTSUITE) \
-	  $(TESTSUITEFLAGS)
+	  $(TESTSUITEFLAGS) AUTOTEST_PATH="src"
 
 # Run the test suite on the *installed* tree.
 installcheck-local:
