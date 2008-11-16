@@ -94,7 +94,6 @@ const char *tgetstr ();
 # include <unistd.h>
 #endif
 
-#include "getline.h"
 #include <getopt.h>
 
 char *getenv ();

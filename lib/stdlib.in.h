@@ -1,11 +1,11 @@
 /* A GNU-like <stdlib.h>.
 
-   Copyright (C) 1995, 2001-2002, 2006-2007 Free Software Foundation, Inc.
+   Copyright (C) 1995, 2001-2004, 2006-2008 Free Software Foundation, Inc.
 
-   This program is free software; you can redistribute it and/or modify
+   This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2, or (at your option)
-   any later version.
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
 
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -13,17 +13,12 @@
    GNU General Public License for more details.
 
    You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software Foundation,
-   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
 
 #if defined __need_malloc_and_calloc
 /* Special invocation convention inside glibc header files.  */
 
-#if @HAVE_INCLUDE_NEXT@
-# include_next <stdlib.h>
-#else
-# include @ABSOLUTE_STDLIB_H@
-#endif
+#@INCLUDE_NEXT@ @NEXT_STDLIB_H@
 
 #else
 /* Normal invocation convention.  */
@@ -31,11 +26,7 @@
 #ifndef _GL_STDLIB_H
 
 /* The include_next requires a split double-inclusion guard.  */
-#if @HAVE_INCLUDE_NEXT@
-# include_next <stdlib.h>
-#else
-# include @ABSOLUTE_STDLIB_H@
-#endif
+#@INCLUDE_NEXT@ @NEXT_STDLIB_H@
 
 #ifndef _GL_STDLIB_H
 #define _GL_STDLIB_H
@@ -60,6 +51,51 @@
 
 #ifdef __cplusplus
 extern "C" {
+#endif
+
+
+#if @GNULIB_MALLOC_POSIX@
+# if !@HAVE_MALLOC_POSIX@
+#  undef malloc
+#  define malloc rpl_malloc
+extern void * malloc (size_t size);
+# endif
+#elif defined GNULIB_POSIXCHECK
+# undef malloc
+# define malloc(s) \
+    (GL_LINK_WARNING ("malloc is not POSIX compliant everywhere - " \
+                      "use gnulib module malloc-posix for portability"), \
+     malloc (s))
+#endif
+
+
+#if @GNULIB_REALLOC_POSIX@
+# if !@HAVE_REALLOC_POSIX@
+#  undef realloc
+#  define realloc rpl_realloc
+extern void * realloc (void *ptr, size_t size);
+# endif
+#elif defined GNULIB_POSIXCHECK
+# undef realloc
+# define realloc(p,s) \
+    (GL_LINK_WARNING ("realloc is not POSIX compliant everywhere - " \
+                      "use gnulib module realloc-posix for portability"), \
+     realloc (p, s))
+#endif
+
+
+#if @GNULIB_CALLOC_POSIX@
+# if !@HAVE_CALLOC_POSIX@
+#  undef calloc
+#  define calloc rpl_calloc
+extern void * calloc (size_t nmemb, size_t size);
+# endif
+#elif defined GNULIB_POSIXCHECK
+# undef calloc
+# define calloc(n,s) \
+    (GL_LINK_WARNING ("calloc is not POSIX compliant everywhere - " \
+                      "use gnulib module calloc-posix for portability"), \
+     calloc (n, s))
 #endif
 
 
@@ -128,6 +164,70 @@ extern int mkstemp (char * /*template*/);
     (GL_LINK_WARNING ("mkstemp is unportable - " \
                       "use gnulib module mkstemp for portability"), \
      mkstemp (t))
+#endif
+
+
+#if @GNULIB_PUTENV@
+# if @REPLACE_PUTENV@
+#  undef putenv
+#  define putenv rpl_putenv
+extern int putenv (char *string);
+# endif
+#endif
+
+
+#if @GNULIB_RPMATCH@
+# if !@HAVE_RPMATCH@
+/* Test a user response to a question.
+   Return 1 if it is affirmative, 0 if it is negative, or -1 if not clear.  */
+extern int rpmatch (const char *response);
+# endif
+#elif defined GNULIB_POSIXCHECK
+# undef rpmatch
+# define rpmatch(r) \
+    (GL_LINK_WARNING ("rpmatch is unportable - " \
+                      "use gnulib module rpmatch for portability"), \
+     rpmatch (r))
+#endif
+
+
+#if @GNULIB_SETENV@
+# if !@HAVE_SETENV@
+/* Set NAME to VALUE in the environment.
+   If REPLACE is nonzero, overwrite an existing value.  */
+extern int setenv (const char *name, const char *value, int replace);
+# endif
+#endif
+
+
+#if @GNULIB_UNSETENV@
+# if @HAVE_UNSETENV@
+#  if @VOID_UNSETENV@
+/* On some systems, unsetenv() returns void.
+   This is the case for MacOS X 10.3, FreeBSD 4.8, NetBSD 1.6, OpenBSD 3.4.  */
+#   define unsetenv(name) ((unsetenv)(name), 0)
+#  endif
+# else
+/* Remove the variable NAME from the environment.  */
+extern int unsetenv (const char *name);
+# endif
+#endif
+
+
+#if @GNULIB_STRTOD@
+# if @REPLACE_STRTOD@
+#  define strtod rpl_strtod
+# endif
+# if !@HAVE_STRTOD@ || @REPLACE_STRTOD@
+ /* Parse a double from STRING, updating ENDP if appropriate.  */
+extern double strtod (const char *str, char **endp);
+# endif
+#elif defined GNULIB_POSIXCHECK
+# undef strtod
+# define strtod(s, e)                           \
+    (GL_LINK_WARNING ("strtod is unportable - " \
+                      "use gnulib module strtod for portability"), \
+     strtod (s, e))
 #endif
 
 

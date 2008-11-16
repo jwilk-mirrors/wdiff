@@ -1,10 +1,10 @@
 /* getdelim.c --- Implementation of replacement getdelim function.
-   Copyright (C) 1994, 1996, 1997, 1998, 2001, 2003, 2005, 2006 Free
+   Copyright (C) 1994, 1996, 1997, 1998, 2001, 2003, 2005, 2006, 2007, 2008 Free
    Software Foundation, Inc.
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License as
-   published by the Free Software Foundation; either version 2, or (at
+   published by the Free Software Foundation; either version 3, or (at
    your option) any later version.
 
    This program is distributed in the hope that it will be useful, but
@@ -21,7 +21,7 @@
 
 #include <config.h>
 
-#include "getdelim.h"
+#include <stdio.h>
 
 #include <limits.h>
 #include <stdlib.h>
@@ -64,13 +64,15 @@ getdelim (char **lineptr, size_t *n, int delimiter, FILE *fp)
 
   if (*lineptr == NULL || *n == 0)
     {
+      char *new_lineptr;
       *n = 120;
-      *lineptr = (char *) malloc (*n);
-      if (*lineptr == NULL)
+      new_lineptr = (char *) realloc (*lineptr, *n);
+      if (new_lineptr == NULL)
 	{
 	  result = -1;
 	  goto unlock_return;
 	}
+      *lineptr = new_lineptr;
     }
 
   for (;;)
@@ -97,6 +99,7 @@ getdelim (char **lineptr, size_t *n, int delimiter, FILE *fp)
 	  if (cur_len + 1 >= needed)
 	    {
 	      result = -1;
+	      errno = EOVERFLOW;
 	      goto unlock_return;
 	    }
 
@@ -121,6 +124,7 @@ getdelim (char **lineptr, size_t *n, int delimiter, FILE *fp)
   result = cur_len ? cur_len : result;
 
  unlock_return:
-  funlockfile (fp);
+  funlockfile (fp); /* doesn't set errno */
+
   return result;
 }

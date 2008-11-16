@@ -1,9 +1,9 @@
 /* Substitute for and wrapper around <unistd.h>.
-   Copyright (C) 2004-2007 Free Software Foundation, Inc.
+   Copyright (C) 2004-2008 Free Software Foundation, Inc.
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2, or (at your option)
+   the Free Software Foundation; either version 3, or (at your option)
    any later version.
 
    This program is distributed in the hope that it will be useful,
@@ -19,11 +19,7 @@
 
 /* The include_next requires a split double-inclusion guard.  */
 #if @HAVE_UNISTD_H@
-# if @HAVE_INCLUDE_NEXT@
-#  include_next <unistd.h>
-# else
-#  include @ABSOLUTE_UNISTD_H@
-# endif
+# @INCLUDE_NEXT@ @NEXT_UNISTD_H@
 #endif
 
 #ifndef _GL_UNISTD_H
@@ -49,13 +45,18 @@ extern "C" {
 
 #if @GNULIB_CHOWN@
 # if @REPLACE_CHOWN@
+#  ifndef REPLACE_CHOWN
+#   define REPLACE_CHOWN 1
+#  endif
+#  if REPLACE_CHOWN
 /* Change the owner of FILE to UID (if UID is not -1) and the group of FILE
-   to GID (if GID is not -1).
+   to GID (if GID is not -1).  Follow symbolic links.
    Return 0 if successful, otherwise -1 and errno set.
    See the POSIX:2001 specification
    <http://www.opengroup.org/susv3xsh/chown.html>.  */
-#  define chown rpl_chown
+#   define chown rpl_chown
 extern int chown (const char *file, uid_t uid, gid_t gid);
+#  endif
 # endif
 #elif defined GNULIB_POSIXCHECK
 # undef chown
@@ -82,6 +83,26 @@ extern int dup2 (int oldfd, int newfd);
     (GL_LINK_WARNING ("dup2 is unportable - " \
                       "use gnulib module dup2 for portability"), \
      dup2 (o, n))
+#endif
+
+
+#if @GNULIB_ENVIRON@
+# if !@HAVE_DECL_ENVIRON@
+/* Set of environment variables and values.  An array of strings of the form
+   "VARIABLE=VALUE", terminated with a NULL.  */
+#  if defined __APPLE__ && defined __MACH__
+#   include <crt_externs.h>
+#   define environ (*_NSGetEnviron ())
+#  else
+extern char **environ;
+#  endif
+# endif
+#elif defined GNULIB_POSIXCHECK
+# undef environ
+# define environ \
+    (GL_LINK_WARNING ("environ is unportable - " \
+                      "use gnulib module environ for portability"), \
+     environ)
 #endif
 
 
@@ -176,6 +197,83 @@ extern int getlogin_r (char *name, size_t size);
     (GL_LINK_WARNING ("getlogin_r is unportable - " \
                       "use gnulib module getlogin_r for portability"), \
      getlogin_r (n, s))
+#endif
+
+
+#if @GNULIB_GETPAGESIZE@
+# if @REPLACE_GETPAGESIZE@
+#  define getpagesize rpl_getpagesize
+extern int getpagesize (void);
+# elif !@HAVE_GETPAGESIZE@
+/* This is for POSIX systems.  */
+#  if !defined getpagesize && defined _SC_PAGESIZE
+#   if ! (defined __VMS && __VMS_VER < 70000000)
+#    define getpagesize() sysconf (_SC_PAGESIZE)
+#   endif
+#  endif
+/* This is for older VMS.  */
+#  if !defined getpagesize && defined __VMS
+#   ifdef __ALPHA
+#    define getpagesize() 8192
+#   else
+#    define getpagesize() 512
+#   endif
+#  endif
+/* This is for BeOS.  */
+#  if !defined getpagesize && @HAVE_OS_H@
+#   include <OS.h>
+#   if defined B_PAGE_SIZE
+#    define getpagesize() B_PAGE_SIZE
+#   endif
+#  endif
+/* This is for AmigaOS4.0.  */
+#  if !defined getpagesize && defined __amigaos4__
+#   define getpagesize() 2048
+#  endif
+/* This is for older Unix systems.  */
+#  if !defined getpagesize && @HAVE_SYS_PARAM_H@
+#   include <sys/param.h>
+#   ifdef EXEC_PAGESIZE
+#    define getpagesize() EXEC_PAGESIZE
+#   else
+#    ifdef NBPG
+#     ifndef CLSIZE
+#      define CLSIZE 1
+#     endif
+#     define getpagesize() (NBPG * CLSIZE)
+#    else
+#     ifdef NBPC
+#      define getpagesize() NBPC
+#     endif
+#    endif
+#   endif
+#  endif
+# endif
+#elif defined GNULIB_POSIXCHECK
+# undef getpagesize
+# define getpagesize() \
+    (GL_LINK_WARNING ("getpagesize is unportable - " \
+                      "use gnulib module getpagesize for portability"), \
+     getpagesize ())
+#endif
+
+
+#if @GNULIB_LCHOWN@
+# if @REPLACE_LCHOWN@
+/* Change the owner of FILE to UID (if UID is not -1) and the group of FILE
+   to GID (if GID is not -1).  Do not follow symbolic links.
+   Return 0 if successful, otherwise -1 and errno set.
+   See the POSIX:2001 specification
+   <http://www.opengroup.org/susv3xsh/lchown.html>.  */
+#  define lchown rpl_lchown
+extern int lchown (char const *file, uid_t owner, gid_t group);
+# endif
+#elif defined GNULIB_POSIXCHECK
+# undef lchown
+# define lchown(f,u,g) \
+    (GL_LINK_WARNING ("lchown is unportable to pre-POSIX.1-2001 " \
+                      "systems - use gnulib module lchown for portability"), \
+     lchown (f, u, g))
 #endif
 
 

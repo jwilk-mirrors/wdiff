@@ -1,7 +1,6 @@
-/* Report a memory allocation failure and exit.
+/* strerror.c --- POSIX compatible system error routine
 
-   Copyright (C) 1997, 1998, 1999, 2000, 2002, 2003, 2004, 2006 Free
-   Software Foundation, Inc.
+   Copyright (C) 2007 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -18,24 +17,33 @@
 
 #include <config.h>
 
-#include "xalloc.h"
+#include <string.h>
 
-#include <stdlib.h>
+#if REPLACE_STRERROR
 
-#include "error.h"
-#include "exitfail.h"
+# include <stdio.h>
 
-#include "gettext.h"
-#define _(msgid) gettext (msgid)
+# include "intprops.h"
 
-void
-xalloc_die (void)
+# undef strerror
+# if ! HAVE_DECL_STRERROR
+#  define strerror(n) NULL
+# endif
+
+char *
+rpl_strerror (int n)
 {
-  error (exit_failure, 0, "%s", _("memory exhausted"));
+  char *result = strerror (n);
 
-  /* The `noreturn' cannot be given to error, since it may return if
-     its first argument is 0.  To help compilers understand the
-     xalloc_die does not return, call abort.  Also, the abort is a
-     safety feature if exit_failure is 0 (which shouldn't happen).  */
-  abort ();
+  if (result == NULL || result[0] == '\0')
+    {
+      static char const fmt[] = "Unknown error (%d)";
+      static char mesg[sizeof fmt + INT_STRLEN_BOUND (n)];
+      sprintf (mesg, fmt, n);
+      return mesg;
+    }
+
+  return result;
 }
+
+#endif
