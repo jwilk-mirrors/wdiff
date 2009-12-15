@@ -1,3 +1,7 @@
+2009-12-15  Martin von Gagern <Martin.vGagern@gmx.net>
+
+	* wdiff.c: Handle non-seekable input, bug #25883
+
 2007-07-10  gettextize  <bug-gnu-gettext@gnu.org>
 
 	* Makefile.am (EXTRA_DIST): New variable.

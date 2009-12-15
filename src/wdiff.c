@@ -1,5 +1,5 @@
 /* wdiff -- front end to diff for comparing on a word per word basis.
-   Copyright (C) 1992, 1997, 1998, 1999 Free Software Foundation, Inc.
+   Copyright (C) 1992, 1997, 1998, 1999, 2009 Free Software Foundation, Inc.
    Francois Pinard <pinard@iro.umontreal.ca>, 1992.
 
    This program is free software; you can redistribute it and/or modify
@@ -606,34 +606,16 @@ split_file_into_words (SIDE *side)
 {
   struct stat stat_buffer;	/* for checking if file is directory */
   int fd;                /* for file descriptors returned by mkstemp */
+  FILE *input;          /* used when copying from non-seekable input */
 
   /* Open files.  */
 
   if (side->filename == NULL)
     {
-
-      /* Select a file name, use it for opening a temporary file and
-	 unlink it right away.  Then, copy the whole standard input on
-	 this temporary local file.  Once done, prepare it for reading.
-	 We do not need the file name itself anymore.  */
-
-      if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
-	error (EXIT_FAILURE, 0, _("No suitable temporary directory exists"));
-      if ((fd = mkstemp (side->temp_name)) == -1)
-        error (EXIT_FAILURE, errno, "%s", side->temp_name);
-
-      side->file = fdopen (fd, "w+");
-      if (side->file == NULL)
-	error (EXIT_FAILURE, errno, "%s", side->temp_name);
-      if (unlink (side->temp_name) != 0)
-	error (EXIT_FAILURE, errno, "%s", side->temp_name);
-      while (side->character = getchar (), side->character != EOF)
-	putc (side->character, side->file);
-      rewind (side->file);
+      side->file = stdin;
     }
   else
     {
-
       /* Check and diagnose if the file name is a directory.  Or else,
 	 prepare the file for reading.  */
 
@@ -644,6 +626,31 @@ split_file_into_words (SIDE *side)
       side->file = fopen (side->filename, "r");
       if (side->file == NULL)
 	error (EXIT_FAILURE, errno, "%s", side->filename);
+    }
+
+  if (fseek(side->file, 0L, SEEK_CUR) != 0)
+    {
+      /* Non-seekable input, e.g. stdin or shell process substitution.
+	 Select a file name, use it for opening a temporary file and
+	 unlink it right away.  Then, copy the whole input to
+	 this temporary local file.  Once done, prepare it for reading.
+	 We do not need the file name itself anymore.  */
+
+      if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
+	error (EXIT_FAILURE, 0, _("No suitable temporary directory exists"));
+      if ((fd = mkstemp (side->temp_name)) == -1)
+        error (EXIT_FAILURE, errno, "%s", side->temp_name);
+
+      input = side->file;
+      side->file = fdopen (fd, "w+");
+      if (side->file == NULL)
+	error (EXIT_FAILURE, errno, "%s", side->temp_name);
+      if (unlink (side->temp_name) != 0)
+	error (EXIT_FAILURE, errno, "%s", side->temp_name);
+      while (side->character = getc (input), side->character != EOF)
+	putc (side->character, side->file);
+      rewind (side->file);
+
     }
   side->character = getc (side->file);
   side->position = 0;
