@@ -693,37 +693,36 @@ split_file_into_words (SIDE *side)
   /* Open files.  */
 
   if (!diff_input) {
-    /* TODO: Reindent this block later on. Keep patches clean for now. */
-  if (side->filename == NULL)
-    {
-      side->file = stdin;
-    }
-  else
-    {
-      /* Check and diagnose if the file name is a directory.  Or else,
-	 prepare the file for reading.  */
+    if (side->filename == NULL)
+      {
+        side->file = stdin;
+      }
+    else
+      {
+        /* Check and diagnose if the file name is a directory.  Or else,
+           prepare the file for reading.  */
 
-      if (stat (side->filename, &stat_buffer) != 0)
-	error (EXIT_FAILURE, errno, "%s", side->filename);
-      if ((stat_buffer.st_mode & S_IFMT) == S_IFDIR)
-	error (EXIT_FAILURE, 0, _("Directories not supported"));
-      side->file = fopen (side->filename, "r");
-      if (side->file == NULL)
-	error (EXIT_FAILURE, errno, "%s", side->filename);
-    }
+        if (stat (side->filename, &stat_buffer) != 0)
+          error (EXIT_FAILURE, errno, "%s", side->filename);
+        if ((stat_buffer.st_mode & S_IFMT) == S_IFDIR)
+          error (EXIT_FAILURE, 0, _("Directories not supported"));
+        side->file = fopen (side->filename, "r");
+        if (side->file == NULL)
+          error (EXIT_FAILURE, errno, "%s", side->filename);
+      }
 
-  if (fseek(side->file, 0L, SEEK_CUR) != 0)
-    {
-      /* Non-seekable input, e.g. stdin or shell process substitution.
-	 Copy the whole input to a temporary local file.  Once done,
-	 prepare it for reading.  */
-      input = side->file;
-      create_temporary_side(side);
-      while (side->character = getc (input), side->character != EOF)
-	putc (side->character, side->file);
-      rewind (side->file);
+    if (fseek(side->file, 0L, SEEK_CUR) != 0)
+      {
+        /* Non-seekable input, e.g. stdin or shell process substitution.
+           Copy the whole input to a temporary local file.  Once done,
+           prepare it for reading.  */
+        input = side->file;
+        create_temporary_side(side);
+        while (side->character = getc (input), side->character != EOF)
+          putc (side->character, side->file);
+        rewind (side->file);
 
-    }
+      }
   }
   side->character = getc (side->file);
   side->position = 0;
