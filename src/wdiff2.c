@@ -173,6 +173,7 @@ struct option const longopts[] =
 static void
 usage (int status)
 {
+  const char *optfmt;
   if (status != 0)
     fprintf (stderr, _("Try `%s --help' for more information.\n"),
 	     program_name);
@@ -186,43 +187,51 @@ This program exists mainly to support the now oldish `wdiff' syntax.\n"),
 \n\
 Usage: %s [OPTION]... FILE1 FILE2\n"),
 	      program_name);
-      fputs (_("\
-Mandatory arguments to long options are mandatory for short options too.\n\
-\n\
-  -C, --copyright            print copyright then exit\n\
-  -K, --no-init-term         like -t, but no termcap init/term strings\n\
-  -1, --no-deleted           inhibit output of deleted words\n\
-  -2, --no-inserted          inhibit output of inserted words\n\
-  -3, --no-common            inhibit output of common words\n"),
-	     stdout);
-      fputs (_("\
-  -a, --auto-pager           automatically calls a pager\n\
-  -h, --help                 print this help\n\
-  -i, --ignore-case          fold character case while comparing\n\
-  -l, --less-mode            variation of printer mode for \"less\"\n\
-  -n, --avoid-wraps          do not extend fields through newlines\n\
-  -p, --printer              overstrike as for printers\n"),
-	     stdout);
-      fputs (_("\
-  -q, --quiet                inhibit the `mdiff' call message\n"),
-	     stdout);
-      fputs (_("\
-  -s, --statistics           say how many words deleted, inserted etc.\n\
-  -t, --terminal             use termcap as for terminal displays\n\
-  -v, --version              print program version then exit\n\
-  -w, --start-delete=STRING  string to mark beginning of delete region\n\
-  -x, --end-delete=STRING    string to mark end of delete region\n\
-  -y, --start-insert=STRING  string to mark beginning of insert region\n\
-  -z, --end-insert=STRING    string to mark end of insert region\n"),
-	     stdout);
-      fputs (_("\
-\n\
-This program also tells how `mdiff' could have been called directly.\n"),
-	     stdout);
-      fputs (_("\
-\n\
-Report bugs to <wdiff-bugs@gnu.org>.\n"),
-	     stdout);
+      printf ("\n%s\n", _("\
+Mandatory arguments to long options are mandatory for short options too."));
+      /* TRANSLATORS: --help option format, adjust for longer arguments. */
+      optfmt = _("  %-26s %s\n");
+      printf (optfmt, "-C, --copyright",
+              _("print copyright then exit"));
+      printf (optfmt, "-K, --no-init-term",
+              _("like -t, but no termcap init/term strings"));
+      printf (optfmt, "-1, --no-deleted",
+              _("inhibit output of deleted words"));
+      printf (optfmt, "-2, --no-inserted",
+              _("inhibit output of inserted words"));
+      printf (optfmt, "-3, --no-common",
+              _("inhibit output of common words"));
+      printf (optfmt, "-a, --auto-pager",
+              _("automatically calls a pager"));
+      printf (optfmt, "-h, --help",
+              _("print this help"));
+      printf (optfmt, "-i, --ignore-case",
+              _("fold character case while comparing"));
+      printf (optfmt, "-l, --less-mode",
+              _("variation of printer mode for \"less\""));
+      printf (optfmt, "-n, --avoid-wraps",
+              _("do not extend fields through newlines"));
+      printf (optfmt, "-p, --printer",
+              _("overstrike as for printers"));
+      printf (optfmt, "-q, --quiet",
+              _("inhibit the `mdiff' call message"));
+      printf (optfmt, "-s, --statistics",
+              _("say how many words deleted, inserted etc."));
+      printf (optfmt, "-t, --terminal",
+              _("use termcap as for terminal displays"));
+      printf (optfmt, "-v, --version",
+              _("print program version then exit"));
+      printf (optfmt, _("-w, --start-delete=STRING"),
+              _("string to mark beginning of delete region"));
+      printf (optfmt, _("-x, --end-delete=STRING"),
+              _("string to mark end of delete region"));
+      printf (optfmt, _("-y, --start-insert=STRING"),
+              _("string to mark beginning of insert region"));
+      printf (optfmt, _("-z, --end-insert=STRING"),
+              _("string to mark end of insert region"));
+      printf ("\n%s\n", _("\
+This program also tells how `mdiff' could have been called directly."));
+      printf ("\n%s\n", _("Report bugs to <wdiff-bugs@gnu.org>."));
     }
   exit (status);
 }

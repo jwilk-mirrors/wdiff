@@ -555,49 +555,122 @@ msgstr ""
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr ""
 
-#: src/wdiff.c:1177 src/wdiff2.c:185
+#: src/wdiff.c:1257
 #, c-format
 msgid ""
 "\n"
 "Usage: %s [OPTION]... FILE1 FILE2\n"
+"       %s -d [OPTION]... [FILE]\n"
 msgstr ""
 
-#: src/wdiff.c:1181 src/wdiff2.c:189
-#, c-format
+#: src/wdiff.c:1262 src/wdiff2.c:190
 msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
-"\n"
-"  -C, --copyright            print copyright then exit\n"
-"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-"  -1, --no-deleted           inhibit output of deleted words\n"
-"  -2, --no-inserted          inhibit output of inserted words\n"
-"  -3, --no-common            inhibit output of common words\n"
+"Mandatory arguments to long options are mandatory for short options too."
 msgstr ""
 
-#: src/wdiff.c:1189 src/wdiff2.c:198
+#. TRANSLATORS: --help option format, adjust for longer arguments.
+#: src/wdiff.c:1265 src/wdiff2.c:193
 #, c-format
-msgid ""
-"  -a, --auto-pager           automatically calls a pager\n"
-"  -h, --help                 print this help\n"
-"  -i, --ignore-case          fold character case while comparing\n"
-"  -l, --less-mode            variation of printer mode for \"less\"\n"
-"  -n, --avoid-wraps          do not extend fields through newlines\n"
-"  -p, --printer              overstrike as for printers\n"
+msgid "  %-26s %s\n"
 msgstr ""
 
-#: src/wdiff.c:1196 src/wdiff2.c:209
-#, c-format
-msgid ""
-"  -s, --statistics           say how many words deleted, inserted etc.\n"
-"  -t, --terminal             use termcap as for terminal displays\n"
-"  -v, --version              print program version then exit\n"
-"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-"  -x, --end-delete=STRING    string to mark end of delete region\n"
-"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-"  -z, --end-insert=STRING    string to mark end of insert region\n"
+#: src/wdiff.c:1267 src/wdiff2.c:195
+msgid "print copyright then exit"
 msgstr ""
 
-#: src/wdiff.c:1319
+#: src/wdiff.c:1269 src/wdiff2.c:197
+msgid "like -t, but no termcap init/term strings"
+msgstr ""
+
+#: src/wdiff.c:1271 src/wdiff2.c:199
+msgid "inhibit output of deleted words"
+msgstr ""
+
+#: src/wdiff.c:1273 src/wdiff2.c:201
+msgid "inhibit output of inserted words"
+msgstr ""
+
+#: src/wdiff.c:1275 src/wdiff2.c:203
+msgid "inhibit output of common words"
+msgstr ""
+
+#: src/wdiff.c:1277 src/wdiff2.c:205
+msgid "automatically calls a pager"
+msgstr ""
+
+#: src/wdiff.c:1279
+msgid "use single unified diff as input"
+msgstr ""
+
+#: src/wdiff.c:1281 src/wdiff2.c:207
+msgid "print this help"
+msgstr ""
+
+#: src/wdiff.c:1283 src/wdiff2.c:209
+msgid "fold character case while comparing"
+msgstr ""
+
+#: src/wdiff.c:1285 src/wdiff2.c:211
+msgid "variation of printer mode for \"less\""
+msgstr ""
+
+#: src/wdiff.c:1287 src/wdiff2.c:213
+msgid "do not extend fields through newlines"
+msgstr ""
+
+#: src/wdiff.c:1289 src/wdiff2.c:215
+msgid "overstrike as for printers"
+msgstr ""
+
+#: src/wdiff.c:1291 src/wdiff2.c:219
+msgid "say how many words deleted, inserted etc."
+msgstr ""
+
+#: src/wdiff.c:1293 src/wdiff2.c:221
+msgid "use termcap as for terminal displays"
+msgstr ""
+
+#: src/wdiff.c:1295 src/wdiff2.c:223
+msgid "print program version then exit"
+msgstr ""
+
+#: src/wdiff.c:1296 src/wdiff2.c:224
+msgid "-w, --start-delete=STRING"
+msgstr ""
+
+#: src/wdiff.c:1297 src/wdiff2.c:225
+msgid "string to mark beginning of delete region"
+msgstr ""
+
+#: src/wdiff.c:1298 src/wdiff2.c:226
+msgid "-x, --end-delete=STRING"
+msgstr ""
+
+#: src/wdiff.c:1299 src/wdiff2.c:227
+msgid "string to mark end of delete region"
+msgstr ""
+
+#: src/wdiff.c:1300 src/wdiff2.c:228
+msgid "-y, --start-insert=STRING"
+msgstr ""
+
+#: src/wdiff.c:1301 src/wdiff2.c:229
+msgid "string to mark beginning of insert region"
+msgstr ""
+
+#: src/wdiff.c:1302 src/wdiff2.c:230
+msgid "-z, --end-insert=STRING"
+msgstr ""
+
+#: src/wdiff.c:1303 src/wdiff2.c:231
+msgid "string to mark end of insert region"
+msgstr ""
+
+#: src/wdiff.c:1304 src/wdiff2.c:234
+msgid "Report bugs to <wdiff-bugs@gnu.org>."
+msgstr ""
+
+#: src/wdiff.c:1421
 msgid "Cannot use -t, termcap not available."
 msgstr ""
 
@@ -605,6 +678,10 @@ msgstr ""
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+
+#: src/wdiff.c:1473 src/wdiff.c:1490
+msgid "Too many file arguments"
 msgstr ""
 
 #: src/wdiff.c:1360 src/wdiff2.c:332
@@ -617,14 +694,19 @@ msgid ""
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
 
+#: src/wdiff2.c:186
+#, c-format
+msgid ""
+"\n"
+"Usage: %s [OPTION]... FILE1 FILE2\n"
+msgstr ""
+
 #: src/wdiff2.c:206
-msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
+msgid "inhibit the `mdiff' call message"
 msgstr ""
 
 #: src/wdiff2.c:218
-msgid ""
-"\n"
-"This program also tells how `mdiff' could have been called directly.\n"
+msgid "This program also tells how `mdiff' could have been called directly."
 msgstr ""
 
 #. TRANSLATORS: This and the next string are one message.
