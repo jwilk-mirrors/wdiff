@@ -3804,135 +3804,113 @@ usage (int status)
 mdiff - Studies multiple files and searches for similar sequences, it then\n\
 produces possibly detailed lists of differences and similarities.\n"),
 	     stdout);
+      fputs ("\n", stdout);
       printf (_("\
-\n\
 Usage: %s [OPTION]... [FILE]...\n"),
 	      program_name);
-      fputs (_("\n\
-Operation modes:\n\
-  -h                     (ignored)\n\
-  -v, --verbose          report a few statistics on stderr\n\
-      --help             display this help and exit\n\
-      --version          output version information and exit\n"),
-	stdout);
-      fputs (_("\n\
-Formatting output:\n\
-  -T, --initial-tab       produce TAB instead of initial space\n\
-  -l, --paginate          paginate output through `pr'\n\
-  -S, --string[=STRING]   take note of another user STRING\n\
-  -V, --show-links        give file and line references in annotations\n\
-  -t, --expand-tabs       expand tabs to spaces in the output\n"),
-	stdout);
+
+      fputs (_("\nOperation modes:\n"), stdout);
+      fputs (_("  -h                     (ignored)\n"), stdout);
+      fputs (_("  -v, --verbose          report a few statistics on stderr\n"), stdout);
+      fputs (_("      --help             display this help and exit\n"), stdout);
+      fputs (_("      --version          output version information and exit\n"), stdout);
+
+      fputs (_("\nFormatting output:\n"), stdout);
+      fputs (_("  -T, --initial-tab       produce TAB instead of initial space\n"), stdout);
+      fputs (_("  -l, --paginate          paginate output through `pr'\n"), stdout);
+      fputs (_("  -S, --string[=STRING]   take note of another user STRING\n"), stdout);
+      fputs (_("  -V, --show-links        give file and line references in annotations\n"), stdout);
+      fputs (_("  -t, --expand-tabs       expand tabs to spaces in the output\n"), stdout);
+
 #if DEBUGGING
-      fputs (_("\n\
-Debugging:\n\
-  -0, --debugging   output many details about what is going on\n"),
-	     stdout);
+      fputs (_("\nDebugging:\n"), stdout);
+      fputs (_("  -0, --debugging   output many details about what is going on\n"), stdout);
 #endif
-      fputs (_("\
-\n\
-Word mode options:\n\
-  -1, --no-deleted            inhibit output of deleted words\n\
-  -2, --no-inserted           inhibit output of inserted words\n\
-  -3, --no-common             inhibit output of common words\n\
-  -A, --auto-pager            automatically calls a pager\n\
-  -k, --less-mode             variation of printer mode for \"less\"\n\
-  -m, --avoid-wraps           do not extend fields through newlines\n\
-  -o, --printer               overstrike as for printers\n\
-  -z, --terminal              use termcap as for terminal displays\n\
-  -K, --no-init-term          like -z, but no termcap init/term strings\n\
-  -O, --item-regexp=REGEXP    compare items as defined by REGEXP\n\
-  -W, --word-mode             compare words instead of lines\n"),
-	     stdout);
-#if 0
-      fputs (_("\n\
-Comparing files:\n\
-*  -H, --speed-large-files     go faster, for when numerous small changes\n\
-*  -a, --text                  report line differences (text file default)\n\
-*  -d, --minimal               try harder for a smaller set of changes\n\
-*  -q, --brief                 only says if files differ (binary default)\n\
-*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"),
-	     stdout);
-#endif
-#if 0
-      fputs (_("\n\
-Comparing directories:\n\
-*  -N, --new-file                  consider missing files to be empty\n\
-*  -P, --unidirectional-new-file   consider missing old files to be empty\n\
-*  -S, --starting-file=FILE        resume directory comparison with FILE\n\
-*  -X, --exclude-from=FILE         ignore files matching patterns from FILE\n\
-*  -r, --recursive                 recursively compare subdirectories\n\
-*  -s, --report-identical-files    report when two files are the same\n\
-*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"),
-	     stdout);
-#endif
-#if 0
-      fputs (_("\n\
-Ignoring text:\n\
-  -B, --ignore-blank-lines             ignore blank lines\n\
-*  -I, --ignore-matching-lines=REGEXP   ignore lines matching REGEXP\n\
-  -b, --ignore-space-change            ignore amount of white space\n\
-  -i, --ignore-case                    ignore case differences\n\
-  -w, --ignore-all-space               ignore white space\n"),
-	     stdout);
-      fputs (_("\n\
-Clustering:\n\
-  -G, --relist-files         list all input files with annotations\n\
-  -J, --minimum-size=ITEMS   ignore clusters not having that many ITEMS\n\
-  -j, --ignore-delimiters    do not count items having only delimiters\n"),
-	     stoudt);
-#endif
-#if 0
-      fputs (_("\n\
-Detailed output formats:\n\
-*  -D, --ifdef=NAME                      output `#ifdef NAME' format\n\
-*      --changed-group-format=FORMAT     use FORMAT for changed lines\n\
-*      --new-group-format=FORMAT         use FORMAT for inserted lines\n\
-*      --new-line-format=FORMAT          use FORMAT for inserted line\n\
-*      --old-group-format=FORMAT         use FORMAT for deleted lines\n\
-*      --old-line-format=FORMAT          use FORMAT for deleted line\n\
-*      --unchanged-group-format=FORMAT   use FORMAT for unchanged lines\n\
-*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n\
-*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"),
-	     stdout);
-#endif
-#if 0
-      fputs (_("\n\
-Script-like formats:\n\
-  (none of -CDUcefnuy)   output normal diffs\n\
-*  -e, --ed               output a valid `ed' script\n\
-*  -f, --forward-ed       mix between -e and -n (not very useful)\n\
-*  -n, --rcs              output RCS format (internally used by RCS)\n"),
-	     stdout);
-#endif
-#if 0
-      fputs (_("\n\
-Context and unified formats:\n\
-*  -F, --show-function-line=REGEXP   show previous context matching REGEXP\n\
-*  -p, --show-c-function             show which C function for each change\n"),
-	     stdout);
-#endif
-#if 0
-      fputs (_("\n\
-*  -C, --context=LINES         as -c, also select context size in lines\n\
-*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n\
-*  -U, --unified=LINES         as -u, also select context size in lines\n\
-*  -c, --context               output context diffs (default 3 context lines)\n\
-*  -u, --unified               output unidiffs (default 3 context lines)\n\
-*  -LINES                      (obsolete: select context size in lines)\n"),
-	     stdout);
-#endif
-#if 0
-      fputs (_("\n\
-Side by side format:\n\
-*  -W, --width=COLUMNS           use width of COLUMNS\n\
-*  -y, --side-by-side            use side by side output format\n\
-*      --left-column             print only left column line when common\n\
-*      --sdiff-merge-assist      (internally used by `sdiff')\n\
-*      --suppress-common-lines   do not print common lines\n"),
-	     stdout);
-#endif
-#if 0
+
+      fputs (_("\nWord mode options:\n"), stdout);
+      fputs (_("  -1, --no-deleted           inhibit output of deleted words\n"), stdout);
+      fputs (_("  -2, --no-inserted          inhibit output of inserted words\n"), stdout);
+      fputs (_("  -3, --no-common            inhibit output of common words\n"), stdout);
+      fputs (_("  -A, --auto-pager           automatically calls a pager\n"), stdout);
+      fputs (_("  -k, --less-mode            variation of printer mode for \"less\"\n"), stdout);
+      fputs (_("  -m, --avoid-wraps          do not extend fields through newlines\n"), stdout);
+      fputs (_("  -o, --printer              overstrike as for printers\n"), stdout);
+      fputs (_("  -z, --terminal             use termcap as for terminal displays\n"), stdout);
+      fputs (_("  -K, --no-init-term         like -z, but no termcap init/term strings\n"), stdout);
+      fputs (_("  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"), stdout);
+      fputs (_("  -W, --word-mode            compare words instead of lines\n"), stdout);
+
+      /***
+      fputs (_("\nComparing files:\n"), stdout);
+      fputs (_("*  -H, --speed-large-files     go faster, for when numerous small changes\n"), stdout);
+      fputs (_("*  -a, --text                  report line differences (text file default)\n"), stdout);
+      fputs (_("*  -d, --minimal               try harder for a smaller set of changes\n"), stdout);
+      fputs (_("*  -q, --brief                 only says if files differ (binary default)\n"), stdout);
+      fputs (_("*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"), stdout);
+      ***/
+      /***
+      fputs (_("\nComparing directories:\n"), stdout);
+      fputs (_("*  -N, --new-file                  consider missing files to be empty\n"), stdout);
+      fputs (_("*  -P, --unidirectional-new-file   consider missing old files to be empty\n"), stdout);
+      fputs (_("*  -S, --starting-file=FILE        resume directory comparison with FILE\n"), stdout);
+      fputs (_("*  -X, --exclude-from=FILE         ignore files matching patterns from FILE\n"), stdout);
+      fputs (_("*  -r, --recursive                 recursively compare subdirectories\n"), stdout);
+      fputs (_("*  -s, --report-identical-files    report when two files are the same\n"), stdout);
+      fputs (_("*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"), stdout);
+      ***/
+      /***
+      fputs (_("\nIgnoring text:\n"), stdout);
+      fputs (_("  -B, --ignore-blank-lines             ignore blank lines\n"), stdout);
+      fputs (_("*  -I, --ignore-matching-lines=REGEXP   ignore lines matching REGEXP\n"), stdout);
+      fputs (_("  -b, --ignore-space-change            ignore amount of white space\n"), stdout);
+      fputs (_("  -i, --ignore-case                    ignore case differences\n"), stdout);
+      fputs (_("  -w, --ignore-all-space               ignore white space\n"), stdout);
+      fputs (_("\nClustering:\n"), stdout);
+      fputs (_("  -G, --relist-files         list all input files with annotations\n"), stdout);
+      fputs (_("  -J, --minimum-size=ITEMS   ignore clusters not having that many ITEMS\n"), stdout);
+      fputs (_("  -j, --ignore-delimiters    do not count items having only delimiters\n"), stdout);
+      ***/
+      /***
+      fputs (_("\nDetailed output formats:\n"), stdout);
+      fputs (_("*  -D, --ifdef=NAME                      output `#ifdef NAME' format\n"), stdout);
+      fputs (_("*      --changed-group-format=FORMAT     use FORMAT for changed lines\n"), stdout);
+      fputs (_("*      --new-group-format=FORMAT         use FORMAT for inserted lines\n"), stdout);
+      fputs (_("*      --new-line-format=FORMAT          use FORMAT for inserted line\n"), stdout);
+      fputs (_("*      --old-group-format=FORMAT         use FORMAT for deleted lines\n"), stdout);
+      fputs (_("*      --old-line-format=FORMAT          use FORMAT for deleted line\n"), stdout);
+      fputs (_("*      --unchanged-group-format=FORMAT   use FORMAT for unchanged lines\n"), stdout);
+      fputs (_("*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n"), stdout);
+      fputs (_("*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"), stdout);
+      ***/
+      /***
+      fputs (_("\nScript-like formats:\n"), stdout);
+      fputs (_("  (none of -CDUcefnuy)   output normal diffs\n"), stdout);
+      fputs (_("*  -e, --ed               output a valid `ed' script\n"), stdout);
+      fputs (_("*  -f, --forward-ed       mix between -e and -n (not very useful)\n"), stdout);
+      fputs (_("*  -n, --rcs              output RCS format (internally used by RCS)\n"), stdout);
+      ***/
+      /***
+      fputs (_("\nContext and unified formats:\n"), stdout);
+      fputs (_("*  -F, --show-function-line=REGEXP   show previous context matching REGEXP\n"), stdout);
+      fputs (_("*  -p, --show-c-function             show which C function for each change\n"), stdout);
+      ***/
+      /***
+      fputs (_("*  -C, --context=LINES         as -c, also select context size in lines\n"), stdout);
+      fputs (_("*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"), stdout);
+      fputs (_("*  -U, --unified=LINES         as -u, also select context size in lines\n"), stdout);
+      fputs (_("*  -c, --context               output context diffs (default 3 context lines)\n"), stdout);
+      fputs (_("*  -u, --unified               output unidiffs (default 3 context lines)\n"), stdout);
+      fputs (_("*  -LINES                      (obsolete: select context size in lines)\n"), stdout);
+      ***/
+      /***
+      fputs (_("\nSide by side format:\n"), stdout);
+      fputs (_("*  -W, --width=COLUMNS           use width of COLUMNS\n"), stdout);
+      fputs (_("*  -y, --side-by-side            use side by side output format\n"), stdout);
+      fputs (_("*      --left-column             print only left column line when common\n"), stdout);
+      fputs (_("*      --sdiff-merge-assist      (internally used by `sdiff')\n"), stdout);
+      fputs (_("*      --suppress-common-lines   do not print common lines\n"), stdout);
+      ***/
+      /***
       fputs (_("\n\
 FORMAT is made up of characters standing for themselves, except:\n\
   %%%%           a single %%\n\
@@ -3946,13 +3924,13 @@ FORMAT is made up of characters standing for themselves, except:\n\
   %%l           [line] without its possible trailing newline\n\
   %%L           [line] with its possible trailing newline\n"),
 	     stdout);
-#endif
-#if 0
+      ***/
+      /***
       fputs (_("\n\
 SPECIF is [-][W[.D]]{doxX} as in C printf\n"),
 	     stdout);
-#endif
-#if 0
+      ***/
+      /***
       fputs (_("\n\
 VARIABLE is {eflmn} for old group or {EFLMN} for new group\n\
   {eE}   line number just before group\n\
@@ -3961,63 +3939,58 @@ VARIABLE is {eflmn} for old group or {EFLMN} for new group\n\
   {mM}   line number just after group\n\
   {nN}   number of lines in the group\n"),
 	     stdout);
-#endif
-#if 0
+      ***/
+      /***
+      fputs (_("\nStandard diff options:\n"), stdout);
+      fputs (_("  -i, --ignore-case         consider upper- and lower-case to be the same\n"), stdout);
+      fputs (_("  -w, --ignore-all-space    ignore all white space\n"), stdout);
+      fputs (_("  -b, --ignore-space-change ignore changes in the amount of white space\n"), stdout);
+      fputs (_("  -B, --ignore-blank-lines  ignore changes whose lines are all blank\n"), stdout);
+      fputs (_("  -I, --ignore-matching-lines=RE ignore changes whose lines all match RE\n"), stdout);
+      fputs (_("  -a, --text                treat all files as text\n"), stdout);
       fputs (_("\
-\n\
-Standard diff options:\n\
-  -i, --ignore-case         consider upper- and lower-case to be the same\n\
-  -w, --ignore-all-space    ignore all white space\n\
-  -b, --ignore-space-change ignore changes in the amount of white space\n\
-  -B, --ignore-blank-lines  ignore changes whose lines are all blank\n\
-  -I, --ignore-matching-lines=RE ignore changes whose lines all match RE\n\
-  -a, --text                treat all files as text\n\
   -c, --context[=NUMBER]    output regular context diffs,\n\
-                            changing to NUMBER lines of context\n\
+                            changing to NUMBER lines of context\n"), stdout);
+      fputs (_("\
   -u, --unified[=NUMBER]    output unified context diffs or unidiffs,\n\
-                            with NUMBER lines of context\n\
-  -C, --context=NUM         output NUM lines of copied context\n\
-  -U, --unified=NUM         output NUM lines of unified context\n\
-  -L, --label=LABEL         use LABEL instead of file name\n\
-  -p, --show-c-function     show which C function each change is in\n\
-  -F, --show-function-line=RE show the most recent line matching RE\n"),
-	     stdout);
-      fputs (_("\
-  -q, --brief               output only whether files differ\n\
-  -e, --ed                  output an ed script\n\
-  -n, --rcs                 output an RCS format diff\n\
-  -y, --side-by-side        output in two columns\n\
-  -w, --width=NUM           output at most NUM (default 130) characters per line\n\
-      --left-column         output only the left column of common lines\n\
-      --suppress-common-lines do not output common lines\n\
-  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n\
-      --GTYPE-group-format=GFMT GTYPE input groups with GFMT\n\
-      --line-format=LFMT    all input lines with LFMT\n\
-      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n\
-  -l, --paginate            pass the output through `pr' to paginate it\n\
-  -t, --expand-tabs         expand tabs to spaces in output\n"
-	     stdout);
-      fputs (_("\
-  -T, --initial-tab         make tabs line up by prepending a tab\n\
-  -r, --recursive           recursively compare any subdirectories found\n\
-  -N, --new-file            treat absent files as empty\n\
-  -P, --unidirectional-new-file treat absent first files as empty\n\
-  -s, --report-identical-files report when two files are the same\n\
-  -x, --exclude=PAT         exclude files that match PAT\n\
-  -X, --exclude-from=FILE   exclude files that match any pattern in FILE\n\
-  -S, --starting-file=FILE  start with FILE when comparing directories\n\
-      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n\
-  -d, --minimal             try hard to find a smaller set of changes\n\
-  -H, --speed-large-files   assume large files and many scattered small changes\n"),
-	     stdout);
-#endif
-#if 0
+                            with NUMBER lines of context\n"), stdout);
+      fputs (_("  -C, --context=NUM         output NUM lines of copied context\n"), stdout);
+      fputs (_("  -U, --unified=NUM         output NUM lines of unified context\n"), stdout);
+      fputs (_("  -L, --label=LABEL         use LABEL instead of file name\n"), stdout);
+      fputs (_("  -p, --show-c-function     show which C function each change is in\n"), stdout);
+      fputs (_("  -F, --show-function-line=RE show the most recent line matching RE\n"), stdout);
+      fputs (_("  -q, --brief               output only whether files differ\n"), stdout);
+      fputs (_("  -e, --ed                  output an ed script\n"), stdout);
+      fputs (_("  -n, --rcs                 output an RCS format diff\n"), stdout);
+      fputs (_("  -y, --side-by-side        output in two columns\n"), stdout);
+      fputs (_("  -w, --width=NUM           output at most NUM (default 130) characters per line\n"), stdout);
+      fputs (_("      --left-column         output only the left column of common lines\n"), stdout);
+      fputs (_("      --suppress-common-lines do not output common lines\n"), stdout);
+      fputs (_("  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"), stdout);
+      fputs (_("      --GTYPE-group-format=GFMT GTYPE input groups with GFMT\n"), stdout);
+      fputs (_("      --line-format=LFMT    all input lines with LFMT\n"), stdout);
+      fputs (_("      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"), stdout);
+      fputs (_("  -l, --paginate            pass the output through `pr' to paginate it\n"), stdout);
+      fputs (_("  -t, --expand-tabs         expand tabs to spaces in output\n"), stdout);
+      fputs (_("  -T, --initial-tab         make tabs line up by prepending a tab\n"), stdout);
+      fputs (_("  -r, --recursive           recursively compare any subdirectories found\n"), stdout);
+      fputs (_("  -N, --new-file            treat absent files as empty\n"), stdout);
+      fputs (_("  -P, --unidirectional-new-file treat absent first files as empty\n"), stdout);
+      fputs (_("  -s, --report-identical-files report when two files are the same\n"), stdout);
+      fputs (_("  -x, --exclude=PAT         exclude files that match PAT\n"), stdout);
+      fputs (_("  -X, --exclude-from=FILE   exclude files that match any pattern in FILE\n"), stdout);
+      fputs (_("  -S, --starting-file=FILE  start with FILE when comparing directories\n"), stdout);
+      fputs (_("      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"), stdout);
+      fputs (_("  -d, --minimal             try hard to find a smaller set of changes\n"), stdout);
+      fputs (_("  -H, --speed-large-files   assume large files and many scattered small changes\n"), stdout);
+      ***/
+      /***
       fputs (_("\
 \n\
 By default, context diffs have an horizon of two lines.\n"),
 	     stdout);
-#endif
-#if 0
+      ***/
+      /***
       fputs (_("\
 \n\
 LTYPE is `old', `new', or `unchanged'.  GTYPE is LTYPE or `changed'.\n\
@@ -4043,22 +4016,16 @@ Either GFMT or LFMT may contain:\n\
   %c'C'  the single character C\n\
   %c'\\OOO'  the character with octal code OOO\n"),
 	     stdout);
-#endif
-#if 0
-      fputs (_("\
-\n\
-Old mdiff options:\n\
-*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"),
-	     stdout);
-#endif
-      fputs (_("\
-\n\
-With no FILE, or when FILE is -, read standard input.\n"),
-	     stdout);
-      fputs (_("\
-\n\
-Report bugs to <wdiff-bugs@gnu.org>.\n"),
-	     stdout);
+      ***/
+      /***
+      fputs (_("\nOld mdiff options:\n"), stdout);
+      fputs (_("*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"), stdout);
+      ***/
+        
+      fputs ("\n", stdout);
+      fputs (_("With no FILE, or when FILE is -, read standard input.\n"), stdout);
+      fputs ("\n", stdout);
+      fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
     }
   exit (status);
 }

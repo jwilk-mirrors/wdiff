@@ -276,29 +276,25 @@ usage (int status)
       fputs (_("\
 unify - Transforms context diffs into unidiffs, or vice-versa.\n"),
 	     stdout);
+      fputs ("\n", stdout);
       printf (_("\
-\n\
 Usage: %s [OPTION]... [FILE]\n"), program_name);
-      fputs (_("\
-\n\
-  -c, --context-diffs    force output to context diffs\n\
-  -e, --echo-comments    echo comments to standard error\n\
-  -o, --old-diffs        output old-style diffs, no matter what\n\
-  -p, --patch-format     generate patch format\n\
-  -P                     same as -p\n\
-  -s, --strip-comments   strip comment lines\n\
-  -u, --unidiffs         force output to unidiffs\n\
-  -U                     same as -p and -u\n\
-  -=, --use-equals       replace spaces by equal signs in unidiffs\n\
-      --help             display this help and exit\n\
-      --version          output version information and exit\n\
-\n\
-If FILE is not specified, read standard input.\n"),
-	     stdout);
-      fputs (_("\
-\n\
-Report bugs to <wdiff-bugs@gnu.org>.\n"),
-	       stdout);
+      fputs ("\n", stdout);
+      fputs (_("  -c, --context-diffs    force output to context diffs\n"), stdout);
+      fputs (_("  -e, --echo-comments    echo comments to standard error\n"), stdout);
+      fputs (_("  -o, --old-diffs        output old-style diffs, no matter what\n"), stdout);
+      fputs (_("  -p, --patch-format     generate patch format\n"), stdout);
+      fputs (_("  -P                     same as -p\n"), stdout);
+      fputs (_("  -s, --strip-comments   strip comment lines\n"), stdout);
+      fputs (_("  -u, --unidiffs         force output to unidiffs\n"), stdout);
+      fputs (_("  -U                     same as -p and -u\n"), stdout);
+      fputs (_("  -=, --use-equals       replace spaces by equal signs in unidiffs\n"), stdout);
+      fputs (_("      --help             display this help and exit\n"), stdout);
+      fputs (_("      --version          output version information and exit\n"), stdout);
+      fputs ("\n", stdout);
+      fputs (_("If FILE is not specified, read standard input.\n"), stdout);
+      fputs ("\n", stdout);
+      fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
     }
   exit (status);
 }

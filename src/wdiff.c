@@ -117,6 +117,7 @@ struct option const longopts[] =
   {"statistics"  , 0, NULL, 's'},
   {"terminal"    , 0, NULL, 't'},
   {"version"     , 0, NULL, 'v'},
+  {"diff-input"  , 0, NULL, 'd'},
   {NULL          , 0, NULL, 0}
 };
 
@@ -125,6 +126,7 @@ const char *program_name;	/* name of executing program */
 int inhibit_left;		/* inhibit display of left side words */
 int inhibit_right;		/* inhibit display of left side words */
 int inhibit_common;		/* inhibit display of common words */
+int diff_input;			/* expect (unified) diff as input */
 int ignore_case;		/* ignore case in comparisons */
 int show_statistics;		/* if printing summary statistics */
 int no_wrapping;		/* end/restart strings at end of lines */
@@ -596,6 +598,86 @@ create_template_filename (char *tmpl, size_t tmpl_len)
   return tmpl;
 }
 
+/*--------------------------------------------------.
+| Create a temporary file for one side of the diff. |
+`--------------------------------------------------*/
+static void
+create_temporary_side (SIDE *side)
+{
+  int fd;                /* for file descriptors returned by mkstemp */
+
+  /* Select a file name, use it for opening a temporary file and
+     unlink it right away. We do not need the file name itself
+     anymore.  */
+
+  if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
+    error (EXIT_FAILURE, 0, _("No suitable temporary directory exists"));
+  if ((fd = mkstemp (side->temp_name)) == -1)
+    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+
+  side->file = fdopen (fd, "w+");
+  if (side->file == NULL)
+    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+  if (unlink (side->temp_name) != 0)
+    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+}
+
+/*--------------------------------------------------------.
+| Read unified diff and produce two output files from it. |
+`--------------------------------------------------------*/
+
+static void
+split_diff (const char *path) {
+  FILE *input;
+  int character;
+  int start_of_line = 1;
+  int output_to = 3;
+
+  if (path == NULL)
+    {
+      input = stdin;
+    }
+  else
+    {
+      input = fopen(path, "r");
+      if (input == NULL)
+	error (EXIT_FAILURE, errno, "%s", path);
+    }
+
+  create_temporary_side (left_side);
+  create_temporary_side (right_side);
+
+  while ((character = getc (input)) != EOF)
+    {
+      if (start_of_line)
+	{
+	  start_of_line = 0;
+	  switch (character)
+	    {
+	    case '-':
+	      output_to = 1;
+	      continue;
+	    case '+':
+	      output_to = 2;
+	      continue;
+	    case ' ':
+	      output_to = 3;
+	      continue;
+	    default:
+	      output_to = 3;
+	      break;
+	    }
+	}
+      if (output_to & 1)
+	putc(character, left_side->file);
+      if (output_to & 2)
+	putc(character, right_side->file);
+      start_of_line = (character == '\n' || character == '\r');
+    }
+  rewind (left_side->file);
+  rewind (right_side->file);
+}
+
 /*-------------------------------------------------------------------------.
 | For a given SIDE, turn original input file in another one, in which each |
 | word is on one line.							   |
@@ -610,48 +692,38 @@ split_file_into_words (SIDE *side)
 
   /* Open files.  */
 
-  if (side->filename == NULL)
-    {
-      side->file = stdin;
-    }
-  else
-    {
-      /* Check and diagnose if the file name is a directory.  Or else,
-	 prepare the file for reading.  */
+  if (!diff_input) {
+    if (side->filename == NULL)
+      {
+        side->file = stdin;
+      }
+    else
+      {
+        /* Check and diagnose if the file name is a directory.  Or else,
+           prepare the file for reading.  */
 
-      if (stat (side->filename, &stat_buffer) != 0)
-	error (EXIT_FAILURE, errno, "%s", side->filename);
-      if ((stat_buffer.st_mode & S_IFMT) == S_IFDIR)
-	error (EXIT_FAILURE, 0, _("Directories not supported"));
-      side->file = fopen (side->filename, "r");
-      if (side->file == NULL)
-	error (EXIT_FAILURE, errno, "%s", side->filename);
-    }
+        if (stat (side->filename, &stat_buffer) != 0)
+          error (EXIT_FAILURE, errno, "%s", side->filename);
+        if ((stat_buffer.st_mode & S_IFMT) == S_IFDIR)
+          error (EXIT_FAILURE, 0, _("Directories not supported"));
+        side->file = fopen (side->filename, "r");
+        if (side->file == NULL)
+          error (EXIT_FAILURE, errno, "%s", side->filename);
+      }
 
-  if (fseek(side->file, 0L, SEEK_CUR) != 0)
-    {
-      /* Non-seekable input, e.g. stdin or shell process substitution.
-	 Select a file name, use it for opening a temporary file and
-	 unlink it right away.  Then, copy the whole input to
-	 this temporary local file.  Once done, prepare it for reading.
-	 We do not need the file name itself anymore.  */
+    if (fseek(side->file, 0L, SEEK_CUR) != 0)
+      {
+        /* Non-seekable input, e.g. stdin or shell process substitution.
+           Copy the whole input to a temporary local file.  Once done,
+           prepare it for reading.  */
+        input = side->file;
+        create_temporary_side(side);
+        while (side->character = getc (input), side->character != EOF)
+          putc (side->character, side->file);
+        rewind (side->file);
 
-      if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
-	error (EXIT_FAILURE, 0, _("No suitable temporary directory exists"));
-      if ((fd = mkstemp (side->temp_name)) == -1)
-        error (EXIT_FAILURE, errno, "%s", side->temp_name);
-
-      input = side->file;
-      side->file = fdopen (fd, "w+");
-      if (side->file == NULL)
-	error (EXIT_FAILURE, errno, "%s", side->temp_name);
-      if (unlink (side->temp_name) != 0)
-	error (EXIT_FAILURE, errno, "%s", side->temp_name);
-      while (side->character = getc (input), side->character != EOF)
-	putc (side->character, side->file);
-      rewind (side->file);
-
-    }
+      }
+  }
   side->character = getc (side->file);
   side->position = 0;
 
@@ -1181,37 +1253,36 @@ usage (int status)
       fputs (_("\
 wdiff - Compares words in two files and report differences.\n"),
 	     stdout);
+      fputs ("\n", stdout);
       printf (_("\
-\n\
-Usage: %s [OPTION]... FILE1 FILE2\n"),
-	      program_name);
-      printf (_("\
-Mandatory arguments to long options are mandatory for short options too.\n\
-\n\
-  -C, --copyright            print copyright then exit\n\
-  -K, --no-init-term         like -t, but no termcap init/term strings\n\
-  -1, --no-deleted           inhibit output of deleted words\n\
-  -2, --no-inserted          inhibit output of inserted words\n\
-  -3, --no-common            inhibit output of common words\n"));
-      printf (_("\
-  -a, --auto-pager           automatically calls a pager\n\
-  -h, --help                 print this help\n\
-  -i, --ignore-case          fold character case while comparing\n\
-  -l, --less-mode            variation of printer mode for \"less\"\n\
-  -n, --avoid-wraps          do not extend fields through newlines\n\
-  -p, --printer              overstrike as for printers\n"));
-      printf (_("\
-  -s, --statistics           say how many words deleted, inserted etc.\n\
-  -t, --terminal             use termcap as for terminal displays\n\
-  -v, --version              print program version then exit\n\
-  -w, --start-delete=STRING  string to mark beginning of delete region\n\
-  -x, --end-delete=STRING    string to mark end of delete region\n\
-  -y, --start-insert=STRING  string to mark beginning of insert region\n\
-  -z, --end-insert=STRING    string to mark end of insert region\n"));
+Usage: %s [OPTION]... FILE1 FILE2\n\
+       %s -d [OPTION]... [FILE]\n"),
+	      program_name, program_name);
+      fputs ("\n", stdout);
       fputs (_("\
-\n\
-Report bugs to <wdiff-bugs@gnu.org>.\n"),
-	     stdout);
+Mandatory arguments to long options are mandatory for short options too.\n"),
+             stdout);
+      fputs (_("  -C, --copyright            print copyright then exit\n"), stdout);
+      fputs (_("  -K, --no-init-term         like -t, but no termcap init/term strings\n"), stdout);
+      fputs (_("  -1, --no-deleted           inhibit output of deleted words\n"), stdout);
+      fputs (_("  -2, --no-inserted          inhibit output of inserted words\n"), stdout);
+      fputs (_("  -3, --no-common            inhibit output of common words\n"), stdout);
+      fputs (_("  -a, --auto-pager           automatically calls a pager\n"), stdout);
+      fputs (_("  -d, --diff-input           use single unified diff as input\n"), stdout);
+      fputs (_("  -h, --help                 print this help\n"), stdout);
+      fputs (_("  -i, --ignore-case          fold character case while comparing\n"), stdout);
+      fputs (_("  -l, --less-mode            variation of printer mode for \"less\"\n"), stdout);
+      fputs (_("  -n, --avoid-wraps          do not extend fields through newlines\n"), stdout);
+      fputs (_("  -p, --printer              overstrike as for printers\n"), stdout);
+      fputs (_("  -s, --statistics           say how many words deleted, inserted etc.\n"), stdout);
+      fputs (_("  -t, --terminal             use termcap as for terminal displays\n"), stdout);
+      fputs (_("  -v, --version              print program version then exit\n"), stdout);
+      fputs (_("  -w, --start-delete=STRING  string to mark beginning of delete region\n"), stdout);
+      fputs (_("  -x, --end-delete=STRING    string to mark end of delete region\n"), stdout);
+      fputs (_("  -y, --start-insert=STRING  string to mark beginning of insert region\n"), stdout);
+      fputs (_("  -z, --end-insert=STRING    string to mark end of insert region\n"), stdout);
+      fputs ("\n", stdout);
+      fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
     }
   exit (status);
 }
@@ -1236,6 +1307,7 @@ main (int argc, char *const argv[])
   inhibit_right = 0;
   inhibit_common = 0;
 
+  diff_input = 0;
   ignore_case = 0;
   show_statistics = 0;
   no_wrapping = 0;
@@ -1262,7 +1334,7 @@ main (int argc, char *const argv[])
   count_changed_right = 0;
 
   while (option_char = getopt_long (argc, (char **) argv,
-				    "123CKahilnpstvw:x:y:z:", longopts, NULL),
+				    "123CKadhilnpstvw:x:y:z:", longopts, NULL),
 	 option_char != EOF)
     switch (option_char)
       {
@@ -1284,6 +1356,10 @@ main (int argc, char *const argv[])
 
       case 'a':
 	autopager = 1;
+	break;
+
+      case 'd':
+	diff_input = 1;
 	break;
 
       case 'h':
@@ -1362,12 +1438,6 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
 	usage (EXIT_FAILURE);
       }
 
-  if (optind + 2 != argc)
-    {
-      error (0, 0, _("Missing file arguments"));
-      usage (EXIT_FAILURE);
-    }
-
   /* If find_termcap still undecided, make it true only if autopager is set
      while stdout is directed to a terminal.  This decision might be
      reversed later, if the pager happens to be "less".  */
@@ -1377,6 +1447,32 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
 
   /* Setup file names and signals, then do it all.  */
 
+  if (diff_input)
+    {
+      if (optind + 1 < argc)
+	{
+	  error (0, 0, _("Too many file arguments"));
+	  usage (EXIT_FAILURE);
+	}
+      if (optind == argc || strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
+	split_diff (NULL);
+      else
+	split_diff (argv[optind]);
+    }
+  else
+    {
+      if (optind + 2 > argc)
+	{
+	  error (0, 0, _("Missing file arguments"));
+	  usage (EXIT_FAILURE);
+	}
+      if (optind + 2 < argc)
+	{
+	  error (0, 0, _("Too many file arguments"));
+	  usage (EXIT_FAILURE);
+	}
+
+      /* TODO: Reindent this block later on. Keep patches clean for now. */
   if (strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
     left_side->filename = NULL;
   else
@@ -1393,6 +1489,7 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
 
   if (left_side->filename == NULL && right_side->filename == NULL)
     error (EXIT_FAILURE, 0, _("Only one file may be standard input."));
+    }
 
   setup_signals ();
   input_file = NULL;
