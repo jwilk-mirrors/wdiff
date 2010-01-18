@@ -532,7 +532,7 @@ dump_item (ITEM *item)
 {
   static const char *item_type_string[4] = {"", "delim", "white", "SENTIN"};
 
-  fprintf (stderr, "(%d)\t%s\t%08x\n", item - item_array,
+  fprintf (stderr, "(%ld)\t%s\t%08x\n", (long)(item - item_array),
 	   item_type_string [item_type (item)], item->checksum);
 }
 
@@ -1481,7 +1481,8 @@ dump_cluster (struct cluster *cluster)
   int counter;
   struct member *member;
 
-  fprintf (stderr, "{%d},%d", cluster - cluster_array, cluster->item_count);
+  fprintf (stderr, "{%ld},%d",
+           (long)(cluster - cluster_array), cluster->item_count);
   for (counter = cluster->first_member;
        counter < (cluster + 1)->first_member;
        counter++)
@@ -1516,8 +1517,8 @@ dump_all_clusters (void)
 static void
 dump_member (struct member *member)
 {
-  fprintf (stderr, " [%d]\t{%d}\t%s,%d+\n",
-	   member - member_array, member->cluster_number,
+  fprintf (stderr, " [%ld]\t{%d}\t%s,%d+\n",
+	   (long)(member - member_array), member->cluster_number,
 	   reference_string (member->first_item),
 	   cluster_array[member->cluster_number].item_count);
 }
@@ -1985,7 +1986,7 @@ dump_all_mergings (void)
 	{
 	  if (merging > merging_array)
 	    putc ('\n', stderr);
-	  fprintf (stderr, "<%d>", merging - merging_array);
+	  fprintf (stderr, "<%ld>", (long)(merging - merging_array));
 	}
       reference
 	= get_reference (member_array[merging->member_number].first_item);
@@ -2216,11 +2217,12 @@ prepare_mergings (void)
 #if DEBUGGING
 	    if (debugging)
 	      if (best_cluster)
-		fprintf (stderr, "  {%d}=%d <-> {%d}=%d\n",
-			 best_cluster - cluster_array, best_cost,
-			 cluster - cluster_array, cost);
+		fprintf (stderr, "  {%ld}=%d <-> {%ld}=%d\n",
+			 (long)(best_cluster - cluster_array), best_cost,
+			 (long)(cluster - cluster_array), cost);
 	      else
-		fprintf (stderr, "  {%d}=%d\n", cluster - cluster_array, cost);
+		fprintf (stderr, "  {%ld}=%d\n",
+			 (long)(cluster - cluster_array), cost);
 #endif
 	    if (!best_cluster || cost < best_cost)
 	      {
@@ -3269,7 +3271,7 @@ relist_annotated_files (void)
 		      if (show_links)
 			{
 			  sprintf (buffer, "[%c%s%d",
-				   active - active_array + 'A',
+				   (char)(active - active_array + 'A'),
 				   reference.input->nick_name,
 				   reference.number);
 			  push_emphasis (UNDERLINED);
@@ -3297,7 +3299,8 @@ relist_annotated_files (void)
 		{
 		  if (show_links)
 		    {
-		      sprintf (buffer, "[%c", active - active_array + 'A');
+		      sprintf (buffer, "[%c",
+		               (char)(active - active_array + 'A'));
 		      push_emphasis (UNDERLINED);
 		      output_characters (buffer, strlen (buffer), 0);
 		      pop_emphasis ();
@@ -3394,7 +3397,7 @@ relist_annotated_files (void)
 			    sprintf (buffer, "%s%d%c]",
 				     reference.input->nick_name,
 				     reference.number,
-				     active - active_array + 'A');
+				     (char)(active - active_array + 'A'));
 			    push_emphasis (UNDERLINED);
 			    output_characters (buffer, strlen (buffer), 0);
 			    pop_emphasis ();
@@ -3420,7 +3423,8 @@ relist_annotated_files (void)
 		    if (show_links)
 		      {
 			putc (' ', output_file);
-			sprintf (buffer, "%c]", active - active_array + 'A');
+			sprintf (buffer, "%c]",
+			         (char)(active - active_array + 'A'));
 			push_emphasis (UNDERLINED);
 			output_characters (buffer, strlen (buffer), 0);
 			pop_emphasis ();
