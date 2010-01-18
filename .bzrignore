@@ -15,11 +15,13 @@ lib/charset.alias
 lib/configmake.h
 lib/langinfo.h
 lib/link-warning.h
+lib/locale.h
 lib/ref-add.sed
 lib/ref-del.sed
 lib/stdio.h
 lib/stdlib.h
 lib/string.h
+lib/sys
 lib/unistd.h
 lib/warn-on-use.h
 lib/wchar.h

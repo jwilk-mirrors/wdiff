@@ -66,6 +66,7 @@ AC_DEFUN([gl_INIT],
   gl_LOCALCHARSET
   LOCALCHARSET_TESTS_ENVIRONMENT="CHARSETALIASDIR=\"\$(top_builddir)/$gl_source_base\""
   AC_SUBST([LOCALCHARSET_TESTS_ENVIRONMENT])
+  gl_LOCALE_H
   AC_FUNC_MALLOC
   AC_DEFINE([GNULIB_MALLOC_GNU], 1, [Define to indicate the 'malloc' module.])
   gl_FUNC_MALLOC_POSIX
@@ -89,6 +90,8 @@ AC_DEFUN([gl_INIT],
   gl_FUNC_STRERROR
   gl_STRING_MODULE_INDICATOR([strerror])
   gl_HEADER_STRING_H
+  gl_SYS_WAIT_H
+  AC_PROG_MKDIR_P
   gl_UNISTD_H
   gl_WCHAR_H
   gl_FUNC_WCRTOMB
@@ -250,6 +253,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/langinfo.in.h
   lib/localcharset.c
   lib/localcharset.h
+  lib/locale.in.h
   lib/malloc.c
   lib/mbrtowc.c
   lib/mbsinit.c
@@ -272,6 +276,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/streq.h
   lib/strerror.c
   lib/string.in.h
+  lib/sys_wait.in.h
   lib/unistd.in.h
   lib/verify.h
   lib/wchar.in.h
@@ -301,6 +306,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/locale-fr.m4
   m4/locale-ja.m4
   m4/locale-zh.m4
+  m4/locale_h.m4
   m4/longlong.m4
   m4/malloc.m4
   m4/mbrtowc.m4
@@ -319,6 +325,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/stdlib_h.m4
   m4/strerror.m4
   m4/string_h.m4
+  m4/sys_wait_h.m4
   m4/unistd_h.m4
   m4/warn-on-use.m4
   m4/wchar.m4
