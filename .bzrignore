@@ -1,8 +1,14 @@
 .deps
 Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache
 config.h
+config.h.in
 config.log
 config.status
+configure
+doc/stamp-vti
 lib/alloca.h
 lib/charset.alias
 lib/configmake.h
@@ -12,6 +18,7 @@ lib/stdio.h
 lib/stdlib.h
 lib/string.h
 lib/unistd.h
+man/*.1
 po/Makefile.in
 po/POTFILES
 po/en@boldquot.insert-header
