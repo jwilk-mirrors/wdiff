@@ -1253,39 +1253,36 @@ usage (int status)
       fputs (_("\
 wdiff - Compares words in two files and report differences.\n"),
 	     stdout);
+      fputs ("\n", stdout);
       printf (_("\
-\n\
 Usage: %s [OPTION]... FILE1 FILE2\n\
        %s -d [OPTION]... [FILE]\n"),
 	      program_name, program_name);
-      printf (_("\
-Mandatory arguments to long options are mandatory for short options too.\n\
-\n\
-  -C, --copyright            print copyright then exit\n\
-  -K, --no-init-term         like -t, but no termcap init/term strings\n\
-  -1, --no-deleted           inhibit output of deleted words\n\
-  -2, --no-inserted          inhibit output of inserted words\n\
-  -3, --no-common            inhibit output of common words\n"));
-      printf (_("\
-  -a, --auto-pager           automatically calls a pager\n\
-  -d, --diff-input           use single unified diff as input\n\
-  -h, --help                 print this help\n\
-  -i, --ignore-case          fold character case while comparing\n\
-  -l, --less-mode            variation of printer mode for \"less\"\n\
-  -n, --avoid-wraps          do not extend fields through newlines\n\
-  -p, --printer              overstrike as for printers\n"));
-      printf (_("\
-  -s, --statistics           say how many words deleted, inserted etc.\n\
-  -t, --terminal             use termcap as for terminal displays\n\
-  -v, --version              print program version then exit\n\
-  -w, --start-delete=STRING  string to mark beginning of delete region\n\
-  -x, --end-delete=STRING    string to mark end of delete region\n\
-  -y, --start-insert=STRING  string to mark beginning of insert region\n\
-  -z, --end-insert=STRING    string to mark end of insert region\n"));
+      fputs ("\n", stdout);
       fputs (_("\
-\n\
-Report bugs to <wdiff-bugs@gnu.org>.\n"),
-	     stdout);
+Mandatory arguments to long options are mandatory for short options too.\n"),
+             stdout);
+      fputs (_("  -C, --copyright            print copyright then exit\n"), stdout);
+      fputs (_("  -K, --no-init-term         like -t, but no termcap init/term strings\n"), stdout);
+      fputs (_("  -1, --no-deleted           inhibit output of deleted words\n"), stdout);
+      fputs (_("  -2, --no-inserted          inhibit output of inserted words\n"), stdout);
+      fputs (_("  -3, --no-common            inhibit output of common words\n"), stdout);
+      fputs (_("  -a, --auto-pager           automatically calls a pager\n"), stdout);
+      fputs (_("  -d, --diff-input           use single unified diff as input\n"), stdout);
+      fputs (_("  -h, --help                 print this help\n"), stdout);
+      fputs (_("  -i, --ignore-case          fold character case while comparing\n"), stdout);
+      fputs (_("  -l, --less-mode            variation of printer mode for \"less\"\n"), stdout);
+      fputs (_("  -n, --avoid-wraps          do not extend fields through newlines\n"), stdout);
+      fputs (_("  -p, --printer              overstrike as for printers\n"), stdout);
+      fputs (_("  -s, --statistics           say how many words deleted, inserted etc.\n"), stdout);
+      fputs (_("  -t, --terminal             use termcap as for terminal displays\n"), stdout);
+      fputs (_("  -v, --version              print program version then exit\n"), stdout);
+      fputs (_("  -w, --start-delete=STRING  string to mark beginning of delete region\n"), stdout);
+      fputs (_("  -x, --end-delete=STRING    string to mark end of delete region\n"), stdout);
+      fputs (_("  -y, --start-insert=STRING  string to mark beginning of insert region\n"), stdout);
+      fputs (_("  -z, --end-insert=STRING    string to mark end of insert region\n"), stdout);
+      fputs ("\n", stdout);
+      fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
     }
   exit (status);
 }
