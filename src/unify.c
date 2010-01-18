@@ -23,6 +23,7 @@
 #include "system.h"
 #include <getopt.h>
 #include <string.h>
+#include <locale.h>
 
 /* FIXME: Programs should not have such limits.  */
 #define NAME_LENGTH 255

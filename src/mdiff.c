@@ -95,6 +95,8 @@ const char *tgetstr ();
 #endif
 
 #include <getopt.h>
+#include <locale.h>
+#include <sys/wait.h>
 
 char *getenv ();
 FILE *readpipe PARAMS ((const char *, ...));
@@ -1055,18 +1057,19 @@ static void
 study_input (struct input *input)
 {
 #if SAVE_AND_SLOW
-# define ADJUST_CHECKSUM(Character) \
-  checksum = (checksum << 5) + (checksum >> BITS_PER_WORD - 5) \
+# define ADJUST_CHECKSUM(Character)                                \
+  checksum = (checksum << 5) + (checksum >> (BITS_PER_WORD - 5))   \
     + (Character & 0xFF)
 #else
-# define ADJUST_CHECKSUM(Character) \
-  checksum = (checksum << 5) + (checksum >> BITS_PER_WORD - BITS_PER_TYPE - 5) \
+# define ADJUST_CHECKSUM(Character)                                \
+  checksum = (checksum << 5) +                                     \
+    (checksum >> (BITS_PER_WORD - BITS_PER_TYPE - 5))              \
     + (Character & 0xFF)
 #endif
 
   int item_count;		/* number of items read */
-  char *buffer;			/* line buffer */
-  int length;			/* actual line length in buffer */
+  char *buffer = NULL;		/* line buffer */
+  int length = 0;		/* actual line length in buffer */
 
   /* Read the file and checksum all items.  */
 
@@ -1139,15 +1142,17 @@ study_input (struct input *input)
 	    if (isspace (*cursor))
 	      {
 		if (!ignore_all_space)
-		  if (ignore_space_change)
-		    {
-		      ADJUST_CHECKSUM (' ');
-		      while (cursor + 1 < buffer + length
-			     && isspace (cursor[1]))
-			cursor++;
-		    }
-		  else
-		    ADJUST_CHECKSUM (*cursor);
+		  {
+		    if (ignore_space_change)
+		      {
+			ADJUST_CHECKSUM (' ');
+			while (cursor + 1 < buffer + length
+			       && isspace (cursor[1]))
+			  cursor++;
+		      }
+		    else
+		      ADJUST_CHECKSUM (*cursor);
+		  }
 	      }
 	    else if (isalpha (*cursor))
 	      {
@@ -1328,7 +1333,7 @@ reference_string (int number)
 
   struct reference reference;
   static char buffer[RING_LENGTH][20];
-  static next = RING_LENGTH - 1;
+  static int next = RING_LENGTH - 1;
 
   if (next == RING_LENGTH - 1)
     next = 0;
@@ -2216,13 +2221,15 @@ prepare_mergings (void)
 
 #if DEBUGGING
 	    if (debugging)
-	      if (best_cluster)
-		fprintf (stderr, "  {%ld}=%d <-> {%ld}=%d\n",
-			 (long)(best_cluster - cluster_array), best_cost,
-			 (long)(cluster - cluster_array), cost);
-	      else
-		fprintf (stderr, "  {%ld}=%d\n",
-			 (long)(cluster - cluster_array), cost);
+	      {
+		if (best_cluster)
+		  fprintf (stderr, "  {%ld}=%d <-> {%ld}=%d\n",
+			   (long)(best_cluster - cluster_array), best_cost,
+			   (long)(cluster - cluster_array), cost);
+		else
+		  fprintf (stderr, "  {%ld}=%d\n",
+			   (long)(cluster - cluster_array), cost);
+	      }
 #endif
 	    if (!best_cluster || cost < best_cost)
 	      {
@@ -2239,7 +2246,7 @@ prepare_mergings (void)
 #if DEBUGGING
       if (debugging)
 	{
-	  fprintf (stderr, "\nCHOICE\t", best_cluster);
+	  fprintf (stderr, "\nCHOICE\t");
 	  dump_cluster (best_cluster);
 	  putc ('\n', stderr);
 	}
@@ -2874,11 +2881,11 @@ make_margin (struct input *input, enum margin_mode margin)
   char buffer[15];
   char *cursor;
 
-  if (margin == EMPTY_MARGIN)
-    return;
-
   switch (margin)
     {
+    case EMPTY_MARGIN:
+      return;
+
     case LOCATION_IN_MARGIN:
       sprintf (buffer, "%s%d", input->nick_name,
 	       input->item - input->first_item + 1);
@@ -3130,7 +3137,7 @@ relist_annotated_files (void)
 
   enum margin_mode margin_mode = show_links ? LOCATION_IN_MARGIN : EMPTY_MARGIN;
 
-  struct input *input;
+  struct input *input = NULL;
   int *cursor;
   int counter;
   FILE *file;

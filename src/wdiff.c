@@ -88,6 +88,8 @@ const char *tgetstr ();
 #endif
 
 #include <getopt.h>
+#include <locale.h>
+#include <sys/wait.h>
 
 char *getenv ();
 FILE *readpipe PARAMS ((const char *, ...));
@@ -938,16 +940,20 @@ reformat_diff_output (void)
 	    }
 
 	  if (!inhibit_left)
-	    if (!inhibit_common && inhibit_right)
-	      copy_until_ordinal (left_side, resync_left);
-	    else
-	      skip_until_ordinal (left_side, resync_left);
+	    {
+	      if (!inhibit_common && inhibit_right)
+		copy_until_ordinal (left_side, resync_left);
+	      else
+		skip_until_ordinal (left_side, resync_left);
+	    }
 
 	  if (!inhibit_right)
-	    if (inhibit_common)
-	      skip_until_ordinal (right_side, resync_right);
-	    else
-	      copy_until_ordinal (right_side, resync_right);
+	    {
+	      if (inhibit_common)
+		skip_until_ordinal (right_side, resync_right);
+	      else
+		copy_until_ordinal (right_side, resync_right);
+	    }
 
 	  if (!inhibit_common && inhibit_left && inhibit_right)
 	    copy_until_ordinal (right_side, resync_right);

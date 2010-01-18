@@ -28,6 +28,8 @@
 #define EXIT_FAILURE 2		/* any other reason for exit */
 
 #include <getopt.h>
+#include <locale.h>
+#include <unistd.h>
 
 const char *program_name;	/* name of executing program */
 
