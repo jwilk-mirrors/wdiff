@@ -1,6 +1,6 @@
 /* Extended regular expression matching and search library.
-   Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation,
-   Inc.
+   Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free
+   Software Foundation, Inc.
    This file is part of the GNU C Library.
    Contributed by Isamu Hasegawa <isamu@yamato.ibm.com>.
 
@@ -1045,6 +1045,11 @@ prune_impossible_nodes (re_match_context_t *mctx)
       re_node_set_free (&sctx.limits);
       if (BE (ret != REG_NOERROR, 0))
 	goto free_return;
+      if (sifted_states[0] == NULL)
+	{
+	  ret = REG_NOMATCH;
+	  goto free_return;
+	}
     }
   re_free (mctx->state_log);
   mctx->state_log = sifted_states;
@@ -3079,7 +3084,9 @@ check_arrival_add_next_nodes (re_match_context_t *mctx, Idx str_idx,
   const re_dfa_t *const dfa = mctx->dfa;
   bool ok;
   Idx cur_idx;
+#ifdef RE_ENABLE_I18N
   reg_errcode_t err = REG_NOERROR;
+#endif
   re_node_set union_set;
   re_node_set_init_empty (&union_set);
   for (cur_idx = 0; cur_idx < cur_nodes->nelem; ++cur_idx)
@@ -3942,15 +3949,20 @@ check_node_accept_bytes (const re_dfa_t *dfa, Idx node_idx,
 		_NL_CURRENT (LC_COLLATE, _NL_COLLATE_EXTRAMB);
 	      indirect = (const int32_t *)
 		_NL_CURRENT (LC_COLLATE, _NL_COLLATE_INDIRECTMB);
-	      idx = findidx (&cp);
+	      int32_t idx = findidx (&cp);
 	      if (idx > 0)
 		for (i = 0; i < cset->nequiv_classes; ++i)
 		  {
 		    int32_t equiv_class_idx = cset->equiv_classes[i];
-		    size_t weight_len = weights[idx];
-		    if (weight_len == weights[equiv_class_idx])
+		    size_t weight_len = weights[idx & 0xffffff];
+		    if (weight_len == weights[equiv_class_idx & 0xffffff]
+			&& (idx >> 24) == (equiv_class_idx >> 24))
 		      {
 			Idx cnt = 0;
+
+			idx &= 0xffffff;
+			equiv_class_idx &= 0xffffff;
+
 			while (cnt <= weight_len
 			       && (weights[equiv_class_idx + 1 + cnt]
 				   == weights[idx + 1 + cnt]))

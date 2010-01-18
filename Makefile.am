@@ -37,7 +37,7 @@ TESTSUITE_AT	= tests/testsuite.at \
 		  tests/cluster.at \
 		  tests/wdiff.at
 
-EXTRA_DIST     = $(srcdir)/$(TESTSUITE) $(TESTSUITE_AT) $(srcdir)/tests/package.m4
+EXTRA_DIST     = $(srcdir)/$(TESTSUITE) $(TESTSUITE_AT) $(srcdir)/tests/package.m4 m4/gnulib-cache.m4
 
 # Be sure to reexport important environment variables:
 TESTS_ENVIRONMENT = MAKE="$(MAKE)" CC="$(CC)" CFLAGS="$(CFLAGS)" \

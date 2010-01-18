@@ -1,6 +1,6 @@
 /* A substitute for ISO C99 <wctype.h>, for platforms that lack it.
 
-   Copyright (C) 2006-2008 Free Software Foundation, Inc.
+   Copyright (C) 2006-2010 Free Software Foundation, Inc.
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -28,6 +28,10 @@
 
 #ifndef _GL_WCTYPE_H
 
+#if __GNUC__ >= 3
+@PRAGMA_SYSTEM_HEADER@
+#endif
+
 #if @HAVE_WINT_T@
 /* Solaris 2.5 has a bug: <wchar.h> must be included before <wctype.h>.
    Tru64 with Desktop Toolkit C has a bug: <stdio.h> must be included before
@@ -50,10 +54,16 @@
 #ifndef _GL_WCTYPE_H
 #define _GL_WCTYPE_H
 
-#if @HAVE_WINT_T@
-typedef wint_t __wctype_wint_t;
-#else
-typedef int __wctype_wint_t;
+/* Define wint_t.  (Also done in wchar.in.h.)  */
+#if !@HAVE_WINT_T@ && !defined wint_t
+# define wint_t int
+# ifndef WEOF
+#  define WEOF -1
+# endif
+#endif
+
+#ifdef __cplusplus
+extern "C" {
 #endif
 
 /* FreeBSD 4.4 to 4.11 has <wctype.h> but lacks the functions.
@@ -66,113 +76,164 @@ typedef int __wctype_wint_t;
    refer to system functions like _iswctype that are not in the
    standard C library.  Rather than try to get ancient buggy
    implementations like this to work, just disable them.  */
-#  undef iswalnum
-#  undef iswalpha
-#  undef iswblank
-#  undef iswcntrl
-#  undef iswdigit
-#  undef iswgraph
-#  undef iswlower
-#  undef iswprint
-#  undef iswpunct
-#  undef iswspace
-#  undef iswupper
-#  undef iswxdigit
+# undef iswalnum
+# undef iswalpha
+# undef iswblank
+# undef iswcntrl
+# undef iswdigit
+# undef iswgraph
+# undef iswlower
+# undef iswprint
+# undef iswpunct
+# undef iswspace
+# undef iswupper
+# undef iswxdigit
+# undef towlower
+# undef towupper
 
 /* Linux libc5 has <wctype.h> and the functions but they are broken.  */
-#  if @REPLACE_ISWCNTRL@
-#   define iswalnum rpl_iswalnum
-#   define iswalpha rpl_iswalpha
-#   define iswblank rpl_iswblank
-#   define iswcntrl rpl_iswcntrl
-#   define iswdigit rpl_iswdigit
-#   define iswgraph rpl_iswgraph
-#   define iswlower rpl_iswlower
-#   define iswprint rpl_iswprint
-#   define iswpunct rpl_iswpunct
-#   define iswspace rpl_iswspace
-#   define iswupper rpl_iswupper
-#   define iswxdigit rpl_iswxdigit
-#  endif
+# if @REPLACE_ISWCNTRL@
+#  define iswalnum rpl_iswalnum
+#  define iswalpha rpl_iswalpha
+#  define iswblank rpl_iswblank
+#  define iswcntrl rpl_iswcntrl
+#  define iswdigit rpl_iswdigit
+#  define iswgraph rpl_iswgraph
+#  define iswlower rpl_iswlower
+#  define iswprint rpl_iswprint
+#  define iswpunct rpl_iswpunct
+#  define iswspace rpl_iswspace
+#  define iswupper rpl_iswupper
+#  define iswxdigit rpl_iswxdigit
+#  define towlower rpl_towlower
+#  define towupper rpl_towupper
+# endif
 
 static inline int
-iswalnum (__wctype_wint_t wc)
+iswalnum (wint_t wc)
 {
   return ((wc >= '0' && wc <= '9')
-	  || ((wc & ~0x20) >= 'A' && (wc & ~0x20) <= 'Z'));
+          || ((wc & ~0x20) >= 'A' && (wc & ~0x20) <= 'Z'));
 }
 
 static inline int
-iswalpha (__wctype_wint_t wc)
+iswalpha (wint_t wc)
 {
   return (wc & ~0x20) >= 'A' && (wc & ~0x20) <= 'Z';
 }
 
 static inline int
-iswblank (__wctype_wint_t wc)
+iswblank (wint_t wc)
 {
   return wc == ' ' || wc == '\t';
 }
 
 static inline int
-iswcntrl (__wctype_wint_t wc)
+iswcntrl (wint_t wc)
 {
   return (wc & ~0x1f) == 0 || wc == 0x7f;
 }
 
 static inline int
-iswdigit (__wctype_wint_t wc)
+iswdigit (wint_t wc)
 {
   return wc >= '0' && wc <= '9';
 }
 
 static inline int
-iswgraph (__wctype_wint_t wc)
+iswgraph (wint_t wc)
 {
   return wc >= '!' && wc <= '~';
 }
 
 static inline int
-iswlower (__wctype_wint_t wc)
+iswlower (wint_t wc)
 {
   return wc >= 'a' && wc <= 'z';
 }
 
 static inline int
-iswprint (__wctype_wint_t wc)
+iswprint (wint_t wc)
 {
   return wc >= ' ' && wc <= '~';
 }
 
 static inline int
-iswpunct (__wctype_wint_t wc)
+iswpunct (wint_t wc)
 {
   return (wc >= '!' && wc <= '~'
-	  && !((wc >= '0' && wc <= '9')
-	       || ((wc & ~0x20) >= 'A' && (wc & ~0x20) <= 'Z')));
+          && !((wc >= '0' && wc <= '9')
+               || ((wc & ~0x20) >= 'A' && (wc & ~0x20) <= 'Z')));
 }
 
 static inline int
-iswspace (__wctype_wint_t wc)
+iswspace (wint_t wc)
 {
   return (wc == ' ' || wc == '\t'
-	  || wc == '\n' || wc == '\v' || wc == '\f' || wc == '\r');
+          || wc == '\n' || wc == '\v' || wc == '\f' || wc == '\r');
 }
 
 static inline int
-iswupper (__wctype_wint_t wc)
+iswupper (wint_t wc)
 {
   return wc >= 'A' && wc <= 'Z';
 }
 
 static inline int
-iswxdigit (__wctype_wint_t wc)
+iswxdigit (wint_t wc)
 {
   return ((wc >= '0' && wc <= '9')
-	  || ((wc & ~0x20) >= 'A' && (wc & ~0x20) <= 'F'));
+          || ((wc & ~0x20) >= 'A' && (wc & ~0x20) <= 'F'));
 }
 
-# endif /* ! HAVE_ISWCNTRL */
+static inline wint_t
+towlower (wint_t wc)
+{
+  return (wc >= 'A' && wc <= 'Z' ? wc - 'A' + 'a' : wc);
+}
+
+static inline wint_t
+towupper (wint_t wc)
+{
+  return (wc >= 'a' && wc <= 'z' ? wc - 'a' + 'A' : wc);
+}
+
+#endif /* ! HAVE_ISWCNTRL || REPLACE_ISWCNTRL */
+
+#if defined __MINGW32__
+
+/* On native Windows, wchar_t is uint16_t, and wint_t is uint32_t.
+   The functions towlower and towupper are implemented in the MSVCRT library
+   to take a wchar_t argument and return a wchar_t result.  mingw declares
+   these functions to take a wint_t argument and return a wint_t result.
+   This means that:
+   1. When the user passes an argument outside the range 0x0000..0xFFFF, the
+      function will look only at the lower 16 bits.  This is allowed according
+      to POSIX.
+   2. The return value is returned in the lower 16 bits of the result register.
+      The upper 16 bits are random: whatever happened to be in that part of the
+      result register.  We need to fix this by adding a zero-extend from
+      wchar_t to wint_t after the call.  */
+
+static inline wint_t
+rpl_towlower (wint_t wc)
+{
+  return (wint_t) (wchar_t) towlower (wc);
+}
+# define towlower rpl_towlower
+
+static inline wint_t
+rpl_towupper (wint_t wc)
+{
+  return (wint_t) (wchar_t) towupper (wc);
+}
+# define towupper rpl_towupper
+
+#endif /* __MINGW32__ */
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* _GL_WCTYPE_H */
 #endif /* _GL_WCTYPE_H */

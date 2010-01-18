@@ -1,5 +1,6 @@
 /* Extended regular expression matching and search library.
-   Copyright (C) 2002,2003,2004,2005,2006,2007,2008 Free Software Foundation, Inc.
+   Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free
+   Software Foundation, Inc.
    This file is part of the GNU C Library.
    Contributed by Isamu Hasegawa <isamu@yamato.ibm.com>.
 
@@ -333,8 +334,8 @@ re_compile_fastmap_iter (regex_t *bufp, const re_dfastate_t *init_state,
 		     && dfa->nodes[node].mb_partial)
 		*p++ = dfa->nodes[node].opr.c;
 	      memset (&state, '\0', sizeof (state));
-	      if (mbrtowc (&wc, (const char *) buf, p - buf,
-			   &state) == p - buf
+	      if (__mbrtowc (&wc, (const char *) buf, p - buf,
+			     &state) == p - buf
 		  && (__wcrtomb ((char *) buf, towlower (wc), &state)
 		      != (size_t) -1))
 		re_set_fastmap (fastmap, false, buf[0]);
@@ -356,45 +357,65 @@ re_compile_fastmap_iter (regex_t *bufp, const re_dfastate_t *init_state,
 #ifdef RE_ENABLE_I18N
       else if (type == COMPLEX_BRACKET)
 	{
-	  Idx i;
 	  re_charset_t *cset = dfa->nodes[node].opr.mbcset;
-	  if (cset->non_match || cset->ncoll_syms || cset->nequiv_classes
-	      || cset->nranges || cset->nchar_classes)
-	    {
+	  Idx i;
+
 # ifdef _LIBC
-	      if (_NL_CURRENT_WORD (LC_COLLATE, _NL_COLLATE_NRULES) != 0)
+	  /* See if we have to try all bytes which start multiple collation
+	     elements.
+	     e.g. In da_DK, we want to catch 'a' since "aa" is a valid
+		  collation element, and don't catch 'b' since 'b' is
+		  the only collation element which starts from 'b' (and
+		  it is caught by SIMPLE_BRACKET).  */
+	      if (_NL_CURRENT_WORD (LC_COLLATE, _NL_COLLATE_NRULES) != 0
+		  && (cset->ncoll_syms || cset->nranges))
 		{
-		  /* In this case we want to catch the bytes which are
-		     the first byte of any collation elements.
-		     e.g. In da_DK, we want to catch 'a' since "aa"
-			  is a valid collation element, and don't catch
-			  'b' since 'b' is the only collation element
-			  which starts from 'b'.  */
 		  const int32_t *table = (const int32_t *)
 		    _NL_CURRENT (LC_COLLATE, _NL_COLLATE_TABLEMB);
 		  for (i = 0; i < SBC_MAX; ++i)
 		    if (table[i] < 0)
 		      re_set_fastmap (fastmap, icase, i);
 		}
-# else
-	      if (dfa->mb_cur_max > 1)
-		for (i = 0; i < SBC_MAX; ++i)
-		  if (__btowc (i) == WEOF)
-		    re_set_fastmap (fastmap, icase, i);
-# endif /* not _LIBC */
-	    }
-	  for (i = 0; i < cset->nmbchars; ++i)
+# endif /* _LIBC */
+
+	  /* See if we have to start the match at all multibyte characters,
+	     i.e. where we would not find an invalid sequence.  This only
+	     applies to multibyte character sets; for single byte character
+	     sets, the SIMPLE_BRACKET again suffices.  */
+	  if (dfa->mb_cur_max > 1
+	      && (cset->nchar_classes || cset->non_match || cset->nranges
+# ifdef _LIBC
+		  || cset->nequiv_classes
+# endif /* _LIBC */
+		 ))
 	    {
-	      char buf[256];
-	      mbstate_t state;
-	      memset (&state, '\0', sizeof (state));
-	      if (__wcrtomb (buf, cset->mbchars[i], &state) != (size_t) -1)
-		re_set_fastmap (fastmap, icase, *(unsigned char *) buf);
-	      if ((bufp->syntax & RE_ICASE) && dfa->mb_cur_max > 1)
+	      unsigned char c = 0;
+	      do
 		{
-		  if (__wcrtomb (buf, towlower (cset->mbchars[i]), &state)
-		      != (size_t) -1)
-		    re_set_fastmap (fastmap, false, *(unsigned char *) buf);
+		  mbstate_t mbs;
+		  memset (&mbs, 0, sizeof (mbs));
+		  if (__mbrtowc (NULL, (char *) &c, 1, &mbs) == (size_t) -2)
+		    re_set_fastmap (fastmap, false, (int) c);
+		}
+	      while (++c != 0);
+	    }
+
+	  else
+	    {
+	      /* ... Else catch all bytes which can start the mbchars.  */
+	      for (i = 0; i < cset->nmbchars; ++i)
+		{
+		  char buf[256];
+		  mbstate_t state;
+		  memset (&state, '\0', sizeof (state));
+		  if (__wcrtomb (buf, cset->mbchars[i], &state) != (size_t) -1)
+		    re_set_fastmap (fastmap, icase, *(unsigned char *) buf);
+		  if ((bufp->syntax & RE_ICASE) && dfa->mb_cur_max > 1)
+		    {
+		      if (__wcrtomb (buf, towlower (cset->mbchars[i]), &state)
+			  != (size_t) -1)
+			re_set_fastmap (fastmap, false, *(unsigned char *) buf);
+		    }
 		}
 	    }
 	}
@@ -829,6 +850,9 @@ static reg_errcode_t
 init_dfa (re_dfa_t *dfa, size_t pat_len)
 {
   __re_size_t table_size;
+#ifndef _LIBC
+  char *codeset_name;
+#endif
 #ifdef RE_ENABLE_I18N
   size_t max_i18n_object_size = MAX (sizeof (wchar_t), sizeof (wctype_t));
 #else
@@ -872,7 +896,9 @@ init_dfa (re_dfa_t *dfa, size_t pat_len)
   dfa->map_notascii = (_NL_CURRENT_WORD (LC_CTYPE, _NL_CTYPE_MAP_TO_NONASCII)
 		       != 0);
 #else
-  if (strcmp (locale_charset (), "UTF-8") == 0)
+  codeset_name = nl_langinfo (CODESET);
+  if (strcasecmp (codeset_name, "UTF-8") == 0
+      || strcasecmp (codeset_name, "UTF8") == 0)
     dfa->is_utf8 = 1;
 
   /* We check exhaustively in the loop below if this charset is a
@@ -1477,7 +1503,6 @@ duplicate_node_closure (re_dfa_t *dfa, Idx top_org_node, Idx top_clone_node,
 	     destination.  */
 	  org_dest = dfa->edests[org_node].elems[0];
 	  re_node_set_empty (dfa->edests + clone_node);
-	  clone_dest = search_duplicated_node (dfa, org_dest, constraint);
 	  /* If the node is root_node itself, it means the epsilon closure
 	     has a loop.  Then tie it to the destination of the root_node.  */
 	  if (org_node == root_node && clone_node != org_node)
@@ -1521,7 +1546,7 @@ duplicate_node_closure (re_dfa_t *dfa, Idx top_org_node, Idx top_clone_node,
 	    }
 	  else
 	    {
-	      /* There is a duplicated node which satisfy the constraint,
+	      /* There is a duplicated node which satisfies the constraint,
 		 use it to avoid infinite loop.  */
 	      ok = re_node_set_insert (dfa->edests + clone_node, clone_dest);
 	      if (BE (! ok, 0))
@@ -2494,7 +2519,8 @@ parse_dup_op (bin_tree_t *elem, re_string_t *regexp, re_dfa_t *dfa,
 	  return elem;
 	}
 
-      if (BE (end != REG_MISSING && start > end, 0))
+      if (BE ((end != REG_MISSING && start > end)
+	      || token->type != OP_CLOSE_DUP_NUM, 0))
 	{
 	  /* First number greater than second.  */
 	  *err = REG_BADBR;
@@ -2778,7 +2804,7 @@ parse_bracket_exp (re_string_t *regexp, re_dfa_t *dfa, re_token_t *token,
       return elem;
     }
 
-  /* Local function for parse_bracket_exp used in _LIBC environement.
+  /* Local function for parse_bracket_exp used in _LIBC environment.
      Look up the collation sequence value of BR_ELEM.
      Return the value if succeeded, UINT_MAX otherwise.  */
 
@@ -2802,7 +2828,8 @@ parse_bracket_exp (re_string_t *regexp, re_dfa_t *dfa, re_token_t *token,
 	}
       else if (br_elem->type == MB_CHAR)
 	{
-	  return __collseq_table_lookup (collseqwc, br_elem->opr.wch);
+	  if (nrules != 0)
+	    return __collseq_table_lookup (collseqwc, br_elem->opr.wch);
 	}
       else if (br_elem->type == COLL_SYM)
 	{
@@ -3409,7 +3436,7 @@ build_equiv_class (bitset_t sbcset, const unsigned char *name)
 
       /* Build single byte matcing table for this equivalence class.  */
       char_buf[1] = (unsigned char) '\0';
-      len = weights[idx1];
+      len = weights[idx1 & 0xffffff];
       for (ch = 0; ch < SBC_MAX; ++ch)
 	{
 	  char_buf[0] = ch;
@@ -3421,11 +3448,15 @@ build_equiv_class (bitset_t sbcset, const unsigned char *name)
 	  if (idx2 == 0)
 	    /* This isn't a valid character.  */
 	    continue;
-	  if (len == weights[idx2])
+	  /* Compare only if the length matches and the collation rule
+	     index is the same.  */
+	  if (len == weights[idx2 & 0xffffff] && (idx1 >> 24) == (idx2 >> 24))
 	    {
 	      int cnt = 0;
+
 	      while (cnt <= len &&
-		     weights[idx1 + 1 + cnt] == weights[idx2 + 1 + cnt])
+		     weights[(idx1 & 0xffffff) + 1 + cnt]
+		     == weights[(idx2 & 0xffffff) + 1 + cnt])
 		++cnt;
 
 	      if (cnt > len)
