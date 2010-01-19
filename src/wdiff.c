@@ -1,11 +1,12 @@
 /* wdiff -- front end to diff for comparing on a word per word basis.
-   Copyright (C) 1992, 1997, 1998, 1999, 2009 Free Software Foundation, Inc.
+   Copyright (C) 1992, 1997, 1998, 1999, 2009,
+                 2010 Free Software Foundation, Inc.
    Francois Pinard <pinard@iro.umontreal.ca>, 1992.
 
-   This program is free software; you can redistribute it and/or modify
+   This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2, or (at your option)
-   any later version.
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
 
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -13,8 +14,8 @@
    GNU General Public License for more details.
 
    You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software Foundation,
-   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #include "system.h"
 
@@ -1228,10 +1229,10 @@ static void
 print_copyright (void)
 {
   fputs (_("\
-This program is free software; you can redistribute it and/or modify\n\
+This program is free software: you can redistribute it and/or modify\n\
 it under the terms of the GNU General Public License as published by\n\
-the Free Software Foundation; either version 2, or (at your option)\n\
-any later version.\n\
+the Free Software Foundation, either version 3 of the License, or\n\
+(at your option) any later version.\n\
 \n\
 This program is distributed in the hope that it will be useful,\n\
 but WITHOUT ANY WARRANTY; without even the implied warranty of\n\
@@ -1239,8 +1240,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n\
 GNU General Public License for more details.\n\
 \n\
 You should have received a copy of the GNU General Public License\n\
-along with this program; if not, write to the Free Software Foundation,\n\
-Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"),
+along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"),
 	 stdout);
 }
 
@@ -1412,7 +1412,8 @@ main (int argc, char *const argv[])
 	printf ("wdiff (GNU %s) %s\n", PACKAGE, VERSION);
 	fputs (_("\
 \n\
-Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"),
+Copyright (C) 1992, 1997, 1998, 1999, 2009,\n\
+              2010 Free Software Foundation, Inc.\n"),
 	     stdout);
 	fputs (_("\
 This is free software; see the source for copying conditions.  There is NO\n\
