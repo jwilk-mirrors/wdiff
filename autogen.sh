@@ -3,4 +3,4 @@
 aclocal -I m4
 autoconf
 autoheader
-automake --gnu
+automake --gnu --add-missing
