@@ -189,9 +189,9 @@ int character;			/* for reading input_file */
 char directive;			/* diff directive character */
 int argument[4];		/* four diff directive arguments */
 
-FILE *output_file;		/* file to which we write output */
-const char *termcap_init_string; /* how to initialize the termcap mode */
-const char *termcap_end_string; /* how to complete the termcap mode */
+FILE *output_file;			/* file to which we write output */
+const char *termcap_init_string;	/* how to initialize the termcap mode */
+const char *termcap_end_string;		/* how to complete the termcap mode */
 
 int count_total_left;		/* count of total words in left file */
 int count_total_right;		/* count of total words in right file */
@@ -228,8 +228,8 @@ setup_signals (void)
   signal (SIGPIPE, signal_handler);
   signal (SIGTERM, signal_handler);
 }
-
 
+
 /* Terminal initialization.  */
 
 static void
@@ -287,8 +287,8 @@ initialize_strings (void)
 	user_insert_end = "+}";
     }
 }
-
 
+
 /* Character input and output.  */
 
 #if HAVE_TPUTS
@@ -436,10 +436,10 @@ copy_whitespace (SIDE *side, FILE *file)
     {
 
       /* While changing lines, ensure we stop any special display prior
-	 to, and restore the special display after.  When copy_mode is
-	 anything else than COPY_NORMAL, file is always output_file.  We
-	 care underlining whitespace or overstriking it with itself,
-	 because "less" understands these things as emphasis requests.  */
+         to, and restore the special display after.  When copy_mode is
+         anything else than COPY_NORMAL, file is always output_file.  We
+         care underlining whitespace or overstriking it with itself,
+         because "less" understands these things as emphasis requests.  */
 
       switch (copy_mode)
 	{
@@ -513,7 +513,7 @@ copy_whitespace (SIDE *side, FILE *file)
 `-----------------------------------------*/
 
 static void
-copy_word (SIDE *side, FILE *file)
+copy_word (SIDE * side, FILE * file)
 {
   if (interrupted)
     longjmp (signal_label, 1);
@@ -522,7 +522,7 @@ copy_word (SIDE *side, FILE *file)
     {
 
       /* In printer mode, act according to copy_mode.  If copy_mode is not
-	 COPY_NORMAL, we know that file is necessarily output_file.  */
+         COPY_NORMAL, we know that file is necessarily output_file.  */
 
       if (overstrike)
 	switch (copy_mode)
@@ -567,7 +567,7 @@ static char *
 create_template_filename (char *tmpl, size_t tmpl_len)
 {
   struct stat stat_buffer;	/* for checking if file is directory */
-  const char* dir;
+  const char *dir;
   size_t dirlen;
 
   dir = getenv ("TMPDIR");
@@ -597,7 +597,7 @@ create_template_filename (char *tmpl, size_t tmpl_len)
       return NULL;
     }
 
-  sprintf(tmpl, "%.*s/wdiff.XXXXXX", (int) dirlen, dir);
+  sprintf (tmpl, "%.*s/wdiff.XXXXXX", (int) dirlen, dir);
   return tmpl;
 }
 
@@ -605,9 +605,9 @@ create_template_filename (char *tmpl, size_t tmpl_len)
 | Create a temporary file for one side of the diff. |
 `--------------------------------------------------*/
 static void
-create_temporary_side (SIDE *side)
+create_temporary_side (SIDE * side)
 {
-  int fd;                /* for file descriptors returned by mkstemp */
+  int fd;	/* for file descriptors returned by mkstemp */
 
   /* Select a file name, use it for opening a temporary file and
      unlink it right away. We do not need the file name itself
@@ -630,7 +630,8 @@ create_temporary_side (SIDE *side)
 `--------------------------------------------------------*/
 
 static void
-split_diff (const char *path) {
+split_diff (const char *path)
+{
   FILE *input;
   int character;
   int start_of_line = 1;
@@ -642,7 +643,7 @@ split_diff (const char *path) {
     }
   else
     {
-      input = fopen(path, "r");
+      input = fopen (path, "r");
       if (input == NULL)
 	error (EXIT_FAILURE, errno, "%s", path);
     }
@@ -672,9 +673,9 @@ split_diff (const char *path) {
 	    }
 	}
       if (output_to & 1)
-	putc(character, left_side->file);
+	putc (character, left_side->file);
       if (output_to & 2)
-	putc(character, right_side->file);
+	putc (character, right_side->file);
       start_of_line = (character == '\n' || character == '\r');
     }
   rewind (left_side->file);
@@ -687,46 +688,47 @@ split_diff (const char *path) {
 `-------------------------------------------------------------------------*/
 
 static void
-split_file_into_words (SIDE *side)
+split_file_into_words (SIDE * side)
 {
   struct stat stat_buffer;	/* for checking if file is directory */
-  int fd;                /* for file descriptors returned by mkstemp */
-  FILE *input;          /* used when copying from non-seekable input */
+  int fd;			/* for file descriptors returned by mkstemp */
+  FILE *input;			/* used when copying from non-seekable input */
 
   /* Open files.  */
 
-  if (!diff_input) {
-    if (side->filename == NULL)
-      {
-        side->file = stdin;
-      }
-    else
-      {
-        /* Check and diagnose if the file name is a directory.  Or else,
-           prepare the file for reading.  */
+  if (!diff_input)
+    {
+      if (side->filename == NULL)
+	{
+	  side->file = stdin;
+	}
+      else
+	{
+	  /* Check and diagnose if the file name is a directory.  Or else,
+	     prepare the file for reading.  */
 
-        if (stat (side->filename, &stat_buffer) != 0)
-          error (EXIT_FAILURE, errno, "%s", side->filename);
-        if ((stat_buffer.st_mode & S_IFMT) == S_IFDIR)
-          error (EXIT_FAILURE, 0, _("Directories not supported"));
-        side->file = fopen (side->filename, "r");
-        if (side->file == NULL)
-          error (EXIT_FAILURE, errno, "%s", side->filename);
-      }
+	  if (stat (side->filename, &stat_buffer) != 0)
+	    error (EXIT_FAILURE, errno, "%s", side->filename);
+	  if ((stat_buffer.st_mode & S_IFMT) == S_IFDIR)
+	    error (EXIT_FAILURE, 0, _("Directories not supported"));
+	  side->file = fopen (side->filename, "r");
+	  if (side->file == NULL)
+	    error (EXIT_FAILURE, errno, "%s", side->filename);
+	}
 
-    if (fseek(side->file, 0L, SEEK_CUR) != 0)
-      {
-        /* Non-seekable input, e.g. stdin or shell process substitution.
-           Copy the whole input to a temporary local file.  Once done,
-           prepare it for reading.  */
-        input = side->file;
-        create_temporary_side(side);
-        while (side->character = getc (input), side->character != EOF)
-          putc (side->character, side->file);
-        rewind (side->file);
+      if (fseek (side->file, 0L, SEEK_CUR) != 0)
+	{
+	  /* Non-seekable input, e.g. stdin or shell process substitution.
+	     Copy the whole input to a temporary local file.  Once done,
+	     prepare it for reading.  */
+	  input = side->file;
+	  create_temporary_side (side);
+	  while (side->character = getc (input), side->character != EOF)
+	    putc (side->character, side->file);
+	  rewind (side->file);
 
-      }
-  }
+	}
+    }
   side->character = getc (side->file);
   side->position = 0;
 
@@ -838,7 +840,7 @@ decode_directive_line (void)
 `----------------------------------------------*/
 
 static void
-skip_until_ordinal (SIDE *side, int ordinal)
+skip_until_ordinal (SIDE * side, int ordinal)
 {
   while (side->position < ordinal)
     {
@@ -852,7 +854,7 @@ skip_until_ordinal (SIDE *side, int ordinal)
 `----------------------------------------------*/
 
 static void
-copy_until_ordinal (SIDE *side, int ordinal)
+copy_until_ordinal (SIDE * side, int ordinal)
 {
   while (side->position < ordinal)
     {
@@ -877,7 +879,7 @@ reformat_diff_output (void)
   left_side->character = getc (left_side->file);
   left_side->position = 0;
 
-  rewind(right_side->file);
+  rewind (right_side->file);
   right_side->character = getc (right_side->file);
   right_side->position = 0;
 
@@ -1024,8 +1026,8 @@ reformat_diff_output (void)
   fclose (left_side->file);
   fclose (right_side->file);
 }
-
 
+
 /* Launch and complete various programs.  */
 
 /*-------------------------.
@@ -1217,8 +1219,8 @@ print_statistics (void)
     }
   printf ("\n");
 }
-
 
+
 /* Main control.  */
 
 /*-----------------------------------.
@@ -1241,7 +1243,7 @@ GNU General Public License for more details.\n\
 \n\
 You should have received a copy of the GNU General Public License\n\
 along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"),
-	 stdout);
+         stdout);
 }
 
 /*-----------------------------.
@@ -1404,8 +1406,7 @@ main (int argc, char *const argv[])
 	  find_termcap = 1;
 	break;
 #else
-	error (EXIT_FAILURE, 0,
-	       _("Cannot use -t, termcap not available."));
+	error (EXIT_FAILURE, 0, _("Cannot use -t, termcap not available."));
 #endif
 
       case 'v':
@@ -1461,7 +1462,8 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
 	  error (0, 0, _("Too many file arguments"));
 	  usage (EXIT_FAILURE);
 	}
-      if (optind == argc || strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
+      if (optind == argc || strcmp (argv[optind], "") == 0
+	  || strcmp (argv[optind], "-") == 0)
 	split_diff (NULL);
       else
 	split_diff (argv[optind]);
@@ -1479,23 +1481,22 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
 	  usage (EXIT_FAILURE);
 	}
 
-      /* TODO: Reindent this block later on. Keep patches clean for now. */
-  if (strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
-    left_side->filename = NULL;
-  else
-    left_side->filename = argv[optind];
-  optind++;
-  *left_side->temp_name = '\0';
+      if (strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
+	left_side->filename = NULL;
+      else
+	left_side->filename = argv[optind];
+      optind++;
+      *left_side->temp_name = '\0';
 
-  if (strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
-    right_side->filename = NULL;
-  else
-    right_side->filename = argv[optind];
-  optind++;
-  *right_side->temp_name = '\0';
+      if (strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
+	right_side->filename = NULL;
+      else
+	right_side->filename = argv[optind];
+      optind++;
+      *right_side->temp_name = '\0';
 
-  if (left_side->filename == NULL && right_side->filename == NULL)
-    error (EXIT_FAILURE, 0, _("Only one file may be standard input."));
+      if (left_side->filename == NULL && right_side->filename == NULL)
+	error (EXIT_FAILURE, 0, _("Only one file may be standard input."));
     }
 
   setup_signals ();
