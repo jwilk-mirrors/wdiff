@@ -13,12 +13,12 @@ config.sub
 configure
 depcomp
 install-sh
+mdate-sh
 missing
 stamp-h1
+texinfo.tex
 wdiff-*.tar*
-doc/mdate-sh
 doc/stamp-vti
-doc/texinfo.tex
 doc/version.texi
 doc/wdiff.info
 lib/alloca.h

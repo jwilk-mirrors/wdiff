@@ -1,5 +1,3 @@
-build_aux = $(srcdir)
-_build-aux = $(srcdir)
 _autoreconf = $(srcdir)/autogen.sh
 VC_LIST_ALWAYS_EXCLUDE_REGEX = ^(lib|m4)/
 local-checks-to-skip += sc_avoid_if_before_free

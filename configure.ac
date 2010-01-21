@@ -1,8 +1,8 @@
 AC_INIT([GNU wdiff], [0.5.93], [wdiff-bugs@gnu.org])
+AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([-Wall -Werror])
 
 AC_CONFIG_HEADERS([config.h])
-
 
 ## ------------------------ ##
 ## Autotest initialisation. ##
