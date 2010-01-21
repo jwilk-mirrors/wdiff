@@ -42,7 +42,7 @@ VC_LIST_ALWAYS_EXCLUDE_REGEX ?= ^$$
 
 VC_LIST_EXCEPT = \
   $(VC_LIST) | if test -f $(srcdir)/.x-$@; then grep -vEf $(srcdir)/.x-$@; \
-	       else grep -Ev -e "$${VC_LIST_EXCEPT_DEFAULT-ChangeLog}"; fi \
+	       else grep -Ev -e $(if $(VC_LIST_EXCEPT_$@),'$(VC_LIST_EXCEPT_$@)',"$${VC_LIST_EXCEPT_DEFAULT-ChangeLog}"); fi \
 	| grep -Ev -e '$(VC_LIST_ALWAYS_EXCLUDE_REGEX)'
 
 ifeq ($(origin prev_version_file), undefined)

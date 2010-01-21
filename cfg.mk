@@ -1,6 +1,11 @@
 _autoreconf = $(srcdir)/autogen.sh
-VC_LIST_ALWAYS_EXCLUDE_REGEX = ^(lib|m4)/
+
 config_h_header = ("system\.h"|<config\.h>)
+
+VC_LIST_ALWAYS_EXCLUDE_REGEX = ^(lib|m4)/
+VC_LIST_EXCEPT_sc_GPL_version = po/.*\.po
+VC_LIST_EXCEPT_sc_makefile_path_separator_check = po/Makefile\.in\.in
+VC_LIST_EXCEPT_sc_makefile_TAB_only_indentation = po/Makefile\.in\.in
 
 local-checks-to-skip += sc_avoid_if_before_free
 local-checks-to-skip += sc_cast_of_x_alloc_return_value
