@@ -380,7 +380,7 @@ alloc_and_compile_regex (const char *string)
   pattern->translate = ignore_case ? (char *) folded_chars : NULL;
 #endif
 
-  pattern->fastmap = (char *) xmalloc ((size_t) CHAR_SET_SIZE);
+  pattern->fastmap = xmalloc ((size_t) CHAR_SET_SIZE);
 
   message = re_compile_pattern (string, (int) strlen (string), pattern);
   if (message)
@@ -397,8 +397,7 @@ alloc_and_compile_regex (const char *string)
 
   if (pattern->allocated > pattern->used)
     {
-      pattern->buffer
-	= (unsigned char *) xrealloc (pattern->buffer, (size_t) pattern->used);
+      pattern->buffer = xrealloc (pattern->buffer, (size_t) pattern->used);
       pattern->allocated = pattern->used;
     }
 #endif
@@ -857,7 +856,7 @@ swallow_input (struct input *input)
 #endif
 
     {
-      input->memory_copy = (char *) xmalloc ((size_t) SWALLOW_BUFFER_STEP);
+      input->memory_copy = xmalloc ((size_t) SWALLOW_BUFFER_STEP);
       allocated_length = SWALLOW_BUFFER_STEP;
 
       length = 0;
@@ -1630,7 +1629,7 @@ static void
 prepare_clusters (void)
 {
   /* The array of indirect items have similar contents next to each other.  */
-  int *indirect_item_array = (int *) xmalloc (items * sizeof (int));
+  int *indirect_item_array = xmalloc (items * sizeof (int));
   int indirect_items = 0;	/* number of entries in indirect_item_array */
   int *cluster_set;		/* index for first member in set of clusters */
   int *member_set;		/* index for first member in current cluster */
@@ -1841,8 +1840,7 @@ prepare_clusters (void)
   /* Cleanup.  */
 
   free (indirect_item_array);
-  if (size_array)
-    free (size_array);
+  free (size_array);
 
 #if DEBUGGING
   if (debugging)
@@ -1900,7 +1898,7 @@ prepare_indirects (void)
     fprintf (stderr, _("Sorting members"));
 #endif
 
-  indirect_array = (int *) xmalloc (members * sizeof (int));
+  indirect_array = xmalloc (members * sizeof (int));
   for (counter = 0; counter < members; counter++)
       indirect_array[counter] = counter;
   if (members > 1)
@@ -2103,8 +2101,7 @@ prepare_mergings (void)
 
   /* Allocate an array for discovered mergings.  */
 
-  merging_array
-    = (struct merging *) xmalloc (indirects * sizeof (struct merging));
+  merging_array = xmalloc (indirects * sizeof (struct merging));
   mergings = 0;
 
   /* Repetitively consider the incoming cluster members for all inputs, and

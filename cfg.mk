@@ -7,8 +7,6 @@ VC_LIST_EXCEPT_sc_GPL_version = po/.*\.po
 VC_LIST_EXCEPT_sc_makefile_path_separator_check = po/Makefile\.in\.in
 VC_LIST_EXCEPT_sc_makefile_TAB_only_indentation = po/Makefile\.in\.in
 
-local-checks-to-skip += sc_avoid_if_before_free
-local-checks-to-skip += sc_cast_of_x_alloc_return_value
 local-checks-to-skip += sc_program_name
 local-checks-to-skip += sc_prohibit_atoi_atof
 local-checks-to-skip += sc_prohibit_strcmp

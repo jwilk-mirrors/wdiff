@@ -64,7 +64,7 @@ add_simple_option (char letter)
       char *string = argument_list[arguments - 1];
       int length = strlen (string);
 
-      string = (char *) xrealloc (string, length + 2);
+      string = xrealloc (string, length + 2);
       string[length] = letter;
       string[length + 1] = '\0';
       argument_list[arguments - 1] = string;
