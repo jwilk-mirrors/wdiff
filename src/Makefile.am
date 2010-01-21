@@ -14,4 +14,4 @@ wdiff2_LDADD = ../lib/libgnu.a $(LIBINTL)
 localedir = $(datadir)/locale
 
 AM_CPPFLAGS = -I$(top_srcdir)/lib
-DEFS = -DLOCALEDIR=\"$(localedir)\" $(DEFS)
+DEFS += -DLOCALEDIR=\"$(localedir)\"
