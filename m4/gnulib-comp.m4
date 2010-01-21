@@ -59,6 +59,8 @@ AC_DEFUN([gl_INIT],
   gl_FUNC_GETOPT_GNU
   gl_MODULE_INDICATOR([getopt-gnu])
   gl_FUNC_GETOPT_POSIX
+  dnl you must add AM_GNU_GETTEXT([external]) or similar to configure.ac.
+  AM_GNU_GETTEXT_VERSION([0.17])
   AC_SUBST([LIBINTL])
   AC_SUBST([LTLIBINTL])
   gl_INLINE
@@ -231,6 +233,7 @@ AC_DEFUN([gltests_LIBSOURCES], [
 # gnulib-tool and may be removed by future gnulib-tool invocations.
 AC_DEFUN([gl_FILE_LIST], [
   build-aux/arg-nonnull.h
+  build-aux/config.rpath
   build-aux/link-warning.h
   build-aux/warn-on-use.h
   lib/alloca.c
@@ -297,16 +300,31 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/getdelim.m4
   m4/getline.m4
   m4/getopt.m4
+  m4/gettext.m4
+  m4/glibc2.m4
   m4/glibc21.m4
   m4/gnulib-common.m4
+  m4/iconv.m4
   m4/include_next.m4
   m4/inline.m4
+  m4/intdiv0.m4
+  m4/intl.m4
+  m4/intldir.m4
+  m4/intlmacosx.m4
+  m4/intmax.m4
+  m4/inttypes-pri.m4
+  m4/inttypes_h.m4
   m4/langinfo_h.m4
+  m4/lcmessage.m4
+  m4/lib-ld.m4
+  m4/lib-link.m4
+  m4/lib-prefix.m4
   m4/localcharset.m4
   m4/locale-fr.m4
   m4/locale-ja.m4
   m4/locale-zh.m4
   m4/locale_h.m4
+  m4/lock.m4
   m4/longlong.m4
   m4/malloc.m4
   m4/mbrtowc.m4
@@ -314,19 +332,28 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/mbstate_t.m4
   m4/multiarch.m4
   m4/nl_langinfo.m4
+  m4/nls.m4
   m4/onceonly.m4
+  m4/po.m4
+  m4/printf-posix.m4
+  m4/progtest.m4
   m4/realloc.m4
   m4/regex.m4
+  m4/size_max.m4
   m4/ssize_t.m4
   m4/stdbool.m4
   m4/stddef_h.m4
   m4/stdint.m4
+  m4/stdint_h.m4
   m4/stdio_h.m4
   m4/stdlib_h.m4
   m4/strerror.m4
   m4/string_h.m4
   m4/sys_wait_h.m4
+  m4/threadlib.m4
+  m4/uintmax_t.m4
   m4/unistd_h.m4
+  m4/visibility.m4
   m4/warn-on-use.m4
   m4/wchar.m4
   m4/wchar_t.m4
@@ -334,4 +361,5 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/wctype.m4
   m4/wint_t.m4
   m4/xalloc.m4
+  m4/xsize.m4
 ])

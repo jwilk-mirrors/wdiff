@@ -92,6 +92,3 @@ clean-local:
 	test -f $$abs_srcdir/$(TESTSUITE) && \
 	    $(SHELL) $$abs_srcdir/$(TESTSUITE) --clean
 
-
-# added by gettextize 0.16.1
-EXTRA_DIST += config.rpath m4/ChangeLog
