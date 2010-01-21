@@ -27,6 +27,7 @@
 grep -vE '^lib/.*\.(h|sed)$' .bzrignore > tmp.bzrignore
 ls lib/*.in.h | sed 's/\.in\.h$/.h/; /^lib\/sys_/d' >> tmp.bzrignore
 ls lib/*.sin | sed 's/\.sin$/.sed/' >> tmp.bzrignore
+echo lib/configmake.h >> tmp.bzrignore
 grep -v / tmp.bzrignore | LC_ALL=C sort > .bzrignore
 grep / tmp.bzrignore | LC_ALL=C sort >> .bzrignore
 rm tmp.bzrignore

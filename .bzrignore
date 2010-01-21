@@ -24,6 +24,7 @@ doc/version.texi
 doc/wdiff.info
 lib/alloca.h
 lib/charset.alias
+lib/configmake.h
 lib/errno.h
 lib/getopt.h
 lib/langinfo.h
