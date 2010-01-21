@@ -8,4 +8,6 @@ src/wdiff2.c
 
 # Gnulib source files.
 lib/error.c
+lib/getopt.c
+lib/regcomp.c
 lib/xalloc-die.c

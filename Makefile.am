@@ -7,27 +7,6 @@ ACLOCAL_AMFLAGS = -I m4
 ## ----------- ##
 # (copied from Makefile.am in libtool CVS 2007-07-11)
 
-edit = sed \
-	-e 's,@EGREP\@,$(EGREP),g' \
-	-e 's,@FGREP\@,$(FGREP),g' \
-	-e 's,@GREP\@,$(GREP),g' \
-	-e 's,@LN_S\@,$(LN_S),g' \
-	-e 's,@MACRO_VERSION\@,$(VERSION),g' \
-	-e 's,@PACKAGE\@,$(PACKAGE),g' \
-	-e 's,@PACKAGE_BUGREPORT\@,$(PACKAGE_BUGREPORT),g' \
-	-e 's,@PACKAGE_NAME\@,$(PACKAGE),g' \
-	-e 's,@PACKAGE_STRING\@,$(PACKAGE) $(VERSION),g' \
-	-e 's,@PACKAGE_TARNAME\@,$(PACKAGE),g' \
-	-e 's,@PACKAGE_VERSION\@,$(VERSION),g' \
-	-e 's,@SED\@,$(SED),g' \
-	-e 's,@VERSION\@,$(VERSION),g' \
-	-e 's,@aclocaldir\@,$(aclocaldir),g' \
-	-e 's,@datadir\@,$(datadir),g' \
-	-e 's,@pkgdatadir\@,$(pkgdatadir),g' \
-	-e 's,@host_triplet\@,$(host_triplet),g' \
-	-e 's,@prefix\@,$(prefix),g' \
-	-e "s,@configure_input\@,Generated from $$input; do not edit by hand,g"
-
 # Using `cd' in backquotes may print the directory name, use this instead:
 lt__cd		= CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 
@@ -60,12 +39,12 @@ $(srcdir)/$(TESTSUITE): $(srcdir)/tests/package.m4 $(TESTSUITE_AT) Makefile.am
 $(srcdir)/tests/package.m4: $(srcdir)/configure.ac
 	{ \
 	  echo '# Signature of the current package.'; \
-	  echo 'm4_define([AT_PACKAGE_NAME],      [@PACKAGE_NAME@])'; \
-	  echo 'm4_define([AT_PACKAGE_TARNAME],   [@PACKAGE_TARNAME@])'; \
-	  echo 'm4_define([AT_PACKAGE_VERSION],   [@PACKAGE_VERSION@])'; \
-	  echo 'm4_define([AT_PACKAGE_STRING],    [@PACKAGE_STRING@])'; \
-	  echo 'm4_define([AT_PACKAGE_BUGREPORT], [@PACKAGE_BUGREPORT@])'; \
-	} | $(edit) > $(srcdir)/tests/package.m4
+	  echo 'm4_define([AT_PACKAGE_NAME],      [$(PACKAGE_NAME)])'; \
+	  echo 'm4_define([AT_PACKAGE_TARNAME],   [$(PACKAGE_TARNAME)])'; \
+	  echo 'm4_define([AT_PACKAGE_VERSION],   [$(PACKAGE_VERSION)])'; \
+	  echo 'm4_define([AT_PACKAGE_STRING],    [$(PACKAGE_STRING)])'; \
+	  echo 'm4_define([AT_PACKAGE_BUGREPORT], [$(PACKAGE_BUGREPORT)])'; \
+	} > $(srcdir)/tests/package.m4
 
 tests/atconfig: $(top_builddir)/config.status
 	$(SHELL) ./config.status tests/atconfig

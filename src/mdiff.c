@@ -3702,18 +3702,18 @@ relist_merged_words (void)
 
       listed = 0;
       for (cursor = merging; cursor < group_limit; cursor++)
-     	if (!cursor->cross_flag)
-     	  {
-     	    input = input_array + cursor->input_number;
-     	    member = member_array + cursor->member_number;
-     	    if (listed)
-     	      skip_member_proper (input, member);
-     	    else
-     	      {
-     		copy_member_proper (input, member);
-     		listed = 1;
-     	      }
-     	  }
+	if (!cursor->cross_flag)
+	  {
+	    input = input_array + cursor->input_number;
+	    member = member_array + cursor->member_number;
+	    if (listed)
+	      skip_member_proper (input, member);
+	    else
+	      {
+		copy_member_proper (input, member);
+		listed = 1;
+	      }
+	  }
     }
 
   /* Copy remaining differences and clean up.  Copy from left side if the
@@ -4032,7 +4032,7 @@ Either GFMT or LFMT may contain:\n\
       fputs (_("\nOld mdiff options:\n"), stdout);
       fputs (_("*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"), stdout);
       ***/
-        
+
       fputs ("\n", stdout);
       fputs (_("With no FILE, or when FILE is -, read standard input.\n"), stdout);
       fputs ("\n", stdout);
@@ -4047,7 +4047,7 @@ Either GFMT or LFMT may contain:\n\
 `----------------------------------------------------------------------*/
 
 #define UNIMPLEMENTED(Option) \
-  error (0, 0, "Ignoring option %s (not implemented).", (Option))
+  error (0, 0, _("Ignoring option %s (not implemented)."), (Option))
 
 int
 main (int argc, char *const *argv)

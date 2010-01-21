@@ -6,12 +6,12 @@ wdiff_SOURCES = wdiff.c readpipe.c writepipe.c system.h
 mdiff_SOURCES = mdiff.c readpipe.c writepipe.c system.h
 wdiff2_SOURCES = wdiff2.c system.h
 
-unify_LDADD = ../lib/libgnu.a @LTLIBINTL@
-wdiff_LDADD = ../lib/libgnu.a @LTLIBINTL@
-mdiff_LDADD = ../lib/libgnu.a @LTLIBINTL@
-wdiff2_LDADD = ../lib/libgnu.a @LTLIBINTL@
+unify_LDADD = ../lib/libgnu.a $(LIBINTL)
+wdiff_LDADD = ../lib/libgnu.a $(LIBINTL)
+mdiff_LDADD = ../lib/libgnu.a $(LIBINTL)
+wdiff2_LDADD = ../lib/libgnu.a $(LIBINTL)
 
 localedir = $(datadir)/locale
 
 AM_CPPFLAGS = -I$(top_srcdir)/lib
-DEFS = -DLOCALEDIR=\"$(localedir)\" @DEFS@
+DEFS = -DLOCALEDIR=\"$(localedir)\" $(DEFS)

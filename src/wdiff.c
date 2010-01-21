@@ -759,9 +759,9 @@ split_file_into_words (SIDE * side)
 
 /*-------------------------------------------------------------------.
 | Decode one directive line from INPUT_FILE.  The format should be:  |
-| 								     |
-|      ARG0 [ , ARG1 ] LETTER ARG2 [ , ARG3 ] \n		     |
-| 								     |
+|                                                                    |
+|      ARG0 [ , ARG1 ] LETTER ARG2 [ , ARG3 ] \n                     |
+|                                                                    |
 | By default, ARG1 is assumed to have the value of ARG0, and ARG3 is |
 | assumed to have the value of ARG2.  Return 0 if any error found.   |
 `-------------------------------------------------------------------*/
