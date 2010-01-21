@@ -320,7 +320,7 @@ main (int argc, char *const argv[])
 
   if (optind + 2 != argc)
     {
-      error (0, 0, _("Missing file arguments"));
+      error (0, 0, _("missing file arguments"));
       usage (EXIT_FAILURE);
     }
 

@@ -141,7 +141,7 @@ ensure_name (void)
     return;
 
   if (!*name)
-    error (0, 0, _("Could not find a name for the diff at line %ld"),
+    error (0, 0, _("could not find a name for the diff at line %ld"),
 	   line_number);
   else if (patch_format)
     {
@@ -270,7 +270,7 @@ static void
 usage (int status)
 {
   if (status != EXIT_SUCCESS)
-    fprintf (stderr, _("Try `%s --help' for more information.\n"),
+    fprintf (stderr, _("try `%s --help' for more information\n"),
 	     program_name);
   else
     {
@@ -385,13 +385,13 @@ main (int argc, char *const *argv)
   if (optind < argc)
     {
       if (file = fopen (argv[optind], "r"), file == NULL)
-	error (EXIT_FAILURE, errno, _("Unable to open `%s'"), argv[optind]);
+	error (EXIT_FAILURE, errno, _("unable to open `%s'"), argv[optind]);
       optind++;
     }
 
   if (optind < argc)
     {
-      error (0, 0, _("Only one filename allowed"));
+      error (0, 0, _("only one filename allowed"));
       usage (EXIT_FAILURE);
     }
 
@@ -547,7 +547,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 	    if (*cursor != '@')
 	    bad_header:
 	      error (EXIT_FAILURE, 0,
-		     _("Invalid unified diff header at line %ld"),
+		     _("invalid unified diff header at line %ld"),
 		     line_number);
 
 	    old_end = (old_start ? old_start + old_end - 1 : 0);
@@ -589,7 +589,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 
 	    default:
 	      error (EXIT_FAILURE, 0,
-		     _("Malformed unified diff at line %ld"), line_number);
+		     _("malformed unified diff at line %ld"), line_number);
 	    }
 	  add_line (*buffer, 0L, buffer + 1);
 	  if (old_line == old_end && new_line == new_end)
@@ -620,7 +620,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 	    {
 	      if (old_start < 0)
 		error (EXIT_FAILURE, 0,
-		       _("Context diff missing `old' header at line %ld"),
+		       _("context diff missing `old' header at line %ld"),
 		       line_number);
 	      old_end = old_start;
 	      star_in_cdiff = ' ';
@@ -664,7 +664,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 	  if (buffer[1] == '\n')
 	    strcpy (buffer + 1, " \n");
 	  if (buffer[1] != ' ')
-	    error (EXIT_FAILURE, 0, _("Malformed context diff at line %ld"),
+	    error (EXIT_FAILURE, 0, _("malformed context diff at line %ld"),
 		   line_number);
 
 	  switch (*buffer)
@@ -683,7 +683,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 
 	    default:
 	      error (EXIT_FAILURE, 0,
-		     _("Malformed context diff at line %ld"),
+		     _("malformed context diff at line %ld"),
 		     line_number);
 	    }
 	  if (old_line > old_last)
@@ -719,7 +719,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 	    {
 	      if (new_start < 0)
 		error (EXIT_FAILURE, 0,
-		       _("Context diff missing `new' header at line %ld"),
+		       _("context diff missing `new' header at line %ld"),
 		       line_number);
 	      new_end = new_start;
 	    }
@@ -754,7 +754,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 	    strcpy (buffer + 1, " \n");
 	  if (buffer[1] != ' ')
 	    error (EXIT_FAILURE, 0,
-		   _("Malformed context diff at line %ld"), line_number);
+		   _("malformed context diff at line %ld"), line_number);
 
 	  switch (*buffer)
 	    {
@@ -772,7 +772,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 
 	    default:
 	      error (EXIT_FAILURE, 0,
-		     _("Malformed context diff at line %ld"), line_number);
+		     _("malformed context diff at line %ld"), line_number);
 	    }
 
 	  if (old_line > old_last)

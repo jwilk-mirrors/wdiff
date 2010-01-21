@@ -246,13 +246,13 @@ initialize_strings (void)
 
       name = getenv ("TERM");
       if (name == NULL)
-	error (1, 0,
-	       _("Select a terminal through the TERM environment variable."));
+	error (EXIT_FAILURE, 0,
+	       _("select a terminal through the TERM environment variable"));
       success = tgetent (term_buffer, name);
       if (success < 0)
-	error (1, 0, _("Could not access the termcap data base."));
+	error (EXIT_FAILURE, 0, _("could not access the termcap data base"));
       if (success == 0)
-	error (1, 0, _("Terminal type `%s' is not defined."), name);
+	error (EXIT_FAILURE, 0, _("terminal type `%s' is not defined"), name);
       buffer = (char *) malloc (strlen (term_buffer));
       filler = buffer;
 
@@ -614,7 +614,7 @@ create_temporary_side (SIDE * side)
      anymore.  */
 
   if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
-    error (EXIT_FAILURE, 0, _("No suitable temporary directory exists"));
+    error (EXIT_FAILURE, 0, _("no suitable temporary directory exists"));
   if ((fd = mkstemp (side->temp_name)) == -1)
     error (EXIT_FAILURE, errno, "%s", side->temp_name);
 
@@ -710,7 +710,7 @@ split_file_into_words (SIDE * side)
 	  if (stat (side->filename, &stat_buffer) != 0)
 	    error (EXIT_FAILURE, errno, "%s", side->filename);
 	  if ((stat_buffer.st_mode & S_IFMT) == S_IFDIR)
-	    error (EXIT_FAILURE, 0, _("Directories not supported"));
+	    error (EXIT_FAILURE, 0, _("directories not supported"));
 	  side->file = fopen (side->filename, "r");
 	  if (side->file == NULL)
 	    error (EXIT_FAILURE, errno, "%s", side->filename);
@@ -733,7 +733,7 @@ split_file_into_words (SIDE * side)
   side->position = 0;
 
   if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
-    error (EXIT_FAILURE, 0, _("No suitable temporary directory exists"));
+    error (EXIT_FAILURE, 0, _("no suitable temporary directory exists"));
   if ((fd = mkstemp (side->temp_name)) == -1)
     error (EXIT_FAILURE, errno, "%s", side->temp_name);
 
@@ -1406,7 +1406,7 @@ main (int argc, char *const argv[])
 	  find_termcap = 1;
 	break;
 #else
-	error (EXIT_FAILURE, 0, _("Cannot use -t, termcap not available."));
+	error (EXIT_FAILURE, 0, _("cannot use -t, termcap not available"));
 #endif
 
       case 'v':
@@ -1459,7 +1459,7 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
     {
       if (optind + 1 < argc)
 	{
-	  error (0, 0, _("Too many file arguments"));
+	  error (0, 0, _("too many file arguments"));
 	  usage (EXIT_FAILURE);
 	}
       if (optind == argc || strcmp (argv[optind], "") == 0
@@ -1472,12 +1472,12 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
     {
       if (optind + 2 > argc)
 	{
-	  error (0, 0, _("Missing file arguments"));
+	  error (0, 0, _("missing file arguments"));
 	  usage (EXIT_FAILURE);
 	}
       if (optind + 2 < argc)
 	{
-	  error (0, 0, _("Too many file arguments"));
+	  error (0, 0, _("too many file arguments"));
 	  usage (EXIT_FAILURE);
 	}
 
@@ -1496,7 +1496,7 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
       *right_side->temp_name = '\0';
 
       if (left_side->filename == NULL && right_side->filename == NULL)
-	error (EXIT_FAILURE, 0, _("Only one file may be standard input."));
+	error (EXIT_FAILURE, 0, _("only one file may be standard input"));
     }
 
   setup_signals ();

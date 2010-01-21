@@ -915,7 +915,7 @@ new_input (const char *name)
   input = input_array + inputs++;
   if (strcmp (name, "") == 0 || strcmp (name, "-") == 0)
     if (stdin_swallowed)
-      error (EXIT_FAILURE, 0, _("Only one file may be standard input."));
+      error (EXIT_FAILURE, 0, _("only one file may be standard input"));
     else
       {
 	input->file_name = STDIN_PRINTED_NAME;
@@ -930,7 +930,7 @@ new_input (const char *name)
       if (stat (input->file_name, &input->stat_buffer) != 0)
 	error (EXIT_FAILURE, errno, "%s", input->file_name);
       if ((input->stat_buffer.st_mode & S_IFMT) == S_IFDIR)
-	error (EXIT_FAILURE, 0, _("Directories not supported"));
+	error (EXIT_FAILURE, 0, _("directories not supported"));
       input->memory_copy = NULL;
     }
 }
@@ -2376,13 +2376,13 @@ initialize_strings (void)
 
       name = getenv ("TERM");
       if (name == NULL)
-	error (1, 0,
-	       _("Select a terminal through the TERM environment variable."));
+	error (EXIT_FAILURE, 0,
+	       _("select a terminal through the TERM environment variable"));
       success = tgetent (term_buffer, name);
       if (success < 0)
-	error (1, 0, _("Could not access the termcap data base."));
+	error (EXIT_FAILURE, 0, _("could not access the termcap data base"));
       if (success == 0)
-	error (1, 0, _("Terminal type `%s' is not defined."), name);
+	error (EXIT_FAILURE, 0, _("terminal type `%s' is not defined"), name);
       buffer = (char *) malloc (strlen (term_buffer));
       filler = buffer;
 
@@ -4047,7 +4047,7 @@ Either GFMT or LFMT may contain:\n\
 `----------------------------------------------------------------------*/
 
 #define UNIMPLEMENTED(Option) \
-  error (0, 0, _("Ignoring option %s (not implemented)."), (Option))
+  error (0, 0, _("ignoring option %s (not implemented)"), (Option))
 
 int
 main (int argc, char *const *argv)
@@ -4344,7 +4344,7 @@ main (int argc, char *const *argv)
 	  find_termcap = 1;
 	break;
 #else
-	error (EXIT_FAILURE, 0, _("Cannot use -z, termcap not available."));
+	error (EXIT_FAILURE, 0, _("cannot use -z, termcap not available"));
 #endif
 
       case GTYPE_GROUP_FORMAT_OPTION:
@@ -4383,7 +4383,7 @@ main (int argc, char *const *argv)
 
   if (!relist_files && word_mode && argc - optind != 2)
     {
-      error (0, 0, _("Word merging for two files only (so far)"));
+      error (0, 0, _("word merging for two files only (so far)"));
       usage (EXIT_FAILURE);
     }
 
@@ -4443,7 +4443,7 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
     {
       if (inhibit_left || inhibit_right || inhibit_common
 	  || delete_start || delete_stop || insert_start || insert_stop)
-	error (0, 0, _("Options -123RSYZ meaningful only when two inputs."));
+	error (0, 0, _("options -123RSYZ meaningful only when two inputs"));
     }
 
   /* Do all the crunching.  */
