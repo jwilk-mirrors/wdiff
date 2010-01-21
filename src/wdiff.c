@@ -1266,21 +1266,21 @@ Usage: %s [OPTION]... FILE1 FILE2\n\
       fputs (_("\
 Mandatory arguments to long options are mandatory for short options too.\n"),
              stdout);
-      fputs (_("  -C, --copyright            print copyright then exit\n"), stdout);
+      fputs (_("  -C, --copyright            display copyright then exit\n"), stdout);
       fputs (_("  -K, --no-init-term         like -t, but no termcap init/term strings\n"), stdout);
       fputs (_("  -1, --no-deleted           inhibit output of deleted words\n"), stdout);
       fputs (_("  -2, --no-inserted          inhibit output of inserted words\n"), stdout);
       fputs (_("  -3, --no-common            inhibit output of common words\n"), stdout);
       fputs (_("  -a, --auto-pager           automatically calls a pager\n"), stdout);
       fputs (_("  -d, --diff-input           use single unified diff as input\n"), stdout);
-      fputs (_("  -h, --help                 print this help\n"), stdout);
+      fputs (_("  -h, --help                 display this help then exit\n"), stdout);
       fputs (_("  -i, --ignore-case          fold character case while comparing\n"), stdout);
       fputs (_("  -l, --less-mode            variation of printer mode for \"less\"\n"), stdout);
       fputs (_("  -n, --avoid-wraps          do not extend fields through newlines\n"), stdout);
       fputs (_("  -p, --printer              overstrike as for printers\n"), stdout);
       fputs (_("  -s, --statistics           say how many words deleted, inserted etc.\n"), stdout);
       fputs (_("  -t, --terminal             use termcap as for terminal displays\n"), stdout);
-      fputs (_("  -v, --version              print program version then exit\n"), stdout);
+      fputs (_("  -v, --version              display program version then exit\n"), stdout);
       fputs (_("  -w, --start-delete=STRING  string to mark beginning of delete region\n"), stdout);
       fputs (_("  -x, --end-delete=STRING    string to mark end of delete region\n"), stdout);
       fputs (_("  -y, --start-insert=STRING  string to mark beginning of insert region\n"), stdout);

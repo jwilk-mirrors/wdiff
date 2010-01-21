@@ -3808,8 +3808,8 @@ Usage: %s [OPTION]... [FILE]...\n"),
       fputs (_("\nOperation modes:\n"), stdout);
       fputs (_("  -h                     (ignored)\n"), stdout);
       fputs (_("  -v, --verbose          report a few statistics on stderr\n"), stdout);
-      fputs (_("      --help             display this help and exit\n"), stdout);
-      fputs (_("      --version          output version information and exit\n"), stdout);
+      fputs (_("      --help             display this help then exit\n"), stdout);
+      fputs (_("      --version          display program version then exit\n"), stdout);
 
       fputs (_("\nFormatting output:\n"), stdout);
       fputs (_("  -T, --initial-tab       produce TAB instead of initial space\n"), stdout);
