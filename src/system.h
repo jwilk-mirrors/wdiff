@@ -16,9 +16,7 @@
 
 */
 
-#if HAVE_CONFIG_H
-# include <config.h>
-#endif
+#include <config.h>
 
 #if __STDC__
 # define voidstar void *

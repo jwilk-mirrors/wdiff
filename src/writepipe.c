@@ -17,10 +17,7 @@
 
 /* Written by David MacKenzie.  */
 
-#if HAVE_CONFIG_H
-# include "config.h"
-#endif
-
+#include <config.h>
 #include <stdio.h>
 
 #if __STDC__
@@ -29,9 +26,7 @@
 #include <varargs.h>
 #endif
 
-#if HAVE_UNISTD_H
-# include <unistd.h>
-#endif
+#include <unistd.h>
 
 /* Open a pipe to write to a program without intermediary sh.  Checks
    PATH.  Sample use:
