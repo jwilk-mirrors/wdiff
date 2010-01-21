@@ -4386,7 +4386,7 @@ main (int argc, char *const *argv)
       printf ("mdiff (GNU %s) %s\n", PACKAGE, VERSION);
       fputs (_("\
 \n\
-Copyright (C) 1992, 1997, 1998, 1999 Free Software Foundation, Inc.\n"),
+Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"),
 	     stdout);
       fputs (_("\
 This is free software; see the source for copying conditions.  There is NO\n\

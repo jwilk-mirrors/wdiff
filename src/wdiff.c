@@ -1409,8 +1409,8 @@ main (int argc, char *const argv[])
 	printf ("wdiff (GNU %s) %s\n", PACKAGE, VERSION);
 	fputs (_("\
 \n\
-Copyright (C) 1992, 1997, 1998, 1999, 2009,\n\
-              2010 Free Software Foundation, Inc.\n"),
+Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n\
+Foundation, Inc.\n"),
 	     stdout);
 	fputs (_("\
 This is free software; see the source for copying conditions.  There is NO\n\
