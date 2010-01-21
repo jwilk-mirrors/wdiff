@@ -102,8 +102,11 @@ AC_DEFUN([gl_INIT],
   gl_FUNC_STRERROR
   gl_STRING_MODULE_INDICATOR([strerror])
   gl_HEADER_STRING_H
+  gl_HEADER_SYS_STAT_H
+  AC_PROG_MKDIR_P
   gl_SYS_WAIT_H
   AC_PROG_MKDIR_P
+  gl_HEADER_TIME_H
   gl_UNISTD_H
   gl_WCHAR_H
   gl_FUNC_WCRTOMB
@@ -291,7 +294,9 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/streq.h
   lib/strerror.c
   lib/string.in.h
+  lib/sys_stat.in.h
   lib/sys_wait.in.h
+  lib/time.in.h
   lib/unistd.in.h
   lib/verify.h
   lib/wchar.in.h
@@ -361,8 +366,10 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/stdlib_h.m4
   m4/strerror.m4
   m4/string_h.m4
+  m4/sys_stat_h.m4
   m4/sys_wait_h.m4
   m4/threadlib.m4
+  m4/time_h.m4
   m4/uintmax_t.m4
   m4/unistd_h.m4
   m4/visibility.m4

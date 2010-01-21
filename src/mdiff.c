@@ -81,19 +81,7 @@ const char *tgetstr ();
 
 #include <fcntl.h>
 #include <sys/stat.h>
-
-#if STAT_MACROS_BROKEN
-# undef S_ISREG
-#endif
-
-#if !defined(S_ISREG) && defined(S_IFREG)
-# define S_ISREG(Mode) (((Mode) & S_IFMT) == S_IFREG)
-#endif
-
-#if HAVE_UNISTD_H
-# include <unistd.h>
-#endif
-
+#include <unistd.h>
 #include <getopt.h>
 #include <locale.h>
 #include <sys/wait.h>

@@ -1,4 +1,5 @@
 .deps
+.vc.list
 INSTALL
 Makefile
 Makefile.in
@@ -34,6 +35,7 @@ lib/stdio.h
 lib/stdlib.h
 lib/string.h
 lib/sys
+lib/time.h
 lib/unistd.h
 lib/warn-on-use.h
 lib/wchar.h

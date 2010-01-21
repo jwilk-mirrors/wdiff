@@ -83,11 +83,7 @@ const char *tgetstr ();
 #endif
 
 #include <sys/stat.h>
-
-#if HAVE_UNISTD_H
-# include <unistd.h>
-#endif
-
+#include <unistd.h>
 #include <getopt.h>
 #include <locale.h>
 #include <sys/wait.h>
