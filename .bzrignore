@@ -19,6 +19,7 @@ missing
 stamp-h1
 texinfo.tex
 wdiff-*.tar*
+./ChangeLog
 doc/stamp-vti
 doc/version.texi
 doc/wdiff.info
