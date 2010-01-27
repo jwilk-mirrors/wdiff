@@ -157,11 +157,7 @@ copy_mode;
 jmp_buf signal_label;		/* where to jump when signal received */
 int interrupted;		/* set when some signal has been received */
 
-/* Guarantee some value for L_tmpnam and P_tmpdir.  */
-#ifndef L_tmpnam
-# include "pathmax.h"
-# define L_tmpnam PATH_MAX
-#endif
+/* Guarantee some value P_tmpdir.  */
 #ifndef P_tmpdir
 # define P_tmpdir "/tmp"
 #endif
@@ -173,7 +169,7 @@ struct side
   FILE *file;			/* original input file */
   int position;			/* number of words read so far */
   int character;		/* one character look ahead */
-  char temp_name[L_tmpnam];	/* temporary file name */
+  char *temp_name;		/* temporary file name */
   FILE *temp_file;		/* temporary file */
 };
 SIDE side_array[2];		/* area for holding side descriptions */
@@ -560,11 +556,12 @@ copy_word (SIDE * side, FILE * file)
 `-------------------------------------------------------------------------*/
 
 static char *
-create_template_filename (char *tmpl, size_t tmpl_len)
+create_template_filename ()
 {
   struct stat stat_buffer;	/* for checking if file is directory */
   const char *dir;
   size_t dirlen;
+  char *tmpl;
 
   dir = getenv ("TMPDIR");
   if (dir && (stat (dir, &stat_buffer) == 0)
@@ -586,13 +583,9 @@ create_template_filename (char *tmpl, size_t tmpl_len)
   while (dirlen > 1 && dir[dirlen - 1] == '/')
     dirlen--;			/* remove trailing slashes */
 
-  /* check we have room for "${dir}/wdiff.XXXXXX\0" */
-  if (tmpl_len < dirlen + 1 + 12 + 1)
-    {
-      errno = EINVAL;
-      return NULL;
-    }
 
+  /* ensure we have room for "${dir}/wdiff.XXXXXX\0" */
+  tmpl = xmalloc (dirlen + 1 + 12 + 1);
   sprintf (tmpl, "%.*s/wdiff.XXXXXX", (int) dirlen, dir);
   return tmpl;
 }
@@ -609,8 +602,8 @@ create_temporary_side (SIDE * side)
      unlink it right away. We do not need the file name itself
      anymore.  */
 
-  if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
-    error (EXIT_FAILURE, 0, _("no suitable temporary directory exists"));
+  if ((side->temp_name = create_template_filename ()) == NULL)
+    error (EXIT_FAILURE, errno, _("no suitable temporary directory exists"));
   if ((fd = mkstemp (side->temp_name)) == -1)
     error (EXIT_FAILURE, errno, "%s", side->temp_name);
 
@@ -728,8 +721,8 @@ split_file_into_words (SIDE * side)
   side->character = getc (side->file);
   side->position = 0;
 
-  if (create_template_filename (side->temp_name, L_tmpnam) == NULL)
-    error (EXIT_FAILURE, 0, _("no suitable temporary directory exists"));
+  if ((side->temp_name = create_template_filename ()) == NULL)
+    error (EXIT_FAILURE, errno, _("no suitable temporary directory exists"));
   if ((fd = mkstemp (side->temp_name)) == -1)
     error (EXIT_FAILURE, errno, "%s", side->temp_name);
 
@@ -1482,14 +1475,14 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
       else
 	left_side->filename = argv[optind];
       optind++;
-      *left_side->temp_name = '\0';
+      left_side->temp_name = NULL;
 
       if (strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
 	right_side->filename = NULL;
       else
 	right_side->filename = argv[optind];
       optind++;
-      *right_side->temp_name = '\0';
+      right_side->temp_name = NULL;
 
       if (left_side->filename == NULL && right_side->filename == NULL)
 	error (EXIT_FAILURE, 0, _("only one file may be standard input"));
@@ -1519,9 +1512,9 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
   if (input_file)
     complete_input_program ();
 
-  if (*left_side->temp_name)
+  if (left_side->temp_name)
     unlink (left_side->temp_name);
-  if (*right_side->temp_name)
+  if (right_side->temp_name)
     unlink (right_side->temp_name);
 
   if (output_file)
