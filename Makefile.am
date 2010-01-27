@@ -1,6 +1,6 @@
 SUBDIRS = lib po src doc man
 ACLOCAL_AMFLAGS = -I m4
-EXTRA_DIST = 
+EXTRA_DIST =
 
 # --------- #
 # ChangeLog #
