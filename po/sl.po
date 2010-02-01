@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:47+0100\n"
+"PO-Revision-Date: 2010-02-01 18:43+0100\n"
 "Last-Translator: Primoz PETERLIN <primoz.peterlin@biofiz.mf.uni-lj.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -225,17 +225,17 @@ msgstr ""
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted          ustavi izpis izbrisanih besed\n"
+msgstr "  -1, --no-deleted           ustavi izpis izbrisanih besed\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted         ustavi izpis dodanih besed\n"
+msgstr "  -2, --no-inserted          ustavi izpis dodanih besed\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common         ustavi izpis splošnih besed\n"
+msgstr "  -3, --no-common            ustavi izpis splošnih besed\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -525,7 +525,7 @@ msgstr "  -K, --no-init-term         kot -t, brez termcap init/term niti\n"
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager         avtomatično pokliče zaznamovalca\n"
+msgstr "  -a, --auto-pager           avtomatično pokliče zaznamovalca\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -534,12 +534,12 @@ msgstr ""
 #: src/wdiff.c:1269 src/wdiff2.c:200
 #, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr "  -h, --help                    izpiše to pomoč\n"
+msgstr "  -h, --help                 izpiše to pomoč\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case         zavij velikost črk med primerjavo\n"
+msgstr "  -i, --ignore-case          zavij velikost črk med primerjavo\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -549,28 +549,28 @@ msgstr "  -l, --less-mode            možnost krajšega izpisa za \"less\"\n"
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps       ne razširi polj preko novih linij\n"
+msgstr "  -n, --avoid-wraps          ne razširi polj preko novih linij\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer                napni kot za tiskalnik\n"
+msgstr "  -p, --printer              napni kot za tiskalnik\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics             izpiši koliko besed je izbrisanih, dodanih...\n"
+msgstr "  -s, --statistics           izpiši koliko besed je izbrisanih, dodanih...\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal              uporabi termcap kot terminalski način\n"
+msgstr "  -t, --terminal             uporabi termcap kot terminalski način\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version                izpiši verzijo programa in zaključi\n"
+msgstr "  -V, --version              izpiši verzijo programa in zaključi\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy

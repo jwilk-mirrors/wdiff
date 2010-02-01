@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:45+0100\n"
+"PO-Revision-Date: 2010-02-01 18:33+0100\n"
 "Last-Translator: Oleg S. Tihonov <tihonov@ffke-campus.mipt.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -222,17 +222,17 @@ msgstr ""
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted            не выводить удаленные слова\n"
+msgstr "  -1, --no-deleted           не выводить удаленные слова\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted           не выводить вставленные слова\n"
+msgstr "  -2, --no-inserted          не выводить вставленные слова\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common             не выводить общие слова\n"
+msgstr "  -3, --no-common            не выводить общие слова\n"
 
 #: src/mdiff.c:3830
 #, fuzzy

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:27+0100\n"
+"PO-Revision-Date: 2010-02-01 18:34+0100\n"
 "Last-Translator: Jordi Mallach <jordi@sindominio.net>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
 "MIME-Version: 1.0\n"
@@ -221,7 +221,7 @@ msgstr ""
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted            no mostra les paraules esborrades\n"
+msgstr "  -1, --no-deleted           no mostra les paraules esborrades\n"
 
 # ? "  -2, --no-inserted           no mostra les paraules inserides"
 # ? "  -2, --no-inserted          no mostra les paraules insertades"
@@ -232,7 +232,7 @@ msgstr ""
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common             no mostra les paraules comuns\n"
+msgstr "  -3, --no-common            no mostra les paraules comuns\n"
 
 #: src/mdiff.c:3830
 #, fuzzy

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:37+0100\n"
+"PO-Revision-Date: 2010-02-01 18:40+0100\n"
 "Last-Translator: Emese Kovács <emese@gnome.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -220,22 +220,22 @@ msgstr ""
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted            megakadályozza a törölt szavak kiírását\n"
+msgstr "  -1, --no-deleted           megakadályozza a törölt szavak kiírását\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted           megakadályozza a beszúrt szavak kiírását\n"
+msgstr "  -2, --no-inserted          megakadályozza a beszúrt szavak kiírását\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common             megakadályozza a közös szavak kiírását\n"
+msgstr "  -3, --no-common            megakadályozza a közös szavak kiírását\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            automatikusan lapozót indít\n"
+msgstr "  -A, --auto-pager           automatikusan lapozót indít\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
@@ -521,7 +521,7 @@ msgstr ""
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            automatikusan lapozót indít\n"
+msgstr "  -A, --auto-pager           automatikusan lapozót indít\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -535,7 +535,7 @@ msgstr "  -h, --help                 emlékeztetõt ír ki\n"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case                    kis- és nagybetû megegyezik\n"
+msgstr "  -i, --ignore-case          kis- és nagybetû megegyezik\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy

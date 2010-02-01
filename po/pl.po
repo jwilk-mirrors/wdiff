@@ -513,12 +513,12 @@ msgstr "  -h, --help                 wyświetlenie ten opisu i zakończenie\n"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
-"  -i, --ignore-case         traktowanie małych i wielkich liter jako\n"
-"                              takich samych\n"
+"  -i, --ignore-case          traktowanie małych i wielkich liter jako\n"
+"                             takich samych\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode              odmiana trybu drukowania dla \"less\"\n"
+msgstr "  -l, --less-mode            odmiana trybu drukowania dla \"less\"\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
