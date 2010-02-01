@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: GNU wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2004-02-13 02:14\n"
+"PO-Revision-Date: 2010-02-01 17:43+0100\n"
 "Last-Translator: Eivind Tagseth <eivindt@multinet.no>\n"
 "Language-Team: Norwegian Bokmaal <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -280,9 +280,7 @@ msgstr "Uten FIL, eller hvis FIL er -, les fra standard innkanal.\n"
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Rapporter feil til <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr "Rapporter feil til <wdiff-bugs@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -492,8 +490,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Bruk: %s [FLAGG]... FIL1 FIL2\n"
+"      %s -d [FLAGG]... [FIL]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 msgid ""

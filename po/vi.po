@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2008-06-21 21:52+0930\n"
+"PO-Revision-Date: 2010-02-01 17:48+0100\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -399,9 +399,7 @@ msgstr "  -=, --use-equals       trong khác biệt thống nhất, thay thế d
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
+msgstr "Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -500,8 +498,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Sư dụng: %s [TÙY_CHỌN]... TẬP_TIN1 TẬP_TIN2\n"
+"         %s -d [TÙY_CHỌN]... [TẬP_TIN]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 msgid ""

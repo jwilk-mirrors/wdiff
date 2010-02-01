@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2002-03-19 14:56+0100\n"
+"PO-Revision-Date: 2010-02-01 17:37+0100\n"
 "Last-Translator: Jacobo Tarrío Barreiro <jtarrio@iname.com>\n"
 "Language-Team: Galician <gpul-traduccion@ceu.fi.udc.es>\n"
 "MIME-Version: 1.0\n"
@@ -280,7 +280,6 @@ msgstr "Se non se indica un FICHEIRO, ou se o FICHEIRO é -, lese da entrada está
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
-"\n"
 "Informe dos erros no programa a <wdiff-bugs@iro.umontreal.ca>.\n"
 "Informe dos erros na traducción a <proxecto@trasno.net>.\n"
 
@@ -497,8 +496,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Emprego: %s [OPCIÓN]... FICHEIRO1 FICHEIRO2\n"
+"         %s -d [OPCIÓN]... [FICHEIRO]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 msgid ""

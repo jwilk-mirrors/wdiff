@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2005-07-22 16:30+0800\n"
+"PO-Revision-Date: 2010-02-01 17:50+0100\n"
 "Last-Translator: Wei-Lun Chao <chaoweilun@pcmail.com.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
@@ -268,9 +268,7 @@ msgstr "如果沒有指定 FILE 或 FILE 是 -，則由標準輸入讀取資料�
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"將錯誤回報至 <wdiff-bugs@iro.umontreal.ca>。\n"
+msgstr "將錯誤回報至 <wdiff-bugs@iro.umontreal.ca>。\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -375,9 +373,7 @@ msgstr ""
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"如果沒有指定 FILE 或 FILE 是 -，則由標準輸入讀取資料。\n"
+msgstr "如果沒有指定 FILE 或 FILE 是 -，則由標準輸入讀取資料。\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -474,8 +470,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "用法：%s [選項]... 檔案1 檔案2\n"
+"     %s -d [選項]... [檔案]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 msgid ""

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2008-12-30 12:40+0700\n"
+"PO-Revision-Date: 2010-02-01 17:40+0100\n"
 "Last-Translator: Arif E. Nugroho <arif_endro@yahoo.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -261,7 +261,7 @@ msgstr "  -o, --printer               overstrike sebagai printer\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              gunakan termcap sebagai display terminal \\n"
+msgstr "  -z, --terminal              gunakan termcap sebagai display terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
@@ -500,8 +500,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Penggunaan: %s [OPTION]... FILE1 FILE2\n"
+"            %s -d [OPTION]... [FILE]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 #, fuzzy

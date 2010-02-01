@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2009-10-24 18:49+0200\n"
+"PO-Revision-Date: 2010-02-01 17:35+0100\n"
 "Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -503,8 +503,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
+"        %s -d [VALITSIN]... [TIEDOSTO]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 #, fuzzy

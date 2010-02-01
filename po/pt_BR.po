@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2002-06-26 19:51GMT -3\n"
+"PO-Revision-Date: 2010-02-01 17:44+0100\n"
 "Last-Translator: Halley Pacheco de Oliveira <halleypo@ig.com.br>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
 "MIME-Version: 1.0\n"
@@ -288,9 +288,7 @@ msgstr "Sem nenhum ARQUIVO, ou quando ARQUIVO for -, ler da entrada padrão.\n"
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Relate problemas para <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr "Relate problemas para <wdiff-bugs@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -501,8 +499,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Utilização: %s [OPÇÃO]... ARQUIVO1 ARQUIVO2\n"
+"            %s -d [OPÇÃO]... [ARQUIVO]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 #, fuzzy

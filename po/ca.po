@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2002-05-04 18:55+0200\n"
+"PO-Revision-Date: 2010-02-01 17:27+0100\n"
 "Last-Translator: Jordi Mallach <jordi@sindominio.net>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
 "MIME-Version: 1.0\n"
@@ -283,9 +283,7 @@ msgstr "Sense FITXER, o quan FITXER és -, llig l'entrada estàndar.\n"
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Informeu d'errors a <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr "Informeu d'errors a <wdiff-bugs@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -401,9 +399,7 @@ msgstr "  -=, --use-equals       reemplaça els espais per signes d'igualtat en u
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Sense FITXER, o quan FITXER és -, llig l'entrada estàndar.\n"
+msgstr "Sense FITXER, o quan FITXER és -, llig l'entrada estàndar.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -502,8 +498,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Ús: %s [OPCIÓ]... FITXER1 FITXER2\n"
+"    %s -d [OPCIÓ]... [FITXER]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 msgid ""

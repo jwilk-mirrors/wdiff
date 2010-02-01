@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2008-07-28 09:21+0200\n"
+"PO-Revision-Date: 2010-02-01 17:47+0100\n"
 "Last-Translator: Jan Djärv <jan.h.d@swipnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -284,10 +284,8 @@ msgstr "Utan FIL eller om FIL är -, läs standard in.\n"
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
-"\n"
 "Rapportera fel till <wdiff-bugs@gnu.org>\n"
-"Rapportera fel eller synpunkter på översättningen till <tp-sv@listor.tp-sv."
-"se>.\n"
+"Rapportera fel eller synpunkter på översättningen till <tp-sv@listor.tp-sv.se>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -508,8 +506,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Användning: %s [FLAGGA]... FIL1 FIL2\n"
+"            %s -d [FLAGGA]... [FIL]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 msgid ""

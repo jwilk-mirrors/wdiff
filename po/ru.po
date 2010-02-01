@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2001-06-14 14:16+04:00\n"
+"PO-Revision-Date: 2010-02-01 17:45+0100\n"
 "Last-Translator: Oleg S. Tihonov <tihonov@ffke-campus.mipt.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -285,9 +285,7 @@ msgstr "Если ФАЙЛ не задан, или задан как -, читает стандартный ввод.\n"
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Об ошибках сообщайте по адресу <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr "Об ошибках сообщайте по адресу <wdiff-bugs@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -512,8 +510,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Использование: %s [КЛЮЧ]... ФАЙЛ1 ФАЙЛ2\n"
+"               %s -d [КЛЮЧ]... [ФАЙЛ]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 msgid ""

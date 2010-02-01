@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2008-06-24 12:11+0100\n"
+"PO-Revision-Date: 2010-02-01 17:41+0100\n"
 "Last-Translator: Marco Colombo <m.colombo@ed.ac.uk>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
@@ -505,8 +505,8 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Uso: %s [OPZIONE]... FILE1 FILE2\n"
+"     %s -d [OPZIONE]... [FILE]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 #, fuzzy
@@ -654,9 +654,7 @@ msgstr ""
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
-"\n"
-"Questo programma riporta anche come sarebbe stato possibile chiamare \"mdiff"
-"\"\n"
+"Questo programma riporta anche come sarebbe stato possibile chiamare \"mdiff\"\n"
 "direttamente.\n"
 
 #. TRANSLATORS: This and the next string are one message.
