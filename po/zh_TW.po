@@ -268,7 +268,7 @@ msgstr "如果沒有指定 FILE 或 FILE 是 -，則由標準輸入讀取資料�
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr "將錯誤回報至 <wdiff-bugs@iro.umontreal.ca>。\n"
+msgstr "將錯誤回報至 <wdiff-bugs@gnu.org>。\n"
 
 #: src/mdiff.c:4035
 #, c-format

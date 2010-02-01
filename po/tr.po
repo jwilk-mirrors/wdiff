@@ -287,7 +287,7 @@ msgstr "DOSYA verilmemişse veya DOSYA - ise, standart girdi okunur.\n"
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
-"Yazılım hatalarını <wdiff-bugs@iro.umontreal.ca> adresine,\n"
+"Yazılım hatalarını <wdiff-bugs@gnu.org> adresine,\n"
 "çeviri hatalarını <gnu-tr@belgeler.org> adresine bildirin.\n"
 
 #: src/mdiff.c:4035

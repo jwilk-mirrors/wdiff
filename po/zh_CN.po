@@ -263,7 +263,7 @@ msgstr "如果没有指定<文件>或<文件>是 -，则从标准输入读取资
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr "请向 <wdiff-bugs@iro.umontreal.ca> 报告程序缺陷。\n"
+msgstr "请向 <wdiff-bugs@gnu.org> 报告程序缺陷。\n"
 
 #: src/mdiff.c:4035
 #, c-format

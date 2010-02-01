@@ -281,7 +281,7 @@ msgstr "Szabványos bemenetrõl olvas, ha FÁJL nincs megadva vagy -. \n"
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr "A hibákat jelentsd a <wdiff-bugs@iro.umontreal.ca> címen.\n"
+msgstr "A hibákat jelentsd a <wdiff-bugs@gnu.org> címen.\n"
 
 #: src/mdiff.c:4035
 #, c-format

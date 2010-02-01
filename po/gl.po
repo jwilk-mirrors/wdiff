@@ -280,7 +280,7 @@ msgstr "Se non se indica un FICHEIRO, ou se o FICHEIRO é -, lese da entrada está
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
-"Informe dos erros no programa a <wdiff-bugs@iro.umontreal.ca>.\n"
+"Informe dos erros no programa a <wdiff-bugs@gnu.org>.\n"
 "Informe dos erros na traducción a <proxecto@trasno.net>.\n"
 
 #: src/mdiff.c:4035

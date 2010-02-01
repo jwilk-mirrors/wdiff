@@ -286,7 +286,7 @@ msgstr "Brez DATOTEKE, ali ko je DATOTEKA -, preberi standardni vhod.\n"
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr "Poročila o hroščih pošljite na <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr "Poročila o hroščih pošljite na <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
