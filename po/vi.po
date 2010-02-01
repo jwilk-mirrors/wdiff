@@ -143,12 +143,14 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3809
+#, fuzzy
 msgid "  -h                     (ignored)\n"
-msgstr ""
+msgstr "  -h                     (bị bỏ qua)\n"
 
 #: src/mdiff.c:3810
+#, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
+msgstr "  -v, --verbose          thông báo vài thống kê trên stderr\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
@@ -165,21 +167,24 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3815
+#, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
+msgstr "  -T, --initial-tab       xuất khoảng TAB thay cho dấu cách đầu tiên\n"
 
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
 #: src/mdiff.c:3817
+#, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
+msgstr "  -S, --string[=CHUỖI]   thấy một chuỗi của người dùng khác\n"
 
 #: src/mdiff.c:3818
+#, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr ""
+msgstr "  -V, --show-links        ghi chú các tham chiếu đến tập tin và dòng\n"
 
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
@@ -214,41 +219,50 @@ msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common             thu hồi kết xuất các từ chung\n"
 
 #: src/mdiff.c:3830
+#, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -A, --auto-pager            tự động gọi một trình dàn trang\n"
 
 #: src/mdiff.c:3831
+#, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -k, --less-mode             biến thể chế độ in cho \"less\"\n"
 
 #: src/mdiff.c:3832
+#, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -m, --avoid-wraps           không mở rộng trường qua ký tự dòng mới\n"
 
 #: src/mdiff.c:3833
+#, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -o, --printer               gạch đè kiểu máy in\n"
 
 #: src/mdiff.c:3834
+#, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -z, --terminal              dùng termcap giống như trên bộ trình bày thiết bị cuối\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          giống như « -z », nhưng không có chuỗi\n"
 
 #: src/mdiff.c:3836
+#, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr ""
+msgstr "  -O, --item-regexp=BTCQ    so sánh các mục tùy theo biểu thức chính quy này\n"
 
 #: src/mdiff.c:3837
+#, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr ""
+msgstr "  -W, --word-mode             so sánh các từ thay cho dòng hoàn toàn\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
@@ -342,32 +356,38 @@ msgid "  -e, --echo-comments    echo comments to standard error\n"
 msgstr ""
 
 #: src/unify.c:286
+#, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
+msgstr "  -o, --old-diffs        \txuất khác biệt kiểu cũ, bất chấp\n"
 
 #: src/unify.c:287
+#, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr ""
+msgstr "  -p, --patch-format     phát sinh định dạng đắp vá\n"
 
 #: src/unify.c:288
+#, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr ""
+msgstr "  -P                     \t\tbằng « -p »\n"
 
 #: src/unify.c:289
 msgid "  -s, --strip-comments   strip comment lines\n"
 msgstr ""
 
 #: src/unify.c:290
+#, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr ""
+msgstr "  -u, --unidiffs         \tép buộc kết xuất thành khác biệt thống nhất\n"
 
 #: src/unify.c:291
+#, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr ""
+msgstr "  -U                     \t\tbằng « -p » và « -u »\n"
 
 #: src/unify.c:292
+#, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
+msgstr "  -=, --use-equals       trong khác biệt thống nhất, thay thế dấu cách\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -486,9 +506,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr ""
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          giống như « -z », nhưng không có chuỗi\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 msgid "  -a, --auto-pager           automatically calls a pager\n"
@@ -499,24 +520,28 @@ msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
 #: src/wdiff.c:1269 src/wdiff2.c:200
+#, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr ""
+msgstr "  -h, --help                 \thiển thị trợ giúp này\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
+#, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -l, --less-mode        \tbiến thể chế độ máy in cho \"less\"\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
+#, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -n, --avoid-wraps  \tkhông mở rộng trường qua ký tự dòng mới\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
+#, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -p, --printer              \tghi đè giống như cho máy in\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 msgid ""
@@ -528,8 +553,9 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr ""
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -v, --version     \thiển thị thông tin về phiên bản chương trình, sau đó thoát\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 msgid ""
@@ -537,17 +563,20 @@ msgid ""
 msgstr ""
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
+#, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr ""
+msgstr "  -x, --end-delete=CHUỖI    \tchuỗi sẽ đánh dấu kết thúc vùng xoá\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
+#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr ""
+msgstr "  -y, --start-insert=CHUỖI  \t\tchuỗi sẽ đánh dấu bắt đầu vùng chèn\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
+#, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr ""
+msgstr "  -z, --end-insert=CHUỖI    \t\tchuỗi sẽ đánh dấu kết thúc vùng chèn\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

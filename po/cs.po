@@ -147,8 +147,9 @@ msgid "  -h                     (ignored)\n"
 msgstr ""
 
 #: src/mdiff.c:3810
+#, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
+msgstr "  -v, --verbose           vypisuje postup operací na standardní chybový výstup\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
@@ -202,16 +203,19 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted            potlaèí výpis zru¹ených slov\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted           potlaèí výpis vlo¾ených slov\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common             potlaèí výpis spoleèných slov\n"
 
 #: src/mdiff.c:3830
 msgid "  -A, --auto-pager           automatically calls a pager\n"
@@ -327,40 +331,49 @@ msgstr ""
 "Pou¾ití: %s [PØEPÍNAÈ]... [SOUBOR]\n"
 
 #: src/unify.c:284
+#, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr ""
+msgstr "  -c, --context-diffs    výstup do kontextového diffu\n"
 
 #: src/unify.c:285
+#, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
+msgstr "  -e, --echo-comments    opisuje komentáøe na standardní chybový výstup\n"
 
 #: src/unify.c:286
+#, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
+msgstr "  -o, --old-diffs        výstup ve starém stylu diffu, nezále¾í co\n"
 
 #: src/unify.c:287
+#, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr ""
+msgstr "  -p, --patch-format     výstup ve formátu pro patch\n"
 
 #: src/unify.c:288
+#, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr ""
+msgstr "  -P                     jako -p\n"
 
 #: src/unify.c:289
+#, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr ""
+msgstr "  -s, --strip-comments   odstraòuje komentáøe\n"
 
 #: src/unify.c:290
+#, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr ""
+msgstr "  -u, --unidiffs         výstup ve formátu unifikovaného diffu\n"
 
 #: src/unify.c:291
+#, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr ""
+msgstr "  -U                     jako -p a -u\n"
 
 #: src/unify.c:292
+#, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
+msgstr "  -=, --use-equals       nahradí mezery rovnítky v unifikovaném diffu\n"
 
 #: src/unify.c:296
 msgid "If FILE is not specified, read standard input.\n"
@@ -471,8 +484,9 @@ msgid ""
 msgstr ""
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
+#, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr ""
+msgstr "  -C, --copyright             vypí¹e copyright a skonèí\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
 msgid ""
@@ -480,32 +494,38 @@ msgid ""
 msgstr ""
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
+#, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -a, --auto-pager            automaticky vyvolá prohlí¾ecí program (pager)\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
 #: src/wdiff.c:1269 src/wdiff2.c:200
+#, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr ""
+msgstr "  -h, --help                  vypí¹e tuto nápovìdu\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case           nebude rozli¹ovat malá a velká písmena\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
+#, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -l, --less-mode             provede zvýraznìní textu pro \"less\"\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
+#, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -n, --avoid-wraps           nebude roz¹iøovat polo¾ky na dal¹í øádky\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
+#, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -p, --printer               zvýraznìní znakù pøetiskem (pro tiskárny)\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 msgid ""
@@ -513,30 +533,35 @@ msgid ""
 msgstr ""
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
+#, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -t, --terminal              pou¾ije termcap jako pøi výpisu na terminál\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 msgid "  -v, --version              display program version then exit\n"
 msgstr ""
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
+#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
+msgstr "  -w, --start-delete=ØETÌZEC  øetìzec oznaèující zaèátek ru¹ené oblasti\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
+#, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr ""
+msgstr "  -x, --end-delete=ØETÌZEC    øetìzec pro oznaèení konce ru¹ené oblasti\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
+#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr ""
+msgstr "  -y, --start-insert=ØETÌZEC  øetìzec oznaèující zaèátek vkládané oblasti\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
+#, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr ""
+msgstr "  -z, --end-insert=ØETÌZEC    øetìzec pro oznaèení konce vkládané oblasti\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format
