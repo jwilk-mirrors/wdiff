@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 20:38+0100\n"
+"PO-Revision-Date: 2010-02-01 21:22+0100\n"
 "Last-Translator: Arif E. Nugroho <arif_endro@yahoo.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -267,7 +267,9 @@ msgstr "  -z, --terminal             gunakan termcap sebagai display terminal\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         seperti -z, namun tanpa string init/term termcap\n"
+msgstr ""
+"  -K, --no-init-term         seperti -z, namun tanpa string init/term\n"
+"                             termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -520,7 +522,9 @@ msgstr "  -C, --copyright            tampilkan hak cipta kemudian keluar\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -k, --no-init-term         seperti -t, tetapi tanpa string inisialisasi termcap\n"
+msgstr ""
+"  -k, --no-init-term         seperti -t, tetapi tanpa string inisialisasi\n"
+"                             termcap\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -633,10 +637,9 @@ msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
-"wdiff - Menghitung perbedaan kata dengan secara internal menjalankan `mdiff -"
-"W'.\n"
-"Aplikasi ini ada hanya untuk mendukung sintaks yang sekarang sudah "
-"ditinggalkan `wdiff'.\n"
+"wdiff - Menghitung perbedaan kata dengan secara internal menjalankan\n"
+"`mdiff -W'. Aplikasi ini ada hanya untuk mendukung sintaks yang\n"
+"sekarang sudah ditinggalkan `wdiff'.\n"
 
 #: src/wdiff2.c:187
 #, fuzzy, c-format

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GNU wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:32+0100\n"
+"PO-Revision-Date: 2010-02-01 21:19+0100\n"
 "Last-Translator: Michael Piefel <piefel@informatik.hu-berlin.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -519,7 +519,9 @@ msgstr "  -C, --copyright            Copyright ausgeben und beenden\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         wie -t, aber ohne init/term-Zeichenketten von termcap\n"
+msgstr ""
+"  -K, --no-init-term         wie -t, aber ohne init/term-Zeichenketten von\n"
+"                             termcap\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -559,7 +561,9 @@ msgstr "  -p, --printer              Überdrucken (für Drucker)\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           Anzahl gelöschter, eingefügter etc. Wörter ausgeben\n"
+msgstr ""
+"  -s, --statistics           Anzahl gelöschter, eingefügter etc. Wörter\n"
+"                             ausgeben\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy

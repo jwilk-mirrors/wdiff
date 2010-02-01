@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 20:31+0100\n"
+"PO-Revision-Date: 2010-02-01 21:21+0100\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -127,10 +127,9 @@ msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff - Déanann mdiff staidéar ar il-chomhaid chun teaghráin atá cosúil le "
-"chéile a aimsiú;\n"
-"ansin taispeánann sé liostaí, b'fhéidir mionchruinn, de dhifríochtaí agus "
-"cosúlacht.\n"
+"mdiff - Déanann mdiff staidéar ar il-chomhaid chun teaghráin atá\n"
+"cosúil le chéile a aimsiú; ansin taispeánann sé liostaí, b'fhéidir\n"
+"mionchruinn, de dhifríochtaí agus cosúlacht.\n"
 
 #: src/mdiff.c:3804
 #, fuzzy, c-format
@@ -632,10 +631,9 @@ msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
-"wdiff - Aimsigh difríochtaí idir focail trí `mdiff -W' a thosú go "
-"hinmheánach.\n"
-"Tá an ríomhchlár seo ann chun an chomhréir measartha seanfhaiseanta `wdiff' "
-"a thacú.\n"
+"wdiff - Aimsigh difríochtaí idir focail trí `mdiff -W' a thosú go hinmheánach.\n"
+"Tá an ríomhchlár seo ann chun an chomhréir measartha seanfhaiseanta `wdiff' a\n"
+"thacú.\n"
 
 #: src/wdiff2.c:187
 #, fuzzy, c-format
@@ -649,7 +647,9 @@ msgstr "  -q, --quiet                 cuir cosc ar theachtaireacht ghlao `mdiff'
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Taispeánann an ríomhchlár seo duit conas b'fhéidir `mdiff' a chur ar siúl go díreach.\n"
+msgstr ""
+"Taispeánann an ríomhchlár seo duit conas b'fhéidir `mdiff' a chur ar siúl go\n"
+"díreach.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

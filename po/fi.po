@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 20:30+0100\n"
+"PO-Revision-Date: 2010-02-01 21:20+0100\n"
 "Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -399,7 +399,9 @@ msgstr "  -U                     sama kuin valitsimet ”-p” ja ”-u”\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       korvaa välilyönnit yhtäläisyysmerkeillä unidiff-muodoissa\n"
+msgstr ""
+"  -=, --use-equals       korvaa välilyönnit yhtäläisyysmerkeillä\n"
+"                         unidiff-muodoissa\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -479,10 +481,9 @@ msgid ""
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
 "Tämä ohjelma on vapaa ohjelma; voit jakaa sitä edelleen ja/tai muokata\n"
-"sitä Free Software Foundationin GNU General Public-lisenssin ehtojen "
-"mukaisesti;\n"
-"joko version 2 tai (valintasi mukaan) minkä tahansa myöhäisemmän version\n"
-"mukaisesti.\n"
+"sitä Free Software Foundationin GNU General Public-lisenssin ehtojen\n"
+"mukaisesti; joko version 2 tai (valintasi mukaan) minkä tahansa myöhäisemmän\n"
+"version mukaisesti.\n"
 "\n"
 "Tätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen,\n"
 "mutta ilman mitään takuuta; ilman edes hiljaista takuuta KAUPALLISESTI\n"
@@ -510,7 +511,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille valitsimille.\n"
+msgstr ""
+"Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille\n"
+"valitsimille.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
