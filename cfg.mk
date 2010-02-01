@@ -6,6 +6,7 @@ VC_LIST_ALWAYS_EXCLUDE_REGEX = ^(lib|m4)/
 VC_LIST_EXCEPT_sc_GPL_version = po/.*\.po
 VC_LIST_EXCEPT_sc_makefile_path_separator_check = po/Makefile\.in\.in
 VC_LIST_EXCEPT_sc_makefile_TAB_only_indentation = po/Makefile\.in\.in
+VC_LIST_EXCEPT_sc_po_check = lib/.*\.c
 
 local-checks-to-skip += sc_program_name
 local-checks-to-skip += sc_prohibit_atoi_atof

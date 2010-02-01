@@ -5,9 +5,9 @@
 # Joe Hansen <joedalton2@yahoo.dk>, 2008.
 #
 # Uafklaret forhold i den her oversættelse
-# newlines 
-# Hvis det der henvises til i strengen er sådan nogle her "\n" kan 
-# man kalde dem "nylinjetegn", eller skal det måske snarere være 
+# newlines
+# Hvis det der henvises til i strengen er sådan nogle her "\n" kan
+# man kalde dem "nylinjetegn", eller skal det måske snarere være
 # "ny linje-tegn", det kan jeg ikke helt gennemskue.
 # ` ' er oversat til ' ', har ikke korrigeret dette, selvom dansk
 # citationstegn i form af »« eller "" nok burde være anvendt.
