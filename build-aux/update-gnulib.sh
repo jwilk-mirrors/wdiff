@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -r lib/* m4/*
+rm -r lib/* m4/* build-aux/*.h
 for i in build-aux/*; do
     [[ -L $i ]] && continue
     case "$i" in
