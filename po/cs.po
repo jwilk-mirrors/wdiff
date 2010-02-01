@@ -132,9 +132,7 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Pou¾ití: %s [PØEPÍNAÈ]... SOUBOR...\n"
+msgstr "Pou¾ití: %s [PØEPÍNAÈ]... SOUBOR...\n"
 
 #: src/mdiff.c:3808
 msgid ""
@@ -152,12 +150,14 @@ msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose           vypisuje postup operací na standardní chybový výstup\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
+#, fuzzy
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help              vypí¹e tuto nápovìdu a skonèí\n"
 
 #: src/mdiff.c:3812 src/unify.c:294
+#, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version           vypí¹e oznaèení verze a skonèí\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -218,24 +218,29 @@ msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common             potlaèí výpis spoleèných slov\n"
 
 #: src/mdiff.c:3830
+#, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -a, --auto-pager            automaticky vyvolá prohlí¾ecí program (pager)\n"
 
 #: src/mdiff.c:3831
+#, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -l, --less-mode             provede zvýraznìní textu pro \"less\"\n"
 
 #: src/mdiff.c:3832
+#, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -n, --avoid-wraps           nebude roz¹iøovat polo¾ky na dal¹í øádky\n"
 
 #: src/mdiff.c:3833
+#, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -p, --printer               zvýraznìní znakù pøetiskem (pro tiskárny)\n"
 
 #: src/mdiff.c:3834
+#, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -t, --terminal              pou¾ije termcap jako pøi výpisu na terminál\n"
 
 #: src/mdiff.c:3835
 msgid ""
@@ -326,9 +331,7 @@ msgstr ""
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Pou¾ití: %s [PØEPÍNAÈ]... [SOUBOR]\n"
+msgstr "Pou¾ití: %s [PØEPÍNAÈ]... [SOUBOR]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -376,8 +379,9 @@ msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr "  -=, --use-equals       nahradí mezery rovnítky v unifikovaném diffu\n"
 
 #: src/unify.c:296
+#, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
+msgstr "Jestli¾e SOUBOR není zadán, bude èten standardní vstup.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -527,6 +531,8 @@ msgstr "  -n, --avoid-wraps           nebude roz¹iøovat polo¾ky na dal¹í øádky\n
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer               zvýraznìní znakù pøetiskem (pro tiskárny)\n"
 
+# ? "  -s, --statistics            vypí¹e poèet zru¹ených a vlo¾ených slov apod."
+# ? "  -s, --statistics        vypí¹e statistiku na standardní výstup"
 #: src/wdiff.c:1274 src/wdiff2.c:206
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
@@ -538,8 +544,9 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal              pou¾ije termcap jako pøi výpisu na terminál\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version               vypí¹e oznaèení verze a skonèí\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy

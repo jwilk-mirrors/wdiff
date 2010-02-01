@@ -132,15 +132,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Användning: %s [FLAGGA]... [FIL]...\n"
+msgstr "Användning: %s [FLAGGA]... [FIL]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Arbetslägen:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -153,12 +154,14 @@ msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose           rapportera en del statistik på standard fel\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
+#, fuzzy
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help              visa denna hjälptext och avsluta\n"
 
 #: src/mdiff.c:3812 src/unify.c:294
+#, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version           visa versionsinformation och avsluta\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -166,13 +169,16 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         inled varje rad med TAB"
+# ? "  -T, --initial-tab       skriv TAB instället för inledande mellanslag"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
 #: src/mdiff.c:3816
+#, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr ""
+msgstr "  -l, --paginate          skicka resultatet genom \"pr\" för sidindelning\n"
 
 #: src/mdiff.c:3817
 #, fuzzy
@@ -186,22 +192,23 @@ msgid ""
 msgstr "  -V, --show-links        ange fil- och radreferenser i annoteringar\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       ersätt tabulatortecken med mellanslag i reultatet\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Felsökning:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Felsökning:\n"
-"  -0, --debugging   skriv ut många detaljer om vad som händer\n"
+msgstr "  -0, --debugging   skriv ut många detaljer om vad som händer\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -209,14 +216,20 @@ msgid ""
 "Word mode options:\n"
 msgstr ""
 
+# ? "  -1, --no-deleted           undertryck utskrift av borttagna ord"
+# ? "  -1, --no-deleted           visa inte borttagna ord"
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr ""
 
+# ? "  -2, --no-inserted          undertryck utskrift av insattta ord"
+# ? "  -2, --no-inserted          visa inte tillagda ord"
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 
+# ? "  -3, --no-common            undertryck utskrift av gemensamma ord"
+# ? "  -3, --no-common            visa inte gemensamma ord"
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr ""
@@ -247,9 +260,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             använd termcap för att markera ord\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         som -z, men inga termcap-start/slutsträngar\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -264,9 +278,7 @@ msgstr "  -W, --word-mode            jämför ord istället för rader\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Utan FIL eller om FIL är -, läs standard in.\n"
+msgstr "Utan FIL eller om FIL är -, läs standard in.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -340,9 +352,7 @@ msgstr "unify - Konvertera sammanhangsdiff till enad diff, eller vice versa.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Användning: %s [FLAGGA]... [FIL]\n"
+msgstr "Användning: %s [FLAGGA]... [FIL]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -357,7 +367,9 @@ msgstr "  -e, --echo-comments    skriv kommentarer till standard error\n"
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        visa under alla omständigheter skillnader på gammal\n"
+msgstr ""
+"  -o, --old-diffs        visa under alla omständigheter skillnader på gammal\n"
+"                         stil, \n"
 
 #: src/unify.c:287
 #, fuzzy
@@ -392,9 +404,7 @@ msgstr "  -=, --use-equals       ersätt mellanslag med likhetstecken i enad diff
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Utan FIL eller om FIL är -, läs standard in.\n"
+msgstr "Om FIL inte anges läses standard in\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -512,9 +522,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            skriv copyright och avsluta\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         som -t, men utan termcap start/stopp-strängar\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -531,8 +542,9 @@ msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 skriv denna hjälp\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case          ignorera skiftläge vid jämförelse\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -633,9 +645,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Användning: %s [FLAGGA]... FIL1 FIL2\n"
+msgstr "Användning: %s [FLAGGA]... FIL1 FIL2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
@@ -645,9 +655,7 @@ msgstr ""
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"\n"
-"Detta program talar även om hur \"mdiff\" kan anropas direkt.\n"
+msgstr "Detta program talar även om hur \"mdiff\" kan anropas direkt.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

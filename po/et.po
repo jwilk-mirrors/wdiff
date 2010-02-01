@@ -130,15 +130,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Kasuta: %s [VÕTI]... [FAIL]...\n"
+msgstr "Kasuta: %s [VÕTI]... [FAIL]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Töömoodid:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -151,12 +152,14 @@ msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose           väljasta stderr voogu mõningat statistikat\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
+#, fuzzy
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help              esita see abiinfo ja lõpeta töö\n"
 
 #: src/mdiff.c:3812 src/unify.c:294
+#, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version           esita versiooniinfo ja lõpeta töö\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -164,10 +167,14 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         lisa rea algusse tabulaator"
+# ? "  -T, --initial-tab       tühiku asemel kasuta alguses tabulaatorit"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate            saada väljund programmi `pr'"
+# ? "  -l, --paginate          küljenda väljund programmiga `pr'"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
@@ -184,28 +191,32 @@ msgid ""
 msgstr "  -V, --show-links        kasuta märkmetes viiteid failidele ja ridadele\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       asenda väljundis tabulaatorid tühikutega\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Silumine:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Silumine:\n"
-"  -0, --debugging   väljasta tehtava töö kohta palju infot\n"
+msgstr "  -0, --debugging   väljasta tehtava töö kohta palju infot\n"
 
 #: src/mdiff.c:3826
+#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Sõna moodi võtmed:\n"
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 #, fuzzy
@@ -248,9 +259,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             kasuta termcap terminali infot\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         nagu -z, aga termcap init/term sõnedeta\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -265,9 +277,7 @@ msgstr "  -W, --word-mode            võrdle ridade asemel sõnu\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Kui FAIL puudub või on -, loen standardsisendit.\n"
+msgstr "Kui FAIL puudub või on -, loen standardsisendit.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -341,9 +351,7 @@ msgstr ""
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Kasuta: %s [VÕTI]... FAIL...\n"
+msgstr "Kasuta: %s [VÕTI]... FAIL...\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -393,9 +401,7 @@ msgstr "  -=, --use-equals       asenda unidiff väljundis tühikud võrdusmärkideg
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Kui FAIL puudub või on -, loen standardsisendit.\n"
+msgstr "Kui faili ei antud, loe standardsisendit.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -507,6 +513,8 @@ msgstr ""
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            esita autoriõigused ja lõpeta töö\n"
 
+# ? "  -K, --no-init-term         nagu -t, aga termcap init/term sõnedeta"
+# ? "  -K, --no-init-term         nagu -z, aga termcap init/term sõnedeta"
 #: src/wdiff.c:1263 src/wdiff2.c:195
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
@@ -515,7 +523,7 @@ msgstr ""
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           kasuta automaatselt lehitsejat\n"
+msgstr "  -A, --auto-pager           kasuta automaatselt lehitsejat\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -526,6 +534,9 @@ msgstr ""
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 esita see abiinfo\n"
 
+# ? "  -i, --ignore-case                    tõstutundetu"
+# ? "  -i, --ignore-case          võrdle tõstutundetult"
+# ? "  -i, --ignore-case         tööta tõstutundetuna"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
@@ -557,8 +568,9 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             kasuta termcap terminali infot\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version              esita versiooniinfo ja lõpeta töö\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -625,9 +637,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Kasutage: %s [VÕTI]... FAIL1 FAIL2\n"
+msgstr "Kasutage: %s [VÕTI]... FAIL1 FAIL2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

@@ -132,15 +132,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [PILIHAN]... [FAIL]...\n"
+msgstr "Penggunaan: %s [PILIHAN]... [FAIL]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Mod operasi:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -168,10 +169,14 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         jadikan tab berbaris dengan menambah awalan tab"
+# ? "  -T, --initial-tab        hasilkan TAB menggantikan ruang permulaan"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate            hantar keluaran menerusi `pr' untuk paginate"
+# ? "  -l, --paginate           paginate keluaran menggunakan `pr'"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
@@ -187,41 +192,49 @@ msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links         berikan rujukan fail dan baris dalam catatan\n"
 
+# ? "  -t, --expand-tabs         kembangkan tab kepada ruang dalam keluaran"
+# ? "  -t, --expand-tabs        tukar tab kepada ruang dalam keluaran"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Nyahpepijat:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Nyahpepijat:\n"
-"  -0, --debugging   keluarkan banyak perincian mengenai apa yang berlaku\n"
+msgstr "  -0, --debugging   keluarkan banyak perincian mengenai apa yang berlaku\n"
 
 #: src/mdiff.c:3826
+#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Pilhan mod perkataan:\n"
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted           halang keluaran bagi perkataan dipadam\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted          halang keluaran bagi perkataan dimasukkan\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common            halang keluaran bagi perkataan umum\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -249,9 +262,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal              guna termcap sebagai paparan terminal\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          seperti -z, tetap tiada termcap init/rentetan term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -266,16 +280,12 @@ msgstr "  -W, --word-mode             banding perkataan selain daripada baris\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Dengan tiada FAIL, atau apabila FAILE adalah -, baca masukan piawai.\n"
+msgstr "Dengan tiada FAIL, atau apabila FAILE adalah -, baca masukan piawai.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Lapor pepijat kepada <wdiff-bugs@gnu.org>.\n"
+msgstr "Lapor pepijat kepada <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -340,9 +350,7 @@ msgstr "unify - Mengubah diff konteks kepada unidiff, atau sebaliknya.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [PILIHAN]... [FAIL]\n"
+msgstr "Penggunaan: %s [PILIHAN]... [FAIL]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -392,9 +400,7 @@ msgstr "  -=, --use-equals       ganti ruang dengan tanda sama dalam unidiff\n"
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Dengan tiada FAIL, atau apabila FAILE adalah -, baca masukan piawai.\n"
+msgstr "Jika FAIL tidak dinyatakan, baca masukan piawai.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -499,9 +505,10 @@ msgstr ""
 "Penggunaan: %s [PILIHAN]... FAIL1 FAIL2\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+msgstr "Hujah wajib kepada pilihan panjang adalah wajib kepada pilihan pendek juga.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -509,9 +516,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            papr hakcipta kemudian keluar\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         sepert -t, tetapi tiada rentetan termcap init/term\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -528,8 +536,9 @@ msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 papar bantuan ini\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case          abai bentuk aksara ketika membeza\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -630,9 +639,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [PILIHAN]... FAIL1 FAIL2\n"
+msgstr "Penggunaan: %s [PILIHAN]... FAIL1 FAIL2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
@@ -641,10 +648,7 @@ msgstr "  -q, --quiet                halang mesej panggilan `mdiff'\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"\n"
-"Program ini juga memberitahu bagaimana `mdiff' boleh dipanggil secara "
-"terus.\n"
+msgstr "Program ini juga memberitahu bagaimana `mdiff' boleh dipanggil secara terus.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

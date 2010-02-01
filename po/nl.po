@@ -134,9 +134,7 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Gebruik:  %s [OPTIE]... BESTAND...\n"
+msgstr "Gebruik:  %s [OPTIE]... BESTAND...\n"
 
 #: src/mdiff.c:3808
 msgid ""
@@ -195,18 +193,18 @@ msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr "  -t, --expand-tabs      in de uitvoer TABs omzetten in spaties\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Debuggen:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Debuggen:\n"
-"  -0, --debugging        details tonen over wat er gedaan wordt\n"
+msgstr "  -0, --debugging        details tonen over wat er gedaan wordt\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -255,13 +253,15 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             'termcap' gebruiken als voor een terminal\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         als '-z', maar zonder 'init'- of 'term'-reeksen\n"
 
 #: src/mdiff.c:3836
+#, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr ""
+msgstr "  -O, --item-regexp=REG.EXP. items vergelijken volgens deze expressie\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -349,9 +349,7 @@ msgstr "unify - Transformeert context-diffs naar uni-diffs, of omgekeerd.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Gebruik:  %s [OPTIE]... [BESTAND]\n"
+msgstr "Gebruik:  %s [OPTIE]... [BESTAND]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -401,10 +399,7 @@ msgstr "  -=, --use-equals       in uni-diffs spaties vervangen door gelijkteken
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Als BESTAND '-' is, of als er geen BESTAND gegeven is,\n"
-"wordt standaardinvoer gelezen.\n"
+msgstr "Als er geen BESTAND gegeven is, wordt standaardinvoer gelezen.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -508,9 +503,10 @@ msgstr ""
 "Gebruik:  %s [OPTIE]... BESTAND1 BESTAND2\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+msgstr "(De argumenten bij lange opties gelden ook voor de korte vormen.)\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -518,9 +514,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            auteursrecht tonen en stoppen\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         als '-t', maar zonder 'init'- of 'term'-reeksen\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -639,9 +636,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Gebruik:  %s [OPTIE]... BESTAND1 BESTAND2\n"
+msgstr "Gebruik:  %s [OPTIE]... BESTAND1 BESTAND2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
@@ -650,9 +645,7 @@ msgstr "  -q, --quiet                het 'mdiff'-aanroepbericht inderdrukken\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"\n"
-"Dit programma zegt ook hoe 'mdiff' direct aangeroepen had kunnen worden.\n"
+msgstr "Dit programma zegt ook hoe 'mdiff' direct aangeroepen had kunnen worden.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

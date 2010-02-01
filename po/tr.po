@@ -132,15 +132,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Kullanım: %s [SEÇENEK]... [DOSYA]...\n"
+msgstr "Kullanım: %s [SEÇENEK]... [DOSYA]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Kullanım kipleri:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -168,10 +169,14 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab          başa bir sekme ekleyerek sekmeleri hizalar"
+# ? "  -T, --initial-tab        Başlangıçta boşluk yerine sekme kullanır"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate             çıktıyı `pr' komutundan geçirerek sayfalar"
+# ? "  -l, --paginate           `pr' komutu ile çıktıyı sayfalar"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
@@ -187,23 +192,25 @@ msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links         açıklamalarda dosya ve satır referansları verir\n"
 
+# ? "  -t, --expand-tabs          çıktıda sekmeleri boşluğa dönüştürür"
+# ? "  -t, --expand-tabs        çıktıda sekmeler yerine boşluklar kullanır"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Hata ayıklanması:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Hata ayıklanması:\n"
-"  -0, --debugging   ne yapıldığı hakkında detaylı bilgi gösterir\n"
+msgstr "  -0, --debugging   ne yapıldığı hakkında detaylı bilgi gösterir\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -211,17 +218,22 @@ msgid ""
 "Word mode options:\n"
 msgstr ""
 
+# ? "  -1, --no-deleted               silinen sözcükleri göstermez"
+# ? "  -1, --no-deleted           silinmiş sözcükleri göstermez"
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr ""
 
+# ? "  -2, --no-inserted              yerleştirilen sözcükleri göstermez"
+# ? "  -2, --no-inserted          yerleştirilmiş sözcükleri göstermez"
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common                ortak sözcükleri göstermez\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -249,14 +261,17 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal                 ekranda göstermeye uygun çıktı üretir\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term             -z gibi fakat termcap değişkenini almaz\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=DÜZENLİFADE  DÜZENLİFADE'de belirtilen şekilde öğeleri\n"
+msgstr ""
+"  -O, --item-regexp=DÜZENLİFADE  DÜZENLİFADE'de belirtilen şekilde öğeleri\n"
+"                                 karşılaştırır\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -266,9 +281,7 @@ msgstr "  -W, --word-mode                satır yerine sözcükleri karşılaşt
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"DOSYA verilmemişse veya DOSYA - ise, standart girdi okunur.\n"
+msgstr "DOSYA verilmemişse veya DOSYA - ise, standart girdi okunur.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -342,9 +355,7 @@ msgstr ""
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Kullanım: %s [SEÇENEK]... [DOSYA]\n"
+msgstr "Kullanım: %s [SEÇENEK]... [DOSYA]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -394,9 +405,7 @@ msgstr "  -=, --use-equals      `unidiff' çıktılarında eşit işaretleri yer
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"DOSYA verilmemişse veya DOSYA - ise, standart girdi okunur.\n"
+msgstr "DOSYA belirtilmezse standart girdi okunur.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -508,6 +517,8 @@ msgstr ""
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            telif hakkı bilgisini gösterir ve çıkar\n"
 
+# ? "  -K, --no-init-term             -z gibi fakat termcap değişkenini almaz"
+# ? "  -K, --no-init-term         -t gibi fakat termcap bilgisi almaz"
 #: src/wdiff.c:1263 src/wdiff2.c:195
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
@@ -527,6 +538,9 @@ msgstr ""
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 bu yardımı gösterir ve çıkar\n"
 
+# ? "  -i, --ignore-case                         büyük/küçük harf farklarını yoksayar"
+# ? "  -i, --ignore-case          büyük ve küçük harf farkını yoksayar"
+# ? "  -i, --ignore-case          karşılaştırma yaparken büyük/küçük harf farkı gözetmez"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
@@ -558,8 +572,9 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             ekranda göstermeye uygun çıktı üretir\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version              sürüm bilgisini gösterir ve çıkar\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -626,9 +641,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Kullanım: %s [SEÇENEK]... DOSYA1 DOSYA2\n"
+msgstr "Kullanım: %s [SEÇENEK]... DOSYA1 DOSYA2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

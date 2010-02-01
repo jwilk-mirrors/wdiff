@@ -163,15 +163,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Modo de empleo: %s [OPCIÓN]... [FICHERO]...\n"
+msgstr "Modo de empleo: %s [OPCIÓN]... [FICHERO]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Modos de operación:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -199,10 +200,14 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         alinea los tabs añadiendo un tab inicial"
+# ? "  -T, --initial-tab       produce un TAB en lugar de un especio inicial"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate            pasa el resultado a través de `pr' para paginarlo"
+# ? "  -l, --paginate          pagina el resultado a través de `pr`"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
@@ -219,22 +224,23 @@ msgid ""
 msgstr "  -V, --show-links        da referencias de fichero y línea en las anotaciones\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       expande tabs a espacios en el resultado\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Depuración:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Depuración:\n"
-"  -0, --debugging   da muchos detalles de lo que ocurre\n"
+msgstr "  -0, --debugging   da muchos detalles de lo que ocurre\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -270,7 +276,9 @@ msgstr "  -k, --less-mode            variante del modo de impresión para \"less\
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps          impide que los campos se extiendan más allá del\n"
+msgstr ""
+"  -m, --avoid-wraps          impide que los campos se extiendan más allá del\n"
+"                             final de línea\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
@@ -283,9 +291,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             utiliza termcap para mostrar por terminal\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         como -z, pero sin cadenas de inicio/fin de termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -300,9 +309,7 @@ msgstr "  -W, --word-mode            compara palabras en lugar de líneas\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Si no hay FICHERO, o cuando FICHERO es -, lee la entrada estándar.\n"
+msgstr "Si no hay FICHERO, o cuando FICHERO es -, lee la entrada estándar.\n"
 
 # Véase "A bug's life".
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
@@ -381,9 +388,7 @@ msgstr ""
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Modo de empleo: %s [OPCIÓN]... [FICHERO]\n"
+msgstr "Modo de empleo: %s [OPCIÓN]... [FICHERO]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -428,14 +433,14 @@ msgstr "  -U                     lo mismo que -p y -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       sustituye espacios por signos igual en diffs\n"
+msgstr ""
+"  -=, --use-equals       sustituye espacios por signos igual en diffs\n"
+"                         unificados\n"
 
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Si no hay FICHERO, o cuando FICHERO es -, lee la entrada estándar.\n"
+msgstr "Si no se especifica FICHERO, se lee la entrada estándar.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -554,6 +559,8 @@ msgstr ""
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            muestra el copyright y finaliza\n"
 
+# ? "  -K, --no-init-term         como -t, pero sin cadenas de inicio/fin de termcap"
+# ? "  -K, --no-init-term         como -z, pero sin cadenas de inicio/fin de termcap"
 #: src/wdiff.c:1263 src/wdiff2.c:195
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
@@ -573,6 +580,9 @@ msgstr ""
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 muestra esta ayuda\n"
 
+# ? "  -i, --ignore-case                    no tiene en cuentas las diferencias\n                                       entre mayúsculas y minúsculas"
+# ? "  -i, --ignore-case          no distingue mayúsculas de minúsculas al comparar"
+# ? "  -i, --ignore-case         considera iguales mayúsculas y minúsculas"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
@@ -585,7 +595,9 @@ msgstr "  -l, --less-mode            variación del modo de impresión para \"less
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          impide que los campos se extiendan más allá del\n"
+msgstr ""
+"  -n, --avoid-wraps          impide que los campos se extiendan más allá del\n"
+"                             final de línea\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
@@ -596,7 +608,9 @@ msgstr "  -p, --printer              utiliza sobreimpresión como en las impresor
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           indica cuántas palabras hay borradas, insertadas\n"
+msgstr ""
+"  -s, --statistics           indica cuántas palabras hay borradas, insertadas\n"
+"                             y comunes\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
@@ -604,8 +618,9 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             utiliza termcap para mostrar por terminal\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version              muestra la versión del programa y finaliza\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -622,12 +637,16 @@ msgstr "  -x, --end-delete=CADENA    cadena para marcar el final de la región bo
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=CADENA  cadena para marcar el comienzo de una región\n"
+msgstr ""
+"  -y, --start-insert=CADENA  cadena para marcar el comienzo de una región\n"
+"                             insertada\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=CADENA    cadena para marcar el final de una región\n"
+msgstr ""
+"  -z, --end-insert=CADENA    cadena para marcar el final de una región\n"
+"                             insertada\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format
@@ -694,9 +713,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Modo de empleo: %s [OPCIÓN]... FICHERO1 FICHERO2\n"
+msgstr "Modo de empleo: %s [OPCIÓN]... FICHERO1 FICHERO2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

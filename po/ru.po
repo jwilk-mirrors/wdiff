@@ -131,15 +131,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Использование: %s [КЛЮЧ]... [ФАЙЛ]...\n"
+msgstr "Использование: %s [КЛЮЧ]... [ФАЙЛ]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Режимы работы:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -149,29 +150,38 @@ msgstr "  -h                      (игнорируется)\n"
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose           печатать промежуточные результаты в стандартный поток\n"
+msgstr ""
+"  -v, --verbose           печатать промежуточные результаты в стандартный поток\n"
+"                          ошибок\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
+#, fuzzy
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help              показать эту справку и выйти\n"
 
 #: src/mdiff.c:3812 src/unify.c:294
+#, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version           показать информацию о версии и выйти\n"
 
 #: src/mdiff.c:3814
+#, fuzzy
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
+"\n"
+"Форматирование вывода:\n"
 
 #: src/mdiff.c:3815
+#, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
+msgstr "  -T, --initial-tab       выводить TAB вместо пробела в начале строки\n"
 
 #: src/mdiff.c:3816
+#, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr ""
+msgstr "  -l, --paginate          разбивать вывод на страницы с помощью `pr'\n"
 
 #: src/mdiff.c:3817
 #, fuzzy
@@ -185,22 +195,23 @@ msgid ""
 msgstr "  -V, --show-links        писать в аннотациях ссылки на файлы и строки\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       раскрывать при выводе табуляцию в пробелы\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Отладка:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Отладка:\n"
-"  -0, --debugging   печатать множество подробностей о том, что происходит\n"
+msgstr "  -0, --debugging   печатать множество подробностей о том, что происходит\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -209,16 +220,19 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted            не выводить удаленные слова\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted           не выводить вставленные слова\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common             не выводить общие слова\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -246,14 +260,17 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal              выводить с использованием termcap\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          как -z, но без строк termcap init/term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=РВ        сравнивать элементы, определенные регулярным \n"
+msgstr ""
+"  -O, --item-regexp=РВ        сравнивать элементы, определенные регулярным \n"
+"                              выражением РВ\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -263,9 +280,7 @@ msgstr "  -W, --word-mode             сравнивать слова, а не строки\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Если ФАЙЛ не задан, или задан как -, читает стандартный ввод.\n"
+msgstr "Если ФАЙЛ не задан, или задан как -, читает стандартный ввод.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -339,9 +354,7 @@ msgstr ""
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Использование: %s [КЛЮЧ]... [ФАЙЛ]\n"
+msgstr "Использование: %s [КЛЮЧ]... [ФАЙЛ]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -386,14 +399,14 @@ msgstr "  -U                     синоним -p -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       заменять пробелы в объединенных различиях знаками\n"
+msgstr ""
+"  -=, --use-equals       заменять пробелы в объединенных различиях знаками\n"
+"                         равенства\n"
 
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Если ФАЙЛ не задан, или задан как -, читает стандартный ввод.\n"
+msgstr "Если ФАЙЛ не задан или задан как -, читает стандартный ввод\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -512,6 +525,8 @@ msgstr ""
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            показать информацию об авторских правах и выйти\n"
 
+# ? "  -K, --no-init-term          как -z, но без строк termcap init/term"
+# ? "  -K, --no-init-term         как -t, но без строк termcap init/term"
 #: src/wdiff.c:1263 src/wdiff2.c:195
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
@@ -531,6 +546,9 @@ msgstr ""
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 показать эту справку и выйти\n"
 
+# ? "  -i, --ignore-case                    игнорировать различия в регистре букв"
+# ? "  -i, --ignore-case          игнорировать регистр букв"
+# ? "  -i, --ignore-case         не различать заглавные и строчные буквы"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
@@ -562,8 +580,9 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             выводить с использованием termcap\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version              показать информацию о версии и выйти\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -630,9 +649,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Использование: %s [КЛЮЧ]... ФАЙЛ1 ФАЙЛ2\n"
+msgstr "Использование: %s [КЛЮЧ]... ФАЙЛ1 ФАЙЛ2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

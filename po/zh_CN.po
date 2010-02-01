@@ -128,9 +128,7 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"用法：%s [选项]... [文件]...\n"
+msgstr "用法：%s [选项]... [文件]...\n"
 
 #: src/mdiff.c:3808
 msgid ""
@@ -147,10 +145,14 @@ msgstr "  -h                     (忽略)\n"
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr ""
 
+# ? "      --help             display this help and exit"
+# ? "      --help             显示本帮助信息并退出"
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
 msgstr ""
 
+# ? "      --version          output version information and exit"
+# ? "      --version          显示版本信息并退出"
 #: src/mdiff.c:3812 src/unify.c:294
 msgid "      --version          display program version then exit\n"
 msgstr ""
@@ -216,24 +218,29 @@ msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            不输出相同的词\n"
 
 #: src/mdiff.c:3830
+#, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -a, --auto-pager           自动调用分页程序\n"
 
 #: src/mdiff.c:3831
+#, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -l, --less-mode            variation of printer mode for \"less\"\n"
 
 #: src/mdiff.c:3832
+#, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -n, --avoid-wraps          字段不跨行\n"
 
 #: src/mdiff.c:3833
+#, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -p, --printer              overstrike as for printers\n"
 
 #: src/mdiff.c:3834
+#, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -t, --terminal             use termcap as for terminal displays\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
@@ -252,9 +259,7 @@ msgstr ""
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"如果没有指定<文件>或<文件>是 -，则从标准输入读取资料。\n"
+msgstr "如果没有指定<文件>或<文件>是 -，则从标准输入读取资料。\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -326,9 +331,7 @@ msgstr ""
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"用法：%s [选项] [文件]\n"
+msgstr "用法：%s [选项] [文件]\n"
 
 #: src/unify.c:284
 msgid "  -c, --context-diffs    force output to context diffs\n"
@@ -502,6 +505,8 @@ msgstr ""
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 打印此帮助\n"
 
+# ? "  -i, --ignore-case          比较时忽略字符大小写"
+# ? "  -i, --ignore-case         忽略大小写"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
@@ -533,8 +538,9 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             use termcap as for terminal displays\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version              打印程序版本并退出\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -601,9 +607,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"用法：%s [选项]... 文件1 文件2\n"
+msgstr "用法：%s [选项]... 文件1 文件2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

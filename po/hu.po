@@ -131,15 +131,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Használat: %s [KAPCSOLÓ]... [FÁJL]...\n"
+msgstr "Használat: %s [KAPCSOLÓ]... [FÁJL]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Mûveletek:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -168,12 +169,14 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3815
+#, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
+msgstr "  -T, --initial-tab       TAB-ot kezdõ szóköz helyett\n"
 
 #: src/mdiff.c:3816
+#, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr ""
+msgstr "  -l, --paginate          kimenet oldalszámozása a `pr' segítségével\n"
 
 #: src/mdiff.c:3817
 #, fuzzy
@@ -187,40 +190,47 @@ msgid ""
 msgstr "  -V, --show-links        annotációban fájl- és sorszámhivatkozások\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       tabulátor karaktert szóközzé alakítja a kimenetben\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Hibakeresés:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Hibakeresés:\n"
-"  -0, --debugging   nagyon részletesen kiírja, hogy mi történik\n"
+msgstr "  -0, --debugging   nagyon részletesen kiírja, hogy mi történik\n"
 
 #: src/mdiff.c:3826
+#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Szó mód kapcsolói:\n"
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted            megakadályozza a törölt szavak kiírását\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted           megakadályozza a beszúrt szavak kiírását\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common             megakadályozza a közös szavak kiírását\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -248,9 +258,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal              termcap mint terminál kiíratásnál\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          mint -z, de init/termcap karakterláncok nélkül\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -265,9 +276,7 @@ msgstr "  -W, --word-mode             szavakat hasonlít össze sorok helyett\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Szabványos bemenetrõl olvas, ha FÁJL nincs megadva vagy -. \n"
+msgstr "Szabványos bemenetrõl olvas, ha FÁJL nincs megadva vagy -. \n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -340,9 +349,7 @@ msgstr "unify - Szövegkörnyezeti diffet alakít unidiffé, vagy fordítva.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Használat: %s [KAPCSOLÓ]... [FÁJL]\n"
+msgstr "Használat: %s [KAPCSOLÓ]... [FÁJL]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -392,9 +399,7 @@ msgstr "  -=, --use-equals       szóközöket egyenlõségjelekre cseréli az unidiff
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Szabványos bemenetrõl olvas, ha FÁJL nincs megadva vagy -. \n"
+msgstr "Ha FÁJL nincs megadva, a szabványos bementrõl olvas.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -508,6 +513,8 @@ msgstr ""
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            kiírja a copyright információkat\n"
 
+# ? "  -K, --no-init-term          mint -z, de init/termcap karakterláncok nélkül"
+# ? "  -K, --no-init-term         mint -t, de init/termcap karakterláncok nélkül"
 #: src/wdiff.c:1263 src/wdiff2.c:195
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
@@ -516,7 +523,7 @@ msgstr ""
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           automatikusan lapozót indít\n"
+msgstr "  -A, --auto-pager            automatikusan lapozót indít\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -528,8 +535,9 @@ msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 emlékeztetõt ír ki\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case                    kis- és nagybetû megegyezik\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -558,13 +566,15 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             termcap használata, mint terminál kiíratásnál\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version              kiírja a program nevét és változatát\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
+#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
+msgstr "  -w, --start-delete=SZTRING SZTRING jelöli a törlendõ rész elejét\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
@@ -572,9 +582,10 @@ msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr "  -x, --end-delete=SZTRING   SZTRING jelöli a törlendõ rész végét\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
+#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr ""
+msgstr "  -y, --start-insert=SZTRING SZTRING jelöli a beszúrandó rész elejét\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
@@ -624,9 +635,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Használat: %s [KAPCSOLÓ]... FÁJL1 FÁJL2\n"
+msgstr "Használat: %s [KAPCSOLÓ]... FÁJL1 FÁJL2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

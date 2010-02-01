@@ -130,15 +130,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Usage: %s [OPTION]... [FILE]...\n"
+msgstr "Usage: %s [OPTION]... [FILE]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Operation modes:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -161,18 +162,23 @@ msgid "      --version          display program version then exit\n"
 msgstr "      --version          output version information and exit\n"
 
 #: src/mdiff.c:3814
+#, fuzzy
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
+"\n"
+"Formatting output:\n"
 
 #: src/mdiff.c:3815
+#, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
+msgstr "  -T, --initial-tab       produce TAB instead of initial space\n"
 
 #: src/mdiff.c:3816
+#, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr ""
+msgstr "  -l, --paginate          paginate output through `pr'\n"
 
 #: src/mdiff.c:3817
 #, fuzzy
@@ -186,40 +192,47 @@ msgid ""
 msgstr "  -V, --show-links        give file and line references in annotations\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Debugging:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Debugging:\n"
-"  -0, --debugging   output many details about what is going on\n"
+msgstr "  -0, --debugging   output many details about what is going on\n"
 
 #: src/mdiff.c:3826
+#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Word mode options:\n"
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted           inhibit output of deleted words\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted          inhibit output of inserted words\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common            inhibit output of common words\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -247,9 +260,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal              use termcap as for terminal displays\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          like -z, but no termcap init/term strings\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -264,9 +278,7 @@ msgstr "  -W, --word-mode             compare words instead of lines\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"With no FILE, or when FILE is -, read standard input.\n"
+msgstr "With no FILE, or when FILE is -, read standard input.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -337,9 +349,7 @@ msgstr "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Usage: %s [OPTION]... [FILE]\n"
+msgstr "Usage: %s [OPTION]... [FILE]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -389,9 +399,7 @@ msgstr "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"With no FILE, or when FILE is -, read standard input.\n"
+msgstr "If FILE is not specified, read standard input.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -493,9 +501,10 @@ msgstr ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+msgstr "Mandatory arguments to long options are mandatory for short options too.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -503,9 +512,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            print copyright then exit\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -522,8 +532,9 @@ msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 print this help\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case          fold character case while comparing\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -552,8 +563,9 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             use termcap as for terminal displays\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version              print program version then exit\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -620,9 +632,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Usage: %s [OPTION]... FILE1 FILE2\n"
+msgstr "Usage: %s [OPTION]... FILE1 FILE2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

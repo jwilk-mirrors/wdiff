@@ -134,15 +134,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Käyttö: %s [VALITSIN]... [TIEDOSTO]...\n"
+msgstr "Käyttö: %s [VALITSIN]... [TIEDOSTO]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Toimintatilat:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -154,13 +155,16 @@ msgstr "  -h                        (ei oteta huomioon)\n"
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose             raportoi muutamat tilastot vakiovirheeseen\n"
 
+# ? "      --help                näytä tämä opasteteksti ja poistu"
+# ? "      --help             näytä tämä opaste ja poistu"
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
 msgstr ""
 
 #: src/mdiff.c:3812 src/unify.c:294
+#, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version             tulosta versiotiedot ja poistu\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -168,17 +172,22 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab             aseta sarkaimet tasaan edeltävän rivin sarkaimen kanssa"
+# ? "  -T, --initial-tab         tuota sarkainmerkkejä eikä alustavia välilyöntejä"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate                välitä tuloste ”pr”:n kautta sen sivuttamiseksi"
+# ? "  -l, --paginate            sivuta tuloste ohjelman ”pr” kautta"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
 #: src/mdiff.c:3817
+#, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
+msgstr "  -S, --string[=MERKKIJONO] ota huomioon toinen käyttäjäMERKKIJONO\n"
 
 #: src/mdiff.c:3818
 #, fuzzy
@@ -186,41 +195,49 @@ msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links          anna tiedosto- ja riviviitteet annotaatioissa\n"
 
+# ? "  -t, --expand-tabs             laajenna sarakainmerkit välilyönneiksi tulosteessa"
+# ? "  -t, --expand-tabs         laajenna sarkainmerkit välilyönneiksi tulosteessa"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Virhejäljitystä:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Virhejäljitystä:\n"
-"  -0, --debugging           tulosta monia yksityiskohtia tapahtumakulusta\n"
+msgstr "  -0, --debugging           tulosta monia yksityiskohtia tapahtumakulusta\n"
 
 #: src/mdiff.c:3826
+#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Sanatilavalitsimet:\n"
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted           estä poistettujen sanojen tulostus\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted          estä lisättyjen sanojen tulostus\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common            estä yhteisten sanojen tulostus\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -248,9 +265,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal            käytä ”termcap”:iä kuten päätenäytöille\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term        kuten valitsin ”-z”, mutta ei termcap-alustus-/päättymismerkkijonoja\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -265,16 +283,12 @@ msgstr "  -W, --word-mode           vertaa sanoja eikä rivejä\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Kun ei ole TIEDOSTOa, tai kun TIEDOSTO on -, lue vakiosyöte.\n"
+msgstr "Kun ei ole TIEDOSTOa, tai kun TIEDOSTO on -, lue vakiosyöte.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Ilmoita virheistä osoitteeseen <wdiff-bugs@gnu.org>.\n"
+msgstr "Ilmoita virheistä osoitteeseen <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -340,9 +354,7 @@ msgstr "unify - Muunna kontekstierot kontekstinmukaisiksi tai päinvastoin.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Käyttö: %s [VALITSIN]... [TIEDOSTO]\n"
+msgstr "Käyttö: %s [VALITSIN]... [TIEDOSTO]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -392,9 +404,7 @@ msgstr "  -=, --use-equals       korvaa välilyönnit yhtäläisyysmerkeillä un
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Kun ei ole TIEDOSTOa, tai kun TIEDOSTO on -, lue vakiosyöte.\n"
+msgstr "Jos TIEDOSTOa ei ole määritelty, lue vakiosyötteestä.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -497,9 +507,10 @@ msgstr ""
 "Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+msgstr "Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille valitsimille.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -507,9 +518,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            tulosta copyright-ilmoitus ja poistu\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         kuten -t, mutta ei termcap init/term-merkkijonoa\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -526,8 +538,9 @@ msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 tulosta tämä opaste\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case          sekoita pienet ja isot kirjaimet vertailussa\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -628,9 +641,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
+msgstr "Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
@@ -639,10 +650,7 @@ msgstr "  -q, --quiet                estä ”mdiff”-kutsusanoma\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"\n"
-"Tämä ohjelma kertoo myös kuinka ”mdiff”-ohjelmaa olisi voitu kutsua "
-"suoraan.\n"
+msgstr "Tämä ohjelma kertoo myös kuinka ”mdiff”-ohjelmaa olisi voitu kutsua suoraan.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

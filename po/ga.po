@@ -135,15 +135,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Úsáid: %s [ROGHA]... [COMHAD]...\n"
+msgstr "Úsáid: %s [ROGHA]... [COMHAD]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Roghanna:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -171,17 +172,22 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         cuir táb ar dtús chun iad a ailíniú"
+# ? "  -T, --initial-tab       taispeáin táb in ionad spás tosaigh"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate            scag an t-aschur le `pr' chun leathanaigh a uimhriú"
+# ? "  -l, --paginate          uimhrigh leathanaigh le `pr'"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
 #: src/mdiff.c:3817
+#, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
+msgstr "  -S, --string[=TEAGHRÁN] tabhair suntas do THEAGHRÁN úsáideora eile\n"
 
 #: src/mdiff.c:3818
 #, fuzzy
@@ -189,23 +195,25 @@ msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        taispeáin tagairtí chomhaid/líne in anótálacha\n"
 
+# ? "  -t, --expand-tabs         tiontaigh táib go spásanna san aschur"
+# ? "  -t, --expand-tabs       leathnaigh táib go spásanna san aschur"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Dífhabhtú:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Dífhabhtú:\n"
-"  -0, --debugging   taispeáin go leor mionsonraí maidir le cad atá ar siúl\n"
+msgstr "  -0, --debugging   taispeáin go leor mionsonraí maidir le cad atá ar siúl\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -214,16 +222,19 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted            cuir cosc ar aschur d'fhocail scriosta\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted           cuir cosc ar aschur d'fhocail ionsáite\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common             cuir cosc ar aschur d'fhocail choitianta\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -251,9 +262,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal              úsáid termcap mar le teirminéil\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          mar -z, ach níl aon teaghrán termcap init/term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -268,16 +280,12 @@ msgstr "  -W, --word-mode             cóimheas focail in ionad línte\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Mura bhfuil COMHAD ann, nó más '-' é, léigh ón ghnáth-ionchur.\n"
+msgstr "Mura bhfuil COMHAD ann, nó más '-' é, léigh ón ghnáth-ionchur.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Seol tuairiscí faoi fhabhtanna chuig <wdiff-bugs@gnu.org>.\n"
+msgstr "Seol tuairiscí faoi fhabhtanna chuig <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -342,9 +350,7 @@ msgstr "unify - Tiontaigh diff-aí chomhthéacs go unidiff-aí agus vice versa.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Úsáid: %s [ROGHA]... [COMHAD]\n"
+msgstr "Úsáid: %s [ROGHA]... [COMHAD]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -394,9 +400,7 @@ msgstr "  -=, --use-equals       cuir `=' in ionad spásanna in unidiff-aí\n"
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Mura bhfuil COMHAD ann, nó más '-' é, léigh ón ghnáth-ionchur.\n"
+msgstr "Mura bhfuil COMHAD ann, léigh ón ghnáth-ionchur.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -501,9 +505,10 @@ msgstr ""
 "Úsáid: %s [ROGHA]... COMHAD1 COMHAD2\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+msgstr "Is riachtanach le rogha ghearr aon argóint atá riachtanach leis an rogha fhada.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -511,9 +516,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright             taispeáin cóipcheart agus scoir\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          mar -t, ach gan teaghráin termcap init/term\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -530,8 +536,9 @@ msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                  taispeáin an chabhair seo\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case           sórtáil litreacha beaga le ceannlitreacha\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -565,9 +572,10 @@ msgid "  -v, --version              display program version then exit\n"
 msgstr "  -v, --version               taispeáin leagan an ríomhchláir agus scoir\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
+#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
+msgstr "  -w, --start-delete=TEAGHRÁN marcáil tosach an tsleachta scriosta\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
@@ -575,9 +583,10 @@ msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr "  -x, --end-delete=TEAGHRÁN   marcáil deireadh an tsleachta scriosta\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
+#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr ""
+msgstr "  -y, --start-insert=TEAGHRÁN marcáil tosach an tsleachta ionsáite\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
@@ -631,9 +640,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Úsáid: %s [ROGHA]... COMHAD1 COMHAD2\n"
+msgstr "Úsáid: %s [ROGHA]... COMHAD1 COMHAD2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
@@ -643,10 +650,7 @@ msgstr ""
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"\n"
-"Taispeánann an ríomhchlár seo duit conas b'fhéidir `mdiff' a chur ar siúl go "
-"díreach.\n"
+msgstr "Taispeánann an ríomhchlár seo duit conas b'fhéidir `mdiff' a chur ar siúl go díreach.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

@@ -142,15 +142,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Brug: %s [FLAG]... FIL...\n"
+msgstr "Brug: %s [FLAG]... FIL...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Handlingsmåder:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -178,10 +179,14 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         indled hver linje med TAB"
+# ? "  -T, --initial-tab       skriv TAB istedet for indledende mellemrum"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate            send uddata gennem \"pr\" for sidenummerering"
+# ? "  -l, --paginate          send resultatet gennem \"pr\" for sidenummerering"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
@@ -198,22 +203,23 @@ msgid ""
 msgstr "  -V, --show-links        angiv fil- og linjereferencer i annoteringer\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       udvid tabulatortegn med mellemrum i uddata\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Fejlfinding:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Fejlfinding:\n"
-"  -0, --debugging   udskriv mange detaljer om hvad der sker\n"
+msgstr "  -0, --debugging   udskriv mange detaljer om hvad der sker\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -222,16 +228,19 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted           forhindre uddata over slettede ord\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted          forhindre uddata over indsatte ord\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common            forhindre uddata over almindelige ord\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -259,9 +268,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal              brug termcap som for almindelige terminaler\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          som -z, men uden termcap init/term strenge\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -276,16 +286,12 @@ msgstr "  -W, --word-mode             sammenlign ord istedet for linjer\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Med ingen FIL, eller når FIL er -, læs standard inddata.\n"
+msgstr "Med ingen FIL, eller når FIL er -, læs standard inddata.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Rapportér fejl til <wdiff-bugs@gnu.org>.\n"
+msgstr "Rapportér fejl til <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -350,9 +356,7 @@ msgstr "unify - Omformer sammenhængs-diff-er til unidiff-er, eller omvendt.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Brug: %s [FLAG]... [FIL]\n"
+msgstr "Brug: %s [FLAG]... [FIL]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -402,9 +406,7 @@ msgstr "  -=, --use-equals       erstat mellemrum med lighedstegn i unidiffs\n"
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Med ingen FIL, eller når FIL er -, læs standard inddata.\n"
+msgstr "Hvis FIL ikke er angivet, læses fra standard ind.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -509,9 +511,10 @@ msgstr ""
 "Brug: %s [FLAG]... FIL1 FIL2\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+msgstr "Obligatoriske argumenter for lange flag er obligatoriske også for korte\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -519,9 +522,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            udskriv ophavsret og afslut\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term         som -t, men ingen termcap init/term strings\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -538,8 +542,9 @@ msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 vis denne hjælpetekst\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case          skeln ikke mellem store og små bogstaver\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -640,9 +645,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Brug: %s [FLAG]... FIL1 FIL2\n"
+msgstr "Brug: %s [FLAG]... FIL1 FIL2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
@@ -651,9 +654,7 @@ msgstr "  -q, --quiet                forhindre 'mdiff'-kaldet\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"\n"
-"Dette program fortæller også hvordan 'mdiff' kunne være kaldt direkte.\n"
+msgstr "Dette program fortæller også hvordan 'mdiff' kunne være kaldt direkte.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

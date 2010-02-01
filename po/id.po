@@ -133,15 +133,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [OPTION]... [FILE]...\n"
+msgstr "Penggunaan: %s [OPTION]... [FILE]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Mode operasi:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -154,26 +155,34 @@ msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          laporkan statistik ke stderr\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
+#, fuzzy
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help             tampilkan bantuan ini dan keluar\n"
 
+# ? "       --version          tampilkan informasi versi dan keluar"
+# ? "      --version          tampilkan informasi output dan keluar"
 #: src/mdiff.c:3812 src/unify.c:294
 msgid "      --version          display program version then exit\n"
 msgstr ""
 
 #: src/mdiff.c:3814
+#, fuzzy
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
+"\n"
+"Format output:\n"
 
 #: src/mdiff.c:3815
+#, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
+msgstr "  -T, --initial-tab       hasilkan TAB alih-alih spasi awal\n"
 
 #: src/mdiff.c:3816
+#, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr ""
+msgstr "  -l, --paginate          paginasi output melalui `pr'\n"
 
 #: src/mdiff.c:3817
 #, fuzzy
@@ -187,40 +196,47 @@ msgid ""
 msgstr "  -V, --show-links        beri referensi file dan baris dalam anotasi\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       ekspansi tab ke spasi dalam output\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Debugging:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Debugging:\n"
-"  -0, --debugging   keluarkan banyak rincian tentang apa yang terjadi\n"
+msgstr "  -0, --debugging   keluarkan banyak rincian tentang apa yang terjadi\n"
 
 #: src/mdiff.c:3826
+#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Opsi mode kata:\n"
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted           halangi keluaran dari kata yang dihapus\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted          halangi keluaran dari kata yang dimasukan\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common            halangi keluaran dari kata umum\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -245,12 +261,13 @@ msgstr "  -o, --printer               overstrike sebagai printer\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              gunakan termcap sebagai display terminal \\n  -K, --no-init-term          seperti -z, namun tanpa string init/term termcap\n"
+msgstr "  -z, --terminal              gunakan termcap sebagai display terminal \\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          seperti -z, namun tanpa string init/term termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -265,16 +282,12 @@ msgstr "  -W, --word-mode             bandingkan kata-kata alih-alih baris\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Tanpa FILE, atau ketika FILE adalah  -, baca standard input.\n"
+msgstr "Tanpa FILE, atau ketika FILE adalah  -, baca standard input.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Laporkan bug ke <wdiff-bugs@gnu.org>.\n"
+msgstr "Laporkan bug ke <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -338,9 +351,7 @@ msgstr "unify - Transformasi context diffs ke unidiff, atau sebaliknya.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [OPTION]... [FILE]\n"
+msgstr "Penggunaan: %s [OPTION]... [FILE]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -390,9 +401,7 @@ msgstr "   -=, --use-equals       ganti spasi dengan tanda sama dengan dalam uni
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Tanpa FILE, atau ketika FILE adalah  -, baca standard input.\n"
+msgstr "Jika FILE tidak dispesifikasikan, baca dari standard input.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -495,9 +504,10 @@ msgstr ""
 "Penggunaan: %s [OPTION]... FILE1 FILE2\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+msgstr "Argumen wajib ke opsi panjang juga wajib untuk opsi pendek juga.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -505,9 +515,10 @@ msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            tampilkan hak cipta kemudian keluar\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -k, --no-init-term         seperti -t, tetapi tanpa string inisialisasi termcap\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -524,8 +535,9 @@ msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 tampilkan bantuan ini\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case          abaikan besar huruf ketika membandingkan\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -627,9 +639,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [OPTION]... FILE1 FILE2\n"
+msgstr "Penggunaan: %s [OPTION]... FILE1 FILE2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
@@ -638,10 +648,7 @@ msgstr "  -q, --quiet                halangi pesan pemanggilan `mdiff'\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"\n"
-"Aplikasi ini juga memberitahu bagaimana `mdiff' dapat dipanggil secara "
-"langsung.\n"
+msgstr "Aplikasi ini juga memberitahu bagaimana `mdiff' dapat dipanggil secara langsung.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

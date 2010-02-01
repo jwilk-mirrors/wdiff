@@ -129,15 +129,16 @@ msgstr "mdiff - 探究多個檔案並搜尋相同的序列，從而產生儘可�
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"用法：%s [選項]... [檔案]...\n"
+msgstr "用法：%s [選項]... [檔案]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"作業模式為：\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -160,10 +161,13 @@ msgid "      --version          display program version then exit\n"
 msgstr "      --version          輸出版本資訊並離開\n"
 
 #: src/mdiff.c:3814
+#, fuzzy
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
+"\n"
+"格式化輸出:\n"
 
 #: src/mdiff.c:3815
 #, fuzzy
@@ -192,18 +196,18 @@ msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr "  -t, --expand-tabs       在輸出中展開跳格字元成空白\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"除錯:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"除錯:\n"
-"  -0, --debugging   輸出關於目前所發生的許多細節\n"
+msgstr "  -0, --debugging   輸出關於目前所發生的許多細節\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -259,9 +263,7 @@ msgstr ""
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"如果沒有指定 FILE 或 FILE 是 -，則由標準輸入讀取資料。\n"
+msgstr "如果沒有指定 FILE 或 FILE 是 -，則由標準輸入讀取資料。\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -332,9 +334,7 @@ msgstr "unify - 轉換內容差異的形式為 unidiffs，或是相反的作用�
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"用法：%s [選項]... [檔案]\n"
+msgstr "用法：%s [選項]... [檔案]\n"
 
 #: src/unify.c:284
 msgid "  -c, --context-diffs    force output to context diffs\n"
@@ -593,9 +593,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"用法：%s [選項]... 檔案1 檔案2\n"
+msgstr "用法：%s [選項]... 檔案1 檔案2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

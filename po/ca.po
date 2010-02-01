@@ -130,15 +130,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Ús: %s [OPCIÓ]... [FITXER]...\n"
+msgstr "Ús: %s [OPCIÓ]... [FITXER]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Modes d'operació:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -150,10 +151,14 @@ msgstr "  -h                     (ignorat)\n"
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          mostra algunes estadístiques en la eixida d'error\n"
 
+# ? "      --help             mostra aquesta ajuda i eix"
+# ? "      --help             mostra aquesta ajuda i surt"
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
 msgstr ""
 
+# ? "      --version          mostra la informació sobre la versió i eix"
+# ? "      --version          mostra la versió i surt"
 #: src/mdiff.c:3812 src/unify.c:294
 msgid "      --version          display program version then exit\n"
 msgstr ""
@@ -164,10 +169,14 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         alínia els tabs afegint un tab al principi"
+# ? "  -T, --initial-tab       produeix un TAB en lloc de un espai inicial"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate            passa l'eixida a través de «pr» per a paginar-ho"
+# ? "  -l, --paginate          pagina el resultat a través de `pr`"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
@@ -183,23 +192,25 @@ msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        dona referències de fitxer i línia en les anotacions\n"
 
+# ? "  -t, --expand-tabs         expadeix les tabulacions a espais en l'eixida"
+# ? "  -t, --expand-tabs       expandeix tabs a espais en el resultat"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Depuració:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Depuració:\n"
-"  -0, --debugging   mostra molts detalls sobre el que està passant\n"
+msgstr "  -0, --debugging   mostra molts detalls sobre el que està passant\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -208,16 +219,20 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted            no mostra les paraules esborrades\n"
 
+# ? "  -2, --no-inserted           no mostra les paraules inserides"
+# ? "  -2, --no-inserted          no mostra les paraules insertades"
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common             no mostra les paraules comuns\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -245,9 +260,10 @@ msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal              utilitza termcap per a mostrar per terminal\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          com -z, però sense cadenes d'inici/fi de termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -262,9 +278,7 @@ msgstr "  -W, --word-mode             compara paraules en lloc de línies\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Sense FITXER, o quan FITXER és -, llig l'entrada estàndar.\n"
+msgstr "Sense FITXER, o quan FITXER és -, llig l'entrada estàndar.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -338,9 +352,7 @@ msgstr ""
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Ús: %s [OPCIÓ]... [FITXER]\n"
+msgstr "Ús: %s [OPCIÓ]... [FITXER]\n"
 
 #: src/unify.c:284
 #, fuzzy
@@ -503,6 +515,8 @@ msgstr ""
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            mostra el copyright i eix\n"
 
+# ? "  -K, --no-init-term          com -z, però sense cadenes d'inici/fi de termcap"
+# ? "  -K, --no-init-term         com -t, però sense cadenes d'inici/fi de termcap"
 #: src/wdiff.c:1263 src/wdiff2.c:195
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
@@ -522,6 +536,9 @@ msgstr ""
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 mostra aquesta ajuda\n"
 
+# ? "  -i, --ignore-case                    ignora les diferències entre\n                                       majúscules i minúscules"
+# ? "  -i, --ignore-case          no distingueix majúscules i minúscules al comparar"
+# ? "  -i, --ignore-case         considera iguals majúscules i minúscules"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
@@ -545,7 +562,9 @@ msgstr "  -p, --printer              utilitza sobreimpressió com a les impresore
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           informa de quantes paraules borrades,\n"
+msgstr ""
+"  -s, --statistics           informa de quantes paraules borrades,\n"
+"                             insertades, etc.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
@@ -553,14 +572,17 @@ msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             utilitza termcap com per a mostrar per terminal\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -V, --version              mostra la versió del programa i eix\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=CADENA  cadena per a marcar el principi de la regió\n"
+msgstr ""
+"  -w, --start-delete=CADENA  cadena per a marcar el principi de la regió\n"
+"                             esborrada\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
@@ -571,7 +593,9 @@ msgstr "  -x, --end-delete=CADENA    cadena per a marcar el final de la regió es
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=CADENA  cadena per a marcar el principi de la regió\n"
+msgstr ""
+"  -y, --start-insert=CADENA  cadena per a marcar el principi de la regió\n"
+"                             insertada\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
@@ -621,9 +645,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Ús: %s [OPCIÓ]... FITXER1 FITXER2\n"
+msgstr "Ús: %s [OPCIÓ]... FITXER1 FITXER2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"

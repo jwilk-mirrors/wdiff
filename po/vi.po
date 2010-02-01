@@ -132,15 +132,16 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]...\n"
+msgstr "Sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Chế độ thi hành:\n"
 
 #: src/mdiff.c:3809
 #, fuzzy
@@ -152,10 +153,14 @@ msgstr "  -h                     (bị bỏ qua)\n"
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          thông báo vài thống kê trên stderr\n"
 
+# ? "      --help             hiển thị trợ giúp này và thoát"
+# ? "      --help            \t\thiển thị trợ giúp này và thoát"
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
 msgstr ""
 
+# ? "      --version          \thiển thị thông tin về phiên bản và thoát"
+# ? "      --version          xuất thông tin phiên bản và thoát"
 #: src/mdiff.c:3812 src/unify.c:294
 msgid "      --version          display program version then exit\n"
 msgstr ""
@@ -171,6 +176,8 @@ msgstr ""
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr "  -T, --initial-tab       xuất khoảng TAB thay cho dấu cách đầu tiên\n"
 
+# ? "  -l, --paginate            \tgửi kết xuất qua « pr » để dàn trang"
+# ? "  -l, --paginate          dàn trang kết xuất thông qua « pr »"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
@@ -186,23 +193,25 @@ msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        ghi chú các tham chiếu đến tập tin và dòng\n"
 
+# ? "  -t, --expand-tabs       mở rộng các khoảng tab sang dấu cách trong kết xuất"
+# ? "  -t, --expand-tabs   \tmở rộng các khoảng tab thành dấu cách trong kết xuất"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Gỡ lỗi:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Gỡ lỗi:\n"
-"  -0, --debugging   xuất thông tin chi tiết về tiến trình gỡ lỗi\n"
+msgstr "  -0, --debugging   xuất thông tin chi tiết về tiến trình gỡ lỗi\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -210,10 +219,14 @@ msgid ""
 "Word mode options:\n"
 msgstr ""
 
+# ? "  -1, --no-deleted            thu hồi kết xuất các từ bị xoá"
+# ? "  -1, --no-deleted       \tthu hồi xuất từ bị xoá"
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr ""
 
+# ? "  -2, --no-inserted           thu hồi kết xuất các từ đã chèn"
+# ? "  -2, --no-inserted      \tthu hồi xuất từ đã chèn"
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
@@ -267,16 +280,12 @@ msgstr "  -W, --word-mode             so sánh các từ thay cho dòng hoàn to
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
+msgstr "Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Hãy thông báo lỗi cho địa chỉ <wdiff-bugs@gnu.org>.\n"
+msgstr "Hãy thông báo lỗi cho địa chỉ <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -343,9 +352,7 @@ msgstr ""
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]\n"
+msgstr "Sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]\n"
 
 #: src/unify.c:284
 msgid "  -c, --context-diffs    force output to context diffs\n"
@@ -512,8 +519,9 @@ msgid ""
 msgstr "  -K, --no-init-term          giống như « -z », nhưng không có chuỗi\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
+#, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -A, --auto-pager            tự động gọi một trình dàn trang\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -524,6 +532,8 @@ msgstr ""
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 \thiển thị trợ giúp này\n"
 
+# ? "  -i, --ignore-case                              không phân biệt chữ hoa/thường"
+# ? "  -i, --ignore-case         \tkhông phân biệt chữ hoa/thường"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
@@ -544,13 +554,15 @@ msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              \tghi đè giống như cho máy in\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
+#, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr ""
+msgstr "  -s, --statistics \tthông báo số các từ bị xoá, đã chèn v.v.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
+#, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -z, --terminal              dùng termcap giống như trên bộ trình bày thiết bị cuối\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
@@ -558,9 +570,10 @@ msgid "  -v, --version              display program version then exit\n"
 msgstr "  -v, --version     \thiển thị thông tin về phiên bản chương trình, sau đó thoát\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
+#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
+msgstr "  -w, --start-delete=CHUỖI\t\tchuỗi sẽ đánh dấu bắt đầu vùng xoá\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
@@ -623,9 +636,7 @@ msgstr ""
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Sư dụng: %s [TÙY_CHỌN]... TẬP_TIN1 TẬP_TIN2\n"
+msgstr "Sư dụng: %s [TÙY_CHỌN]... TẬP_TIN1 TẬP_TIN2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
@@ -634,9 +645,7 @@ msgstr "  -q, --quiet                thu hồi thông điệp gọi « mdiff »\
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"\n"
-"Chương trình này cũng diễn tả phương pháp có thể gọi trực tiếp « mdiff ».\n"
+msgstr "Chương trình này cũng diễn tả phương pháp có thể gọi trực tiếp « mdiff ».\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335
