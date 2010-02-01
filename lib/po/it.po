@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib-1.0.0.1991.dbebf\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2009-03-20 14:42+0200\n"
+"POT-Creation-Date: 2010-02-01 09:19+0100\n"
 "PO-Revision-Date: 2009-05-10 21:15+0200\n"
 "Last-Translator: Milo Casagrande <milo@casagrande.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -18,454 +18,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/argmatch.c:133
-#, c-format
-msgid "invalid argument %s for %s"
-msgstr "argomento %s non valido per %s"
-
-#: lib/argmatch.c:134
-#, c-format
-msgid "ambiguous argument %s for %s"
-msgstr "argomento %s ambiguo per %s"
-
-#: lib/argmatch.c:153
-#, c-format
-msgid "Valid arguments are:"
-msgstr "Sono argomenti validi:"
-
-#: lib/argp-help.c:147
-#, c-format
-msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
-msgstr "ARGP_HELP_FMT: il valore %s è minore o uguale a %s"
-
-#: lib/argp-help.c:220
-#, c-format
-msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
-msgstr "%.*s: il parametro ARGP_HELP_FMT richiede un valore"
-
-#: lib/argp-help.c:226
-#, c-format
-msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
-msgstr "%.*s: il parametro ARGP_HELP_FMT deve essere positivo"
-
-#: lib/argp-help.c:235
-#, c-format
-msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
-msgstr "%.*s: parametro ARGP_HELP_FMT sconosciuto"
-
-#: lib/argp-help.c:247
-#, c-format
-msgid "Garbage in ARGP_HELP_FMT: %s"
-msgstr "Spazzatura in ARGP_HELP_FMT: %s"
-
-#: lib/argp-help.c:1246
-msgid "Mandatory or optional arguments to long options are also mandatory or optional for any corresponding short options."
-msgstr "Gli argomenti obbligatori o facoltativi per le opzioni estese lo sono anche per le corrispondenti opzioni brevi."
-
-#: lib/argp-help.c:1639
-msgid "Usage:"
-msgstr "Uso:"
-
-#: lib/argp-help.c:1643
-msgid "  or: "
-msgstr "  o: "
-
-#: lib/argp-help.c:1655
-msgid " [OPTION...]"
-msgstr " [OPZIONE...]"
-
-#: lib/argp-help.c:1682
-#, c-format
-msgid "Try `%s --help' or `%s --usage' for more information.\n"
-msgstr "Usare \"%s --help\" o \"%s --usage\" per ulteriori informazioni.\n"
-
-#: lib/argp-help.c:1710
-#, c-format
-msgid "Report bugs to %s.\n"
-msgstr "Segnalare i bug a %s.\n"
-
-#: lib/argp-help.c:1929 lib/error.c:125
+#: lib/error.c:153
 msgid "Unknown system error"
 msgstr "Errore di sistema sconosciuto"
 
-#: lib/argp-parse.c:81
-msgid "give this help list"
-msgstr "Mostra questo aiuto"
-
-#: lib/argp-parse.c:82
-msgid "give a short usage message"
-msgstr "Mostra un breve messaggio sull'uso"
-
-#: lib/argp-parse.c:83
-msgid "NAME"
-msgstr "NOME"
-
-#: lib/argp-parse.c:83
-msgid "set the program name"
-msgstr "Imposta il nome del programma"
-
-#: lib/argp-parse.c:84
-msgid "SECS"
-msgstr "SEC"
-
-#: lib/argp-parse.c:85
-msgid "hang for SECS seconds (default 3600)"
-msgstr "Resta in attesa per SEC secondi (predefinito 3600)"
-
-#: lib/argp-parse.c:142
-msgid "print program version"
-msgstr "Stampa la versione del programma"
-
-#: lib/argp-parse.c:158
-#, c-format
-msgid "(PROGRAM ERROR) No version known!?"
-msgstr "(ERRORE DEL PROGRAMMA) Nessuna versione conosciuta."
-
-#: lib/argp-parse.c:611
-#, c-format
-msgid "%s: Too many arguments\n"
-msgstr "%s: troppi argomenti\n"
-
-#: lib/argp-parse.c:754
-msgid "(PROGRAM ERROR) Option should have been recognized!?"
-msgstr "(ERRORE DEL PROGRAMMA) L'opzione dovrebbe essere stata riconosciuta."
-
-#: lib/c-stack.c:198 lib/c-stack.c:309
-msgid "program error"
-msgstr "errore del programma"
-
-#: lib/c-stack.c:199 lib/c-stack.c:310
-msgid "stack overflow"
-msgstr "overflow dello stack"
-
-#: lib/clean-temp.c:333
-#, c-format
-msgid "cannot find a temporary directory, try setting $TMPDIR"
-msgstr "impossibile trovare una directory temporanea, provare a impostare $TMPDIR"
-
-#: lib/clean-temp.c:347
-#, c-format
-msgid "cannot create a temporary directory using template \"%s\""
-msgstr "impossibile creare una directory temporanea usando il modello \"%s\""
-
-#: lib/clean-temp.c:443
-#, c-format
-msgid "cannot remove temporary file %s"
-msgstr "impossibile rimuovere il file temporaneo %s"
-
-#: lib/clean-temp.c:458
-#, c-format
-msgid "cannot remove temporary directory %s"
-msgstr "impossibile rimuovere la directory temporanea %s"
-
-#: lib/closein.c:99
-msgid "error closing file"
-msgstr "errore nel chiudere il file"
-
-#: lib/closeout.c:112
-msgid "write error"
-msgstr "errore di scrittura"
-
-#: lib/copy-file.c:66
-#, c-format
-msgid "error while opening \"%s\" for reading"
-msgstr "errore nell'aprire \"%s\" in lettura"
-
-#: lib/copy-file.c:73
-#, c-format
-msgid "cannot open backup file \"%s\" for writing"
-msgstr "impossibile aprire il file di backup \"%s\" in scrittura"
-
-#: lib/copy-file.c:81
-#, c-format
-msgid "error reading \"%s\""
-msgstr "errore nel leggere \"%s\""
-
-#: lib/copy-file.c:86 lib/copy-file.c:91 lib/copy-file.c:130
-#, c-format
-msgid "error writing \"%s\""
-msgstr "errore nello scrivere \"%s\""
-
-#: lib/copy-file.c:93 lib/copy-file.c:132
-#, c-format
-msgid "error after reading \"%s\""
-msgstr "errore dopo la lettura di \"%s\""
-
-#: lib/csharpcomp.c:310 lib/javaversion.c:76
-#, c-format
-msgid "fdopen() failed"
-msgstr "fdopen() non riuscita"
-
-#: lib/csharpcomp.c:571
-#, c-format
-msgid "C# compiler not found, try installing pnet"
-msgstr "compilatore C# non trovato, provare a installare pnet"
-
-#: lib/csharpexec.c:343
-#, c-format
-msgid "C# virtual machine not found, try installing pnet"
-msgstr "macchina virtuale C# non trovata, provare a installare pnet"
-
-#: lib/execute.c:189 lib/execute.c:262 lib/pipe.c:233 lib/pipe.c:348
-#: lib/wait-process.c:282 lib/wait-process.c:356
-#, c-format
-msgid "%s subprocess failed"
-msgstr "%s: sottoprocesso non riuscito"
-
-#: lib/file-type.c:38
-msgid "regular empty file"
-msgstr "file normale vuoto"
-
-#: lib/file-type.c:38
-msgid "regular file"
-msgstr "file normale"
-
-#: lib/file-type.c:41
-msgid "directory"
-msgstr "directory"
-
-#: lib/file-type.c:44
-msgid "block special file"
-msgstr "file speciale a blocchi"
-
-#: lib/file-type.c:47
-msgid "character special file"
-msgstr "file speciale a caratteri"
-
-#: lib/file-type.c:50
-msgid "fifo"
-msgstr "fifo"
-
-#: lib/file-type.c:53
-msgid "symbolic link"
-msgstr "collegamento simbolico"
-
-#: lib/file-type.c:56
-msgid "socket"
-msgstr "socket"
-
-#: lib/file-type.c:59
-msgid "message queue"
-msgstr "coda di messaggi"
-
-#: lib/file-type.c:62
-msgid "semaphore"
-msgstr "semaforo"
-
-#: lib/file-type.c:65
-msgid "shared memory object"
-msgstr "oggetto di memoria condivisa"
-
-# (ndt) sono accettati:
-# - suggerimenti
-# - collegamenti dove si spieghi cosa sia un 'typed memory object'
-# Ma dove si spieghi VERAMENTE e CONCRETAMENTE cos'è.
-#: lib/file-type.c:68
-msgid "typed memory object"
-msgstr "oggetto di memoria con nome"
-
-#: lib/file-type.c:70
-msgid "weird file"
-msgstr "file strano"
-
-#: lib/gai_strerror.c:41
-msgid "Address family for hostname not supported"
-msgstr "Famiglia di indirizzi per il nome host non supportata"
-
-#: lib/gai_strerror.c:42
-msgid "Temporary failure in name resolution"
-msgstr "Errore temporaneo nella risoluzione del nome"
-
-#: lib/gai_strerror.c:43
-msgid "Bad value for ai_flags"
-msgstr "Valore per ai_flags errato"
-
-#: lib/gai_strerror.c:44
-msgid "Non-recoverable failure in name resolution"
-msgstr "Errore irreversibile nella risoluzione del nome"
-
-#: lib/gai_strerror.c:45
-msgid "ai_family not supported"
-msgstr "ai_family non supportato"
-
-#: lib/gai_strerror.c:46
-msgid "Memory allocation failure"
-msgstr "Allocazione memoria non riuscita"
-
-#: lib/gai_strerror.c:47
-msgid "No address associated with hostname"
-msgstr "Nessun indirizzo associato col nome host"
-
-#: lib/gai_strerror.c:48
-msgid "Name or service not known"
-msgstr "Nome o servizio sconosciuto"
-
-# (ndt)
-#
-# define EAI_SERVICE  -8 /* SERVICE not supported for `ai_socktype'.  */
-#: lib/gai_strerror.c:49
-msgid "Servname not supported for ai_socktype"
-msgstr "Nome servizio non supportato per ai_socktype"
-
-#: lib/gai_strerror.c:50
-msgid "ai_socktype not supported"
-msgstr "ai_socktype non supportato"
-
-#: lib/gai_strerror.c:51
-msgid "System error"
-msgstr "Errore di sistema"
-
-#: lib/gai_strerror.c:52
-msgid "Argument buffer too small"
-msgstr "Buffer argomento troppo piccolo"
-
-#: lib/gai_strerror.c:54
-msgid "Processing request in progress"
-msgstr "Elaborazione richiesta in corso"
-
-#: lib/gai_strerror.c:55
-msgid "Request canceled"
-msgstr "Richiesta annullata"
-
-#: lib/gai_strerror.c:56
-msgid "Request not canceled"
-msgstr "Richiesta non annullata"
-
-#: lib/gai_strerror.c:57
-msgid "All requests done"
-msgstr "Tutte le richieste completate"
-
-#: lib/gai_strerror.c:58
-msgid "Interrupted by a signal"
-msgstr "Interrotto da un segnale"
-
-#: lib/gai_strerror.c:59
-msgid "Parameter string not correctly encoded"
-msgstr "Stringa del parametro non codificata correttamente"
-
-#: lib/gai_strerror.c:71
-msgid "Unknown error"
-msgstr "Errore sconosciuto"
-
-#: lib/getopt.c:526 lib/getopt.c:542
-#, c-format
-msgid "%s: option `%s' is ambiguous\n"
+#: lib/getopt.c:529 lib/getopt.c:545
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: l'opzione \"%s\" è ambigua\n"
 
-#: lib/getopt.c:575 lib/getopt.c:579
-#, c-format
-msgid "%s: option `--%s' doesn't allow an argument\n"
+#: lib/getopt.c:578 lib/getopt.c:582
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: l'opzione \"--%s\" non accetta un argomento\n"
 
-#: lib/getopt.c:588 lib/getopt.c:593
-#, c-format
-msgid "%s: option `%c%s' doesn't allow an argument\n"
+#: lib/getopt.c:591 lib/getopt.c:596
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: l'opzione \"%c%s\" non accetta un argomento\n"
 
-#: lib/getopt.c:636 lib/getopt.c:655 lib/getopt.c:971 lib/getopt.c:990
-#, c-format
-msgid "%s: option `%s' requires an argument\n"
+#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
 msgstr "%s: l'opzione \"%s\" richiede un argomento\n"
 
-#: lib/getopt.c:693 lib/getopt.c:696
-#, c-format
-msgid "%s: unrecognized option `--%s'\n"
+#: lib/getopt.c:696 lib/getopt.c:699
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: opzione \"--%s\" non riconosciuta\n"
 
-#: lib/getopt.c:704 lib/getopt.c:707
-#, c-format
-msgid "%s: unrecognized option `%c%s'\n"
+#: lib/getopt.c:707 lib/getopt.c:710
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: opzione \"%c%s\" non riconosciuta\n"
 
 #: lib/getopt.c:759 lib/getopt.c:762
-#, c-format
-msgid "%s: illegal option -- %c\n"
-msgstr "%s: opzione non consentita -- %c\n"
-
-#: lib/getopt.c:768 lib/getopt.c:771
-#, c-format
-msgid "%s: invalid option -- %c\n"
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: opzione non valida -- %c\n"
 
-#: lib/getopt.c:823 lib/getopt.c:839 lib/getopt.c:1043 lib/getopt.c:1061
-#, c-format
-msgid "%s: option requires an argument -- %c\n"
+#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: l'opzione richiede un argomento -- %c\n"
 
-#: lib/getopt.c:892 lib/getopt.c:908
-#, c-format
-msgid "%s: option `-W %s' is ambiguous\n"
+#: lib/getopt.c:882 lib/getopt.c:898
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: l'opzione \"-W %s\" è ambigua\n"
 
-#: lib/getopt.c:932 lib/getopt.c:950
-#, c-format
-msgid "%s: option `-W %s' doesn't allow an argument\n"
+#: lib/getopt.c:922 lib/getopt.c:940
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: l'opzione \"-W %s\" non accetta un argomento\n"
-
-#: lib/javaversion.c:84
-#, c-format
-msgid "%s subprocess I/O error"
-msgstr "errore di I/O nel sottoprocesso %s"
-
-#: lib/javacomp.c:126 lib/javacomp.c:140 lib/javacomp.c:156
-#, c-format
-msgid "invalid source_version argument to compile_java_class"
-msgstr "argomento source_version in compile_java_class non valido"
-
-#: lib/javacomp.c:171 lib/javacomp.c:192
-#, c-format
-msgid "invalid target_version argument to compile_java_class"
-msgstr "argomento target_version in compile_java_class non valido"
-
-#: lib/javacomp.c:503
-#, c-format
-msgid "failed to create \"%s\""
-msgstr "creazione di \"%s\" non riuscita"
-
-#: lib/javacomp.c:510
-#, c-format
-msgid "error while writing \"%s\" file"
-msgstr "errore durante la scrittura del file \"%s\""
-
-#: lib/javacomp.c:2343
-#, c-format
-msgid "Java compiler not found, try installing gcj or set $JAVAC"
-msgstr "compilatore Java non trovato, provare a installare gcj o impostare $JAVAC"
-
-#: lib/javaexec.c:417
-#, c-format
-msgid "Java virtual machine not found, try installing gij or set $JAVA"
-msgstr "macchina virtuale Java non trovato, provare a installare gij o impostare $JAVA"
-
-#: lib/pipe.c:138 lib/pipe.c:142 lib/pipe.c:263 lib/pipe.c:267
-#, c-format
-msgid "cannot create pipe"
-msgstr "impossibile creare la pipe"
-
-#: lib/openat-die.c:34
-#, c-format
-msgid "unable to record current working directory"
-msgstr "impossibile registrare la directory di lavoro corrente"
-
-#: lib/openat-die.c:47
-#, c-format
-msgid "failed to return to initial working directory"
-msgstr "ritorno alla directory di lavoro iniziale non riuscito"
-
-#: lib/mkdir-p.c:196
-#, c-format
-msgid "cannot change permissions of %s"
-msgstr "impossibile cambiare i permessi di %s"
-
-#: lib/mkdir-p.c:206
-#, c-format
-msgid "cannot create directory %s"
-msgstr "impossibile creare la directory %s"
-
-#: lib/obstack.c:423 lib/obstack.c:425 lib/xalloc-die.c:34 lib/xsetenv.c:37
-#, c-format
-msgid "memory exhausted"
-msgstr "memoria esaurita"
 
 #: lib/regcomp.c:132
 msgid "Success"
@@ -540,87 +145,320 @@ msgstr ") o \\) senza corrispondenza"
 msgid "No previous regular expression"
 msgstr "Nessuna espressione regolare precedente"
 
-#: lib/pagealign_alloc.c:139
-#, c-format
-msgid "Failed to open /dev/zero for read"
-msgstr "Apertura di /dev/zero in lettura non riuscita"
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "memoria esaurita"
 
-#. TRANSLATORS:
-#. Get translations for open and closing quotation marks.
-#.
-#. The message catalog should translate "`" to a left
-#. quotation mark suitable for the locale, and similarly for
-#. "'".  If the catalog has no translation,
-#. locale_quoting_style quotes `like this', and
-#. clocale_quoting_style quotes "like this".
-#.
-#. For example, an American English Unicode locale should
-#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
-#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
-#. MARK).  A British English Unicode locale should instead
-#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
-#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
-#.
-#. If you don't know what to put here, please see
-#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
-#. and use glyphs suitable for your language.
-#: lib/quotearg.c:249
-msgid "`"
-msgstr "\""
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "argomento %s non valido per %s"
 
-#: lib/quotearg.c:250
-msgid "'"
-msgstr "\""
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "argomento %s ambiguo per %s"
 
-#. TRANSLATORS: A regular expression testing for an affirmative answer
-#. (english: "yes").  Testing the first character may be sufficient.
-#. Take care to consider upper and lower case.
-#. To enquire the regular expression that your system uses for this
-#. purpose, you can use the command
-#. locale -k LC_MESSAGES | grep '^yesexpr='
-#: lib/rpmatch.c:147
-msgid "^[yY]"
-msgstr "^[sSyY]"
+#~ msgid "Valid arguments are:"
+#~ msgstr "Sono argomenti validi:"
 
-#. TRANSLATORS: A regular expression testing for a negative answer
-#. (english: "no").  Testing the first character may be sufficient.
-#. Take care to consider upper and lower case.
-#. To enquire the regular expression that your system uses for this
-#. purpose, you can use the command
-#. locale -k LC_MESSAGES | grep '^noexpr='
-#: lib/rpmatch.c:160
-msgid "^[nN]"
-msgstr "^[nN]"
+#~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+#~ msgstr "ARGP_HELP_FMT: il valore %s è minore o uguale a %s"
 
-#: lib/unicodeio.c:102
-msgid "iconv function not usable"
-msgstr "funzione iconv non utilizzabile"
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: il parametro ARGP_HELP_FMT richiede un valore"
 
-#: lib/unicodeio.c:104
-msgid "iconv function not available"
-msgstr "funzione iconv non disponibile"
+#~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+#~ msgstr "%.*s: il parametro ARGP_HELP_FMT deve essere positivo"
 
-#: lib/unicodeio.c:111
-msgid "character out of range"
-msgstr "carattere fuori dall'intervallo"
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: parametro ARGP_HELP_FMT sconosciuto"
 
-#: lib/unicodeio.c:175
-#, c-format
-msgid "cannot convert U+%04X to local character set"
-msgstr "impossibile convertire U+%04X nel set di caratteri locale"
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "Spazzatura in ARGP_HELP_FMT: %s"
 
-#: lib/unicodeio.c:177
-#, c-format
-msgid "cannot convert U+%04X to local character set: %s"
-msgstr "impossibile convertire U+%04X nel set di caratteri locale: %s"
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Gli argomenti obbligatori o facoltativi per le opzioni estese lo sono "
+#~ "anche per le corrispondenti opzioni brevi."
 
-#: lib/userspec.c:106
-msgid "invalid user"
-msgstr "utente non valido"
+#~ msgid "Usage:"
+#~ msgstr "Uso:"
 
-#: lib/userspec.c:107
-msgid "invalid group"
-msgstr "gruppo non valido"
+#~ msgid "  or: "
+#~ msgstr "  o: "
+
+#~ msgid " [OPTION...]"
+#~ msgstr " [OPZIONE...]"
+
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "Usare \"%s --help\" o \"%s --usage\" per ulteriori informazioni.\n"
+
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "Segnalare i bug a %s.\n"
+
+#~ msgid "give this help list"
+#~ msgstr "Mostra questo aiuto"
+
+#~ msgid "give a short usage message"
+#~ msgstr "Mostra un breve messaggio sull'uso"
+
+#~ msgid "NAME"
+#~ msgstr "NOME"
+
+#~ msgid "set the program name"
+#~ msgstr "Imposta il nome del programma"
+
+#~ msgid "SECS"
+#~ msgstr "SEC"
+
+#~ msgid "hang for SECS seconds (default 3600)"
+#~ msgstr "Resta in attesa per SEC secondi (predefinito 3600)"
+
+#~ msgid "print program version"
+#~ msgstr "Stampa la versione del programma"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(ERRORE DEL PROGRAMMA) Nessuna versione conosciuta."
+
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: troppi argomenti\n"
+
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr ""
+#~ "(ERRORE DEL PROGRAMMA) L'opzione dovrebbe essere stata riconosciuta."
+
+#~ msgid "program error"
+#~ msgstr "errore del programma"
+
+#~ msgid "stack overflow"
+#~ msgstr "overflow dello stack"
+
+#~ msgid "cannot find a temporary directory, try setting $TMPDIR"
+#~ msgstr ""
+#~ "impossibile trovare una directory temporanea, provare a impostare $TMPDIR"
+
+#~ msgid "cannot create a temporary directory using template \"%s\""
+#~ msgstr ""
+#~ "impossibile creare una directory temporanea usando il modello \"%s\""
+
+#~ msgid "cannot remove temporary file %s"
+#~ msgstr "impossibile rimuovere il file temporaneo %s"
+
+#~ msgid "cannot remove temporary directory %s"
+#~ msgstr "impossibile rimuovere la directory temporanea %s"
+
+#~ msgid "error closing file"
+#~ msgstr "errore nel chiudere il file"
+
+#~ msgid "write error"
+#~ msgstr "errore di scrittura"
+
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "errore nell'aprire \"%s\" in lettura"
+
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "impossibile aprire il file di backup \"%s\" in scrittura"
+
+#~ msgid "error reading \"%s\""
+#~ msgstr "errore nel leggere \"%s\""
+
+#~ msgid "error writing \"%s\""
+#~ msgstr "errore nello scrivere \"%s\""
+
+#~ msgid "error after reading \"%s\""
+#~ msgstr "errore dopo la lettura di \"%s\""
+
+#~ msgid "fdopen() failed"
+#~ msgstr "fdopen() non riuscita"
+
+#~ msgid "C# compiler not found, try installing pnet"
+#~ msgstr "compilatore C# non trovato, provare a installare pnet"
+
+#~ msgid "C# virtual machine not found, try installing pnet"
+#~ msgstr "macchina virtuale C# non trovata, provare a installare pnet"
+
+#~ msgid "%s subprocess failed"
+#~ msgstr "%s: sottoprocesso non riuscito"
+
+#~ msgid "regular empty file"
+#~ msgstr "file normale vuoto"
+
+#~ msgid "regular file"
+#~ msgstr "file normale"
+
+#~ msgid "directory"
+#~ msgstr "directory"
+
+#~ msgid "block special file"
+#~ msgstr "file speciale a blocchi"
+
+#~ msgid "character special file"
+#~ msgstr "file speciale a caratteri"
+
+#~ msgid "fifo"
+#~ msgstr "fifo"
+
+#~ msgid "symbolic link"
+#~ msgstr "collegamento simbolico"
+
+#~ msgid "socket"
+#~ msgstr "socket"
+
+#~ msgid "message queue"
+#~ msgstr "coda di messaggi"
+
+#~ msgid "semaphore"
+#~ msgstr "semaforo"
+
+#~ msgid "shared memory object"
+#~ msgstr "oggetto di memoria condivisa"
+
+# (ndt) sono accettati:
+# - suggerimenti
+# - collegamenti dove si spieghi cosa sia un 'typed memory object'
+# Ma dove si spieghi VERAMENTE e CONCRETAMENTE cos'è.
+#~ msgid "typed memory object"
+#~ msgstr "oggetto di memoria con nome"
+
+#~ msgid "weird file"
+#~ msgstr "file strano"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "Famiglia di indirizzi per il nome host non supportata"
+
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Errore temporaneo nella risoluzione del nome"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "Valore per ai_flags errato"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "Errore irreversibile nella risoluzione del nome"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "ai_family non supportato"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "Allocazione memoria non riuscita"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "Nessun indirizzo associato col nome host"
+
+#~ msgid "Name or service not known"
+#~ msgstr "Nome o servizio sconosciuto"
+
+# (ndt)
+#
+# define EAI_SERVICE  -8 /* SERVICE not supported for `ai_socktype'.  */
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr "Nome servizio non supportato per ai_socktype"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "ai_socktype non supportato"
+
+#~ msgid "System error"
+#~ msgstr "Errore di sistema"
+
+#~ msgid "Argument buffer too small"
+#~ msgstr "Buffer argomento troppo piccolo"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "Elaborazione richiesta in corso"
+
+#~ msgid "Request canceled"
+#~ msgstr "Richiesta annullata"
+
+#~ msgid "Request not canceled"
+#~ msgstr "Richiesta non annullata"
+
+#~ msgid "All requests done"
+#~ msgstr "Tutte le richieste completate"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Interrotto da un segnale"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "Stringa del parametro non codificata correttamente"
+
+#~ msgid "Unknown error"
+#~ msgstr "Errore sconosciuto"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: opzione non consentita -- %c\n"
+
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "errore di I/O nel sottoprocesso %s"
+
+#~ msgid "invalid source_version argument to compile_java_class"
+#~ msgstr "argomento source_version in compile_java_class non valido"
+
+#~ msgid "invalid target_version argument to compile_java_class"
+#~ msgstr "argomento target_version in compile_java_class non valido"
+
+#~ msgid "failed to create \"%s\""
+#~ msgstr "creazione di \"%s\" non riuscita"
+
+#~ msgid "error while writing \"%s\" file"
+#~ msgstr "errore durante la scrittura del file \"%s\""
+
+#~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
+#~ msgstr ""
+#~ "compilatore Java non trovato, provare a installare gcj o impostare $JAVAC"
+
+#~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
+#~ msgstr ""
+#~ "macchina virtuale Java non trovato, provare a installare gij o impostare "
+#~ "$JAVA"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "impossibile creare la pipe"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "impossibile registrare la directory di lavoro corrente"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "ritorno alla directory di lavoro iniziale non riuscito"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "impossibile cambiare i permessi di %s"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "impossibile creare la directory %s"
+
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "Apertura di /dev/zero in lettura non riuscita"
+
+#~ msgid "`"
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "\""
+
+#~ msgid "^[yY]"
+#~ msgstr "^[sSyY]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "funzione iconv non utilizzabile"
+
+#~ msgid "iconv function not available"
+#~ msgstr "funzione iconv non disponibile"
+
+#~ msgid "character out of range"
+#~ msgstr "carattere fuori dall'intervallo"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "impossibile convertire U+%04X nel set di caratteri locale"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "impossibile convertire U+%04X nel set di caratteri locale: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "utente non valido"
+
+#~ msgid "invalid group"
+#~ msgstr "gruppo non valido"
 
 # (ndt) evinta da un commento al codice:
 #
@@ -628,191 +466,124 @@ msgstr "gruppo non valido"
 #    group specifiers or to NULL.  If U is not NULL, it is a newly
 #    allocated string.  */
 #
-#: lib/userspec.c:108
-msgid "invalid spec"
-msgstr "specificatore non valido"
+#~ msgid "invalid spec"
+#~ msgstr "specificatore non valido"
 
-#: lib/verror.c:73
-#, c-format
-msgid "unable to display error message"
-msgstr "impossibile visualizzare il messaggio di errore"
+#~ msgid "unable to display error message"
+#~ msgstr "impossibile visualizzare il messaggio di errore"
 
-#: lib/copy-acl.c:547
-#, c-format
-msgid "preserving permissions for %s"
-msgstr "preservazione dei permessi per %s"
+#~ msgid "preserving permissions for %s"
+#~ msgstr "preservazione dei permessi per %s"
 
-#: lib/xmemcoll.c:48
-#, c-format
-msgid "string comparison failed"
-msgstr "confronto delle stringhe non riuscito"
+#~ msgid "string comparison failed"
+#~ msgstr "confronto delle stringhe non riuscito"
 
-#: lib/xmemcoll.c:49
-#, c-format
-msgid "Set LC_ALL='C' to work around the problem."
-msgstr "Impostare LC_ALL='C' per aggirare il problema."
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Impostare LC_ALL='C' per aggirare il problema."
 
-#: lib/xmemcoll.c:51
-#, c-format
-msgid "The strings compared were %s and %s."
-msgstr "Le stringhe confrontate erano %s e %s."
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Le stringhe confrontate erano %s e %s."
 
-#: lib/xprintf.c:50 lib/xprintf.c:76
-#, c-format
-msgid "cannot perform formatted output"
-msgstr "impossibile mostrare l'output formattato"
+#~ msgid "cannot perform formatted output"
+#~ msgstr "impossibile mostrare l'output formattato"
 
-#. TRANSLATORS: Translate "(C)" to the copyright symbol
-#. (C-in-a-circle), if this symbol is available in the user's
-#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
-#: lib/version-etc.c:65
-msgid "(C)"
-msgstr "©"
+#~ msgid "(C)"
+#~ msgstr "©"
 
-#: lib/version-etc.c:67
-msgid ""
-"\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
-"This is free software: you are free to change and redistribute it.\n"
-"There is NO WARRANTY, to the extent permitted by law.\n"
-"\n"
-msgstr ""
-"\n"
-"Licenza GPLv3+: GNU GPL versione 3 o successiva <http://gnu.org/licenses/gpl.html>.\n"
-"Questo programma è software libero: siete liberi di modificarlo e ridistribuirlo.\n"
-"Non c'è ALCUNA GARANZIA, per quanto consentito dalle vigenti normative.\n"
-"\n"
+#~ msgid ""
+#~ "\n"
+#~ "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+#~ "html>.\n"
+#~ "This is free software: you are free to change and redistribute it.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Licenza GPLv3+: GNU GPL versione 3 o successiva <http://gnu.org/licenses/"
+#~ "gpl.html>.\n"
+#~ "Questo programma è software libero: siete liberi di modificarlo e "
+#~ "ridistribuirlo.\n"
+#~ "Non c'è ALCUNA GARANZIA, per quanto consentito dalle vigenti normative.\n"
+#~ "\n"
 
-#. TRANSLATORS: %s denotes an author name.
-#: lib/version-etc.c:83
-#, c-format
-msgid "Written by %s.\n"
-msgstr "Scritto da %s.\n"
+#~ msgid "Written by %s.\n"
+#~ msgstr "Scritto da %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:87
-#, c-format
-msgid "Written by %s and %s.\n"
-msgstr "Scritto da %s e %s.\n"
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Scritto da %s e %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:91
-#, c-format
-msgid "Written by %s, %s, and %s.\n"
-msgstr "Scritto da %s, %s e %s.\n"
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Scritto da %s, %s e %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:97
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"and %s.\n"
-msgstr ""
-"Scritto da %s, %s, %s\n"
-"e %s.\n"
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s\n"
+#~ "e %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:103
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, and %s.\n"
-msgstr ""
-"Scritto da %s, %s, %s,\n"
-"%s e %s.\n"
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s e %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:109
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, and %s.\n"
-msgstr ""
-"Scritto da %s, %s, %s,\n"
-"%s, %s e %s.\n"
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s e %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:116
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, and %s.\n"
-msgstr ""
-"Scritto da %s, %s, %s,\n"
-"%s, %s, %s e %s.\n"
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s, %s e %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:123
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"and %s.\n"
-msgstr ""
-"Scritto da %s, %s, %s,\n"
-"%s, %s, %s, %s\n"
-"e %s.\n"
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s, %s, %s\n"
+#~ "e %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:131
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, and %s.\n"
-msgstr ""
-"Scritto da %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s e %s.\n"
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s e %s.\n"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:141
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s, and others.\n"
-msgstr ""
-"Scritto da %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s e altri.\n"
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s e altri.\n"
 
-#. TRANSLATORS: The placeholder indicates the bug-reporting address
-#. for this package.  Please add _another line_ saying
-#. "Report translation bugs to <...>\n" with the address for translation
-#. bugs (typically your translation team's web or email address).
-#: lib/version-etc.c:181
-#, c-format
-msgid ""
-"\n"
-"Report bugs to <%s>.\n"
-msgstr ""
-"\n"
-"Segnalare i bug a <%s>.\n"
-"Segnalare gli errori di traduzione a <tp@lists.linux.it>\n"
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to <%s>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Segnalare i bug a <%s>.\n"
+#~ "Segnalare gli errori di traduzione a <tp@lists.linux.it>\n"
 
-#: lib/version-etc.c:182
-#, c-format
-msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
-msgstr "Sito web di %s: <http://www.gnu.org/software/%s/>.\n"
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
+#~ msgstr "Sito web di %s: <http://www.gnu.org/software/%s/>.\n"
 
-#: lib/version-etc.c:184
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
-msgstr "Aiuto per l'utilizzo di software GNU: <http://www.gnu.org/gethelp/>.\n"
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
+#~ msgstr ""
+#~ "Aiuto per l'utilizzo di software GNU: <http://www.gnu.org/gethelp/>.\n"
 
 # (ndt)
 # quello che viene sostituito pare sia:
@@ -823,46 +594,29 @@ msgstr "Aiuto per l'utilizzo di software GNU: <http://www.gnu.org/gethelp/>.\n"
 # invalid --option argument 'arg'
 #
 # (altre idee sono benvenute!)
-#: lib/xstrtol-error.c:63
-#, c-format
-msgid "invalid %s%s argument `%s'"
-msgstr "l'argomento \"%3$s\" di %1$s%2$s non è valido"
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "l'argomento \"%3$s\" di %1$s%2$s non è valido"
 
-#: lib/xstrtol-error.c:68
-#, c-format
-msgid "invalid suffix in %s%s argument `%s'"
-msgstr "il suffisso nell'argomento \"%3$s\" di %1$s%2$s non è valido"
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "il suffisso nell'argomento \"%3$s\" di %1$s%2$s non è valido"
 
-#: lib/xstrtol-error.c:72
-#, c-format
-msgid "%s%s argument `%s' too large"
-msgstr "l'argomento \"%3$s\" di %1$s%2$s è troppo grande"
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "l'argomento \"%3$s\" di %1$s%2$s è troppo grande"
 
-#: lib/set-mode-acl.c:488
-#, c-format
-msgid "setting permissions for %s"
-msgstr "impostazione dei permessi per %s"
+#~ msgid "setting permissions for %s"
+#~ msgstr "impostazione dei permessi per %s"
 
-#: lib/strsignal.c:111
-#, c-format
-msgid "Real-time signal %d"
-msgstr "Segnale real-time %d"
+#~ msgid "Real-time signal %d"
+#~ msgstr "Segnale real-time %d"
 
-#: lib/strsignal.c:115
-#, c-format
-msgid "Unknown signal %d"
-msgstr "Segnale %d sconosciuto"
+#~ msgid "Unknown signal %d"
+#~ msgstr "Segnale %d sconosciuto"
 
-#: lib/wait-process.c:223 lib/wait-process.c:255 lib/wait-process.c:317
-#, c-format
-msgid "%s subprocess"
-msgstr "sottoprocesso %s"
+#~ msgid "%s subprocess"
+#~ msgstr "sottoprocesso %s"
 
-#: lib/wait-process.c:274 lib/wait-process.c:346
-#, c-format
-msgid "%s subprocess got fatal signal %d"
-msgstr "il sottoprocesso %s ha ricevuto un segnale %d fatale"
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "il sottoprocesso %s ha ricevuto un segnale %d fatale"
 
-#: lib/sigpipe-die.c:37
-msgid "error writing to a closed pipe or socket"
-msgstr "errore nello scrivere su una pipe o un socket chiusi"
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "errore nello scrivere su una pipe o un socket chiusi"
