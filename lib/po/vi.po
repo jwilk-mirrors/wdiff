@@ -1,0 +1,843 @@
+# Vietnamese translation for GNU Lib.
+# Copyright © 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnulib package.
+# Clytie Siddall <clytie@riverland.net.au>, 2006-2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnulib 1.0.0.1991.dbebf\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2009-03-20 14:42+0200\n"
+"PO-Revision-Date: 2009-05-13 23:26+0930\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.8\n"
+
+#: lib/argmatch.c:133
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "đối sô không hợp lệ %s cho %s"
+
+#: lib/argmatch.c:134
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "đối số mơ hồ %s cho %s"
+
+#: lib/argmatch.c:153
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Các đối số hợp lệ:"
+
+#: lib/argp-help.c:147
+#, c-format
+msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+msgstr "ARGP_HELP_FMT: giá trị %s value nhỏ hơn hay bằng %s"
+
+#: lib/argp-help.c:220
+#, c-format
+msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+msgstr "%.*s: tham số « ARGP_HELP_FMT » cần thiết giá trị"
+
+#: lib/argp-help.c:226
+#, c-format
+msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+msgstr "%.*s: tham số « ARGP_HELP_FMT » phải là số dương"
+
+#: lib/argp-help.c:235
+#, c-format
+msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+msgstr "%.*s: Không biết tham số « ARGP_HELP_FMT »"
+
+#: lib/argp-help.c:247
+#, c-format
+msgid "Garbage in ARGP_HELP_FMT: %s"
+msgstr "Gặp rác trong « ARGP_HELP_FMT » : %s"
+
+#: lib/argp-help.c:1246
+msgid "Mandatory or optional arguments to long options are also mandatory or optional for any corresponding short options."
+msgstr "Tất cả đối số bắt buộc phải sử dụng với tùy chọn dài cũng bắt buộc với tùy chọn ngắn tương ứng."
+
+#: lib/argp-help.c:1639
+msgid "Usage:"
+msgstr "Cách sử dụng:"
+
+#: lib/argp-help.c:1643
+msgid "  or: "
+msgstr "  hoặc "
+
+#: lib/argp-help.c:1655
+msgid " [OPTION...]"
+msgstr " [TÙY_CHỌN...]"
+
+#: lib/argp-help.c:1682
+#, c-format
+msgid "Try `%s --help' or `%s --usage' for more information.\n"
+msgstr "Hãy thử lệnh « %s --help » (trợ giúp) hay « %s --usage » (cách sử dụng) để xem thông tin thêm.\n"
+
+#: lib/argp-help.c:1710
+#, c-format
+msgid "Report bugs to %s.\n"
+msgstr "Hãy thông báo lỗi cho %s\n"
+
+#: lib/argp-help.c:1929 lib/error.c:125
+msgid "Unknown system error"
+msgstr "Gặp lỗi hệ thống lạ"
+
+#: lib/argp-parse.c:81
+msgid "give this help list"
+msgstr "hiển thị trợ giúp này"
+
+#: lib/argp-parse.c:82
+msgid "give a short usage message"
+msgstr "hiển thị thông điệp cách sử dụng ngắn"
+
+#: lib/argp-parse.c:83
+msgid "NAME"
+msgstr "TÊN"
+
+#: lib/argp-parse.c:83
+msgid "set the program name"
+msgstr "đặt tên chương trình"
+
+#: lib/argp-parse.c:84
+msgid "SECS"
+msgstr "GIÂY"
+
+#: lib/argp-parse.c:85
+msgid "hang for SECS seconds (default 3600)"
+msgstr "treo trong vòng GIÂY giây (mặc định là 3600)"
+
+#: lib/argp-parse.c:142
+msgid "print program version"
+msgstr "in ra phiên bản chương trình"
+
+#: lib/argp-parse.c:158
+#, c-format
+msgid "(PROGRAM ERROR) No version known!?"
+msgstr "(LỖI CHƯƠNG TRÌNH) Không có phiên bản đã biết ?"
+
+#: lib/argp-parse.c:611
+#, c-format
+msgid "%s: Too many arguments\n"
+msgstr "%s: Quá nhiều đối số\n"
+
+#: lib/argp-parse.c:754
+msgid "(PROGRAM ERROR) Option should have been recognized!?"
+msgstr "(LỖI CHƯƠNG TRÌNH) Nên nhận biệt tùy chọn mà chưa?"
+
+#: lib/c-stack.c:198 lib/c-stack.c:309
+msgid "program error"
+msgstr "lỗi chương trình"
+
+#: lib/c-stack.c:199 lib/c-stack.c:310
+msgid "stack overflow"
+msgstr "tràn động"
+
+#: lib/clean-temp.c:333
+#, c-format
+msgid "cannot find a temporary directory, try setting $TMPDIR"
+msgstr "không tìm thấy thư mục tạm thời, hãy thử đặt biến môi trường $TMPDIR"
+
+#: lib/clean-temp.c:347
+#, c-format
+msgid "cannot create a temporary directory using template \"%s\""
+msgstr "không thể tạo một thư mục tạm thời dùng mẫu « %s »"
+
+#: lib/clean-temp.c:443
+#, c-format
+msgid "cannot remove temporary file %s"
+msgstr "không thể gỡ bỏ tập tin tạm thời %s"
+
+#: lib/clean-temp.c:458
+#, c-format
+msgid "cannot remove temporary directory %s"
+msgstr "không thể gỡ bỏ thư mục tạm thời %s"
+
+#: lib/closein.c:99
+msgid "error closing file"
+msgstr "lỗi đóng tập tin"
+
+#: lib/closeout.c:112
+msgid "write error"
+msgstr "lỗi ghi"
+
+#: lib/copy-file.c:66
+#, c-format
+msgid "error while opening \"%s\" for reading"
+msgstr "gặp lỗi khi mở « %s » để ghi"
+
+#: lib/copy-file.c:73
+#, c-format
+msgid "cannot open backup file \"%s\" for writing"
+msgstr "không thể mở tập tin sao lưu « %s » để ghi"
+
+#: lib/copy-file.c:81
+#, c-format
+msgid "error reading \"%s\""
+msgstr "gặp lỗi khi đọc « %s»"
+
+#: lib/copy-file.c:86 lib/copy-file.c:91 lib/copy-file.c:130
+#, c-format
+msgid "error writing \"%s\""
+msgstr "gặp lỗi khi ghi « %s»"
+
+#: lib/copy-file.c:93 lib/copy-file.c:132
+#, c-format
+msgid "error after reading \"%s\""
+msgstr "gặp lỗi sau khi đọc « %s»"
+
+#: lib/csharpcomp.c:310 lib/javaversion.c:76
+#, c-format
+msgid "fdopen() failed"
+msgstr "fdopen() bị lỗi"
+
+#: lib/csharpcomp.c:571
+#, c-format
+msgid "C# compiler not found, try installing pnet"
+msgstr "Không tìm thấy trình biên dịch C# nên thử cài đặt pnet"
+
+#: lib/csharpexec.c:343
+#, c-format
+msgid "C# virtual machine not found, try installing pnet"
+msgstr "Không tìm thấy cơ chế ảo C# nên thử cài đặt pnet"
+
+#: lib/execute.c:189 lib/execute.c:262 lib/pipe.c:233 lib/pipe.c:348
+#: lib/wait-process.c:282 lib/wait-process.c:356
+#, c-format
+msgid "%s subprocess failed"
+msgstr "Tiến trình con %s bị lỗi"
+
+#: lib/file-type.c:38
+msgid "regular empty file"
+msgstr "tập tin rỗng chuẩn"
+
+#: lib/file-type.c:38
+msgid "regular file"
+msgstr "tập tin chuẩn"
+
+#: lib/file-type.c:41
+msgid "directory"
+msgstr "thư mục"
+
+#: lib/file-type.c:44
+msgid "block special file"
+msgstr "tập tin đặc biệt khối"
+
+#: lib/file-type.c:47
+msgid "character special file"
+msgstr "tập tin đặc biệt ký tự"
+
+#: lib/file-type.c:50
+msgid "fifo"
+msgstr "fifo (vào trước, ra trước)"
+
+#: lib/file-type.c:53
+msgid "symbolic link"
+msgstr "liên kết tượng trưng"
+
+#: lib/file-type.c:56
+msgid "socket"
+msgstr "ổ cắm"
+
+#: lib/file-type.c:59
+msgid "message queue"
+msgstr "hàng đời thông điệp"
+
+#: lib/file-type.c:62
+msgid "semaphore"
+msgstr "cờ hiệu"
+
+#: lib/file-type.c:65
+msgid "shared memory object"
+msgstr "đối tượng bộ nhớ dùng chung"
+
+#: lib/file-type.c:68
+msgid "typed memory object"
+msgstr "đốí tượng bộ nhớ đánh kiểu"
+
+#: lib/file-type.c:70
+msgid "weird file"
+msgstr "tập tin lạ"
+
+#: lib/gai_strerror.c:41
+msgid "Address family for hostname not supported"
+msgstr "Không hỗ trợ nhóm địa chỉ đối với tên máy"
+
+#: lib/gai_strerror.c:42
+msgid "Temporary failure in name resolution"
+msgstr "Tạm thời không thể quyết định tên"
+
+#: lib/gai_strerror.c:43
+msgid "Bad value for ai_flags"
+msgstr "Giá trị sai đối với « ai_flags » (cờ)"
+
+#: lib/gai_strerror.c:44
+msgid "Non-recoverable failure in name resolution"
+msgstr "Lỗi không thể phục hồi khi quyết định tên"
+
+#: lib/gai_strerror.c:45
+msgid "ai_family not supported"
+msgstr "Không hỗ trợ « ai_family »"
+
+#: lib/gai_strerror.c:46
+msgid "Memory allocation failure"
+msgstr "Lỗi cấp phát bộ nhớ"
+
+#: lib/gai_strerror.c:47
+msgid "No address associated with hostname"
+msgstr "Không có địa chỉ liên quan đến tên máy"
+
+#: lib/gai_strerror.c:48
+msgid "Name or service not known"
+msgstr "Không nhận ra tên hay dịch vụ"
+
+#: lib/gai_strerror.c:49
+msgid "Servname not supported for ai_socktype"
+msgstr "Không hỗ trợ tên máy phục vụ đối với « ai_socktype » (kiểu ổ cắm)"
+
+#: lib/gai_strerror.c:50
+msgid "ai_socktype not supported"
+msgstr "Không hỗ trợ « ai-socktype » (kiểu ổ cắm)"
+
+#: lib/gai_strerror.c:51
+msgid "System error"
+msgstr "Lỗi hệ thống"
+
+#: lib/gai_strerror.c:52
+msgid "Argument buffer too small"
+msgstr "Vùng đệm đối số quá ngắn"
+
+#: lib/gai_strerror.c:54
+msgid "Processing request in progress"
+msgstr "Yêu cầu xử lý đang chạy"
+
+#: lib/gai_strerror.c:55
+msgid "Request canceled"
+msgstr "Yêu cầu bị thôi"
+
+#: lib/gai_strerror.c:56
+msgid "Request not canceled"
+msgstr "Chưa thôi yêu cầu"
+
+#: lib/gai_strerror.c:57
+msgid "All requests done"
+msgstr "Mọi yêu cầu hoàn tất"
+
+#: lib/gai_strerror.c:58
+msgid "Interrupted by a signal"
+msgstr "bị tín hiệu gián đoạn"
+
+#: lib/gai_strerror.c:59
+msgid "Parameter string not correctly encoded"
+msgstr "Chuỗi tham số không phải được mã hóa đúng"
+
+#: lib/gai_strerror.c:71
+msgid "Unknown error"
+msgstr "Gặp lỗi không rõ"
+
+#: lib/getopt.c:526 lib/getopt.c:542
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: tùy chọn « %s » là mơ hồ\n"
+
+#: lib/getopt.c:575 lib/getopt.c:579
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: tùy chọn « --%s » không cho phép đối số\n"
+
+#: lib/getopt.c:588 lib/getopt.c:593
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: tùy chọn « %c%s » không cho phép đối số\n"
+
+#: lib/getopt.c:636 lib/getopt.c:655 lib/getopt.c:971 lib/getopt.c:990
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: tùy chọn « %s » cần thiết đối số\n"
+
+#: lib/getopt.c:693 lib/getopt.c:696
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: không nhận ra tùy chọn « --%s »\n"
+
+#: lib/getopt.c:704 lib/getopt.c:707
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: không nhận ra tùy chọn « %c%s »\n"
+
+#: lib/getopt.c:759 lib/getopt.c:762
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: không cho phép tùy chọn « -- %c »\n"
+
+#: lib/getopt.c:768 lib/getopt.c:771
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: tùy chọn không hợp lệ « -- %c »\n"
+
+#: lib/getopt.c:823 lib/getopt.c:839 lib/getopt.c:1043 lib/getopt.c:1061
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: tùy chọn cần thiết đối số « -- %c »\n"
+
+#: lib/getopt.c:892 lib/getopt.c:908
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: tùy chọn « -W %s » là mơ hồ\n"
+
+#: lib/getopt.c:932 lib/getopt.c:950
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: tùy chọn « -W %s » không cho phép đối số\n"
+
+#: lib/javaversion.c:84
+#, c-format
+msgid "%s subprocess I/O error"
+msgstr "Lỗi V/R tiến trình phụ %s"
+
+#: lib/javacomp.c:126 lib/javacomp.c:140 lib/javacomp.c:156
+#, c-format
+msgid "invalid source_version argument to compile_java_class"
+msgstr "đối số phiên bản nguồn « source_version » không hợp lệ đối với hạn Java biên dịch « compile_java_class »"
+
+#: lib/javacomp.c:171 lib/javacomp.c:192
+#, c-format
+msgid "invalid target_version argument to compile_java_class"
+msgstr "đối số phiên bản đích « source_version » không hợp lệ đối với hạn Java biên dịch « compile_java_class »"
+
+#: lib/javacomp.c:503
+#, c-format
+msgid "failed to create \"%s\""
+msgstr "lỗi tạo « %s »"
+
+#: lib/javacomp.c:510
+#, c-format
+msgid "error while writing \"%s\" file"
+msgstr "gặp lỗi khi ghi tập tin « %s»"
+
+#: lib/javacomp.c:2343
+#, c-format
+msgid "Java compiler not found, try installing gcj or set $JAVAC"
+msgstr "Không tìm thấy trình biên dịch Java nên thử cài đặt trình « gcj » hoặc đặt biến môi trường « $JAVAC »."
+
+#: lib/javaexec.c:417
+#, c-format
+msgid "Java virtual machine not found, try installing gij or set $JAVA"
+msgstr "Không tìm thấy cơ chế ảo Java nên thử cài đặt trình « gcj » hoặc đặt biến môi trường « $JAVAC »."
+
+#: lib/pipe.c:138 lib/pipe.c:142 lib/pipe.c:263 lib/pipe.c:267
+#, c-format
+msgid "cannot create pipe"
+msgstr "không thể tạo ống dẫn"
+
+#: lib/openat-die.c:34
+#, c-format
+msgid "unable to record current working directory"
+msgstr "không thể ghi lưu thư mục làm việc hiện thời"
+
+#: lib/openat-die.c:47
+#, c-format
+msgid "failed to return to initial working directory"
+msgstr "chưa trở về thư mục làm việc ban đầu"
+
+#: lib/mkdir-p.c:196
+#, c-format
+msgid "cannot change permissions of %s"
+msgstr "không thể thay đổi quyền hạn của %s"
+
+#: lib/mkdir-p.c:206
+#, c-format
+msgid "cannot create directory %s"
+msgstr "không thể tạo thư mục %s"
+
+#: lib/obstack.c:423 lib/obstack.c:425 lib/xalloc-die.c:34 lib/xsetenv.c:37
+#, c-format
+msgid "memory exhausted"
+msgstr "hết bộ nhớ hoàn toàn"
+
+#: lib/regcomp.c:132
+msgid "Success"
+msgstr "Thành công"
+
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr "Không khớp"
+
+#: lib/regcomp.c:138
+msgid "Invalid regular expression"
+msgstr "Biểu thức chính quy không hợp lệ"
+
+#: lib/regcomp.c:141
+msgid "Invalid collation character"
+msgstr "Ký tự đối chiếu không hợp lệ"
+
+#: lib/regcomp.c:144
+msgid "Invalid character class name"
+msgstr "Tên loại ký tự không hợp lệ"
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr "Có xuyệc ngược theo sau"
+
+#: lib/regcomp.c:150
+msgid "Invalid back reference"
+msgstr "Tham chiếu ngược không hợp lệ"
+
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr "Chưa khớp ký tự « [ » hay « [^ »"
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr "Chưa khớp ký tự « ( » hay « \\( »"
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr "Chưa khớp ký tự « \\{ »"
+
+#: lib/regcomp.c:162
+msgid "Invalid content of \\{\\}"
+msgstr "Nội dụng « \\{\\} » không hợp lệ"
+
+#: lib/regcomp.c:165
+msgid "Invalid range end"
+msgstr "Kết thúc phạm vi không hợp lệ"
+
+#: lib/regcomp.c:168
+msgid "Memory exhausted"
+msgstr "Hết bộ nhớ hoàn toàn"
+
+#: lib/regcomp.c:171
+msgid "Invalid preceding regular expression"
+msgstr "Biểu thức chính quy đi trước không hợp lệ"
+
+#: lib/regcomp.c:174
+msgid "Premature end of regular expression"
+msgstr "Biểu thức chính quy kết thúc quá sớm"
+
+#: lib/regcomp.c:177
+msgid "Regular expression too big"
+msgstr "Biểu thức chính quy quá lớn"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr "Chưa khớp ký tự « ) » hay « \\) »"
+
+#: lib/regcomp.c:701
+msgid "No previous regular expression"
+msgstr "Không có biểu thức chính quy đi trước"
+
+#: lib/pagealign_alloc.c:139
+#, c-format
+msgid "Failed to open /dev/zero for read"
+msgstr "Lỗi mở thiết bị « /dev/zero  » để đọc"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  If the catalog has no translation,
+#. locale_quoting_style quotes `like this', and
+#. clocale_quoting_style quotes "like this".
+#.
+#. For example, an American English Unicode locale should
+#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
+#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
+#. MARK).  A British English Unicode locale should instead
+#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:249
+msgid "`"
+msgstr "« "
+
+#: lib/quotearg.c:250
+msgid "'"
+msgstr " »"
+
+#. TRANSLATORS: A regular expression testing for an affirmative answer
+#. (english: "yes").  Testing the first character may be sufficient.
+#. Take care to consider upper and lower case.
+#. To enquire the regular expression that your system uses for this
+#. purpose, you can use the command
+#. locale -k LC_MESSAGES | grep '^yesexpr='
+#: lib/rpmatch.c:147
+msgid "^[yY]"
+msgstr "^[cC]"
+
+#. TRANSLATORS: A regular expression testing for a negative answer
+#. (english: "no").  Testing the first character may be sufficient.
+#. Take care to consider upper and lower case.
+#. To enquire the regular expression that your system uses for this
+#. purpose, you can use the command
+#. locale -k LC_MESSAGES | grep '^noexpr='
+#: lib/rpmatch.c:160
+msgid "^[nN]"
+msgstr "^[kK]"
+
+#: lib/unicodeio.c:102
+msgid "iconv function not usable"
+msgstr "hàm iconv vô ích"
+
+#: lib/unicodeio.c:104
+msgid "iconv function not available"
+msgstr "không có hàm iconv"
+
+#: lib/unicodeio.c:111
+msgid "character out of range"
+msgstr "Ký tự ở ngoại phạm vi"
+
+#: lib/unicodeio.c:175
+#, c-format
+msgid "cannot convert U+%04X to local character set"
+msgstr "không thể chuyển đổi U+%04X sang bộ ký tự địa phương"
+
+#: lib/unicodeio.c:177
+#, c-format
+msgid "cannot convert U+%04X to local character set: %s"
+msgstr "không thể chuyển đổi U+%04X sang bộ ký tự địa phương: %s"
+
+#: lib/userspec.c:106
+msgid "invalid user"
+msgstr "người dùng không hợp lệ"
+
+#: lib/userspec.c:107
+msgid "invalid group"
+msgstr "nhóm không hợp lệ"
+
+#: lib/userspec.c:108
+msgid "invalid spec"
+msgstr "đặc tả không hợp lệ"
+
+#: lib/verror.c:73
+#, c-format
+msgid "unable to display error message"
+msgstr "không thể hiển thị thông điệp lỗi"
+
+#: lib/copy-acl.c:547
+#, c-format
+msgid "preserving permissions for %s"
+msgstr "đang bảo tồn quyền hạn về %s"
+
+#: lib/xmemcoll.c:48
+#, c-format
+msgid "string comparison failed"
+msgstr "lỗi so sánh chuỗi"
+
+#: lib/xmemcoll.c:49
+#, c-format
+msgid "Set LC_ALL='C' to work around the problem."
+msgstr "Hãy lập « LC_ALL='C' » để chỉnh sửa vấn đề đó."
+
+#: lib/xmemcoll.c:51
+#, c-format
+msgid "The strings compared were %s and %s."
+msgstr "Hai chuỗi được so sánh là %s và %s."
+
+#: lib/xprintf.c:50 lib/xprintf.c:76
+#, c-format
+msgid "cannot perform formatted output"
+msgstr "không thể thực hiện kết xuất có định dạng"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:65
+msgid "(C)"
+msgstr "©"
+
+#: lib/version-etc.c:67
+msgid ""
+"\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"\n"
+"GPLv3+: Giấy Phép Công Cộng GNU, phiên bản 3 hay sau <http://gnu.org/licenses/gpl.html>\n"
+"Đây là phần mềm tự do : bạn có quyền thay đổi và phát hành lại nó.\n"
+"KHÔNG CÓ BẢO HÀNH GÌ CẢ, với điều kiện được pháp luật cho phép.\n"
+"\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:83
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Tác giả: %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:87
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "Tác giả: %s và %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:91
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "Tác giả: %s, %s, và %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:97
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Tác giả: %s, %s, %s,\n"
+"và %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:103
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Tác giả: %s, %s, %s,\n"
+"%s, và %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:109
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"Tác gia: %s, %s, %s,\n"
+"%s, %s, và %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:116
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"Tác giả: %s, %s, %s,\n"
+"%s, %s, %s, và %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:123
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Tác giả: %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"và %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:131
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Tác giả: %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, và %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:141
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"Tác giả: %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, và các người khác.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:181
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"\n"
+"Hãy thông báo lỗi cho <%s>.\n"
+
+#: lib/version-etc.c:182
+#, c-format
+msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
+msgstr "Trang chủ %s: <http://www.gnu.org/software/%s/>.\n"
+
+#: lib/version-etc.c:184
+msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
+msgstr "Trợ giúp chung về cách sử dụng phần mềm GNU: <http://www.gnu.org/gethelp/>.\n"
+
+#: lib/xstrtol-error.c:63
+#, c-format
+msgid "invalid %s%s argument `%s'"
+msgstr "đối số %s%s không hợp lệ « %s »"
+
+#: lib/xstrtol-error.c:68
+#, c-format
+msgid "invalid suffix in %s%s argument `%s'"
+msgstr "hậu tố không hợp lệ trong đối số %s%s « %s »"
+
+#: lib/xstrtol-error.c:72
+#, c-format
+msgid "%s%s argument `%s' too large"
+msgstr "Đối số %s%s « %s » quá lớn"
+
+#: lib/set-mode-acl.c:488
+#, c-format
+msgid "setting permissions for %s"
+msgstr "đang đặt quyền hạn về %s"
+
+#: lib/strsignal.c:111
+#, c-format
+msgid "Real-time signal %d"
+msgstr "Tín hiệu thời gian thật %d"
+
+#: lib/strsignal.c:115
+#, c-format
+msgid "Unknown signal %d"
+msgstr "Không rõ tín hiệu %d"
+
+#: lib/wait-process.c:223 lib/wait-process.c:255 lib/wait-process.c:317
+#, c-format
+msgid "%s subprocess"
+msgstr "Tiến trình con %s"
+
+#: lib/wait-process.c:274 lib/wait-process.c:346
+#, c-format
+msgid "%s subprocess got fatal signal %d"
+msgstr "Tiến trình con %s đã nhận tín hiệu nghiêm trọng %d"
+
+#: lib/sigpipe-die.c:37
+msgid "error writing to a closed pipe or socket"
+msgstr "lỗi ghi vào một đường ống hay ổ cắm bị đóng"

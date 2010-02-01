@@ -1,0 +1,450 @@
+# Terjemahan coreutils untuk Bahasa Melayu.
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# Hasbullah Bin Pit <sebol@ikhlas.com>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  coreutils 5.0.90\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2005-09-30 17:42+0300\n"
+"PO-Revision-Date: 2003-08-10 16:00+0800\n"
+"Last-Translator: Hasbullah Bin Pit <sebol@ikhlas.com>\n"
+"Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/argmatch.c:137
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "hujah tidak sah %s bagi %s"
+
+#: lib/argmatch.c:138
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "hujah ambiguous %s bagi %s"
+
+#: lib/argmatch.c:157
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Hujah sah adalah:"
+
+#: lib/argp-help.c:1194
+#, fuzzy
+msgid ""
+"Mandatory or optional arguments to long options are also mandatory or "
+"optional for any corresponding short options."
+msgstr ""
+"Hujah mandatori kepada opsyen panjang andalah mandatori bagi opsyen pendek "
+"juga.\n"
+
+#: lib/argp-help.c:1597
+#, fuzzy
+msgid " [OPTION...]"
+msgstr "Pengunaan: %s [OPSYEN]...\n"
+
+#: lib/argp-help.c:1624
+#, fuzzy, c-format
+msgid "Try `%s --help' or `%s --usage' for more information.\n"
+msgstr "Cuba `%s --help' untuk maklumat lanjut .\n"
+
+#: lib/argp-help.c:1652
+#, fuzzy, c-format
+msgid "Report bugs to %s.\n"
+msgstr ""
+"\n"
+"Lapor pepijat ke <%s>.\n"
+
+#: lib/argp-help.c:1872 lib/error.c:121
+msgid "Unknown system error"
+msgstr "Ralat sistem yang tidak diketahui"
+
+#: lib/argp-parse.c:84
+msgid "NAME"
+msgstr "NAMA"
+
+#: lib/argp-parse.c:619
+#, fuzzy, c-format
+msgid "%s: Too many arguments\n"
+msgstr "terlalu banyak hujah"
+
+#: lib/c-stack.c:244
+#, fuzzy
+msgid "program error"
+msgstr "ralat membaca"
+
+#: lib/closeout.c:94
+msgid "write error"
+msgstr "ralat menulis"
+
+#: lib/copy-file.c:65
+#, fuzzy, c-format
+msgid "error while opening \"%s\" for reading"
+msgstr "tak dapat buka %s untuk dibaca"
+
+#: lib/copy-file.c:72
+#, fuzzy, c-format
+msgid "cannot open backup file \"%s\" for writing"
+msgstr "tak dapat buka %s untuk dibaca"
+
+#: lib/copy-file.c:80
+#, fuzzy, c-format
+msgid "error reading \"%s\""
+msgstr "membaca %s"
+
+#: lib/copy-file.c:85 lib/copy-file.c:89
+#, fuzzy, c-format
+msgid "error writing \"%s\""
+msgstr "menulis %s"
+
+#: lib/copy-file.c:91
+#, fuzzy, c-format
+msgid "error after reading \"%s\""
+msgstr "membaca %s"
+
+#: lib/csharpcomp.c:273
+#, fuzzy
+msgid "fdopen() failed"
+msgstr "pembukaan gagal"
+
+#: lib/execute.c:186 lib/execute.c:262 lib/execute.c:304 lib/pipe.c:231
+#: lib/pipe.c:349 lib/pipe.c:409 lib/wait-process.c:336 lib/wait-process.c:403
+#, fuzzy, c-format
+msgid "%s subprocess failed"
+msgstr "fail istimewa blok"
+
+#: lib/file-type.c:43
+msgid "regular empty file"
+msgstr "fail kosong biasa"
+
+#: lib/file-type.c:43
+msgid "regular file"
+msgstr "fail biasa"
+
+#: lib/file-type.c:46
+msgid "directory"
+msgstr "direktori"
+
+#: lib/file-type.c:49
+msgid "block special file"
+msgstr "fail istimewa blok"
+
+#: lib/file-type.c:52
+msgid "character special file"
+msgstr "fail istimewa aksara"
+
+#: lib/file-type.c:55
+msgid "fifo"
+msgstr "fifo"
+
+#: lib/file-type.c:58
+msgid "symbolic link"
+msgstr "pautan simbolik"
+
+#: lib/file-type.c:61
+msgid "socket"
+msgstr "soket"
+
+#: lib/file-type.c:64
+msgid "message queue"
+msgstr "giliran mesej"
+
+#: lib/file-type.c:70
+msgid "shared memory object"
+msgstr "objek memori terkongsi"
+
+#: lib/file-type.c:73
+#, fuzzy
+msgid "typed memory object"
+msgstr "objek memori terkongsi"
+
+#: lib/file-type.c:75
+msgid "weird file"
+msgstr "fail pelik"
+
+#: lib/gai_strerror.c:45
+#, fuzzy
+msgid "Address family for hostname not supported"
+msgstr "fail fifo tidak disokong"
+
+#: lib/gai_strerror.c:49
+#, fuzzy
+msgid "ai_family not supported"
+msgstr "fail fifo tidak disokong"
+
+#: lib/gai_strerror.c:54
+#, fuzzy
+msgid "ai_socktype not supported"
+msgstr "fail fifo tidak disokong"
+
+#: lib/gai_strerror.c:55
+#, fuzzy
+msgid "System error"
+msgstr "ralat menulis"
+
+#: lib/gai_strerror.c:74
+#, fuzzy
+msgid "Unknown error"
+msgstr "Ralat sistem yang tidak diketahui"
+
+#: lib/getopt.c:551 lib/getopt.c:570
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: opsyen `%s' adalah ambiguous\n"
+
+#: lib/getopt.c:603 lib/getopt.c:607
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: opsyen `--%s' tidak mengizinkan hujah\n"
+
+#: lib/getopt.c:616 lib/getopt.c:621
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: opsyen `%c%s' tidak mengizinkan hujah\n"
+
+#: lib/getopt.c:667 lib/getopt.c:689 lib/getopt.c:1020 lib/getopt.c:1042
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: opsyen  `%s' memerlukan hujah\n"
+
+#: lib/getopt.c:727 lib/getopt.c:730
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: opensyen tidak dikenali `--%s'\n"
+
+#: lib/getopt.c:738 lib/getopt.c:741
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: opensyen tidak dikenali `%c%s'\n"
+
+#: lib/getopt.c:796 lib/getopt.c:799
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: opsyen tidak dibenarkan -- %c\n"
+
+#: lib/getopt.c:805 lib/getopt.c:808
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: opsyen tidak sah -- %c\n"
+
+#: lib/getopt.c:863 lib/getopt.c:882 lib/getopt.c:1095 lib/getopt.c:1116
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: opsyen memerlukan hujah -- %c\n"
+
+#: lib/getopt.c:935 lib/getopt.c:954
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: opsyen `-W %s' adalah ambiguous\n"
+
+#: lib/getopt.c:978 lib/getopt.c:999
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: opsyen `-W %s' tidak mengizinkan hujan\n"
+
+#: lib/human.c:486
+msgid "block size"
+msgstr "saiz blok"
+
+#: lib/mkdir-p.c:106
+#, c-format
+msgid "%s exists but is not a directory"
+msgstr "%s wujud tapi ianya bukan direktori"
+
+#: lib/mkdir-p.c:203 lib/mkdir-p.c:294
+#, c-format
+msgid "cannot change owner and/or group of %s"
+msgstr "tak dapat menukar hakmilik dan/atau kumpulan %s"
+
+#: lib/mkdir-p.c:229 lib/mkdir-p.c:266
+#, c-format
+msgid "cannot create directory %s"
+msgstr "tak dapat mencipta direktori %s"
+
+#: lib/mkdir-p.c:240
+#, c-format
+msgid "cannot chdir to directory %s"
+msgstr "tak dapat chdir ke direktori %s"
+
+#: lib/mkdir-p.c:307 lib/mkdir-p.c:332
+#, c-format
+msgid "cannot change permissions of %s"
+msgstr "tak dapat menukar keizinan %s"
+
+#: lib/obstack.c:438 lib/obstack.c:441 lib/xalloc-die.c:38 lib/xsetenv.c:40
+msgid "memory exhausted"
+msgstr "memori keletihan"
+
+#: lib/openat-die.c:36
+#, fuzzy
+msgid "unable to record current working directory"
+msgstr "gagal untuk kembali ke direktori kerja pemulaan"
+
+#: lib/openat-die.c:49
+msgid "failed to return to initial working directory"
+msgstr "gagal untuk kembali ke direktori kerja pemulaan"
+
+#: lib/pagealign_alloc.c:143
+#, fuzzy
+msgid "Failed to open /dev/zero for read"
+msgstr "gagal mengekalkan  keizinan bagi %s"
+
+#: lib/pipe.c:157 lib/pipe.c:160 lib/pipe.c:264 lib/pipe.c:267
+#, fuzzy
+msgid "cannot create pipe"
+msgstr "tak boleh mencipta pautan %s"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  If the catalog has no translation,
+#. locale_quoting_style quotes `like this', and
+#. clocale_quoting_style quotes "like this".
+#.
+#. For example, an American English Unicode locale should
+#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
+#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
+#. MARK).  A British English Unicode locale should instead
+#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:245
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:246
+msgid "'"
+msgstr "`"
+
+#: lib/regcomp.c:137
+#, fuzzy
+msgid "Invalid regular expression"
+msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#: lib/regcomp.c:143
+#, fuzzy
+msgid "Invalid character class name"
+msgstr "aksara tidak sah pada %s pada rentetan mod %s"
+
+#: lib/regcomp.c:167
+#, fuzzy
+msgid "Memory exhausted"
+msgstr "memori keletihan"
+
+#: lib/regcomp.c:170
+#, fuzzy
+msgid "Invalid preceding regular expression"
+msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#: lib/regcomp.c:173
+#, fuzzy
+msgid "Premature end of regular expression"
+msgstr "ralat pada carian ungkapan biasa (regexp)"
+
+#: lib/regcomp.c:176
+#, fuzzy
+msgid "Regular expression too big"
+msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#: lib/regcomp.c:659
+#, fuzzy
+msgid "No previous regular expression"
+msgstr "ralat pada carian ungkapan biasa (regexp)"
+
+#: lib/rpmatch.c:70
+msgid "^[yY]"
+msgstr "^[yY]"
+
+#: lib/rpmatch.c:73
+msgid "^[nN]"
+msgstr "^[tT]"
+
+#: lib/unicodeio.c:147
+msgid "iconv function not usable"
+msgstr "fungsi iconv tak boleh digunakan"
+
+#: lib/unicodeio.c:149
+msgid "iconv function not available"
+msgstr "fungsi iconv tidak ada"
+
+#: lib/unicodeio.c:156
+msgid "character out of range"
+msgstr "aksara di luar julat"
+
+#: lib/unicodeio.c:219
+#, c-format
+msgid "cannot convert U+%04X to local character set"
+msgstr "tak dapat menukar U+%04X ke set aksara lokal"
+
+#: lib/unicodeio.c:221
+#, c-format
+msgid "cannot convert U+%04X to local character set: %s"
+msgstr "tak dapat menukar U+%04X ke set aksara lokal: %s"
+
+#: lib/userspec.c:110
+msgid "invalid user"
+msgstr "pengguna tidak sah"
+
+#: lib/userspec.c:111
+msgid "invalid group"
+msgstr "kumpulan tidak sah"
+
+#: lib/userspec.c:113
+msgid "cannot get the login group of a numeric UID"
+msgstr "tak boleh mendapatkan kumpulan logmasuk untuk UID numerik"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:90
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Ditulis oleh %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:94
+#, fuzzy, c-format
+msgid "Written by %s and %s.\n"
+msgstr "Ditulis oleh %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:98
+#, fuzzy, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "Ditulis oleh %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:104
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr "Ditulis oleh %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:110
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr "Ditulis oleh %s.\n"
+
+#: lib/xmemcoll.c:50
+msgid "string comparison failed"
+msgstr "perbandingan rentetan gagal"
+
+#: lib/xmemcoll.c:51
+msgid "Set LC_ALL='C' to work around the problem."
+msgstr "Tetapkan LC_ALL='C' untuk mengatasi masalah."
+
+#: lib/xmemcoll.c:53
+#, c-format
+msgid "The strings compared were %s and %s."
+msgstr "Rentetan dibandingkan adalah %s dan %s."

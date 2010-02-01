@@ -15,7 +15,7 @@
 
 
 # Specification in the form of a command-line invocation:
-#   gnulib-tool --import --dir=. --lib=libgnu --source-base=lib --m4-base=m4 --doc-base=doc --tests-base=tests --aux-dir=build-aux --no-libtool --macro-prefix=gl getline getopt gettext locale maintainer-makefile regex sys_stat sys_wait unistd xalloc
+#   gnulib-tool --import --dir=. --lib=libgnu --source-base=lib --m4-base=m4 --po-base=lib/po --doc-base=doc --tests-base=tests --aux-dir=build-aux --no-libtool --macro-prefix=gl --po-domain=wdiff getline getopt gettext locale maintainer-makefile regex sys_stat sys_wait unistd xalloc
 
 # Specification in the form of a few gnulib-tool.m4 macro invocations:
 gl_LOCAL_DIR([])
@@ -34,10 +34,10 @@ gl_MODULES([
 gl_AVOID([])
 gl_SOURCE_BASE([lib])
 gl_M4_BASE([m4])
-gl_PO_BASE([])
+gl_PO_BASE([lib/po])
 gl_DOC_BASE([doc])
 gl_TESTS_BASE([tests])
 gl_LIB([libgnu])
 gl_MAKEFILE_NAME([])
 gl_MACRO_PREFIX([gl])
-gl_PO_DOMAIN([])
+gl_PO_DOMAIN([wdiff])

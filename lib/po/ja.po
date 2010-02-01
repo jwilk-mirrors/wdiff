@@ -1,0 +1,705 @@
+# Translation of `gnulib' messages to Japanese.
+# Copyright (C) 2000, 2002, 2006 Free Software Foundation, Inc.
+# GOTO Masanori <gotom@debian.or.jp>, 2006.
+# Masahito Yamaga <yamaga@ipc.chiba-u.ac.jp>, 2002.
+#  derived from the version by Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp> 1998
+#                              Jun Nishii <jun@flatout.org> 1999
+#                              Daisuke Yamashita <yamad@mb.infoweb.ne.jp> 1999
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnulib 1.0\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2005-09-30 17:42+0300\n"
+"PO-Revision-Date: 2006-06-10 13:12+0900\n"
+"Last-Translator: GOTO Masanori <gotom@debian.or.jp>\n"
+"Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/argmatch.c:137
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "%2$s に対する引数 %1$s が間違っています"
+
+#: lib/argmatch.c:138
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "%2$s に対する引数 %1$s が曖昧です"
+
+#: lib/argmatch.c:157
+#, c-format
+msgid "Valid arguments are:"
+msgstr "有効な引数:"
+
+#: lib/argp-help.c:194
+#, c-format
+msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+msgstr "%.*s: ARGP_HELP_FMT パラメータには値が必要です"
+
+#: lib/argp-help.c:203
+#, c-format
+msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+msgstr "%.*s: 不明な ARGP_HELP_FMT パラメータ"
+
+#: lib/argp-help.c:215
+#, c-format
+msgid "Garbage in ARGP_HELP_FMT: %s"
+msgstr "ARGP_HELP_FMT 中にごみがあります: %s"
+
+#: lib/argp-help.c:1194
+msgid "Mandatory or optional arguments to long options are also mandatory or optional for any corresponding short options."
+msgstr "ロングオプションで必須または任意の引数は、それに対応するショートオプションでも同じように必須または任意です."
+
+#: lib/argp-help.c:1581
+msgid "Usage:"
+msgstr "使用法:"
+
+#: lib/argp-help.c:1585
+msgid "  or: "
+msgstr " 又は: "
+
+#: lib/argp-help.c:1597
+msgid " [OPTION...]"
+msgstr " [オプション...]"
+
+#: lib/argp-help.c:1624
+#, c-format
+msgid "Try `%s --help' or `%s --usage' for more information.\n"
+msgstr "詳細は`%s --help'または`%s --usage'を実行して下さい.\n"
+
+#: lib/argp-help.c:1652
+#, c-format
+msgid "Report bugs to %s.\n"
+msgstr "バグを発見したら %s 宛に報告して下さい.\n"
+
+#: lib/argp-help.c:1872 lib/error.c:121
+msgid "Unknown system error"
+msgstr "未知のシステムエラー"
+
+#: lib/argp-parse.c:82
+msgid "Give this help list"
+msgstr "このヘルプの表示"
+
+#: lib/argp-parse.c:83
+msgid "Give a short usage message"
+msgstr "短い使用方法の表示"
+
+#: lib/argp-parse.c:84
+msgid "NAME"
+msgstr "名前"
+
+#: lib/argp-parse.c:84
+msgid "Set the program name"
+msgstr "プログラム名をセットする"
+
+#: lib/argp-parse.c:85
+msgid "SECS"
+msgstr "SECS"
+
+#: lib/argp-parse.c:86
+msgid "Hang for SECS seconds (default 3600)"
+msgstr "SECS 秒でハング (デフォルト 3600)"
+
+#: lib/argp-parse.c:147
+msgid "Print program version"
+msgstr "プログラムのバージョンを表示する"
+
+#: lib/argp-parse.c:163
+msgid "(PROGRAM ERROR) No version known!?"
+msgstr "(プログラムエラー) 未知のバージョン!?"
+
+#: lib/argp-parse.c:619
+#, c-format
+msgid "%s: Too many arguments\n"
+msgstr "%s: 引数が多すぎます\n"
+
+#: lib/argp-parse.c:762
+msgid "(PROGRAM ERROR) Option should have been recognized!?"
+msgstr "(プログラムエラー) オプションは認識されているべきです!?"
+
+#: lib/c-stack.c:244
+msgid "program error"
+msgstr "プログラムエラー"
+
+#: lib/c-stack.c:245
+msgid "stack overflow"
+msgstr "スタックオーバーフロー"
+
+#: lib/closeout.c:94
+msgid "write error"
+msgstr "書き込みエラー"
+
+#: lib/copy-file.c:65
+#, c-format
+msgid "error while opening \"%s\" for reading"
+msgstr "\"%s\"を読込むため開いている際にエラー"
+
+#: lib/copy-file.c:72
+#, c-format
+msgid "cannot open backup file \"%s\" for writing"
+msgstr "書込み用バックアップファイル\"%s\"を開くことができません"
+
+#: lib/copy-file.c:80
+#, c-format
+msgid "error reading \"%s\""
+msgstr "\"%s\"の読込み中でエラー"
+
+#: lib/copy-file.c:85 lib/copy-file.c:89
+#, c-format
+msgid "error writing \"%s\""
+msgstr "\"%s\"の書込み中でエラー"
+
+#: lib/copy-file.c:91
+#, c-format
+msgid "error after reading \"%s\""
+msgstr "\"%s\"の読込み後にエラー"
+
+#: lib/csharpcomp.c:273
+msgid "fdopen() failed"
+msgstr "fdopen()に失敗"
+
+#: lib/csharpcomp.c:526
+msgid "C# compiler not found, try installing pnet"
+msgstr "C# コンパイラが見つからないので pnet インストールしてみてください"
+
+#: lib/csharpexec.c:251
+msgid "C# virtual machine not found, try installing pnet"
+msgstr "C# 仮想マシンが見つからないので pnet をインストールしてみてください"
+
+#: lib/execute.c:186 lib/execute.c:262 lib/execute.c:304 lib/pipe.c:231
+#: lib/pipe.c:349 lib/pipe.c:409 lib/wait-process.c:336 lib/wait-process.c:403
+#, c-format
+msgid "%s subprocess failed"
+msgstr "%s サブプロセスが失敗しました"
+
+#: lib/file-type.c:43
+msgid "regular empty file"
+msgstr "通常の空ファイル"
+
+#: lib/file-type.c:43
+msgid "regular file"
+msgstr "通常ファイル"
+
+#: lib/file-type.c:46
+msgid "directory"
+msgstr "ディレクトリ"
+
+#: lib/file-type.c:49
+msgid "block special file"
+msgstr "ブロックスペシャルファイル"
+
+#: lib/file-type.c:52
+msgid "character special file"
+msgstr "キャラクタスペシャルファイル"
+
+#: lib/file-type.c:55
+msgid "fifo"
+msgstr "fifo"
+
+#: lib/file-type.c:58
+msgid "symbolic link"
+msgstr "シンボリックリンク"
+
+#: lib/file-type.c:61
+msgid "socket"
+msgstr "ソケット"
+
+#: lib/file-type.c:64
+msgid "message queue"
+msgstr "メッセージキュー"
+
+#: lib/file-type.c:67
+msgid "semaphore"
+msgstr "セマフォ"
+
+#: lib/file-type.c:70
+msgid "shared memory object"
+msgstr "共有メモリオブジェクト"
+
+#: lib/file-type.c:73
+msgid "typed memory object"
+msgstr "型付きメモリオブジェクト"
+
+#: lib/file-type.c:75
+msgid "weird file"
+msgstr "不明なファイル"
+
+#: lib/gai_strerror.c:45
+msgid "Address family for hostname not supported"
+msgstr "hostnameのアドレスファミリはサポートされていません"
+
+#: lib/gai_strerror.c:46
+msgid "Temporary failure in name resolution"
+msgstr "名前解決時の一時的な失敗"
+
+#: lib/gai_strerror.c:47
+msgid "Bad value for ai_flags"
+msgstr "ai_flags の値が不正です"
+
+#: lib/gai_strerror.c:48
+msgid "Non-recoverable failure in name resolution"
+msgstr "名前の解決時に回復不可能な失敗"
+
+#: lib/gai_strerror.c:49
+msgid "ai_family not supported"
+msgstr "ai_family はサポートしていません"
+
+#: lib/gai_strerror.c:50
+msgid "Memory allocation failure"
+msgstr "メモリ確保に失敗しました"
+
+#: lib/gai_strerror.c:51
+msgid "No address associated with hostname"
+msgstr "ホスト名に対応するアドレスがありません"
+
+#: lib/gai_strerror.c:52
+msgid "Name or service not known"
+msgstr "名前またはサービスが不明です"
+
+#: lib/gai_strerror.c:53
+msgid "Servname not supported for ai_socktype"
+msgstr "サーバ名は ai_socktype に対してサポートしていません"
+
+#: lib/gai_strerror.c:54
+msgid "ai_socktype not supported"
+msgstr "ai_socktype はサポートしていません"
+
+#: lib/gai_strerror.c:55
+msgid "System error"
+msgstr "システムエラー"
+
+#: lib/gai_strerror.c:57
+msgid "Processing request in progress"
+msgstr "要求はすでに処理中です"
+
+#: lib/gai_strerror.c:58
+msgid "Request canceled"
+msgstr "要求は中断されました"
+
+#: lib/gai_strerror.c:59
+msgid "Request not canceled"
+msgstr "要求は中断されませんでした"
+
+#: lib/gai_strerror.c:60
+msgid "All requests done"
+msgstr "全ての要求処理は完了しました"
+
+#: lib/gai_strerror.c:61
+msgid "Interrupted by a signal"
+msgstr "シグナルによる割り込み"
+
+#: lib/gai_strerror.c:62
+msgid "Parameter string not correctly encoded"
+msgstr "パラメータ文字列は正しくエンコードされていない"
+
+#: lib/gai_strerror.c:74
+msgid "Unknown error"
+msgstr "未知のエラー"
+
+#: lib/getopt.c:551 lib/getopt.c:570
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: オプション`%s'は曖昧です\n"
+
+#: lib/getopt.c:603 lib/getopt.c:607
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: オプション`--%s'は引数をとりません\n"
+
+#: lib/getopt.c:616 lib/getopt.c:621
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: オプション`%c%s'に引数は必要ありません\n"
+
+#: lib/getopt.c:667 lib/getopt.c:689 lib/getopt.c:1020 lib/getopt.c:1042
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: オプション`%s'には引数が必要です\n"
+
+#: lib/getopt.c:727 lib/getopt.c:730
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: オプション`--%s'を認識できません\n"
+
+#: lib/getopt.c:738 lib/getopt.c:741
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: オプション`%c%s'を認識できません\n"
+
+#: lib/getopt.c:796 lib/getopt.c:799
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: 不正なオプション -- %c\n"
+
+#: lib/getopt.c:805 lib/getopt.c:808
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: オプションが違います -- %c\n"
+
+#: lib/getopt.c:863 lib/getopt.c:882 lib/getopt.c:1095 lib/getopt.c:1116
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: オプションには引数が必要です -- %c\n"
+
+#: lib/getopt.c:935 lib/getopt.c:954
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: オプション`-W %s'は曖昧です\n"
+
+#: lib/getopt.c:978 lib/getopt.c:999
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: オプション`-W %s'は引数をとりません\n"
+
+#: lib/human.c:486
+msgid "block size"
+msgstr "ブロックサイズ"
+
+#: lib/javacomp.c:467
+msgid "Java compiler not found, try installing gcj or set $JAVAC"
+msgstr "Java コンパイラが見つからないので gcj や set $JAVAC 設定を試してみてください"
+
+#: lib/javaexec.c:420
+msgid "Java virtual machine not found, try installing gij or set $JAVA"
+msgstr "Java 仮想マシンが見つからないので gij や set $JAVA 設定を試してみてください"
+
+#: lib/mkdir-p.c:106
+#, c-format
+msgid "%s exists but is not a directory"
+msgstr "%s は存在しますがディレクトリではありません"
+
+#: lib/mkdir-p.c:203 lib/mkdir-p.c:294
+#, c-format
+msgid "cannot change owner and/or group of %s"
+msgstr "%s のオーナーとグループを変更できません"
+
+#: lib/mkdir-p.c:229 lib/mkdir-p.c:266
+#, c-format
+msgid "cannot create directory %s"
+msgstr "ディレクトリ %s を作成できません"
+
+#: lib/mkdir-p.c:240
+#, c-format
+msgid "cannot chdir to directory %s"
+msgstr "ディレクトリ %s に移動できません"
+
+#: lib/mkdir-p.c:307 lib/mkdir-p.c:332
+#, c-format
+msgid "cannot change permissions of %s"
+msgstr "%s の属性を変更できません"
+
+#: lib/obstack.c:438 lib/obstack.c:441 lib/xalloc-die.c:38 lib/xsetenv.c:40
+msgid "memory exhausted"
+msgstr "メモリを使い果たしました"
+
+#: lib/openat-die.c:36
+msgid "unable to record current working directory"
+msgstr "現在の作業ディレクトリを記録できません"
+
+#: lib/openat-die.c:49
+msgid "failed to return to initial working directory"
+msgstr "最初の作業ディレクトリに戻るのに失敗しました"
+
+#: lib/pagealign_alloc.c:143
+msgid "Failed to open /dev/zero for read"
+msgstr "/dev/zeroを読込み用に開けません"
+
+#: lib/pipe.c:157 lib/pipe.c:160 lib/pipe.c:264 lib/pipe.c:267
+msgid "cannot create pipe"
+msgstr "パイプを作成できません"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  If the catalog has no translation,
+#. locale_quoting_style quotes `like this', and
+#. clocale_quoting_style quotes "like this".
+#.
+#. For example, an American English Unicode locale should
+#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
+#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
+#. MARK).  A British English Unicode locale should instead
+#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:245
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:246
+msgid "'"
+msgstr "'"
+
+#: lib/regcomp.c:131
+msgid "Success"
+msgstr "成功です"
+
+#: lib/regcomp.c:134
+msgid "No match"
+msgstr "一致しません"
+
+#: lib/regcomp.c:137
+msgid "Invalid regular expression"
+msgstr "無効な正規表現です"
+
+#: lib/regcomp.c:140
+msgid "Invalid collation character"
+msgstr "無効な照合文字です"
+
+#: lib/regcomp.c:143
+msgid "Invalid character class name"
+msgstr "無効なキャラクタクラス名です"
+
+#: lib/regcomp.c:146
+msgid "Trailing backslash"
+msgstr "バックスラッシュが残っています"
+
+#: lib/regcomp.c:149
+msgid "Invalid back reference"
+msgstr "無効な後方参照です"
+
+#: lib/regcomp.c:152
+msgid "Unmatched [ or [^"
+msgstr "[ もしくは [^ が一致しません"
+
+#: lib/regcomp.c:155
+msgid "Unmatched ( or \\("
+msgstr "( もしくは \\( が一致しません"
+
+#: lib/regcomp.c:158
+msgid "Unmatched \\{"
+msgstr "\\{ が一致しません"
+
+#: lib/regcomp.c:161
+msgid "Invalid content of \\{\\}"
+msgstr "無効な \\{\\} の内容です"
+
+#: lib/regcomp.c:164
+msgid "Invalid range end"
+msgstr "無効な終端範囲です"
+
+#: lib/regcomp.c:167
+msgid "Memory exhausted"
+msgstr "メモリを使い果たしました"
+
+#: lib/regcomp.c:170
+msgid "Invalid preceding regular expression"
+msgstr "前出の正規表現は無効です"
+
+#: lib/regcomp.c:173
+msgid "Premature end of regular expression"
+msgstr "正規表現の終端が早すぎます"
+
+#: lib/regcomp.c:176
+msgid "Regular expression too big"
+msgstr "正規表現が長すぎます"
+
+#: lib/regcomp.c:179
+msgid "Unmatched ) or \\)"
+msgstr ") もしくは \\) が一致しません"
+
+#: lib/regcomp.c:659
+msgid "No previous regular expression"
+msgstr "以前に正規表現が定義されていません"
+
+#: lib/rpmatch.c:70
+msgid "^[yY]"
+msgstr "^[yY]"
+
+#: lib/rpmatch.c:73
+msgid "^[nN]"
+msgstr "^[nN]"
+
+#: lib/unicodeio.c:147
+msgid "iconv function not usable"
+msgstr "iconv関数が使えません"
+
+#: lib/unicodeio.c:149
+msgid "iconv function not available"
+msgstr "iconv関数が有効ではありません"
+
+#: lib/unicodeio.c:156
+msgid "character out of range"
+msgstr "範囲外の文字"
+
+#: lib/unicodeio.c:219
+#, c-format
+msgid "cannot convert U+%04X to local character set"
+msgstr "U+%04X をローカル文字セットに変換できません"
+
+#: lib/unicodeio.c:221
+#, c-format
+msgid "cannot convert U+%04X to local character set: %s"
+msgstr "U+%04X をローカル文字セット %s に変換できません"
+
+#: lib/userspec.c:110
+msgid "invalid user"
+msgstr "ユーザ指定が不正"
+
+#: lib/userspec.c:111
+msgid "invalid group"
+msgstr "グループ指定が不正"
+
+#: lib/userspec.c:113
+msgid "cannot get the login group of a numeric UID"
+msgstr "数字のUIDのログイングループを取得できません"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:72
+msgid "(C)"
+msgstr "(C)"
+
+#: lib/version-etc.c:74
+msgid ""
+"\n"
+"This is free software.  You may redistribute copies of it under the terms of\n"
+"the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"\n"
+"本プログラムはフリーソフトウェアです. GNU一般公有使用許諾\n"
+"<http://www.gnu.org/licenses/gpl.html> で定められた条項の下で本プログラ\n"
+"ムのコピーを再配布できます. 適切な法が認る限りにおいて全くの無保証です.\n"
+"\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:90
+#, c-format
+msgid "Written by %s.\n"
+msgstr "作者 %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:94
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "作者 %s と %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:98
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "作者 %s, %s, %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:104
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"そして %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:110
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:116
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:123
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s, %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:130
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:138
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:148
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, 他.\n"
+
+#: lib/wait-process.c:279 lib/wait-process.c:311 lib/wait-process.c:369
+#, c-format
+msgid "%s subprocess"
+msgstr "%s サブプロセス"
+
+#: lib/wait-process.c:328 lib/wait-process.c:395
+#, c-format
+msgid "%s subprocess got fatal signal %d"
+msgstr "%s サブプロセスが致命的なシグナル %d を受信しました"
+
+#: lib/xmemcoll.c:50
+msgid "string comparison failed"
+msgstr "文字列の比較に失敗"
+
+#: lib/xmemcoll.c:51
+msgid "Set LC_ALL='C' to work around the problem."
+msgstr "問題を回避するために LC_ALL='C' を指定してください."
+
+#: lib/xmemcoll.c:53
+#, c-format
+msgid "The strings compared were %s and %s."
+msgstr "比較した文字列は %s と %s です."

@@ -1,0 +1,519 @@
+# translation of coreutils-5.2.1.po to Euskara
+# Basque translation of 5.2.1.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Coreutils-5.2.1 package.
+# Mikel Olasagasti <hey_neken@mundurat.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: coreutils-5.2.1\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2005-09-30 17:42+0300\n"
+"PO-Revision-Date: 2005-01-04 20:27+0100\n"
+"Last-Translator: Mikel Olasagasti <hey_neken@mundurat.net>\n"
+"Language-Team: Basque <translation-team-eu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: lib/argmatch.c:137
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "%s baliogabeko argumentua da %s-(r)entzat"
+
+#: lib/argmatch.c:138
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "%s argumentu anbiguoa da %s-(r)entzat"
+
+#: lib/argmatch.c:157
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Baliozko argumentuak hauek dira:"
+
+#: lib/argp-help.c:1194
+#, fuzzy
+msgid ""
+"Mandatory or optional arguments to long options are also mandatory or "
+"optional for any corresponding short options."
+msgstr ""
+"Beharrezkoak diren argumentuak aukera luzeetan, beharrezkoak dira aukera "
+"txikietan ere.\n"
+
+#: lib/argp-help.c:1597
+#, fuzzy
+msgid " [OPTION...]"
+msgstr "Erabilera: %s [AUKERA]...\n"
+
+#: lib/argp-help.c:1624
+#, fuzzy, c-format
+msgid "Try `%s --help' or `%s --usage' for more information.\n"
+msgstr "Saiatu `%s --help' erabiltzen informazio gehiagorako.\n"
+
+#: lib/argp-help.c:1652
+#, fuzzy, c-format
+msgid "Report bugs to %s.\n"
+msgstr ""
+"\n"
+"Programa-erroreen berri emateko idatzi hona: <%s>.\n"
+
+#: lib/argp-help.c:1872 lib/error.c:121
+msgid "Unknown system error"
+msgstr "Sistema-errore ezezaguna"
+
+#: lib/argp-parse.c:84
+msgid "NAME"
+msgstr "IZENA"
+
+#: lib/argp-parse.c:619
+#, fuzzy, c-format
+msgid "%s: Too many arguments\n"
+msgstr "e"
+
+#: lib/c-stack.c:244
+#, fuzzy
+msgid "program error"
+msgstr "irakurketa errorea"
+
+#: lib/closeout.c:94
+msgid "write error"
+msgstr "idazketa errorea"
+
+#: lib/copy-file.c:65
+#, fuzzy, c-format
+msgid "error while opening \"%s\" for reading"
+msgstr "errepikatu arte"
+
+#: lib/copy-file.c:72
+#, fuzzy, c-format
+msgid "cannot open backup file \"%s\" for writing"
+msgstr "errepikatu arte"
+
+#: lib/copy-file.c:80
+#, fuzzy, c-format
+msgid "error reading \"%s\""
+msgstr "errorea %s irakurtzen"
+
+#: lib/copy-file.c:85 lib/copy-file.c:89
+#, fuzzy, c-format
+msgid "error writing \"%s\""
+msgstr "errorea %s idazten"
+
+#: lib/copy-file.c:91
+#, fuzzy, c-format
+msgid "error after reading \"%s\""
+msgstr "errorea %s irakurtzen"
+
+#: lib/csharpcomp.c:273
+#, fuzzy
+msgid "fdopen() failed"
+msgstr "irekitzeak huts egin du"
+
+#: lib/execute.c:186 lib/execute.c:262 lib/execute.c:304 lib/pipe.c:231
+#: lib/pipe.c:349 lib/pipe.c:409 lib/wait-process.c:336 lib/wait-process.c:403
+#, fuzzy, c-format
+msgid "%s subprocess failed"
+msgstr "baliogabea"
+
+#: lib/file-type.c:43
+msgid "regular empty file"
+msgstr "fitxategi erregular hutsa"
+
+#: lib/file-type.c:43
+msgid "regular file"
+msgstr "Espresio erregularra"
+
+#: lib/file-type.c:46
+msgid "directory"
+msgstr "direktorioa"
+
+#: lib/file-type.c:49
+#, fuzzy
+msgid "block special file"
+msgstr "bloke tamainua"
+
+#: lib/file-type.c:52
+#, fuzzy
+msgid "character special file"
+msgstr "offset karakterea zero da"
+
+#: lib/file-type.c:55
+msgid "fifo"
+msgstr "fifo"
+
+#: lib/file-type.c:58
+msgid "symbolic link"
+msgstr "esteka sinbolikoa"
+
+#: lib/file-type.c:61
+msgid "socket"
+msgstr "socket-a"
+
+#: lib/file-type.c:64
+msgid "message queue"
+msgstr "Bidali ilara"
+
+#: lib/file-type.c:67
+msgid "semaphore"
+msgstr "semaforoa"
+
+#: lib/file-type.c:70
+msgid "shared memory object"
+msgstr "memoria partekatuaren objektua"
+
+#: lib/file-type.c:73
+#, fuzzy
+msgid "typed memory object"
+msgstr "memoria partekatuaren objektua"
+
+#: lib/file-type.c:75
+msgid "weird file"
+msgstr "fitxategi arraroa"
+
+#: lib/gai_strerror.c:45
+#, fuzzy
+msgid "Address family for hostname not supported"
+msgstr "fifo fitxategiek ez dute euskarririk"
+
+#: lib/gai_strerror.c:49
+#, fuzzy
+msgid "ai_family not supported"
+msgstr "fifo fitxategiek ez dute euskarririk"
+
+#: lib/gai_strerror.c:54
+#, fuzzy
+msgid "ai_socktype not supported"
+msgstr "fifo fitxategiek ez dute euskarririk"
+
+#: lib/gai_strerror.c:55
+#, fuzzy
+msgid "System error"
+msgstr "idazketa errorea"
+
+#: lib/gai_strerror.c:74
+#, fuzzy
+msgid "Unknown error"
+msgstr "Sistema-errore ezezaguna"
+
+#: lib/getopt.c:551 lib/getopt.c:570
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: '%s' aukera anbiguoa da\n"
+
+#: lib/getopt.c:603 lib/getopt.c:607
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: '--%s' aukerak ez du argumenturik onartzen\n"
+
+#: lib/getopt.c:616 lib/getopt.c:621
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: '%c%s' aukerak ez du argumenturik onartzen\n"
+
+#: lib/getopt.c:667 lib/getopt.c:689 lib/getopt.c:1020 lib/getopt.c:1042
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: '%s' aukerak argumentu bat behar du\n"
+
+#: lib/getopt.c:727 lib/getopt.c:730
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: '--%s' aukera ezezaguna\n"
+
+#: lib/getopt.c:738 lib/getopt.c:741
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: '%c%s' aukera ezezaguna\n"
+
+#: lib/getopt.c:796 lib/getopt.c:799
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: -- %c aukera ilegala\n"
+
+#: lib/getopt.c:805 lib/getopt.c:808
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: -- %c aukera baliogabea\n"
+
+#: lib/getopt.c:863 lib/getopt.c:882 lib/getopt.c:1095 lib/getopt.c:1116
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: aukerak --%c argumentu bat behar du\n"
+
+#: lib/getopt.c:935 lib/getopt.c:954
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: '-W %s' aukera anbiguoa da\n"
+
+#: lib/getopt.c:978 lib/getopt.c:999
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: '-W.%s' aukerak ez du argumenturik onartzen\n"
+
+#: lib/human.c:486
+msgid "block size"
+msgstr "bloke tamainua"
+
+#: lib/mkdir-p.c:106
+#, c-format
+msgid "%s exists but is not a directory"
+msgstr "%s badago baina ez da direktorio bat"
+
+#: lib/mkdir-p.c:203 lib/mkdir-p.c:294
+#, c-format
+msgid "cannot change owner and/or group of %s"
+msgstr "ezin da %s-(r)en jabetza eta/edo taldea aldatu"
+
+#: lib/mkdir-p.c:229 lib/mkdir-p.c:266
+#, c-format
+msgid "cannot create directory %s"
+msgstr "ezin da %s direktorioa sortu"
+
+#: lib/mkdir-p.c:240
+#, fuzzy, c-format
+msgid "cannot chdir to directory %s"
+msgstr "ezin da %s direktoriora aldatu"
+
+#: lib/mkdir-p.c:307 lib/mkdir-p.c:332
+#, c-format
+msgid "cannot change permissions of %s"
+msgstr "ezin da %s-(r)en baimenak aldatu"
+
+#: lib/obstack.c:438 lib/obstack.c:441 lib/xalloc-die.c:38 lib/xsetenv.c:40
+msgid "memory exhausted"
+msgstr "memoria agortuta"
+
+#: lib/openat-die.c:36
+#, fuzzy
+msgid "unable to record current working directory"
+msgstr "Inprimatu Fitxategi-izena - e e"
+
+#: lib/pagealign_alloc.c:143
+#, fuzzy
+msgid "Failed to open /dev/zero for read"
+msgstr "baimenak errepikatu arte"
+
+#: lib/pipe.c:157 lib/pipe.c:160 lib/pipe.c:264 lib/pipe.c:267
+#, fuzzy
+msgid "cannot create pipe"
+msgstr "ezin da %s esteka sortu"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  If the catalog has no translation,
+#. locale_quoting_style quotes `like this', and
+#. clocale_quoting_style quotes "like this".
+#.
+#. For example, an American English Unicode locale should
+#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
+#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
+#. MARK).  A British English Unicode locale should instead
+#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:245
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:246
+msgid "'"
+msgstr "'"
+
+#: lib/regcomp.c:137
+#, fuzzy
+msgid "Invalid regular expression"
+msgstr "baliogabea"
+
+#: lib/regcomp.c:143
+#, fuzzy
+msgid "Invalid character class name"
+msgstr "baliogabea"
+
+#: lib/regcomp.c:167
+#, fuzzy
+msgid "Memory exhausted"
+msgstr "memoria agortuta"
+
+#: lib/regcomp.c:170
+#, fuzzy
+msgid "Invalid preceding regular expression"
+msgstr "baliogabea"
+
+#: lib/regcomp.c:173
+#, fuzzy
+msgid "Premature end of regular expression"
+msgstr "in bilatu"
+
+#: lib/regcomp.c:176
+#, fuzzy
+msgid "Regular expression too big"
+msgstr "baliogabea"
+
+#: lib/regcomp.c:659
+#, fuzzy
+msgid "No previous regular expression"
+msgstr "in bilatu"
+
+#: lib/rpmatch.c:70
+msgid "^[yY]"
+msgstr "^[bB]"
+
+#: lib/rpmatch.c:73
+msgid "^[nN]"
+msgstr "^[eE]"
+
+#: lib/unicodeio.c:156
+msgid "character out of range"
+msgstr "karakterea barrutitik kanpora"
+
+#: lib/userspec.c:110
+msgid "invalid user"
+msgstr "baliogabeko erabiltzailea"
+
+#: lib/userspec.c:111
+msgid "invalid group"
+msgstr "baliogabeko taldea"
+
+#: lib/userspec.c:113
+msgid "cannot get the login group of a numeric UID"
+msgstr "ezin da UID zenbaki baten saio taldea lortu"
+
+#: lib/version-etc.c:74
+#, fuzzy
+msgid ""
+"\n"
+"This is free software.  You may redistribute copies of it under the terms "
+"of\n"
+"the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"programa da eta edo - Orokorra Publikoa Lizentzia bider Libre Softwarea edo "
+"e e"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:90
+#, c-format
+msgid "Written by %s.\n"
+msgstr "%s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:94
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "%s-k eta %s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:98
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "%s, %s eta %s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:104
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"eta %s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:110
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s eta %s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:116
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s, %s eta %s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:123
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s, %s, %s, eta %s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:130
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"eta %s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:138
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s, %s, %s, %s,%s, eta %s-k idatzia.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:148
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s,·eta beste batzuk idatzia.\n"
+
+#: lib/xmemcoll.c:50
+msgid "string comparison failed"
+msgstr "kate konparaketak huts egin du"
+
+#: lib/xmemcoll.c:51
+msgid "Set LC_ALL='C' to work around the problem."
+msgstr "Ezarri LC_ALL='C' arazo hau une batez konpontzeko"
+
+#: lib/xmemcoll.c:53
+#, c-format
+msgid "The strings compared were %s and %s."
+msgstr "Alderatutako bi kateak %s eta %s izan dira."

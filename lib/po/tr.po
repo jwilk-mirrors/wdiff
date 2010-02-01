@@ -1,0 +1,563 @@
+# translation of coreutils-5.3.0.tr.po to Turkish
+# Copyright (C) 2003, 2005 Free Software Foundation, Inc.
+# Ali Devin Sezer <Ali_Sezer@brown.edu>, 2002.
+# Nilgün Belma Bugüner <nilgun@superonline.com>, 2001, 2002.
+# Onur Tolga ŞEHİTOĞLU <onur@lcsl.metu.edu.tr>, 1998.
+# Deniz Akkus Kanca <deniz@arayan.com>, 2001,2003, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: coreutils 5.3.0\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2005-09-30 17:42+0300\n"
+"PO-Revision-Date: 2005-03-14 04:17+0200\n"
+"Last-Translator: Deniz Akkus Kanca <deniz@arayan.com>\n"
+"Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: lib/argmatch.c:137
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "%s argümanı `%s' için geçersiz"
+
+#: lib/argmatch.c:138
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "%s argümanı `%s' için belirsiz"
+
+#: lib/argmatch.c:157
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Geçerli argümanlar:"
+
+#
+#: lib/argp-help.c:1194
+#, fuzzy
+msgid ""
+"Mandatory or optional arguments to long options are also mandatory or "
+"optional for any corresponding short options."
+msgstr ""
+"Uzun seçenekler için zorunlu olan argümanlar kısa seçenekler için de "
+"zorunludur.\n"
+
+#: lib/argp-help.c:1597
+#, fuzzy
+msgid " [OPTION...]"
+msgstr "Kullanım: %s [SEÇENEK]...\n"
+
+#: lib/argp-help.c:1624
+#, fuzzy, c-format
+msgid "Try `%s --help' or `%s --usage' for more information.\n"
+msgstr "Daha fazla bilgi için `%s --help' yazın.\n"
+
+#: lib/argp-help.c:1652
+#, fuzzy, c-format
+msgid "Report bugs to %s.\n"
+msgstr ""
+"\n"
+"Yazılım hatalarını <%s> adresine,\n"
+"çeviri hatalarını <gnu-tr@belgeler.org> adresine bildirin.\n"
+
+#: lib/argp-help.c:1872 lib/error.c:121
+msgid "Unknown system error"
+msgstr "Bilinmeyen sistem hatası"
+
+#: lib/argp-parse.c:84
+msgid "NAME"
+msgstr "İSİM"
+
+#: lib/argp-parse.c:619
+#, fuzzy, c-format
+msgid "%s: Too many arguments\n"
+msgstr "%s: çok fazla sağlama satırı"
+
+#: lib/c-stack.c:244
+#, fuzzy
+msgid "program error"
+msgstr "okuma hatası"
+
+#: lib/closeout.c:94
+msgid "write error"
+msgstr "yazma hatası"
+
+#: lib/copy-file.c:65
+#, fuzzy, c-format
+msgid "error while opening \"%s\" for reading"
+msgstr "%s okumak için açılamadı"
+
+#: lib/copy-file.c:72
+#, fuzzy, c-format
+msgid "cannot open backup file \"%s\" for writing"
+msgstr "%s yazmak için açılamadı"
+
+#: lib/copy-file.c:80
+#, fuzzy, c-format
+msgid "error reading \"%s\""
+msgstr "%s'i okunurken hata"
+
+#: lib/copy-file.c:85 lib/copy-file.c:89
+#, fuzzy, c-format
+msgid "error writing \"%s\""
+msgstr "%s'e yazarken hata"
+
+#: lib/copy-file.c:91
+#, fuzzy, c-format
+msgid "error after reading \"%s\""
+msgstr "%s'i okunurken hata"
+
+#: lib/csharpcomp.c:273
+#, fuzzy
+msgid "fdopen() failed"
+msgstr "açma işlemi başarısız"
+
+#: lib/execute.c:186 lib/execute.c:262 lib/execute.c:304 lib/pipe.c:231
+#: lib/pipe.c:349 lib/pipe.c:409 lib/wait-process.c:336 lib/wait-process.c:403
+#, fuzzy, c-format
+msgid "%s subprocess failed"
+msgstr "%s: arama (seek) başarısız"
+
+#
+#: lib/file-type.c:43
+msgid "regular empty file"
+msgstr "normal boş dosya"
+
+#
+#: lib/file-type.c:43
+msgid "regular file"
+msgstr "normal dosya"
+
+#: lib/file-type.c:46
+msgid "directory"
+msgstr "dizin"
+
+#
+#: lib/file-type.c:49
+msgid "block special file"
+msgstr "blok özel dosyası"
+
+#
+#: lib/file-type.c:52
+msgid "character special file"
+msgstr "karakter özel dosyası"
+
+#
+#: lib/file-type.c:55
+msgid "fifo"
+msgstr "fifo"
+
+#: lib/file-type.c:58
+msgid "symbolic link"
+msgstr "sembolik bağ"
+
+#: lib/file-type.c:61
+msgid "socket"
+msgstr "soket"
+
+#: lib/file-type.c:64
+msgid "message queue"
+msgstr "ileti kuyruğu"
+
+#: lib/file-type.c:67
+msgid "semaphore"
+msgstr "semafor"
+
+#
+#: lib/file-type.c:70
+msgid "shared memory object"
+msgstr "paylaşımlı bellek nesnesi"
+
+#
+#: lib/file-type.c:73
+msgid "typed memory object"
+msgstr "türlenmiş bellek nesnesi"
+
+#
+#: lib/file-type.c:75
+msgid "weird file"
+msgstr "garip dosya"
+
+#: lib/gai_strerror.c:45
+#, fuzzy
+msgid "Address family for hostname not supported"
+msgstr "fifo dosyaları desteklenmiyor"
+
+#: lib/gai_strerror.c:49
+#, fuzzy
+msgid "ai_family not supported"
+msgstr "fifo dosyaları desteklenmiyor"
+
+#: lib/gai_strerror.c:54
+#, fuzzy
+msgid "ai_socktype not supported"
+msgstr "fifo dosyaları desteklenmiyor"
+
+#: lib/gai_strerror.c:55
+#, fuzzy
+msgid "System error"
+msgstr "yazma hatası"
+
+#: lib/gai_strerror.c:74
+#, fuzzy
+msgid "Unknown error"
+msgstr "Bilinmeyen sistem hatası"
+
+#: lib/getopt.c:551 lib/getopt.c:570
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: `%s' seçeneği belirsiz\n"
+
+#: lib/getopt.c:603 lib/getopt.c:607
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: `--%s' seçeneği argümansız kullanılır\n"
+
+#: lib/getopt.c:616 lib/getopt.c:621
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: seçenek `%c%s' argümansız kullanılır\n"
+
+#: lib/getopt.c:667 lib/getopt.c:689 lib/getopt.c:1020 lib/getopt.c:1042
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: `%s' seçeneği bir argümanla kullanılır\n"
+
+#: lib/getopt.c:727 lib/getopt.c:730
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: `--%s' seçeneği bilinmiyor\n"
+
+#: lib/getopt.c:738 lib/getopt.c:741
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: `%c%s' seçeneği bilinmiyor\n"
+
+#: lib/getopt.c:796 lib/getopt.c:799
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: kuraldışı seçenek -- %c\n"
+
+#: lib/getopt.c:805 lib/getopt.c:808
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: geçersiz seçenek -- %c\n"
+
+#: lib/getopt.c:863 lib/getopt.c:882 lib/getopt.c:1095 lib/getopt.c:1116
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: seçenek bir argümanla kullanılır -- %c\n"
+
+#: lib/getopt.c:935 lib/getopt.c:954
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: `-W %s' seçeneği belirsiz\n"
+
+#: lib/getopt.c:978 lib/getopt.c:999
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: `-W %s' seçeneği argümansız kullanılır\n"
+
+#: lib/human.c:486
+msgid "block size"
+msgstr "blok uzunluğu"
+
+#: lib/mkdir-p.c:106
+#, c-format
+msgid "%s exists but is not a directory"
+msgstr "%s var ama bir dizin değil"
+
+#: lib/mkdir-p.c:203 lib/mkdir-p.c:294
+#, c-format
+msgid "cannot change owner and/or group of %s"
+msgstr "%s'in sahibi ve/veya grubu değiştirilemiyor"
+
+#: lib/mkdir-p.c:229 lib/mkdir-p.c:266
+#, c-format
+msgid "cannot create directory %s"
+msgstr "%s dizini oluşturulamıyor"
+
+#: lib/mkdir-p.c:240
+#, c-format
+msgid "cannot chdir to directory %s"
+msgstr "%s dizinine geçilemedi"
+
+#: lib/mkdir-p.c:307 lib/mkdir-p.c:332
+#, c-format
+msgid "cannot change permissions of %s"
+msgstr "%s'in erişim izinleri değiştirilemiyor"
+
+#: lib/obstack.c:438 lib/obstack.c:441 lib/xalloc-die.c:38 lib/xsetenv.c:40
+msgid "memory exhausted"
+msgstr "bellek tükendi"
+
+#: lib/openat-die.c:36
+#, fuzzy
+msgid "unable to record current working directory"
+msgstr "openat: çalışılan dizini kaydedemedi"
+
+#: lib/openat-die.c:49
+msgid "failed to return to initial working directory"
+msgstr "başlangıç çalışma dizinine geri dönülemedi"
+
+#: lib/pagealign_alloc.c:143
+#, fuzzy
+msgid "Failed to open /dev/zero for read"
+msgstr "%s: yazmak için açılamadı"
+
+#: lib/pipe.c:157 lib/pipe.c:160 lib/pipe.c:264 lib/pipe.c:267
+#, fuzzy
+msgid "cannot create pipe"
+msgstr "%s bağı oluşturulamadı"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  If the catalog has no translation,
+#. locale_quoting_style quotes `like this', and
+#. clocale_quoting_style quotes "like this".
+#.
+#. For example, an American English Unicode locale should
+#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
+#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
+#. MARK).  A British English Unicode locale should instead
+#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:245
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:246
+msgid "'"
+msgstr "'"
+
+#: lib/regcomp.c:137
+#, fuzzy
+msgid "Invalid regular expression"
+msgstr "%s: geçersiz düzenli ifade(regular expression): %s"
+
+#: lib/regcomp.c:143
+#, fuzzy
+msgid "Invalid character class name"
+msgstr "geçersiz karakter sınıfı `%s'"
+
+#: lib/regcomp.c:164
+#, fuzzy
+msgid "Invalid range end"
+msgstr "Geçersiz sayfa aralığı `%s'"
+
+#: lib/regcomp.c:167
+#, fuzzy
+msgid "Memory exhausted"
+msgstr "bellek tükendi"
+
+#: lib/regcomp.c:170
+#, fuzzy
+msgid "Invalid preceding regular expression"
+msgstr "%s: geçersiz düzenli ifade(regular expression): %s"
+
+#: lib/regcomp.c:173
+#, fuzzy
+msgid "Premature end of regular expression"
+msgstr "düzenli ifade (regular expression) aramasında hata oluştu"
+
+#: lib/regcomp.c:176
+#, fuzzy
+msgid "Regular expression too big"
+msgstr "%s: geçersiz düzenli ifade(regular expression): %s"
+
+#: lib/regcomp.c:659
+#, fuzzy
+msgid "No previous regular expression"
+msgstr "düzenli ifade (regular expression) aramasında hata oluştu"
+
+#: lib/rpmatch.c:70
+msgid "^[yY]"
+msgstr "^[eE]"
+
+#: lib/rpmatch.c:73
+msgid "^[nN]"
+msgstr "^[hH]"
+
+#
+#: lib/unicodeio.c:147
+msgid "iconv function not usable"
+msgstr "iconv işlevi kullanılabilir değil"
+
+#: lib/unicodeio.c:149
+msgid "iconv function not available"
+msgstr "iconv işlevi yok"
+
+#: lib/unicodeio.c:156
+msgid "character out of range"
+msgstr "karakter kapsamdışı"
+
+#: lib/unicodeio.c:219
+#, c-format
+msgid "cannot convert U+%04X to local character set"
+msgstr "U+%04X yerel karakter kümesine dönüştürülemiyor"
+
+#: lib/unicodeio.c:221
+#, c-format
+msgid "cannot convert U+%04X to local character set: %s"
+msgstr "U+%04X yerel karakter kümesine dönüştürülemiyor: %s"
+
+#: lib/userspec.c:110
+msgid "invalid user"
+msgstr "kullanıcı geçersiz"
+
+#: lib/userspec.c:111
+msgid "invalid group"
+msgstr "grup geçersiz"
+
+#: lib/userspec.c:113
+msgid "cannot get the login group of a numeric UID"
+msgstr "bir sayısal kullanıcı-kimliğin grubu alınamıyor"
+
+#: lib/version-etc.c:74
+#, fuzzy
+msgid ""
+"\n"
+"This is free software.  You may redistribute copies of it under the terms "
+"of\n"
+"the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"Bu, bir serbest yazılımdır; Free Software Foundation tarafından yayınlanan\n"
+"GNU Genel Kamu Lisansı, 2. sürüm (veya sizin seçiminize bağlı olarak) daha "
+"üst \n"
+"sürüm koşulları altında değişiklik yapabilir ve/veya yeniden "
+"dağıtabilirsiniz. \n"
+"\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:90
+#, c-format
+msgid "Written by %s.\n"
+msgstr "%s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:94
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "%s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:98
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "%s, %s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:104
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"%s, %s, %s \n"
+"ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:110
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"%s, %s, %s, %s \n"
+"ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:116
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"%s, %s, %s, %s, \n"
+"%s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:123
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"%s, %s, %s, %s, \n"
+"%s, %s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:130
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"%s, %s, %s, \n"
+"%s, %s, %s, \n"
+"%s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:138
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"%s, %s, %s, \n"
+"%s, %s, %s, \n"
+"%s, %s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:148
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"%s, %s, %s, \n"
+"%s, %s, %s, \n"
+"%s, %s, %s ve başkaları tarafından yazıldı.\n"
+
+#
+#: lib/xmemcoll.c:50
+msgid "string comparison failed"
+msgstr "dizge karşılaştırması başarısız"
+
+#
+#: lib/xmemcoll.c:51
+msgid "Set LC_ALL='C' to work around the problem."
+msgstr "Problemi devre dışı bırakmak için LC_ALL='C' tanımlayın."
+
+#: lib/xmemcoll.c:53
+#, c-format
+msgid "The strings compared were %s and %s."
+msgstr "Karşılaştırılan dizgeler %s ve %s idi."
