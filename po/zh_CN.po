@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 18:14+0100\n"
+"PO-Revision-Date: 2010-02-01 18:53+0100\n"
 "Last-Translator: Meng Jie <zuxyhere@eastday.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -220,7 +220,7 @@ msgstr "  -3, --no-common            不输出相同的词\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           自动调用分页程序\n"
+msgstr "  -A, --auto-pager           自动调用分页程序\n"
 
 #: src/mdiff.c:3831
 #, fuzzy

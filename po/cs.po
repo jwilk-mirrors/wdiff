@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GNU wdiff 0.5.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:30+0100\n"
+"PO-Revision-Date: 2010-02-01 18:53+0100\n"
 "Last-Translator: Vladimir Michl <Vladimir.Michl@upol.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -219,7 +219,7 @@ msgstr "  -3, --no-common             potlaèí výpis spoleèných slov\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager            automaticky vyvolá prohlí¾ecí program (pager)\n"
+msgstr "  -A, --auto-pager            automaticky vyvolá prohlí¾ecí program (pager)\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
