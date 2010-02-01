@@ -1,307 +1,644 @@
 # Irish translations for wdiff.
 # Copyright (C) 2003 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
-# Kevin Patrick Scannell <scannell@SLU.EDU>, 2003.
+# Kevin Patrick Scannell <scannell@SLU.EDU>, 2003, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5g\n"
+"Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-01-21 22:12+0100\n"
-"PO-Revision-Date: 2003-10-14 04:00-0600\n"
-"Last-Translator: Kevin Patrick Scannell <scannell@SLU.EDU>\n"
-"Language-Team: Irish <ga@li.org>\n"
+"POT-Creation-Date: 2008-06-20 16:41-0400\n"
+"PO-Revision-Date: 2008-06-21 04:00-0600\n"
+"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/mdiff.c:387
+#: src/mdiff.c:398
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (ar regexp `%s')"
 
-#: src/mdiff.c:905 src/wdiff.c:1495
-#, fuzzy, c-format
-msgid "only one file may be standard input"
-msgstr "Ní cheadaítear ach comhad amháin mar ionchur caighdeánach."
+#: src/mdiff.c:917 src/wdiff.c:1388
+msgid "Only one file may be standard input."
+msgstr "Ní cheadaítear ach comhad amháin mar ghnáth-ionchur."
 
-#: src/mdiff.c:920 src/wdiff.c:709
-#, fuzzy, c-format
-msgid "directories not supported"
-msgstr "níl comhadlanna ar fáil"
+#: src/mdiff.c:932 src/wdiff.c:643
+msgid "Directories not supported"
+msgstr "Ní thacaítear le comhadlanna"
 
-#: src/mdiff.c:1064
+#: src/mdiff.c:1075
 #, c-format
 msgid "Reading %s"
-msgstr "Ag Léamh %s"
+msgstr "%s á léamh"
 
-#: src/mdiff.c:1189
+#: src/mdiff.c:1198
 #, c-format
 msgid ", %d items\n"
-msgstr ", %d rud\n"
+msgstr ", %d mír\n"
 
-#: src/mdiff.c:1267
+#: src/mdiff.c:1276
 #, c-format
 msgid "Read summary: %d files, %d items\n"
-msgstr "Gearrchuntas den léamh: %d comhad, %d rud\n"
+msgstr "Gearrchuntas ar léamh: %d comhad, %d mír\n"
 
-#: src/mdiff.c:1663
+#: src/mdiff.c:1671
 #, c-format
 msgid "Sorting"
-msgstr "Ag Sórtáil"
+msgstr "Sórtáil"
 
-#: src/mdiff.c:1680
+#: src/mdiff.c:1688
 #, c-format
 msgid ", clustering"
-msgstr ", ag mogallú"
+msgstr ", á mhogallú"
 
-#: src/mdiff.c:1848 src/mdiff.c:1911
+#: src/mdiff.c:1857 src/mdiff.c:1920
 #, c-format
 msgid ", done\n"
 msgstr ", críochnaithe\n"
 
-#: src/mdiff.c:1898
+#: src/mdiff.c:1907
 #, c-format
 msgid "Sorting members"
-msgstr "Sórtáil baill"
+msgstr "Baill á sórtáil"
 
-#: src/mdiff.c:1930
+#: src/mdiff.c:1939
 #, c-format
 msgid "Work summary: %d clusters, %d members\n"
-msgstr "Gearrchuntas den obair: %d mogall, %d ball\n"
+msgstr "Gearrchuntas ar obair: %d mogall, %d ball\n"
 
-#: src/mdiff.c:2310
+#: src/mdiff.c:2317
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Gearrchuntas den obair: %d mogall, %d ball, %d forluí\n"
+msgstr "Gearrchuntas ar obair: %d mogall, %d ball, %d forluí\n"
 
 # KDE --KPS
-#: src/mdiff.c:2365 src/wdiff.c:246
-#, fuzzy, c-format
-msgid "select a terminal through the TERM environment variable"
+#: src/mdiff.c:2372 src/wdiff.c:245
+msgid "Select a terminal through the TERM environment variable."
 msgstr ""
 "Sonraigh cineál an teirminéil mar atá socruithe\n"
-"san athróg timpeallachta TERM"
+"san athróg thimpeallachta TERM."
 
-#: src/mdiff.c:2368 src/wdiff.c:249
-#, fuzzy, c-format
-msgid "could not access the termcap data base"
+#: src/mdiff.c:2375 src/wdiff.c:248
+msgid "Could not access the termcap data base."
 msgstr "Níorbh fhéidir an bunachar sonraí termcap a rochtain."
 
-#: src/mdiff.c:2370 src/wdiff.c:251
-#, fuzzy, c-format
-msgid "terminal type `%s' is not defined"
+#: src/mdiff.c:2377 src/wdiff.c:250
+#, c-format
+msgid "Terminal type `%s' is not defined."
 msgstr "Tá an teirminéal `%s' gan sainmhíniú."
 
-#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1110 src/wdiff.c:1122
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d focal"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1197 src/wdiff.c:1209
+#: src/mdiff.c:3757 src/mdiff.c:3769 src/wdiff.c:1113 src/wdiff.c:1125
 #, c-format
 msgid "  %d %d%% common"
-msgstr "  %d %d%% go coiteann"
+msgstr "  %d %d%% coitianta"
 
-#: src/mdiff.c:3754 src/wdiff.c:1199
+#: src/mdiff.c:3759 src/wdiff.c:1115
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% scriosta"
 
-#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1201 src/wdiff.c:1213
+#: src/mdiff.c:3761 src/mdiff.c:3773 src/wdiff.c:1117 src/wdiff.c:1129
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% athraithe"
 
-#: src/mdiff.c:3766 src/wdiff.c:1211
+#: src/mdiff.c:3771 src/wdiff.c:1127
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% ionsáite"
 
-#: src/mdiff.c:3795 src/wdiff.c:1253 src/wdiff2.c:178
+#: src/mdiff.c:3800 src/unify.c:272 src/wdiff.c:1170 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Bain triail as `%s --help' chun tuilleadh eolais a fháil.\n"
 
-#: src/mdiff.c:3799
+#: src/mdiff.c:3804
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff - Cóimheas comhaid iomadúla agus déan cuardach ar teaghráin mar a "
-"chéile;\n"
-"ansin taispeáin liostaí, b'fhéidir mionchruinn, de dhifríochtaí agus "
-"cosúlacht\n"
+"mdiff - Déanann mdiff staidéar ar il-chomhaid chun teaghráin atá cosúil le chéile a aimsiú;\n"
+"ansin taispeánann sé liostaí, b'fhéidir mionchruinn, de dhifríochtaí agus cosúlacht.\n"
 
-#: src/mdiff.c:3804
-#, fuzzy, c-format
-msgid "Usage: %s [OPTION]... [FILE]...\n"
+#: src/mdiff.c:3808
+#, c-format
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]...\n"
 msgstr ""
 "\n"
 "Úsáid: %s [ROGHA]... [COMHAD]...\n"
 
-#: src/mdiff.c:3808
+#: src/mdiff.c:3812
 msgid ""
 "\n"
 "Operation modes:\n"
+"  -h                     (ignored)\n"
+"  -v, --verbose          report a few statistics on stderr\n"
+"      --help             display this help and exit\n"
+"      --version          output version information and exit\n"
 msgstr ""
+"\n"
+"Roghanna:\n"
+"  -h                     (as feidhm)\n"
+"  -v, --verbose          taispeáin staitistic ar ghnáth-aschur earráide\n"
+"      --help             taispeáin an chabhair seo agus scoir\n"
+"      --version          taispeáin eolas faoin leagan agus scoir\n"
 
-#: src/mdiff.c:3809
-msgid "  -h                     (ignored)\n"
-msgstr ""
-
-#: src/mdiff.c:3810
-msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
-
-#: src/mdiff.c:3811 src/unify.c:293
-msgid "      --help             display this help then exit\n"
-msgstr ""
-
-#: src/mdiff.c:3812 src/unify.c:294
-msgid "      --version          display program version then exit\n"
-msgstr ""
-
-#: src/mdiff.c:3814
+#: src/mdiff.c:3819
 msgid ""
 "\n"
 "Formatting output:\n"
-msgstr ""
-
-#: src/mdiff.c:3815
-msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
-
-#: src/mdiff.c:3816
-msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr ""
-
-#: src/mdiff.c:3817
-msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
-
-#: src/mdiff.c:3818
-msgid ""
+"  -T, --initial-tab       produce TAB instead of initial space\n"
+"  -l, --paginate          paginate output through `pr'\n"
+"  -S, --string[=STRING]   take note of another user STRING\n"
 "  -V, --show-links        give file and line references in annotations\n"
+"  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
+"\n"
+"Leagan amach den aschur:\n"
+"  -T, --initial-tab       taispeáin táb in ionad spás tosaigh\n"
+"  -l, --paginate          uimhrigh leathanaigh le `pr'\n"
+"  -S, --string[=TEAGHRÁN] tabhair suntas do THEAGHRÁN úsáideora eile\n"
+"  -V, --show-links        taispeáin tagairtí chomhaid/líne in anótálacha\n"
+"  -t, --expand-tabs       leathnaigh táib go spásanna san aschur\n"
 
-#: src/mdiff.c:3819
-msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
-
-#: src/mdiff.c:3822
+#: src/mdiff.c:3828
 msgid ""
 "\n"
 "Debugging:\n"
-msgstr ""
-
-#: src/mdiff.c:3823
-#, fuzzy
-msgid "  -0, --debugging   output many details about what is going on\n"
+"  -0, --debugging   output many details about what is going on\n"
 msgstr ""
 "\n"
 "Dífhabhtú:\n"
-"  -0, --debugging   taispeáin sonraí go leor maidir leis na rudaí atá ar "
-"bun\n"
+"  -0, --debugging   taispeáin go leor mionsonraí maidir le cad atá ar siúl\n"
 
-#: src/mdiff.c:3826
+#: src/mdiff.c:3833
 msgid ""
 "\n"
 "Word mode options:\n"
+"  -1, --no-deleted            inhibit output of deleted words\n"
+"  -2, --no-inserted           inhibit output of inserted words\n"
+"  -3, --no-common             inhibit output of common words\n"
+"  -A, --auto-pager            automatically calls a pager\n"
+"  -k, --less-mode             variation of printer mode for \"less\"\n"
+"  -m, --avoid-wraps           do not extend fields through newlines\n"
+"  -o, --printer               overstrike as for printers\n"
+"  -z, --terminal              use termcap as for terminal displays\n"
+"  -K, --no-init-term          like -z, but no termcap init/term strings\n"
+"  -O, --item-regexp=REGEXP    compare items as defined by REGEXP\n"
+"  -W, --word-mode             compare words instead of lines\n"
 msgstr ""
+"\n"
+"Roghanna mód focail:\n"
+"  -1, --no-deleted            ná taispeáin focail scriosta\n"
+"  -2, --no-inserted           ná taispeáin focail ionsáite\n"
+"  -3, --no-common             ná taispeáin focail coitianta\n"
+"  -A, --auto-pager            úsáid brabhsálaí leathanach go huathoibríoch\n"
+"  -k, --less-mode             leagan de mhód printéara do \"less\"\n"
+"  -m, --avoid-wraps           ná taispeáin réimsí trasna línte\n"
+"  -o, --printer               muinbhuail, mar le printéirí\n"
+"  -z, --terminal              úsáid termcap mar le teirminéil\n"
+"  -K, --no-init-term          mar -z, ach níl aon teaghrán termcap init/term\n"
+"  -O, --item-regexp=SLONN     cóimheas de réir an SLONN ionadaíochta\n"
+"  -W, --word-mode             cóimheas focail in ionad línte\n"
 
-#: src/mdiff.c:3827 src/wdiff.c:1271 src/wdiff2.c:196
-msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
-
-#: src/mdiff.c:3828 src/wdiff.c:1272 src/wdiff2.c:197
-msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
-
-#: src/mdiff.c:3829 src/wdiff.c:1273 src/wdiff2.c:198
-msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
-
-#: src/mdiff.c:3830
-msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
-
-#: src/mdiff.c:3831
-msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
-
-#: src/mdiff.c:3832
-msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
-
-#: src/mdiff.c:3833
-msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
-
-#: src/mdiff.c:3834
-msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-
-#: src/mdiff.c:3835
+#: src/mdiff.c:3849
 msgid ""
-"  -K, --no-init-term         like -z, but no termcap init/term strings\n"
+"\n"
+"Comparing files:\n"
+"*  -H, --speed-large-files     go faster, for when numerous small changes\n"
+"*  -a, --text                  report line differences (text file default)\n"
+"*  -d, --minimal               try harder for a smaller set of changes\n"
+"*  -q, --brief                 only says if files differ (binary default)\n"
+"*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"
 msgstr ""
+"\n"
+"Cóimheas comhaid:\n"
+"*  -H, --speed-large-files     níos gasta, má tá mionathruithe go leor ann\n"
+"*  -a, --text                  taispeáin difríochtaí (réamhshocrú: téacs)\n"
+"*  -d, --minimal               obair go crua le haghaidh níos lú athruithe\n"
+"*  -q, --brief                 an difriúil iad? (réamhshocrú: dénártha)\n"
+"*      --horizon-lines=LÍNTE   coinnigh LÍNTE líne i bhfoircinn coitianta\n"
 
-#: src/mdiff.c:3836
-msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
+#: src/mdiff.c:3859
+msgid ""
+"\n"
+"Comparing directories:\n"
+"*  -N, --new-file                  consider missing files to be empty\n"
+"*  -P, --unidirectional-new-file   consider missing old files to be empty\n"
+"*  -S, --starting-file=FILE        resume directory comparison with FILE\n"
+"*  -X, --exclude-from=FILE         ignore files matching patterns from FILE\n"
+"*  -r, --recursive                 recursively compare subdirectories\n"
+"*  -s, --report-identical-files    report when two files are the same\n"
+"*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
 msgstr ""
+"\n"
+"Cóimheas comhadlanna:\n"
+"*  -N, --new-file                  caith le comhaid ar iarraidh mar folamh\n"
+"*  -P, --unidirectional-new-file   caith le seanchomhaid ar iarraidh mar folamh\n"
+"*  -S, --starting-file=COMHAD      atosaigh cóimheas comhadlanna ag COMHAD\n"
+"*  -X, --exclude-from=COMHAD       déan neamhshuim ar chomhaid atá comhoiriúnacha\n"
+"                                   le slonn ionadaíochta as an gCOMHAD\n"
+"*  -r, --recursive                 cóimheas fochomhadlanna go hathchúrsach\n"
+"*  -s, --report-identical-files    taispeáin nuair atá comhaid mar an gcéanna\n"
+"*  -x, --exclude=SLONN             déan neamhshuim ar chomhaid(lanna) atá\n"
+"                                   comhoiriúnacha leis an SLONN ionadaíochta\n"
 
-#: src/mdiff.c:3837
-msgid "  -W, --word-mode            compare words instead of lines\n"
+#: src/mdiff.c:3871
+msgid ""
+"\n"
+"Ignoring text:\n"
+"  -B, --ignore-blank-lines             ignore blank lines\n"
+"*  -I, --ignore-matching-lines=REGEXP   ignore lines matching REGEXP\n"
+"  -b, --ignore-space-change            ignore amount of white space\n"
+"  -i, --ignore-case                    ignore case differences\n"
+"  -w, --ignore-all-space               ignore white space\n"
 msgstr ""
+"\n"
+"Déanamh neamhshuim ar théacs:\n"
+"  -B, --ignore-blank-lines             déan neamhshuim ar línte folmha\n"
+"*  -I, --ignore-matching-lines=SLONN    \"  \"  ar línte comhoiriúnacha le SLONN\n"
+"  -b, --ignore-space-change             \"  \"  ar líon an spáis bán\n"
+"  -i, --ignore-case                     \"  \"  ar cheannlitreacha vs. beaga\n"
+"  -w, --ignore-all-space                \"  \"  ar spás bán\n"
+
+#: src/mdiff.c:3879
+msgid ""
+"\n"
+"Clustering:\n"
+"  -G, --relist-files         list all input files with annotations\n"
+"  -J, --minimum-size=ITEMS   ignore clusters not having that many ITEMS\n"
+"  -j, --ignore-delimiters    do not count items having only delimiters\n"
+msgstr ""
+"\n"
+"Mogallú:\n"
+"  -G, --relist-files         liostaigh gach inchomhad le hanótálacha\n"
+"  -J, --minimum-size=LÍON    déan neamhshuim ar mhogaill gan LÍON rud ar a laghad\n"
+"  -j, --ignore-delimiters    ná cuir san áireamh mura bhfuil ach teormharcóirí\n"
+
+#: src/mdiff.c:3887
+msgid ""
+"\n"
+"Detailed output formats:\n"
+"*  -D, --ifdef=NAME                      output `#ifdef NAME' format\n"
+"*      --changed-group-format=FORMAT     use FORMAT for changed lines\n"
+"*      --new-group-format=FORMAT         use FORMAT for inserted lines\n"
+"*      --new-line-format=FORMAT          use FORMAT for inserted line\n"
+"*      --old-group-format=FORMAT         use FORMAT for deleted lines\n"
+"*      --old-line-format=FORMAT          use FORMAT for deleted line\n"
+"*      --unchanged-group-format=FORMAT   use FORMAT for unchanged lines\n"
+"*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n"
+"*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
+msgstr ""
+"\n"
+"Formáidí aschuir mionsonraithe:\n"
+"*  -D, --ifdef=AINM                      aschuir i gcruth `#ifdef AINM'\n"
+"*      --changed-group-format=FORMÁID    úsáid FORMÁID do línte athraithe\n"
+"*      --new-group-format=FORMÁID        úsáid FORMÁID do línte ionsáite\n"
+"*      --new-line-format=FORMÁID         úsáid FORMÁID do líne ionsáite\n"
+"*      --old-group-format=FORMÁID        úsáid FORMÁID do línte scriosta\n"
+"*      --old-line-format=FORMÁID         úsáid FORMÁID do líne scriosta\n"
+"*      --unchanged-group-format=FORMÁID  úsáid FORMÁID do línte gan athrú\n"
+"*      --unchanged-line-format=FORMÁID   úsáid FORMÁID do líne gan athrú\n"
+"*      --line-format=FORMÁID             --{old,new,unchanged}-line-format\n"
+
+#: src/mdiff.c:3901
+msgid ""
+"\n"
+"Script-like formats:\n"
+"  (none of -CDUcefnuy)   output normal diffs\n"
+"*  -e, --ed               output a valid `ed' script\n"
+"*  -f, --forward-ed       mix between -e and -n (not very useful)\n"
+"*  -n, --rcs              output RCS format (internally used by RCS)\n"
+msgstr ""
+"\n"
+"Formáidí mar scripteanna:\n"
+"  (níl aon cheann de -CDUcefnuy)   scríobh diff-aí de ghnáth\n"
+"*  -e, --ed               scríobh script `ed' bhailí\n"
+"*  -f, --forward-ed       meascán -e agus -n (ní úsáideach go speisialta)\n"
+"*  -n, --rcs              scríobh i gcruth inmheánach RCS\n"
+
+#: src/mdiff.c:3910
+msgid ""
+"\n"
+"Context and unified formats:\n"
+"*  -F, --show-function-line=REGEXP   show previous context matching REGEXP\n"
+"*  -p, --show-c-function             show which C function for each change\n"
+msgstr ""
+"\n"
+"Comhthéacs agus leaganacha amach comhaontaithe:\n"
+"*  -F,--show-function-line=SLONN   taispeáin comhthéacs comhoiriúnach roimhe seo\n"
+"*  -p, --show-c-function           taispeáin an fheidhm C do gach athrach\n"
+
+#: src/mdiff.c:3917
+msgid ""
+"\n"
+"*  -C, --context=LINES         as -c, also select context size in lines\n"
+"*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
+"*  -U, --unified=LINES         as -u, also select context size in lines\n"
+"*  -c, --context               output context diffs (default 3 context lines)\n"
+"*  -u, --unified               output unidiffs (default 3 context lines)\n"
+"*  -LINES                      (obsolete: select context size in lines)\n"
+msgstr ""
+"\n"
+"*  -C, --context=LÍNTE    mar -c, ach socraigh LÍNTE de chomhthéacs fosta\n"
+"*  -L, --label=LIPÉAD     úsáid LIPÉAD ó/chuig in ionad ainm comhaid (2x)\n"
+"*  -U, --unified=LÍNTE    mar -u, ach socraigh LÍNTE de chomhthéacs fosta\n"
+"*  -c, --context          scríobh diff-aí i gcomhthéacs (réamhshocrú 3 líne)\n"
+"*  -u, --unified          scríobh unidiff-aí i gcomhthéacs (réamhshocrú 3 líne)\n"
+"*  -LÍNTE                 (i léig: socraigh LÍNTE de chomhthéacs)\n"
+
+#: src/mdiff.c:3927
+msgid ""
+"\n"
+"Side by side format:\n"
+"*  -W, --width=COLUMNS           use width of COLUMNS\n"
+"*  -y, --side-by-side            use side by side output format\n"
+"*      --left-column             print only left column line when common\n"
+"*      --sdiff-merge-assist      (internally used by `sdiff')\n"
+"*      --suppress-common-lines   do not print common lines\n"
+msgstr ""
+"\n"
+"Formáid taobh le taobh:\n"
+"*  -W, --width=COLÚIN            socraigh leithead de COLÚIN\n"
+"*  -y, --side-by-side            taispeáin torthaí taobh le taobh\n"
+"*      --left-column             ná taispeáin an colún ar dheis más ionann iad\n"
+"*      --sdiff-merge-assist      (úsáidte go hinmheánach le `sdiff')\n"
+"*      --suppress-common-lines   ná taispeáin línte atá i bpáirt acu\n"
+
+#: src/mdiff.c:3937
+#, c-format
+msgid ""
+"\n"
+"FORMAT is made up of characters standing for themselves, except:\n"
+"  %%%%           a single %%\n"
+"  %%c'C'        quoted character C\n"
+"  %%c'\\O'       character having value O, from 1 to 3 octal digits\n"
+"  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E FORMAT\n"
+"  %%FN          use SPECIF specification F to print VARIABLE value N\n"
+"  %%<           [group] old, each line through --old-line-format\n"
+"  %%>           [group] new, each line through --new-line-format\n"
+"  %%=           [group] unchanged, each line through --unchanged-line-format\n"
+"  %%l           [line] without its possible trailing newline\n"
+"  %%L           [line] with its possible trailing newline\n"
+msgstr ""
+"\n"
+"Is éard atá i bhFORMÁID ná carachtair á n-ionadú féin, ach amháin:\n"
+"  %%%%           %% aonarach\n"
+"  %%c'C'        an carachtar C idir comharthaí athfhriotail\n"
+"  %%c'\\O'       carachtar le luach O, le 1, 2, nó 3 dhigit ochtnártha\n"
+"  %%(A=B?T:E)   má A=B ansin T, agus E i ngach cás eile; is uimhreacha nó\n"
+"                    ATHRÓGA A agus B; is FORMÁIDÍ T agus E\n"
+"  %%FN          taispeáin luach na hATHRÓIGE N de réir an SONRÚ F\n"
+"  %%<           [grúpa] sean, cuir gach líne trí --old-line-format\n"
+"  %%>           [grúpa] nua, cuir gach líne trí --new-line-format\n"
+"  %%=           [grúpa] gan athrú, cuir gach líne trí --unchanged-line-format\n"
+"  %%l           [line] gan líne nua foirceanta, mar atá\n"
+"  %%L           [line] le líne nua foirceanta, mar atá\n"
+
+#: src/mdiff.c:3952
+msgid ""
+"\n"
+"SPECIF is [-][W[.D]]{doxX} as in C printf\n"
+msgstr ""
+"\n"
+"Is [-][W[.D]]{doxX} SONRÚ, mar C printf\n"
+
+#: src/mdiff.c:3957
+msgid ""
+"\n"
+"VARIABLE is {eflmn} for old group or {EFLMN} for new group\n"
+"  {eE}   line number just before group\n"
+"  {fF}   first line number of group\n"
+"  {lL}   last line number of group\n"
+"  {mM}   line number just after group\n"
+"  {nN}   number of lines in the group\n"
+msgstr ""
+"\n"
+"is éard atá in ATHRÓG ná {eflmn} don sheanghrúpa nó {EFLMN} don ghrúpa nua\n"
+"  {eE}   líne-uimhir díreach roimh an ghrúpa\n"
+"  {fF}   an chéad líne-uimhir sa ghrúpa\n"
+"  {lL}   an líne-uimhir dheiridh sa ghrúpa\n"
+"  {mM}   líne-uimhir díreach tar éis an ghrúpa\n"
+"  {nN}   líon na línte sa ghrúpa\n"
+
+#: src/mdiff.c:3967
+msgid ""
+"\n"
+"Standard diff options:\n"
+"  -i, --ignore-case         consider upper- and lower-case to be the same\n"
+"  -w, --ignore-all-space    ignore all white space\n"
+"  -b, --ignore-space-change ignore changes in the amount of white space\n"
+"  -B, --ignore-blank-lines  ignore changes whose lines are all blank\n"
+"  -I, --ignore-matching-lines=RE ignore changes whose lines all match RE\n"
+"  -a, --text                treat all files as text\n"
+"  -c, --context[=NUMBER]    output regular context diffs,\n"
+"                            changing to NUMBER lines of context\n"
+"  -u, --unified[=NUMBER]    output unified context diffs or unidiffs,\n"
+"                            with NUMBER lines of context\n"
+"  -C, --context=NUM         output NUM lines of copied context\n"
+"  -U, --unified=NUM         output NUM lines of unified context\n"
+"  -L, --label=LABEL         use LABEL instead of file name\n"
+"  -p, --show-c-function     show which C function each change is in\n"
+"  -F, --show-function-line=RE show the most recent line matching RE\n"
+msgstr ""
+"\n"
+"Roghanna diff coitianta:\n"
+"  -i, --ignore-case         caith le cás uachtair agus cás íochtair le chéile\n"
+"  -w, --ignore-all-space    déan neamhshuim ar spás bán\n"
+"  -b, --ignore-space-change déan neamhshuim ar mhéid an spáis bháin\n"
+"  -B, --ignore-blank-lines  déan neamhshuim ar línte folmha\n"
+"  -I, --ignore-matching-lines=SLONN  déan neamhshuim ar línte atá comhoiriúnach\n"
+"                                     leis an SLONN ionadaíochta\n"
+"  -a, --text                caith le gach comhad mar théacschomhad\n"
+"  -c, --context[=UIMHIR]    taispeáin diff-aí le comhthéacs coitianta,\n"
+"                            ach socraigh UIMHIR líne de chomhthéacs\n"
+"  -u, --unified[=UIMHIR]    taispeáin diff-aí le comhthéacs comhaontaithe nó\n"
+"                              unidiff-aí le hUIMHIR líne de chomhthéacs\n"
+"  -C, --context=UIMHIR      taispeáin UIMHIR líne de chomhthéacs cóipeáilte\n"
+"  -U, --unified=UIMHIR      taispeáin UIMHIR líne de chomhthéacs comhaontaithe\n"
+"  -L, --label=LIPÉAD        bain úsáid as LIPÉAD in ionad ainm comhaid\n"
+"  -p, --show-c-function     taispeáin an fheidhm C do gach difríocht\n"
+"  -F, --show-function-line=SLONN     taispeáin an líne is déanaí atá\n"
+"                                     comhoiriúnach leis an SLONN ionadaíochta\n"
+
+#: src/mdiff.c:3986
+msgid ""
+"  -q, --brief               output only whether files differ\n"
+"  -e, --ed                  output an ed script\n"
+"  -n, --rcs                 output an RCS format diff\n"
+"  -y, --side-by-side        output in two columns\n"
+"  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
+"      --left-column         output only the left column of common lines\n"
+"      --suppress-common-lines do not output common lines\n"
+"  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
+"      --GTYPE-group-format=GFMT GTYPE input groups with GFMT\n"
+"      --line-format=LFMT    all input lines with LFMT\n"
+"      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"
+"  -l, --paginate            pass the output through `pr' to paginate it\n"
+"  -t, --expand-tabs         expand tabs to spaces in output\n"
+msgstr ""
+"  -q, --brief               ná taispeáin ach difriúil nó nach ea\n"
+"  -e, --ed                  taispeáin script `ed'\n"
+"  -n, --rcs                 taispeáin diff i gcruth RCS\n"
+"  -y, --side-by-side        taispeáin le dhá cholún\n"
+"  -w, --width=UIMHIR        taispeáin UIMHIR carachtar sa líne ar a mhéad,\n"
+"                              (réamhshocrú=130)\n"
+"      --left-column         ná taispeáin ach an colún ar clé do línte céanna\n"
+"      --suppress-common-lines  ná taispeáin línte céanna\n"
+"  -D, --ifdef=AINM          taispeáin comhad cumaiscthe chun na diff-aí\n"
+"                               `#ifdef AINM' a léiriú\n"
+"      --GCINL-group-format=GLA  taispeáin grúpaí GCINL ionchuir de réir GLA\n"
+"      --line-format=LLA     taispeáin gach líne ionchuir de réir LLA\n"
+"      --LCINL-line-format=LLA   taispeáin línte LCINL ionchuir de réir LLA\n"
+"  -l, --paginate            scag an t-aschur le `pr' chun leathanaigh a uimhriú\n"
+"  -t, --expand-tabs         tiontaigh táib go spásanna san aschur\n"
+
+#: src/mdiff.c:4001
+msgid ""
+"  -T, --initial-tab         make tabs line up by prepending a tab\n"
+"  -r, --recursive           recursively compare any subdirectories found\n"
+"  -N, --new-file            treat absent files as empty\n"
+"  -P, --unidirectional-new-file treat absent first files as empty\n"
+"  -s, --report-identical-files report when two files are the same\n"
+"  -x, --exclude=PAT         exclude files that match PAT\n"
+"  -X, --exclude-from=FILE   exclude files that match any pattern in FILE\n"
+"  -S, --starting-file=FILE  start with FILE when comparing directories\n"
+"      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
+"  -d, --minimal             try hard to find a smaller set of changes\n"
+"  -H, --speed-large-files   assume large files and many scattered small changes\n"
+msgstr ""
+"  -T, --initial-tab         cuir táb ar dtús chun iad a ailíniú\n"
+"  -r, --recursive           déan comparáid ar fhochomhadlanna go hathchúrsach\n"
+"  -N, --new-file            caith le comhad ar iarraidh mar chomhad folamh\n"
+"  -P, --unidirectional-new-file más ar iarraidh, caith leis an chéad chomhad\n"
+"                                   mar chomhad folamh\n"
+"  -s, --report-identical-files tuairiscigh nuair atá dhá chomhad chomhionanna\n"
+"  -x, --exclude=SLONN       fág comhaid as má tá siad comhoiriúnach le SLONN\n"
+"  -X, --exclude-from=COMHAD fág comhaid as má tá siad comhoiriúnach le haon\n"
+"                                slonn ionadaíochta as an CHOMHAD\n"
+"  -S, --starting-file=COMHAD tosaigh le COMHAD agus comhadlanna á gcóimheas\n"
+"      --horizon-lines=UIMH  coinnigh UIMH líne den réimír/iarmhír coiteann\n"
+"  -d, --minimal             obair go crua le haghaidh níos lú athruithe\n"
+"  -H, --speed-large-files   comhaid mhóra agus go leor mionathruithe forleata\n"
+
+#: src/mdiff.c:4016
+msgid ""
+"\n"
+"By default, context diffs have an horizon of two lines.\n"
+msgstr ""
+"\n"
+"De réir réamhshocraithe, tá dhá líne de chomhthéacs i `diff' chomhthéacs.\n"
 
 #: src/mdiff.c:4022
-#, fuzzy
-msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Mura bhfuil COMHAD ann, nó más '-' é, léigh ón ionchur caighdeánach.\n"
-
-#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1289 src/wdiff2.c:216
-#, fuzzy
-msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Seol tuairiscí fabhtanna chuig <wdiff-bugs@iro.umontreal.ca>.\n"
-
-#: src/mdiff.c:4035
-#, c-format
-msgid "ignoring option %s (not implemented)"
-msgstr ""
-
-#: src/mdiff.c:4332
-#, fuzzy, c-format
-msgid "cannot use -z, termcap not available"
-msgstr "Ní féidir -z a úsáid; níl termcap ar fáil."
-
-#: src/mdiff.c:4371
-#, fuzzy, c-format
-msgid "word merging for two files only (so far)"
-msgstr "Ní féidir cumasc de réir focail a dhéanamh le níos mó ná dhá chomhad"
-
-#: src/mdiff.c:4387
-#, fuzzy
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
+"LTYPE is `old', `new', or `unchanged'.  GTYPE is LTYPE or `changed'.\n"
+"GFMT may contain:\n"
+"  %<  lines from FILE1\n"
+"  %>  lines from FILE2\n"
+"  %=  lines common to FILE1 and FILE2\n"
+"  %[-][WIDTH][.[PREC]]{doxX}LETTER  printf-style spec for LETTER\n"
+"    LETTERs are as follows for new group, lower case for old group:\n"
+"      F  first line number\n"
+"      L  last line number\n"
+"      N  number of lines = L-F+1\n"
+"      E  F-1\n"
+"      M  L+1\n"
 msgstr ""
 "\n"
-"Cóipcheart/Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"LCINL = `old', `new', nó `unchanged'.  GCINL = LCINL nó `changed'.\n"
+"Is éard atá i GLA ná:\n"
+"  %<  línte as COMHAD1\n"
+"  %>  línte as COMHAD2\n"
+"  %=  línte atá i gCOMHAD1 agus COMHAD2 araon\n"
+"  %[-][LEITHEAD][.[SONRÚ]]{doxX}LITIR  sonrú do litir mar C `printf'\n"
+"    Is LITIR mar a leanas (agus litreacha beaga don ghrúpa `old'):\n"
+"      F  an chéad líne-uimhir\n"
+"      L  an líne-uimhir dheiridh\n"
+"      N  líon na línte = L-F+1\n"
+"      E  F-1\n"
+"      M  L+1\n"
 
-#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1415 src/wdiff2.c:134
+#: src/mdiff.c:4037
+msgid ""
+"LFMT may contain:\n"
+"  %L  contents of line\n"
+"  %l  contents of line, excluding any trailing newline\n"
+"  %[-][WIDTH][.[PREC]]{doxX}n  printf-style spec for input line number\n"
+"Either GFMT or LFMT may contain:\n"
+"  %%  %\n"
+"  %c'C'  the single character C\n"
+"  %c'\\OOO'  the character with octal code OOO\n"
+msgstr ""
+"Is éard atá i LLA ná::\n"
+"  %L  ábhar na líne\n"
+"  %l  ábhar na líne, gan aon líne nua\n"
+"  %[-][LEITHEAD][.[SONRÚ]]{doxX}n  sonrú do líne-uimhir mar C `printf'\n"
+"Is féidir na teaghráin a leanas a bheith i GLA nó LLA:\n"
+"  %%  %\n"
+"  %c'C'  an carachtar litriúil C\n"
+"  %c'\\OOO'  an carachtar le cód ochtnártha OOO\n"
+
+#: src/mdiff.c:4049
+msgid ""
+"\n"
+"Old mdiff options:\n"
+"*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
+msgstr ""
+"\n"
+"Seanroghanna mdiff:\n"
+"*  -f, --fuzz-items=UIMHIR    UIMHIR rud neamhoiriúnach i mogall, ar a mhéad\n"
+
+#: src/mdiff.c:4055
+msgid ""
+"\n"
+"With no FILE, or when FILE is -, read standard input.\n"
+msgstr ""
+"\n"
+"Mura bhfuil COMHAD ann, nó más '-' é, léigh ón ghnáth-ionchur.\n"
+
+#: src/mdiff.c:4059 src/unify.c:298 src/wdiff.c:1204 src/wdiff2.c:222
+msgid ""
+"\n"
+"Report bugs to <wdiff-bugs@gnu.org>.\n"
+msgstr ""
+"\n"
+"Seol tuairiscí faoi fhabhtanna chuig <wdiff-bugs@gnu.org>.\n"
+
+#: src/mdiff.c:4370
+msgid "Cannot use -z, termcap not available."
+msgstr "Ní féidir -z a úsáid; níl termcap ar fáil."
+
+#: src/mdiff.c:4409
+msgid "Word merging for two files only (so far)"
+msgstr "Ní féidir cumasc de réir focail a dhéanamh le níos mó ná dhá chomhad"
+
+#: src/mdiff.c:4425 src/wdiff2.c:129
+msgid ""
+"\n"
+"Copyright (C) 1997 Free Software Foundation, Inc.\n"
+msgstr ""
+"\n"
+"Copyright © 1997 Free Software Foundation, Inc.\n"
+
+#: src/mdiff.c:4429 src/unify.c:410 src/wdiff.c:1328 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
 "Is saorbhogearra an ríomhchlár seo; féach ar an bhunchód le haghaidh\n"
 "coinníollacha cóipeála.  Níl baránta ar bith ann; go fiú níl baránta ann\n"
-"d'INDÍOLTACHT nó FEILIÚNACHT DO FHEIDHM AR LEITH.\n"
+"d'INDÍOLTACHT nó FEILIÚNACHT D'FHEIDHM AR LEITH.\n"
 
-#: src/mdiff.c:4395 src/wdiff.c:1419 src/wdiff2.c:138
+#: src/mdiff.c:4433 src/wdiff.c:1332 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -309,94 +646,78 @@ msgstr ""
 "\n"
 "Le François Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4431
-#, fuzzy, c-format
-msgid "options -123RSYZ meaningful only when two inputs"
+#: src/mdiff.c:4469
+msgid "Options -123RSYZ meaningful only when two inputs."
 msgstr "Ní féidir na roghanna -123RSYZ a úsáid le hionchur aonraic."
 
-#: src/unify.c:144
-#, fuzzy, c-format
-msgid "could not find a name for the diff at line %ld"
+#: src/unify.c:143
+#, c-format
+msgid "Could not find a name for the diff at line %ld"
 msgstr "Níl aon ainm ar fáil don `diff' ar líne %ld"
 
-#: src/unify.c:273
-#, fuzzy, c-format
-msgid "try `%s --help' for more information\n"
-msgstr "Bain triail as `%s --help' chun tuilleadh eolais a fháil.\n"
-
-#: src/unify.c:277
+#: src/unify.c:276
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unify - Tiontaigh diff-aí chomhthéacs go unidiff-aí agus vice versa.\n"
 
-#: src/unify.c:281
-#, fuzzy, c-format
-msgid "Usage: %s [OPTION]... [FILE]\n"
+#: src/unify.c:279
+#, c-format
+msgid ""
+"\n"
+"Usage: %s [OPTION]... [FILE]\n"
 msgstr ""
 "\n"
 "Úsáid: %s [ROGHA]... [COMHAD]\n"
 
-#: src/unify.c:284
-msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr ""
-
-#: src/unify.c:285
-msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
-
-#: src/unify.c:286
-msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
-
-#: src/unify.c:287
-msgid "  -p, --patch-format     generate patch format\n"
-msgstr ""
-
-#: src/unify.c:288
-msgid "  -P                     same as -p\n"
-msgstr ""
-
-#: src/unify.c:289
-msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr ""
-
-#: src/unify.c:290
-msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr ""
-
-#: src/unify.c:291
-msgid "  -U                     same as -p and -u\n"
-msgstr ""
-
-#: src/unify.c:292
-msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
-
-#: src/unify.c:296
-#, fuzzy
-msgid "If FILE is not specified, read standard input.\n"
+#: src/unify.c:282
+msgid ""
+"\n"
+"  -c, --context-diffs    force output to context diffs\n"
+"  -e, --echo-comments    echo comments to standard error\n"
+"  -o, --old-diffs        output old-style diffs, no matter what\n"
+"  -p, --patch-format     generate patch format\n"
+"  -P                     same as -p\n"
+"  -s, --strip-comments   strip comment lines\n"
+"  -u, --unidiffs         force output to unidiffs\n"
+"  -U                     same as -p and -u\n"
+"  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
+"      --help             display this help and exit\n"
+"      --version          output version information and exit\n"
+"\n"
+"If FILE is not specified, read standard input.\n"
 msgstr ""
 "\n"
-"Mura bhfuil COMHAD ann, nó más '-' é, léigh ón ionchur caighdeánach.\n"
+"  -c, --context-diffs    aschur i gcruth diff-aí comhthéacs\n"
+"  -e, --echo-comments    déan macalla de nótaí tráchta ar ghnáth-aschur earráide\n"
+"  -o, --old-diffs        aschur de réir sean-nós, is cuma na tosca\n"
+"  -p, --patch-format     aschur i gcruth paistí\n"
+"  -P                     ar comhbhrí le -p\n"
+"  -s, --strip-comments   struipeáil nótaí tráchta\n"
+"  -u, --unidiffs         aschur i gcruth unidiff-aí\n"
+"  -U                     ar comhbhrí le -p agus -u\n"
+"  -=, --use-equals       cuir `=' in ionad spásanna in unidiff-aí\n"
+"      --help             taispeáin an chabhair seo agus scoir\n"
+"      --version          taispeáin eolas faoin leagan agus scoir\n"
+"\n"
+"Mura bhfuil COMHAD ann, léigh ón ghnáth-ionchur.\n"
 
-#: src/unify.c:388
-#, fuzzy, c-format
-msgid "unable to open `%s'"
+#: src/unify.c:391
+#, c-format
+msgid "Unable to open `%s'"
 msgstr "Ní féidir `%s' a oscailt"
 
-#: src/unify.c:394
-#, fuzzy, c-format
-msgid "only one filename allowed"
+#: src/unify.c:397
+msgid "Only one filename allowed"
 msgstr "Ní ghlactar ach le comhad amháin"
 
-#: src/unify.c:403
+#: src/unify.c:406
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:411
+#: src/unify.c:414
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -404,44 +725,42 @@ msgstr ""
 "\n"
 "Le Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:550
-#, fuzzy, c-format
-msgid "invalid unified diff header at line %ld"
+#: src/unify.c:553
+#, c-format
+msgid "Invalid unified diff header at line %ld"
 msgstr "Ceanntásc neamhbhailí do `diff' comhaontaithe ar líne %ld"
 
-#: src/unify.c:592
-#, fuzzy, c-format
-msgid "malformed unified diff at line %ld"
+#: src/unify.c:595
+#, c-format
+msgid "Malformed unified diff at line %ld"
 msgstr "Diff comhaontaithe míchumtha ar líne %ld"
 
-#: src/unify.c:623
-#, fuzzy, c-format
-msgid "context diff missing `old' header at line %ld"
+#: src/unify.c:626
+#, c-format
+msgid "Context diff missing `old' header at line %ld"
 msgstr "Ceanntásc `old' ar iarraidh i n`diff' comhthéacs ar líne %ld"
 
-#: src/unify.c:667 src/unify.c:686 src/unify.c:757 src/unify.c:775
-#, fuzzy, c-format
-msgid "malformed context diff at line %ld"
+#: src/unify.c:670 src/unify.c:689 src/unify.c:760 src/unify.c:778
+#, c-format
+msgid "Malformed context diff at line %ld"
 msgstr "Diff comhthéacs míchumtha ar líne %ld"
 
-#: src/unify.c:722
-#, fuzzy, c-format
-msgid "context diff missing `new' header at line %ld"
+#: src/unify.c:725
+#, c-format
+msgid "Context diff missing `new' header at line %ld"
 msgstr "Ceanntásc `nua' ar iarraidh i ndiff comhthéacs ar líne %ld"
 
-#: src/wdiff.c:613 src/wdiff.c:732
-#, c-format
-msgid "no suitable temporary directory exists"
-msgstr ""
+#: src/wdiff.c:621 src/wdiff.c:652
+msgid "No suitable temporary directory exists"
+msgstr "Níl comhadlann oiriúnach shealadach ann"
 
 # Diarmaid Mac Mathúna did some of this for our GaelSpell project - KPS
-#: src/wdiff.c:1229 src/wdiff2.c:110
-#, fuzzy
+#: src/wdiff.c:1145 src/wdiff2.c:108
 msgid ""
-"This program is free software: you can redistribute it and/or modify\n"
+"This program is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation, either version 3 of the License, or\n"
-"(at your option) any later version.\n"
+"the Free Software Foundation; either version 2, or (at your option)\n"
+"any later version.\n"
 "\n"
 "This program is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
@@ -449,849 +768,152 @@ msgid ""
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License\n"
-"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+"along with this program; if not, write to the Free Software Foundation,\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 msgstr ""
-"Is saorbhogearra an ríomhchlár seo; is féidir leat é a scaipeadh agus/nó\n"
-"a athrú de réir na coinníollacha den GNU General Public License mar atá\n"
+"Is saorbhogearra é an ríomhchlár seo; is féidir leat é a scaipeadh agus/nó\n"
+"a athrú de réir na gcoinníollacha den GNU General Public License mar atá\n"
 "foilsithe ag an Free Software Foundation; faoi leagan 2 den cheadúnas,\n"
 "nó (más mian leat) aon leagan níos déanaí.\n"
 "\n"
 "Scaiptear an ríomhchlár seo le súil go mbeidh sé áisiúil,\n"
-"ach GAN AON BARÁNTA; go fiú gan an barántas intuigthe de\n"
-"INDÍOLTACHT nó FEILIÚNACHT DO FHEIDHM AR LEITH.  Féach ar an\n"
-"GNU General Public License le haghaidh níos mó sonraí a fháil.\n"
+"ach GAN AON BHARÁNTA; go fiú gan an barántas intuigthe\n"
+"d'INDÍOLTACHT nó FEILIÚNACHT D'FHEIDHM AR LEITH.  Féach ar an\n"
+"GNU General Public License chun níos mó sonraí a fháil.\n"
 "\n"
-"Ba chomhair go mbeifeá tar éis cóip den GNU General Public License a fháil "
-"in\n"
-"éineacht leis an ríomhchlár seo; mura bhfuair, scríobh chuig an Free "
-"Software\n"
-"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Ba chóir go mbeifeá tar éis cóip den GNU General Public License a fháil in\n"
+"éineacht leis an ríomhchlár seo; mura bhfuair, scríobh chuig an Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 
-#: src/wdiff.c:1257
+#: src/wdiff.c:1174
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Cóimheas focail as dhá chomhad agus taispeáin difríochtaí.\n"
 
-#: src/wdiff.c:1261
-#, fuzzy, c-format
+#: src/wdiff.c:1177 src/wdiff2.c:185
+#, c-format
 msgid ""
+"\n"
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
 msgstr ""
 "\n"
 "Úsáid: %s [ROGHA]... COMHAD1 COMHAD2\n"
 
-#: src/wdiff.c:1266 src/wdiff2.c:191
+#: src/wdiff.c:1181 src/wdiff2.c:189
+#, c-format
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
-
-#: src/wdiff.c:1269 src/wdiff2.c:194
-msgid "  -C, --copyright            display copyright then exit\n"
-msgstr ""
-
-#: src/wdiff.c:1270 src/wdiff2.c:195
-msgid ""
+"\n"
+"  -C, --copyright            print copyright then exit\n"
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+"  -1, --no-deleted           inhibit output of deleted words\n"
+"  -2, --no-inserted          inhibit output of inserted words\n"
+"  -3, --no-common            inhibit output of common words\n"
 msgstr ""
+"Is riachtanach le rogha ghearr aon argóint atá riachtanach leis an rogha fhada.\n"
+"\n"
+"  -C, --copyright             taispeáin cóipcheart agus scoir\n"
+"  -K, --no-init-term          mar -t, ach gan teaghráin termcap init/term\n"
+"  -1, --no-deleted            cuir cosc ar aschur d'fhocail scriosta\n"
+"  -2, --no-inserted           cuir cosc ar aschur d'fhocail ionsáite\n"
+"  -3, --no-common             cuir cosc ar aschur d'fhocail choitianta\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:199
-msgid "  -a, --auto-pager           automatically calls a pager\n"
+#: src/wdiff.c:1189 src/wdiff2.c:198
+#, c-format
+msgid ""
+"  -a, --auto-pager           automatically calls a pager\n"
+"  -h, --help                 print this help\n"
+"  -i, --ignore-case          fold character case while comparing\n"
+"  -l, --less-mode            variation of printer mode for \"less\"\n"
+"  -n, --avoid-wraps          do not extend fields through newlines\n"
+"  -p, --printer              overstrike as for printers\n"
 msgstr ""
+"  -a, --auto-pager            úsáid brabhsálaí leathanach go huathoibríoch\n"
+"  -h, --help                  taispeáin an chabhair seo\n"
+"  -i, --ignore-case           sórtáil litreacha beaga le ceannlitreacha\n"
+"  -l, --less-mode             leagan de mhód phrintéara do \"less\"\n"
+"  -n, --avoid-wraps           ná bain fad as réimsí thar línte nua\n"
+"  -p, --printer               muinbhuail, mar le printéirí\n"
 
-#: src/wdiff.c:1275
-msgid "  -d, --diff-input           use single unified diff as input\n"
-msgstr ""
-
-#: src/wdiff.c:1276 src/wdiff2.c:200
-msgid "  -h, --help                 display this help then exit\n"
-msgstr ""
-
-#: src/wdiff.c:1277 src/wdiff2.c:201
-msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
-
-#: src/wdiff.c:1278 src/wdiff2.c:202
-msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
-
-#: src/wdiff.c:1279 src/wdiff2.c:203
-msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
-
-#: src/wdiff.c:1280 src/wdiff2.c:204
-msgid "  -p, --printer              overstrike as for printers\n"
-msgstr ""
-
-#: src/wdiff.c:1281 src/wdiff2.c:206
+#: src/wdiff.c:1196 src/wdiff2.c:209
+#, c-format
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr ""
-
-#: src/wdiff.c:1282 src/wdiff2.c:207
-msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-
-#: src/wdiff.c:1283 src/wdiff2.c:208
-msgid "  -v, --version              display program version then exit\n"
-msgstr ""
-
-#: src/wdiff.c:1284 src/wdiff2.c:209
-msgid ""
+"  -t, --terminal             use termcap as for terminal displays\n"
+"  -v, --version              print program version then exit\n"
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
-
-#: src/wdiff.c:1285 src/wdiff2.c:210
-msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr ""
-
-#: src/wdiff.c:1286 src/wdiff2.c:211
-msgid ""
+"  -x, --end-delete=STRING    string to mark end of delete region\n"
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+"  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
+"  -s, --statistics            taispeáin líon na bhfocal scriosta, ionsáite, srl\n"
+"  -t, --terminal              bain úsáid as termcap do theirminéil\n"
+"  -v, --version               taispeáin leagan an ríomhchláir agus scoir\n"
+"  -w, --start-delete=TEAGHRÁN marcáil tosach an tsleachta scriosta\n"
+"  -x, --end-delete=TEAGHRÁN   marcáil deireadh an tsleachta scriosta\n"
+"  -y, --start-insert=TEAGHRÁN marcáil tosach an tsleachta ionsáite\n"
+"  -z, --end-insert=TEAGHRÁN   marcáil deireadh an tsleachta ionsáite\n"
 
-#: src/wdiff.c:1287 src/wdiff2.c:212
-msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr ""
-
-#: src/wdiff.c:1405
-#, fuzzy, c-format
-msgid "cannot use -t, termcap not available"
+#: src/wdiff.c:1319
+msgid "Cannot use -t, termcap not available."
 msgstr "Ní féidir -t a úsáid; níl termcap ar fáil."
 
-#: src/wdiff.c:1410
-#, fuzzy
+#: src/wdiff.c:1324
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
-"Foundation, Inc.\n"
+"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Cóipcheart/Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Cóipcheart/Copyright © 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1458 src/wdiff.c:1476
-#, fuzzy, c-format
-msgid "too many file arguments"
+#: src/wdiff.c:1360 src/wdiff2.c:332
+msgid "Missing file arguments"
 msgstr "Ainmneacha comhaid ar iarraidh"
 
-#: src/wdiff.c:1471 src/wdiff2.c:323
-#, fuzzy, c-format
-msgid "missing file arguments"
-msgstr "Ainmneacha comhaid ar iarraidh"
-
-#: src/wdiff2.c:130
-#, fuzzy
-msgid ""
-"\n"
-"Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
-msgstr ""
-"\n"
-"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
-
-#: src/wdiff2.c:182
+#: src/wdiff2.c:181
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
+"wdiff - Aimsigh difríochtaí idir focail trí `mdiff -W' a thosú go hinmheánach.\n"
+"Tá an ríomhchlár seo ann chun an chomhréir measartha seanfhaiseanta `wdiff' a thacú.\n"
 
-#: src/wdiff2.c:187
-#, fuzzy, c-format
-msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
+#: src/wdiff2.c:206
+msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
+msgstr "  -q, --quiet               cuir cosc ar theachtaireacht ghlao `mdiff'\n"
+
+#: src/wdiff2.c:218
+msgid ""
+"\n"
+"This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 "\n"
-"Úsáid: %s [ROGHA]... COMHAD1 COMHAD2\n"
-
-#: src/wdiff2.c:205
-msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
-
-#: src/wdiff2.c:214
-msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
+"Taispeánann an ríomhchlár seo duit conas b'fhéidir `mdiff' a chur ar siúl go díreach.\n"
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:335
-#, fuzzy, c-format
+#: src/wdiff2.c:344
+#, c-format
 msgid "Launching `%s"
-msgstr "Ag Léamh %s"
+msgstr "Á Thosú: `%s"
 
-#: src/wdiff2.c:338
+#: src/wdiff2.c:347
 #, c-format
 msgid "'\n"
-msgstr ""
+msgstr "'\n"
 
-#: lib/error.c:153
+#: lib/error.c:125
 msgid "Unknown system error"
-msgstr ""
+msgstr "Earráid anaithnid chórais"
 
-#: lib/getopt.c:529 lib/getopt.c:545
-#, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:578 lib/getopt.c:582
-#, c-format
-msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:591 lib/getopt.c:596
-#, c-format
-msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, c-format
-msgid "%s: option '%s' requires an argument\n"
-msgstr ""
-
-#: lib/getopt.c:696 lib/getopt.c:699
-#, c-format
-msgid "%s: unrecognized option '--%s'\n"
-msgstr ""
-
-#: lib/getopt.c:707 lib/getopt.c:710
-#, c-format
-msgid "%s: unrecognized option '%c%s'\n"
-msgstr ""
-
-#: lib/getopt.c:759 lib/getopt.c:762
-#, c-format
-msgid "%s: invalid option -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, c-format
-msgid "%s: option requires an argument -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:882 lib/getopt.c:898
-#, c-format
-msgid "%s: option '-W %s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:922 lib/getopt.c:940
-#, c-format
-msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/regcomp.c:132
-msgid "Success"
-msgstr ""
-
-#: lib/regcomp.c:135
-msgid "No match"
-msgstr ""
-
-#: lib/regcomp.c:138
-msgid "Invalid regular expression"
-msgstr ""
-
-#: lib/regcomp.c:141
-msgid "Invalid collation character"
-msgstr ""
-
-#: lib/regcomp.c:144
-msgid "Invalid character class name"
-msgstr ""
-
-#: lib/regcomp.c:147
-msgid "Trailing backslash"
-msgstr ""
-
-#: lib/regcomp.c:150
-msgid "Invalid back reference"
-msgstr ""
-
-#: lib/regcomp.c:153
-msgid "Unmatched [ or [^"
-msgstr ""
-
-#: lib/regcomp.c:156
-msgid "Unmatched ( or \\("
-msgstr ""
-
-#: lib/regcomp.c:159
-msgid "Unmatched \\{"
-msgstr ""
-
-#: lib/regcomp.c:162
-msgid "Invalid content of \\{\\}"
-msgstr ""
-
-#: lib/regcomp.c:165
-msgid "Invalid range end"
-msgstr ""
-
-#: lib/regcomp.c:168
-msgid "Memory exhausted"
-msgstr ""
-
-#: lib/regcomp.c:171
-msgid "Invalid preceding regular expression"
-msgstr ""
-
-#: lib/regcomp.c:174
-msgid "Premature end of regular expression"
-msgstr ""
-
-#: lib/regcomp.c:177
-msgid "Regular expression too big"
-msgstr ""
-
-#: lib/regcomp.c:180
-msgid "Unmatched ) or \\)"
-msgstr ""
-
-#: lib/regcomp.c:701
-msgid "No previous regular expression"
-msgstr ""
-
-#: lib/xalloc-die.c:34
+#: lib/xalloc-die.c:35
 msgid "memory exhausted"
-msgstr ""
+msgstr "cuimhne ídithe"
 
-#~ msgid ""
-#~ "\n"
-#~ "Operation modes:\n"
-#~ "  -h                     (ignored)\n"
-#~ "  -v, --verbose          report a few statistics on stderr\n"
-#~ "      --help             display this help and exit\n"
-#~ "      --version          output version information and exit\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Roghanna:\n"
-#~ "  -h                     (as feidhm)\n"
-#~ "  -v, --verbose          taispeáin staitistic ar earráid chaighdeánach\n"
-#~ "      --help             taispeáin an chabhair seo agus éirigh as\n"
-#~ "      --version          taispeáin eolas faoin leagan agus éirigh as\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Formatting output:\n"
-#~ "  -T, --initial-tab       produce TAB instead of initial space\n"
-#~ "  -l, --paginate          paginate output through `pr'\n"
-#~ "  -S, --string[=STRING]   take note of another user STRING\n"
-#~ "  -V, --show-links        give file and line references in annotations\n"
-#~ "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Leagan amach den aschur:\n"
-#~ "  -T, --initial-tab       taispeáin táb in ionad spás tosaigh\n"
-#~ "  -l, --paginate          uimhrigh leathanaigh le `pr'\n"
-#~ "  -S, --string[=TEAGHRÁN] tabhair suntas do THEAGHRÁN úsáideora eile\n"
-#~ "  -V, --show-links        taispeáin tagairtí chomhaid/líne i nótaí\n"
-#~ "  -t, --expand-tabs       leathnaigh táib go spásanna san aschur\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Word mode options:\n"
-#~ "  -1, --no-deleted            inhibit output of deleted words\n"
-#~ "  -2, --no-inserted           inhibit output of inserted words\n"
-#~ "  -3, --no-common             inhibit output of common words\n"
-#~ "  -A, --auto-pager            automatically calls a pager\n"
-#~ "  -k, --less-mode             variation of printer mode for \"less\"\n"
-#~ "  -m, --avoid-wraps           do not extend fields through newlines\n"
-#~ "  -o, --printer               overstrike as for printers\n"
-#~ "  -z, --terminal              use termcap as for terminal displays\n"
-#~ "  -K, --no-init-term          like -z, but no termcap init/term strings\n"
-#~ "  -O, --item-regexp=REGEXP    compare items as defined by REGEXP\n"
-#~ "  -W, --word-mode             compare words instead of lines\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Roghanna modh focail:\n"
-#~ "  -1, --no-deleted            ná taispeáin focail scriosta\n"
-#~ "  -2, --no-inserted           ná taispeáin focail ionsáite\n"
-#~ "  -3, --no-common             ná taispeáin focail coitianta\n"
-#~ "  -A, --auto-pager            úsáid léitheoir (mar \"less\") go "
-#~ "huathoibríoch\n"
-#~ "  -k, --less-mode             athrú ar modh printéara do \"less\"\n"
-#~ "  -m, --avoid-wraps           ná taispeáin réimsí trasna línte\n"
-#~ "  -o, --printer               muinbhuail, mar le printéirí\n"
-#~ "  -z, --terminal              úsáid termcap mar le teirminéil\n"
-#~ "  -K, --no-init-term          mar -z, ach níl aon teaghrán termcap init/"
-#~ "term\n"
-#~ "  -O, --item-regexp=SLONN     cóimheas de réir an SLONN ionadaíochta\n"
-#~ "  -W, --word-mode             cóimheas focail in ionad línte\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Comparing files:\n"
-#~ "*  -H, --speed-large-files     go faster, for when numerous small "
-#~ "changes\n"
-#~ "*  -a, --text                  report line differences (text file "
-#~ "default)\n"
-#~ "*  -d, --minimal               try harder for a smaller set of changes\n"
-#~ "*  -q, --brief                 only says if files differ (binary "
-#~ "default)\n"
-#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/"
-#~ "suffixes\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Cóimheas comhaid:\n"
-#~ "*  -H, --speed-large-files     níos gasta, má tá mionathruithe go leor "
-#~ "ann\n"
-#~ "*  -a, --text                  taispeáin difríochtaí idir línte (loicthe: "
-#~ "téacs)\n"
-#~ "*  -d, --minimal               obair go crua le haghaidh níos lú "
-#~ "athruithe\n"
-#~ "*  -q, --brief                 an difriúil iad? (loicthe: dénártha)\n"
-#~ "*      --horizon-lines=LÍNTE   coinnigh LÍNTE líne i bhfoircinn "
-#~ "coitianta\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Comparing directories:\n"
-#~ "*  -N, --new-file                  consider missing files to be empty\n"
-#~ "*  -P, --unidirectional-new-file   consider missing old files to be "
-#~ "empty\n"
-#~ "*  -S, --starting-file=FILE        resume directory comparison with FILE\n"
-#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from "
-#~ "FILE\n"
-#~ "*  -r, --recursive                 recursively compare subdirectories\n"
-#~ "*  -s, --report-identical-files    report when two files are the same\n"
-#~ "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Cóimheas comhadlanna:\n"
-#~ "*  -N, --new-file                  caith le comhaid ar iarraidh mar "
-#~ "folamh\n"
-#~ "*  -P, --unidirectional-new-file   caith le seanchomhaid ar iarraidh mar "
-#~ "folamh\n"
-#~ "*  -S, --starting-file=COMHAD      atosaigh cóimheas comhadlanna ag "
-#~ "COMHAD\n"
-#~ "*  -X, --exclude-from=COMHAD       déan neamhshuim ar comhaid atá "
-#~ "comhoiriúnacha\n"
-#~ "                                   le slonn ionadaíochta as an gCOMHAD\n"
-#~ "*  -r, --recursive                 cóimheas fochomhadlanna go "
-#~ "hathchúrsach\n"
-#~ "*  -s, --report-identical-files    taispeáin nuair atá comhaid mar an "
-#~ "gcéanna\n"
-#~ "*  -x, --exclude=SLONN             déan neamhshuim ar comhaid(lanna) atá\n"
-#~ "                                   comhoiriúnacha leis an SLONN "
-#~ "ionadaíochta\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Ignoring text:\n"
-#~ "  -B, --ignore-blank-lines             ignore blank lines\n"
-#~ "*  -I, --ignore-matching-lines=REGEXP   ignore lines matching REGEXP\n"
-#~ "  -b, --ignore-space-change            ignore amount of white space\n"
-#~ "  -i, --ignore-case                    ignore case differences\n"
-#~ "  -w, --ignore-all-space               ignore white space\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Déanamh neamhshuim ar téacs:\n"
-#~ "  -B, --ignore-blank-lines             déan neamhshuim ar línte folmha\n"
-#~ "*  -I, --ignore-matching-lines=SLONN    \"  \"  ar línte comhoiriúnacha "
-#~ "le SLONN\n"
-#~ "  -b, --ignore-space-change             \"  \"  ar líon an spáis bán\n"
-#~ "  -i, --ignore-case                     \"  \"  ar ceannlitreacha vs. "
-#~ "beaga\n"
-#~ "  -w, --ignore-all-space                \"  \"  ar spás bán\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Clustering:\n"
-#~ "  -G, --relist-files         list all input files with annotations\n"
-#~ "  -J, --minimum-size=ITEMS   ignore clusters not having that many ITEMS\n"
-#~ "  -j, --ignore-delimiters    do not count items having only delimiters\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Mogallú:\n"
-#~ "  -G, --relist-files         liostaigh gach inchomhad agus nóta aige\n"
-#~ "  -J, --minimum-size=LÍON    déan neamhshuim ar mogaill gan LÍON rud ar a "
-#~ "laghad\n"
-#~ "  -j, --ignore-delimiters    ná cuir san áireamh mura bhfuil ach "
-#~ "teorantóirí\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Detailed output formats:\n"
-#~ "*  -D, --ifdef=NAME                      output `#ifdef NAME' format\n"
-#~ "*      --changed-group-format=FORMAT     use FORMAT for changed lines\n"
-#~ "*      --new-group-format=FORMAT         use FORMAT for inserted lines\n"
-#~ "*      --new-line-format=FORMAT          use FORMAT for inserted line\n"
-#~ "*      --old-group-format=FORMAT         use FORMAT for deleted lines\n"
-#~ "*      --old-line-format=FORMAT          use FORMAT for deleted line\n"
-#~ "*      --unchanged-group-format=FORMAT   use FORMAT for unchanged lines\n"
-#~ "*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n"
-#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-"
-#~ "format\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Formáidí aschuir mionsonraithe:\n"
-#~ "*  -D, --ifdef=AINM                      aschuir i gcruth `#ifdef AINM'\n"
-#~ "*      --changed-group-format=FORMÁID    úsáid FORMÁID do línte "
-#~ "athraithe\n"
-#~ "*      --new-group-format=FORMÁID        úsáid FORMÁID do línte ionsáite\n"
-#~ "*      --new-line-format=FORMÁID         úsáid FORMÁID do líne ionsáite\n"
-#~ "*      --old-group-format=FORMÁID        úsáid FORMÁID do línte scriosta\n"
-#~ "*      --old-line-format=FORMÁID         úsáid FORMÁID do líne scriosta\n"
-#~ "*      --unchanged-group-format=FORMÁID  úsáid FORMÁID do línte gan "
-#~ "athrú\n"
-#~ "*      --unchanged-line-format=FORMÁID   úsáid FORMÁID do líne gan athrú\n"
-#~ "*      --line-format=FORMÁID             --{old,new,unchanged}-line-"
-#~ "format\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Script-like formats:\n"
-#~ "  (none of -CDUcefnuy)   output normal diffs\n"
-#~ "*  -e, --ed               output a valid `ed' script\n"
-#~ "*  -f, --forward-ed       mix between -e and -n (not very useful)\n"
-#~ "*  -n, --rcs              output RCS format (internally used by RCS)\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Formáidí mar scripteanna:\n"
-#~ "  (níl aon cheann de -CDUcefnuy)   scríobh diff-aí de ghnáth\n"
-#~ "*  -e, --ed               scríobh script `ed' bhailí\n"
-#~ "*  -f, --forward-ed       meascán -e agus -n (ní úsáideach go "
-#~ "speisialta)\n"
-#~ "*  -n, --rcs              scríobh i gcruth inmheánach RCS\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Context and unified formats:\n"
-#~ "*  -F, --show-function-line=REGEXP   show previous context matching "
-#~ "REGEXP\n"
-#~ "*  -p, --show-c-function             show which C function for each "
-#~ "change\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Comhthéacs agus leaganacha amach comhaontaithe:\n"
-#~ "*  -F,--show-function-line=SLONN   taispeáin comhthéacs comhoiriúnach "
-#~ "roimh seo\n"
-#~ "*  -p, --show-c-function           taispeáin an fheidhm C do gach "
-#~ "athrach\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "*  -C, --context=LINES         as -c, also select context size in lines\n"
-#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name "
-#~ "(twice)\n"
-#~ "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-#~ "*  -c, --context               output context diffs (default 3 context "
-#~ "lines)\n"
-#~ "*  -u, --unified               output unidiffs (default 3 context lines)\n"
-#~ "*  -LINES                      (obsolete: select context size in lines)\n"
-#~ msgstr ""
-#~ "\n"
-#~ "*  -C, --context=LÍNTE         mar -c, ach socraigh LÍNTE de chomhthéacs "
-#~ "fosta\n"
-#~ "*  -L, --label=LIPÉAD          úsáid LIPÉAD ó/chuig in ionad ainm comhaid "
-#~ "(2x)\n"
-#~ "*  -U, --unified=LÍNTE         mar -u, ach socraigh LÍNTE de chomhthéacs "
-#~ "fosta\n"
-#~ "*  -c, --context               scríobh diff-aí i gcomhthéacs (loicthe 3 "
-#~ "líne)\n"
-#~ "*  -u, --unified               scríobh unidiff-aí i gcomhthéacs (loicthe "
-#~ "3 líne)\n"
-#~ "*  -LÍNTE                      (i léig: socraigh LÍNTE de chomhthéacs)\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Side by side format:\n"
-#~ "*  -W, --width=COLUMNS           use width of COLUMNS\n"
-#~ "*  -y, --side-by-side            use side by side output format\n"
-#~ "*      --left-column             print only left column line when common\n"
-#~ "*      --sdiff-merge-assist      (internally used by `sdiff')\n"
-#~ "*      --suppress-common-lines   do not print common lines\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Formáid taobh le taobh:\n"
-#~ "*  -W, --width=COLÚIN            socraigh leithead de COLÚIN\n"
-#~ "*  -y, --side-by-side            taispeáin torthaí taobh le taobh\n"
-#~ "*      --left-column             ná taispeáin an colún ar deis más ionann "
-#~ "iad\n"
-#~ "*      --sdiff-merge-assist      (úsáidte go hinmheánach le `sdiff')\n"
-#~ "*      --suppress-common-lines   ná taispeáin línte atá i bpáirt acu\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "FORMAT is made up of characters standing for themselves, except:\n"
-#~ "  %%%%           a single %%\n"
-#~ "  %%c'C'        quoted character C\n"
-#~ "  %%c'\\O'       character having value O, from 1 to 3 octal digits\n"
-#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E "
-#~ "FORMAT\n"
-#~ "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
-#~ "  %%<           [group] old, each line through --old-line-format\n"
-#~ "  %%>           [group] new, each line through --new-line-format\n"
-#~ "  %%=           [group] unchanged, each line through --unchanged-line-"
-#~ "format\n"
-#~ "  %%l           [line] without its possible trailing newline\n"
-#~ "  %%L           [line] with its possible trailing newline\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Is éard atá i bhFORMÁID ná carachtair á n-ionadú féin, ach amháin:\n"
-#~ "  %%%%           %% aonarach\n"
-#~ "  %%c'C'        an carachtar C idir comharthaí athfhriotail\n"
-#~ "  %%c'\\O'       carachtar le luach O, le 1, 2, nó 3 dhigit ochtnártha\n"
-#~ "  %%(A=B?T:E)   má A=B ansin T, agus E i ngach cás eile; is uimhreacha "
-#~ "nó\n"
-#~ "                    ATHRÓGA A agus B; is FORMÁIDÍ T agus E\n"
-#~ "  %%FN          taispeáin luach na hATHRÓIGE N de réir an SONRÚ F\n"
-#~ "  %%<           [grúpa] sean, cuir gach líne trí --old-line-format\n"
-#~ "  %%>           [grúpa] nua, cuir gach líne trí --new-line-format\n"
-#~ "  %%=           [grúpa] gan athrú, cuir gach líne trí --unchanged-line-"
-#~ "format\n"
-#~ "  %%l           [line] gan líne nua foirceanta, mar atá\n"
-#~ "  %%L           [line] le líne nua foirceanta, mar atá\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "SPECIF is [-][W[.D]]{doxX} as in C printf\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Is [-][W[.D]]{doxX} SONRÚ, mar C printf\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "VARIABLE is {eflmn} for old group or {EFLMN} for new group\n"
-#~ "  {eE}   line number just before group\n"
-#~ "  {fF}   first line number of group\n"
-#~ "  {lL}   last line number of group\n"
-#~ "  {mM}   line number just after group\n"
-#~ "  {nN}   number of lines in the group\n"
-#~ msgstr ""
-#~ "\n"
-#~ "is éard atá in ATHRÓG ná {eflmn} don sheanghrúpa nó {EFLMN} don ghrúpa "
-#~ "nua\n"
-#~ "  {eE}   líne-uimhir díreach roimh an ghrúpa\n"
-#~ "  {fF}   an chéad líne-uimhir sa ghrúpa\n"
-#~ "  {lL}   an líne-uimhir dheiridh sa ghrúpa\n"
-#~ "  {mM}   líne-uimhir díreach tar éis an ghrúpa\n"
-#~ "  {nN}   líon na línte sa ghrúpa\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Standard diff options:\n"
-#~ "  -i, --ignore-case         consider upper- and lower-case to be the "
-#~ "same\n"
-#~ "  -w, --ignore-all-space    ignore all white space\n"
-#~ "  -b, --ignore-space-change ignore changes in the amount of white space\n"
-#~ "  -B, --ignore-blank-lines  ignore changes whose lines are all blank\n"
-#~ "  -I, --ignore-matching-lines=RE ignore changes whose lines all match RE\n"
-#~ "  -a, --text                treat all files as text\n"
-#~ "  -c, --context[=NUMBER]    output regular context diffs,\n"
-#~ "                            changing to NUMBER lines of context\n"
-#~ "  -u, --unified[=NUMBER]    output unified context diffs or unidiffs,\n"
-#~ "                            with NUMBER lines of context\n"
-#~ "  -C, --context=NUM         output NUM lines of copied context\n"
-#~ "  -U, --unified=NUM         output NUM lines of unified context\n"
-#~ "  -L, --label=LABEL         use LABEL instead of file name\n"
-#~ "  -p, --show-c-function     show which C function each change is in\n"
-#~ "  -F, --show-function-line=RE show the most recent line matching RE\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Roghanna diff coitianta:\n"
-#~ "  -i, --ignore-case         caith le ceannlitreacha agus beaga le chéile\n"
-#~ "  -w, --ignore-all-space    déan neamhshuim ar spás bán\n"
-#~ "  -b, --ignore-space-change déan neamhshuim ar mhéid an spáis bán\n"
-#~ "  -B, --ignore-blank-lines  déan neamhshuim ar línte folmha\n"
-#~ "  -I, --ignore-matching-lines=SLONN  déan neamhshuim ar línte atá "
-#~ "comhoiriúnach\n"
-#~ "                                     leis an SLONN ionadaíochta\n"
-#~ "  -a, --text                caith le gach comhad mar théacschomhad\n"
-#~ "  -c, --context[=UIMHIR]    taispeáin diff-aí le comhthéacs coitianta,\n"
-#~ "                            ach socraigh UIMHIR líne de chomhthéacs\n"
-#~ "  -u, --unified[=UIMHIR]    taispeáin diff-aí le comhthéacs comhaontaithe "
-#~ "nó\n"
-#~ "                              unidiff-aí le hUIMHIR líne de chomhthéacs\n"
-#~ "  -C, --context=UIMHIR      taispeáin UIMHIR líne de chomhthéacs "
-#~ "cóipeáilte\n"
-#~ "  -U, --unified=UIMHIR      taispeáin UIMHIR líne de chomhthéacs "
-#~ "comhaontaithe\n"
-#~ "  -L, --label=LIPÉAD        bain úsáid as LIPÉAD in ionad ainm comhaid\n"
-#~ "  -p, --show-c-function     taispeáin an fheidhm C do gach difríocht\n"
-#~ "  -F, --show-function-line=SLONN     taispeáin an líne is déanaí atá\n"
-#~ "                                     comhoiriúnach leis an SLONN "
-#~ "ionadaíochta\n"
-
-#~ msgid ""
-#~ "  -q, --brief               output only whether files differ\n"
-#~ "  -e, --ed                  output an ed script\n"
-#~ "  -n, --rcs                 output an RCS format diff\n"
-#~ "  -y, --side-by-side        output in two columns\n"
-#~ "  -w, --width=NUM           output at most NUM (default 130) characters "
-#~ "per line\n"
-#~ "      --left-column         output only the left column of common lines\n"
-#~ "      --suppress-common-lines do not output common lines\n"
-#~ "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' "
-#~ "diffs\n"
-#~ "      --GTYPE-group-format=GFMT GTYPE input groups with GFMT\n"
-#~ "      --line-format=LFMT    all input lines with LFMT\n"
-#~ "      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"
-#~ "  -l, --paginate            pass the output through `pr' to paginate it\n"
-#~ "  -t, --expand-tabs         expand tabs to spaces in output\n"
-#~ msgstr ""
-#~ "  -q, --brief               ná taispeáin ach difriúil nó nach ea\n"
-#~ "  -e, --ed                  taispeáin script `ed'\n"
-#~ "  -n, --rcs                 taispeáin diff i gcruth RCS\n"
-#~ "  -y, --side-by-side        taispeáin le dhá cholún\n"
-#~ "  -w, --width=UIMHIR        taispeáin UIMHIR carachtar sa líne ar a "
-#~ "mhéad,\n"
-#~ "                              (luach loicthe=130)\n"
-#~ "      --left-column         ná taispeáin ach an colún ar clé do línte "
-#~ "céanna\n"
-#~ "      --suppress-common-lines  ná taispeáin línte céanna\n"
-#~ "  -D, --ifdef=AINM          taispeáin comhad cumaiscthe chun na diff-aí\n"
-#~ "                               `#ifdef AINM' a léiriú\n"
-#~ "      --GCINL-group-format=GLA  taispeáin grúpaí GCINL ionchuir de réir "
-#~ "GLA\n"
-#~ "      --line-format=LLA     taispeáin gach líne ionchuir de réir LLA\n"
-#~ "      --LCINL-line-format=LLA   taispeáin línte LCINL ionchuir de réir "
-#~ "LLA\n"
-#~ "  -l, --paginate            scag an t-aschur le `pr' chun leathanaigh a "
-#~ "uimhriú\n"
-#~ "  -t, --expand-tabs         tiontaigh táib go spásanna san aschur\n"
-
-#~ msgid ""
-#~ "  -T, --initial-tab         make tabs line up by prepending a tab\n"
-#~ "  -r, --recursive           recursively compare any subdirectories found\n"
-#~ "  -N, --new-file            treat absent files as empty\n"
-#~ "  -P, --unidirectional-new-file treat absent first files as empty\n"
-#~ "  -s, --report-identical-files report when two files are the same\n"
-#~ "  -x, --exclude=PAT         exclude files that match PAT\n"
-#~ "  -X, --exclude-from=FILE   exclude files that match any pattern in FILE\n"
-#~ "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
-#~ "      --horizon-lines=NUM   keep NUM lines of the common prefix and "
-#~ "suffix\n"
-#~ "  -d, --minimal             try hard to find a smaller set of changes\n"
-#~ "  -H, --speed-large-files   assume large files and many scattered small "
-#~ "changes\n"
-#~ msgstr ""
-#~ "  -T, --initial-tab         cuir táb ar dtús chun iad a ailíniú\n"
-#~ "  -r, --recursive           déan comparáid ar fochomhadlanna go "
-#~ "hathchúrsach\n"
-#~ "  -N, --new-file            caith le comhad ar iarraidh mar chomhad "
-#~ "folamh\n"
-#~ "  -P, --unidirectional-new-file caith le céad chomhaid mar chomhaid "
-#~ "folmha\n"
-#~ "  -s, --report-identical-files tuairiscigh nuair atá dhá chomhad "
-#~ "comhionanna\n"
-#~ "  -x, --exclude=SLONN       fág comhaid as má tá siad comhoiriúnacha le "
-#~ "SLONN\n"
-#~ "  -X, --exclude-from=COMHAD fág comhaid as má tá siad comhoiriúnacha le "
-#~ "haon\n"
-#~ "                                slonn ionadaíochta as an CHOMHAD\n"
-#~ "  -S, --starting-file=COMHAD tosaigh le COMHAD agus ag cóimheas "
-#~ "comhadlanna\n"
-#~ "      --horizon-lines=UIMH  coinnigh UIMH líne den réimír/iarmhír "
-#~ "coiteann\n"
-#~ "  -d, --minimal             obair go crua le haghaidh níos lú athruithe\n"
-#~ "  -H, --speed-large-files   comhaid móra agus mionathruithe forleata go "
-#~ "leor\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "By default, context diffs have an horizon of two lines.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Trí mhainneachtain, tá dhá líne de chomhthéacs i `diff' chomhthéacs.\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "LTYPE is `old', `new', or `unchanged'.  GTYPE is LTYPE or `changed'.\n"
-#~ "GFMT may contain:\n"
-#~ "  %<  lines from FILE1\n"
-#~ "  %>  lines from FILE2\n"
-#~ "  %=  lines common to FILE1 and FILE2\n"
-#~ "  %[-][WIDTH][.[PREC]]{doxX}LETTER  printf-style spec for LETTER\n"
-#~ "    LETTERs are as follows for new group, lower case for old group:\n"
-#~ "      F  first line number\n"
-#~ "      L  last line number\n"
-#~ "      N  number of lines = L-F+1\n"
-#~ "      E  F-1\n"
-#~ "      M  L+1\n"
-#~ msgstr ""
-#~ "\n"
-#~ "LCINL = `old', `new', nó `unchanged'.  GCINL = LCINL nó `changed'.\n"
-#~ "Is éard atá i GLA ná:\n"
-#~ "  %<  línte as COMHAD1\n"
-#~ "  %>  línte as COMHAD2\n"
-#~ "  %=  línte atá i gCOMHAD1 agus COMHAD2 araon\n"
-#~ "  %[-][LEITHEAD][.[SONRÚ]]{doxX}LITIR  sonrú do litir mar C `printf'\n"
-#~ "    Is LITIR mar a leanas (agus litreacha beaga don ghrúpa `old'):\n"
-#~ "      F  an chéad líne-uimhir\n"
-#~ "      L  an líne-uimhir dheiridh\n"
-#~ "      N  líon na línte = L-F+1\n"
-#~ "      E  F-1\n"
-#~ "      M  L+1\n"
-
-#~ msgid ""
-#~ "LFMT may contain:\n"
-#~ "  %L  contents of line\n"
-#~ "  %l  contents of line, excluding any trailing newline\n"
-#~ "  %[-][WIDTH][.[PREC]]{doxX}n  printf-style spec for input line number\n"
-#~ "Either GFMT or LFMT may contain:\n"
-#~ "  %%  %\n"
-#~ "  %c'C'  the single character C\n"
-#~ "  %c'\\OOO'  the character with octal code OOO\n"
-#~ msgstr ""
-#~ "Is éard atá i LLA ná::\n"
-#~ "  %L  ábhar na líne\n"
-#~ "  %l  ábhar na líne, gan aon líne nua\n"
-#~ "  %[-][LEITHEAD][.[BEACHT]]{doxX}n  sonrú do líne-uimhir mar C `printf'\n"
-#~ "Is féidir na teaghráin a leanas a bheith i GLA nó LLA:\n"
-#~ "  %%  %\n"
-#~ "  %c'C'  an carachtar litriúil C\n"
-#~ "  %c'\\OOO'  an carachtar le cód ochtnártha OOO\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Old mdiff options:\n"
-#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a "
-#~ "cluster\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Seanroghanna mdiff:\n"
-#~ "*  -f, --fuzz-items=UIMHIR    UIMHIR rud neamhoiriúnach i mogall, ar a "
-#~ "mhéad\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Copyright (C) 1997 Free Software Foundation, Inc.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Copyright (C) 1997 Free Software Foundation, Inc.\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "  -c, --context-diffs    force output to context diffs\n"
-#~ "  -e, --echo-comments    echo comments to standard error\n"
-#~ "  -o, --old-diffs        output old-style diffs, no matter what\n"
-#~ "  -p, --patch-format     generate patch format\n"
-#~ "  -P                     same as -p\n"
-#~ "  -s, --strip-comments   strip comment lines\n"
-#~ "  -u, --unidiffs         force output to unidiffs\n"
-#~ "  -U                     same as -p and -u\n"
-#~ "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-#~ "      --help             display this help and exit\n"
-#~ "      --version          output version information and exit\n"
-#~ "\n"
-#~ "If FILE is not specified, read standard input.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "  -c, --context-diffs    aschur i gcruth diff-aí comhthéacs\n"
-#~ "  -e, --echo-comments    déan macalla de nótaí tráchta chuig stderr\n"
-#~ "  -o, --old-diffs        aschur de réir sean-nós, is cuma na tosca\n"
-#~ "  -p, --patch-format     aschur i gcruth paistí\n"
-#~ "  -P                     ar chomhbhrí le -p\n"
-#~ "  -s, --strip-comments   struipeáil nótaí tráchta\n"
-#~ "  -u, --unidiffs         aschur i gcruth unidiff-aí\n"
-#~ "  -U                     ar chomhbhrí le -p agus -u\n"
-#~ "  -=, --use-equals       cuir `=' in ionad spásanna in unidiff-aí\n"
-#~ "      --help             taispeáin an chabhair seo agus éirigh as\n"
-#~ "      --version          taispeáin eolas faoin leagan agus éirigh as\n"
-#~ "\n"
-#~ "Mura bhfuil COMHAD ann, léigh ón ionchur caighdeánach.\n"
-
-#, fuzzy
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
 #~ "\n"
 #~ "  -C, --copyright            print copyright then exit\n"
 #~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+#~ "  -V, --version              print program version then exit\n"
 #~ "  -1, --no-deleted           inhibit output of deleted words\n"
 #~ "  -2, --no-inserted          inhibit output of inserted words\n"
 #~ "  -3, --no-common            inhibit output of common words\n"
@@ -1303,76 +925,25 @@ msgstr ""
 #~ "  -p, --printer              overstrike as for printers\n"
 #~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
 #~ "  -t, --terminal             use termcap as for terminal displays\n"
-#~ "  -v, --version              print program version then exit\n"
 #~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 #~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 #~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Is riachtanach le rogha gearr aon argóint atá riachtanach leis an rogha "
-#~ "fada.\n"
-#~ "  -C, --copyright             taispeáin cóipcheart agus éirigh as\n"
-#~ "  -K, --no-init-term          mar -t, ach gan teaghráin termcap init/"
-#~ "term\n"
-#~ "  -V, --version               taispeáin leagan agus éirigh as\n"
+#~ "Is riachtanach le rogha ghearr aon argóint atá riachtanach leis an rogha fhada.\n"
+#~ "  -C, --copyright             taispeáin cóipcheart agus scoir\n"
+#~ "  -K, --no-init-term          mar -t, ach gan teaghráin termcap init/term\n"
+#~ "  -V, --version               taispeáin leagan agus scoir\n"
 #~ "  -1, --no-deleted            cuir cosc ar aschur d'fhocail scriosta\n"
 #~ "  -2, --no-inserted           cuir cosc ar aschur d'fhocail ionsáite\n"
 #~ "  -3, --no-common             cuir cosc ar aschur d'fhocail coitianta\n"
-#~ "  -a, --auto-pager            bain úsáid as brabhsálaí leathanaigh\n"
+#~ "  -a, --auto-pager            úsáid brabhsálaí leathanach go huathoibríoch\n"
 #~ "  -h, --help                  taispeáin an chabhair seo\n"
 #~ "  -i, --ignore-case           sórtáil litreacha beaga le ceannlitreacha\n"
 #~ "  -l, --less-mode             leagan de mhodh phrintéara do \"less\"\n"
 #~ "  -n, --avoid-wraps           ná bain fad as réimsí thar línte nua\n"
 #~ "  -p, --printer               muinbhuail, mar le printéirí\n"
-#~ "  -s, --statistics            taispeáin líon na bhfocal scriosta, "
-#~ "ionsáite, srl\n"
-#~ "  -t, --terminal              bain úsáid as termcap do theirminéil\n"
-#~ "  -w, --start-delete=TEAGHRÁN marcáil tosach de pháirt scriosta\n"
-#~ "  -x, --end-delete=TEAGHRÁN   marcáil deireadh de pháirt scriosta\n"
-#~ "  -y, --start-insert=TEAGHRÁN marcáil tosach de pháirt ionsáite\n"
-#~ "  -z, --end-insert=TEAGHRÁN   marcáil deireadh de pháirt ionsáite\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Mandatory arguments to long options are mandatory for short options too.\n"
-#~ "\n"
-#~ "  -C, --copyright            print copyright then exit\n"
-#~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-#~ "  -1, --no-deleted           inhibit output of deleted words\n"
-#~ "  -2, --no-inserted          inhibit output of inserted words\n"
-#~ "  -3, --no-common            inhibit output of common words\n"
-#~ "  -a, --auto-pager           automatically calls a pager\n"
-#~ "  -h, --help                 print this help\n"
-#~ "  -i, --ignore-case          fold character case while comparing\n"
-#~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
-#~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
-#~ "  -p, --printer              overstrike as for printers\n"
-#~ "  -q, --quiet                inhibit the `mdiff' call message\n"
-#~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
-#~ "  -t, --terminal             use termcap as for terminal displays\n"
-#~ "  -v, --version              print program version then exit\n"
-#~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-#~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
-#~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-#~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
-#~ msgstr ""
-#~ "Is riachtanach le rogha gearr aon argóint atá riachtanach leis an rogha "
-#~ "fada.\n"
-#~ "  -C, --copyright             taispeáin cóipcheart agus éirigh as\n"
-#~ "  -K, --no-init-term          mar -t, ach gan teaghráin termcap init/"
-#~ "term\n"
-#~ "  -V, --version               taispeáin leagan agus éirigh as\n"
-#~ "  -1, --no-deleted            cuir cosc ar aschur d'fhocail scriosta\n"
-#~ "  -2, --no-inserted           cuir cosc ar aschur d'fhocail ionsáite\n"
-#~ "  -3, --no-common             cuir cosc ar aschur d'fhocail coitianta\n"
-#~ "  -a, --auto-pager            bain úsáid as brabhsálaí leathanaigh\n"
-#~ "  -h, --help                  taispeáin an chabhair seo\n"
-#~ "  -i, --ignore-case           sórtáil litreacha beaga le ceannlitreacha\n"
-#~ "  -l, --less-mode             leagan de mhodh phrintéara do \"less\"\n"
-#~ "  -n, --avoid-wraps           ná bain fad as réimsí thar línte nua\n"
-#~ "  -p, --printer               muinbhuail, mar le printéirí\n"
-#~ "  -s, --statistics            taispeáin líon na bhfocal scriosta, "
-#~ "ionsáite, srl\n"
+#~ "  -s, --statistics            taispeáin líon na bhfocal scriosta, ionsáite, srl\n"
 #~ "  -t, --terminal              bain úsáid as termcap do theirminéil\n"
 #~ "  -w, --start-delete=TEAGHRÁN marcáil tosach de pháirt scriosta\n"
 #~ "  -x, --end-delete=TEAGHRÁN   marcáil deireadh de pháirt scriosta\n"
