@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 18:43+0100\n"
+"PO-Revision-Date: 2010-02-01 20:57+0100\n"
 "Last-Translator: Primoz PETERLIN <primoz.peterlin@biofiz.mf.uni-lj.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -240,43 +240,43 @@ msgstr "  -3, --no-common            ustavi izpis splošnih besed\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            samodejno izvede oblikovanje strani\n"
+msgstr "  -A, --auto-pager           samodejno izvede oblikovanje strani\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             variacija tiskalniškega načina »less«\n"
+msgstr "  -k, --less-mode            variacija tiskalniškega načina »less«\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           ne razširi polj prek novih vrstic\n"
+msgstr "  -m, --avoid-wraps          ne razširi polj prek novih vrstic\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               poudarki z dvojnim udarcem za tiskalnik\n"
+msgstr "  -o, --printer              poudarki z dvojnim udarcem za tiskalnik\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              uporabi termcap kot za terminalne zaslone\n"
+msgstr "  -z, --terminal             uporabi termcap kot za terminalne zaslone\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          kot -z, vendar brez nizov termcap init/term\n"
+msgstr "  -K, --no-init-term         kot -z, vendar brez nizov termcap init/term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP    primerjaj predmete kot regularne izraze\n"
+msgstr "  -O, --item-regexp=REGEXP   primerjaj predmete kot regularne izraze\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode             primerjaj besede namesto vrstic\n"
+msgstr "  -W, --word-mode            primerjaj besede namesto vrstic\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
@@ -317,10 +317,9 @@ msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Ta program je prosti program; poglejte izvor za pogoje kopiranja. Program "
-"je\n"
-" BREZ KAKRŠNEKOLI GARANCIJE; tudi brez  garancije prodaje ali primernosti za "
-"posebni namen.\n"
+"Ta program je prosti program; poglejte izvor za pogoje kopiranja.\n"
+"Program je BREZ KAKRŠNEKOLI GARANCIJE; tudi brez garancije prodaje ali\n"
+"primernosti za posebni namen.\n"
 
 #: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
 msgid ""

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 18:30+0100\n"
+"PO-Revision-Date: 2010-02-01 21:02+0100\n"
 "Last-Translator: Deniz Akkus Kanca <deniz@arayan.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -233,7 +233,7 @@ msgstr ""
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            ortak sözcükleri göstermez\n"
+msgstr "  -3, --no-common                ortak sözcükleri göstermez\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -399,7 +399,9 @@ msgstr "  -U                    -p ve -u ile aynı\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals      `unidiff' çıktılarında eşit işaretleri yerine boşluk kullanılır\n"
+msgstr ""
+"  -=, --use-equals      `unidiff' çıktılarında eşit işaretleri yerine boşluk\n"
+"                        kullanılır\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -514,7 +516,7 @@ msgstr ""
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr "  -C, --copyright            telif hakkı bilgisini gösterir ve çıkar\n"
+msgstr "  -C, --copyright                telif hakkı bilgisini gösterir ve çıkar\n"
 
 # ? "  -K, --no-init-term             -z gibi fakat termcap değişkenini almaz"
 # ? "  -K, --no-init-term         -t gibi fakat termcap bilgisi almaz"
@@ -526,7 +528,7 @@ msgstr ""
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           bir sayfalama programı kullanır\n"
+msgstr "  -a, --auto-pager               bir sayfalama programı kullanır\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -535,7 +537,7 @@ msgstr ""
 #: src/wdiff.c:1269 src/wdiff2.c:200
 #, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr "  -h, --help                 bu yardımı gösterir ve çıkar\n"
+msgstr "  -h, --help                     bu yardımı gösterir ve çıkar\n"
 
 # ? "  -i, --ignore-case                         büyük/küçük harf farklarını yoksayar"
 # ? "  -i, --ignore-case          büyük ve küçük harf farkını yoksayar"
@@ -547,55 +549,57 @@ msgstr ""
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            \"less\" sayfalaması kipi\n"
+msgstr "  -l, --less-mode                \"less\" sayfalaması kipi\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          alanları satır sonlarını geçerek uzatmaz\n"
+msgstr "  -n, --avoid-wraps              alanları satır sonlarını geçerek uzatmaz\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              yazıcıya bastırmaya uygun çıktı üretir\n"
+msgstr "  -p, --printer                  yazıcıya bastırmaya uygun çıktı üretir\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           kaç sözcük silinmiş, yerleştirilmiş vs. gösterir\n"
+msgstr ""
+"  -s, --statistics               kaç sözcük silinmiş, yerleştirilmiş\n"
+"                                 vs. gösterir\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             ekranda göstermeye uygun çıktı üretir\n"
+msgstr "  -t, --terminal                 ekranda göstermeye uygun çıktı üretir\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version              sürüm bilgisini gösterir ve çıkar\n"
+msgstr "  -V, --version                  sürüm bilgisini gösterir ve çıkar\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=DİZGE   silinecek bölgenin başlangıcını belirten DİZGE\n"
+msgstr "  -w, --start-delete=DİZGE       silinecek bölgenin başlangıcını belirten DİZGE\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    silinecek bölgenin sonunu belirten DİZGE\n"
+msgstr "  -x, --end-delete=STRING        silinecek bölgenin sonunu belirten DİZGE\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  yerleştirilecek bölgenin başını belirten DİZGE\n"
+msgstr "  -y, --start-insert=STRING      yerleştirilecek bölgenin başını belirten DİZGE\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING    yerleştirilecek bölgenin sonunu belirten DİZGE\n"
+msgstr "  -z, --end-insert=STRING        yerleştirilecek bölgenin sonunu belirten DİZGE\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

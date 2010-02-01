@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:45+0100\n"
+"PO-Revision-Date: 2010-02-01 20:51+0100\n"
 "Last-Translator: Laurentiu Buzdugan <buzdugan@voyager.net>\n"
 "Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -128,8 +128,8 @@ msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff - Studiazã multiple fiºiere ºi cautã pentru secvenþe similare, iar "
-"apoi produce liste detaliate cu diferenþele ºi similaritãþile.\n"
+"mdiff - Studiazã multiple fiºiere ºi cautã pentru secvenþe similare,\n"
+"iar apoi produce liste detaliate cu diferenþele ºi similaritãþile.\n"
 
 #: src/mdiff.c:3804
 #, fuzzy, c-format
@@ -241,43 +241,43 @@ msgstr "  -3, --no-common            inhibit output of common words\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            cheamã automat un paginator\n"
+msgstr "  -A, --auto-pager           cheamã automat un paginator\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             variaþia modului imprimantã pentru \"less\"\n"
+msgstr "  -k, --less-mode            variaþia modului imprimantã pentru \"less\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           nu extinde câmpurile prin caractere linie nouã\n"
+msgstr "  -m, --avoid-wraps          nu extinde câmpurile prin caractere linie nouã\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               suprascrie ca pentru imprimantã\n"
+msgstr "  -o, --printer              suprascrie ca pentru imprimantã\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              foloseºte termcap ca pentru display terminal\n"
+msgstr "  -z, --terminal             foloseºte termcap ca pentru display terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          ca ºi -z, dar nici un ºir termcap init/term\n"
+msgstr "  -K, --no-init-term         ca ºi -z, dar nici un ºir termcap init/term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP    comparã elemente ca definite de REGEXP\n"
+msgstr "  -O, --item-regexp=REGEXP   comparã elemente ca definite de REGEXP\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode             comparã cuvinte în loc de linii\n"
+msgstr "  -W, --word-mode            comparã cuvinte în loc de linii\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
@@ -508,7 +508,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Argumentele obligatorii pentru opþiunile lungi sunt obligatorii ºi pentru opþiunile scurte.\n"
+msgstr ""
+"Argumentele obligatorii pentru opþiunile lungi sunt obligatorii ºi\n"
+"pentru opþiunile scurte.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy

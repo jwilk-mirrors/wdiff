@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:35+0100\n"
+"PO-Revision-Date: 2010-02-01 20:30+0100\n"
 "Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -148,12 +148,12 @@ msgstr ""
 #: src/mdiff.c:3809
 #, fuzzy
 msgid "  -h                     (ignored)\n"
-msgstr "  -h                        (ei oteta huomioon)\n"
+msgstr "  -h                     (ei oteta huomioon)\n"
 
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose             raportoi muutamat tilastot vakiovirheeseen\n"
+msgstr "  -v, --verbose          raportoi muutamat tilastot vakiovirheeseen\n"
 
 # ? "      --help                näytä tämä opasteteksti ja poistu"
 # ? "      --help             näytä tämä opaste ja poistu"
@@ -164,7 +164,7 @@ msgstr ""
 #: src/mdiff.c:3812 src/unify.c:294
 #, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr "      --version             tulosta versiotiedot ja poistu\n"
+msgstr "      --version          tulosta versiotiedot ja poistu\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -242,43 +242,43 @@ msgstr "  -3, --no-common            estä yhteisten sanojen tulostus\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager          kutsu automaattisesti sivuttajaa\n"
+msgstr "  -A, --auto-pager           kutsu automaattisesti sivuttajaa\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode           tulostintilavariaatio kohteelle ”less”\n"
+msgstr "  -k, --less-mode            tulostintilavariaatio kohteelle ”less”\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps         älä laajenna kenttiä uusilla riveillä\n"
+msgstr "  -m, --avoid-wraps          älä laajenna kenttiä uusilla riveillä\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer             ylikirjoita kuten tulostimille\n"
+msgstr "  -o, --printer              ylikirjoita kuten tulostimille\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal            käytä ”termcap”:iä kuten päätenäytöille\n"
+msgstr "  -z, --terminal             käytä ”termcap”:iä kuten päätenäytöille\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term        kuten valitsin ”-z”, mutta ei termcap-alustus-/päättymismerkkijonoja\n"
+msgstr "  -K, --no-init-term         kuten -z, mutta ei termcap init/term-merkkijonoa\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP  vertaa alkioita kuten REGEXP on määritellyt\n"
+msgstr "  -O, --item-regexp=REGEXP   vertaa alkioita kuten REGEXP on määritellyt\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode           vertaa sanoja eikä rivejä\n"
+msgstr "  -W, --word-mode            vertaa sanoja eikä rivejä\n"
 
 #: src/mdiff.c:4022
 #, fuzzy

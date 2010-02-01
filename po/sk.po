@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:46+0100\n"
+"PO-Revision-Date: 2010-02-01 20:55+0100\n"
 "Last-Translator: Stanislav Meduna <stano@meduna.org>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -218,17 +218,17 @@ msgstr ""
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted           zamedzí výstupu zmazaných slov\n"
+msgstr "  -1, --no-deleted            zamedzí výstupu zmazaných slov\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          zamedzí výstupu vlo¾ených slov\n"
+msgstr "  -2, --no-inserted           zamedzí výstupu vlo¾ených slov\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            zamedzí výstupu be¾ných slov\n"
+msgstr "  -3, --no-common             zamedzí výstupu be¾ných slov\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -507,18 +507,18 @@ msgstr "Povinné parametre pre dlhé voµby sú povinné aj pre krátke voµby.\n"
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr "  -C, --copyright            vypí¹e copyright a skonèí\n"
+msgstr "  -C, --copyright             vypí¹e copyright a skonèí\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         ako -t, ale bez re»azcov init/term termcap-u\n"
+msgstr "  -K, --no-init-term          ako -t, ale bez re»azcov init/term termcap-u\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           automaticky volá stránkovaè\n"
+msgstr "  -a, --auto-pager            automaticky volá stránkovaè\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -527,65 +527,65 @@ msgstr ""
 #: src/wdiff.c:1269 src/wdiff2.c:200
 #, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr "  -h, --help                 vypí¹e túto nápovedu\n"
+msgstr "  -h, --help                  vypí¹e túto nápovedu\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          zanedbá veµkos» písmen pri porovnávaní\n"
+msgstr "  -i, --ignore-case           zanedbá veµkos» písmen pri porovnávaní\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            variácia módu výstupu pre \"less\"\n"
+msgstr "  -l, --less-mode             variácia módu výstupu pre \"less\"\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          nerozoznávaj polia medzi dvoma novými riadkami\n"
+msgstr "  -n, --avoid-wraps           nerozoznávaj polia medzi dvoma novými riadkami\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              tlaè ako pre tlaèiareò\n"
+msgstr "  -p, --printer               tlaè ako pre tlaèiareò\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           povedz, koµko slov bolo zmazaných, vlo¾ených atï.\n"
+msgstr "  -s, --statistics            povedz, koµko slov bolo zmazaných, vlo¾ených atï.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             pou¾i termcap ako pre terminálové displeje\n"
+msgstr "  -t, --terminal              pou¾i termcap ako pre terminálové displeje\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version              vypí¹e verziu programu a skonèí\n"
+msgstr "  -V, --version               vypí¹e verziu programu a skonèí\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  re»azec na oznaèenie zaèiatku zmazanej oblasti\n"
+msgstr "  -w, --start-delete=STRING   re»azec na oznaèenie zaèiatku zmazanej oblasti\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    re»azec na oznaèenie konca zmazanej oblasti\n"
+msgstr "  -x, --end-delete=STRING     re»azec na oznaèenie konca zmazanej oblasti\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  re»azec na oznaèenie zaèiatku vlo¾enia oblasti\n"
+msgstr "  -y, --start-insert=STRING   re»azec na oznaèenie zaèiatku vlo¾enia oblasti\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING    re»azec na oznaèenie konca vlo¾enia oblasti\n"
+msgstr "  -z, --end-insert=STRING     re»azec na oznaèenie konca vlo¾enia oblasti\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

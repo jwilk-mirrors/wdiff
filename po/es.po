@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: GNU wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:34+0100\n"
+"PO-Revision-Date: 2010-02-01 20:23+0100\n"
 "Last-Translator: Santiago Vila Doncel <sanvila@unex.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -624,7 +624,9 @@ msgstr "  -V, --version              muestra la versión del programa y finaliza\
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=CADENA  cadena para marcar el comienzo de la región borrada\n"
+msgstr ""
+"  -w, --start-delete=CADENA  cadena para marcar el comienzo de la región\n"
+"                             borrada\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:47+0100\n"
+"PO-Revision-Date: 2010-02-01 20:59+0100\n"
 "Last-Translator: Jan Djärv <jan.h.d@swipnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -355,49 +355,49 @@ msgstr "Användning: %s [FLAGGA]... [FIL]\n"
 #: src/unify.c:284
 #, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr "  -c, --context-diffs    visa resultatet som saammanhangsdiff\n"
+msgstr "  -c, --context-diffs     visa resultatet som saammanhangsdiff\n"
 
 #: src/unify.c:285
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    skriv kommentarer till standard error\n"
+msgstr "  -e, --echo-comments     skriv kommentarer till standard error\n"
 
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
 msgstr ""
-"  -o, --old-diffs        visa under alla omständigheter skillnader på gammal\n"
-"                         stil, \n"
+"  -o, --old-diffs         visa under alla omständigheter skillnader på gammal\n"
+"                          stil, \n"
 
 #: src/unify.c:287
 #, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr "  -p, --patch-format     generera format för \"patch\"\n"
+msgstr "  -p, --patch-format      generera format för \"patch\"\n"
 
 #: src/unify.c:288
 #, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr "  -P                     samma som -p\n"
+msgstr "  -P                      samma som -p\n"
 
 #: src/unify.c:289
 #, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr "  -s, --strip-comments   ta bort kommentarsrader\n"
+msgstr "  -s, --strip-comments    ta bort kommentarsrader\n"
 
 #: src/unify.c:290
 #, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr "  -u, --unidiffs         visa resultatet som enad diff\n"
+msgstr "  -u, --unidiffs          visa resultatet som enad diff\n"
 
 #: src/unify.c:291
 #, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr "  -U                     samma som -p och -u\n"
+msgstr "  -U                      samma som -p och -u\n"
 
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       ersätt mellanslag med likhetstecken i enad diff\n"
+msgstr "  -=, --use-equals        ersätt mellanslag med likhetstecken i enad diff\n"
 
 #: src/unify.c:296
 #, fuzzy

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:44+0100\n"
+"PO-Revision-Date: 2010-02-01 20:49+0100\n"
 "Last-Translator: Halley Pacheco de Oliveira <halleypo@ig.com.br>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
 "MIME-Version: 1.0\n"
@@ -241,44 +241,45 @@ msgstr "  -3, --no-common            Inibir a exibição das palavras comuns.\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            Chama automaticamente o paginador.\n"
+msgstr "  -A, --auto-pager           Chama automaticamente o paginador.\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             Variação do modo de impressão para \"less.\"\n"
+msgstr "  -k, --less-mode            Variação do modo de impressão para \"less.\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           Não extender campos através de novas linhas.\n"
+msgstr "  -m, --avoid-wraps          Não extender campos através de novas linhas.\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               Sobrepor para impressora.\n"
+msgstr "  -o, --printer              Sobrepor para impressora.\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              Usar `termcap' para exibição em terminal.\n"
+msgstr "  -z, --terminal             Usar `termcap' para exibição em terminal.\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          Como -z, mas sem as strings `init/term'.\n"
+msgstr "  -K, --no-init-term         Como -z, mas sem as strings `init/term'.\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
-"  -O, --item-regexp=EXPREG    Comparar itens conforme definido em EXPREG.\n"
-"                              (EXPREG = expressão regular)  -W, --word-mode             Comparar palavras em vez de linhas.\n"
+"  -O, --item-regexp=EXPREG   Comparar itens conforme definido em EXPREG.\n"
+"                             (EXPREG = expressão regular)\n"
 
 #: src/mdiff.c:3837
+#, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr ""
+msgstr "  -W, --word-mode            Comparar palavras em vez de linhas.\n"
 
 #: src/mdiff.c:4022
 #, fuzzy

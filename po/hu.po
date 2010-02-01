@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 18:54+0100\n"
+"PO-Revision-Date: 2010-02-01 20:34+0100\n"
 "Last-Translator: Emese Kovács <emese@gnome.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -240,38 +240,38 @@ msgstr "  -A, --auto-pager           automatikusan lapozót indít\n"
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             kiírató mód a \"less-hez\"\n"
+msgstr "  -k, --less-mode            kiírató mód a \"less-hez\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           a mezõket nem terjeszti az újsorokon túl\n"
+msgstr "  -m, --avoid-wraps          a mezõket nem terjeszti az újsorokon túl\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               'overstrike' mint nyomtatóknál\n"
+msgstr "  -o, --printer              'overstrike' mint nyomtatóknál\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              termcap mint terminál kiíratásnál\n"
+msgstr "  -z, --terminal             termcap mint terminál kiíratásnál\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          mint -z, de init/termcap karakterláncok nélkül\n"
+msgstr "  -K, --no-init-term         mint -z, de init/termcap karakterláncok nélkül\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP    elemek összehasonlítása REGEXP alapján\n"
+msgstr "  -O, --item-regexp=REGEXP   elemek összehasonlítása REGEXP alapján\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode             szavakat hasonlít össze sorok helyett\n"
+msgstr "  -W, --word-mode            szavakat hasonlít össze sorok helyett\n"
 
 #: src/mdiff.c:4022
 #, fuzzy

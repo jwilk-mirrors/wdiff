@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 18:53+0100\n"
+"PO-Revision-Date: 2010-02-01 21:08+0100\n"
 "Last-Translator: Meng Jie <zuxyhere@eastday.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -168,9 +168,8 @@ msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
 #: src/mdiff.c:3816
-#, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr "  -l, --paginate            pass the output through `pr' to paginate it\n"
+msgstr ""
 
 #: src/mdiff.c:3817
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"

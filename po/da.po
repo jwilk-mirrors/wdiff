@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: GNU wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:31+0100\n"
+"PO-Revision-Date: 2010-02-01 20:19+0100\n"
 "Last-Translator: Keld Jørn Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -245,43 +245,43 @@ msgstr "  -3, --no-common            forhindre uddata over almindelige ord\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            kalder en 'pager' automatisk\n"
+msgstr "  -A, --auto-pager           kalder en 'pager' automatisk\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             variant af printer-modus for \"less\"\n"
+msgstr "  -k, --less-mode            variant af printer-modus for \"less\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           udvid ikke felter med newlines\n"
+msgstr "  -m, --avoid-wraps          udvid ikke felter med newlines\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               brug overstrike som for printere\n"
+msgstr "  -o, --printer              brug overstrike som for printere\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              brug termcap som for almindelige terminaler\n"
+msgstr "  -z, --terminal             brug termcap som for almindelige terminaler\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          som -z, men uden termcap init/term strenge\n"
+msgstr "  -K, --no-init-term         som -z, men uden termcap init/term strenge\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP    sammenlign elementer som angivet med REGEXP\n"
+msgstr "  -O, --item-regexp=REGEXP   sammenlign elementer som angivet med REGEXP\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode             sammenlign ord istedet for linjer\n"
+msgstr "  -W, --word-mode            sammenlign ord istedet for linjer\n"
 
 #: src/mdiff.c:4022
 #, fuzzy

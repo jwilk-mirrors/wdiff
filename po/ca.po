@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 18:34+0100\n"
+"PO-Revision-Date: 2010-02-01 19:52+0100\n"
 "Last-Translator: Jordi Mallach <jordi@sindominio.net>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
 "MIME-Version: 1.0\n"
@@ -144,12 +144,12 @@ msgstr ""
 #: src/mdiff.c:3809
 #, fuzzy
 msgid "  -h                     (ignored)\n"
-msgstr "  -h                     (ignorat)\n"
+msgstr "  -h                      (ignorat)\n"
 
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose          mostra algunes estadístiques en la eixida d'error\n"
+msgstr "  -v, --verbose           mostra algunes estadístiques en la eixida d'error\n"
 
 # ? "      --help             mostra aquesta ajuda i eix"
 # ? "      --help             mostra aquesta ajuda i surt"
@@ -237,43 +237,43 @@ msgstr "  -3, --no-common            no mostra les paraules comuns\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            crida a un paginador automàticament\n"
+msgstr "  -A, --auto-pager           crida a un paginador automàticament\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             variació del mode d'impresió per a «less»\n"
+msgstr "  -k, --less-mode            variació del mode d'impresió per a «less»\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           no exté els camps més enllà del final de línia\n"
+msgstr "  -m, --avoid-wraps          no exté els camps més enllà del final de línia\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               utilitza sobreimpresió com a les impresores\n"
+msgstr "  -o, --printer              utilitza sobreimpresió com a les impresores\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              utilitza termcap per a mostrar per terminal\n"
+msgstr "  -z, --terminal             utilitza termcap per a mostrar per terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          com -z, però sense cadenes d'inici/fi de termcap\n"
+msgstr "  -K, --no-init-term         com -z, però sense cadenes d'inici/fi de termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=EXPREG    compara elements definits per EXPREG\n"
+msgstr "  -O, --item-regexp=EXPREG   compara elements definits per EXPREG\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode             compara paraules en lloc de línies\n"
+msgstr "  -W, --word-mode            compara paraules en lloc de línies\n"
 
 #: src/mdiff.c:4022
 #, fuzzy

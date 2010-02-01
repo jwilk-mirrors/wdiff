@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:37+0100\n"
+"PO-Revision-Date: 2010-02-01 20:33+0100\n"
 "Last-Translator: Jacobo Tarrío Barreiro <jtarrio@iname.com>\n"
 "Language-Team: Galician <gpul-traduccion@ceu.fi.udc.es>\n"
 "MIME-Version: 1.0\n"
@@ -144,22 +144,22 @@ msgstr ""
 #: src/mdiff.c:3809
 #, fuzzy
 msgid "  -h                     (ignored)\n"
-msgstr "  -h                      (ignórase)\n"
+msgstr "  -h                     (ignórase)\n"
 
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose           producir algunhas estatísticas na saída estándar\n"
+msgstr "  -v, --verbose          producir algunhas estatísticas na saída estándar\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 #, fuzzy
 msgid "      --help             display this help then exit\n"
-msgstr "      --help              amosar esta axuda e saír\n"
+msgstr "      --help             amosar esta axuda e saír\n"
 
 #: src/mdiff.c:3812 src/unify.c:294
 #, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr "      --version           amosar información sobre a versión e saír\n"
+msgstr "      --version          amosar información sobre a versión e saír\n"
 
 #: src/mdiff.c:3814
 msgid ""

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 18:33+0100\n"
+"PO-Revision-Date: 2010-02-01 20:54+0100\n"
 "Last-Translator: Oleg S. Tihonov <tihonov@ffke-campus.mipt.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -237,45 +237,45 @@ msgstr "  -3, --no-common            не выводить общие слова\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            автоматически вызывать программу просмотра\n"
+msgstr "  -A, --auto-pager           автоматически вызывать программу просмотра\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             режим вывода, удобный при использовании \"less\"\n"
+msgstr "  -k, --less-mode            режим вывода, удобный при использовании \"less\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           не продолжать поля через новую строку\n"
+msgstr "  -m, --avoid-wraps          не продолжать поля через новую строку\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               выделять перечеркиванием, как для принтера\n"
+msgstr "  -o, --printer              выделять перечеркиванием, как для принтера\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              выводить с использованием termcap\n"
+msgstr "  -z, --terminal             выводить с использованием termcap\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          как -z, но без строк termcap init/term\n"
+msgstr "  -K, --no-init-term         как -z, но без строк termcap init/term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
-"  -O, --item-regexp=РВ        сравнивать элементы, определенные регулярным \n"
-"                              выражением РВ\n"
+"  -O, --item-regexp=РВ       сравнивать элементы, определенные регулярным \n"
+"                             выражением РВ\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode             сравнивать слова, а не строки\n"
+msgstr "  -W, --word-mode            сравнивать слова, а не строки\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
@@ -346,7 +346,7 @@ msgstr "Попробуйте `%s --help' для получения более подробного описания.\n"
 #: src/unify.c:277
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr ""
-"unify - Преобразует вывод diff из контекстного формата в объединенный и "
+"unify - Преобразует вывод diff из контекстного формата в объединенный и\n"
 "наоборот.\n"
 
 #: src/unify.c:281
@@ -357,49 +357,49 @@ msgstr "Использование: %s [КЛЮЧ]... [ФАЙЛ]\n"
 #: src/unify.c:284
 #, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr "  -c, --context-diffs    выводить контекстные различия\n"
+msgstr "  -c, --context-diffs     выводить контекстные различия\n"
 
 #: src/unify.c:285
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    выводить комментарии в стандартный поток ошибок\n"
+msgstr "  -e, --echo-comments     выводить комментарии в стандартный поток ошибок\n"
 
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        выводить в различия устаревшей форме\n"
+msgstr "  -o, --old-diffs         выводить в различия устаревшей форме\n"
 
 #: src/unify.c:287
 #, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr "  -p, --patch-format     выводить в формате patch\n"
+msgstr "  -p, --patch-format      выводить в формате patch\n"
 
 #: src/unify.c:288
 #, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr "  -P                     синоним -p\n"
+msgstr "  -P                      синоним -p\n"
 
 #: src/unify.c:289
 #, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr "  -s, --strip-comments   удалять строки комментариев\n"
+msgstr "  -s, --strip-comments    удалять строки комментариев\n"
 
 #: src/unify.c:290
 #, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr "  -u, --unidiffs         выводить объединенные различия\n"
+msgstr "  -u, --unidiffs          выводить объединенные различия\n"
 
 #: src/unify.c:291
 #, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr "  -U                     синоним -p -u\n"
+msgstr "  -U                      синоним -p -u\n"
 
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr ""
-"  -=, --use-equals       заменять пробелы в объединенных различиях знаками\n"
-"                         равенства\n"
+"  -=, --use-equals        заменять пробелы в объединенных различиях знаками\n"
+"                          равенства\n"
 
 #: src/unify.c:296
 #, fuzzy

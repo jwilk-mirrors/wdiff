@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:41+0100\n"
+"PO-Revision-Date: 2010-02-01 20:41+0100\n"
 "Last-Translator: Marco Colombo <m.colombo@ed.ac.uk>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
@@ -225,17 +225,17 @@ msgstr ""
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted           inibisce l'output delle parole rimosse\n"
+msgstr "  -1, --no-deleted            inibisce l'output delle parole rimosse\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          inibisce l'output delle parole inserite\n"
+msgstr "  -2, --no-inserted           inibisce l'output delle parole inserite\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            inibisce l'output delle parole in comune\n"
+msgstr "  -3, --no-common             inibisce l'output delle parole in comune\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -266,7 +266,9 @@ msgstr "  -z, --terminal              usa termcap come terminale\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          come -z, ma senza le stringhe init/term di termcap\n"
+msgstr ""
+"  -K, --no-init-term          come -z, ma senza le stringhe init/term di\n"
+"                              termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -517,18 +519,20 @@ msgstr "Argomenti obbligatori per le opzioni lunghe lo sono anche per quelle cor
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr "  -C, --copyright            stampa il copyright ed esce\n"
+msgstr "  -C, --copyright             stampa il copyright ed esce\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         come -t, ma senza le stringhe init/term di termcap\n"
+msgstr ""
+"  -K, --no-init-term          come -t, ma senza le stringhe init/term di\n"
+"                              termcap\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           chiama automaticamente un impaginatore\n"
+msgstr "  -a, --auto-pager            chiama automaticamente un impaginatore\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -537,38 +541,40 @@ msgstr ""
 #: src/wdiff.c:1269 src/wdiff2.c:200
 #, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr "  -h, --help                 mostra questo aiuto\n"
+msgstr "  -h, --help                  mostra questo aiuto\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          ignora differenze in maiuscole e minuscole\n"
+msgstr "  -i, --ignore-case           ignora differenze in maiuscole e minuscole\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            variante del modo di stampa di \"less\"\n"
+msgstr "  -l, --less-mode             variante del modo di stampa di \"less\"\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          non estendere i campi oltre le newline\n"
+msgstr "  -n, --avoid-wraps           non estendere i campi oltre le newline\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              sovraimpone come per le stampanti\n"
+msgstr "  -p, --printer               sovraimpone come per le stampanti\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           riporta il numero di parole rimosse, inserite, ecc.\n"
+msgstr ""
+"  -s, --statistics            riporta il numero di parole rimosse, inserite,\n"
+"                              ecc.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             usa termcap come terminale\n"
+msgstr "  -t, --terminal              usa termcap come terminale\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 msgid "  -v, --version              display program version then exit\n"
@@ -578,23 +584,23 @@ msgstr ""
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRINGA marcatore d'inizio della regione rimossa\n"
+msgstr "  -w, --start-delete=STRINGA  marcatore d'inizio della regione rimossa\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRINGA   marcatore di fine della regione rimossa\n"
+msgstr "  -x, --end-delete=STRINGA    marcatore di fine della regione rimossa\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRINGA marcatore d'inizio della regione inserita\n"
+msgstr "  -y, --start-insert=STRINGA  marcatore d'inizio della regione inserita\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRINGA   marcatore di fine della regione inserita\n"
+msgstr "  -z, --end-insert=STRINGA    marcatore di fine della regione inserita\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format
@@ -646,9 +652,7 @@ msgstr "Uso: %s [OPZIONE]... FILE1 FILE2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
-"  -q, --quiet                inibilsce il messaggio di apertura di \"mdiff"
-"\"\n"
+msgstr "  -q, --quiet                 inibilsce il messaggio di apertura di \"mdiff\"\n"
 
 #: src/wdiff2.c:214
 #, fuzzy

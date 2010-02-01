@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 17:42+0100\n"
+"PO-Revision-Date: 2010-02-01 20:45+0100\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -239,43 +239,45 @@ msgstr "  -3, --no-common            halang keluaran bagi perkataan umum\n"
 #: src/mdiff.c:3830
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager            panggil pager secara automatik\n"
+msgstr "  -A, --auto-pager           panggil pager secara automatik\n"
 
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             variasi untuk mod pencetak bagi \"less\"\n"
+msgstr "  -k, --less-mode            variasi untuk mod pencetak bagi \"less\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           jangan sambung medan melalui baris baru\n"
+msgstr "  -m, --avoid-wraps          jangan sambung medan melalui baris baru\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               overstrike seperti untuk pencetak\n"
+msgstr "  -o, --printer              overstrike seperti untuk pencetak\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              guna termcap sebagai paparan terminal\n"
+msgstr "  -z, --terminal             guna termcap sebagai paparan terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          seperti -z, tetap tiada termcap init/rentetan term\n"
+msgstr ""
+"  -K, --no-init-term         seperti -z, tetap tiada termcap init/rentetan\n"
+"                             term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP    banding perkara seperti dinyatakan oleh REGEXP\n"
+msgstr "  -O, --item-regexp=REGEXP   banding perkara seperti dinyatakan oleh REGEXP\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode             banding perkataan selain daripada baris\n"
+msgstr "  -W, --word-mode            banding perkataan selain daripada baris\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
@@ -317,7 +319,7 @@ msgid ""
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
 "Ini adalah perisian bebas; lihat sumber untuk syarat menyalin.  TIADA\n"
-"jaminan disediakan; tidak juga untuk KEBOLEHDAGANGAN atau KEUPAYAAN UNTUK "
+"jaminan disediakan; tidak juga untuk KEBOLEHDAGANGAN atau KEUPAYAAN UNTUK\n"
 "SESUATU TUJUAN KHUSUS.\n"
 
 #: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
@@ -474,12 +476,10 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"Program ini adalah perisian bebas; anda boleh menyebarkannya dan/atau "
-"mengubahsuainya\n"
-"dibawah syarat-syarat GNU General Public License seperti yang diterbitkan "
-"oleh\n"
-"Free Software Foundation; sama ada versi ke 2, atau (atas pilihan anda)\n"
-"sebarang versi selepasnya.\n"
+"Program ini adalah perisian bebas; anda boleh menyebarkannya dan/atau\n"
+"mengubahsuainya dibawah syarat-syarat GNU General Public License\n"
+"seperti yang diterbitkan oleh Free Software Foundation; sama ada versi\n"
+"ke 2, atau (atas pilihan anda) sebarang versi selepasnya.\n"
 "\n"
 "Program ini diedarkan dengan harapan yang ia mungkin berguna,\n"
 "tetapi TANPA SEBARANG JAMINAN; juga tanpa jaminan terhadap\n"
@@ -559,7 +559,9 @@ msgstr "  -p, --printer              overstrike seperti untuk pencetak\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           papar berapa banyak perkataan dipadam, dimasukkan dsb.\n"
+msgstr ""
+"  -s, --statistics           papar berapa banyak perkataan dipadam, dimasukkan\n"
+"                             dsb.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
@@ -580,7 +582,9 @@ msgstr "  -w, --start-delete=STRING  rentetan untuk menanda permulaan kawasan pe
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    rentetan untuk menanda pengakhiran kawasan pemadaman\n"
+msgstr ""
+"  -x, --end-delete=STRING    rentetan untuk menanda pengakhiran kawasan\n"
+"                             pemadaman\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
@@ -632,8 +636,8 @@ msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
-"wdiff - Hitung perbezaan perkataan dengan melancarkan secara dalaman `mdiff -"
-"W'.\n"
+"wdiff - Hitung perbezaan perkataan dengan melancarkan secara dalaman\n"
+"`mdiff -W'.\n"
 "Program ini wujud terutamanya untuk menyokong sintaks lama `wdiff'.\n"
 
 #: src/wdiff2.c:187
