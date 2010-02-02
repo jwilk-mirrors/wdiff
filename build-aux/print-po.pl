@@ -44,7 +44,7 @@ for my $pofile (@ARGV) {
       $_ = $str;
       $_ = $id if $_ eq '';
       $_ = decode($encoding, $_);
-      s/\\n/\n/g;
+      s/(\\[\\nt"])/eval qq{"$1"}/eg;
       s/\n?$/\n/;
       s/^([^\n]{79})([^\n])/$1| !!! |$2/mg;
       s/^/-|/mg;
