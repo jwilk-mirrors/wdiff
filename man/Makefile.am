@@ -1,3 +1,8 @@
+## Copying and distribution of this file, with or without modification,
+## are permitted in any medium without royalty provided the copyright
+## notice and this notice are preserved.  This file is offered as-is,
+## without any warranty.
+
 dist_man_MANS = mdiff.1 unify.1 wdiff.1
 
 # The man pages depend on the --help strings and the version number.

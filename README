@@ -1,3 +1,9 @@
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without any warranty.
+
+
 `wdiff' is a front-end to GNU `diff'.  It compares two files, finding
 which words have been deleted or added to the first in order to create
 the second.  It has many output formats and interacts well with

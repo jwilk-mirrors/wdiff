@@ -1,4 +1,22 @@
 #							-*- shell-script -*-
 
-# Tests not ready, see CVS history of cluster.m4 for the tests
+# wdiff test suite
+# Copyright (C) 2010 Free Software Foundation, Inc.
+#
+# This file is part of GNU wdiff
+#
+# GNU wdiff is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# GNU wdiff is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# Tests not ready, see history of cluster.m4 for the tests
 exit 77

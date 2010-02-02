@@ -1,5 +1,10 @@
 * TODO file for GNU `wdiff'			allout -*- outline -*-
 
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without any warranty.
+
 Tell <wdiff-bugs@gnu.org> if you feel like volunteering for any
 of these ideas, listed more or less in decreasing order of priority.
 Some TODO items are implicit from received email.  See file BACKLOG.
