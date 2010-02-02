@@ -1,0 +1,430 @@
+# Traduçoes para o português do Brasil das mensagens do "textutils"
+# Copyright (C) 1998 Free Software Foundation, Inc.
+# Cyro Mendes De Moraes Neto <neto@conectiva.com.br>, 1998.
+# Rodrigo Stulzer Lopes <rodrigo@conectiva.com.br>, 2001.
+# Juan Carlos Castro y Castro <jcastro@vialink.com.br>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: coreutils 5.0\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2010-02-01 09:19+0100\n"
+"PO-Revision-Date: 2003-06-27 19:20-0300\n"
+"Last-Translator: Juan Carlos Castro y Castro <jcastro@vialink.com.br>\n"
+"Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/error.c:153
+msgid "Unknown system error"
+msgstr "Erro de sistema desconhecido"
+
+#: lib/getopt.c:529 lib/getopt.c:545
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
+msgstr "%s: opção `%s' está ambígua\n"
+
+#: lib/getopt.c:578 lib/getopt.c:582
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: opção `--%s' não permite um argumento\n"
+
+#: lib/getopt.c:591 lib/getopt.c:596
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: opção `%c%s' não permite um argumento\n"
+
+#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
+msgstr "%s: opção `%s' requer um argumento\n"
+
+# , c-format
+#: lib/getopt.c:696 lib/getopt.c:699
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: opção desconhecida `-%s'\n"
+
+# , c-format
+#: lib/getopt.c:707 lib/getopt.c:710
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: opção desconhecida `%c%s'\n"
+
+# , c-format
+#: lib/getopt.c:759 lib/getopt.c:762
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: opção inválida -- %c\n"
+
+#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: opção requer um argumento --%c\n"
+
+#: lib/getopt.c:882 lib/getopt.c:898
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: opção `-W %s' está ambígua\n"
+
+#: lib/getopt.c:922 lib/getopt.c:940
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: opção `-W %s' não permite um argumento\n"
+
+#: lib/regcomp.c:132
+msgid "Success"
+msgstr ""
+
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr ""
+
+# , c-format
+#: lib/regcomp.c:138
+#, fuzzy
+msgid "Invalid regular expression"
+msgstr "%s: a expressão  regular não é válida: %s"
+
+# , c-format
+#: lib/regcomp.c:141
+#, fuzzy
+msgid "Invalid collation character"
+msgstr "classe de caracteres inválida `%s'"
+
+# , c-format
+#: lib/regcomp.c:144
+#, fuzzy
+msgid "Invalid character class name"
+msgstr "classe de caracteres inválida `%s'"
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr ""
+
+#: lib/regcomp.c:150
+msgid "Invalid back reference"
+msgstr ""
+
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr ""
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr ""
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr ""
+
+#: lib/regcomp.c:162
+msgid "Invalid content of \\{\\}"
+msgstr ""
+
+# , c-format
+#: lib/regcomp.c:165
+#, fuzzy
+msgid "Invalid range end"
+msgstr "%s: a expressão  regular não é válida: %s"
+
+#: lib/regcomp.c:168
+#, fuzzy
+msgid "Memory exhausted"
+msgstr "memória esgotada"
+
+# , c-format
+#: lib/regcomp.c:171
+#, fuzzy
+msgid "Invalid preceding regular expression"
+msgstr "%s: a expressão  regular não é válida: %s"
+
+#: lib/regcomp.c:174
+#, fuzzy
+msgid "Premature end of regular expression"
+msgstr "erro na busca da expressão  regular"
+
+# , c-format
+#: lib/regcomp.c:177
+#, fuzzy
+msgid "Regular expression too big"
+msgstr "%s: a expressão  regular não é válida: %s"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr ""
+
+#: lib/regcomp.c:701
+#, fuzzy
+msgid "No previous regular expression"
+msgstr "erro na busca da expressão  regular"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "memória esgotada"
+
+# , c-format
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "argumento inválido %s para '%s'"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "argumento ambíguo %s para `%s'"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Os argumentos válidos são:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Argumentos obrigatórios para opções longas também o são para opções "
+#~ "curtas\n"
+
+# , c-format
+#, fuzzy
+#~ msgid " [OPTION...]"
+#~ msgstr "Uso: %s [OPÇÃO]...\n"
+
+# , c-format
+#, fuzzy
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "Tente `%s --help' para mais informação.\n"
+
+#, fuzzy
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Comunicar `bugs' para <%s>.\n"
+
+#~ msgid "NAME"
+#~ msgstr "NOME"
+
+#, fuzzy
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "muitos argumentos\n"
+
+#, fuzzy
+#~ msgid "program error"
+#~ msgstr "erro de leitura"
+
+#~ msgid "write error"
+#~ msgstr "erro de escrita"
+
+#, fuzzy
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "não foi possível abrir %s para leitura"
+
+#, fuzzy
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "não foi possível abrir %s para leitura"
+
+# , c-format
+#, fuzzy
+#~ msgid "error reading \"%s\""
+#~ msgstr "erro lendo %s"
+
+# , c-format
+#, fuzzy
+#~ msgid "error writing \"%s\""
+#~ msgstr "erro escrevendo %s"
+
+# , c-format
+#, fuzzy
+#~ msgid "error after reading \"%s\""
+#~ msgstr "erro lendo %s"
+
+#, fuzzy
+#~ msgid "fdopen() failed"
+#~ msgstr "erro abrindo arquivo"
+
+# , c-format
+#, fuzzy
+#~ msgid "%s subprocess failed"
+#~ msgstr "%s: padrão inválido"
+
+#~ msgid "regular empty file"
+#~ msgstr "arquivo comum vazio"
+
+#~ msgid "regular file"
+#~ msgstr "arquivo comum"
+
+#, fuzzy
+#~ msgid "directory"
+#~ msgstr "Diretório: "
+
+#~ msgid "block special file"
+#~ msgstr "arquivo especial de bloco"
+
+#~ msgid "character special file"
+#~ msgstr "arquivo especial caracter"
+
+#~ msgid "fifo"
+#~ msgstr "fifo"
+
+#~ msgid "symbolic link"
+#~ msgstr "link simbólico"
+
+#~ msgid "socket"
+#~ msgstr "socket"
+
+#~ msgid "message queue"
+#~ msgstr "fila de mensagens"
+
+#~ msgid "semaphore"
+#~ msgstr "semáforo"
+
+#~ msgid "shared memory object"
+#~ msgstr "objeto de memória compartilhada"
+
+#, fuzzy
+#~ msgid "typed memory object"
+#~ msgstr "objeto de memória compartilhada"
+
+#~ msgid "weird file"
+#~ msgstr "arquivo estranho"
+
+#, fuzzy
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "arquivos \"fifo\" não suportados"
+
+#, fuzzy
+#~ msgid "ai_family not supported"
+#~ msgstr "arquivos \"fifo\" não suportados"
+
+#, fuzzy
+#~ msgid "ai_socktype not supported"
+#~ msgstr "arquivos \"fifo\" não suportados"
+
+#, fuzzy
+#~ msgid "System error"
+#~ msgstr "erro de escrita"
+
+#, fuzzy
+#~ msgid "Unknown error"
+#~ msgstr "Erro de sistema desconhecido"
+
+# , c-format
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: opção inválida -- %c\n"
+
+#~ msgid "block size"
+#~ msgstr "tamanho do bloco"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s existe, mas não é um diretório"
+
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "não pode substituir dono e/ou grupo de %s"
+
+# , c-format
+#~ msgid "cannot create directory %s"
+#~ msgstr "não é possível criar o diretório %s"
+
+# , c-format
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "impossível mudar para diretório %s"
+
+# , c-format
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "não é possível mudar permissões de %s"
+
+# , c-format
+#, fuzzy
+#~ msgid "unable to record current working directory"
+#~ msgstr "não é possível criar o diretório %s"
+
+# , c-format
+#, fuzzy
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "falha ao preservar permissões para %s"
+
+# , c-format
+#, fuzzy
+#~ msgid "cannot create pipe"
+#~ msgstr "impossível criar link %s"
+
+#~ msgid "`"
+#~ msgstr "`"
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[yY]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "função iconv não utilizável"
+
+#~ msgid "iconv function not available"
+#~ msgstr "função iconv não disponível"
+
+# , c-format
+#~ msgid "character out of range"
+#~ msgstr "caractere fora de faixa"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "impossível converter U+%04X para o conjunto local de caracteres"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "impossível converter U+%04X para o conjunto local de caracteres: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "usuário inválido"
+
+#~ msgid "invalid group"
+#~ msgstr "grupo inválido"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "nao foi possivel obter um grupo e login de um UID numerico "
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "This is free software.  You may redistribute copies of it under the terms "
+#~ "of\n"
+#~ "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Este programa é um software livre, você pode redistribuí-lo e/ou modificá-"
+#~ "lo\n"
+#~ "sobre os termos da licença pública geral GNU (GPL - General Public "
+#~ "License)\n"
+#~ "publicada pela Free Software Foundation, versão 2 ou posteriores.\n"
+#~ "\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Escrito por %s.\n"
+
+#, fuzzy
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Escrito por %s.\n"
+
+#, fuzzy
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Escrito por %s.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr "Escrito por %s.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr "Escrito por %s.\n"
+
+#, fuzzy
+#~ msgid "string comparison failed"
+#~ msgstr "falha no stat"
+
+#, fuzzy
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "não foi possível criar o link %s"

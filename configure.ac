@@ -35,6 +35,7 @@ AC_CONFIG_FILES([
  Makefile
  doc/Makefile
  lib/Makefile
+ lib/po/Makefile.in
  man/Makefile
  po/Makefile.in
  src/Makefile

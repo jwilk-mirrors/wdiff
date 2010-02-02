@@ -1,0 +1,607 @@
+# -*- mode: po; coding: utf-8; -*- Slovenian message catalog for GNUlib.
+# Copyright (C) 2005, 2007 Free Software Foundation, Inc.
+# Primož Peterlin <primoz.peterlin@biofiz.mf.uni-lj.si>, 2005, 2007.
+# $Id: gnulib-1.1.sl.po,v 1.2 2007/10/16 07:56:20 peterlin Exp $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnulib 1.1\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2010-02-01 09:19+0100\n"
+"PO-Revision-Date: 2007-10-16 09:56+0200\n"
+"Last-Translator: Primož Peterlin <primoz.peterlin@biofiz.mf.uni-lj.si>\n"
+"Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#: lib/error.c:153
+msgid "Unknown system error"
+msgstr "Neznana sistemska napaka"
+
+#: lib/getopt.c:529 lib/getopt.c:545
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
+msgstr "%s: izbira »%s« je dvoumna\n"
+
+#: lib/getopt.c:578 lib/getopt.c:582
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: izbira »--%s« ne dovoljuje argumenta\n"
+
+#: lib/getopt.c:591 lib/getopt.c:596
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: izbira »%c%s« ne dovoljuje argumenta\n"
+
+#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
+msgstr "%s: izbira »%s« zahteva argument\n"
+
+#: lib/getopt.c:696 lib/getopt.c:699
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: neprepoznana izbira »--%s«\n"
+
+#: lib/getopt.c:707 lib/getopt.c:710
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: neprepoznana izbira »%c%s«\n"
+
+#: lib/getopt.c:759 lib/getopt.c:762
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: neveljavna izbira -- %c\n"
+
+#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: izbira zahteva argument -- %c\n"
+
+#: lib/getopt.c:882 lib/getopt.c:898
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: izbira »-W %s« je dvoumna\n"
+
+#: lib/getopt.c:922 lib/getopt.c:940
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: izbira »-W %s« ne dovoljuje argumenta\n"
+
+#: lib/regcomp.c:132
+msgid "Success"
+msgstr "Uspešno"
+
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr "Brez zadetkov"
+
+#: lib/regcomp.c:138
+msgid "Invalid regular expression"
+msgstr "Neveljaven regularni izraz"
+
+#: lib/regcomp.c:141
+msgid "Invalid collation character"
+msgstr "Neveljaven razvrščevalni znak"
+
+#: lib/regcomp.c:144
+msgid "Invalid character class name"
+msgstr "Neveljavno ime razreda znakov"
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr "Sledeča obrnjena poševnica"
+
+#: lib/regcomp.c:150
+msgid "Invalid back reference"
+msgstr "Neveljaven povratni sklic"
+
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr "Nezaključen [ ali [^"
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr "Nezaključen ( ali \\("
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr "Nezaključen \\{"
+
+#: lib/regcomp.c:162
+msgid "Invalid content of \\{\\}"
+msgstr "Neveljavna vsebina \\{\\}"
+
+#: lib/regcomp.c:165
+msgid "Invalid range end"
+msgstr "Neveljaven konec razpon"
+
+# ! INEXACT
+#: lib/regcomp.c:168
+msgid "Memory exhausted"
+msgstr "Zmanjkalo pomnilnika"
+
+#: lib/regcomp.c:171
+msgid "Invalid preceding regular expression"
+msgstr "Neveljaven predhodni regularni izraz"
+
+#: lib/regcomp.c:174
+msgid "Premature end of regular expression"
+msgstr "Nepričakovan konec regularnega izraza"
+
+#: lib/regcomp.c:177
+msgid "Regular expression too big"
+msgstr "Regularni izraz je prevelik"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr "Odvečni ) ali \\)"
+
+#: lib/regcomp.c:701
+msgid "No previous regular expression"
+msgstr "Manjkajoč predhodni regularni izraz"
+
+# ! INEXACT
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "zmanjkalo pomnilnika"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "neveljaven argument %s za %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "dvoumen argument %s za %s"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Veljavni argumenti so:"
+
+#~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+#~ msgstr "ARGP_HELP_FMT: vrednost %s je manjša ali enaka %s"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: ARGP_HELP_FMT parameter zahteva vrednost"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+#~ msgstr "%.*s: ARGP_HELP_FMT parameter mora biti pozitiven"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: Neznan parameter ARGP_HELP_FMT"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "Smetje v ARGP_HELP_FMT: %s"
+
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Argumenti, ki so kot obvezni ali neobvezni navedeni pri dolgi obliki "
+#~ "izbire, so obvezni ali neobvezni tudi pri odgovarjajočih kratkih oblikah "
+#~ "izbire."
+
+#~ msgid "Usage:"
+#~ msgstr "Uporaba:"
+
+#~ msgid "  or: "
+#~ msgstr " ali: "
+
+#~ msgid " [OPTION...]"
+#~ msgstr " [IZBIRA...]"
+
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "Poskusite »%s --help« ali »%s --usage« za izčrpnejša navodila.\n"
+
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "Poročila o napakah javite na %s.\n"
+
+#~ msgid "give this help list"
+#~ msgstr "poda ta seznam pomoči"
+
+#~ msgid "give a short usage message"
+#~ msgstr "poda kratka navodila"
+
+#~ msgid "NAME"
+#~ msgstr "IME"
+
+#~ msgid "set the program name"
+#~ msgstr "nastavi ime programa"
+
+#~ msgid "SECS"
+#~ msgstr "SEK"
+
+#~ msgid "hang for SECS seconds (default 3600)"
+#~ msgstr "zastane za SEK sekund (privzeto 3600)"
+
+#~ msgid "print program version"
+#~ msgstr "izpiše različico programa"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(PROGRAMSKA NAPAKA) Različice ni moč ugotoviti?!"
+
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: preveč argumentov\n"
+
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr "(PROGRAMSKA NAPAKA) Izbire bi morali prepoznati?!"
+
+#~ msgid "program error"
+#~ msgstr "napaka v programu"
+
+#~ msgid "stack overflow"
+#~ msgstr "prekoračitev sklada"
+
+#, fuzzy
+#~ msgid "cannot create a temporary directory using template \"%s\""
+#~ msgstr "imenika %s ni mogoče ustvariti"
+
+#, fuzzy
+#~ msgid "cannot remove temporary file %s"
+#~ msgstr "imenika %s ni mogoče ustvariti"
+
+#, fuzzy
+#~ msgid "cannot remove temporary directory %s"
+#~ msgstr "imenika %s ni mogoče ustvariti"
+
+#, fuzzy
+#~ msgid "error closing file"
+#~ msgstr "napaka pri pisanju v datoteko \"%s\""
+
+#~ msgid "write error"
+#~ msgstr "napaka pri pisanju"
+
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "napaka pri odpiranju datoteke \"%s\" za branje"
+
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "varnostne datoteke \"%s\" ni mogoče odpreti za pisanje"
+
+#~ msgid "error reading \"%s\""
+#~ msgstr "napaka pri branju \"%s\""
+
+#~ msgid "error writing \"%s\""
+#~ msgstr "napaka pri pisanju na \"%s\""
+
+#~ msgid "error after reading \"%s\""
+#~ msgstr "napaka po branju \"%s\""
+
+#~ msgid "fdopen() failed"
+#~ msgstr "klic fdopen() ni uspel"
+
+#~ msgid "C# compiler not found, try installing pnet"
+#~ msgstr "prevajalnika za C# ni najti, namestite pnet"
+
+#~ msgid "C# virtual machine not found, try installing pnet"
+#~ msgstr "virtualnega stroja C# ni najti, namestite pnet"
+
+#~ msgid "%s subprocess failed"
+#~ msgstr "%s podproces ni uspel"
+
+#~ msgid "regular empty file"
+#~ msgstr "navadna prazna datoteka"
+
+#~ msgid "regular file"
+#~ msgstr "navadna datoteka"
+
+#~ msgid "directory"
+#~ msgstr "imenik"
+
+#~ msgid "block special file"
+#~ msgstr "bločna enota"
+
+#~ msgid "character special file"
+#~ msgstr "znakovna enota"
+
+#~ msgid "fifo"
+#~ msgstr "FIFO"
+
+# ! INEXACT
+#~ msgid "symbolic link"
+#~ msgstr "simbolna povezava"
+
+#~ msgid "socket"
+#~ msgstr "vtičnica"
+
+#~ msgid "message queue"
+#~ msgstr "vrsta sporočil"
+
+#~ msgid "semaphore"
+#~ msgstr "semafor"
+
+#~ msgid "shared memory object"
+#~ msgstr "deljen pomnilniški predmet"
+
+#~ msgid "typed memory object"
+#~ msgstr "tipiziran pomnilniški predmet"
+
+#~ msgid "weird file"
+#~ msgstr "čudna datoteka"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "Družina naslovov za ime gostitelja ni podprta"
+
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Začasen neuspeh pri razreševanju imena"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "Slaba vrednost ai_flags"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "Nepopravljiv neuspeh pri razreševanju imena"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "ai_family ni podprt"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "Neuspeh pri dodelitvi pomnilnika"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "Z imenom gostitelja ni povezan noben naslov"
+
+#~ msgid "Name or service not known"
+#~ msgstr "Ime ali storitev ni poznana"
+
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr "Servname ni podprt za ai_socktype"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "ai_socktype ni podprt"
+
+#~ msgid "System error"
+#~ msgstr "Sistemska napaka"
+
+#~ msgid "Argument buffer too small"
+#~ msgstr "Medpomnilnik za argumente je premajhen"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "Obdelava zahtevka v teku"
+
+#~ msgid "Request canceled"
+#~ msgstr "Zahtevek preklican"
+
+#~ msgid "Request not canceled"
+#~ msgstr "Zahtevek ni preklican"
+
+#~ msgid "All requests done"
+#~ msgstr "Vsi zahtevki obdelani"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Prekinjeno s signalom"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "Parametrični niz nepravilno kodiran"
+
+#~ msgid "Unknown error"
+#~ msgstr "Neznana napaka"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: nedovoljena izbira -- %c\n"
+
+#, fuzzy
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "%s podproces"
+
+#~ msgid "invalid source_version argument to compile_java_class"
+#~ msgstr "neveljaven argument source_version za compile_java_class"
+
+#~ msgid "invalid target_version argument to compile_java_class"
+#~ msgstr "neveljaven argument target_version za compile_java_class"
+
+#~ msgid "failed to create \"%s\""
+#~ msgstr "ustvarjanje \"%s\" ni uspelo"
+
+#~ msgid "error while writing \"%s\" file"
+#~ msgstr "napaka pri pisanju v datoteko \"%s\""
+
+#~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
+#~ msgstr "prevajalnika za Javo ni najti, nastavite $JAVAC ali namestite gcj"
+
+#~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
+#~ msgstr ""
+#~ "virtualnega stroja za Javo ni najti, nastavite $JAVA ali namestite gij"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "ni mogoče ustvariti cevovoda"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "ni mogoče zabeležiti trenutnega delovnega imenika"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "vrnitev v začetni delovni imenik neuspešna"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "dovoljenj %s ni mogoče spremeniti"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "imenika %s ni mogoče ustvariti"
+
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "Napaka pri odpiranju /dev/zero za branje"
+
+#~ msgid "`"
+#~ msgstr "»"
+
+#~ msgid "'"
+#~ msgstr "«"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[jJdD]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "funkcija iconv ne deluje"
+
+#~ msgid "iconv function not available"
+#~ msgstr "funkcija iconv ni na voljo"
+
+#~ msgid "character out of range"
+#~ msgstr "koda znaka izven obsega"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "znaka s kodo U+%04X ni mogoče pretvoriti v lokalni nabor znakov"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "znaka s kodo U+%04X ni moč pretvoriti v lokalni nabor znakov: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "neveljavno uporabniško ime"
+
+#~ msgid "invalid group"
+#~ msgstr "neveljavno ime skupine"
+
+#~ msgid "invalid spec"
+#~ msgstr "neveljavna specifikacija"
+
+#, fuzzy
+#~ msgid "preserving permissions for %s"
+#~ msgstr "dovoljenj %s ni mogoče spremeniti"
+
+#~ msgid "string comparison failed"
+#~ msgstr "primerjanje nizov ni uspelo"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Nastavite LC_ALL='C', da bi odpravili težavo."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Primerjana niza sta bila %s in %s."
+
+#~ msgid "(C)"
+#~ msgstr "©"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+#~ "html>.\n"
+#~ "This is free software: you are free to change and redistribute it.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "GPLv3+: GNU GPL različica 3 ali kasnejše, http://gnu.org/licences/gpl."
+#~ "html\n"
+#~ "To je prost program; smete ga spreminjati in deliti z drugimi.\n"
+#~ "Za program ni NOBENEGA JAMSTVA do zakonsko podanih omejitev.\n"
+#~ "\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Avtor(ica): %s.\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Avtorja: %s in %s.\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Avtorji: %s, %s in %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Avtorji: %s, %s, %s\n"
+#~ "in %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Avtorji: %s, %s, %s,\n"
+#~ "%s in %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Avtorji: %s, %s, %s,\n"
+#~ "%s, %s in %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Avtorji: %s, %s, %s,\n"
+#~ "%s, %s, %s in %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Avtorji: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s\n"
+#~ "in %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Avtorji: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s in %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "Avtorji: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s in drugi.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to <%s>.\n"
+#~ msgstr "Poročila o napakah javite na %s.\n"
+
+#, fuzzy
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "neveljaven argument %s za %s"
+
+#, fuzzy
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "neveljaven argument %s za %s"
+
+#, fuzzy
+#~ msgid "setting permissions for %s"
+#~ msgstr "dovoljenj %s ni mogoče spremeniti"
+
+#~ msgid "%s subprocess"
+#~ msgstr "%s podproces"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "%s podproces je prejel terminalni signal %d"
+
+#~ msgid "block size"
+#~ msgstr "velikost bloka"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s obstaja, vendar ni imenik"
+
+# ! INEXACT
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "lastnika in/ali skupine %s ni mogoče spremeniti"
+
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "dostop do imenika %s ni mogoč"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "imena skupine, ki pripada številčnemu UID, ni mogoče ugotoviti"
+
+#~ msgid ""
+#~ "\n"
+#~ "This is free software.  You may redistribute copies of it under the terms "
+#~ "of\n"
+#~ "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Ta program je prosta programska oprema; lahko ga redistribuirate in/ali\n"
+#~ "spreminjate po pogojih, določenih v »GNU General Public License«, \n"
+#~ "<http://www.gnu.org/licenses/gpl.html>. Za izdelek ni NOBENEGA JAMSTVA, "
+#~ "do\n"
+#~ "z zakonom dovoljene meje.\n"

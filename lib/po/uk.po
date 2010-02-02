@@ -1,0 +1,315 @@
+# Ukrainian messages for GNU mailutils
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# Sergey Poznyakoff <gray@gnu.org>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mailutils 0.6.90\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2010-02-01 09:19+0100\n"
+"PO-Revision-Date: 2005-05-19 11:54+0300\n"
+"Last-Translator: Sergey Poznyakoff <gray@gnu.org>\n"
+"Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: lib/error.c:153
+msgid "Unknown system error"
+msgstr "Невідомий тип повідомлення"
+
+#: lib/getopt.c:529 lib/getopt.c:545
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
+msgstr "%s: опція `%s' неоднозначна\n"
+
+#: lib/getopt.c:578 lib/getopt.c:582
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: опція `--%s' не може мати аргументу\n"
+
+#: lib/getopt.c:591 lib/getopt.c:596
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: опція `%c%s' не може мати аргументу\n"
+
+#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
+msgstr "%s: опція `%s' вимагає аргумент\n"
+
+#: lib/getopt.c:696 lib/getopt.c:699
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: невідома опція `--%s'\n"
+
+#: lib/getopt.c:707 lib/getopt.c:710
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: невідома опція `%c%s'\n"
+
+#: lib/getopt.c:759 lib/getopt.c:762
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: невірна опція -- %c\n"
+
+#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: опція вимагає аргумент -- %c\n"
+
+#: lib/getopt.c:882 lib/getopt.c:898
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: опція `-W %s' неоднозначна\n"
+
+#: lib/getopt.c:922 lib/getopt.c:940
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: опція `-W %s' не може мати аргументу\n"
+
+#: lib/regcomp.c:132
+msgid "Success"
+msgstr "Успіх"
+
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr ""
+
+#: lib/regcomp.c:138
+#, fuzzy
+msgid "Invalid regular expression"
+msgstr "Немає попереднього файлу"
+
+#: lib/regcomp.c:141
+#, fuzzy
+msgid "Invalid collation character"
+msgstr "Недійсний заголовок: %s"
+
+#: lib/regcomp.c:144
+#, fuzzy
+msgid "Invalid character class name"
+msgstr "Недійсний заголовок: %s"
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr ""
+
+#: lib/regcomp.c:150
+#, fuzzy
+msgid "Invalid back reference"
+msgstr "Недійсне число"
+
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr ""
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr ""
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr ""
+
+#: lib/regcomp.c:162
+#, fuzzy
+msgid "Invalid content of \\{\\}"
+msgstr "Невірна опція -- %s"
+
+#: lib/regcomp.c:165
+#, fuzzy
+msgid "Invalid range end"
+msgstr "Недійсна команда"
+
+#: lib/regcomp.c:168
+msgid "Memory exhausted"
+msgstr "Пам'ять вичерпано"
+
+#: lib/regcomp.c:171
+#, fuzzy
+msgid "Invalid preceding regular expression"
+msgstr "Немає попереднього файлу"
+
+#: lib/regcomp.c:174
+#, fuzzy
+msgid "Premature end of regular expression"
+msgstr "Немає попереднього файлу"
+
+#: lib/regcomp.c:177
+#, fuzzy
+msgid "Regular expression too big"
+msgstr "Немає попереднього файлу"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr ""
+
+#: lib/regcomp.c:701
+#, fuzzy
+msgid "No previous regular expression"
+msgstr "Немає попереднього файлу"
+
+#: lib/xalloc-die.c:34
+#, fuzzy
+msgid "memory exhausted"
+msgstr "Пам'ять вичерпано"
+
+#, fuzzy
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "неправильна назва мітки `%s' для `%s'"
+
+#, fuzzy
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "Відсутні аргументи для %s"
+
+#, fuzzy
+#~ msgid "Valid arguments are:"
+#~ msgstr "Дозволені аргументи `if' є: s | r | t"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: параметр ARGP_HELP_FMT вимагає значення"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: Невідомий параметр ARGP_HELP_FMT"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "Хибні дані в ARGP_HELP_FMT: %s"
+
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Аргументи, обов'язкові для довгих ключів, є обов'язковими й для коротких."
+
+#~ msgid "Usage:"
+#~ msgstr "Використання:"
+
+#~ msgid "  or: "
+#~ msgstr " чи: "
+
+#~ msgid " [OPTION...]"
+#~ msgstr " [ОПЦІЯ...]"
+
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr ""
+#~ "Спробуйте `%s --help' або `%s --usage' для отримання докладнішого опису.\n"
+
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "Про помилки звітуйте на %s.\n"
+
+#~ msgid "Give this help list"
+#~ msgstr "Вивести цю довідку"
+
+#~ msgid "Give a short usage message"
+#~ msgstr "Вивести коротке повідомлення про використання"
+
+#~ msgid "NAME"
+#~ msgstr "НАЗВА"
+
+#~ msgid "Set the program name"
+#~ msgstr "Встановити текст запрошення"
+
+#, fuzzy
+#~ msgid "SECS"
+#~ msgstr "СЕКУНДИ"
+
+#~ msgid "Hang for SECS seconds (default 3600)"
+#~ msgstr "Зачекати вказану кількість секунд (типово 3600)"
+
+#~ msgid "Print program version"
+#~ msgstr "Вивести версію програми"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(ПОМИЛКА ПРОГРАМУВАННЯ) Невідома версія!?"
+
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: Забагато аргументів\n"
+
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr "(ПОМИЛКА ПРОГРАМУВАННЯ) Опція мала бути розпізнана!?"
+
+#, fuzzy
+#~ msgid "program error"
+#~ msgstr "помилка діапазону"
+
+#, fuzzy
+#~ msgid "stack overflow"
+#~ msgstr "стек пустий"
+
+#, fuzzy
+#~ msgid "write error"
+#~ msgstr "помилка діапазону"
+
+#, fuzzy
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "Не вдається відкрити файл аудиту %s: %s"
+
+#, fuzzy
+#~ msgid "error reading \"%s\""
+#~ msgstr "Читання %s\n"
+
+#, fuzzy
+#~ msgid "error writing \"%s\""
+#~ msgstr "Помилка запису до скриньки: %s"
+
+#, fuzzy
+#~ msgid "fdopen() failed"
+#~ msgstr "помилка створення процесу"
+
+#, fuzzy
+#~ msgid "message queue"
+#~ msgstr "%d повідомлення"
+
+#, fuzzy
+#~ msgid "Memory allocation failure"
+#~ msgstr "Операція не вдалася"
+
+#, fuzzy
+#~ msgid "System error"
+#~ msgstr "Помилка розбору"
+
+#, fuzzy
+#~ msgid "Request not canceled"
+#~ msgstr "Потрібний елемент не знайдено"
+
+#, fuzzy
+#~ msgid "Unknown error"
+#~ msgstr "Невідомий тип повідомлення"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: недопустима опція -- %c\n"
+
+#, fuzzy
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "Не вдається перейти на uid %lu: %m"
+
+#, fuzzy
+#~ msgid "cannot create directory %s"
+#~ msgstr "Не вдається створити каталог %s: %s"
+
+#, fuzzy
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "Не вдається створити каталог %s: %s"
+
+#, fuzzy
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "Неправильні права для %s. Встановіть 0600"
+
+#, fuzzy
+#~ msgid "cannot create pipe"
+#~ msgstr "Не вдається створити перелік"
+
+#, fuzzy
+#~ msgid "invalid user"
+#~ msgstr "Недійсне число"
+
+#, fuzzy
+#~ msgid "invalid group"
+#~ msgstr "Відкрити групу"
+
+#, fuzzy
+#~ msgid "string comparison failed"
+#~ msgstr "Ідентифікація не вдалася"

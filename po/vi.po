@@ -1,34 +1,35 @@
-#  Vietnamese translation for wdiff-0.5g.
-#  Copyright © 2006 Free Software Foundation, Inc.
-#  Clytie Siddall <clytie@riverland.net.au>, 2005-2006.
+# Vietnamese translation for wdiff.
+# Copyright © 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the wdiff package.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5g\n"
+"Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-01-21 22:12+0100\n"
-"PO-Revision-Date: 2006-07-12 22:17+0930\n"
+"POT-Creation-Date: 2010-02-01 08:59+0100\n"
+"PO-Revision-Date: 2010-02-01 21:07+0100\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: LocFactoryEditor 1.6b36\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.7b3\n"
 
 #: src/mdiff.c:387
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (cho biểu thức chính quy « %s »)"
 
-#: src/mdiff.c:905 src/wdiff.c:1495
+#: src/mdiff.c:905 src/wdiff.c:1488
 #, fuzzy, c-format
 msgid "only one file may be standard input"
-msgstr "Cho phép chỉ môt tâp tin là dữ liệu nhập chuẩn thôi."
+msgstr "Chỉ cho phép một tập tin là đầu vào tiêu chuẩn."
 
-#: src/mdiff.c:920 src/wdiff.c:709
+#: src/mdiff.c:920 src/wdiff.c:702
 #, fuzzy, c-format
 msgid "directories not supported"
-msgstr "Chưa hỗ trợ thư mục"
+msgstr "Thư mục không được hỗ trợ"
 
 #: src/mdiff.c:1064
 #, c-format
@@ -63,7 +64,7 @@ msgstr ", hoàn tất\n"
 #: src/mdiff.c:1898
 #, c-format
 msgid "Sorting members"
-msgstr "Đang sắp xếp bộ phạn"
+msgstr "Đang sắp xếp các bộ phạn"
 
 #: src/mdiff.c:1930
 #, c-format
@@ -73,86 +74,93 @@ msgstr "Tóm tắt làm việc: %d nhóm, %d bộ phạn\n"
 #: src/mdiff.c:2310
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Tóm tắt làm việc: %d nhóm, %d bộ phạn, %d chồng lấp\n"
+msgstr "Tóm tắt làm việc: %d nhóm, %d bộ phạn, %d lần chồng lấp\n"
 
-#: src/mdiff.c:2365 src/wdiff.c:246
+#: src/mdiff.c:2365 src/wdiff.c:242
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
-msgstr "Hãy chọn thiết bị cuối bằng biến môi trường TERM."
+msgstr "Hãy chọn thiết bị cuối dùng biến môi trường TERM."
 
-#: src/mdiff.c:2368 src/wdiff.c:249
+#: src/mdiff.c:2368 src/wdiff.c:245
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
-msgstr "Không thể truy cập cơ sở dữ liệu termcap."
+msgstr "Không thể truy cập đến cơ sở dữ liệu termcap."
 
-#: src/mdiff.c:2370 src/wdiff.c:251
+#: src/mdiff.c:2370 src/wdiff.c:247
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "Chưa xác định kiểu thiết bị cuối « %s »."
 
-#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d từ"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1197 src/wdiff.c:1209
+#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1190 src/wdiff.c:1202
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% chung"
 
-#: src/mdiff.c:3754 src/wdiff.c:1199
+#: src/mdiff.c:3754 src/wdiff.c:1192
 #, c-format
 msgid "  %d %d%% deleted"
-msgstr "  %d %d%% bị xóa bỏ"
+msgstr "  %d %d%% bị xoá"
 
-#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1201 src/wdiff.c:1213
+#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1194 src/wdiff.c:1206
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% đã thay đổi"
 
-#: src/mdiff.c:3766 src/wdiff.c:1211
+#: src/mdiff.c:3766 src/wdiff.c:1204
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% đã chèn"
 
-#: src/mdiff.c:3795 src/wdiff.c:1253 src/wdiff2.c:178
+#: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "Hãy thử lệnh « %s --help » để xem thông tin thêm.\n"
+msgstr "Hãy thử chạy câu lệnh trợ giúp « %s --help » để xem thêm thông tin.\n"
 
 #: src/mdiff.c:3799
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff — Trình này phân tích nhiều tập tin và tìm kiếm dãy tương tự,\n"
-"rồi tạo danh sách có thể chi tiết của các điều khác nhau và tương tự.\n"
+"mdiff — xử lý nhiều tập tin và tìm kiếm các chuỗi tương tự,\n"
+"sau đó xuất danh sách có thể chi tiết chứa các mục khác biệt và tượng tự.\n"
 
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Cách sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]...\n"
+msgstr "Sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Chế độ thi hành:\n"
 
 #: src/mdiff.c:3809
+#, fuzzy
 msgid "  -h                     (ignored)\n"
-msgstr ""
+msgstr "  -h                     (bị bỏ qua)\n"
 
 #: src/mdiff.c:3810
+#, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
+msgstr "  -v, --verbose          thông báo vài thống kê trên stderr\n"
 
+# ? "      --help             hiển thị trợ giúp này và thoát"
+# ? "      --help            \t\thiển thị trợ giúp này và thoát"
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
 msgstr ""
 
+# ? "      --version          \thiển thị thông tin về phiên bản và thoát"
+# ? "      --version          xuất thông tin phiên bản và thoát"
 #: src/mdiff.c:3812 src/unify.c:294
 msgid "      --version          display program version then exit\n"
 msgstr ""
@@ -164,39 +172,46 @@ msgid ""
 msgstr ""
 
 #: src/mdiff.c:3815
+#, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
+msgstr "  -T, --initial-tab       xuất khoảng TAB thay cho dấu cách đầu tiên\n"
 
+# ? "  -l, --paginate            \tgửi kết xuất qua « pr » để dàn trang"
+# ? "  -l, --paginate          dàn trang kết xuất thông qua « pr »"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
 #: src/mdiff.c:3817
+#, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
+msgstr "  -S, --string[=CHUỖI]   thấy một chuỗi của người dùng khác\n"
 
 #: src/mdiff.c:3818
+#, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr ""
+msgstr "  -V, --show-links        ghi chú các tham chiếu đến tập tin và dòng\n"
 
+# ? "  -t, --expand-tabs       mở rộng các khoảng tab sang dấu cách trong kết xuất"
+# ? "  -t, --expand-tabs   \tmở rộng các khoảng tab thành dấu cách trong kết xuất"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Gỡ lỗi:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Gỡ lỗi:\n"
-"  -0, --debugging   xuất thông tin _gỡ lỗi_ chi tiết\n"
+msgstr "  -0, --debugging   xuất thông tin chi tiết về tiến trình gỡ lỗi\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -204,64 +219,80 @@ msgid ""
 "Word mode options:\n"
 msgstr ""
 
-#: src/mdiff.c:3827 src/wdiff.c:1271 src/wdiff2.c:196
+# ? "  -1, --no-deleted            thu hồi kết xuất các từ bị xoá"
+# ? "  -1, --no-deleted       \tthu hồi xuất từ bị xoá"
+#: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr ""
 
-#: src/mdiff.c:3828 src/wdiff.c:1272 src/wdiff2.c:197
+# ? "  -2, --no-inserted           thu hồi kết xuất các từ đã chèn"
+# ? "  -2, --no-inserted      \tthu hồi xuất từ đã chèn"
+#: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 
-#: src/mdiff.c:3829 src/wdiff.c:1273 src/wdiff2.c:198
+#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common             thu hồi kết xuất các từ chung\n"
 
 #: src/mdiff.c:3830
+#, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -A, --auto-pager            tự động gọi một trình dàn trang\n"
 
 #: src/mdiff.c:3831
+#, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -k, --less-mode             biến thể chế độ in cho \"less\"\n"
 
 #: src/mdiff.c:3832
+#, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
+"  -m, --avoid-wraps           không mở rộng trường qua ký tự dòng mới\n"
 
 #: src/mdiff.c:3833
+#, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -o, --printer               gạch đè kiểu máy in\n"
 
 #: src/mdiff.c:3834
+#, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr ""
+"  -z, --terminal              dùng termcap giống như trên bộ trình bày "
+"thiết\n"
+"                              bị cuối\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          giống như « -z », nhưng không có chuỗi\n"
 
 #: src/mdiff.c:3836
+#, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
+"  -O, --item-regexp=BTCQ    so sánh các mục tùy theo biểu thức chính quy "
+"này\n"
 
 #: src/mdiff.c:3837
+#, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr ""
+msgstr "  -W, --word-mode             so sánh các từ thay cho dòng hoàn toàn\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr ""
-"\n"
-"Khi không có TẬP_TIN, hay khi TẬP_TIN là « - », hãy đọc thiết bị nhập chuẩn.\n"
+"Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
 
-#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1289 src/wdiff2.c:216
+#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Hãy thông báo lỗi cho <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr "Hãy thông báo lỗi cho địa chỉ <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -287,7 +318,7 @@ msgstr ""
 "\n"
 "Tác quyền © năm 1992, 1997 Tổ Chức Phần Mềm Tự Do.\n"
 
-#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1415 src/wdiff2.c:134
+#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:134
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -296,7 +327,7 @@ msgstr ""
 "KHÔNG CÓ BẢO HÀNH GÌ CẢ, THẬM CHÍ KHÔNG CÓ BẢO ĐẢM ĐƯỢC NGỤ Ý\n"
 "KHẢ NĂNG BÁN HAY KHẢ NĂNG LÀM ĐƯỢC VIỆC DỨT KHOÁT.\n"
 
-#: src/mdiff.c:4395 src/wdiff.c:1419 src/wdiff2.c:138
+#: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -317,20 +348,19 @@ msgstr "Không tìm thấy tên cho dữ liệu khác biệt trên dòng %ld"
 #: src/unify.c:273
 #, fuzzy, c-format
 msgid "try `%s --help' for more information\n"
-msgstr "Hãy thử lệnh « %s --help » để xem thông tin thêm.\n"
+msgstr "Hãy thử chạy câu lệnh trợ giúp « %s --help » để xem thêm thông tin.\n"
 
 #: src/unify.c:277
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr ""
 "unify — Chuyển đổi dữ liệu khác biệt ngữ cảnh thành dữ liêu khác biệt hợp "
-"nhất, hay ngược lại.\n"
+"nhất,\n"
+"hay ngược lại.\n"
 
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Cách sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]\n"
+msgstr "Sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]\n"
 
 #: src/unify.c:284
 msgid "  -c, --context-diffs    force output to context diffs\n"
@@ -341,39 +371,46 @@ msgid "  -e, --echo-comments    echo comments to standard error\n"
 msgstr ""
 
 #: src/unify.c:286
+#, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
+msgstr "  -o, --old-diffs        \txuất khác biệt kiểu cũ, bất chấp\n"
 
 #: src/unify.c:287
+#, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr ""
+msgstr "  -p, --patch-format     phát sinh định dạng đắp vá\n"
 
 #: src/unify.c:288
+#, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr ""
+msgstr "  -P                     \t\tbằng « -p »\n"
 
 #: src/unify.c:289
 msgid "  -s, --strip-comments   strip comment lines\n"
 msgstr ""
 
 #: src/unify.c:290
+#, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
 msgstr ""
+"  -u, --unidiffs         \tép buộc kết xuất thành khác biệt thống nhất\n"
 
 #: src/unify.c:291
+#, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr ""
+msgstr "  -U                     \t\tbằng « -p » và « -u »\n"
 
 #: src/unify.c:292
+#, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr ""
+"  -=, --use-equals       trong khác biệt thống nhất, thay thế dấu cách\n"
 
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
 msgstr ""
-"\n"
-"Khi không có TẬP_TIN, hay khi TẬP_TIN là « - », hãy đọc thiết bị nhập chuẩn.\n"
+"Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -383,7 +420,7 @@ msgstr "Không thể mở « %s »"
 #: src/unify.c:394
 #, fuzzy, c-format
 msgid "only one filename allowed"
-msgstr "Cho phép chỉ một tên tập tin"
+msgstr "Chỉ co phép một tên tập tin"
 
 #: src/unify.c:403
 msgid ""
@@ -426,12 +463,12 @@ msgstr "Dữ liệu khác biệt ngữ cảnh dạng sai trên dòng %ld"
 msgid "context diff missing `new' header at line %ld"
 msgstr "Dữ liệu khác biệt ngữ cảnh còn thiếu đầu trang « mới » trên dòng %ld"
 
-#: src/wdiff.c:613 src/wdiff.c:732
-#, c-format
+#: src/wdiff.c:606 src/wdiff.c:725
+#, fuzzy, c-format
 msgid "no suitable temporary directory exists"
-msgstr ""
+msgstr "Không có thư mục tạm thời thích hợp"
 
-#: src/wdiff.c:1229 src/wdiff2.c:110
+#: src/wdiff.c:1222 src/wdiff2.c:110
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -447,117 +484,136 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"Chương trình này là phần mềm tự do; bạn có thể phát hành lại nó\n"
-"và/hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU\n"
-"như được xuất bản bởi Tổ chức Phần mềm Tự do; hoặc phiên bản 2\n"
-"của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau nào.\n"
+"Chương trình này là phần mềm tự do; bạn có thể phát hành lại nó và/hoặc sửa "
+"đổi\n"
+"nó với điều kiện của Giấy Phép Công Cộng GNU như được xuất bản bởi Tổ Chức "
+"Phần\n"
+"Mềm Tự Do; hoặc phiên bản 2 của Giấy Phép này, hoặc (tùy chọn) bất kỳ phiên "
+"bản\n"
+"sau nào.\n"
 "\n"
-"Chương trình này được phát hành vì mong muốn nó có ích, nhưng\n"
-"KHÔNG CÓ BẢO HÀNH GÌ CẢ, THẬM CHÍ KHÔNG CÓ BẢO ĐẢM ĐƯỢC NGỤ Ý\n"
-"KHẢ NĂNG BÁN HAY KHẢ NĂNG LÀM ĐƯỢC VIỆC DỨT KHOÁT.\n"
-"Xem Giấy phép Công cộng GNU để biết thêm chi tiết.\n"
+"Chương trình này được phát hành vì mong muốn nó có ích, nhưng KHÔNG CÓ BẢO\n"
+"HÀNH GÌ CẢ, THẬM CHÍ KHÔNG CÓ BẢO ĐẢM ĐƯỢC NGỤ Ý KHẢ NĂNG BÁN HAY KHẢ NĂNG\n"
+"LÀM ĐƯỢC VIỆC DỨT KHOÁT. Xem Giấy Phép Công Cộng GNU để biết thêm chi tiết.\n"
 "\n"
-"Bạn đã nhận một bản sao của Giấy phép Công cộng GNU\n"
-"cùng với chương trình này; nếu không, hãy viết thư cho\n"
-"Tổ chức Phần mềm Tự do,\n"
+"Bạn đã nhận một bản sao của Giấy Phép Công Cộng GNU cùng với chương trình "
+"này;\n"
+"nếu không, hãy viết thư cho Tổ Chức Phần Mềm Tự Do,\n"
 "Free Software Foundation, Inc.,\n"
-" 51 Franklin Street, Fifth Floor,\n"
-"Boston, MA  02110-1301, USA.\n"
+"51 Franklin Street, Fifth Floor,\n"
+"Boston, MA  02110-1301, USA (Mỹ).\n"
 
-#: src/wdiff.c:1257
+#: src/wdiff.c:1250
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr ""
-"wdiff — Trình này so sánh từ trong hai tập tin khác rồi thông báo dữ liệu "
-"khác biệt.\n"
+msgstr "wdiff — So sánh các từ trong hai tập tin và thông báo khác biệt.\n"
 
-#: src/wdiff.c:1261
+#: src/wdiff.c:1254
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
-"Cách sư dụng: %s [TÙY_CHỌN]... TẬP_TIN1 TẬP_TIN2\n"
+"Sư dụng: %s [TÙY_CHỌN]... TẬP_TIN1 TẬP_TIN2\n"
+"         %s -d [TÙY_CHỌN]... [TẬP_TIN]\n"
 
-#: src/wdiff.c:1266 src/wdiff2.c:191
+#: src/wdiff.c:1259 src/wdiff2.c:191
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
 
-#: src/wdiff.c:1269 src/wdiff2.c:194
+#: src/wdiff.c:1262 src/wdiff2.c:194
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr ""
 
-#: src/wdiff.c:1270 src/wdiff2.c:195
+#: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
+msgstr "  -K, --no-init-term          giống như « -z », nhưng không có chuỗi\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:199
+#: src/wdiff.c:1267 src/wdiff2.c:199
+#, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -a, --auto-pager            tự động gọi một trình dàn trang\n"
 
-#: src/wdiff.c:1275
+#: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1276 src/wdiff2.c:200
+#: src/wdiff.c:1269 src/wdiff2.c:200
+#, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr ""
+msgstr "  -h, --help                 \thiển thị trợ giúp này\n"
 
-#: src/wdiff.c:1277 src/wdiff2.c:201
+# ? "  -i, --ignore-case                              không phân biệt chữ hoa/thường"
+# ? "  -i, --ignore-case         \tkhông phân biệt chữ hoa/thường"
+#: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
 
-#: src/wdiff.c:1278 src/wdiff2.c:202
+#: src/wdiff.c:1271 src/wdiff2.c:202
+#, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -l, --less-mode        \tbiến thể chế độ máy in cho \"less\"\n"
 
-#: src/wdiff.c:1279 src/wdiff2.c:203
+#: src/wdiff.c:1272 src/wdiff2.c:203
+#, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -n, --avoid-wraps  \tkhông mở rộng trường qua ký tự dòng mới\n"
 
-#: src/wdiff.c:1280 src/wdiff2.c:204
+#: src/wdiff.c:1273 src/wdiff2.c:204
+#, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -p, --printer              \tghi đè giống như cho máy in\n"
 
-#: src/wdiff.c:1281 src/wdiff2.c:206
+#: src/wdiff.c:1274 src/wdiff2.c:206
+#, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr ""
+msgstr "  -s, --statistics \tthông báo số các từ bị xoá, đã chèn v.v.\n"
 
-#: src/wdiff.c:1282 src/wdiff2.c:207
+#: src/wdiff.c:1275 src/wdiff2.c:207
+#, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr ""
+"  -z, --terminal              dùng termcap giống như trên bộ trình bày thiết "
+"bị cuối\n"
 
-#: src/wdiff.c:1283 src/wdiff2.c:208
+#: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
 msgstr ""
+"  -v, --version     \thiển thị thông tin về phiên bản chương trình, sau đó "
+"thoát\n"
 
-#: src/wdiff.c:1284 src/wdiff2.c:209
+#: src/wdiff.c:1277 src/wdiff2.c:209
+#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
+msgstr "  -w, --start-delete=CHUỖI\t\tchuỗi sẽ đánh dấu bắt đầu vùng xoá\n"
 
-#: src/wdiff.c:1285 src/wdiff2.c:210
+#: src/wdiff.c:1278 src/wdiff2.c:210
+#, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr ""
+msgstr "  -x, --end-delete=CHUỖI    \tchuỗi sẽ đánh dấu kết thúc vùng xoá\n"
 
-#: src/wdiff.c:1286 src/wdiff2.c:211
+#: src/wdiff.c:1279 src/wdiff2.c:211
+#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr ""
+msgstr "  -y, --start-insert=CHUỖI  \t\tchuỗi sẽ đánh dấu bắt đầu vùng chèn\n"
 
-#: src/wdiff.c:1287 src/wdiff2.c:212
+#: src/wdiff.c:1280 src/wdiff2.c:212
+#, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr ""
+msgstr "  -z, --end-insert=CHUỖI    \t\tchuỗi sẽ đánh dấu kết thúc vùng chèn\n"
 
-#: src/wdiff.c:1405
+#: src/wdiff.c:1398
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "Không thể dùng tùy chọn « -t » vì trình termcap không sẵn sàng."
 
-#: src/wdiff.c:1410
+#: src/wdiff.c:1403
 #, fuzzy
 msgid ""
 "\n"
@@ -567,12 +623,12 @@ msgstr ""
 "\n"
 "Tác quyền © năm 1992, 1997 Tổ Chức Phần Mềm Tự Do.\n"
 
-#: src/wdiff.c:1458 src/wdiff.c:1476
+#: src/wdiff.c:1451 src/wdiff.c:1469
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Thiếu đối số tập tin"
 
-#: src/wdiff.c:1471 src/wdiff2.c:323
+#: src/wdiff.c:1464 src/wdiff2.c:323
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Thiếu đối số tập tin"
@@ -591,162 +647,34 @@ msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
+"wdiff — so sánh theo mỗi từ bằng cách khởi chạy nội bộ « mdiff -W ».\n"
+"Chương trình này tồn tại chính để hỗ trợ cú pháp hơi cũ « wdiff ».\n"
 
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Cách sư dụng: %s [TÙY_CHỌN]... TẬP_TIN1 TẬP_TIN2\n"
+msgstr "Sư dụng: %s [TÙY_CHỌN]... TẬP_TIN1 TẬP_TIN2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
+msgstr "  -q, --quiet                thu hồi thông điệp gọi « mdiff »\n"
 
 #: src/wdiff2.c:214
+#, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
+"Chương trình này cũng diễn tả phương pháp có thể gọi trực tiếp « mdiff ».\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335
-#, fuzzy, c-format
+#, c-format
 msgid "Launching `%s"
-msgstr "Đang đọc %s"
+msgstr "Đang khởi chạy « %s"
 
 #: src/wdiff2.c:338
 #, c-format
 msgid "'\n"
-msgstr ""
-
-#: lib/error.c:153
-msgid "Unknown system error"
-msgstr ""
-
-#: lib/getopt.c:529 lib/getopt.c:545
-#, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:578 lib/getopt.c:582
-#, c-format
-msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:591 lib/getopt.c:596
-#, c-format
-msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, c-format
-msgid "%s: option '%s' requires an argument\n"
-msgstr ""
-
-#: lib/getopt.c:696 lib/getopt.c:699
-#, c-format
-msgid "%s: unrecognized option '--%s'\n"
-msgstr ""
-
-#: lib/getopt.c:707 lib/getopt.c:710
-#, c-format
-msgid "%s: unrecognized option '%c%s'\n"
-msgstr ""
-
-#: lib/getopt.c:759 lib/getopt.c:762
-#, c-format
-msgid "%s: invalid option -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, c-format
-msgid "%s: option requires an argument -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:882 lib/getopt.c:898
-#, c-format
-msgid "%s: option '-W %s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:922 lib/getopt.c:940
-#, c-format
-msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/regcomp.c:132
-msgid "Success"
-msgstr ""
-
-#: lib/regcomp.c:135
-msgid "No match"
-msgstr ""
-
-#: lib/regcomp.c:138
-msgid "Invalid regular expression"
-msgstr ""
-
-#: lib/regcomp.c:141
-msgid "Invalid collation character"
-msgstr ""
-
-#: lib/regcomp.c:144
-msgid "Invalid character class name"
-msgstr ""
-
-#: lib/regcomp.c:147
-msgid "Trailing backslash"
-msgstr ""
-
-#: lib/regcomp.c:150
-msgid "Invalid back reference"
-msgstr ""
-
-#: lib/regcomp.c:153
-msgid "Unmatched [ or [^"
-msgstr ""
-
-#: lib/regcomp.c:156
-msgid "Unmatched ( or \\("
-msgstr ""
-
-#: lib/regcomp.c:159
-msgid "Unmatched \\{"
-msgstr ""
-
-#: lib/regcomp.c:162
-msgid "Invalid content of \\{\\}"
-msgstr ""
-
-#: lib/regcomp.c:165
-msgid "Invalid range end"
-msgstr ""
-
-#: lib/regcomp.c:168
-msgid "Memory exhausted"
-msgstr ""
-
-#: lib/regcomp.c:171
-msgid "Invalid preceding regular expression"
-msgstr ""
-
-#: lib/regcomp.c:174
-msgid "Premature end of regular expression"
-msgstr ""
-
-#: lib/regcomp.c:177
-msgid "Regular expression too big"
-msgstr ""
-
-#: lib/regcomp.c:180
-msgid "Unmatched ) or \\)"
-msgstr ""
-
-#: lib/regcomp.c:701
-msgid "No previous regular expression"
-msgstr ""
-
-#: lib/xalloc-die.c:34
-msgid "memory exhausted"
-msgstr ""
+msgstr " »\n"
 
 #~ msgid ""
 #~ "\n"
@@ -760,9 +688,8 @@ msgstr ""
 #~ "Chế độ thi hành:\n"
 #~ "  -h                     (bị bỏ qua)\n"
 #~ "  -v, --verbose          thông báo vài thống kê trên stderr\n"
-#~ "           (thiêt bị lỗi chuẩn) (_chi tiết_)\n"
-#~ "      --help             hiển thị _trợ giúp_ này rồi thoát\n"
-#~ "      --version          xuất thông tin _phiên bản_ rồi thoát\n"
+#~ "      --help             hiển thị trợ giúp này và thoát\n"
+#~ "      --version          xuất thông tin phiên bản và thoát\n"
 
 #~ msgid ""
 #~ "\n"
@@ -774,14 +701,12 @@ msgstr ""
 #~ "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Cách định dạng kết xuất:\n"
-#~ "  -T, --initial-tab       nhập cách _tab_ thay thế dấu cách _đầu tiên_\n"
-#~ "  -l, --paginate          _dàn trang_ kết xuất qua « pr »\n"
-#~ "  -S, --string[=CHUỖI]   ghi một _chuỗi_ người dùng khác\n"
-#~ "  -V, --show-links        chỉ ra tên tập tin và số hiệu dòng trong chú "
-#~ "thích\n"
-#~ "           (_hiện liên kết_)\n"
-#~ "  -t, --expand-tabs      _mở rộng cách tab_ ra nhiều dấu cách trong kết "
+#~ "Định dạng kết xuất:\n"
+#~ "  -T, --initial-tab       xuất khoảng TAB thay cho dấu cách đầu tiên\n"
+#~ "  -l, --paginate          dàn trang kết xuất thông qua « pr »\n"
+#~ "  -S, --string[=CHUỖI]   thấy một chuỗi của người dùng khác\n"
+#~ "  -V, --show-links        ghi chú các tham chiếu đến tập tin và dòng\n"
+#~ "  -t, --expand-tabs       mở rộng các khoảng tab sang dấu cách trong kết "
 #~ "xuất\n"
 
 #~ msgid ""
@@ -801,21 +726,20 @@ msgstr ""
 #~ msgstr ""
 #~ "\n"
 #~ "Tùy chọn chế độ từ :\n"
-#~ "  -1, --no-deleted            _không_ xuất từ _bị xóa bỏ_\n"
-#~ "  -2, --no-inserted           _không_ xuất từ _bị chèn_\n"
-#~ "  -3, --no-common         _không_ xuất từ _dùng chung_\n"
-#~ "  -A, --auto-pager           _tự động_ gọi _trình dàn trang_\n"
-#~ "  -k, --less-mode             _chế độ_ in khác cho trình « less »\n"
-#~ "  -m, --avoid-wraps         không mở rộng trường ra dòng mới\n"
-#~ "            (_tránh ngắt dòng_)\n"
-#~ "  -o, --printer                   kiểu gạch đè lên chữ như máy in\n"
-#~ "  -z, --terminal\n"
-#~ "           dùng termcap giống như với bộ trình bày _thiết bị cuối_\n"
-#~ "  -K, --no-init-term         giống tùy chọn -z, nhưng _không_ có \n"
-#~ "\t\t\t\t\t\tchuỗi khởi động/thiết bị cuối loại termcap\n"
-#~ "  -O, --item-regexp=BIỂUTHỨC _biểu thức chính quy_ ấy định nghĩa cách so "
-#~ "sánh _mục_\n"
-#~ "  -W, --word-mode          so sánh _từ_ thay thế dòng (_chế độ_)\n"
+#~ "  -1, --no-deleted            thu hồi kết xuất các từ bị xoá\n"
+#~ "  -2, --no-inserted           thu hồi kết xuất các từ đã chèn\n"
+#~ "  -3, --no-common             thu hồi kết xuất các từ chung\n"
+#~ "  -A, --auto-pager            tự động gọi một trình dàn trang\n"
+#~ "  -k, --less-mode             biến thể chế độ in cho \"less\"\n"
+#~ "  -m, --avoid-wraps           không mở rộng trường qua ký tự dòng mới\n"
+#~ "  -o, --printer               gạch đè kiểu máy in\n"
+#~ "  -z, --terminal              dùng termcap giống như trên bộ trình bày "
+#~ "thiết bị cuối\n"
+#~ "  -K, --no-init-term          giống như « -z », nhưng không có chuỗi\n"
+#~ "\t\t\t\t\t\tkiểu khởi/dừng chạy termcap\n"
+#~ "  -O, --item-regexp=BTCQ    so sánh các mục tùy theo biểu thức chính quy "
+#~ "này\n"
+#~ "  -W, --word-mode             so sánh các từ thay cho dòng hoàn toàn\n"
 
 #~ msgid ""
 #~ "\n"
@@ -831,19 +755,16 @@ msgstr ""
 #~ "suffixes\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Cách so sánh tập tin:\n"
-#~ "*  -H, --speed-large-files\n"
-#~ "           đi nhanh hơn khi có nhiều thay đổi nhỏ (_tộc độ, tập tin "
-#~ "lớn_)\n"
-#~ "*  -a, --text\n"
-#~ "          thông báo sự khác giữa nhiều dòng (mặc định cho tập tin _văn "
-#~ "bản_)\n"
-#~ "*  -d, --minimal\n"
-#~ "           cố gắng nhiều hơn để tạo bộ thay đổi nhỏ hơn (_tối thiểu_)\n"
-#~ "*  -q, --brief\n"
-#~ "       chỉ thông báo nếu tập tin là khác nhau\n"
-#~ "        (mặc định cho tập tin nhị phân)(_ngắn_)\n"
-#~ "*      --horizon-lines=DÒNG   giữ DÒNG dòng trong phụ tố thường\n"
+#~ "So sánh tập tin:\n"
+#~ "*  -H, --speed-large-files     chạy nhanh hơn khi có rất nhiều thay đổi "
+#~ "nhỏ\n"
+#~ "*  -a, --text                  thông báo sự khác biệt giữa các dòng\n"
+#~ "\t\t\t\t\t(mặc định cho tập tin văn bản)\n"
+#~ "*  -d, --minimal\t\tcố gắng nhiều hơn đối với một tập hợp thay đổi nhỏ "
+#~ "hơn\n"
+#~ "*  -q, --brief                 chỉ thông báo nếu các dòng khác nhau\n"
+#~ "\t\t\t\t\t(mặc định nhị phân)*      --horizon-lines=SỐ   giữ số dòng này "
+#~ "trong các tiền/hậu tố chung\n"
 
 #~ msgid ""
 #~ "\n"
@@ -860,19 +781,17 @@ msgstr ""
 #~ msgstr ""
 #~ "\n"
 #~ "So sánh thư mục:\n"
-#~ "*  -N, --new-file           xử lý tập tin còn thiếu là trống (_tập tin "
-#~ "mới_)\n"
-#~ "*  -P, --unidirectional-new-file\n"
-#~ "           xử lý tập tin cũ còn thiếu là trống (_tập tin mới đơn hướng_)\n"
-#~ "*  -S, --starting-file=TẬP_TIN\n"
-#~ "           tiếp tục so sánh thư mục từ tập tin này (_tập tin đầu_)\n"
-#~ "*  -X, --exclude-from=TẬP_TIN\n"
-#~ "           bỏ qua tập tin khớp mẫu từ tập tin mày (_loại trừ ra_)\n"
-#~ "*  -r, --recursive                     so sánh _đệ qui_ thư mục con\n"
-#~ "*  -s, --report-identical-files    _thông báo_ khi có hai _tâp tin "
-#~ "trùng_\n"
-#~ "*  -x, --exclude=MẤU\n"
-#~ "           bỏ qua tập tin (thư mục) khớp mẫu này (_loại trừ_)\n"
+#~ "*  -N, --new-file                 \t\tcoi như tập tin còn thiếu là trống\n"
+#~ "*  -P, --unidirectional-new-file\tcoi như tập tin cũ còn thiếu là trống\n"
+#~ "*  -S, --starting-file=TẬP_TIN\ttiếp tục so sánh các thư mục ở tập tin "
+#~ "này\n"
+#~ "*  -X, --exclude-from=TẬP_TIN \tbỏ qua các tập tin tương ứng với\n"
+#~ "\t\t\t\t\t\t\tmẫu nằm trong tập tin này\n"
+#~ "*  -r, --recursive                 \t\tso sánh đệ quy các thư mục con\n"
+#~ "*  -s, --report-identical-files    \tthông báo hai tập tin trùng\n"
+#~ "*  -x, --exclude=MẪU           \tbỏ qua các tập tin hay thư mục tương "
+#~ "ứng\n"
+#~ "\t\t\t\t\t\t\tvới mẫu này\n"
 
 #~ msgid ""
 #~ "\n"
@@ -884,13 +803,14 @@ msgstr ""
 #~ "  -w, --ignore-all-space               ignore white space\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Bỏ qua đoạn:\n"
-#~ "  -B, --ignore-blank-lines             _bỏ qua dòng trống_\n"
-#~ "*  -I, --ignore-matching-lines=BIỂUTHỨC\n"
-#~ "           _bỏ qua dòng khớp_ với biểu thức chính quy này\n"
-#~ "  -b, --ignore-space-change            _bỏ qua_ số khoảng _cách_ (_đổi_)\n"
-#~ "  -i, --ignore-case                    _bỏ qua hoa/thường_\n"
-#~ "  -w, --ignore-all-space              _bỏ qua mọi khoảng cách_\n"
+#~ "Bỏ qua văn bản:\n"
+#~ "  -B, --ignore-blank-lines\t\t\t    bỏ qua các dòng trống\n"
+#~ "*  -I, --ignore-matching-lines=BTCQ\t    bỏ qua các dòng tương ứng\n"
+#~ "\t\t\t\t\t\t\t\t    với biểu thức chính quy này\n"
+#~ "  -b, --ignore-space-change           \t    bỏ qua số lượng khoảng trắng\n"
+#~ "  -i, --ignore-case                              không phân biệt chữ hoa/"
+#~ "thường\n"
+#~ "  -w, --ignore-all-space              \tbỏ qua khoảng trắng\n"
 
 #~ msgid ""
 #~ "\n"
@@ -901,13 +821,9 @@ msgstr ""
 #~ msgstr ""
 #~ "\n"
 #~ "Xếp nhóm:\n"
-#~ "  -G, --relist-files\n"
-#~ "           liệt kê mọi tập tin nhập với chú thích (_liệt kê lại tập "
-#~ "tin_)\n"
-#~ "  -J, --minimum-size=MỤC\n"
-#~ "           bỏ qua nhóm xếp có ít hơn số mục này (_cỡ tốí thiểu_)\n"
-#~ "  -j, --ignore-delimiters\n"
-#~ "           không đếm mục có chỉ _ký tự định giới_ (_bỏ qua_)\n"
+#~ "  -G, --relist-files         \t\tliệt kê mọi tập tin nhập với phụ chú\n"
+#~ "  -J, --minimum-size=SỐ   \tbỏ qua các nhóm có số mục nhỏ hơn số này\n"
+#~ "  -j, --ignore-delimiters    \tkhông đếm mục chỉ chứa dấu tách\n"
 
 #~ msgid ""
 #~ "\n"
@@ -924,26 +840,22 @@ msgstr ""
 #~ "format\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Dạng thức xuất chi tiết:\n"
-#~ "*  -D, --ifdef=TÊN                      xuất dạng thức « #ifdef TÊN »\n"
-#~ "*      --changed-group-format=DẠNG\n"
-#~ "       dùng dạng thức này cho mọi dòng đã thay đổi (_dạng nhóm đa đổi_)\n"
-#~ "*      --new-group-format=DẠNG\n"
-#~ "           dùng dạng thức này cho các dòng đã chèn (_dạng nhóm mới_)\n"
-#~ "*      --new-line-format=DẠNG\n"
-#~ "           dùng dạng thức này cho mỗi dòng đã chèn (_dạng dòng mới_\n"
-#~ "*      --old-group-format=DẠNG\n"
-#~ "           dùng dạng thức này cho các dòng bị xoá bỏ (_dạng nhóm cũ_)\n"
-#~ "*      --old-line-format=DẠNG\n"
-#~ "           dùng dạng thức này cho mỗi dòng bị xoá bỏ (_dạng dòng cũ_)\n"
-#~ "*      --unchanged-group-format=DẠNG\n"
-#~ "       dùng dạng thức này cho các dòng chưa thay đổi (_dạng nhóm chưa "
-#~ "đổỉ_)\n"
-#~ "*      --unchanged-line-format=DẠNG\n"
-#~ "       dùng dạng thức này cho mỗi dòng chưa thay đổi (_dạng dòng chưa "
-#~ "đổi_)\n"
-#~ "*      --line-format=DẠNG\n"
-#~ "\t--{old,new,unchanged} \t\t\t_dạng thức dòng_ cũ,mới,chưa đổi\n"
+#~ "Định dạng kết xuất chi tiết:\n"
+#~ "*  -D, --ifdef=TÊN                      \t\txuất định dạng `#ifdef TÊN'\n"
+#~ "\n"
+#~ "\tDùng định DẠNG được ghi rõ cho :\n"
+#~ "*      --changed-group-format=DẠNG\t   các dòng đã thay đổi\n"
+#~ "*      --new-group-format=DẠNG          các dòng đã chèn\n"
+#~ "*      --new-line-format=DẠNG             một dòng đã chèn\n"
+#~ "*      --old-group-format=DẠNG           các dòng bị xoá\n"
+#~ "*      --old-line-format=DẠNG              một dòng bị xoá\n"
+#~ " *      --unchanged-group-format=DẠNG    các dòng chưa thay đổi\n"
+#~ "*      --unchanged-line-format=DẠNG       một dòng chưa thay đổi\n"
+#~ "\n"
+#~ "*      --line-format=DẠNG              --{old,new,unchanged}-line-format\n"
+#~ "\t\t\t\t\t\t\told\tcũ\n"
+#~ "\t\t\t\t\t\t\tnew\tmới\n"
+#~ "\t\t\t\t\t\t\tunchanged    chưa thay đổi\n"
 
 #~ msgid ""
 #~ "\n"
@@ -954,12 +866,12 @@ msgstr ""
 #~ "*  -n, --rcs              output RCS format (internally used by RCS)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Dạng thức như tập lệnh:\n"
-#~ "  (không có điều nào của -CDUcefnuy)    xuất dữ liệu khác biệt chuẩn\n"
-#~ "*  -e, --ed               xuất tập lệnh « ed » hợp lệ\n"
-#~ "*  -f, --forward-ed\n"
-#~ "           phối hai cỡ « -e » và « -n » (không hữu ích lắm) (_đi tới_)\n"
-#~ "*  -n, --rcs              xuất dạng thức RCS (được dùng nội bộ bởi RCS)\n"
+#~ "Định dạng kiểu văn lệnh:\n"
+#~ "  (không dùng bất kỳ cờ -CDUcefnuy)    xuất tập tin khác biệt (diff) tiêu "
+#~ "chuẩn\n"
+#~ "*  -e, --ed               \txuất một văn lệnh « ed » hợp lệ\n"
+#~ "*  -f, --forward-ed       tổ hợp « -e » và « -n » (không rất hữu ích)\n"
+#~ "*  -n, --rcs              \txuất định dạng RCS (được RCS dùng nội bộ)\n"
 
 #~ msgid ""
 #~ "\n"
@@ -970,12 +882,10 @@ msgstr ""
 #~ "change\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Dạng thức ngữ cảnh và hợp nhất:\n"
-#~ "*  -F, --show-function-line=BTCQ\n"
-#~ "           hiện biểu thức chính quy khớp ngữ cảnh trước (_hiện dòng hàm "
-#~ "số_)\n"
-#~ "*  -p, --show-c-function             _hiện hàm số C_ nào cho mỗi thay "
-#~ "đổi\n"
+#~ "Định dạng kiểu ngữ cảnh và thống nhất:\n"
+#~ "*  -F, --show-function-line=BTCQ\thiển thị ngữ cảnh trước đó\n"
+#~ "\t\t\t\t\t\tmà tương ứng với biểu thức chính quy này\n"
+#~ "*  -p, --show-c-function            \t\thiển thị hàm C làm mỗi thay đổi\n"
 
 #~ msgid ""
 #~ "\n"
@@ -989,19 +899,13 @@ msgstr ""
 #~ "*  -LINES                      (obsolete: select context size in lines)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "*  -C, --context=DÒNG         như « -c », cũng chọn cỡ _ngữ cảnh_ theo "
-#~ "dòng\n"
-#~ "*  -L, --label=NHÃN        dùng _nhãn_ từ/cho thay thế tên tập tin (hai "
-#~ "lần)\n"
-#~ "*  -U, --unified=DÒNG\n"
-#~ "                như « -u », cũng chọn cỡ ngữ cảnh theo dòng (_hợp nhất_)\n"
-#~ "*  -c, --context\n"
-#~ "             xuất dữ liệu khác biệt _ngữ cảnh_ (mặc định là 3 dòng ngữ "
-#~ "cảnh)\n"
-#~ "*  -u, --unified\n"
-#~ "   xuất dữ liệu khác biệt _hợp nhất_ (unidiff) (mặc định là 3 dòng ngữ "
-#~ "cảnh)\n"
-#~ "*  -DÒNG                      (cũ: chọn cỡ ngữ cảnh theo dòng)\n"
+#~ "*  -C, --context=SỐ\tbằng « -c », cũng chọn kích cỡ ngữ cảnh theo dòng\n"
+#~ "*  -L, --label=NHÃN\tdùng nhãn từ/đến thay cho tên tập tin (hai lần)\n"
+#~ "*  -U, --unified=SỐ\tbằng « -u », cũng chọn kích cỡ ngữ cảnh theo dòng\n"
+#~ "*  -c, --context\t\txuất tập tin khác biệt (diff) ngữ cảnh\n"
+#~ "\t\t\t\t\t(mặc định là 3 dòng ngữ cảnh)\n"
+#~ "*  -u, --unified\t\txuất unidiff (mặc định là 3 dòng ngữ cảnh)\n"
+#~ "*  -SỐ                      \t(quá cũ : chọn kích cỡ ngữ cảnh theo dòng)\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1013,13 +917,13 @@ msgstr ""
 #~ "*      --suppress-common-lines   do not print common lines\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Dạng cạnh nhau:\n"
-#~ "*  -W, --width=CỘT                 dùng _độ rộng_ CỘTn*  -y, --side-by-"
-#~ "side           dùng dạng thức xuất kiểu _cạnh bên cạnh_\n"
-#~ "*      --left-column             in ra chỉ dòng _cột bên trái_ khi chung\n"
-#~ "*      --sdiff-merge-assist\n"
-#~ "           (được dùng nội bộ bởi « sdiff »)(_hợp nhất, giúp_)\n"
-#~ "*      --suppress-common-lines         _không_ in ra _dòng chung_\n"
+#~ "Định dạng cạnh nhau:\n"
+#~ "*  -W, --width=SỐ           \t\tđặt chiều rộng theo cột\n"
+#~ "*  -y, --side-by-side            \tdùng định dạng kết xuất cạnh nhau\n"
+#~ "*      --left-column             \t\tin ra chỉ dòng cột bên trái khi "
+#~ "chung\n"
+#~ "*      --sdiff-merge-assist      \t(được « sdiff » dùng nội bộ)\n"
+#~ "*      --suppress-common-lines\tkhông in ra dòng chung\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1038,29 +942,26 @@ msgstr ""
 #~ "  %%L           [line] with its possible trailing newline\n"
 #~ msgstr ""
 #~ "\n"
-#~ "DẠNG chứa ký tự đại diện chính nó, trừ :\n"
-#~ "  %%%%           một ký tự %% riêng lẻ\n"
-#~ "  %%c'C'          ký tự C được trích dẫn\n"
-#~ "  %%c'\\O'       ký tự có giá trị 0, từ 1 đến 3 chữ số bát phân\n"
-#~ "  %%(A=B?T:E)   nếu A là B thì T, không thì E; A, B là số hay BIẾN; T, E "
-#~ "là DẠNG\n"
-#~ "  %%FN          dùng đặc tả SPECIF kiểu F để in ra BIẾN giá trị N\n"
-#~ "  %%<           [nhóm] cũ, mỗi dòng qua « --old-line-format » (dạng dòng "
-#~ "cũ)\n"
-#~ "  %%>         [nhóm] mới, mỗi dòng qua « --new-line-format » (dạng dong "
-#~ "mới)\n"
-#~ "  %%=         [nhóm] chưa thay đổi, mỗi dòng qua « --unchanged-line-format "
-#~ "»\n"
-#~ "\t\t(dạng chưa thay đổi)\n"
-#~ "  %%l           [dòng] không có ký tự dòng mới đi theo có thể\n"
-#~ "  %%L           [dòng] có ký tự dòng mới đi theo có thể\n"
+#~ "Định DẠNG chứa các ký tự nghĩa chữ, trừ :\n"
+#~ "  %%%%           một dấu phần trăm riêng lẻ\n"
+#~ "  %%c'C'        chữ C được trích dẫn\n"
+#~ "  %%c'\\O'       ký tự có giá trị O, từ 1 đến 3 chữ số bát phân\n"
+#~ "  %%(A=B?T:E)   nếu A là B thì T không thì E; A B là số hay BIẾN, T E là "
+#~ "định DẠNG\n"
+#~ "  %%FN          dùng ĐẶC TẢ F để in ra giá trị BIẾN N\n"
+#~ "  %%<           [nhóm] cũ, mỗi dòng qua --old-line-format\n"
+#~ "  %%>           [nhóm] mới, mỗi dòng qua --new-line-format\n"
+#~ "  %%=           [nhóm] chưa thay đổi, mỗi dòng qua --unchanged-line-"
+#~ "format\n"
+#~ "  %%l           [dòng] không có ký tự dòng mới có thể theo sau\n"
+#~ "  %%L           [dòng] có ký tự dòng mới có thể theo sau\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "SPECIF is [-][W[.D]]{doxX} as in C printf\n"
 #~ msgstr ""
 #~ "\n"
-#~ "SPECIF là [-][W[.D]]{doxX} như trong C printf\n"
+#~ "ĐẶC TẢ is [-][W[.D]]{doxX} giống như trong C printf\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1072,12 +973,12 @@ msgstr ""
 #~ "  {nN}   number of lines in the group\n"
 #~ msgstr ""
 #~ "\n"
-#~ "BIẾN là {eflmn} cho nhóm cũ hay {EFLMN} cho nhóm mới\n"
-#~ "  {eE}   số dòng nằm đúng trước nhóm\n"
-#~ "  {fF}   số dòng đầu của nhóm\n"
-#~ "  {lL}   số dòng cuối cùng của nhóm\n"
-#~ "  {mM}   số dòng nằm đúng sau nhóm\n"
-#~ "  {nN}   tổng số dòng trong nhóm đó\n"
+#~ "BIẾN là {eflmn} cho nhóm cũ, hoặc {EFLMN} cho nhóm mới\n"
+#~ "  {eE}\tsố thứ tự dòng nằm đúng trước nhóm\n"
+#~ "  {fF}\t\tsố thứ tự đầu tiên của nhóm\n"
+#~ "  {lL}\t\tsố thứ tự cuối cùng của nhóm\n"
+#~ "  {mM}\tsố thứ tự dòng nằm đúng sau nhóm\n"
+#~ "  {nN}\tsố các dòng trong nhóm\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1100,27 +1001,24 @@ msgstr ""
 #~ "  -F, --show-function-line=RE show the most recent line matching RE\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Tùy chọn khác biệt chuẩn:\n"
-#~ "  -i, --ignore-case                _bỏ qua chữ hoa/thường_: cả hai là "
-#~ "trùng\n"
-#~ "  -w, --ignore-all-space           _bỏ qua tất cả khoảng cách_\n"
-#~ "  -b, --ignore-space-change        _bỏ qua số dấu cách thay đổi_\n"
-#~ "  -B, --ignore-blank-lines           _bỏ qua_ thay đổi chứa chỉ _dòng "
-#~ "trống_\n"
-#~ "  -I, --ignore-matching-lines=RE\n"
-#~ "           _bỏ qua_ thay đổi chứa chỉ _dòng khớp_ với_ RE\n"
-#~ "  -a, --text                                  xử lý mọi tập tin là _văn "
-#~ "bản_\n"
-#~ "  -c, --context[=SỐ]\n"
-#~ "   xuất dữ liệu khác biệt _ngữ cảnh_ chuẩn mà thay đổi thành SỐ dòng ngữ "
-#~ "cảnh  -u, --unified[=SỐ]\n"
-#~ "      xuất dữ liệu khác biệt ngữ cảnh _hợp nhất_ (unidiff) có SỐ dòng ngữ "
-#~ "cảnh  -C, --context=SỐ         xuất SỐ dòng _ngữ cảnh_ đã sao chép\n"
-#~ "  -U, --unified=SỐ         xuất SỐ dòng ngữ cảnh đã _hợp nhất_\n"
-#~ "  -L, --label=NHÃN         dùng NHÃN thay thế tên tập tin\n"
-#~ "  -p, --show-c-function     _hiện_ thay đổi _hàm C_ nào\n"
-#~ "  -F, --show-function-line=RE\n"
-#~ "           _hiện dòng_ mới nhất khớp với RE (_hàm số_)\n"
+#~ "Tùy chọn khác biệt (diff) tiêu chuẩn:\n"
+#~ "  -i, --ignore-case         \tkhông phân biệt chữ hoa/thường\n"
+#~ "  -w, --ignore-all-space    \tbỏ qua mọi khoảng trắng\n"
+#~ "  -b, --ignore-space-change\tbỏ qua khoảng trắng đã thay đổi\n"
+#~ "  -B, --ignore-blank-lines  \tbỏ qua thay đổi chỉ chứa dòng trống\n"
+#~ "  -I, --ignore-matching-lines=RE \tbỏ qua thay đổi chỉ chứa RE\n"
+#~ "  -a, --text                \t\txử lý mọi tập tin là văn bản\n"
+#~ "  -c, --context[=SỐ]    \txuất tập tin khác biệt kiểu ngữ cảnh tiêu "
+#~ "chuẩn,\n"
+#~ "                            \t\tcũng thay đổi thành số dòng ngữ cảnh này\n"
+#~ "  -u, --unified[=SỐ]    \txuất tập tin khác biệt kiểu ngữ cảnh thống "
+#~ "nhất\n"
+#~ "\t\t\t\t\t(unidiff) với số dòng ngữ cảnh này\n"
+#~ "  -C, --context=SỐ      \txuất SỐ dòng ngữ cảnh được sao chép\n"
+#~ "  -U, --unified=SỐ      \txuất SỐ dòng ngữ cảnh thống nhất\n"
+#~ "  -L, --label=NHÃN     \tdùng nhãn này thay cho tên tập tin\n"
+#~ "  -p, --show-c-function\thiển thị hàm C chứa mỗi thay đổi\n"
+#~ "  -F, --show-function-line=RE\thiển thị dòng gần nhất tương ứng với RE\n"
 
 #~ msgid ""
 #~ "  -q, --brief               output only whether files differ\n"
@@ -1139,26 +1037,24 @@ msgstr ""
 #~ "  -l, --paginate            pass the output through `pr' to paginate it\n"
 #~ "  -t, --expand-tabs         expand tabs to spaces in output\n"
 #~ msgstr ""
-#~ "  -q, --brief               xuất chỉ nếu tập tin khác với nhau (_ngắn_)\n"
-#~ "  -e, --ed                  xuất một tập lệnh loại « ed »\n"
-#~ "  -n, --rcs                 xuất dữ liệu khác biệt dạng « rcs »\n"
-#~ "  -y, --side-by-side        xuất theo hai cột (_cạnh nhau_)\n"
-#~ "  -w, --width=SỐ\n"
-#~ "           xuất tối đa SỐ (mặc định là 30) ký tự trên mỗi dòng (_độ "
-#~ "rộng_)\n"
-#~ "      --left-column            xuất chỉ _cột bên trái_ của dòng chung\n"
-#~ "      --suppress-common-lines\n"
-#~ "           không xuất dòng chung (_thu hồi các dòng chung_)\n"
-#~ "  -D, --ifdef=TÊN\n"
-#~ "      xuất tập tin đã hợp nhất để hiện dữ liệu khác biệt kiểu « #ifdef TÊN "
-#~ "»\n"
-#~ "      --GTYPE-group-format=GFMT\n"
-#~ "           nhóm nhập GTYPE với GFMT (_dạng thức nhóm_)\n"
-#~ "      --line-format=LFMT    tất cả dòng nhập với LFMT (_dạng thức dòng_)\n"
-#~ "      --LTYPE-line-format=LFMT\n"
-#~ "           dòng nhập LTYPE với LFMT (_dạng thức dòng_)\n"
-#~ "  -l, --paginate               gởi kết xuất qua « pr » để _dàn trang_\n"
-#~ "  -t, --expand-tabs        _mở rộng các tab_ ra dấu cách trong kết xuất\n"
+#~ "  -q, --brief               xuất chỉ nếu hai tập tin khác nhau không\n"
+#~ "  -e, --ed                  xuất một văn lệnh « ed »\n"
+#~ "  -n, --rcs                 xuất một tập tin khác biệt định dạng RCS\n"
+#~ "  -y, --side-by-side\txuất theo cột đôi\n"
+#~ "  -w, --width=SỐ      \txuất nhiều nhất số ký tự này trên mỗi dòng\n"
+#~ "\t\t\t\t\t(mặc định 130)\n"
+#~ "      --left-column         xuất chỉ cột bên trái của các dòng chung\n"
+#~ "      --suppress-common-lines\tkhông xuất dòng chung\n"
+#~ "  -D, --ifdef=TÊN\t\txuất tập tin được trộn để hiển thị khác biệt `#ifdef "
+#~ "TÊN'\n"
+#~ "      --KIỂU_NHÓM-group-format=DẠNG_NHÓM\n"
+#~ "\t\t\t\t\tcác nhóm nhập kiểu này theo định dạng này\n"
+#~ "      --line-format=DẠNG_DÒNG    mọi dòng nhập theo định dạng này\n"
+#~ "      --KIỂU_DÒNG-line-format=DẠNG_DÒNG\n"
+#~ "\t\t\t\t\tcác dòng nhập kiểu này theo định dạng này\n"
+#~ "  -l, --paginate            \tgửi kết xuất qua « pr » để dàn trang\n"
+#~ "  -t, --expand-tabs   \tmở rộng các khoảng tab thành dấu cách trong kết "
+#~ "xuất\n"
 
 #~ msgid ""
 #~ "  -T, --initial-tab         make tabs line up by prepending a tab\n"
@@ -1175,33 +1071,29 @@ msgstr ""
 #~ "  -H, --speed-large-files   assume large files and many scattered small "
 #~ "changes\n"
 #~ msgstr ""
-#~ "  -T, --initial-tab\n"
-#~ "           sắp xếp mọi ký tự tab bằng cách thêm một _tab vào trước hết_ \n"
-#~ "  -r, --recursive           so sánh _đệ qui_ thư mục con đã tìm thấy\n"
-#~ "  -N, --new-file            xử lý tập tin vắng mặt là trống (_tập tin "
-#~ "mới_)\n"
-#~ "  -P, --unidirectional-new-file\n"
-#~ "           xử lý tập tin đầu mà vắng mặt là trống (_tập tin mới đơn "
-#~ "hướng_)  -s, --report-identical-files\n"
-#~ "           _thông báo_ khi có hai _tập tin bằng nhau_\n"
-#~ "  -x, --exclude=MẪU         _loại trừ_ tập tin khớp với MẪU\n"
-#~ "  -X, --exclude-from=TẬP_TIN\n"
-#~ "           _loại trừ_ tập tin khớp với mẫu nào trong tập tin ày (_của_)\n"
-#~ "  -S, --starting-file=TẬP_TIN\n"
-#~ "           _bắt đầu_ với _tập tin_ này khi so sánh những thư mục\n"
-#~ "      --horizon-lines=SỐ   giữ SỐ _dòng_ của phụ tố chung (_tầm nhận "
-#~ "thức_)\n"
-#~ "  -d, --minimal\n"
-#~ "           cố gắng nhiều tìm một bộ thay đổi nhỏ hơn (_tối thiểu_)\n"
-#~ "  -H, --speed-large-files\n"
-#~ "           giả sử _tập tin lớn_ và nhiều thay đổi nhỏ rải rác (_tốc độ_)\n"
+#~ "  -T, --initial-tab\t\tcạnh lề các khoảng tab bằng cách\n"
+#~ "\t\t\t\t\tđặt một khoảng tab vào trước\n"
+#~ "  -r, --recursive           \tso sánh đệ quy các thư mục con\n"
+#~ "  -N, --new-file          \tcoi như các tập tin còn thiếu là trống\n"
+#~ "  -P, --unidirectional-new-file treat\tcoi như các tập tin đầu tiên\n"
+#~ "\t\t\t\t\t\t\t\tcòn thiếu là trống\n"
+#~ "  -s, --report-identical-files\t\t\tthông báo hai tập tin trùng\n"
+#~ "  -x, --exclude=MẪU\t\tloại trừ các tập tin tương ứng với mẫu này\n"
+#~ "  -X, --exclude-from=TẬP_TIN\t\tloại trừ các tập tin tương ứng với\n"
+#~ "\t\t\t\t\t\t\tbất cứ mẫu nào nằm trong tập tin này\n"
+#~ "  -S, --starting-file=TẬP_TIN  \tso sánh tập tin thì bắt đầu ở tập tin "
+#~ "này\n"
+#~ "      --horizon-lines=SỐ\t\tgiữ số dòng này của tiền/hậu tố chung\n"
+#~ "  -d, --minimal\t\tcố gắng nhiều để tìm một tập hợp thay đổi nhỏ hơn\n"
+#~ "  -H, --speed-large-files   giả sử tập tin lớn và rất nhiều thay đổi nhỏ "
+#~ "rải rác\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "By default, context diffs have an horizon of two lines.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Mặc định là dữ liệu khác biệt ngữ cảnh có tầm nhận thức là hai dòng.\n"
+#~ "Mặc định là khác biệt ngữ cảnh có hai dòng phụ tố chung.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1219,17 +1111,23 @@ msgstr ""
 #~ "      M  L+1\n"
 #~ msgstr ""
 #~ "\n"
-#~ "LTYPE là « cũ », « mới », hay « chưa thay đổi ».\n"
-#~ "GTYPE là LTYPE hay « đã thay đổi ».\n"
-#~ "GFMT có thể chứa:\n"
+#~ "KIỂU_DÒNG là:\n"
+#~ "\told\t\t\tcũ\n"
+#~ "\tnew\t\t\tmới\n"
+#~ "\tunchanged\tchưa thay đổi\n"
+#~ "KIỂU_NHÓM\n"
+#~ "\tKIỂU_DÒNG\n"
+#~ "\tchanges\t\tđược thay đổi\n"
+#~ "DẠNG_NHÓM có thể chứa:\n"
 #~ "  %<  dòng từ TẬP_TIN1\n"
 #~ "  %>  dòng từ TẬP_TIN2\n"
-#~ "  %=  dòng chung với TẬP_TIN1 và TẬP_TIN2\n"
-#~ "  %[-][ĐỘ_RỘNG][.[PREC]]{doxX}CHỮ  đặc tả kiểu printf cho CHỮ này\n"
-#~ "    CHỮ thường cho nhóm củ, CHỮ như theo cho nhóm mới:\n"
-#~ "      F  số hiệu dòng đầu\n"
-#~ "      L  số hiệu dòng cuối cùng\n"
-#~ "      N  tổng số dòng = L-F+1\n"
+#~ "  %=  dòng chung nhau trong TẬP_TIN1 và TẬP_TIN2\n"
+#~ "  %[-][RỘNG][.[TRƯỚC]]{doxX}CHỮ\n"
+#~ "\tđặc tả kiểu printf cho CHỮ\n"
+#~ "    CHỮ như theo đây cho nhóm mới, chữ thường cho nhóm cũ :\n"
+#~ "      F\tsố thứ tự dòng đầu tiên\n"
+#~ "      L\tsố thứ tự dòng cuối cùng\n"
+#~ "      N  \tsố các dòng = L-F+1\n"
 #~ "      E  F-1\n"
 #~ "      M  L+1\n"
 
@@ -1243,14 +1141,15 @@ msgstr ""
 #~ "  %c'C'  the single character C\n"
 #~ "  %c'\\OOO'  the character with octal code OOO\n"
 #~ msgstr ""
-#~ "LFMT có thể chứa:\n"
-#~ "  %L  nội dung của dòng\n"
-#~ "  %l  nội dung của dòng, loại trừ ký tự dòng mới nào đi theo\n"
-#~ "  %[-][ĐỘ_RỘNG][.[PREC]]{doxX}n  đặc tả kiểu printf về số hiệu dong nhập\n"
-#~ "Hoặc GFMT hoặc LFMT có thể chứa:\n"
+#~ "DẠNG_DÒNG có thể chứa:\n"
+#~ "  %L\t\tnội dung của dòng\n"
+#~ "  %l\t\tnội dung của dòng, loại trừ bất cứ ký tự dòng mới nào theo sau\n"
+#~ "  %[-][RỘNG][.[TRƯỚC]]{doxX}n\n"
+#~ "\tđặc tả kiểu printf cho số thứ tự dòng nhập\n"
+#~ "Hoặc DẠNG_NHÓM hoặc DẠNG_DÒNG có thể chứa:\n"
 #~ "  %%  %\n"
-#~ "  %c'C'  ký tự riêng lẻ C\n"
-#~ "  %c'\\OOO'  ký tự có mã bát phân OOO\n"
+#~ "  %c'C'\t\tchữ C riêng lẻ\n"
+#~ "  %c'\\OOO'  \tký tự có mã bát phân OOO\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1259,9 +1158,9 @@ msgstr ""
 #~ "cluster\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Tùy chọn mdiff cũ:\n"
-#~ "*  -f, --fuzz-items=MỤC\n"
-#~ "               không có hơn MỤC _mục_ khớp trong nhóm xếp (_mờ_)\n"
+#~ "Tùy chọn mdiff cũ :\n"
+#~ "*  -f, --fuzz-items=SỐ\t\tsố tối đa các mục có thể tương ứng trong một "
+#~ "nhóm\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1287,23 +1186,21 @@ msgstr ""
 #~ "If FILE is not specified, read standard input.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "  -c, --context-diffs    buộc xuất vào _dữ liệu khác biệt ngữ cảnh_\n"
-#~ "  -e, --echo-comments      _vọng chú thích_ vào thiết bị lỗi chuẩn\n"
-#~ "  -o, --old-diffs          xuất _dữ liệu khác biệt_ kiểu _cũ_, bất chấp\n"
-#~ "  -p, --patch-format     tạo ra _dạng thức đắp vá_\n"
-#~ "  -P                    \t\t     bằng tùy chọn « -p »\n"
-#~ "  -s, --strip-comments         _tước_ dòng _chú thích_\n"
-#~ "  -u, --unidiffs        \t    buộc xuất vào _dữ liệu khác biệt hợp nhất_\n"
-#~ "  -U                     \t\t    bằng tùy chọn « -p » và « -u »\n"
-#~ "  -=, --use-equals\n"
-#~ "       thay thế dấu cách bằng _dấu bằng_ trong dữ liệu khác biệt hợp "
-#~ "nhất\n"
-#~ "      --help             \t\thiển thị _trợ giúp_ này rồi thoát\n"
-#~ "      --version          \txuất thông tin _phiên bản_ rồi thoát\n"
+#~ "  -c, --context-diffs\tép buộc kết xuất thành khác biệt ngữ cảnh\n"
+#~ "  -e, --echo-comments\t\tphản chiếu ghi chú vào đầu lỗi tiêu chuẩn\n"
+#~ "  -o, --old-diffs        \txuất khác biệt kiểu cũ, bất chấp\n"
+#~ "  -p, --patch-format     phát sinh định dạng đắp vá\n"
+#~ "  -P                     \t\tbằng « -p »\n"
+#~ "  -s, --strip-comments\t\tgỡ bỏ các dòng ghi chú\n"
+#~ "  -u, --unidiffs         \tép buộc kết xuất thành khác biệt thống nhất\n"
+#~ "  -U                     \t\tbằng « -p » và « -u »\n"
+#~ "  -=, --use-equals       trong khác biệt thống nhất, thay thế dấu cách\n"
+#~ "\t\t\t\t\tbằng dấu bằng\n"
+#~ "      --help            \t\thiển thị trợ giúp này và thoát\n"
+#~ "      --version          \thiển thị thông tin về phiên bản và thoát\n"
 #~ "\n"
-#~ "Nếu chưa ghi rõ TẬP_TIN, hãy đọc thiết bị nhập chuẩn.\n"
+#~ "Không ghi rõ TẬP_TIN thì đọc đầu vào tiêu chuẩn.\n"
 
-#, fuzzy
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
 #~ "\n"
@@ -1312,64 +1209,33 @@ msgstr ""
 #~ "  -1, --no-deleted           inhibit output of deleted words\n"
 #~ "  -2, --no-inserted          inhibit output of inserted words\n"
 #~ "  -3, --no-common            inhibit output of common words\n"
-#~ "  -a, --auto-pager           automatically calls a pager\n"
-#~ "  -h, --help                 print this help\n"
-#~ "  -i, --ignore-case          fold character case while comparing\n"
-#~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
-#~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
-#~ "  -p, --printer              overstrike as for printers\n"
-#~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
-#~ "  -t, --terminal             use termcap as for terminal displays\n"
-#~ "  -v, --version              print program version then exit\n"
-#~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-#~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
-#~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-#~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Mọi đối số bắt buộc phải sử dụng với tùy chọn dài cũng bắt buộc với tùy "
-#~ "chọn ngắn.\n"
+#~ "Mọi đối số bắt buộc phải sử dụng với tùy chọn dài cũng bắt buộc\n"
+#~ "với tùy chọn ngắn.\n"
 #~ "\n"
-#~ "  -C, --copyright            in ra thông tin _tác quyền_ rồi thoát\n"
-#~ "  -K, --no-init-term\n"
-#~ "   giống tùy chọn « -t », nhưng _không_ có chuỗi init/term của termcap\n"
-#~ "  -V, --version              in ra thông tin _phiên bản_ rồi thoát\n"
-#~ "  -1, --no-deleted           _không_ xuất từ _bị xóa bỏ_\n"
-#~ "  -2, --no-inserted          _không_ xuất từ _đã chèn_\n"
-#~ "  -3, --no-common          _không_ xuất từ _chung_\n"
-#~ "  -a, --auto-pager           _tự động_ gọi _trình dàn trang_\n"
-#~ "  -h, --help                 \tin ra _trợ giúp_ này\n"
-#~ "  -i, --ignore-case          _bỏ qua chữ hoa/thường_ khi so sánh\n"
-#~ "  -l, --less-mode            _chế độ_ máy in khác cho trinh « less »\n"
-#~ "  -n, --avoid-wraps\n"
-#~ "           không mở rộng trường qua dòng mới (_tránh ngắt dòng_)\n"
-#~ "  -p, --printer              gạch đè lên chữ như cho _máy in_\n"
-#~ "  -s, --statistics\n"
-#~ "           thông báo số từ bị xóa bỏ, đã chèn, v.v. (_thống kê_)\n"
-#~ "  -t, --terminal             dùng termcap như cho màn hình _thiết bị "
-#~ "cuối_\n"
-#~ "  -w, --start-delete=CHUỖI  chuỗi này đánh vị trí _bắt đầu_ vùng _xóa "
-#~ "bỏ_\n"
-#~ "  -x, --end-delete=CHUỖI    chuỗi này đánh vị trí _kết thúc_ vùng _xóa "
-#~ "bỏ_\n"
-#~ "  -y, --start-insert=CHUỖI  chuỗi này đánh vị trí _bắt đầu_ vùng _chèn_\n"
-#~ "  -z, --end-insert=CHUỖI    chuỗi này đánh vị trí _kết thúc_ vùng _chèn_\n"
+#~ "  -C, --copyright\t\tin thông tin tác quyển, sau đó thoát\n"
+#~ "  -K, --no-init-term\tgiống như « -t », nhưng không có chuỗi\n"
+#~ "\t\t\t\t\tkhởi/dừng chạy termcap\n"
+#~ "  -1, --no-deleted       \tthu hồi xuất từ bị xoá\n"
+#~ "  -2, --no-inserted      \tthu hồi xuất từ đã chèn\n"
+#~ "  -3, --no-common\tthu hồi xuất từ chung\n"
 
-#, fuzzy
 #~ msgid ""
-#~ "Mandatory arguments to long options are mandatory for short options too.\n"
-#~ "\n"
-#~ "  -C, --copyright            print copyright then exit\n"
-#~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-#~ "  -1, --no-deleted           inhibit output of deleted words\n"
-#~ "  -2, --no-inserted          inhibit output of inserted words\n"
-#~ "  -3, --no-common            inhibit output of common words\n"
 #~ "  -a, --auto-pager           automatically calls a pager\n"
 #~ "  -h, --help                 print this help\n"
 #~ "  -i, --ignore-case          fold character case while comparing\n"
 #~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
 #~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
 #~ "  -p, --printer              overstrike as for printers\n"
-#~ "  -q, --quiet                inhibit the `mdiff' call message\n"
+#~ msgstr ""
+#~ "  -a, --auto-pager\t\ttự động gọi trình dàn trang\n"
+#~ "  -h, --help                 \thiển thị trợ giúp này\n"
+#~ "  -i, --ignore-case\t\tkhông phân biệt chữ hoa/thường khi so sánh\n"
+#~ "  -l, --less-mode        \tbiến thể chế độ máy in cho \"less\"\n"
+#~ "  -n, --avoid-wraps  \tkhông mở rộng trường qua ký tự dòng mới\n"
+#~ "  -p, --printer              \tghi đè giống như cho máy in\n"
+
+#~ msgid ""
 #~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
 #~ "  -t, --terminal             use termcap as for terminal displays\n"
 #~ "  -v, --version              print program version then exit\n"
@@ -1378,30 +1244,17 @@ msgstr ""
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 #~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Mọi đối số bắt buộc phải sử dụng với tùy chọn dài cũng bắt buộc với tùy "
-#~ "chọn ngắn.\n"
-#~ "\n"
-#~ "  -C, --copyright            in ra thông tin _tác quyền_ rồi thoát\n"
-#~ "  -K, --no-init-term\n"
-#~ "   giống tùy chọn « -t », nhưng _không_ có chuỗi init/term của termcap\n"
-#~ "  -V, --version              in ra thông tin _phiên bản_ rồi thoát\n"
-#~ "  -1, --no-deleted           _không_ xuất từ _bị xóa bỏ_\n"
-#~ "  -2, --no-inserted          _không_ xuất từ _đã chèn_\n"
-#~ "  -3, --no-common          _không_ xuất từ _chung_\n"
-#~ "  -a, --auto-pager           _tự động_ gọi _trình dàn trang_\n"
-#~ "  -h, --help                 \tin ra _trợ giúp_ này\n"
-#~ "  -i, --ignore-case          _bỏ qua chữ hoa/thường_ khi so sánh\n"
-#~ "  -l, --less-mode            _chế độ_ máy in khác cho trinh « less »\n"
-#~ "  -n, --avoid-wraps\n"
-#~ "           không mở rộng trường qua dòng mới (_tránh ngắt dòng_)\n"
-#~ "  -p, --printer              gạch đè lên chữ như cho _máy in_\n"
-#~ "  -s, --statistics\n"
-#~ "           thông báo số từ bị xóa bỏ, đã chèn, v.v. (_thống kê_)\n"
-#~ "  -t, --terminal             dùng termcap như cho màn hình _thiết bị "
-#~ "cuối_\n"
-#~ "  -w, --start-delete=CHUỖI  chuỗi này đánh vị trí _bắt đầu_ vùng _xóa "
-#~ "bỏ_\n"
-#~ "  -x, --end-delete=CHUỖI    chuỗi này đánh vị trí _kết thúc_ vùng _xóa "
-#~ "bỏ_\n"
-#~ "  -y, --start-insert=CHUỖI  chuỗi này đánh vị trí _bắt đầu_ vùng _chèn_\n"
-#~ "  -z, --end-insert=CHUỖI    chuỗi này đánh vị trí _kết thúc_ vùng _chèn_\n"
+#~ "  -s, --statistics \tthông báo số các từ bị xoá, đã chèn v.v.\n"
+#~ "  -t, --terminal\tdùng termcap giống như cho bộ trình bày thiết bị cuối\n"
+#~ "  -v, --version     \thiển thị thông tin về phiên bản chương trình, sau "
+#~ "đó thoát\n"
+#~ "  -w, --start-delete=CHUỖI\t\tchuỗi sẽ đánh dấu bắt đầu vùng xoá\n"
+#~ "  -x, --end-delete=CHUỖI    \tchuỗi sẽ đánh dấu kết thúc vùng xoá\n"
+#~ "  -y, --start-insert=CHUỖI  \t\tchuỗi sẽ đánh dấu bắt đầu vùng chèn\n"
+#~ "  -z, --end-insert=CHUỖI    \t\tchuỗi sẽ đánh dấu kết thúc vùng chèn\n"
+
+#~ msgid "Unknown system error"
+#~ msgstr "Lỗi hệ thống không rõ"
+
+#~ msgid "memory exhausted"
+#~ msgstr "cạn bộ nhớ"

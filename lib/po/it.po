@@ -1,0 +1,622 @@
+# Italian translation of gnulib 
+# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnulib package.
+# Marco d'Itri <md@linux.it>, 1998, 1999.
+# Giovanni Bortolozzo <borto@dei.unipd.it>, 1998.
+# Milo Casagrande <milo@casagrande.name>, 2008, 2009
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnulib-1.0.0.1991.dbebf\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2010-02-01 09:19+0100\n"
+"PO-Revision-Date: 2009-05-10 21:15+0200\n"
+"Last-Translator: Milo Casagrande <milo@casagrande.name>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/error.c:153
+msgid "Unknown system error"
+msgstr "Errore di sistema sconosciuto"
+
+#: lib/getopt.c:529 lib/getopt.c:545
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
+msgstr "%s: l'opzione \"%s\" è ambigua\n"
+
+#: lib/getopt.c:578 lib/getopt.c:582
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: l'opzione \"--%s\" non accetta un argomento\n"
+
+#: lib/getopt.c:591 lib/getopt.c:596
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: l'opzione \"%c%s\" non accetta un argomento\n"
+
+#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
+msgstr "%s: l'opzione \"%s\" richiede un argomento\n"
+
+#: lib/getopt.c:696 lib/getopt.c:699
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: opzione \"--%s\" non riconosciuta\n"
+
+#: lib/getopt.c:707 lib/getopt.c:710
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: opzione \"%c%s\" non riconosciuta\n"
+
+#: lib/getopt.c:759 lib/getopt.c:762
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: opzione non valida -- %c\n"
+
+#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: l'opzione richiede un argomento -- %c\n"
+
+#: lib/getopt.c:882 lib/getopt.c:898
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: l'opzione \"-W %s\" è ambigua\n"
+
+#: lib/getopt.c:922 lib/getopt.c:940
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: l'opzione \"-W %s\" non accetta un argomento\n"
+
+#: lib/regcomp.c:132
+msgid "Success"
+msgstr "Successo"
+
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr "Nessuna corrispondenza"
+
+#: lib/regcomp.c:138
+msgid "Invalid regular expression"
+msgstr "Espressione regolare non valida"
+
+# (ndt) http://en.wikipedia.org/wiki/Collation
+#: lib/regcomp.c:141
+msgid "Invalid collation character"
+msgstr "Carattere di collazione non valido"
+
+#: lib/regcomp.c:144
+msgid "Invalid character class name"
+msgstr "Nome classe del carattere non valida"
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr "Backslash finale"
+
+#: lib/regcomp.c:150
+msgid "Invalid back reference"
+msgstr "Riferimento all'indietro non valido"
+
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr "[ o [^ senza corrispondenza"
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr "( o \\( senza corrispondenza"
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr "\\{ senza corrispondenza"
+
+#: lib/regcomp.c:162
+msgid "Invalid content of \\{\\}"
+msgstr "Contenuto di \\{\\} non valido"
+
+#: lib/regcomp.c:165
+msgid "Invalid range end"
+msgstr "Fine dell'intervallo non valida"
+
+#: lib/regcomp.c:168
+msgid "Memory exhausted"
+msgstr "Memoria esaurita"
+
+#: lib/regcomp.c:171
+msgid "Invalid preceding regular expression"
+msgstr "Espressione regolare precedente non valida"
+
+#: lib/regcomp.c:174
+msgid "Premature end of regular expression"
+msgstr "Fine prematura dell'espressione regolare"
+
+#: lib/regcomp.c:177
+msgid "Regular expression too big"
+msgstr "Espressione regolare troppo grande"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr ") o \\) senza corrispondenza"
+
+#: lib/regcomp.c:701
+msgid "No previous regular expression"
+msgstr "Nessuna espressione regolare precedente"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "memoria esaurita"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "argomento %s non valido per %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "argomento %s ambiguo per %s"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Sono argomenti validi:"
+
+#~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+#~ msgstr "ARGP_HELP_FMT: il valore %s è minore o uguale a %s"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: il parametro ARGP_HELP_FMT richiede un valore"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+#~ msgstr "%.*s: il parametro ARGP_HELP_FMT deve essere positivo"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: parametro ARGP_HELP_FMT sconosciuto"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "Spazzatura in ARGP_HELP_FMT: %s"
+
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Gli argomenti obbligatori o facoltativi per le opzioni estese lo sono "
+#~ "anche per le corrispondenti opzioni brevi."
+
+#~ msgid "Usage:"
+#~ msgstr "Uso:"
+
+#~ msgid "  or: "
+#~ msgstr "  o: "
+
+#~ msgid " [OPTION...]"
+#~ msgstr " [OPZIONE...]"
+
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "Usare \"%s --help\" o \"%s --usage\" per ulteriori informazioni.\n"
+
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "Segnalare i bug a %s.\n"
+
+#~ msgid "give this help list"
+#~ msgstr "Mostra questo aiuto"
+
+#~ msgid "give a short usage message"
+#~ msgstr "Mostra un breve messaggio sull'uso"
+
+#~ msgid "NAME"
+#~ msgstr "NOME"
+
+#~ msgid "set the program name"
+#~ msgstr "Imposta il nome del programma"
+
+#~ msgid "SECS"
+#~ msgstr "SEC"
+
+#~ msgid "hang for SECS seconds (default 3600)"
+#~ msgstr "Resta in attesa per SEC secondi (predefinito 3600)"
+
+#~ msgid "print program version"
+#~ msgstr "Stampa la versione del programma"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(ERRORE DEL PROGRAMMA) Nessuna versione conosciuta."
+
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: troppi argomenti\n"
+
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr ""
+#~ "(ERRORE DEL PROGRAMMA) L'opzione dovrebbe essere stata riconosciuta."
+
+#~ msgid "program error"
+#~ msgstr "errore del programma"
+
+#~ msgid "stack overflow"
+#~ msgstr "overflow dello stack"
+
+#~ msgid "cannot find a temporary directory, try setting $TMPDIR"
+#~ msgstr ""
+#~ "impossibile trovare una directory temporanea, provare a impostare $TMPDIR"
+
+#~ msgid "cannot create a temporary directory using template \"%s\""
+#~ msgstr ""
+#~ "impossibile creare una directory temporanea usando il modello \"%s\""
+
+#~ msgid "cannot remove temporary file %s"
+#~ msgstr "impossibile rimuovere il file temporaneo %s"
+
+#~ msgid "cannot remove temporary directory %s"
+#~ msgstr "impossibile rimuovere la directory temporanea %s"
+
+#~ msgid "error closing file"
+#~ msgstr "errore nel chiudere il file"
+
+#~ msgid "write error"
+#~ msgstr "errore di scrittura"
+
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "errore nell'aprire \"%s\" in lettura"
+
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "impossibile aprire il file di backup \"%s\" in scrittura"
+
+#~ msgid "error reading \"%s\""
+#~ msgstr "errore nel leggere \"%s\""
+
+#~ msgid "error writing \"%s\""
+#~ msgstr "errore nello scrivere \"%s\""
+
+#~ msgid "error after reading \"%s\""
+#~ msgstr "errore dopo la lettura di \"%s\""
+
+#~ msgid "fdopen() failed"
+#~ msgstr "fdopen() non riuscita"
+
+#~ msgid "C# compiler not found, try installing pnet"
+#~ msgstr "compilatore C# non trovato, provare a installare pnet"
+
+#~ msgid "C# virtual machine not found, try installing pnet"
+#~ msgstr "macchina virtuale C# non trovata, provare a installare pnet"
+
+#~ msgid "%s subprocess failed"
+#~ msgstr "%s: sottoprocesso non riuscito"
+
+#~ msgid "regular empty file"
+#~ msgstr "file normale vuoto"
+
+#~ msgid "regular file"
+#~ msgstr "file normale"
+
+#~ msgid "directory"
+#~ msgstr "directory"
+
+#~ msgid "block special file"
+#~ msgstr "file speciale a blocchi"
+
+#~ msgid "character special file"
+#~ msgstr "file speciale a caratteri"
+
+#~ msgid "fifo"
+#~ msgstr "fifo"
+
+#~ msgid "symbolic link"
+#~ msgstr "collegamento simbolico"
+
+#~ msgid "socket"
+#~ msgstr "socket"
+
+#~ msgid "message queue"
+#~ msgstr "coda di messaggi"
+
+#~ msgid "semaphore"
+#~ msgstr "semaforo"
+
+#~ msgid "shared memory object"
+#~ msgstr "oggetto di memoria condivisa"
+
+# (ndt) sono accettati:
+# - suggerimenti
+# - collegamenti dove si spieghi cosa sia un 'typed memory object'
+# Ma dove si spieghi VERAMENTE e CONCRETAMENTE cos'è.
+#~ msgid "typed memory object"
+#~ msgstr "oggetto di memoria con nome"
+
+#~ msgid "weird file"
+#~ msgstr "file strano"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "Famiglia di indirizzi per il nome host non supportata"
+
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Errore temporaneo nella risoluzione del nome"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "Valore per ai_flags errato"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "Errore irreversibile nella risoluzione del nome"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "ai_family non supportato"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "Allocazione memoria non riuscita"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "Nessun indirizzo associato col nome host"
+
+#~ msgid "Name or service not known"
+#~ msgstr "Nome o servizio sconosciuto"
+
+# (ndt)
+#
+# define EAI_SERVICE  -8 /* SERVICE not supported for `ai_socktype'.  */
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr "Nome servizio non supportato per ai_socktype"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "ai_socktype non supportato"
+
+#~ msgid "System error"
+#~ msgstr "Errore di sistema"
+
+#~ msgid "Argument buffer too small"
+#~ msgstr "Buffer argomento troppo piccolo"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "Elaborazione richiesta in corso"
+
+#~ msgid "Request canceled"
+#~ msgstr "Richiesta annullata"
+
+#~ msgid "Request not canceled"
+#~ msgstr "Richiesta non annullata"
+
+#~ msgid "All requests done"
+#~ msgstr "Tutte le richieste completate"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Interrotto da un segnale"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "Stringa del parametro non codificata correttamente"
+
+#~ msgid "Unknown error"
+#~ msgstr "Errore sconosciuto"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: opzione non consentita -- %c\n"
+
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "errore di I/O nel sottoprocesso %s"
+
+#~ msgid "invalid source_version argument to compile_java_class"
+#~ msgstr "argomento source_version in compile_java_class non valido"
+
+#~ msgid "invalid target_version argument to compile_java_class"
+#~ msgstr "argomento target_version in compile_java_class non valido"
+
+#~ msgid "failed to create \"%s\""
+#~ msgstr "creazione di \"%s\" non riuscita"
+
+#~ msgid "error while writing \"%s\" file"
+#~ msgstr "errore durante la scrittura del file \"%s\""
+
+#~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
+#~ msgstr ""
+#~ "compilatore Java non trovato, provare a installare gcj o impostare $JAVAC"
+
+#~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
+#~ msgstr ""
+#~ "macchina virtuale Java non trovato, provare a installare gij o impostare "
+#~ "$JAVA"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "impossibile creare la pipe"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "impossibile registrare la directory di lavoro corrente"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "ritorno alla directory di lavoro iniziale non riuscito"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "impossibile cambiare i permessi di %s"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "impossibile creare la directory %s"
+
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "Apertura di /dev/zero in lettura non riuscita"
+
+#~ msgid "`"
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "\""
+
+#~ msgid "^[yY]"
+#~ msgstr "^[sSyY]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "funzione iconv non utilizzabile"
+
+#~ msgid "iconv function not available"
+#~ msgstr "funzione iconv non disponibile"
+
+#~ msgid "character out of range"
+#~ msgstr "carattere fuori dall'intervallo"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "impossibile convertire U+%04X nel set di caratteri locale"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "impossibile convertire U+%04X nel set di caratteri locale: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "utente non valido"
+
+#~ msgid "invalid group"
+#~ msgstr "gruppo non valido"
+
+# (ndt) evinta da un commento al codice:
+#
+# /* Set U and G to nonzero length strings corresponding to user and
+#    group specifiers or to NULL.  If U is not NULL, it is a newly
+#    allocated string.  */
+#
+#~ msgid "invalid spec"
+#~ msgstr "specificatore non valido"
+
+#~ msgid "unable to display error message"
+#~ msgstr "impossibile visualizzare il messaggio di errore"
+
+#~ msgid "preserving permissions for %s"
+#~ msgstr "preservazione dei permessi per %s"
+
+#~ msgid "string comparison failed"
+#~ msgstr "confronto delle stringhe non riuscito"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Impostare LC_ALL='C' per aggirare il problema."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Le stringhe confrontate erano %s e %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "impossibile mostrare l'output formattato"
+
+#~ msgid "(C)"
+#~ msgstr "©"
+
+#~ msgid ""
+#~ "\n"
+#~ "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+#~ "html>.\n"
+#~ "This is free software: you are free to change and redistribute it.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Licenza GPLv3+: GNU GPL versione 3 o successiva <http://gnu.org/licenses/"
+#~ "gpl.html>.\n"
+#~ "Questo programma è software libero: siete liberi di modificarlo e "
+#~ "ridistribuirlo.\n"
+#~ "Non c'è ALCUNA GARANZIA, per quanto consentito dalle vigenti normative.\n"
+#~ "\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Scritto da %s.\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Scritto da %s e %s.\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Scritto da %s, %s e %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s\n"
+#~ "e %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s e %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s e %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s, %s e %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s, %s, %s\n"
+#~ "e %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s e %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "Scritto da %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s e altri.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to <%s>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Segnalare i bug a <%s>.\n"
+#~ "Segnalare gli errori di traduzione a <tp@lists.linux.it>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
+#~ msgstr "Sito web di %s: <http://www.gnu.org/software/%s/>.\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
+#~ msgstr ""
+#~ "Aiuto per l'utilizzo di software GNU: <http://www.gnu.org/gethelp/>.\n"
+
+# (ndt)
+# quello che viene sostituito pare sia:
+#  * il primo, hypens (con valore '--')
+#  * il secondo, option
+#  * il terzo, arg
+# quindi qualche cosa del genere:
+# invalid --option argument 'arg'
+#
+# (altre idee sono benvenute!)
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "l'argomento \"%3$s\" di %1$s%2$s non è valido"
+
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "il suffisso nell'argomento \"%3$s\" di %1$s%2$s non è valido"
+
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "l'argomento \"%3$s\" di %1$s%2$s è troppo grande"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "impostazione dei permessi per %s"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Segnale real-time %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Segnale %d sconosciuto"
+
+#~ msgid "%s subprocess"
+#~ msgstr "sottoprocesso %s"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "il sottoprocesso %s ha ricevuto un segnale %d fatale"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "errore nello scrivere su una pipe o un socket chiusi"

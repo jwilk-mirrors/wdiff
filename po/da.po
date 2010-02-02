@@ -1,15 +1,27 @@
 # Danish messages for GNU wdiff.
-# Copyright (C) 1996 Free Software Foundation, Inc.
-# Keld Jørn Simonsen <keld@dkuug.dk>, 2000.
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the wdiff package.
+# Keld Jørn Simonsen <keld@dkuug.dk>, 2000, 2008.
+# Joe Hansen <joedalton2@yahoo.dk>, 2008.
+#
+# Uafklaret forhold i den her oversættelse
+# newlines
+# Hvis det der henvises til i strengen er sådan nogle her "\n" kan
+# man kalde dem "nylinjetegn", eller skal det måske snarere være
+# "ny linje-tegn", det kan jeg ikke helt gennemskue.
+# ` ' er oversat til ' ', har ikke korrigeret dette, selvom dansk
+# citationstegn i form af »« eller "" nok burde være anvendt.
+# option kan måske oversættes til tilvalg
+# pager -> fremviser (ikke implementeret på grund af manglende viden)
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU wdiff 0.5g\n"
+"Project-Id-Version: GNU wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-01-21 22:12+0100\n"
-"PO-Revision-Date: 2001-08-28 20:53+0200\n"
+"POT-Creation-Date: 2010-02-01 08:59+0100\n"
+"PO-Revision-Date: 2010-02-01 21:18+0100\n"
 "Last-Translator: Keld Jørn Simonsen <keld@dkuug.dk>\n"
-"Language-Team: Danish <dansk@klid.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
@@ -19,12 +31,12 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (for regexp '%s')"
 
-#: src/mdiff.c:905 src/wdiff.c:1495
+#: src/mdiff.c:905 src/wdiff.c:1488
 #, fuzzy, c-format
 msgid "only one file may be standard input"
 msgstr "Kun én fil kan være standard ind."
 
-#: src/mdiff.c:920 src/wdiff.c:709
+#: src/mdiff.c:920 src/wdiff.c:702
 #, fuzzy, c-format
 msgid "directories not supported"
 msgstr "Kataloger er ikke understøttet"
@@ -37,7 +49,7 @@ msgstr "Læser %s"
 #: src/mdiff.c:1189
 #, c-format
 msgid ", %d items\n"
-msgstr "%d elementer\n"
+msgstr ", %d elementer\n"
 
 #: src/mdiff.c:1267
 #, c-format
@@ -74,47 +86,47 @@ msgstr "Arbejdsoversigt: %d klynger, %d medlemmer\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Arbejdsoversigt: %d klynger, %d medlemmer, %d overlapninger\n"
 
-#: src/mdiff.c:2365 src/wdiff.c:246
+#: src/mdiff.c:2365 src/wdiff.c:242
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "Vælg en terminal via TERM-miljøvariablen."
 
-#: src/mdiff.c:2368 src/wdiff.c:249
+#: src/mdiff.c:2368 src/wdiff.c:245
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
 msgstr "Kunne ikke accesse termcap-databasen."
 
-#: src/mdiff.c:2370 src/wdiff.c:251
+#: src/mdiff.c:2370 src/wdiff.c:247
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "Terminal-type '%s' er ikke defineret."
 
-#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d ord"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1197 src/wdiff.c:1209
+#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1190 src/wdiff.c:1202
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% fælles"
 
-#: src/mdiff.c:3754 src/wdiff.c:1199
+#: src/mdiff.c:3754 src/wdiff.c:1192
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% slettet"
 
-#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1201 src/wdiff.c:1213
+#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1194 src/wdiff.c:1206
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% ændret"
 
-#: src/mdiff.c:3766 src/wdiff.c:1211
+#: src/mdiff.c:3766 src/wdiff.c:1204
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% indsat"
 
-#: src/mdiff.c:3795 src/wdiff.c:1253 src/wdiff2.c:178
+#: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Prøv '%s --help' for mere information.\n"
@@ -130,31 +142,36 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Brug: %s [FLAG]... FIL...\n"
+msgstr "Brug: %s [FLAG]... FIL...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Handlingsmåder:\n"
 
 #: src/mdiff.c:3809
+#, fuzzy
 msgid "  -h                     (ignored)\n"
-msgstr ""
+msgstr "  -h                     (ignoreret)\n"
 
 #: src/mdiff.c:3810
+#, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
+msgstr "  -v, --verbose          giv lidt statistik på stdfejl\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
+#, fuzzy
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help             vis denne hjælpetekst og afslut\n"
 
 #: src/mdiff.c:3812 src/unify.c:294
+#, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version          vis programversion og afslut\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -162,40 +179,48 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         indled hver linje med TAB"
+# ? "  -T, --initial-tab       skriv TAB istedet for indledende mellemrum"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate            send uddata gennem \"pr\" for sidenummerering"
+# ? "  -l, --paginate          send resultatet gennem \"pr\" for sidenummerering"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
 #: src/mdiff.c:3817
+#, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
+msgstr "  -S, --string[=STRENG]   søg også efter STRENG\n"
 
 #: src/mdiff.c:3818
+#, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr ""
+"  -V, --show-links        angiv fil- og linjereferencer i annoteringer\n"
 
 #: src/mdiff.c:3819
+#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
+msgstr "  -t, --expand-tabs       udvid tabulatortegn med mellemrum i uddata\n"
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Fejlfinding:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"\n"
-"Fejlfinding:\n"
-"  -0, --debugging   udskriv mange detaljer om hvad der sker\n"
+msgstr "  -0, --debugging   udskriv mange detaljer om hvad der sker\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -203,64 +228,74 @@ msgid ""
 "Word mode options:\n"
 msgstr ""
 
-#: src/mdiff.c:3827 src/wdiff.c:1271 src/wdiff2.c:196
+#: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted           forhindre uddata over slettede ord\n"
 
-#: src/mdiff.c:3828 src/wdiff.c:1272 src/wdiff2.c:197
+#: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted          forhindre uddata over indsatte ord\n"
 
-#: src/mdiff.c:3829 src/wdiff.c:1273 src/wdiff2.c:198
+#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common            forhindre uddata over almindelige ord\n"
 
 #: src/mdiff.c:3830
+#, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -A, --auto-pager           kalder en 'pager' automatisk\n"
 
 #: src/mdiff.c:3831
+#, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -k, --less-mode            variant af printer-modus for \"less\"\n"
 
 #: src/mdiff.c:3832
+#, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -m, --avoid-wraps          udvid ikke felter med newlines\n"
 
 #: src/mdiff.c:3833
+#, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -o, --printer              brug overstrike som for printere\n"
 
 #: src/mdiff.c:3834
+#, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr ""
+"  -z, --terminal             brug termcap som for almindelige terminaler\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
 msgstr ""
+"  -K, --no-init-term         som -z, men uden termcap init/term strenge\n"
 
 #: src/mdiff.c:3836
+#, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
+"  -O, --item-regexp=REGEXP   sammenlign elementer som angivet med REGEXP\n"
 
 #: src/mdiff.c:3837
+#, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr ""
+msgstr "  -W, --word-mode            sammenlign ord istedet for linjer\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Med ingen FIL, eller når FIL er -, læs standard inddata.\n"
+msgstr "Med ingen FIL, eller når FIL er -, læs standard inddata.\n"
 
-#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1289 src/wdiff2.c:216
+#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Rapportér fejl til <wdiff-bugs@iro.montreal.ca>.\n"
+msgstr "Rapportér fejl til <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -286,16 +321,16 @@ msgstr ""
 "\n"
 "Ophavsret (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1415 src/wdiff2.c:134
+#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:134
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Dette er frit programmel; se kildeteksten for betingelser for kopiering. Der "
-"er INGEN\n"
-"garanti; ikke engang for SALGBARHED eller EGNETHED FOR ET SPECIELT FORMÅL.\n"
+"Dette er frit programmel; se kildeteksten for betingelser for kopiering.\n"
+"Der er INGEN garanti; ikke engang for SALGBARHED eller EGNETHED FOR ET\n"
+"SPECIELT FORMÅL.\n"
 
-#: src/mdiff.c:4395 src/wdiff.c:1419 src/wdiff2.c:138
+#: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -325,52 +360,57 @@ msgstr "unify - Omformer sammenhængs-diff-er til unidiff-er, eller omvendt.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Brug: %s [FLAG]... [FIL]\n"
+msgstr "Brug: %s [FLAG]... [FIL]\n"
 
 #: src/unify.c:284
+#, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr ""
+msgstr "  -c, --context-diffs    tving uddata til at være kontekst diff-er\n"
 
 #: src/unify.c:285
+#, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
+msgstr "  -e, --echo-comments    gengiv kommentarer på standard fejlfil\n"
 
 #: src/unify.c:286
+#, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
+msgstr "  -o, --old-diffs        udskriv gammeldags diff-er, lige meget hvad\n"
 
 #: src/unify.c:287
+#, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr ""
+msgstr "  -p, --patch-format     generér 'patch'-format\n"
 
 #: src/unify.c:288
+#, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr ""
+msgstr "  -P                     samme som -p\n"
 
 #: src/unify.c:289
+#, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr ""
+msgstr "  -s, --strip-comments   fjern kommentarlinier\n"
 
 #: src/unify.c:290
+#, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr ""
+msgstr "  -u, --unidiffs         tving uddata til at være 'unidiffs'\n"
 
 #: src/unify.c:291
+#, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr ""
+msgstr "  -U                     samme som -p og -u\n"
 
 #: src/unify.c:292
+#, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
+msgstr "  -=, --use-equals       erstat mellemrum med lighedstegn i unidiffs\n"
 
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Med ingen FIL, eller når FIL er -, læs standard inddata.\n"
+msgstr "Hvis FIL ikke er angivet, læses fra standard ind.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -423,12 +463,12 @@ msgstr "Ugyldig 'context diff' på linje %ld."
 msgid "context diff missing `new' header at line %ld"
 msgstr "'Context diff' mangler 'new' filhoved på linje %ld"
 
-#: src/wdiff.c:613 src/wdiff.c:732
-#, c-format
+#: src/wdiff.c:606 src/wdiff.c:725
+#, fuzzy, c-format
 msgid "no suitable temporary directory exists"
-msgstr ""
+msgstr "Intet egnet midlertidig katalog eksisterer"
 
-#: src/wdiff.c:1229 src/wdiff2.c:110
+#: src/wdiff.c:1222 src/wdiff2.c:110
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -447,112 +487,137 @@ msgstr ""
 "(Følgende tekst er en oversættelse som *kun* gives på en informativ basis.\n"
 "For alle juridiske tolkninger gælder den engelske originaltekst.)\n"
 "\n"
-"Dette program er frit programmel.  Du kan distribuere og/eller\n"
+"Dette program er frit programmel; du kan distribuere og/eller\n"
 "ændre det under GNU General Public License som den er offentliggjort fra\n"
 "Free Software Foundation, version 2 eller, efter eget valg, en senere "
 "version.\n"
 "\n"
-"Dette program er distribueret med det mål at det skal være til nytte, men\n"
+"Dette program er distribueret med det mål, at det skal være til nytte, men\n"
 "UDEN NOGEN FORM FOR GARANTI, heller ingen implicit garanti for SALGBARHED\n"
-"eller EGNETHED TIL NOGEN SPECIEL OPGAVE.  Se GNU General Public License\n"
+"eller EGNETHED TIL NOGEN SPECIEL OPGAVE. Se GNU General Public License\n"
 "for nærmere detaljer.\n"
 "\n"
 "Sammen med dette program skulle du have modtaget en kopi af GNU General\n"
-"Public License.  Hvis ikke, skriv til Free Software Foundation, Inc., 59\n"
-"Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Public License; hvis ikke, skriv til Free Software Foundation, Inc., \n"
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 
-#: src/wdiff.c:1257
+#: src/wdiff.c:1250
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Sammenligner ord i to filer og rapporterer forskelle.\n"
 
-#: src/wdiff.c:1261
+#: src/wdiff.c:1254
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Brug: %s [FLAG]... FIL1 FIL2\n"
+"      %s -d [FLAG]... [FIL]\n"
 
-#: src/wdiff.c:1266 src/wdiff2.c:191
+#: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
+"Obligatoriske argumenter for lange flag er obligatoriske også for korte\n"
 
-#: src/wdiff.c:1269 src/wdiff2.c:194
+#: src/wdiff.c:1262 src/wdiff2.c:194
+#, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr ""
+msgstr "  -C, --copyright            udskriv ophavsret og afslut\n"
 
-#: src/wdiff.c:1270 src/wdiff2.c:195
+#: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 msgstr ""
+"  -K, --no-init-term         som -t, men ingen termcap init/term strings\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:199
+#: src/wdiff.c:1267 src/wdiff2.c:199
+#, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -a, --auto-pager           kalder automatisk en 'pager'\n"
 
-#: src/wdiff.c:1275
+#: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1276 src/wdiff2.c:200
+#: src/wdiff.c:1269 src/wdiff2.c:200
+#, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr ""
+msgstr "  -h, --help                 vis denne hjælpetekst\n"
 
-#: src/wdiff.c:1277 src/wdiff2.c:201
+#: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
+"  -i, --ignore-case          skeln ikke mellem store og små bogstaver\n"
 
-#: src/wdiff.c:1278 src/wdiff2.c:202
+#: src/wdiff.c:1271 src/wdiff2.c:202
+#, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -l, --less-mode            variation af printer-modus \"less\"\n"
 
-#: src/wdiff.c:1279 src/wdiff2.c:203
+#: src/wdiff.c:1272 src/wdiff2.c:203
+#, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -n, --avoid-wraps          udvid ikke felter med newlines\n"
 
-#: src/wdiff.c:1280 src/wdiff2.c:204
+#: src/wdiff.c:1273 src/wdiff2.c:204
+#, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -p, --printer              brug overstrike som for printere\n"
 
-#: src/wdiff.c:1281 src/wdiff2.c:206
+#: src/wdiff.c:1274 src/wdiff2.c:206
+#, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
+"  -s, --statistics           skriv antal ord som blev slettet, sat ind, "
+"osv.\n"
 
-#: src/wdiff.c:1282 src/wdiff2.c:207
+#: src/wdiff.c:1275 src/wdiff2.c:207
+#, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr ""
+"  -t, --terminal             brug termcap som for almindelige terminaler\n"
 
-#: src/wdiff.c:1283 src/wdiff2.c:208
+#: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -v, --version              vis programversion og afslut\n"
 
-#: src/wdiff.c:1284 src/wdiff2.c:209
+#: src/wdiff.c:1277 src/wdiff2.c:209
+#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
+msgstr "  -w, --start-delete=STRING  streng som markerer start på sletning\n"
 
-#: src/wdiff.c:1285 src/wdiff2.c:210
+#: src/wdiff.c:1278 src/wdiff2.c:210
+#, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr ""
+"  -x, --end-delete=STRING    streng som markerer slutning på sletning\n"
 
-#: src/wdiff.c:1286 src/wdiff2.c:211
+#: src/wdiff.c:1279 src/wdiff2.c:211
+#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr ""
+"  -y, --start-insert=STRING  streng som markerer start på indsættelse\n"
 
-#: src/wdiff.c:1287 src/wdiff2.c:212
+#: src/wdiff.c:1280 src/wdiff2.c:212
+#, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
+"  -z, --end-insert=STRING    streng som markerer slutning på indsættelse\n"
 
-#: src/wdiff.c:1405
+#: src/wdiff.c:1398
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "Kan ikke bruge -t, termcap er ikke tilgængelig"
 
-#: src/wdiff.c:1410
+#: src/wdiff.c:1403
 #, fuzzy
 msgid ""
 "\n"
@@ -562,12 +627,12 @@ msgstr ""
 "\n"
 "Ophavsret (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1458 src/wdiff.c:1476
+#: src/wdiff.c:1451 src/wdiff.c:1469
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Mangler filargumenter"
 
-#: src/wdiff.c:1471 src/wdiff2.c:323
+#: src/wdiff.c:1464 src/wdiff2.c:323
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Mangler filargumenter"
@@ -586,162 +651,35 @@ msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
+"wdiff - Beregn ordforskelle ved internt at starte 'mdiff -W'.\n"
+"Dette program eksisterer hovedsagelig for at understøtte den nu forældede\n"
+"'wdiff' syntaks.\n"
 
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Brug: %s [FLAG]... FIL1 FIL2\n"
+msgstr "Brug: %s [FLAG]... FIL1 FIL2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
+msgstr "  -q, --quiet                forhindre 'mdiff'-kaldet\n"
 
 #: src/wdiff2.c:214
+#, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
+"Dette program fortæller også hvordan 'mdiff' kunne være kaldt direkte.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335
-#, fuzzy, c-format
+#, c-format
 msgid "Launching `%s"
-msgstr "Læser %s"
+msgstr "Starter '%s"
 
 #: src/wdiff2.c:338
 #, c-format
 msgid "'\n"
-msgstr ""
-
-#: lib/error.c:153
-msgid "Unknown system error"
-msgstr ""
-
-#: lib/getopt.c:529 lib/getopt.c:545
-#, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:578 lib/getopt.c:582
-#, c-format
-msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:591 lib/getopt.c:596
-#, c-format
-msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, c-format
-msgid "%s: option '%s' requires an argument\n"
-msgstr ""
-
-#: lib/getopt.c:696 lib/getopt.c:699
-#, c-format
-msgid "%s: unrecognized option '--%s'\n"
-msgstr ""
-
-#: lib/getopt.c:707 lib/getopt.c:710
-#, c-format
-msgid "%s: unrecognized option '%c%s'\n"
-msgstr ""
-
-#: lib/getopt.c:759 lib/getopt.c:762
-#, c-format
-msgid "%s: invalid option -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, c-format
-msgid "%s: option requires an argument -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:882 lib/getopt.c:898
-#, c-format
-msgid "%s: option '-W %s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:922 lib/getopt.c:940
-#, c-format
-msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/regcomp.c:132
-msgid "Success"
-msgstr ""
-
-#: lib/regcomp.c:135
-msgid "No match"
-msgstr ""
-
-#: lib/regcomp.c:138
-msgid "Invalid regular expression"
-msgstr ""
-
-#: lib/regcomp.c:141
-msgid "Invalid collation character"
-msgstr ""
-
-#: lib/regcomp.c:144
-msgid "Invalid character class name"
-msgstr ""
-
-#: lib/regcomp.c:147
-msgid "Trailing backslash"
-msgstr ""
-
-#: lib/regcomp.c:150
-msgid "Invalid back reference"
-msgstr ""
-
-#: lib/regcomp.c:153
-msgid "Unmatched [ or [^"
-msgstr ""
-
-#: lib/regcomp.c:156
-msgid "Unmatched ( or \\("
-msgstr ""
-
-#: lib/regcomp.c:159
-msgid "Unmatched \\{"
-msgstr ""
-
-#: lib/regcomp.c:162
-msgid "Invalid content of \\{\\}"
-msgstr ""
-
-#: lib/regcomp.c:165
-msgid "Invalid range end"
-msgstr ""
-
-#: lib/regcomp.c:168
-msgid "Memory exhausted"
-msgstr ""
-
-#: lib/regcomp.c:171
-msgid "Invalid preceding regular expression"
-msgstr ""
-
-#: lib/regcomp.c:174
-msgid "Premature end of regular expression"
-msgstr ""
-
-#: lib/regcomp.c:177
-msgid "Regular expression too big"
-msgstr ""
-
-#: lib/regcomp.c:180
-msgid "Unmatched ) or \\)"
-msgstr ""
-
-#: lib/regcomp.c:701
-msgid "No previous regular expression"
-msgstr ""
-
-#: lib/xalloc-die.c:34
-msgid "memory exhausted"
-msgstr ""
+msgstr "'\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1253,7 +1191,6 @@ msgstr ""
 #~ "\n"
 #~ "Hvis FIL ikke er angivet, læses fra standard ind.\n"
 
-#, fuzzy
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
 #~ "\n"
@@ -1262,12 +1199,31 @@ msgstr ""
 #~ "  -1, --no-deleted           inhibit output of deleted words\n"
 #~ "  -2, --no-inserted          inhibit output of inserted words\n"
 #~ "  -3, --no-common            inhibit output of common words\n"
+#~ msgstr ""
+#~ "Obligatoriske argumenter for lange flag er obligatoriske også for korte\n"
+#~ "\n"
+#~ "  -C, --copyright            udskriv ophavsret og afslut\n"
+#~ "  -K, --no-init-term         som -t, men ingen termcap init/term strings\n"
+#~ "  -1, --no-deleted           forhindre uddata over slettede ord\n"
+#~ "  -2, --no-inserted          forhindre uddata over indsatte ord\n"
+#~ "  -3, --no-common            forhindre uddata over almindelige ord\n"
+
+#~ msgid ""
 #~ "  -a, --auto-pager           automatically calls a pager\n"
 #~ "  -h, --help                 print this help\n"
 #~ "  -i, --ignore-case          fold character case while comparing\n"
 #~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
 #~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
 #~ "  -p, --printer              overstrike as for printers\n"
+#~ msgstr ""
+#~ "  -a, --auto-pager           kalder automatisk en 'pager'\n"
+#~ "  -h, --help                 vis denne hjælpetekst\n"
+#~ "  -i, --ignore-case          skeln ikke mellem store og små bogstaver\n"
+#~ "  -l, --less-mode            variation af printer-modus \"less\"\n"
+#~ "  -n, --avoid-wraps          udvid ikke felter med newlines\n"
+#~ "  -p, --printer              brug overstrike som for printere\n"
+
+#~ msgid ""
 #~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
 #~ "  -t, --terminal             use termcap as for terminal displays\n"
 #~ "  -v, --version              print program version then exit\n"
@@ -1276,35 +1232,27 @@ msgstr ""
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 #~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Obligatoriske argumenter for lange flag er obligatoriske også for korte\n"
-#~ "flag.\n"
-#~ "\n"
-#~ "  -C, --copyright            vis copyright og afslut\n"
-#~ "  -K, --no-init-term         som -t, men ingen termcap init/term strenge\n"
-#~ "  -V, --version              vis programversion og afslut\n"
-#~ "  -1, --no-deleted           skriv ikke slettede ord\n"
-#~ "  -2, --no-inserted          skriv ikke indsatte ord\n"
-#~ "  -3, --no-common            skriv ikke fælles ord\n"
-#~ "  -a, --auto-pager           kalder en 'pager' automatisk\n"
-#~ "  -h, --help                 vis denne hjælpetekst\n"
-#~ "  -i, --ignore-case          skeln ikke mellem store og små bogstaver\n"
-#~ "  -l, --less-mode            variant af printer-modus for \"less\"\n"
-#~ "  -n, --avoid-wraps          udvid ikke felter med newlines\n"
-#~ "  -p, --printer              brug overstrike som for printere\n"
 #~ "  -s, --statistics           skriv antal ord som blev slettet, sat ind, "
 #~ "osv.\n"
 #~ "  -t, --terminal             brug termcap som for almindelige terminaler\n"
-#~ "  -w, --start-delete=STRENG  streng som markerer start på sletning\n"
-#~ "  -x, --end-delete=STRENG    streng som markerer slutning på sletning\n"
-#~ "  -y, --start-insert=STRENG  streng som markerer start på indsættelse\n"
-#~ "  -z, --end-insert=STRENG    streng som markerer slutning på indsættelse\n"
+#~ "  -v, --version              vis programversion og afslut\n"
+#~ "  -w, --start-delete=STRING  streng som markerer start på sletning\n"
+#~ "  -x, --end-delete=STRING    streng som markerer slutning på sletning\n"
+#~ "  -y, --start-insert=STRING  streng som markerer start på indsættelse\n"
+#~ "  -z, --end-insert=STRING    streng som markerer slutning på indsættelse\n"
 
-#, fuzzy
+#~ msgid "Unknown system error"
+#~ msgstr "Ukendt systemfejl"
+
+#~ msgid "memory exhausted"
+#~ msgstr "hukommelse opbrugt"
+
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
 #~ "\n"
 #~ "  -C, --copyright            print copyright then exit\n"
 #~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+#~ "  -V, --version              print program version then exit\n"
 #~ "  -1, --no-deleted           inhibit output of deleted words\n"
 #~ "  -2, --no-inserted          inhibit output of inserted words\n"
 #~ "  -3, --no-common            inhibit output of common words\n"
@@ -1314,10 +1262,8 @@ msgstr ""
 #~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
 #~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
 #~ "  -p, --printer              overstrike as for printers\n"
-#~ "  -q, --quiet                inhibit the `mdiff' call message\n"
 #~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
 #~ "  -t, --terminal             use termcap as for terminal displays\n"
-#~ "  -v, --version              print program version then exit\n"
 #~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 #~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"

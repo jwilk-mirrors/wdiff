@@ -5,9 +5,3 @@ src/mdiff.c
 src/unify.c
 src/wdiff.c
 src/wdiff2.c
-
-# Gnulib source files.
-lib/error.c
-lib/getopt.c
-lib/regcomp.c
-lib/xalloc-die.c

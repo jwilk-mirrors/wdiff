@@ -1,0 +1,488 @@
+# translation of coreutils.bg.po to Bulgarian
+# Message catalog for coreutils
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# This file is distributed under the same license as the coreutils package.
+# Anton Zinoviev <zinoviev@debian.org>, 2003,2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: coreutils 5.90\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2010-02-01 09:19+0100\n"
+"PO-Revision-Date: 2005-10-12 21:41+0300\n"
+"Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/error.c:153
+msgid "Unknown system error"
+msgstr "Непозната системна грешка"
+
+#: lib/getopt.c:529 lib/getopt.c:545
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
+msgstr "%s: опцията \"%s\" е двусмислена\n"
+
+#: lib/getopt.c:578 lib/getopt.c:582
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: опцията \"--%s\" не допуска аргумент\n"
+
+#: lib/getopt.c:591 lib/getopt.c:596
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: опцията \"%c%s\" не допуска аргумент\n"
+
+#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
+msgstr "%s: опцията \"%s\" изисква аргумент\n"
+
+#: lib/getopt.c:696 lib/getopt.c:699
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: непозната опция \"--%s\"\n"
+
+#: lib/getopt.c:707 lib/getopt.c:710
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: непозната опция \"%c%s\"\n"
+
+#: lib/getopt.c:759 lib/getopt.c:762
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: неправилна опция -- %c\n"
+
+#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: опция изисква аргумент -- %c\n"
+
+#: lib/getopt.c:882 lib/getopt.c:898
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: опцията \"-W %s\" е двусмислена\n"
+
+#: lib/getopt.c:922 lib/getopt.c:940
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: опцията \"-W %s\" не допуска аргумент\n"
+
+#: lib/regcomp.c:132
+msgid "Success"
+msgstr ""
+
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr ""
+
+#: lib/regcomp.c:138
+#, fuzzy
+msgid "Invalid regular expression"
+msgstr "%s: неправилен регулярен израз: %s"
+
+#: lib/regcomp.c:141
+#, fuzzy
+msgid "Invalid collation character"
+msgstr "неправилен клас от символи %s"
+
+#: lib/regcomp.c:144
+#, fuzzy
+msgid "Invalid character class name"
+msgstr "неправилен клас от символи %s"
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr ""
+
+#: lib/regcomp.c:150
+#, fuzzy
+msgid "Invalid back reference"
+msgstr "Неправилен диапазон от страници %s"
+
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr ""
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr ""
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr ""
+
+#: lib/regcomp.c:162
+msgid "Invalid content of \\{\\}"
+msgstr ""
+
+#: lib/regcomp.c:165
+#, fuzzy
+msgid "Invalid range end"
+msgstr "Неправилен диапазон от страници %s"
+
+#: lib/regcomp.c:168
+#, fuzzy
+msgid "Memory exhausted"
+msgstr "паметта е изчерпана"
+
+#: lib/regcomp.c:171
+#, fuzzy
+msgid "Invalid preceding regular expression"
+msgstr "%s: неправилен регулярен израз: %s"
+
+#: lib/regcomp.c:174
+#, fuzzy
+msgid "Premature end of regular expression"
+msgstr "грешка при търсене на регулярен израз"
+
+#: lib/regcomp.c:177
+#, fuzzy
+msgid "Regular expression too big"
+msgstr "грешка при пасването на регулярния израз"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr ""
+
+#: lib/regcomp.c:701
+#, fuzzy
+msgid "No previous regular expression"
+msgstr "грешка при търсене на регулярен израз"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "паметта е изчерпана"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "недопустим аргумент %s за %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "двусмислен аргумент %s за %s"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Допустими аргументи са:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Аргументите, задължителни за дългите опции, са задължителни и за късите.\n"
+
+#, fuzzy
+#~ msgid " [OPTION...]"
+#~ msgstr "Използване: %s [ОПЦИЯ]...\n"
+
+#, fuzzy
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "Използвайте \"%s --help\" за повече информация.\n"
+
+#, fuzzy
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Съобщавайте за програмни грешки на <%s>.\n"
+
+#~ msgid "NAME"
+#~ msgstr "ИМЕ"
+
+#, fuzzy
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: твърде много редове с контролни суми"
+
+#, fuzzy
+#~ msgid "program error"
+#~ msgstr "грешка при четене"
+
+#~ msgid "write error"
+#~ msgstr "грешка при запис"
+
+#, fuzzy
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "не може да се отвори %s за четене"
+
+#, fuzzy
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "не може да се отвори %s за запис"
+
+#, fuzzy
+#~ msgid "error reading \"%s\""
+#~ msgstr "грешка при четене на %s"
+
+#, fuzzy
+#~ msgid "error writing \"%s\""
+#~ msgstr "грешка при запис в %s"
+
+#, fuzzy
+#~ msgid "error after reading \"%s\""
+#~ msgstr "грешка при четене на %s"
+
+#, fuzzy
+#~ msgid "fdopen() failed"
+#~ msgstr "неуспешно отваряне на файл"
+
+#, fuzzy
+#~ msgid "%s subprocess failed"
+#~ msgstr "%s: неуспешно позициониране (seek) във файл"
+
+#~ msgid "regular empty file"
+#~ msgstr "обикновеният празен файл"
+
+#~ msgid "regular file"
+#~ msgstr "обикновеният файл"
+
+#~ msgid "directory"
+#~ msgstr "каталогът"
+
+#~ msgid "block special file"
+#~ msgstr "специалният блоков файл"
+
+#~ msgid "character special file"
+#~ msgstr "специалният символен файл"
+
+#~ msgid "fifo"
+#~ msgstr "именуваният канал"
+
+#~ msgid "symbolic link"
+#~ msgstr "символната връзка"
+
+#~ msgid "socket"
+#~ msgstr "гнездото"
+
+#~ msgid "message queue"
+#~ msgstr "опашката със съобщения"
+
+#~ msgid "semaphore"
+#~ msgstr "семафорът"
+
+#~ msgid "shared memory object"
+#~ msgstr "споделеният обект в паметта"
+
+#~ msgid "typed memory object"
+#~ msgstr "типизираният обект в паметта"
+
+#~ msgid "weird file"
+#~ msgstr "странният файл"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "Този тип адреси не се поддържа за името на хоста"
+
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Временен проблем при намиране IP-адреса на хост"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "Неправил на стойност за ai_flags"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "Окончателен неуспех при намиране IP-адреса на хост"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "не се поддържа посочването на тип адреси (ai_family)"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "Неуспешно заделяне на памет"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "Няма IP-адрес с посоченото име на хост"
+
+#~ msgid "Name or service not known"
+#~ msgstr "Името или услугата са непознати"
+
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr ""
+#~ "Името на услугата не се поддържа за използваното тип гнездо (ai_socktype)"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "не се поддържа посочването на тип гнездо (ai_socktype)"
+
+#~ msgid "System error"
+#~ msgstr "грешка в системата"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "Заявката е в процес на изпълнение"
+
+#~ msgid "Request canceled"
+#~ msgstr "Заявката е отменена"
+
+#~ msgid "Request not canceled"
+#~ msgstr "Заявката не е отменена"
+
+#~ msgid "All requests done"
+#~ msgstr "Изпълнени са всички заявки"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Прекъснат със сигнал"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "Неправилно кодиран низ на аргумент"
+
+#~ msgid "Unknown error"
+#~ msgstr "Непозната грешка"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: неправилна опция -- %c\n"
+
+#~ msgid "block size"
+#~ msgstr "блоковият размер"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s съществува, но не е каталог"
+
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "не може да се смени собственика и/или групата на %s"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "не може да се създаде каталог %s"
+
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "не може да се влезе в каталога %s"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "не може да се сменят правата за достъп до %s"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "не може да се запомни текущият работен каталог"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "невъзможно връщане в първоначалния работен каталог"
+
+#, fuzzy
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "%s: не може да се отвори в режим за писане"
+
+#, fuzzy
+#~ msgid "cannot create pipe"
+#~ msgstr "не може да се създаде връзка %s"
+
+#~ msgid "`"
+#~ msgstr "\""
+
+#~ msgid "'"
+#~ msgstr "\""
+
+# Клавишът О (латинско) генерира "Д" според подредбата по БДС
+#~ msgid "^[yY]"
+#~ msgstr "^[дДoOyY]"
+
+# Клавишът K (латинско) генерира "Н" според подредбата по БДС
+#~ msgid "^[nN]"
+#~ msgstr "^[нНkKnN]"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "функцията iconv не е използваема"
+
+#~ msgid "iconv function not available"
+#~ msgstr "функцията iconv е недостъпна"
+
+#~ msgid "character out of range"
+#~ msgstr "знак извън диапазона"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "не може да се конвертира U+%04X в локалното кодиране"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "не може да се конвертира U+%04X в локалното кодиране: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "несъществуващ потребител"
+
+#~ msgid "invalid group"
+#~ msgstr "несъществуваща група"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "не може да се получи входящата група по потребителски номер"
+
+#~ msgid "(C)"
+#~ msgstr "©"
+
+#~ msgid ""
+#~ "\n"
+#~ "This is free software.  You may redistribute copies of it under the terms "
+#~ "of\n"
+#~ "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Това е свободен софтуер.  Можете да разпространявате негови копия "
+#~ "съгласно\n"
+#~ "условията на Основната общодостъпна лицензия на ГНУ\n"
+#~ "      <http://www.gnu.org/licenses/gpl.html>.\n"
+#~ "Не се дават НИКАКВИ ГАРАНЦИИ до степента, позволявана от закона.\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Написан от %s.\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Написан от %s и %s.\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Написан от %s, %s и %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Написан от %s, %s, %s\n"
+#~ "и %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Написан от %s, %s, %s,\n"
+#~ "%s и %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Написан от %s, %s, %s,\n"
+#~ "%s, %s и %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Написан от %s, %s, %s,\n"
+#~ "%s, %s, %s и %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Написан от %s, %s, %s,\n"
+#~ "%s, %s, %s, %s\n"
+#~ "и %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Написан от %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s и %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "Написан от %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s и други.\n"
+
+#~ msgid "string comparison failed"
+#~ msgstr "сравнението на низове не успя"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Използвайте LC_ALL='C', за да заобиколите този проблем."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Сравняваните низове бяха %s и %s."

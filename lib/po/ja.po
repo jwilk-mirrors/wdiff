@@ -1,0 +1,524 @@
+# Translation of `gnulib' messages to Japanese.
+# Copyright (C) 2000, 2002, 2006 Free Software Foundation, Inc.
+# GOTO Masanori <gotom@debian.or.jp>, 2006.
+# Masahito Yamaga <yamaga@ipc.chiba-u.ac.jp>, 2002.
+#  derived from the version by Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp> 1998
+#                              Jun Nishii <jun@flatout.org> 1999
+#                              Daisuke Yamashita <yamad@mb.infoweb.ne.jp> 1999
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnulib 1.0\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2010-02-01 09:19+0100\n"
+"PO-Revision-Date: 2006-06-10 13:12+0900\n"
+"Last-Translator: GOTO Masanori <gotom@debian.or.jp>\n"
+"Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/error.c:153
+msgid "Unknown system error"
+msgstr "未知のシステムエラー"
+
+#: lib/getopt.c:529 lib/getopt.c:545
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
+msgstr "%s: オプション`%s'は曖昧です\n"
+
+#: lib/getopt.c:578 lib/getopt.c:582
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: オプション`--%s'は引数をとりません\n"
+
+#: lib/getopt.c:591 lib/getopt.c:596
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: オプション`%c%s'に引数は必要ありません\n"
+
+#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
+msgstr "%s: オプション`%s'には引数が必要です\n"
+
+#: lib/getopt.c:696 lib/getopt.c:699
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: オプション`--%s'を認識できません\n"
+
+#: lib/getopt.c:707 lib/getopt.c:710
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: オプション`%c%s'を認識できません\n"
+
+#: lib/getopt.c:759 lib/getopt.c:762
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: オプションが違います -- %c\n"
+
+#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: オプションには引数が必要です -- %c\n"
+
+#: lib/getopt.c:882 lib/getopt.c:898
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: オプション`-W %s'は曖昧です\n"
+
+#: lib/getopt.c:922 lib/getopt.c:940
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: オプション`-W %s'は引数をとりません\n"
+
+#: lib/regcomp.c:132
+msgid "Success"
+msgstr "成功です"
+
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr "一致しません"
+
+#: lib/regcomp.c:138
+msgid "Invalid regular expression"
+msgstr "無効な正規表現です"
+
+#: lib/regcomp.c:141
+msgid "Invalid collation character"
+msgstr "無効な照合文字です"
+
+#: lib/regcomp.c:144
+msgid "Invalid character class name"
+msgstr "無効なキャラクタクラス名です"
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr "バックスラッシュが残っています"
+
+#: lib/regcomp.c:150
+msgid "Invalid back reference"
+msgstr "無効な後方参照です"
+
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr "[ もしくは [^ が一致しません"
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr "( もしくは \\( が一致しません"
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr "\\{ が一致しません"
+
+#: lib/regcomp.c:162
+msgid "Invalid content of \\{\\}"
+msgstr "無効な \\{\\} の内容です"
+
+#: lib/regcomp.c:165
+msgid "Invalid range end"
+msgstr "無効な終端範囲です"
+
+#: lib/regcomp.c:168
+msgid "Memory exhausted"
+msgstr "メモリを使い果たしました"
+
+#: lib/regcomp.c:171
+msgid "Invalid preceding regular expression"
+msgstr "前出の正規表現は無効です"
+
+#: lib/regcomp.c:174
+msgid "Premature end of regular expression"
+msgstr "正規表現の終端が早すぎます"
+
+#: lib/regcomp.c:177
+msgid "Regular expression too big"
+msgstr "正規表現が長すぎます"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr ") もしくは \\) が一致しません"
+
+#: lib/regcomp.c:701
+msgid "No previous regular expression"
+msgstr "以前に正規表現が定義されていません"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "メモリを使い果たしました"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "%2$s に対する引数 %1$s が間違っています"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "%2$s に対する引数 %1$s が曖昧です"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "有効な引数:"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: ARGP_HELP_FMT パラメータには値が必要です"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: 不明な ARGP_HELP_FMT パラメータ"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "ARGP_HELP_FMT 中にごみがあります: %s"
+
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "ロングオプションで必須または任意の引数は、それに対応するショートオプション"
+#~ "でも同じように必須または任意です."
+
+#~ msgid "Usage:"
+#~ msgstr "使用法:"
+
+#~ msgid "  or: "
+#~ msgstr " 又は: "
+
+#~ msgid " [OPTION...]"
+#~ msgstr " [オプション...]"
+
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "詳細は`%s --help'または`%s --usage'を実行して下さい.\n"
+
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "バグを発見したら %s 宛に報告して下さい.\n"
+
+#~ msgid "Give this help list"
+#~ msgstr "このヘルプの表示"
+
+#~ msgid "Give a short usage message"
+#~ msgstr "短い使用方法の表示"
+
+#~ msgid "NAME"
+#~ msgstr "名前"
+
+#~ msgid "Set the program name"
+#~ msgstr "プログラム名をセットする"
+
+#~ msgid "SECS"
+#~ msgstr "SECS"
+
+#~ msgid "Hang for SECS seconds (default 3600)"
+#~ msgstr "SECS 秒でハング (デフォルト 3600)"
+
+#~ msgid "Print program version"
+#~ msgstr "プログラムのバージョンを表示する"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(プログラムエラー) 未知のバージョン!?"
+
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: 引数が多すぎます\n"
+
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr "(プログラムエラー) オプションは認識されているべきです!?"
+
+#~ msgid "program error"
+#~ msgstr "プログラムエラー"
+
+#~ msgid "stack overflow"
+#~ msgstr "スタックオーバーフロー"
+
+#~ msgid "write error"
+#~ msgstr "書き込みエラー"
+
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "\"%s\"を読込むため開いている際にエラー"
+
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "書込み用バックアップファイル\"%s\"を開くことができません"
+
+#~ msgid "error reading \"%s\""
+#~ msgstr "\"%s\"の読込み中でエラー"
+
+#~ msgid "error writing \"%s\""
+#~ msgstr "\"%s\"の書込み中でエラー"
+
+#~ msgid "error after reading \"%s\""
+#~ msgstr "\"%s\"の読込み後にエラー"
+
+#~ msgid "fdopen() failed"
+#~ msgstr "fdopen()に失敗"
+
+#~ msgid "C# compiler not found, try installing pnet"
+#~ msgstr "C# コンパイラが見つからないので pnet インストールしてみてください"
+
+#~ msgid "C# virtual machine not found, try installing pnet"
+#~ msgstr "C# 仮想マシンが見つからないので pnet をインストールしてみてください"
+
+#~ msgid "%s subprocess failed"
+#~ msgstr "%s サブプロセスが失敗しました"
+
+#~ msgid "regular empty file"
+#~ msgstr "通常の空ファイル"
+
+#~ msgid "regular file"
+#~ msgstr "通常ファイル"
+
+#~ msgid "directory"
+#~ msgstr "ディレクトリ"
+
+#~ msgid "block special file"
+#~ msgstr "ブロックスペシャルファイル"
+
+#~ msgid "character special file"
+#~ msgstr "キャラクタスペシャルファイル"
+
+#~ msgid "fifo"
+#~ msgstr "fifo"
+
+#~ msgid "symbolic link"
+#~ msgstr "シンボリックリンク"
+
+#~ msgid "socket"
+#~ msgstr "ソケット"
+
+#~ msgid "message queue"
+#~ msgstr "メッセージキュー"
+
+#~ msgid "semaphore"
+#~ msgstr "セマフォ"
+
+#~ msgid "shared memory object"
+#~ msgstr "共有メモリオブジェクト"
+
+#~ msgid "typed memory object"
+#~ msgstr "型付きメモリオブジェクト"
+
+#~ msgid "weird file"
+#~ msgstr "不明なファイル"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "hostnameのアドレスファミリはサポートされていません"
+
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "名前解決時の一時的な失敗"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "ai_flags の値が不正です"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "名前の解決時に回復不可能な失敗"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "ai_family はサポートしていません"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "メモリ確保に失敗しました"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "ホスト名に対応するアドレスがありません"
+
+#~ msgid "Name or service not known"
+#~ msgstr "名前またはサービスが不明です"
+
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr "サーバ名は ai_socktype に対してサポートしていません"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "ai_socktype はサポートしていません"
+
+#~ msgid "System error"
+#~ msgstr "システムエラー"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "要求はすでに処理中です"
+
+#~ msgid "Request canceled"
+#~ msgstr "要求は中断されました"
+
+#~ msgid "Request not canceled"
+#~ msgstr "要求は中断されませんでした"
+
+#~ msgid "All requests done"
+#~ msgstr "全ての要求処理は完了しました"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "シグナルによる割り込み"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "パラメータ文字列は正しくエンコードされていない"
+
+#~ msgid "Unknown error"
+#~ msgstr "未知のエラー"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: 不正なオプション -- %c\n"
+
+#~ msgid "block size"
+#~ msgstr "ブロックサイズ"
+
+#~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
+#~ msgstr ""
+#~ "Java コンパイラが見つからないので gcj や set $JAVAC 設定を試してみてくださ"
+#~ "い"
+
+#~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
+#~ msgstr ""
+#~ "Java 仮想マシンが見つからないので gij や set $JAVA 設定を試してみてくださ"
+#~ "い"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s は存在しますがディレクトリではありません"
+
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "%s のオーナーとグループを変更できません"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "ディレクトリ %s を作成できません"
+
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "ディレクトリ %s に移動できません"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "%s の属性を変更できません"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "現在の作業ディレクトリを記録できません"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "最初の作業ディレクトリに戻るのに失敗しました"
+
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "/dev/zeroを読込み用に開けません"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "パイプを作成できません"
+
+#~ msgid "`"
+#~ msgstr "`"
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[yY]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "iconv関数が使えません"
+
+#~ msgid "iconv function not available"
+#~ msgstr "iconv関数が有効ではありません"
+
+#~ msgid "character out of range"
+#~ msgstr "範囲外の文字"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "U+%04X をローカル文字セットに変換できません"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "U+%04X をローカル文字セット %s に変換できません"
+
+#~ msgid "invalid user"
+#~ msgstr "ユーザ指定が不正"
+
+#~ msgid "invalid group"
+#~ msgstr "グループ指定が不正"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "数字のUIDのログイングループを取得できません"
+
+#~ msgid "(C)"
+#~ msgstr "(C)"
+
+#~ msgid ""
+#~ "\n"
+#~ "This is free software.  You may redistribute copies of it under the terms "
+#~ "of\n"
+#~ "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "本プログラムはフリーソフトウェアです. GNU一般公有使用許諾\n"
+#~ "<http://www.gnu.org/licenses/gpl.html> で定められた条項の下で本プログラ\n"
+#~ "ムのコピーを再配布できます. 適切な法が認る限りにおいて全くの無保証です.\n"
+#~ "\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "作者 %s.\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "作者 %s と %s.\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "作者 %s, %s, %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "作者 %s, %s, %s,\n"
+#~ "そして %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "作者 %s, %s, %s,\n"
+#~ "%s, %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "作者 %s, %s, %s,\n"
+#~ "%s, %s, %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "作者 %s, %s, %s,\n"
+#~ "%s, %s, %s, %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "作者 %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "作者 %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "作者 %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, 他.\n"
+
+#~ msgid "%s subprocess"
+#~ msgstr "%s サブプロセス"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "%s サブプロセスが致命的なシグナル %d を受信しました"
+
+#~ msgid "string comparison failed"
+#~ msgstr "文字列の比較に失敗"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "問題を回避するために LC_ALL='C' を指定してください."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "比較した文字列は %s と %s です."

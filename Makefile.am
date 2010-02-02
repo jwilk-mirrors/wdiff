@@ -12,6 +12,13 @@ ChangeLog:
 	cat $@.old >> $@.tmp
 	mv $@.tmp $@
 
+# -------------- #
+# helper scripts #
+# -------------- #
+
+EXTRA_DIST += $(top_srcdir)/build-aux/msgitm.pm
+EXTRA_DIST += $(top_srcdir)/build-aux/print-po.pl
+
 ## ----------- ##
 ## Test suite. ##
 ## ----------- ##

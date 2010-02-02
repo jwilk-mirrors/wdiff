@@ -1,0 +1,411 @@
+# Hungarian translation of coreutils.
+# Copyright (C) 2002, 2003, 2004 Free Software Foundation, Inc.
+# This file is distributed under the same license as the coreutils package.
+# Emese Kovacs <emese@instantweb.hu>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: coreutils 5.2.1\n"
+"Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
+"POT-Creation-Date: 2010-02-01 09:19+0100\n"
+"PO-Revision-Date: 2004-07-03 22:32+0200\n"
+"Last-Translator: Emese Kovacs <emese@instantweb.hu>\n"
+"Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/error.c:153
+msgid "Unknown system error"
+msgstr "Ismeretlen rendszerhiba"
+
+#: lib/getopt.c:529 lib/getopt.c:545
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
+msgstr "%s: a(z) `%s' kapcsoló nem egyértelmû\n"
+
+#: lib/getopt.c:578 lib/getopt.c:582
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: a(z) `--%s' kapcsoló nem enged meg argumentumot\n"
+
+#: lib/getopt.c:591 lib/getopt.c:596
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: a(z) `%c%s' kapcsoló nem enged meg argumentumot\n"
+
+#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
+msgstr "%s: a(z) `%s' kapcsolóhoz argumentum szükséges\n"
+
+#: lib/getopt.c:696 lib/getopt.c:699
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: a(z) `--%s' kapcsoló ismeretlen\n"
+
+#: lib/getopt.c:707 lib/getopt.c:710
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: a(z) `%c%s' kapcsoló ismeretlen\n"
+
+#: lib/getopt.c:759 lib/getopt.c:762
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: érvénytelen kapcsoló -- %c\n"
+
+#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: a kapcsolónak szüksége van egy argumentumra -- %c\n"
+
+#: lib/getopt.c:882 lib/getopt.c:898
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: a `-W %s' kapcsoló nem egyértelmû\n"
+
+#: lib/getopt.c:922 lib/getopt.c:940
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: a `-W %s' kapcsoló nem enged meg argumentumot\n"
+
+#: lib/regcomp.c:132
+msgid "Success"
+msgstr ""
+
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr ""
+
+#: lib/regcomp.c:138
+#, fuzzy
+msgid "Invalid regular expression"
+msgstr "érvénytelen konverzió: %s"
+
+#: lib/regcomp.c:141
+#, fuzzy
+msgid "Invalid collation character"
+msgstr "érvénytelen karakter (%s) a `%s' módkarakterláncban"
+
+#: lib/regcomp.c:144
+#, fuzzy
+msgid "Invalid character class name"
+msgstr "érvénytelen karakter (%s) a `%s' módkarakterláncban"
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr ""
+
+#: lib/regcomp.c:150
+msgid "Invalid back reference"
+msgstr ""
+
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr ""
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr ""
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr ""
+
+#: lib/regcomp.c:162
+msgid "Invalid content of \\{\\}"
+msgstr ""
+
+#: lib/regcomp.c:165
+#, fuzzy
+msgid "Invalid range end"
+msgstr "érvénytelen konverzió: %s"
+
+#: lib/regcomp.c:168
+#, fuzzy
+msgid "Memory exhausted"
+msgstr "elfogyott a memória"
+
+#: lib/regcomp.c:171
+#, fuzzy
+msgid "Invalid preceding regular expression"
+msgstr "érvénytelen konverzió: %s"
+
+#: lib/regcomp.c:174
+#, fuzzy
+msgid "Premature end of regular expression"
+msgstr "érvénytelen konverzió: %s"
+
+#: lib/regcomp.c:177
+#, fuzzy
+msgid "Regular expression too big"
+msgstr "érvénytelen konverzió: %s"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr ""
+
+#: lib/regcomp.c:701
+#, fuzzy
+msgid "No previous regular expression"
+msgstr "érvénytelen konverzió: %s"
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "elfogyott a memória"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "A(z) `%s' argumentum érvénytelen ehhez: %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "`%s' argumentum nem egyértelmû ehhez: `%s'"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Az érvényes argumentumok a következõk:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Ha egy hosszú kapcsolóhoz kötelezõ argumentumot megadni, akkor ez a \n"
+#~ "megfelelõ rövid kapcsolónál is kötelezõ.\n"
+
+#, fuzzy
+#~ msgid " [OPTION...]"
+#~ msgstr "Használat: %s [KAPCSOLÓ]...\n"
+
+#, fuzzy
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "Próbálja a(z) `%s --help'-et további információkért.\n"
+
+#, fuzzy
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "A hibákat jelentsd a <bug-fileutils@gnu.org> címen."
+
+#, fuzzy
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "túl sok argumentum"
+
+#, fuzzy
+#~ msgid "program error"
+#~ msgstr "olvasási hiba"
+
+#~ msgid "write error"
+#~ msgstr "írási hiba"
+
+#, fuzzy
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "%s megnyitása olvasásra sikertelen"
+
+#, fuzzy
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "%s megnyitása olvasásra sikertelen"
+
+#, fuzzy
+#~ msgid "error reading \"%s\""
+#~ msgstr "hiba %s olvasásakor"
+
+#, fuzzy
+#~ msgid "error writing \"%s\""
+#~ msgstr "hiba %s írásakor"
+
+#, fuzzy
+#~ msgid "error after reading \"%s\""
+#~ msgstr "hiba %s olvasásakor"
+
+#, fuzzy
+#~ msgid "fdopen() failed"
+#~ msgstr "megnyitás sikertelen"
+
+#, fuzzy
+#~ msgid "%s subprocess failed"
+#~ msgstr "strip sikertelen"
+
+#, fuzzy
+#~ msgid "regular file"
+#~ msgstr "olvasás sikertelen"
+
+#~ msgid "directory"
+#~ msgstr "könyvtár"
+
+#~ msgid "block special file"
+#~ msgstr "speciális blokkfájl"
+
+#~ msgid "character special file"
+#~ msgstr "speciális karakterfájl"
+
+#~ msgid "fifo"
+#~ msgstr "fifo"
+
+#~ msgid "symbolic link"
+#~ msgstr "szimbolikus link"
+
+#, fuzzy
+#~ msgid "weird file"
+#~ msgstr "olvasás sikertelen"
+
+#, fuzzy
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "a fifo fájlok nem támogatottak"
+
+#, fuzzy
+#~ msgid "ai_family not supported"
+#~ msgstr "a fifo fájlok nem támogatottak"
+
+#, fuzzy
+#~ msgid "ai_socktype not supported"
+#~ msgstr "a fifo fájlok nem támogatottak"
+
+#, fuzzy
+#~ msgid "System error"
+#~ msgstr "írási hiba"
+
+#, fuzzy
+#~ msgid "Unknown error"
+#~ msgstr "Ismeretlen rendszerhiba"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: illegális kapcsoló -- %c\n"
+
+#~ msgid "block size"
+#~ msgstr "blokkméret"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s létezik, de nem könyvtár"
+
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "nem lehet %s tulajdonosát és/vagy csoportját megváltoztatni"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "nem lehet létrehozni a(z) %s könyvtárat"
+
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "nem lehet a következõ könyvtárba lépni: %s"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "nem lehet %s jogosultságait megváltoztatni"
+
+#, fuzzy
+#~ msgid "unable to record current working directory"
+#~ msgstr "nem lehet az aktuális könyvtárat törölni: %s"
+
+#, fuzzy
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "%s jogosultságainak visszaállítása sikertelen"
+
+#, fuzzy
+#~ msgid "cannot create pipe"
+#~ msgstr "nem lehet a következõ linket létrehozni: %s"
+
+#~ msgid "`"
+#~ msgstr "`"
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[iIyY]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "az iconv függvény nem használható"
+
+#~ msgid "iconv function not available"
+#~ msgstr "az iconv függvény nem elérhetõ"
+
+#~ msgid "character out of range"
+#~ msgstr "tartományon kívüli karakter"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "nem lehet helyi karakterkészletbe átalakítani a következõt: U+%04X"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "nem lehet U+%04X-t helyi karakterkészletbe átalakítani:  %s"
+
+#~ msgid "invalid user"
+#~ msgstr "érvénytelen felhasználó"
+
+#~ msgid "invalid group"
+#~ msgstr "érvénytelen csoport"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "az UID-hez tartozó bejelentkezési csoportot nem lehet megállapítani"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Írta: %s\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Írta: %s és %s\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Írta: %s, %s és %s\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Írta: %s, %s, %s\n"
+#~ "és %s\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s és %s\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s, %s és %s\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s, %s, %s és %s\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s\n"
+#~ "és %s\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s és %s\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s és mások\n"
+
+#~ msgid "string comparison failed"
+#~ msgstr "karakterlánc-összehasonlítás sikertelen"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Állítsa be az LC_ALL='C' -t a probléma elkerüléséhez."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Az összehasonlított karakterláncok: %s és %s."

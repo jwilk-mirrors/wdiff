@@ -1,14 +1,16 @@
 # translation of wdiff.pot to Finnish
-# Copyright © 2007 Free Software Foundation, Inc.
-#
+# Copyright © 2007, 2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the wdiff package.
 # Jorma Karvonen <karvjorm@users.sf.net>, 2007.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2009.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5g\n"
+"Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-01-21 22:12+0100\n"
-"PO-Revision-Date: 2007-11-04 01:54+0200\n"
-"Last-Translator: Jorma Karvonen <karvjorm@users.sf.net>\n"
+"POT-Creation-Date: 2010-02-01 08:59+0100\n"
+"PO-Revision-Date: 2010-02-01 21:20+0100\n"
+"Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,12 +22,12 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (kohteelle regexp ”%s”)"
 
-#: src/mdiff.c:905 src/wdiff.c:1495
+#: src/mdiff.c:905 src/wdiff.c:1488
 #, fuzzy, c-format
 msgid "only one file may be standard input"
 msgstr "Vain yksi tiedosto voi olla vakiosyöte."
 
-#: src/mdiff.c:920 src/wdiff.c:709
+#: src/mdiff.c:920 src/wdiff.c:702
 #, fuzzy, c-format
 msgid "directories not supported"
 msgstr "Hakemistoja ei ole tuettu"
@@ -75,47 +77,47 @@ msgstr "Työyhteenveto: %d klusteria, %d jäsentä\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Työyhteenveto: %d klusteria, %d jäsentä, %d on päällekkäin\n"
 
-#: src/mdiff.c:2365 src/wdiff.c:246
+#: src/mdiff.c:2365 src/wdiff.c:242
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "Valitse pääte TERM-ympäristömuuttujan kautta."
 
-#: src/mdiff.c:2368 src/wdiff.c:249
+#: src/mdiff.c:2368 src/wdiff.c:245
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
 msgstr "Ei ollut pääsyä termcap-tietokantaan."
 
-#: src/mdiff.c:2370 src/wdiff.c:251
+#: src/mdiff.c:2370 src/wdiff.c:247
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "Päätetyyppiä ”%s” ei ole määritelty."
 
-#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d sanaa"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1197 src/wdiff.c:1209
+#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1190 src/wdiff.c:1202
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% yhteistä"
 
-#: src/mdiff.c:3754 src/wdiff.c:1199
+#: src/mdiff.c:3754 src/wdiff.c:1192
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% poistettua"
 
-#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1201 src/wdiff.c:1213
+#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1194 src/wdiff.c:1206
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% muutettua"
 
-#: src/mdiff.c:3766 src/wdiff.c:1211
+#: src/mdiff.c:3766 src/wdiff.c:1204
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% lisättyä"
 
-#: src/mdiff.c:3795 src/wdiff.c:1253 src/wdiff2.c:178
+#: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Lisätietoja ”%s --help”-käskyllä.\n"
@@ -132,31 +134,37 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Käyttö: %s [VALITSIN]... [TIEDOSTO]...\n"
+msgstr "Käyttö: %s [VALITSIN]... [TIEDOSTO]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Toimintatilat:\n"
 
 #: src/mdiff.c:3809
+#, fuzzy
 msgid "  -h                     (ignored)\n"
-msgstr ""
+msgstr "  -h                     (ei oteta huomioon)\n"
 
 #: src/mdiff.c:3810
+#, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
+msgstr "  -v, --verbose          raportoi muutamat tilastot vakiovirheeseen\n"
 
+# ? "      --help                näytä tämä opasteteksti ja poistu"
+# ? "      --help             näytä tämä opaste ja poistu"
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
 msgstr ""
 
 #: src/mdiff.c:3812 src/unify.c:294
+#, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version          tulosta versiotiedot ja poistu\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -164,105 +172,128 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab             aseta sarkaimet tasaan edeltävän rivin sarkaimen kanssa"
+# ? "  -T, --initial-tab         tuota sarkainmerkkejä eikä alustavia välilyöntejä"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate                välitä tuloste ”pr”:n kautta sen sivuttamiseksi"
+# ? "  -l, --paginate            sivuta tuloste ohjelman ”pr” kautta"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
 #: src/mdiff.c:3817
+#, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
+msgstr "  -S, --string[=MERKKIJONO] ota huomioon toinen käyttäjäMERKKIJONO\n"
 
 #: src/mdiff.c:3818
+#, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr ""
+"  -V, --show-links          anna tiedosto- ja riviviitteet annotaatioissa\n"
 
+# ? "  -t, --expand-tabs             laajenna sarakainmerkit välilyönneiksi tulosteessa"
+# ? "  -t, --expand-tabs         laajenna sarkainmerkit välilyönneiksi tulosteessa"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Virhejäljitystä:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr ""
-"\n"
-"Virhejäljitystä:\n"
-"  -0, --debugging   tulosta monia yksityiskohtia tapahtumakulusta\n"
+"  -0, --debugging           tulosta monia yksityiskohtia tapahtumakulusta\n"
 
 #: src/mdiff.c:3826
+#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Sanatilavalitsimet:\n"
 
-#: src/mdiff.c:3827 src/wdiff.c:1271 src/wdiff2.c:196
+#: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted           estä poistettujen sanojen tulostus\n"
 
-#: src/mdiff.c:3828 src/wdiff.c:1272 src/wdiff2.c:197
+#: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
+msgstr "  -2, --no-inserted          estä lisättyjen sanojen tulostus\n"
 
-#: src/mdiff.c:3829 src/wdiff.c:1273 src/wdiff2.c:198
+#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common            estä yhteisten sanojen tulostus\n"
 
 #: src/mdiff.c:3830
+#, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -A, --auto-pager           kutsu automaattisesti sivuttajaa\n"
 
 #: src/mdiff.c:3831
+#, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -k, --less-mode            tulostintilavariaatio kohteelle ”less”\n"
 
 #: src/mdiff.c:3832
+#, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -m, --avoid-wraps          älä laajenna kenttiä uusilla riveillä\n"
 
 #: src/mdiff.c:3833
+#, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -o, --printer              ylikirjoita kuten tulostimille\n"
 
 #: src/mdiff.c:3834
+#, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -z, --terminal             käytä ”termcap”:iä kuten päätenäytöille\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
 msgstr ""
+"  -K, --no-init-term         kuten -z, mutta ei termcap init/term-"
+"merkkijonoa\n"
 
 #: src/mdiff.c:3836
+#, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
+"  -O, --item-regexp=REGEXP   vertaa alkioita kuten REGEXP on määritellyt\n"
 
 #: src/mdiff.c:3837
+#, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr ""
+msgstr "  -W, --word-mode            vertaa sanoja eikä rivejä\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Kun ei ole TIEDOSTOa, tai kun TIEDOSTO on -, lue vakiosyöte.\n"
+msgstr "Kun ei ole TIEDOSTOa, tai kun TIEDOSTO on -, lue vakiosyöte.\n"
 
-#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1289 src/wdiff2.c:216
+#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Ilmoita virheistä osoitteeseen <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr "Ilmoita virheistä osoitteeseen <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -286,9 +317,9 @@ msgid ""
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Tekijänoikeudet © 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1415 src/wdiff2.c:134
+#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:134
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -298,7 +329,7 @@ msgstr ""
 "hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.\n"
 "Katso GPL-lisenssistä lisää yksityiskohtia.\n"
 
-#: src/mdiff.c:4395 src/wdiff.c:1419 src/wdiff2.c:138
+#: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -328,52 +359,59 @@ msgstr "unify - Muunna kontekstierot kontekstinmukaisiksi tai päinvastoin.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Käyttö: %s [VALITSIN]... [TIEDOSTO]\n"
+msgstr "Käyttö: %s [VALITSIN]... [TIEDOSTO]\n"
 
 #: src/unify.c:284
+#, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr ""
+msgstr "  -c, --context-diffs    pakota tuloste context-diffs-muotoon\n"
 
 #: src/unify.c:285
+#, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
+msgstr "  -e, --echo-comments    kaiuta kommentit vakiovirheeseen\n"
 
 #: src/unify.c:286
+#, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
+msgstr "  -o, --old-diffs        tulosta vanhantyyliset erot, ei väliä mitä\n"
 
 #: src/unify.c:287
+#, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr ""
+msgstr "  -p, --patch-format     luo paikkausmuoto\n"
 
 #: src/unify.c:288
+#, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr ""
+msgstr "  -P                     sama kuin valistin ”-p”\n"
 
 #: src/unify.c:289
+#, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr ""
+msgstr "  -s, --strip-comments   riisu kommenttirivit\n"
 
 #: src/unify.c:290
+#, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr ""
+msgstr "  -u, --unidiffs         pakota tuloste unidiff-muotoihin\n"
 
 #: src/unify.c:291
+#, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr ""
+msgstr "  -U                     sama kuin valitsimet ”-p” ja ”-u”\n"
 
 #: src/unify.c:292
+#, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr ""
+"  -=, --use-equals       korvaa välilyönnit yhtäläisyysmerkeillä\n"
+"                         unidiff-muodoissa\n"
 
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Kun ei ole TIEDOSTOa, tai kun TIEDOSTO on -, lue vakiosyöte.\n"
+msgstr "Jos TIEDOSTOa ei ole määritelty, lue vakiosyötteestä.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -391,7 +429,7 @@ msgid ""
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Tekijänoikeudet © 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1994, 1997 Free Software Foundation, Inc.\n"
 
 #: src/unify.c:411
 msgid ""
@@ -426,12 +464,12 @@ msgstr "Vääränmuotoinen kontekstiero rivillä %ld"
 msgid "context diff missing `new' header at line %ld"
 msgstr "Kontekstiero puuttuu ”uusi”-otsake rivillä %ld"
 
-#: src/wdiff.c:613 src/wdiff.c:732
-#, c-format
+#: src/wdiff.c:606 src/wdiff.c:725
+#, fuzzy, c-format
 msgid "no suitable temporary directory exists"
-msgstr ""
+msgstr "Sopivaa tilapäistä hakemistoa ei ole olemassa"
 
-#: src/wdiff.c:1229 src/wdiff2.c:110
+#: src/wdiff.c:1222 src/wdiff2.c:110
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -448,112 +486,144 @@ msgid ""
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
 "Tämä ohjelma on vapaa ohjelma; voit jakaa sitä edelleen ja/tai muokata\n"
-"sitä Free Software Foundationin GNU General Public-lisenssin ehtojen "
-"mukaisesti;\n"
-"joko version 2 tai (valintasi mukaan) minkä tahansa myöhäisemmän version\n"
-"mukaisesti.\n"
+"sitä Free Software Foundationin GNU General Public-lisenssin ehtojen\n"
+"mukaisesti; joko version 2 tai (valintasi mukaan) minkä tahansa "
+"myöhäisemmän\n"
+"version mukaisesti.\n"
 "\n"
 "Tätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen,\n"
-"mutta ilman mitään takuuta; ilman edes hiljaista takuuta kaupallisesti\n"
-"hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen.\n"
+"mutta ilman mitään takuuta; ilman edes hiljaista takuuta KAUPALLISESTI\n"
+"HYVÄKSYTTÄVÄSTÄ LAADUSTA tai SOVELTUVUUDESTA TIETTYYN TARKOITUKSEEN.\n"
 "Katso GPL-lisenssistä lisää yksityiskohtia.\n"
 "\n"
 "Saat kopion GNU General Public lisenssistä tämän ohjelman mukana;\n"
 "jos näin ei ole, kirjoita osoitteeseen Free Softwware Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 
-#: src/wdiff.c:1257
+#: src/wdiff.c:1250
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Vertailee sanoja kahdessa tiedostossa ja ilmoittaa eroista.\n"
 
-#: src/wdiff.c:1261
+#: src/wdiff.c:1254
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
+"        %s -d [VALITSIN]... [TIEDOSTO]\n"
 
-#: src/wdiff.c:1266 src/wdiff2.c:191
+#: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
+"Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille\n"
+"valitsimille.\n"
 
-#: src/wdiff.c:1269 src/wdiff2.c:194
+#: src/wdiff.c:1262 src/wdiff2.c:194
+#, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr ""
+msgstr "  -C, --copyright            tulosta copyright-ilmoitus ja poistu\n"
 
-#: src/wdiff.c:1270 src/wdiff2.c:195
+#: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 msgstr ""
+"  -K, --no-init-term         kuten -t, mutta ei termcap init/term-"
+"merkkijonoa\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:199
+#: src/wdiff.c:1267 src/wdiff2.c:199
+#, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -a, --auto-pager           kutsu automaattisesti sivuttajaa\n"
 
-#: src/wdiff.c:1275
+#: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1276 src/wdiff2.c:200
+#: src/wdiff.c:1269 src/wdiff2.c:200
+#, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr ""
+msgstr "  -h, --help                 tulosta tämä opaste\n"
 
-#: src/wdiff.c:1277 src/wdiff2.c:201
+#: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
+"  -i, --ignore-case          sekoita pienet ja isot kirjaimet vertailussa\n"
 
-#: src/wdiff.c:1278 src/wdiff2.c:202
+#: src/wdiff.c:1271 src/wdiff2.c:202
+#, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr ""
+"  -l, --less-mode            tulostintilan muunnelma komennolle ”less”\n"
 
-#: src/wdiff.c:1279 src/wdiff2.c:203
+#: src/wdiff.c:1272 src/wdiff2.c:203
+#, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -n, --avoid-wraps          älä laajenna kenttiä rivinvaihtojen yli\n"
 
-#: src/wdiff.c:1280 src/wdiff2.c:204
+#: src/wdiff.c:1273 src/wdiff2.c:204
+#, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -p, --printer              kirjoita päälle kuten tulostimet\n"
 
-#: src/wdiff.c:1281 src/wdiff2.c:206
+#: src/wdiff.c:1274 src/wdiff2.c:206
+#, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
+"  -s, --statistics           kerro kuinka monta sanaa poistettu, lisätty "
+"jne.\n"
 
-#: src/wdiff.c:1282 src/wdiff2.c:207
+#: src/wdiff.c:1275 src/wdiff2.c:207
+#, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -t, --terminal             käytä termcap-asetuksia pääteikkunassa\n"
 
-#: src/wdiff.c:1283 src/wdiff2.c:208
+#: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -v, --version              tulosta ohjelman versio ja poistu\n"
 
-#: src/wdiff.c:1284 src/wdiff2.c:209
+#: src/wdiff.c:1277 src/wdiff2.c:209
+#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 msgstr ""
+"  -w, --start-delete=MJONO   MJONO-merkkijono, joka merkitsee poistoalueen "
+"alun\n"
 
-#: src/wdiff.c:1285 src/wdiff2.c:210
+#: src/wdiff.c:1278 src/wdiff2.c:210
+#, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr ""
+"  -x, --end-delete=MJONO     MJONO-merkkijono, joka merkitsee poistoalueen "
+"lopun\n"
 
-#: src/wdiff.c:1286 src/wdiff2.c:211
+#: src/wdiff.c:1279 src/wdiff2.c:211
+#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr ""
+"  -y, --start-insert=MJONO   MJONO-merkkijono, joka merkitsee lisäysalueen "
+"alun\n"
 
-#: src/wdiff.c:1287 src/wdiff2.c:212
+#: src/wdiff.c:1280 src/wdiff2.c:212
+#, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
+"  -z, --end-insert=MJONO     MJONO-merkkijono, joka merkitsee lisäysalueen "
+"lopun\n"
 
-#: src/wdiff.c:1405
+#: src/wdiff.c:1398
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "Ei voida käyttää valitsinta ”-t”, termcap ei ole käytettävissä."
 
-#: src/wdiff.c:1410
+#: src/wdiff.c:1403
 #, fuzzy
 msgid ""
 "\n"
@@ -561,14 +631,14 @@ msgid ""
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Tekijänoikeudet © 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1458 src/wdiff.c:1476
+#: src/wdiff.c:1451 src/wdiff.c:1469
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Puuttuvat tiedostoargumentit"
 
-#: src/wdiff.c:1471 src/wdiff2.c:323
+#: src/wdiff.c:1464 src/wdiff2.c:323
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Puuttuvat tiedostoargumentit"
@@ -580,169 +650,43 @@ msgid ""
 "Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Tekijänoikeudet © 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1994, 1997 Free Software Foundation, Inc.\n"
 
 #: src/wdiff2.c:182
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
+"wdiff - Laske sanaeroja sisäisesti käynnistämällä ”mdiff -W”.\n"
+"Tämä ohjelma on pääasiassa olemasssa tukemassa vanhentunutta ”wdiff”-"
+"syntaksia.\n"
 
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
+msgstr "Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
+msgstr "  -q, --quiet                estä ”mdiff”-kutsusanoma\n"
 
 #: src/wdiff2.c:214
+#, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
+"Tämä ohjelma kertoo myös kuinka ”mdiff”-ohjelmaa olisi voitu kutsua "
+"suoraan.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335
-#, fuzzy, c-format
+#, c-format
 msgid "Launching `%s"
-msgstr "Luetaan %s"
+msgstr "Käynnistetään ”%s"
 
 #: src/wdiff2.c:338
 #, c-format
 msgid "'\n"
-msgstr ""
-
-#: lib/error.c:153
-msgid "Unknown system error"
-msgstr ""
-
-#: lib/getopt.c:529 lib/getopt.c:545
-#, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:578 lib/getopt.c:582
-#, c-format
-msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:591 lib/getopt.c:596
-#, c-format
-msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, c-format
-msgid "%s: option '%s' requires an argument\n"
-msgstr ""
-
-#: lib/getopt.c:696 lib/getopt.c:699
-#, c-format
-msgid "%s: unrecognized option '--%s'\n"
-msgstr ""
-
-#: lib/getopt.c:707 lib/getopt.c:710
-#, c-format
-msgid "%s: unrecognized option '%c%s'\n"
-msgstr ""
-
-#: lib/getopt.c:759 lib/getopt.c:762
-#, c-format
-msgid "%s: invalid option -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, c-format
-msgid "%s: option requires an argument -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:882 lib/getopt.c:898
-#, c-format
-msgid "%s: option '-W %s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:922 lib/getopt.c:940
-#, c-format
-msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/regcomp.c:132
-msgid "Success"
-msgstr ""
-
-#: lib/regcomp.c:135
-msgid "No match"
-msgstr ""
-
-#: lib/regcomp.c:138
-msgid "Invalid regular expression"
-msgstr ""
-
-#: lib/regcomp.c:141
-msgid "Invalid collation character"
-msgstr ""
-
-#: lib/regcomp.c:144
-msgid "Invalid character class name"
-msgstr ""
-
-#: lib/regcomp.c:147
-msgid "Trailing backslash"
-msgstr ""
-
-#: lib/regcomp.c:150
-msgid "Invalid back reference"
-msgstr ""
-
-#: lib/regcomp.c:153
-msgid "Unmatched [ or [^"
-msgstr ""
-
-#: lib/regcomp.c:156
-msgid "Unmatched ( or \\("
-msgstr ""
-
-#: lib/regcomp.c:159
-msgid "Unmatched \\{"
-msgstr ""
-
-#: lib/regcomp.c:162
-msgid "Invalid content of \\{\\}"
-msgstr ""
-
-#: lib/regcomp.c:165
-msgid "Invalid range end"
-msgstr ""
-
-#: lib/regcomp.c:168
-msgid "Memory exhausted"
-msgstr ""
-
-#: lib/regcomp.c:171
-msgid "Invalid preceding regular expression"
-msgstr ""
-
-#: lib/regcomp.c:174
-msgid "Premature end of regular expression"
-msgstr ""
-
-#: lib/regcomp.c:177
-msgid "Regular expression too big"
-msgstr ""
-
-#: lib/regcomp.c:180
-msgid "Unmatched ) or \\)"
-msgstr ""
-
-#: lib/regcomp.c:701
-msgid "No previous regular expression"
-msgstr ""
-
-#: lib/xalloc-die.c:34
-msgid "memory exhausted"
-msgstr ""
+msgstr "”\n"
 
 #~ msgid ""
 #~ "\n"
@@ -754,10 +698,10 @@ msgstr ""
 #~ msgstr ""
 #~ "\n"
 #~ "Toimintatilat:\n"
-#~ "  -h                     (ei oteta huomioon)\n"
-#~ "  -v, --verbose          raportoi muutamat tilastot vakiovirheeseen\n"
-#~ "      --help             näytä tämän opastetekstin ja poistu\n"
-#~ "      --version          tulosta versiotiedot ja poistu\n"
+#~ "  -h                        (ei oteta huomioon)\n"
+#~ "  -v, --verbose             raportoi muutamat tilastot vakiovirheeseen\n"
+#~ "      --help                näytä tämä opasteteksti ja poistu\n"
+#~ "      --version             tulosta versiotiedot ja poistu\n"
 
 #~ msgid ""
 #~ "\n"
@@ -796,19 +740,18 @@ msgstr ""
 #~ msgstr ""
 #~ "\n"
 #~ "Sanatilavalitsimet:\n"
-#~ "  -1, --no-deleted            estä poistettujen sanojen tulostus\n"
-#~ "  -2, --no-inserted           estä lisättyjen sanojen tulostus\n"
-#~ "  -3, --no-common             estä yhteisten sanojen tulostus\n"
-#~ "  -A, --auto-pager            kutsu automaattisesti sivuttajaa\n"
-#~ "  -k, --less-mode             tulostintilavariaatio kohteelle ”less”\n"
-#~ "  -m, --avoid-wraps           älä laajenna kenttiä uusilla riveillä\n"
-#~ "  -o, --printer               ylikirjoita kuten tulostimille\n"
-#~ "  -z, --terminal              käytä ”termcap”:iä kuten päätenäytöille\n"
-#~ "  -K, --no-init-term          kuten valitsin ”-z”, mutta ei termcap-"
+#~ "  -1, --no-deleted          estä poistettujen sanojen tulostus\n"
+#~ "  -2, --no-inserted         estä lisättyjen sanojen tulostus\n"
+#~ "  -3, --no-common           estä yhteisten sanojen tulostus\n"
+#~ "  -A, --auto-pager          kutsu automaattisesti sivuttajaa\n"
+#~ "  -k, --less-mode           tulostintilavariaatio kohteelle ”less”\n"
+#~ "  -m, --avoid-wraps         älä laajenna kenttiä uusilla riveillä\n"
+#~ "  -o, --printer             ylikirjoita kuten tulostimille\n"
+#~ "  -z, --terminal            käytä ”termcap”:iä kuten päätenäytöille\n"
+#~ "  -K, --no-init-term        kuten valitsin ”-z”, mutta ei termcap-"
 #~ "alustus-/päättymismerkkijonoja\n"
-#~ "  -O, --item-regexp=REGEXP    vertaa alkioita kuten REGEXP on "
-#~ "määritellyt\n"
-#~ "  -W, --word-mode             vertaa sanoja eikä rivejä\n"
+#~ "  -O, --item-regexp=REGEXP  vertaa alkioita kuten REGEXP on määritellyt\n"
+#~ "  -W, --word-mode           vertaa sanoja eikä rivejä\n"
 
 #~ msgid ""
 #~ "\n"
@@ -832,8 +775,8 @@ msgstr ""
 #~ "*  -d, --minimal               yritä kovemmin pienelle muutosjoukolle\n"
 #~ "*  -q, --brief                 sanoo ainoastaan, että tiedostot ovat "
 #~ "erilaisia (binäärioletus)\n"
-#~ "*      --horizon-lines=RIVIÄ   pitää RIVIÄ riviä yhteisissä  prefikseissä/"
-#~ "suffikseissa\n"
+#~ "*      --horizon-lines=RIVIÄ   pitää RIVIÄ riviä yhteisissä etuliitteissä/"
+#~ "jälkiliitteissä\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1255,8 +1198,9 @@ msgstr ""
 #~ "Copyright (C) 1997 Free Software Foundation, Inc.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Tekijänoikeudet © 1997 Free Software Foundation, Inc.\n"
+#~ "Copyright © 1997 Free Software Foundation, Inc.\n"
 
+#  Unified format tai unified context diffs (tai unidiff) on käytetty syötteenä patch-ohjelmalle
 #~ msgid ""
 #~ "\n"
 #~ "  -c, --context-diffs    force output to context diffs\n"
@@ -1274,27 +1218,90 @@ msgstr ""
 #~ "If FILE is not specified, read standard input.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "  -c, --context-diffs    pakota tuloste kontekstieroihin\n"
+#~ "  -c, --context-diffs    pakota tuloste context-diffs-muotoon\n"
 #~ "  -e, --echo-comments    kaiuta kommentit vakiovirheeseen\n"
 #~ "  -o, --old-diffs        tulosta vanhantyyliset erot, ei väliä mitä\n"
 #~ "  -p, --patch-format     luo paikkausmuoto\n"
 #~ "  -P                     sama kuin valistin ”-p”\n"
 #~ "  -s, --strip-comments   riisu kommenttirivit\n"
-#~ "  -u, --unidiffs         pakota tuloste samanlaisiin\n"
+#~ "  -u, --unidiffs         pakota tuloste unidiff-muotoihin\n"
 #~ "  -U                     sama kuin valitsimet ”-p” ja ”-u”\n"
-#~ "  -=, --use-equals       korvaa välilyönnit yhtäläisyysmerkeillä "
-#~ "samanlaisissa\n"
+#~ "  -=, --use-equals       korvaa välilyönnit yhtäläisyysmerkeillä unidiff-"
+#~ "muodoissa\n"
 #~ "      --help             näytä tämä opaste ja poistu\n"
 #~ "      --version          tulosta versiotiedot ja poistu\n"
 #~ "\n"
 #~ "Jos TIEDOSTOa ei ole määritelty, lue vakiosyötteestä.\n"
 
-#, fuzzy
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
 #~ "\n"
 #~ "  -C, --copyright            print copyright then exit\n"
 #~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+#~ "  -1, --no-deleted           inhibit output of deleted words\n"
+#~ "  -2, --no-inserted          inhibit output of inserted words\n"
+#~ "  -3, --no-common            inhibit output of common words\n"
+#~ msgstr ""
+#~ "Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille "
+#~ "valitsimille.\n"
+#~ "\n"
+#~ "  -C, --copyright            tulosta copyright-ilmoitus ja poistu\n"
+#~ "  -K, --no-init-term         kuten -t, mutta ei termcap init/term-"
+#~ "merkkijonoa\n"
+#~ "  -1, --no-deleted           estä poistettujen sanojen tulostus\n"
+#~ "  -2, --no-inserted          estä lisättyjen sanojen tulostus\n"
+#~ "  -3, --no-common            estä yhteisten sanojen tulostus\n"
+
+#~ msgid ""
+#~ "  -a, --auto-pager           automatically calls a pager\n"
+#~ "  -h, --help                 print this help\n"
+#~ "  -i, --ignore-case          fold character case while comparing\n"
+#~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
+#~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
+#~ "  -p, --printer              overstrike as for printers\n"
+#~ msgstr ""
+#~ "  -a, --auto-pager           kutsu automaattisesti sivuttajaa\n"
+#~ "  -h, --help                 tulosta tämä opaste\n"
+#~ "  -i, --ignore-case          sekoita pienet ja isot kirjaimet "
+#~ "vertailussa\n"
+#~ "  -l, --less-mode            tulostintilan muunnelma komennolle ”less”\n"
+#~ "  -n, --avoid-wraps          älä laajenna kenttiä rivinvaihtojen yli\n"
+#~ "  -p, --printer              kirjoita päälle kuten tulostimet\n"
+
+#~ msgid ""
+#~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
+#~ "  -t, --terminal             use termcap as for terminal displays\n"
+#~ "  -v, --version              print program version then exit\n"
+#~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+#~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
+#~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+#~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
+#~ msgstr ""
+#~ "  -s, --statistics           kerro kuinka monta sanaa poistettu, lisätty "
+#~ "jne.\n"
+#~ "  -t, --terminal             käytä termcap-asetuksia pääteikkunassa\n"
+#~ "  -v, --version              tulosta ohjelman versio ja poistu\n"
+#~ "  -w, --start-delete=MJONO   MJONO-merkkijono, joka merkitsee "
+#~ "poistoalueen alun\n"
+#~ "  -x, --end-delete=MJONO     MJONO-merkkijono, joka merkitsee "
+#~ "poistoalueen lopun\n"
+#~ "  -y, --start-insert=MJONO   MJONO-merkkijono, joka merkitsee "
+#~ "lisäysalueen alun\n"
+#~ "  -z, --end-insert=MJONO     MJONO-merkkijono, joka merkitsee "
+#~ "lisäysalueen lopun\n"
+
+#~ msgid "Unknown system error"
+#~ msgstr "Tuntematon järjestelmävirhe"
+
+#~ msgid "memory exhausted"
+#~ msgstr "muisti loppui"
+
+#~ msgid ""
+#~ "Mandatory arguments to long options are mandatory for short options too.\n"
+#~ "\n"
+#~ "  -C, --copyright            print copyright then exit\n"
+#~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+#~ "  -V, --version              print program version then exit\n"
 #~ "  -1, --no-deleted           inhibit output of deleted words\n"
 #~ "  -2, --no-inserted          inhibit output of inserted words\n"
 #~ "  -3, --no-common            inhibit output of common words\n"
@@ -1306,7 +1313,6 @@ msgstr ""
 #~ "  -p, --printer              overstrike as for printers\n"
 #~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
 #~ "  -t, --terminal             use termcap as for terminal displays\n"
-#~ "  -v, --version              print program version then exit\n"
 #~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 #~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
@@ -1340,54 +1346,5 @@ msgstr ""
 #~ "  -z, --end-insert=STRING    merkkijono, joka merkitsee lisäysalueen "
 #~ "lopun\n"
 
-#, fuzzy
-#~ msgid ""
-#~ "Mandatory arguments to long options are mandatory for short options too.\n"
-#~ "\n"
-#~ "  -C, --copyright            print copyright then exit\n"
-#~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-#~ "  -1, --no-deleted           inhibit output of deleted words\n"
-#~ "  -2, --no-inserted          inhibit output of inserted words\n"
-#~ "  -3, --no-common            inhibit output of common words\n"
-#~ "  -a, --auto-pager           automatically calls a pager\n"
-#~ "  -h, --help                 print this help\n"
-#~ "  -i, --ignore-case          fold character case while comparing\n"
-#~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
-#~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
-#~ "  -p, --printer              overstrike as for printers\n"
-#~ "  -q, --quiet                inhibit the `mdiff' call message\n"
-#~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
-#~ "  -t, --terminal             use termcap as for terminal displays\n"
-#~ "  -v, --version              print program version then exit\n"
-#~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-#~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
-#~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-#~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
-#~ msgstr ""
-#~ "Pakolliset argumentit pitkille valitsimille ovat pakollisia myös lyhyille "
-#~ "valitsimille.\n"
-#~ "\n"
-#~ "  -C, --copyright            tulosta tekijänoikeustiedot ja poistu\n"
-#~ "  -K, --no-init-term         kuten valitsin ”-t”, mutta ei termcap "
-#~ "alustus-/päättymismerkkijonoja\n"
-#~ "  -V, --version              tulosta ohjelman versiotiedot ja poistu\n"
-#~ "  -1, --no-deleted           estä poistettujen sanojen tulostus\n"
-#~ "  -2, --no-inserted          estä lisättyjen sanojen tulostus\n"
-#~ "  -3, --no-common            estä yhteisten sanojen tulostus\n"
-#~ "  -a, --auto-pager           kutsuu automaattisesti sivuttajaa\n"
-#~ "  -h, --help                 tulosta tämä opaste\n"
-#~ "  -i, --ignore-case          sekoita kirjainkoko vertailtaessa\n"
-#~ "  -l, --less-mode            tulostintilan variaatio kohteelle ”less”\n"
-#~ "  -n, --avoid-wraps          älä laajenna kentiä uusilla riveillä\n"
-#~ "  -p, --printer              karsi mitä tulee tulostimiin\n"
-#~ "  -s, --statistics           sano kuinka monta sanaa on poistettu, "
-#~ "lisätty jne.\n"
-#~ "  -t, --terminal             käytä termcap mitä tulee päätenäytöille\n"
-#~ "  -w, --start-delete=STRING  merkkijono, joka merkitsee poistoalueen "
-#~ "alun\n"
-#~ "  -x, --end-delete=STRING    merkkijono, joka merkitsee poistoalueen "
-#~ "lopun\n"
-#~ "  -y, --start-insert=STRING  merkkijono, joka merkitsee lisäysalueen "
-#~ "alun\n"
-#~ "  -z, --end-insert=STRING    merkkijono, joka merkitsee lisäysalueen "
-#~ "lopun\n"
+#~ msgid "Launching `%s'\n"
+#~ msgstr "Käynnistetään ”%s”\n"

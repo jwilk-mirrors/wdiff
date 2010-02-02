@@ -1,13 +1,14 @@
 # Wdiff Bahasa Melayu (Malay) (ms).
-# Copyright (C) 2002 Free Software Foundation, Inc.
-# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2002.
+# Copyright (C) 2002, 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the wdiff package.
+# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2002, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5g\n"
+"Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-01-21 22:12+0100\n"
-"PO-Revision-Date: 2002-11-17 22:56GMT+8\n"
+"POT-Creation-Date: 2010-02-01 08:59+0100\n"
+"PO-Revision-Date: 2010-02-01 20:45+0100\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +21,12 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (untuk regexp `%s')"
 
-#: src/mdiff.c:905 src/wdiff.c:1495
+#: src/mdiff.c:905 src/wdiff.c:1488
 #, fuzzy, c-format
 msgid "only one file may be standard input"
 msgstr "Hanya satu fail boleh dijadikan masukan piawai."
 
-#: src/mdiff.c:920 src/wdiff.c:709
+#: src/mdiff.c:920 src/wdiff.c:702
 #, fuzzy, c-format
 msgid "directories not supported"
 msgstr "Direktori tidak disokong"
@@ -75,47 +76,47 @@ msgstr "Ringkasan kerja: %d gugusan, %d ahli\n"
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Ringkasan kerja: %d gugusan, %d ahli, %d bertindih\n"
 
-#: src/mdiff.c:2365 src/wdiff.c:246
+#: src/mdiff.c:2365 src/wdiff.c:242
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "Pilih terminal daripada pembolehubah persekitaran TERM."
 
-#: src/mdiff.c:2368 src/wdiff.c:249
+#: src/mdiff.c:2368 src/wdiff.c:245
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
 msgstr "Tidak dapat mencapai pengkalan data termcap."
 
-#: src/mdiff.c:2370 src/wdiff.c:251
+#: src/mdiff.c:2370 src/wdiff.c:247
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "Jenis terminal `%s' tidak ditakrifkan."
 
-#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d perkataan"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1197 src/wdiff.c:1209
+#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1190 src/wdiff.c:1202
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% biasa"
 
-#: src/mdiff.c:3754 src/wdiff.c:1199
+#: src/mdiff.c:3754 src/wdiff.c:1192
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% dipadam"
 
-#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1201 src/wdiff.c:1213
+#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1194 src/wdiff.c:1206
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% diubah"
 
-#: src/mdiff.c:3766 src/wdiff.c:1211
+#: src/mdiff.c:3766 src/wdiff.c:1204
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% dimasukkan"
 
-#: src/mdiff.c:3795 src/wdiff.c:1253 src/wdiff2.c:178
+#: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Cuba `%s --help' untuk lebih maklumat.\n"
@@ -131,31 +132,36 @@ msgstr ""
 #: src/mdiff.c:3804
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [PILIHAN]... [FAIL]...\n"
+msgstr "Penggunaan: %s [PILIHAN]... [FAIL]...\n"
 
 #: src/mdiff.c:3808
+#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
+"\n"
+"Mod operasi:\n"
 
 #: src/mdiff.c:3809
+#, fuzzy
 msgid "  -h                     (ignored)\n"
-msgstr ""
+msgstr "  -h                     (diabaikan)\n"
 
 #: src/mdiff.c:3810
+#, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
+msgstr "  -v, --verbose          lapor beberapa statistik pada stderr\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
+#, fuzzy
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help             papar bantuan ini dan keluar\n"
 
 #: src/mdiff.c:3812 src/unify.c:294
+#, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version          keluarkan maklumat versi dan keluar\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -163,105 +169,130 @@ msgid ""
 "Formatting output:\n"
 msgstr ""
 
+# ? "  -T, --initial-tab         jadikan tab berbaris dengan menambah awalan tab"
+# ? "  -T, --initial-tab        hasilkan TAB menggantikan ruang permulaan"
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
+# ? "  -l, --paginate            hantar keluaran menerusi `pr' untuk paginate"
+# ? "  -l, --paginate           paginate keluaran menggunakan `pr'"
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
 #: src/mdiff.c:3817
+#, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
+msgstr "  -S, --string[=RENTETAN]  ambil perhatian RENTETAN pengguna lain\n"
 
 #: src/mdiff.c:3818
+#, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr ""
+"  -V, --show-links         berikan rujukan fail dan baris dalam catatan\n"
 
+# ? "  -t, --expand-tabs         kembangkan tab kepada ruang dalam keluaran"
+# ? "  -t, --expand-tabs        tukar tab kepada ruang dalam keluaran"
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
 #: src/mdiff.c:3822
+#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
+"\n"
+"Nyahpepijat:\n"
 
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr ""
-"\n"
-"Nyahpepijat:\n"
 "  -0, --debugging   keluarkan banyak perincian mengenai apa yang berlaku\n"
 
 #: src/mdiff.c:3826
+#, fuzzy
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Pilhan mod perkataan:\n"
 
-#: src/mdiff.c:3827 src/wdiff.c:1271 src/wdiff2.c:196
+#: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
+#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr ""
+msgstr "  -1, --no-deleted           halang keluaran bagi perkataan dipadam\n"
 
-#: src/mdiff.c:3828 src/wdiff.c:1272 src/wdiff2.c:197
+#: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
+#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
+"  -2, --no-inserted          halang keluaran bagi perkataan dimasukkan\n"
 
-#: src/mdiff.c:3829 src/wdiff.c:1273 src/wdiff2.c:198
+#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
+#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr ""
+msgstr "  -3, --no-common            halang keluaran bagi perkataan umum\n"
 
 #: src/mdiff.c:3830
+#, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -A, --auto-pager           panggil pager secara automatik\n"
 
 #: src/mdiff.c:3831
+#, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr ""
+"  -k, --less-mode            variasi untuk mod pencetak bagi \"less\"\n"
 
 #: src/mdiff.c:3832
+#, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -m, --avoid-wraps          jangan sambung medan melalui baris baru\n"
 
 #: src/mdiff.c:3833
+#, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -o, --printer              overstrike seperti untuk pencetak\n"
 
 #: src/mdiff.c:3834
+#, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -z, --terminal             guna termcap sebagai paparan terminal\n"
 
 #: src/mdiff.c:3835
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
 msgstr ""
+"  -K, --no-init-term         seperti -z, tetap tiada termcap init/rentetan\n"
+"                             term\n"
 
 #: src/mdiff.c:3836
+#, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
+"  -O, --item-regexp=REGEXP   banding perkara seperti dinyatakan oleh REGEXP\n"
 
 #: src/mdiff.c:3837
+#, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr ""
+msgstr "  -W, --word-mode            banding perkataan selain daripada baris\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr ""
-"\n"
-"Dengan tiada FAIL, atau apabila FAILE adalah -, baca masukan piawai.\n"
+msgstr "Dengan tiada FAIL, atau apabila FAILE adalah -, baca masukan piawai.\n"
 
-#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1289 src/wdiff2.c:216
+#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr ""
-"\n"
-"Lapor pepijat kepada <wdiff-bugs@iro.umontreal.ca>.\n"
+msgstr "Lapor pepijat kepada <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -287,16 +318,16 @@ msgstr ""
 "\n"
 "Hakcipta (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1415 src/wdiff2.c:134
+#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:134
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
 "Ini adalah perisian bebas; lihat sumber untuk syarat menyalin.  TIADA\n"
-"jaminan disediakan; tidak juga untuk KEBOLEHDAGANGAN atau KEUPAYAAN UNTUK "
+"jaminan disediakan; tidak juga untuk KEBOLEHDAGANGAN atau KEUPAYAAN UNTUK\n"
 "SESUATU TUJUAN KHUSUS.\n"
 
-#: src/mdiff.c:4395 src/wdiff.c:1419 src/wdiff2.c:138
+#: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -326,52 +357,57 @@ msgstr "unify - Mengubah diff konteks kepada unidiff, atau sebaliknya.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [PILIHAN]... [FAIL]\n"
+msgstr "Penggunaan: %s [PILIHAN]... [FAIL]\n"
 
 #: src/unify.c:284
+#, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr ""
+msgstr "  -c, --context-diffs    paksa keluaran ke diff konteks\n"
 
 #: src/unify.c:285
+#, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
+msgstr "  -e, --echo-comments    gema komen ke ralat piawai\n"
 
 #: src/unify.c:286
+#, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
+msgstr "  -o, --old-diffs        keluaran diff gaya-lama, tidak kira apa\n"
 
 #: src/unify.c:287
+#, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr ""
+msgstr "  -p, --patch-format     jana format patch\n"
 
 #: src/unify.c:288
+#, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr ""
+msgstr "  -P                     sama seperti -p\n"
 
 #: src/unify.c:289
+#, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr ""
+msgstr "  -s, --strip-comments   buang baris komen\n"
 
 #: src/unify.c:290
+#, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr ""
+msgstr "  -u, --unidiffs         paksa keluaran ke unidiff\n"
 
 #: src/unify.c:291
+#, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr ""
+msgstr "  -U                     sama seperti -p dan -u\n"
 
 #: src/unify.c:292
+#, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
+msgstr "  -=, --use-equals       ganti ruang dengan tanda sama dalam unidiff\n"
 
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"\n"
-"Dengan tiada FAIL, atau apabila FAILE adalah -, baca masukan piawai.\n"
+msgstr "Jika FAIL tidak dinyatakan, baca masukan piawai.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -424,12 +460,12 @@ msgstr "Diff konteks cacat pada baris %ld"
 msgid "context diff missing `new' header at line %ld"
 msgstr "Diff konteks kehilangan header `new' pada baris %ld"
 
-#: src/wdiff.c:613 src/wdiff.c:732
-#, c-format
+#: src/wdiff.c:606 src/wdiff.c:725
+#, fuzzy, c-format
 msgid "no suitable temporary directory exists"
-msgstr ""
+msgstr "Tiada direktori sementara yang sesuai wujud"
 
-#: src/wdiff.c:1229 src/wdiff2.c:110
+#: src/wdiff.c:1222 src/wdiff2.c:110
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -445,12 +481,10 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"Program ini adalah perisian bebas; anda boleh menyebarkannya dan/atau "
-"mengubahsuainya\n"
-"dibawah syarat-syarat GNU General Public License seperti yang diterbitkan "
-"oleh\n"
-"Free Software Foundation; sama ada versi ke 2, atau (atas pilihan anda)\n"
-"sebarang versi selepasnya.\n"
+"Program ini adalah perisian bebas; anda boleh menyebarkannya dan/atau\n"
+"mengubahsuainya dibawah syarat-syarat GNU General Public License\n"
+"seperti yang diterbitkan oleh Free Software Foundation; sama ada versi\n"
+"ke 2, atau (atas pilihan anda) sebarang versi selepasnya.\n"
 "\n"
 "Program ini diedarkan dengan harapan yang ia mungkin berguna,\n"
 "tetapi TANPA SEBARANG JAMINAN; juga tanpa jaminan terhadap\n"
@@ -459,101 +493,131 @@ msgstr ""
 "\n"
 "Anda seharusnya menerima salinan GNU General Public License\n"
 "bersama program ini; jika tidak, tulis kepada Free Software Foundation,\n"
-"Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 
-#: src/wdiff.c:1257
+#: src/wdiff.c:1250
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr ""
 "wdiff - Membandingkan perkataan dalam dua fail dan melaporkan perbezaan.\n"
 
-#: src/wdiff.c:1261
+#: src/wdiff.c:1254
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"\n"
 "Penggunaan: %s [PILIHAN]... FAIL1 FAIL2\n"
+"            %s -d [PILIHAN]... [FAIL]\n"
 
-#: src/wdiff.c:1266 src/wdiff2.c:191
+#: src/wdiff.c:1259 src/wdiff2.c:191
+#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
+"Hujah wajib kepada pilihan panjang adalah wajib kepada pilihan pendek juga.\n"
 
-#: src/wdiff.c:1269 src/wdiff2.c:194
+#: src/wdiff.c:1262 src/wdiff2.c:194
+#, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr ""
+msgstr "  -C, --copyright            papr hakcipta kemudian keluar\n"
 
-#: src/wdiff.c:1270 src/wdiff2.c:195
+#: src/wdiff.c:1263 src/wdiff2.c:195
+#, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 msgstr ""
+"  -K, --no-init-term         sepert -t, tetapi tiada rentetan termcap init/"
+"term\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:199
+#: src/wdiff.c:1267 src/wdiff2.c:199
+#, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr ""
+msgstr "  -a, --auto-pager           memanggil pager secara automatik\n"
 
-#: src/wdiff.c:1275
+#: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1276 src/wdiff2.c:200
+#: src/wdiff.c:1269 src/wdiff2.c:200
+#, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr ""
+msgstr "  -h, --help                 papar bantuan ini\n"
 
-#: src/wdiff.c:1277 src/wdiff2.c:201
+#: src/wdiff.c:1270 src/wdiff2.c:201
+#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case          abai bentuk aksara ketika membeza\n"
 
-#: src/wdiff.c:1278 src/wdiff2.c:202
+#: src/wdiff.c:1271 src/wdiff2.c:202
+#, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
+msgstr "  -l, --less-mode            variasi mod pencetak untuk \"less\"\n"
 
-#: src/wdiff.c:1279 src/wdiff2.c:203
+#: src/wdiff.c:1272 src/wdiff2.c:203
+#, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
+msgstr "  -n, --avoid-wraps          jangan sambung medan melalui baris baru\n"
 
-#: src/wdiff.c:1280 src/wdiff2.c:204
+#: src/wdiff.c:1273 src/wdiff2.c:204
+#, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr ""
+msgstr "  -p, --printer              overstrike seperti untuk pencetak\n"
 
-#: src/wdiff.c:1281 src/wdiff2.c:206
+#: src/wdiff.c:1274 src/wdiff2.c:206
+#, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
+"  -s, --statistics           papar berapa banyak perkataan dipadam, "
+"dimasukkan\n"
+"                             dsb.\n"
 
-#: src/wdiff.c:1282 src/wdiff2.c:207
+#: src/wdiff.c:1275 src/wdiff2.c:207
+#, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
+msgstr "  -t, --terminal             guna termcap sebagai paparan terminal\n"
 
-#: src/wdiff.c:1283 src/wdiff2.c:208
+#: src/wdiff.c:1276 src/wdiff2.c:208
+#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
+msgstr "  -v, --version              papar versi program kemudian keluar\n"
 
-#: src/wdiff.c:1284 src/wdiff2.c:209
+#: src/wdiff.c:1277 src/wdiff2.c:209
+#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 msgstr ""
+"  -w, --start-delete=STRING  rentetan untuk menanda permulaan kawasan "
+"pemadaman\n"
 
-#: src/wdiff.c:1285 src/wdiff2.c:210
+#: src/wdiff.c:1278 src/wdiff2.c:210
+#, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr ""
+"  -x, --end-delete=STRING    rentetan untuk menanda pengakhiran kawasan\n"
+"                             pemadaman\n"
 
-#: src/wdiff.c:1286 src/wdiff2.c:211
+#: src/wdiff.c:1279 src/wdiff2.c:211
+#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr ""
+"  -y, --start-insert=STRING  rentetan untuk menanda permulaan kawasan "
+"masukan\n"
 
-#: src/wdiff.c:1287 src/wdiff2.c:212
+#: src/wdiff.c:1280 src/wdiff2.c:212
+#, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
+"  -z, --end-insert=STRING    rentetan untuk menanda pengakhiran kawasan "
+"masukan\n"
 
-#: src/wdiff.c:1405
+#: src/wdiff.c:1398
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "Tidak boleh menggunakan -t, termcap tiada."
 
-#: src/wdiff.c:1410
+#: src/wdiff.c:1403
 #, fuzzy
 msgid ""
 "\n"
@@ -563,12 +627,12 @@ msgstr ""
 "\n"
 "Hakcipta (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1458 src/wdiff.c:1476
+#: src/wdiff.c:1451 src/wdiff.c:1469
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Hujah fail tiada"
 
-#: src/wdiff.c:1471 src/wdiff2.c:323
+#: src/wdiff.c:1464 src/wdiff2.c:323
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Hujah fail tiada"
@@ -587,162 +651,36 @@ msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
+"wdiff - Hitung perbezaan perkataan dengan melancarkan secara dalaman\n"
+"`mdiff -W'.\n"
+"Program ini wujud terutamanya untuk menyokong sintaks lama `wdiff'.\n"
 
 #: src/wdiff2.c:187
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr ""
-"\n"
-"Penggunaan: %s [PILIHAN]... FAIL1 FAIL2\n"
+msgstr "Penggunaan: %s [PILIHAN]... FAIL1 FAIL2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
+msgstr "  -q, --quiet                halang mesej panggilan `mdiff'\n"
 
 #: src/wdiff2.c:214
+#, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
+"Program ini juga memberitahu bagaimana `mdiff' boleh dipanggil secara "
+"terus.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335
-#, fuzzy, c-format
+#, c-format
 msgid "Launching `%s"
-msgstr "Membaca %s"
+msgstr "Melaksana `%s"
 
 #: src/wdiff2.c:338
 #, c-format
 msgid "'\n"
-msgstr ""
-
-#: lib/error.c:153
-msgid "Unknown system error"
-msgstr ""
-
-#: lib/getopt.c:529 lib/getopt.c:545
-#, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:578 lib/getopt.c:582
-#, c-format
-msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:591 lib/getopt.c:596
-#, c-format
-msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, c-format
-msgid "%s: option '%s' requires an argument\n"
-msgstr ""
-
-#: lib/getopt.c:696 lib/getopt.c:699
-#, c-format
-msgid "%s: unrecognized option '--%s'\n"
-msgstr ""
-
-#: lib/getopt.c:707 lib/getopt.c:710
-#, c-format
-msgid "%s: unrecognized option '%c%s'\n"
-msgstr ""
-
-#: lib/getopt.c:759 lib/getopt.c:762
-#, c-format
-msgid "%s: invalid option -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, c-format
-msgid "%s: option requires an argument -- '%c'\n"
-msgstr ""
-
-#: lib/getopt.c:882 lib/getopt.c:898
-#, c-format
-msgid "%s: option '-W %s' is ambiguous\n"
-msgstr ""
-
-#: lib/getopt.c:922 lib/getopt.c:940
-#, c-format
-msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/regcomp.c:132
-msgid "Success"
-msgstr ""
-
-#: lib/regcomp.c:135
-msgid "No match"
-msgstr ""
-
-#: lib/regcomp.c:138
-msgid "Invalid regular expression"
-msgstr ""
-
-#: lib/regcomp.c:141
-msgid "Invalid collation character"
-msgstr ""
-
-#: lib/regcomp.c:144
-msgid "Invalid character class name"
-msgstr ""
-
-#: lib/regcomp.c:147
-msgid "Trailing backslash"
-msgstr ""
-
-#: lib/regcomp.c:150
-msgid "Invalid back reference"
-msgstr ""
-
-#: lib/regcomp.c:153
-msgid "Unmatched [ or [^"
-msgstr ""
-
-#: lib/regcomp.c:156
-msgid "Unmatched ( or \\("
-msgstr ""
-
-#: lib/regcomp.c:159
-msgid "Unmatched \\{"
-msgstr ""
-
-#: lib/regcomp.c:162
-msgid "Invalid content of \\{\\}"
-msgstr ""
-
-#: lib/regcomp.c:165
-msgid "Invalid range end"
-msgstr ""
-
-#: lib/regcomp.c:168
-msgid "Memory exhausted"
-msgstr ""
-
-#: lib/regcomp.c:171
-msgid "Invalid preceding regular expression"
-msgstr ""
-
-#: lib/regcomp.c:174
-msgid "Premature end of regular expression"
-msgstr ""
-
-#: lib/regcomp.c:177
-msgid "Regular expression too big"
-msgstr ""
-
-#: lib/regcomp.c:180
-msgid "Unmatched ) or \\)"
-msgstr ""
-
-#: lib/regcomp.c:701
-msgid "No previous regular expression"
-msgstr ""
-
-#: lib/xalloc-die.c:34
-msgid "memory exhausted"
-msgstr ""
+msgstr "'\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1266,7 +1204,6 @@ msgstr ""
 #~ "\n"
 #~ "Jika FAIL tidak dinyatakan, baca masukan piawai.\n"
 
-#, fuzzy
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
 #~ "\n"
@@ -1275,64 +1212,33 @@ msgstr ""
 #~ "  -1, --no-deleted           inhibit output of deleted words\n"
 #~ "  -2, --no-inserted          inhibit output of inserted words\n"
 #~ "  -3, --no-common            inhibit output of common words\n"
-#~ "  -a, --auto-pager           automatically calls a pager\n"
-#~ "  -h, --help                 print this help\n"
-#~ "  -i, --ignore-case          fold character case while comparing\n"
-#~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
-#~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
-#~ "  -p, --printer              overstrike as for printers\n"
-#~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
-#~ "  -t, --terminal             use termcap as for terminal displays\n"
-#~ "  -v, --version              print program version then exit\n"
-#~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-#~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
-#~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-#~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Hujah mandatori kepada pilihan panjang adalah mandatori untuk pilihan "
-#~ "pendek juga.\n"
+#~ "Hujah wajib kepada pilihan panjang adalah wajib kepada pilihan pendek "
+#~ "juga.\n"
 #~ "\n"
-#~ "  -C, --copyright              cetak hakcipta kemudian keluar\n"
-#~ "  -K, --no-init-term           seperti -t, tetapi tiada termcap init/"
-#~ "rentetan term\n"
-#~ "  -V, --version                cetak versi program kemudian keluar\n"
-#~ "  -1, --no-deleted             halang keluaran perkataan dipadam\n"
-#~ "  -2, --no-inserted            halang keluaran perkataan dimasukkan\n"
-#~ "  -3, --no-common              halang keluaran perkataan yang sama\n"
-#~ "  -a, --auto-pager             panggil pager secara automatik\n"
-#~ "  -h, --help                   cetak bantuan ini\n"
-#~ "  -i, --ignore-case            abai case aksara ketika membanding\n"
-#~ "  -l, --less-mode              variasi mod pencetak untuk \"less\"\n"
-#~ "  -n, --avoid-wraps            jangan sambung medan menerusi barisbaru\n"
-#~ "  -p, --printer                overstrike seperti untuk pencetak\n"
-#~ "  -s, --statistics             nyatakan jumlah perkataan dipadam, "
-#~ "dimasukkan dsb.\n"
-#~ "  -t, --terminal               guna termcap sebagai paparan terminal\n"
-#~ "  -w, --start-delete=RENTETAN  rentetan untuk menanda permulaan bahagian "
-#~ "dipadam\n"
-#~ "  -x, --end-delete=RENTETAN    rentetan untuk menanda penamat bahagian "
-#~ "dipadam\n"
-#~ "  -y, --start-insert=RENTETAN  rentetan untuk menanda permulaan bahagian "
-#~ "dimasukkan\n"
-#~ "  -z, --end-insert=RENTETAN    rentetan untuk menanda penamat bahagian "
-#~ "dimasukkan\n"
+#~ "  -C, --copyright            papr hakcipta kemudian keluar\n"
+#~ "  -K, --no-init-term         sepert -t, tetapi tiada rentetan termcap "
+#~ "init/term\n"
+#~ "  -1, --no-deleted           halang keluaran bagi perkataan dipadam\n"
+#~ "  -2, --no-inserted          halang keluaran bagi perkataan dimasukkan\n"
+#~ "  -3, --no-common            halang keluaran bagi perkataan umum\n"
 
-#, fuzzy
 #~ msgid ""
-#~ "Mandatory arguments to long options are mandatory for short options too.\n"
-#~ "\n"
-#~ "  -C, --copyright            print copyright then exit\n"
-#~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-#~ "  -1, --no-deleted           inhibit output of deleted words\n"
-#~ "  -2, --no-inserted          inhibit output of inserted words\n"
-#~ "  -3, --no-common            inhibit output of common words\n"
 #~ "  -a, --auto-pager           automatically calls a pager\n"
 #~ "  -h, --help                 print this help\n"
 #~ "  -i, --ignore-case          fold character case while comparing\n"
 #~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
 #~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
 #~ "  -p, --printer              overstrike as for printers\n"
-#~ "  -q, --quiet                inhibit the `mdiff' call message\n"
+#~ msgstr ""
+#~ "  -a, --auto-pager           memanggil pager secara automatik\n"
+#~ "  -h, --help                 papar bantuan ini\n"
+#~ "  -i, --ignore-case          abai bentuk aksara ketika membeza\n"
+#~ "  -l, --less-mode            variasi mod pencetak untuk \"less\"\n"
+#~ "  -n, --avoid-wraps          jangan sambung medan melalui baris baru\n"
+#~ "  -p, --printer              overstrike seperti untuk pencetak\n"
+
+#~ msgid ""
 #~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
 #~ "  -t, --terminal             use termcap as for terminal displays\n"
 #~ "  -v, --version              print program version then exit\n"
@@ -1341,30 +1247,21 @@ msgstr ""
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 #~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Hujah mandatori kepada pilihan panjang adalah mandatori untuk pilihan "
-#~ "pendek juga.\n"
-#~ "\n"
-#~ "  -C, --copyright              cetak hakcipta kemudian keluar\n"
-#~ "  -K, --no-init-term           seperti -t, tetapi tiada termcap init/"
-#~ "rentetan term\n"
-#~ "  -V, --version                cetak versi program kemudian keluar\n"
-#~ "  -1, --no-deleted             halang keluaran perkataan dipadam\n"
-#~ "  -2, --no-inserted            halang keluaran perkataan dimasukkan\n"
-#~ "  -3, --no-common              halang keluaran perkataan yang sama\n"
-#~ "  -a, --auto-pager             panggil pager secara automatik\n"
-#~ "  -h, --help                   cetak bantuan ini\n"
-#~ "  -i, --ignore-case            abai case aksara ketika membanding\n"
-#~ "  -l, --less-mode              variasi mod pencetak untuk \"less\"\n"
-#~ "  -n, --avoid-wraps            jangan sambung medan menerusi barisbaru\n"
-#~ "  -p, --printer                overstrike seperti untuk pencetak\n"
-#~ "  -s, --statistics             nyatakan jumlah perkataan dipadam, "
+#~ "  -s, --statistics           papar berapa banyak perkataan dipadam, "
 #~ "dimasukkan dsb.\n"
-#~ "  -t, --terminal               guna termcap sebagai paparan terminal\n"
-#~ "  -w, --start-delete=RENTETAN  rentetan untuk menanda permulaan bahagian "
-#~ "dipadam\n"
-#~ "  -x, --end-delete=RENTETAN    rentetan untuk menanda penamat bahagian "
-#~ "dipadam\n"
-#~ "  -y, --start-insert=RENTETAN  rentetan untuk menanda permulaan bahagian "
-#~ "dimasukkan\n"
-#~ "  -z, --end-insert=RENTETAN    rentetan untuk menanda penamat bahagian "
-#~ "dimasukkan\n"
+#~ "  -t, --terminal             guna termcap sebagai paparan terminal\n"
+#~ "  -v, --version              papar versi program kemudian keluar\n"
+#~ "  -w, --start-delete=STRING  rentetan untuk menanda permulaan kawasan "
+#~ "pemadaman\n"
+#~ "  -x, --end-delete=STRING    rentetan untuk menanda pengakhiran kawasan "
+#~ "pemadaman\n"
+#~ "  -y, --start-insert=STRING  rentetan untuk menanda permulaan kawasan "
+#~ "masukan\n"
+#~ "  -z, --end-insert=STRING    rentetan untuk menanda pengakhiran kawasan "
+#~ "masukan\n"
+
+#~ msgid "Unknown system error"
+#~ msgstr "Ralat sistem tidak diketahui"
+
+#~ msgid "memory exhausted"
+#~ msgstr "kehabisan memori"
