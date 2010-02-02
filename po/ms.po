@@ -190,7 +190,8 @@ msgstr "  -S, --string[=RENTETAN]  ambil perhatian RENTETAN pengguna lain\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links         berikan rujukan fail dan baris dalam catatan\n"
+msgstr ""
+"  -V, --show-links         berikan rujukan fail dan baris dalam catatan\n"
 
 # ? "  -t, --expand-tabs         kembangkan tab kepada ruang dalam keluaran"
 # ? "  -t, --expand-tabs        tukar tab kepada ruang dalam keluaran"
@@ -210,7 +211,8 @@ msgstr ""
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr "  -0, --debugging   keluarkan banyak perincian mengenai apa yang berlaku\n"
+msgstr ""
+"  -0, --debugging   keluarkan banyak perincian mengenai apa yang berlaku\n"
 
 #: src/mdiff.c:3826
 #, fuzzy
@@ -229,7 +231,8 @@ msgstr "  -1, --no-deleted           halang keluaran bagi perkataan dipadam\n"
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          halang keluaran bagi perkataan dimasukkan\n"
+msgstr ""
+"  -2, --no-inserted          halang keluaran bagi perkataan dimasukkan\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
@@ -244,7 +247,8 @@ msgstr "  -A, --auto-pager           panggil pager secara automatik\n"
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode            variasi untuk mod pencetak bagi \"less\"\n"
+msgstr ""
+"  -k, --less-mode            variasi untuk mod pencetak bagi \"less\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
@@ -272,7 +276,8 @@ msgstr ""
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP   banding perkara seperti dinyatakan oleh REGEXP\n"
+msgstr ""
+"  -O, --item-regexp=REGEXP   banding perkara seperti dinyatakan oleh REGEXP\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -508,7 +513,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Hujah wajib kepada pilihan panjang adalah wajib kepada pilihan pendek juga.\n"
+msgstr ""
+"Hujah wajib kepada pilihan panjang adalah wajib kepada pilihan pendek juga.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -519,7 +525,9 @@ msgstr "  -C, --copyright            papr hakcipta kemudian keluar\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         sepert -t, tetapi tiada rentetan termcap init/term\n"
+msgstr ""
+"  -K, --no-init-term         sepert -t, tetapi tiada rentetan termcap init/"
+"term\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -560,7 +568,8 @@ msgstr "  -p, --printer              overstrike seperti untuk pencetak\n"
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
-"  -s, --statistics           papar berapa banyak perkataan dipadam, dimasukkan\n"
+"  -s, --statistics           papar berapa banyak perkataan dipadam, "
+"dimasukkan\n"
 "                             dsb.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
@@ -577,7 +586,9 @@ msgstr "  -v, --version              papar versi program kemudian keluar\n"
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  rentetan untuk menanda permulaan kawasan pemadaman\n"
+msgstr ""
+"  -w, --start-delete=STRING  rentetan untuk menanda permulaan kawasan "
+"pemadaman\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
@@ -590,12 +601,16 @@ msgstr ""
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  rentetan untuk menanda permulaan kawasan masukan\n"
+msgstr ""
+"  -y, --start-insert=STRING  rentetan untuk menanda permulaan kawasan "
+"masukan\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING    rentetan untuk menanda pengakhiran kawasan masukan\n"
+msgstr ""
+"  -z, --end-insert=STRING    rentetan untuk menanda pengakhiran kawasan "
+"masukan\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format
@@ -652,7 +667,9 @@ msgstr "  -q, --quiet                halang mesej panggilan `mdiff'\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Program ini juga memberitahu bagaimana `mdiff' boleh dipanggil secara terus.\n"
+msgstr ""
+"Program ini juga memberitahu bagaimana `mdiff' boleh dipanggil secara "
+"terus.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

@@ -170,7 +170,8 @@ msgstr ""
 #: src/mdiff.c:3815
 #, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr "  -T, --initial-tab      geen spatie maar TAB als eerste teken gebruiken\n"
+msgstr ""
+"  -T, --initial-tab      geen spatie maar TAB als eerste teken gebruiken\n"
 
 #: src/mdiff.c:3816
 #, fuzzy
@@ -185,7 +186,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links       bestandsnamen en regelnummers toevoegen in notities\n"
+msgstr ""
+"  -V, --show-links       bestandsnamen en regelnummers toevoegen in "
+"notities\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -225,7 +228,8 @@ msgstr "  -2, --no-inserted          ingevoegde woorden niet weergeven\n"
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            gemeenschappelijke woorden niet weergeven\n"
+msgstr ""
+"  -3, --no-common            gemeenschappelijke woorden niet weergeven\n"
 
 #: src/mdiff.c:3830
 #, fuzzy
@@ -240,7 +244,8 @@ msgstr "  -k, --less-mode            uitvoermodus voor 'less'\n"
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
+msgstr ""
+"  -m, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
@@ -250,23 +255,28 @@ msgstr "  -o, --printer              'overstrike' gebruiken als bij printers\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             'termcap' gebruiken als voor een terminal\n"
+msgstr ""
+"  -z, --terminal             'termcap' gebruiken als voor een terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         als '-z', maar zonder 'init'- of 'term'-reeksen\n"
+msgstr ""
+"  -K, --no-init-term         als '-z', maar zonder 'init'- of 'term'-"
+"reeksen\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REG.EXP. items vergelijken volgens deze expressie\n"
+msgstr ""
+"  -O, --item-regexp=REG.EXP. items vergelijken volgens deze expressie\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode            woorden in plaats van regels vergelijken\n"
+msgstr ""
+"  -W, --word-mode            woorden in plaats van regels vergelijken\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
@@ -357,7 +367,8 @@ msgstr "  -c, --context-diffs    als uitvoer context-diffs produceren\n"
 #: src/unify.c:285
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    commentaar echoën via standaardfoutenuitvoer\n"
+msgstr ""
+"  -e, --echo-comments    commentaar echoën via standaardfoutenuitvoer\n"
 
 #: src/unify.c:286
 #, fuzzy
@@ -392,7 +403,8 @@ msgstr "  -U                     hetzelfde als '-p' en '-u' samen\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       in uni-diffs spaties vervangen door gelijktekens\n"
+msgstr ""
+"  -=, --use-equals       in uni-diffs spaties vervangen door gelijktekens\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -515,7 +527,9 @@ msgstr "  -C, --copyright            auteursrecht tonen en stoppen\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         als '-t', maar zonder 'init'- of 'term'-reeksen\n"
+msgstr ""
+"  -K, --no-init-term         als '-t', maar zonder 'init'- of 'term'-"
+"reeksen\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -534,7 +548,9 @@ msgstr "  -h, --help                 deze hulptekst tonen en stoppen\n"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          verschil tussen hoofd- en kleine letters negeren\n"
+msgstr ""
+"  -i, --ignore-case          verschil tussen hoofd- en kleine letters "
+"negeren\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -544,7 +560,8 @@ msgstr "  -l, --less-mode            uitvoermodus voor 'less'\n"
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
+msgstr ""
+"  -n, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
@@ -555,12 +572,14 @@ msgstr "  -p, --printer              'overstrike' gebruiken als bij printers\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           aantal verwijderingen, invoegingen, enz. tonen\n"
+msgstr ""
+"  -s, --statistics           aantal verwijderingen, invoegingen, enz. tonen\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             'termcap' gebruiken als voor een terminal\n"
+msgstr ""
+"  -t, --terminal             'termcap' gebruiken als voor een terminal\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 msgid "  -v, --version              display program version then exit\n"
@@ -570,12 +589,14 @@ msgstr ""
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  markering voor begin van verwijderd stuk\n"
+msgstr ""
+"  -w, --start-delete=STRING  markering voor begin van verwijderd stuk\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    markering voor einde van verwijderd stuk\n"
+msgstr ""
+"  -x, --end-delete=STRING    markering voor einde van verwijderd stuk\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
@@ -643,7 +664,8 @@ msgstr "  -q, --quiet                het 'mdiff'-aanroepbericht inderdrukken\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Dit programma zegt ook hoe 'mdiff' direct aangeroepen had kunnen worden.\n"
+msgstr ""
+"Dit programma zegt ook hoe 'mdiff' direct aangeroepen had kunnen worden.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

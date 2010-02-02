@@ -193,7 +193,8 @@ msgstr "  -S, --string[=MERKKIJONO] ota huomioon toinen käyttäjäMERKKIJONO\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links          anna tiedosto- ja riviviitteet annotaatioissa\n"
+msgstr ""
+"  -V, --show-links          anna tiedosto- ja riviviitteet annotaatioissa\n"
 
 # ? "  -t, --expand-tabs             laajenna sarakainmerkit välilyönneiksi tulosteessa"
 # ? "  -t, --expand-tabs         laajenna sarkainmerkit välilyönneiksi tulosteessa"
@@ -213,7 +214,8 @@ msgstr ""
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr "  -0, --debugging           tulosta monia yksityiskohtia tapahtumakulusta\n"
+msgstr ""
+"  -0, --debugging           tulosta monia yksityiskohtia tapahtumakulusta\n"
 
 #: src/mdiff.c:3826
 #, fuzzy
@@ -268,12 +270,15 @@ msgstr "  -z, --terminal             käytä ”termcap”:iä kuten päätenäy
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         kuten -z, mutta ei termcap init/term-merkkijonoa\n"
+msgstr ""
+"  -K, --no-init-term         kuten -z, mutta ei termcap init/term-"
+"merkkijonoa\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP   vertaa alkioita kuten REGEXP on määritellyt\n"
+msgstr ""
+"  -O, --item-regexp=REGEXP   vertaa alkioita kuten REGEXP on määritellyt\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -482,7 +487,8 @@ msgid ""
 msgstr ""
 "Tämä ohjelma on vapaa ohjelma; voit jakaa sitä edelleen ja/tai muokata\n"
 "sitä Free Software Foundationin GNU General Public-lisenssin ehtojen\n"
-"mukaisesti; joko version 2 tai (valintasi mukaan) minkä tahansa myöhäisemmän\n"
+"mukaisesti; joko version 2 tai (valintasi mukaan) minkä tahansa "
+"myöhäisemmän\n"
 "version mukaisesti.\n"
 "\n"
 "Tätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen,\n"
@@ -524,7 +530,9 @@ msgstr "  -C, --copyright            tulosta copyright-ilmoitus ja poistu\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         kuten -t, mutta ei termcap init/term-merkkijonoa\n"
+msgstr ""
+"  -K, --no-init-term         kuten -t, mutta ei termcap init/term-"
+"merkkijonoa\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -543,12 +551,14 @@ msgstr "  -h, --help                 tulosta tämä opaste\n"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          sekoita pienet ja isot kirjaimet vertailussa\n"
+msgstr ""
+"  -i, --ignore-case          sekoita pienet ja isot kirjaimet vertailussa\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            tulostintilan muunnelma komennolle ”less”\n"
+msgstr ""
+"  -l, --less-mode            tulostintilan muunnelma komennolle ”less”\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
@@ -564,7 +574,9 @@ msgstr "  -p, --printer              kirjoita päälle kuten tulostimet\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           kerro kuinka monta sanaa poistettu, lisätty jne.\n"
+msgstr ""
+"  -s, --statistics           kerro kuinka monta sanaa poistettu, lisätty "
+"jne.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
@@ -580,23 +592,31 @@ msgstr "  -v, --version              tulosta ohjelman versio ja poistu\n"
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=MJONO   MJONO-merkkijono, joka merkitsee poistoalueen alun\n"
+msgstr ""
+"  -w, --start-delete=MJONO   MJONO-merkkijono, joka merkitsee poistoalueen "
+"alun\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=MJONO     MJONO-merkkijono, joka merkitsee poistoalueen lopun\n"
+msgstr ""
+"  -x, --end-delete=MJONO     MJONO-merkkijono, joka merkitsee poistoalueen "
+"lopun\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=MJONO   MJONO-merkkijono, joka merkitsee lisäysalueen alun\n"
+msgstr ""
+"  -y, --start-insert=MJONO   MJONO-merkkijono, joka merkitsee lisäysalueen "
+"alun\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=MJONO     MJONO-merkkijono, joka merkitsee lisäysalueen lopun\n"
+msgstr ""
+"  -z, --end-insert=MJONO     MJONO-merkkijono, joka merkitsee lisäysalueen "
+"lopun\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format
@@ -653,7 +673,9 @@ msgstr "  -q, --quiet                estä ”mdiff”-kutsusanoma\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Tämä ohjelma kertoo myös kuinka ”mdiff”-ohjelmaa olisi voitu kutsua suoraan.\n"
+msgstr ""
+"Tämä ohjelma kertoo myös kuinka ”mdiff”-ohjelmaa olisi voitu kutsua "
+"suoraan.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

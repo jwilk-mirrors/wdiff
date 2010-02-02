@@ -182,7 +182,9 @@ msgstr "  -h                     (sin efecto)\n"
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose          da algunas estadísticas en la salida de error estándar\n"
+msgstr ""
+"  -v, --verbose          da algunas estadísticas en la salida de error "
+"estándar\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 #, fuzzy
@@ -221,7 +223,9 @@ msgstr "  -S, --string[=CADENA]   toma nota de otra CADENA de usuario\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        da referencias de fichero y línea en las anotaciones\n"
+msgstr ""
+"  -V, --show-links        da referencias de fichero y línea en las "
+"anotaciones\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -271,30 +275,36 @@ msgstr "  -A, --auto-pager           llama a un paginador automáticamente\n"
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode            variante del modo de impresión para \"less\"\n"
+msgstr ""
+"  -k, --less-mode            variante del modo de impresión para \"less\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
-"  -m, --avoid-wraps          impide que los campos se extiendan más allá del\n"
+"  -m, --avoid-wraps          impide que los campos se extiendan más allá "
+"del\n"
 "                             final de línea\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer              utiliza sobreimpresión como en las impresoras\n"
+msgstr ""
+"  -o, --printer              utiliza sobreimpresión como en las impresoras\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             utiliza termcap para mostrar por terminal\n"
+msgstr ""
+"  -z, --terminal             utiliza termcap para mostrar por terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         como -z, pero sin cadenas de inicio/fin de termcap\n"
+msgstr ""
+"  -K, --no-init-term         como -z, pero sin cadenas de inicio/fin de "
+"termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -396,12 +406,15 @@ msgstr "  -c, --context-diffs    genera el resultado como diffs de contexto\n"
 #: src/unify.c:285
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    repite los comentarios por la salida de error estándar\n"
+msgstr ""
+"  -e, --echo-comments    repite los comentarios por la salida de error "
+"estándar\n"
 
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        muestra diffs al viejo estilo, pase lo que pase\n"
+msgstr ""
+"  -o, --old-diffs        muestra diffs al viejo estilo, pase lo que pase\n"
 
 #: src/unify.c:287
 #, fuzzy
@@ -588,37 +601,43 @@ msgstr ""
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            variación del modo de impresión para \"less\"\n"
+msgstr ""
+"  -l, --less-mode            variación del modo de impresión para \"less\"\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
-"  -n, --avoid-wraps          impide que los campos se extiendan más allá del\n"
+"  -n, --avoid-wraps          impide que los campos se extiendan más allá "
+"del\n"
 "                             final de línea\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              utiliza sobreimpresión como en las impresoras\n"
+msgstr ""
+"  -p, --printer              utiliza sobreimpresión como en las impresoras\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
-"  -s, --statistics           indica cuántas palabras hay borradas, insertadas\n"
+"  -s, --statistics           indica cuántas palabras hay borradas, "
+"insertadas\n"
 "                             y comunes\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             utiliza termcap para mostrar por terminal\n"
+msgstr ""
+"  -t, --terminal             utiliza termcap para mostrar por terminal\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version              muestra la versión del programa y finaliza\n"
+msgstr ""
+"  -V, --version              muestra la versión del programa y finaliza\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -631,7 +650,9 @@ msgstr ""
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=CADENA    cadena para marcar el final de la región borrada\n"
+msgstr ""
+"  -x, --end-delete=CADENA    cadena para marcar el final de la región "
+"borrada\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy

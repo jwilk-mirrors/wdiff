@@ -151,7 +151,8 @@ msgstr "  -h                      (ignorerad)\n"
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose           rapportera en del statistik på standard fel\n"
+msgstr ""
+"  -v, --verbose           rapportera en del statistik på standard fel\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 #, fuzzy
@@ -178,7 +179,8 @@ msgstr ""
 #: src/mdiff.c:3816
 #, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr "  -l, --paginate          skicka resultatet genom \"pr\" för sidindelning\n"
+msgstr ""
+"  -l, --paginate          skicka resultatet genom \"pr\" för sidindelning\n"
 
 #: src/mdiff.c:3817
 #, fuzzy
@@ -194,7 +196,8 @@ msgstr "  -V, --show-links        ange fil- och radreferenser i annoteringar\n"
 #: src/mdiff.c:3819
 #, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       ersätt tabulatortecken med mellanslag i reultatet\n"
+msgstr ""
+"  -t, --expand-tabs       ersätt tabulatortecken med mellanslag i reultatet\n"
 
 #: src/mdiff.c:3822
 #, fuzzy
@@ -263,7 +266,8 @@ msgstr "  -z, --terminal             använd termcap för att markera ord\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         som -z, men inga termcap-start/slutsträngar\n"
+msgstr ""
+"  -K, --no-init-term         som -z, men inga termcap-start/slutsträngar\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -285,7 +289,8 @@ msgstr "Utan FIL eller om FIL är -, läs standard in.\n"
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "Rapportera fel till <wdiff-bugs@gnu.org>\n"
-"Rapportera fel eller synpunkter på översättningen till <tp-sv@listor.tp-sv.se>.\n"
+"Rapportera fel eller synpunkter på översättningen till <tp-sv@listor.tp-sv."
+"se>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -366,7 +371,8 @@ msgstr "  -e, --echo-comments     skriv kommentarer till standard error\n"
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
 msgstr ""
-"  -o, --old-diffs         visa under alla omständigheter skillnader på gammal\n"
+"  -o, --old-diffs         visa under alla omständigheter skillnader på "
+"gammal\n"
 "                          stil, \n"
 
 #: src/unify.c:287
@@ -397,7 +403,8 @@ msgstr "  -U                      samma som -p och -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals        ersätt mellanslag med likhetstecken i enad diff\n"
+msgstr ""
+"  -=, --use-equals        ersätt mellanslag med likhetstecken i enad diff\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -523,7 +530,8 @@ msgstr "  -C, --copyright            skriv copyright och avsluta\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         som -t, men utan termcap start/stopp-strängar\n"
+msgstr ""
+"  -K, --no-init-term         som -t, men utan termcap start/stopp-strängar\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -563,7 +571,8 @@ msgstr "  -p, --printer              överskrivning som för skrivare\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           visa hur många ord borttagna, insatta etc.\n"
+msgstr ""
+"  -s, --statistics           visa hur många ord borttagna, insatta etc.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
@@ -579,23 +588,29 @@ msgstr "  -v, --version              skriv programversion och avsluta\n"
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRÄNG  sträng som markerar början av en borttagen region\n"
+msgstr ""
+"  -w, --start-delete=STRÄNG  sträng som markerar början av en borttagen "
+"region\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRÄNG    sträng som markerar slutet av en borttagen region\n"
+msgstr ""
+"  -x, --end-delete=STRÄNG    sträng som markerar slutet av en borttagen "
+"region\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRÄNG  sträng som markerar början av en insatt region\n"
+msgstr ""
+"  -y, --start-insert=STRÄNG  sträng som markerar början av en insatt region\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRÄNG    sträng som markerar slutet av en insatt region\n"
+msgstr ""
+"  -z, --end-insert=STRÄNG    sträng som markerar slutet av en insatt region\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

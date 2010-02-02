@@ -193,7 +193,8 @@ msgstr "  -S, --string[=STRING]   perhatikan STRING user lain\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        beri referensi file dan baris dalam anotasi\n"
+msgstr ""
+"  -V, --show-links        beri referensi file dan baris dalam anotasi\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -212,7 +213,8 @@ msgstr ""
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr "  -0, --debugging   keluarkan banyak rincian tentang apa yang terjadi\n"
+msgstr ""
+"  -0, --debugging   keluarkan banyak rincian tentang apa yang terjadi\n"
 
 #: src/mdiff.c:3826
 #, fuzzy
@@ -231,7 +233,8 @@ msgstr "  -1, --no-deleted           halangi keluaran dari kata yang dihapus\n"
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          halangi keluaran dari kata yang dimasukan\n"
+msgstr ""
+"  -2, --no-inserted          halangi keluaran dari kata yang dimasukan\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
@@ -261,7 +264,8 @@ msgstr "  -o, --printer              overstrike sebagai printer\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             gunakan termcap sebagai display terminal\n"
+msgstr ""
+"  -z, --terminal             gunakan termcap sebagai display terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
@@ -400,7 +404,9 @@ msgstr "   -U                     sama seperti -p dan -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "   -=, --use-equals       ganti spasi dengan tanda sama dengan dalam unidiffs\n"
+msgstr ""
+"   -=, --use-equals       ganti spasi dengan tanda sama dengan dalam "
+"unidiffs\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -543,17 +549,20 @@ msgstr "  -h, --help                 tampilkan bantuan ini\n"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          abaikan besar huruf ketika membandingkan\n"
+msgstr ""
+"  -i, --ignore-case          abaikan besar huruf ketika membandingkan\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            variasi dari mode penampilan untuk \"less\"\n"
+msgstr ""
+"  -l, --less-mode            variasi dari mode penampilan untuk \"less\"\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          jangan lebarkan daerah melalui baris baru\n"
+msgstr ""
+"  -n, --avoid-wraps          jangan lebarkan daerah melalui baris baru\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
@@ -564,39 +573,51 @@ msgstr "  -p, --printer              overstrike seperti untuk pencetak\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           katakan bagaimana kata dihapus, dimasukan, dll.\n"
+msgstr ""
+"  -s, --statistics           katakan bagaimana kata dihapus, dimasukan, "
+"dll.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             gunakan termcap sebagai penampilan terminal\n"
+msgstr ""
+"  -t, --terminal             gunakan termcap sebagai penampilan terminal\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -v, --version              tampilkan versi aplikasi kemudian keluar\n"
+msgstr ""
+"  -v, --version              tampilkan versi aplikasi kemudian keluar\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  string untuk menandai awal dari penghapusan daerah\n"
+msgstr ""
+"  -w, --start-delete=STRING  string untuk menandai awal dari penghapusan "
+"daerah\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    string untuk menandai akhir dari penghapusan daerah\n"
+msgstr ""
+"  -x, --end-delete=STRING    string untuk menandai akhir dari penghapusan "
+"daerah\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  string untuk menandai awal dari pemasukan daerah\n"
+msgstr ""
+"  -y, --start-insert=STRING  string untuk menandai awal dari pemasukan "
+"daerah\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING    string untuk menandai akhir dari pemasukan daerah\n"
+msgstr ""
+"  -z, --end-insert=STRING    string untuk menandai akhir dari pemasukan "
+"daerah\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format
@@ -653,7 +674,9 @@ msgstr "  -q, --quiet                halangi pesan pemanggilan `mdiff'\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Aplikasi ini juga memberitahu bagaimana `mdiff' dapat dipanggil secara langsung.\n"
+msgstr ""
+"Aplikasi ini juga memberitahu bagaimana `mdiff' dapat dipanggil secara "
+"langsung.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

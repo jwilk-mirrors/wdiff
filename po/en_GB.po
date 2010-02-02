@@ -189,7 +189,8 @@ msgstr "  -S, --string[=STRING]   take note of another user STRING\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        give file and line references in annotations\n"
+msgstr ""
+"  -V, --show-links        give file and line references in annotations\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -263,7 +264,8 @@ msgstr "  -z, --terminal             use termcap as for terminal displays\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
+msgstr ""
+"  -K, --no-init-term         like -z, but no termcap init/term strings\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -502,7 +504,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -513,7 +516,8 @@ msgstr "  -C, --copyright            print copyright then exit\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+msgstr ""
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -553,7 +557,8 @@ msgstr "  -p, --printer              overstrike as for printers\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr ""
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
@@ -569,7 +574,8 @@ msgstr "  -V, --version              print program version then exit\n"
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr ""
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
@@ -580,7 +586,8 @@ msgstr "  -x, --end-delete=STRING    string to mark end of delete region\n"
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr ""
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy

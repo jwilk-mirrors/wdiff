@@ -149,7 +149,8 @@ msgstr "  -h                     (ignorované)\n"
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose          vypisova» postup na ¹tandardný chybový výstup\n"
+msgstr ""
+"  -v, --verbose          vypisova» postup na ¹tandardný chybový výstup\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 #, fuzzy
@@ -188,7 +189,8 @@ msgstr "  -S, --string[=RE«AZEC]  pou¾íva iný pou¾ívateµský RE«AZEC\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        vypisuje v anotáciách odkazy na súbory a riadky\n"
+msgstr ""
+"  -V, --show-links        vypisuje v anotáciách odkazy na súbory a riadky\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -243,7 +245,9 @@ msgstr "  -k, --less-mode             varianta re¾imu tlaèiarne pre \"less\"\n"
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           nerozoznávaj polia medzi dvoma novými riadkami\n"
+msgstr ""
+"  -m, --avoid-wraps           nerozoznávaj polia medzi dvoma novými "
+"riadkami\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
@@ -253,18 +257,21 @@ msgstr "  -o, --printer               pre¹krtávanie ako pre tlaèiareò\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              pou¾i termcap ako pre terminálové displeje\n"
+msgstr ""
+"  -z, --terminal              pou¾i termcap ako pre terminálové displeje\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          ako -z, ale bez termcap init/term re»azcov\n"
+msgstr ""
+"  -K, --no-init-term          ako -z, ale bez termcap init/term re»azcov\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGVÝRAZ  porovnáva polo¾ky definované REGVÝRAZom\n"
+msgstr ""
+"  -O, --item-regexp=REGVÝRAZ  porovnáva polo¾ky definované REGVÝRAZom\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -349,7 +356,8 @@ msgstr "Pou¾itie: %s [VO¥BA]... [SÚBOR]\n"
 #: src/unify.c:284
 #, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr "  -c, --context-diffs    predpísa» výstup vo formáte kontextových rozdielov\n"
+msgstr ""
+"  -c, --context-diffs    predpísa» výstup vo formáte kontextových rozdielov\n"
 
 #: src/unify.c:285
 #, fuzzy
@@ -359,7 +367,8 @@ msgstr "  -e, --echo-comments    vypisova» komentáre na ¹tandardný výstup\n"
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        v ka¾dom prípade pou¾i» starý formát rozdielov\n"
+msgstr ""
+"  -o, --old-diffs        v ka¾dom prípade pou¾i» starý formát rozdielov\n"
 
 #: src/unify.c:287
 #, fuzzy
@@ -513,7 +522,8 @@ msgstr "  -C, --copyright             vypí¹e copyright a skonèí\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          ako -t, ale bez re»azcov init/term termcap-u\n"
+msgstr ""
+"  -K, --no-init-term          ako -t, ale bez re»azcov init/term termcap-u\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -542,7 +552,9 @@ msgstr "  -l, --less-mode             variácia módu výstupu pre \"less\"\n"
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps           nerozoznávaj polia medzi dvoma novými riadkami\n"
+msgstr ""
+"  -n, --avoid-wraps           nerozoznávaj polia medzi dvoma novými "
+"riadkami\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
@@ -553,12 +565,15 @@ msgstr "  -p, --printer               tlaè ako pre tlaèiareò\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics            povedz, koµko slov bolo zmazaných, vlo¾ených atï.\n"
+msgstr ""
+"  -s, --statistics            povedz, koµko slov bolo zmazaných, vlo¾ených "
+"atï.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal              pou¾i termcap ako pre terminálové displeje\n"
+msgstr ""
+"  -t, --terminal              pou¾i termcap ako pre terminálové displeje\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
@@ -569,23 +584,29 @@ msgstr "  -V, --version               vypí¹e verziu programu a skonèí\n"
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING   re»azec na oznaèenie zaèiatku zmazanej oblasti\n"
+msgstr ""
+"  -w, --start-delete=STRING   re»azec na oznaèenie zaèiatku zmazanej "
+"oblasti\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING     re»azec na oznaèenie konca zmazanej oblasti\n"
+msgstr ""
+"  -x, --end-delete=STRING     re»azec na oznaèenie konca zmazanej oblasti\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING   re»azec na oznaèenie zaèiatku vlo¾enia oblasti\n"
+msgstr ""
+"  -y, --start-insert=STRING   re»azec na oznaèenie zaèiatku vlo¾enia "
+"oblasti\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING     re»azec na oznaèenie konca vlo¾enia oblasti\n"
+msgstr ""
+"  -z, --end-insert=STRING     re»azec na oznaèenie konca vlo¾enia oblasti\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

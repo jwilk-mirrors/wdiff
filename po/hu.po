@@ -181,7 +181,8 @@ msgstr "  -l, --paginate          kimenet oldalszámozása a `pr' segítségével\n"
 #: src/mdiff.c:3817
 #, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr "  -S, --string[=SZTRING]  másik felhasználói SZTRING-et is figyelembe vesz\n"
+msgstr ""
+"  -S, --string[=SZTRING]  másik felhasználói SZTRING-et is figyelembe vesz\n"
 
 #: src/mdiff.c:3818
 #, fuzzy
@@ -192,7 +193,9 @@ msgstr "  -V, --show-links        annotációban fájl- és sorszámhivatkozások\n"
 #: src/mdiff.c:3819
 #, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       tabulátor karaktert szóközzé alakítja a kimenetben\n"
+msgstr ""
+"  -t, --expand-tabs       tabulátor karaktert szóközzé alakítja a "
+"kimenetben\n"
 
 #: src/mdiff.c:3822
 #, fuzzy
@@ -225,7 +228,8 @@ msgstr "  -1, --no-deleted           megakadályozza a törölt szavak kiírását\n"
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          megakadályozza a beszúrt szavak kiírását\n"
+msgstr ""
+"  -2, --no-inserted          megakadályozza a beszúrt szavak kiírását\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 #, fuzzy
@@ -245,7 +249,8 @@ msgstr "  -k, --less-mode            kiírató mód a \"less-hez\"\n"
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps          a mezõket nem terjeszti az újsorokon túl\n"
+msgstr ""
+"  -m, --avoid-wraps          a mezõket nem terjeszti az újsorokon túl\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
@@ -261,7 +266,8 @@ msgstr "  -z, --terminal             termcap mint terminál kiíratásnál\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         mint -z, de init/termcap karakterláncok nélkül\n"
+msgstr ""
+"  -K, --no-init-term         mint -z, de init/termcap karakterláncok nélkül\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -392,7 +398,9 @@ msgstr "  -U                     mint -p és -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       szóközöket egyenlõségjelekre cseréli az unidiffekben\n"
+msgstr ""
+"  -=, --use-equals       szóközöket egyenlõségjelekre cseréli az "
+"unidiffekben\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -545,7 +553,8 @@ msgstr "  -l, --less-mode            kiírató mód a \"less-hez\"\n"
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          a mezõket nem terjeszti az újsorokon túl\n"
+msgstr ""
+"  -n, --avoid-wraps          a mezõket nem terjeszti az újsorokon túl\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
@@ -556,12 +565,14 @@ msgstr "  -p, --printer              'overstrike' mint nyomtatóknál\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           megmondja hány törölt, beszúrt stb. szó van\n"
+msgstr ""
+"  -s, --statistics           megmondja hány törölt, beszúrt stb. szó van\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             termcap használata, mint terminál kiíratásnál\n"
+msgstr ""
+"  -t, --terminal             termcap használata, mint terminál kiíratásnál\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy

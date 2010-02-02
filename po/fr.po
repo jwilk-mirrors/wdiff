@@ -183,13 +183,16 @@ msgstr ""
 #: src/mdiff.c:3817
 #, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr "  -S, --string[=CHAÎNE]   prendre note de la CHAÎNE définie par l'usager\n"
+msgstr ""
+"  -S, --string[=CHAÎNE]   prendre note de la CHAÎNE définie par l'usager\n"
 
 #: src/mdiff.c:3818
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        afficher le nom du fichier et les numéros de lignes\n"
+msgstr ""
+"  -V, --show-links        afficher le nom du fichier et les numéros de "
+"lignes\n"
 
 # ? "  -t, --expand-tabs         convertir les tabulations en espace\n                            dans la sortie"
 # ? "  -t, --expand-tabs       remplacer chaque TAB par des espaces blancs"
@@ -248,7 +251,8 @@ msgstr "  -k, --less-mode         variation du mode d'impression: « less »\n"
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps       ne pas étendre les champs avec des sauts de ligne\n"
+msgstr ""
+"  -m, --avoid-wraps       ne pas étendre les champs avec des sauts de ligne\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
@@ -258,7 +262,8 @@ msgstr "  -o, --printer           mise en évidence pour une imprimante\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal          utiliser termcap pour l'affichage sur terminal\n"
+msgstr ""
+"  -z, --terminal          utiliser termcap pour l'affichage sur terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
@@ -283,7 +288,8 @@ msgstr "  -W, --word-mode         comparer les mots au lieu des lignes\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr "Sans FICHIER, ou lorsque FICHIER vaut -, lecture depuis l'entrée standard.\n"
+msgstr ""
+"Sans FICHIER, ou lorsque FICHIER vaut -, lecture depuis l'entrée standard.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -665,7 +671,8 @@ msgstr "  -q, --quiet                supprimer le message d'appel \"mdiff\"\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Ce programme décrit aussi comment \"mdiff\" peut être invoqué directement.\n"
+msgstr ""
+"Ce programme décrit aussi comment \"mdiff\" peut être invoqué directement.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

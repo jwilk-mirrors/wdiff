@@ -184,13 +184,15 @@ msgstr ""
 #: src/mdiff.c:3817
 #, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr "  -S, --string[=DİZGE]     başka bir kullanıcı DİZGEsini değerlendirir\n"
+msgstr ""
+"  -S, --string[=DİZGE]     başka bir kullanıcı DİZGEsini değerlendirir\n"
 
 #: src/mdiff.c:3818
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links         açıklamalarda dosya ve satır referansları verir\n"
+msgstr ""
+"  -V, --show-links         açıklamalarda dosya ve satır referansları verir\n"
 
 # ? "  -t, --expand-tabs          çıktıda sekmeleri boşluğa dönüştürür"
 # ? "  -t, --expand-tabs        çıktıda sekmeler yerine boşluklar kullanır"
@@ -248,23 +250,27 @@ msgstr "  -k, --less-mode                \"less\" sayfalaması kipi\n"
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps              alanları satır sonlarını geçerek uzatmaz\n"
+msgstr ""
+"  -m, --avoid-wraps              alanları satır sonlarını geçerek uzatmaz\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer                  yazıcıya bastırmaya uygun çıktı üretir\n"
+msgstr ""
+"  -o, --printer                  yazıcıya bastırmaya uygun çıktı üretir\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal                 ekranda göstermeye uygun çıktı üretir\n"
+msgstr ""
+"  -z, --terminal                 ekranda göstermeye uygun çıktı üretir\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term             -z gibi fakat termcap değişkenini almaz\n"
+msgstr ""
+"  -K, --no-init-term             -z gibi fakat termcap değişkenini almaz\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -276,7 +282,8 @@ msgstr ""
 #: src/mdiff.c:3837
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode                satır yerine sözcükleri karşılaştırır\n"
+msgstr ""
+"  -W, --word-mode                satır yerine sözcükleri karşılaştırır\n"
 
 #: src/mdiff.c:4022
 #, fuzzy
@@ -369,7 +376,9 @@ msgstr "  -e, --echo-comments   yorumlar/açıklamalar gösterilir\n"
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs       ne olursa olsun, eski biçemde `diff' çıktısı üretilir\n"
+msgstr ""
+"  -o, --old-diffs       ne olursa olsun, eski biçemde `diff' çıktısı "
+"üretilir\n"
 
 #: src/unify.c:287
 #, fuzzy
@@ -400,7 +409,8 @@ msgstr "  -U                    -p ve -u ile aynı\n"
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr ""
-"  -=, --use-equals      `unidiff' çıktılarında eşit işaretleri yerine boşluk\n"
+"  -=, --use-equals      `unidiff' çıktılarında eşit işaretleri yerine "
+"boşluk\n"
 "                        kullanılır\n"
 
 #: src/unify.c:296
@@ -516,7 +526,8 @@ msgstr ""
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr "  -C, --copyright                telif hakkı bilgisini gösterir ve çıkar\n"
+msgstr ""
+"  -C, --copyright                telif hakkı bilgisini gösterir ve çıkar\n"
 
 # ? "  -K, --no-init-term             -z gibi fakat termcap değişkenini almaz"
 # ? "  -K, --no-init-term         -t gibi fakat termcap bilgisi almaz"
@@ -554,12 +565,14 @@ msgstr "  -l, --less-mode                \"less\" sayfalaması kipi\n"
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps              alanları satır sonlarını geçerek uzatmaz\n"
+msgstr ""
+"  -n, --avoid-wraps              alanları satır sonlarını geçerek uzatmaz\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer                  yazıcıya bastırmaya uygun çıktı üretir\n"
+msgstr ""
+"  -p, --printer                  yazıcıya bastırmaya uygun çıktı üretir\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 #, fuzzy
@@ -572,7 +585,8 @@ msgstr ""
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal                 ekranda göstermeye uygun çıktı üretir\n"
+msgstr ""
+"  -t, --terminal                 ekranda göstermeye uygun çıktı üretir\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
@@ -583,23 +597,30 @@ msgstr "  -V, --version                  sürüm bilgisini gösterir ve çıkar\
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=DİZGE       silinecek bölgenin başlangıcını belirten DİZGE\n"
+msgstr ""
+"  -w, --start-delete=DİZGE       silinecek bölgenin başlangıcını belirten "
+"DİZGE\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING        silinecek bölgenin sonunu belirten DİZGE\n"
+msgstr ""
+"  -x, --end-delete=STRING        silinecek bölgenin sonunu belirten DİZGE\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING      yerleştirilecek bölgenin başını belirten DİZGE\n"
+msgstr ""
+"  -y, --start-insert=STRING      yerleştirilecek bölgenin başını belirten "
+"DİZGE\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING        yerleştirilecek bölgenin sonunu belirten DİZGE\n"
+msgstr ""
+"  -z, --end-insert=STRING        yerleştirilecek bölgenin sonunu belirten "
+"DİZGE\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

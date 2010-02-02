@@ -188,7 +188,8 @@ msgstr "  -S, --string[=SÕNE]     kasuta kasutaja teksti SÕNE\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        kasuta märkmetes viiteid failidele ja ridadele\n"
+msgstr ""
+"  -V, --show-links        kasuta märkmetes viiteid failidele ja ridadele\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -394,7 +395,8 @@ msgstr "  -U                      sama kui -p ja -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals        asenda unidiff väljundis tühikud võrdusmärkidega\n"
+msgstr ""
+"  -=, --use-equals        asenda unidiff väljundis tühikud võrdusmärkidega\n"
 
 #: src/unify.c:296
 #, fuzzy

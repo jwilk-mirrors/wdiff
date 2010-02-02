@@ -149,7 +149,8 @@ msgstr "  -h                     (ignórase)\n"
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose          producir algunhas estatísticas na saída estándar\n"
+msgstr ""
+"  -v, --verbose          producir algunhas estatísticas na saída estándar\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 #, fuzzy
@@ -188,12 +189,14 @@ msgstr "  -S, --string[=CADEA]    tomar nota doutra CADEA de usuario\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        dar referencias de ficheiro e liña nas anotacións\n"
+msgstr ""
+"  -V, --show-links        dar referencias de ficheiro e liña nas anotacións\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       expandi-las tabulacións a espacios na saída\n"
+msgstr ""
+"  -t, --expand-tabs       expandi-las tabulacións a espacios na saída\n"
 
 #: src/mdiff.c:3822
 #, fuzzy
@@ -238,17 +241,20 @@ msgstr "  -A, --auto-pager            executa un visor automaticamente\n"
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode             variación do modo de impresora para \"less\"\n"
+msgstr ""
+"  -k, --less-mode             variación do modo de impresora para \"less\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           non estende-los campos nos saltos de liña\n"
+msgstr ""
+"  -m, --avoid-wraps           non estende-los campos nos saltos de liña\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer               facer dobre impresión para as impresoras\n"
+msgstr ""
+"  -o, --printer               facer dobre impresión para as impresoras\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
@@ -259,12 +265,14 @@ msgstr "  -z, --terminal              usar termcap para as pantallas\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term          coma -z, pero sen cadeas init/term de termcap\n"
+msgstr ""
+"  -K, --no-init-term          coma -z, pero sen cadeas init/term de termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=EXPREG    compara-los elementos coa EXPresión REGular\n"
+msgstr ""
+"  -O, --item-regexp=EXPREG    compara-los elementos coa EXPresión REGular\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -274,7 +282,9 @@ msgstr "  -W, --word-mode             comparar palabras no canto de liñas\n"
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr "Se non se indica un FICHEIRO, ou se o FICHEIRO é -, lese da entrada estándar.\n"
+msgstr ""
+"Se non se indica un FICHEIRO, ou se o FICHEIRO é -, lese da entrada "
+"estándar.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -362,7 +372,8 @@ msgstr "  -e, --echo-comments    amosa-los comentarios no erro estándar\n"
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        producir diffs do vello estilo, pase o que pase\n"
+msgstr ""
+"  -o, --old-diffs        producir diffs do vello estilo, pase o que pase\n"
 
 #: src/unify.c:287
 #, fuzzy
@@ -392,7 +403,9 @@ msgstr "  -U                     igual que -p e -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       cambia-los espacios por signos `igual' nos unidiffs\n"
+msgstr ""
+"  -=, --use-equals       cambia-los espacios por signos `igual' nos "
+"unidiffs\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -540,23 +553,28 @@ msgstr ""
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode             variación do modo de impresora para \"less\"\n"
+msgstr ""
+"  -l, --less-mode             variación do modo de impresora para \"less\"\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps           non estende-los campos nos saltos de liña\n"
+msgstr ""
+"  -n, --avoid-wraps           non estende-los campos nos saltos de liña\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer               facer dobre impresión para as impresoras\n"
+msgstr ""
+"  -p, --printer               facer dobre impresión para as impresoras\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics            dicir cantas palabras se borraron, inseriron, etc\n"
+msgstr ""
+"  -s, --statistics            dicir cantas palabras se borraron, inseriron, "
+"etc\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
@@ -566,29 +584,36 @@ msgstr "  -t, --terminal              usar termcap para as pantallas\n"
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version               amosa-la versión do programa e logo saír\n"
+msgstr ""
+"  -V, --version               amosa-la versión do programa e logo saír\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=CADEA    cadea que marca o inicio da rexión para borrar\n"
+msgstr ""
+"  -w, --start-delete=CADEA    cadea que marca o inicio da rexión para "
+"borrar\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=CADEA      cadea que marca a fin da rexión para borrar\n"
+msgstr ""
+"  -x, --end-delete=CADEA      cadea que marca a fin da rexión para borrar\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=CADEA    cadea que marca o inicio da rexión para inserir\n"
+msgstr ""
+"  -y, --start-insert=CADEA    cadea que marca o inicio da rexión para "
+"inserir\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=CADEA      cadea que marca a fin da rexión para inserir\n"
+msgstr ""
+"  -z, --end-insert=CADEA      cadea que marca a fin da rexión para inserir\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

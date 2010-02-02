@@ -249,7 +249,8 @@ msgstr "  -k, --less-mode             biến thể chế độ in cho \"less\"\n
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps           không mở rộng trường qua ký tự dòng mới\n"
+msgstr ""
+"  -m, --avoid-wraps           không mở rộng trường qua ký tự dòng mới\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
@@ -260,7 +261,8 @@ msgstr "  -o, --printer               gạch đè kiểu máy in\n"
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr ""
-"  -z, --terminal              dùng termcap giống như trên bộ trình bày thiết\n"
+"  -z, --terminal              dùng termcap giống như trên bộ trình bày "
+"thiết\n"
 "                              bị cuối\n"
 
 #: src/mdiff.c:3835
@@ -272,7 +274,9 @@ msgstr "  -K, --no-init-term          giống như « -z », nhưng không có c
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=BTCQ    so sánh các mục tùy theo biểu thức chính quy này\n"
+msgstr ""
+"  -O, --item-regexp=BTCQ    so sánh các mục tùy theo biểu thức chính quy "
+"này\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -282,7 +286,8 @@ msgstr "  -W, --word-mode             so sánh các từ thay cho dòng hoàn to
 #: src/mdiff.c:4022
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr "Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
+msgstr ""
+"Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
 
 #: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 #, fuzzy
@@ -348,7 +353,8 @@ msgstr "Hãy thử chạy câu lệnh trợ giúp « %s --help » để xem thê
 #: src/unify.c:277
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr ""
-"unify — Chuyển đổi dữ liệu khác biệt ngữ cảnh thành dữ liêu khác biệt hợp nhất,\n"
+"unify — Chuyển đổi dữ liệu khác biệt ngữ cảnh thành dữ liêu khác biệt hợp "
+"nhất,\n"
 "hay ngược lại.\n"
 
 #: src/unify.c:281
@@ -386,7 +392,8 @@ msgstr ""
 #: src/unify.c:290
 #, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr "  -u, --unidiffs         \tép buộc kết xuất thành khác biệt thống nhất\n"
+msgstr ""
+"  -u, --unidiffs         \tép buộc kết xuất thành khác biệt thống nhất\n"
 
 #: src/unify.c:291
 #, fuzzy
@@ -396,12 +403,14 @@ msgstr "  -U                     \t\tbằng « -p » và « -u »\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       trong khác biệt thống nhất, thay thế dấu cách\n"
+msgstr ""
+"  -=, --use-equals       trong khác biệt thống nhất, thay thế dấu cách\n"
 
 #: src/unify.c:296
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr "Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
+msgstr ""
+"Khi không có TẬP_TIN, hoặc khi TẬP_TIN là « - », đọc đầu vào tiêu chuẩn.\n"
 
 #: src/unify.c:388
 #, fuzzy, c-format
@@ -475,16 +484,20 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"Chương trình này là phần mềm tự do; bạn có thể phát hành lại nó và/hoặc sửa đổi\n"
-"nó với điều kiện của Giấy Phép Công Cộng GNU như được xuất bản bởi Tổ Chức Phần\n"
-"Mềm Tự Do; hoặc phiên bản 2 của Giấy Phép này, hoặc (tùy chọn) bất kỳ phiên bản\n"
+"Chương trình này là phần mềm tự do; bạn có thể phát hành lại nó và/hoặc sửa "
+"đổi\n"
+"nó với điều kiện của Giấy Phép Công Cộng GNU như được xuất bản bởi Tổ Chức "
+"Phần\n"
+"Mềm Tự Do; hoặc phiên bản 2 của Giấy Phép này, hoặc (tùy chọn) bất kỳ phiên "
+"bản\n"
 "sau nào.\n"
 "\n"
 "Chương trình này được phát hành vì mong muốn nó có ích, nhưng KHÔNG CÓ BẢO\n"
 "HÀNH GÌ CẢ, THẬM CHÍ KHÔNG CÓ BẢO ĐẢM ĐƯỢC NGỤ Ý KHẢ NĂNG BÁN HAY KHẢ NĂNG\n"
 "LÀM ĐƯỢC VIỆC DỨT KHOÁT. Xem Giấy Phép Công Cộng GNU để biết thêm chi tiết.\n"
 "\n"
-"Bạn đã nhận một bản sao của Giấy Phép Công Cộng GNU cùng với chương trình này;\n"
+"Bạn đã nhận một bản sao của Giấy Phép Công Cộng GNU cùng với chương trình "
+"này;\n"
 "nếu không, hãy viết thư cho Tổ Chức Phần Mềm Tự Do,\n"
 "Free Software Foundation, Inc.,\n"
 "51 Franklin Street, Fifth Floor,\n"
@@ -562,12 +575,16 @@ msgstr "  -s, --statistics \tthông báo số các từ bị xoá, đã chèn v.
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal              dùng termcap giống như trên bộ trình bày thiết bị cuối\n"
+msgstr ""
+"  -z, --terminal              dùng termcap giống như trên bộ trình bày thiết "
+"bị cuối\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -v, --version     \thiển thị thông tin về phiên bản chương trình, sau đó thoát\n"
+msgstr ""
+"  -v, --version     \thiển thị thông tin về phiên bản chương trình, sau đó "
+"thoát\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -645,7 +662,8 @@ msgstr "  -q, --quiet                thu hồi thông điệp gọi « mdiff »\
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Chương trình này cũng diễn tả phương pháp có thể gọi trực tiếp « mdiff ».\n"
+msgstr ""
+"Chương trình này cũng diễn tả phương pháp có thể gọi trực tiếp « mdiff ».\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

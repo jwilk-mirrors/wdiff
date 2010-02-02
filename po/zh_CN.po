@@ -245,7 +245,8 @@ msgstr "  -t, --terminal             use termcap as for terminal displays\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+msgstr ""
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 
 #: src/mdiff.c:3836
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
@@ -484,7 +485,8 @@ msgstr "  -C, --copyright            打印版权信息并退出\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+msgstr ""
+"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -525,7 +527,8 @@ msgstr "  -p, --printer              overstrike as for printers\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr ""
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy

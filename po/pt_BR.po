@@ -215,7 +215,8 @@ msgstr ""
 #: src/mdiff.c:3823
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr "  -0, --debugging   exibe muitos detalhes sobre o que está acontecendo\n"
+msgstr ""
+"  -0, --debugging   exibe muitos detalhes sobre o que está acontecendo\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -246,12 +247,14 @@ msgstr "  -A, --auto-pager           Chama automaticamente o paginador.\n"
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode            Variação do modo de impressão para \"less.\"\n"
+msgstr ""
+"  -k, --less-mode            Variação do modo de impressão para \"less.\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps          Não extender campos através de novas linhas.\n"
+msgstr ""
+"  -m, --avoid-wraps          Não extender campos através de novas linhas.\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
@@ -261,13 +264,15 @@ msgstr "  -o, --printer              Sobrepor para impressora.\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             Usar `termcap' para exibição em terminal.\n"
+msgstr ""
+"  -z, --terminal             Usar `termcap' para exibição em terminal.\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         Como -z, mas sem as strings `init/term'.\n"
+msgstr ""
+"  -K, --no-init-term         Como -z, mas sem as strings `init/term'.\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -359,7 +364,8 @@ msgstr "Utilização: %s [OPÇÃO]... [ARQUIVO]\n"
 #: src/unify.c:284
 #, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr "  -c, --context-diffs    Forçar a saída para contexto das diferenças.\n"
+msgstr ""
+"  -c, --context-diffs    Forçar a saída para contexto das diferenças.\n"
 
 #: src/unify.c:285
 #, fuzzy
@@ -507,7 +513,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -518,7 +525,8 @@ msgstr "  -C, --copyright            Exibir os direitos autorais e terminar.\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         Como -t, mas sem strings init/term do termcap.\n"
+msgstr ""
+"  -K, --no-init-term         Como -t, mas sem strings init/term do termcap.\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -537,17 +545,20 @@ msgstr "  -h, --help                 Exibir esta ajuda.\n"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          Ignorar maiúsculas/minúsculas ao comparar.\n"
+msgstr ""
+"  -i, --ignore-case          Ignorar maiúsculas/minúsculas ao comparar.\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            Variação do modo de exibição para \"less\".\n"
+msgstr ""
+"  -l, --less-mode            Variação do modo de exibição para \"less\".\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          Não estender campos através de novas linhas.\n"
+msgstr ""
+"  -n, --avoid-wraps          Não estender campos através de novas linhas.\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
@@ -558,12 +569,15 @@ msgstr "  -p, --printer              Sobrepor para exibição.\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           Informar quantas linhas excluídas, inseridas etc.\n"
+msgstr ""
+"  -s, --statistics           Informar quantas linhas excluídas, inseridas "
+"etc.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             Usar termcap para exibição em terminais.\n"
+msgstr ""
+"  -t, --terminal             Usar termcap para exibição em terminais.\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
@@ -574,23 +588,29 @@ msgstr "  -V, --version              Exibir a versão do programa e terminar.\n"
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  String para marcar o início da região excluída.\n"
+msgstr ""
+"  -w, --start-delete=STRING  String para marcar o início da região "
+"excluída.\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    String para marcar o final da região excluída.\n"
+msgstr ""
+"  -x, --end-delete=STRING    String para marcar o final da região excluída.\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  String para marcar o início da região inserida.\n"
+msgstr ""
+"  -y, --start-insert=STRING  String para marcar o início da região "
+"inserida.\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING    String para marcar o final da região inserida.\n"
+msgstr ""
+"  -z, --end-insert=STRING    String para marcar o final da região inserida.\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

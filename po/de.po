@@ -189,12 +189,14 @@ msgstr "  -S, --string[=ZKETTE]   eine weiter Nutzer-ZKETTE beachten\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        Datei- und Zeilenbezug in Anmerkungen angeben\n"
+msgstr ""
+"  -V, --show-links        Datei- und Zeilenbezug in Anmerkungen angeben\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       Tabs in der Ausgabe durch Leerzeichen ersetzen\n"
+msgstr ""
+"  -t, --expand-tabs       Tabs in der Ausgabe durch Leerzeichen ersetzen\n"
 
 #: src/mdiff.c:3822
 #, fuzzy
@@ -257,18 +259,22 @@ msgstr "  -o, --printer              wie bei Druckern überschreiben\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             „termcap“ wie für Terminalanzeigen benutzen\n"
+msgstr ""
+"  -z, --terminal             „termcap“ wie für Terminalanzeigen benutzen\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         wie -z, aber keine init/term-Termcap-Sequenzen\n"
+msgstr ""
+"  -K, --no-init-term         wie -z, aber keine init/term-Termcap-Sequenzen\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP   Elemente wie durch REGEXP definiert vergleichen\n"
+msgstr ""
+"  -O, --item-regexp=REGEXP   Elemente wie durch REGEXP definiert "
+"vergleichen\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -284,8 +290,10 @@ msgstr "Ohne DATEI, oder wenn DATEI - ist, wird die Standardeingabe gelesen.\n"
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
-"Melden Sie Übersetzungsfehler an <translation-team-de@lists.sourceforge.net>,\n"
-"Programmfehler dagegen (auf Englisch, mit LC_ALL=C) an <wdiff-bugs@gnu.org>.\n"
+"Melden Sie Übersetzungsfehler an <translation-team-de@lists.sourceforge."
+"net>,\n"
+"Programmfehler dagegen (auf Englisch, mit LC_ALL=C) an <wdiff-bugs@gnu."
+"org>.\n"
 
 #: src/mdiff.c:4035
 #, c-format
@@ -362,12 +370,14 @@ msgstr "  -c, --context-diffs    Ausgabe von Kontext-Diffs erzwingen\n"
 #: src/unify.c:285
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    Kommentare auf Standardfehlerausgaben weiterleiten\n"
+msgstr ""
+"  -e, --echo-comments    Kommentare auf Standardfehlerausgaben weiterleiten\n"
 
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        Diffs im alten Stil ausgeben, egal was passiert\n"
+msgstr ""
+"  -o, --old-diffs        Diffs im alten Stil ausgeben, egal was passiert\n"
 
 #: src/unify.c:287
 #, fuzzy
@@ -397,7 +407,9 @@ msgstr "  -U                     wie -p und -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       in Uni-Diffs Leer- durch Gleichheitszeichen ersetzen\n"
+msgstr ""
+"  -=, --use-equals       in Uni-Diffs Leer- durch Gleichheitszeichen "
+"ersetzen\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -508,7 +520,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Erforderliche Argumente für lange Optionen sind auch für kurze erforderlich.\n"
+msgstr ""
+"Erforderliche Argumente für lange Optionen sind auch für kurze "
+"erforderlich.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -540,7 +554,9 @@ msgstr "  -h, --help                 diese Hilfe ausgeben\n"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          beim Vergleich Groß-/Kleinschreibung ignorieren\n"
+msgstr ""
+"  -i, --ignore-case          beim Vergleich Groß-/Kleinschreibung "
+"ignorieren\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -550,7 +566,8 @@ msgstr "  -l, --less-mode            Variation des Ausgabemodus für „less“\
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          Felder nicht über Zeilenumbrüche gehen lassen\n"
+msgstr ""
+"  -n, --avoid-wraps          Felder nicht über Zeilenumbrüche gehen lassen\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
@@ -568,12 +585,14 @@ msgstr ""
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             „termcap“ benutzen wie für Terminalanzeigen\n"
+msgstr ""
+"  -t, --terminal             „termcap“ benutzen wie für Terminalanzeigen\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -v, --version              Versionsinformationen ausgeben und beenden\n"
+msgstr ""
+"  -v, --version              Versionsinformationen ausgeben und beenden\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
@@ -590,7 +609,8 @@ msgstr "  -x, --end-delete=ZKETTE    Marker für das Ende einer Löschregion\n"
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=ZKETTE  Marker für den Anfang einer Einfügeregion\n"
+msgstr ""
+"  -y, --start-insert=ZKETTE  Marker für den Anfang einer Einfügeregion\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
@@ -653,7 +673,9 @@ msgstr ""
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Dieses Programm gibt zudem aus, wie „mdiff“ direkt hätte gerufen werden können.\n"
+msgstr ""
+"Dieses Programm gibt zudem aus, wie „mdiff“ direkt hätte gerufen werden "
+"können.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335

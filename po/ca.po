@@ -149,7 +149,8 @@ msgstr "  -h                      (ignorat)\n"
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose           mostra algunes estadístiques en la eixida d'error\n"
+msgstr ""
+"  -v, --verbose           mostra algunes estadístiques en la eixida d'error\n"
 
 # ? "      --help             mostra aquesta ajuda i eix"
 # ? "      --help             mostra aquesta ajuda i surt"
@@ -190,7 +191,9 @@ msgstr "  -S, --string[=CADENA]   pren nota de una altra CADENA d'usuari\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        dona referències de fitxer i línia en les anotacions\n"
+msgstr ""
+"  -V, --show-links        dona referències de fitxer i línia en les "
+"anotacions\n"
 
 # ? "  -t, --expand-tabs         expadeix les tabulacions a espais en l'eixida"
 # ? "  -t, --expand-tabs       expandeix tabs a espais en el resultat"
@@ -242,28 +245,34 @@ msgstr "  -A, --auto-pager           crida a un paginador automàticament\n"
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode            variació del mode d'impresió per a «less»\n"
+msgstr ""
+"  -k, --less-mode            variació del mode d'impresió per a «less»\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps          no exté els camps més enllà del final de línia\n"
+msgstr ""
+"  -m, --avoid-wraps          no exté els camps més enllà del final de línia\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer              utilitza sobreimpresió com a les impresores\n"
+msgstr ""
+"  -o, --printer              utilitza sobreimpresió com a les impresores\n"
 
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             utilitza termcap per a mostrar per terminal\n"
+msgstr ""
+"  -z, --terminal             utilitza termcap per a mostrar per terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         com -z, però sense cadenes d'inici/fi de termcap\n"
+msgstr ""
+"  -K, --no-init-term         com -z, però sense cadenes d'inici/fi de "
+"termcap\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -360,12 +369,15 @@ msgstr "  -c, --context-diffs    força la producció de diffs contextuals\n"
 #: src/unify.c:285
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    mostra els comentaris per la eixida d'error estàndar\n"
+msgstr ""
+"  -e, --echo-comments    mostra els comentaris per la eixida d'error "
+"estàndar\n"
 
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        produeix diffs a l'estil vell, pase el que pase\n"
+msgstr ""
+"  -o, --old-diffs        produeix diffs a l'estil vell, pase el que pase\n"
 
 #: src/unify.c:287
 #, fuzzy
@@ -394,7 +406,9 @@ msgstr ""
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       reemplaça els espais per signes d'igualtat en unidiffs\n"
+msgstr ""
+"  -=, --use-equals       reemplaça els espais per signes d'igualtat en "
+"unidiffs\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -542,17 +556,20 @@ msgstr ""
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            variació del mode d'impressió per a «less»\n"
+msgstr ""
+"  -l, --less-mode            variació del mode d'impressió per a «less»\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          no extén camps més enllà del final de línia\n"
+msgstr ""
+"  -n, --avoid-wraps          no extén camps més enllà del final de línia\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              utilitza sobreimpressió com a les impresores\n"
+msgstr ""
+"  -p, --printer              utilitza sobreimpressió com a les impresores\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 #, fuzzy
@@ -565,7 +582,9 @@ msgstr ""
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             utilitza termcap com per a mostrar per terminal\n"
+msgstr ""
+"  -t, --terminal             utilitza termcap com per a mostrar per "
+"terminal\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
@@ -583,7 +602,9 @@ msgstr ""
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=CADENA    cadena per a marcar el final de la regió esborrada\n"
+msgstr ""
+"  -x, --end-delete=CADENA    cadena per a marcar el final de la regió "
+"esborrada\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
@@ -596,7 +617,9 @@ msgstr ""
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=CADENA    cadena per a marcar el final de la regió insertada\n"
+msgstr ""
+"  -z, --end-insert=CADENA    cadena per a marcar el final de la regió "
+"insertada\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format

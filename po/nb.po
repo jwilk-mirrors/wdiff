@@ -150,7 +150,8 @@ msgstr "  -h                     (ignorert)\n"
 #: src/mdiff.c:3810
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose          rapporter litt statistikk på standard feilkanal\n"
+msgstr ""
+"  -v, --verbose          rapporter litt statistikk på standard feilkanal\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 #, fuzzy
@@ -189,12 +190,14 @@ msgstr "  -S, --string[=STRENG]   husk en annen bruker-STRENG\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        vis fil- og linje-referanser i annoteringer\n"
+msgstr ""
+"  -V, --show-links        vis fil- og linje-referanser i annoteringer\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       ekspander tabulatorer til mellomrom i utskrift\n"
+msgstr ""
+"  -t, --expand-tabs       ekspander tabulatorer til mellomrom i utskrift\n"
 
 #: src/mdiff.c:3822
 #, fuzzy
@@ -260,12 +263,14 @@ msgstr "  -z, --terminal             bruk termcap som for vanlige terminaler\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         som -z, men ingen termcap-init/-term-strenger\n"
+msgstr ""
+"  -K, --no-init-term         som -z, men ingen termcap-init/-term-strenger\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGUTTR  sammenlikn elementer som definert av REGUTTR\n"
+msgstr ""
+"  -O, --item-regexp=REGUTTR  sammenlikn elementer som definert av REGUTTR\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -387,7 +392,8 @@ msgstr "  -U                     samme som -p og -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       erstatt mellomrom med likhetstegn i unidiffer\n"
+msgstr ""
+"  -=, --use-equals       erstatt mellomrom med likhetstegn i unidiffer\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -550,7 +556,9 @@ msgstr "  -p, --printer              bruk overstrike som for printere\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           skriv antall ord som ble slettet, satt inn, osv.\n"
+msgstr ""
+"  -s, --statistics           skriv antall ord som ble slettet, satt inn, "
+"osv.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy

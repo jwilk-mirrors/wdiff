@@ -163,7 +163,8 @@ msgstr "      --help             afiºeazã acest mesaj ºi terminã\n"
 #: src/mdiff.c:3812 src/unify.c:294
 #, fuzzy
 msgid "      --version          display program version then exit\n"
-msgstr "      --version          afiºeazã informaþii despre versiune ºi terminã\n"
+msgstr ""
+"      --version          afiºeazã informaþii despre versiune ºi terminã\n"
 
 #: src/mdiff.c:3814
 #, fuzzy
@@ -193,7 +194,9 @@ msgstr "  -S, --string[=STRING]   observã un alt ªIR definit de utilizator\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        aratã referinþe despre fiºier ºi linie în adnotãri\n"
+msgstr ""
+"  -V, --show-links        aratã referinþe despre fiºier ºi linie în "
+"adnotãri\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -246,12 +249,14 @@ msgstr "  -A, --auto-pager           cheamã automat un paginator\n"
 #: src/mdiff.c:3831
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode            variaþia modului imprimantã pentru \"less\"\n"
+msgstr ""
+"  -k, --less-mode            variaþia modului imprimantã pentru \"less\"\n"
 
 #: src/mdiff.c:3832
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps          nu extinde câmpurile prin caractere linie nouã\n"
+msgstr ""
+"  -m, --avoid-wraps          nu extinde câmpurile prin caractere linie nouã\n"
 
 #: src/mdiff.c:3833
 #, fuzzy
@@ -261,13 +266,15 @@ msgstr "  -o, --printer              suprascrie ca pentru imprimantã\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             foloseºte termcap ca pentru display terminal\n"
+msgstr ""
+"  -z, --terminal             foloseºte termcap ca pentru display terminal\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         ca ºi -z, dar nici un ºir termcap init/term\n"
+msgstr ""
+"  -K, --no-init-term         ca ºi -z, dar nici un ºir termcap init/term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -363,12 +370,14 @@ msgstr "  -c, --context-diffs    forþeazã ieºire ca contexte diff\n"
 #: src/unify.c:285
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    trimite comentariile la disp. eroare standard\n"
+msgstr ""
+"  -e, --echo-comments    trimite comentariile la disp. eroare standard\n"
 
 #: src/unify.c:286
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        afiºeazã diff-uri în vechiul stil, indiferent ce\n"
+msgstr ""
+"  -o, --old-diffs        afiºeazã diff-uri în vechiul stil, indiferent ce\n"
 
 #: src/unify.c:287
 #, fuzzy
@@ -398,7 +407,8 @@ msgstr "  -U                     la fel ca -p ºi -u\n"
 #: src/unify.c:292
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       înlocuieºte spaþiile cu caractere egal în unidiff\n"
+msgstr ""
+"  -=, --use-equals       înlocuieºte spaþiile cu caractere egal în unidiff\n"
 
 #: src/unify.c:296
 #, fuzzy
@@ -521,7 +531,8 @@ msgstr "  -C, --copyright            afiºeazã copyright-ul ºi terminã\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         ca -t, dar fãrã ºiruri termcap init/term\n"
+msgstr ""
+"  -K, --no-init-term         ca -t, dar fãrã ºiruri termcap init/term\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -561,7 +572,8 @@ msgstr "  -p, --printer              overstrike as for printers\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr ""
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
@@ -571,13 +583,15 @@ msgstr "  -t, --terminal             use termcap as for terminal displays\n"
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version              afiºeazã versiunea programului ºi terminã\n"
+msgstr ""
+"  -V, --version              afiºeazã versiunea programului ºi terminã\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr ""
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
@@ -588,7 +602,8 @@ msgstr "  -x, --end-delete=STRING    string to mark end of delete region\n"
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr ""
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy

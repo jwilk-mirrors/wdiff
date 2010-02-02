@@ -192,7 +192,9 @@ msgstr "  -S, --string[=NIZ]      zabeleži drug uporabniški NIZ \n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        med zaznamki podaj informacije o datoteki in vrstici\n"
+msgstr ""
+"  -V, --show-links        med zaznamki podaj informacije o datoteki in "
+"vrstici\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -260,13 +262,15 @@ msgstr "  -o, --printer              poudarki z dvojnim udarcem za tiskalnik\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             uporabi termcap kot za terminalne zaslone\n"
+msgstr ""
+"  -z, --terminal             uporabi termcap kot za terminalne zaslone\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         kot -z, vendar brez nizov termcap init/term\n"
+msgstr ""
+"  -K, --no-init-term         kot -z, vendar brez nizov termcap init/term\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
@@ -559,7 +563,8 @@ msgstr "  -p, --printer              napni kot za tiskalnik\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           izpiši koliko besed je izbrisanih, dodanih...\n"
+msgstr ""
+"  -s, --statistics           izpiši koliko besed je izbrisanih, dodanih...\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy

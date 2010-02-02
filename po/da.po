@@ -200,7 +200,8 @@ msgstr "  -S, --string[=STRENG]   søg også efter STRENG\n"
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        angiv fil- og linjereferencer i annoteringer\n"
+msgstr ""
+"  -V, --show-links        angiv fil- og linjereferencer i annoteringer\n"
 
 #: src/mdiff.c:3819
 #, fuzzy
@@ -265,18 +266,21 @@ msgstr "  -o, --printer              brug overstrike som for printere\n"
 #: src/mdiff.c:3834
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             brug termcap som for almindelige terminaler\n"
+msgstr ""
+"  -z, --terminal             brug termcap som for almindelige terminaler\n"
 
 #: src/mdiff.c:3835
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         som -z, men uden termcap init/term strenge\n"
+msgstr ""
+"  -K, --no-init-term         som -z, men uden termcap init/term strenge\n"
 
 #: src/mdiff.c:3836
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP   sammenlign elementer som angivet med REGEXP\n"
+msgstr ""
+"  -O, --item-regexp=REGEXP   sammenlign elementer som angivet med REGEXP\n"
 
 #: src/mdiff.c:3837
 #, fuzzy
@@ -514,7 +518,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Obligatoriske argumenter for lange flag er obligatoriske også for korte\n"
+msgstr ""
+"Obligatoriske argumenter for lange flag er obligatoriske også for korte\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 #, fuzzy
@@ -525,7 +530,8 @@ msgstr "  -C, --copyright            udskriv ophavsret og afslut\n"
 #, fuzzy
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         som -t, men ingen termcap init/term strings\n"
+msgstr ""
+"  -K, --no-init-term         som -t, men ingen termcap init/term strings\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 #, fuzzy
@@ -544,7 +550,8 @@ msgstr "  -h, --help                 vis denne hjælpetekst\n"
 #: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          skeln ikke mellem store og små bogstaver\n"
+msgstr ""
+"  -i, --ignore-case          skeln ikke mellem store og små bogstaver\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
@@ -565,12 +572,15 @@ msgstr "  -p, --printer              brug overstrike som for printere\n"
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           skriv antal ord som blev slettet, sat ind, osv.\n"
+msgstr ""
+"  -s, --statistics           skriv antal ord som blev slettet, sat ind, "
+"osv.\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             brug termcap som for almindelige terminaler\n"
+msgstr ""
+"  -t, --terminal             brug termcap som for almindelige terminaler\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 #, fuzzy
@@ -586,18 +596,21 @@ msgstr "  -w, --start-delete=STRING  streng som markerer start på sletning\n"
 #: src/wdiff.c:1278 src/wdiff2.c:210
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    streng som markerer slutning på sletning\n"
+msgstr ""
+"  -x, --end-delete=STRING    streng som markerer slutning på sletning\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  streng som markerer start på indsættelse\n"
+msgstr ""
+"  -y, --start-insert=STRING  streng som markerer start på indsættelse\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING    streng som markerer slutning på indsættelse\n"
+msgstr ""
+"  -z, --end-insert=STRING    streng som markerer slutning på indsættelse\n"
 
 #: src/wdiff.c:1398
 #, fuzzy, c-format
@@ -654,7 +667,8 @@ msgstr "  -q, --quiet                forhindre 'mdiff'-kaldet\n"
 #: src/wdiff2.c:214
 #, fuzzy
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Dette program fortæller også hvordan 'mdiff' kunne være kaldt direkte.\n"
+msgstr ""
+"Dette program fortæller også hvordan 'mdiff' kunne være kaldt direkte.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335
