@@ -3,8 +3,8 @@
 ## notice and this notice are preserved.  This file is offered as-is,
 ## without any warranty.
 
-bin_PROGRAMS = unify wdiff mdiff
-noinst_PROGRAMS = wdiff2
+bin_PROGRAMS = wdiff $(EXPERIMENTAL_PROGRAMS)
+EXTRA_PROGRAMS = mdiff unify wdiff2
 
 unify_SOURCES = unify.c system.h
 wdiff_SOURCES = wdiff.c readpipe.c writepipe.c system.h
@@ -20,3 +20,6 @@ localedir = $(datadir)/locale
 
 AM_CPPFLAGS = -I$(top_srcdir)/lib
 DEFS += -DLOCALEDIR=\"$(localedir)\"
+
+../lib/libgnu.a:
+	test -f $@ || $(MAKE) -C ../lib

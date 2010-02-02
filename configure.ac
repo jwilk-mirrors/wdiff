@@ -36,6 +36,32 @@ fi
 AM_GNU_GETTEXT_VERSION([0.17])
 AM_GNU_GETTEXT([external])
 
+# Handling of experimental applications
+AC_ARG_ENABLE([experimental],
+ AC_HELP_STRING([--enable-experimental],
+  [enable experimental applications (mdiff, unify, wdiff2)]),
+ [AS_CASE([$enableval],
+  [yes], [EXPERIMENTAL="mdiff unify wdiff2"],
+  [no],  [EXPERIMENTAL=""],
+  [EXPERIMENTAL=$enableval])],
+ [EXPERIMENTAL=""])
+set dummy $EXPERIMENTAL; shift
+EXPERIMENTAL_PROGRAMS=""
+EXPERIMENTAL_MANS=""
+for experimental_i
+do
+AS_CASE([$experimental_i],
+  [mdiff|unify|wdiff2],
+  [EXPERIMENTAL_PROGRAMS="$EXPERIMENTAL_PROGRAMS $experimental_i\$(EXEEXT)"
+EXPERIMENTAL_MANS="$EXPERIMENTAL_MANS $experimental_i.1"],
+  [AC_MSG_ERROR([unknown experimental $experimental_i])])
+done
+AC_MSG_NOTICE([Enabled experimental applications: $EXPERIMENTAL])
+AC_SUBST([EXPERIMENTAL])
+AC_SUBST([EXPERIMENTAL_PROGRAMS])
+AC_SUBST([EXPERIMENTAL_MANS])
+# Done handling experimental applications
+
 AC_CONFIG_FILES([
  Makefile
  doc/Makefile

@@ -18,11 +18,10 @@ Below, you will find various installation hints on special systems.
 Look further down for a mini-FAQ (frequently asked questions).
 
 See file `ABOUT-NLS' for how to customise this program to your language.
-See file `BACKLOG' for a summary of pending mail and articles.
 See file `COPYING' for copying conditions.
-See file `INSTALL' for compilation and installation instructions.
+See file `INSTALL' for generic compilation and installation instructions.
 See file `NEWS' for a list of major changes in the current release.
-See file `THANKS' for a list of contributors.
+See files `AUTHORS' and `THANKS' for a list of contributors.
 
 The canonical distribution point for wdiff is:
 
@@ -32,50 +31,52 @@ The main web site for wdiff is at:
 
   http://www.gnu.org/software/wdiff/
 
-.--------------.
-| Introduction |
-`--------------'
+.-------------------.
+| Configure options |
+`-------------------'
 
-Additional included utilities
+Besides those configure options documented in files `INSTALL' and
+`ABOUT-NLS', one extra option may be accepted after `./configure':
+
+ - `--enable-experimental[=list]'
+
+     to build some or all of the experimental applications that are
+     part of a wdiff source code release. See the following section
+     for details.
+
+.--------------------.
+| Experimental tools |
+`--------------------'
+
+Additional utilities are included in the source release and can be
+enabled by passing `--enable-experimental' to the configure script. It
+is possible to select only some of these tools by passing an argument,
+e.g. `--enable-experimental="mdiff wdiff2"'.
+
+All of these tools are considered experimental: you are free to use
+them, and the maintainers certainly welcome any input as to what does
+or does not work with them. On the other hand you shouldn't rely on
+them too much, and maintainers might in some cases refuse to address
+bugs unless you can contribute to a solution, e.g. by writing a patch.
 
 * `mdiff' studies one or many input files altogether, and discovers
 blocks of lines which repeat at more than one place.  This program is
 still very experimental.  Even if much development is needed, it is
 quite useful as it stands.
 
+* `wdiff2' is intended as a replacement for `wdiff' that uses `mdiff'
+to perform its work.  At a certain point in time it closely mirrored
+the syntax of `wdiff', but both programs have evloved since then, and
+probably have diverged.
+
 * The `unify' program converts between context diffs to unified diffs,
 and vice-versa.  Some people just prefer one format and despise the
 other, it is a religious issue.  This program brings peace back on
 earth.  It has been contributed by Wayne Davison, from Borland.
 
-Configure options
-
-* Besides those configure options documented in files `INSTALL' and
-`ABOUT-NLS', one extra option may be accepted after `./configure':
-
- - `--with-dmalloc'
-
-     to trigger a debugging feature for looking at memory management
-     problems, it pre-requires Gray Watson's package, which is available
-     as `ftp://ftp.letters.com/src/dmalloc/dmalloc.tar.gz'.
-
-Maintenance tools
-
-* For comprehensive modifications to `wdiff, you might need tools
-beyond those used in simple installations.  If not done already, get:
-
-        ftp://ftp.cygnus.com/pub/home/drepper/gettext-0.10.35.tar.gz
-        ftp://ftp.seindal.dk/pub/rene/gnu/m4-1.4l.tar.gz
-        ftp://ftp.gnu.org/pub/gnu/perl/perl-5.003.tar.gz
-        ftp://ftp.gnu.org/pub/gnu/autoconf/autoconf-2.12.tar.gz  + PATCHES-AC
-        ftp://ftp.cygnus.com/pub/tromey/automake-1.3b.tar.gz
-        ftp://ftp.gnu.org/pub/gnu/tar/tar-1.12.tar.gz
-
-* Do not forget applying the `PATCHES-AC' file (beware: it is not official)
-appropriately.  Make sure GNU `m4' is fully installed before you start
-installing Autoconf.  Have Perl installed before Automake.
-
-Mailing lists and collaboration
+.---------------------------------.
+| Mailing lists and collaboration |
+`---------------------------------'
 
 * Your feedback will help us to make a better and more portable package.
 Consider documentation errors as bugs, and report them as such.  If you
@@ -107,18 +108,12 @@ first from /@prep.ai.mit.edu:pub/gnu/termcap-1.2.tar.gz, or better.
 * If you have termcap emulation routines in libcurses.a and you do not
 have libtermcap.a, and until I find a way to do better, please use:
 
-	LIBS=-lcurses ./configure
+	./configure LIBS=-lcurses
 
 * If you have both more and less and you prefer more over less, then
 prefix the call to configure with your pager selection, as in:
 
-	PAGER=more ./configure
-
-* There is a simple minded change bars producer in `wdiff', which is
-not installed by default, nor documented.  If you nevertheles want
-it, one way to get it is requesting, at configure time:
-
-	./configure --enable-cbars
+	./configure PAGER=more
 
 .-----.
 | FAQ |
