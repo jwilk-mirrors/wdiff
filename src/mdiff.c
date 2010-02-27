@@ -73,8 +73,8 @@ char *strstr ();
 #    if HAVE_NCURSES_H
 #     include <ncurses.h>
 #    endif
+#   endif
 #  endif
-# endif
 const char *tgetstr ();
 # endif
 #endif
