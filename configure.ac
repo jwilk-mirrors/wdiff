@@ -62,6 +62,25 @@ AC_SUBST([EXPERIMENTAL_PROGRAMS])
 AC_SUBST([EXPERIMENTAL_MANS])
 # Done handling experimental applications
 
+# termcap/curses handling
+AC_ARG_WITH([termcap],
+ AC_HELP_STRING([--with-termcap@<:@=LIB@:>@],
+  [use termcap library LIB, e.g. ncursesw]),
+ [], [with_termcap=auto])
+AS_IF([test "x$with_termcap" != xno], [
+ AC_CHECK_HEADERS([termcap.h termlib.h curses.h ncurses.h term.h])
+ AS_IF([test "x$with_termcap" == xauto], [
+  AC_SEARCH_LIBS(tputs, [termcap termlib ncursesw ncurses],
+   [], [with_termcap=no])
+ ], [
+  LIBS="-l$with_termcap $LIBS"
+ ])
+])
+AS_IF([test "x$with_termcap" != xno], [
+ AC_DEFINE([HAVE_TPUTS], [1], [Define to 1 if the tputs function is available])
+])
+# Done with termcap/curses
+
 AC_CONFIG_FILES([
  Makefile
  doc/Makefile

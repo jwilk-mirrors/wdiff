@@ -71,8 +71,10 @@ char *strstr ();
 #     include <ncurses.h>
 #    endif
 #   endif
+#   if HAVE_TERM_H
+#    include <term.h>
+#   endif
 #  endif
-const char *tgetstr ();
 # endif
 #endif
 
