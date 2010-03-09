@@ -1,6 +1,7 @@
 \input texinfo
 @c %**start of header
 @setfilename wdiff.info
+@documentencoding UTF-8
 @settitle A word difference finder (and others)
 @finalout
 @c %**end of header
