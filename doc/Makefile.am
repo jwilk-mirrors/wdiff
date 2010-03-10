@@ -4,3 +4,4 @@
 ## without any warranty.
 
 info_TEXINFOS = wdiff.texi
+wdiff_TEXINFOS = flags.texi

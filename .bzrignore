@@ -25,6 +25,7 @@ wdiff-*.tar*
 **/po/remove-potcdate.sed
 **/po/stamp-po
 ./ChangeLog
+doc/flags.texi
 doc/stamp-vti
 doc/version.texi
 doc/wdiff.info
