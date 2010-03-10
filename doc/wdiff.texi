@@ -20,7 +20,7 @@
 
 @dircategory Individual utilities
 @direntry
-* wdiff: (wdiff)wdiff invocation.               Word difference finder.
+* wdiff: (wdiff)wdiff invocation.               Word difference finder. @c
 @ifset EXPERIMENTAL
 * mdiff: (wdiff)mdiff invocation.               Line cluster finder.
 * unify: (wdiff)unify invocation.               Diff format converter.
@@ -100,7 +100,7 @@ This is for release @value{VERSION}.
 
 @menu
 * Overview::                    Overview
-* wdiff::                       The word difference finder
+* wdiff::                       The word difference finder @c
 @ifset EXPERIMENTAL
 * mdiff::                       The line cluster finder
 * unify::                       The diff format converter
@@ -110,7 +110,7 @@ This is for release @value{VERSION}.
 
 @detailmenu
 
- --- The Detailed Node Listing ---
+--- The Detailed Node Listing ---
 
 The word difference finder
 
@@ -143,6 +143,14 @@ How @command{mdiff} differs
 @node Overview
 @chapter Overview
 
+@command{wdiff} is a front end to @command{diff} for comparing files on
+a word per word basis. It works by creating two temporary files, one
+word per line, and then executes diff on these files. It collects the
+diff output and uses it to produce a nicer display of word differences
+between the original files.
+
+@ifset EXPERIMENTAL
+
 @command{mdiff} studies one or more input files altogether, and discovers
 blocks of items which repeat at more than one place.  Items may be lines,
 words, or units defined by user.  When in word mode, @command{mdiff} compares
@@ -156,12 +164,19 @@ with @command{less}).
 other way around.  Some people just prefer one format and despise the
 other, it is a religious issue.  This program brings peace back to Earth.
 
-@command{wdiff}, which originally gave the name to the package, is now
-obsolete, and exists merely a front-end to GNU @command{mdiff}.
+@command{wdiff2} is intended as a replacement to @command{wdiff}.
+It aims at supporting the same set of options, but uses @command{mdiff}
+instead of @command{diff} as its backend.
 
-@command{wdiff} and @command{mdiff} were written by Fran@,{c}ois Pinard, while
-@command{unify} has been contributed by Wayne Davison.  Please report bugs to
-@email{wdiff-bugs@@gnu.org}.  Include the version number, which
+@command{wdiff}, @command{mdiff} and @command{wdiff2}
+were written by Fran@,{c}ois Pinard, while
+@command{unify} has been contributed by Wayne Davison.
+@end ifset
+@ifclear EXPERIMENTAL
+@command{wdiff} was written by Fran@,{c}ois Pinard.
+@end ifclear
+Please report bugs to @email{wdiff-bugs@@gnu.org}.
+Include the version number, which
 you can find by running the program with @option{--version}.  Please include
 in your message sufficient input to reproduce what you got, the output you
 indeed expected, and careful explanations about the nature of the problem.
@@ -169,19 +184,25 @@ indeed expected, and careful explanations about the nature of the problem.
 @node wdiff
 @chapter The word difference finder
 
+@ifset EXPERIMENTAL
 There are actually two programs for comparing files on a word per word
 basis.
 @command{wdiff} is a front-end to @command{diff} as found in the
 GNU diffutils package. It is quite mature.
 Its planned successor, @command{wdiff2}, is a front end to @command{mdiff},
 and as experimental as @command{mdiff} itself.
+@end ifset
 
+@ifclear EXPERIMENTAL
+@command{wdiff} is a front-end to @command{diff} as found in the
+GNU diffutils package.
+@end ifclear
 A word is anything between whitespace.  This is useful for comparing two
 texts in which a few words have been changed and for which paragraphs
 have been refilled.
 
 @menu
-* wdiff invocation::            Invoking @command{wdiff}
+* wdiff invocation::            Invoking @command{wdiff} @c
 @ifset EXPERIMENTAL
 * wdiff2::                      Frontend to @command{mdiff}
 @end ifset
@@ -190,10 +211,18 @@ have been refilled.
 @node wdiff invocation
 @section Invoking @command{wdiff}
 
+@ifset EXPERIMENTAL
+The programs @command{wdiff} and @command{wdiff2} aim at providing the
+same set of command line options. They are described below.
+@xref{wdiff Compatibility}, for a list of differences.
+@end ifset
+@ifclear EXPERIMENTAL
 The format for running the @command{wdiff} program is:
+@end ifclear
 
 @example
 wdiff @var{option} @dots{} @var{old_file} @var{new_file}
+wdiff @var{option} @dots{} -d [@var{diff_file}]
 @end example
 
 @command{wdiff} compares files @var{old_file} and @var{new_file} and
@@ -210,7 +239,7 @@ refers to text on @var{new_file} which is not in @var{old_file}.
 
 @command{wdiff} supports the following command line options:
 
-@table @samp
+@table @option
 @item --help
 @itemx -h
 Print an informative help message describing the options.
@@ -379,6 +408,16 @@ at the end of each line, just before the new line, and a start delete
 string at the beginning of the next line.  A long paragraph of inserted
 text will have each line bracketed between start insert and end insert
 strings.  This behaviour is not selected by default.
+
+@item --diff-input
+@itemx -d
+Use single unified diff as input. If no input file is specified,
+standard input is used instead. This can be used to post-process diffs
+generated form other applications, like version control systems:
+
+@example
+svn diff | wdiff -d
+@end example
 @end table
 
 Note that options @option{-p}, @option{-t}, and @option{-[wxyz]} are not
@@ -439,7 +478,7 @@ can be overridden by options.
 
 @command{unify} supports the following command line options:
 
-@table @samp
+@table @option
 @item --version
 Merely prints the version numbers on standard output, and exits without
 doing anything else.
@@ -663,7 +702,7 @@ refers to text on @var{new_file} which is not in @var{old_file}.
 
 @command{mdiff} supports the following command line options:
 
-@table @samp
+@table @option
 @item --version
 Merely prints the version numbers on standard output, and exits without
 doing anything else.
@@ -1136,7 +1175,7 @@ been shuffled around so @command{mdiff} could better merge both @command{diff}
 and @command{wdiff} options in a common scheme.  @command{diff} habits were
 almost always favored in this option reorganisation.
 
-In fact, @command{wdiff} is now a mere front-end to @command{mdiff} that only
+In fact, @command{wdiff2} is now a mere front-end to @command{mdiff} that only
 rewrites the options.  The following notes apply.
 
 @itemize @bullet
@@ -1169,6 +1208,10 @@ Further, the @option{-C} option of @command{wdiff} has no equivalent in
 @item
 A new option @option{-q} inhibits the message which explains how @command{mdiff}
 might have been directly called.
+
+@item
+The option @option{--diff-input} (@option{-d}) from @command{wdiff}
+isn't supported by @command{wdiff2} (yet).
 
 @end itemize
 
