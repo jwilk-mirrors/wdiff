@@ -5,3 +5,11 @@
 
 info_TEXINFOS = wdiff.texi
 wdiff_TEXINFOS = flags.texi
+
+# Convenience targets for manually switching build flags.
+# Note that configure will overwrite any changes made using these.
+.PHONY: experimental no-experimental
+experimental:
+	sed -i 's/^@clear EXPERIMENTAL/@set EXPERIMENTAL/' flags.texi
+no-experimental:
+	sed -i 's/^@set EXPERIMENTAL/@clear EXPERIMENTAL/' flags.texi
