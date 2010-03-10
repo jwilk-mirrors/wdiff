@@ -81,15 +81,16 @@ This is for release @value{VERSION}.
 
  --- The Detailed Node Listing ---
 
+The word difference finder
+
+* wdiff invocation::            Invoking @code{wdiff}
+* wdiff2::                      Frontend to @code{mdiff}
+
 The multi-difference finder
 
 * mdiff invocation::            Invoking @code{mdiff}
 * Examples::                    Actual examples of @code{mdiff} usage
 * Efficiency::                  Resource considerations and efficiency
-
-The word difference finder
-
-* wdiff invocation::            Invoking @code{wdiff}
 
 The diff format converter
 
@@ -138,16 +139,12 @@ indeed expected, and careful explanations about the nature of the problem.
 
 @chapter The word difference finder
 
-The program @code{wdiff} is a front end to @code{mdiff} for comparing
-files on a word per word basis.
-
-In the first releases of the package, @code{wdiff} was a front-end to
-@code{diff} as found in the GNU @code{diffutils} package.  Many users
-suggested features, which were in turn inviting for the integration of
-@code{wdiff} into @code{diffutils}.  Collaboration proved to be rather
-difficult.  After a few years, the @code{wdiff} author finally gave in
-and created @code{mdiff} as a way to break out of the situation and for
-becoming able to proceed with users' suggestions.
+There are actually two programs for comparing files on a word per word
+basis.
+@code{wdiff} is a front-end to @code{diff} as found in the
+GNU @code{diffutils} package. It is quite mature.
+Its planned successor, @code{wdiff2}, is a front end to @code{mdiff},
+and as experimental as @code{mdiff} itself.
 
 A word is anything between whitespace.  This is useful for comparing two
 texts in which a few words have been changed and for which paragraphs
@@ -155,9 +152,10 @@ have been refilled.
 
 @menu
 * wdiff invocation::            Invoking @code{wdiff}
+* wdiff2::                      Frontend to @code{mdiff}
 @end menu
 
-@node wdiff invocation,  , wdiff, wdiff
+@node wdiff invocation, wdiff2, wdiff, wdiff
 @section Invoking @code{wdiff}
 
 The format for running the @code{wdiff} program is:
@@ -355,6 +353,16 @@ Note that options @samp{-p}, @samp{-t}, and @samp{-[wxyz]} are not
 mutually exclusive.  If you use a combination of them, you will merely
 accumulate the effect of each.  Option @samp{-l} is a variant of option
 @samp{-p}.
+
+@node wdiff2, , wdiff invocation, wdiff
+@section Frontend to @code{mdiff}
+
+Many users
+suggested features, which were in turn inviting for the integration of
+@code{wdiff} into @code{diffutils}.  Collaboration proved to be rather
+difficult.  After a few years, the @code{wdiff} author finally gave in
+and created @code{mdiff} as a way to break out of the situation and for
+becoming able to proceed with users' suggestions.
 
 @node unify, Compatibility, mdiff, Top
 @chapter The diff format converter
