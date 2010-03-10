@@ -2,12 +2,16 @@
 @c %**start of header
 @setfilename wdiff.info
 @documentencoding UTF-8
-@settitle A word difference finder (and others)
-@finalout
-@c %**end of header
-
 @include version.texi
 @include flags.texi
+@ifset EXPERIMENTAL
+@settitle A word difference finder (and others)
+@end ifset
+@ifclear EXPERIMENTAL
+@settitle A word difference finder
+@end ifclear
+@finalout
+@c %**end of header
 
 @dircategory Text creation and manipulation
 @direntry
@@ -26,7 +30,10 @@
 @copying
 This file documents the @code{wdiff} command, which compares two files,
 finding which words have been deleted or added to the first for getting
-the second.  It also documents some other @code{diff} related tools.
+the second.
+@ifset EXPERIMENTAL
+It also documents some other @code{diff} related tools.
+@end ifset
 
 Copyright @copyright{} 1992, 1994, 1997, 1998, 1999, 2010 Free Software
 Foundation, Inc.
@@ -55,7 +62,12 @@ by the Foundation.
 
 @titlepage
 @title GNU wdiff, version @value{VERSION}
+@ifset EXPERIMENTAL
 @subtitle A word difference finder (and others)
+@end ifset
+@ifclear EXPERIMENTAL
+@subtitle A word difference finder
+@end ifclear
 @subtitle Edition @value{EDITION}, @value{UPDATED}
 @author Fran@,{c}ois Pinard
 
@@ -68,8 +80,21 @@ by the Foundation.
 @node Top, Overview, (dir), (dir)
 @top GNU @code{wdiff}
 
+@ifset EXPERIMENTAL
 These Info pages document @code{wdiff}, a word difference finder, together
 with some other @code{diff} related tools.
+Note that some tools documented here are considered experimental and may
+not be part of every @code{wdiff} installation.
+@end ifset
+@ifclear EXPERIMENTAL
+These Info pages document @code{wdiff}, a word difference finder.
+Experimental applications included in the same source package (like
+@code{mdiff}) haven't been enabled for your system, so their
+documentation will be ommitted as well.
+You can find the full documentation for all parts on the
+@uref{http://www.gnu.org/software/wdiff/, GNU wdiff homepage}.
+@end ifclear
+@xref{Experimental}.
 
 This is for release @value{VERSION}.
 
@@ -81,6 +106,7 @@ This is for release @value{VERSION}.
 * unify::                       The diff format converter
 * Compatibility::               How @code{mdiff} differs
 @end ifset
+* Experimental::                About experimental programs
 
 @detailmenu
 
@@ -117,8 +143,6 @@ How @code{mdiff} differs
 @node Overview, wdiff, Top, Top
 @chapter Overview
 
-@c @item @b{@code{wdiff}} @value{hfillkludge} (UtilT, SrcCD)
-@c
 @code{mdiff} studies one or more input files altogether, and discovers
 blocks of items which repeat at more than one place.  Items may be lines,
 words, or units defined by user.  When in word mode, @code{mdiff} compares
@@ -137,7 +161,7 @@ obsolete, and exists merely a front-end to GNU @code{mdiff}.
 
 @code{wdiff} and @code{mdiff} were written by Fran@,{c}ois Pinard, while
 @code{unify} has been contributed by Wayne Davison.  Please report bugs to
-@w{@file{wdiff-bugs@@gnu.org}}.  Include the version number, which
+@email{wdiff-bugs@@gnu.org}.  Include the version number, which
 you can find by running the program with @samp{--version}.  Please include
 in your message sufficient input to reproduce what you got, the output you
 indeed expected, and careful explanations about the nature of the problem.
@@ -146,7 +170,7 @@ indeed expected, and careful explanations about the nature of the problem.
 @node wdiff, mdiff, Overview, Top
 @end ifset
 @ifclear EXPERIMENTAL
-@node wdiff, , Overview, Top
+@node wdiff, Experimental, Overview, Top
 @end ifclear
 @chapter The word difference finder
 
@@ -1160,5 +1184,41 @@ might have been directly called.
 
 @comment end ifset EXPERIMENTAL
 @end ifset
+
+@ifset EXPERIMENTAL
+@node Experimental,  , Compatibility, Top
+@end ifset
+@ifclear EXPERIMENTAL
+@node Experimental,  , wdiff, Top
+@end ifclear
+@chapter Experimental programs
+
+The GNU wdiff source package contains sources for a number of tools
+besides @code{wdiff} itself.
+These are considered experimental: they might work for you, but they
+might just as well fail.
+The following programs are considered experimental:
+
+@itemize @bullet
+@item @code{mdiff}
+@item @code{wdiff2}
+@item @code{unify}
+@end itemize
+
+Building these applications can be configured at build time by passing
+@code{--with-experimental} to the configure script.
+@ifset EXPERIMENTAL
+@emph{For this build, they have been enabled.}
+
+If you encounter a bug in an experimental program, the maintainers would
+still like to learn about it, but won't make any promises about fixing
+them.
+@end ifset
+@ifclear EXPERIMENTAL
+@emph{For this build, they have been disabled.}
+
+If you feel you'd like to give them a try, you could compile this
+package from source yourself.
+@end ifclear
 
 @bye
