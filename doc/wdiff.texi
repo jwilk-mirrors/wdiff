@@ -116,7 +116,6 @@ The word difference finder
 
 * wdiff invocation::            Invoking @command{wdiff} @c
 @ifset EXPERIMENTAL
-* wdiff2::                      Frontend to @command{mdiff}
 
 The multi-difference finder
 
@@ -132,12 +131,12 @@ How @command{mdiff} differs
 
 * diff Compatibility::          Differences with @command{diff}
 * wdiff Compatibility::         Differences with @command{wdiff}
-@end ifset
 
 Experimental programs
 
 * Experimental History::        History of the experimental programs
 
+@end ifset
 @end detailmenu
 @end menu
 
@@ -428,120 +427,6 @@ accumulate the effect of each.  Option @option{-l} is a variant of option
 @option{-p}.
 
 @ifset EXPERIMENTAL
-
-@node unify
-@chapter The diff format converter
-
-The program @command{unify} has the purpose of manipulating context diffs
-and unified context diffs.  @command{unify} will accept either a regular
-context diff (old- or new-style) or a unified context diff as input,
-and generate either a unified diff or a new-style context diff as output.
-
-Various other options allow you to echo the non-diff (comment) lines to
-stderr, modify the diff by removing the comment lines, and/or tweak the
-diff into a format that is good for releasing patches.
-
-I think most people prefer unified context diffs in general.  But some
-of us just have trouble reading unidiffs, unless they get very simple.
-Usual context diffs show how the code was @emph{before}, and then, how
-the code is @emph{after}.  Some people just prefer understanding twice
-thoroughly, than once fuzzily.  The tool is useful for those who handle
-a lot of diffs from various sources, and want them in a uniform format.
-
-@menu
-* unify invocation::            Invoking @command{unify}
-@end menu
-
-@node unify invocation
-@section Invoking @command{unify}
-
-The format for running the @command{unify} program is:
-
-@example
-unify @var{option} @dots{} [@var{file}]
-@end example
-
-The program reads the diff to convert from @var{file}, or if the
-source file is not mentioned, it will be read from the standard input.
-The default is to output the diff in the opposite style of whatever was
-input, that is, regular context diffs will become unified context diffs,
-and unified context diffs will become unified context diffs, but this
-can be overridden by options.
-
-@command{unify} supports the following command line options:
-
-@table @option
-@item --version
-Merely prints the version numbers on standard output, and exits without
-doing anything else.
-
-@item --help
-Merely prints a page of help on standard output, and exits without doing
-anything else.
-
-@item --context-diffs
-@itemx -c
-Forces context diff output.
-
-@item --echo-comments
-@itemx -e
-Echoes non-diff (comment) lines to stderr.  If a comment line is
-being stripped via the @option{-p} option, it is echoed with a preceding
-@samp{!!! }.  If all comments are being stripped (via the @option{-s}
-option), no special designation is given.
-
-@item --old-diffs
-@itemx -o
-Is used to force a context diff to be interpreted as being of the
-old-style even if it has the extra trailing asterisks that normally mark
-the new-style.  This is only needed if @command{unify} fails to work with
-your version of @command{diff}.
-
-@item --patch-format
-@itemx -p
-Turns on patch-output mode.  This will do two things:
-
-@enumerate
-@item
-Transform a header like:
-
-@example
-*** orig/file	Sat May  5 02:59:37 1990
---- ./file	Sat May  5 03:00:08 1990
-@end example
-
-@noindent
-into a line of @samp{Index: file} --- we choose the shorter name and strip
-a leading @samp{./} sequence if present.
-
-@item
-Strip lines that begin with @samp{@w{Only in }}, @samp{@w{Common subdir}},
-@samp{@w{Binary files}} or @samp{@w{diff -}}.
-
-@end enumerate
-
-@item -P
-Is the same as @option{-p}.
-
-@item --strip-comments
-@itemx -s
-Strips non-diff lines (comments).
-
-@item --unidiffs
-@itemx -u
-Forces unified diff output.
-
-@item -U
-Is the same as @option{-up}.
-
-@item --use-equals
-@itemx -=
-Will use a @samp{=} prefix in a unified diff for lines that are common
-to both files instead of using a leading space.  Though this is harder to
-read, it is less likely to be mangled by trailing-space-stripping sites
-when posted to Usenet.
-
-@end table
 
 @node mdiff
 @chapter The multi-difference finder
@@ -1095,6 +980,120 @@ using @option{--ignore-blank-lines} (@option{-B}) or @option{--ignore-delimiters
 (@samp{@w{-J @var{items}}}) option also cut off complexity in favor of
 clarity, yet some small matches may then go unnoticed.  Exactly how to
 best adjust the @var{items} value is left for the user to decide.
+
+@end table
+
+@node unify
+@chapter The diff format converter
+
+The program @command{unify} has the purpose of manipulating context diffs
+and unified context diffs.  @command{unify} will accept either a regular
+context diff (old- or new-style) or a unified context diff as input,
+and generate either a unified diff or a new-style context diff as output.
+
+Various other options allow you to echo the non-diff (comment) lines to
+stderr, modify the diff by removing the comment lines, and/or tweak the
+diff into a format that is good for releasing patches.
+
+I think most people prefer unified context diffs in general.  But some
+of us just have trouble reading unidiffs, unless they get very simple.
+Usual context diffs show how the code was @emph{before}, and then, how
+the code is @emph{after}.  Some people just prefer understanding twice
+thoroughly, than once fuzzily.  The tool is useful for those who handle
+a lot of diffs from various sources, and want them in a uniform format.
+
+@menu
+* unify invocation::            Invoking @command{unify}
+@end menu
+
+@node unify invocation
+@section Invoking @command{unify}
+
+The format for running the @command{unify} program is:
+
+@example
+unify @var{option} @dots{} [@var{file}]
+@end example
+
+The program reads the diff to convert from @var{file}, or if the
+source file is not mentioned, it will be read from the standard input.
+The default is to output the diff in the opposite style of whatever was
+input, that is, regular context diffs will become unified context diffs,
+and unified context diffs will become unified context diffs, but this
+can be overridden by options.
+
+@command{unify} supports the following command line options:
+
+@table @option
+@item --version
+Merely prints the version numbers on standard output, and exits without
+doing anything else.
+
+@item --help
+Merely prints a page of help on standard output, and exits without doing
+anything else.
+
+@item --context-diffs
+@itemx -c
+Forces context diff output.
+
+@item --echo-comments
+@itemx -e
+Echoes non-diff (comment) lines to stderr.  If a comment line is
+being stripped via the @option{-p} option, it is echoed with a preceding
+@samp{!!! }.  If all comments are being stripped (via the @option{-s}
+option), no special designation is given.
+
+@item --old-diffs
+@itemx -o
+Is used to force a context diff to be interpreted as being of the
+old-style even if it has the extra trailing asterisks that normally mark
+the new-style.  This is only needed if @command{unify} fails to work with
+your version of @command{diff}.
+
+@item --patch-format
+@itemx -p
+Turns on patch-output mode.  This will do two things:
+
+@enumerate
+@item
+Transform a header like:
+
+@example
+*** orig/file	Sat May  5 02:59:37 1990
+--- ./file	Sat May  5 03:00:08 1990
+@end example
+
+@noindent
+into a line of @samp{Index: file} --- we choose the shorter name and strip
+a leading @samp{./} sequence if present.
+
+@item
+Strip lines that begin with @samp{@w{Only in }}, @samp{@w{Common subdir}},
+@samp{@w{Binary files}} or @samp{@w{diff -}}.
+
+@end enumerate
+
+@item -P
+Is the same as @option{-p}.
+
+@item --strip-comments
+@itemx -s
+Strips non-diff lines (comments).
+
+@item --unidiffs
+@itemx -u
+Forces unified diff output.
+
+@item -U
+Is the same as @option{-up}.
+
+@item --use-equals
+@itemx -=
+Will use a @samp{=} prefix in a unified diff for lines that are common
+to both files instead of using a leading space.  Though this is harder to
+read, it is less likely to be mangled by trailing-space-stripping sites
+when posted to Usenet.
 
 @end table
 
