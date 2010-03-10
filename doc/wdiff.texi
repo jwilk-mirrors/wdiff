@@ -133,6 +133,11 @@ How @command{mdiff} differs
 * diff Compatibility::          Differences with @command{diff}
 * wdiff Compatibility::         Differences with @command{wdiff}
 @end ifset
+
+Experimental programs
+
+* Experimental History::        History of the experimental programs
+
 @end detailmenu
 @end menu
 
@@ -203,9 +208,6 @@ have been refilled.
 
 @menu
 * wdiff invocation::            Invoking @command{wdiff} @c
-@ifset EXPERIMENTAL
-* wdiff2::                      Frontend to @command{mdiff}
-@end ifset
 @end menu
 
 @node wdiff invocation
@@ -426,16 +428,6 @@ accumulate the effect of each.  Option @option{-l} is a variant of option
 @option{-p}.
 
 @ifset EXPERIMENTAL
-
-@node wdiff2
-@section A frontend to @command{mdiff}
-
-Many users
-suggested features, which were in turn inviting for the integration of
-@command{wdiff} into GNU diffutils.  Collaboration proved to be rather
-difficult.  After a few years, the @command{wdiff} author finally gave in
-and created @command{mdiff} as a way to break out of the situation and for
-becoming able to proceed with users' suggestions.
 
 @node unify
 @chapter The diff format converter
@@ -1111,8 +1103,12 @@ best adjust the @var{items} value is left for the user to decide.
 
 The GNU project already has a @command{diff} program which is part of the
 GNU diffutils package.  There also are various non-GNU @command{diff}
-programs provided by various constructors.  There was a previous
-version of @command{wdiff} which was using GNU @command{diff} under the scene.
+programs provided by various constructors.
+
+There is also the well-established @command{wdiff} which uses GNU
+@command{diff} under the hood. It differs slightly from
+@command{wdiff2}, its intended @command{mdiff}-based successor.
+
 The following sections compare @command{mdiff} specifications with both GNU
 @command{diff} and with @command{wdiff}.
 
@@ -1133,7 +1129,7 @@ Most @command{diff} options are accepted by @command{mdiff} under the same
 short and long option names, and is able to produce resembling output,
 for making @command{mdiff} easier to learn and less surprising to users.
 Yet, some differences exist in option decoding and output format.  Since
-@command{diff} and @command{wdiff} use different matching algorithms, it is
+@command{diff} and @command{mdiff} use different matching algorithms, it is
 very likely that the differences will not be exactly analyzed identically.
 
 @itemize @bullet
@@ -1175,7 +1171,7 @@ been shuffled around so @command{mdiff} could better merge both @command{diff}
 and @command{wdiff} options in a common scheme.  @command{diff} habits were
 almost always favored in this option reorganisation.
 
-In fact, @command{wdiff2} is now a mere front-end to @command{mdiff} that only
+@command{wdiff2} is now a mere front-end to @command{mdiff} that only
 rewrites the options.  The following notes apply.
 
 @itemize @bullet
@@ -1248,5 +1244,29 @@ them.
 If you feel you'd like to give them a try, you could compile this
 package from source yourself.
 @end ifclear
+
+@ifset EXPERIMENTAL
+@menu
+* Experimental History::   History of the experimental programs
+@end menu
+
+@node Experimental History
+@section History of the Experimental programs
+
+Many users
+suggested features, which were in turn inviting for the integration of
+@command{wdiff} into GNU diffutils.  Collaboration proved to be rather
+difficult.  After a few years, the @command{wdiff} author finally gave in
+and created @command{mdiff} as a way to break out of the situation and for
+becoming able to proceed with users' suggestions.
+
+Before @command{mdiff} and the new @command{wdiff2} based on it were
+officially released, the original author resigned maintainership.
+The new maintainers had little experience with the code, and therefore
+decided to mark it experimental. That way, the code wouldn't be lost,
+but it would be clear that it wasn't as testes as the good old
+@code{wdiff} command.
+
+@end ifset
 
 @bye
