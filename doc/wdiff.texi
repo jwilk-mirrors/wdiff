@@ -7,6 +7,7 @@
 @c %**end of header
 
 @include version.texi
+@include flags.texi
 
 @dircategory Text creation and manipulation
 @direntry
@@ -15,9 +16,11 @@
 
 @dircategory Individual utilities
 @direntry
+* wdiff: (wdiff)wdiff invocation.               Word difference finder.
+@ifset EXPERIMENTAL
 * mdiff: (wdiff)mdiff invocation.               Line cluster finder.
 * unify: (wdiff)unify invocation.               Diff format converter.
-* wdiff: (wdiff)wdiff invocation.               Word difference finder.
+@end ifset
 @end direntry
 
 @copying
@@ -73,9 +76,11 @@ This is for release @value{VERSION}.
 @menu
 * Overview::                    Overview
 * wdiff::                       The word difference finder
+@ifset EXPERIMENTAL
 * mdiff::                       The line cluster finder
 * unify::                       The diff format converter
 * Compatibility::               How @code{mdiff} differs
+@end ifset
 
 @detailmenu
 
@@ -84,6 +89,7 @@ This is for release @value{VERSION}.
 The word difference finder
 
 * wdiff invocation::            Invoking @code{wdiff}
+@ifset EXPERIMENTAL
 * wdiff2::                      Frontend to @code{mdiff}
 
 The multi-difference finder
@@ -100,6 +106,7 @@ How @code{mdiff} differs
 
 * diff Compatibility::          Differences with @code{diff}
 * wdiff Compatibility::         Differences with @code{wdiff}
+@end ifset
 @end detailmenu
 @end menu
 
@@ -135,8 +142,12 @@ you can find by running the program with @samp{--version}.  Please include
 in your message sufficient input to reproduce what you got, the output you
 indeed expected, and careful explanations about the nature of the problem.
 
+@ifset EXPERIMENTAL
 @node wdiff, mdiff, Overview, Top
-
+@end ifset
+@ifclear EXPERIMENTAL
+@node wdiff, , Overview, Top
+@end ifclear
 @chapter The word difference finder
 
 There are actually two programs for comparing files on a word per word
@@ -152,10 +163,17 @@ have been refilled.
 
 @menu
 * wdiff invocation::            Invoking @code{wdiff}
+@ifset EXPERIMENTAL
 * wdiff2::                      Frontend to @code{mdiff}
+@end ifset
 @end menu
 
+@ifset EXPERIMENTAL
 @node wdiff invocation, wdiff2, wdiff, wdiff
+@end ifset
+@ifclear EXPERIMENTAL
+@node wdiff invocation, , wdiff, wdiff
+@end ifclear
 @section Invoking @code{wdiff}
 
 The format for running the @code{wdiff} program is:
@@ -353,6 +371,8 @@ Note that options @samp{-p}, @samp{-t}, and @samp{-[wxyz]} are not
 mutually exclusive.  If you use a combination of them, you will merely
 accumulate the effect of each.  Option @samp{-l} is a variant of option
 @samp{-p}.
+
+@ifset EXPERIMENTAL
 
 @node wdiff2, , wdiff invocation, wdiff
 @section Frontend to @code{mdiff}
@@ -1137,5 +1157,8 @@ A new option @samp{-q} inhibits the message which explains how @code{mdiff}
 might have been directly called.
 
 @end itemize
+
+@comment end ifset EXPERIMENTAL
+@end ifset
 
 @bye
