@@ -1229,7 +1229,7 @@ The following programs are considered experimental:
 @end itemize
 
 Building these applications can be configured at build time by passing
-@option{--with-experimental} to the configure script.
+@option{--with-experimental} to the @file{configure} script.
 @ifset EXPERIMENTAL
 @emph{For this build, they have been enabled.}
 
