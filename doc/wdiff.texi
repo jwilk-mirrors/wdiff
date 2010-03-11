@@ -78,8 +78,10 @@ by the Foundation.
 @end titlepage
 
 @ifnottex
+@comment =============================================================
 @node Top
 @top GNU wdiff
+@comment =============================================================
 
 @ifset EXPERIMENTAL
 These Info pages document @command{wdiff}, a word difference finder, together
@@ -145,8 +147,10 @@ Experimental programs
 
 @contents
 
+@comment =============================================================
 @node Overview
 @chapter Overview
+@comment =============================================================
 
 @command{wdiff} is a front end to @command{diff} for comparing files on
 a word per word basis. It works by creating two temporary files, one
@@ -186,8 +190,10 @@ you can find by running the program with @option{--version}.  Please include
 in your message sufficient input to reproduce what you got, the output you
 indeed expected, and careful explanations about the nature of the problem.
 
+@comment =============================================================
 @node wdiff
 @chapter The word difference finder
+@comment =============================================================
 
 @ifset EXPERIMENTAL
 There are actually two programs for comparing files on a word per word
@@ -213,6 +219,7 @@ have been refilled.
 * wdiff Examples::              Actual examples of @command{wdiff} usage
 @end menu
 
+@comment -------------------------------------------------------------
 @node wdiff invocation
 @section Invoking @command{wdiff}
 
@@ -430,6 +437,7 @@ mutually exclusive.  If you use a combination of them, you will merely
 accumulate the effect of each.  Option @option{-l} is a variant of option
 @option{-p}.
 
+@comment -------------------------------------------------------------
 @node wdiff Examples
 @section Actual examples of @command{wdiff} usage
 
@@ -566,8 +574,10 @@ this offers a kind of incremental version of @command{wdiff}.
 
 @ifset EXPERIMENTAL
 
+@comment =============================================================
 @node mdiff
 @chapter The multi-difference finder
+@comment =============================================================
 
 The name @command{mdiff} stands for @emph{multi-}@command{diff}, and has the
 purpose of encompassing the functionnality of a few other @command{diff}-type
@@ -689,6 +699,7 @@ to consider.
 * Efficiency::                  Resource considerations and efficiency
 @end menu
 
+@comment -------------------------------------------------------------
 @node mdiff invocation
 @section Invoking @command{mdiff}
 
@@ -930,6 +941,7 @@ mutually exclusive.  If you use a combination of them, you will merely
 accumulate the effect of each.  Option @option{-l} is a variant of option
 @option{-p}.
 
+@comment -------------------------------------------------------------
 @node Efficiency
 @section Resource considerations and efficiency
 
@@ -1014,8 +1026,10 @@ best adjust the @var{items} value is left for the user to decide.
 
 @end table
 
+@comment =============================================================
 @node unify
 @chapter The diff format converter
+@comment =============================================================
 
 The program @command{unify} has the purpose of manipulating context diffs
 and unified context diffs.  @command{unify} will accept either a regular
@@ -1037,6 +1051,7 @@ a lot of diffs from various sources, and want them in a uniform format.
 * unify invocation::            Invoking @command{unify}
 @end menu
 
+@comment -------------------------------------------------------------
 @node unify invocation
 @section Invoking @command{unify}
 
@@ -1128,8 +1143,10 @@ when posted to Usenet.
 
 @end table
 
+@comment =============================================================
 @node Compatibility
 @chapter How @command{mdiff} differs
+@comment =============================================================
 
 The GNU project already has a @command{diff} program which is part of the
 GNU diffutils package.  There also are various non-GNU @command{diff}
@@ -1147,6 +1164,7 @@ The following sections compare @command{mdiff} specifications with both GNU
 * wdiff Compatibility::         Differences with @command{wdiff}
 @end menu
 
+@comment -------------------------------------------------------------
 @node diff Compatibility
 @section Differences with @command{diff}
 
@@ -1193,6 +1211,7 @@ means @option{--verbose} in @command{mdiff}.  There is no short form for
 
 @end itemize
 
+@comment -------------------------------------------------------------
 @node wdiff Compatibility
 @section Differences with @command{wdiff}
 
@@ -1244,8 +1263,10 @@ isn't supported by @command{wdiff2} (yet).
 @comment end ifset EXPERIMENTAL
 @end ifset
 
+@comment =============================================================
 @node Experimental
 @chapter Experimental programs
+@comment =============================================================
 
 The GNU wdiff source package contains sources for a number of tools
 besides @command{wdiff} itself.
@@ -1282,6 +1303,7 @@ package from source yourself.
 * Experimental History::   History of the experimental programs
 @end menu
 
+@comment -------------------------------------------------------------
 @node Experimental History
 @section History of the Experimental programs
 
