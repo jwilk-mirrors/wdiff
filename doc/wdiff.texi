@@ -69,8 +69,9 @@ by the Foundation.
 @ifclear EXPERIMENTAL
 @subtitle A word difference finder
 @end ifclear
-@subtitle Edition @value{EDITION}, @value{UPDATED}
+@subtitle Edition @value{EDITION}, @value{UPDATED-MONTH}
 @author Fran@,{c}ois Pinard
+@author Martin von Gagern
 
 @page
 @vskip 0pt plus 1filll
