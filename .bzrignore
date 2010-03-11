@@ -26,6 +26,7 @@ wdiff-*.tar*
 **/po/stamp-po
 ./ChangeLog
 doc/flags.texi
+doc/manual
 doc/stamp-vti
 doc/version.texi
 doc/wdiff.aux
