@@ -1153,7 +1153,7 @@ The GNU project already has a @command{diff} program which is part of the
 GNU diffutils package.  There also are various non-GNU @command{diff}
 programs provided by various constructors.
 
-There is also the well-established @command{wdiff} which uses GNU
+There is also the well-established @command{wdiff} which uses
 @command{diff} under the hood. It differs slightly from
 @command{wdiff2}, its intended @command{mdiff}-based successor.
 
