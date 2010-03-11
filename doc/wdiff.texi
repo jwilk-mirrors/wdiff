@@ -22,6 +22,7 @@
 @direntry
 * wdiff: (wdiff)wdiff invocation.               Word difference finder. @c
 @ifset EXPERIMENTAL
+* wdiff2: (wdiff)wdiff invocation.              Word difference finder.
 * mdiff: (wdiff)mdiff invocation.               Line cluster finder.
 * unify: (wdiff)unify invocation.               Diff format converter.
 @end ifset
@@ -88,11 +89,9 @@ not be part of every @command{wdiff} installation.
 @end ifset
 @ifclear EXPERIMENTAL
 These Info pages document @command{wdiff}, a word difference finder.
-Experimental applications included in the same source package (like
-@command{mdiff}) haven't been enabled for your system, so their
+Experimental applications included in the same source package
+haven't been enabled for your system, so their
 documentation will be ommitted as well.
-You can find the full documentation for all parts on the
-@uref{http://www.gnu.org/software/wdiff/, GNU wdiff homepage}.
 @end ifclear
 @xref{Experimental}.
 
@@ -105,8 +104,11 @@ This is for release @value{VERSION}.
 * mdiff::                       The line cluster finder
 * unify::                       The diff format converter
 * Compatibility::               How @command{mdiff} differs
-@end ifset
 * Experimental::                About experimental programs
+@end ifset
+@ifclear EXPERIMENTAL
+* Experimental::                About experimental programs
+@end ifclear
 
 @detailmenu
 
@@ -148,8 +150,8 @@ Experimental programs
 
 @command{wdiff} is a front end to @command{diff} for comparing files on
 a word per word basis. It works by creating two temporary files, one
-word per line, and then executes diff on these files. It collects the
-diff output and uses it to produce a nicer display of word differences
+word per line, and then executes @command{diff} on these files. It collects the
+@command{diff} output and uses it to produce a nicer display of word differences
 between the original files.
 
 @ifset EXPERIMENTAL
@@ -194,11 +196,13 @@ basis.
 GNU diffutils package. It is quite mature.
 Its planned successor, @command{wdiff2}, is a front end to @command{mdiff},
 and as experimental as @command{mdiff} itself.
+@xref{Experimental}.
 @end ifset
 
 @ifclear EXPERIMENTAL
-@command{wdiff} is a front-end to @command{diff} as found in the
-GNU diffutils package.
+@command{wdiff} is a programs for comparing files on a word per word
+basis.
+It is a front-end to @command{diff} as found in the GNU diffutils package.
 @end ifclear
 A word is anything between whitespace.  This is useful for comparing two
 texts in which a few words have been changed and for which paragraphs
@@ -1257,16 +1261,18 @@ The following programs are considered experimental:
 
 Building these applications can be configured at build time by passing
 @option{--with-experimental} to the @file{configure} script.
+
 @ifset EXPERIMENTAL
 @emph{For this build, they have been enabled.}
-
 If you encounter a bug in an experimental program, the maintainers would
-still like to learn about it, but won't make any promises about fixing
-them.
+still like to learn about it, but there is a greater chance that they
+decide not to fix such issues unless you provide a patch as well.
 @end ifset
 @ifclear EXPERIMENTAL
 @emph{For this build, they have been disabled.}
-
+Therefore their documentation has been omitted here as well.
+You can find the full documentation for all parts of GNU wdiff on the
+@uref{http://www.gnu.org/software/wdiff/, GNU wdiff homepage}.
 If you feel you'd like to give them a try, you could compile this
 package from source yourself.
 @end ifclear
