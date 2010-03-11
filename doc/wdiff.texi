@@ -116,7 +116,6 @@ The word difference finder
 
 * wdiff invocation::            Invoking @command{wdiff}
 * wdiff Examples::              Actual examples of @command{wdiff} usage
-
 @ifset EXPERIMENTAL
 The multi-difference finder
 
@@ -522,6 +521,34 @@ inserted, I'm using bold face for other things, so this is more clear.
 @example
 wdiff -w '\s-3' -x'\s0' -y'\s+3' -z'\s0'
 @end example
+
+@end itemize
+
+@item Colored output example.
+
+@itemize @bullet
+
+@item
+This example comes from @email{Martin.vGagern@@gmx.net, Martin von Gagern}.
+
+If you like colored output, and your terminal supports ANSI escape
+sequences, you can use this invocation:
+
+@example
+wdiff -n \
+  -w $'\033[30;41m' -x $'\033[0m' \
+  -y $'\033[30;42m' -z $'\033[0m' \
+  @dots{} | less -R
+@end example
+
+This will print deleted text black on red, and inserted text black on
+green, assuming that your normal terminal colors are white on black.
+Of course you can choose different colors if you prefer.
+
+The @samp{$'@dots{}'} notation is supported by GNU bash, and maybe other
+shells as well. If your shell doesn't support it, you might need some
+more tricks to generate these escape sequences as command line
+arguments.
 
 @end itemize
 
