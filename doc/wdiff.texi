@@ -114,13 +114,13 @@ This is for release @value{VERSION}.
 
 The word difference finder
 
-* wdiff invocation::            Invoking @command{wdiff} @c
-@ifset EXPERIMENTAL
+* wdiff invocation::            Invoking @command{wdiff}
+* wdiff Examples::              Actual examples of @command{wdiff} usage
 
+@ifset EXPERIMENTAL
 The multi-difference finder
 
 * mdiff invocation::            Invoking @command{mdiff}
-* Examples::                    Actual examples of @command{mdiff} usage
 * Efficiency::                  Resource considerations and efficiency
 
 The diff format converter
@@ -206,7 +206,8 @@ texts in which a few words have been changed and for which paragraphs
 have been refilled.
 
 @menu
-* wdiff invocation::            Invoking @command{wdiff} @c
+* wdiff invocation::            Invoking @command{wdiff}
+* wdiff Examples::              Actual examples of @command{wdiff} usage
 @end menu
 
 @node wdiff invocation
@@ -426,6 +427,112 @@ mutually exclusive.  If you use a combination of them, you will merely
 accumulate the effect of each.  Option @option{-l} is a variant of option
 @option{-p}.
 
+@node wdiff Examples
+@section Actual examples of @command{wdiff} usage
+
+This section presents a few examples of usage, most of them have been
+contributed by @command{wdiff} users.
+
+@itemize @bullet
+@item Change bars example.
+
+@itemize @bullet
+
+@item
+This example comes from a discussion with
+@email{jbw@@cs.bu.edu, Joe Wells}.
+
+The following command produces a copy of @var{new_file}, shifted right
+one space to accommodate change bars since the last revision, ignoring
+those changes coming only from paragraph refilling.  Any line with new
+or changed text will get a @samp{|} in column 1.  However, deleted text
+is not shown nor marked.
+
+@example
+wdiff -1n @var{old_file} @var{new_file} |
+  sed -e 's/^/  /;/@{+/s/^ /|/;s/@{+//g;s/+@}//g'
+@end example
+
+Here is how it works.  Word differences are found, paying attention only
+to additions, as requested by option @option{-1}.  For bigger changes
+which span line boundaries, the insert bracket strings are repeated on
+each output line, as requested by option @option{-n}.  This output is then
+reformatted with a @command{sed} script which shifts the text right two
+columns, turns the initial space into a bar only if there is some new
+text on that line, then removes all insert bracket strings.
+
+@end itemize
+
+@item La@TeX{} example.
+
+@itemize @bullet
+@item
+
+This example has been provided by
+@email{fisk@@polar.bowdoin.edu, Steve Fisk}.
+
+The following uses La@TeX{} to put deleted text in boxes, and new text
+in double boxes:
+
+@example
+wdiff -w "\fbox@{" -x "@}" -y "\fbox@{\fbox@{" -z "@}@}" @dots{}
+@end example
+
+@noindent
+works nicely.
+
+@end itemize
+
+@item @command{troff} example.
+
+@itemize @bullet
+
+@item
+This example comes from @email{pgf@@cayman.com, Paul Fox}.
+
+Using @command{wdiff}, with some @command{troff}-specific delimiters gives
+@emph{much} better output.  The delimiters I used:
+
+@example
+wdiff -w'\s-5' -x'\s0' -y'\fB' -z'\fP' @dots{}
+@end example
+
+This makes the pointsize of deletions 5 points smaller than normal, and
+emboldens insertions.  Fantastic!
+
+I experimented with:
+
+@example
+wdiff -w'\fI' -x'\fP' -y'\fB' -z'\fP'
+@end example
+
+since that's more like the defaults you use for terminals or printers,
+but since I actually use italics for emphasis in my documents, I thought
+the point size thing was clearer.
+
+I tried it on code, and it works surprisingly well there, too...
+
+@item
+@email{leisner@@eso.mc.xerox.com, Marty Leisner} says:
+
+In the previous example, you had smaller text being taken out and bold
+face inserted.  I had smaller text being taken out and larger text being
+inserted, I'm using bold face for other things, so this is more clear.
+
+@example
+wdiff -w '\s-3' -x'\s0' -y'\s+3' -z'\s0'
+@end example
+
+@end itemize
+
+@end itemize
+
+On a related note, GNU Emacs users might notice that the interactive
+function @code{compare-windows} ignores changes in whitespace, if it is
+given a numeric argument.  If the variable @code{compare-ignore-case}
+is non-@code{nil}, it ignores differences in case as well.  So, in a way,
+this offers a kind of incremental version of @command{wdiff}.
+
 @ifset EXPERIMENTAL
 
 @node mdiff
@@ -548,7 +655,6 @@ to consider.
 
 @menu
 * mdiff invocation::            Invoking @command{mdiff}
-* Examples::
 * Efficiency::                  Resource considerations and efficiency
 @end menu
 
@@ -792,112 +898,6 @@ Note that options @option{-p}, @option{-t}, and @option{-[wxyz]} are not
 mutually exclusive.  If you use a combination of them, you will merely
 accumulate the effect of each.  Option @option{-l} is a variant of option
 @option{-p}.
-
-@node Examples
-@section Actual examples of @command{mdiff} usage
-
-This section presents a few examples of usage, most of them have been
-contributed by @command{wdiff} users.
-
-@itemize @bullet
-@item Change bars example.
-
-@itemize @bullet
-
-@item
-This example comes from a discussion with
-@email{jbw@@cs.bu.edu, Joe Wells}.
-
-The following command produces a copy of @var{new_file}, shifted right
-one space to accommodate change bars since the last revision, ignoring
-those changes coming only from paragraph refilling.  Any line with new
-or changed text will get a @samp{|} in column 1.  However, deleted text
-is not shown nor marked.
-
-@example
-wdiff -1n @var{old_file} @var{new_file} |
-  sed -e 's/^/  /;/@{+/s/^ /|/;s/@{+//g;s/+@}//g'
-@end example
-
-Here is how it works.  Word differences are found, paying attention only
-to additions, as requested by option @option{-1}.  For bigger changes
-which span line boundaries, the insert bracket strings are repeated on
-each output line, as requested by option @option{-n}.  This output is then
-reformatted with a @command{sed} script which shifts the text right two
-columns, turns the initial space into a bar only if there is some new
-text on that line, then removes all insert bracket strings.
-
-@end itemize
-
-@item La@TeX{} example.
-
-@itemize @bullet
-@item
-
-This example has been provided by
-@email{fisk@@polar.bowdoin.edu, Steve Fisk}.
-
-The following uses La@TeX{} to put deleted text in boxes, and new text
-in double boxes:
-
-@example
-wdiff -w "\fbox@{" -x "@}" -y "\fbox@{\fbox@{" -z "@}@}" @dots{}
-@end example
-
-@noindent
-works nicely.
-
-@end itemize
-
-@item @command{troff} example.
-
-@itemize @bullet
-
-@item
-This example comes from @email{pgf@@cayman.com, Paul Fox}.
-
-Using @command{wdiff}, with some @command{troff}-specific delimiters gives
-@emph{much} better output.  The delimiters I used:
-
-@example
-wdiff -w'\s-5' -x'\s0' -y'\fB' -z'\fP' @dots{}
-@end example
-
-This makes the pointsize of deletions 5 points smaller than normal, and
-emboldens insertions.  Fantastic!
-
-I experimented with:
-
-@example
-wdiff -w'\fI' -x'\fP' -y'\fB' -z'\fP'
-@end example
-
-since that's more like the defaults you use for terminals or printers,
-but since I actually use italics for emphasis in my documents, I thought
-the point size thing was clearer.
-
-I tried it on code, and it works surprisingly well there, too...
-
-@item
-@email{leisner@@eso.mc.xerox.com, Marty Leisner} says:
-
-In the previous example, you had smaller text being taken out and bold
-face inserted.  I had smaller text being taken out and larger text being
-inserted, I'm using bold face for other things, so this is more clear.
-
-@example
-wdiff -w '\s-3' -x'\s0' -y'\s+3' -z'\s0'
-@end example
-
-@end itemize
-
-@end itemize
-
-On a related note, GNU Emacs users might notice that the interactive
-function @code{compare-windows} ignores changes in whitespace, if it is
-given a numeric argument.  If the variable @code{compare-ignore-case}
-is non-@code{nil}, it ignores differences in case as well.  So, in a way,
-this offers a kind of incremental version of @command{wdiff}.
 
 @node Efficiency
 @section Resource considerations and efficiency
