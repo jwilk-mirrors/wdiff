@@ -2,6 +2,8 @@
    Copyright (C) 1992, 1997, 1998, 1999, 2009,
                  2010 Free Software Foundation, Inc.
    Francois Pinard <pinard@iro.umontreal.ca>, 1992.
+   Per-character diff mode added 2010 by 
+   Georgios Zarkadas <georgios.zarkadas@gmail.com>
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -104,6 +106,7 @@ struct option const longopts[] =
   {"end-delete"  , 1, NULL, 'x'},
   {"end-insert"  , 1, NULL, 'z'},
   {"help"        , 0, NULL, 'h'},
+  {"char"        , 0, NULL, 'c'},
   {"ignore-case" , 0, NULL, 'i'},
   {"less-mode"   , 0, NULL, 'l'},
   {"no-common"   , 0, NULL, '3'},
@@ -154,6 +157,13 @@ enum copy_mode
 }
 copy_mode;
 
+enum diff_mode
+{
+  MODE_WORD, 			/* diff by words (default) */
+  MODE_CHAR 			/* diff by chars */
+}
+diff_mode;        
+
 jmp_buf signal_label;		/* where to jump when signal received */
 int interrupted;		/* set when some signal has been received */
 
@@ -167,7 +177,7 @@ struct side
 {
   const char *filename;		/* original input file name */
   FILE *file;			/* original input file */
-  int position;			/* number of words read so far */
+  int position;			/* number of words|chars read so far */
   int character;		/* one character look ahead */
   char *temp_name;		/* temporary file name */
   FILE *temp_file;		/* temporary file */
@@ -414,6 +424,41 @@ skip_word (SIDE *side)
   side->position++;
 }
 
+static void
+skip_char (SIDE *side)
+{
+  if (interrupted)
+    longjmp (signal_label, 1);
+
+  /* skip one non-space char; we are called *after* skip_whitespace */
+
+  if (side->character != EOF)
+    {
+      /* Simple UTF-8 support:
+       * Since this is a pass-through utility, do not interpret/transform
+       * invalid sequences. Just group bytes in a sensible manner. 
+       */
+      unsigned char test = side->character;
+      if ((test & 0xc0) == 0xc0)
+	{
+	  /* Start of multibyte sequence. Consume all continuation bytes 
+	   * up to the maximum allowed by original UTF-8 specification.
+	   */
+	  int count;
+	  for (count = 0; count < 6; ++count)
+	    {
+	      side->character = getc (side->file);
+	      test = side->character;
+	      if (test == EOF || (test & 0xc0) != 0x80)
+		break;
+	    }
+	}
+      else 					/* ASCII or non UTF-8 */
+	side->character = getc (side->file);
+    }
+  side->position++;
+}
+
 /*-------------------------------------.
 | Copy white space from SIDE to FILE.  |
 `-------------------------------------*/
@@ -549,6 +594,89 @@ copy_word (SIDE * side, FILE * file)
   side->position++;
 }
 
+/* Get a UTF-8 character from side->file and store it in *buf (buf must hold
+ * at least 8 chars, the 8th for the terminating null)
+ * Return the mumber of bytes extracted (also updates both side->character 
+ * and side->position).
+ */
+static int
+get_char (SIDE *side, char *buf)
+{
+  int count = 0;
+  if (side->character != EOF)
+    {
+      buf[count] = side->character;
+      ++count;
+      unsigned char test = side->character;
+      if ((test & 0xc0) == 0xc0)
+	{
+	  /* Start of multibyte sequence. Consume all continuation bytes 
+	   * up to the maximum allowed by original UTF-8 specification.
+	   */
+	  for ( /* count=1 */ ; count < 7; ++count)
+	    {
+	      side->character = getc (side->file);
+	      test = side->character;
+	      buf[count] = side->character;
+	      if (test == EOF || (test & 0xc0) != 0x80)
+		break;
+	    }
+	}
+      else 					/* ASCII or non UTF-8 */
+	side->character = getc (side->file);
+    }
+  side->position++;
+  buf[count] = '\0';
+  return count;
+}
+
+static void
+copy_char (SIDE *side, FILE *file)
+{
+  char buf[8];
+
+  if (interrupted)
+    longjmp (signal_label, 1);
+
+  /* copy one non-space char; we are called *after* (skip|copy)_whitespace */
+
+  if (side->character != EOF)
+    {
+      get_char(side, (char *) &buf);
+
+      /* In printer mode, act according to copy_mode.  If copy_mode is not
+	 COPY_NORMAL, we know that file is necessarily output_file.  */
+
+      if (overstrike)
+	switch (copy_mode)
+	  {
+	  case COPY_NORMAL:
+	    fputs ((const char *) &buf, file);
+	    break;
+
+	  case COPY_DELETED:
+	    putc ('_', output_file);
+
+	    /* Avoid underlining an underscore.  */
+
+	    if (side->character != '_')
+	      {
+		putc ('\b', output_file);
+		fputs ((const char *) &buf, output_file);
+	      }
+	    break;
+	  
+	  case COPY_INSERTED:
+	    fputs ((const char *) &buf, output_file);
+	    putc ('\b', output_file);
+	    fputs ((const char *) &buf, output_file);
+	    break;
+	  }
+      else
+	fputs ((const char *) &buf, file);
+    }
+}
+
 /*-------------------------------------------------------------------------.
 | Create a template filename suitable for mkstemp given the temporary	   |
 | directory settings of the system.  The method used here closely follows  |
@@ -677,7 +805,7 @@ split_diff (const char *path)
 `-------------------------------------------------------------------------*/
 
 static void
-split_file_into_words (SIDE * side)
+split_file_common (SIDE *side)
 {
   struct stat stat_buffer;	/* for checking if file is directory */
   int fd;			/* for file descriptors returned by mkstemp */
@@ -729,6 +857,17 @@ split_file_into_words (SIDE * side)
   side->temp_file = fdopen (fd, "w");
   if (side->temp_file == NULL)
     error (EXIT_FAILURE, errno, "%s", side->temp_name);
+}
+
+/* Only the copy_xxxx line differs in the two functions below. 
+ * However, they were chosen to be implemented separately because 
+ * they constitute 'tight' loops. 
+ */
+
+static void
+split_file_into_words (SIDE *side)
+{
+  split_file_common (side);
 
   /* Complete splitting input file into words on output.  */
 
@@ -741,6 +880,27 @@ split_file_into_words (SIDE * side)
       if (side->character == EOF)
 	break;
       copy_word (side, side->temp_file);
+      putc ('\n', side->temp_file);
+    }
+  fclose (side->temp_file);
+}
+
+static void
+split_file_into_chars (SIDE *side)
+{
+  split_file_common (side);
+
+  /* Complete splitting input file into chars on output.  */
+
+  while (side->character != EOF)
+    {
+      if (interrupted)
+	longjmp (signal_label, 1);
+
+      skip_whitespace (side);
+      if (side->character == EOF)
+	break;
+      copy_char (side, side->temp_file);
       putc ('\n', side->temp_file);
     }
   fclose (side->temp_file);
@@ -831,11 +991,18 @@ decode_directive_line (void)
 static void
 skip_until_ordinal (SIDE * side, int ordinal)
 {
-  while (side->position < ordinal)
-    {
-      skip_whitespace (side);
-      skip_word (side);
-    }
+  if (diff_mode == MODE_WORD)
+    while (side->position < ordinal)
+      {
+        skip_whitespace (side);
+        skip_word (side);
+      }
+  else
+    while (side->position < ordinal)
+      {
+        skip_whitespace (side);
+        skip_char (side);
+      }
 }
 
 /*----------------------------------------------.
@@ -845,11 +1012,18 @@ skip_until_ordinal (SIDE * side, int ordinal)
 static void
 copy_until_ordinal (SIDE * side, int ordinal)
 {
-  while (side->position < ordinal)
-    {
-      copy_whitespace (side, output_file);
-      copy_word (side, output_file);
-    }
+  if (diff_mode == MODE_WORD)
+    while (side->position < ordinal)
+      {
+        copy_whitespace (side, output_file);
+        copy_word (side, output_file);
+      }
+  else
+    while (side->position < ordinal)
+      {
+        copy_whitespace (side, output_file);
+        copy_char (side, output_file);
+      }
 }
 
 /*-----------------------------------------------------.
@@ -966,7 +1140,10 @@ reformat_diff_output (void)
 	    {
 	      copy_whitespace (left_side, output_file);
 	      start_of_delete ();
-	      copy_word (left_side, output_file);
+	      if (diff_mode == MODE_WORD)
+		copy_word (left_side, output_file);
+	      else
+		copy_char (left_side, output_file);
 	      copy_until_ordinal (left_side, argument[1]);
 	      end_of_delete ();
 	    }
@@ -984,12 +1161,15 @@ reformat_diff_output (void)
 	      {
 		copy_whitespace (right_side, output_file);
 		start_of_insert ();
-		copy_word (right_side, output_file);
+		  if (diff_mode == MODE_WORD)
+		    copy_word (right_side, output_file);
+		  else
+		    copy_char (right_side, output_file);
 		copy_until_ordinal (right_side, argument[3]);
 		end_of_insert ();
 	      }
-	}
-    }
+	}	/* decode_directive_line */
+    }		/* while (1) */
 
   /* Copy remainder of input.  Copy from left side if the user wanted to see
      only the common code and deleted words.  */
@@ -1265,6 +1445,7 @@ Mandatory arguments to long options are mandatory for short options too.\n"),
       fputs (_("  -2, --no-inserted          inhibit output of inserted words\n"), stdout);
       fputs (_("  -3, --no-common            inhibit output of common words\n"), stdout);
       fputs (_("  -a, --auto-pager           automatically calls a pager\n"), stdout);
+      fputs (_("  -c, --char                 diff by character instead by word\n"), stdout);
       fputs (_("  -d, --diff-input           use single unified diff as input\n"), stdout);
       fputs (_("  -h, --help                 display this help then exit\n"), stdout);
       fputs (_("  -i, --ignore-case          fold character case while comparing\n"), stdout);
@@ -1322,6 +1503,7 @@ main (int argc, char *const argv[])
   term_insert_start = NULL;
   term_insert_end = NULL;
   copy_mode = COPY_NORMAL;
+  diff_mode = MODE_WORD;        /* word diff is default */
 
   count_total_left = 0;
   count_total_right = 0;
@@ -1331,7 +1513,7 @@ main (int argc, char *const argv[])
   count_changed_right = 0;
 
   while (option_char = getopt_long (argc, (char **) argv,
-				    "123CKadhilnpstvw:x:y:z:", longopts, NULL),
+				    "123CKacdhilnpstvw:x:y:z:", longopts, NULL),
 	 option_char != EOF)
     switch (option_char)
       {
@@ -1353,6 +1535,10 @@ main (int argc, char *const argv[])
 
       case 'a':
 	autopager = 1;
+	break;
+
+      case 'c':
+	diff_mode = MODE_CHAR;
 	break;
 
       case 'd':
@@ -1496,10 +1682,20 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
 
   if (!setjmp (signal_label))
     {
-      split_file_into_words (left_side);
-      count_total_left = left_side->position;
-      split_file_into_words (right_side);
-      count_total_right = right_side->position;
+      if (diff_mode == MODE_WORD)
+	{
+	  split_file_into_words (left_side);
+	  count_total_left = left_side->position;
+	  split_file_into_words (right_side);
+	  count_total_right = right_side->position;
+	}
+      else
+	{
+	  split_file_into_chars (left_side);
+	  count_total_left = left_side->position;
+	  split_file_into_chars (right_side);
+	  count_total_right = right_side->position;
+	}
       launch_input_program ();
       launch_output_program ();
       initialize_strings ();
