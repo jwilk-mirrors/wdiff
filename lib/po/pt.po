@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sh-utils 1.12i\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 09:19+0100\n"
+"POT-Creation-Date: 2005-09-30 17:42+0300\n"
 "PO-Revision-Date: 1996-11-08 20:03+0100\n"
 "Last-Translator: António João Serras Rendas <arendas@mail.telepac.pt>\n"
 "Language-Team: Português <pt@li.org>\n"
@@ -14,302 +14,267 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: lib/error.c:153
+#: lib/argmatch.c:137
+#, fuzzy, c-format
+msgid "invalid argument %s for %s"
+msgstr "argumento inválido `%s'"
+
+#: lib/argmatch.c:138
+#, fuzzy, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "falta um argumento a `%s'"
+
+#: lib/argmatch.c:157
+#, fuzzy, c-format
+msgid "Valid arguments are:"
+msgstr "argumento inválido `%s'"
+
+#: lib/argp-help.c:1597
+#, fuzzy
+msgid " [OPTION...]"
+msgstr "Utilização: %s [OPÇÃO]...\n"
+
+#: lib/argp-help.c:1624
+#, fuzzy, c-format
+msgid "Try `%s --help' or `%s --usage' for more information.\n"
+msgstr "Tente `%s --help' para mais informação.\n"
+
+#: lib/argp-help.c:1872 lib/error.c:121
 #, fuzzy
 msgid "Unknown system error"
 msgstr "operador binário desconhecido"
 
-#: lib/getopt.c:529 lib/getopt.c:545
-#, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr ""
+#: lib/argp-parse.c:147
+#, fuzzy
+msgid "Print program version"
+msgstr "erro de leitura"
 
-#: lib/getopt.c:578 lib/getopt.c:582
-#, c-format
-msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:591 lib/getopt.c:596
-#, c-format
-msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#: lib/argp-parse.c:619
 #, fuzzy, c-format
-msgid "%s: option '%s' requires an argument\n"
+msgid "%s: Too many arguments\n"
 msgstr "demasiados argumentos\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
+#: lib/c-stack.c:244
+#, fuzzy
+msgid "program error"
+msgstr "erro de leitura"
+
+#: lib/closeout.c:94
+msgid "write error"
+msgstr "erro na escrita"
+
+#: lib/copy-file.c:65
 #, fuzzy, c-format
-msgid "%s: unrecognized option '--%s'\n"
-msgstr "opção inválida `%s'"
+msgid "error while opening \"%s\" for reading"
+msgstr "não consigo mover `%s' para `%s'"
 
-#: lib/getopt.c:707 lib/getopt.c:710
+#: lib/copy-file.c:72
 #, fuzzy, c-format
-msgid "%s: unrecognized option '%c%s'\n"
-msgstr "opção inválida `%s'"
+msgid "cannot open backup file \"%s\" for writing"
+msgstr "não consigo mover `%s' para `%s'"
 
-#: lib/getopt.c:759 lib/getopt.c:762
+#: lib/copy-file.c:80
 #, fuzzy, c-format
-msgid "%s: invalid option -- '%c'\n"
-msgstr "opção inválida `%s'"
+msgid "error reading \"%s\""
+msgstr "%s: apagar directoria `%s'? "
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#: lib/copy-file.c:85 lib/copy-file.c:89
 #, fuzzy, c-format
-msgid "%s: option requires an argument -- '%c'\n"
-msgstr "demasiados argumentos\n"
+msgid "error writing \"%s\""
+msgstr "%s: apagar directoria `%s'? "
 
-#: lib/getopt.c:882 lib/getopt.c:898
-#, c-format
-msgid "%s: option '-W %s' is ambiguous\n"
-msgstr ""
+#: lib/copy-file.c:91
+#, fuzzy, c-format
+msgid "error after reading \"%s\""
+msgstr "%s: apagar directoria `%s'? "
 
-#: lib/getopt.c:922 lib/getopt.c:940
-#, c-format
-msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr ""
-
-#: lib/regcomp.c:132
-msgid "Success"
-msgstr ""
-
-#: lib/regcomp.c:135
-msgid "No match"
-msgstr ""
-
-#: lib/regcomp.c:138
+#: lib/csharpcomp.c:273
 #, fuzzy
-msgid "Invalid regular expression"
+msgid "fdopen() failed"
+msgstr "ficheiros especiais de tipo bloco não suportados"
+
+#: lib/execute.c:186 lib/execute.c:262 lib/execute.c:304 lib/pipe.c:231
+#: lib/pipe.c:349 lib/pipe.c:409 lib/wait-process.c:336 lib/wait-process.c:403
+#, fuzzy, c-format
+msgid "%s subprocess failed"
 msgstr "opção inválida `%s'"
 
-#: lib/regcomp.c:141
+#: lib/file-type.c:43
 #, fuzzy
-msgid "Invalid collation character"
-msgstr "data inválida `%s'"
+msgid "regular file"
+msgstr "`%s' não é um ficheiro normal"
 
-#: lib/regcomp.c:144
+#: lib/file-type.c:46
 #, fuzzy
-msgid "Invalid character class name"
-msgstr "data inválida `%s'"
+msgid "directory"
+msgstr "`%s' não é uma directoria"
 
-#: lib/regcomp.c:147
-msgid "Trailing backslash"
-msgstr ""
-
-#: lib/regcomp.c:150
-msgid "Invalid back reference"
-msgstr ""
-
-#: lib/regcomp.c:153
-msgid "Unmatched [ or [^"
-msgstr ""
-
-#: lib/regcomp.c:156
-msgid "Unmatched ( or \\("
-msgstr ""
-
-#: lib/regcomp.c:159
-msgid "Unmatched \\{"
-msgstr ""
-
-#: lib/regcomp.c:162
-msgid "Invalid content of \\{\\}"
-msgstr ""
-
-#: lib/regcomp.c:165
+#: lib/file-type.c:49
 #, fuzzy
-msgid "Invalid range end"
+msgid "block special file"
+msgstr "ficheiros especiais de tipo bloco não suportados"
+
+#: lib/file-type.c:52
+#, fuzzy
+msgid "character special file"
+msgstr "ficheiros especiais de tipo caracter não suportados"
+
+#: lib/file-type.c:58
+#, fuzzy
+msgid "symbolic link"
+msgstr "não consigo ler ligação (link) simbólica `%s'"
+
+#: lib/file-type.c:75
+#, fuzzy
+msgid "weird file"
+msgstr "`%s' não é um ficheiro normal"
+
+#: lib/gai_strerror.c:45
+#, fuzzy
+msgid "Address family for hostname not supported"
+msgstr "ficheiros \"fifo\" não suportados"
+
+#: lib/gai_strerror.c:49
+#, fuzzy
+msgid "ai_family not supported"
+msgstr "ficheiros \"fifo\" não suportados"
+
+#: lib/gai_strerror.c:54
+#, fuzzy
+msgid "ai_socktype not supported"
+msgstr "ficheiros \"fifo\" não suportados"
+
+#: lib/gai_strerror.c:55
+#, fuzzy
+msgid "System error"
+msgstr "erro na escrita"
+
+#: lib/gai_strerror.c:74
+#, fuzzy
+msgid "Unknown error"
+msgstr "operador binário desconhecido"
+
+#: lib/getopt.c:727 lib/getopt.c:730
+#, fuzzy, c-format
+msgid "%s: unrecognized option `--%s'\n"
 msgstr "opção inválida `%s'"
 
-#: lib/regcomp.c:168
-#, fuzzy
-msgid "Memory exhausted"
-msgstr "memória virtual esgotada"
-
-#: lib/regcomp.c:171
-#, fuzzy
-msgid "Invalid preceding regular expression"
+#: lib/getopt.c:738 lib/getopt.c:741
+#, fuzzy, c-format
+msgid "%s: unrecognized option `%c%s'\n"
 msgstr "opção inválida `%s'"
 
-#: lib/regcomp.c:174
-#, fuzzy
-msgid "Premature end of regular expression"
+#: lib/getopt.c:796 lib/getopt.c:799
+#, fuzzy, c-format
+msgid "%s: illegal option -- %c\n"
 msgstr "opção inválida `%s'"
 
-#: lib/regcomp.c:177
-#, fuzzy
-msgid "Regular expression too big"
+#: lib/getopt.c:805 lib/getopt.c:808
+#, fuzzy, c-format
+msgid "%s: invalid option -- %c\n"
 msgstr "opção inválida `%s'"
 
-#: lib/regcomp.c:180
-msgid "Unmatched ) or \\)"
-msgstr ""
-
-#: lib/regcomp.c:701
+#: lib/human.c:486
 #, fuzzy
-msgid "No previous regular expression"
-msgstr "opção inválida `%s'"
+msgid "block size"
+msgstr "tipo de ordenação"
 
-#: lib/xalloc-die.c:34
+#: lib/mkdir-p.c:106
+#, fuzzy, c-format
+msgid "%s exists but is not a directory"
+msgstr "`%s' não é uma directoria"
+
+#: lib/mkdir-p.c:203 lib/mkdir-p.c:294
+#, fuzzy, c-format
+msgid "cannot change owner and/or group of %s"
+msgstr "aviso: não consigo mudar para a directoria %s"
+
+#: lib/mkdir-p.c:229 lib/mkdir-p.c:266
+#, fuzzy, c-format
+msgid "cannot create directory %s"
+msgstr "não consigo obter a directoria actual"
+
+#: lib/mkdir-p.c:240
+#, fuzzy, c-format
+msgid "cannot chdir to directory %s"
+msgstr "aviso: não consigo mudar para a directoria %s"
+
+#: lib/mkdir-p.c:307 lib/mkdir-p.c:332
+#, fuzzy, c-format
+msgid "cannot change permissions of %s"
+msgstr "aviso: não consigo mudar para a directoria %s"
+
+#: lib/obstack.c:438 lib/obstack.c:441 lib/xalloc-die.c:38 lib/xsetenv.c:40
 #, fuzzy
 msgid "memory exhausted"
 msgstr "memória virtual esgotada"
 
+#: lib/openat-die.c:36
 #, fuzzy
-#~ msgid "invalid argument %s for %s"
-#~ msgstr "argumento inválido `%s'"
+msgid "unable to record current working directory"
+msgstr "não consigo obter a directoria actual"
 
+#: lib/pagealign_alloc.c:143
 #, fuzzy
-#~ msgid "ambiguous argument %s for %s"
-#~ msgstr "falta um argumento a `%s'"
+msgid "Failed to open /dev/zero for read"
+msgstr "aviso: não consigo mudar para a directoria %s"
 
+#: lib/pipe.c:157 lib/pipe.c:160 lib/pipe.c:264 lib/pipe.c:267
 #, fuzzy
-#~ msgid "Valid arguments are:"
-#~ msgstr "argumento inválido `%s'"
+msgid "cannot create pipe"
+msgstr "não consigo obter a directoria actual"
 
+#: lib/regcomp.c:137
 #, fuzzy
-#~ msgid " [OPTION...]"
-#~ msgstr "Utilização: %s [OPÇÃO]...\n"
+msgid "Invalid regular expression"
+msgstr "opção inválida `%s'"
 
+#: lib/regcomp.c:143
 #, fuzzy
-#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
-#~ msgstr "Tente `%s --help' para mais informação.\n"
+msgid "Invalid character class name"
+msgstr "data inválida `%s'"
 
+#: lib/regcomp.c:167
 #, fuzzy
-#~ msgid "Print program version"
-#~ msgstr "erro de leitura"
+msgid "Memory exhausted"
+msgstr "memória virtual esgotada"
 
+#: lib/regcomp.c:170
 #, fuzzy
-#~ msgid "program error"
-#~ msgstr "erro de leitura"
+msgid "Invalid preceding regular expression"
+msgstr "opção inválida `%s'"
 
-#~ msgid "write error"
-#~ msgstr "erro na escrita"
-
+#: lib/regcomp.c:173
 #, fuzzy
-#~ msgid "error while opening \"%s\" for reading"
-#~ msgstr "não consigo mover `%s' para `%s'"
+msgid "Premature end of regular expression"
+msgstr "opção inválida `%s'"
 
+#: lib/regcomp.c:176
 #, fuzzy
-#~ msgid "cannot open backup file \"%s\" for writing"
-#~ msgstr "não consigo mover `%s' para `%s'"
+msgid "Regular expression too big"
+msgstr "opção inválida `%s'"
 
+#: lib/regcomp.c:659
 #, fuzzy
-#~ msgid "error reading \"%s\""
-#~ msgstr "%s: apagar directoria `%s'? "
+msgid "No previous regular expression"
+msgstr "opção inválida `%s'"
 
+#: lib/unicodeio.c:156
 #, fuzzy
-#~ msgid "error writing \"%s\""
-#~ msgstr "%s: apagar directoria `%s'? "
+msgid "character out of range"
+msgstr "ficheiros especiais de tipo caracter não suportados"
 
+#: lib/userspec.c:110
 #, fuzzy
-#~ msgid "error after reading \"%s\""
-#~ msgstr "%s: apagar directoria `%s'? "
+msgid "invalid user"
+msgstr "\\%c: caracter de escape inválido"
 
+#: lib/userspec.c:111
 #, fuzzy
-#~ msgid "fdopen() failed"
-#~ msgstr "ficheiros especiais de tipo bloco não suportados"
+msgid "invalid group"
+msgstr "opção inválida `%s'"
 
-#, fuzzy
-#~ msgid "%s subprocess failed"
-#~ msgstr "opção inválida `%s'"
-
-#, fuzzy
-#~ msgid "regular file"
-#~ msgstr "`%s' não é um ficheiro normal"
-
-#, fuzzy
-#~ msgid "directory"
-#~ msgstr "`%s' não é uma directoria"
-
-#, fuzzy
-#~ msgid "block special file"
-#~ msgstr "ficheiros especiais de tipo bloco não suportados"
-
-#, fuzzy
-#~ msgid "character special file"
-#~ msgstr "ficheiros especiais de tipo caracter não suportados"
-
-#, fuzzy
-#~ msgid "symbolic link"
-#~ msgstr "não consigo ler ligação (link) simbólica `%s'"
-
-#, fuzzy
-#~ msgid "weird file"
-#~ msgstr "`%s' não é um ficheiro normal"
-
-#, fuzzy
-#~ msgid "Address family for hostname not supported"
-#~ msgstr "ficheiros \"fifo\" não suportados"
-
-#, fuzzy
-#~ msgid "ai_family not supported"
-#~ msgstr "ficheiros \"fifo\" não suportados"
-
-#, fuzzy
-#~ msgid "ai_socktype not supported"
-#~ msgstr "ficheiros \"fifo\" não suportados"
-
-#, fuzzy
-#~ msgid "System error"
-#~ msgstr "erro na escrita"
-
-#, fuzzy
-#~ msgid "Unknown error"
-#~ msgstr "operador binário desconhecido"
-
-#, fuzzy
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "opção inválida `%s'"
-
-#, fuzzy
-#~ msgid "block size"
-#~ msgstr "tipo de ordenação"
-
-#, fuzzy
-#~ msgid "%s exists but is not a directory"
-#~ msgstr "`%s' não é uma directoria"
-
-#, fuzzy
-#~ msgid "cannot change owner and/or group of %s"
-#~ msgstr "aviso: não consigo mudar para a directoria %s"
-
-#, fuzzy
-#~ msgid "cannot create directory %s"
-#~ msgstr "não consigo obter a directoria actual"
-
-#, fuzzy
-#~ msgid "cannot chdir to directory %s"
-#~ msgstr "aviso: não consigo mudar para a directoria %s"
-
-#, fuzzy
-#~ msgid "cannot change permissions of %s"
-#~ msgstr "aviso: não consigo mudar para a directoria %s"
-
-#, fuzzy
-#~ msgid "unable to record current working directory"
-#~ msgstr "não consigo obter a directoria actual"
-
-#, fuzzy
-#~ msgid "Failed to open /dev/zero for read"
-#~ msgstr "aviso: não consigo mudar para a directoria %s"
-
-#, fuzzy
-#~ msgid "cannot create pipe"
-#~ msgstr "não consigo obter a directoria actual"
-
-#, fuzzy
-#~ msgid "character out of range"
-#~ msgstr "ficheiros especiais de tipo caracter não suportados"
-
-#, fuzzy
-#~ msgid "invalid user"
-#~ msgstr "\\%c: caracter de escape inválido"
-
-#, fuzzy
-#~ msgid "invalid group"
-#~ msgstr "opção inválida `%s'"
-
-#, fuzzy
-#~ msgid "The strings compared were %s and %s."
-#~ msgstr "não consigo %s `%s' para `%s'"
+#: lib/xmemcoll.c:53
+#, fuzzy, c-format
+msgid "The strings compared were %s and %s."
+msgstr "não consigo %s `%s' para `%s'"

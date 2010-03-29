@@ -45,6 +45,7 @@ doc/wdiff.tp
 doc/wdiff.vr
 lib/alloca.h
 lib/arg-nonnull.h
+lib/c++defs.h
 lib/charset.alias
 lib/configmake.h
 lib/errno.h
