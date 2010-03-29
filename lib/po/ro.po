@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailutils 0.4\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2005-09-30 17:42+0300\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
 "PO-Revision-Date: 2003-12-10 08:55+0200\n"
 "Last-Translator: Eugen Hoanca <eugenh@urban-grafx.ro>\n"
 "Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
@@ -15,288 +15,296 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: lib/argmatch.c:137
-#, fuzzy, c-format
-msgid "invalid argument %s for %s"
-msgstr "nume etichetã(tag) invalid `%s' pentru `%s'"
-
-#: lib/argmatch.c:138
-#, fuzzy, c-format
-msgid "ambiguous argument %s for %s"
-msgstr "lipseºte argumentul pentru %s"
-
-#: lib/argmatch.c:157
-#, fuzzy, c-format
-msgid "Valid arguments are:"
-msgstr "argumentele if valide sunt: s | r | t"
-
-#: lib/argp-help.c:194
-#, c-format
-msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
-msgstr "%.*s: parametrul ARGP_HELP_FMT necesitã o valoare"
-
-#: lib/argp-help.c:203
-#, c-format
-msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
-msgstr "%.*s: Parametru ARGP_HELP_FMT necunoscut"
-
-#: lib/argp-help.c:215
-#, c-format
-msgid "Garbage in ARGP_HELP_FMT: %s"
-msgstr "Gunoi(garbage) în ARGP_HELP_FMT: %s"
-
-#: lib/argp-help.c:1194
-msgid ""
-"Mandatory or optional arguments to long options are also mandatory or "
-"optional for any corresponding short options."
-msgstr ""
-"Argumentele obligatorii sau opþionale pentru opþiunile lungi sunt de "
-"asemenea obligatorii sau opþionale pentru toate opþiunile scurte "
-"corespunzãtoare."
-
-#: lib/argp-help.c:1581
-msgid "Usage:"
-msgstr "Folosire:"
-
-#: lib/argp-help.c:1585
-msgid "  or: "
-msgstr "  sau: "
-
-#: lib/argp-help.c:1597
-msgid " [OPTION...]"
-msgstr " [OPÞIUNE...]"
-
-#: lib/argp-help.c:1624
-#, c-format
-msgid "Try `%s --help' or `%s --usage' for more information.\n"
-msgstr "Încercaþi `%s --help' sau `%s --usage' pentru mai multe informaþii.\n"
-
-#: lib/argp-help.c:1652
-#, c-format
-msgid "Report bugs to %s.\n"
-msgstr "Raportaþi bug-urile la %s.\n"
-
-#: lib/argp-help.c:1872 lib/error.c:121
+#: lib/error.c:153
 #, fuzzy
 msgid "Unknown system error"
 msgstr "tip de mesaj necunoscut"
 
-#: lib/argp-parse.c:82
-msgid "Give this help list"
-msgstr "Afiºeazã aceastã listã de ajutor"
-
-#: lib/argp-parse.c:83
-msgid "Give a short usage message"
-msgstr "Afiºeazã un mesaj de folosire scurt"
-
-#: lib/argp-parse.c:84
-msgid "NAME"
-msgstr "NUME"
-
-#: lib/argp-parse.c:84
-msgid "Set the program name"
-msgstr "Seteazã numele programului"
-
-#: lib/argp-parse.c:85
-#, fuzzy
-msgid "SECS"
-msgstr "SECUNDE"
-
-#: lib/argp-parse.c:86
-msgid "Hang for SECS seconds (default 3600)"
-msgstr "Întrerupe(hang) pentru SECS secunde (implicit 3600)"
-
-#: lib/argp-parse.c:147
-msgid "Print program version"
-msgstr "Afiºeazã versiunea programului"
-
-#: lib/argp-parse.c:163
-msgid "(PROGRAM ERROR) No version known!?"
-msgstr "(EROARE DE PROGRAM) Nici o versiune cunoscutã!?"
-
-#: lib/argp-parse.c:619
-#, c-format
-msgid "%s: Too many arguments\n"
-msgstr "%s: Prea multe argumente\n"
-
-#: lib/argp-parse.c:762
-msgid "(PROGRAM ERROR) Option should have been recognized!?"
-msgstr "(EROARE DE PROGRAM) Opþiunea ar fi trebuit recunoscutã!?"
-
-#: lib/c-stack.c:244
-#, fuzzy
-msgid "program error"
-msgstr "eroare de interval(range)"
-
-#: lib/c-stack.c:245
-#, fuzzy
-msgid "stack overflow"
-msgstr "subrulare(underflow) a stivei(stack)"
-
-#: lib/closeout.c:94
-#, fuzzy
-msgid "write error"
-msgstr "eroare regex"
-
-#: lib/copy-file.c:72
+#: lib/getopt.c:525 lib/getopt.c:541
 #, fuzzy, c-format
-msgid "cannot open backup file \"%s\" for writing"
-msgstr "nu se poate deschide fiºierul de ieºire(output) \"%s\": %s"
-
-#: lib/copy-file.c:80
-#, fuzzy, c-format
-msgid "error reading \"%s\""
-msgstr "eroare la cititrea din fiºierul de intrare(input): %s"
-
-#: lib/copy-file.c:85 lib/copy-file.c:89
-#, fuzzy, c-format
-msgid "error writing \"%s\""
-msgstr "eroare în scrierea în mailbox: %s"
-
-#: lib/csharpcomp.c:273
-#, fuzzy
-msgid "fdopen() failed"
-msgstr "fork eºuat"
-
-#: lib/file-type.c:64
-#, fuzzy
-msgid "message queue"
-msgstr "%d mesaj"
-
-#: lib/gai_strerror.c:50
-#, fuzzy
-msgid "Memory allocation failure"
-msgstr "Operaþiune eºuatã"
-
-#: lib/gai_strerror.c:55
-#, fuzzy
-msgid "System error"
-msgstr "eroare regex"
-
-#: lib/gai_strerror.c:74
-#, fuzzy
-msgid "Unknown error"
-msgstr "Escape necunoscut %s"
-
-#: lib/getopt.c:551 lib/getopt.c:570
-#, c-format
-msgid "%s: option `%s' is ambiguous\n"
+msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: opþiunea `%s' este ambiguã\n"
 
-#: lib/getopt.c:603 lib/getopt.c:607
-#, c-format
-msgid "%s: option `--%s' doesn't allow an argument\n"
+#: lib/getopt.c:574 lib/getopt.c:578
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: opþiunea `--%s' nu permite argumente\n"
 
-#: lib/getopt.c:616 lib/getopt.c:621
-#, c-format
-msgid "%s: option `%c%s' doesn't allow an argument\n"
+#: lib/getopt.c:587 lib/getopt.c:592
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: opþiunea `%c%s' nu permite argumente\n"
 
-#: lib/getopt.c:667 lib/getopt.c:689 lib/getopt.c:1020 lib/getopt.c:1042
-#, c-format
-msgid "%s: option `%s' requires an argument\n"
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
 msgstr "%s: opþiunea `%s' necesitã un argument\n"
 
-#: lib/getopt.c:727 lib/getopt.c:730
-#, c-format
-msgid "%s: unrecognized option `--%s'\n"
+#: lib/getopt.c:692 lib/getopt.c:695
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: opþiune necunoscutã `--%s'\n"
 
-#: lib/getopt.c:738 lib/getopt.c:741
-#, c-format
-msgid "%s: unrecognized option `%c%s'\n"
+#: lib/getopt.c:703 lib/getopt.c:706
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: opþiune necunoscutã `%c%s'\n"
 
-#: lib/getopt.c:796 lib/getopt.c:799
-#, c-format
-msgid "%s: illegal option -- %c\n"
-msgstr "%s: opþiune ilegalã -- %c\n"
-
-#: lib/getopt.c:805 lib/getopt.c:808
-#, c-format
-msgid "%s: invalid option -- %c\n"
+#: lib/getopt.c:755 lib/getopt.c:758
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: opþiune invalidã -- %c\n"
 
-#: lib/getopt.c:863 lib/getopt.c:882 lib/getopt.c:1095 lib/getopt.c:1116
-#, c-format
-msgid "%s: option requires an argument -- %c\n"
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: opþiunea necesitã un argument -- %c\n"
 
-#: lib/getopt.c:935 lib/getopt.c:954
-#, c-format
-msgid "%s: option `-W %s' is ambiguous\n"
+#: lib/getopt.c:878 lib/getopt.c:894
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: opþiune `-W %s' este ambiguã\n"
 
-#: lib/getopt.c:978 lib/getopt.c:999
-#, c-format
-msgid "%s: option `-W %s' doesn't allow an argument\n"
+#: lib/getopt.c:918 lib/getopt.c:936
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: opþiune `-W %s' nu permite argumente\n"
 
-#: lib/mkdir-p.c:203 lib/mkdir-p.c:294
-#, fuzzy, c-format
-msgid "cannot change owner and/or group of %s"
-msgstr "nu se poate trece în uid %lu: %m"
-
-#: lib/mkdir-p.c:229 lib/mkdir-p.c:266
-#, fuzzy, c-format
-msgid "cannot create directory %s"
-msgstr "nu se poate crea iterator: %s"
-
-#: lib/mkdir-p.c:240
-#, fuzzy, c-format
-msgid "cannot chdir to directory %s"
-msgstr "nu se poate crea iterator: %s"
-
-#: lib/mkdir-p.c:307 lib/mkdir-p.c:332
-#, fuzzy, c-format
-msgid "cannot change permissions of %s"
-msgstr "Permisiuni greºite la %s. Setaþi 0600."
-
-#: lib/obstack.c:438 lib/obstack.c:441 lib/xalloc-die.c:38 lib/xsetenv.c:40
-#, fuzzy
-msgid "memory exhausted"
-msgstr "Memorie plinã"
-
-#: lib/pipe.c:157 lib/pipe.c:160 lib/pipe.c:264 lib/pipe.c:267
-#, fuzzy
-msgid "cannot create pipe"
-msgstr "nu se poate crea mailerul \"%s\""
-
-#: lib/regcomp.c:131
+#: lib/regcomp.c:132
 msgid "Success"
 msgstr "Succes"
 
-#: lib/regcomp.c:149
+#: lib/regcomp.c:135
+msgid "No match"
+msgstr ""
+
+#: lib/regcomp.c:138
+#, fuzzy
+msgid "Invalid regular expression"
+msgstr "Nu existã fiºier anterior"
+
+#: lib/regcomp.c:141
+msgid "Invalid collation character"
+msgstr ""
+
+#: lib/regcomp.c:144
+msgid "Invalid character class name"
+msgstr ""
+
+#: lib/regcomp.c:147
+msgid "Trailing backslash"
+msgstr ""
+
+#: lib/regcomp.c:150
 #, fuzzy
 msgid "Invalid back reference"
 msgstr "Numãr invalid"
 
-#: lib/regcomp.c:164
+#: lib/regcomp.c:153
+msgid "Unmatched [ or [^"
+msgstr ""
+
+#: lib/regcomp.c:156
+msgid "Unmatched ( or \\("
+msgstr ""
+
+#: lib/regcomp.c:159
+msgid "Unmatched \\{"
+msgstr ""
+
+#: lib/regcomp.c:162
+msgid "Invalid content of \\{\\}"
+msgstr ""
+
+#: lib/regcomp.c:165
 #, fuzzy
 msgid "Invalid range end"
 msgstr "Tip de datã invalid"
 
-#: lib/regcomp.c:167
+#: lib/regcomp.c:168
 msgid "Memory exhausted"
 msgstr "Memorie plinã"
 
-#: lib/regcomp.c:659
+#: lib/regcomp.c:171
+#, fuzzy
+msgid "Invalid preceding regular expression"
+msgstr "Nu existã fiºier anterior"
+
+#: lib/regcomp.c:174
+#, fuzzy
+msgid "Premature end of regular expression"
+msgstr "Nu existã fiºier anterior"
+
+#: lib/regcomp.c:177
+#, fuzzy
+msgid "Regular expression too big"
+msgstr "Nu existã fiºier anterior"
+
+#: lib/regcomp.c:180
+msgid "Unmatched ) or \\)"
+msgstr ""
+
+#: lib/regcomp.c:701
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "Nu existã fiºier anterior"
 
-#: lib/userspec.c:110
+#: lib/xalloc-die.c:34
 #, fuzzy
-msgid "invalid user"
-msgstr "Numãr invalid"
+msgid "memory exhausted"
+msgstr "Memorie plinã"
 
-#: lib/userspec.c:111
 #, fuzzy
-msgid "invalid group"
-msgstr "Deschide grup"
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "nume etichetã(tag) invalid `%s' pentru `%s'"
 
-#: lib/xmemcoll.c:50
 #, fuzzy
-msgid "string comparison failed"
-msgstr "Autentificare eºuatã"
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "lipseºte argumentul pentru %s"
+
+#, fuzzy
+#~ msgid "Valid arguments are:"
+#~ msgstr "argumentele if valide sunt: s | r | t"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: parametrul ARGP_HELP_FMT necesitã o valoare"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: Parametru ARGP_HELP_FMT necunoscut"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "Gunoi(garbage) în ARGP_HELP_FMT: %s"
+
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Argumentele obligatorii sau opþionale pentru opþiunile lungi sunt de "
+#~ "asemenea obligatorii sau opþionale pentru toate opþiunile scurte "
+#~ "corespunzãtoare."
+
+#~ msgid "Usage:"
+#~ msgstr "Folosire:"
+
+#~ msgid "  or: "
+#~ msgstr "  sau: "
+
+#~ msgid " [OPTION...]"
+#~ msgstr " [OPÞIUNE...]"
+
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr ""
+#~ "Încercaþi `%s --help' sau `%s --usage' pentru mai multe informaþii.\n"
+
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "Raportaþi bug-urile la %s.\n"
+
+#~ msgid "Give this help list"
+#~ msgstr "Afiºeazã aceastã listã de ajutor"
+
+#~ msgid "Give a short usage message"
+#~ msgstr "Afiºeazã un mesaj de folosire scurt"
+
+#~ msgid "NAME"
+#~ msgstr "NUME"
+
+#~ msgid "Set the program name"
+#~ msgstr "Seteazã numele programului"
+
+#, fuzzy
+#~ msgid "SECS"
+#~ msgstr "SECUNDE"
+
+#~ msgid "Hang for SECS seconds (default 3600)"
+#~ msgstr "Întrerupe(hang) pentru SECS secunde (implicit 3600)"
+
+#~ msgid "Print program version"
+#~ msgstr "Afiºeazã versiunea programului"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(EROARE DE PROGRAM) Nici o versiune cunoscutã!?"
+
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: Prea multe argumente\n"
+
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr "(EROARE DE PROGRAM) Opþiunea ar fi trebuit recunoscutã!?"
+
+#, fuzzy
+#~ msgid "program error"
+#~ msgstr "eroare de interval(range)"
+
+#, fuzzy
+#~ msgid "stack overflow"
+#~ msgstr "subrulare(underflow) a stivei(stack)"
+
+#, fuzzy
+#~ msgid "write error"
+#~ msgstr "eroare regex"
+
+#, fuzzy
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "nu se poate deschide fiºierul de ieºire(output) \"%s\": %s"
+
+#, fuzzy
+#~ msgid "error reading \"%s\""
+#~ msgstr "eroare la cititrea din fiºierul de intrare(input): %s"
+
+#, fuzzy
+#~ msgid "error writing \"%s\""
+#~ msgstr "eroare în scrierea în mailbox: %s"
+
+#, fuzzy
+#~ msgid "fdopen() failed"
+#~ msgstr "fork eºuat"
+
+#, fuzzy
+#~ msgid "message queue"
+#~ msgstr "%d mesaj"
+
+#, fuzzy
+#~ msgid "Memory allocation failure"
+#~ msgstr "Operaþiune eºuatã"
+
+#, fuzzy
+#~ msgid "System error"
+#~ msgstr "eroare regex"
+
+#, fuzzy
+#~ msgid "Unknown error"
+#~ msgstr "Escape necunoscut %s"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: opþiune ilegalã -- %c\n"
+
+#, fuzzy
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "nu se poate trece în uid %lu: %m"
+
+#, fuzzy
+#~ msgid "cannot create directory %s"
+#~ msgstr "nu se poate crea iterator: %s"
+
+#, fuzzy
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "nu se poate crea iterator: %s"
+
+#, fuzzy
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "Permisiuni greºite la %s. Setaþi 0600."
+
+#, fuzzy
+#~ msgid "cannot create pipe"
+#~ msgstr "nu se poate crea mailerul \"%s\""
+
+#, fuzzy
+#~ msgid "invalid user"
+#~ msgstr "Numãr invalid"
+
+#, fuzzy
+#~ msgid "invalid group"
+#~ msgstr "Deschide grup"
+
+#, fuzzy
+#~ msgid "string comparison failed"
+#~ msgstr "Autentificare eºuatã"

@@ -11,527 +11,69 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-22 12:32+0200\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
 "PO-Revision-Date: 2010-02-26 18:02+0100\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
 
-#: lib/argmatch.c:133
-#, c-format
-msgid "invalid argument %s for %s"
-msgstr "b³êdny argument %s opcji %s"
-
-#: lib/argmatch.c:134
-#, c-format
-msgid "ambiguous argument %s for %s"
-msgstr "niejednoznaczny argument %s opcji %s"
-
-#: lib/argmatch.c:153
-#, c-format
-msgid "Valid arguments are:"
-msgstr "Prawid³owe argumenty to:"
-
-#: lib/argp-help.c:147
-#, c-format
-msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
-msgstr "ARGP_HELP_FMT: warto¶æ %s jest mniejsza lub równa %s"
-
-#: lib/argp-help.c:220
-#, c-format
-msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
-msgstr "%.*s: Parametr ARGP_HELP_FMT wymaga podania warto¶ci"
-
-#: lib/argp-help.c:226
-#, c-format
-msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
-msgstr "%.*s: Parametr ARGP_HELP_FMT musi byæ dodatni"
-
-#: lib/argp-help.c:235
-#, c-format
-msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
-msgstr "%.*s: Nieznany parametr ARGP_HELP_FMT"
-
-#: lib/argp-help.c:247
-#, c-format
-msgid "Garbage in ARGP_HELP_FMT: %s"
-msgstr "B³êdne dane w ARGP_HELP_FMT: %s"
-
-#: lib/argp-help.c:1244
-msgid "Mandatory or optional arguments to long options are also mandatory or optional for any corresponding short options."
-msgstr "Argumenty obowi±zkowe lub opcjonalne dla d³ugich opcji s± równie¿ obowi±zkowe lub opcjonalne dla odpowiednich krótkich opcji."
-
-#: lib/argp-help.c:1637
-msgid "Usage:"
-msgstr "Sk³adnia:"
-
-#: lib/argp-help.c:1641
-msgid "  or: "
-msgstr "    lub: "
-
-#: lib/argp-help.c:1653
-msgid " [OPTION...]"
-msgstr " [OPCJA...]"
-
-#: lib/argp-help.c:1680
-#, c-format
-msgid "Try `%s --help' or `%s --usage' for more information.\n"
-msgstr "Polecenie `%s --help' lub `%s --usage' pozwoli uzyskaæ wiêcej informacji.\n"
-
-#: lib/argp-help.c:1708
-#, c-format
-msgid "Report bugs to %s.\n"
-msgstr "Prosimy zg³aszaæ b³êdy na adres %s.\n"
-
-#: lib/argp-help.c:1927 lib/error.c:153
+#: lib/error.c:153
 msgid "Unknown system error"
 msgstr "Nieznany b³±d systemowy"
 
-#: lib/argp-parse.c:81
-msgid "give this help list"
-msgstr "wy¶wietlenie tego tekstu pomocy"
-
-#: lib/argp-parse.c:82
-msgid "give a short usage message"
-msgstr "wy¶wietlenie krótkiej informacji o sk³adni polecenia"
-
-#: lib/argp-parse.c:83
-msgid "NAME"
-msgstr "NAZWA"
-
-#: lib/argp-parse.c:83
-msgid "set the program name"
-msgstr "okre¶lenie nazwy programu"
-
-#: lib/argp-parse.c:84
-msgid "SECS"
-msgstr "SEK"
-
-#: lib/argp-parse.c:85
-msgid "hang for SECS seconds (default 3600)"
-msgstr "zatrzymanie na SEK sekund (domy¶lnie 3600)"
-
-#: lib/argp-parse.c:142
-msgid "print program version"
-msgstr "wy¶wietlenie wersji programu"
-
-#: lib/argp-parse.c:158
-msgid "(PROGRAM ERROR) No version known!?"
-msgstr "(B£¡D PROGRAMU) Nieznana wersja!?"
-
-#: lib/argp-parse.c:611
-#, c-format
-msgid "%s: Too many arguments\n"
-msgstr "%s: Za du¿o argumentów\n"
-
-#: lib/argp-parse.c:754
-msgid "(PROGRAM ERROR) Option should have been recognized!?"
-msgstr "(B£¡D PROGRAMU) Opcja powinna zostaæ rozpoznana!?"
-
-#: lib/c-stack.c:196 lib/c-stack.c:309
-msgid "program error"
-msgstr "b³±d programu"
-
-#: lib/c-stack.c:197 lib/c-stack.c:310
-msgid "stack overflow"
-msgstr "przepe³nienie stosu"
-
-#: lib/clean-temp.c:335
-#, c-format
-msgid "cannot find a temporary directory, try setting $TMPDIR"
-msgstr "nie mo¿na odnale¼æ katalogu tymczasowego, mo¿na spróbowaæ ustawiæ $TMPDIR"
-
-#: lib/clean-temp.c:349
-#, c-format
-msgid "cannot create a temporary directory using template \"%s\""
-msgstr "nie mo¿na utworzyæ katalogu typczasowego z u¿yciem szablonu \"%s\""
-
-#: lib/clean-temp.c:445
-#, c-format
-msgid "cannot remove temporary file %s"
-msgstr "nie mo¿na usun±æ pliku tymczasowego %s"
-
-#: lib/clean-temp.c:460
-#, c-format
-msgid "cannot remove temporary directory %s"
-msgstr "nie mo¿na usun±æ katalogu tymczasowego %s"
-
-#: lib/closein.c:99
-msgid "error closing file"
-msgstr "b³±d podczas zamykania pliku"
-
-#: lib/closeout.c:112
-msgid "write error"
-msgstr "b³±d zapisu"
-
-#: lib/copy-acl.c:547
-#, c-format
-msgid "preserving permissions for %s"
-msgstr "zachowywanie uprawnieñ do %s"
-
-#: lib/copy-file.c:67
-#, c-format
-msgid "error while opening \"%s\" for reading"
-msgstr "b³±d podczas otwierania \"%s\" do odczytu"
-
-#: lib/copy-file.c:74
-#, c-format
-msgid "cannot open backup file \"%s\" for writing"
-msgstr "nie mo¿na otworzyæ pliku zapasowego \"%s\" do zapisu"
-
-#: lib/copy-file.c:82
-#, c-format
-msgid "error reading \"%s\""
-msgstr "b³±d odczytu \"%s\""
-
-#: lib/copy-file.c:87 lib/copy-file.c:94 lib/copy-file.c:133
-#, c-format
-msgid "error writing \"%s\""
-msgstr "b³±d zapisu \"%s\""
-
-#: lib/copy-file.c:96 lib/copy-file.c:135
-#, c-format
-msgid "error after reading \"%s\""
-msgstr "b³±d po odczycie \"%s\""
-
-#: lib/csharpcomp.c:310 lib/javaversion.c:76
-#, c-format
-msgid "fdopen() failed"
-msgstr "fdopen() nie powiod³o siê"
-
-#: lib/csharpcomp.c:571
-#, c-format
-msgid "C# compiler not found, try installing pnet"
-msgstr "Nie znaleziono kompilatora C#, proszê spróbowaæ zainstalowaæ pnet"
-
-#: lib/csharpexec.c:343
-#, c-format
-msgid "C# virtual machine not found, try installing pnet"
-msgstr "Nie znaleziono maszyny wirtualnej C#, proszê spróbowaæ zainstalowaæ pnet"
-
-#: lib/execute.c:189 lib/execute.c:262 lib/pipe.c:229 lib/pipe.c:342
-#: lib/wait-process.c:282 lib/wait-process.c:356
-#, c-format
-msgid "%s subprocess failed"
-msgstr "podproces %s zawiód³"
-
-#: lib/file-type.c:38
-msgid "regular empty file"
-msgstr "pusty zwyk³y plik"
-
-#: lib/file-type.c:38
-msgid "regular file"
-msgstr "zwyk³y plik"
-
-#: lib/file-type.c:41
-msgid "directory"
-msgstr "katalog"
-
-#: lib/file-type.c:44
-msgid "block special file"
-msgstr "blokowy plik specjalny"
-
-#: lib/file-type.c:47
-msgid "character special file"
-msgstr "znakowy plik specjalny"
-
-#: lib/file-type.c:50
-msgid "fifo"
-msgstr "potok"
-
-#: lib/file-type.c:53
-msgid "symbolic link"
-msgstr "dowi±zanie symboliczne"
-
-#: lib/file-type.c:56
-msgid "socket"
-msgstr "gniazdo"
-
-#: lib/file-type.c:59
-msgid "message queue"
-msgstr "kolejka komunikatów"
-
-#: lib/file-type.c:62
-msgid "semaphore"
-msgstr "semafor"
-
-#: lib/file-type.c:65
-msgid "shared memory object"
-msgstr "obiekt w pamiêci wspó³dzielonej"
-
-#: lib/file-type.c:68
-msgid "typed memory object"
-msgstr "obiekt z typem w pamiêci"
-
-#: lib/file-type.c:70
-msgid "weird file"
-msgstr "dziwny plik"
-
-#: lib/gai_strerror.c:42
-msgid "Address family for hostname not supported"
-msgstr "Rodzina adresów dla podanej nazwy hosta nie jest obs³ugiwana"
-
-#: lib/gai_strerror.c:43
-msgid "Temporary failure in name resolution"
-msgstr "Tymczasowy b³±d rozwi±zywania nazw"
-
-#: lib/gai_strerror.c:44
-msgid "Bad value for ai_flags"
-msgstr "B³êdna warto¶æ ai_flags"
-
-#: lib/gai_strerror.c:45
-msgid "Non-recoverable failure in name resolution"
-msgstr "Nienaprawialny b³±d w rozwi±zywaniu nazw"
-
-#: lib/gai_strerror.c:46
-msgid "ai_family not supported"
-msgstr "ai_family zawiera nie obs³ugiwan± rodzinê protoko³ów"
-
-#: lib/gai_strerror.c:47
-msgid "Memory allocation failure"
-msgstr "B³±d przydzielania pamiêci"
-
-#: lib/gai_strerror.c:48
-msgid "No address associated with hostname"
-msgstr "Brak adresu zwi±zanego z nazw± hosta"
-
-#: lib/gai_strerror.c:49
-msgid "Name or service not known"
-msgstr "Nieznana nazwa lub us³uga"
-
-#: lib/gai_strerror.c:50
-msgid "Servname not supported for ai_socktype"
-msgstr "Us³uga nie obs³ugiwana dla danego ai_socktype"
-
-#: lib/gai_strerror.c:51
-msgid "ai_socktype not supported"
-msgstr "ai_socktype zawiera nie obs³ugiwany typ gniazda"
-
-#: lib/gai_strerror.c:52
-msgid "System error"
-msgstr "B³±d systemowy"
-
-#: lib/gai_strerror.c:53
-msgid "Argument buffer too small"
-msgstr "Bufor argumentu zbyt ma³y"
-
-#: lib/gai_strerror.c:55
-msgid "Processing request in progress"
-msgstr "Przetwarzanie ¿±dania jest w toku"
-
-#: lib/gai_strerror.c:56
-msgid "Request canceled"
-msgstr "¯±danie anulowane"
-
-#: lib/gai_strerror.c:57
-msgid "Request not canceled"
-msgstr "¯±danie nie anulowane"
-
-#: lib/gai_strerror.c:58
-msgid "All requests done"
-msgstr "Wszystkie ¿±dania wykonane"
-
-#: lib/gai_strerror.c:59
-msgid "Interrupted by a signal"
-msgstr "Przerwane przez sygna³"
-
-#: lib/gai_strerror.c:60
-msgid "Parameter string not correctly encoded"
-msgstr "£añcuch parametru niepoprawnie zakodowany"
-
-#: lib/gai_strerror.c:72
-msgid "Unknown error"
-msgstr "Nieznany b³±d"
-
-#: lib/getopt.c:529 lib/getopt.c:545
+#: lib/getopt.c:525 lib/getopt.c:541
 #, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: opcja '%s' jest niejednoznaczna\n"
 
-#: lib/getopt.c:578 lib/getopt.c:582
+#: lib/getopt.c:574 lib/getopt.c:578
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: opcja '--%s' nie mo¿e mieæ argumentów\n"
 
-#: lib/getopt.c:591 lib/getopt.c:596
+#: lib/getopt.c:587 lib/getopt.c:592
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: opcja '%c%s' nie mo¿e mieæ argumentów\n"
 
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
 #, c-format
 msgid "%s: option '%s' requires an argument\n"
 msgstr "%s: opcja '%s' musi mieæ argument\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
+#: lib/getopt.c:692 lib/getopt.c:695
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: nieznana opcja '--%s'\n"
 
-#: lib/getopt.c:707 lib/getopt.c:710
+#: lib/getopt.c:703 lib/getopt.c:706
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: nieznana opcja '%c%s'\n"
 
-#: lib/getopt.c:759 lib/getopt.c:762
+#: lib/getopt.c:755 lib/getopt.c:758
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: b³êdna opcja -- '%c'\n"
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: opcja musi mieæ argument -- '%c'\n"
 
-#: lib/getopt.c:882 lib/getopt.c:898
+#: lib/getopt.c:878 lib/getopt.c:894
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: opcja '-W %s' jest niejednoznaczna\n"
 
-#: lib/getopt.c:922 lib/getopt.c:940
+#: lib/getopt.c:918 lib/getopt.c:936
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: opcja '-W %s' nie mo¿e mieæ argumentów\n"
-
-#: lib/javacomp.c:126 lib/javacomp.c:140 lib/javacomp.c:156
-#, c-format
-msgid "invalid source_version argument to compile_java_class"
-msgstr "b³êdny argument source_version dla compile_java_class"
-
-#: lib/javacomp.c:171 lib/javacomp.c:192
-#, c-format
-msgid "invalid target_version argument to compile_java_class"
-msgstr "b³êdny argument target_version dla compile_java_class"
-
-#: lib/javacomp.c:503
-#, c-format
-msgid "failed to create \"%s\""
-msgstr "nie uda³o siê utworzyæ \"%s\""
-
-#: lib/javacomp.c:510
-#, c-format
-msgid "error while writing \"%s\" file"
-msgstr "b³±d podczas zapisu pliku \"%s\""
-
-#: lib/javacomp.c:2343
-#, c-format
-msgid "Java compiler not found, try installing gcj or set $JAVAC"
-msgstr "Nie znaleziono kompilatora Javy, proszê spróbowaæ zainstalowaæ gcj lub ustawiæ $JAVAC"
-
-#: lib/javaexec.c:417
-#, c-format
-msgid "Java virtual machine not found, try installing gij or set $JAVA"
-msgstr "Nie znaleziono maszyny wirtualnej Javy, proszê spróbowaæ zainstalowaæ gij lub ustawiæ $JAVA"
-
-#: lib/javaversion.c:84
-#, c-format
-msgid "%s subprocess I/O error"
-msgstr "b³±d we/wy podprocesu %s"
-
-#: lib/mkdir-p.c:196
-#, c-format
-msgid "cannot change permissions of %s"
-msgstr "nie mo¿na zmieniæ uprawnieñ do %s"
-
-#: lib/mkdir-p.c:206
-#, c-format
-msgid "cannot create directory %s"
-msgstr "nie mo¿na utworzyæ katalogu %s"
-
-#: lib/obstack.c:423 lib/obstack.c:425 lib/xalloc-die.c:34 lib/xsetenv.c:37
-#, c-format
-msgid "memory exhausted"
-msgstr "pamiêæ wyczerpana"
-
-#: lib/openat-die.c:34
-#, c-format
-msgid "unable to record current working directory"
-msgstr "nie uda³o siê zapisaæ bie¿±cego katalogu roboczego"
-
-#: lib/openat-die.c:52
-#, c-format
-msgid "failed to return to initial working directory"
-msgstr "nie uda³o siê wróciæ do pocz±tkowego katalogu roboczego"
-
-#: lib/pagealign_alloc.c:139
-#, c-format
-msgid "Failed to open /dev/zero for read"
-msgstr "Nie uda³o siê otworzyæ /dev/zero do odczytu"
-
-#: lib/pipe-filter-gi.c:152
-#, c-format
-msgid "creation of reading thread failed"
-msgstr "tworzenie w±tku czytaj±cego nie powiod³o sie"
-
-#: lib/pipe-filter-gi.c:257 lib/pipe-filter-ii.c:298
-#, c-format
-msgid "cannot set up nonblocking I/O to %s subprocess"
-msgstr "nie mo¿na ustawiæ nieblokuj±cego we/wy dla podprocesu %s"
-
-#: lib/pipe-filter-gi.c:329 lib/pipe-filter-ii.c:329
-#, c-format
-msgid "communication with %s subprocess failed"
-msgstr "komunikacja z podprocesem %s nie powiod³a siê"
-
-#: lib/pipe-filter-gi.c:359 lib/pipe-filter-ii.c:224 lib/pipe-filter-ii.c:359
-#, c-format
-msgid "write to %s subprocess failed"
-msgstr "zapis do podprocesu %s nie powiód³ siê"
-
-#: lib/pipe-filter-gi.c:399 lib/pipe-filter-ii.c:245 lib/pipe-filter-ii.c:396
-#, c-format
-msgid "read from %s subprocess failed"
-msgstr "odczyt z podprocesu %s nie powiód³ siê"
-
-#: lib/pipe-filter-gi.c:452
-#, c-format
-msgid "subprocess %s terminated with exit code %d"
-msgstr "podproces %s zakoñczy³ siê z kodem wyj¶cia %d"
-
-#: lib/pipe-filter-ii.c:192
-#, c-format
-msgid "creation of threads failed"
-msgstr "tworzenie w±tków nie powiod³o siê"
-
-#: lib/pipe-filter-ii.c:428
-#, c-format
-msgid "%s subprocess terminated with exit code %d"
-msgstr "podproces %s zakoñczy³ siê kodem wyj¶cia %d"
-
-#: lib/pipe.c:137 lib/pipe.c:140 lib/pipe.c:258 lib/pipe.c:261
-#, c-format
-msgid "cannot create pipe"
-msgstr "nie mo¿na utworzyæ potoku"
-
-#. TRANSLATORS:
-#. Get translations for open and closing quotation marks.
-#.
-#. The message catalog should translate "`" to a left
-#. quotation mark suitable for the locale, and similarly for
-#. "'".  If the catalog has no translation,
-#. locale_quoting_style quotes `like this', and
-#. clocale_quoting_style quotes "like this".
-#.
-#. For example, an American English Unicode locale should
-#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
-#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
-#. MARK).  A British English Unicode locale should instead
-#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK)
-#. and U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
-#.
-#. If you don't know what to put here, please see
-#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
-#. and use glyphs suitable for your language.
-#: lib/quotearg.c:272
-msgid "`"
-msgstr "`"
-
-#: lib/quotearg.c:273
-msgid "'"
-msgstr "'"
 
 #: lib/regcomp.c:132
 msgid "Success"
@@ -605,464 +147,615 @@ msgstr "Niesparowane ) lub \\)"
 msgid "No previous regular expression"
 msgstr "Brak poprzedniego wyra¿enia regularnego"
 
-#. TRANSLATORS: A regular expression testing for an affirmative answer
-#. (english: "yes").  Testing the first character may be sufficient.
-#. Take care to consider upper and lower case.
-#. To enquire the regular expression that your system uses for this
-#. purpose, you can use the command
-#. locale -k LC_MESSAGES | grep '^yesexpr='
-#: lib/rpmatch.c:147
-msgid "^[yY]"
-msgstr "^[yYtT]"
-
-#. TRANSLATORS: A regular expression testing for a negative answer
-#. (english: "no").  Testing the first character may be sufficient.
-#. Take care to consider upper and lower case.
-#. To enquire the regular expression that your system uses for this
-#. purpose, you can use the command
-#. locale -k LC_MESSAGES | grep '^noexpr='
-#: lib/rpmatch.c:160
-msgid "^[nN]"
-msgstr "^[nN]"
-
-#: lib/set-mode-acl.c:591
-#, c-format
-msgid "setting permissions for %s"
-msgstr "ustawianie uprawnieñ %s"
-
-#: lib/siglist.h:29
-msgid "Hangup"
-msgstr "Roz³±czenie"
-
-#: lib/siglist.h:32
-msgid "Interrupt"
-msgstr "Przerwanie"
-
-#: lib/siglist.h:35
-msgid "Quit"
-msgstr "Wyj¶cie"
-
-#: lib/siglist.h:38
-msgid "Illegal instruction"
-msgstr "Niedozwolona instrukcja"
-
-#: lib/siglist.h:41
-msgid "Trace/breakpoint trap"
-msgstr "Pu³apka debuggera/breakpoint"
-
-#: lib/siglist.h:44
-msgid "Aborted"
-msgstr "Przerwano"
-
-#: lib/siglist.h:47
-msgid "Floating point exception"
-msgstr "B³±d w obliczeniach zmiennoprzecinkowych"
-
-#: lib/siglist.h:50
-msgid "Killed"
-msgstr "Unicestwiono"
-
-#: lib/siglist.h:53
-msgid "Bus error"
-msgstr "B³±d szyny"
-
-#: lib/siglist.h:56
-msgid "Segmentation fault"
-msgstr "Naruszenie ochrony pamiêci"
-
-#: lib/siglist.h:59
-msgid "Broken pipe"
-msgstr "Przerwany potok"
-
-#: lib/siglist.h:62
-msgid "Alarm clock"
-msgstr "Budzik"
-
-#: lib/siglist.h:65
-msgid "Terminated"
-msgstr "Zakoñczono"
-
-#: lib/siglist.h:68
-msgid "Urgent I/O condition"
-msgstr "Nag³y stan we/wy"
-
-#: lib/siglist.h:71
-msgid "Stopped (signal)"
-msgstr "Zatrzymano (sygna³)"
-
-#: lib/siglist.h:74
-msgid "Stopped"
-msgstr "Zatrzymano"
-
-#: lib/siglist.h:77
-msgid "Continued"
-msgstr "Kontynuacja"
-
-#: lib/siglist.h:80
-msgid "Child exited"
-msgstr "Zakoñczenie procesu potomnego"
-
-#: lib/siglist.h:83
-msgid "Stopped (tty input)"
-msgstr "Zatrzymano (wej¶cie z tty)"
-
-#: lib/siglist.h:86
-msgid "Stopped (tty output)"
-msgstr "Zatrzymano (wyj¶cie na tty)"
-
-#: lib/siglist.h:89
-msgid "I/O possible"
-msgstr "Mo¿liwa operacja we/wy"
-
-#: lib/siglist.h:92
-msgid "CPU time limit exceeded"
-msgstr "Przekroczony limit czasu procesora"
-
-#: lib/siglist.h:95
-msgid "File size limit exceeded"
-msgstr "Przekroczony limit rozmiaru pliku"
-
-#: lib/siglist.h:98
-msgid "Virtual timer expired"
-msgstr "Up³yn±³ czas stopera wirtualnego"
-
-#: lib/siglist.h:101
-msgid "Profiling timer expired"
-msgstr "Up³yn±³ czas stopera profiluj±cego"
-
-#: lib/siglist.h:104
-msgid "Window changed"
-msgstr "Okno zmienione"
-
-#: lib/siglist.h:107
-msgid "User defined signal 1"
-msgstr "Sygna³ u¿ytkownika 1"
-
-#: lib/siglist.h:110
-msgid "User defined signal 2"
-msgstr "Sygna³ u¿ytkownika 2"
-
-#: lib/siglist.h:115
-msgid "EMT trap"
-msgstr "Pu³apka EMT"
-
-#: lib/siglist.h:118
-msgid "Bad system call"
-msgstr "B³êdne wywo³anie systemowe"
-
-#: lib/siglist.h:121
-msgid "Stack fault"
-msgstr "B³±d stosu"
-
-#: lib/siglist.h:124
-msgid "Information request"
-msgstr "¯±danie informacji"
-
-#: lib/siglist.h:126
-msgid "Power failure"
-msgstr "Awaria zasilania"
-
-#: lib/siglist.h:129
-msgid "Resource lost"
-msgstr "Utrata zasobów"
-
-#: lib/sigpipe-die.c:37
-msgid "error writing to a closed pipe or socket"
-msgstr "b³±d zapisu do zamkniêtego potoku lub gniazda"
-
-#: lib/strsignal.c:110
-#, c-format
-msgid "Real-time signal %d"
-msgstr "Sygna³ czasu rzeczywistego %d"
-
-#: lib/strsignal.c:114
-#, c-format
-msgid "Unknown signal %d"
-msgstr "Nieznany sygna³ %d"
-
-#: lib/unicodeio.c:103
-msgid "iconv function not usable"
-msgstr "nie mo¿na u¿yæ funkcji iconv"
-
-#: lib/unicodeio.c:105
-msgid "iconv function not available"
-msgstr "funkcja iconv nie jest dostêpna"
-
-#: lib/unicodeio.c:112
-msgid "character out of range"
-msgstr "znak spoza zakresu"
-
-#: lib/unicodeio.c:180
-#, c-format
-msgid "cannot convert U+%04X to local character set"
-msgstr "nie mo¿na przekszta³ciæ U+%04X do lokalnego zestawu znaków"
-
-#: lib/unicodeio.c:182
-#, c-format
-msgid "cannot convert U+%04X to local character set: %s"
-msgstr "nie mo¿na przekszta³ciæ U+%04X do lokalnego zestawu znaków: %s"
-
-#: lib/userspec.c:106
-msgid "invalid user"
-msgstr "b³êdny u¿ytkownik"
-
-#: lib/userspec.c:107
-msgid "invalid group"
-msgstr "b³êdna grupa"
-
-#: lib/userspec.c:108
-msgid "invalid spec"
-msgstr "b³êdna specyfikacja"
-
-#: lib/verror.c:73
-#, c-format
-msgid "unable to display error message"
-msgstr "nie mo¿na wy¶wietliæ komunikatu b³êdu"
-
-#: lib/version-etc.c:74
-#, c-format
-msgid "Packaged by %s (%s)\n"
-msgstr "Pakietuj±cy: %s (%s)\n"
-
-#: lib/version-etc.c:77
-#, c-format
-msgid "Packaged by %s\n"
-msgstr "Pakietuj±cy: %s\n"
-
-#. TRANSLATORS: Translate "(C)" to the copyright symbol
-#. (C-in-a-circle), if this symbol is available in the user's
-#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
-#: lib/version-etc.c:84
-msgid "(C)"
-msgstr "(C)"
-
-#: lib/version-etc.c:86
-msgid ""
-"\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
-"This is free software: you are free to change and redistribute it.\n"
-"There is NO WARRANTY, to the extent permitted by law.\n"
-"\n"
-msgstr ""
-"\n"
-"Licencja GPLv3+: GNU GPL wersja 3 lub pó¼niejsza:\n"
-"<http://gnu.org/licenses/gpl.html>\n"
-"To jest oprogramowanie wolnodostêpne: mo¿na je modyfikowaæ i rozpowszechniaæ.\n"
-"Nie ma ¯ADNEJ GWARANCJI w zakresie dopuszczalnym przez prawo.\n"
-
-#. TRANSLATORS: %s denotes an author name.
-#: lib/version-etc.c:102
-#, c-format
-msgid "Written by %s.\n"
-msgstr "Autor: %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:106
-#, c-format
-msgid "Written by %s and %s.\n"
-msgstr "Autorzy: %s i %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:110
-#, c-format
-msgid "Written by %s, %s, and %s.\n"
-msgstr "Autorzy: %s, %s i %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:117
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"and %s.\n"
-msgstr ""
-"Autorzy: %s, %s, %s\n"
-"i %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:124
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, and %s.\n"
-msgstr ""
-"Autorzy: %s, %s, %s,\n"
-"%s i %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:131
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, and %s.\n"
-msgstr ""
-"Autorzy: %s, %s, %s,\n"
-"%s, %s i %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:139
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, and %s.\n"
-msgstr ""
-"Autorzy: %s, %s, %s,\n"
-"%s, %s, %s i %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:147
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"and %s.\n"
-msgstr ""
-"Autorzy: %s, %s, %s,\n"
-"%s, %s, %s, %s\n"
-"i %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:156
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, and %s.\n"
-msgstr ""
-"Autorzy: %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s i %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:167
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s, and others.\n"
-msgstr ""
-"Autorzy: %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s i inni.\n"
-
-#. TRANSLATORS: The placeholder indicates the bug-reporting address
-#. for this package.  Please add _another line_ saying
-#. "Report translation bugs to <...>\n" with the address for translation
-#. bugs (typically your translation team's web or email address).
-#: lib/version-etc.c:245
-#, c-format
-msgid ""
-"\n"
-"Report bugs to: %s\n"
-msgstr ""
-"\n"
-"Prosimy zg³aszaæ b³êdy na adres <%s>.\n"
-"B³êdy w t³umaczeniu prosimy zg³aszaæ na adres <translation-team-pl@lists.sourceforge.net>.\n"
-
-#: lib/version-etc.c:247
-#, c-format
-msgid "Report %s bugs to: %s\n"
-msgstr "B³êdy pakietuj±cego (%s) prosimy zg³aszaæ na adres <%s>.\n"
-
-#: lib/version-etc.c:251
-#, c-format
-msgid "%s home page: <%s>\n"
-msgstr "Strona domowa pakietu %s: <%s>\n"
-
-#: lib/version-etc.c:253
-#, c-format
-msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
-msgstr "Strona domowa pakietu %s: <http://www.gnu.org/software/%s/>.\n"
-
-#: lib/version-etc.c:256
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
-msgstr "Ogólna pomoc przy u¿ywaniu oprogramowania GNU: <http://www.gnu.org/gethelp/>.\n"
-
-#: lib/w32spawn.h:40
-#, c-format
-msgid "_open_osfhandle failed"
-msgstr "_open_osfhandle nie powiod³o siê"
-
-#: lib/w32spawn.h:81
-#, c-format
-msgid "cannot restore fd %d: dup2 failed"
-msgstr "nie mo¿na odtworzyæ fd %d: dup2 nie powiod³o siê"
-
-#: lib/wait-process.c:223 lib/wait-process.c:255 lib/wait-process.c:317
-#, c-format
-msgid "%s subprocess"
-msgstr "podproces %s"
-
-#: lib/wait-process.c:274 lib/wait-process.c:346
-#, c-format
-msgid "%s subprocess got fatal signal %d"
-msgstr "podproces %s dosta³ krytyczny sygna³ %d"
-
-#: lib/xfreopen.c:35
-msgid "stdin"
-msgstr "standardowego wej¶cia"
-
-#: lib/xfreopen.c:36
-msgid "stdout"
-msgstr "standardowego wyj¶cia"
-
-#: lib/xfreopen.c:37
-msgid "stderr"
-msgstr "standardowego wyj¶cia diagnostycznego"
-
-#: lib/xfreopen.c:38
-msgid "unknown stream"
-msgstr "nieznanego strumienia"
-
-#: lib/xfreopen.c:39
-#, c-format
-msgid "failed to reopen %s with mode %s"
-msgstr "nie uda³o siê ponownie otworzyæ %s w trybie %s"
-
-#: lib/xmemcoll.c:48
-#, c-format
-msgid "string comparison failed"
-msgstr "nie uda³o siê porównanie ³añcuchów znaków"
-
-#: lib/xmemcoll.c:49
-#, c-format
-msgid "Set LC_ALL='C' to work around the problem."
-msgstr "Ustaw LC_ALL='C' ¿eby obej¶æ problem"
-
-#: lib/xmemcoll.c:51
-#, c-format
-msgid "The strings compared were %s and %s."
-msgstr "Porównywane ³añcuchy znaków do %s i %s."
-
-#: lib/xprintf.c:50 lib/xprintf.c:76
-#, c-format
-msgid "cannot perform formatted output"
-msgstr "nie mo¿na sformatowaæ wyj¶cia"
-
-#: lib/xstrtol-error.c:63
-#, c-format
-msgid "invalid %s%s argument `%s'"
-msgstr "b³êdny argument %s%s opcji `%s'"
-
-#: lib/xstrtol-error.c:68
-#, c-format
-msgid "invalid suffix in %s%s argument `%s'"
-msgstr "b³êdny przyrostek argumentu %s%s opcji `%s'"
-
-#: lib/xstrtol-error.c:72
-#, c-format
-msgid "%s%s argument `%s' too large"
-msgstr "argument %s%s `%s' zbyt du¿y"
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "pamiêæ wyczerpana"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "b³êdny argument %s opcji %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "niejednoznaczny argument %s opcji %s"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Prawid³owe argumenty to:"
+
+#~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+#~ msgstr "ARGP_HELP_FMT: warto¶æ %s jest mniejsza lub równa %s"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: Parametr ARGP_HELP_FMT wymaga podania warto¶ci"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+#~ msgstr "%.*s: Parametr ARGP_HELP_FMT musi byæ dodatni"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: Nieznany parametr ARGP_HELP_FMT"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "B³êdne dane w ARGP_HELP_FMT: %s"
+
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Argumenty obowi±zkowe lub opcjonalne dla d³ugich opcji s± równie¿ "
+#~ "obowi±zkowe lub opcjonalne dla odpowiednich krótkich opcji."
+
+#~ msgid "Usage:"
+#~ msgstr "Sk³adnia:"
+
+#~ msgid "  or: "
+#~ msgstr "    lub: "
+
+#~ msgid " [OPTION...]"
+#~ msgstr " [OPCJA...]"
+
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr ""
+#~ "Polecenie `%s --help' lub `%s --usage' pozwoli uzyskaæ wiêcej "
+#~ "informacji.\n"
+
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "Prosimy zg³aszaæ b³êdy na adres %s.\n"
+
+#~ msgid "give this help list"
+#~ msgstr "wy¶wietlenie tego tekstu pomocy"
+
+#~ msgid "give a short usage message"
+#~ msgstr "wy¶wietlenie krótkiej informacji o sk³adni polecenia"
+
+#~ msgid "NAME"
+#~ msgstr "NAZWA"
+
+#~ msgid "set the program name"
+#~ msgstr "okre¶lenie nazwy programu"
+
+#~ msgid "SECS"
+#~ msgstr "SEK"
+
+#~ msgid "hang for SECS seconds (default 3600)"
+#~ msgstr "zatrzymanie na SEK sekund (domy¶lnie 3600)"
+
+#~ msgid "print program version"
+#~ msgstr "wy¶wietlenie wersji programu"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(B£¡D PROGRAMU) Nieznana wersja!?"
+
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: Za du¿o argumentów\n"
+
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr "(B£¡D PROGRAMU) Opcja powinna zostaæ rozpoznana!?"
+
+#~ msgid "program error"
+#~ msgstr "b³±d programu"
+
+#~ msgid "stack overflow"
+#~ msgstr "przepe³nienie stosu"
+
+#~ msgid "cannot find a temporary directory, try setting $TMPDIR"
+#~ msgstr ""
+#~ "nie mo¿na odnale¼æ katalogu tymczasowego, mo¿na spróbowaæ ustawiæ $TMPDIR"
+
+#~ msgid "cannot create a temporary directory using template \"%s\""
+#~ msgstr "nie mo¿na utworzyæ katalogu typczasowego z u¿yciem szablonu \"%s\""
+
+#~ msgid "cannot remove temporary file %s"
+#~ msgstr "nie mo¿na usun±æ pliku tymczasowego %s"
+
+#~ msgid "cannot remove temporary directory %s"
+#~ msgstr "nie mo¿na usun±æ katalogu tymczasowego %s"
+
+#~ msgid "error closing file"
+#~ msgstr "b³±d podczas zamykania pliku"
+
+#~ msgid "write error"
+#~ msgstr "b³±d zapisu"
+
+#~ msgid "preserving permissions for %s"
+#~ msgstr "zachowywanie uprawnieñ do %s"
+
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "b³±d podczas otwierania \"%s\" do odczytu"
+
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "nie mo¿na otworzyæ pliku zapasowego \"%s\" do zapisu"
+
+#~ msgid "error reading \"%s\""
+#~ msgstr "b³±d odczytu \"%s\""
+
+#~ msgid "error writing \"%s\""
+#~ msgstr "b³±d zapisu \"%s\""
+
+#~ msgid "error after reading \"%s\""
+#~ msgstr "b³±d po odczycie \"%s\""
+
+#~ msgid "fdopen() failed"
+#~ msgstr "fdopen() nie powiod³o siê"
+
+#~ msgid "C# compiler not found, try installing pnet"
+#~ msgstr "Nie znaleziono kompilatora C#, proszê spróbowaæ zainstalowaæ pnet"
+
+#~ msgid "C# virtual machine not found, try installing pnet"
+#~ msgstr ""
+#~ "Nie znaleziono maszyny wirtualnej C#, proszê spróbowaæ zainstalowaæ pnet"
+
+#~ msgid "%s subprocess failed"
+#~ msgstr "podproces %s zawiód³"
+
+#~ msgid "regular empty file"
+#~ msgstr "pusty zwyk³y plik"
+
+#~ msgid "regular file"
+#~ msgstr "zwyk³y plik"
+
+#~ msgid "directory"
+#~ msgstr "katalog"
+
+#~ msgid "block special file"
+#~ msgstr "blokowy plik specjalny"
+
+#~ msgid "character special file"
+#~ msgstr "znakowy plik specjalny"
+
+#~ msgid "fifo"
+#~ msgstr "potok"
+
+#~ msgid "symbolic link"
+#~ msgstr "dowi±zanie symboliczne"
+
+#~ msgid "socket"
+#~ msgstr "gniazdo"
+
+#~ msgid "message queue"
+#~ msgstr "kolejka komunikatów"
+
+#~ msgid "semaphore"
+#~ msgstr "semafor"
+
+#~ msgid "shared memory object"
+#~ msgstr "obiekt w pamiêci wspó³dzielonej"
+
+#~ msgid "typed memory object"
+#~ msgstr "obiekt z typem w pamiêci"
+
+#~ msgid "weird file"
+#~ msgstr "dziwny plik"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "Rodzina adresów dla podanej nazwy hosta nie jest obs³ugiwana"
+
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Tymczasowy b³±d rozwi±zywania nazw"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "B³êdna warto¶æ ai_flags"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "Nienaprawialny b³±d w rozwi±zywaniu nazw"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "ai_family zawiera nie obs³ugiwan± rodzinê protoko³ów"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "B³±d przydzielania pamiêci"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "Brak adresu zwi±zanego z nazw± hosta"
+
+#~ msgid "Name or service not known"
+#~ msgstr "Nieznana nazwa lub us³uga"
+
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr "Us³uga nie obs³ugiwana dla danego ai_socktype"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "ai_socktype zawiera nie obs³ugiwany typ gniazda"
+
+#~ msgid "System error"
+#~ msgstr "B³±d systemowy"
+
+#~ msgid "Argument buffer too small"
+#~ msgstr "Bufor argumentu zbyt ma³y"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "Przetwarzanie ¿±dania jest w toku"
+
+#~ msgid "Request canceled"
+#~ msgstr "¯±danie anulowane"
+
+#~ msgid "Request not canceled"
+#~ msgstr "¯±danie nie anulowane"
+
+#~ msgid "All requests done"
+#~ msgstr "Wszystkie ¿±dania wykonane"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Przerwane przez sygna³"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "£añcuch parametru niepoprawnie zakodowany"
+
+#~ msgid "Unknown error"
+#~ msgstr "Nieznany b³±d"
+
+#~ msgid "invalid source_version argument to compile_java_class"
+#~ msgstr "b³êdny argument source_version dla compile_java_class"
+
+#~ msgid "invalid target_version argument to compile_java_class"
+#~ msgstr "b³êdny argument target_version dla compile_java_class"
+
+#~ msgid "failed to create \"%s\""
+#~ msgstr "nie uda³o siê utworzyæ \"%s\""
+
+#~ msgid "error while writing \"%s\" file"
+#~ msgstr "b³±d podczas zapisu pliku \"%s\""
+
+#~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
+#~ msgstr ""
+#~ "Nie znaleziono kompilatora Javy, proszê spróbowaæ zainstalowaæ gcj lub "
+#~ "ustawiæ $JAVAC"
+
+#~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
+#~ msgstr ""
+#~ "Nie znaleziono maszyny wirtualnej Javy, proszê spróbowaæ zainstalowaæ gij "
+#~ "lub ustawiæ $JAVA"
+
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "b³±d we/wy podprocesu %s"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "nie mo¿na zmieniæ uprawnieñ do %s"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "nie mo¿na utworzyæ katalogu %s"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "nie uda³o siê zapisaæ bie¿±cego katalogu roboczego"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "nie uda³o siê wróciæ do pocz±tkowego katalogu roboczego"
+
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "Nie uda³o siê otworzyæ /dev/zero do odczytu"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "tworzenie w±tku czytaj±cego nie powiod³o sie"
+
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr "nie mo¿na ustawiæ nieblokuj±cego we/wy dla podprocesu %s"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "komunikacja z podprocesem %s nie powiod³a siê"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "zapis do podprocesu %s nie powiód³ siê"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "odczyt z podprocesu %s nie powiód³ siê"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "podproces %s zakoñczy³ siê z kodem wyj¶cia %d"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "tworzenie w±tków nie powiod³o siê"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "podproces %s zakoñczy³ siê kodem wyj¶cia %d"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "nie mo¿na utworzyæ potoku"
+
+#~ msgid "`"
+#~ msgstr "`"
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[yYtT]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "ustawianie uprawnieñ %s"
+
+#~ msgid "Hangup"
+#~ msgstr "Roz³±czenie"
+
+#~ msgid "Interrupt"
+#~ msgstr "Przerwanie"
+
+#~ msgid "Quit"
+#~ msgstr "Wyj¶cie"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Niedozwolona instrukcja"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Pu³apka debuggera/breakpoint"
+
+#~ msgid "Aborted"
+#~ msgstr "Przerwano"
+
+#~ msgid "Floating point exception"
+#~ msgstr "B³±d w obliczeniach zmiennoprzecinkowych"
+
+#~ msgid "Killed"
+#~ msgstr "Unicestwiono"
+
+#~ msgid "Bus error"
+#~ msgstr "B³±d szyny"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Naruszenie ochrony pamiêci"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Przerwany potok"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Budzik"
+
+#~ msgid "Terminated"
+#~ msgstr "Zakoñczono"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Nag³y stan we/wy"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "Zatrzymano (sygna³)"
+
+#~ msgid "Stopped"
+#~ msgstr "Zatrzymano"
+
+#~ msgid "Continued"
+#~ msgstr "Kontynuacja"
+
+#~ msgid "Child exited"
+#~ msgstr "Zakoñczenie procesu potomnego"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Zatrzymano (wej¶cie z tty)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Zatrzymano (wyj¶cie na tty)"
+
+#~ msgid "I/O possible"
+#~ msgstr "Mo¿liwa operacja we/wy"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "Przekroczony limit czasu procesora"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "Przekroczony limit rozmiaru pliku"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "Up³yn±³ czas stopera wirtualnego"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "Up³yn±³ czas stopera profiluj±cego"
+
+#~ msgid "Window changed"
+#~ msgstr "Okno zmienione"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "Sygna³ u¿ytkownika 1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Sygna³ u¿ytkownika 2"
+
+#~ msgid "EMT trap"
+#~ msgstr "Pu³apka EMT"
+
+#~ msgid "Bad system call"
+#~ msgstr "B³êdne wywo³anie systemowe"
+
+#~ msgid "Stack fault"
+#~ msgstr "B³±d stosu"
+
+#~ msgid "Information request"
+#~ msgstr "¯±danie informacji"
+
+#~ msgid "Power failure"
+#~ msgstr "Awaria zasilania"
+
+#~ msgid "Resource lost"
+#~ msgstr "Utrata zasobów"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "b³±d zapisu do zamkniêtego potoku lub gniazda"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Sygna³ czasu rzeczywistego %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Nieznany sygna³ %d"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "nie mo¿na u¿yæ funkcji iconv"
+
+#~ msgid "iconv function not available"
+#~ msgstr "funkcja iconv nie jest dostêpna"
+
+#~ msgid "character out of range"
+#~ msgstr "znak spoza zakresu"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "nie mo¿na przekszta³ciæ U+%04X do lokalnego zestawu znaków"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "nie mo¿na przekszta³ciæ U+%04X do lokalnego zestawu znaków: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "b³êdny u¿ytkownik"
+
+#~ msgid "invalid group"
+#~ msgstr "b³êdna grupa"
+
+#~ msgid "invalid spec"
+#~ msgstr "b³êdna specyfikacja"
+
+#~ msgid "unable to display error message"
+#~ msgstr "nie mo¿na wy¶wietliæ komunikatu b³êdu"
+
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Pakietuj±cy: %s (%s)\n"
+
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Pakietuj±cy: %s\n"
+
+#~ msgid "(C)"
+#~ msgstr "(C)"
+
+#~ msgid ""
+#~ "\n"
+#~ "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+#~ "html>.\n"
+#~ "This is free software: you are free to change and redistribute it.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Licencja GPLv3+: GNU GPL wersja 3 lub pó¼niejsza:\n"
+#~ "<http://gnu.org/licenses/gpl.html>\n"
+#~ "To jest oprogramowanie wolnodostêpne: mo¿na je modyfikowaæ i "
+#~ "rozpowszechniaæ.\n"
+#~ "Nie ma ¯ADNEJ GWARANCJI w zakresie dopuszczalnym przez prawo.\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Autor: %s.\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Autorzy: %s i %s.\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Autorzy: %s, %s i %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Autorzy: %s, %s, %s\n"
+#~ "i %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Autorzy: %s, %s, %s,\n"
+#~ "%s i %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Autorzy: %s, %s, %s,\n"
+#~ "%s, %s i %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Autorzy: %s, %s, %s,\n"
+#~ "%s, %s, %s i %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Autorzy: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s\n"
+#~ "i %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Autorzy: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s i %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "Autorzy: %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s i inni.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to: %s\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Prosimy zg³aszaæ b³êdy na adres <%s>.\n"
+#~ "B³êdy w t³umaczeniu prosimy zg³aszaæ na adres <translation-team-pl@lists."
+#~ "sourceforge.net>.\n"
+
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "B³êdy pakietuj±cego (%s) prosimy zg³aszaæ na adres <%s>.\n"
+
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "Strona domowa pakietu %s: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "Strona domowa pakietu %s: <http://www.gnu.org/software/%s/>.\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+#~ msgstr ""
+#~ "Ogólna pomoc przy u¿ywaniu oprogramowania GNU: <http://www.gnu.org/"
+#~ "gethelp/>.\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle nie powiod³o siê"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "nie mo¿na odtworzyæ fd %d: dup2 nie powiod³o siê"
+
+#~ msgid "%s subprocess"
+#~ msgstr "podproces %s"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "podproces %s dosta³ krytyczny sygna³ %d"
+
+#~ msgid "stdin"
+#~ msgstr "standardowego wej¶cia"
+
+#~ msgid "stdout"
+#~ msgstr "standardowego wyj¶cia"
+
+#~ msgid "stderr"
+#~ msgstr "standardowego wyj¶cia diagnostycznego"
+
+#~ msgid "unknown stream"
+#~ msgstr "nieznanego strumienia"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "nie uda³o siê ponownie otworzyæ %s w trybie %s"
+
+#~ msgid "string comparison failed"
+#~ msgstr "nie uda³o siê porównanie ³añcuchów znaków"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Ustaw LC_ALL='C' ¿eby obej¶æ problem"
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Porównywane ³añcuchy znaków do %s i %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "nie mo¿na sformatowaæ wyj¶cia"
+
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "b³êdny argument %s%s opcji `%s'"
+
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "b³êdny przyrostek argumentu %s%s opcji `%s'"
+
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "argument %s%s `%s' zbyt du¿y"

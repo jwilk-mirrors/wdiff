@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib 1.0\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2005-09-30 17:42+0300\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
 "PO-Revision-Date: 2006-07-28 09:50+0300\n"
 "Last-Translator: Toomas Soome <Toomas.Soome@microlink.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -15,688 +15,456 @@ msgstr ""
 "Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/argmatch.c:137
-#, c-format
-msgid "invalid argument %s for %s"
-msgstr "vigane argument %s võtmel `%s'"
-
-#: lib/argmatch.c:138
-#, c-format
-msgid "ambiguous argument %s for %s"
-msgstr "segane argument %s võtmele `%s'"
-
-#: lib/argmatch.c:157
-#, c-format
-msgid "Valid arguments are:"
-msgstr "Lubatud argumendid on:"
-
-#: lib/argp-help.c:194
-#, c-format
-msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
-msgstr ""
-
-#: lib/argp-help.c:203
-#, c-format
-msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
-msgstr ""
-
-#: lib/argp-help.c:215
-#, c-format
-msgid "Garbage in ARGP_HELP_FMT: %s"
-msgstr ""
-
-#: lib/argp-help.c:1194
-msgid "Mandatory or optional arguments to long options are also mandatory or optional for any corresponding short options."
-msgstr "Kohustuslikud argumendid pikkadele võtmetele on kohustuslikud ka lühikestele."
-
-#: lib/argp-help.c:1581
-msgid "Usage:"
-msgstr ""
-
-#: lib/argp-help.c:1585
-msgid "  or: "
-msgstr ""
-
-#: lib/argp-help.c:1597
-msgid " [OPTION...]"
-msgstr " [VÕTI]..."
-
-#: lib/argp-help.c:1624
-#, c-format
-msgid "Try `%s --help' or `%s --usage' for more information.\n"
-msgstr "Lisainfo saamiseks proovige `%s --help' või `%s --usage'.\n"
-
-#: lib/argp-help.c:1652
-#, c-format
-msgid "Report bugs to %s.\n"
-msgstr "Vigadest teatage palun aadressil %s.\n"
-
-#: lib/argp-help.c:1872 lib/error.c:121
+#: lib/error.c:153
 msgid "Unknown system error"
 msgstr "Tundmatu süsteemne viga"
 
-#: lib/argp-parse.c:82
-msgid "Give this help list"
-msgstr ""
-
-#: lib/argp-parse.c:83
-msgid "Give a short usage message"
-msgstr ""
-
-#: lib/argp-parse.c:84
-msgid "NAME"
-msgstr "NIMI"
-
-#: lib/argp-parse.c:84
-msgid "Set the program name"
-msgstr ""
-
-#: lib/argp-parse.c:85
-msgid "SECS"
-msgstr ""
-
-#: lib/argp-parse.c:86
-msgid "Hang for SECS seconds (default 3600)"
-msgstr ""
-
-#: lib/argp-parse.c:147
-#, fuzzy
-msgid "Print program version"
-msgstr "programmi viga"
-
-#: lib/argp-parse.c:163
-msgid "(PROGRAM ERROR) No version known!?"
-msgstr ""
-
-#: lib/argp-parse.c:619
-#, c-format
-msgid "%s: Too many arguments\n"
-msgstr "%s: Liiga palju argumente\n"
-
-#: lib/argp-parse.c:762
-msgid "(PROGRAM ERROR) Option should have been recognized!?"
-msgstr ""
-
-#: lib/c-stack.c:244
-msgid "program error"
-msgstr "programmi viga"
-
-#: lib/c-stack.c:245
-msgid "stack overflow"
-msgstr ""
-
-#: lib/closeout.c:94
-msgid "write error"
-msgstr "viga kirjutamisel"
-
-#: lib/copy-file.c:65
-#, c-format
-msgid "error while opening \"%s\" for reading"
-msgstr "viga \"%s\" lugemiseks avamisel"
-
-#: lib/copy-file.c:72
-#, c-format
-msgid "cannot open backup file \"%s\" for writing"
-msgstr "Varukoopia faili \"%s\" ei õnnestu kirjutamiseks avada"
-
-#: lib/copy-file.c:80
-#, c-format
-msgid "error reading \"%s\""
-msgstr "viga \"%s\" lugemisel"
-
-#: lib/copy-file.c:85 lib/copy-file.c:89
-#, c-format
-msgid "error writing \"%s\""
-msgstr "viga \"%s\" kirjutamisel"
-
-#: lib/copy-file.c:91
-#, c-format
-msgid "error after reading \"%s\""
-msgstr "viga peale \"%s\" lugemist"
-
-#: lib/csharpcomp.c:273
-msgid "fdopen() failed"
-msgstr "fdopen() ebaõnnestus"
-
-#: lib/csharpcomp.c:526
-msgid "C# compiler not found, try installing pnet"
-msgstr ""
-
-#: lib/csharpexec.c:251
-msgid "C# virtual machine not found, try installing pnet"
-msgstr ""
-
-#: lib/execute.c:186 lib/execute.c:262 lib/execute.c:304 lib/pipe.c:231
-#: lib/pipe.c:349 lib/pipe.c:409 lib/wait-process.c:336 lib/wait-process.c:403
-#, c-format
-msgid "%s subprocess failed"
-msgstr "%s: alamprotsess sai vea"
-
-#: lib/file-type.c:43
-msgid "regular empty file"
-msgstr "tavaline tühi fail"
-
-#: lib/file-type.c:43
-msgid "regular file"
-msgstr "tavaline fail"
-
-#: lib/file-type.c:46
-msgid "directory"
-msgstr "Kataloog"
-
-#: lib/file-type.c:49
-msgid "block special file"
-msgstr "blokkseadme fail"
-
-#: lib/file-type.c:52
-msgid "character special file"
-msgstr "sümbolseadme fail"
-
-#: lib/file-type.c:55
-msgid "fifo"
-msgstr "fifo"
-
-#: lib/file-type.c:58
-msgid "symbolic link"
-msgstr "nimeviide"
-
-#: lib/file-type.c:61
-msgid "socket"
-msgstr "sokkel"
-
-#: lib/file-type.c:64
-msgid "message queue"
-msgstr "teadete järjekord"
-
-#: lib/file-type.c:67
-msgid "semaphore"
-msgstr "semafor"
-
-#: lib/file-type.c:70
-msgid "shared memory object"
-msgstr "jagatud mälu objekt"
-
-#: lib/file-type.c:73
-msgid "typed memory object"
-msgstr "tüübitud mälu objekt"
-
-#: lib/file-type.c:75
-msgid "weird file"
-msgstr "veider fail"
-
-#: lib/gai_strerror.c:45
-msgid "Address family for hostname not supported"
-msgstr "Aadressiperekonda või hostinime ei toetata"
-
-#: lib/gai_strerror.c:46
-msgid "Temporary failure in name resolution"
-msgstr "Ajutine tõrge nime lahendamisel"
-
-#: lib/gai_strerror.c:47
-msgid "Bad value for ai_flags"
-msgstr "Vigane ai_flags väärtus"
-
-#: lib/gai_strerror.c:48
-msgid "Non-recoverable failure in name resolution"
-msgstr "nime lahendamisl tekkis taastumatu tõrge"
-
-#: lib/gai_strerror.c:49
-msgid "ai_family not supported"
-msgstr "ai_family ei toetata"
-
-#: lib/gai_strerror.c:50
-msgid "Memory allocation failure"
-msgstr "Tõrge mälu haaramisel"
-
-#: lib/gai_strerror.c:51
-msgid "No address associated with hostname"
-msgstr "Hosti nimega ei ole aadresse seostatud"
-
-#: lib/gai_strerror.c:52
-msgid "Name or service not known"
-msgstr "Nimi või teenus on tundmatu"
-
-#: lib/gai_strerror.c:53
-msgid "Servname not supported for ai_socktype"
-msgstr "ai_socktype ei toeta teenuse nime"
-
-#: lib/gai_strerror.c:54
-msgid "ai_socktype not supported"
-msgstr "ai_socktype ei toetata"
-
-#: lib/gai_strerror.c:55
-msgid "System error"
-msgstr "Süsteemne viga"
-
-#: lib/gai_strerror.c:57
-msgid "Processing request in progress"
-msgstr "Päringu töötlemine käib"
-
-#: lib/gai_strerror.c:58
-msgid "Request canceled"
-msgstr "Päring katkestati"
-
-#: lib/gai_strerror.c:59
-msgid "Request not canceled"
-msgstr "Päringut ei katkestatud"
-
-#: lib/gai_strerror.c:60
-msgid "All requests done"
-msgstr "Kõik päringud täidetud"
-
-#: lib/gai_strerror.c:61
-msgid "Interrupted by a signal"
-msgstr "Katkestatud signaaliga"
-
-#: lib/gai_strerror.c:62
-msgid "Parameter string not correctly encoded"
-msgstr "Parameetersõne ei ole korrektselt kodeeritud"
-
-#: lib/gai_strerror.c:74
-msgid "Unknown error"
-msgstr "Tundmatu viga"
-
-#: lib/getopt.c:551 lib/getopt.c:570
-#, c-format
-msgid "%s: option `%s' is ambiguous\n"
+#: lib/getopt.c:525 lib/getopt.c:541
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: võti `%s' on segane\n"
 
-#: lib/getopt.c:603 lib/getopt.c:607
-#, c-format
-msgid "%s: option `--%s' doesn't allow an argument\n"
+#: lib/getopt.c:574 lib/getopt.c:578
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: võti `--%s' ei luba kasutada argumenti\n"
 
-#: lib/getopt.c:616 lib/getopt.c:621
-#, c-format
-msgid "%s: option `%c%s' doesn't allow an argument\n"
+#: lib/getopt.c:587 lib/getopt.c:592
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: võti `%c%s' ei luba kasutada argumenti\n"
 
-#: lib/getopt.c:667 lib/getopt.c:689 lib/getopt.c:1020 lib/getopt.c:1042
-#, c-format
-msgid "%s: option `%s' requires an argument\n"
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#, fuzzy, c-format
+msgid "%s: option '%s' requires an argument\n"
 msgstr "%s: võti `%s' nõuab argumenti\n"
 
-#: lib/getopt.c:727 lib/getopt.c:730
-#, c-format
-msgid "%s: unrecognized option `--%s'\n"
+#: lib/getopt.c:692 lib/getopt.c:695
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: tundmatu võti `--%s'\n"
 
-#: lib/getopt.c:738 lib/getopt.c:741
-#, c-format
-msgid "%s: unrecognized option `%c%s'\n"
+#: lib/getopt.c:703 lib/getopt.c:706
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: tundmatu võti `%c%s'\n"
 
-#: lib/getopt.c:796 lib/getopt.c:799
-#, c-format
-msgid "%s: illegal option -- %c\n"
-msgstr "%s: lubamatu võti -- %c\n"
-
-#: lib/getopt.c:805 lib/getopt.c:808
-#, c-format
-msgid "%s: invalid option -- %c\n"
+#: lib/getopt.c:755 lib/getopt.c:758
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: vigane võti -- %c\n"
 
-#: lib/getopt.c:863 lib/getopt.c:882 lib/getopt.c:1095 lib/getopt.c:1116
-#, c-format
-msgid "%s: option requires an argument -- %c\n"
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: võti nõuab argumenti -- %c\n"
 
-#: lib/getopt.c:935 lib/getopt.c:954
-#, c-format
-msgid "%s: option `-W %s' is ambiguous\n"
+#: lib/getopt.c:878 lib/getopt.c:894
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: võti `-W %s' on segane\n"
 
-#: lib/getopt.c:978 lib/getopt.c:999
-#, c-format
-msgid "%s: option `-W %s' doesn't allow an argument\n"
+#: lib/getopt.c:918 lib/getopt.c:936
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: võti `-W %s' ei luba kasutada argumenti\n"
 
-#: lib/human.c:486
-msgid "block size"
-msgstr "bloki suurus"
-
-#: lib/javacomp.c:467
-msgid "Java compiler not found, try installing gcj or set $JAVAC"
-msgstr ""
-
-#: lib/javaexec.c:420
-msgid "Java virtual machine not found, try installing gij or set $JAVA"
-msgstr ""
-
-#: lib/mkdir-p.c:106
-#, c-format
-msgid "%s exists but is not a directory"
-msgstr "`%s' on olemas, aga ei ole kataloog"
-
-#: lib/mkdir-p.c:203 lib/mkdir-p.c:294
-#, c-format
-msgid "cannot change owner and/or group of %s"
-msgstr "%s omanikku ja/või gruppi ei õnnestu muuta"
-
-#: lib/mkdir-p.c:229 lib/mkdir-p.c:266
-#, c-format
-msgid "cannot create directory %s"
-msgstr "kataloogi `%s' ei õnnestu luua"
-
-#: lib/mkdir-p.c:240
-#, c-format
-msgid "cannot chdir to directory %s"
-msgstr "ei saa minna kataloogi %s"
-
-#: lib/mkdir-p.c:307 lib/mkdir-p.c:332
-#, c-format
-msgid "cannot change permissions of %s"
-msgstr "ei õnnestu muuta %s õigusi"
-
-#: lib/obstack.c:438 lib/obstack.c:441 lib/xalloc-die.c:38 lib/xsetenv.c:40
-msgid "memory exhausted"
-msgstr "mälu on otsas"
-
-#: lib/openat-die.c:36
-msgid "unable to record current working directory"
-msgstr "ei õnnestu registreerida jooksvat töökataloogi"
-
-#: lib/openat-die.c:49
-msgid "failed to return to initial working directory"
-msgstr "esialgsesse töökataloogi ei õnnestu tagasi minna"
-
-#: lib/pagealign_alloc.c:143
-msgid "Failed to open /dev/zero for read"
-msgstr "Faili /dev/zero saa lugemiseks avada"
-
-#: lib/pipe.c:157 lib/pipe.c:160 lib/pipe.c:264 lib/pipe.c:267
-msgid "cannot create pipe"
-msgstr "ei õnnestu luua toru"
-
-#. TRANSLATORS:
-#. Get translations for open and closing quotation marks.
-#.
-#. The message catalog should translate "`" to a left
-#. quotation mark suitable for the locale, and similarly for
-#. "'".  If the catalog has no translation,
-#. locale_quoting_style quotes `like this', and
-#. clocale_quoting_style quotes "like this".
-#.
-#. For example, an American English Unicode locale should
-#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
-#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
-#. MARK).  A British English Unicode locale should instead
-#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
-#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
-#.
-#. If you don't know what to put here, please see
-#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
-#. and use glyphs suitable for your language.
-#: lib/quotearg.c:245
-msgid "`"
-msgstr "`"
-
-#: lib/quotearg.c:246
-msgid "'"
-msgstr "'"
-
-#: lib/regcomp.c:131
+#: lib/regcomp.c:132
 msgid "Success"
 msgstr ""
 
-#: lib/regcomp.c:134
+#: lib/regcomp.c:135
 msgid "No match"
 msgstr ""
 
-#: lib/regcomp.c:137
+#: lib/regcomp.c:138
 msgid "Invalid regular expression"
 msgstr "Vigane regulaaravaldis"
 
-#: lib/regcomp.c:140
+#: lib/regcomp.c:141
 msgid "Invalid collation character"
 msgstr "Vigane võrdlussümbol"
 
-#: lib/regcomp.c:143
+#: lib/regcomp.c:144
 msgid "Invalid character class name"
 msgstr "Vigane sümbolite klassi nimi"
 
-#: lib/regcomp.c:146
+#: lib/regcomp.c:147
 msgid "Trailing backslash"
 msgstr ""
 
-#: lib/regcomp.c:149
+#: lib/regcomp.c:150
 msgid "Invalid back reference"
 msgstr "Vigane tagasiviide"
 
-#: lib/regcomp.c:152
+#: lib/regcomp.c:153
 msgid "Unmatched [ or [^"
 msgstr ""
 
-#: lib/regcomp.c:155
+#: lib/regcomp.c:156
 msgid "Unmatched ( or \\("
 msgstr ""
 
-#: lib/regcomp.c:158
+#: lib/regcomp.c:159
 msgid "Unmatched \\{"
 msgstr ""
 
-#: lib/regcomp.c:161
+#: lib/regcomp.c:162
 msgid "Invalid content of \\{\\}"
 msgstr ""
 
-#: lib/regcomp.c:164
+#: lib/regcomp.c:165
 msgid "Invalid range end"
 msgstr "Vigane vahemiku lõpp"
 
-#: lib/regcomp.c:167
+#: lib/regcomp.c:168
 msgid "Memory exhausted"
 msgstr "Mälu on otsas"
 
-#: lib/regcomp.c:170
+#: lib/regcomp.c:171
 msgid "Invalid preceding regular expression"
 msgstr "Vigane eelnev regulaaravaldis"
 
-#: lib/regcomp.c:173
+#: lib/regcomp.c:174
 msgid "Premature end of regular expression"
 msgstr "Enneaegne regulaaravaldise lõpp"
 
-#: lib/regcomp.c:176
+#: lib/regcomp.c:177
 msgid "Regular expression too big"
 msgstr "Regulaaravaldis on liiga pikk"
 
-#: lib/regcomp.c:179
+#: lib/regcomp.c:180
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:659
+#: lib/regcomp.c:701
 msgid "No previous regular expression"
 msgstr "Eelmist regulaaravaldist pole"
 
-#: lib/rpmatch.c:70
-msgid "^[yY]"
-msgstr "^[jJ]"
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "mälu on otsas"
 
-#: lib/rpmatch.c:73
-msgid "^[nN]"
-msgstr "^[eE]"
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "vigane argument %s võtmel `%s'"
 
-#: lib/unicodeio.c:147
-msgid "iconv function not usable"
-msgstr "iconv funktsioon ei ole kasutatav"
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "segane argument %s võtmele `%s'"
 
-#: lib/unicodeio.c:149
-msgid "iconv function not available"
-msgstr "iconv funktsioon puudub"
+#~ msgid "Valid arguments are:"
+#~ msgstr "Lubatud argumendid on:"
 
-#: lib/unicodeio.c:156
-msgid "character out of range"
-msgstr "sümbol on piirkonnast väljas"
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Kohustuslikud argumendid pikkadele võtmetele on kohustuslikud ka "
+#~ "lühikestele."
 
-#: lib/unicodeio.c:219
-#, c-format
-msgid "cannot convert U+%04X to local character set"
-msgstr "U+%04X ei saa lokaalsesse kooditabelisse teisendada"
+#~ msgid " [OPTION...]"
+#~ msgstr " [VÕTI]..."
 
-#: lib/unicodeio.c:221
-#, c-format
-msgid "cannot convert U+%04X to local character set: %s"
-msgstr "U+%04X ei saa lokaalsesse kooditabelisse teisendada: %s"
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "Lisainfo saamiseks proovige `%s --help' või `%s --usage'.\n"
 
-#: lib/userspec.c:110
-msgid "invalid user"
-msgstr "vigane kasutaja"
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "Vigadest teatage palun aadressil %s.\n"
 
-#: lib/userspec.c:111
-msgid "invalid group"
-msgstr "vigane grupp"
+#~ msgid "NAME"
+#~ msgstr "NIMI"
 
-#: lib/userspec.c:113
-msgid "cannot get the login group of a numeric UID"
-msgstr "ei leia numbrilise UID login gruppi"
+#, fuzzy
+#~ msgid "Print program version"
+#~ msgstr "programmi viga"
 
-#. TRANSLATORS: Translate "(C)" to the copyright symbol
-#. (C-in-a-circle), if this symbol is available in the user's
-#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
-#: lib/version-etc.c:72
-msgid "(C)"
-msgstr "©"
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: Liiga palju argumente\n"
 
-#: lib/version-etc.c:74
-msgid ""
-"\n"
-"This is free software.  You may redistribute copies of it under the terms of\n"
-"the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
-"There is NO WARRANTY, to the extent permitted by law.\n"
-"\n"
-msgstr ""
-"\n"
-"Käesolev programm on vaba tarkvara. Te võite seda edasi levitada ja/või muuta\n"
-"vastavalt GNU Üldise Avaliku Litsentsi <http://www.gnu.org/licenses/gpl.html>\n"
-"tingimustele.\n"
-"Seadustega lubatud piirides GARANTII PUUDUB.\n"
+#~ msgid "program error"
+#~ msgstr "programmi viga"
 
-#. TRANSLATORS: %s denotes an author name.
-#: lib/version-etc.c:90
-#, c-format
-msgid "Written by %s.\n"
-msgstr "Kirjutanud %s.\n"
+#~ msgid "write error"
+#~ msgstr "viga kirjutamisel"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:94
-#, c-format
-msgid "Written by %s and %s.\n"
-msgstr "Kirjutanud %s ja %s.\n"
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "viga \"%s\" lugemiseks avamisel"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:98
-#, c-format
-msgid "Written by %s, %s, and %s.\n"
-msgstr "Kirjutanud %s, %s ja %s.\n"
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "Varukoopia faili \"%s\" ei õnnestu kirjutamiseks avada"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:104
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"and %s.\n"
-msgstr ""
-"Kirjutanud %s, %s, %s\n"
-"ja %s.\n"
+#~ msgid "error reading \"%s\""
+#~ msgstr "viga \"%s\" lugemisel"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:110
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, and %s.\n"
-msgstr ""
-"Kirjutanud %s, %s, %s,\n"
-"%s ja %s.\n"
+#~ msgid "error writing \"%s\""
+#~ msgstr "viga \"%s\" kirjutamisel"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:116
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, and %s.\n"
-msgstr ""
-"Kirjutanud %s, %s, %s,\n"
-"%s, %s ja %s.\n"
+#~ msgid "error after reading \"%s\""
+#~ msgstr "viga peale \"%s\" lugemist"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:123
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, and %s.\n"
-msgstr ""
-"Kirjutanud %s, %s, %s,\n"
-"%s, %s, %s ja %s.\n"
+#~ msgid "fdopen() failed"
+#~ msgstr "fdopen() ebaõnnestus"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:130
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"and %s.\n"
-msgstr ""
-"Kirjutanud %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"ja %s.\n"
+#~ msgid "%s subprocess failed"
+#~ msgstr "%s: alamprotsess sai vea"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:138
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, and %s.\n"
-msgstr ""
-"Kirjutanud %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s ja %s.\n"
+#~ msgid "regular empty file"
+#~ msgstr "tavaline tühi fail"
 
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:148
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s, and others.\n"
-msgstr ""
-"Kirjutanud %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s ja teised.\n"
+#~ msgid "regular file"
+#~ msgstr "tavaline fail"
 
-#: lib/wait-process.c:279 lib/wait-process.c:311 lib/wait-process.c:369
-#, fuzzy, c-format
-msgid "%s subprocess"
-msgstr "%s: alamprotsess sai vea"
+#~ msgid "directory"
+#~ msgstr "Kataloog"
 
-#: lib/wait-process.c:328 lib/wait-process.c:395
-#, fuzzy, c-format
-msgid "%s subprocess got fatal signal %d"
-msgstr "%s: alamprotsess sai vea"
+#~ msgid "block special file"
+#~ msgstr "blokkseadme fail"
 
-#: lib/xmemcoll.c:50
-msgid "string comparison failed"
-msgstr "sõnede võrdlus ebaõnnestus"
+#~ msgid "character special file"
+#~ msgstr "sümbolseadme fail"
 
-#: lib/xmemcoll.c:51
-msgid "Set LC_ALL='C' to work around the problem."
-msgstr "Probleemi lahendamiseks seadke LC_ALL=C."
+#~ msgid "fifo"
+#~ msgstr "fifo"
 
-#: lib/xmemcoll.c:53
-#, c-format
-msgid "The strings compared were %s and %s."
-msgstr "Võrreldi sõnesid %s ja %s."
+#~ msgid "symbolic link"
+#~ msgstr "nimeviide"
+
+#~ msgid "socket"
+#~ msgstr "sokkel"
+
+#~ msgid "message queue"
+#~ msgstr "teadete järjekord"
+
+#~ msgid "semaphore"
+#~ msgstr "semafor"
+
+#~ msgid "shared memory object"
+#~ msgstr "jagatud mälu objekt"
+
+#~ msgid "typed memory object"
+#~ msgstr "tüübitud mälu objekt"
+
+#~ msgid "weird file"
+#~ msgstr "veider fail"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "Aadressiperekonda või hostinime ei toetata"
+
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Ajutine tõrge nime lahendamisel"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "Vigane ai_flags väärtus"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "nime lahendamisl tekkis taastumatu tõrge"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "ai_family ei toetata"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "Tõrge mälu haaramisel"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "Hosti nimega ei ole aadresse seostatud"
+
+#~ msgid "Name or service not known"
+#~ msgstr "Nimi või teenus on tundmatu"
+
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr "ai_socktype ei toeta teenuse nime"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "ai_socktype ei toetata"
+
+#~ msgid "System error"
+#~ msgstr "Süsteemne viga"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "Päringu töötlemine käib"
+
+#~ msgid "Request canceled"
+#~ msgstr "Päring katkestati"
+
+#~ msgid "Request not canceled"
+#~ msgstr "Päringut ei katkestatud"
+
+#~ msgid "All requests done"
+#~ msgstr "Kõik päringud täidetud"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Katkestatud signaaliga"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "Parameetersõne ei ole korrektselt kodeeritud"
+
+#~ msgid "Unknown error"
+#~ msgstr "Tundmatu viga"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: lubamatu võti -- %c\n"
+
+#~ msgid "block size"
+#~ msgstr "bloki suurus"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "`%s' on olemas, aga ei ole kataloog"
+
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "%s omanikku ja/või gruppi ei õnnestu muuta"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "kataloogi `%s' ei õnnestu luua"
+
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "ei saa minna kataloogi %s"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "ei õnnestu muuta %s õigusi"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "ei õnnestu registreerida jooksvat töökataloogi"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "esialgsesse töökataloogi ei õnnestu tagasi minna"
+
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "Faili /dev/zero saa lugemiseks avada"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "ei õnnestu luua toru"
+
+#~ msgid "`"
+#~ msgstr "`"
+
+#~ msgid "'"
+#~ msgstr "'"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[jJ]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[eE]"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "iconv funktsioon ei ole kasutatav"
+
+#~ msgid "iconv function not available"
+#~ msgstr "iconv funktsioon puudub"
+
+#~ msgid "character out of range"
+#~ msgstr "sümbol on piirkonnast väljas"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "U+%04X ei saa lokaalsesse kooditabelisse teisendada"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "U+%04X ei saa lokaalsesse kooditabelisse teisendada: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "vigane kasutaja"
+
+#~ msgid "invalid group"
+#~ msgstr "vigane grupp"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "ei leia numbrilise UID login gruppi"
+
+#~ msgid "(C)"
+#~ msgstr "©"
+
+#~ msgid ""
+#~ "\n"
+#~ "This is free software.  You may redistribute copies of it under the terms "
+#~ "of\n"
+#~ "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Käesolev programm on vaba tarkvara. Te võite seda edasi levitada ja/või "
+#~ "muuta\n"
+#~ "vastavalt GNU Üldise Avaliku Litsentsi <http://www.gnu.org/licenses/gpl."
+#~ "html>\n"
+#~ "tingimustele.\n"
+#~ "Seadustega lubatud piirides GARANTII PUUDUB.\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Kirjutanud %s.\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Kirjutanud %s ja %s.\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Kirjutanud %s, %s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Kirjutanud %s, %s, %s\n"
+#~ "ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Kirjutanud %s, %s, %s,\n"
+#~ "%s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Kirjutanud %s, %s, %s,\n"
+#~ "%s, %s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Kirjutanud %s, %s, %s,\n"
+#~ "%s, %s, %s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Kirjutanud %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Kirjutanud %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "Kirjutanud %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s ja teised.\n"
+
+#, fuzzy
+#~ msgid "%s subprocess"
+#~ msgstr "%s: alamprotsess sai vea"
+
+#, fuzzy
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "%s: alamprotsess sai vea"
+
+#~ msgid "string comparison failed"
+#~ msgstr "sõnede võrdlus ebaõnnestus"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Probleemi lahendamiseks seadke LC_ALL=C."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Võrreldi sõnesid %s ja %s."

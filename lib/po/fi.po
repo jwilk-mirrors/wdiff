@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-22 12:32+0200\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
 "PO-Revision-Date: 2010-02-23 16:51+0200\n"
 "Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -18,519 +18,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural= ( n!=1) ;\n"
 
-#: lib/argmatch.c:133
-#, c-format
-msgid "invalid argument %s for %s"
-msgstr "virheellinen argumentti %s kohteelle %s"
-
-#: lib/argmatch.c:134
-#, c-format
-msgid "ambiguous argument %s for %s"
-msgstr "moniselitteinen argumentti %s kohteelle %s"
-
-#: lib/argmatch.c:153
-#, c-format
-msgid "Valid arguments are:"
-msgstr "Kelvolliset argumentit:"
-
-#: lib/argp-help.c:147
-#, c-format
-msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
-msgstr "ARGP_HELP_FMT: %s arvo on pienempi tai yhtäsuuri kuin %s"
-
-#: lib/argp-help.c:220
-#, c-format
-msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
-msgstr "%.*s: ARGP_HELP_FMT parametri vaatii arvon"
-
-#: lib/argp-help.c:226
-#, c-format
-msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
-msgstr "%.*s: ARGP_HELP_FMT parametrin on oltava positiivinen"
-
-#: lib/argp-help.c:235
-#, c-format
-msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
-msgstr "%.*s: Tuntematon ARGP_HELP_FMT-parametri"
-
-#: lib/argp-help.c:247
-#, c-format
-msgid "Garbage in ARGP_HELP_FMT: %s"
-msgstr "Roskaa kohteessa ARGP_HELP_FMT: %s"
-
-#: lib/argp-help.c:1244
-msgid "Mandatory or optional arguments to long options are also mandatory or optional for any corresponding short options."
-msgstr "Pitkien valitsimien pakolliset tai valinnaiset argumentit ovat pakollisia tai valinnaisia myös lyhyille valitsimille."
-
-#: lib/argp-help.c:1637
-msgid "Usage:"
-msgstr "Käyttö:"
-
-#: lib/argp-help.c:1641
-msgid "  or: "
-msgstr "  tai: "
-
-#: lib/argp-help.c:1653
-msgid " [OPTION...]"
-msgstr " [VALITSIN...]"
-
-#: lib/argp-help.c:1680
-#, c-format
-msgid "Try `%s --help' or `%s --usage' for more information.\n"
-msgstr "Lisätietoja saa komennolla ”%s --help” tai ”%s --usage”.\n"
-
-#: lib/argp-help.c:1708
-#, c-format
-msgid "Report bugs to %s.\n"
-msgstr "Lähetä raportit ohjelmistovioista (englanniksi) osoitteeseen %s.\n"
-
-#: lib/argp-help.c:1927 lib/error.c:153
+#: lib/error.c:153
 msgid "Unknown system error"
 msgstr "Tuntematon järjestelmävirhe"
 
-#: lib/argp-parse.c:81
-msgid "give this help list"
-msgstr "anna tämä opasteluettelo"
-
-#: lib/argp-parse.c:82
-msgid "give a short usage message"
-msgstr "anna tämä lyhyt käyttösanoma"
-
-#: lib/argp-parse.c:83
-msgid "NAME"
-msgstr "NIMI"
-
-#: lib/argp-parse.c:83
-msgid "set the program name"
-msgstr "aseta ohjelman nimi"
-
-#: lib/argp-parse.c:84
-msgid "SECS"
-msgstr "SEKUNTIA"
-
-#: lib/argp-parse.c:85
-msgid "hang for SECS seconds (default 3600)"
-msgstr "odota SEKUNTIA sekuntia (oletus 3600)"
-
-#: lib/argp-parse.c:142
-msgid "print program version"
-msgstr "tulosta ohjelman versio"
-
-#: lib/argp-parse.c:158
-msgid "(PROGRAM ERROR) No version known!?"
-msgstr "(OHJELMAVIRHE) Versiota ei tiedetä!?"
-
-#: lib/argp-parse.c:611
-#, c-format
-msgid "%s: Too many arguments\n"
-msgstr "%s: Liian monta argumenttia\n"
-
-#: lib/argp-parse.c:754
-msgid "(PROGRAM ERROR) Option should have been recognized!?"
-msgstr "(OHJELMAVIRHE) Valitsimen pitäisi olla tunnistettava!?"
-
-#: lib/c-stack.c:196 lib/c-stack.c:309
-msgid "program error"
-msgstr "ohjelmavirhe"
-
-#: lib/c-stack.c:197 lib/c-stack.c:310
-msgid "stack overflow"
-msgstr "pinon ylivuoto"
-
-#: lib/clean-temp.c:335
-#, c-format
-msgid "cannot find a temporary directory, try setting $TMPDIR"
-msgstr "ei voi löytää tilapäistä hakemistoa, yritä asettaa $TMPDIR-ympäristömuuttuja"
-
-#: lib/clean-temp.c:349
-#, c-format
-msgid "cannot create a temporary directory using template \"%s\""
-msgstr "ei voida luoda tilapäistä hakemistoa käyttäen mallinnetta ”%s”"
-
-#: lib/clean-temp.c:445
-#, c-format
-msgid "cannot remove temporary file %s"
-msgstr "ei voida poistaa tilapäistä tiedostoa %s"
-
-#: lib/clean-temp.c:460
-#, c-format
-msgid "cannot remove temporary directory %s"
-msgstr "ei voida poistaa tilapäistä hakemistoa %s"
-
-#: lib/closein.c:99
-msgid "error closing file"
-msgstr "virhe suljettaessa tiedostoa"
-
-#: lib/closeout.c:112
-msgid "write error"
-msgstr "kirjoitusvirhe"
-
-#: lib/copy-acl.c:547
-#, c-format
-msgid "preserving permissions for %s"
-msgstr "säilytetään oikeudet kohteelle %s"
-
-#: lib/copy-file.c:67
-#, c-format
-msgid "error while opening \"%s\" for reading"
-msgstr "virhe avattaessa tiedostoa ”%s” lukemista varten"
-
-#: lib/copy-file.c:74
-#, c-format
-msgid "cannot open backup file \"%s\" for writing"
-msgstr "ei voida avata varmuuskopiotiedostoa ”%s” kirjoittamista varten"
-
-#: lib/copy-file.c:82
-#, c-format
-msgid "error reading \"%s\""
-msgstr "virhe luettaessa tiedostoa ”%s”"
-
-#: lib/copy-file.c:87 lib/copy-file.c:94 lib/copy-file.c:133
-#, c-format
-msgid "error writing \"%s\""
-msgstr "virhe kirjoitettaessa tiedostoa ”%s”"
-
-#: lib/copy-file.c:96 lib/copy-file.c:135
-#, c-format
-msgid "error after reading \"%s\""
-msgstr "virhe luettaessa tiedostoa ”%s”"
-
-#: lib/csharpcomp.c:310 lib/javaversion.c:76
-#, c-format
-msgid "fdopen() failed"
-msgstr "fdopen()-kutsu epäonnistui"
-
-#: lib/csharpcomp.c:571
-#, c-format
-msgid "C# compiler not found, try installing pnet"
-msgstr "C#-kääntäjää ei löytynyt, yritä asentaa pnet"
-
-#: lib/csharpexec.c:343
-#, c-format
-msgid "C# virtual machine not found, try installing pnet"
-msgstr "C#-virtuaalikonetta ei löytynyt, yritä asentaa pnet"
-
-#: lib/execute.c:189 lib/execute.c:262 lib/pipe.c:229 lib/pipe.c:342
-#: lib/wait-process.c:282 lib/wait-process.c:356
-#, c-format
-msgid "%s subprocess failed"
-msgstr "%s-aliprosessi epäonnistui"
-
-#: lib/file-type.c:38
-msgid "regular empty file"
-msgstr "tavallinen tyhjä tiedosto"
-
-#: lib/file-type.c:38
-msgid "regular file"
-msgstr "tavallinen tiedosto"
-
-#: lib/file-type.c:41
-msgid "directory"
-msgstr "hakemisto"
-
-#: lib/file-type.c:44
-msgid "block special file"
-msgstr "lohkoerikoistiedosto"
-
-#: lib/file-type.c:47
-msgid "character special file"
-msgstr "merkkierikoistiedosto"
-
-#: lib/file-type.c:50
-msgid "fifo"
-msgstr "putkitiedosto"
-
-#: lib/file-type.c:53
-msgid "symbolic link"
-msgstr "symbolinen linkki"
-
-#: lib/file-type.c:56
-msgid "socket"
-msgstr "pistoke"
-
-#: lib/file-type.c:59
-msgid "message queue"
-msgstr "viestijono"
-
-#: lib/file-type.c:62
-msgid "semaphore"
-msgstr "semafori"
-
-#: lib/file-type.c:65
-msgid "shared memory object"
-msgstr "jaettu muistiobjekti"
-
-#: lib/file-type.c:68
-msgid "typed memory object"
-msgstr "tyypitetty muistiobjekti"
-
-#: lib/file-type.c:70
-msgid "weird file"
-msgstr "outo tiedosto"
-
-#: lib/gai_strerror.c:42
-msgid "Address family for hostname not supported"
-msgstr "Osoiteperhe tietokonenimelle ei ole tuettu"
-
-#: lib/gai_strerror.c:43
-msgid "Temporary failure in name resolution"
-msgstr "Tilapäinen virhe nimiratkaisussa"
-
-#: lib/gai_strerror.c:44
-msgid "Bad value for ai_flags"
-msgstr "Väärä arvo kohteelle ai_flags"
-
-#: lib/gai_strerror.c:45
-msgid "Non-recoverable failure in name resolution"
-msgstr "Korjaamaton virhe nimiratkaisussa"
-
-#: lib/gai_strerror.c:46
-msgid "ai_family not supported"
-msgstr "ai_family ei ole tuettu"
-
-#: lib/gai_strerror.c:47
-msgid "Memory allocation failure"
-msgstr "Muistinvarausvirhe"
-
-#: lib/gai_strerror.c:48
-msgid "No address associated with hostname"
-msgstr "Tietokonenimeen ei ole liitetty osoitetta"
-
-#: lib/gai_strerror.c:49
-msgid "Name or service not known"
-msgstr "Nimeä tai palvelua ei tunneta"
-
-#: lib/gai_strerror.c:50
-msgid "Servname not supported for ai_socktype"
-msgstr "Servname ei ole tuettu kohteelle ai_socktype"
-
-#: lib/gai_strerror.c:51
-msgid "ai_socktype not supported"
-msgstr "ai_socktype ei ole tuettu"
-
-#: lib/gai_strerror.c:52
-msgid "System error"
-msgstr "Järjestelmävirhe"
-
-#: lib/gai_strerror.c:53
-msgid "Argument buffer too small"
-msgstr "Argumenttipuskuri on liian suuri"
-
-#: lib/gai_strerror.c:55
-msgid "Processing request in progress"
-msgstr "Prosessointipyyntö käsittelyssä"
-
-#: lib/gai_strerror.c:56
-msgid "Request canceled"
-msgstr "Pyyntö peruttu"
-
-#: lib/gai_strerror.c:57
-msgid "Request not canceled"
-msgstr "Pyyntöä ei ole peruttu"
-
-#: lib/gai_strerror.c:58
-msgid "All requests done"
-msgstr "Kaikki pyynnöt suoritettu"
-
-#: lib/gai_strerror.c:59
-msgid "Interrupted by a signal"
-msgstr "Signaalin keskeyttämä"
-
-#: lib/gai_strerror.c:60
-msgid "Parameter string not correctly encoded"
-msgstr "Parametrimerkkijono ei ole oikein koodattu"
-
-#: lib/gai_strerror.c:72
-msgid "Unknown error"
-msgstr "Tuntematon virhe"
-
-#: lib/getopt.c:529 lib/getopt.c:545
+#: lib/getopt.c:525 lib/getopt.c:541
 #, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: valitsin ’%s’ ei ole yksiselitteinen\n"
 
-#: lib/getopt.c:578 lib/getopt.c:582
+#: lib/getopt.c:574 lib/getopt.c:578
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: valitsin ’--%s’ ei salli argumenttia\n"
 
-#: lib/getopt.c:591 lib/getopt.c:596
+#: lib/getopt.c:587 lib/getopt.c:592
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: valitsin ’%c%s’ ei salli argumenttia\n"
 
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
 #, c-format
 msgid "%s: option '%s' requires an argument\n"
 msgstr "%s: valitsin ’%s’ vaatii argumentin\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
+#: lib/getopt.c:692 lib/getopt.c:695
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: tunnistamaton valitsin ’--%s’\n"
 
-#: lib/getopt.c:707 lib/getopt.c:710
+#: lib/getopt.c:703 lib/getopt.c:706
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: tunnistamaton valitsin ’%c%s’\n"
 
-#: lib/getopt.c:759 lib/getopt.c:762
+#: lib/getopt.c:755 lib/getopt.c:758
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: epäkelpo valitsin -- ’%c’\n"
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: valitsin vaatii argumentin -- ’%c’\n"
 
-#: lib/getopt.c:882 lib/getopt.c:898
+#: lib/getopt.c:878 lib/getopt.c:894
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: valitsin ’-W %s’ ei ole yksiselitteinen\n"
 
-#: lib/getopt.c:922 lib/getopt.c:940
+#: lib/getopt.c:918 lib/getopt.c:936
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: valitsin ’-W %s’ ei salli argumenttia\n"
-
-#: lib/javacomp.c:126 lib/javacomp.c:140 lib/javacomp.c:156
-#, c-format
-msgid "invalid source_version argument to compile_java_class"
-msgstr "virheellinen source_version-argumentti kohteelle compile_java_class"
-
-#: lib/javacomp.c:171 lib/javacomp.c:192
-#, c-format
-msgid "invalid target_version argument to compile_java_class"
-msgstr "virheellinen target_version-argumentti kohteelle compile_java_class"
-
-#: lib/javacomp.c:503
-#, c-format
-msgid "failed to create \"%s\""
-msgstr "kohteen ”%s” luominen epäonnistui"
-
-#: lib/javacomp.c:510
-#, c-format
-msgid "error while writing \"%s\" file"
-msgstr "virhe kirjoitettaessa tiedostoa ”%s”"
-
-#: lib/javacomp.c:2343
-#, c-format
-msgid "Java compiler not found, try installing gcj or set $JAVAC"
-msgstr "Java-kääntäjää ei löytynyt, yritä asentaa gcj tai aseta $JAVAC-ympäristömuuttuja"
-
-#: lib/javaexec.c:417
-#, c-format
-msgid "Java virtual machine not found, try installing gij or set $JAVA"
-msgstr "Java-virtuaalikonetta ei löytynyt, yritä asentaa gij tai aseta $JAVA-ympäristömuuttuja"
-
-#: lib/javaversion.c:84
-#, c-format
-msgid "%s subprocess I/O error"
-msgstr "%s-aliprosessisiirräntävirhe"
-
-#: lib/mkdir-p.c:196
-#, c-format
-msgid "cannot change permissions of %s"
-msgstr "kohteen %s oikeuksien muuttaminen ei onnistu"
-
-#: lib/mkdir-p.c:206
-#, c-format
-msgid "cannot create directory %s"
-msgstr "hakemiston %s luominen ei onnistu"
-
-#: lib/obstack.c:423 lib/obstack.c:425 lib/xalloc-die.c:34 lib/xsetenv.c:37
-#, c-format
-msgid "memory exhausted"
-msgstr "muisti loppui"
-
-#: lib/openat-die.c:34
-#, c-format
-msgid "unable to record current working directory"
-msgstr "ei kyetä tallentaman nykyistä työhakemistoa"
-
-#: lib/openat-die.c:52
-#, c-format
-msgid "failed to return to initial working directory"
-msgstr "alkuperäiseen työhakemistoon palaaminen epäonnistui"
-
-#: lib/pagealign_alloc.c:139
-#, c-format
-msgid "Failed to open /dev/zero for read"
-msgstr "Kohteen /dev/zero avaaminen lukemista varten epäonnistui"
-
-#: lib/pipe-filter-gi.c:152
-#, c-format
-msgid "creation of reading thread failed"
-msgstr "lukemissäikeen luominen epäonnistui"
-
-#  nonblocking I/O on synonyymi termille asynchronous I/O
-#: lib/pipe-filter-gi.c:257 lib/pipe-filter-ii.c:298
-#, c-format
-msgid "cannot set up nonblocking I/O to %s subprocess"
-msgstr "ei voi asettaa tahdistamatonta siirräntää aliprosessille %s"
-
-#: lib/pipe-filter-gi.c:329 lib/pipe-filter-ii.c:329
-#, c-format
-msgid "communication with %s subprocess failed"
-msgstr "viestintä aliprosessin %s kanssa epäonnistui"
-
-#: lib/pipe-filter-gi.c:359 lib/pipe-filter-ii.c:224 lib/pipe-filter-ii.c:359
-#, c-format
-msgid "write to %s subprocess failed"
-msgstr "kirjoittaminen aliprosessiin %s epäonnistui"
-
-#: lib/pipe-filter-gi.c:399 lib/pipe-filter-ii.c:245 lib/pipe-filter-ii.c:396
-#, c-format
-msgid "read from %s subprocess failed"
-msgstr "lukeminen aliprosessista %s epäonnistui"
-
-#: lib/pipe-filter-gi.c:452
-#, c-format
-msgid "subprocess %s terminated with exit code %d"
-msgstr "aliprosessi %s päättyi poistumiskoodilla %d"
-
-#: lib/pipe-filter-ii.c:192
-#, c-format
-msgid "creation of threads failed"
-msgstr "säikeiden luominen epäonnistui"
-
-#: lib/pipe-filter-ii.c:428
-#, c-format
-msgid "%s subprocess terminated with exit code %d"
-msgstr "%s-aliprosessi päättyi poistumiskoodilla %d"
-
-#: lib/pipe.c:137 lib/pipe.c:140 lib/pipe.c:258 lib/pipe.c:261
-#, c-format
-msgid "cannot create pipe"
-msgstr "ei voida luoda putkea"
-
-#. TRANSLATORS:
-#. Get translations for open and closing quotation marks.
-#.
-#. The message catalog should translate "`" to a left
-#. quotation mark suitable for the locale, and similarly for
-#. "'".  If the catalog has no translation,
-#. locale_quoting_style quotes `like this', and
-#. clocale_quoting_style quotes "like this".
-#.
-#. For example, an American English Unicode locale should
-#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
-#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
-#. MARK).  A British English Unicode locale should instead
-#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK)
-#. and U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
-#.
-#. If you don't know what to put here, please see
-#. <http://en.wikipedia.org/wiki/Quotation_mark#Glyphs>
-#. and use glyphs suitable for your language.
-#: lib/quotearg.c:272
-msgid "`"
-msgstr "”"
-
-#: lib/quotearg.c:273
-msgid "'"
-msgstr "”"
 
 #: lib/regcomp.c:132
 msgid "Success"
@@ -604,466 +144,618 @@ msgstr "Pariton ) tai \\)"
 msgid "No previous regular expression"
 msgstr "Ei edellistä säännöllistä lauseketta"
 
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr "muisti loppui"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "virheellinen argumentti %s kohteelle %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "moniselitteinen argumentti %s kohteelle %s"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Kelvolliset argumentit:"
+
+#~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+#~ msgstr "ARGP_HELP_FMT: %s arvo on pienempi tai yhtäsuuri kuin %s"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: ARGP_HELP_FMT parametri vaatii arvon"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+#~ msgstr "%.*s: ARGP_HELP_FMT parametrin on oltava positiivinen"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: Tuntematon ARGP_HELP_FMT-parametri"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "Roskaa kohteessa ARGP_HELP_FMT: %s"
+
+#~ msgid ""
+#~ "Mandatory or optional arguments to long options are also mandatory or "
+#~ "optional for any corresponding short options."
+#~ msgstr ""
+#~ "Pitkien valitsimien pakolliset tai valinnaiset argumentit ovat pakollisia "
+#~ "tai valinnaisia myös lyhyille valitsimille."
+
+#~ msgid "Usage:"
+#~ msgstr "Käyttö:"
+
+#~ msgid "  or: "
+#~ msgstr "  tai: "
+
+#~ msgid " [OPTION...]"
+#~ msgstr " [VALITSIN...]"
+
+#~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
+#~ msgstr "Lisätietoja saa komennolla ”%s --help” tai ”%s --usage”.\n"
+
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "Lähetä raportit ohjelmistovioista (englanniksi) osoitteeseen %s.\n"
+
+#~ msgid "give this help list"
+#~ msgstr "anna tämä opasteluettelo"
+
+#~ msgid "give a short usage message"
+#~ msgstr "anna tämä lyhyt käyttösanoma"
+
+#~ msgid "NAME"
+#~ msgstr "NIMI"
+
+#~ msgid "set the program name"
+#~ msgstr "aseta ohjelman nimi"
+
+#~ msgid "SECS"
+#~ msgstr "SEKUNTIA"
+
+#~ msgid "hang for SECS seconds (default 3600)"
+#~ msgstr "odota SEKUNTIA sekuntia (oletus 3600)"
+
+#~ msgid "print program version"
+#~ msgstr "tulosta ohjelman versio"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(OHJELMAVIRHE) Versiota ei tiedetä!?"
+
+#~ msgid "%s: Too many arguments\n"
+#~ msgstr "%s: Liian monta argumenttia\n"
+
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr "(OHJELMAVIRHE) Valitsimen pitäisi olla tunnistettava!?"
+
+#~ msgid "program error"
+#~ msgstr "ohjelmavirhe"
+
+#~ msgid "stack overflow"
+#~ msgstr "pinon ylivuoto"
+
+#~ msgid "cannot find a temporary directory, try setting $TMPDIR"
+#~ msgstr ""
+#~ "ei voi löytää tilapäistä hakemistoa, yritä asettaa $TMPDIR-"
+#~ "ympäristömuuttuja"
+
+#~ msgid "cannot create a temporary directory using template \"%s\""
+#~ msgstr "ei voida luoda tilapäistä hakemistoa käyttäen mallinnetta ”%s”"
+
+#~ msgid "cannot remove temporary file %s"
+#~ msgstr "ei voida poistaa tilapäistä tiedostoa %s"
+
+#~ msgid "cannot remove temporary directory %s"
+#~ msgstr "ei voida poistaa tilapäistä hakemistoa %s"
+
+#~ msgid "error closing file"
+#~ msgstr "virhe suljettaessa tiedostoa"
+
+#~ msgid "write error"
+#~ msgstr "kirjoitusvirhe"
+
+#~ msgid "preserving permissions for %s"
+#~ msgstr "säilytetään oikeudet kohteelle %s"
+
+#~ msgid "error while opening \"%s\" for reading"
+#~ msgstr "virhe avattaessa tiedostoa ”%s” lukemista varten"
+
+#~ msgid "cannot open backup file \"%s\" for writing"
+#~ msgstr "ei voida avata varmuuskopiotiedostoa ”%s” kirjoittamista varten"
+
+#~ msgid "error reading \"%s\""
+#~ msgstr "virhe luettaessa tiedostoa ”%s”"
+
+#~ msgid "error writing \"%s\""
+#~ msgstr "virhe kirjoitettaessa tiedostoa ”%s”"
+
+#~ msgid "error after reading \"%s\""
+#~ msgstr "virhe luettaessa tiedostoa ”%s”"
+
+#~ msgid "fdopen() failed"
+#~ msgstr "fdopen()-kutsu epäonnistui"
+
+#~ msgid "C# compiler not found, try installing pnet"
+#~ msgstr "C#-kääntäjää ei löytynyt, yritä asentaa pnet"
+
+#~ msgid "C# virtual machine not found, try installing pnet"
+#~ msgstr "C#-virtuaalikonetta ei löytynyt, yritä asentaa pnet"
+
+#~ msgid "%s subprocess failed"
+#~ msgstr "%s-aliprosessi epäonnistui"
+
+#~ msgid "regular empty file"
+#~ msgstr "tavallinen tyhjä tiedosto"
+
+#~ msgid "regular file"
+#~ msgstr "tavallinen tiedosto"
+
+#~ msgid "directory"
+#~ msgstr "hakemisto"
+
+#~ msgid "block special file"
+#~ msgstr "lohkoerikoistiedosto"
+
+#~ msgid "character special file"
+#~ msgstr "merkkierikoistiedosto"
+
+#~ msgid "fifo"
+#~ msgstr "putkitiedosto"
+
+#~ msgid "symbolic link"
+#~ msgstr "symbolinen linkki"
+
+#~ msgid "socket"
+#~ msgstr "pistoke"
+
+#~ msgid "message queue"
+#~ msgstr "viestijono"
+
+#~ msgid "semaphore"
+#~ msgstr "semafori"
+
+#~ msgid "shared memory object"
+#~ msgstr "jaettu muistiobjekti"
+
+#~ msgid "typed memory object"
+#~ msgstr "tyypitetty muistiobjekti"
+
+#~ msgid "weird file"
+#~ msgstr "outo tiedosto"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "Osoiteperhe tietokonenimelle ei ole tuettu"
+
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Tilapäinen virhe nimiratkaisussa"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "Väärä arvo kohteelle ai_flags"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "Korjaamaton virhe nimiratkaisussa"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "ai_family ei ole tuettu"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "Muistinvarausvirhe"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "Tietokonenimeen ei ole liitetty osoitetta"
+
+#~ msgid "Name or service not known"
+#~ msgstr "Nimeä tai palvelua ei tunneta"
+
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr "Servname ei ole tuettu kohteelle ai_socktype"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "ai_socktype ei ole tuettu"
+
+#~ msgid "System error"
+#~ msgstr "Järjestelmävirhe"
+
+#~ msgid "Argument buffer too small"
+#~ msgstr "Argumenttipuskuri on liian suuri"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "Prosessointipyyntö käsittelyssä"
+
+#~ msgid "Request canceled"
+#~ msgstr "Pyyntö peruttu"
+
+#~ msgid "Request not canceled"
+#~ msgstr "Pyyntöä ei ole peruttu"
+
+#~ msgid "All requests done"
+#~ msgstr "Kaikki pyynnöt suoritettu"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Signaalin keskeyttämä"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "Parametrimerkkijono ei ole oikein koodattu"
+
+#~ msgid "Unknown error"
+#~ msgstr "Tuntematon virhe"
+
+#~ msgid "invalid source_version argument to compile_java_class"
+#~ msgstr "virheellinen source_version-argumentti kohteelle compile_java_class"
+
+#~ msgid "invalid target_version argument to compile_java_class"
+#~ msgstr "virheellinen target_version-argumentti kohteelle compile_java_class"
+
+#~ msgid "failed to create \"%s\""
+#~ msgstr "kohteen ”%s” luominen epäonnistui"
+
+#~ msgid "error while writing \"%s\" file"
+#~ msgstr "virhe kirjoitettaessa tiedostoa ”%s”"
+
+#~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
+#~ msgstr ""
+#~ "Java-kääntäjää ei löytynyt, yritä asentaa gcj tai aseta $JAVAC-"
+#~ "ympäristömuuttuja"
+
+#~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
+#~ msgstr ""
+#~ "Java-virtuaalikonetta ei löytynyt, yritä asentaa gij tai aseta $JAVA-"
+#~ "ympäristömuuttuja"
+
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "%s-aliprosessisiirräntävirhe"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "kohteen %s oikeuksien muuttaminen ei onnistu"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "hakemiston %s luominen ei onnistu"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "ei kyetä tallentaman nykyistä työhakemistoa"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "alkuperäiseen työhakemistoon palaaminen epäonnistui"
+
+#~ msgid "Failed to open /dev/zero for read"
+#~ msgstr "Kohteen /dev/zero avaaminen lukemista varten epäonnistui"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "lukemissäikeen luominen epäonnistui"
+
+#  nonblocking I/O on synonyymi termille asynchronous I/O
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr "ei voi asettaa tahdistamatonta siirräntää aliprosessille %s"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "viestintä aliprosessin %s kanssa epäonnistui"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "kirjoittaminen aliprosessiin %s epäonnistui"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "lukeminen aliprosessista %s epäonnistui"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "aliprosessi %s päättyi poistumiskoodilla %d"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "säikeiden luominen epäonnistui"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "%s-aliprosessi päättyi poistumiskoodilla %d"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "ei voida luoda putkea"
+
+#~ msgid "`"
+#~ msgstr "”"
+
+#~ msgid "'"
+#~ msgstr "”"
+
 # Kaikkihan muistavat kääntää nämä ja vastaavat juuri näin. Ei pelkkä kK.
-#. TRANSLATORS: A regular expression testing for an affirmative answer
-#. (english: "yes").  Testing the first character may be sufficient.
-#. Take care to consider upper and lower case.
-#. To enquire the regular expression that your system uses for this
-#. purpose, you can use the command
-#. locale -k LC_MESSAGES | grep '^yesexpr='
-#: lib/rpmatch.c:147
-msgid "^[yY]"
-msgstr "^[kKyY]"
-
-#. TRANSLATORS: A regular expression testing for a negative answer
-#. (english: "no").  Testing the first character may be sufficient.
-#. Take care to consider upper and lower case.
-#. To enquire the regular expression that your system uses for this
-#. purpose, you can use the command
-#. locale -k LC_MESSAGES | grep '^noexpr='
-#: lib/rpmatch.c:160
-msgid "^[nN]"
-msgstr "^[eEnN]"
-
-#: lib/set-mode-acl.c:591
-#, c-format
-msgid "setting permissions for %s"
-msgstr "asetetaan oikeudet kohteelle %s"
-
-#: lib/siglist.h:29
-msgid "Hangup"
-msgstr "Yhteyden katkaisu"
-
-#: lib/siglist.h:32
-msgid "Interrupt"
-msgstr "Keskeytys"
-
-#: lib/siglist.h:35
-msgid "Quit"
-msgstr "Poistu"
-
-#: lib/siglist.h:38
-msgid "Illegal instruction"
-msgstr "Virheellinen käsky"
-
-#: lib/siglist.h:41
-msgid "Trace/breakpoint trap"
-msgstr "Jäljitys/keskeytyspistekeskeytys"
-
-#: lib/siglist.h:44
-msgid "Aborted"
-msgstr "Keskeytetty"
-
-#: lib/siglist.h:47
-msgid "Floating point exception"
-msgstr "Liukulukupoikkeus"
-
-#: lib/siglist.h:50
-msgid "Killed"
-msgstr "Sammutettu"
-
-#: lib/siglist.h:53
-msgid "Bus error"
-msgstr "Väylävirhe"
-
-#: lib/siglist.h:56
-msgid "Segmentation fault"
-msgstr "Osiinjakamisvirhe"
-
-#: lib/siglist.h:59
-msgid "Broken pipe"
-msgstr "Rikkoutunut putki"
-
-#: lib/siglist.h:62
-msgid "Alarm clock"
-msgstr "Hälytyskello"
-
-#: lib/siglist.h:65
-msgid "Terminated"
-msgstr "Päättynyt"
-
-#: lib/siglist.h:68
-msgid "Urgent I/O condition"
-msgstr "Kiireellinen siirräntätila"
-
-#: lib/siglist.h:71
-msgid "Stopped (signal)"
-msgstr "Pysäytetty (signaali)"
-
-#: lib/siglist.h:74
-msgid "Stopped"
-msgstr "Pysäytetty"
-
-#: lib/siglist.h:77
-msgid "Continued"
-msgstr "Jatkettu"
-
-#: lib/siglist.h:80
-msgid "Child exited"
-msgstr "Lapsiprosessi poistunut"
-
-#: lib/siglist.h:83
-msgid "Stopped (tty input)"
-msgstr "Pysäytetty (tty-syöte)"
-
-#: lib/siglist.h:86
-msgid "Stopped (tty output)"
-msgstr "Pysäytetty (tty-tuloste)"
-
-#: lib/siglist.h:89
-msgid "I/O possible"
-msgstr "Siirräntä mahdollinen"
-
-#: lib/siglist.h:92
-msgid "CPU time limit exceeded"
-msgstr "Suoritinaikaraja ylitetty"
-
-#: lib/siglist.h:95
-msgid "File size limit exceeded"
-msgstr "Tiedostonkokoraja ylitetty"
-
-#: lib/siglist.h:98
-msgid "Virtual timer expired"
-msgstr "Virtuaaliajastin päättynyt"
-
-#: lib/siglist.h:101
-msgid "Profiling timer expired"
-msgstr "Profilointiajastin päättynyt"
-
-#: lib/siglist.h:104
-msgid "Window changed"
-msgstr "Ikkuna vaihtunut"
-
-#: lib/siglist.h:107
-msgid "User defined signal 1"
-msgstr "Käyttäjän määrittelemä signaali 1"
-
-#: lib/siglist.h:110
-msgid "User defined signal 2"
-msgstr "Käyttäjän määrittelemä signaali 2"
-
-#: lib/siglist.h:115
-msgid "EMT trap"
-msgstr "EMT-keskeytys"
-
-#: lib/siglist.h:118
-msgid "Bad system call"
-msgstr "Väärä järjestelmäkutsu"
-
-#: lib/siglist.h:121
-msgid "Stack fault"
-msgstr "Pinovirhe"
-
-#: lib/siglist.h:124
-msgid "Information request"
-msgstr "Tietopyyntö"
-
-#: lib/siglist.h:126
-msgid "Power failure"
-msgstr "Teholähdevika"
-
-#: lib/siglist.h:129
-msgid "Resource lost"
-msgstr "Resurssi kadonnut"
-
-#: lib/sigpipe-die.c:37
-msgid "error writing to a closed pipe or socket"
-msgstr "virhe kirjoitettaessa suljettuun putkeen tai pistokkeeseen"
-
-#: lib/strsignal.c:110
-#, c-format
-msgid "Real-time signal %d"
-msgstr "Tosiaikasignaali %d"
-
-#: lib/strsignal.c:114
-#, c-format
-msgid "Unknown signal %d"
-msgstr "Tuntematon signaali %d"
-
-#: lib/unicodeio.c:103
-msgid "iconv function not usable"
-msgstr "iconv-funktio ei ole käyttökelpoinen"
-
-#: lib/unicodeio.c:105
-msgid "iconv function not available"
-msgstr "iconv-funktio ei ole saatavilla"
-
-#: lib/unicodeio.c:112
-msgid "character out of range"
-msgstr "merkki sallitun välin ulkopuolella"
-
-#: lib/unicodeio.c:180
-#, c-format
-msgid "cannot convert U+%04X to local character set"
-msgstr "merkin U+%04X muunnos paikalliseen merkistöön ei onnistu"
-
-#: lib/unicodeio.c:182
-#, c-format
-msgid "cannot convert U+%04X to local character set: %s"
-msgstr "merkin U+%04X muunnos paikalliseen merkistöön ei onnistu: %s"
-
-#: lib/userspec.c:106
-msgid "invalid user"
-msgstr "virheellinen käyttäjä"
-
-#: lib/userspec.c:107
-msgid "invalid group"
-msgstr "virheellinen ryhmä"
-
-#: lib/userspec.c:108
-msgid "invalid spec"
-msgstr "virheellinen määrittely"
-
-#: lib/verror.c:73
-#, c-format
-msgid "unable to display error message"
-msgstr "ei kyetä näyttämään virheilmoitusta"
-
-#: lib/version-etc.c:74
-#, c-format
-msgid "Packaged by %s (%s)\n"
-msgstr "Pakkaaja: %s (%s)\n"
-
-#: lib/version-etc.c:77
-#, c-format
-msgid "Packaged by %s\n"
-msgstr "Pakkaaja: %s\n"
-
-#. TRANSLATORS: Translate "(C)" to the copyright symbol
-#. (C-in-a-circle), if this symbol is available in the user's
-#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
-#: lib/version-etc.c:84
-msgid "(C)"
-msgstr "©"
-
-#: lib/version-etc.c:86
-msgid ""
-"\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
-"This is free software: you are free to change and redistribute it.\n"
-"There is NO WARRANTY, to the extent permitted by law.\n"
-"\n"
-msgstr ""
-"\n"
-"Lisenssi GPLv3+: GNU GPL versio 3 tai myöhäisempi <http://gnu.org/licenses/gpl.html>.\n"
-"Tämä on vapaa ohjelmisto: voit vapaasti muuttaa sitä tai jakaa sitä edelleen.\n"
-"Ohjelmalle EI OLE TAKUUTA siinä laajuudessa mitä laki sen sallii.\n"
-"\n"
-
-#. TRANSLATORS: %s denotes an author name.
-#: lib/version-etc.c:102
-#, c-format
-msgid "Written by %s.\n"
-msgstr "Kirjoittanut %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:106
-#, c-format
-msgid "Written by %s and %s.\n"
-msgstr "Kirjoittaneet %s ja %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:110
-#, c-format
-msgid "Written by %s, %s, and %s.\n"
-msgstr "Kirjoittaneet %s, %s ja %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:117
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"and %s.\n"
-msgstr ""
-"Kirjoittaneet %s, %s,\n"
-"%s ja %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:124
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, and %s.\n"
-msgstr ""
-"Kirjoittaneet %s, %s,\n"
-"%s, %s ja %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:131
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, and %s.\n"
-msgstr ""
-"Kirjoittaneet %s, %s,\n"
-"%s, %s, %s ja %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:139
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, and %s.\n"
-msgstr ""
-"Kirjoittaneet %s, %s,\n"
-"%s, %s, %s,\n"
-"%s ja %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:147
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"and %s.\n"
-msgstr ""
-"Kirjoittaneet %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s ja %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:156
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, and %s.\n"
-msgstr ""
-"Kirjoittaneet %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s ja %s.\n"
-
-#. TRANSLATORS: Each %s denotes an author name.
-#. You can use line breaks, estimating that each author name occupies
-#. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:167
-#, c-format
-msgid ""
-"Written by %s, %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s, and others.\n"
-msgstr ""
-"Kirjoittaneet %s, %s,\n"
-"%s, %s, %s, %s,\n"
-"%s, %s, %s ja muut.\n"
-
-#. TRANSLATORS: The placeholder indicates the bug-reporting address
-#. for this package.  Please add _another line_ saying
-#. "Report translation bugs to <...>\n" with the address for translation
-#. bugs (typically your translation team's web or email address).
-#: lib/version-etc.c:245
-#, c-format
-msgid ""
-"\n"
-"Report bugs to: %s\n"
-msgstr ""
-"\n"
-"Lähetä ilmoitukset ohjelmistovioista (englanniksi) osoitteeseen %s\n"
-"Lähetä ilmoitukset käännösvirheistä osoitteeseen <translation-team-fi@lists.sourceforge.net>\n"
-
-#: lib/version-etc.c:247
-#, c-format
-msgid "Report %s bugs to: %s\n"
-msgstr "Lähetä %s ilmoitukset ohjelmistovioista (englanniksi) osoitteeseen %s\n"
-
-#: lib/version-etc.c:251
-#, c-format
-msgid "%s home page: <%s>\n"
-msgstr "%s kotisivu: <%s>\n"
-
-#: lib/version-etc.c:253
-#, c-format
-msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
-msgstr "%s kotisivu:  <http://www.gnu.org/software/%s/>\n"
-
-#: lib/version-etc.c:256
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
-msgstr "Yleinen opaste GNU-ohjelmiston käyttämiseen: <http://www.gnu.org/gethelp/>\n"
-
-#: lib/w32spawn.h:40
-#, c-format
-msgid "_open_osfhandle failed"
-msgstr "_open_osfhandle epäonnistui"
-
-#: lib/w32spawn.h:81
-#, c-format
-msgid "cannot restore fd %d: dup2 failed"
-msgstr "ei voi palauttaa fd %d: dup2 epäonnistui"
-
-#: lib/wait-process.c:223 lib/wait-process.c:255 lib/wait-process.c:317
-#, c-format
-msgid "%s subprocess"
-msgstr "%s-aliprosessi"
-
-#: lib/wait-process.c:274 lib/wait-process.c:346
-#, c-format
-msgid "%s subprocess got fatal signal %d"
-msgstr "%s-aliprosessi sai sammuttavan signaalin %d"
-
-#: lib/xfreopen.c:35
-msgid "stdin"
-msgstr "vakiosyöte"
-
-#: lib/xfreopen.c:36
-msgid "stdout"
-msgstr "vakiotuloste"
-
-#: lib/xfreopen.c:37
-msgid "stderr"
-msgstr "vakiovirhe"
-
-#: lib/xfreopen.c:38
-msgid "unknown stream"
-msgstr "tuntematon merkkivirta"
-
-#: lib/xfreopen.c:39
-#, c-format
-msgid "failed to reopen %s with mode %s"
-msgstr "kohteen %s avaaminen uudelleen tilassa %s epäonnistui"
-
-#: lib/xmemcoll.c:48
-#, c-format
-msgid "string comparison failed"
-msgstr "merkkijonovertailu epäonnistui"
-
-#: lib/xmemcoll.c:49
-#, c-format
-msgid "Set LC_ALL='C' to work around the problem."
-msgstr "Aseta LC_ALL='C' ongelman kiertämiseksi."
-
-#: lib/xmemcoll.c:51
-#, c-format
-msgid "The strings compared were %s and %s."
-msgstr "Vertaillut merkkijonot olivat %s ja %s."
-
-#: lib/xprintf.c:50 lib/xprintf.c:76
-#, c-format
-msgid "cannot perform formatted output"
-msgstr "muotoiltua tulostetta ei voitu suorittaa"
-
-#: lib/xstrtol-error.c:63
-#, c-format
-msgid "invalid %s%s argument `%s'"
-msgstr "virheellinen %s%s-argumentti ”%s”"
-
-#: lib/xstrtol-error.c:68
-#, c-format
-msgid "invalid suffix in %s%s argument `%s'"
-msgstr "virheellinen jälkiliite kohteen %s%s argumentissa ”%s”"
-
-#: lib/xstrtol-error.c:72
-#, c-format
-msgid "%s%s argument `%s' too large"
-msgstr "%s%s argumentti ”%s” on liian iso"
+#~ msgid "^[yY]"
+#~ msgstr "^[kKyY]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[eEnN]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "asetetaan oikeudet kohteelle %s"
+
+#~ msgid "Hangup"
+#~ msgstr "Yhteyden katkaisu"
+
+#~ msgid "Interrupt"
+#~ msgstr "Keskeytys"
+
+#~ msgid "Quit"
+#~ msgstr "Poistu"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Virheellinen käsky"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Jäljitys/keskeytyspistekeskeytys"
+
+#~ msgid "Aborted"
+#~ msgstr "Keskeytetty"
+
+#~ msgid "Floating point exception"
+#~ msgstr "Liukulukupoikkeus"
+
+#~ msgid "Killed"
+#~ msgstr "Sammutettu"
+
+#~ msgid "Bus error"
+#~ msgstr "Väylävirhe"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Osiinjakamisvirhe"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Rikkoutunut putki"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Hälytyskello"
+
+#~ msgid "Terminated"
+#~ msgstr "Päättynyt"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Kiireellinen siirräntätila"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "Pysäytetty (signaali)"
+
+#~ msgid "Stopped"
+#~ msgstr "Pysäytetty"
+
+#~ msgid "Continued"
+#~ msgstr "Jatkettu"
+
+#~ msgid "Child exited"
+#~ msgstr "Lapsiprosessi poistunut"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Pysäytetty (tty-syöte)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Pysäytetty (tty-tuloste)"
+
+#~ msgid "I/O possible"
+#~ msgstr "Siirräntä mahdollinen"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "Suoritinaikaraja ylitetty"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "Tiedostonkokoraja ylitetty"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "Virtuaaliajastin päättynyt"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "Profilointiajastin päättynyt"
+
+#~ msgid "Window changed"
+#~ msgstr "Ikkuna vaihtunut"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "Käyttäjän määrittelemä signaali 1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Käyttäjän määrittelemä signaali 2"
+
+#~ msgid "EMT trap"
+#~ msgstr "EMT-keskeytys"
+
+#~ msgid "Bad system call"
+#~ msgstr "Väärä järjestelmäkutsu"
+
+#~ msgid "Stack fault"
+#~ msgstr "Pinovirhe"
+
+#~ msgid "Information request"
+#~ msgstr "Tietopyyntö"
+
+#~ msgid "Power failure"
+#~ msgstr "Teholähdevika"
+
+#~ msgid "Resource lost"
+#~ msgstr "Resurssi kadonnut"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "virhe kirjoitettaessa suljettuun putkeen tai pistokkeeseen"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Tosiaikasignaali %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Tuntematon signaali %d"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "iconv-funktio ei ole käyttökelpoinen"
+
+#~ msgid "iconv function not available"
+#~ msgstr "iconv-funktio ei ole saatavilla"
+
+#~ msgid "character out of range"
+#~ msgstr "merkki sallitun välin ulkopuolella"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "merkin U+%04X muunnos paikalliseen merkistöön ei onnistu"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "merkin U+%04X muunnos paikalliseen merkistöön ei onnistu: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "virheellinen käyttäjä"
+
+#~ msgid "invalid group"
+#~ msgstr "virheellinen ryhmä"
+
+#~ msgid "invalid spec"
+#~ msgstr "virheellinen määrittely"
+
+#~ msgid "unable to display error message"
+#~ msgstr "ei kyetä näyttämään virheilmoitusta"
+
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Pakkaaja: %s (%s)\n"
+
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Pakkaaja: %s\n"
+
+#~ msgid "(C)"
+#~ msgstr "©"
+
+#~ msgid ""
+#~ "\n"
+#~ "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+#~ "html>.\n"
+#~ "This is free software: you are free to change and redistribute it.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Lisenssi GPLv3+: GNU GPL versio 3 tai myöhäisempi <http://gnu.org/"
+#~ "licenses/gpl.html>.\n"
+#~ "Tämä on vapaa ohjelmisto: voit vapaasti muuttaa sitä tai jakaa sitä "
+#~ "edelleen.\n"
+#~ "Ohjelmalle EI OLE TAKUUTA siinä laajuudessa mitä laki sen sallii.\n"
+#~ "\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Kirjoittanut %s.\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Kirjoittaneet %s ja %s.\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Kirjoittaneet %s, %s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Kirjoittaneet %s, %s,\n"
+#~ "%s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Kirjoittaneet %s, %s,\n"
+#~ "%s, %s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Kirjoittaneet %s, %s,\n"
+#~ "%s, %s, %s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "Kirjoittaneet %s, %s,\n"
+#~ "%s, %s, %s,\n"
+#~ "%s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "Kirjoittaneet %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "Kirjoittaneet %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s ja %s.\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "Kirjoittaneet %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, %s ja muut.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to: %s\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Lähetä ilmoitukset ohjelmistovioista (englanniksi) osoitteeseen %s\n"
+#~ "Lähetä ilmoitukset käännösvirheistä osoitteeseen <translation-team-"
+#~ "fi@lists.sourceforge.net>\n"
+
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr ""
+#~ "Lähetä %s ilmoitukset ohjelmistovioista (englanniksi) osoitteeseen %s\n"
+
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "%s kotisivu: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "%s kotisivu:  <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+#~ msgstr ""
+#~ "Yleinen opaste GNU-ohjelmiston käyttämiseen: <http://www.gnu.org/gethelp/"
+#~ ">\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle epäonnistui"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "ei voi palauttaa fd %d: dup2 epäonnistui"
+
+#~ msgid "%s subprocess"
+#~ msgstr "%s-aliprosessi"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "%s-aliprosessi sai sammuttavan signaalin %d"
+
+#~ msgid "stdin"
+#~ msgstr "vakiosyöte"
+
+#~ msgid "stdout"
+#~ msgstr "vakiotuloste"
+
+#~ msgid "stderr"
+#~ msgstr "vakiovirhe"
+
+#~ msgid "unknown stream"
+#~ msgstr "tuntematon merkkivirta"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "kohteen %s avaaminen uudelleen tilassa %s epäonnistui"
+
+#~ msgid "string comparison failed"
+#~ msgstr "merkkijonovertailu epäonnistui"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Aseta LC_ALL='C' ongelman kiertämiseksi."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Vertaillut merkkijonot olivat %s ja %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "muotoiltua tulostetta ei voitu suorittaa"
+
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "virheellinen %s%s-argumentti ”%s”"
+
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "virheellinen jälkiliite kohteen %s%s argumentissa ”%s”"
+
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "%s%s argumentti ”%s” on liian iso"
