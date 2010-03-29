@@ -48,18 +48,21 @@ AC_ARG_ENABLE([experimental],
 set dummy $EXPERIMENTAL; shift
 EXPERIMENTAL_PROGRAMS=""
 EXPERIMENTAL_MANS=""
+EXPERIMENTAL_TEXI="@clear EXPERIMENTAL"
 for experimental_i
 do
 AS_CASE([$experimental_i],
   [mdiff|unify|wdiff2],
   [EXPERIMENTAL_PROGRAMS="$EXPERIMENTAL_PROGRAMS $experimental_i\$(EXEEXT)"
-EXPERIMENTAL_MANS="$EXPERIMENTAL_MANS $experimental_i.1"],
+EXPERIMENTAL_MANS="$EXPERIMENTAL_MANS $experimental_i.1"
+EXPERIMENTAL_TEXI="@set EXPERIMENTAL"],
   [AC_MSG_ERROR([unknown experimental $experimental_i])])
 done
 AC_MSG_NOTICE([Enabled experimental applications: $EXPERIMENTAL])
 AC_SUBST([EXPERIMENTAL])
 AC_SUBST([EXPERIMENTAL_PROGRAMS])
 AC_SUBST([EXPERIMENTAL_MANS])
+AC_SUBST([EXPERIMENTAL_TEXI])
 # Done handling experimental applications
 
 # termcap/curses handling
@@ -84,6 +87,7 @@ AS_IF([test "x$with_termcap" != xno], [
 AC_CONFIG_FILES([
  Makefile
  doc/Makefile
+ doc/flags.texi
  lib/Makefile
  lib/po/Makefile.in
  man/Makefile

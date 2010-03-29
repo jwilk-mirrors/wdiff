@@ -249,9 +249,11 @@ AC_DEFUN([gltests_LIBSOURCES], [
 AC_DEFUN([gl_FILE_LIST], [
   build-aux/arg-nonnull.h
   build-aux/config.rpath
+  build-aux/gendocs.sh
   build-aux/useless-if-before-free
   build-aux/vc-list-files
   build-aux/warn-on-use.h
+  doc/gendocs_template
   lib/alloca.c
   lib/alloca.in.h
   lib/btowc.c
