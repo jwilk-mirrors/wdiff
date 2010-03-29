@@ -1,74 +1,73 @@
 # Italian translation of gnulib 
-# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+# Copyright (C) 2008, 2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
 # Marco d'Itri <md@linux.it>, 1998, 1999.
 # Giovanni Bortolozzo <borto@dei.unipd.it>, 1998.
-# Milo Casagrande <milo@casagrande.name>, 2008, 2009
-#
+# Milo Casagrande <milo@casagrande.name>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib-1.0.0.1991.dbebf\n"
+"Project-Id-Version: gnulib-2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 09:19+0100\n"
-"PO-Revision-Date: 2009-05-10 21:15+0200\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
+"PO-Revision-Date: 2010-03-07 18:33+0100\n"
 "Last-Translator: Milo Casagrande <milo@casagrande.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8-bit\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/error.c:153
 msgid "Unknown system error"
 msgstr "Errore di sistema sconosciuto"
 
-#: lib/getopt.c:529 lib/getopt.c:545
-#, fuzzy, c-format
+#: lib/getopt.c:525 lib/getopt.c:541
+#, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: l'opzione \"%s\" è ambigua\n"
 
-#: lib/getopt.c:578 lib/getopt.c:582
-#, fuzzy, c-format
+#: lib/getopt.c:574 lib/getopt.c:578
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: l'opzione \"--%s\" non accetta un argomento\n"
 
-#: lib/getopt.c:591 lib/getopt.c:596
-#, fuzzy, c-format
+#: lib/getopt.c:587 lib/getopt.c:592
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: l'opzione \"%c%s\" non accetta un argomento\n"
 
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#, c-format
 msgid "%s: option '%s' requires an argument\n"
 msgstr "%s: l'opzione \"%s\" richiede un argomento\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
-#, fuzzy, c-format
+#: lib/getopt.c:692 lib/getopt.c:695
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: opzione \"--%s\" non riconosciuta\n"
 
-#: lib/getopt.c:707 lib/getopt.c:710
-#, fuzzy, c-format
+#: lib/getopt.c:703 lib/getopt.c:706
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: opzione \"%c%s\" non riconosciuta\n"
 
-#: lib/getopt.c:759 lib/getopt.c:762
-#, fuzzy, c-format
+#: lib/getopt.c:755 lib/getopt.c:758
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: opzione non valida -- %c\n"
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, fuzzy, c-format
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: l'opzione richiede un argomento -- %c\n"
 
-#: lib/getopt.c:882 lib/getopt.c:898
-#, fuzzy, c-format
+#: lib/getopt.c:878 lib/getopt.c:894
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: l'opzione \"-W %s\" è ambigua\n"
 
-#: lib/getopt.c:922 lib/getopt.c:940
-#, fuzzy, c-format
+#: lib/getopt.c:918 lib/getopt.c:936
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: l'opzione \"-W %s\" non accetta un argomento\n"
 
@@ -252,6 +251,9 @@ msgstr "memoria esaurita"
 #~ msgid "write error"
 #~ msgstr "errore di scrittura"
 
+#~ msgid "preserving permissions for %s"
+#~ msgstr "preservazione dei permessi per %s"
+
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "errore nell'aprire \"%s\" in lettura"
 
@@ -382,12 +384,6 @@ msgstr "memoria esaurita"
 #~ msgid "Unknown error"
 #~ msgstr "Errore sconosciuto"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: opzione non consentita -- %c\n"
-
-#~ msgid "%s subprocess I/O error"
-#~ msgstr "errore di I/O nel sottoprocesso %s"
-
 #~ msgid "invalid source_version argument to compile_java_class"
 #~ msgstr "argomento source_version in compile_java_class non valido"
 
@@ -409,14 +405,8 @@ msgstr "memoria esaurita"
 #~ "macchina virtuale Java non trovato, provare a installare gij o impostare "
 #~ "$JAVA"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "impossibile creare la pipe"
-
-#~ msgid "unable to record current working directory"
-#~ msgstr "impossibile registrare la directory di lavoro corrente"
-
-#~ msgid "failed to return to initial working directory"
-#~ msgstr "ritorno alla directory di lavoro iniziale non riuscito"
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "errore di I/O nel sottoprocesso %s"
 
 #~ msgid "cannot change permissions of %s"
 #~ msgstr "impossibile cambiare i permessi di %s"
@@ -424,8 +414,41 @@ msgstr "memoria esaurita"
 #~ msgid "cannot create directory %s"
 #~ msgstr "impossibile creare la directory %s"
 
+#~ msgid "unable to record current working directory"
+#~ msgstr "impossibile registrare la directory di lavoro corrente"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "ritorno alla directory di lavoro iniziale non riuscito"
+
 #~ msgid "Failed to open /dev/zero for read"
 #~ msgstr "Apertura di /dev/zero in lettura non riuscita"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "creazione del thread di lettura non riuscita"
+
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr "impossibile impostare I/O non bloccante sul sottoprocesso di %s"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "comunicazione col sottoprocesso di %s non riuscita"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "scrittura sul sottoprocesso di %s non riuscita"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "lettura dal sottoprocesso di %s non riuscita"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "sottoprocesso %s terminato con codice d'uscita %d"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "creazione dei thread non riuscita"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "sottoprocesso di %s terminato con codice d'uscita %d"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "impossibile creare la pipe"
 
 #~ msgid "`"
 #~ msgstr "\""
@@ -438,6 +461,158 @@ msgstr "memoria esaurita"
 
 #~ msgid "^[nN]"
 #~ msgstr "^[nN]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "impostazione dei permessi per %s"
+
+# (ndt) ho preferito mettere tra parentesi il vero nome della costante del segnale, sono cose abbastanza tecniche e forse con un riferimento reale più comprensibili
+#
+# http://en.wikipedia.org/wiki/SIGHUP
+#~ msgid "Hangup"
+#~ msgstr "Chiusura"
+
+# http://en.wikipedia.org/wiki/SIGINT_(POSIX)
+#~ msgid "Interrupt"
+#~ msgstr "Interruzione"
+
+# http://en.wikipedia.org/wiki/SIGQUIT
+#~ msgid "Quit"
+#~ msgstr "Uscita (con core dump)"
+
+# http://en.wikipedia.org/wiki/SIGILL
+#~ msgid "Illegal instruction"
+#~ msgstr "Istruzione non consentita"
+
+# http://en.wikipedia.org/wiki/Trap_(computing)
+# http://en.wikipedia.org/wiki/SIGTRAP
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Rilevato trace/breakpoint"
+
+# http://en.wikipedia.org/wiki/SIGABRT
+#~ msgid "Aborted"
+#~ msgstr "Annullato"
+
+# http://en.wikipedia.org/wiki/SIGFPE
+#~ msgid "Floating point exception"
+#~ msgstr "Eccezione in virgola mobile"
+
+#~ msgid "Killed"
+#~ msgstr "Ucciso"
+
+# http://en.wikipedia.org/wiki/Bus_error
+# http://en.wikipedia.org/wiki/SIGBUS
+#~ msgid "Bus error"
+#~ msgstr "Errore di bus"
+
+# http://en.wikipedia.org/wiki/Segmentation_fault
+# http://en.wikipedia.org/wiki/SIGSEGV
+#~ msgid "Segmentation fault"
+#~ msgstr "Errore di segmentazione"
+
+# http://en.wikipedia.org/wiki/SIGPIPE
+#~ msgid "Broken pipe"
+#~ msgstr "Pipe interrotta"
+
+# (ndt) non so se convenga lasciarlo invariato... ma forse anche le altre...
+# http://en.wikipedia.org/wiki/SIGALRM
+#~ msgid "Alarm clock"
+#~ msgstr "Sveglia"
+
+# http://en.wikipedia.org/wiki/SIGTERM
+#~ msgid "Terminated"
+#~ msgstr "Terminato"
+
+# http://en.wikipedia.org/wiki/SIGURG
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Condizione di I/O urgente"
+
+# http://en.wikipedia.org/wiki/SIGSTOP
+#~ msgid "Stopped (signal)"
+#~ msgstr "Fermato"
+
+# http://en.wikipedia.org/wiki/SIGTSTP
+#~ msgid "Stopped"
+#~ msgstr "Fermato (da terminale)"
+
+# http://en.wikipedia.org/wiki/SIGCONT
+#~ msgid "Continued"
+#~ msgstr "Continuato"
+
+# http://en.wikipedia.org/wiki/SIGCHLD
+#~ msgid "Child exited"
+#~ msgstr "Processo figlio uscito"
+
+# http://en.wikipedia.org/wiki/SIGTTIN
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Fermato per input tty"
+
+# http://en.wikipedia.org/wiki/SIGTTOU
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Fermato per output tty"
+
+# (ndt) questa pare non sia posix, wikipedia riporta la stessa di SIGABRT
+#~ msgid "I/O possible"
+#~ msgstr "I/O consentito"
+
+# http://en.wikipedia.org/wiki/SIGXCPU
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "Superato il limite di tempo CPU"
+
+# http://en.wikipedia.org/wiki/SIGXFSZ
+#~ msgid "File size limit exceeded"
+#~ msgstr "Superato il limite di dimensione file"
+
+# http://en.wikipedia.org/wiki/SIGVTALRM
+#~ msgid "Virtual timer expired"
+#~ msgstr "Timer virtuale terminato"
+
+# http://en.wikipedia.org/wiki/SIGPROF
+#~ msgid "Profiling timer expired"
+#~ msgstr "Timer di profiling terminato"
+
+# http://en.wikipedia.org/wiki/SIGWINCH
+#~ msgid "Window changed"
+#~ msgstr "Finestra modificata"
+
+# http://en.wikipedia.org/wiki/SIGUSR1
+#~ msgid "User defined signal 1"
+#~ msgstr "Segnale 1 definito dall'utente"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Segnale 2 definito dall'utente"
+
+# http://en.wikipedia.org/wiki/SIGEMT
+#~ msgid "EMT trap"
+#~ msgstr "Rilevato EMT"
+
+# http://en.wikipedia.org/wiki/SIGSYS
+#~ msgid "Bad system call"
+#~ msgstr "Chiamata di sistema errata"
+
+# http://en.wikipedia.org/wiki/SIGSTKFLT
+#~ msgid "Stack fault"
+#~ msgstr "Errore sullo stack"
+
+# http://en.wikipedia.org/wiki/SIGINFO
+#~ msgid "Information request"
+#~ msgstr "Richiesta informazioni"
+
+# http://en.wikipedia.org/wiki/SIGPWR
+#~ msgid "Power failure"
+#~ msgstr "Mancanza alimentazione elettrica"
+
+# http://en.wikipedia.org/wiki/SIGLOST
+#~ msgid "Resource lost"
+#~ msgstr "Risorsa persa"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "errore nello scrivere su una pipe o un socket chiusi"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Segnale real-time %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Segnale %d sconosciuto"
 
 #~ msgid "iconv function not usable"
 #~ msgstr "funzione iconv non utilizzabile"
@@ -472,20 +647,11 @@ msgstr "memoria esaurita"
 #~ msgid "unable to display error message"
 #~ msgstr "impossibile visualizzare il messaggio di errore"
 
-#~ msgid "preserving permissions for %s"
-#~ msgstr "preservazione dei permessi per %s"
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Pacchetto creato da %s (%s)\n"
 
-#~ msgid "string comparison failed"
-#~ msgstr "confronto delle stringhe non riuscito"
-
-#~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "Impostare LC_ALL='C' per aggirare il problema."
-
-#~ msgid "The strings compared were %s and %s."
-#~ msgstr "Le stringhe confrontate erano %s e %s."
-
-#~ msgid "cannot perform formatted output"
-#~ msgstr "impossibile mostrare l'output formattato"
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Pacchetto creato da %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "©"
@@ -572,18 +738,63 @@ msgstr "memoria esaurita"
 
 #~ msgid ""
 #~ "\n"
-#~ "Report bugs to <%s>.\n"
+#~ "Report bugs to: %s\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Segnalare i bug a <%s>.\n"
-#~ "Segnalare gli errori di traduzione a <tp@lists.linux.it>\n"
+#~ "Segnalare i bug a: %s\n"
+#~ "Segnalare i bug di traduzione a: <tp@lists.linux.it>\n"
 
-#~ msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
-#~ msgstr "Sito web di %s: <http://www.gnu.org/software/%s/>.\n"
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "Segnalare i bug di %s a: %s.\n"
 
-#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "Sito web di %s: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "Sito web di %s: <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 #~ msgstr ""
-#~ "Aiuto per l'utilizzo di software GNU: <http://www.gnu.org/gethelp/>.\n"
+#~ "Aiuto per l'utilizzo di software GNU: <http://www.gnu.org/gethelp/>\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle non riuscita"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "impossibile ripristinare fd %d: dup2 non riuscita"
+
+#~ msgid "%s subprocess"
+#~ msgstr "sottoprocesso %s"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "il sottoprocesso %s ha ricevuto un segnale %d fatale"
+
+#~ msgid "stdin"
+#~ msgstr "stdin"
+
+#~ msgid "stdout"
+#~ msgstr "stdout"
+
+#~ msgid "stderr"
+#~ msgstr "stderr"
+
+#~ msgid "unknown stream"
+#~ msgstr "stream sconosciuto"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "riapertura di %s in modalità %s non riuscita"
+
+#~ msgid "string comparison failed"
+#~ msgstr "confronto delle stringhe non riuscito"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Impostare LC_ALL='C' per aggirare il problema."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Le stringhe confrontate erano %s e %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "impossibile mostrare l'output formattato"
 
 # (ndt)
 # quello che viene sostituito pare sia:
@@ -602,21 +813,3 @@ msgstr "memoria esaurita"
 
 #~ msgid "%s%s argument `%s' too large"
 #~ msgstr "l'argomento \"%3$s\" di %1$s%2$s è troppo grande"
-
-#~ msgid "setting permissions for %s"
-#~ msgstr "impostazione dei permessi per %s"
-
-#~ msgid "Real-time signal %d"
-#~ msgstr "Segnale real-time %d"
-
-#~ msgid "Unknown signal %d"
-#~ msgstr "Segnale %d sconosciuto"
-
-#~ msgid "%s subprocess"
-#~ msgstr "sottoprocesso %s"
-
-#~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "il sottoprocesso %s ha ricevuto un segnale %d fatale"
-
-#~ msgid "error writing to a closed pipe or socket"
-#~ msgstr "errore nello scrivere su una pipe o un socket chiusi"

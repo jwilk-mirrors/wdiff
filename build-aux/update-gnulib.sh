@@ -9,7 +9,7 @@ rm -r lib/* m4/* build-aux/*.h
 for i in build-aux/*; do
     [[ -L $i ]] && continue
     case "$i" in
-        *.sh)
+        *.sh|*.pm|*.pl)
             ;;
         *)
             rm $i

@@ -1,19 +1,19 @@
 # Swedish messages for gnulib.
-# Copyright © 1997, 2002, 2003, 2004, 2005, 2007, 2009 Free Software Foundation, Inc.
+# Copyright © 1997, 2002, 2003, 2004, 2005, 2007, 2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
 # Peter Antman <peter.antman@abc.se>, 1997.
 # Thomas Olsson <cid95tho@lustudat.student.lu.se>, 1997.
 # Daniel Resare <daniel@resare.com>, 1999, 2000.
-# Göran Uddeborg <goeran@uddeborg.se>, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2007, 2009.
+# Göran Uddeborg <goeran@uddeborg.se>, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2007, 2009, 2010.
 #
-# $Revision: 1.6 $
+# $Revision: 1.8 $
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 1.0.0.1991.dbebf\n"
+"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 09:19+0100\n"
-"PO-Revision-Date: 2009-04-25 21:25+0200\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
+"PO-Revision-Date: 2010-03-04 22:10+0100\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -25,53 +25,53 @@ msgstr ""
 msgid "Unknown system error"
 msgstr "Okänt systemfel"
 
-#: lib/getopt.c:529 lib/getopt.c:545
-#, fuzzy, c-format
+#: lib/getopt.c:525 lib/getopt.c:541
+#, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: flaggan \"%s\" är tvetydig\n"
 
-#: lib/getopt.c:578 lib/getopt.c:582
-#, fuzzy, c-format
+#: lib/getopt.c:574 lib/getopt.c:578
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: flaggan \"--%s\" tar inget argument\n"
 
-#: lib/getopt.c:591 lib/getopt.c:596
-#, fuzzy, c-format
+#: lib/getopt.c:587 lib/getopt.c:592
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: flaggan \"%c%s\" tar inget argument\n"
 
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#, c-format
 msgid "%s: option '%s' requires an argument\n"
 msgstr "%s: flaggan \"%s\" kräver ett argument\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
-#, fuzzy, c-format
+#: lib/getopt.c:692 lib/getopt.c:695
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: okänd flagga \"--%s\"\n"
 
-#: lib/getopt.c:707 lib/getopt.c:710
-#, fuzzy, c-format
+#: lib/getopt.c:703 lib/getopt.c:706
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: okänd flagga \"%c%s\"\n"
 
-#: lib/getopt.c:759 lib/getopt.c:762
-#, fuzzy, c-format
+#: lib/getopt.c:755 lib/getopt.c:758
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: ogiltig flagga -- %c\n"
+msgstr "%s: ogiltig flagga -- \"%c\"\n"
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, fuzzy, c-format
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: flaggan kräver ett argument -- %c\n"
+msgstr "%s: flaggan kräver ett argument -- \"%c\"\n"
 
-#: lib/getopt.c:882 lib/getopt.c:898
-#, fuzzy, c-format
+#: lib/getopt.c:878 lib/getopt.c:894
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: flaggan \"-W %s\" är tvetydig\n"
 
-#: lib/getopt.c:922 lib/getopt.c:940
-#, fuzzy, c-format
+#: lib/getopt.c:918 lib/getopt.c:936
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: flaggan \"-W %s\" tar inget argument\n"
 
@@ -253,6 +253,9 @@ msgstr "minnet slut"
 #~ msgid "write error"
 #~ msgstr "skrivfel"
 
+#~ msgid "preserving permissions for %s"
+#~ msgstr "bevarar rättigheter på %s"
+
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "fel när ”%s” öppnades för läsning"
 
@@ -376,12 +379,6 @@ msgstr "minnet slut"
 #~ msgid "Unknown error"
 #~ msgstr "Okänt fel"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: otillåten flagga -- %c\n"
-
-#~ msgid "%s subprocess I/O error"
-#~ msgstr "%s-underprocess I/O-fel"
-
 #~ msgid "invalid source_version argument to compile_java_class"
 #~ msgstr "ogiltigt source_version-argument till compile_java_class"
 
@@ -402,14 +399,8 @@ msgstr "minnet slut"
 #~ msgstr ""
 #~ "Virtuell Javamaskin hittades inte, försök installera gij eller sätta $JAVA"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "kan inte skapa rör"
-
-#~ msgid "unable to record current working directory"
-#~ msgstr "kan inte notera aktuell arbetskatalog"
-
-#~ msgid "failed to return to initial working directory"
-#~ msgstr "kunde inte återvända till den ursprungliga arbetskatalogen"
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "%s-underprocess I/O-fel"
 
 #~ msgid "cannot change permissions of %s"
 #~ msgstr "kan inte ändra rättigheter på %s"
@@ -417,8 +408,42 @@ msgstr "minnet slut"
 #~ msgid "cannot create directory %s"
 #~ msgstr "kan inte skapa katalogen %s"
 
+#~ msgid "unable to record current working directory"
+#~ msgstr "kan inte notera aktuell arbetskatalog"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "kunde inte återvända till den ursprungliga arbetskatalogen"
+
 #~ msgid "Failed to open /dev/zero for read"
 #~ msgstr "Misslyckades att öppna /dev/zero för läsning"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "att skapa lästråd misslyckades"
+
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr ""
+#~ "det gick inte att sätta upp icke blockerande I/O till %s-underprocess"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "kommunikation med %s-underprocess misslyckades"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "skrivning till %s-underprocess misslyckades"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "läsning från %s-underprocess misslyckades"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "underprocess %s avslutad med slutstatus %d"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "att skapa trådar misslyckades"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "%s-underprocess avslutad med slutstatus %d"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "kan inte skapa rör"
 
 #~ msgid "`"
 #~ msgstr "”"
@@ -431,6 +456,120 @@ msgstr "minnet slut"
 
 #~ msgid "^[nN]"
 #~ msgstr "^[nN]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "ändrar rättigheter på %s"
+
+#~ msgid "Hangup"
+#~ msgstr "Avringd"
+
+#~ msgid "Interrupt"
+#~ msgstr "Avbruten"
+
+#~ msgid "Quit"
+#~ msgstr "Lämnad"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Otillåten instruktion"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Spårnings-/brytpunktsfälla"
+
+#~ msgid "Aborted"
+#~ msgstr "Avbruten (abort)"
+
+#~ msgid "Floating point exception"
+#~ msgstr "Flyttalsundantag"
+
+#~ msgid "Killed"
+#~ msgstr "Dödad"
+
+#~ msgid "Bus error"
+#~ msgstr "Bussfel"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Segmenteringsfel"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Brutet rör"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Alarmklocka"
+
+#~ msgid "Terminated"
+#~ msgstr "Avslutad"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Brådskande I/O-situation"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "Stoppad (signal)"
+
+#~ msgid "Stopped"
+#~ msgstr "Stoppad"
+
+#~ msgid "Continued"
+#~ msgstr "Återupptagen"
+
+#~ msgid "Child exited"
+#~ msgstr "Barn avslutade"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Stoppad (terminalläsning)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Stoppad (terminalskrivning)"
+
+#~ msgid "I/O possible"
+#~ msgstr "I/O möjligt"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "Begränsning av CPU-tid överskriden"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "Begränsning av filstorlek överskriden"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "Alarmklocka - virtuell tid"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "Profileringsklocka"
+
+#~ msgid "Window changed"
+#~ msgstr "Ändrat fönster"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "Användarsignal 1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Användarsignal 2"
+
+#~ msgid "EMT trap"
+#~ msgstr "Emulatorfälla"
+
+#~ msgid "Bad system call"
+#~ msgstr "Felaktigt systemanrop"
+
+#~ msgid "Stack fault"
+#~ msgstr "Stackfel"
+
+#~ msgid "Information request"
+#~ msgstr "Informationsbegäran"
+
+#~ msgid "Power failure"
+#~ msgstr "Strömavbrott"
+
+#~ msgid "Resource lost"
+#~ msgstr "Förlorad resurs"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "fel vid skrivning till ett stängt rör eller uttag"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Realtidsignal %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Okänd signal %d"
 
 #~ msgid "iconv function not usable"
 #~ msgstr "iconv-funktion inte användbar"
@@ -459,20 +598,11 @@ msgstr "minnet slut"
 #~ msgid "unable to display error message"
 #~ msgstr "kan inte visa felmeddelande"
 
-#~ msgid "preserving permissions for %s"
-#~ msgstr "bevarar rättigheter på %s"
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Paketerat av %s (%s)\n"
 
-#~ msgid "string comparison failed"
-#~ msgstr "strängjämförelse misslyckades"
-
-#~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "Sätt LC_ALL='C' för att gå runt problemet."
-
-#~ msgid "The strings compared were %s and %s."
-#~ msgstr "De jämförda strängarna var %s och %s."
-
-#~ msgid "cannot perform formatted output"
-#~ msgstr "kan inte utföra formaterad utmatning"
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Paketerat av %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "©"
@@ -559,18 +689,63 @@ msgstr "minnet slut"
 
 #~ msgid ""
 #~ "\n"
-#~ "Report bugs to <%s>.\n"
+#~ "Report bugs to: %s\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Rapportera fel till <%s>.\n"
-#~ "Skicka synpunkter på översättningen till <tp-sv@listor.tp-sv.se>.\n"
+#~ "Rapportera fel till: %s\n"
+#~ "Skicka synpunkter på översättningen till: tp-sv@listor.tp-sv.se\n"
 
-#~ msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
-#~ msgstr "%s hemsida: <http://www.gnu.org/software/%s/>.\n"
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "Rapportera %s-fel till: %s\n"
 
-#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "%s hemsida: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "%s hemsida: <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 #~ msgstr ""
-#~ "Allmän hjälp med att använda GNU-program: <http://www.gnu.org/gethelp/>.\n"
+#~ "Allmän hjälp med att använda GNU-program: <http://www.gnu.org/gethelp/>\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle misslyckades"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "kan inte återställa fb %d: dup2 misslyckades"
+
+#~ msgid "%s subprocess"
+#~ msgstr "%s-underprocess"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "%s-underprocess fick ödesdiger signal %d"
+
+#~ msgid "stdin"
+#~ msgstr "standard in"
+
+#~ msgid "stdout"
+#~ msgstr "standard ut"
+
+#~ msgid "stderr"
+#~ msgstr "standard fel"
+
+#~ msgid "unknown stream"
+#~ msgstr "okänd ström"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "det gick inte att öppna om %s i läget %s"
+
+#~ msgid "string comparison failed"
+#~ msgstr "strängjämförelse misslyckades"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Sätt LC_ALL='C' för att gå runt problemet."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "De jämförda strängarna var %s och %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "kan inte utföra formaterad utmatning"
 
 #~ msgid "invalid %s%s argument `%s'"
 #~ msgstr "felaktigt %s%s-argument \"%s\""
@@ -580,21 +755,3 @@ msgstr "minnet slut"
 
 #~ msgid "%s%s argument `%s' too large"
 #~ msgstr "%s%s argument \"%s\" är för stort"
-
-#~ msgid "setting permissions for %s"
-#~ msgstr "ändrar rättigheter på %s"
-
-#~ msgid "Real-time signal %d"
-#~ msgstr "Realtidsignal %d"
-
-#~ msgid "Unknown signal %d"
-#~ msgstr "Okänd signal %d"
-
-#~ msgid "%s subprocess"
-#~ msgstr "%s-underprocess"
-
-#~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "%s-underprocess fick ödesdiger signal %d"
-
-#~ msgid "error writing to a closed pipe or socket"
-#~ msgstr "fel vid skrivning till ett stängt rör eller uttag"

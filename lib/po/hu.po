@@ -1,242 +1,301 @@
-# Hungarian translation of coreutils.
-# Copyright (C) 2002, 2003, 2004 Free Software Foundation, Inc.
-# This file is distributed under the same license as the coreutils package.
-# Emese Kovacs <emese@instantweb.hu>, 2004.
+# Hungarian translation of gnulib.
+# Copyright (C) 2002, 2003, 2004, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnulib package.
 #
+# Emese Kovacs <emese@instantweb.hu>, 2004.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: coreutils 5.2.1\n"
+"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 09:19+0100\n"
-"PO-Revision-Date: 2004-07-03 22:32+0200\n"
-"Last-Translator: Emese Kovacs <emese@instantweb.hu>\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
+"PO-Revision-Date: 2010-02-23 19:52+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: lib/error.c:153
 msgid "Unknown system error"
 msgstr "Ismeretlen rendszerhiba"
 
-#: lib/getopt.c:529 lib/getopt.c:545
-#, fuzzy, c-format
+#: lib/getopt.c:525 lib/getopt.c:541
+#, c-format
 msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: a(z) `%s' kapcsol� nem egy�rtelm�\n"
+msgstr "%s: a(z) „%s” kapcsoló nem egyértelmű\n"
 
-#: lib/getopt.c:578 lib/getopt.c:582
-#, fuzzy, c-format
+#: lib/getopt.c:574 lib/getopt.c:578
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: a(z) `--%s' kapcsol� nem enged meg argumentumot\n"
+msgstr "%s: a(z) „--%s” kapcsoló nem enged meg argumentumot\n"
 
-#: lib/getopt.c:591 lib/getopt.c:596
-#, fuzzy, c-format
+#: lib/getopt.c:587 lib/getopt.c:592
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: a(z) `%c%s' kapcsol� nem enged meg argumentumot\n"
+msgstr "%s: a(z) „%c%s” kapcsoló nem enged meg argumentumot\n"
 
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#, c-format
 msgid "%s: option '%s' requires an argument\n"
-msgstr "%s: a(z) `%s' kapcsol�hoz argumentum sz�ks�ges\n"
+msgstr "%s: a(z) „%s” kapcsolóhoz argumentum szükséges\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
-#, fuzzy, c-format
+#: lib/getopt.c:692 lib/getopt.c:695
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
-msgstr "%s: a(z) `--%s' kapcsol� ismeretlen\n"
+msgstr "%s: a(z) „--%s” kapcsoló ismeretlen\n"
 
-#: lib/getopt.c:707 lib/getopt.c:710
-#, fuzzy, c-format
+#: lib/getopt.c:703 lib/getopt.c:706
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
-msgstr "%s: a(z) `%c%s' kapcsol� ismeretlen\n"
+msgstr "%s: a(z) „%c%s” kapcsoló ismeretlen\n"
 
-#: lib/getopt.c:759 lib/getopt.c:762
-#, fuzzy, c-format
+#: lib/getopt.c:755 lib/getopt.c:758
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: �rv�nytelen kapcsol� -- %c\n"
+msgstr "%s: érvénytelen kapcsoló -- „%c”\n"
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, fuzzy, c-format
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: a kapcsol�nak sz�ks�ge van egy argumentumra -- %c\n"
+msgstr "%s: a kapcsoló egy argumentumot igényel -- „%c”\n"
 
-#: lib/getopt.c:882 lib/getopt.c:898
-#, fuzzy, c-format
+#: lib/getopt.c:878 lib/getopt.c:894
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: a `-W %s' kapcsol� nem egy�rtelm�\n"
+msgstr "%s: a „-W %s” kapcsoló nem egyértelmű\n"
 
-#: lib/getopt.c:922 lib/getopt.c:940
-#, fuzzy, c-format
+#: lib/getopt.c:918 lib/getopt.c:936
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: a `-W %s' kapcsol� nem enged meg argumentumot\n"
+msgstr "%s: a „-W %s” kapcsoló nem enged meg argumentumot\n"
 
 #: lib/regcomp.c:132
 msgid "Success"
-msgstr ""
+msgstr "Sikerült"
 
 #: lib/regcomp.c:135
 msgid "No match"
-msgstr ""
+msgstr "Nincs találat"
 
 #: lib/regcomp.c:138
-#, fuzzy
 msgid "Invalid regular expression"
-msgstr "�rv�nytelen konverzi�: %s"
+msgstr "Érvénytelen szabályos kifejezés"
 
 #: lib/regcomp.c:141
-#, fuzzy
 msgid "Invalid collation character"
-msgstr "�rv�nytelen karakter (%s) a `%s' m�dkarakterl�ncban"
+msgstr "Érvénytelen leválogatási karakter"
 
 #: lib/regcomp.c:144
-#, fuzzy
 msgid "Invalid character class name"
-msgstr "�rv�nytelen karakter (%s) a `%s' m�dkarakterl�ncban"
+msgstr "Érvénytelen karakterosztálynév"
 
 #: lib/regcomp.c:147
 msgid "Trailing backslash"
-msgstr ""
+msgstr "Záró visszaper"
 
 #: lib/regcomp.c:150
 msgid "Invalid back reference"
-msgstr ""
+msgstr "Érvénytelen visszahivatkozás"
 
 #: lib/regcomp.c:153
 msgid "Unmatched [ or [^"
-msgstr ""
+msgstr "Pár nélküli [ vagy [^"
 
 #: lib/regcomp.c:156
 msgid "Unmatched ( or \\("
-msgstr ""
+msgstr "Pár nélküli ( vagy \\("
 
 #: lib/regcomp.c:159
 msgid "Unmatched \\{"
-msgstr ""
+msgstr "Pár nélküli \\{"
 
 #: lib/regcomp.c:162
 msgid "Invalid content of \\{\\}"
-msgstr ""
+msgstr "A \\{\\} tartalma érvénytelen"
 
 #: lib/regcomp.c:165
-#, fuzzy
 msgid "Invalid range end"
-msgstr "�rv�nytelen konverzi�: %s"
+msgstr "Érvénytelen tartományvég"
 
 #: lib/regcomp.c:168
-#, fuzzy
 msgid "Memory exhausted"
-msgstr "elfogyott a mem�ria"
+msgstr "Elfogyott a memória"
 
 #: lib/regcomp.c:171
-#, fuzzy
 msgid "Invalid preceding regular expression"
-msgstr "�rv�nytelen konverzi�: %s"
+msgstr "Érvénytelen megelőző szabályos kifejezés"
 
 #: lib/regcomp.c:174
-#, fuzzy
 msgid "Premature end of regular expression"
-msgstr "�rv�nytelen konverzi�: %s"
+msgstr "A szabályos kifejezés túl korán véget ért"
 
 #: lib/regcomp.c:177
-#, fuzzy
 msgid "Regular expression too big"
-msgstr "�rv�nytelen konverzi�: %s"
+msgstr "A szabályos kifejezés túl nagy"
 
 #: lib/regcomp.c:180
 msgid "Unmatched ) or \\)"
-msgstr ""
+msgstr "Pár nélküli ) vagy \\)"
 
 #: lib/regcomp.c:701
-#, fuzzy
 msgid "No previous regular expression"
-msgstr "�rv�nytelen konverzi�: %s"
+msgstr "Nincs megelőző szabályos kifejezés"
 
 #: lib/xalloc-die.c:34
 msgid "memory exhausted"
-msgstr "elfogyott a mem�ria"
+msgstr "elfogyott a memória"
 
 #~ msgid "invalid argument %s for %s"
-#~ msgstr "A(z) `%s' argumentum �rv�nytelen ehhez: %s"
+#~ msgstr "a(z) „%s” argumentum érvénytelen a következőhöz: %s"
 
 #~ msgid "ambiguous argument %s for %s"
-#~ msgstr "`%s' argumentum nem egy�rtelm� ehhez: `%s'"
+#~ msgstr "a(z) „%s” argumentum nem egyértelmű ehhez: „%s”"
 
 #~ msgid "Valid arguments are:"
-#~ msgstr "Az �rv�nyes argumentumok a k�vetkez�k:"
+#~ msgstr "Az érvényes argumentumok a következők:"
 
-#, fuzzy
+#~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+#~ msgstr "ARGP_HELP_FMT: %s értéke nem nagyobb, mint %s"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: Az ARGP_HELP_FMT paraméter értéket igényel"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+#~ msgstr "%.*s: Az ARGP_HELP_FMT paraméternek pozitívnak kell lennie"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: Ismeretlen ARGP_HELP_FMT paraméter"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "Szemét az ARGP_HELP_FMT-ben: %s"
+
 #~ msgid ""
 #~ "Mandatory or optional arguments to long options are also mandatory or "
 #~ "optional for any corresponding short options."
 #~ msgstr ""
-#~ "Ha egy hossz� kapcsol�hoz k�telez� argumentumot megadni, akkor ez a \n"
-#~ "megfelel� r�vid kapcsol�n�l is k�telez�.\n"
+#~ "Ha egy hosszú kapcsolóhoz kötelező vagy opcionális argumentumot megadni, "
+#~ "akkor ez a megfelelő rövid kapcsolónál is kötelező vagy opcionális."
 
-#, fuzzy
+#~ msgid "Usage:"
+#~ msgstr "Használat:"
+
+#~ msgid "  or: "
+#~ msgstr "  vagy: "
+
 #~ msgid " [OPTION...]"
-#~ msgstr "Haszn�lat: %s [KAPCSOL�]...\n"
+#~ msgstr " [KAPCSOLÓ…]"
 
-#, fuzzy
 #~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
-#~ msgstr "Pr�b�lja a(z) `%s --help'-et tov�bbi inform�ci�k�rt.\n"
-
-#, fuzzy
-#~ msgid "Report bugs to %s.\n"
 #~ msgstr ""
-#~ "\n"
-#~ "A hib�kat jelentsd a <bug-fileutils@gnu.org> c�men."
+#~ "További információkért lásd a(z) „%s --help” vagy „%s --usage” "
+#~ "kimenetét.\n"
 
-#, fuzzy
+#~ msgid "Report bugs to %s.\n"
+#~ msgstr "A hibák itt jelenthetők: %s.\n"
+
+#~ msgid "give this help list"
+#~ msgstr "ezen súgószöveg megjelenítése"
+
+#~ msgid "give a short usage message"
+#~ msgstr "rövid használati utasítás megjelenítése"
+
+#~ msgid "NAME"
+#~ msgstr "NÉV"
+
+#~ msgid "set the program name"
+#~ msgstr "a program nevének beállítása"
+
+#~ msgid "SECS"
+#~ msgstr "MÁSODPERC"
+
+#~ msgid "hang for SECS seconds (default 3600)"
+#~ msgstr "szünet MP másodpercre (alapértelmezetten 3600)"
+
+#~ msgid "print program version"
+#~ msgstr "a programverzió kiírása"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(PROGRAMHIBA) A verzió nem ismert!"
+
 #~ msgid "%s: Too many arguments\n"
-#~ msgstr "t�l sok argumentum"
+#~ msgstr "%s: Túl sok argumentum\n"
 
-#, fuzzy
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr "(PROGRAMHIBA) A kapcsolót ismerni kellene?"
+
 #~ msgid "program error"
-#~ msgstr "olvas�si hiba"
+#~ msgstr "olvasási hiba"
+
+#~ msgid "stack overflow"
+#~ msgstr "veremtúlcsordulás"
+
+#~ msgid "cannot find a temporary directory, try setting $TMPDIR"
+#~ msgstr ""
+#~ "nem található átmeneti könyvtár, próbálja beállítani a $TMPDIR változót"
+
+#~ msgid "cannot create a temporary directory using template \"%s\""
+#~ msgstr ""
+#~ "nem lehet létrehozni átmeneti könyvtárat a(z) „%s” sablon használatával"
+
+#~ msgid "cannot remove temporary file %s"
+#~ msgstr "nem lehet eltávolítani a(z) %s átmeneti fájlt"
+
+#~ msgid "cannot remove temporary directory %s"
+#~ msgstr "nem lehet eltávolítani a(z) %s átmeneti könyvtárat"
+
+#~ msgid "error closing file"
+#~ msgstr "hiba a fájl lezárásakor"
 
 #~ msgid "write error"
-#~ msgstr "�r�si hiba"
+#~ msgstr "írási hiba"
 
-#, fuzzy
+#~ msgid "preserving permissions for %s"
+#~ msgstr "%s jogosultságainak megőrzése"
+
 #~ msgid "error while opening \"%s\" for reading"
-#~ msgstr "%s megnyit�sa olvas�sra sikertelen"
+#~ msgstr "hiba \"%s\" megnyitásakor olvasásra"
 
-#, fuzzy
 #~ msgid "cannot open backup file \"%s\" for writing"
-#~ msgstr "%s megnyit�sa olvas�sra sikertelen"
+#~ msgstr "%s mentési fájl megnyitása írásra sikertelen"
 
-#, fuzzy
 #~ msgid "error reading \"%s\""
-#~ msgstr "hiba %s olvas�sakor"
+#~ msgstr "hiba \"%s\" olvasásakor"
 
-#, fuzzy
 #~ msgid "error writing \"%s\""
-#~ msgstr "hiba %s �r�sakor"
+#~ msgstr "hiba \"%s\" írásakor"
 
-#, fuzzy
 #~ msgid "error after reading \"%s\""
-#~ msgstr "hiba %s olvas�sakor"
+#~ msgstr "hiba \"%s\" olvasása után"
 
-#, fuzzy
 #~ msgid "fdopen() failed"
-#~ msgstr "megnyit�s sikertelen"
+#~ msgstr "az fdopen() sikertelen"
 
-#, fuzzy
+#~ msgid "C# compiler not found, try installing pnet"
+#~ msgstr "a C# fordító nem található, próbálja telepíteni a pnetet"
+
+#~ msgid "C# virtual machine not found, try installing pnet"
+#~ msgstr "a C# virtuális gép nem található, próbálja telepíteni a pnetet"
+
 #~ msgid "%s subprocess failed"
-#~ msgstr "strip sikertelen"
+#~ msgstr "%s alfolyamat sikertelen"
 
-#, fuzzy
+#~ msgid "regular empty file"
+#~ msgstr "szabályos üres fájl"
+
 #~ msgid "regular file"
-#~ msgstr "olvas�s sikertelen"
+#~ msgstr "szabályos fájl"
 
 #~ msgid "directory"
-#~ msgstr "k�nyvt�r"
+#~ msgstr "könyvtár"
 
 #~ msgid "block special file"
-#~ msgstr "speci�lis blokkf�jl"
+#~ msgstr "speciális blokkfájl"
 
 #~ msgid "character special file"
-#~ msgstr "speci�lis karakterf�jl"
+#~ msgstr "speciális karakterfájl"
 
 #~ msgid "fifo"
 #~ msgstr "fifo"
@@ -244,68 +303,107 @@ msgstr "elfogyott a mem�ria"
 #~ msgid "symbolic link"
 #~ msgstr "szimbolikus link"
 
-#, fuzzy
+#~ msgid "socket"
+#~ msgstr "foglalat"
+
+#~ msgid "message queue"
+#~ msgstr "üzenetsor"
+
+#~ msgid "semaphore"
+#~ msgstr "szemafor"
+
+#~ msgid "shared memory object"
+#~ msgstr "megosztott memóriaobjektum"
+
+#~ msgid "typed memory object"
+#~ msgstr "típusos memóriaobjektum"
+
 #~ msgid "weird file"
-#~ msgstr "olvas�s sikertelen"
+#~ msgstr "szokatlan fájl"
 
-#, fuzzy
 #~ msgid "Address family for hostname not supported"
-#~ msgstr "a fifo f�jlok nem t�mogatottak"
+#~ msgstr "A gépnév címcsaládja nem támogatott"
 
-#, fuzzy
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Átmeneti névfeloldási hiba"
+
+#~ msgid "Bad value for ai_flags"
+#~ msgstr "Az ai_flags értéke hibás"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "Helyrehozhatatlan névfeloldási hiba"
+
 #~ msgid "ai_family not supported"
-#~ msgstr "a fifo f�jlok nem t�mogatottak"
+#~ msgstr "Az ai_family nem támogatott"
 
-#, fuzzy
+#~ msgid "Memory allocation failure"
+#~ msgstr "Memóriafoglalási hiba"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "A gépnévhez nem tartozik cím"
+
+#~ msgid "Name or service not known"
+#~ msgstr "A név vagy szolgáltatás ismeretlen"
+
+#~ msgid "Servname not supported for ai_socktype"
+#~ msgstr "A kiszolgálónév nem támogatott az ai_socktype-hoz"
+
 #~ msgid "ai_socktype not supported"
-#~ msgstr "a fifo f�jlok nem t�mogatottak"
+#~ msgstr "Az ai_socktype nem támogatott"
 
-#, fuzzy
 #~ msgid "System error"
-#~ msgstr "�r�si hiba"
+#~ msgstr "Rendszerhiba"
 
-#, fuzzy
+#~ msgid "Argument buffer too small"
+#~ msgstr "A paraméterpuffer túl kicsi"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "Kérés feldolgozása folyamatban"
+
+#~ msgid "Request canceled"
+#~ msgstr "Kérés megszakítva"
+
+#~ msgid "Request not canceled"
+#~ msgstr "Kérés nincs megszakítva"
+
+#~ msgid "All requests done"
+#~ msgstr "Minden kérés kész"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Szignál által megszakítva"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "A paraméter-karakterlánc nem megfelelő kódolású"
+
 #~ msgid "Unknown error"
-#~ msgstr "Ismeretlen rendszerhiba"
+#~ msgstr "Ismeretlen hiba"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: illeg�lis kapcsol� -- %c\n"
-
-#~ msgid "block size"
-#~ msgstr "blokkm�ret"
-
-#~ msgid "%s exists but is not a directory"
-#~ msgstr "%s l�tezik, de nem k�nyvt�r"
-
-#~ msgid "cannot change owner and/or group of %s"
-#~ msgstr "nem lehet %s tulajdonos�t �s/vagy csoportj�t megv�ltoztatni"
-
-#~ msgid "cannot create directory %s"
-#~ msgstr "nem lehet l�trehozni a(z) %s k�nyvt�rat"
-
-#~ msgid "cannot chdir to directory %s"
-#~ msgstr "nem lehet a k�vetkez� k�nyvt�rba l�pni: %s"
+#~ msgid "error while writing \"%s\" file"
+#~ msgstr "hiba \"%s\" fájl írásakor"
 
 #~ msgid "cannot change permissions of %s"
-#~ msgstr "nem lehet %s jogosults�gait megv�ltoztatni"
+#~ msgstr "nem lehet %s jogosultságait megváltoztatni"
 
-#, fuzzy
+#~ msgid "cannot create directory %s"
+#~ msgstr "nem lehet létrehozni a(z) %s könyvtárat"
+
 #~ msgid "unable to record current working directory"
-#~ msgstr "nem lehet az aktu�lis k�nyvt�rat t�r�lni: %s"
+#~ msgstr "az aktuális munkakönyvtár feljegyzése meghiúsult"
 
-#, fuzzy
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "a visszatérés meghiúsult a kiinduló munkakönyvtárba"
+
 #~ msgid "Failed to open /dev/zero for read"
-#~ msgstr "%s jogosults�gainak vissza�ll�t�sa sikertelen"
+#~ msgstr "/dev/zero megnyitása olvasásra sikertelen"
 
-#, fuzzy
 #~ msgid "cannot create pipe"
-#~ msgstr "nem lehet a k�vetkez� linket l�trehozni: %s"
+#~ msgstr "nem hozható létre adatcsatorna"
 
 #~ msgid "`"
-#~ msgstr "`"
+#~ msgstr "„"
 
 #~ msgid "'"
-#~ msgstr "'"
+#~ msgstr "”"
 
 #~ msgid "^[yY]"
 #~ msgstr "^[iIyY]"
@@ -313,99 +411,283 @@ msgstr "elfogyott a mem�ria"
 #~ msgid "^[nN]"
 #~ msgstr "^[nN]"
 
+#~ msgid "setting permissions for %s"
+#~ msgstr "%s jogosultságainak beállítása"
+
+#~ msgid "Hangup"
+#~ msgstr "Felfüggesztés"
+
+#~ msgid "Interrupt"
+#~ msgstr "Megszakítás"
+
+#~ msgid "Quit"
+#~ msgstr "Kilépés"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Illegális utasítás"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Nyomkövetési/töréspont csapda"
+
+#~ msgid "Aborted"
+#~ msgstr "Megszakítva"
+
+#~ msgid "Floating point exception"
+#~ msgstr "Lebegőpontos kivétel"
+
+#~ msgid "Killed"
+#~ msgstr "Kilőve"
+
+#~ msgid "Bus error"
+#~ msgstr "Buszhiba"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Szegmentálási hiba"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Megszakadt csővezeték"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Ébresztőóra"
+
+#~ msgid "Terminated"
+#~ msgstr "Befejeződött"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Sürgős I/O feltétel"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "Leállítva (szignál)"
+
+#~ msgid "Stopped"
+#~ msgstr "Leállítva"
+
+#~ msgid "Continued"
+#~ msgstr "Folytatva"
+
+#~ msgid "Child exited"
+#~ msgstr "Gyerekfolyamat kilépett"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Leállítva (tty bemenet)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Leállítva (tty kimenet)"
+
+#~ msgid "I/O possible"
+#~ msgstr "I/O lehetséges"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "CPU-időkorlát túllépve"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "Fájlméret korlátja túllépve"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "Virtuális időzítés lejárt"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "A profilozási időzítő lejárt"
+
+#~ msgid "Window changed"
+#~ msgstr "Ablakméret változott"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "Felhasználói szignál 1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Felhasználói szignál 2"
+
+#~ msgid "EMT trap"
+#~ msgstr "EMT csapda"
+
+#~ msgid "Bad system call"
+#~ msgstr "Hibás rendszerhívás"
+
+#~ msgid "Stack fault"
+#~ msgstr "Veremhiba"
+
+#~ msgid "Information request"
+#~ msgstr "Információkérés"
+
+#~ msgid "Power failure"
+#~ msgstr "Tápfeszültség-kimaradás"
+
+#~ msgid "Resource lost"
+#~ msgstr "Erőforrás elveszítve"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Valós idejű szignál %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Ismeretlen szignál %d"
+
 #~ msgid "iconv function not usable"
-#~ msgstr "az iconv f�ggv�ny nem haszn�lhat�"
+#~ msgstr "az iconv függvény nem használható"
 
 #~ msgid "iconv function not available"
-#~ msgstr "az iconv f�ggv�ny nem el�rhet�"
+#~ msgstr "az iconv függvény nem elérhető"
 
 #~ msgid "character out of range"
-#~ msgstr "tartom�nyon k�v�li karakter"
+#~ msgstr "tartományon kívüli karakter"
 
 #~ msgid "cannot convert U+%04X to local character set"
-#~ msgstr "nem lehet helyi karakterk�szletbe �talak�tani a k�vetkez�t: U+%04X"
+#~ msgstr "nem lehet helyi karakterkészletbe átalakítani a következőt: U+%04X"
 
 #~ msgid "cannot convert U+%04X to local character set: %s"
-#~ msgstr "nem lehet U+%04X-t helyi karakterk�szletbe �talak�tani:  %s"
+#~ msgstr "az U+%04X nem konvertálható a helyi karakterkészletbe:  %s"
 
 #~ msgid "invalid user"
-#~ msgstr "�rv�nytelen felhaszn�l�"
+#~ msgstr "érvénytelen felhasználó"
 
 #~ msgid "invalid group"
-#~ msgstr "�rv�nytelen csoport"
+#~ msgstr "érvénytelen csoport"
 
-#~ msgid "cannot get the login group of a numeric UID"
-#~ msgstr "az UID-hez tartoz� bejelentkez�si csoportot nem lehet meg�llap�tani"
+#~ msgid "invalid spec"
+#~ msgstr "érvénytelen specifikáció"
+
+#~ msgid "unable to display error message"
+#~ msgstr "nem jeleníthető meg hibaüzenet"
+
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Csomagolta: %s (%s)\n"
+
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Csomagolta: %s\n"
+
+#~ msgid "(C)"
+#~ msgstr "©"
+
+#~ msgid ""
+#~ "\n"
+#~ "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+#~ "html>.\n"
+#~ "This is free software: you are free to change and redistribute it.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "A licenc GPLv3+: a GNU GPL 3. vagy újabb változata <http://gnu.org/"
+#~ "licenses/gpl.html>\n"
+#~ "Ez egy szabad szoftver, terjesztheti és/vagy módosíthatja.\n"
+#~ "NINCS GARANCIA, a törvény által engedélyezett mértékig.\n"
+#~ "\n"
 
 #~ msgid "Written by %s.\n"
-#~ msgstr "�rta: %s\n"
+#~ msgstr "Írta: %s.\n"
 
 #~ msgid "Written by %s and %s.\n"
-#~ msgstr "�rta: %s �s %s\n"
+#~ msgstr "Írta: %s és %s.\n"
 
 #~ msgid "Written by %s, %s, and %s.\n"
-#~ msgstr "�rta: %s, %s �s %s\n"
+#~ msgstr "Írta: %s, %s és %s\n"
 
 #~ msgid ""
 #~ "Written by %s, %s, %s,\n"
 #~ "and %s.\n"
 #~ msgstr ""
-#~ "�rta: %s, %s, %s\n"
-#~ "�s %s\n"
+#~ "Írta: %s, %s, %s\n"
+#~ "és %s\n"
 
 #~ msgid ""
 #~ "Written by %s, %s, %s,\n"
 #~ "%s, and %s.\n"
 #~ msgstr ""
-#~ "�rta: %s, %s, %s,\n"
-#~ "%s �s %s\n"
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s és %s\n"
 
 #~ msgid ""
 #~ "Written by %s, %s, %s,\n"
 #~ "%s, %s, and %s.\n"
 #~ msgstr ""
-#~ "�rta: %s, %s, %s,\n"
-#~ "%s, %s �s %s\n"
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s, %s és %s\n"
 
 #~ msgid ""
 #~ "Written by %s, %s, %s,\n"
 #~ "%s, %s, %s, and %s.\n"
 #~ msgstr ""
-#~ "�rta: %s, %s, %s,\n"
-#~ "%s, %s, %s �s %s\n"
+#~ "Írta: %s, %s, %s,\n"
+#~ "%s, %s, %s és %s\n"
 
 #~ msgid ""
 #~ "Written by %s, %s, %s,\n"
 #~ "%s, %s, %s, %s,\n"
 #~ "and %s.\n"
 #~ msgstr ""
-#~ "�rta: %s, %s, %s,\n"
+#~ "Írta: %s, %s, %s,\n"
 #~ "%s, %s, %s, %s\n"
-#~ "�s %s\n"
+#~ "és %s\n"
 
 #~ msgid ""
 #~ "Written by %s, %s, %s,\n"
 #~ "%s, %s, %s, %s,\n"
 #~ "%s, and %s.\n"
 #~ msgstr ""
-#~ "�rta: %s, %s, %s,\n"
+#~ "Írta: %s, %s, %s,\n"
 #~ "%s, %s, %s, %s,\n"
-#~ "%s �s %s\n"
+#~ "%s és %s\n"
 
 #~ msgid ""
 #~ "Written by %s, %s, %s,\n"
 #~ "%s, %s, %s, %s,\n"
 #~ "%s, %s, and others.\n"
 #~ msgstr ""
-#~ "�rta: %s, %s, %s,\n"
+#~ "Írta: %s, %s, %s,\n"
 #~ "%s, %s, %s, %s,\n"
-#~ "%s, %s �s m�sok\n"
+#~ "%s, %s és mások\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to: %s\n"
+#~ msgstr ""
+#~ "\n"
+#~ "A hibák a(z) %s címen jelenthetők.\n"
+
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "A(z) %s hibái a(z) %s címen jelenthetők.\n"
+
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "A(z) %s honlapja: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "A(z) %s honlapja: <http://www.gnu.org/software/%s/>.\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+#~ msgstr ""
+#~ "Általános segítség a GNU szoftverek használatához: <http://www.gnu.org/"
+#~ "gethelp/>.\n"
+
+#~ msgid "stdin"
+#~ msgstr "szabványos bemenet"
+
+#~ msgid "stdout"
+#~ msgstr "szabványos kimenet"
+
+#~ msgid "stderr"
+#~ msgstr "szabványos hibakimenet"
+
+#~ msgid "unknown stream"
+#~ msgstr "ismeretlen adatfolyam"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "%s újranyitása %s móddal meghiúsult"
 
 #~ msgid "string comparison failed"
-#~ msgstr "karakterl�nc-�sszehasonl�t�s sikertelen"
+#~ msgstr "karakterlánc-összehasonlítás sikertelen"
 
 #~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "�ll�tsa be az LC_ALL='C' -t a probl�ma elker�l�s�hez."
+#~ msgstr ""
+#~ "Állítsa be az LC_ALL='C' környezeti változót a probléma megkerüléséhez."
 
 #~ msgid "The strings compared were %s and %s."
-#~ msgstr "Az �sszehasonl�tott karakterl�ncok: %s �s %s."
+#~ msgstr "Az összehasonlított karakterláncok: %s és %s."
+
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "érvénytelen %s%s argumentum: „%s”"
+
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "érvénytelen utótag a(z) %s%s argumentumban: „%s”"
+
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "%s%s: a(z) „%s” argumentum túl nagy"

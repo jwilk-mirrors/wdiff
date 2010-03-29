@@ -1,14 +1,14 @@
 # Vietnamese translation for GNU Lib.
-# Copyright © 2009 Free Software Foundation, Inc.
+# Copyright © 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
-# Clytie Siddall <clytie@riverland.net.au>, 2006-2009.
+# Clytie Siddall <clytie@riverland.net.au>, 2006-2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 1.0.0.1991.dbebf\n"
+"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 09:19+0100\n"
-"PO-Revision-Date: 2009-05-13 23:26+0930\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
+"PO-Revision-Date: 2010-03-06 20:21+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -21,53 +21,53 @@ msgstr ""
 msgid "Unknown system error"
 msgstr "Gặp lỗi hệ thống lạ"
 
-#: lib/getopt.c:529 lib/getopt.c:545
-#, fuzzy, c-format
+#: lib/getopt.c:525 lib/getopt.c:541
+#, c-format
 msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: tùy chọn « %s » là mơ hồ\n"
+msgstr "%s: tùy chọn « %s » vẫn mơ hồ\n"
 
-#: lib/getopt.c:578 lib/getopt.c:582
-#, fuzzy, c-format
+#: lib/getopt.c:574 lib/getopt.c:578
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: tùy chọn « --%s » không cho phép đối số\n"
 
-#: lib/getopt.c:591 lib/getopt.c:596
-#, fuzzy, c-format
+#: lib/getopt.c:587 lib/getopt.c:592
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: tùy chọn « %c%s » không cho phép đối số\n"
 
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#, c-format
 msgid "%s: option '%s' requires an argument\n"
-msgstr "%s: tùy chọn « %s » cần thiết đối số\n"
+msgstr "%s: tùy chọn « %s » yêu cầu một đối số\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
-#, fuzzy, c-format
+#: lib/getopt.c:692 lib/getopt.c:695
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: không nhận ra tùy chọn « --%s »\n"
 
-#: lib/getopt.c:707 lib/getopt.c:710
-#, fuzzy, c-format
+#: lib/getopt.c:703 lib/getopt.c:706
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: không nhận ra tùy chọn « %c%s »\n"
 
-#: lib/getopt.c:759 lib/getopt.c:762
-#, fuzzy, c-format
+#: lib/getopt.c:755 lib/getopt.c:758
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: tùy chọn không hợp lệ « -- %c »\n"
+msgstr "%s: tùy chọn không hợp lệ -- « %c »\n"
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, fuzzy, c-format
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: tùy chọn cần thiết đối số « -- %c »\n"
+msgstr "%s: tùy chọn yêu cầu một đối số -- « %c »\n"
 
-#: lib/getopt.c:882 lib/getopt.c:898
-#, fuzzy, c-format
+#: lib/getopt.c:878 lib/getopt.c:894
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: tùy chọn « -W %s » là mơ hồ\n"
+msgstr "%s: tùy chọn « -W %s » vẫn mơ hồ\n"
 
-#: lib/getopt.c:922 lib/getopt.c:940
-#, fuzzy, c-format
+#: lib/getopt.c:918 lib/getopt.c:936
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: tùy chọn « -W %s » không cho phép đối số\n"
 
@@ -250,6 +250,9 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ msgid "write error"
 #~ msgstr "lỗi ghi"
 
+#~ msgid "preserving permissions for %s"
+#~ msgstr "đang bảo tồn quyền hạn về %s"
+
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "gặp lỗi khi mở « %s » để ghi"
 
@@ -373,12 +376,6 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ msgid "Unknown error"
 #~ msgstr "Gặp lỗi không rõ"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: không cho phép tùy chọn « -- %c »\n"
-
-#~ msgid "%s subprocess I/O error"
-#~ msgstr "Lỗi V/R tiến trình phụ %s"
-
 #~ msgid "invalid source_version argument to compile_java_class"
 #~ msgstr ""
 #~ "đối số phiên bản nguồn « source_version » không hợp lệ đối với hạn Java "
@@ -405,14 +402,8 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ "Không tìm thấy cơ chế ảo Java nên thử cài đặt trình « gcj » hoặc đặt biến "
 #~ "môi trường « $JAVAC »."
 
-#~ msgid "cannot create pipe"
-#~ msgstr "không thể tạo ống dẫn"
-
-#~ msgid "unable to record current working directory"
-#~ msgstr "không thể ghi lưu thư mục làm việc hiện thời"
-
-#~ msgid "failed to return to initial working directory"
-#~ msgstr "chưa trở về thư mục làm việc ban đầu"
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "Lỗi V/R tiến trình phụ %s"
 
 #~ msgid "cannot change permissions of %s"
 #~ msgstr "không thể thay đổi quyền hạn của %s"
@@ -420,8 +411,41 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ msgid "cannot create directory %s"
 #~ msgstr "không thể tạo thư mục %s"
 
+#~ msgid "unable to record current working directory"
+#~ msgstr "không thể ghi lưu thư mục làm việc hiện thời"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "chưa trở về thư mục làm việc ban đầu"
+
 #~ msgid "Failed to open /dev/zero for read"
 #~ msgstr "Lỗi mở thiết bị « /dev/zero  » để đọc"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "lỗi tạo nhánh đọc"
+
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr "không thể thiết lập V/R không chặn đối với tiến trình con %s"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "lỗi liên lạc với tiến trình con %s"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "lỗi ghi vào tiến trình con %s"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "lỗi đọc từ tiến trình con %s"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "tiến trình con %s đã kết thúc với mã thoát %d"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "lỗi tạo nhánh"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "tiến trình con %s đã kết thúc với mã thoát %d"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "không thể tạo ống dẫn"
 
 #~ msgid "`"
 #~ msgstr "« "
@@ -434,6 +458,120 @@ msgstr "hết bộ nhớ hoàn toàn"
 
 #~ msgid "^[nN]"
 #~ msgstr "^[kK]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "đang đặt quyền hạn về %s"
+
+#~ msgid "Hangup"
+#~ msgstr "Ngừng nói"
+
+#~ msgid "Interrupt"
+#~ msgstr "Ngắt"
+
+#~ msgid "Quit"
+#~ msgstr "Thoát"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Câu lệnh sai"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Bẫy vết/điểm ngắt"
+
+#~ msgid "Aborted"
+#~ msgstr "Bị hủy bỏ"
+
+#~ msgid "Floating point exception"
+#~ msgstr "Ngoại lệ điểm phù động"
+
+#~ msgid "Killed"
+#~ msgstr "Bị buộc kết thúc"
+
+#~ msgid "Bus error"
+#~ msgstr "Lỗi mạch nối"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Lỗi phân đoạn"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Ống dẫn bị ngắt"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Đồng hồ báo động"
+
+#~ msgid "Terminated"
+#~ msgstr "Bị chấm dứt"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Điều kiện V/R khẩn"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "Bị ngừng (ký hiệu)"
+
+#~ msgid "Stopped"
+#~ msgstr "Bị ngừng"
+
+#~ msgid "Continued"
+#~ msgstr "Đã tiếp tục"
+
+#~ msgid "Child exited"
+#~ msgstr "Tiến trình con đã thoát"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Bị ngừng (đầu vào TTY)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Bị ngừng (đầu ra TTY)"
+
+#~ msgid "I/O possible"
+#~ msgstr "Có thể V/R"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "Vượt quá thời hạn CPU"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "Vượt quá giới hạn kích cỡ tập tin"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "Hàm đếm thời gian ảo đã hết hạn"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "Hàm đếm thời gian đo hiệu năng sử dụng đã hết hạn"
+
+#~ msgid "Window changed"
+#~ msgstr "Cửa sổ bị thay đổi"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "Tín hiệu do người dùng xác định 1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Tín hiệu do người dùng xác định 2"
+
+#~ msgid "EMT trap"
+#~ msgstr "Bẫy EMT"
+
+#~ msgid "Bad system call"
+#~ msgstr "Sai gọi hệ thống"
+
+#~ msgid "Stack fault"
+#~ msgstr "Lỗi đống"
+
+#~ msgid "Information request"
+#~ msgstr "Yêu cầu thông tin"
+
+#~ msgid "Power failure"
+#~ msgstr "Bị cúp điện đột ngột"
+
+#~ msgid "Resource lost"
+#~ msgstr "Tài nguyên bị mất"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "lỗi ghi vào một đường ống hay ổ cắm bị đóng"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Tín hiệu thời gian thật %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Không rõ tín hiệu %d"
 
 #~ msgid "iconv function not usable"
 #~ msgstr "hàm iconv vô ích"
@@ -462,20 +600,11 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ msgid "unable to display error message"
 #~ msgstr "không thể hiển thị thông điệp lỗi"
 
-#~ msgid "preserving permissions for %s"
-#~ msgstr "đang bảo tồn quyền hạn về %s"
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Gói đóng bởi %s (%s)\n"
 
-#~ msgid "string comparison failed"
-#~ msgstr "lỗi so sánh chuỗi"
-
-#~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "Hãy lập « LC_ALL='C' » để chỉnh sửa vấn đề đó."
-
-#~ msgid "The strings compared were %s and %s."
-#~ msgstr "Hai chuỗi được so sánh là %s và %s."
-
-#~ msgid "cannot perform formatted output"
-#~ msgstr "không thể thực hiện kết xuất có định dạng"
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Gói đóng bởi %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "©"
@@ -561,18 +690,63 @@ msgstr "hết bộ nhớ hoàn toàn"
 
 #~ msgid ""
 #~ "\n"
-#~ "Report bugs to <%s>.\n"
+#~ "Report bugs to: %s\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Hãy thông báo lỗi cho <%s>.\n"
+#~ "Hãy thông báo lỗi nào cho : %s\n"
 
-#~ msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
-#~ msgstr "Trang chủ %s: <http://www.gnu.org/software/%s/>.\n"
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "Hãy thông báo lỗi %s nào cho : %s\n"
 
-#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "Trang chủ %s: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "Trang chủ %s: <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 #~ msgstr ""
 #~ "Trợ giúp chung về cách sử dụng phần mềm GNU: <http://www.gnu.org/gethelp/"
-#~ ">.\n"
+#~ ">\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle bị lỗi"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "không thể phục hồi bộ mô tả tập tin %d: « dup2 » bị lỗi"
+
+#~ msgid "%s subprocess"
+#~ msgstr "Tiến trình con %s"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "Tiến trình con %s đã nhận tín hiệu nghiêm trọng %d"
+
+#~ msgid "stdin"
+#~ msgstr "đầu vào tiêu chuẩn"
+
+#~ msgid "stdout"
+#~ msgstr "đầu ra tiêu chuẩn"
+
+#~ msgid "stderr"
+#~ msgstr "đầu lỗi tiêu chuẩn"
+
+#~ msgid "unknown stream"
+#~ msgstr "không nhận ra luồng"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "lỗi mở lại %s với chế độ %s"
+
+#~ msgid "string comparison failed"
+#~ msgstr "lỗi so sánh chuỗi"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Hãy lập « LC_ALL='C' » để chỉnh sửa vấn đề đó."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Hai chuỗi được so sánh là %s và %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "không thể thực hiện kết xuất có định dạng"
 
 #~ msgid "invalid %s%s argument `%s'"
 #~ msgstr "đối số %s%s không hợp lệ « %s »"
@@ -582,21 +756,3 @@ msgstr "hết bộ nhớ hoàn toàn"
 
 #~ msgid "%s%s argument `%s' too large"
 #~ msgstr "Đối số %s%s « %s » quá lớn"
-
-#~ msgid "setting permissions for %s"
-#~ msgstr "đang đặt quyền hạn về %s"
-
-#~ msgid "Real-time signal %d"
-#~ msgstr "Tín hiệu thời gian thật %d"
-
-#~ msgid "Unknown signal %d"
-#~ msgstr "Không rõ tín hiệu %d"
-
-#~ msgid "%s subprocess"
-#~ msgstr "Tiến trình con %s"
-
-#~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "Tiến trình con %s đã nhận tín hiệu nghiêm trọng %d"
-
-#~ msgid "error writing to a closed pipe or socket"
-#~ msgstr "lỗi ghi vào một đường ống hay ổ cắm bị đóng"

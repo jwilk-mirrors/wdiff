@@ -3,7 +3,7 @@
 ## notice and this notice are preserved.  This file is offered as-is,
 ## without any warranty.
 
-AC_INIT([GNU wdiff], [0.5.95], [wdiff-bugs@gnu.org])
+AC_INIT([GNU wdiff], [0.6.0], [wdiff-bugs@gnu.org])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE
 
@@ -48,23 +48,46 @@ AC_ARG_ENABLE([experimental],
 set dummy $EXPERIMENTAL; shift
 EXPERIMENTAL_PROGRAMS=""
 EXPERIMENTAL_MANS=""
+EXPERIMENTAL_TEXI="@clear EXPERIMENTAL"
 for experimental_i
 do
 AS_CASE([$experimental_i],
   [mdiff|unify|wdiff2],
   [EXPERIMENTAL_PROGRAMS="$EXPERIMENTAL_PROGRAMS $experimental_i\$(EXEEXT)"
-EXPERIMENTAL_MANS="$EXPERIMENTAL_MANS $experimental_i.1"],
+EXPERIMENTAL_MANS="$EXPERIMENTAL_MANS $experimental_i.1"
+EXPERIMENTAL_TEXI="@set EXPERIMENTAL"],
   [AC_MSG_ERROR([unknown experimental $experimental_i])])
 done
 AC_MSG_NOTICE([Enabled experimental applications: $EXPERIMENTAL])
 AC_SUBST([EXPERIMENTAL])
 AC_SUBST([EXPERIMENTAL_PROGRAMS])
 AC_SUBST([EXPERIMENTAL_MANS])
+AC_SUBST([EXPERIMENTAL_TEXI])
 # Done handling experimental applications
+
+# termcap/curses handling
+AC_ARG_WITH([termcap],
+ AC_HELP_STRING([--with-termcap@<:@=LIB@:>@],
+  [use termcap library LIB, e.g. ncursesw]),
+ [], [with_termcap=auto])
+AS_IF([test "x$with_termcap" != xno], [
+ AC_CHECK_HEADERS([termcap.h termlib.h curses.h ncurses.h term.h])
+ AS_IF([test "x$with_termcap" == xauto], [
+  AC_SEARCH_LIBS(tputs, [termcap termlib ncursesw ncurses],
+   [], [with_termcap=no])
+ ], [
+  LIBS="-l$with_termcap $LIBS"
+ ])
+])
+AS_IF([test "x$with_termcap" != xno], [
+ AC_DEFINE([HAVE_TPUTS], [1], [Define to 1 if the tputs function is available])
+])
+# Done with termcap/curses
 
 AC_CONFIG_FILES([
  Makefile
  doc/Makefile
+ doc/flags.texi
  lib/Makefile
  lib/po/Makefile.in
  man/Makefile

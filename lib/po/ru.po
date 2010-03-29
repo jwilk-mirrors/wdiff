@@ -1,4 +1,4 @@
-# translation of gnulib-1.0.0.1991.dbebf.ru.po to Russian
+# translation of gnulib-2.0.0.3462.e9796.ru.po to Russian
 # Copyright (C) 2005, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
 #
@@ -6,10 +6,10 @@
 # Yuri Kozlov <yuray@komyakino.ru>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 1.0.0.1991.dbebf\n"
+"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 09:19+0100\n"
-"PO-Revision-Date: 2010-01-08 17:36+0300\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
+"PO-Revision-Date: 2010-02-23 16:59+0300\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
 "MIME-Version: 1.0\n"
@@ -23,55 +23,55 @@ msgstr ""
 msgid "Unknown system error"
 msgstr "Неизвестная системная ошибка"
 
-#: lib/getopt.c:529 lib/getopt.c:545
-#, fuzzy, c-format
+#: lib/getopt.c:525 lib/getopt.c:541
+#, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: двусмысленный параметр %s\n"
 
-#: lib/getopt.c:578 lib/getopt.c:582
-#, fuzzy, c-format
+#: lib/getopt.c:574 lib/getopt.c:578
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: для параметра --%s не требуется аргумент\n"
+msgstr "%s: для параметра --%s аргумент не разрешён\n"
 
-#: lib/getopt.c:591 lib/getopt.c:596
-#, fuzzy, c-format
+#: lib/getopt.c:587 lib/getopt.c:592
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: для параметра %c%s не требуется аргументов\n"
+msgstr "%s: для параметра %c%s аргумент не разрешён\n"
 
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#, c-format
 msgid "%s: option '%s' requires an argument\n"
 msgstr "%s: для параметра %s требуется аргумент\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
-#, fuzzy, c-format
+#: lib/getopt.c:692 lib/getopt.c:695
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: нераспознанный параметр --%s\n"
 
-#: lib/getopt.c:707 lib/getopt.c:710
-#, fuzzy, c-format
+#: lib/getopt.c:703 lib/getopt.c:706
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: нераспознанный параметр %c%s\n"
 
-#: lib/getopt.c:759 lib/getopt.c:762
-#, fuzzy, c-format
+#: lib/getopt.c:755 lib/getopt.c:758
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: неправильный параметр: %c\n"
+msgstr "%s: неправильный параметр -- %c\n"
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, fuzzy, c-format
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: для параметра требуется аргумент: %c\n"
+msgstr "%s: для параметра требуется аргумент -- %c\n"
 
-#: lib/getopt.c:882 lib/getopt.c:898
-#, fuzzy, c-format
+#: lib/getopt.c:878 lib/getopt.c:894
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: двусмысленный параметр -W %s\n"
 
-#: lib/getopt.c:922 lib/getopt.c:940
-#, fuzzy, c-format
+#: lib/getopt.c:918 lib/getopt.c:936
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: для параметра -W %s не требуется аргумент\n"
+msgstr "%s: для параметра -W %s аргумент не разрешён\n"
 
 #: lib/regcomp.c:132
 msgid "Success"
@@ -251,6 +251,9 @@ msgstr "закончилась память"
 #~ msgid "write error"
 #~ msgstr "ошибка записи"
 
+#~ msgid "preserving permissions for %s"
+#~ msgstr "сохраняются права доступа для %s"
+
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "ошибка при открытии %s для чтения"
 
@@ -374,12 +377,6 @@ msgstr "закончилась память"
 #~ msgid "Unknown error"
 #~ msgstr "Неизвестная ошибка"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: недопустимый параметр: %c\n"
-
-#~ msgid "%s subprocess I/O error"
-#~ msgstr "ошибка вв/вывода подпроцесса %s"
-
 #~ msgid "invalid source_version argument to compile_java_class"
 #~ msgstr "неверный аргумент source_version для compile_java_class"
 
@@ -401,14 +398,8 @@ msgstr "закончилась память"
 #~ "Не найдена виртуальная машина Java, попробуйте установить gcj или задать "
 #~ "$JAVA"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "не удалось создать канал"
-
-#~ msgid "unable to record current working directory"
-#~ msgstr "не удалось запомнить текущий рабочий каталог"
-
-#~ msgid "failed to return to initial working directory"
-#~ msgstr "не удалось вернуться в первоначальный рабочий каталог"
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "ошибка вв/вывода подпроцесса %s"
 
 #~ msgid "cannot change permissions of %s"
 #~ msgstr "невозможно изменить права доступа %s"
@@ -416,8 +407,41 @@ msgstr "закончилась память"
 #~ msgid "cannot create directory %s"
 #~ msgstr "невозможно создать каталог %s"
 
+#~ msgid "unable to record current working directory"
+#~ msgstr "не удалось запомнить текущий рабочий каталог"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "не удалось вернуться в первоначальный рабочий каталог"
+
 #~ msgid "Failed to open /dev/zero for read"
 #~ msgstr "Не удалось открыть /dev/zero на чтение"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "не удалось создать нить для чтения"
+
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr "не удалось настроить неблокированный ввод-вывод в подпроцессе %s"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "не удалось связаться с подпроцессом %s"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "не удалось записать в подпроцесс %s"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "не удалось прочитать из подпроцесса %s"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "подпроцесс %s завершился с кодом выхода %d"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "не удалось создать нити"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "подпроцесс %s завершился с кодом выхода %d"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "не удалось создать канал"
 
 #~ msgid "`"
 #~ msgstr "«"
@@ -430,6 +454,120 @@ msgstr "закончилась память"
 
 #~ msgid "^[nN]"
 #~ msgstr "^[НнNn]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "задание прав доступа для %s"
+
+#~ msgid "Hangup"
+#~ msgstr "Обрыв терминальной линии"
+
+#~ msgid "Interrupt"
+#~ msgstr "Прерывание"
+
+#~ msgid "Quit"
+#~ msgstr "Аварийное прерывание"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Недопустимая инструкция"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Прерывание на контрольной точке"
+
+#~ msgid "Aborted"
+#~ msgstr "Прервано"
+
+#~ msgid "Floating point exception"
+#~ msgstr "Ошибка операции с плавающей точкой"
+
+#~ msgid "Killed"
+#~ msgstr "Уничтожение"
+
+#~ msgid "Bus error"
+#~ msgstr "Ошибка шины"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Нарушение сегментирования"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Обрыв канала"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Сигнал по таймеру"
+
+#~ msgid "Terminated"
+#~ msgstr "Завершение"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Срочная операция ввода-вывода"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "Останов (сигнал)"
+
+#~ msgid "Stopped"
+#~ msgstr "Останов"
+
+#~ msgid "Continued"
+#~ msgstr "Возобновление"
+
+#~ msgid "Child exited"
+#~ msgstr "Потомок завершил работу"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Останов (ввод с терминала)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Останов (вывод с терминала)"
+
+#~ msgid "I/O possible"
+#~ msgstr "Возможен ввод-вывод"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "Превышен предел по процессорному времени"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "Превышен предел размера файла"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "Виртуальное время истекло"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "Время профилирования истекло"
+
+#~ msgid "Window changed"
+#~ msgstr "Окно изменено"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "Определяемый пользователем сигнал 1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Определяемый пользователем сигнал 2"
+
+#~ msgid "EMT trap"
+#~ msgstr "Ловушка EMT"
+
+#~ msgid "Bad system call"
+#~ msgstr "Неправильный системный вызов"
+
+#~ msgid "Stack fault"
+#~ msgstr "Ошибка работы со стеком"
+
+#~ msgid "Information request"
+#~ msgstr "Запрос информации"
+
+#~ msgid "Power failure"
+#~ msgstr "Отказ питания"
+
+#~ msgid "Resource lost"
+#~ msgstr "Ресурс потерян"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "ошибка записи в закрытый канал или сокет"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Сигнал реального времени %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Неизвестный сигнал %d"
 
 #~ msgid "iconv function not usable"
 #~ msgstr "функция iconv неприменима"
@@ -458,20 +596,11 @@ msgstr "закончилась память"
 #~ msgid "unable to display error message"
 #~ msgstr "невозможно показать сообщение об ошибке"
 
-#~ msgid "preserving permissions for %s"
-#~ msgstr "сохраняются права доступа для %s"
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Упакован %s (%s)\n"
 
-#~ msgid "string comparison failed"
-#~ msgstr "сравнение строк завершилось неудачно"
-
-#~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "Чтобы обойти эту проблему, установите LC_ALL='C'."
-
-#~ msgid "The strings compared were %s and %s."
-#~ msgstr "Сравнивались строки %s %s."
-
-#~ msgid "cannot perform formatted output"
-#~ msgstr "невозможно выполнить форматированный вывод"
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Упакован %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "©"
@@ -557,16 +686,61 @@ msgstr "закончилась память"
 
 #~ msgid ""
 #~ "\n"
-#~ "Report bugs to <%s>.\n"
+#~ "Report bugs to: %s\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Об ошибках сообщайте по адресу <%s>.\n"
+#~ "Об ошибках сообщайте по адресу: %s\n"
 
-#~ msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
-#~ msgstr "Домашняя страница %s: <http://www.gnu.org/software/%s/>.\n"
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "Об ошибках в %s сообщайте по адресу: %s\n"
 
-#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
-#~ msgstr "Справка по работе с ПО GNU: <http://www.gnu.org/gethelp/>.\n"
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "Домашняя страница %s: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "Домашняя страница %s: <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+#~ msgstr "Справка по работе с ПО GNU: <http://www.gnu.org/gethelp/>\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle завершилась неудачно"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "не удалось восстановить fd %d: dup2 завершилась неудачно"
+
+#~ msgid "%s subprocess"
+#~ msgstr "подпроцесс %s"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "подпроцесс %s получил сигнал завершения %d"
+
+#~ msgid "stdin"
+#~ msgstr "stdin"
+
+#~ msgid "stdout"
+#~ msgstr "stdout"
+
+#~ msgid "stderr"
+#~ msgstr "stderr"
+
+#~ msgid "unknown stream"
+#~ msgstr "неизвестный поток"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "не удалось повторно открыть %s в режиме %s"
+
+#~ msgid "string comparison failed"
+#~ msgstr "сравнение строк завершилось неудачно"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Чтобы обойти эту проблему, установите LC_ALL='C'."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Сравнивались строки %s %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "невозможно выполнить форматированный вывод"
 
 #~ msgid "invalid %s%s argument `%s'"
 #~ msgstr "неверный аргумент %s%s для %s"
@@ -576,21 +750,3 @@ msgstr "закончилась память"
 
 #~ msgid "%s%s argument `%s' too large"
 #~ msgstr "значение %s%s аргумента %s слишком велико"
-
-#~ msgid "setting permissions for %s"
-#~ msgstr "задание прав доступа для %s"
-
-#~ msgid "Real-time signal %d"
-#~ msgstr "Сигнал реального времени %d"
-
-#~ msgid "Unknown signal %d"
-#~ msgstr "Неизвестный сигнал %d"
-
-#~ msgid "%s subprocess"
-#~ msgstr "подпроцесс %s"
-
-#~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "подпроцесс %s получил сигнал завершения %d"
-
-#~ msgid "error writing to a closed pipe or socket"
-#~ msgstr "ошибка записи в закрытый канал или сокет"

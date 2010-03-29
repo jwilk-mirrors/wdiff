@@ -7,7 +7,7 @@ without any warranty.
 `wdiff' is a front-end to GNU `diff'.  It compares two files, finding
 which words have been deleted or added to the first in order to create
 the second.  It has many output formats and interacts well with
-terminals and pagers (notably with `less').  `wdiff' is particularily
+terminals and pagers (notably with `less').  `wdiff' is particularly
 useful when two texts differ only by a few words and paragraphs have
 been refilled.
 
@@ -43,6 +43,17 @@ Besides those configure options documented in files `INSTALL' and
      to build some or all of the experimental applications that are
      part of a wdiff source code release. See the following section
      for details.
+
+ - `--with-termcap[=LIB]'
+
+     to configure termcap for visual formatting of differences.
+     Termcap support enables the -t command line switch, which will
+     use underline and standout mode to mark up insertions and
+     deletions. By default, termcap support is automatically detected,
+     so --with-termcap without arguments is without effect. use
+     --without-termcap to disable termcap, or --with-termcap=foo in
+     case libfoo provides termcap functionality (most notably tputs)
+     on your system.
 
 .--------------------.
 | Experimental tools |

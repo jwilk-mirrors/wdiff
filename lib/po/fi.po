@@ -1,16 +1,16 @@
 # Finnish messages for gnulib.
-# Copyright © 2002, 2003, 2004, 2009 Free Software Foundation, Inc.
+# Copyright © 2002, 2003, 2004, 2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
 # Lauri Nurmi <lanurmi@iki.fi>, 2003, 2004.
 # Matti Koskimies <matti@apulanta.fi>, 2002.
-# Jorma Karvonen <karvonen.jorma@gmail.com>, 2009.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2009, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 1.0.0.1991.dbebf\n"
+"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 09:19+0100\n"
-"PO-Revision-Date: 2009-10-22 22:33+0200\n"
+"POT-Creation-Date: 2010-03-29 09:52+0200\n"
+"PO-Revision-Date: 2010-02-23 16:51+0200\n"
 "Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -22,55 +22,55 @@ msgstr ""
 msgid "Unknown system error"
 msgstr "Tuntematon järjestelmävirhe"
 
-#: lib/getopt.c:529 lib/getopt.c:545
-#, fuzzy, c-format
+#: lib/getopt.c:525 lib/getopt.c:541
+#, c-format
 msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: valitsin ”%s” ei ole yksiselitteinen\n"
+msgstr "%s: valitsin ’%s’ ei ole yksiselitteinen\n"
 
-#: lib/getopt.c:578 lib/getopt.c:582
-#, fuzzy, c-format
+#: lib/getopt.c:574 lib/getopt.c:578
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: valitsin ”--%s” ei salli argumenttia\n"
+msgstr "%s: valitsin ’--%s’ ei salli argumenttia\n"
 
-#: lib/getopt.c:591 lib/getopt.c:596
-#, fuzzy, c-format
+#: lib/getopt.c:587 lib/getopt.c:592
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: valitsin ”%c%s” ei salli argumenttia\n"
+msgstr "%s: valitsin ’%c%s’ ei salli argumenttia\n"
 
-#: lib/getopt.c:639 lib/getopt.c:658 lib/getopt.c:961 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#, c-format
 msgid "%s: option '%s' requires an argument\n"
-msgstr "%s: valitsin ”%s” vaatii argumentin\n"
+msgstr "%s: valitsin ’%s’ vaatii argumentin\n"
 
-#: lib/getopt.c:696 lib/getopt.c:699
-#, fuzzy, c-format
+#: lib/getopt.c:692 lib/getopt.c:695
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
-msgstr "%s: tunnistamaton valitsin ”--%s”\n"
+msgstr "%s: tunnistamaton valitsin ’--%s’\n"
 
-#: lib/getopt.c:707 lib/getopt.c:710
-#, fuzzy, c-format
+#: lib/getopt.c:703 lib/getopt.c:706
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
-msgstr "%s: tunnistamaton valitsin ”%c%s”\n"
+msgstr "%s: tunnistamaton valitsin ’%c%s’\n"
 
-#: lib/getopt.c:759 lib/getopt.c:762
-#, fuzzy, c-format
+#: lib/getopt.c:755 lib/getopt.c:758
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: epäkelpo valitsin -- %c\n"
+msgstr "%s: epäkelpo valitsin -- ’%c’\n"
 
-#: lib/getopt.c:812 lib/getopt.c:829 lib/getopt.c:1032 lib/getopt.c:1050
-#, fuzzy, c-format
+#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: valitsin vaatii argumentin -- %c\n"
+msgstr "%s: valitsin vaatii argumentin -- ’%c’\n"
 
-#: lib/getopt.c:882 lib/getopt.c:898
-#, fuzzy, c-format
+#: lib/getopt.c:878 lib/getopt.c:894
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: valitsin ”-W %s” ei ole yksiselitteinen\n"
+msgstr "%s: valitsin ’-W %s’ ei ole yksiselitteinen\n"
 
-#: lib/getopt.c:922 lib/getopt.c:940
-#, fuzzy, c-format
+#: lib/getopt.c:918 lib/getopt.c:936
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: valitsin ”-W %s” ei salli argumenttia\n"
+msgstr "%s: valitsin ’-W %s’ ei salli argumenttia\n"
 
 #: lib/regcomp.c:132
 msgid "Success"
@@ -250,6 +250,9 @@ msgstr "muisti loppui"
 #~ msgid "write error"
 #~ msgstr "kirjoitusvirhe"
 
+#~ msgid "preserving permissions for %s"
+#~ msgstr "säilytetään oikeudet kohteelle %s"
+
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "virhe avattaessa tiedostoa ”%s” lukemista varten"
 
@@ -373,14 +376,6 @@ msgstr "muisti loppui"
 #~ msgid "Unknown error"
 #~ msgstr "Tuntematon virhe"
 
-# Pitäisikö näissä sijoittaa %c muualle kuin loppuun?
-# Ei kovin luonteva sanajärjestys englanniksikaan.
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: virheellinen valitsin -- %c\n"
-
-#~ msgid "%s subprocess I/O error"
-#~ msgstr "%s-aliprosessisiirräntävirhe"
-
 #~ msgid "invalid source_version argument to compile_java_class"
 #~ msgstr "virheellinen source_version-argumentti kohteelle compile_java_class"
 
@@ -403,14 +398,8 @@ msgstr "muisti loppui"
 #~ "Java-virtuaalikonetta ei löytynyt, yritä asentaa gij tai aseta $JAVA-"
 #~ "ympäristömuuttuja"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "ei voida luoda putkea"
-
-#~ msgid "unable to record current working directory"
-#~ msgstr "ei kyetä tallentaman nykyistä työhakemistoa"
-
-#~ msgid "failed to return to initial working directory"
-#~ msgstr "alkuperäiseen työhakemistoon palaaminen epäonnistui"
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "%s-aliprosessisiirräntävirhe"
 
 #~ msgid "cannot change permissions of %s"
 #~ msgstr "kohteen %s oikeuksien muuttaminen ei onnistu"
@@ -418,8 +407,42 @@ msgstr "muisti loppui"
 #~ msgid "cannot create directory %s"
 #~ msgstr "hakemiston %s luominen ei onnistu"
 
+#~ msgid "unable to record current working directory"
+#~ msgstr "ei kyetä tallentaman nykyistä työhakemistoa"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "alkuperäiseen työhakemistoon palaaminen epäonnistui"
+
 #~ msgid "Failed to open /dev/zero for read"
 #~ msgstr "Kohteen /dev/zero avaaminen lukemista varten epäonnistui"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "lukemissäikeen luominen epäonnistui"
+
+#  nonblocking I/O on synonyymi termille asynchronous I/O
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr "ei voi asettaa tahdistamatonta siirräntää aliprosessille %s"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "viestintä aliprosessin %s kanssa epäonnistui"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "kirjoittaminen aliprosessiin %s epäonnistui"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "lukeminen aliprosessista %s epäonnistui"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "aliprosessi %s päättyi poistumiskoodilla %d"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "säikeiden luominen epäonnistui"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "%s-aliprosessi päättyi poistumiskoodilla %d"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "ei voida luoda putkea"
 
 #~ msgid "`"
 #~ msgstr "”"
@@ -433,6 +456,120 @@ msgstr "muisti loppui"
 
 #~ msgid "^[nN]"
 #~ msgstr "^[eEnN]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "asetetaan oikeudet kohteelle %s"
+
+#~ msgid "Hangup"
+#~ msgstr "Yhteyden katkaisu"
+
+#~ msgid "Interrupt"
+#~ msgstr "Keskeytys"
+
+#~ msgid "Quit"
+#~ msgstr "Poistu"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Virheellinen käsky"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Jäljitys/keskeytyspistekeskeytys"
+
+#~ msgid "Aborted"
+#~ msgstr "Keskeytetty"
+
+#~ msgid "Floating point exception"
+#~ msgstr "Liukulukupoikkeus"
+
+#~ msgid "Killed"
+#~ msgstr "Sammutettu"
+
+#~ msgid "Bus error"
+#~ msgstr "Väylävirhe"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Osiinjakamisvirhe"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Rikkoutunut putki"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Hälytyskello"
+
+#~ msgid "Terminated"
+#~ msgstr "Päättynyt"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Kiireellinen siirräntätila"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "Pysäytetty (signaali)"
+
+#~ msgid "Stopped"
+#~ msgstr "Pysäytetty"
+
+#~ msgid "Continued"
+#~ msgstr "Jatkettu"
+
+#~ msgid "Child exited"
+#~ msgstr "Lapsiprosessi poistunut"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Pysäytetty (tty-syöte)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Pysäytetty (tty-tuloste)"
+
+#~ msgid "I/O possible"
+#~ msgstr "Siirräntä mahdollinen"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "Suoritinaikaraja ylitetty"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "Tiedostonkokoraja ylitetty"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "Virtuaaliajastin päättynyt"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "Profilointiajastin päättynyt"
+
+#~ msgid "Window changed"
+#~ msgstr "Ikkuna vaihtunut"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "Käyttäjän määrittelemä signaali 1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Käyttäjän määrittelemä signaali 2"
+
+#~ msgid "EMT trap"
+#~ msgstr "EMT-keskeytys"
+
+#~ msgid "Bad system call"
+#~ msgstr "Väärä järjestelmäkutsu"
+
+#~ msgid "Stack fault"
+#~ msgstr "Pinovirhe"
+
+#~ msgid "Information request"
+#~ msgstr "Tietopyyntö"
+
+#~ msgid "Power failure"
+#~ msgstr "Teholähdevika"
+
+#~ msgid "Resource lost"
+#~ msgstr "Resurssi kadonnut"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "virhe kirjoitettaessa suljettuun putkeen tai pistokkeeseen"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Tosiaikasignaali %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Tuntematon signaali %d"
 
 #~ msgid "iconv function not usable"
 #~ msgstr "iconv-funktio ei ole käyttökelpoinen"
@@ -461,20 +598,11 @@ msgstr "muisti loppui"
 #~ msgid "unable to display error message"
 #~ msgstr "ei kyetä näyttämään virheilmoitusta"
 
-#~ msgid "preserving permissions for %s"
-#~ msgstr "säilytetään oikeudet kohteelle %s"
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Pakkaaja: %s (%s)\n"
 
-#~ msgid "string comparison failed"
-#~ msgstr "merkkijonovertailu epäonnistui"
-
-#~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "Aseta LC_ALL='C' ongelman kiertämiseksi."
-
-#~ msgid "The strings compared were %s and %s."
-#~ msgstr "Vertaillut merkkijonot olivat %s ja %s."
-
-#~ msgid "cannot perform formatted output"
-#~ msgstr "muotoiltua tulostetta ei voitu suorittaa"
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Pakkaaja: %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "©"
@@ -562,18 +690,66 @@ msgstr "muisti loppui"
 
 #~ msgid ""
 #~ "\n"
-#~ "Report bugs to <%s>.\n"
+#~ "Report bugs to: %s\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Lähetä raportit ohjelmistovioista (englanniksi) osoitteeseen <%s>.\n"
+#~ "Lähetä ilmoitukset ohjelmistovioista (englanniksi) osoitteeseen %s\n"
+#~ "Lähetä ilmoitukset käännösvirheistä osoitteeseen <translation-team-"
+#~ "fi@lists.sourceforge.net>\n"
 
-#~ msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
-#~ msgstr "%s kotisivu:  <http://www.gnu.org/software/%s/>.\n"
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr ""
+#~ "Lähetä %s ilmoitukset ohjelmistovioista (englanniksi) osoitteeseen %s\n"
 
-#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "%s kotisivu: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "%s kotisivu:  <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 #~ msgstr ""
 #~ "Yleinen opaste GNU-ohjelmiston käyttämiseen: <http://www.gnu.org/gethelp/"
-#~ ">.\n"
+#~ ">\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle epäonnistui"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "ei voi palauttaa fd %d: dup2 epäonnistui"
+
+#~ msgid "%s subprocess"
+#~ msgstr "%s-aliprosessi"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "%s-aliprosessi sai sammuttavan signaalin %d"
+
+#~ msgid "stdin"
+#~ msgstr "vakiosyöte"
+
+#~ msgid "stdout"
+#~ msgstr "vakiotuloste"
+
+#~ msgid "stderr"
+#~ msgstr "vakiovirhe"
+
+#~ msgid "unknown stream"
+#~ msgstr "tuntematon merkkivirta"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "kohteen %s avaaminen uudelleen tilassa %s epäonnistui"
+
+#~ msgid "string comparison failed"
+#~ msgstr "merkkijonovertailu epäonnistui"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Aseta LC_ALL='C' ongelman kiertämiseksi."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Vertaillut merkkijonot olivat %s ja %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "muotoiltua tulostetta ei voitu suorittaa"
 
 #~ msgid "invalid %s%s argument `%s'"
 #~ msgstr "virheellinen %s%s-argumentti ”%s”"
@@ -583,27 +759,3 @@ msgstr "muisti loppui"
 
 #~ msgid "%s%s argument `%s' too large"
 #~ msgstr "%s%s argumentti ”%s” on liian iso"
-
-#~ msgid "setting permissions for %s"
-#~ msgstr "asetetaan oikeudet kohteelle %s"
-
-#~ msgid "Real-time signal %d"
-#~ msgstr "Tosiaikasignaali %d"
-
-#~ msgid "Unknown signal %d"
-#~ msgstr "Tuntematon signaali %d"
-
-#~ msgid "%s subprocess"
-#~ msgstr "%s-aliprosessi"
-
-#~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "%s-aliprosessi sai kuolettavan signaalin %d"
-
-#~ msgid "error writing to a closed pipe or socket"
-#~ msgstr "virhe kirjoitettaesa suljettuun putkeen tai pistokkeeseen"
-
-#~ msgid "block size"
-#~ msgstr "lohkokoko"
-
-#~ msgid "%s exists but is not a directory"
-#~ msgstr "%s on olemassa, mutta ei ole hakemisto"
