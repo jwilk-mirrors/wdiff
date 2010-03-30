@@ -48,16 +48,6 @@ char *getenv ();
 extern int errno;
 #endif
 
-/* Small library functions.  */
-
-#ifndef PARAMS
-# if PROTOTYPES
-#  define PARAMS(Args) Args
-# else
-#  define PARAMS(Args) ()
-# endif
-#endif
-
 #include "error.h"
 #include "xalloc.h"
 
