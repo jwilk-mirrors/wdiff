@@ -53,10 +53,6 @@
 # endif
 #endif
 
-#ifndef strstr
-char *strstr ();
-#endif
-
 #if HAVE_TPUTS
 # if HAVE_TERMCAP_H
 #  include <termcap.h>
