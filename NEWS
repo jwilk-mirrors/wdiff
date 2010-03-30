@@ -1,6 +1,19 @@
 GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007, 2010 Free Software Foundation, Inc.
 
+* Version 0.6.0 - March 2010, by Martin von Gagern
+
+  First official release in a long time. Everything since 0.5 was inofficial.
+  * `wdiff -d' to read input from single unified diff, perhaps stdin.
+  * Updated texinfo documentation taking experimental switch into account.
+  * Experimental programs (mdiff & friends) and a configure switch
+    --enable-experimental to control them.
+  * Recent imports from gnulib, use of recent autotools.
+  * Improved autodetection of termcap library like ncurses.
+  * Reformatted translations, still a number of fuzzy translations.
+  * Changed from CVS to bzr for source code version control.
+  * Various bug fixes. See ChangeLog for a more exhaustive list.
+  * Known bugs: this NEWS file here was outdated in the release tarball.
 
 * Version 0.5.4 - June 2007, by Denver Gingerich
 
