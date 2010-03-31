@@ -1,6 +1,10 @@
 GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007, 2010 Free Software Foundation, Inc.
 
+* Version 0.6.1 - unreleased
+
+  * Fix missing newline in info dir entry list.
+
 * Version 0.6.0 - March 2010, by Martin von Gagern
 
   First official release in a long time. Everything since 0.5 was inofficial.
