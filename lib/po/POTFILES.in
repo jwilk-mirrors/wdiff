@@ -13,6 +13,7 @@
 lib/alloca.c
 lib/alloca.in.h
 lib/btowc.c
+lib/canonicalize-lgpl.c
 lib/config.charset
 lib/errno.in.h
 lib/error.c
@@ -31,10 +32,16 @@ lib/langinfo.in.h
 lib/localcharset.c
 lib/localcharset.h
 lib/locale.in.h
+lib/lstat.c
 lib/malloc.c
+lib/malloca.c
+lib/malloca.h
+lib/malloca.valgrind
 lib/mbrtowc.c
 lib/mbsinit.c
 lib/nl_langinfo.c
+lib/pathmax.h
+lib/readlink.c
 lib/realloc.c
 lib/ref-add.sin
 lib/ref-del.sin
@@ -44,6 +51,7 @@ lib/regex.h
 lib/regex_internal.c
 lib/regex_internal.h
 lib/regexec.c
+lib/stat.c
 lib/stdbool.in.h
 lib/stddef.in.h
 lib/stdint.in.h

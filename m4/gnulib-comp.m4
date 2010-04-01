@@ -30,6 +30,7 @@ AC_DEFUN([gl_EARLY],
   # Code from module arg-nonnull:
   # Code from module btowc:
   # Code from module c++defs:
+  # Code from module canonicalize-lgpl:
   # Code from module configmake:
   # Code from module errno:
   # Code from module error:
@@ -52,16 +53,21 @@ AC_DEFUN([gl_EARLY],
   # Code from module langinfo:
   # Code from module localcharset:
   # Code from module locale:
+  # Code from module lstat:
   # Code from module maintainer-makefile:
   # Code from module malloc:
   # Code from module malloc-posix:
+  # Code from module malloca:
   # Code from module mbrtowc:
   # Code from module mbsinit:
   # Code from module multiarch:
   # Code from module nl_langinfo:
+  # Code from module pathmax:
+  # Code from module readlink:
   # Code from module realloc-posix:
   # Code from module regex:
   # Code from module ssize_t:
+  # Code from module stat:
   # Code from module stdbool:
   # Code from module stddef:
   # Code from module stdint:
@@ -108,6 +114,11 @@ AC_DEFUN([gl_INIT],
   gl_FUNC_BTOWC
   gl_WCHAR_MODULE_INDICATOR([btowc])
   # Code from module c++defs:
+  # Code from module canonicalize-lgpl:
+  gl_CANONICALIZE_LGPL
+  gl_MODULE_INDICATOR([canonicalize-lgpl])
+  gl_STDLIB_MODULE_INDICATOR([canonicalize_file_name])
+  gl_STDLIB_MODULE_INDICATOR([realpath])
   # Code from module configmake:
   # Code from module errno:
   gl_HEADER_ERRNO_H
@@ -161,6 +172,9 @@ AC_DEFUN([gl_INIT],
   AC_SUBST([LOCALCHARSET_TESTS_ENVIRONMENT])
   # Code from module locale:
   gl_LOCALE_H
+  # Code from module lstat:
+  gl_FUNC_LSTAT
+  gl_SYS_STAT_MODULE_INDICATOR([lstat])
   # Code from module maintainer-makefile:
   AC_CONFIG_COMMANDS_PRE([m4_ifdef([AH_HEADER],
     [AC_SUBST([CONFIG_INCLUDE], m4_defn([AH_HEADER]))])])
@@ -170,6 +184,8 @@ AC_DEFUN([gl_INIT],
   # Code from module malloc-posix:
   gl_FUNC_MALLOC_POSIX
   gl_STDLIB_MODULE_INDICATOR([malloc-posix])
+  # Code from module malloca:
+  gl_MALLOCA
   # Code from module mbrtowc:
   gl_FUNC_MBRTOWC
   gl_WCHAR_MODULE_INDICATOR([mbrtowc])
@@ -181,6 +197,11 @@ AC_DEFUN([gl_INIT],
   # Code from module nl_langinfo:
   gl_FUNC_NL_LANGINFO
   gl_LANGINFO_MODULE_INDICATOR([nl_langinfo])
+  # Code from module pathmax:
+  gl_PATHMAX
+  # Code from module readlink:
+  gl_FUNC_READLINK
+  gl_UNISTD_MODULE_INDICATOR([readlink])
   # Code from module realloc-posix:
   gl_FUNC_REALLOC_POSIX
   gl_STDLIB_MODULE_INDICATOR([realloc-posix])
@@ -188,6 +209,9 @@ AC_DEFUN([gl_INIT],
   gl_REGEX
   # Code from module ssize_t:
   gt_TYPE_SSIZE_T
+  # Code from module stat:
+  gl_FUNC_STAT
+  gl_SYS_STAT_MODULE_INDICATOR([stat])
   # Code from module stdbool:
   AM_STDBOOL_H
   # Code from module stddef:
@@ -379,6 +403,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/alloca.c
   lib/alloca.in.h
   lib/btowc.c
+  lib/canonicalize-lgpl.c
   lib/config.charset
   lib/errno.in.h
   lib/error.c
@@ -397,10 +422,16 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/localcharset.c
   lib/localcharset.h
   lib/locale.in.h
+  lib/lstat.c
   lib/malloc.c
+  lib/malloca.c
+  lib/malloca.h
+  lib/malloca.valgrind
   lib/mbrtowc.c
   lib/mbsinit.c
   lib/nl_langinfo.c
+  lib/pathmax.h
+  lib/readlink.c
   lib/realloc.c
   lib/ref-add.sin
   lib/ref-del.sin
@@ -410,6 +441,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/regex_internal.c
   lib/regex_internal.h
   lib/regexec.c
+  lib/stat.c
   lib/stdbool.in.h
   lib/stddef.in.h
   lib/stdint.in.h
@@ -433,7 +465,11 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/00gnulib.m4
   m4/alloca.m4
   m4/btowc.m4
+  m4/canonicalize.m4
   m4/codeset.m4
+  m4/dos.m4
+  m4/double-slash-root.m4
+  m4/eealloc.m4
   m4/errno_h.m4
   m4/error.m4
   m4/extensions.m4
@@ -467,7 +503,9 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/locale_h.m4
   m4/lock.m4
   m4/longlong.m4
+  m4/lstat.m4
   m4/malloc.m4
+  m4/malloca.m4
   m4/mbrtowc.m4
   m4/mbsinit.m4
   m4/mbstate_t.m4
@@ -475,13 +513,16 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/nl_langinfo.m4
   m4/nls.m4
   m4/onceonly.m4
+  m4/pathmax.m4
   m4/po.m4
   m4/printf-posix.m4
   m4/progtest.m4
+  m4/readlink.m4
   m4/realloc.m4
   m4/regex.m4
   m4/size_max.m4
   m4/ssize_t.m4
+  m4/stat.m4
   m4/stdbool.m4
   m4/stddef_h.m4
   m4/stdint.m4
