@@ -36,6 +36,15 @@ fi
 AM_GNU_GETTEXT_VERSION([0.17])
 AM_GNU_GETTEXT([external])
 
+AC_ARG_WITH([default-pager],
+ AC_HELP_STRING([--with-default-pager=PATH],
+  [Use PATH as the pager if the PAGER environment variable isn't set]),
+ [AS_CASE([$withval],
+  [yes], [AC_MSG_ERROR([--with-default-pager=PATH requires a PATH])],
+  [no],  [],
+  [AC_DEFINE_UNQUOTED([PAGER_PROGRAM], ["$withval"], [Default pager program])]
+)])
+
 # Handling of experimental applications
 AC_ARG_ENABLE([experimental],
  AC_HELP_STRING([--enable-experimental],

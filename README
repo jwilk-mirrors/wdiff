@@ -44,6 +44,14 @@ Besides those configure options documented in files `INSTALL' and
      part of a wdiff source code release. See the following section
      for details.
 
+ - `--with-default-pager=PATH'
+
+     to use PATH as the default pager for --auto-pager mode for users
+     that have not set the PAGER environment variable. The environment
+     variable takes precedence over this setting. If no pager is set,
+     either through this setting or the environment, then output will
+     go directly to standard output even in --auto-pager mode.
+
  - `--with-termcap[=LIB]'
 
      to configure termcap for visual formatting of differences.
