@@ -2,127 +2,127 @@
 # Copyright (C) 1994 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 # Ulrich Drepper <drepper@gnu.ai.mit.edu>, 1994.
-# Michael Piefel <piefel@informatik.hu-berlin.de>, 2001, 2002, 2003, 2008.
+# Michael Piefel <piefel@informatik.hu-berlin.de>, 2001, 2002, 2003, 2008, 2010.
 # Martin von Gagern <Martin.vGagern@gmx.net>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU wdiff 0.5.93\n"
+"Project-Id-Version: GNU wdiff 0.5.95\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-03-29 09:52+0200\n"
-"PO-Revision-Date: 2010-03-11 16:54+0100\n"
-"Last-Translator: Martin von Gagern <Martin.vGagern@gmx.net>\n"
+"POT-Creation-Date: 2010-02-02 17:12+0100\n"
+"PO-Revision-Date: 2010-03-29 11:18+0100\n"
+"Last-Translator: Michael Piefel <piefel@informatik.hu-berlin.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: src/mdiff.c:389
+#: src/mdiff.c:387
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (für reg. Ausdruck „%s“)"
 
-#: src/mdiff.c:907 src/wdiff.c:1490
+#: src/mdiff.c:905 src/wdiff.c:1488
 #, c-format
 msgid "only one file may be standard input"
 msgstr "es kann nur eine Datei aus der Standardeingabe kommen"
 
-#: src/mdiff.c:922 src/wdiff.c:704
+#: src/mdiff.c:920 src/wdiff.c:702
 #, c-format
 msgid "directories not supported"
 msgstr "Verzeichnisse werden nicht unterstützt"
 
-#: src/mdiff.c:1066
+#: src/mdiff.c:1064
 #, c-format
 msgid "Reading %s"
 msgstr "Lese %s"
 
-#: src/mdiff.c:1191
+#: src/mdiff.c:1189
 #, c-format
 msgid ", %d items\n"
 msgstr ", %d Elemente\n"
 
-#: src/mdiff.c:1269
+#: src/mdiff.c:1267
 #, c-format
 msgid "Read summary: %d files, %d items\n"
 msgstr "Zusammenfassung (Lesen): %d Dateien, %d Elemente\n"
 
-#: src/mdiff.c:1665
+#: src/mdiff.c:1663
 #, c-format
 msgid "Sorting"
 msgstr "Sortiere"
 
-#: src/mdiff.c:1682
+#: src/mdiff.c:1680
 #, c-format
 msgid ", clustering"
 msgstr ", zusammenfassen"
 
-#: src/mdiff.c:1850 src/mdiff.c:1913
+#: src/mdiff.c:1848 src/mdiff.c:1911
 #, c-format
 msgid ", done\n"
 msgstr ", fertig\n"
 
-#: src/mdiff.c:1900
+#: src/mdiff.c:1898
 #, c-format
 msgid "Sorting members"
 msgstr "Sortiere Elemente"
 
-#: src/mdiff.c:1932
+#: src/mdiff.c:1930
 #, c-format
 msgid "Work summary: %d clusters, %d members\n"
 msgstr "Zusammenfassung (Arbeit): %d Bereiche, %d Elemente\n"
 
-#: src/mdiff.c:2312
+#: src/mdiff.c:2310
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Zusammenfassung (Arbeit): %d Bereiche, %d Elemente, %d Überlappungen\n"
 
-#: src/mdiff.c:2367 src/wdiff.c:244
+#: src/mdiff.c:2365 src/wdiff.c:242
 #, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "wählen Sie mit der Umgebungsvariable TERM einen Terminaltyp aus"
 
-#: src/mdiff.c:2370 src/wdiff.c:247
+#: src/mdiff.c:2368 src/wdiff.c:245
 #, c-format
 msgid "could not access the termcap data base"
 msgstr "konnte auf die „termcap“-Datenbank nicht zugreifen"
 
-#: src/mdiff.c:2372 src/wdiff.c:249
+#: src/mdiff.c:2370 src/wdiff.c:247
 #, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "Terminaltyp „%s“ ist nicht definiert"
 
-#: src/mdiff.c:3751 src/mdiff.c:3763 src/wdiff.c:1189 src/wdiff.c:1201
+#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d Wörter"
 
-#: src/mdiff.c:3754 src/mdiff.c:3766 src/wdiff.c:1192 src/wdiff.c:1204
+#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1190 src/wdiff.c:1202
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% gleich"
 
-#: src/mdiff.c:3756 src/wdiff.c:1194
+#: src/mdiff.c:3754 src/wdiff.c:1192
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% gelöscht"
 
-#: src/mdiff.c:3758 src/mdiff.c:3770 src/wdiff.c:1196 src/wdiff.c:1208
+#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1194 src/wdiff.c:1206
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% verändert"
 
-#: src/mdiff.c:3768 src/wdiff.c:1206
+#: src/mdiff.c:3766 src/wdiff.c:1204
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% eingefügt"
 
-#: src/mdiff.c:3797 src/wdiff.c:1248 src/wdiff2.c:178
+#: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "„%s --help“ gibt weitere Informationen.\n"
 
-#: src/mdiff.c:3801
+#: src/mdiff.c:3799
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -130,12 +130,12 @@ msgstr ""
 "mdiff – Untersucht mehrere Dateien und sucht nach ähnlichen Abschnitten,\n"
 "erstellt dann ausführliche Liste von Unterschieden und Ähnlichkeiten.\n"
 
-#: src/mdiff.c:3806
+#: src/mdiff.c:3804
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Aufruf: %s [OPTION]... [DATEI]...\n"
 
-#: src/mdiff.c:3810
+#: src/mdiff.c:3808
 msgid ""
 "\n"
 "Operation modes:\n"
@@ -143,23 +143,23 @@ msgstr ""
 "\n"
 "Arbeitsmodi:\n"
 
-#: src/mdiff.c:3811
+#: src/mdiff.c:3809
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (ignoriert)\n"
 
-#: src/mdiff.c:3812
+#: src/mdiff.c:3810
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          einige Statistiken auf stderr ausgeben\n"
 
-#: src/mdiff.c:3813 src/unify.c:293
+#: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             diese Hilfe anzeigen und beenden\n"
 
-#: src/mdiff.c:3814 src/unify.c:294
+#: src/mdiff.c:3812 src/unify.c:294
 msgid "      --version          display program version then exit\n"
 msgstr "      --version          Versionsinformationen anzeigen und beenden\n"
 
-#: src/mdiff.c:3816
+#: src/mdiff.c:3814
 msgid ""
 "\n"
 "Formatting output:\n"
@@ -167,32 +167,27 @@ msgstr ""
 "\n"
 "Ausgabe-Formatierung:\n"
 
-#: src/mdiff.c:3817
+#: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
-"  -T, --initial-tab       Tabs anstelle von führenden Leerzeichen "
-"produzieren\n"
+msgstr "  -T, --initial-tab       Tabs anstelle von führenden Leerzeichen produzieren\n"
 
-#: src/mdiff.c:3818
+#: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr "  -l, --paginate          Ausgabe durch „pr“ in Seiten aufteilen\n"
 
-#: src/mdiff.c:3819
+#: src/mdiff.c:3817
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=ZKETTE]   eine weiter Nutzer-ZKETTE beachten\n"
 
-#: src/mdiff.c:3820
-msgid ""
-"  -V, --show-links        give file and line references in annotations\n"
-msgstr ""
-"  -V, --show-links        Datei- und Zeilenbezug in Anmerkungen angeben\n"
+#: src/mdiff.c:3818
+msgid "  -V, --show-links        give file and line references in annotations\n"
+msgstr "  -V, --show-links        Datei- und Zeilenbezug in Anmerkungen angeben\n"
 
-#: src/mdiff.c:3821
+#: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
-"  -t, --expand-tabs       Tabs in der Ausgabe durch Leerzeichen ersetzen\n"
+msgstr "  -t, --expand-tabs       Tabs in der Ausgabe durch Leerzeichen ersetzen\n"
 
-#: src/mdiff.c:3824
+#: src/mdiff.c:3822
 msgid ""
 "\n"
 "Debugging:\n"
@@ -200,11 +195,11 @@ msgstr ""
 "\n"
 "Fehlersuche:\n"
 
-#: src/mdiff.c:3825
+#: src/mdiff.c:3823
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr "  -0, --debugging   viele Details über alle Vorgänge ausgeben\n"
 
-#: src/mdiff.c:3828
+#: src/mdiff.c:3826
 msgid ""
 "\n"
 "Word mode options:\n"
@@ -212,83 +207,76 @@ msgstr ""
 "\n"
 "Wortmodus-Optionen:\n"
 
-#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:196
+#: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr "  -1, --no-deleted           Ausgabe gelöschter Wörter unterdrücken\n"
 
-#: src/mdiff.c:3830 src/wdiff.c:1267 src/wdiff2.c:197
+#: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr "  -2, --no-inserted          Ausgabe eingefügter Wörter unterdrücken\n"
 
-#: src/mdiff.c:3831 src/wdiff.c:1268 src/wdiff2.c:198
+#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            Ausgabe gemeinsamer Wörter unterdrücken\n"
 
-#: src/mdiff.c:3832
+#: src/mdiff.c:3830
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager           automatisch Anzeigeprogramm aufrufen\n"
 
-#: src/mdiff.c:3833
+#: src/mdiff.c:3831
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -k, --less-mode            Ausgabevariante für „less“-Ausgabe\n"
 
-#: src/mdiff.c:3834
+#: src/mdiff.c:3832
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -m, --avoid-wraps          Zeilenende begrenzt Felder\n"
 
-#: src/mdiff.c:3835
+#: src/mdiff.c:3833
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr "  -o, --printer              wie bei Druckern überschreiben\n"
 
-#: src/mdiff.c:3836
+#: src/mdiff.c:3834
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -z, --terminal             „termcap“ wie für Terminalanzeigen benutzen\n"
+msgstr "  -z, --terminal             „termcap“ wie für Terminalanzeigen benutzen\n"
+
+#: src/mdiff.c:3835
+msgid "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
+msgstr "  -K, --no-init-term         wie -z, aber keine init/term-Termcap-Sequenzen\n"
+
+#: src/mdiff.c:3836
+msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
+msgstr "  -O, --item-regexp=REGEXP   Elemente wie durch REGEXP definiert vergleichen\n"
 
 #: src/mdiff.c:3837
-msgid ""
-"  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
-"  -K, --no-init-term         wie -z, aber keine init/term-Termcap-Sequenzen\n"
-
-#: src/mdiff.c:3838
-msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr ""
-"  -O, --item-regexp=REGEXP   Elemente wie durch REGEXP definiert "
-"vergleichen\n"
-
-#: src/mdiff.c:3839
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            Wörter anstelle von Zeilen vergleichen\n"
 
-#: src/mdiff.c:4024
+#: src/mdiff.c:4022
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "Ohne DATEI, oder wenn DATEI - ist, wird die Standardeingabe gelesen.\n"
 
-#: src/mdiff.c:4026 src/unify.c:298 src/wdiff.c:1284 src/wdiff2.c:216
+#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
-"Melden Sie Übersetzungsfehler an <translation-team-de@lists.sourceforge."
-"net>,\n"
-"Programmfehler dagegen (auf Englisch, mit LC_ALL=C) an <wdiff-bugs@gnu."
-"org>.\n"
+"Melden Sie Übersetzungsfehler an <translation-team-de@lists.sourceforge.net>,\n"
+"Programmfehler dagegen (auf Englisch, mit LC_ALL=C) an <wdiff-bugs@gnu.org>.\n"
 
-#: src/mdiff.c:4037
+#: src/mdiff.c:4035
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr "ignoriere Option %s (nicht implementiert)"
 
-#: src/mdiff.c:4334
+#: src/mdiff.c:4332
 #, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "Kann -z nicht benutzen, da „termcap“ nicht verfügbar ist."
 
-#: src/mdiff.c:4373
+#: src/mdiff.c:4371
 #, c-format
 msgid "word merging for two files only (so far)"
 msgstr "Wortzusammenfassung nur für zwei Dateien (bislang)"
 
-#: src/mdiff.c:4389
+#: src/mdiff.c:4387
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
@@ -296,17 +284,16 @@ msgstr ""
 "\n"
 "Copyright © 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4393 src/unify.c:407 src/wdiff.c:1410 src/wdiff2.c:134
+#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:134
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Dies ist freie Software; Kopierbedingungen finden sich in den Quellen. Es "
-"gibt\n"
+"Dies ist freie Software; Kopierbedingungen finden sich in den Quellen. Es gibt\n"
 "KEINE Garantie; nicht einmal für MARKTFÄHIGKEIT oder der ERFÜLLUNG EINES\n"
 "BESTIMMTEN ZWECKES.\n"
 
-#: src/mdiff.c:4397 src/wdiff.c:1414 src/wdiff2.c:138
+#: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -314,7 +301,7 @@ msgstr ""
 "\n"
 "Geschrieben von François Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4433
+#: src/mdiff.c:4431
 #, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "Optionen -123RSYZ nur mit zwei Eingaben sinnvoll"
@@ -331,7 +318,7 @@ msgstr "„%s --help“ gibt weitere Informationen.\n"
 
 #: src/unify.c:277
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr "unify - Überführt Kontext-Diffs in Uni-Diffs und umgekehrt.\n"
+msgstr "unify – Überführt Kontext-Diffs in Uni-Diffs und umgekehrt.\n"
 
 #: src/unify.c:281
 #, c-format
@@ -344,13 +331,11 @@ msgstr "  -c, --context-diffs    Ausgabe von Kontext-Diffs erzwingen\n"
 
 #: src/unify.c:285
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
-"  -e, --echo-comments    Kommentare auf Standardfehlerausgaben weiterleiten\n"
+msgstr "  -e, --echo-comments    Kommentare auf Standardfehlerausgaben weiterleiten\n"
 
 #: src/unify.c:286
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
-"  -o, --old-diffs        Diffs im alten Stil ausgeben, egal was passiert\n"
+msgstr "  -o, --old-diffs        Diffs im alten Stil ausgeben, egal was passiert\n"
 
 #: src/unify.c:287
 msgid "  -p, --patch-format     generate patch format\n"
@@ -374,9 +359,7 @@ msgstr "  -U                     wie -p und -u\n"
 
 #: src/unify.c:292
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
-"  -=, --use-equals       in Uni-Diffs Leer- durch Gleichheitszeichen "
-"ersetzen\n"
+msgstr "  -=, --use-equals       in Uni-Diffs Leer- durch Gleichheitszeichen ersetzen\n"
 
 #: src/unify.c:296
 msgid "If FILE is not specified, read standard input.\n"
@@ -398,7 +381,7 @@ msgid ""
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1994, 1997 Free Software Foundation, Inc.\n"
 
 #: src/unify.c:411
 msgid ""
@@ -433,12 +416,12 @@ msgstr "unzulässiges Kontext-Diff in Zeile %ld"
 msgid "context diff missing `new' header at line %ld"
 msgstr "Kontext-Diff enthält keinen „neu“-Kopf in Zeile %ld"
 
-#: src/wdiff.c:608 src/wdiff.c:727
+#: src/wdiff.c:606 src/wdiff.c:725
 #, c-format
 msgid "no suitable temporary directory exists"
 msgstr "kein brauchbares temporäres Verzeichnis gefunden"
 
-#: src/wdiff.c:1224 src/wdiff2.c:110
+#: src/wdiff.c:1222 src/wdiff2.c:110
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -459,20 +442,18 @@ msgstr ""
 "der Lizenz oder (nach Ihrer Option) jeder späteren Version.\n"
 "\n"
 "Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen\n"
-"von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die "
-"implizite\n"
+"von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite\n"
 "Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN\n"
 "ZWECK. Details finden Sie in der GNU General Public License.\n"
 "\n"
 "Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem\n"
 "Programm erhalten haben. Falls nicht, siehe <http://www.gnu.org/licenses/>.\n"
 
-#: src/wdiff.c:1252
+#: src/wdiff.c:1250
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr ""
-"wdiff – Vergleicht Wörter in zwei Dateien und führt Unterschiede auf.\n"
+msgstr "wdiff – Vergleicht Wörter in zwei Dateien und führt Unterschiede auf.\n"
 
-#: src/wdiff.c:1256
+#: src/wdiff.c:1254
 #, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
@@ -481,118 +462,98 @@ msgstr ""
 "Aufruf: %s [OPTION]... DATEI1 DATEI2\n"
 "        %s -d [OPTION]... [DATEI]\n"
 
-#: src/wdiff.c:1261 src/wdiff2.c:191
-msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
-"Erforderliche Argumente für lange Optionen sind auch für kurze "
-"erforderlich.\n"
+#: src/wdiff.c:1259 src/wdiff2.c:191
+msgid "Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr "Erforderliche Argumente für lange Optionen sind auch für kurze erforderlich.\n"
 
-#: src/wdiff.c:1264 src/wdiff2.c:194
+#: src/wdiff.c:1262 src/wdiff2.c:194
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            Copyright ausgeben und beenden\n"
 
-#: src/wdiff.c:1265 src/wdiff2.c:195
-msgid ""
-"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+#: src/wdiff.c:1263 src/wdiff2.c:195
+msgid "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 msgstr ""
 "  -K, --no-init-term         wie -t, aber ohne init/term-Zeichenketten von\n"
 "                             termcap\n"
 
-#: src/wdiff.c:1269 src/wdiff2.c:199
+#: src/wdiff.c:1267 src/wdiff2.c:199
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr ""
-"  -a, --auto-pager           ruft automatisch ein Anzeigeprogramm auf\n"
+msgstr "  -a, --auto-pager           ruft automatisch ein Anzeigeprogramm auf\n"
 
-#: src/wdiff.c:1270
+#: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
-msgstr ""
-"  -d, --diff-input           einzelnes Uni-Diff als Eingabe verwenden\n"
+msgstr "  -d, --diff-input           einzelnes Uni-Diff als Eingabe verwenden\n"
 
-#: src/wdiff.c:1271 src/wdiff2.c:200
+#: src/wdiff.c:1269 src/wdiff2.c:200
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 diese Hilfe ausgeben und beenden\n"
 
-#: src/wdiff.c:1272 src/wdiff2.c:201
+#: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
-"  -i, --ignore-case          beim Vergleich Groß-/Kleinschreibung "
-"ignorieren\n"
+msgstr "  -i, --ignore-case          beim Vergleich Groß-/Kleinschreibung ignorieren\n"
 
-#: src/wdiff.c:1273 src/wdiff2.c:202
+#: src/wdiff.c:1271 src/wdiff2.c:202
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -l, --less-mode            Variation des Ausgabemodus für „less“\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:203
+#: src/wdiff.c:1272 src/wdiff2.c:203
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
-"  -n, --avoid-wraps          Felder nicht über Zeilenumbrüche gehen lassen\n"
+msgstr "  -n, --avoid-wraps          Felder nicht über Zeilenumbrüche gehen lassen\n"
 
-#: src/wdiff.c:1275 src/wdiff2.c:204
+#: src/wdiff.c:1273 src/wdiff2.c:204
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              Überdrucken (für Drucker)\n"
 
-#: src/wdiff.c:1276 src/wdiff2.c:206
-msgid ""
-"  -s, --statistics           say how many words deleted, inserted etc.\n"
+#: src/wdiff.c:1274 src/wdiff2.c:206
+msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
 "  -s, --statistics           Anzahl gelöschter, eingefügter etc. Wörter\n"
 "                             ausgeben\n"
 
-#: src/wdiff.c:1277 src/wdiff2.c:207
+#: src/wdiff.c:1275 src/wdiff2.c:207
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -t, --terminal             „termcap“ benutzen wie für Terminalanzeigen\n"
+msgstr "  -t, --terminal             „termcap“ benutzen wie für Terminalanzeigen\n"
 
-#: src/wdiff.c:1278 src/wdiff2.c:208
+#: src/wdiff.c:1276 src/wdiff2.c:208
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
-"  -v, --version              Versionsinformationen ausgeben und beenden\n"
+msgstr "  -v, --version              Versionsinformationen ausgeben und beenden\n"
 
-#: src/wdiff.c:1279 src/wdiff2.c:209
-msgid ""
-"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
-"  -w, --start-delete=ZKETTE  Kennzeichnung für den Anfang einer Löschregion\n"
+#: src/wdiff.c:1277 src/wdiff2.c:209
+msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr "  -w, --start-delete=ZKETTE  Kennzeichnung für den Anfang einer Löschregion\n"
 
-#: src/wdiff.c:1280 src/wdiff2.c:210
+#: src/wdiff.c:1278 src/wdiff2.c:210
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr ""
-"  -x, --end-delete=ZKETTE    Kennzeichnung für das Ende einer Löschregion\n"
+msgstr "  -x, --end-delete=ZKETTE    Kennzeichnung für das Ende einer Löschregion\n"
 
-#: src/wdiff.c:1281 src/wdiff2.c:211
-msgid ""
-"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr ""
-"  -y, --start-insert=ZKETTE  Kennzeichnung für den Anfang einer "
-"Einfügeregion\n"
+#: src/wdiff.c:1279 src/wdiff2.c:211
+msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr "  -y, --start-insert=ZKETTE  Kennzeichnung für den Anfang einer Einfügeregion\n"
 
-#: src/wdiff.c:1282 src/wdiff2.c:212
+#: src/wdiff.c:1280 src/wdiff2.c:212
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr ""
-"  -z, --end-insert=ZKETTE    Kennzeichnung für das Ende einer Einfügeregion\n"
+msgstr "  -z, --end-insert=ZKETTE    Kennzeichnung für das Ende einer Einfügeregion\n"
 
-#: src/wdiff.c:1400
+#: src/wdiff.c:1398
 #, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "kann -t nicht benutzen, da „termcap“ nicht verfügbar ist"
 
-#: src/wdiff.c:1405
+#: src/wdiff.c:1403
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software Foundation, "
-"Inc.\n"
+"Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1453 src/wdiff.c:1471
+#: src/wdiff.c:1451 src/wdiff.c:1469
 #, c-format
 msgid "too many file arguments"
 msgstr "zu viele Dateiargumente"
 
-#: src/wdiff.c:1466 src/wdiff2.c:323
+#: src/wdiff.c:1464 src/wdiff2.c:323
 #, c-format
 msgid "missing file arguments"
 msgstr "Dateiargumente fehlen"
@@ -603,7 +564,7 @@ msgid ""
 "Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
+"Copyright © 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 
 #: src/wdiff2.c:182
 msgid ""
@@ -621,14 +582,11 @@ msgstr "Aufruf: %s [OPTION]... DATEI1 DATEI2\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
-"  -q, --quiet                Ausgabe des Aufrufs von „mdiff“ unterdrücken\n"
+msgstr "  -q, --quiet                Ausgabe des Aufrufs von „mdiff“ unterdrücken\n"
 
 #: src/wdiff2.c:214
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"Dieses Programm gibt zudem aus, wie man „mdiff“ direkt hätte aufrufen "
-"können.\n"
+msgstr "Dieses Programm gibt zudem aus, wie man „mdiff“ direkt hätte aufrufen können.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:335
