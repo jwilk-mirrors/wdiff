@@ -89,8 +89,8 @@ char *strstr ();
 #include <sys/wait.h>
 
 char *getenv ();
-FILE *readpipe PARAMS ((const char *, ...));
-FILE *writepipe PARAMS ((const char *, ...));
+FILE *readpipe (const char *, ...);
+FILE *writepipe (const char *, ...);
 
 #include "regex.h"
 #define CHAR_SET_SIZE 256
