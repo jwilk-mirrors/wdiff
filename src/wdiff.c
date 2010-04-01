@@ -1057,7 +1057,6 @@ static void
 launch_output_program (void)
 {
   char *program;		/* name of the pager */
-  char *basename;		/* basename of the pager */
 
   /* Check if a output program should be called, and which one.  Avoid
      all paging if only statistics are needed.  */
@@ -1094,12 +1093,25 @@ launch_output_program (void)
   if (program && *program)
     {
       int is_less;
+      char *realprogram;	/* symlink-resolved path of the pager */
+      char *basename;		/* basename of the pager */
 
-      if (basename = strrchr (program, '/'), basename)
+      if (program[0] == '/') {
+        realprogram = realpath(program, NULL);
+        if (realprogram == NULL)
+          realprogram = program;
+      }
+      else {
+        realprogram = program;
+      }
+      basename = strrchr (realprogram, '/');
+      if (basename)
 	basename++;
       else
 	basename = program;
       is_less = strstr (basename, "less") != NULL;
+      if (realprogram != program)
+        free (realprogram);
 
       if (is_less && no_init_term)
 	output_file = writepipe (program, "-X", NULL);
