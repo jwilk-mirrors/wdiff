@@ -39,6 +39,8 @@ lib/malloca.h
 lib/malloca.valgrind
 lib/mbrtowc.c
 lib/mbsinit.c
+lib/memchr.c
+lib/memchr.valgrind
 lib/nl_langinfo.c
 lib/pathmax.h
 lib/readlink.c
@@ -58,9 +60,11 @@ lib/stdint.in.h
 lib/stdio-write.c
 lib/stdio.in.h
 lib/stdlib.in.h
+lib/str-two-way.h
 lib/streq.h
 lib/strerror.c
 lib/string.in.h
+lib/strstr.c
 lib/sys_stat.in.h
 lib/sys_wait.in.h
 lib/time.in.h

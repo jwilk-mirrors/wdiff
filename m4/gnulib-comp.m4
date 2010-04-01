@@ -60,6 +60,7 @@ AC_DEFUN([gl_EARLY],
   # Code from module malloca:
   # Code from module mbrtowc:
   # Code from module mbsinit:
+  # Code from module memchr:
   # Code from module multiarch:
   # Code from module nl_langinfo:
   # Code from module pathmax:
@@ -76,6 +77,7 @@ AC_DEFUN([gl_EARLY],
   # Code from module streq:
   # Code from module strerror:
   # Code from module string:
+  # Code from module strstr-simple:
   # Code from module sys_stat:
   # Code from module sys_wait:
   # Code from module time:
@@ -192,6 +194,9 @@ AC_DEFUN([gl_INIT],
   # Code from module mbsinit:
   gl_FUNC_MBSINIT
   gl_WCHAR_MODULE_INDICATOR([mbsinit])
+  # Code from module memchr:
+  gl_FUNC_MEMCHR
+  gl_STRING_MODULE_INDICATOR([memchr])
   # Code from module multiarch:
   gl_MULTIARCH
   # Code from module nl_langinfo:
@@ -228,6 +233,9 @@ AC_DEFUN([gl_INIT],
   gl_STRING_MODULE_INDICATOR([strerror])
   # Code from module string:
   gl_HEADER_STRING_H
+  # Code from module strstr-simple:
+  gl_FUNC_STRSTR_SIMPLE
+  gl_STRING_MODULE_INDICATOR([strstr])
   # Code from module sys_stat:
   gl_HEADER_SYS_STAT_H
   AC_PROG_MKDIR_P
@@ -429,6 +437,8 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/malloca.valgrind
   lib/mbrtowc.c
   lib/mbsinit.c
+  lib/memchr.c
+  lib/memchr.valgrind
   lib/nl_langinfo.c
   lib/pathmax.h
   lib/readlink.c
@@ -448,9 +458,11 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/stdio-write.c
   lib/stdio.in.h
   lib/stdlib.in.h
+  lib/str-two-way.h
   lib/streq.h
   lib/strerror.c
   lib/string.in.h
+  lib/strstr.c
   lib/sys_stat.in.h
   lib/sys_wait.in.h
   lib/time.in.h
@@ -509,6 +521,8 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/mbrtowc.m4
   m4/mbsinit.m4
   m4/mbstate_t.m4
+  m4/memchr.m4
+  m4/mmap-anon.m4
   m4/multiarch.m4
   m4/nl_langinfo.m4
   m4/nls.m4
@@ -531,6 +545,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/stdlib_h.m4
   m4/strerror.m4
   m4/string_h.m4
+  m4/strstr.m4
   m4/sys_stat_h.m4
   m4/sys_wait_h.m4
   m4/threadlib.m4
