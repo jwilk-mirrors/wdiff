@@ -4,9 +4,9 @@
 ## without any warranty.
 
 AC_INIT([GNU wdiff], [0.6.1], [wdiff-bugs@gnu.org])
-AC_CONFIG_AUX_DIR([build-aux])
-AM_INIT_AUTOMAKE
 
+AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_HEADERS([config.h])
 
 ## ------------------------ ##
@@ -20,6 +20,8 @@ AC_SUBST([AUTOTEST], ['$(AUTOM4TE) --language=autotest'])
 
 AC_PROG_CC
 gl_EARLY
+LT_INIT
+AM_INIT_AUTOMAKE
 gl_INIT
 
 # GNU help2man creates man pages from --help output; in many cases, this

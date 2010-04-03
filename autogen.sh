@@ -8,6 +8,7 @@
 aclocal -I m4
 autoconf
 autoheader
+libtoolize
 touch ChangeLog
 automake --gnu --add-missing
 rm ChangeLog
