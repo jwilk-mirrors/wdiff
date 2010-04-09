@@ -78,3 +78,5 @@ src/wdiff2
 tests/atconfig
 tests/package.m4
 tests/testsuite
+tests/testsuite.dir
+tests/testsuite.log
