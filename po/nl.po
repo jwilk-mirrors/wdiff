@@ -1,28 +1,28 @@
-# Dutch translations for wdiff.
-# Copyright (C) 2008, 2010 Free Software Foundation, Inc.
+# Dutch translations for wdiff
+# Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 #
 # Erick Branderhorst <branderh@debian.org>, 1996.
-# Benno Schulenberg <benno@vertaalt.nl>, 2007, 2008.
 # Erwin Poeze <erwin.poeze@yahoo.com>, 2010.
+# Benno Schulenberg <benno@vertaalt.nl>, 2007, 2008, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff-0.5.95\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2010-02-02 17:12+0100\n"
-"PO-Revision-Date: 2010-02-03 13:11+0100\n"
-"Last-Translator: Erwin Poeze <erwin.poeze@yahoo.com>\n"
+"PO-Revision-Date: 2010-04-05 11:34+0200\n"
+"Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/mdiff.c:387
 #, c-format
 msgid "%s (for regexp `%s')"
-msgstr "%s (voor reguliere expressie `%s')"
+msgstr "%s (voor reguliere expressie '%s')"
 
 #: src/mdiff.c:905 src/wdiff.c:1488
 #, c-format
@@ -32,7 +32,7 @@ msgstr "slechts één bestand kan standaardinvoer zijn"
 #: src/mdiff.c:920 src/wdiff.c:702
 #, c-format
 msgid "directories not supported"
-msgstr "mappen vergelijken is niet mogelijk"
+msgstr "mappen vergelijken wordt niet ondersteund"
 
 #: src/mdiff.c:1064
 #, c-format
@@ -87,12 +87,12 @@ msgstr "kies een terminal via de omgevingsvariabele TERM"
 #: src/mdiff.c:2368 src/wdiff.c:245
 #, c-format
 msgid "could not access the termcap data base"
-msgstr "kan geen toegang krijgen tot de termcap-database"
+msgstr "kan geen toegang krijgen tot de termcap-databank"
 
 #: src/mdiff.c:2370 src/wdiff.c:247
 #, c-format
 msgid "terminal type `%s' is not defined"
-msgstr "terminaltype `%s' is niet gedefinieerd"
+msgstr "terminaltype '%s' is niet gedefinieerd"
 
 #: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
 #, c-format
@@ -122,7 +122,7 @@ msgstr "  %d %d%% ingevoegd"
 #: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "Typ `%s --help' voor meer informatie.\n"
+msgstr "Typ '%s --help' voor meer informatie.\n"
 
 #: src/mdiff.c:3799
 msgid ""
@@ -135,7 +135,9 @@ msgstr ""
 #: src/mdiff.c:3804
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr "Gebruik:  %s [OPTIE]... BESTAND...\n"
+msgstr ""
+"Gebruik:  %s [OPTIE]... [BESTAND]...\n"
+"\n"
 
 #: src/mdiff.c:3808
 msgid ""
@@ -151,15 +153,15 @@ msgstr "  -h                     (genegeerd)\n"
 
 #: src/mdiff.c:3810
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose          enige statistieken uitvoeren naar stderr\n"
+msgstr "  -v, --verbose           enige statistieken rapporteren op standaardfoutuitvoer\n"
 
 #: src/mdiff.c:3811 src/unify.c:293
 msgid "      --help             display this help then exit\n"
-msgstr "      --help             deze hulptekst tonen en stoppen\n"
+msgstr "      --help              deze hulptekst tonen en stoppen\n"
 
 #: src/mdiff.c:3812 src/unify.c:294
 msgid "      --version          display program version then exit\n"
-msgstr "      --version          programmaversie tonen en stoppen\n"
+msgstr "      --version           programmaversie tonen en stoppen\n"
 
 #: src/mdiff.c:3814
 msgid ""
@@ -171,23 +173,23 @@ msgstr ""
 
 #: src/mdiff.c:3815
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr "  -T, --initial-tab       TAB aanmaken in plaats van leidende spatie\n"
+msgstr "  -T, --initial-tab       geen spatie maar tab als eerste teken gebruiken\n"
 
 #: src/mdiff.c:3816
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr "  -l, --paginate          uitvoer opmaken via `pr'\n"
+msgstr "  -l, --paginate          de uitvoer met 'pr' in pagina's indelen\n"
 
 #: src/mdiff.c:3817
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr "  -S, --string[=STRING]   let op andere gebruiker STRING\n"
+msgstr "  -S, --string[=TEKENS]   in uitvoer '-]' vervangen door deze tekenreeks\n"
 
 #: src/mdiff.c:3818
 msgid "  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        bestands- en regelverwijzigen in annotaties tonen\n"
+msgstr "  -V, --show-links        bestandsnamen en regelnummers toevoegen in notities\n"
 
 #: src/mdiff.c:3819
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       tabs omzetten naar spaties in de uitvoer\n"
+msgstr "  -t, --expand-tabs       in de uitvoer tabs omzetten naar spaties\n"
 
 #: src/mdiff.c:3822
 msgid ""
@@ -199,7 +201,7 @@ msgstr ""
 
 #: src/mdiff.c:3823
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr "  -0, --debugging   details tonen over wat er gedaan wordt\n"
+msgstr "  -0, --debugging         details tonen over wat er gedaan wordt\n"
 
 #: src/mdiff.c:3826
 msgid ""
@@ -207,51 +209,51 @@ msgid ""
 "Word mode options:\n"
 msgstr ""
 "\n"
-"Opties woordmodus:\n"
+"Woordmodusopties:\n"
 
 #: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted           onderdruk uitvoer van verwijderde woorden\n"
+msgstr "  -1, --no-deleted           verwijderde woorden niet weergeven\n"
 
 #: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          onderdruk uitvoer van toegevoegde woorden\n"
+msgstr "  -2, --no-inserted          ingevoegde woorden niet weergeven\n"
 
 #: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            onderdruk uitvoer van gemeenschappelijke woorden\n"
+msgstr "  -3, --no-common            gemeenschappelijke woorden niet weergeven\n"
 
 #: src/mdiff.c:3830
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager           roept automatisch een opmaker aan\n"
+msgstr "  -A, --auto-pager           automatisch een 'pager' aanroepen\n"
 
 #: src/mdiff.c:3831
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode            variatie op printermodus voor \"less\"\n"
+msgstr "  -k, --less-mode            uitvoermodus voor 'less'\n"
 
 #: src/mdiff.c:3832
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps          velden niet uitbreiden via nieuwe regeleinden\n"
+msgstr "  -m, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
 
 #: src/mdiff.c:3833
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer              doorhaling als bij printers\n"
+msgstr "  -o, --printer              'overstrike' gebruiken als bij printers\n"
 
 #: src/mdiff.c:3834
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             gebruik termcap zoals voor terminals\n"
+msgstr "  -z, --terminal             'termcap' gebruiken als voor terminals\n"
 
 #: src/mdiff.c:3835
 msgid "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         gelijk aan -z, maar zonder termcap's init/term-strings\n"
+msgstr "  -K, --no-init-term         als '-z', maar zonder 'init'- of 'term'-reeksen\n"
 
 #: src/mdiff.c:3836
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP   vergelijk items zoals gedefineerd door REGEXP\n"
+msgstr "  -O, --item-regexp=REGEXP   items vergelijken via deze reguliere expressie\n"
 
 #: src/mdiff.c:3837
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode            vergelijk woorden in plaats van regels\n"
+msgstr "  -W, --word-mode            woorden in plaats van regels vergelijken\n"
 
 #: src/mdiff.c:4022
 msgid "With no FILE, or when FILE is -, read standard input.\n"
@@ -268,12 +270,12 @@ msgstr ""
 #: src/mdiff.c:4035
 #, c-format
 msgid "ignoring option %s (not implemented)"
-msgstr "negeer optie %s (niet geïmplementeerd)"
+msgstr "optie '%s' wordt genegeerd (niet geïmplementeerd)"
 
 #: src/mdiff.c:4332
 #, c-format
 msgid "cannot use -z, termcap not available"
-msgstr "kan optie '-z' niet gebruiken; termcap is niet beschikbaar"
+msgstr "kan optie '-z' niet honoreren; termcap is niet beschikbaar"
 
 #: src/mdiff.c:4371
 #, c-format
@@ -319,7 +321,7 @@ msgstr "kan het soort diff niet bepalen op regel %ld"
 #: src/unify.c:273
 #, c-format
 msgid "try `%s --help' for more information\n"
-msgstr "typ `%s --help' voor meer informatie\n"
+msgstr "typ '%s --help' voor meer informatie\n"
 
 #: src/unify.c:277
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
@@ -328,54 +330,54 @@ msgstr "unify - Transformeert context-diffs naar uni-diffs, of omgekeerd.\n"
 #: src/unify.c:281
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr "Gebruik:  %s [OPTIE]... [BESTAND]\n"
+msgstr ""
+"Gebruik:  %s [OPTIE]... [BESTAND]\n"
+"\n"
 
 #: src/unify.c:284
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr "  -c, --context-diffs    uitvoer dwingen naar context-diffs\n"
+msgstr "  -c, --context-diffs    als uitvoer context-diffs produceren\n"
 
 #: src/unify.c:285
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    commentaar naar standaard-error uitvoeren\n"
+msgstr "  -e, --echo-comments    commentaar naar standaardfoutuitvoer uitvoeren\n"
 
 #: src/unify.c:286
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        oudestijl diffs uitvoeren, wat er ook gebeurd\n"
+msgstr "  -o, --old-diffs        als uitvoer antieke diffs produceren\n"
 
 #: src/unify.c:287
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr "  -p, --patch-format     patch-uitvoer genereren\n"
+msgstr "  -p, --patch-format     uitvoer in patch-opmaak produceren\n"
 
 #: src/unify.c:288
 msgid "  -P                     same as -p\n"
-msgstr "  -P                     gelijk aan -p\n"
+msgstr "  -P                     hetzelfde als '-p'\n"
 
 #: src/unify.c:289
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr "  -s, --strip-comments   commentaarregels niet tonen\n"
+msgstr "  -s, --strip-comments   commentaarregels weglaten\n"
 
 #: src/unify.c:290
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr "  -u, --unidiffs         uitvoer naar unidiffs forceren\n"
+msgstr "  -u, --unidiffs         als uitvoer uni-diffs produceren\n"
 
 #: src/unify.c:291
 msgid "  -U                     same as -p and -u\n"
-msgstr "  -U                     gelijk aan -p en -u\n"
+msgstr "  -U                     hetzelfde als '-p' en ' -u' samen\n"
 
 #: src/unify.c:292
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       vervang spaties door '='-tekens in unidiffs\n"
+msgstr "  -=, --use-equals       spaties vervangen door gelijktekens in uni-diffs\n"
 
 #: src/unify.c:296
 msgid "If FILE is not specified, read standard input.\n"
-msgstr ""
-"Als er geen BESTAND gegeven is,\n"
-"wordt standaardinvoer gelezen.\n"
+msgstr "Als er geen BESTAND gegeven is, wordt standaardinvoer gelezen.\n"
 
 #: src/unify.c:388
 #, c-format
 msgid "unable to open `%s'"
-msgstr "kan `%s' niet openen"
+msgstr "kan '%s' niet openen"
 
 #: src/unify.c:394
 #, c-format
@@ -446,19 +448,19 @@ msgstr ""
 "Dit programma is vrije software; u mag het verder verspreiden en/of\n"
 "wijzigen onder de voorwaarden van de GNU General Public License zoals\n"
 "gepubliceerd door de Free Software Foundation, naar keuze ofwel onder\n"
-"versie 2 ofwel onder een nieuwere versie van die licentie.\n"
+"versie 3 ofwel onder een nieuwere versie van die licentie.\n"
 "\n"
 "Dit programma wordt uitgegeven in de hoop dat het nuttig is,\n"
 "maar ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie\n"
 "van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.\n"
 "Zie de GNU General Public License voor meer details.\n"
 "\n"
-"Bij dit programma hoort u een kopie van de GNU General Public License\n"
-"ontvangen te hebben; is dit niet het geval, kijk dan op <http://www.gnu.org/licenses/>.\n"
+"Bij dit programma hoort u een kopie van de GNU General Public License ontvangen\n"
+"te hebben; is dit niet het geval, kijk dan op <http://www.gnu.org/licenses/>.\n"
 
 #: src/wdiff.c:1250
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr "wdiff - vergelijkt woorden in twee bestanden en rapporteert verschillen.\n"
+msgstr "wdiff - Vergelijkt woorden in twee bestanden en rapporteert verschillen.\n"
 
 #: src/wdiff.c:1254
 #, c-format
@@ -467,27 +469,29 @@ msgid ""
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
 "Gebruik:  %s [OPTIE]... BESTAND1 BESTAND2\n"
-"       %s -d [OPTIE]... [BESTAND]\n"
+"          %s -d [OPTIE]... [BESTAND]\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:191
 msgid "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Verplichte argumenten van lange opties zijn ook verplicht voor korte opties.\n"
+msgstr ""
+"(Een verplicht argument bij een lange optie geldt ook voor de korte vorm.)\n"
+"\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:194
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr "  -C, --copyright            copyright tonen en stoppen\n"
+msgstr "  -C, --copyright            auteursrecht tonen en stoppen\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:195
 msgid "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         gelijk aan -t, maar zonder termcap's init/term-strings\n"
+msgstr "  -K, --no-init-term         als '-t', maar zonder 'init'- of 'term'-reeksen\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:199
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           roept automatisch een opmaker aan\n"
+msgstr "  -a, --auto-pager           automatisch een 'pager' aanroepen\n"
 
 #: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
-msgstr "  -d, --diff-input           gebruik enkele unified-diff als invoer\n"
+msgstr "  -d, --diff-input           één enkele uni-diff als invoer gebruiken\n"
 
 #: src/wdiff.c:1269 src/wdiff2.c:200
 msgid "  -h, --help                 display this help then exit\n"
@@ -495,27 +499,27 @@ msgstr "  -h, --help                 deze hulptekst tonen en stoppen\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          hoofdletters negeren bij vergelijken\n"
+msgstr "  -i, --ignore-case          verschil tussen hoofd- en kleine letters negeren\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            variatie van printermodus voor \"less\"\n"
+msgstr "  -l, --less-mode            uitvoermodus voor 'less'\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          velden niet uitbreiden met nieuwe regeleinden\n"
+msgstr "  -n, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              doorhalen zoals bij printers\n"
+msgstr "  -p, --printer              'overstrike' gebruiken als bij printers\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:206
 msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           meld hoeveel woorden zijn verwijderd, toegevoegd enz.\n"
+msgstr "  -s, --statistics           aantal verwijderingen, invoegingen, enzovoort tonen\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:207
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             termcap gebruiken zoals bij terminalschermen\n"
+msgstr "  -t, --terminal             'termcap' gebruiken als voor terminals\n"
 
 #: src/wdiff.c:1276 src/wdiff2.c:208
 msgid "  -v, --version              display program version then exit\n"
@@ -523,24 +527,24 @@ msgstr "  -v, --version              programmaversie tonen en stoppen\n"
 
 #: src/wdiff.c:1277 src/wdiff2.c:209
 msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  start verwijdering markeren met STRING\n"
+msgstr "  -w, --start-delete=TEKENS  markering voor begin van verwijderd stuk\n"
 
 #: src/wdiff.c:1278 src/wdiff2.c:210
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    einde verwijdering markeren met STRING\n"
+msgstr "  -x, --end-delete=TEKENS    markering voor einde van verwijderd stuk\n"
 
 #: src/wdiff.c:1279 src/wdiff2.c:211
 msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  start invoeging markeren met STRING\n"
+msgstr "  -y, --start-insert=TEKENS  markering voor begin van ingevoegd stuk\n"
 
 #: src/wdiff.c:1280 src/wdiff2.c:212
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING    einde invoeging markeren met STRING\n"
+msgstr "  -z, --end-insert=TEKENS    markering voor einde van ingevoegd stuk\n"
 
 #: src/wdiff.c:1398
 #, c-format
 msgid "cannot use -t, termcap not available"
-msgstr "kan optie '-t' niet gebruiken; termcap is niet beschikbaar"
+msgstr "kan optie '-t' niet honoreren; termcap is niet beschikbaar"
 
 #: src/wdiff.c:1403
 msgid ""
@@ -575,18 +579,20 @@ msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
-"wdiff - rapporteert woordverschillen in twee bestanden via het aanroepen\n"
+"wdiff - Rapporteert woordverschillen in twee bestanden via het aanroepen\n"
 "        van 'mdiff -W'.  Dit programma is bedoeld om de oude wdiff-syntax\n"
 "        nog te kunnen gebruiken.\n"
 
 #: src/wdiff2.c:187
 #, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "Gebruik:  %s [OPTIE]... BESTAND1 BESTAND2\n"
+msgstr ""
+"Gebruik:  %s [OPTIE]... BESTAND1 BESTAND2\n"
+"\n"
 
 #: src/wdiff2.c:205
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr "  -q, --quiet                het 'mdiff'-aanroepbericht onderdrukken\n"
+msgstr "  -q, --quiet                de 'mdiff'-aanroepmelding onderdrukken\n"
 
 #: src/wdiff2.c:214
 msgid "This program also tells how `mdiff' could have been called directly.\n"
@@ -602,164 +608,3 @@ msgstr "Starten van '%s"
 #, c-format
 msgid "'\n"
 msgstr "'\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Operation modes:\n"
-#~ "  -h                     (ignored)\n"
-#~ "  -v, --verbose          report a few statistics on stderr\n"
-#~ "      --help             display this help and exit\n"
-#~ "      --version          output version information and exit\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Werkingsmodus:\n"
-#~ "      --help             deze hulptekst tonen en stoppen\n"
-#~ "      --version          programmaversie tonen en stoppen\n"
-#~ "  -v, --verbose          enkele statistieken rapporteren\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Formatting output:\n"
-#~ "  -T, --initial-tab       produce TAB instead of initial space\n"
-#~ "  -l, --paginate          paginate output through `pr'\n"
-#~ "  -S, --string[=STRING]   take note of another user STRING\n"
-#~ "  -V, --show-links        give file and line references in annotations\n"
-#~ "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Opmaak van uitvoer:\n"
-#~ "  -l, --paginate         de uitvoer met 'pr' in pagina's indelen\n"
-#~ "  -S, --string=STRING    '-]' vervangen door deze tekenreeks\n"
-#~ "  -t, --expand-tabs      in de uitvoer TABs omzetten in spaties\n"
-#~ "  -T, --initial-tab      geen spatie maar TAB als eerste teken gebruiken\n"
-#~ "  -V, --show-links       bestandsnamen en regelnummers toevoegen in notities\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Word mode options:\n"
-#~ "  -1, --no-deleted            inhibit output of deleted words\n"
-#~ "  -2, --no-inserted           inhibit output of inserted words\n"
-#~ "  -3, --no-common             inhibit output of common words\n"
-#~ "  -A, --auto-pager            automatically calls a pager\n"
-#~ "  -k, --less-mode             variation of printer mode for \"less\"\n"
-#~ "  -m, --avoid-wraps           do not extend fields through newlines\n"
-#~ "  -o, --printer               overstrike as for printers\n"
-#~ "  -z, --terminal              use termcap as for terminal displays\n"
-#~ "  -K, --no-init-term          like -z, but no termcap init/term strings\n"
-#~ "  -O, --item-regexp=REGEXP    compare items as defined by REGEXP\n"
-#~ "  -W, --word-mode             compare words instead of lines\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Woordmodus:\n"
-#~ "  -1, --no-deleted           verwijderde woorden niet weergeven\n"
-#~ "  -2, --no-inserted          ingevoegde woorden niet weergeven\n"
-#~ "  -3, --no-common            gemeenschappelijke woorden niet weergeven\n"
-#~ "  -A, --auto-pager           automatisch een 'pager' aanroepen\n"
-#~ "  -k, --less-mode            uitvoermodus voor 'less'\n"
-#~ "  -m, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
-#~ "  -o, --printer              'overstrike' gebruiken als bij printers\n"
-#~ "  -z, --terminal             'termcap' gebruiken als voor een terminal\n"
-#~ "  -K, --no-init-term         als '-z', maar zonder 'init'- of 'term'-reeksen\n"
-#~ "  -O, --item-regexp=REG.EXP. items vergelijken volgens deze expressie\n"
-#~ "  -W, --word-mode            woorden in plaats van regels vergelijken\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Old mdiff options:\n"
-#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Oude mdiff-opties:\n"
-#~ "*  -f, --fuzz-items=AANTAL    maximum aantal niet-overeenkomende clusteritems\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Copyright (C) 1997 Free Software Foundation, Inc.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Copyright (C) 1997, 2008 Free Software Foundation, Inc.\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "  -c, --context-diffs    force output to context diffs\n"
-#~ "  -e, --echo-comments    echo comments to standard error\n"
-#~ "  -o, --old-diffs        output old-style diffs, no matter what\n"
-#~ "  -p, --patch-format     generate patch format\n"
-#~ "  -P                     same as -p\n"
-#~ "  -s, --strip-comments   strip comment lines\n"
-#~ "  -u, --unidiffs         force output to unidiffs\n"
-#~ "  -U                     same as -p and -u\n"
-#~ "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-#~ "      --help             display this help and exit\n"
-#~ "      --version          output version information and exit\n"
-#~ "\n"
-#~ "If FILE is not specified, read standard input.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "  -c, --context-diffs    als uitvoer context-diffs produceren\n"
-#~ "  -e, --echo-comments    commentaar echoën via standaardfoutenuitvoer\n"
-#~ "  -o, --old-diffs        als uitvoer antieke diffs produceren\n"
-#~ "  -p, --patch-format     uitvoer in patch-opmaak produceren\n"
-#~ "  -P                     hetzelfde als '-p'\n"
-#~ "  -s, --strip-comments   commentaarregels weglaten\n"
-#~ "  -u, --unidiffs         als uitvoer uni-diffs produceren\n"
-#~ "  -U                     hetzelfde als '-p' en '-u' samen\n"
-#~ "  -=, --use-equals       in uni-diffs spaties vervangen door gelijktekens\n"
-#~ "      --help             deze hulptekst tonen en stoppen\n"
-#~ "      --version          programmaversie tonen en stoppen\n"
-#~ "\n"
-#~ "Als er geen BESTAND gegeven is, wordt standaardinvoer gelezen.\n"
-
-#~ msgid ""
-#~ "Mandatory arguments to long options are mandatory for short options too.\n"
-#~ "\n"
-#~ "  -C, --copyright            print copyright then exit\n"
-#~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-#~ "  -1, --no-deleted           inhibit output of deleted words\n"
-#~ "  -2, --no-inserted          inhibit output of inserted words\n"
-#~ "  -3, --no-common            inhibit output of common words\n"
-#~ msgstr ""
-#~ "(De argumenten bij lange opties gelden ook voor de korte vormen.)\n"
-#~ "\n"
-#~ "  -C, --copyright            auteursrecht tonen en stoppen\n"
-#~ "  -K, --no-init-term         als '-t', maar zonder 'init'- of 'term'-reeksen\n"
-#~ "  -1, --no-deleted           verwijderde woorden niet weergeven\n"
-#~ "  -2, --no-inserted          ingevoegde woorden niet weergeven\n"
-#~ "  -3, --no-common            gemeenschappelijke woorden niet weergeven\n"
-
-#~ msgid ""
-#~ "  -a, --auto-pager           automatically calls a pager\n"
-#~ "  -h, --help                 print this help\n"
-#~ "  -i, --ignore-case          fold character case while comparing\n"
-#~ "  -l, --less-mode            variation of printer mode for \"less\"\n"
-#~ "  -n, --avoid-wraps          do not extend fields through newlines\n"
-#~ "  -p, --printer              overstrike as for printers\n"
-#~ msgstr ""
-#~ "  -a, --auto-pager           automatisch een 'pager' aanroepen\n"
-#~ "  -h, --help                 deze hulptekst tonen en stoppen\n"
-#~ "  -i, --ignore-case          verschil tussen hoofd- en kleine letters negeren\n"
-#~ "  -l, --less-mode            uitvoermodus voor 'less'\n"
-#~ "  -n, --avoid-wraps          velden niet voortzetten op een volgende regel\n"
-#~ "  -p, --printer              'overstrike' gebruiken als bij printers\n"
-
-#~ msgid ""
-#~ "  -s, --statistics           say how many words deleted, inserted etc.\n"
-#~ "  -t, --terminal             use termcap as for terminal displays\n"
-#~ "  -v, --version              print program version then exit\n"
-#~ "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-#~ "  -x, --end-delete=STRING    string to mark end of delete region\n"
-#~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-#~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
-#~ msgstr ""
-#~ "  -s, --statistics           aantal verwijderingen, invoegingen, enz. tonen\n"
-#~ "  -t, --terminal             'termcap' gebruiken als voor een terminal\n"
-#~ "  -w, --start-delete=STRING  markering voor begin van verwijderd stuk\n"
-#~ "  -x, --end-delete=STRING    markering voor einde van verwijderd stuk\n"
-#~ "  -y, --start-insert=STRING  markering voor begin van ingevoegd stuk\n"
-#~ "  -z, --end-insert=STRING    markering voor einde van ingevoegd stuk\n"
-
-#~ msgid "Unknown system error"
-#~ msgstr "Onbekende systeemfout"
-
-#~ msgid "memory exhausted"
-#~ msgstr "onvoldoende geheugen beschikbaar"
