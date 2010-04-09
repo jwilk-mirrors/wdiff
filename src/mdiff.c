@@ -31,7 +31,7 @@
    item structure: this yields faster code and disallows paranoid mode.  */
 #define SAFER_SLOWER 0
 
-/* One may also, optionnaly, define a default PAGER_PROGRAM.  This
+/* One may also, optionally, define a default PAGER_PROGRAM.  This
    might be done using the --with-default-pager=PAGER configure
    switch.  If PAGER_PROGRAM is undefined and the PAGER environment
    variable is not set, none will be used.  */
