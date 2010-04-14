@@ -81,7 +81,7 @@ AC_ARG_WITH([termcap],
  [], [with_termcap=auto])
 AS_IF([test "x$with_termcap" != xno], [
  AC_CHECK_HEADERS([termcap.h termlib.h curses.h ncurses.h term.h])
- AS_IF([test "x$with_termcap" == xauto], [
+ AS_IF([test "x$with_termcap" = xauto], [
   AC_SEARCH_LIBS(tputs, [termcap termlib ncursesw ncurses],
    [], [with_termcap=no])
  ], [
