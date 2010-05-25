@@ -94,8 +94,7 @@ FILE *writepipe (const char *, ...);
 
 /* Exit codes values.  */
 #define EXIT_DIFFERENCE 1	/* some differences found */
-#undef EXIT_FAILURE
-#define EXIT_FAILURE 2		/* any other reason for exit */
+#define EXIT_ERROR 2		/* any other reason for exit */
 
 /* Define pseudo short options for long options without short options.  */
 #define GTYPE_GROUP_FORMAT_OPTION	10
@@ -377,7 +376,7 @@ alloc_and_compile_regex (const char *string)
 
   message = re_compile_pattern (string, (int) strlen (string), pattern);
   if (message)
-    error (EXIT_FAILURE, 0, _("%s (for regexp `%s')"), message, string);
+    error (EXIT_ERROR, 0, _("%s (for regexp `%s')"), message, string);
 
   /* The fastmap should be compiled before `re_match'.  This would not be
      necessary if `re_search' was called first.  */
@@ -821,7 +820,7 @@ swallow_input (struct input *input)
     handle = fileno (stdin);
   else
     if (handle = open (input->file_name, O_RDONLY), handle < 0)
-      error (EXIT_FAILURE, errno, "%s", input->file_name);
+      error (EXIT_ERROR, errno, "%s", input->file_name);
 
   /* If the file is a plain, regular file, allocate the memory buffer all at
      once and swallow the file in one blow.  In other cases, read the file
@@ -842,7 +841,7 @@ swallow_input (struct input *input)
 
       if (read (handle, input->memory_copy, (size_t) input->stat_buffer.st_size)
 	  != input->stat_buffer.st_size)
-	error (EXIT_FAILURE, errno, "%s", input->file_name);
+	error (EXIT_ERROR, errno, "%s", input->file_name);
     }
   else
 
@@ -867,7 +866,7 @@ swallow_input (struct input *input)
 	}
 
       if (read_length < 0)
-	error (EXIT_FAILURE, errno, "%s", input->file_name);
+	error (EXIT_ERROR, errno, "%s", input->file_name);
     }
 
   /* Close the file, but only if it was not the standard input.  */
@@ -895,12 +894,12 @@ new_input (const char *name)
   input = input_array + inputs++;
   if (strcmp (name, "") == 0 || strcmp (name, "-") == 0)
     if (stdin_swallowed)
-      error (EXIT_FAILURE, 0, _("only one file may be standard input"));
+      error (EXIT_ERROR, 0, _("only one file may be standard input"));
     else
       {
 	input->file_name = STDIN_PRINTED_NAME;
 	if (fstat (fileno (stdin), &input->stat_buffer) != 0)
-	  error (EXIT_FAILURE, errno, "%s", input->file_name);
+	  error (EXIT_ERROR, errno, "%s", input->file_name);
 	swallow_input (input);
 	stdin_swallowed = 1;
       }
@@ -908,9 +907,9 @@ new_input (const char *name)
     {
       input->file_name = name;
       if (stat (input->file_name, &input->stat_buffer) != 0)
-	error (EXIT_FAILURE, errno, "%s", input->file_name);
+	error (EXIT_ERROR, errno, "%s", input->file_name);
       if ((input->stat_buffer.st_mode & S_IFMT) == S_IFDIR)
-	error (EXIT_FAILURE, 0, _("directories not supported"));
+	error (EXIT_ERROR, 0, _("directories not supported"));
       input->memory_copy = NULL;
     }
 }
@@ -927,7 +926,7 @@ open_input (struct input *input)
   else
     {
       if (input->file = fopen (input->file_name, "r"), !input->file)
-	error (EXIT_FAILURE, errno, "%s", input->file_name);
+	error (EXIT_ERROR, errno, "%s", input->file_name);
 
       input->line = NULL;
     }
@@ -2354,13 +2353,13 @@ initialize_strings (void)
 
       name = getenv ("TERM");
       if (name == NULL)
-	error (EXIT_FAILURE, 0,
+	error (EXIT_ERROR, 0,
 	       _("select a terminal through the TERM environment variable"));
       success = tgetent (term_buffer, name);
       if (success < 0)
-	error (EXIT_FAILURE, 0, _("could not access the termcap data base"));
+	error (EXIT_ERROR, 0, _("could not access the termcap data base"));
       if (success == 0)
-	error (EXIT_FAILURE, 0, _("terminal type `%s' is not defined"), name);
+	error (EXIT_ERROR, 0, _("terminal type `%s' is not defined"), name);
       buffer = (char *) malloc (strlen (term_buffer));
       filler = buffer;
 
@@ -2806,7 +2805,7 @@ launch_output_program (struct input *input)
 	  else
 	    output_file = writepipe (program, NULL);
 	  if (!output_file)
-	    error (EXIT_FAILURE, errno, "%s", program);
+	    error (EXIT_ERROR, errno, "%s", program);
 	}
     }
 }
@@ -4054,7 +4053,7 @@ main (int argc, char *const *argv)
     switch (option_char)
       {
       default:
-	usage (EXIT_FAILURE);
+	usage (EXIT_ERROR);
 
       case '\0':
 	break;
@@ -4322,7 +4321,7 @@ main (int argc, char *const *argv)
 	  find_termcap = 1;
 	break;
 #else
-	error (EXIT_FAILURE, 0, _("cannot use -z, termcap not available"));
+	error (EXIT_ERROR, 0, _("cannot use -z, termcap not available"));
 #endif
 
       case GTYPE_GROUP_FORMAT_OPTION:
@@ -4362,7 +4361,7 @@ main (int argc, char *const *argv)
   if (!relist_files && word_mode && argc - optind != 2)
     {
       error (0, 0, _("word merging for two files only (so far)"));
-      usage (EXIT_FAILURE);
+      usage (EXIT_ERROR);
     }
 
   /* If find_termcap still undecided, make it true only if autopager is

@@ -24,8 +24,7 @@
 
 /* Exit codes values.  */
 #define EXIT_DIFFERENCE 1	/* some differences found */
-#undef EXIT_FAILURE
-#define EXIT_FAILURE 2		/* any other reason for exit */
+#define EXIT_ERROR 2		/* any other reason for exit */
 
 #include <getopt.h>
 #include <locale.h>
@@ -242,7 +241,7 @@ main (int argc, char *const argv[])
     switch (option_char)
       {
       default:
-	usage (EXIT_FAILURE);
+	usage (EXIT_ERROR);
 
       case '\0':
 	break;
@@ -321,7 +320,7 @@ main (int argc, char *const argv[])
   if (optind + 2 != argc)
     {
       error (0, 0, _("missing file arguments"));
-      usage (EXIT_FAILURE);
+      usage (EXIT_ERROR);
     }
 
   add_argument (argv[optind]);
@@ -341,5 +340,5 @@ main (int argc, char *const argv[])
   add_argument (NULL);
   execvp (MDIFF_PROGRAM, argument_list);
   /* Should never return.  */
-  exit (EXIT_FAILURE);
+  exit (EXIT_ERROR);
 }

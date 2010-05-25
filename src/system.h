@@ -24,19 +24,7 @@
 # define voidstar char *
 #endif
 
-#ifdef STDC_HEADERS
-# include <stdlib.h>
-#else
-char *getenv ();
-#endif
-
-/* Some systems do not define EXIT_*, even with STDC_HEADERS.  */
-#ifndef EXIT_SUCCESS
-# define EXIT_SUCCESS 0
-#endif
-#ifndef EXIT_FAILURE
-# define EXIT_FAILURE 1
-#endif
+#include <stdlib.h>
 
 /* Other header files.  */
 

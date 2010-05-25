@@ -21,8 +21,7 @@
 
 /* Exit codes values.  */
 #define EXIT_DIFFERENCE 1	/* some differences found */
-#undef EXIT_FAILURE
-#define EXIT_FAILURE 2		/* any other reason for exit */
+#define EXIT_ERROR 2		/* any other reason for exit */
 
 /* It is mandatory that some `diff' program is selected for use.  The
    following definition may also include the complete path.  */
@@ -227,13 +226,13 @@ initialize_strings (void)
 
       name = getenv ("TERM");
       if (name == NULL)
-	error (EXIT_FAILURE, 0,
+	error (EXIT_ERROR, 0,
 	       _("select a terminal through the TERM environment variable"));
       success = tgetent (term_buffer, name);
       if (success < 0)
-	error (EXIT_FAILURE, 0, _("could not access the termcap data base"));
+	error (EXIT_ERROR, 0, _("could not access the termcap data base"));
       if (success == 0)
-	error (EXIT_FAILURE, 0, _("terminal type `%s' is not defined"), name);
+	error (EXIT_ERROR, 0, _("terminal type `%s' is not defined"), name);
       buffer = (char *) malloc (strlen (term_buffer));
       filler = buffer;
 
@@ -592,15 +591,15 @@ create_temporary_side (SIDE * side)
      anymore.  */
 
   if ((side->temp_name = create_template_filename ()) == NULL)
-    error (EXIT_FAILURE, errno, _("no suitable temporary directory exists"));
+    error (EXIT_ERROR, errno, _("no suitable temporary directory exists"));
   if ((fd = mkstemp (side->temp_name)) == -1)
-    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+    error (EXIT_ERROR, errno, "%s", side->temp_name);
 
   side->file = fdopen (fd, "w+");
   if (side->file == NULL)
-    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+    error (EXIT_ERROR, errno, "%s", side->temp_name);
   if (unlink (side->temp_name) != 0)
-    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+    error (EXIT_ERROR, errno, "%s", side->temp_name);
 }
 
 /*--------------------------------------------------------.
@@ -623,7 +622,7 @@ split_diff (const char *path)
     {
       input = fopen (path, "r");
       if (input == NULL)
-	error (EXIT_FAILURE, errno, "%s", path);
+	error (EXIT_ERROR, errno, "%s", path);
     }
 
   create_temporary_side (left_side);
@@ -686,12 +685,12 @@ split_file_into_words (SIDE * side)
 	     prepare the file for reading.  */
 
 	  if (stat (side->filename, &stat_buffer) != 0)
-	    error (EXIT_FAILURE, errno, "%s", side->filename);
+	    error (EXIT_ERROR, errno, "%s", side->filename);
 	  if ((stat_buffer.st_mode & S_IFMT) == S_IFDIR)
-	    error (EXIT_FAILURE, 0, _("directories not supported"));
+	    error (EXIT_ERROR, 0, _("directories not supported"));
 	  side->file = fopen (side->filename, "r");
 	  if (side->file == NULL)
-	    error (EXIT_FAILURE, errno, "%s", side->filename);
+	    error (EXIT_ERROR, errno, "%s", side->filename);
 	}
 
       if (fseek (side->file, 0L, SEEK_CUR) != 0)
@@ -711,13 +710,13 @@ split_file_into_words (SIDE * side)
   side->position = 0;
 
   if ((side->temp_name = create_template_filename ()) == NULL)
-    error (EXIT_FAILURE, errno, _("no suitable temporary directory exists"));
+    error (EXIT_ERROR, errno, _("no suitable temporary directory exists"));
   if ((fd = mkstemp (side->temp_name)) == -1)
-    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+    error (EXIT_ERROR, errno, "%s", side->temp_name);
 
   side->temp_file = fdopen (fd, "w");
   if (side->temp_file == NULL)
-    error (EXIT_FAILURE, errno, "%s", side->temp_name);
+    error (EXIT_ERROR, errno, "%s", side->temp_name);
 
   /* Complete splitting input file into words on output.  */
 
@@ -1024,7 +1023,7 @@ launch_input_program (void)
     input_file = readpipe (DIFF_PROGRAM, left_side->temp_name,
 			   right_side->temp_name, NULL);
   if (!input_file)
-    error (EXIT_FAILURE, errno, "%s", DIFF_PROGRAM);
+    error (EXIT_ERROR, errno, "%s", DIFF_PROGRAM);
   character = getc (input_file);
 }
 
@@ -1108,7 +1107,7 @@ launch_output_program (void)
       else
 	output_file = writepipe (program, NULL);
       if (!output_file)
-	error (EXIT_FAILURE, errno, "%s", program);
+	error (EXIT_ERROR, errno, "%s", program);
 
       /* If we are paging to less, use printer mode, not display mode.  */
 
@@ -1396,7 +1395,7 @@ main (int argc, char *const argv[])
 	  find_termcap = 1;
 	break;
 #else
-	error (EXIT_FAILURE, 0, _("cannot use -t, termcap not available"));
+	error (EXIT_ERROR, 0, _("cannot use -t, termcap not available"));
 #endif
 
       case 'v':
@@ -1433,7 +1432,7 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
 	break;
 
       default:
-	usage (EXIT_FAILURE);
+	usage (EXIT_ERROR);
       }
 
   /* If find_termcap still undecided, make it true only if autopager is set
@@ -1450,7 +1449,7 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
       if (optind + 1 < argc)
 	{
 	  error (0, 0, _("too many file arguments"));
-	  usage (EXIT_FAILURE);
+	  usage (EXIT_ERROR);
 	}
       if (optind == argc || strcmp (argv[optind], "") == 0
 	  || strcmp (argv[optind], "-") == 0)
@@ -1463,12 +1462,12 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
       if (optind + 2 > argc)
 	{
 	  error (0, 0, _("missing file arguments"));
-	  usage (EXIT_FAILURE);
+	  usage (EXIT_ERROR);
 	}
       if (optind + 2 < argc)
 	{
 	  error (0, 0, _("too many file arguments"));
-	  usage (EXIT_FAILURE);
+	  usage (EXIT_ERROR);
 	}
 
       if (strcmp (argv[optind], "") == 0 || strcmp (argv[optind], "-") == 0)
@@ -1486,7 +1485,7 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
       right_side->temp_name = NULL;
 
       if (left_side->filename == NULL && right_side->filename == NULL)
-	error (EXIT_FAILURE, 0, _("only one file may be standard input"));
+	error (EXIT_ERROR, 0, _("only one file may be standard input"));
     }
 
   setup_signals ();
@@ -1522,7 +1521,7 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
     complete_output_program ();
 
   if (interrupted)
-    exit (EXIT_FAILURE);
+    exit (EXIT_ERROR);
 
   if (show_statistics)
     print_statistics ();
