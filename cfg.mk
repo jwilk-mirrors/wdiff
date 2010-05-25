@@ -6,6 +6,7 @@
 _autoreconf = $(srcdir)/autogen.sh
 
 config_h_header = ("system\.h"|<config\.h>)
+gnulib_dir = .
 
 VC_LIST_ALWAYS_EXCLUDE_REGEX = ^(lib|m4)/
 VC_LIST_EXCEPT_sc_GPL_version = po/.*\.po
