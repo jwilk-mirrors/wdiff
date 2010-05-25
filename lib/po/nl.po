@@ -1,77 +1,84 @@
 # Dutch translations for gnulib.
-# Copyright (C) 2009 Free Software Foundation, Inc.
+# Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
 #
 # Erick Branderhorst <branderh@debian.org>, 1996.
 # Ivo Timmermans <ivo@o2w.nl>, 2000.
 # Freek de Kruijf <f.de.kruijf@hetnet.nl>, 2004, 2005.
-# Benno Schulenberg <benno@vertaalt.nl>, 2007, 2008.
 # Erwin Poeze <erwin.poeze@gmail.com>, 2009, 2010.
+# Benno Schulenberg <benno@vertaalt.nl>, 2007, 2008, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnulib-2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-04-01 09:56+0200\n"
-"PO-Revision-Date: 2010-02-23 14:05+0100\n"
-"Last-Translator: Erwin Poeze <erwin.poeze@gmail.com>\n"
+"POT-Creation-Date: 2010-05-25 18:36+0200\n"
+"PO-Revision-Date: 2010-04-04 12:18+0200\n"
+"Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/error.c:153
+#: lib/error.c:181
 msgid "Unknown system error"
 msgstr "Onbekende systeemfout"
 
-#: lib/getopt.c:525 lib/getopt.c:541
+#: lib/getopt.c:527 lib/getopt.c:543
 #, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: optie '%s' is niet eenduidig\n"
 
-#: lib/getopt.c:574 lib/getopt.c:578
+#: lib/getopt.c:576 lib/getopt.c:580
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: optie '--%s' staat geen argument toe\n"
 
-#: lib/getopt.c:587 lib/getopt.c:592
+#: lib/getopt.c:589 lib/getopt.c:594
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: optie '%c%s' staat geen argument toe\n"
 
-#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
-#, c-format
-msgid "%s: option '%s' requires an argument\n"
+#: lib/getopt.c:637 lib/getopt.c:656
+#, fuzzy, c-format
+msgid "%s: option '--%s' requires an argument\n"
 msgstr "%s: optie '%s' vereist een argument\n"
 
-#: lib/getopt.c:692 lib/getopt.c:695
+#: lib/getopt.c:694 lib/getopt.c:697
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: onbekende optie '--%s'\n"
 
-#: lib/getopt.c:703 lib/getopt.c:706
+#: lib/getopt.c:705 lib/getopt.c:708
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: onbekende optie '%c%s'\n"
 
-#: lib/getopt.c:755 lib/getopt.c:758
+#: lib/getopt.c:757 lib/getopt.c:760
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: ongeldige optie -- '%c'\n"
 
-#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: optie vereist een argument -- '%c'\n"
 
-#: lib/getopt.c:878 lib/getopt.c:894
+#: lib/getopt.c:883 lib/getopt.c:899
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: optie '-W %s' is niet eenduidig\n"
 
-#: lib/getopt.c:918 lib/getopt.c:936
+#: lib/getopt.c:923 lib/getopt.c:941
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: optie '-W %s' staat geen argument toe\n"
+
+#: lib/getopt.c:962 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '-W %s' requires an argument\n"
+msgstr "%s: optie '%s' vereist een argument\n"
 
 #: lib/regcomp.c:132
 msgid "Success"
@@ -234,25 +241,25 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "stack-overloop"
 
 #~ msgid "cannot find a temporary directory, try setting $TMPDIR"
-#~ msgstr "Kan geen tijdelijke map vinden, probeer $TMPDIR in te stellen"
+#~ msgstr "kan geen tijdelijke map vinden; zet $TMPDIR"
 
 #~ msgid "cannot create a temporary directory using template \"%s\""
-#~ msgstr "kan tijdelijke map niet aanmaken met sjabloon \"%s\""
+#~ msgstr "kan met sjabloon '%s' geen tijdelijke map aanmaken"
 
 #~ msgid "cannot remove temporary file %s"
-#~ msgstr "kan tijdelijk bestand %s niet verwijderen"
+#~ msgstr "kan tijdelijk bestand '%s' niet verwijderen"
 
 #~ msgid "cannot remove temporary directory %s"
-#~ msgstr "kan tijdelijke map %s niet verwijderen"
+#~ msgstr "kan tijdelijke map '%s' niet verwijderen"
 
 #~ msgid "error closing file"
-#~ msgstr "fout bij afsluiten van bestand"
+#~ msgstr "fout bij sluiten van bestand"
 
 #~ msgid "write error"
 #~ msgstr "schrijffout"
 
 #~ msgid "preserving permissions for %s"
-#~ msgstr "toegangsrechten van %s worden behouden"
+#~ msgstr "toegangsrechten van '%s' worden behouden"
 
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "fout bij openen van '%s' voor lezen"
@@ -282,7 +289,7 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "subproces %s is mislukt"
 
 #~ msgid "regular empty file"
-#~ msgstr "normaal, leeg bestand"
+#~ msgstr "leeg normaal bestand"
 
 #~ msgid "regular file"
 #~ msgstr "normaal bestand"
@@ -324,13 +331,13 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "Adresfamilie voor hostnaam wordt niet ondersteund"
 
 #~ msgid "Temporary failure in name resolution"
-#~ msgstr "Tijdelijke storing in naamsherleiding"
+#~ msgstr "Tijdelijk probleem in naamsherleiding"
 
 #~ msgid "Bad value for ai_flags"
 #~ msgstr "Ongeldige waarde voor 'ai_flags'"
 
 #~ msgid "Non-recoverable failure in name resolution"
-#~ msgstr "Onherstelbare mislukking in naamsherleiding"
+#~ msgstr "Onherstelbaar probleem in naamsherleiding"
 
 #~ msgid "ai_family not supported"
 #~ msgstr "'ai_family' wordt niet ondersteund"
@@ -397,7 +404,7 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ "Virtuele Java-machine is niet gevonden; installeer 'gcj' of zet $JAVA"
 
 #~ msgid "%s subprocess I/O error"
-#~ msgstr "in- of uitoverfout subproces %s"
+#~ msgstr "In-/uitvoerfout in subproces %s"
 
 #~ msgid "cannot change permissions of %s"
 #~ msgstr "kan de toegangsrechten van %s niet veranderen"
@@ -418,8 +425,7 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "Het aanmaken van een lees-thread is mislukt"
 
 #~ msgid "cannot set up nonblocking I/O to %s subprocess"
-#~ msgstr ""
-#~ "kan geen niet-blokkerende in- en uitvoer instellen naar subproces %s"
+#~ msgstr "kan geen niet-blokkerende in-/uitvoer instellen naar subproces %s"
 
 #~ msgid "communication with %s subprocess failed"
 #~ msgstr "communicatie met subproces %s is mislukt"
@@ -428,19 +434,19 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "schrijven naar subproces %s is mislukt"
 
 #~ msgid "read from %s subprocess failed"
-#~ msgstr "lezen van subproces %s is mislukt"
+#~ msgstr "lezen uit subproces %s is mislukt"
 
 #~ msgid "subprocess %s terminated with exit code %d"
-#~ msgstr "subproces %s is gestopt met stopcode %d"
+#~ msgstr "subproces %s is geëindigd met afsluitwaarde %d"
 
 #~ msgid "creation of threads failed"
-#~ msgstr "aanmaken van thread is mislukt"
+#~ msgstr "aanmaken van threads is mislukt"
 
 #~ msgid "%s subprocess terminated with exit code %d"
-#~ msgstr "%s subprocess is gestopt met stopcode %d"
+#~ msgstr "subproces %s is geëindigd met afsluitwaarde %d"
 
 #~ msgid "cannot create pipe"
-#~ msgstr "kan geen 'pipe' aanmaken"
+#~ msgstr "kan geen pijp aanmaken"
 
 #~ msgid "`"
 #~ msgstr "‘"
@@ -455,31 +461,33 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "^[nN]"
 
 #~ msgid "setting permissions for %s"
-#~ msgstr "toegangsrechten van %s instellen"
+#~ msgstr "toegangsrechten van %s worden ingesteld"
 
+# Vroeger ging dit over het afsluiten van een modemverbinding,
+# tegenwoordig over het afsluiten van een pseudoterminal.
 #~ msgid "Hangup"
-#~ msgstr "Verbreken"
+#~ msgstr "Opgehangen"
 
 #~ msgid "Interrupt"
-#~ msgstr "Onderbreken"
+#~ msgstr "Onderbroken"
 
 #~ msgid "Quit"
-#~ msgstr "Stoppen"
+#~ msgstr "Afgesloten"
 
 #~ msgid "Illegal instruction"
-#~ msgstr "Ongeldige opdracht"
+#~ msgstr "Ongeldige instructie"
 
 #~ msgid "Trace/breakpoint trap"
-#~ msgstr "Trace/breakpoint-val"
+#~ msgstr "Traceer/breekpunt-instructie"
 
 #~ msgid "Aborted"
-#~ msgstr "Afbreken"
+#~ msgstr "Afgebroken"
 
 #~ msgid "Floating point exception"
-#~ msgstr "Drijvendekommauitzondering"
+#~ msgstr "Drijvendekomma-berekeningsfout"
 
 #~ msgid "Killed"
-#~ msgstr "Beëindigd"
+#~ msgstr "Geëlimineerd"
 
 #~ msgid "Bus error"
 #~ msgstr "Busfout"
@@ -488,82 +496,82 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "Segmentatiefout"
 
 #~ msgid "Broken pipe"
-#~ msgstr "Onderbroken 'pipe'"
+#~ msgstr "Gebroken pijp"
 
 #~ msgid "Alarm clock"
 #~ msgstr "Wekker"
 
 #~ msgid "Terminated"
-#~ msgstr "Afgesloten"
+#~ msgstr "Beëindigd"
 
 #~ msgid "Urgent I/O condition"
-#~ msgstr "Urgente in- of uitvoervoorwaarde"
+#~ msgstr "Urgente in-/uitvoertoestand"
 
 #~ msgid "Stopped (signal)"
-#~ msgstr "Gestopt (signaal)"
+#~ msgstr "Gepauzeerd (signaal)"
 
 #~ msgid "Stopped"
-#~ msgstr "Gestopt"
+#~ msgstr "Gepauzeerd"
 
 #~ msgid "Continued"
-#~ msgstr "Voorgezet"
+#~ msgstr "Doorgegaan"
 
 #~ msgid "Child exited"
-#~ msgstr "Onderliggend proces gestopt"
+#~ msgstr "Dochter is afgesloten"
 
 #~ msgid "Stopped (tty input)"
-#~ msgstr "Gestopt (terminalinvoer)"
+#~ msgstr "Gepauzeerd (terminalinvoer)"
 
 #~ msgid "Stopped (tty output)"
-#~ msgstr "Gestopt (terminaluitvoer)"
+#~ msgstr "Gepauzeerd (terminaluitvoer)"
 
 #~ msgid "I/O possible"
-#~ msgstr "In- of uitvoer mogelijk"
+#~ msgstr "In-/uitvoer is mogelijk"
 
 #~ msgid "CPU time limit exceeded"
-#~ msgstr "CPU-tijdgrens overschreden"
+#~ msgstr "Limiet op processortijd is overschreden"
 
 #~ msgid "File size limit exceeded"
-#~ msgstr "Bestandsgrootte overschreden"
+#~ msgstr "Limiet op bestandsgrootte is overschreden"
 
 #~ msgid "Virtual timer expired"
-#~ msgstr "Virtuele wekker verlopen"
+#~ msgstr "Virtuele tijdopnemer is verlopen"
 
 #~ msgid "Profiling timer expired"
-#~ msgstr "Profielwekker verlopen"
+#~ msgstr "Tijdopnemer voor analyse is verlopen"
 
 #~ msgid "Window changed"
-#~ msgstr "Venster veranderd"
+#~ msgstr "Venster is veranderd"
 
 #~ msgid "User defined signal 1"
-#~ msgstr "Gebruikgedefinieerd signaal 1"
+#~ msgstr "Gebruikergedefinieerd signaal 1"
 
 #~ msgid "User defined signal 2"
 #~ msgstr "Gebruikergedefinieerd signaal 2"
 
 #~ msgid "EMT trap"
-#~ msgstr "EMT-val"
+#~ msgstr "EMT-instructie"
 
 #~ msgid "Bad system call"
-#~ msgstr "Systeemaanroep ongeldig"
+#~ msgstr "Onjuiste systeemaanroep"
 
 #~ msgid "Stack fault"
-#~ msgstr "Stapelfout"
+#~ msgstr "Stack-fout"
 
 #~ msgid "Information request"
-#~ msgstr "Informatieverzoek"
+#~ msgstr "Verzoek om informatie"
 
 #~ msgid "Power failure"
-#~ msgstr "Stroomonderbreking"
+#~ msgstr "Stroomstoring"
 
 #~ msgid "Resource lost"
-#~ msgstr "Hulpbron vermist"
+#~ msgstr "Hulpbron verloren"
 
 #~ msgid "error writing to a closed pipe or socket"
 #~ msgstr "fouten bij het schrijven naar een afgesloten 'pipe' of 'socket'"
 
 #~ msgid "Real-time signal %d"
-#~ msgstr "Direct signaal %d"
+#~ msgstr "Realtime-signaal %d"
 
 #~ msgid "Unknown signal %d"
 #~ msgstr "Onbekend signaal %d"
@@ -593,13 +601,13 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "ongeldige aanduiding"
 
 #~ msgid "unable to display error message"
-#~ msgstr "foutmeldingen tonen is mislukt"
+#~ msgstr "kan foutmelding niet tonen"
 
 #~ msgid "Packaged by %s (%s)\n"
-#~ msgstr "Ingepakt door %s (%s)\n"
+#~ msgstr "In pakketvorm gebracht door %s (%s)\n"
 
 #~ msgid "Packaged by %s\n"
-#~ msgstr "Ingepakt door %s\n"
+#~ msgstr "In pakketvorm gebracht door %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "©"
@@ -613,11 +621,12 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ "\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Licentie GPLv3+: GNU GPL versie 3 of nieuwer <http://gnu.org/licenses/gpl."
-#~ "html>.\n"
 #~ "Dit is vrije software: u mag het vrijelijk wijzigen en verder "
 #~ "verspreiden.\n"
-#~ "Er is GEEN GARANTIE, voor zover de wet dit toestaat.\n"
+#~ "De precieze licentie is GPL-3+: GNU General Public License versie 3 of "
+#~ "later.\n"
+#~ "Zie http://gnu.org/licenses/gpl.html voor de volledige (Engelse) tekst.\n"
+#~ "Deze software kent GEEN GARANTIE, voor zover de wet dit toestaat.\n"
 #~ "\n"
 
 #~ msgid "Written by %s.\n"
@@ -689,30 +698,30 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ "Report bugs to: %s\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Rapporteer gebreken in het programma aan %s;\n"
+#~ "Rapporteer gebreken in het programma aan <%s>;\n"
 #~ "meld fouten in de vertaling aan <vertaling@vrijschrift.org>.\n"
 
 #~ msgid "Report %s bugs to: %s\n"
 #~ msgstr ""
-#~ "Rapporteer %s-gebreken in het programma aan %s;\n"
+#~ "Rapporteer gebreken in het programma '%s' aan <%s>;\n"
 #~ "meld fouten in de vertaling aan <vertaling@vrijschrift.org>.\n"
 
 #~ msgid "%s home page: <%s>\n"
-#~ msgstr "%s beginpagina: <%s>\n"
+#~ msgstr "Webpagina van %s: <%s>\n"
 
 #~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
-#~ msgstr "%s-beginpagina: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "Webpagina van %s: <http://www.gnu.org/software/%s/>\n"
 
 #~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 #~ msgstr ""
-#~ "Algemene hulp bij het gebruik van GNU-software: <http://www.gnu.org/"
-#~ "gethelp/>\n"
+#~ "Algemene hulp bij gebruik van GNU-software: <http://www.gnu.org/gethelp/"
+#~ ">\n"
 
 #~ msgid "_open_osfhandle failed"
-#~ msgstr "_open_osfhandle is mislukt"
+#~ msgstr "_open_osfhandle() is mislukt"
 
 #~ msgid "cannot restore fd %d: dup2 failed"
-#~ msgstr "kan fd %d niet herstellen: dup2 is mislukt"
+#~ msgstr "kan bestandsdescriptor %d niet herstellen: dup2() is mislukt"
 
 #~ msgid "%s subprocess"
 #~ msgstr "subproces %s"
@@ -721,16 +730,16 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "subproces %s ontving het fatale signaal %d"
 
 #~ msgid "stdin"
-#~ msgstr "stdin"
+#~ msgstr "standaardinvoer"
 
 #~ msgid "stdout"
-#~ msgstr "stdout"
+#~ msgstr "standaarduitvoer"
 
 #~ msgid "stderr"
-#~ msgstr "stderr"
+#~ msgstr "standaardfoutuitvoer"
 
 #~ msgid "unknown stream"
-#~ msgstr "Onbekende stroom"
+#~ msgstr "onbekende stroom"
 
 #~ msgid "failed to reopen %s with mode %s"
 #~ msgstr "opnieuw openen van '%s' met modus %s is mislukt"
@@ -745,27 +754,13 @@ msgstr "onvoldoende geheugen beschikbaar"
 #~ msgstr "De te vergelijken tekenreeksen waren %s en %s."
 
 #~ msgid "cannot perform formatted output"
-#~ msgstr "opgemaakte uitvoer aanmaken is mislukt"
+#~ msgstr "kan geen opgemaakte uitvoer aanmaken"
 
 #~ msgid "invalid %s%s argument `%s'"
-#~ msgstr "ongeldig argument %s%s van `%s'"
+#~ msgstr "ongeldig argument '%3$s' van %1$s%2$s"
 
 #~ msgid "invalid suffix in %s%s argument `%s'"
-#~ msgstr "ongeldig achtervoegsel %s%s in argument `%s'"
+#~ msgstr "ongeldig achtervoegsel in argument '%3$s' van %1$s%2$s"
 
 #~ msgid "%s%s argument `%s' too large"
-#~ msgstr "%s%s argument `%s' te groot"
-
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: ongeldige optie -- %c\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "Report bugs to <%s>.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Rapporteer gebreken in het programma aan %s;\n"
-#~ "meld fouten in de vertaling aan <vertaling@vrijschrift.org>.\n"
-
-#~ msgid "block size"
-#~ msgstr "blokgrootte"
+#~ msgstr "argument '%3$s' van %1$s%2$s is te groot"

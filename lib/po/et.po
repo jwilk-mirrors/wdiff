@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib 1.0\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-04-01 09:56+0200\n"
+"POT-Creation-Date: 2010-05-25 18:36+0200\n"
 "PO-Revision-Date: 2006-07-28 09:50+0300\n"
 "Last-Translator: Toomas Soome <Toomas.Soome@microlink.ee>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -15,59 +15,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/error.c:153
+#: lib/error.c:181
 msgid "Unknown system error"
 msgstr "Tundmatu süsteemne viga"
 
-#: lib/getopt.c:525 lib/getopt.c:541
+#: lib/getopt.c:527 lib/getopt.c:543
 #, fuzzy, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: võti `%s' on segane\n"
 
-#: lib/getopt.c:574 lib/getopt.c:578
+#: lib/getopt.c:576 lib/getopt.c:580
 #, fuzzy, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: võti `--%s' ei luba kasutada argumenti\n"
 
-#: lib/getopt.c:587 lib/getopt.c:592
+#: lib/getopt.c:589 lib/getopt.c:594
 #, fuzzy, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: võti `%c%s' ei luba kasutada argumenti\n"
 
-#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#: lib/getopt.c:637 lib/getopt.c:656
 #, fuzzy, c-format
-msgid "%s: option '%s' requires an argument\n"
+msgid "%s: option '--%s' requires an argument\n"
 msgstr "%s: võti `%s' nõuab argumenti\n"
 
-#: lib/getopt.c:692 lib/getopt.c:695
+#: lib/getopt.c:694 lib/getopt.c:697
 #, fuzzy, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: tundmatu võti `--%s'\n"
 
-#: lib/getopt.c:703 lib/getopt.c:706
+#: lib/getopt.c:705 lib/getopt.c:708
 #, fuzzy, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: tundmatu võti `%c%s'\n"
 
-#: lib/getopt.c:755 lib/getopt.c:758
+#: lib/getopt.c:757 lib/getopt.c:760
 #, fuzzy, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: vigane võti -- %c\n"
 
-#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
 #, fuzzy, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: võti nõuab argumenti -- %c\n"
 
-#: lib/getopt.c:878 lib/getopt.c:894
+#: lib/getopt.c:883 lib/getopt.c:899
 #, fuzzy, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: võti `-W %s' on segane\n"
 
-#: lib/getopt.c:918 lib/getopt.c:936
+#: lib/getopt.c:923 lib/getopt.c:941
 #, fuzzy, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: võti `-W %s' ei luba kasutada argumenti\n"
+
+#: lib/getopt.c:962 lib/getopt.c:980
+#, fuzzy, c-format
+msgid "%s: option '-W %s' requires an argument\n"
+msgstr "%s: võti `%s' nõuab argumenti\n"
 
 #: lib/regcomp.c:132
 msgid "Success"

@@ -25,7 +25,6 @@ AC_DEFUN([gl_EARLY],
   m4_pattern_allow([^gl_LIBOBJS$])dnl a variable
   m4_pattern_allow([^gl_LTLIBOBJS$])dnl a variable
   AC_REQUIRE([AC_PROG_RANLIB])
-  # Code from module alloca:
   # Code from module alloca-opt:
   # Code from module arg-nonnull:
   # Code from module btowc:
@@ -101,6 +100,7 @@ AC_DEFUN([gl_INIT],
   gl_cond_libtool=false
   gl_libdeps=
   gl_ltlibdeps=
+  gl_m4_base='m4'
   m4_pushdef([AC_LIBOBJ], m4_defn([gl_LIBOBJ]))
   m4_pushdef([AC_REPLACE_FUNCS], m4_defn([gl_REPLACE_FUNCS]))
   m4_pushdef([AC_LIBSOURCES], m4_defn([gl_LIBSOURCES]))
@@ -108,7 +108,6 @@ AC_DEFUN([gl_INIT],
   m4_pushdef([gl_LIBSOURCES_DIR], [])
   gl_COMMON
   gl_source_base='lib'
-  # Code from module alloca:
   # Code from module alloca-opt:
   gl_FUNC_ALLOCA
   # Code from module arg-nonnull:
@@ -146,7 +145,7 @@ AC_DEFUN([gl_INIT],
   gl_FUNC_GETOPT_POSIX
   # Code from module gettext:
   dnl you must add AM_GNU_GETTEXT([external]) or similar to configure.ac.
-  AM_GNU_GETTEXT_VERSION([0.17])
+  AM_GNU_GETTEXT_VERSION([0.18])
   # Code from module gettext-h:
   AC_SUBST([LIBINTL])
   AC_SUBST([LTLIBINTL])
@@ -408,7 +407,6 @@ AC_DEFUN([gl_FILE_LIST], [
   build-aux/vc-list-files
   build-aux/warn-on-use.h
   doc/gendocs_template
-  lib/alloca.c
   lib/alloca.in.h
   lib/btowc.c
   lib/canonicalize-lgpl.c
@@ -476,6 +474,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/xmalloc.c
   m4/00gnulib.m4
   m4/alloca.m4
+  m4/asm-underscore.m4
   m4/btowc.m4
   m4/canonicalize.m4
   m4/codeset.m4
