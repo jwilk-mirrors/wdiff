@@ -92,4 +92,3 @@ clean-local:
 	-$(CD_TESTDIR); \
 	test -f $$abs_srcdir/$(TESTSUITE) && \
 	    $(SHELL) $$abs_srcdir/$(TESTSUITE) --clean
-
