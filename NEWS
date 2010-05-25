@@ -1,6 +1,13 @@
 GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007, 2010 Free Software Foundation, Inc.
 
+* Version 0.6.2 - May 2010, by Martin von Gagern
+
+  * Fix shell syntax in configure script
+  * Updated gnulib and gettext, the latter to 0.18
+  * Updated Dutch translation
+  * Fixed a number of portability issues reported by maint.mk syntax checks
+
 * Version 0.6.1 - April 2010, by Martin von Gagern
 
   * Introduce --with-default-pager=PAGER configure switch.

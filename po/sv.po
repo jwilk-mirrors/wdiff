@@ -8,120 +8,121 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5.95\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-04-01 09:56+0200\n"
+"POT-Creation-Date: 2010-05-25 21:22+0200\n"
 "PO-Revision-Date: 2010-02-13 18:58+0100\n"
 "Last-Translator: Jan Djärv <jan.h.d@swipnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/mdiff.c:390
+#: src/mdiff.c:379
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (för reguljärt uttryck \"%s\")"
 
-#: src/mdiff.c:908 src/wdiff.c:1499
+#: src/mdiff.c:897 src/wdiff.c:1488
 #, c-format
 msgid "only one file may be standard input"
 msgstr "endast en fil kan vara standard in"
 
-#: src/mdiff.c:923 src/wdiff.c:701
+#: src/mdiff.c:912 src/wdiff.c:690
 #, c-format
 msgid "directories not supported"
 msgstr "kataloger stöds inte"
 
-#: src/mdiff.c:1067
+#: src/mdiff.c:1056
 #, c-format
 msgid "Reading %s"
 msgstr "Läser %s"
 
-#: src/mdiff.c:1192
+#: src/mdiff.c:1181
 #, c-format
 msgid ", %d items\n"
 msgstr ", %d poster\n"
 
-#: src/mdiff.c:1270
+#: src/mdiff.c:1259
 #, c-format
 msgid "Read summary: %d files, %d items\n"
 msgstr "Lässummering: %d filer, %d poster\n"
 
-#: src/mdiff.c:1666
+#: src/mdiff.c:1655
 #, c-format
 msgid "Sorting"
 msgstr "Sorterar"
 
-#: src/mdiff.c:1683
+#: src/mdiff.c:1672
 #, c-format
 msgid ", clustering"
 msgstr ", grupperar"
 
-#: src/mdiff.c:1851 src/mdiff.c:1914
+#: src/mdiff.c:1840 src/mdiff.c:1903
 #, c-format
 msgid ", done\n"
 msgstr ", klar\n"
 
-#: src/mdiff.c:1901
+#: src/mdiff.c:1890
 #, c-format
 msgid "Sorting members"
 msgstr "Sorterar medlemmar"
 
-#: src/mdiff.c:1933
+#: src/mdiff.c:1922
 #, c-format
 msgid "Work summary: %d clusters, %d members\n"
 msgstr "Arbetssummering: %d grupper, %d medlemmar\n"
 
-#: src/mdiff.c:2313
+#: src/mdiff.c:2302
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Arbetssummering: %d grupper, %d medlemmar, %d överlappningar\n"
 
-#: src/mdiff.c:2368 src/wdiff.c:241
+#: src/mdiff.c:2357 src/wdiff.c:230
 #, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "välj terminaltyp genom att sätta miljövariabeln TERM"
 
-#: src/mdiff.c:2371 src/wdiff.c:244
+#: src/mdiff.c:2360 src/wdiff.c:233
 #, c-format
 msgid "could not access the termcap data base"
 msgstr "kan inte läsa termcap-databasen"
 
-#: src/mdiff.c:2373 src/wdiff.c:246
+#: src/mdiff.c:2362 src/wdiff.c:235
 #, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "terminaltyp \"%s\" är inte definierad"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1198 src/wdiff.c:1210
+#: src/mdiff.c:3741 src/mdiff.c:3753 src/wdiff.c:1187 src/wdiff.c:1199
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d ord"
 
-#: src/mdiff.c:3755 src/mdiff.c:3767 src/wdiff.c:1201 src/wdiff.c:1213
+#: src/mdiff.c:3744 src/mdiff.c:3756 src/wdiff.c:1190 src/wdiff.c:1202
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% gemensamma"
 
-#: src/mdiff.c:3757 src/wdiff.c:1203
+#: src/mdiff.c:3746 src/wdiff.c:1192
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% borttagna"
 
-#: src/mdiff.c:3759 src/mdiff.c:3771 src/wdiff.c:1205 src/wdiff.c:1217
+#: src/mdiff.c:3748 src/mdiff.c:3760 src/wdiff.c:1194 src/wdiff.c:1206
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% ändrade"
 
-#: src/mdiff.c:3769 src/wdiff.c:1215
+#: src/mdiff.c:3758 src/wdiff.c:1204
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% tillagda"
 
-#: src/mdiff.c:3798 src/wdiff.c:1257 src/wdiff2.c:178
+#: src/mdiff.c:3787 src/wdiff.c:1246 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Försök med \"%s --help\" för mer information.\n"
 
-#: src/mdiff.c:3802
+#: src/mdiff.c:3791
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -129,12 +130,12 @@ msgstr ""
 "mdiff - Läser flera filer och letar efter liknande sekvenser, därefter\n"
 "visas en möjligen detaljerad lista med skillnader och likheter.\n"
 
-#: src/mdiff.c:3807
+#: src/mdiff.c:3796
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Användning: %s [FLAGGA]... [FIL]...\n"
 
-#: src/mdiff.c:3811
+#: src/mdiff.c:3800
 msgid ""
 "\n"
 "Operation modes:\n"
@@ -142,23 +143,23 @@ msgstr ""
 "\n"
 "Arbetslägen:\n"
 
-#: src/mdiff.c:3812
+#: src/mdiff.c:3801
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (ignorerad)\n"
 
-#: src/mdiff.c:3813
+#: src/mdiff.c:3802
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          rapportera en del statistik på standard fel\n"
 
-#: src/mdiff.c:3814 src/unify.c:293
+#: src/mdiff.c:3803 src/unify.c:293
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             visa denna hjälptext och avsluta\n"
 
-#: src/mdiff.c:3815 src/unify.c:294
+#: src/mdiff.c:3804 src/unify.c:294
 msgid "      --version          display program version then exit\n"
 msgstr "      --version          visa versionsinformation och avsluta\n"
 
-#: src/mdiff.c:3817
+#: src/mdiff.c:3806
 msgid ""
 "\n"
 "Formatting output:\n"
@@ -166,31 +167,31 @@ msgstr ""
 "\n"
 "Formatera resultat:\n"
 
-#: src/mdiff.c:3818
+#: src/mdiff.c:3807
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 "  -T, --initial-tab       skriv TAB instället för inledande mellanslag\n"
 
-#: src/mdiff.c:3819
+#: src/mdiff.c:3808
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 "  -l, --paginate          skicka resultatet genom \"pr\" för sidindelning\n"
 
-#: src/mdiff.c:3820
+#: src/mdiff.c:3809
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=STRÄNG]   sök även efter STRÄNG\n"
 
-#: src/mdiff.c:3821
+#: src/mdiff.c:3810
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        nge fil- och radreferenser i annoteringar\n"
 
-#: src/mdiff.c:3822
+#: src/mdiff.c:3811
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 "  -t, --expand-tabs       ersätt tabulatortecken med mellanslag i reultatet\n"
 
-#: src/mdiff.c:3825
+#: src/mdiff.c:3814
 msgid ""
 "\n"
 "Debugging:\n"
@@ -198,11 +199,11 @@ msgstr ""
 "\n"
 "Felsökning:\n"
 
-#: src/mdiff.c:3826
+#: src/mdiff.c:3815
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr "  -0, --debugging   skriv ut många detaljer om vad som händer\n"
 
-#: src/mdiff.c:3829
+#: src/mdiff.c:3818
 msgid ""
 "\n"
 "Word mode options:\n"
@@ -210,79 +211,79 @@ msgstr ""
 "\n"
 "Flaggor för ordläge:\n"
 
-#: src/mdiff.c:3830 src/wdiff.c:1275 src/wdiff2.c:196
+#: src/mdiff.c:3819 src/wdiff.c:1264 src/wdiff2.c:195
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr "  -1, --no-deleted           visa inte borttagna ord\n"
 
-#: src/mdiff.c:3831 src/wdiff.c:1276 src/wdiff2.c:197
+#: src/mdiff.c:3820 src/wdiff.c:1265 src/wdiff2.c:196
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr "  -2, --no-inserted          visa inte tillagda ord\n"
 
-#: src/mdiff.c:3832 src/wdiff.c:1277 src/wdiff2.c:198
+#: src/mdiff.c:3821 src/wdiff.c:1266 src/wdiff2.c:197
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            visa inte gemensamma ord\n"
 
-#: src/mdiff.c:3833
+#: src/mdiff.c:3822
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager           ge resultatet till en sidvisare\n"
 
-#: src/mdiff.c:3834
+#: src/mdiff.c:3823
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -k, --less-mode            speciell variant av -o för \"less\"\n"
 
-#: src/mdiff.c:3835
+#: src/mdiff.c:3824
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -m, --avoid-wraps          låt inte fält löpa över flera rader\n"
 
-#: src/mdiff.c:3836
+#: src/mdiff.c:3825
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr "  -o, --printer              dubbelskrift som för skrivare\n"
 
-#: src/mdiff.c:3837
+#: src/mdiff.c:3826
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             använd termcap för att markera ord\n"
 
-#: src/mdiff.c:3838
+#: src/mdiff.c:3827
 msgid ""
 "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
 msgstr ""
 "  -K, --no-init-term         som -z, men inga termcap-start/slutsträngar\n"
 
-#: src/mdiff.c:3839
+#: src/mdiff.c:3828
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr "  -O, --item-regexp=REGEXP   jämför poster som definieras av REGEXP\n"
 
-#: src/mdiff.c:3840
+#: src/mdiff.c:3829
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            jämför ord istället för rader\n"
 
-#: src/mdiff.c:4025
+#: src/mdiff.c:4014
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "Utan FIL eller om FIL är -, läs standard in.\n"
 
-#: src/mdiff.c:4027 src/unify.c:298 src/wdiff.c:1293 src/wdiff2.c:216
+#: src/mdiff.c:4016 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:215
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "Rapportera fel till <wdiff-bugs@gnu.org>\n"
 "Rapportera fel eller synpunkter på översättningen till <tp-sv@listor.tp-sv."
 "se>.\n"
 
-#: src/mdiff.c:4038
+#: src/mdiff.c:4027
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr "ignorerar flaggan %s (inte implementerad)"
 
-#: src/mdiff.c:4335
+#: src/mdiff.c:4324
 #, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "kan inte använda -z, termcap finns inte tillgängligt"
 
-#: src/mdiff.c:4374
+#: src/mdiff.c:4363
 #, c-format
 msgid "word merging for two files only (so far)"
 msgstr "ordsammanslagning finns endast för två filer (än så länge)"
 
-#: src/mdiff.c:4390
+#: src/mdiff.c:4379
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
@@ -290,7 +291,7 @@ msgstr ""
 "\n"
 "Copyright © 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4394 src/unify.c:407 src/wdiff.c:1419 src/wdiff2.c:134
+#: src/mdiff.c:4383 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -299,7 +300,7 @@ msgstr ""
 "INGEN garanti; inte ens för SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT\n"
 "ÄNDAMÅL.\n"
 
-#: src/mdiff.c:4398 src/wdiff.c:1423 src/wdiff2.c:138
+#: src/mdiff.c:4387 src/wdiff.c:1412 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -307,7 +308,7 @@ msgstr ""
 "\n"
 "Skriven av François Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4434
+#: src/mdiff.c:4423
 #, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "flaggorna -123RSYZ är bara meningsfulla med två indatakällor"
@@ -426,12 +427,12 @@ msgstr "korrupt sammanhangsskillnad på rad %ld"
 msgid "context diff missing `new' header at line %ld"
 msgstr "sammanhangsskillnad saknar \"nytt\" huvud på rad %ld"
 
-#: src/wdiff.c:605 src/wdiff.c:724
+#: src/wdiff.c:594 src/wdiff.c:713
 #, c-format
 msgid "no suitable temporary directory exists"
 msgstr "ingen lämplig temporärkatalog existerar"
 
-#: src/wdiff.c:1233 src/wdiff2.c:110
+#: src/wdiff.c:1222 src/wdiff2.c:109
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -464,11 +465,11 @@ msgstr ""
 "Du bör ha fått en kopia av GNU General Public License\n"
 "tillsammans med detta program. Om inte, se <http://www.gnu.org/licenses/>.\n"
 
-#: src/wdiff.c:1261
+#: src/wdiff.c:1250
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Jämför ord i två filer och rapportera skillnader.\n"
 
-#: src/wdiff.c:1265
+#: src/wdiff.c:1254
 #, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
@@ -477,94 +478,94 @@ msgstr ""
 "Användning: %s [FLAGGA]... FIL1 FIL2\n"
 "            %s [FLAGGA]... [FIL]\n"
 
-#: src/wdiff.c:1270 src/wdiff2.c:191
+#: src/wdiff.c:1259 src/wdiff2.c:190
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
 "Obligatoriska argument för långa flaggor är obligatoriska för korta flaggor\n"
 
-#: src/wdiff.c:1273 src/wdiff2.c:194
+#: src/wdiff.c:1262 src/wdiff2.c:193
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            skriv copyright och avsluta\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:195
+#: src/wdiff.c:1263 src/wdiff2.c:194
 msgid ""
 "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
 msgstr ""
 "  -K, --no-init-term         som -t, men utan termcap start/stopp-strängar\n"
 
-#: src/wdiff.c:1278 src/wdiff2.c:199
+#: src/wdiff.c:1267 src/wdiff2.c:198
 msgid "  -a, --auto-pager           automatically calls a pager\n"
 msgstr "  -a, --auto-pager           ge resultatet till en sidvisare\n"
 
-#: src/wdiff.c:1279
+#: src/wdiff.c:1268
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr "  -d, --diff-input           använd enad skillnad som indata\n"
 
-#: src/wdiff.c:1280 src/wdiff2.c:200
+#: src/wdiff.c:1269 src/wdiff2.c:199
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 skriv denna hjälp och avsluta\n"
 
-#: src/wdiff.c:1281 src/wdiff2.c:201
+#: src/wdiff.c:1270 src/wdiff2.c:200
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr "  -i, --ignore-case          ignorera skiftläge vid jämförelse\n"
 
-#: src/wdiff.c:1282 src/wdiff2.c:202
+#: src/wdiff.c:1271 src/wdiff2.c:201
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -l, --less-mode            variation av --printer för \"less\"\n"
 
-#: src/wdiff.c:1283 src/wdiff2.c:203
+#: src/wdiff.c:1272 src/wdiff2.c:202
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -n, --avoid-wraps          utöka inte fält genom nyrad\n"
 
-#: src/wdiff.c:1284 src/wdiff2.c:204
+#: src/wdiff.c:1273 src/wdiff2.c:203
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              överskrivning som för skrivare\n"
 
-#: src/wdiff.c:1285 src/wdiff2.c:206
+#: src/wdiff.c:1274 src/wdiff2.c:205
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
 "  -s, --statistics           visa hur många ord borttagna, insatta etc.\n"
 
-#: src/wdiff.c:1286 src/wdiff2.c:207
+#: src/wdiff.c:1275 src/wdiff2.c:206
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             använd termcap för terminaler\n"
 
-#: src/wdiff.c:1287 src/wdiff2.c:208
+#: src/wdiff.c:1276 src/wdiff2.c:207
 msgid "  -v, --version              display program version then exit\n"
 msgstr "  -v, --version              skriv programversion och avsluta\n"
 
-#: src/wdiff.c:1288 src/wdiff2.c:209
+#: src/wdiff.c:1277 src/wdiff2.c:208
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 msgstr ""
 "  -w, --start-delete=STRÄNG  sträng som markerar början av en borttagen "
 "region\n"
 
-#: src/wdiff.c:1289 src/wdiff2.c:210
+#: src/wdiff.c:1278 src/wdiff2.c:209
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr ""
 "  -x, --end-delete=STRÄNG    sträng som markerar slutet av en borttagen "
 "region\n"
 
-#: src/wdiff.c:1290 src/wdiff2.c:211
+#: src/wdiff.c:1279 src/wdiff2.c:210
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr ""
 "  -y, --start-insert=STRÄNG  sträng som markerar början av en insatt region\n"
 
-#: src/wdiff.c:1291 src/wdiff2.c:212
+#: src/wdiff.c:1280 src/wdiff2.c:211
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
 "  -z, --end-insert=STRÄNG    sträng som markerar slutet av en insatt region\n"
 
-#: src/wdiff.c:1409
+#: src/wdiff.c:1398
 #, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "kan inte använda -t, termcap finns inte tillgängligt"
 
-#: src/wdiff.c:1414
+#: src/wdiff.c:1403
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
@@ -574,17 +575,17 @@ msgstr ""
 "Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
 "Foundation, Inc.\n"
 
-#: src/wdiff.c:1462 src/wdiff.c:1480
+#: src/wdiff.c:1451 src/wdiff.c:1469
 #, c-format
 msgid "too many file arguments"
 msgstr "för många filargument"
 
-#: src/wdiff.c:1475 src/wdiff2.c:323
+#: src/wdiff.c:1464 src/wdiff2.c:322
 #, c-format
 msgid "missing file arguments"
 msgstr "filargument saknas"
 
-#: src/wdiff2.c:130
+#: src/wdiff2.c:129
 msgid ""
 "\n"
 "Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
@@ -592,7 +593,7 @@ msgstr ""
 "\n"
 "Copyright © 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 
-#: src/wdiff2.c:182
+#: src/wdiff2.c:181
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
@@ -601,27 +602,27 @@ msgstr ""
 "Detta program finns huvudsakligen för att stödja den nu gamla \"wdiff\"-"
 "syntaxen.\n"
 
-#: src/wdiff2.c:187
+#: src/wdiff2.c:186
 #, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
 msgstr "Användning: %s [FLAGGA]... FIL1 FIL2\n"
 
-#: src/wdiff2.c:205
+#: src/wdiff2.c:204
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
 msgstr ""
 "  -q, --quiet                undertryck meddelandet för \"mdiff\"-anropet\n"
 
-#: src/wdiff2.c:214
+#: src/wdiff2.c:213
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr "Detta program talar även om hur \"mdiff\" kan anropas direkt.\n"
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:335
+#: src/wdiff2.c:334
 #, c-format
 msgid "Launching `%s"
 msgstr "Startar \"%s"
 
-#: src/wdiff2.c:338
+#: src/wdiff2.c:337
 #, c-format
 msgid "'\n"
 msgstr "\"\n"
