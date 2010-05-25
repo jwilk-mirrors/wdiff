@@ -47,17 +47,7 @@
 #endif
 
 #include <ctype.h>
-
-#if STDC_HEADERS
-# include <string.h>
-#else
-# if HAVE_STRING_H
-#  include <string.h>
-# else
-#  include <strings.h>
-#  define strrchr rindex
-# endif
-#endif
+#include <string.h>
 
 char *strstr ();
 
@@ -2796,7 +2786,7 @@ launch_output_program (struct input *input)
 	{
 	  int is_less;
 
-	  if (basename = strrchr (program, '/'), basename)
+	  if (basename = mbsrchr (program, '/'), basename)
 	    basename++;
 	  else
 	    basename = program;

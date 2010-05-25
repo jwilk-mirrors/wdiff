@@ -42,17 +42,7 @@
 /* Library declarations.  */
 
 #include <ctype.h>
-
-#if STDC_HEADERS
-# include <string.h>
-#else
-# if HAVE_STRING_H
-#  include <string.h>
-# else
-#  include <strings.h>
-#  define strrchr rindex
-# endif
-#endif
+#include <string.h>
 
 #if HAVE_TPUTS
 # if HAVE_TERMCAP_H
@@ -1104,7 +1094,7 @@ launch_output_program (void)
       else {
         realprogram = program;
       }
-      basename = strrchr (realprogram, '/');
+      basename = mbsrchr (realprogram, '/');
       if (basename)
 	basename++;
       else
