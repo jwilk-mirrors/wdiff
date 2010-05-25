@@ -25,6 +25,7 @@ AC_DEFUN([gl_EARLY],
   m4_pattern_allow([^gl_LIBOBJS$])dnl a variable
   m4_pattern_allow([^gl_LTLIBOBJS$])dnl a variable
   AC_REQUIRE([AC_PROG_RANLIB])
+  AC_REQUIRE([AM_PROG_CC_C_O])
   # Code from module alloca-opt:
   # Code from module arg-nonnull:
   # Code from module btowc:
@@ -57,8 +58,11 @@ AC_DEFUN([gl_EARLY],
   # Code from module malloc:
   # Code from module malloc-posix:
   # Code from module malloca:
+  # Code from module mbchar:
   # Code from module mbrtowc:
   # Code from module mbsinit:
+  # Code from module mbsrchr:
+  # Code from module mbuiter:
   # Code from module memchr:
   # Code from module multiarch:
   # Code from module nl_langinfo:
@@ -76,11 +80,15 @@ AC_DEFUN([gl_EARLY],
   # Code from module streq:
   # Code from module strerror:
   # Code from module string:
+  # Code from module strnlen1:
   # Code from module strstr-simple:
   # Code from module sys_stat:
   # Code from module sys_wait:
   # Code from module time:
   # Code from module unistd:
+  # Code from module unitypes:
+  # Code from module uniwidth/base:
+  # Code from module uniwidth/width:
   # Code from module useless-if-before-free:
   # Code from module vc-list-files:
   # Code from module verify:
@@ -88,6 +96,7 @@ AC_DEFUN([gl_EARLY],
   # Code from module wchar:
   # Code from module wcrtomb:
   # Code from module wctype:
+  # Code from module wcwidth:
   # Code from module xalloc:
   # Code from module xalloc-die:
 ])
@@ -187,12 +196,18 @@ AC_DEFUN([gl_INIT],
   gl_STDLIB_MODULE_INDICATOR([malloc-posix])
   # Code from module malloca:
   gl_MALLOCA
+  # Code from module mbchar:
+  gl_MBCHAR
   # Code from module mbrtowc:
   gl_FUNC_MBRTOWC
   gl_WCHAR_MODULE_INDICATOR([mbrtowc])
   # Code from module mbsinit:
   gl_FUNC_MBSINIT
   gl_WCHAR_MODULE_INDICATOR([mbsinit])
+  # Code from module mbsrchr:
+  gl_STRING_MODULE_INDICATOR([mbsrchr])
+  # Code from module mbuiter:
+  gl_MBITER
   # Code from module memchr:
   gl_FUNC_MEMCHR
   gl_STRING_MODULE_INDICATOR([memchr])
@@ -232,6 +247,7 @@ AC_DEFUN([gl_INIT],
   gl_STRING_MODULE_INDICATOR([strerror])
   # Code from module string:
   gl_HEADER_STRING_H
+  # Code from module strnlen1:
   # Code from module strstr-simple:
   gl_FUNC_STRSTR_SIMPLE
   gl_STRING_MODULE_INDICATOR([strstr])
@@ -245,6 +261,12 @@ AC_DEFUN([gl_INIT],
   gl_HEADER_TIME_H
   # Code from module unistd:
   gl_UNISTD_H
+  # Code from module unitypes:
+  gl_LIBUNISTRING_LIBHEADER([0.9], [unitypes.h])
+  # Code from module uniwidth/base:
+  gl_LIBUNISTRING_LIBHEADER([0.9], [uniwidth.h])
+  # Code from module uniwidth/width:
+  gl_LIBUNISTRING_LIBSOURCE([0.9], [uniwidth/width.c])
   # Code from module useless-if-before-free:
   # Code from module vc-list-files:
   # Code from module verify:
@@ -256,6 +278,9 @@ AC_DEFUN([gl_INIT],
   gl_WCHAR_MODULE_INDICATOR([wcrtomb])
   # Code from module wctype:
   gl_WCTYPE_H
+  # Code from module wcwidth:
+  gl_FUNC_WCWIDTH
+  gl_WCHAR_MODULE_INDICATOR([wcwidth])
   # Code from module xalloc:
   gl_XALLOC
   # Code from module xalloc-die:
@@ -433,8 +458,12 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/malloca.c
   lib/malloca.h
   lib/malloca.valgrind
+  lib/mbchar.c
+  lib/mbchar.h
   lib/mbrtowc.c
   lib/mbsinit.c
+  lib/mbsrchr.c
+  lib/mbuiter.h
   lib/memchr.c
   lib/memchr.valgrind
   lib/nl_langinfo.c
@@ -460,15 +489,22 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/streq.h
   lib/strerror.c
   lib/string.in.h
+  lib/strnlen1.c
+  lib/strnlen1.h
   lib/strstr.c
   lib/sys_stat.in.h
   lib/sys_wait.in.h
   lib/time.in.h
   lib/unistd.in.h
+  lib/unitypes.in.h
+  lib/uniwidth.in.h
+  lib/uniwidth/cjk.h
+  lib/uniwidth/width.c
   lib/verify.h
   lib/wchar.in.h
   lib/wcrtomb.c
   lib/wctype.in.h
+  lib/wcwidth.c
   lib/xalloc-die.c
   lib/xalloc.h
   lib/xmalloc.c
@@ -507,6 +543,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/lib-ld.m4
   m4/lib-link.m4
   m4/lib-prefix.m4
+  m4/libunistring-base.m4
   m4/localcharset.m4
   m4/locale-fr.m4
   m4/locale-ja.m4
@@ -517,6 +554,8 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/lstat.m4
   m4/malloc.m4
   m4/malloca.m4
+  m4/mbchar.m4
+  m4/mbiter.m4
   m4/mbrtowc.m4
   m4/mbsinit.m4
   m4/mbstate_t.m4
@@ -557,6 +596,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/wchar_t.m4
   m4/wcrtomb.m4
   m4/wctype_h.m4
+  m4/wcwidth.m4
   m4/wint_t.m4
   m4/xalloc.m4
   m4/xsize.m4

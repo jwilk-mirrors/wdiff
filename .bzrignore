@@ -63,6 +63,8 @@ lib/string.h
 lib/sys
 lib/time.h
 lib/unistd.h
+lib/unitypes.h
+lib/uniwidth.h
 lib/warn-on-use.h
 lib/wchar.h
 lib/wctype.h
