@@ -33,7 +33,7 @@ else
   HELP2MAN=:
 fi
 
-AM_GNU_GETTEXT_VERSION([0.17])
+AM_GNU_GETTEXT_VERSION([0.18])
 AM_GNU_GETTEXT([external])
 
 AC_ARG_WITH([default-pager],
