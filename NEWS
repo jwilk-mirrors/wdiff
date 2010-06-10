@@ -1,6 +1,11 @@
 GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007, 2010 Free Software Foundation, Inc.
 
+* Version 0.6.2 - June 2010, by Martin von Gagern
+
+  * Updated Italian and Swedish translations
+  * Updated gnulib
+
 * Version 0.6.2 - May 2010, by Martin von Gagern
 
   * Fix shell syntax in configure script
