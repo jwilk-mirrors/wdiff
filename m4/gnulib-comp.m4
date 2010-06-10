@@ -154,7 +154,7 @@ AC_DEFUN([gl_INIT],
   gl_FUNC_GETOPT_POSIX
   # Code from module gettext:
   dnl you must add AM_GNU_GETTEXT([external]) or similar to configure.ac.
-  AM_GNU_GETTEXT_VERSION([0.18])
+  AM_GNU_GETTEXT_VERSION([0.18.1])
   # Code from module gettext-h:
   AC_SUBST([LIBINTL])
   AC_SUBST([LTLIBINTL])
@@ -266,7 +266,7 @@ AC_DEFUN([gl_INIT],
   # Code from module uniwidth/base:
   gl_LIBUNISTRING_LIBHEADER([0.9], [uniwidth.h])
   # Code from module uniwidth/width:
-  gl_LIBUNISTRING_LIBSOURCE([0.9], [uniwidth/width.c])
+  gl_LIBUNISTRING_MODULE([0.9], [uniwidth/width])
   # Code from module useless-if-before-free:
   # Code from module vc-list-files:
   # Code from module verify:

@@ -1096,6 +1096,7 @@ time.h: time.in.h $(CXXDEFS_H) $(ARG_NONNULL_H) $(WARN_ON_USE_H)
 	      -e 's|@''REPLACE_MKTIME''@|$(REPLACE_MKTIME)|g' \
 	      -e 's|@''REPLACE_NANOSLEEP''@|$(REPLACE_NANOSLEEP)|g' \
 	      -e 's|@''REPLACE_TIMEGM''@|$(REPLACE_TIMEGM)|g' \
+	      -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|$(PTHREAD_H_DEFINES_STRUCT_TIMESPEC)|g' \
 	      -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|$(SYS_TIME_H_DEFINES_STRUCT_TIMESPEC)|g' \
 	      -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|$(TIME_H_DEFINES_STRUCT_TIMESPEC)|g' \
 	      -e '/definitions of _GL_FUNCDECL_RPL/r $(CXXDEFS_H)' \
@@ -1269,10 +1270,11 @@ EXTRA_DIST += localcharset.h uniwidth.in.h
 
 ## begin gnulib module uniwidth/width
 
+if LIBUNISTRING_COMPILE_UNIWIDTH_WIDTH
+libgnu_a_SOURCES += uniwidth/width.c
+endif
 
-EXTRA_DIST += uniwidth/cjk.h uniwidth/width.c
-
-EXTRA_libgnu_a_SOURCES += uniwidth/width.c
+EXTRA_DIST += uniwidth/cjk.h
 
 ## end   gnulib module uniwidth/width
 
