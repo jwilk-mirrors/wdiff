@@ -5,6 +5,9 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
 
+set -e
+
+bzr clean-tree --ignored
 rm -r lib/* m4/* build-aux/*.h
 for i in build-aux/*; do
     [[ -L $i ]] && continue
@@ -18,6 +21,16 @@ for i in build-aux/*; do
 done
 bzr revert m4/gnulib-cache.m4
 autopoint --force
-${GNULIB_TOOL:-gnulib-tool} --import "$@"
+${GNULIB_TOOL:-gnulib-tool} --add-import "$@"
 build-aux/regen-ignore.sh
+./autogen.sh
+./configure --enable-experimental
+make -s check
+for i in lib/po/*.po; do
+    if [[ $( bzr diff $i | grep -v POT-Creation-Date | wc -l ) -lt 12 ]]; then
+        bzr revert $i
+    else
+        echo "$i updated."
+    fi
+done
 bzr status

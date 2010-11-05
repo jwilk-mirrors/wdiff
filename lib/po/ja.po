@@ -1,401 +1,456 @@
-# Translation of `gnulib' messages to Japanese.
-# Copyright (C) 2000, 2002, 2006 Free Software Foundation, Inc.
-# GOTO Masanori <gotom@debian.or.jp>, 2006.
+# Japanese gnulib messages
+# Copyright (C) 2000, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnulib package.
 # Masahito Yamaga <yamaga@ipc.chiba-u.ac.jp>, 2002.
-#  derived from the version by Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp> 1998
-#                              Jun Nishii <jun@flatout.org> 1999
-#                              Daisuke Yamashita <yamad@mb.infoweb.ne.jp> 1999
-#
+# GOTO Masanori <gotom@debian.or.jp>, 2006.
+#  derived from the version by Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp> 1998.
+#                              Jun Nishii <jun@flatout.org> 1999.
+#                              Daisuke Yamashita <yamad@mb.infoweb.ne.jp> 1999.
+# Yasuaki Taniguchi <yasuakit@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 1.0\n"
+"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-06-10 10:59+0200\n"
-"PO-Revision-Date: 2006-06-10 13:12+0900\n"
-"Last-Translator: GOTO Masanori <gotom@debian.or.jp>\n"
+"POT-Creation-Date: 2010-11-05 16:42+0100\n"
+"PO-Revision-Date: 2010-10-20 16:40+0900\n"
+"Last-Translator: Yasuaki Taniguchi <yasuakit@gmail.com>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: lib/error.c:181
 msgid "Unknown system error"
-msgstr "Ì¤ÃÎ¤Î¥·¥¹¥Æ¥à¥¨¥é¡¼"
+msgstr "ä¸æ˜ãªã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼"
 
 #: lib/getopt.c:527 lib/getopt.c:543
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`%s'¤ÏÛ£Ëæ¤Ç¤¹\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '%s' ã¯æ›–æ˜§ã§ã™\n"
 
 #: lib/getopt.c:576 lib/getopt.c:580
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`--%s'¤Ï°ú¿ô¤ò¤È¤ê¤Ş¤»¤ó\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '--%s' ã¯å¼•æ•°ã‚’å–ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“\n"
 
 #: lib/getopt.c:589 lib/getopt.c:594
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`%c%s'¤Ë°ú¿ô¤ÏÉ¬Í×¤¢¤ê¤Ş¤»¤ó\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '%c%s' ã¯å¼•æ•°ã‚’å–ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“\n"
 
 #: lib/getopt.c:637 lib/getopt.c:656
 #, fuzzy, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`%s'¤Ë¤Ï°ú¿ô¤¬É¬Í×¤Ç¤¹\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '--%s' ã¯å¼•æ•°ãŒå¿…è¦ã§ã™\n"
 
 #: lib/getopt.c:694 lib/getopt.c:697
-#, fuzzy, c-format
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`--%s'¤òÇ§¼±¤Ç¤­¤Ş¤»¤ó\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '--%s' ã‚’èªè­˜ã§ãã¾ã›ã‚“\n"
 
 #: lib/getopt.c:705 lib/getopt.c:708
-#, fuzzy, c-format
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`%c%s'¤òÇ§¼±¤Ç¤­¤Ş¤»¤ó\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '%c%s' ã‚’èªè­˜ã§ãã¾ã›ã‚“\n"
 
 #: lib/getopt.c:757 lib/getopt.c:760
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó¤¬°ã¤¤¤Ş¤¹ -- %c\n"
+msgstr "%s: ç„¡åŠ¹ãªã‚ªãƒ—ã‚·ãƒ§ãƒ³ -- '%c'\n"
 
 #: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó¤Ë¤Ï°ú¿ô¤¬É¬Í×¤Ç¤¹ -- %c\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã«ã¯å¼•æ•°ãŒå¿…è¦ã§ã™ -- '%c'\n"
 
 #: lib/getopt.c:883 lib/getopt.c:899
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`-W %s'¤ÏÛ£Ëæ¤Ç¤¹\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '-W %s' ã¯æ›–æ˜§ã§ã™\n"
 
 #: lib/getopt.c:923 lib/getopt.c:941
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`-W %s'¤Ï°ú¿ô¤ò¤È¤ê¤Ş¤»¤ó\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '-W %s' ã¯å¼•æ•°ã‚’å–ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“\n"
 
 #: lib/getopt.c:962 lib/getopt.c:980
 #, fuzzy, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó`%s'¤Ë¤Ï°ú¿ô¤¬É¬Í×¤Ç¤¹\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ '--%s' ã¯å¼•æ•°ãŒå¿…è¦ã§ã™\n"
 
 #: lib/regcomp.c:132
 msgid "Success"
-msgstr "À®¸ù¤Ç¤¹"
+msgstr "æˆåŠŸã§ã™"
 
 #: lib/regcomp.c:135
 msgid "No match"
-msgstr "°ìÃ×¤·¤Ş¤»¤ó"
+msgstr "ä¸€è‡´ã—ã¾ã›ã‚“"
 
 #: lib/regcomp.c:138
 msgid "Invalid regular expression"
-msgstr "Ìµ¸ú¤ÊÀµµ¬É½¸½¤Ç¤¹"
+msgstr "ç„¡åŠ¹ãªæ­£è¦è¡¨ç¾ã§ã™"
 
 #: lib/regcomp.c:141
 msgid "Invalid collation character"
-msgstr "Ìµ¸ú¤Ê¾È¹çÊ¸»ú¤Ç¤¹"
+msgstr "ç„¡åŠ¹ãªç…§åˆæ–‡å­—ã§ã™"
 
 #: lib/regcomp.c:144
 msgid "Invalid character class name"
-msgstr "Ìµ¸ú¤Ê¥­¥ã¥é¥¯¥¿¥¯¥é¥¹Ì¾¤Ç¤¹"
+msgstr "ç„¡åŠ¹ãªæ–‡å­—ã‚¯ãƒ©ã‚¹åã§ã™"
 
 #: lib/regcomp.c:147
 msgid "Trailing backslash"
-msgstr "¥Ğ¥Ã¥¯¥¹¥é¥Ã¥·¥å¤¬»Ä¤Ã¤Æ¤¤¤Ş¤¹"
+msgstr "çµ‚ç«¯ã®ãƒãƒƒã‚¯ã‚¹ãƒ©ãƒƒã‚·ãƒ¥"
 
 #: lib/regcomp.c:150
 msgid "Invalid back reference"
-msgstr "Ìµ¸ú¤Ê¸åÊı»²¾È¤Ç¤¹"
+msgstr "ç„¡åŠ¹ãªå‰æ–¹å‚ç…§ã§ã™"
 
 #: lib/regcomp.c:153
 msgid "Unmatched [ or [^"
-msgstr "[ ¤â¤·¤¯¤Ï [^ ¤¬°ìÃ×¤·¤Ş¤»¤ó"
+msgstr "[ ã¾ãŸã¯ [^ ãŒä¸ä¸€è‡´ã§ã™"
 
 #: lib/regcomp.c:156
 msgid "Unmatched ( or \\("
-msgstr "( ¤â¤·¤¯¤Ï \\( ¤¬°ìÃ×¤·¤Ş¤»¤ó"
+msgstr "( ã¾ãŸã¯ \\( ãŒä¸ä¸€è‡´ã§ã™"
 
 #: lib/regcomp.c:159
 msgid "Unmatched \\{"
-msgstr "\\{ ¤¬°ìÃ×¤·¤Ş¤»¤ó"
+msgstr "\\{ ãŒä¸ä¸€è‡´ã§ã™"
 
 #: lib/regcomp.c:162
 msgid "Invalid content of \\{\\}"
-msgstr "Ìµ¸ú¤Ê \\{\\} ¤ÎÆâÍÆ¤Ç¤¹"
+msgstr "\\{\\} ã®ä¸­èº«ãŒç„¡åŠ¹ã§ã™"
 
 #: lib/regcomp.c:165
 msgid "Invalid range end"
-msgstr "Ìµ¸ú¤Ê½ªÃ¼ÈÏ°Ï¤Ç¤¹"
+msgstr "ç„¡åŠ¹ãªç¯„å›²çµ‚äº†ã§ã™"
 
 #: lib/regcomp.c:168
 msgid "Memory exhausted"
-msgstr "¥á¥â¥ê¤ò»È¤¤²Ì¤¿¤·¤Ş¤·¤¿"
+msgstr "ãƒ¡ãƒ¢ãƒªã‚’ä½¿ã„æœãŸã—ã¾ã—ãŸ"
 
 #: lib/regcomp.c:171
 msgid "Invalid preceding regular expression"
-msgstr "Á°½Ğ¤ÎÀµµ¬É½¸½¤ÏÌµ¸ú¤Ç¤¹"
+msgstr "ç„¡åŠ¹ãªå‰æ–¹æ­£è¦è¡¨ç¾ã§ã™"
 
 #: lib/regcomp.c:174
 msgid "Premature end of regular expression"
-msgstr "Àµµ¬É½¸½¤Î½ªÃ¼¤¬Áá¤¹¤®¤Ş¤¹"
+msgstr "æ­£è¦è¡¨ç¾ãŒé€”ä¸­ã§çµ‚äº†ã—ã¾ã—ãŸ"
 
 #: lib/regcomp.c:177
 msgid "Regular expression too big"
-msgstr "Àµµ¬É½¸½¤¬Ä¹¤¹¤®¤Ş¤¹"
+msgstr "æ­£è¦è¡¨ç¾ãŒå¤§ãã™ãã¾ã™"
 
 #: lib/regcomp.c:180
 msgid "Unmatched ) or \\)"
-msgstr ") ¤â¤·¤¯¤Ï \\) ¤¬°ìÃ×¤·¤Ş¤»¤ó"
+msgstr ") ã¾ãŸã¯ \\) ãŒä¸ä¸€è‡´ã§ã™"
 
 #: lib/regcomp.c:701
 msgid "No previous regular expression"
-msgstr "°ÊÁ°¤ËÀµµ¬É½¸½¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤Ş¤»¤ó"
+msgstr "ä»¥å‰ã«æ­£è¦è¡¨ç¾ãŒã‚ã‚Šã¾ã›ã‚“"
 
 #: lib/xalloc-die.c:34
 msgid "memory exhausted"
-msgstr "¥á¥â¥ê¤ò»È¤¤²Ì¤¿¤·¤Ş¤·¤¿"
+msgstr "ãƒ¡ãƒ¢ãƒªã‚’ä½¿ã„æœãŸã—ã¾ã—ãŸ"
 
 #~ msgid "invalid argument %s for %s"
-#~ msgstr "%2$s ¤ËÂĞ¤¹¤ë°ú¿ô %1$s ¤¬´Ö°ã¤Ã¤Æ¤¤¤Ş¤¹"
+#~ msgstr "%2$s ã«å¯¾ã™ã‚‹å¼•æ•° %1$s ãŒé–“é•ã£ã¦ã„ã¾ã™"
 
 #~ msgid "ambiguous argument %s for %s"
-#~ msgstr "%2$s ¤ËÂĞ¤¹¤ë°ú¿ô %1$s ¤¬Û£Ëæ¤Ç¤¹"
+#~ msgstr "%2$s ã«å¯¾ã™ã‚‹å¼•æ•° %1$s ãŒæ›–æ˜§ã§ã™"
 
 #~ msgid "Valid arguments are:"
-#~ msgstr "Í­¸ú¤Ê°ú¿ô:"
+#~ msgstr "æœ‰åŠ¹ãªå¼•æ•°:"
+
+#~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+#~ msgstr "ARGP_HELP_FMT: %s ã®å€¤ã¯ %s ã®å€¤ä»¥ä¸‹ã§ã™"
 
 #~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
-#~ msgstr "%.*s: ARGP_HELP_FMT ¥Ñ¥é¥á¡¼¥¿¤Ë¤ÏÃÍ¤¬É¬Í×¤Ç¤¹"
+#~ msgstr "%.*s: ARGP_HELP_FMT ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«ã¯å€¤ãŒå¿…è¦ã§ã™"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+#~ msgstr "%.*s: ARGP_HELP_FMT ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¯æ­£ã®å€¤ã§ãªã‘ã‚Œã°ã„ã‘ã¾ã›ã‚“"
 
 #~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
-#~ msgstr "%.*s: ÉÔÌÀ¤Ê ARGP_HELP_FMT ¥Ñ¥é¥á¡¼¥¿"
+#~ msgstr "%.*s: ä¸æ˜ãª ARGP_HELP_FMT ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿"
 
 #~ msgid "Garbage in ARGP_HELP_FMT: %s"
-#~ msgstr "ARGP_HELP_FMT Ãæ¤Ë¤´¤ß¤¬¤¢¤ê¤Ş¤¹: %s"
+#~ msgstr "ARGP_HELP_FMT ä¸­ã«ã”ã¿ãŒã‚ã‚Šã¾ã™: %s"
 
 #~ msgid ""
 #~ "Mandatory or optional arguments to long options are also mandatory or "
 #~ "optional for any corresponding short options."
 #~ msgstr ""
-#~ "¥í¥ó¥°¥ª¥×¥·¥ç¥ó¤ÇÉ¬¿Ü¤Ş¤¿¤ÏÇ¤°Õ¤Î°ú¿ô¤Ï¡¢¤½¤ì¤ËÂĞ±ş¤¹¤ë¥·¥ç¡¼¥È¥ª¥×¥·¥ç¥ó"
-#~ "¤Ç¤âÆ±¤¸¤è¤¦¤ËÉ¬¿Ü¤Ş¤¿¤ÏÇ¤°Õ¤Ç¤¹."
+#~ "é•·ã„å½¢å¼ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã§å¿…é ˆã¾ãŸã¯ä»»æ„ã®å¼•æ•°ã¯ã€ãã‚Œã«å¯¾å¿œã™ã‚‹çŸ­ã„å½¢å¼ã®ã‚ªãƒ—"
+#~ "ã‚·ãƒ§ãƒ³ã§ã‚‚åŒæ§˜ã«å¿…é ˆã¾ãŸã¯ä»»æ„ã§ã™ã€‚"
 
 #~ msgid "Usage:"
-#~ msgstr "»ÈÍÑË¡:"
+#~ msgstr "ä½¿ç”¨æ³•:"
 
 #~ msgid "  or: "
-#~ msgstr " Ëô¤Ï: "
+#~ msgstr "ã¾ãŸã¯: "
 
 #~ msgid " [OPTION...]"
-#~ msgstr " [¥ª¥×¥·¥ç¥ó...]"
+#~ msgstr " [OPTION...]"
 
 #~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
-#~ msgstr "¾ÜºÙ¤Ï`%s --help'¤Ş¤¿¤Ï`%s --usage'¤ò¼Â¹Ô¤·¤Æ²¼¤µ¤¤.\n"
+#~ msgstr "è©³ç´°ã¯ `%s --help' ã¾ãŸã¯ `%s --usage' ã‚’å®Ÿè¡Œã—ã¦ä¸‹ã•ã„ã€‚\n"
 
 #~ msgid "Report bugs to %s.\n"
-#~ msgstr "¥Ğ¥°¤òÈ¯¸«¤·¤¿¤é %s °¸¤ËÊó¹ğ¤·¤Æ²¼¤µ¤¤.\n"
+#~ msgstr ""
+#~ "ãƒã‚°ã‚’ç™ºè¦‹ã—ãŸã‚‰ <%s> ã«å ±å‘Šã—ã¦ä¸‹ã•ã„ã€‚\n"
+#~ "ç¿»è¨³ã«é–¢ã™ã‚‹ãƒã‚°ã¯<translation-team-ja@lists.sourceforge.net>ã«å ±å‘Šã—ã¦ã"
+#~ "ã ã•ã„ã€‚\n"
 
-#~ msgid "Give this help list"
-#~ msgstr "¤³¤Î¥Ø¥ë¥×¤ÎÉ½¼¨"
+#~ msgid "give this help list"
+#~ msgstr "ã“ã®ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã™ã‚‹"
 
-#~ msgid "Give a short usage message"
-#~ msgstr "Ã»¤¤»ÈÍÑÊıË¡¤ÎÉ½¼¨"
+#~ msgid "give a short usage message"
+#~ msgstr "çŸ­ã„ä½¿ç”¨æ–¹æ³•ã‚’è¡¨ç¤ºã™ã‚‹"
 
 #~ msgid "NAME"
-#~ msgstr "Ì¾Á°"
+#~ msgstr "åå‰"
 
-#~ msgid "Set the program name"
-#~ msgstr "¥×¥í¥°¥é¥àÌ¾¤ò¥»¥Ã¥È¤¹¤ë"
+#~ msgid "set the program name"
+#~ msgstr "ãƒ—ãƒ­ã‚°ãƒ©ãƒ åã‚’è¨­å®šã™ã‚‹"
 
 #~ msgid "SECS"
 #~ msgstr "SECS"
 
-#~ msgid "Hang for SECS seconds (default 3600)"
-#~ msgstr "SECS ÉÃ¤Ç¥Ï¥ó¥° (¥Ç¥Õ¥©¥ë¥È 3600)"
+#~ msgid "hang for SECS seconds (default 3600)"
+#~ msgstr "SECS ç§’ã§ãƒãƒ³ã‚° (ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ 3600)"
 
-#~ msgid "Print program version"
-#~ msgstr "¥×¥í¥°¥é¥à¤Î¥Ğ¡¼¥¸¥ç¥ó¤òÉ½¼¨¤¹¤ë"
+#~ msgid "print program version"
+#~ msgstr "ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¡¨ç¤ºã™ã‚‹"
 
 #~ msgid "(PROGRAM ERROR) No version known!?"
-#~ msgstr "(¥×¥í¥°¥é¥à¥¨¥é¡¼) Ì¤ÃÎ¤Î¥Ğ¡¼¥¸¥ç¥ó!?"
+#~ msgstr "(ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚¨ãƒ©ãƒ¼) ä¸æ˜ãªãƒãƒ¼ã‚¸ãƒ§ãƒ³!?"
 
 #~ msgid "%s: Too many arguments\n"
-#~ msgstr "%s: °ú¿ô¤¬Â¿¤¹¤®¤Ş¤¹\n"
+#~ msgstr "%s: å¼•æ•°ãŒå¤šã™ãã¾ã™\n"
 
 #~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
-#~ msgstr "(¥×¥í¥°¥é¥à¥¨¥é¡¼) ¥ª¥×¥·¥ç¥ó¤ÏÇ§¼±¤µ¤ì¤Æ¤¤¤ë¤Ù¤­¤Ç¤¹!?"
+#~ msgstr "(ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚¨ãƒ©ãƒ¼) ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯èªè­˜ã•ã‚Œã¦ã„ã‚‹ã¹ãã§ã™!?"
 
 #~ msgid "program error"
-#~ msgstr "¥×¥í¥°¥é¥à¥¨¥é¡¼"
+#~ msgstr "ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚¨ãƒ©ãƒ¼"
 
 #~ msgid "stack overflow"
-#~ msgstr "¥¹¥¿¥Ã¥¯¥ª¡¼¥Ğ¡¼¥Õ¥í¡¼"
+#~ msgstr "ã‚¹ã‚¿ãƒƒã‚¯ã‚ªãƒ¼ãƒãƒ¼ãƒ•ãƒ­ãƒ¼"
+
+#~ msgid "cannot find a temporary directory, try setting $TMPDIR"
+#~ msgstr "ä¸€æ™‚ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆã§ãã¾ã›ã‚“ã€‚ $TMPDIR ã‚’è¨­å®šã—ã¦ã¿ã¦ãã ã•ã„"
+
+#~ msgid "cannot create a temporary directory using template \"%s\""
+#~ msgstr "ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆ \"%s\" ã‚’ä½¿ç”¨ã—ãŸä¸€æ™‚ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆã§ãã¾ã›ã‚“"
+
+#~ msgid "cannot remove temporary file %s"
+#~ msgstr "ä¸€æ™‚ãƒ•ã‚¡ã‚¤ãƒ« %s ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“"
+
+#~ msgid "cannot remove temporary directory %s"
+#~ msgstr "ä¸€æ™‚ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª %s ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“"
+
+#~ msgid "error closing file"
+#~ msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ã‚¯ãƒ­ãƒ¼ã‚ºã‚¨ãƒ©ãƒ¼"
 
 #~ msgid "write error"
-#~ msgstr "½ñ¤­¹ş¤ß¥¨¥é¡¼"
+#~ msgstr "æ›¸ãè¾¼ã¿ã‚¨ãƒ©ãƒ¼"
+
+#~ msgid "preserving permissions for %s"
+#~ msgstr "%s ã®ãƒ‘ãƒ¼ãƒŸãƒƒã‚·ãƒ§ãƒ³ã‚’ä¿å­˜ã—ã¦ã„ã¾ã™"
 
 #~ msgid "error while opening \"%s\" for reading"
-#~ msgstr "\"%s\"¤òÆÉ¹ş¤à¤¿¤á³«¤¤¤Æ¤¤¤ëºİ¤Ë¥¨¥é¡¼"
+#~ msgstr "\"%s\"ã‚’èª­è¾¼ã‚€ãŸã‚é–‹ã„ã¦ã„ã‚‹éš›ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"
 
 #~ msgid "cannot open backup file \"%s\" for writing"
-#~ msgstr "½ñ¹ş¤ßÍÑ¥Ğ¥Ã¥¯¥¢¥Ã¥×¥Õ¥¡¥¤¥ë\"%s\"¤ò³«¤¯¤³¤È¤¬¤Ç¤­¤Ş¤»¤ó"
+#~ msgstr "æ›¸è¾¼ã¿ç”¨ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ãƒ•ã‚¡ã‚¤ãƒ«\"%s\"ã‚’é–‹ãã“ã¨ãŒã§ãã¾ã›ã‚“"
 
 #~ msgid "error reading \"%s\""
-#~ msgstr "\"%s\"¤ÎÆÉ¹ş¤ßÃæ¤Ç¥¨¥é¡¼"
+#~ msgstr "\"%s\"ã®èª­è¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"
 
 #~ msgid "error writing \"%s\""
-#~ msgstr "\"%s\"¤Î½ñ¹ş¤ßÃæ¤Ç¥¨¥é¡¼"
+#~ msgstr "\"%s\"ã®æ›¸è¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"
 
 #~ msgid "error after reading \"%s\""
-#~ msgstr "\"%s\"¤ÎÆÉ¹ş¤ß¸å¤Ë¥¨¥é¡¼"
+#~ msgstr "\"%s\"ã®èª­è¾¼ã¿å¾Œã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"
 
 #~ msgid "fdopen() failed"
-#~ msgstr "fdopen()¤Ë¼ºÇÔ"
+#~ msgstr "fdopen()ã«å¤±æ•—ã—ã¾ã—ãŸ"
 
 #~ msgid "C# compiler not found, try installing pnet"
-#~ msgstr "C# ¥³¥ó¥Ñ¥¤¥é¤¬¸«¤Ä¤«¤é¤Ê¤¤¤Î¤Ç pnet ¥¤¥ó¥¹¥È¡¼¥ë¤·¤Æ¤ß¤Æ¤¯¤À¤µ¤¤"
+#~ msgstr "C# ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©ãŒè¦‹ã¤ã‚Šã¾ã›ã‚“ã€‚pnet ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ã¿ã¦ãã ã•ã„"
 
 #~ msgid "C# virtual machine not found, try installing pnet"
-#~ msgstr "C# ²¾ÁÛ¥Ş¥·¥ó¤¬¸«¤Ä¤«¤é¤Ê¤¤¤Î¤Ç pnet ¤ò¥¤¥ó¥¹¥È¡¼¥ë¤·¤Æ¤ß¤Æ¤¯¤À¤µ¤¤"
+#~ msgstr "C# ä»®æƒ³ãƒã‚·ãƒ³ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚pnet ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ã¿ã¦ãã ã•ã„"
 
 #~ msgid "%s subprocess failed"
-#~ msgstr "%s ¥µ¥Ö¥×¥í¥»¥¹¤¬¼ºÇÔ¤·¤Ş¤·¤¿"
+#~ msgstr "%s ã‚µãƒ–ãƒ—ãƒ­ã‚»ã‚¹ãŒå¤±æ•—ã—ã¾ã—ãŸ"
 
 #~ msgid "regular empty file"
-#~ msgstr "ÄÌ¾ï¤Î¶õ¥Õ¥¡¥¤¥ë"
+#~ msgstr "é€šå¸¸ã®ç©ºãƒ•ã‚¡ã‚¤ãƒ«"
 
 #~ msgid "regular file"
-#~ msgstr "ÄÌ¾ï¥Õ¥¡¥¤¥ë"
+#~ msgstr "é€šå¸¸ãƒ•ã‚¡ã‚¤ãƒ«"
 
 #~ msgid "directory"
-#~ msgstr "¥Ç¥£¥ì¥¯¥È¥ê"
+#~ msgstr "ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª"
 
 #~ msgid "block special file"
-#~ msgstr "¥Ö¥í¥Ã¥¯¥¹¥Ú¥·¥ã¥ë¥Õ¥¡¥¤¥ë"
+#~ msgstr "ãƒ–ãƒ­ãƒƒã‚¯ã‚¹ãƒšã‚·ãƒ£ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«"
 
 #~ msgid "character special file"
-#~ msgstr "¥­¥ã¥é¥¯¥¿¥¹¥Ú¥·¥ã¥ë¥Õ¥¡¥¤¥ë"
+#~ msgstr "ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ã‚¹ãƒšã‚·ãƒ£ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«"
 
 #~ msgid "fifo"
 #~ msgstr "fifo"
 
 #~ msgid "symbolic link"
-#~ msgstr "¥·¥ó¥Ü¥ê¥Ã¥¯¥ê¥ó¥¯"
+#~ msgstr "ã‚·ãƒ³ãƒœãƒªãƒƒã‚¯ãƒªãƒ³ã‚¯"
 
 #~ msgid "socket"
-#~ msgstr "¥½¥±¥Ã¥È"
+#~ msgstr "ã‚½ã‚±ãƒƒãƒˆ"
 
 #~ msgid "message queue"
-#~ msgstr "¥á¥Ã¥»¡¼¥¸¥­¥å¡¼"
+#~ msgstr "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚­ãƒ¥ãƒ¼"
 
 #~ msgid "semaphore"
-#~ msgstr "¥»¥Ş¥Õ¥©"
+#~ msgstr "ã‚»ãƒãƒ•ã‚©"
 
 #~ msgid "shared memory object"
-#~ msgstr "¶¦Í­¥á¥â¥ê¥ª¥Ö¥¸¥§¥¯¥È"
+#~ msgstr "å…±æœ‰ãƒ¡ãƒ¢ãƒªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ"
 
 #~ msgid "typed memory object"
-#~ msgstr "·¿ÉÕ¤­¥á¥â¥ê¥ª¥Ö¥¸¥§¥¯¥È"
+#~ msgstr "å‹ä»˜ãƒ¡ãƒ¢ãƒªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ"
 
 #~ msgid "weird file"
-#~ msgstr "ÉÔÌÀ¤Ê¥Õ¥¡¥¤¥ë"
+#~ msgstr "ä¸æ˜ãªãƒ•ã‚¡ã‚¤ãƒ«"
 
 #~ msgid "Address family for hostname not supported"
-#~ msgstr "hostname¤Î¥¢¥É¥ì¥¹¥Õ¥¡¥ß¥ê¤Ï¥µ¥İ¡¼¥È¤µ¤ì¤Æ¤¤¤Ş¤»¤ó"
+#~ msgstr "ãƒ›ã‚¹ãƒˆåã«å¯¾ã™ã‚‹ Address family ãŒã‚µãƒãƒ¼ãƒˆã•ã‚Œã¦ã„ã¾ã›ã‚“"
 
 #~ msgid "Temporary failure in name resolution"
-#~ msgstr "Ì¾Á°²ò·è»ş¤Î°ì»şÅª¤Ê¼ºÇÔ"
+#~ msgstr "åå‰è§£æ±ºã«ä¸€æ™‚çš„ã«å¤±æ•—ã—ã¾ã—ãŸ"
 
 #~ msgid "Bad value for ai_flags"
-#~ msgstr "ai_flags ¤ÎÃÍ¤¬ÉÔÀµ¤Ç¤¹"
+#~ msgstr "ai_flags ã«å¯¾ã™ã‚‹èª¤ã£ãŸå€¤ã§ã™"
 
 #~ msgid "Non-recoverable failure in name resolution"
-#~ msgstr "Ì¾Á°¤Î²ò·è»ş¤Ë²óÉüÉÔ²ÄÇ½¤Ê¼ºÇÔ"
+#~ msgstr "åå‰è§£æ±ºã§ãƒªã‚«ãƒãƒªã§ããªã„å¤±æ•—ãŒç™ºç”Ÿã—ã¾ã—ãŸ"
 
 #~ msgid "ai_family not supported"
-#~ msgstr "ai_family ¤Ï¥µ¥İ¡¼¥È¤·¤Æ¤¤¤Ş¤»¤ó"
+#~ msgstr "ai_family ã¯ã‚µãƒãƒ¼ãƒˆã•ã‚Œã¦ã„ã¾ã›ã‚“"
 
 #~ msgid "Memory allocation failure"
-#~ msgstr "¥á¥â¥ê³ÎÊİ¤Ë¼ºÇÔ¤·¤Ş¤·¤¿"
+#~ msgstr "ãƒ¡ãƒ¢ãƒªé…ç½®ã«å¤±æ•—ã—ã¾ã—ãŸ"
 
 #~ msgid "No address associated with hostname"
-#~ msgstr "¥Û¥¹¥ÈÌ¾¤ËÂĞ±ş¤¹¤ë¥¢¥É¥ì¥¹¤¬¤¢¤ê¤Ş¤»¤ó"
+#~ msgstr "ãƒ›ã‚¹ãƒˆåã«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå‰²ã‚Šå½“ã¦ã‚‰ã‚Œã¦ã„ã¾ã›ã‚“"
 
 #~ msgid "Name or service not known"
-#~ msgstr "Ì¾Á°¤Ş¤¿¤Ï¥µ¡¼¥Ó¥¹¤¬ÉÔÌÀ¤Ç¤¹"
+#~ msgstr "åå‰ã¾ãŸã¯ã‚µãƒ¼ãƒ“ã‚¹ãŒä¸æ˜ã§ã™"
 
 #~ msgid "Servname not supported for ai_socktype"
-#~ msgstr "¥µ¡¼¥ĞÌ¾¤Ï ai_socktype ¤ËÂĞ¤·¤Æ¥µ¥İ¡¼¥È¤·¤Æ¤¤¤Ş¤»¤ó"
+#~ msgstr "ai_socktype ã«å¯¾ã—ã¦ Servname ãŒã‚µãƒãƒ¼ãƒˆã•ã‚Œã¦ã„ã¾ã›ã‚“"
 
 #~ msgid "ai_socktype not supported"
-#~ msgstr "ai_socktype ¤Ï¥µ¥İ¡¼¥È¤·¤Æ¤¤¤Ş¤»¤ó"
+#~ msgstr "ai_socktype ã¯ã‚µãƒãƒ¼ãƒˆã•ã‚Œã¦ã„ã¾ã›ã‚“"
 
 #~ msgid "System error"
-#~ msgstr "¥·¥¹¥Æ¥à¥¨¥é¡¼"
+#~ msgstr "ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ©ãƒ¼"
+
+#~ msgid "Argument buffer too small"
+#~ msgstr "å¼•æ•°ãƒãƒƒãƒ•ã‚¡ãŒå°ã•ã™ãã¾ã™"
 
 #~ msgid "Processing request in progress"
-#~ msgstr "Í×µá¤Ï¤¹¤Ç¤Ë½èÍıÃæ¤Ç¤¹"
+#~ msgstr "è¦æ±‚ã•ã‚ŒãŸå‡¦ç†ã¯å®Ÿè¡Œä¸­ã§ã™"
 
 #~ msgid "Request canceled"
-#~ msgstr "Í×µá¤ÏÃæÃÇ¤µ¤ì¤Ş¤·¤¿"
+#~ msgstr "è¦æ±‚ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã•ã‚Œã¾ã—ãŸ"
 
 #~ msgid "Request not canceled"
-#~ msgstr "Í×µá¤ÏÃæÃÇ¤µ¤ì¤Ş¤»¤ó¤Ç¤·¤¿"
+#~ msgstr "è¦æ±‚ãŒã‚­ãƒ£ãƒ³ã‚»ãƒ«ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸ"
 
 #~ msgid "All requests done"
-#~ msgstr "Á´¤Æ¤ÎÍ×µá½èÍı¤Ï´°Î»¤·¤Ş¤·¤¿"
+#~ msgstr "ã™ã¹ã¦ã®è¦æ±‚ãŒå®Œäº†ã—ã¾ã—ãŸ"
 
 #~ msgid "Interrupted by a signal"
-#~ msgstr "¥·¥°¥Ê¥ë¤Ë¤è¤ë³ä¤ê¹ş¤ß"
+#~ msgstr "ã‚·ã‚°ãƒŠãƒ«å‰²ã‚Šè¾¼ã¿ãŒç™ºç”Ÿã—ã¾ã—ãŸ"
 
 #~ msgid "Parameter string not correctly encoded"
-#~ msgstr "¥Ñ¥é¥á¡¼¥¿Ê¸»úÎó¤ÏÀµ¤·¤¯¥¨¥ó¥³¡¼¥É¤µ¤ì¤Æ¤¤¤Ê¤¤"
+#~ msgstr "ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ¼æ–‡å­—åˆ—ãŒæ­£ã—ãã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã•ã‚Œã¦ã„ã¾ã›ã‚“"
 
 #~ msgid "Unknown error"
-#~ msgstr "Ì¤ÃÎ¤Î¥¨¥é¡¼"
+#~ msgstr "ä¸æ˜ãªã‚¨ãƒ©ãƒ¼"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: ÉÔÀµ¤Ê¥ª¥×¥·¥ç¥ó -- %c\n"
+#~ msgid "invalid source_version argument to compile_java_class"
+#~ msgstr "compile_java_class ã¸ã® source_version å¼•æ•°ãŒç„¡åŠ¹ã§ã™"
 
-#~ msgid "block size"
-#~ msgstr "¥Ö¥í¥Ã¥¯¥µ¥¤¥º"
+#~ msgid "invalid target_version argument to compile_java_class"
+#~ msgstr "compile_java_class ã¸ã® target_version å¼•æ•°ãŒç„¡åŠ¹ã§ã™"
+
+#~ msgid "failed to create \"%s\""
+#~ msgstr "\"%s\" ã®ä½œæˆã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "error while writing \"%s\" file"
+#~ msgstr "\"%s\" ãƒ•ã‚¡ã‚¤ãƒ«ã®æ›¸ãè¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"
 
 #~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
 #~ msgstr ""
-#~ "Java ¥³¥ó¥Ñ¥¤¥é¤¬¸«¤Ä¤«¤é¤Ê¤¤¤Î¤Ç gcj ¤ä set $JAVAC ÀßÄê¤ò»î¤·¤Æ¤ß¤Æ¤¯¤À¤µ"
-#~ "¤¤"
+#~ "Java ã‚³ãƒ³ãƒ‘ã‚¤ãƒ©ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚ gcj ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã‹ã€ã¾ãŸã¯t "
+#~ "$JAVAC ã‚’è¨­å®šã—ã¦ã¿ã¦ãã ã•ã„"
 
 #~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
 #~ msgstr ""
-#~ "Java ²¾ÁÛ¥Ş¥·¥ó¤¬¸«¤Ä¤«¤é¤Ê¤¤¤Î¤Ç gij ¤ä set $JAVA ÀßÄê¤ò»î¤·¤Æ¤ß¤Æ¤¯¤À¤µ"
-#~ "¤¤"
+#~ "Java ä»®æƒ³ãƒã‚·ãƒ³ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚ gij ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã‹ã€ã¾ãŸã¯ $JAVA "
+#~ "ã‚’è¨­å®šã—ã¦ã¿ã¦ãã ã•ã„"
 
-#~ msgid "%s exists but is not a directory"
-#~ msgstr "%s ¤ÏÂ¸ºß¤·¤Ş¤¹¤¬¥Ç¥£¥ì¥¯¥È¥ê¤Ç¤Ï¤¢¤ê¤Ş¤»¤ó"
-
-#~ msgid "cannot change owner and/or group of %s"
-#~ msgstr "%s ¤Î¥ª¡¼¥Ê¡¼¤È¥°¥ë¡¼¥×¤òÊÑ¹¹¤Ç¤­¤Ş¤»¤ó"
-
-#~ msgid "cannot create directory %s"
-#~ msgstr "¥Ç¥£¥ì¥¯¥È¥ê %s ¤òºîÀ®¤Ç¤­¤Ş¤»¤ó"
-
-#~ msgid "cannot chdir to directory %s"
-#~ msgstr "¥Ç¥£¥ì¥¯¥È¥ê %s ¤Ë°ÜÆ°¤Ç¤­¤Ş¤»¤ó"
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "%s ã‚µãƒ–ãƒ—ãƒ­ã‚»ã‚¹ I/O ã‚¨ãƒ©ãƒ¼"
 
 #~ msgid "cannot change permissions of %s"
-#~ msgstr "%s ¤ÎÂ°À­¤òÊÑ¹¹¤Ç¤­¤Ş¤»¤ó"
+#~ msgstr "%s ã®ãƒ‘ãƒ¼ãƒŸãƒƒã‚·ãƒ§ãƒ³ã‚’å¤‰æ›´ã§ãã¾ã›ã‚“"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª %s ã‚’ä½œæˆã§ãã¾ã›ã‚“"
 
 #~ msgid "unable to record current working directory"
-#~ msgstr "¸½ºß¤Îºî¶È¥Ç¥£¥ì¥¯¥È¥ê¤òµ­Ï¿¤Ç¤­¤Ş¤»¤ó"
+#~ msgstr "ç¾åœ¨ã®ä½œæ¥­ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’è¨˜éŒ²ã™ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“"
 
 #~ msgid "failed to return to initial working directory"
-#~ msgstr "ºÇ½é¤Îºî¶È¥Ç¥£¥ì¥¯¥È¥ê¤ËÌá¤ë¤Î¤Ë¼ºÇÔ¤·¤Ş¤·¤¿"
+#~ msgstr "åˆæœŸä½œæ¥­ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«æˆ»ã‚‹ã®ã«å¤±æ•—ã—ã¾ã—ãŸ"
 
 #~ msgid "Failed to open /dev/zero for read"
-#~ msgstr "/dev/zero¤òÆÉ¹ş¤ßÍÑ¤Ë³«¤±¤Ş¤»¤ó"
+#~ msgstr "/dev/zeroã‚’èª­è¾¼ã¿ç”¨ã«é–‹ã‘ã¾ã›ã‚“"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "èª­ã¿è¾¼ã¿ã‚¹ãƒ¬ãƒƒãƒ‰ã®ä½œæˆã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr "%s å­ãƒ—ãƒ­ã‚»ã‚¹ã¸éãƒ–ãƒ­ãƒƒã‚¯ I/O ã‚’è¨­å®šã§ãã¾ã›ã‚“"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "%s å­ãƒ—ãƒ­ã‚»ã‚¹ã¨ã®é€šä¿¡ã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "%s å­ãƒ—ãƒ­ã‚»ã‚¹ã¸ã®æ›¸ãè¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "%s å­ãƒ—ãƒ­ã‚»ã‚¹ã‹ã‚‰ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "å­ãƒ—ãƒ­ã‚»ã‚¹ %s ãŒçµ‚äº†ã‚³ãƒ¼ãƒ‰ %d ã§çµ‚äº†ã—ã¾ã—ãŸ"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "ã‚¹ãƒ¬ãƒƒãƒ‰ã®ä½œæˆã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "%s å­ãƒ—ãƒ­ã‚»ã‚¹ãŒçµ‚äº†ã‚³ãƒ¼ãƒ‰ %d ã§çµ‚äº†ã—ã¾ã—ãŸ"
 
 #~ msgid "cannot create pipe"
-#~ msgstr "¥Ñ¥¤¥×¤òºîÀ®¤Ç¤­¤Ş¤»¤ó"
+#~ msgstr "ãƒ‘ã‚¤ãƒ—ã‚’ä½œæˆã§ãã¾ã›ã‚“"
 
 #~ msgid "`"
 #~ msgstr "`"
@@ -409,32 +464,323 @@ msgstr "¥á¥â¥ê¤ò»È¤¤²Ì¤¿¤·¤Ş¤·¤¿"
 #~ msgid "^[nN]"
 #~ msgstr "^[nN]"
 
+#~ msgid "setting permissions for %s"
+#~ msgstr "%s ã®ãƒ‘ãƒ¼ãƒŸãƒƒã‚·ãƒ§ãƒ³ã‚’è¨­å®šã—ã¾ã™"
+
+#~ msgid "Hangup"
+#~ msgstr "Hangup"
+
+#~ msgid "Interrupt"
+#~ msgstr "å‰²ã‚Šè¾¼ã¿"
+
+#~ msgid "Quit"
+#~ msgstr "çµ‚äº†"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Illegal instruction"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Trace/breakpoint trap"
+
+#~ msgid "Aborted"
+#~ msgstr "ä¸­æ­¢"
+
+#~ msgid "Floating point exception"
+#~ msgstr "æµ®å‹•å°æ•°ç‚¹ä¾‹å¤–"
+
+#~ msgid "Killed"
+#~ msgstr "å¼·åˆ¶çµ‚äº†"
+
+#~ msgid "Bus error"
+#~ msgstr "ãƒã‚¹ã‚¨ãƒ©ãƒ¼"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Segmentation fault"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Broken pipe"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Alarm clock"
+
+#~ msgid "Terminated"
+#~ msgstr "Terminated"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "ç·Šæ€¥ I/O çŠ¶æ…‹"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "åœæ­¢ (ã‚·ã‚°ãƒŠãƒ«)"
+
+#~ msgid "Stopped"
+#~ msgstr "åœæ­¢"
+
+#~ msgid "Continued"
+#~ msgstr "ç¶™ç¶š"
+
+#~ msgid "Child exited"
+#~ msgstr "å­ãƒ—ãƒ­ã‚»ã‚¹çµ‚äº†"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "åœæ­¢ (tty å…¥åŠ›)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "åœæ­¢ (tty å‡ºåŠ›)"
+
+#~ msgid "I/O possible"
+#~ msgstr "I/O å¯èƒ½"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "CPUæ™‚é–“åˆ¶é™ã‚’è¶…éã—ã¾ã—ãŸ"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºåˆ¶é™ã‚’è¶…éã—ã¾ã—ãŸ"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "ä»®æƒ³ã‚¿ã‚¤ãƒãƒ¼ãŒçµ‚äº†ã—ã¾ã—ãŸ"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "ãƒ—ãƒ­ãƒ•ã‚¡ã‚¤ãƒªãƒ³ã‚°ã‚¿ã‚¤ãƒãƒ¼ãŒçµ‚äº†ã—ã¾ã—ãŸ"
+
+#~ msgid "Window changed"
+#~ msgstr "Window ãŒå¤‰æ›´ã•ã‚Œã¾ã—ãŸ"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "ãƒ¦ãƒ¼ã‚¶ãƒ¼å®šç¾©ã‚·ã‚°ãƒŠãƒ«1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "ãƒ¦ãƒ¼ã‚¶ãƒ¼å®šç¾©ã‚·ã‚°ãƒŠãƒ«2"
+
+#~ msgid "EMT trap"
+#~ msgstr "EMT ãƒˆãƒ©ãƒƒãƒ—"
+
+#~ msgid "Bad system call"
+#~ msgstr "é–“é•ã£ãŸã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ«"
+
+#~ msgid "Stack fault"
+#~ msgstr "ã‚¹ã‚¿ãƒƒã‚¯ã‚¨ãƒ©ãƒ¼"
+
+#~ msgid "Information request"
+#~ msgstr "æƒ…å ±è¦æ±‚"
+
+#~ msgid "Power failure"
+#~ msgstr "é›»æºã‚¨ãƒ©ãƒ¼"
+
+#~ msgid "Resource lost"
+#~ msgstr "ãƒªã‚½ãƒ¼ã‚¹ãŒç„¡ããªã‚Šã¾ã—ãŸ"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "é–‰ã˜ãŸãƒ‘ã‚¤ãƒ—ã¾ãŸã¯ã‚½ã‚±ãƒƒãƒˆã¸ã®æ›¸ãè¾¼ã¿ã§ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "ãƒªã‚¢ãƒ«ã‚¿ã‚¤ãƒ ã‚·ã‚°ãƒŠãƒ« %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "ä¸æ˜ãªã‚·ã‚°ãƒŠãƒ« %d"
+
 #~ msgid "iconv function not usable"
-#~ msgstr "iconv´Ø¿ô¤¬»È¤¨¤Ş¤»¤ó"
+#~ msgstr "iconv é–¢æ•°ãŒä½¿ãˆã¾ã›ã‚“"
 
 #~ msgid "iconv function not available"
-#~ msgstr "iconv´Ø¿ô¤¬Í­¸ú¤Ç¤Ï¤¢¤ê¤Ş¤»¤ó"
+#~ msgstr "iconv é–¢æ•°ãŒæœ‰åŠ¹ã§ã¯ã‚ã‚Šã¾ã›ã‚“"
 
 #~ msgid "character out of range"
-#~ msgstr "ÈÏ°Ï³°¤ÎÊ¸»ú"
+#~ msgstr "ç¯„å›²å¤–ã®æ–‡å­—"
 
 #~ msgid "cannot convert U+%04X to local character set"
-#~ msgstr "U+%04X ¤ò¥í¡¼¥«¥ëÊ¸»ú¥»¥Ã¥È¤ËÊÑ´¹¤Ç¤­¤Ş¤»¤ó"
+#~ msgstr "U+%04X ã‚’ãƒ­ãƒ¼ã‚«ãƒ«æ–‡å­—ã‚»ãƒƒãƒˆã«å¤‰æ›ã§ãã¾ã›ã‚“"
 
 #~ msgid "cannot convert U+%04X to local character set: %s"
-#~ msgstr "U+%04X ¤ò¥í¡¼¥«¥ëÊ¸»ú¥»¥Ã¥È %s ¤ËÊÑ´¹¤Ç¤­¤Ş¤»¤ó"
+#~ msgstr "U+%04X ã‚’ãƒ­ãƒ¼ã‚«ãƒ«æ–‡å­—ã‚»ãƒƒãƒˆ %s ã«å¤‰æ›ã§ãã¾ã›ã‚“"
 
 #~ msgid "invalid user"
-#~ msgstr "¥æ¡¼¥¶»ØÄê¤¬ÉÔÀµ"
+#~ msgstr "ç„¡åŠ¹ãªãƒ¦ãƒ¼ã‚¶"
 
 #~ msgid "invalid group"
-#~ msgstr "¥°¥ë¡¼¥×»ØÄê¤¬ÉÔÀµ"
+#~ msgstr "ç„¡åŠ¹ãªã‚°ãƒ«ãƒ¼ãƒ—"
 
-#~ msgid "cannot get the login group of a numeric UID"
-#~ msgstr "¿ô»ú¤ÎUID¤Î¥í¥°¥¤¥ó¥°¥ë¡¼¥×¤ò¼èÆÀ¤Ç¤­¤Ş¤»¤ó"
+#~ msgid "invalid spec"
+#~ msgstr "ç„¡åŠ¹ãªæŒ‡å®š"
+
+#~ msgid "unable to display error message"
+#~ msgstr "ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã§ãã¾ã›ã‚“"
+
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ä½œæˆè€…: %s (%s)\n"
+
+#~ msgid "Packaged by %s\n"
+#~ msgstr "ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ä½œæˆè€…: %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "(C)"
+
+#~ msgid ""
+#~ "\n"
+#~ "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+#~ "html>.\n"
+#~ "This is free software: you are free to change and redistribute it.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/"
+#~ "gpl.html>.\n"
+#~ "This is free software: you are free to change and redistribute it.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "ä½œè€… %sã€‚\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "ä½œè€… %s ãŠã‚ˆã³ %sã€‚\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "ä½œè€… %sã€ %sã€ãŠã‚ˆã³ %sã€‚\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "ä½œè€… %sã€ %sã€ %sã€\n"
+#~ "ãŠã‚ˆã³ %sã€‚\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "ä½œè€… %sã€ %sã€ %sã€\n"
+#~ "%sã€ãŠã‚ˆã³ %sã€‚\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "ä½œè€… %sã€ %sã€ %sã€\n"
+#~ "%sã€ %sã€ãŠã‚ˆã³ %sã€‚\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "ä½œè€… %sã€ %sã€ %sã€\n"
+#~ "%sã€ %sã€ %sã€ãŠã‚ˆã³ %sã€‚\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "ä½œè€… %sã€ %sã€ %sã€\n"
+#~ "%sã€ %sã€ %sã€ %sã€\n"
+#~ "ãŠã‚ˆã³ %sã€‚\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "ä½œè€… %sã€ %sã€ %sã€\n"
+#~ "%sã€ %sã€ %sã€ %sã€\n"
+#~ "%sã€ãŠã‚ˆã³ %sã€‚\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "ä½œè€… %sã€ %sã€ %sã€\n"
+#~ "%sã€ %sã€ %sã€ %sã€\n"
+#~ "%sã€ %sã€ ãŠã‚ˆã³ä»–ã®æ–¹ã€…ã€‚\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to: %s\n"
+#~ msgstr ""
+#~ "\n"
+#~ "ãƒã‚°ã‚’ç™ºè¦‹ã—ãŸã‚‰ <%s> ã«å ±å‘Šã—ã¦ä¸‹ã•ã„ã€‚\n"
+#~ "ç¿»è¨³ã«é–¢ã™ã‚‹ãƒã‚°ã¯<translation-team-ja@lists.sourceforge.net>ã«å ±å‘Šã—ã¦ã"
+#~ "ã ã•ã„ã€‚\n"
+
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "%s ã®ãƒã‚°ã¯ <%s> ã«å ±å‘Šã—ã¦ãã ã•ã„ã€‚\n"
+
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "%s ã®ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "%s ã®ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸: <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+#~ msgstr ""
+#~ "GNU ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ä½¿ç”¨ã™ã‚‹éš›ã®ä¸€èˆ¬çš„ãªãƒ˜ãƒ«ãƒ—: <http://www.gnu.org/gethelp/"
+#~ ">\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle ã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "ãƒ•ã‚¡ã‚¤ãƒ«è¨˜è¿°å­ (fd) %d ã‚’ãƒªã‚¹ãƒˆã‚¢ã§ãã¾ã›ã‚“: dup2 ã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "%s subprocess"
+#~ msgstr "%s å­ãƒ—ãƒ­ã‚»ã‚¹"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "%s å­ãƒ—ãƒ­ã‚»ã‚¹ãŒè‡´å‘½çš„ãªã‚·ã‚°ãƒŠãƒ« %d ã‚’å—ä¿¡ã—ã¾ã—ãŸ"
+
+#~ msgid "stdin"
+#~ msgstr "æ¨™æº–å…¥åŠ›"
+
+#~ msgid "stdout"
+#~ msgstr "æ¨™æº–å‡ºåŠ›"
+
+#~ msgid "stderr"
+#~ msgstr "æ¨™æº–ã‚¨ãƒ©ãƒ¼å‡ºåŠ›"
+
+#~ msgid "unknown stream"
+#~ msgstr "ä¸æ˜ãªã‚¹ãƒˆãƒªãƒ¼ãƒ "
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "%s ã‚’ãƒ¢ãƒ¼ãƒ‰ %s ã§å†åº¦é–‹ãã“ã¨ã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "string comparison failed"
+#~ msgstr "æ–‡å­—åˆ—ã®æ¯”è¼ƒã«å¤±æ•—ã—ã¾ã—ãŸ"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "å•é¡Œã‚’å›é¿ã™ã‚‹ãŸã‚ã« LC_ALL='C' ã‚’æŒ‡å®šã—ã¦ãã ã•ã„."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "æ¯”è¼ƒã—ãŸæ–‡å­—åˆ—ã¯ %s ã¨ %s ã§ã™."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "æ›¸å¼è¨­å®šã‚’è¡Œã£ãŸå‡ºåŠ›ã‚’å®Ÿè¡Œã™ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“"
+
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "å¼•æ•° `%3$s' ã«å¯¾ã—ã¦ %1$s%2$s ãŒç„¡åŠ¹ã§ã™"
+
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "å¼•æ•° `%3$s' ã«å¯¾ã—ã¦ç„¡åŠ¹ãªæ¥å°¾è¾ %1$s%2$s ã§ã™"
+
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "å¼•æ•° `%3$s' ã«å¯¾ã™ã‚‹ %1$s%2$s ãŒå¤§ãã™ãã¾ã™"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: ä¸æ­£ãªã‚ªãƒ—ã‚·ãƒ§ãƒ³ -- %c\n"
+
+#~ msgid "block size"
+#~ msgstr "ãƒ–ãƒ­ãƒƒã‚¯ã‚µã‚¤ã‚º"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s ã¯å­˜åœ¨ã—ã¾ã™ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã¯ã‚ã‚Šã¾ã›ã‚“"
+
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "%s ã®ã‚ªãƒ¼ãƒŠãƒ¼ã¨ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å¤‰æ›´ã§ãã¾ã›ã‚“"
+
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª %s ã«ç§»å‹•ã§ãã¾ã›ã‚“"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "æ•°å­—ã®UIDã®ãƒ­ã‚°ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—ã‚’å–å¾—ã§ãã¾ã›ã‚“"
 
 #~ msgid ""
 #~ "\n"
@@ -445,86 +791,7 @@ msgstr "¥á¥â¥ê¤ò»È¤¤²Ì¤¿¤·¤Ş¤·¤¿"
 #~ "\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ËÜ¥×¥í¥°¥é¥à¤Ï¥Õ¥ê¡¼¥½¥Õ¥È¥¦¥§¥¢¤Ç¤¹. GNU°ìÈÌ¸øÍ­»ÈÍÑµöÂú\n"
-#~ "<http://www.gnu.org/licenses/gpl.html> ¤ÇÄê¤á¤é¤ì¤¿¾ò¹à¤Î²¼¤ÇËÜ¥×¥í¥°¥é\n"
-#~ "¥à¤Î¥³¥Ô¡¼¤òºÆÇÛÉÛ¤Ç¤­¤Ş¤¹. Å¬ÀÚ¤ÊË¡¤¬Ç§¤ë¸Â¤ê¤Ë¤ª¤¤¤ÆÁ´¤¯¤ÎÌµÊİ¾Ú¤Ç¤¹.\n"
+#~ "æœ¬ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã§ã™. GNUä¸€èˆ¬å…¬æœ‰ä½¿ç”¨è¨±è«¾\n"
+#~ "<http://www.gnu.org/licenses/gpl.html> ã§å®šã‚ã‚‰ã‚ŒãŸæ¡é …ã®ä¸‹ã§æœ¬ãƒ—ãƒ­ã‚°ãƒ©\n"
+#~ "ãƒ ã®ã‚³ãƒ”ãƒ¼ã‚’å†é…å¸ƒã§ãã¾ã™. é©åˆ‡ãªæ³•ãŒèªã‚‹é™ã‚Šã«ãŠã„ã¦å…¨ãã®ç„¡ä¿è¨¼ã§ã™.\n"
 #~ "\n"
-
-#~ msgid "Written by %s.\n"
-#~ msgstr "ºî¼Ô %s.\n"
-
-#~ msgid "Written by %s and %s.\n"
-#~ msgstr "ºî¼Ô %s ¤È %s.\n"
-
-#~ msgid "Written by %s, %s, and %s.\n"
-#~ msgstr "ºî¼Ô %s, %s, %s.\n"
-
-#~ msgid ""
-#~ "Written by %s, %s, %s,\n"
-#~ "and %s.\n"
-#~ msgstr ""
-#~ "ºî¼Ô %s, %s, %s,\n"
-#~ "¤½¤·¤Æ %s.\n"
-
-#~ msgid ""
-#~ "Written by %s, %s, %s,\n"
-#~ "%s, and %s.\n"
-#~ msgstr ""
-#~ "ºî¼Ô %s, %s, %s,\n"
-#~ "%s, %s.\n"
-
-#~ msgid ""
-#~ "Written by %s, %s, %s,\n"
-#~ "%s, %s, and %s.\n"
-#~ msgstr ""
-#~ "ºî¼Ô %s, %s, %s,\n"
-#~ "%s, %s, %s.\n"
-
-#~ msgid ""
-#~ "Written by %s, %s, %s,\n"
-#~ "%s, %s, %s, and %s.\n"
-#~ msgstr ""
-#~ "ºî¼Ô %s, %s, %s,\n"
-#~ "%s, %s, %s, %s.\n"
-
-#~ msgid ""
-#~ "Written by %s, %s, %s,\n"
-#~ "%s, %s, %s, %s,\n"
-#~ "and %s.\n"
-#~ msgstr ""
-#~ "ºî¼Ô %s, %s, %s,\n"
-#~ "%s, %s, %s, %s,\n"
-#~ "%s.\n"
-
-#~ msgid ""
-#~ "Written by %s, %s, %s,\n"
-#~ "%s, %s, %s, %s,\n"
-#~ "%s, and %s.\n"
-#~ msgstr ""
-#~ "ºî¼Ô %s, %s, %s,\n"
-#~ "%s, %s, %s, %s,\n"
-#~ "%s, %s.\n"
-
-#~ msgid ""
-#~ "Written by %s, %s, %s,\n"
-#~ "%s, %s, %s, %s,\n"
-#~ "%s, %s, and others.\n"
-#~ msgstr ""
-#~ "ºî¼Ô %s, %s, %s,\n"
-#~ "%s, %s, %s, %s,\n"
-#~ "%s, %s, Â¾.\n"
-
-#~ msgid "%s subprocess"
-#~ msgstr "%s ¥µ¥Ö¥×¥í¥»¥¹"
-
-#~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "%s ¥µ¥Ö¥×¥í¥»¥¹¤¬Ã×Ì¿Åª¤Ê¥·¥°¥Ê¥ë %d ¤ò¼õ¿®¤·¤Ş¤·¤¿"
-
-#~ msgid "string comparison failed"
-#~ msgstr "Ê¸»úÎó¤ÎÈæ³Ó¤Ë¼ºÇÔ"
-
-#~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "ÌäÂê¤ò²óÈò¤¹¤ë¤¿¤á¤Ë LC_ALL='C' ¤ò»ØÄê¤·¤Æ¤¯¤À¤µ¤¤."
-
-#~ msgid "The strings compared were %s and %s."
-#~ msgstr "Èæ³Ó¤·¤¿Ê¸»úÎó¤Ï %s ¤È %s ¤Ç¤¹."
