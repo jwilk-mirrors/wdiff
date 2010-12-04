@@ -14,17 +14,17 @@ common_mandeps = $(top_srcdir)/configure.ac
 # binary when any source file changes, only the main one.
 # Use -o so that the `missing' program can infer the output file.
 mdiff.1: $(top_srcdir)/src/mdiff.c $(common_mandeps)
-	test -f ../src/mdiff || $(MAKE) -C ../src mdiff
-	$(HELP2MAN) ../src/mdiff -o $@
+	test ../src/mdiff -nt $< || $(MAKE) -C ../src mdiff
+	PATH="../src:$$PATH" $(HELP2MAN) mdiff -o $@
 
 unify.1: $(top_srcdir)/src/unify.c $(common_mandeps)
-	test -f ../src/unify || $(MAKE) -C ../src unify
-	$(HELP2MAN) ../src/unify -o $@
+	test ../src/unify -nt $< || $(MAKE) -C ../src unify
+	PATH="../src:$$PATH" $(HELP2MAN) unify -o $@
 
-wdiff.1: $(top_srcdir)/src/wdiff.c $(common_mandeps)
-	test -f ../src/wdiff || $(MAKE) -C ../src wdiff
-	$(HELP2MAN) --name="display word differences between text files" ../src/wdiff -o $@
+wdiff.1: $(top_srcdir)/src/wdiff.c wdiff.h2m $(common_mandeps)
+	test ../src/wdiff -nt $< || $(MAKE) -C ../src wdiff
+	PATH="../src:$$PATH" $(HELP2MAN) -i wdiff.h2m wdiff -o $@
 
 wdiff2.1: $(top_srcdir)/src/wdiff2.c $(common_mandeps)
-	test -f ../src/wdiff2 || $(MAKE) -C ../src wdiff2
-	$(HELP2MAN) ../src/wdiff2 -o $@
+	test ../src/wdiff2 -nt $< || $(MAKE) -C ../src wdiff2
+	PATH="../src:$$PATH" $(HELP2MAN) wdiff2 -o $@
