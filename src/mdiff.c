@@ -158,7 +158,7 @@ static const struct option long_options[] =
   {"new-file", no_argument, NULL, 'N'},
   {"no-common", no_argument, NULL, '3'},
   {"no-deleted", no_argument, NULL, '1'},
-  {"no-init-term", no_argument, NULL, 'K'},
+  {"no-init-term", no_argument, NULL, 'K'}, /* backwards compatibility */
   {"no-inserted", no_argument, NULL, '2'},
   {"ignore-delimiters", no_argument, NULL, 'j'},
   {"paginate", no_argument, NULL, 'l'},
@@ -202,9 +202,6 @@ static int debugging = 0;
 
 /* Initialize the termcap strings.  */
 static int find_termcap = -1;	/* undecided yet */
-
-/* Use termcap, but do not send init/term strings.  */
-static int no_init_term = 0;
 
 /* Ignore all white space.  */
 static int ignore_all_space = 0;
@@ -2305,12 +2302,6 @@ prepare_mergings (void)
 
 /* Terminal and pager support.  */
 
-/* How to initialize the termcap mode.  */
-const char *termcap_init_string = NULL;
-
-/* How to complete the termcap mode.  */
-const char *termcap_end_string = NULL;
-
 /* How to start underlining.  */
 const char *termcap_start_underline = NULL;
 
@@ -2363,16 +2354,6 @@ initialize_strings (void)
       buffer = (char *) malloc (strlen (term_buffer));
       filler = buffer;
 
-      if (no_init_term)
-	{
-	  termcap_init_string = NULL;
-	  termcap_end_string = NULL;
-	}
-      else
-	{
-	  termcap_init_string = tgetstr ("ti", &filler);
-	  termcap_end_string = tgetstr ("te", &filler);
-	}
       termcap_start_underline = tgetstr ("us", &filler);
       termcap_stop_underline = tgetstr ("ue", &filler);
       termcap_start_bold = tgetstr ("so", &filler);
@@ -2768,17 +2749,6 @@ launch_output_program (struct input *input)
       output_file = stdout;
 #endif
 
-      /* Ensure the termcap initialization string is sent to stdout right
-	 away, never to the pager.  */
-
-#if HAVE_TPUTS
-      if (termcap_init_string)
-	{
-	  tputs (termcap_init_string, 0, putc_for_tputs);
-	  fflush (stdout);
-	}
-#endif
-
       /* If we should use a pager, launch it.  */
 
       if (program && *program)
@@ -2800,7 +2770,7 @@ launch_output_program (struct input *input)
 	      overstrike_for_less = 1;
 	    }
 
-	  if (is_less && no_init_term)
+	  if (is_less)
 	    output_file = writepipe (program, "-X", NULL);
 	  else
 	    output_file = writepipe (program, NULL);
@@ -2824,17 +2794,6 @@ complete_output_program (void)
     {
       fclose (output_file);
       wait (NULL);
-
-#if HAVE_TPUTS
-      /* Ensure the termcap termination string is sent to stdout, never to
-	 the pager.  Moreover, the pager has terminated already.  */
-
-      if (termcap_end_string)
-	{
-	  output_file = stdout;
-	  tputs (termcap_end_string, 0, putc_for_tputs);
-	}
-#endif
     }
 }
 
@@ -3824,7 +3783,6 @@ Usage: %s [OPTION]... [FILE]...\n"),
       fputs (_("  -m, --avoid-wraps          do not extend fields through newlines\n"), stdout);
       fputs (_("  -o, --printer              overstrike as for printers\n"), stdout);
       fputs (_("  -z, --terminal             use termcap as for terminal displays\n"), stdout);
-      fputs (_("  -K, --no-init-term         like -z, but no termcap init/term strings\n"), stdout);
       fputs (_("  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"), stdout);
       fputs (_("  -W, --word-mode            compare words instead of lines\n"), stdout);
 
@@ -4312,7 +4270,7 @@ main (int argc, char *const *argv)
 	break;
 
       case 'K':
-	no_init_term = 1;
+	/* compatibility option, equal to -t now */
 	/* fall through */
 
       case 'z':

@@ -96,7 +96,7 @@ struct option const longopts[] =
   {"less-mode"   , 0, NULL, 'l'},
   {"no-common"   , 0, NULL, '3'},
   {"no-deleted"  , 0, NULL, '1'},
-  {"no-init-term", 0, NULL, 'K'},
+  {"no-init-term", 0, NULL, 'K'}, /* backwards compatibility */
   {"no-inserted" , 0, NULL, '2'},
   {"printer"     , 0, NULL, 'p'},
   {"start-delete", 1, NULL, 'w'},
@@ -126,7 +126,6 @@ const char *user_insert_start;	/* user specified string for start of insert */
 const char *user_insert_end;	/* user specified string for end of insert */
 
 int find_termcap;		/* initialize the termcap strings */
-int no_init_term;		/* do not send init/term termcap strings */
 const char *term_delete_start;	/* termcap string for start of delete */
 const char *term_delete_end;	/* termcap string for end of delete */
 const char *term_insert_start;	/* termcap string for start of insert */
@@ -170,8 +169,6 @@ char directive;			/* diff directive character */
 int argument[4];		/* four diff directive arguments */
 
 FILE *output_file;			/* file to which we write output */
-const char *termcap_init_string;	/* how to initialize the termcap mode */
-const char *termcap_end_string;		/* how to complete the termcap mode */
 
 int count_total_left;		/* count of total words in left file */
 int count_total_right;		/* count of total words in right file */
@@ -236,16 +233,6 @@ initialize_strings (void)
       buffer = (char *) malloc (strlen (term_buffer));
       filler = buffer;
 
-      if (no_init_term)
-	{
-	  termcap_init_string = NULL;
-	  termcap_end_string = NULL;
-	}
-      else
-	{
-	  termcap_init_string = tgetstr ("ti", &filler);
-	  termcap_end_string = tgetstr ("te", &filler);
-	}
       term_delete_start = tgetstr ("us", &filler);
       term_delete_end = tgetstr ("ue", &filler);
       term_insert_start = tgetstr ("so", &filler);
@@ -1066,17 +1053,6 @@ launch_output_program (void)
 
   output_file = stdout;
 
-  /* Ensure the termcap initialization string is sent to stdout right
-     away, never to the pager.  */
-
-#if HAVE_TPUTS
-  if (termcap_init_string)
-    {
-      tputs (termcap_init_string, 0, putc_for_tputs);
-      fflush (stdout);
-    }
-#endif
-
   /* If we should use a pager, launch it.  */
 
   if (program && *program)
@@ -1102,7 +1078,7 @@ launch_output_program (void)
       if (realprogram != program)
         free (realprogram);
 
-      if (is_less && no_init_term)
+      if (is_less)
 	output_file = writepipe (program, "-X", NULL);
       else
 	output_file = writepipe (program, NULL);
@@ -1156,17 +1132,6 @@ complete_output_program (void)
       fclose (output_file);
       wait (NULL);
     }
-
-  /* Ensure the termcap termination string is sent to stdout, never to
-     the pager.  Moreover, the pager has terminated already.  */
-
-#if HAVE_TPUTS
-  if (termcap_end_string)
-    {
-      output_file = stdout;
-      tputs (termcap_end_string, 0, putc_for_tputs);
-    }
-#endif
 }
 
 /*-------------------------------.
@@ -1260,7 +1225,6 @@ Usage: %s [OPTION]... FILE1 FILE2\n\
 Mandatory arguments to long options are mandatory for short options too.\n"),
              stdout);
       fputs (_("  -C, --copyright            display copyright then exit\n"), stdout);
-      fputs (_("  -K, --no-init-term         like -t, but no termcap init/term strings\n"), stdout);
       fputs (_("  -1, --no-deleted           inhibit output of deleted words\n"), stdout);
       fputs (_("  -2, --no-inserted          inhibit output of inserted words\n"), stdout);
       fputs (_("  -3, --no-common            inhibit output of common words\n"), stdout);
@@ -1386,7 +1350,7 @@ main (int argc, char *const argv[])
 	break;
 
       case 'K':
-	no_init_term = 1;
+	/* compatibility option, equal to -t now */
 	/* fall through */
 
       case 't':
@@ -1491,8 +1455,6 @@ Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
   setup_signals ();
   input_file = NULL;
   output_file = NULL;
-  termcap_init_string = NULL;
-  termcap_end_string = NULL;
 
   if (!setjmp (signal_label))
     {

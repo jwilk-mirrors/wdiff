@@ -154,7 +154,7 @@ struct option const longopts[] =
   {"less-mode", no_argument, NULL, 'l'},
   {"no-common", no_argument, NULL, '3'},
   {"no-deleted", no_argument, NULL, '1'},
-  {"no-init-term", no_argument, NULL, 'K'},
+  {"no-init-term", no_argument, NULL, 'K'}, /* backwards compatibility */
   {"no-inserted", no_argument, NULL, '2'},
   {"quiet", no_argument, NULL, 'q'},
   {"printer", no_argument, NULL, 'p'},
@@ -191,7 +191,6 @@ Usage: %s [OPTION]... FILE1 FILE2\n"),
 Mandatory arguments to long options are mandatory for short options too.\n"),
              stdout);
       fputs (_("  -C, --copyright            display copyright then exit\n"), stdout);
-      fputs (_("  -K, --no-init-term         like -t, but no termcap init/term strings\n"), stdout);
       fputs (_("  -1, --no-deleted           inhibit output of deleted words\n"), stdout);
       fputs (_("  -2, --no-inserted          inhibit output of inserted words\n"), stdout);
       fputs (_("  -3, --no-common            inhibit output of common words\n"), stdout);
@@ -257,7 +256,8 @@ main (int argc, char *const argv[])
 	exit (EXIT_SUCCESS);
 
       case 'K':
-	add_simple_option ('K');
+	/* compatibility option, equal to -t now */
+	add_simple_option ('t');
 	break;
 
       case 'a':

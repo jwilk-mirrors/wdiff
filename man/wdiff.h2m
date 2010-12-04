@@ -1,2 +1,11 @@
 [name]
 wdiff - display word differences between text files
+
+[compatibility]
+Some options that used to provide some unique functionality are no
+longer recommended, but still recognized for the sake of backwards
+compatibility.
+.TP
+\fB\-K\fR, \fB\-\-no\-init\-term\fR
+Now synonymous to \fI\-\-terminal\fR, which never initializes the
+terminal.
