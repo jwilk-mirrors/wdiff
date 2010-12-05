@@ -1,6 +1,13 @@
 GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007, 2010 Free Software Foundation, Inc.
 
+* Version 0.6.5 - December 2010, by Martin von Gagern
+
+  * Never initialize or deinitialize terminals, as we do no cursor movement
+  * Deprecated --no-init-term (-K) command line option
+  * Avoid relative path in man pages
+  * Updated gnulib, might be particularly important for uClibc users
+
 * Version 0.6.4 - November 2010, by Martin von Gagern
 
   * Updated Catalan translations

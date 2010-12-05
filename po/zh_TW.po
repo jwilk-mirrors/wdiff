@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-11-06 14:39+0100\n"
+"POT-Creation-Date: 2010-12-05 20:23+0100\n"
 "PO-Revision-Date: 2010-02-01 18:14+0100\n"
 "Last-Translator: Wei-Lun Chao <chaoweilun@pcmail.com.tw>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -16,123 +16,123 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/mdiff.c:379
+#: src/mdiff.c:376
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (對於正規表示式「%s」)"
 
-#: src/mdiff.c:897 src/wdiff.c:1488
+#: src/mdiff.c:894 src/wdiff.c:1452
 #, fuzzy, c-format
 msgid "only one file may be standard input"
 msgstr "只能有一個檔案是標準輸入。"
 
-#: src/mdiff.c:912 src/wdiff.c:690
+#: src/mdiff.c:909 src/wdiff.c:677
 #, fuzzy, c-format
 msgid "directories not supported"
 msgstr "不支援目錄"
 
-#: src/mdiff.c:1056
+#: src/mdiff.c:1053
 #, c-format
 msgid "Reading %s"
 msgstr "正在讀取 %s"
 
-#: src/mdiff.c:1181
+#: src/mdiff.c:1178
 #, c-format
 msgid ", %d items\n"
 msgstr "，%d 項\n"
 
-#: src/mdiff.c:1259
+#: src/mdiff.c:1256
 #, c-format
 msgid "Read summary: %d files, %d items\n"
 msgstr "讀取統計：%d 個檔案，%d 條項目\n"
 
-#: src/mdiff.c:1655
+#: src/mdiff.c:1652
 #, c-format
 msgid "Sorting"
 msgstr "排序中"
 
-#: src/mdiff.c:1672
+#: src/mdiff.c:1669
 #, c-format
 msgid ", clustering"
 msgstr "，叢集中"
 
-#: src/mdiff.c:1840 src/mdiff.c:1903
+#: src/mdiff.c:1837 src/mdiff.c:1900
 #, c-format
 msgid ", done\n"
 msgstr "，已完成\n"
 
-#: src/mdiff.c:1890
+#: src/mdiff.c:1887
 #, c-format
 msgid "Sorting members"
 msgstr "排列編號中"
 
-#: src/mdiff.c:1922
+#: src/mdiff.c:1919
 #, c-format
 msgid "Work summary: %d clusters, %d members\n"
 msgstr "工作統計：%d 個叢集，%d 個成員\n"
 
-#: src/mdiff.c:2302
+#: src/mdiff.c:2299
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "工作統計：%d 個叢集，%d 個成員，%d 個覆疊\n"
 
-#: src/mdiff.c:2357 src/wdiff.c:230
+#: src/mdiff.c:2348 src/wdiff.c:227
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "用環境變數 TERM 指定終端機類型。"
 
-#: src/mdiff.c:2360 src/wdiff.c:233
+#: src/mdiff.c:2351 src/wdiff.c:230
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
 msgstr "無法存取 termcap 資料庫。"
 
-#: src/mdiff.c:2362 src/wdiff.c:235
+#: src/mdiff.c:2353 src/wdiff.c:232
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "終端機類型「%s」未定義。"
 
-#: src/mdiff.c:3741 src/mdiff.c:3753 src/wdiff.c:1187 src/wdiff.c:1199
+#: src/mdiff.c:3700 src/mdiff.c:3712 src/wdiff.c:1152 src/wdiff.c:1164
 #, c-format
 msgid "%s: %d words"
 msgstr "%s：%d 個字"
 
-#: src/mdiff.c:3744 src/mdiff.c:3756 src/wdiff.c:1190 src/wdiff.c:1202
+#: src/mdiff.c:3703 src/mdiff.c:3715 src/wdiff.c:1155 src/wdiff.c:1167
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% 共有"
 
-#: src/mdiff.c:3746 src/wdiff.c:1192
+#: src/mdiff.c:3705 src/wdiff.c:1157
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% 已刪除"
 
-#: src/mdiff.c:3748 src/mdiff.c:3760 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3707 src/mdiff.c:3719 src/wdiff.c:1159 src/wdiff.c:1171
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% 已改變"
 
-#: src/mdiff.c:3758 src/wdiff.c:1204
+#: src/mdiff.c:3717 src/wdiff.c:1169
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% 已插入"
 
-#: src/mdiff.c:3787 src/wdiff.c:1246 src/wdiff2.c:177
+#: src/mdiff.c:3746 src/wdiff.c:1211 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "請嘗試執行‘%s --help’來獲取更多資訊。\n"
 
-#: src/mdiff.c:3791
+#: src/mdiff.c:3750
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr "mdiff - 探究多個檔案並搜尋相同的序列，從而產生儘可能詳細的異同列表。\n"
 
-#: src/mdiff.c:3796
+#: src/mdiff.c:3755
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "用法：%s [選項]... [檔案]...\n"
 
-#: src/mdiff.c:3800
+#: src/mdiff.c:3759
 #, fuzzy
 msgid ""
 "\n"
@@ -141,27 +141,27 @@ msgstr ""
 "\n"
 "作業模式為：\n"
 
-#: src/mdiff.c:3801
+#: src/mdiff.c:3760
 #, fuzzy
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (已忽略)\n"
 
-#: src/mdiff.c:3802
+#: src/mdiff.c:3761
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          回報一些統計結果於標準錯誤裝置\n"
 
-#: src/mdiff.c:3803 src/unify.c:293
+#: src/mdiff.c:3762 src/unify.c:293
 #, fuzzy
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             顯示此輔助訊息並離開\n"
 
-#: src/mdiff.c:3804 src/unify.c:294
+#: src/mdiff.c:3763 src/unify.c:294
 #, fuzzy
 msgid "      --version          display program version then exit\n"
 msgstr "      --version          輸出版本資訊並離開\n"
 
-#: src/mdiff.c:3806
+#: src/mdiff.c:3765
 #, fuzzy
 msgid ""
 "\n"
@@ -170,33 +170,33 @@ msgstr ""
 "\n"
 "格式化輸出:\n"
 
-#: src/mdiff.c:3807
+#: src/mdiff.c:3766
 #, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr "  -T, --initial-tab       產生跳格字元以替代起始的空白\n"
 
-#: src/mdiff.c:3808
+#: src/mdiff.c:3767
 #, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr "  -l, --paginate          藉由「pr」來分頁輸出\n"
 
-#: src/mdiff.c:3809
+#: src/mdiff.c:3768
 #, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=STRING]   注意到其他的使用者 STRING\n"
 
-#: src/mdiff.c:3810
+#: src/mdiff.c:3769
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        在注釋中給予檔案和列號的參照值\n"
 
-#: src/mdiff.c:3811
+#: src/mdiff.c:3770
 #, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr "  -t, --expand-tabs       在輸出中展開跳格字元成空白\n"
 
-#: src/mdiff.c:3814
+#: src/mdiff.c:3773
 #, fuzzy
 msgid ""
 "\n"
@@ -205,88 +205,83 @@ msgstr ""
 "\n"
 "除錯:\n"
 
-#: src/mdiff.c:3815
+#: src/mdiff.c:3774
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr "  -0, --debugging   輸出關於目前所發生的許多細節\n"
 
-#: src/mdiff.c:3818
+#: src/mdiff.c:3777
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
 
-#: src/mdiff.c:3819 src/wdiff.c:1264 src/wdiff2.c:195
+#: src/mdiff.c:3778 src/wdiff.c:1228 src/wdiff2.c:194
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr ""
 
-#: src/mdiff.c:3820 src/wdiff.c:1265 src/wdiff2.c:196
+#: src/mdiff.c:3779 src/wdiff.c:1229 src/wdiff2.c:195
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 
-#: src/mdiff.c:3821 src/wdiff.c:1266 src/wdiff2.c:197
+#: src/mdiff.c:3780 src/wdiff.c:1230 src/wdiff2.c:196
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr ""
 
-#: src/mdiff.c:3822
+#: src/mdiff.c:3781
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr ""
 
-#: src/mdiff.c:3823
+#: src/mdiff.c:3782
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr ""
 
-#: src/mdiff.c:3824
+#: src/mdiff.c:3783
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
 
-#: src/mdiff.c:3825
+#: src/mdiff.c:3784
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr ""
 
-#: src/mdiff.c:3826
+#: src/mdiff.c:3785
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr ""
 
-#: src/mdiff.c:3827
-msgid ""
-"  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
-
-#: src/mdiff.c:3828
+#: src/mdiff.c:3786
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
 
-#: src/mdiff.c:3829
+#: src/mdiff.c:3787
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr ""
 
-#: src/mdiff.c:4014
+#: src/mdiff.c:3972
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "如果沒有指定 FILE 或 FILE 是 -，則由標準輸入讀取資料。\n"
 
-#: src/mdiff.c:4016 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:215
+#: src/mdiff.c:3974 src/unify.c:298 src/wdiff.c:1246 src/wdiff2.c:214
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr "將錯誤回報至 <wdiff-bugs@gnu.org>。\n"
 
-#: src/mdiff.c:4027
+#: src/mdiff.c:3985
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr ""
 
-#: src/mdiff.c:4324
+#: src/mdiff.c:4282
 #, fuzzy, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "無法使用 -z，termcap 不存在。"
 
-#: src/mdiff.c:4363
+#: src/mdiff.c:4321
 #, fuzzy, c-format
 msgid "word merging for two files only (so far)"
 msgstr "字組合併只能用於兩個檔案 (目前為止)"
 
-#: src/mdiff.c:4379
+#: src/mdiff.c:4337
 #, fuzzy
 msgid ""
 "\n"
@@ -295,7 +290,7 @@ msgstr ""
 "\n"
 "版權所有 (C) 1992, 1997 自由軟體基金會。\n"
 
-#: src/mdiff.c:4383 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:133
+#: src/mdiff.c:4341 src/unify.c:407 src/wdiff.c:1372 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -303,7 +298,7 @@ msgstr ""
 "這是自由軟體；請參考原始碼的版權聲明。本軟體不提供任何保證，甚至不會包括\n"
 "可售性或適用於任何特定目的的保證。\n"
 
-#: src/mdiff.c:4387 src/wdiff.c:1412 src/wdiff2.c:137
+#: src/mdiff.c:4345 src/wdiff.c:1376 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -311,7 +306,7 @@ msgstr ""
 "\n"
 "作者 Franc,ois Pinard <pinard@iro.umontreal.ca>。\n"
 
-#: src/mdiff.c:4423
+#: src/mdiff.c:4381
 #, fuzzy, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "選項 -123RSYZ 只於存在二項輸入時才有意義。"
@@ -427,12 +422,12 @@ msgstr "在第 %ld 列有不正常格式化的內容差異"
 msgid "context diff missing `new' header at line %ld"
 msgstr "在第 %ld 列的內容差異中缺少 new(新) 表頭"
 
-#: src/wdiff.c:594 src/wdiff.c:713
+#: src/wdiff.c:581 src/wdiff.c:700
 #, c-format
 msgid "no suitable temporary directory exists"
 msgstr ""
 
-#: src/wdiff.c:1222 src/wdiff2.c:109
+#: src/wdiff.c:1187 src/wdiff2.c:109
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -461,11 +456,11 @@ msgstr ""
 "59 Temple Place - Suite 330, Boston, MA 02111-1307,\n"
 "USA\n"
 
-#: src/wdiff.c:1250
+#: src/wdiff.c:1215
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - 比較兩個檔案中的字組並回報差異。\n"
 
-#: src/wdiff.c:1254
+#: src/wdiff.c:1219
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
@@ -474,85 +469,80 @@ msgstr ""
 "用法：%s [選項]... 檔案1 檔案2\n"
 "      %s -d [選項]... [檔案]\n"
 
-#: src/wdiff.c:1259 src/wdiff2.c:190
+#: src/wdiff.c:1224 src/wdiff2.c:190
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
 
-#: src/wdiff.c:1262 src/wdiff2.c:193
+#: src/wdiff.c:1227 src/wdiff2.c:193
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr ""
 
-#: src/wdiff.c:1263 src/wdiff2.c:194
-msgid ""
-"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
-
-#: src/wdiff.c:1267 src/wdiff2.c:198
+#: src/wdiff.c:1231 src/wdiff2.c:197
 msgid "  -a, --auto-pager           automatically calls a pager\n"
 msgstr ""
 
-#: src/wdiff.c:1268
+#: src/wdiff.c:1232
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1269 src/wdiff2.c:199
+#: src/wdiff.c:1233 src/wdiff2.c:198
 msgid "  -h, --help                 display this help then exit\n"
 msgstr ""
 
-#: src/wdiff.c:1270 src/wdiff2.c:200
+#: src/wdiff.c:1234 src/wdiff2.c:199
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
 
-#: src/wdiff.c:1271 src/wdiff2.c:201
+#: src/wdiff.c:1235 src/wdiff2.c:200
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr ""
 
-#: src/wdiff.c:1272 src/wdiff2.c:202
+#: src/wdiff.c:1236 src/wdiff2.c:201
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
 
-#: src/wdiff.c:1273 src/wdiff2.c:203
+#: src/wdiff.c:1237 src/wdiff2.c:202
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr ""
 
-#: src/wdiff.c:1274 src/wdiff2.c:205
+#: src/wdiff.c:1238 src/wdiff2.c:204
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
 
-#: src/wdiff.c:1275 src/wdiff2.c:206
+#: src/wdiff.c:1239 src/wdiff2.c:205
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr ""
 
-#: src/wdiff.c:1276 src/wdiff2.c:207
+#: src/wdiff.c:1240 src/wdiff2.c:206
 msgid "  -v, --version              display program version then exit\n"
 msgstr ""
 
-#: src/wdiff.c:1277 src/wdiff2.c:208
+#: src/wdiff.c:1241 src/wdiff2.c:207
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 msgstr ""
 
-#: src/wdiff.c:1278 src/wdiff2.c:209
+#: src/wdiff.c:1242 src/wdiff2.c:208
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr ""
 
-#: src/wdiff.c:1279 src/wdiff2.c:210
+#: src/wdiff.c:1243 src/wdiff2.c:209
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr ""
 
-#: src/wdiff.c:1280 src/wdiff2.c:211
+#: src/wdiff.c:1244 src/wdiff2.c:210
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
 
-#: src/wdiff.c:1398
+#: src/wdiff.c:1362
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "無法使用 -t，termcap 不存在。"
 
-#: src/wdiff.c:1403
+#: src/wdiff.c:1367
 #, fuzzy
 msgid ""
 "\n"
@@ -562,12 +552,12 @@ msgstr ""
 "\n"
 "版權所有 (C) 1992, 1997 自由軟體基金會。\n"
 
-#: src/wdiff.c:1451 src/wdiff.c:1469
+#: src/wdiff.c:1415 src/wdiff.c:1433
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "缺少引數"
 
-#: src/wdiff.c:1464 src/wdiff2.c:322
+#: src/wdiff.c:1428 src/wdiff2.c:324
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "缺少引數"
@@ -592,21 +582,21 @@ msgstr ""
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
 msgstr "用法：%s [選項]... 檔案1 檔案2\n"
 
-#: src/wdiff2.c:204
+#: src/wdiff2.c:203
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
 msgstr ""
 
-#: src/wdiff2.c:213
+#: src/wdiff2.c:212
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:334
+#: src/wdiff2.c:336
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "正在讀取 %s"
 
-#: src/wdiff2.c:337
+#: src/wdiff2.c:339
 #, c-format
 msgid "'\n"
 msgstr ""
