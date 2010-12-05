@@ -227,6 +227,8 @@ main (int argc, char *const argv[])
 
   program_name = argv[0];
   setlocale (LC_ALL, "");
+  bindtextdomain (PACKAGE, LOCALEDIR);
+  textdomain (PACKAGE);
 
   add_argument (MDIFF_PROGRAM);
   add_simple_option ('W');
