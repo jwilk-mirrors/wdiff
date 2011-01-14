@@ -13,7 +13,7 @@ EXTRA_DIST =
 
 EXTRA_DIST += ChangeLog
 ChangeLog:
-	bzr log --gnu-changelog > $@.tmp
+	bzr log --gnu-changelog --include-merges > $@.tmp
 	cat $@.old >> $@.tmp
 	mv $@.tmp $@
 
