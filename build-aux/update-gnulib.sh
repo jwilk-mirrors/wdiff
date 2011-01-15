@@ -27,7 +27,8 @@ build-aux/regen-ignore.sh
 ./configure --enable-experimental
 make -s check
 for i in lib/po/*.po; do
-    if [[ $( bzr diff $i | grep -v POT-Creation-Date | wc -l ) -lt 12 ]]; then
+    if [[ $( bzr diff $i | grep '^[+-]' | \
+             grep -vE '^[+-]#: |POT-Creation-Date' | wc -l ) -lt 3 ]]; then
         bzr revert $i
     else
         echo "$i updated."
