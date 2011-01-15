@@ -1,5 +1,5 @@
 # DO NOT EDIT! GENERATED AUTOMATICALLY!
-# Copyright (C) 2002-2010 Free Software Foundation, Inc.
+# Copyright (C) 2002-2011 Free Software Foundation, Inc.
 #
 # This file is free software, distributed under the terms of the GNU
 # General Public License.  As a special exception to the GNU General
@@ -131,6 +131,7 @@ AC_DEFUN([gl_INIT],
   gl_STDLIB_MODULE_INDICATOR([canonicalize_file_name])
   gl_STDLIB_MODULE_INDICATOR([realpath])
   # Code from module configmake:
+  gl_CONFIGMAKE_PREP
   # Code from module errno:
   gl_HEADER_ERRNO_H
   # Code from module error:
@@ -267,7 +268,7 @@ AC_DEFUN([gl_INIT],
   # Code from module uniwidth/base:
   gl_LIBUNISTRING_LIBHEADER([0.9], [uniwidth.h])
   # Code from module uniwidth/width:
-  gl_LIBUNISTRING_MODULE([0.9], [uniwidth/width])
+  gl_LIBUNISTRING_MODULE([0.9.4], [uniwidth/width])
   # Code from module useless-if-before-free:
   # Code from module vc-list-files:
   # Code from module verify:
@@ -450,6 +451,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/getopt_int.h
   lib/gettext.h
   lib/intprops.h
+  lib/iswblank.c
   lib/langinfo.in.h
   lib/localcharset.c
   lib/localcharset.h
@@ -515,6 +517,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/btowc.m4
   m4/canonicalize.m4
   m4/codeset.m4
+  m4/configmake.m4
   m4/dos.m4
   m4/double-slash-root.m4
   m4/eealloc.m4

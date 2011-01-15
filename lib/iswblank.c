@@ -1,6 +1,5 @@
-/* Determine a canonical name for the current locale's character encoding.
-   Copyright (C) 2000-2003, 2009-2011 Free Software Foundation, Inc.
-   This file is part of the GNU CHARSET Library.
+/* Test wide character for being blank.
+   Copyright (C) 2008-2011 Free Software Foundation, Inc.
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -16,26 +15,13 @@
    with this program; if not, write to the Free Software Foundation,
    Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.  */
 
-#ifndef _LOCALCHARSET_H
-#define _LOCALCHARSET_H
+#include <config.h>
 
+/* Specification.  */
+#include <wctype.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-
-/* Determine the current locale's character encoding, and canonicalize it
-   into one of the canonical names listed in config.charset.
-   The result must not be freed; it is statically allocated.
-   If the canonical name cannot be determined, the result is a non-canonical
-   name.  */
-extern const char * locale_charset (void);
-
-
-#ifdef __cplusplus
+int
+iswblank (wint_t wc)
+{
+  return wc == ' ' || wc == '\t';
 }
-#endif
-
-
-#endif /* _LOCALCHARSET_H */
