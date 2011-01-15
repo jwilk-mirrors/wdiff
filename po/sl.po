@@ -1,129 +1,129 @@
-# -*- mode:po; coding:utf-8; -*- Slovenian message catalogue for wdiff-0.5g.
-# Copyright (C) 2007 Free Software Foundation, Inc.
+# -*- mode:po; coding:utf-8; -*- Slovenian message catalogue for wdiff-0.6.5.
+# Copyright (C) 2005, 2007, 2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the wdiff package.
 # Matej Urbančič <matej.urban@gmail.com>, 2005.
-# Primož Peterlin <primoz.peterlin@biofiz.mf.uni-lj.si>, 2007.
-# $Id: wdiff-0.5g.sl.po,v 1.3 2007/10/16 11:21:52 peterlin Exp $
+# Primož Peterlin <primozz.peterlin@gmail.com>, 2007, 2011.
+# $Id: wdiff-0.6.5.sl.po,v 1.2 2011/01/14 14:05:39 peterlin Exp $
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5g\n"
+"Project-Id-Version: wdiff 0.6.5\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 20:57+0100\n"
-"Last-Translator: Primoz PETERLIN <primoz.peterlin@biofiz.mf.uni-lj.si>\n"
+"POT-Creation-Date: 2010-12-05 20:23+0100\n"
+"PO-Revision-Date: 2011-01-14 15:05+0100\n"
+"Last-Translator: Primoz PETERLIN <primozz.peterlin@gmail.com>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
 
-#: src/mdiff.c:387
+#: src/mdiff.c:376
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (za reg.izraz `%s')"
 
-#: src/mdiff.c:905 src/wdiff.c:1488
-#, fuzzy, c-format
+#: src/mdiff.c:894 src/wdiff.c:1452
+#, c-format
 msgid "only one file may be standard input"
-msgstr "Standardni vhod je lahko samo ena datoteka."
+msgstr "standardni vhod je lahko samo ena datoteka"
 
-#: src/mdiff.c:920 src/wdiff.c:702
-#, fuzzy, c-format
+#: src/mdiff.c:909 src/wdiff.c:677
+#, c-format
 msgid "directories not supported"
-msgstr "Mape niso podprte"
+msgstr "imeniki niso podprti"
 
-#: src/mdiff.c:1064
+#: src/mdiff.c:1053
 #, c-format
 msgid "Reading %s"
 msgstr "Berem %s"
 
-#: src/mdiff.c:1189
+#: src/mdiff.c:1178
 #, c-format
 msgid ", %d items\n"
 msgstr ", %d predmetov\n"
 
-#: src/mdiff.c:1267
+#: src/mdiff.c:1256
 #, c-format
 msgid "Read summary: %d files, %d items\n"
 msgstr "Povzetek branja: %d datotek, %d predmetov\n"
 
-#: src/mdiff.c:1663
+#: src/mdiff.c:1652
 #, c-format
 msgid "Sorting"
 msgstr "Urejanje"
 
-#: src/mdiff.c:1680
+#: src/mdiff.c:1669
 #, c-format
 msgid ", clustering"
 msgstr ", razvrščanje"
 
-#: src/mdiff.c:1848 src/mdiff.c:1911
+#: src/mdiff.c:1837 src/mdiff.c:1900
 #, c-format
 msgid ", done\n"
 msgstr ", končano\n"
 
-#: src/mdiff.c:1898
+#: src/mdiff.c:1887
 #, c-format
 msgid "Sorting members"
 msgstr "Urejanje članov"
 
-#: src/mdiff.c:1930
+#: src/mdiff.c:1919
 #, c-format
 msgid "Work summary: %d clusters, %d members\n"
 msgstr "Delovni povzetek:  %d skupin, %d članov\n"
 
-#: src/mdiff.c:2310
+#: src/mdiff.c:2299
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Delovni povzetek:  %d skupin, %d članov, %d prekrivanj\n"
 
-#: src/mdiff.c:2365 src/wdiff.c:242
-#, fuzzy, c-format
+#: src/mdiff.c:2348 src/wdiff.c:227
+#, c-format
 msgid "select a terminal through the TERM environment variable"
-msgstr "Izberite terminal z lupinsko spremenljivko TERM."
+msgstr "izberite terminal z lupinsko spremenljivko TERM"
 
-#: src/mdiff.c:2368 src/wdiff.c:245
-#, fuzzy, c-format
+#: src/mdiff.c:2351 src/wdiff.c:230
+#, c-format
 msgid "could not access the termcap data base"
-msgstr "Podatkovna zbirka termcap ni dostopna."
+msgstr "podatkovna zbirka termcap ni dostopna"
 
-#: src/mdiff.c:2370 src/wdiff.c:247
-#, fuzzy, c-format
+#: src/mdiff.c:2353 src/wdiff.c:232
+#, c-format
 msgid "terminal type `%s' is not defined"
-msgstr "Tip terminala »%s« ni določen."
+msgstr "tip terminala »%s« ni določen"
 
-#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
+#: src/mdiff.c:3700 src/mdiff.c:3712 src/wdiff.c:1152 src/wdiff.c:1164
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d besed"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1190 src/wdiff.c:1202
+#: src/mdiff.c:3703 src/mdiff.c:3715 src/wdiff.c:1155 src/wdiff.c:1167
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% splošno"
 
-#: src/mdiff.c:3754 src/wdiff.c:1192
+#: src/mdiff.c:3705 src/wdiff.c:1157
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% zbrisano"
 
-#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3707 src/mdiff.c:3719 src/wdiff.c:1159 src/wdiff.c:1171
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% spremenjeno"
 
-#: src/mdiff.c:3766 src/wdiff.c:1204
+#: src/mdiff.c:3717 src/wdiff.c:1169
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% vneseno"
 
-#: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
+#: src/mdiff.c:3746 src/wdiff.c:1211 src/wdiff2.c:177
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Poskusite »%s --help« za več informacij.\n"
 
-#: src/mdiff.c:3799
+#: src/mdiff.c:3750
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -131,92 +131,78 @@ msgstr ""
 "mdiff - Preišče več datotek in išče podobna zaporedja. Na osnovi primerjave\n"
 "izdela mogočo podrobno listo razlik in podobnosti.\n"
 
-#: src/mdiff.c:3804
-#, fuzzy, c-format
+#: src/mdiff.c:3755
+#, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Uporaba: %s [IZBIRA]... [DATOTEKA]...\n"
 
-#: src/mdiff.c:3808
-#, fuzzy
+#: src/mdiff.c:3759
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
 "\n"
-"Izvajalni načini:\n"
+"Načini delovanja:\n"
 
-#: src/mdiff.c:3809
-#, fuzzy
+#: src/mdiff.c:3760
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (brez učinka)\n"
 
-#: src/mdiff.c:3810
-#, fuzzy
+#: src/mdiff.c:3761
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          z izpisom statistike na stderr\n"
 
-# ? "      --help             display this help and exit"
-# ? "      --help             prikaži to pomoč in zapusti program"
-#: src/mdiff.c:3811 src/unify.c:293
+#: src/mdiff.c:3762 src/unify.c:293
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help             izpiši ta navodila in zaključi\n"
 
-# ? "      --version          izpiši verzijo programa in zapusti program"
-# ? "      --version          output version information and exit"
-#: src/mdiff.c:3812 src/unify.c:294
+#: src/mdiff.c:3763 src/unify.c:294
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version          izpiši izdajo programa in zaključi\n"
 
-#: src/mdiff.c:3814
+#: src/mdiff.c:3765
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
+"\n"
+"Oblikovanje izpisa:\n"
 
-#: src/mdiff.c:3815
-#, fuzzy
+#: src/mdiff.c:3766
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr "  -T, --initial-tab       izpiši TAB namesto začetnega presledka\n"
 
-#: src/mdiff.c:3816
-#, fuzzy
+#: src/mdiff.c:3767
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr "  -l, --paginate          izhod paginiraj s programom »pr«\n"
 
-#: src/mdiff.c:3817
-#, fuzzy
+#: src/mdiff.c:3768
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=NIZ]      zabeleži drug uporabniški NIZ \n"
 
-#: src/mdiff.c:3818
-#, fuzzy
-msgid ""
-"  -V, --show-links        give file and line references in annotations\n"
-msgstr ""
-"  -V, --show-links        med zaznamki podaj informacije o datoteki in "
-"vrstici\n"
+#: src/mdiff.c:3769
+msgid "  -V, --show-links        give file and line references in annotations\n"
+msgstr "  -V, --show-links        med zaznamki podaj informacije o datoteki in vrstici\n"
 
-#: src/mdiff.c:3819
-#, fuzzy
+#: src/mdiff.c:3770
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr "  -t, --expand-tabs       v izhodu razširi tabulatorje v presledke\n"
 
-#: src/mdiff.c:3822
-#, fuzzy
+#: src/mdiff.c:3773
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
-"\n"
-"Razhroščevanje:\n"
 
-#: src/mdiff.c:3823
+#: src/mdiff.c:3774
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr "  -0, --debugging   izpiši veliko podrobnosti o izvajanju\n"
+msgstr ""
+"\n"
+"Razhroščevanje:\n"
+"  -0, --debugging   izpiši veliko podrobnosti o izvajanju\n"
 
-#: src/mdiff.c:3826
-#, fuzzy
+#: src/mdiff.c:3777
 msgid ""
 "\n"
 "Word mode options:\n"
@@ -224,116 +210,95 @@ msgstr ""
 "\n"
 "Možnosti besednega načina:\n"
 
-#: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
-#, fuzzy
+#: src/mdiff.c:3778 src/wdiff.c:1228 src/wdiff2.c:194
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted           ustavi izpis izbrisanih besed\n"
+msgstr "  -1, --no-deleted           brez izpisa izbrisanih besed\n"
 
-#: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
-#, fuzzy
+#: src/mdiff.c:3779 src/wdiff.c:1229 src/wdiff2.c:195
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          ustavi izpis dodanih besed\n"
+msgstr "  -2, --no-inserted          brez izpisa vstavljenih besed\n"
 
-#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
-#, fuzzy
+#: src/mdiff.c:3780 src/wdiff.c:1230 src/wdiff2.c:196
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            ustavi izpis splošnih besed\n"
+msgstr "  -3, --no-common            brez izpisa skupnih besed\n"
 
-#: src/mdiff.c:3830
-#, fuzzy
+#: src/mdiff.c:3781
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager           samodejno izvede oblikovanje strani\n"
 
-#: src/mdiff.c:3831
-#, fuzzy
+#: src/mdiff.c:3782
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -k, --less-mode            variacija tiskalniškega načina »less«\n"
 
-#: src/mdiff.c:3832
-#, fuzzy
+#: src/mdiff.c:3783
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -m, --avoid-wraps          ne razširi polj prek novih vrstic\n"
 
-#: src/mdiff.c:3833
-#, fuzzy
+#: src/mdiff.c:3784
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr "  -o, --printer              poudarki z dvojnim udarcem za tiskalnik\n"
 
-#: src/mdiff.c:3834
-#, fuzzy
+#: src/mdiff.c:3785
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -z, --terminal             uporabi termcap kot za terminalne zaslone\n"
+msgstr "  -z, --terminal             uporabi termcap kot za terminalne zaslone\n"
 
-#: src/mdiff.c:3835
-#, fuzzy
-msgid ""
-"  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
-"  -K, --no-init-term         kot -z, vendar brez nizov termcap init/term\n"
-
-#: src/mdiff.c:3836
-#, fuzzy
+#: src/mdiff.c:3786
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr "  -O, --item-regexp=REGEXP   primerjaj predmete kot regularne izraze\n"
 
-#: src/mdiff.c:3837
-#, fuzzy
+#: src/mdiff.c:3787
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            primerjaj besede namesto vrstic\n"
 
-#: src/mdiff.c:4022
-#, fuzzy
+#: src/mdiff.c:3972
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr "Brez DATOTEKE, ali ko je DATOTEKA -, preberi standardni vhod.\n"
+msgstr "Ko DATOTEKA ni podana ali je enaka -, beri s standardnega vhoda.\n"
 
-#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
-#, fuzzy
+#: src/mdiff.c:3974 src/unify.c:298 src/wdiff.c:1246 src/wdiff2.c:214
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr "Poročila o hroščih pošljite na <wdiff-bugs@gnu.org>.\n"
+msgstr "Poročila o napakah pošljite na <wdiff-bugs@gnu.org>.\n"
 
-#: src/mdiff.c:4035
+#: src/mdiff.c:3985
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr ""
 
-#: src/mdiff.c:4332
+#: src/mdiff.c:4282
 #, fuzzy, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "Ne morem uporabiti -z, termcap ni na voljo."
 
-#: src/mdiff.c:4371
+#: src/mdiff.c:4321
 #, fuzzy, c-format
 msgid "word merging for two files only (so far)"
 msgstr "Združevanje besed deluje samo za dve datoteki (trenutno)"
 
-#: src/mdiff.c:4387
-#, fuzzy
+#: src/mdiff.c:4337
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:134
+#: src/mdiff.c:4341 src/unify.c:407 src/wdiff.c:1372 src/wdiff2.c:133
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Ta program je prosti program; poglejte izvor za pogoje kopiranja.\n"
-"Program je BREZ KAKRŠNEKOLI GARANCIJE; tudi brez garancije prodaje ali\n"
-"primernosti za posebni namen.\n"
+"To je prost program; pogoji, pod katerimi ga lahko uporabljate, razmnožujete\n"
+"in razširjate so navedeni v izvorni kodi. Za program ni NOBENEGA JAMSTVA,\n"
+"niti jamstev USTREZNOSTI ZA PRODAJO ali PRIMERNOSTI ZA UPORABO.\n"
 
-#: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
+#: src/mdiff.c:4345 src/wdiff.c:1376 src/wdiff2.c:137
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 msgstr ""
 "\n"
-"Napisal Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+"Avtor François Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4431
+#: src/mdiff.c:4381
 #, fuzzy, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "Možnosti -123RSYZ imajo smisel samo pri dveh vnosih."
@@ -355,67 +320,59 @@ msgstr "unify - Pretvori context diffs v unidiffs ali obratno.\n"
 #: src/unify.c:281
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr "Uporaba: %s [MOŽNOST]... [DATOTEKA]\n"
+msgstr ""
+"\n"
+"Uporaba: %s [MOŽNOST]... [DATOTEKA]\n"
 
 #: src/unify.c:284
-#, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr "  -c, --context-diffs    prisilen izhod na context diffs\n"
+msgstr "  -c, --context-diffs    izpiši izhod v formatu konstekualnih diff\n"
 
 #: src/unify.c:285
-#, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    echo pojasnila na standardne napake\n"
+msgstr "  -e, --echo-comments    izpisuj komentarje na stderr\n"
 
 #: src/unify.c:286
-#, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        izhod stari-stil diffs, neglede na vse\n"
+msgstr "  -o, --old-diffs        v vsakem primeru izpisuj stari format diff\n"
 
 #: src/unify.c:287
-#, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr "  -p, --patch-format     ustvari patch format\n"
+msgstr "  -p, --patch-format     ustvari format patch\n"
 
 #: src/unify.c:288
-#, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr "  -P                     enako kot -p\n"
+msgstr "  -P                     isto kot -p\n"
 
 #: src/unify.c:289
-#, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr "  -s, --strip-comments   izlušči vrstice pojasnil\n"
+msgstr "  -s, --strip-comments   poreži komentarje\n"
 
 #: src/unify.c:290
-#, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr "  -u, --unidiffs         prisilen izhod na unidiffs\n"
+msgstr "  -u, --unidiffs         izpisuj izhod v formatu unidiff\n"
 
 #: src/unify.c:291
-#, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr "  -U                     enako kot -p in -u\n"
+msgstr "  -U                     isto kot -p in -u\n"
 
 #: src/unify.c:292
-#, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
+msgstr "  -=, --use-equals       v formatu unidiff nadomesti presledke z enačaji\n"
 
 #: src/unify.c:296
-#, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr "If FILE is not specified, read standard input.\n"
+msgstr "Če DATOTEKA ni podana, beri s standardnega vhoda.\n"
 
 #: src/unify.c:388
-#, fuzzy, c-format
+#, c-format
 msgid "unable to open `%s'"
-msgstr "Ne morem odpreti `%s'"
+msgstr "ni mogoče odpreti »%s«"
 
 #: src/unify.c:394
-#, fuzzy, c-format
+#, c-format
 msgid "only one filename allowed"
-msgstr "Dovoljeno je samo eno ime datoteke"
+msgstr "dovoljeno je le eno ime datoteke"
 
 #: src/unify.c:403
 msgid ""
@@ -423,7 +380,7 @@ msgid ""
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1994, 1997 Free Software Foundation, Inc.\n"
 
 #: src/unify.c:411
 msgid ""
@@ -431,39 +388,39 @@ msgid ""
 "Written by Wayne Davison <davison@borland.com>.\n"
 msgstr ""
 "\n"
-"Napisal Wayne Davison <davison@borland.com>.\n"
+"Avtor Wayne Davison <davison@borland.com>.\n"
 
 #: src/unify.c:550
-#, fuzzy, c-format
+#, c-format
 msgid "invalid unified diff header at line %ld"
-msgstr "Napačen unified diff glava v vrstici %ld"
+msgstr "napačena  glava unified diff v vrstici %ld"
 
 #: src/unify.c:592
-#, fuzzy, c-format
+#, c-format
 msgid "malformed unified diff at line %ld"
-msgstr "Spačen unified diff  v vrstici %ld"
+msgstr "okvarjen unified diff v vrstici %ld"
 
 #: src/unify.c:623
-#, fuzzy, c-format
+#, c-format
 msgid "context diff missing `old' header at line %ld"
-msgstr "Context diff pogreša `staro' glavo v vrstici %ld"
+msgstr "kontekstni diff pogreša »staro« glavo v vrstici %ld"
 
 #: src/unify.c:667 src/unify.c:686 src/unify.c:757 src/unify.c:775
-#, fuzzy, c-format
+#, c-format
 msgid "malformed context diff at line %ld"
-msgstr "Spačen context diff v vrstici %ld"
+msgstr "okvarjen kontekstni diff v vrstici %ld"
 
 #: src/unify.c:722
 #, fuzzy, c-format
 msgid "context diff missing `new' header at line %ld"
-msgstr "Context diff pogeša 'novo' glavo v vrstici %ld"
+msgstr "kontekstni diff pogreša »novo« glavo v vrstici %ld"
 
-#: src/wdiff.c:606 src/wdiff.c:725
+#: src/wdiff.c:581 src/wdiff.c:700
 #, c-format
 msgid "no suitable temporary directory exists"
-msgstr ""
+msgstr "ni primernega začasnega imenika"
 
-#: src/wdiff.c:1222 src/wdiff2.c:110
+#: src/wdiff.c:1187 src/wdiff2.c:109
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -490,120 +447,92 @@ msgstr ""
 "GNU Splošno javno licenco za več informacij.\n"
 "\n"
 "Kopijo GNU Splošne Javne Licence bi morali dobiti s tem programom\n"
-"V primeru, da kopije niste dobili, prosim pišite na Free Software "
-"Foundation,\n"
+"V primeru, da kopije niste dobili, prosim pišite na Free Software Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1250
+#: src/wdiff.c:1215
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr ""
-"wdiff - Primerjanje besed v dveh datotekah in izpis razlik med njima.\n"
+msgstr "wdiff - Primerjanje besed v dveh datotekah in izpis razlik med njima.\n"
 
-#: src/wdiff.c:1254
+#: src/wdiff.c:1219
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
+"\n"
 "Uporaba: %s [MOŽNOST]... DATOTEKA1 DATOTEKA2\n"
-"         %s -d [MOŽNOST]... [DATOTEKA]\n"
 
-#: src/wdiff.c:1259 src/wdiff2.c:191
-#, fuzzy
-msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Obvezni argumenti za daljše zastavice so obvezni tudi za krajše.\n"
+#: src/wdiff.c:1224 src/wdiff2.c:190
+msgid "Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
 
-#: src/wdiff.c:1262 src/wdiff2.c:194
-#, fuzzy
+#: src/wdiff.c:1227 src/wdiff2.c:193
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr "  -C, --copyright            izpišii avtorske pravice in zaključi\n"
+msgstr ""
 
-#: src/wdiff.c:1263 src/wdiff2.c:195
-#, fuzzy
-msgid ""
-"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         kot -t, brez termcap init/term niti\n"
-
-#: src/wdiff.c:1267 src/wdiff2.c:199
-#, fuzzy
+#: src/wdiff.c:1231 src/wdiff2.c:197
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           avtomatično pokliče zaznamovalca\n"
+msgstr ""
 
-#: src/wdiff.c:1268
+#: src/wdiff.c:1232
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1269 src/wdiff2.c:200
-#, fuzzy
+#: src/wdiff.c:1233 src/wdiff2.c:198
 msgid "  -h, --help                 display this help then exit\n"
-msgstr "  -h, --help                 izpiše to pomoč\n"
-
-#: src/wdiff.c:1270 src/wdiff2.c:201
-#, fuzzy
-msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          zavij velikost črk med primerjavo\n"
-
-#: src/wdiff.c:1271 src/wdiff2.c:202
-#, fuzzy
-msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            možnost krajšega izpisa za \"less\"\n"
-
-#: src/wdiff.c:1272 src/wdiff2.c:203
-#, fuzzy
-msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          ne razširi polj preko novih linij\n"
-
-#: src/wdiff.c:1273 src/wdiff2.c:204
-#, fuzzy
-msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              napni kot za tiskalnik\n"
-
-#: src/wdiff.c:1274 src/wdiff2.c:206
-#, fuzzy
-msgid ""
-"  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
-"  -s, --statistics           izpiši koliko besed je izbrisanih, dodanih...\n"
 
-#: src/wdiff.c:1275 src/wdiff2.c:207
-#, fuzzy
+#: src/wdiff.c:1234 src/wdiff2.c:199
+msgid "  -i, --ignore-case          fold character case while comparing\n"
+msgstr ""
+
+#: src/wdiff.c:1235 src/wdiff2.c:200
+msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
+msgstr ""
+
+#: src/wdiff.c:1236 src/wdiff2.c:201
+msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
+msgstr ""
+
+#: src/wdiff.c:1237 src/wdiff2.c:202
+msgid "  -p, --printer              overstrike as for printers\n"
+msgstr ""
+
+#: src/wdiff.c:1238 src/wdiff2.c:204
+msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr ""
+
+#: src/wdiff.c:1239 src/wdiff2.c:205
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             uporabi termcap kot terminalski način\n"
+msgstr ""
 
-#: src/wdiff.c:1276 src/wdiff2.c:208
-#, fuzzy
+#: src/wdiff.c:1240 src/wdiff2.c:206
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version              izpiši verzijo programa in zaključi\n"
+msgstr ""
 
-#: src/wdiff.c:1277 src/wdiff2.c:209
-#, fuzzy
-msgid ""
-"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRING  nit, ki določa začetek izbrisane regije\n"
+#: src/wdiff.c:1241 src/wdiff2.c:207
+msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr ""
 
-#: src/wdiff.c:1278 src/wdiff2.c:210
-#, fuzzy
+#: src/wdiff.c:1242 src/wdiff2.c:208
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRING    nit, ki določa konec izbrisane regije\n"
+msgstr ""
 
-#: src/wdiff.c:1279 src/wdiff2.c:211
-#, fuzzy
-msgid ""
-"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRING  nit, ki določa začetek vnešene regije\n"
+#: src/wdiff.c:1243 src/wdiff2.c:209
+msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr ""
 
-#: src/wdiff.c:1280 src/wdiff2.c:212
-#, fuzzy
+#: src/wdiff.c:1244 src/wdiff2.c:210
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRING    nit, ki določa konec vnešene\n"
+msgstr ""
 
-#: src/wdiff.c:1398
+#: src/wdiff.c:1362
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "Ne morem uporabiti -t, termcap ni dostopen."
 
-#: src/wdiff.c:1403
+#: src/wdiff.c:1367
 #, fuzzy
 msgid ""
 "\n"
@@ -611,53 +540,56 @@ msgid ""
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Foundation, Inc.\n"
 
-#: src/wdiff.c:1451 src/wdiff.c:1469
+#: src/wdiff.c:1415 src/wdiff.c:1433
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Manjkajo argumenti datoteke"
 
-#: src/wdiff.c:1464 src/wdiff2.c:323
+#: src/wdiff.c:1428 src/wdiff2.c:324
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Manjkajo argumenti datoteke"
 
-#: src/wdiff2.c:130
+#: src/wdiff2.c:129
 #, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright © 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 
-#: src/wdiff2.c:182
+#: src/wdiff2.c:181
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
 
-#: src/wdiff2.c:187
+#: src/wdiff2.c:186
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "Uporaba: %s [MOŽNOST]... DATOTEKA1 DATOTEKA2\n"
+msgstr ""
+"\n"
+"Uporaba: %s [MOŽNOST]... DATOTEKA1 DATOTEKA2\n"
 
-#: src/wdiff2.c:205
+#: src/wdiff2.c:203
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
 msgstr ""
 
-#: src/wdiff2.c:214
+#: src/wdiff2.c:212
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:335
+#: src/wdiff2.c:336
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "Berem %s"
 
-#: src/wdiff2.c:338
+#: src/wdiff2.c:339
 #, c-format
 msgid "'\n"
 msgstr ""
@@ -691,8 +623,7 @@ msgstr ""
 #~ "  -T, --initial-tab       izpiši TAB namesto začetnega presledka\n"
 #~ "  -l, --paginate          izhod paginiraj s programom »pr«\n"
 #~ "  -S, --string[=NIZ]      zabeleži drug uporabniški NIZ \n"
-#~ "  -V, --show-links        med zaznamki podaj informacije o datoteki in "
-#~ "vrstici\n"
+#~ "  -V, --show-links        med zaznamki podaj informacije o datoteki in vrstici\n"
 #~ "  -t, --expand-tabs       v izhodu razširi tabulatorje v presledke\n"
 
 #~ msgid ""
@@ -720,46 +651,36 @@ msgstr ""
 #~ "  -m, --avoid-wraps           ne razširi polj prek novih vrstic\n"
 #~ "  -o, --printer               poudarki z dvojnim udarcem za tiskalnik\n"
 #~ "  -z, --terminal              uporabi termcap kot za terminalne zaslone\n"
-#~ "  -K, --no-init-term          kot -z, vendar brez nizov termcap init/"
-#~ "term\n"
+#~ "  -K, --no-init-term          kot -z, vendar brez nizov termcap init/term\n"
 #~ "  -O, --item-regexp=REGEXP    primerjaj predmete kot regularne izraze\n"
 #~ "  -W, --word-mode             primerjaj besede namesto vrstic\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Comparing files:\n"
-#~ "*  -H, --speed-large-files     go faster, for when numerous small "
-#~ "changes\n"
-#~ "*  -a, --text                  report line differences (text file "
-#~ "default)\n"
+#~ "*  -H, --speed-large-files     go faster, for when numerous small changes\n"
+#~ "*  -a, --text                  report line differences (text file default)\n"
 #~ "*  -d, --minimal               try harder for a smaller set of changes\n"
-#~ "*  -q, --brief                 only says if files differ (binary "
-#~ "default)\n"
-#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/"
-#~ "suffixes\n"
+#~ "*  -q, --brief                 only says if files differ (binary default)\n"
+#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Primerjanje datotek:\n"
 #~ "*  -H, --speed-large-files     pohiti ob številčnih majhih spremembah\n"
-#~ "*  -a, --text                  poročilo o razlikah vrstic (privzeto "
-#~ "besedilna\n"
+#~ "*  -a, --text                  poročilo o razlikah vrstic (privzeto besedilna\n"
 #~ "                                 datoteka)\n"
 #~ "*  -d, --minimal               podrobno primerjaj manjše spremembe\n"
-#~ "*  -q, --brief                 povej le, če se datoteke razlikujejo "
-#~ "(privzeto\n"
+#~ "*  -q, --brief                 povej le, če se datoteke razlikujejo (privzeto\n"
 #~ "                                 binarno)\n"
-#~ "*      --horizon-lines=VRSTIC  obdrži število VRSTIC v splošnih pred/pri-"
-#~ "ponah\n"
+#~ "*      --horizon-lines=VRSTIC  obdrži število VRSTIC v splošnih pred/pri-ponah\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Comparing directories:\n"
 #~ "*  -N, --new-file                  consider missing files to be empty\n"
-#~ "*  -P, --unidirectional-new-file   consider missing old files to be "
-#~ "empty\n"
+#~ "*  -P, --unidirectional-new-file   consider missing old files to be empty\n"
 #~ "*  -S, --starting-file=FILE        resume directory comparison with FILE\n"
-#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from "
-#~ "FILE\n"
+#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from FILE\n"
 #~ "*  -r, --recursive                 recursively compare subdirectories\n"
 #~ "*  -s, --report-identical-files    report when two files are the same\n"
 #~ "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
@@ -767,16 +688,12 @@ msgstr ""
 #~ "\n"
 #~ "Primerjanje map:\n"
 #~ "*  -N, --new-file                  vzemi manjkajoče datoteke kot prazne\n"
-#~ "*  -P, --unidirectional-new-file   vzemi manjkajoče stare datoteke kot "
-#~ "prazne\n"
-#~ "*  -S, --starting-file=DATOTEKA    nadaljuj primerjavo imenikov z "
-#~ "DATOTEKO\n"
-#~ "*  -X, --exclude-from=DATOTEKA     brez datotek, ki ustrezajo vzorcu v "
-#~ "DATOTEKI\n"
+#~ "*  -P, --unidirectional-new-file   vzemi manjkajoče stare datoteke kot prazne\n"
+#~ "*  -S, --starting-file=DATOTEKA    nadaljuj primerjavo imenikov z DATOTEKO\n"
+#~ "*  -X, --exclude-from=DATOTEKA     brez datotek, ki ustrezajo vzorcu v DATOTEKI\n"
 #~ "*  -r, --recursive                 rekurzivno primerjaj tudi podimenike\n"
 #~ "*  -s, --report-identical-files    sporoči, ko sta dve datoteki enaki\n"
-#~ "*  -x, --exclude=VZOREC            brez datotek (imenikov), ki ustrezajo "
-#~ "VZORCU\n"
+#~ "*  -x, --exclude=VZOREC            brez datotek (imenikov), ki ustrezajo VZORCU\n"
 
 #~ msgid ""
 #~ "\n"
@@ -790,11 +707,9 @@ msgstr ""
 #~ "\n"
 #~ "Prezri besedilo:\n"
 #~ "  -B, --ignore-blank-lines             prezri prazne vrstice\n"
-#~ "*  -I, --ignore-matching-lines=REGEXP  prezri vrstice, ki ustrezajo reg. "
-#~ "izrazu\n"
+#~ "*  -I, --ignore-matching-lines=REGEXP  prezri vrstice, ki ustrezajo reg. izrazu\n"
 #~ "  -b, --ignore-space-change            prezri količino praznega prostora\n"
-#~ "  -i, --ignore-case                    obravnavaj male in velike črke "
-#~ "enako\n"
+#~ "  -i, --ignore-case                    obravnavaj male in velike črke enako\n"
 #~ "  -w, --ignore-all-space               prezri prazne prostore\n"
 
 #~ msgid ""
@@ -808,8 +723,7 @@ msgstr ""
 #~ "Razvrščanje:\n"
 #~ "  -G, --relist-files         izpiši vse vhodne datoteke z opombami\n"
 #~ "  -J, --minimum-size=ZADETEK   prezri skupine brez tako veliko ZADETKOV\n"
-#~ "  -j, --ignore-delimiters    ne preštevaj  predmetov, ki imajo samo "
-#~ "ločevala\n"
+#~ "  -j, --ignore-delimiters    ne preštevaj  predmetov, ki imajo samo ločevala\n"
 
 #~ msgid ""
 #~ "\n"
@@ -822,28 +736,19 @@ msgstr ""
 #~ "*      --old-line-format=FORMAT          use FORMAT for deleted line\n"
 #~ "*      --unchanged-group-format=FORMAT   use FORMAT for unchanged lines\n"
 #~ "*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n"
-#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-"
-#~ "format\n"
+#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Podroben izhodni format:\n"
 #~ "*  -D, --ifdef=IME                       izhod v obliki `#ifdef IME'\n"
-#~ "*      --changed-group-format=FORMAT     uporabi FORMAT za spremenjene "
-#~ "vrstice\n"
-#~ "*      --new-group-format=FORMAT         uporabi FORMAT za vnešene "
-#~ "vrstice\n"
-#~ "*      --new-line-format=FORMAT          uporabi FORMAT za vnešeno "
-#~ "vrstico\n"
-#~ "*      --old-group-format=FORMAT         uporabi FORMAT za izbrisane "
-#~ "vrstice\n"
-#~ "*      --old-line-format=FORMAT          uporabi FORMAT za izbrisano "
-#~ "vrstico\n"
-#~ "*      --unchanged-group-format=FORMAT   uporabi FORMAT za nespremenjene "
-#~ "vrstice\n"
-#~ "*      --unchanged-line-format=FORMAT    uporabi FORMAT za nespremenjeno "
-#~ "vrstico\n"
-#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-"
-#~ "format\n"
+#~ "*      --changed-group-format=FORMAT     uporabi FORMAT za spremenjene vrstice\n"
+#~ "*      --new-group-format=FORMAT         uporabi FORMAT za vnešene vrstice\n"
+#~ "*      --new-line-format=FORMAT          uporabi FORMAT za vnešeno vrstico\n"
+#~ "*      --old-group-format=FORMAT         uporabi FORMAT za izbrisane vrstice\n"
+#~ "*      --old-line-format=FORMAT          uporabi FORMAT za izbrisano vrstico\n"
+#~ "*      --unchanged-group-format=FORMAT   uporabi FORMAT za nespremenjene vrstice\n"
+#~ "*      --unchanged-line-format=FORMAT    uporabi FORMAT za nespremenjeno vrstico\n"
+#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 
 #~ msgid ""
 #~ "\n"
@@ -863,42 +768,32 @@ msgstr ""
 #~ msgid ""
 #~ "\n"
 #~ "Context and unified formats:\n"
-#~ "*  -F, --show-function-line=REGEXP   show previous context matching "
-#~ "REGEXP\n"
-#~ "*  -p, --show-c-function             show which C function for each "
-#~ "change\n"
+#~ "*  -F, --show-function-line=REGEXP   show previous context matching REGEXP\n"
+#~ "*  -p, --show-c-function             show which C function for each change\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Kontekstni in enotni formati:\n"
-#~ "*  -F, --show-function-line=REGEXP   pokaži prejšnji konteksni vzorčni "
-#~ "REGEXP\n"
-#~ "*  -p, --show-c-function             pokaži C funkcijo za vsako "
-#~ "spremembo\n"
+#~ "*  -F, --show-function-line=REGEXP   pokaži prejšnji konteksni vzorčni REGEXP\n"
+#~ "*  -p, --show-c-function             pokaži C funkcijo za vsako spremembo\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "*  -C, --context=LINES         as -c, also select context size in lines\n"
-#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name "
-#~ "(twice)\n"
+#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
 #~ "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-#~ "*  -c, --context               output context diffs (default 3 context "
-#~ "lines)\n"
+#~ "*  -c, --context               output context diffs (default 3 context lines)\n"
 #~ "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 #~ "*  -LINES                      (obsolete: select context size in lines)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "*  -C, --context=VRSTIC        kot -c, določi tudi število vrstic "
-#~ "konteksta\n"
-#~ "*  -L, --label=OZNAKA          uporabi od/do OZNAKE namesto imena "
-#~ "datoteke (2×)\n"
-#~ "*  -U, --unified=VRSTIC        kot -u, določi tudi število vrstic "
-#~ "konteksta\n"
+#~ "*  -C, --context=VRSTIC        kot -c, določi tudi število vrstic konteksta\n"
+#~ "*  -L, --label=OZNAKA          uporabi od/do OZNAKE namesto imena datoteke (2×)\n"
+#~ "*  -U, --unified=VRSTIC        kot -u, določi tudi število vrstic konteksta\n"
 #~ "*  -c, --context               izpiši kontekstne razlike (privzeto 3 \n"
 #~ "                                 vrstice konteksta)\n"
 #~ "*  -u, --unified               izpiši poenotene razlike  (privzeto 3 \n"
 #~ "                                 vrstice konteksta)\n"
-#~ "*  -VRSTIC                     (opuščeno; nastavi število vrstic "
-#~ "konteksta)\n"
+#~ "*  -VRSTIC                     (opuščeno; nastavi število vrstic konteksta)\n"
 
 #~ msgid ""
 #~ "\n"
@@ -913,8 +808,7 @@ msgstr ""
 #~ "Primerjalni format:\n"
 #~ "*  -W, --width=STOLPCI           uporabi širino STOLPCEV\n"
 #~ "*  -y, --side-by-side            uporabi primerjalni format izpisa\n"
-#~ "*      --left-column             pri skupnih izpiši samo vrstico levega "
-#~ "stolpca\n"
+#~ "*      --left-column             pri skupnih izpiši samo vrstico levega stolpca\n"
 #~ "*      --sdiff-merge-assist      (interno uporablja `sdiff')\n"
 #~ "*      --suppress-common-lines   ne izpiši skupnih vrstic\n"
 
@@ -924,13 +818,11 @@ msgstr ""
 #~ "  %%%%           a single %%\n"
 #~ "  %%c'C'        quoted character C\n"
 #~ "  %%c'\\O'       character having value O, from 1 to 3 octal digits\n"
-#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E "
-#~ "FORMAT\n"
+#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E FORMAT\n"
 #~ "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 #~ "  %%<           [group] old, each line through --old-line-format\n"
 #~ "  %%>           [group] new, each line through --new-line-format\n"
-#~ "  %%=           [group] unchanged, each line through --unchanged-line-"
-#~ "format\n"
+#~ "  %%=           [group] unchanged, each line through --unchanged-line-format\n"
 #~ "  %%l           [line] without its possible trailing newline\n"
 #~ "  %%L           [line] with its possible trailing newline\n"
 #~ msgstr ""
@@ -942,13 +834,10 @@ msgstr ""
 #~ "  %%(A=B?T:E)   če A = B, potem T, sicer E; A in B sta števili ali \n"
 #~ "                  SPREMENLJIVKI, T in E sta FORMAT\n"
 #~ "  %%FN          uporabi določilo D za izpis vrednosti spremenljivke N\n"
-#~ "  %%<           [skupina] stara, vsaka vrstica z izbiro --old-line-"
-#~ "format\n"
+#~ "  %%<           [skupina] stara, vsaka vrstica z izbiro --old-line-format\n"
 #~ "  %%>           [skupina] nova, vsaka vrstica z izbiro --old-line-format\n"
-#~ "  %%=           [skupina] nespremenjena, vsaka vrstica z izbiro --old-"
-#~ "line-format\n"
-#~ "  %%l           [vrstica] brez morebitnega znaka za konec vrstice na "
-#~ "koncu\n"
+#~ "  %%=           [skupina] nespremenjena, vsaka vrstica z izbiro --old-line-format\n"
+#~ "  %%l           [vrstica] brez morebitnega znaka za konec vrstice na koncu\n"
 #~ "  %%L           [vrstica] z morebitnim znakom za konec vrstice na koncu\n"
 
 #~ msgid ""
@@ -978,8 +867,7 @@ msgstr ""
 #~ msgid ""
 #~ "\n"
 #~ "Standard diff options:\n"
-#~ "  -i, --ignore-case         consider upper- and lower-case to be the "
-#~ "same\n"
+#~ "  -i, --ignore-case         consider upper- and lower-case to be the same\n"
 #~ "  -w, --ignore-all-space    ignore all white space\n"
 #~ "  -b, --ignore-space-change ignore changes in the amount of white space\n"
 #~ "  -B, --ignore-blank-lines  ignore changes whose lines are all blank\n"
@@ -1001,8 +889,7 @@ msgstr ""
 #~ "  -w, --ignore-all-space    prezri presledke\n"
 #~ "  -b, --ignore-space-change prezri spremembe v številu presledkov\n"
 #~ "  -B, --ignore-blank-lines  prezri spremembe, ko so vrstice prazne\n"
-#~ "  -I, --ignore-matching-lines=RE prezri vrstice, ki sovpadajo s "
-#~ "kriterijem RE\n"
+#~ "  -I, --ignore-matching-lines=RE prezri vrstice, ki sovpadajo s kriterijem RE\n"
 #~ "  -a, --text                obravnavaj vse datoteke kot tekstne\n"
 #~ "  -c, --context[=ŠTEVILO]    izpis regular context diffs,\n"
 #~ "                            s spremembo ŠTEVILA vrstic konteksta\n"
@@ -1024,13 +911,11 @@ msgstr ""
 #~ msgid ""
 #~ "\n"
 #~ "Old mdiff options:\n"
-#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a "
-#~ "cluster\n"
+#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Stare mdiff možnosti:\n"
-#~ "*  -f, --fuzz-items=PREDMET     nič več kot toliko PREDMETOV, ki se ne "
-#~ "ujemajo v skupini\n"
+#~ "*  -f, --fuzz-items=PREDMET     nič več kot toliko PREDMETOV, ki se ne ujemajo v skupini\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1106,8 +991,7 @@ msgstr ""
 #~ "  -l, --less-mode            možnost krajšega izpisa za \"less\"\n"
 #~ "  -n, --avoid-wraps       ne razširi polj preko novih linij\n"
 #~ "  -p, --printer                napni kot za tiskalnik\n"
-#~ "  -s, --statistics             izpiši koliko besed je izbrisanih, "
-#~ "dodanih...\n"
+#~ "  -s, --statistics             izpiši koliko besed je izbrisanih, dodanih...\n"
 #~ "  -t, --terminal              uporabi termcap kot terminalski način\n"
 #~ "  -w, --start-delete=STRING  nit, ki določa začetek izbrisane regije\n"
 #~ "  -x, --end-delete=STRING    nit, ki določa konec izbrisane regije\n"
