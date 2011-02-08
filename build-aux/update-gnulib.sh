@@ -26,6 +26,7 @@ build-aux/regen-ignore.sh
 ./autogen.sh
 ./configure --enable-experimental
 make -s check
+bzr revert po
 for i in lib/po/*.po; do
     if [[ $( bzr diff $i | grep '^[+-]' | \
              grep -vE '^[+-]#: |POT-Creation-Date' | wc -l ) -lt 3 ]]; then
