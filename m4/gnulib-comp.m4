@@ -96,7 +96,7 @@ AC_DEFUN([gl_EARLY],
   # Code from module warn-on-use:
   # Code from module wchar:
   # Code from module wcrtomb:
-  # Code from module wctype:
+  # Code from module wctype-h:
   # Code from module wcwidth:
   # Code from module xalloc:
   # Code from module xalloc-die:
@@ -278,7 +278,7 @@ AC_DEFUN([gl_INIT],
   # Code from module wcrtomb:
   gl_FUNC_WCRTOMB
   gl_WCHAR_MODULE_INDICATOR([wcrtomb])
-  # Code from module wctype:
+  # Code from module wctype-h:
   gl_WCTYPE_H
   # Code from module wcwidth:
   gl_FUNC_WCWIDTH
