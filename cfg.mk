@@ -5,7 +5,7 @@
 
 _autoreconf = $(srcdir)/autogen.sh
 
-config_h_header = ("system\.h"|<config\.h>)
+config_h_header = ("wdiff\.h"|<config\.h>)
 gnulib_dir = .
 
 INDENT_STYLE = -gnu -ppi1 -ut

@@ -1,4 +1,4 @@
-/* Open a pipe to read from a program without intermediary sh.
+/* Open a pipe to read from or write to a program without intermediary sh.
    Copyright (C) 1992, 1997, 2011 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify
@@ -17,9 +17,8 @@
 
 /* Written by David MacKenzie, rewritten by Martin von Gagern.  */
 
-#include "system.h"
+#include "wdiff.h"
 
-#include <config.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>

@@ -17,7 +17,7 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "system.h"
+#include "wdiff.h"
 
 /* Exit codes values.  */
 #define EXIT_DIFFERENCE 1	/* some differences found */
@@ -76,8 +76,6 @@
 #include <locale.h>
 #include <sys/wait.h>
 
-FILE *readpipe (const char *, ...);
-FILE *writepipe (const char *, ...);
 static void complete_input_program (void);
 
 /* Declarations.  */

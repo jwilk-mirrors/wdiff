@@ -1,5 +1,5 @@
 /* Find similar sequences in multiple files and report differences.
-   Copyright (C) 1992, 1997, 1998, 1999 Free Software Foundation, Inc.
+   Copyright (C) 1992, 1997, 1998, 1999, 2011 Free Software Foundation, Inc.
    Francois Pinard <pinard@iro.umontreal.ca>, 1997.
 
    This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 
 */
 
-#include "system.h"
+#include "wdiff.h"
 
 /* Define to 1 to compile in a debugging option.  */
 #define DEBUGGING 1
@@ -78,10 +78,6 @@ char *strstr ();
 #include <getopt.h>
 #include <locale.h>
 #include <sys/wait.h>
-
-char *getenv ();
-FILE *readpipe (const char *, ...);
-FILE *writepipe (const char *, ...);
 
 #include "regex.h"
 #define CHAR_SET_SIZE 256
