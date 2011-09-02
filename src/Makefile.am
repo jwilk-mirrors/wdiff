@@ -7,8 +7,8 @@ bin_PROGRAMS = wdiff $(EXPERIMENTAL_PROGRAMS)
 EXTRA_PROGRAMS = mdiff unify wdiff2
 
 unify_SOURCES = unify.c system.h
-wdiff_SOURCES = wdiff.c readpipe.c writepipe.c system.h
-mdiff_SOURCES = mdiff.c readpipe.c writepipe.c system.h
+wdiff_SOURCES = wdiff.c pipes.c system.h
+mdiff_SOURCES = mdiff.c pipes.c system.h
 wdiff2_SOURCES = wdiff2.c system.h
 
 unify_LDADD = ../lib/libgnu.a $(LIBINTL)

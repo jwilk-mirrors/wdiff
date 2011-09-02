@@ -15,12 +15,13 @@
 
 
 # Specification in the form of a command-line invocation:
-#   gnulib-tool --import --dir=. --lib=libgnu --source-base=lib --m4-base=m4 --po-base=lib/po --doc-base=doc --tests-base=tests --aux-dir=build-aux --no-libtool --macro-prefix=gl --po-domain=wdiff canonicalize-lgpl error gendocs getline getopt gettext locale maintainer-makefile mbsrchr regex strstr-simple sys_stat sys_wait unistd xalloc
+#   gnulib-tool --import --dir=. --lib=libgnu --source-base=lib --m4-base=m4 --po-base=lib/po --doc-base=doc --tests-base=tests --aux-dir=build-aux --no-libtool --macro-prefix=gl --po-domain=wdiff canonicalize-lgpl dup2 error gendocs getline getopt gettext locale maintainer-makefile mbsrchr regex strstr-simple sys_stat sys_wait unistd xalloc
 
 # Specification in the form of a few gnulib-tool.m4 macro invocations:
 gl_LOCAL_DIR([])
 gl_MODULES([
   canonicalize-lgpl
+  dup2
   error
   gendocs
   getline

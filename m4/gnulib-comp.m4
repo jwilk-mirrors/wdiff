@@ -33,6 +33,7 @@ AC_DEFUN([gl_EARLY],
   # Code from module c++defs:
   # Code from module canonicalize-lgpl:
   # Code from module configmake:
+  # Code from module dup2:
   # Code from module errno:
   # Code from module error:
   # Code from module exitfail:
@@ -132,6 +133,9 @@ AC_DEFUN([gl_INIT],
   gl_STDLIB_MODULE_INDICATOR([realpath])
   # Code from module configmake:
   gl_CONFIGMAKE_PREP
+  # Code from module dup2:
+  gl_FUNC_DUP2
+  gl_UNISTD_MODULE_INDICATOR([dup2])
   # Code from module errno:
   gl_HEADER_ERRNO_H
   # Code from module error:
@@ -438,6 +442,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/btowc.c
   lib/canonicalize-lgpl.c
   lib/config.charset
+  lib/dup2.c
   lib/errno.in.h
   lib/error.c
   lib/error.h
@@ -520,6 +525,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/configmake.m4
   m4/dos.m4
   m4/double-slash-root.m4
+  m4/dup2.m4
   m4/eealloc.m4
   m4/errno_h.m4
   m4/error.m4
