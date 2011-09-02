@@ -126,8 +126,7 @@ int exit_status = EXIT_SUCCESS;	/* status at end of execution */
 /* The line above gives GNU diff options, for reference.  */
 
 /* Long options equivalences.  */
-static const struct option long_options[] =
-{
+static const struct option long_options[] = {
   {"auto-pager", no_argument, NULL, 'A'},
   {"avoid-wraps", no_argument, NULL, 'm'},
   {"brief", no_argument, NULL, 'q'},
@@ -158,7 +157,7 @@ static const struct option long_options[] =
   {"new-file", no_argument, NULL, 'N'},
   {"no-common", no_argument, NULL, '3'},
   {"no-deleted", no_argument, NULL, '1'},
-  {"no-init-term", no_argument, NULL, 'K'}, /* backwards compatibility */
+  {"no-init-term", no_argument, NULL, 'K'},	/* backwards compatibility */
   {"no-inserted", no_argument, NULL, '2'},
   {"ignore-delimiters", no_argument, NULL, 'j'},
   {"paginate", no_argument, NULL, 'l'},
@@ -355,7 +354,7 @@ static int tolerance = 0;
 static struct re_pattern_buffer *
 alloc_and_compile_regex (const char *string)
 {
-  struct re_pattern_buffer *pattern; /* newly allocated structure */
+  struct re_pattern_buffer *pattern;	/* newly allocated structure */
   const char *message;		/* error message returned by regex.c */
 
   pattern = (struct re_pattern_buffer *)
@@ -452,7 +451,7 @@ static unsigned *type_array = NULL;
 static int items = 0;
 
 static inline enum type
-item_type (ITEM *item)
+item_type (ITEM * item)
 {
   int position = item - item_array;
   int shift = position % TYPES_PER_WORD * BITS_PER_TYPE;
@@ -462,7 +461,7 @@ item_type (ITEM *item)
 }
 
 static inline void
-set_item_type (ITEM *item, enum type type)
+set_item_type (ITEM * item, enum type type)
 {
   int position = item - item_array;
   int shift = position % TYPES_PER_WORD * BITS_PER_TYPE;
@@ -478,21 +477,21 @@ set_item_type (ITEM *item, enum type type)
 
 struct item
 {
-  enum type type : BITS_PER_TYPE;
-  unsigned checksum : BITS_PER_WORD - BITS_PER_TYPE;
+  enum type type:BITS_PER_TYPE;
+  unsigned checksum:BITS_PER_WORD - BITS_PER_TYPE;
 };
 
 static struct item *item_array = NULL;
 static int items = 0;
 
 static inline enum type
-item_type (ITEM *item)
+item_type (ITEM * item)
 {
   return item->type;
 }
 
 static inline void
-set_item_type (ITEM *item, enum type type)
+set_item_type (ITEM * item, enum type type)
 {
   item->type = type;
 }
@@ -506,12 +505,12 @@ set_item_type (ITEM *item, enum type type)
 `---------------------*/
 
 static void
-dump_item (ITEM *item)
+dump_item (ITEM * item)
 {
-  static const char *item_type_string[4] = {"", "delim", "white", "SENTIN"};
+  static const char *item_type_string[4] = { "", "delim", "white", "SENTIN" };
 
-  fprintf (stderr, "(%ld)\t%s\t%08x\n", (long)(item - item_array),
-	   item_type_string [item_type (item)], item->checksum);
+  fprintf (stderr, "(%ld)\t%s\t%08x\n", (long) (item - item_array),
+	   item_type_string[item_type (item)], item->checksum);
 }
 
 /*------------------.
@@ -587,7 +586,7 @@ compare_for_checksum_runs (const void *void_first, const void *void_second)
       FORWARD_ITEM (item2);
 
       /* Sentinels are never equal (unless really the same).  They go after
-	 all checksums, and compare so to stabilise the sort.  */
+         all checksums, and compare so to stabilise the sort.  */
 
       if (item_type (item1) == SENTINEL)
 	return item_type (item2) == SENTINEL ? value1 - value2 : 1;
@@ -612,8 +611,7 @@ new_item (enum type type, int checksum)
   if (items % (64 * TYPES_PER_WORD) == 0)
     {
       item_array = (ITEM *)
-	xrealloc (item_array,
-		  (items + 64 * TYPES_PER_WORD) * sizeof (ITEM));
+	xrealloc (item_array, (items + 64 * TYPES_PER_WORD) * sizeof (ITEM));
 #if SAFER_SLOWER
       type_array = (unsigned *)
 	xrealloc (type_array,
@@ -658,7 +656,7 @@ identical_size (int index1, int index2)
 	  /* Just assume that identical checksums imply identical types.  */
 	  && item_type (item1) == item_type (item2)
 #endif
-	  )
+	)
 	{
 	  if (item_type (item1) == NORMAL)
 	    normal_count++;
@@ -815,9 +813,8 @@ swallow_input (struct input *input)
 
   if (strcmp (input->file_name, STDIN_PRINTED_NAME) == 0)
     handle = fileno (stdin);
-  else
-    if (handle = open (input->file_name, O_RDONLY), handle < 0)
-      error (EXIT_ERROR, errno, "%s", input->file_name);
+  else if (handle = open (input->file_name, O_RDONLY), handle < 0)
+    error (EXIT_ERROR, errno, "%s", input->file_name);
 
   /* If the file is a plain, regular file, allocate the memory buffer all at
      once and swallow the file in one blow.  In other cases, read the file
@@ -836,12 +833,12 @@ swallow_input (struct input *input)
       input->memory_copy = (char *)
 	xmalloc ((size_t) input->stat_buffer.st_size);
 
-      if (read (handle, input->memory_copy, (size_t) input->stat_buffer.st_size)
-	  != input->stat_buffer.st_size)
+      if (read
+	  (handle, input->memory_copy,
+	   (size_t) input->stat_buffer.st_size) != input->stat_buffer.st_size)
 	error (EXIT_ERROR, errno, "%s", input->file_name);
     }
   else
-
 #endif
 
     {
@@ -850,8 +847,7 @@ swallow_input (struct input *input)
 
       length = 0;
       while (read_length = read (handle, input->memory_copy + length,
-				 allocated_length - length),
-	     read_length > 0)
+				 allocated_length - length), read_length > 0)
 	{
 	  length += read_length;
 	  if (length == allocated_length)
@@ -1007,8 +1003,7 @@ input_character_helper (struct input *input)
 
       for (counter = 0; counter < ignore_regexps; counter++)
 	if (re_match (ignore_regexp_array[counter],
-		      input->line, input->limit - input->line, 0, NULL)
-	    > 0)
+		      input->line, input->limit - input->line, 0, NULL) > 0)
 	  break;
     }
   while (counter < ignore_regexps);
@@ -1066,8 +1061,7 @@ study_input (struct input *input)
 
       for (counter = 0; counter < ignore_regexps; counter++)
 	if (re_match (ignore_regexp_array[counter],
-		      input->line, input->limit - input->line, 0, NULL)
-	    > 0)
+		      input->line, input->limit - input->line, 0, NULL) > 0)
 	  break;
 
       if (counter < ignore_regexps)
@@ -1080,7 +1074,7 @@ study_input (struct input *input)
       /* The line is not being ignored.  */
 
       /* We prefer `cursor < buffer + length' over `*cursor' in the loop
-	 tests, so embedded NULs can be handled.  */
+         tests, so embedded NULs can be handled.  */
 
       if (word_mode)
 	{
@@ -1254,7 +1248,7 @@ study_all_inputs (void)
 
   if (verbose)
     fprintf (stderr, _("Read summary: %d files, %d items\n"),
-	    inputs, items - inputs - 1);
+	     inputs, items - inputs - 1);
 
 #if DEBUGGING
   if (debugging)
@@ -1463,10 +1457,9 @@ dump_cluster (struct cluster *cluster)
   struct member *member;
 
   fprintf (stderr, "{%ld},%d",
-           (long)(cluster - cluster_array), cluster->item_count);
+	   (long) (cluster - cluster_array), cluster->item_count);
   for (counter = cluster->first_member;
-       counter < (cluster + 1)->first_member;
-       counter++)
+       counter < (cluster + 1)->first_member; counter++)
     {
       member = member_array + counter;
       fprintf (stderr, "%c[%d] %s,%d",
@@ -1499,7 +1492,7 @@ static void
 dump_member (struct member *member)
 {
   fprintf (stderr, " [%ld]\t{%d}\t%s,%d+\n",
-	   (long)(member - member_array), member->cluster_number,
+	   (long) (member - member_array), member->cluster_number,
 	   reference_string (member->first_item),
 	   cluster_array[member->cluster_number].item_count);
 }
@@ -1558,8 +1551,7 @@ new_cluster (int count)
 
   if (clusters % 8 == 0)
     cluster_array = (struct cluster *)
-      xrealloc (cluster_array,
-		(clusters + 8) * sizeof (struct cluster));
+      xrealloc (cluster_array, (clusters + 8) * sizeof (struct cluster));
 
   cluster = cluster_array + clusters++;
   cluster->first_member = members;
@@ -1577,8 +1569,7 @@ new_member (int item)
 
   if (members % 8 == 0)
     member_array = (struct member *)
-      xrealloc (member_array,
-		(members + 8) * sizeof (struct member));
+      xrealloc (member_array, (members + 8) * sizeof (struct member));
 
   member = member_array + members++;
   member->cluster_number = clusters - 1;
@@ -1599,8 +1590,7 @@ explain_member (char prefix, struct member *quote)
 
   putc (prefix, output_file);
   for (member = member_array + cluster->first_member;
-       member < MEMBER_LIMIT (cluster);
-       member++)
+       member < MEMBER_LIMIT (cluster); member++)
     {
       reference = get_reference (member->first_item);
       fprintf (output_file, member == quote ? " %s%d,%d" : " (%s%d,%d)",
@@ -1674,8 +1664,8 @@ prepare_clusters (void)
        cluster_set += sizes + 1)
     {
       /* Find all members beginning with the same run of checksums.  These
-	 will be later distributed among a few clusters of various sizes,
-	 and so, are common to the incoming set of clusters.  */
+         will be later distributed among a few clusters of various sizes,
+         and so, are common to the incoming set of clusters.  */
 
       sizes = 0;
       while (cluster_set + sizes + 1 < indirect_item_array + indirect_items)
@@ -1697,15 +1687,15 @@ prepare_clusters (void)
 	}
 
       /* This test is not necessary for the algorithm to work, but this
-	 fairly common case might be worth a bit of speedup.  Maybe!  */
+         fairly common case might be worth a bit of speedup.  Maybe!  */
 
       if (sizes == 0)
 	continue;
 
       /* Output all clusters of the set from the tallest to the shortest.
-	 Here, size refers to number of items in members, and not to the
-	 number of members in a cluster.  (In fact, it is very expectable
-	 that shortest clusters have more members.)  */
+         Here, size refers to number of items in members, and not to the
+         number of members in a cluster.  (In fact, it is very expectable
+         that shortest clusters have more members.)  */
 
       cluster_size = 0;
       while (1)
@@ -1716,7 +1706,8 @@ prepare_clusters (void)
 	  cluster_size = 0;
 
 	  for (size = size_array; size < size_array + sizes; size++)
-	    if ((size_value == 0 || *size < size_value) && *size > cluster_size)
+	    if ((size_value == 0 || *size < size_value)
+		&& *size > cluster_size)
 	      cluster_size = *size;
 
 	  /* If the cluster size did not decrease, we cannot do more.  */
@@ -1733,7 +1724,7 @@ prepare_clusters (void)
 	  while (1)
 	    {
 	      /* Find all members for one cluster.  However, after having
-		 skipped over the gap, just break out if nothing remains.  */
+	         skipped over the gap, just break out if nothing remains.  */
 
 	      while (size < size_array + sizes && *size < cluster_size)
 		size++;
@@ -1749,15 +1740,15 @@ prepare_clusters (void)
 		}
 
 	      /* No cluster may be a proper subset of another.  That is, if
-		 all putative members are preceded by identical items, then
-		 they are indeed part of a bigger cluster, which has already
-		 been or will later be caught.  In such case, just avoid
-		 retaining them here.  This also prevents quadratic
-		 behaviour which, I presume, would be heavy on computation.
+	         all putative members are preceded by identical items, then
+	         they are indeed part of a bigger cluster, which has already
+	         been or will later be caught.  In such case, just avoid
+	         retaining them here.  This also prevents quadratic
+	         behaviour which, I presume, would be heavy on computation.
 
-		 This test may be defeated by tolerant matches.  Maybe
-		 tolerant matches will just go away.  Surely, tolerant
-		 matches later require subset member elimination.  */
+	         This test may be defeated by tolerant matches.  Maybe
+	         tolerant matches will just go away.  Surely, tolerant
+	         matches later require subset member elimination.  */
 
 	      item = item_array + member_set[0];
 	      BACKWARD_ITEM (item);
@@ -1778,9 +1769,9 @@ prepare_clusters (void)
 		}
 
 	      /* Skip any cluster member overlapping with the previous
-		 member of the same cluster.  If doing so, chop the size of
-		 the first member just before the overlap point: this should
-		 later trigger a cluster having this reduced size.  */
+	         member of the same cluster.  If doing so, chop the size of
+	         the first member just before the overlap point: this should
+	         later trigger a cluster having this reduced size.  */
 
 	      memcpy (sorter_array, member_set, sorters * sizeof (int));
 	      qsort (sorter_array, sorters, sizeof (int),
@@ -1852,8 +1843,7 @@ active_elsewhere (struct member *member, struct input *input)
   /* FIXME: maybe it is sufficient to test first and last member only?  */
 
   for (member = member_array + cluster->first_member;
-       member < MEMBER_LIMIT (cluster);
-       member++)
+       member < MEMBER_LIMIT (cluster); member++)
     if (member->first_item < input->first_item
 	|| member->first_item + real_member_size (member) > input->item_limit)
       return 1;
@@ -1889,7 +1879,7 @@ prepare_indirects (void)
 
   indirect_array = xmalloc (members * sizeof (int));
   for (counter = 0; counter < members; counter++)
-      indirect_array[counter] = counter;
+    indirect_array[counter] = counter;
   if (members > 1)
     qsort (indirect_array, members, sizeof (int), compare_for_member_start);
   indirects = members;
@@ -1938,10 +1928,10 @@ prepare_indirects (void)
 
 struct merging
 {
-  unsigned group_flag : 1;	/* beginning of a new merge group */
-  unsigned cross_flag : 1;	/* member isolated by cross matches */
-  unsigned input_number : 14;	/* input file designator */
-  unsigned member_number : 16;	/* member designator */
+  unsigned group_flag:1;	/* beginning of a new merge group */
+  unsigned cross_flag:1;	/* member isolated by cross matches */
+  unsigned input_number:14;	/* input file designator */
+  unsigned member_number:16;	/* member designator */
 };
 
 static struct merging *merging_array = NULL;
@@ -1966,7 +1956,7 @@ dump_all_mergings (void)
 	{
 	  if (merging > merging_array)
 	    putc ('\n', stderr);
-	  fprintf (stderr, "<%ld>", (long)(merging - merging_array));
+	  fprintf (stderr, "<%ld>", (long) (merging - merging_array));
 	}
       reference
 	= get_reference (member_array[merging->member_number].first_item);
@@ -1998,15 +1988,13 @@ explain_group (char prefix, struct merging *merging, struct merging *limit)
 
   putc (prefix, output_file);
   for (counter = cluster->first_member;
-       counter < (cluster + 1)->first_member;
-       counter++)
+       counter < (cluster + 1)->first_member; counter++)
     {
       member = member_array + counter;
       reference = get_reference (member->first_item);
 
       for (cursor = merging;
-	   cursor < limit && cursor->member_number != counter;
-	   cursor++)
+	   cursor < limit && cursor->member_number != counter; cursor++)
 	;
 
       fprintf (output_file, cursor < limit ? " %s%d,%d" : " (%s%d,%d)",
@@ -2198,11 +2186,11 @@ prepare_mergings (void)
 	      {
 		if (best_cluster)
 		  fprintf (stderr, "  {%ld}=%d <-> {%ld}=%d\n",
-			   (long)(best_cluster - cluster_array), best_cost,
-			   (long)(cluster - cluster_array), cost);
+			   (long) (best_cluster - cluster_array), best_cost,
+			   (long) (cluster - cluster_array), cost);
 		else
 		  fprintf (stderr, "  {%ld}=%d\n",
-			   (long)(cluster - cluster_array), cost);
+			   (long) (cluster - cluster_array), cost);
 	      }
 #endif
 	    if (!best_cluster || cost < best_cost)
@@ -2227,7 +2215,7 @@ prepare_mergings (void)
 #endif
 
       /* Save found mergings, while moving all items pointers to after the
-	 members of the best cluster.  */
+         members of the best cluster.  */
 
       input = input_array;
       group_flag = 1;
@@ -2296,7 +2284,8 @@ prepare_mergings (void)
   assert (mergings == indirects);
 
   if (verbose)
-    fprintf (stderr, _("Work summary: %d clusters, %d members, %d overlaps\n"),
+    fprintf (stderr,
+	     _("Work summary: %d clusters, %d members, %d overlaps\n"),
 	     clusters, members, members - indirects);
 }
 
@@ -2489,7 +2478,8 @@ set_emphasis (enum emphasis emphasis)
 static enum emphasis emphasis_array[EMPHASIS_STACK_LENGTH];
 static int emphasises = 0;
 
-static void push_emphasis (enum emphasis emphasis)
+static void
+push_emphasis (enum emphasis emphasis)
 {
   assert (emphasises < EMPHASIS_STACK_LENGTH);
 
@@ -2497,7 +2487,8 @@ static void push_emphasis (enum emphasis emphasis)
   set_emphasis (emphasis);
 }
 
-static void pop_emphasis (void)
+static void
+pop_emphasis (void)
 {
   assert (emphasises > 0);
 
@@ -2541,36 +2532,38 @@ output_characters (const char *string, int length, int expand)
 
 	case '\t':
 	  if (expand)
-	    do {
-	      if (overstrike)
-		switch (current_emphasis)
-		  {
-		  case STRAIGHT:
-		    putc (' ', output_file);
-		    break;
+	    do
+	      {
+		if (overstrike)
+		  switch (current_emphasis)
+		    {
+		    case STRAIGHT:
+		      putc (' ', output_file);
+		      break;
 
-		  case UNDERLINED:
-		    putc ('_', output_file);
-		    if (overstrike_for_less)
-		      {
-			putc ('\b', output_file);
-			putc (' ', output_file);
-		      }
-		    break;
+		    case UNDERLINED:
+		      putc ('_', output_file);
+		      if (overstrike_for_less)
+			{
+			  putc ('\b', output_file);
+			  putc (' ', output_file);
+			}
+		      break;
 
-		  case BOLD:
-		    putc (*cursor, output_file);
-		    if (overstrike_for_less)
-		      {
-			putc ('\b', output_file);
-			putc (' ', output_file);
-		      }
-		    break;
-		  }
-	      else
-		putc (' ', output_file);
-	      column++;
-	    } while (column % 8 != 0);
+		    case BOLD:
+		      putc (*cursor, output_file);
+		      if (overstrike_for_less)
+			{
+			  putc ('\b', output_file);
+			  putc (' ', output_file);
+			}
+		      break;
+		    }
+		else
+		  putc (' ', output_file);
+		column++;
+	      }
+	    while (column % 8 != 0);
 	  else
 	    putc ('\t', output_file);
 	  break;
@@ -2722,15 +2715,14 @@ launch_output_program (struct input *input)
       char *basename;		/* basename of the pager */
 
       /* Check if a output program should be called, and which one.  Avoid
-	 all paging if only statistics are needed.  */
+         all paging if only statistics are needed.  */
 
       if (autopager && isatty (fileno (stdout))
 #if FIXME
 	  && (left->listing_allowed
-	      || right->listing_allowed
-	      || common_listing_allowed)
+	      || right->listing_allowed || common_listing_allowed)
 #endif
-	  )
+	)
 	{
 	  program = getenv ("PAGER");
 #ifdef PAGER_PROGRAM
@@ -2913,7 +2905,8 @@ copy_whitespace (struct input *input, enum margin_mode margin)
       {
 	if (input->cursor[-1] == '\n')
 	  {
-	    output_characters (string, input->cursor - string - 1, expand_tabs);
+	    output_characters (string, input->cursor - string - 1,
+			       expand_tabs);
 
 	    /* While changing lines, ensure we stop any special display
 	       prior to, and restore the special display after.  */
@@ -3071,7 +3064,8 @@ relist_annotated_files (void)
 
   int other_count = 0;		/* how many actives in other files */
 
-  enum margin_mode margin_mode = show_links ? LOCATION_IN_MARGIN : EMPTY_MARGIN;
+  enum margin_mode margin_mode =
+    show_links ? LOCATION_IN_MARGIN : EMPTY_MARGIN;
 
   struct input *input = NULL;
   int *cursor;
@@ -3170,8 +3164,7 @@ relist_annotated_files (void)
 
 		  if (!word_mode)
 		    for (counter = 0;
-			 active_array + counter < active;
-			 counter++)
+			 active_array + counter < active; counter++)
 		      if (active_array[counter].member)
 			putc ('|', output_file);
 		      else
@@ -3194,7 +3187,8 @@ relist_annotated_files (void)
 		      allocated_actives += 8;
 		      active_array = (struct active *)
 			xrealloc (active_array,
-				  allocated_actives * (sizeof (struct active)));
+				  allocated_actives *
+				  (sizeof (struct active)));
 		    }
 		  active = active_array + actives++;
 		}
@@ -3207,14 +3201,15 @@ relist_annotated_files (void)
 	      if (ordinal >= 0)
 		{
 		  reference = get_reference
-		    (member_array[cluster->first_member + ordinal].first_item);
+		    (member_array
+		     [cluster->first_member + ordinal].first_item);
 
 		  if (word_mode)
 		    {
 		      if (show_links)
 			{
 			  sprintf (buffer, "[%c%s%d",
-				   (char)(active - active_array + 'A'),
+				   (char) (active - active_array + 'A'),
 				   reference.input->nick_name,
 				   reference.number);
 			  push_emphasis (UNDERLINED);
@@ -3233,8 +3228,8 @@ relist_annotated_files (void)
 		      output_characters (buffer, strlen (buffer), 0);
 		      pop_emphasis ();
 		      if (reference.input != input)
-			  fprintf (output_file, " (%s)",
-				   reference.input->file_name);
+			fprintf (output_file, " (%s)",
+				 reference.input->file_name);
 		      putc ('\n', output_file);
 		    }
 		}
@@ -3243,7 +3238,7 @@ relist_annotated_files (void)
 		  if (show_links)
 		    {
 		      sprintf (buffer, "[%c",
-		               (char)(active - active_array + 'A'));
+			       (char) (active - active_array + 'A'));
 		      push_emphasis (UNDERLINED);
 		      output_characters (buffer, strlen (buffer), 0);
 		      pop_emphasis ();
@@ -3287,8 +3282,7 @@ relist_annotated_files (void)
 		    putc (' ', output_file);
 		  push_emphasis (UNDERLINED);
 		  output_characters (buffer + counter - 7,
-				     strlen (buffer + counter - 7),
-				     0);
+				     strlen (buffer + counter - 7), 0);
 		  pop_emphasis ();
 		}
 
@@ -3318,8 +3312,7 @@ relist_annotated_files (void)
 		if (!word_mode)
 		  {
 		    for (counter = 0;
-			 active_array + counter < active;
-			 counter++)
+			 active_array + counter < active; counter++)
 		      if (active_array[counter].member)
 			putc ('|', output_file);
 		      else
@@ -3329,8 +3322,8 @@ relist_annotated_files (void)
 		if (ordinal < MEMBERS (cluster))
 		  {
 		    reference = get_reference
-		      (member_array[cluster->first_member + ordinal]
-		       .first_item);
+		      (member_array
+		       [cluster->first_member + ordinal].first_item);
 
 		    if (word_mode)
 		      {
@@ -3340,7 +3333,7 @@ relist_annotated_files (void)
 			    sprintf (buffer, "%s%d%c]",
 				     reference.input->nick_name,
 				     reference.number,
-				     (char)(active - active_array + 'A'));
+				     (char) (active - active_array + 'A'));
 			    push_emphasis (UNDERLINED);
 			    output_characters (buffer, strlen (buffer), 0);
 			    pop_emphasis ();
@@ -3351,7 +3344,8 @@ relist_annotated_files (void)
 			fprintf (output_file, "`-> [%d/%d] ",
 				 ordinal + 1, MEMBERS (cluster));
 			sprintf (buffer, "%s%d",
-				 reference.input->nick_name, reference.number);
+				 reference.input->nick_name,
+				 reference.number);
 			push_emphasis (UNDERLINED);
 			output_characters (buffer, strlen (buffer), 0);
 			pop_emphasis ();
@@ -3367,7 +3361,7 @@ relist_annotated_files (void)
 		      {
 			putc (' ', output_file);
 			sprintf (buffer, "%c]",
-			         (char)(active - active_array + 'A'));
+				 (char) (active - active_array + 'A'));
 			push_emphasis (UNDERLINED);
 			output_characters (buffer, strlen (buffer), 0);
 			pop_emphasis ();
@@ -3449,8 +3443,7 @@ relist_merged_lines (int unified, int crossed)
 #endif
 
   for (merging = merging_array;
-       merging < merging_array + mergings;
-       merging = group_limit)
+       merging < merging_array + mergings; merging = group_limit)
     {
       /* Find the extent of the merging group, and count genuine mergings.  */
 
@@ -3459,8 +3452,7 @@ relist_merged_lines (int unified, int crossed)
 	counter++;
 
       for (cursor = merging + 1;
-	   cursor < merging_array + mergings && !cursor->group_flag;
-	   cursor++)
+	   cursor < merging_array + mergings && !cursor->group_flag; cursor++)
 	if (!cursor->cross_flag)
 	  counter++;
 
@@ -3469,7 +3461,7 @@ relist_merged_lines (int unified, int crossed)
       /* Prepare for a new hunk.  Hmph!  Not really yet...  */
 
       /* Output differences, which are items before members.  Also consider
-	 any crossed member as a difference and output it on the same blow.  */
+         any crossed member as a difference and output it on the same blow.  */
 
       for (cursor = merging; cursor < group_limit; cursor++)
 	{
@@ -3567,8 +3559,7 @@ relist_merged_words (void)
   /* Process all merging groups, one at a time.  */
 
   for (merging = merging_array;
-       merging < merging_array + mergings;
-       merging = group_limit)
+       merging < merging_array + mergings; merging = group_limit)
     {
       /* Find the extent of the merging group, and count genuine mergings.  */
 
@@ -3577,15 +3568,14 @@ relist_merged_words (void)
 	counter++;
 
       for (cursor = merging + 1;
-	   cursor < merging_array + mergings && !cursor->group_flag;
-	   cursor++)
+	   cursor < merging_array + mergings && !cursor->group_flag; cursor++)
 	if (!cursor->cross_flag)
 	  counter++;
 
       group_limit = cursor;
 
       /* Output differences, which are items before members.  Also consider
-	 any crossed member as a difference and output it on the same blow.  */
+         any crossed member as a difference and output it on the same blow.  */
 
       for (cursor = merging; cursor < group_limit; cursor++)
 	{
@@ -4008,8 +3998,7 @@ main (int argc, char *const *argv)
   /* Decode command options.  */
 
   while (option_char = getopt_long (argc, (char **) argv, OPTION_STRING,
-				    long_options, NULL),
-	 option_char != EOF)
+				    long_options, NULL), option_char != EOF)
     switch (option_char)
       {
       default:
@@ -4226,7 +4215,7 @@ main (int argc, char *const *argv)
 	break;
 #endif
 
-      case 't':			/* mdiff draft */
+      case 't':		/* mdiff draft */
 	UNIMPLEMENTED ("--tolerance");
 	tolerance = atoi (optarg);
 	break;
@@ -4338,16 +4327,13 @@ main (int argc, char *const *argv)
       printf ("mdiff (GNU %s) %s\n", PACKAGE, VERSION);
       fputs (_("\
 \n\
-Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"),
-	     stdout);
+Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"), stdout);
       fputs (_("\
 This is free software; see the source for copying conditions.  There is NO\n\
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"),
-	     stdout);
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"), stdout);
       fputs (_("\
 \n\
-Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
-	     stdout);
+Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"), stdout);
       exit (EXIT_SUCCESS);
     }
 

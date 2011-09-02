@@ -43,7 +43,7 @@ writepipe (char *progname, ...)
   va_start (ap, progname);
   args[argno++] = progname;
   while ((args[argno++] = va_arg (ap, char *)) != NULL)
-    ;
+     ;
   va_end (ap);
 
   if (pipe (fds) == -1)

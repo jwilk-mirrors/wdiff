@@ -43,7 +43,7 @@ readpipe (char *progname, ...)
   va_start (ap, progname);
   args[argno++] = progname;
   while ((args[argno++] = va_arg (ap, char *)) != NULL)
-    ;
+     ;
   va_end (ap);
 
   if (pipe (fds) == -1)
@@ -56,7 +56,7 @@ readpipe (char *progname, ...)
       if (fds[1] != 1)		/* Redirect 1 (stdout) only if needed.  */
 	{
 	  close (1);		/* We don't want the old stdout. */
-	  if (dup (fds[1]) == 0)/* Maybe stdin was closed. */
+	  if (dup (fds[1]) == 0)	/* Maybe stdin was closed. */
 	    {
 	      dup (fds[1]);	/* Guaranteed to dup to 1 (stdout). */
 	      close (0);
