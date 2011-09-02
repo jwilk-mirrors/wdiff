@@ -43,11 +43,11 @@ openpipe (int dir, char *progname, va_list ap)
     {
     case 0:			/* Child.  Write to pipe. */
       close (fds[1 - dir]);	/* Not needed. */
-      if (dup2(fds[dir], dir) == -1)
-        {
-          error (0, errno, _("error redirecting stream"));
-          _exit (2);
-        }
+      if (dup2 (fds[dir], dir) == -1)
+	{
+	  error (0, errno, _("error redirecting stream"));
+	  _exit (2);
+	}
       execvp (args[0], args);
       error (0, errno, _("failed to execute %s"), progname);
       _exit (2);		/* 2 for `cmp'. */
