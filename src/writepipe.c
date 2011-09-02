@@ -1,5 +1,5 @@
 /* Open a pipe to write to a program without intermediary sh.
-   Copyright (C) 1992, 1997 Free Software Foundation, Inc.
+   Copyright (C) 1992, 1997, 2011 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -17,15 +17,11 @@
 
 /* Written by David MacKenzie.  */
 
+#include "system.h"
+
 #include <config.h>
 #include <stdio.h>
-
-#if __STDC__
 #include <stdarg.h>
-#else
-#include <varargs.h>
-#endif
-
 #include <unistd.h>
 
 /* Open a pipe to write to a program without intermediary sh.  Checks
@@ -35,29 +31,16 @@
 
    Return 0 on error.  */
 
-#if __STDC__
 FILE *
 writepipe (char *progname, ...)
-#else
-FILE *
-writepipe (va_alist)
-#endif
 {
-#if ! __STDC__
-  char *progname;
-#endif
   int fds[2];
   va_list ap;
   char *args[100];
   int argno = 0;
 
   /* Copy arguments into `args'. */
-#if __STDC__
   va_start (ap, progname);
-#else
-  va_start (ap);
-  progname = va_arg (ap, char *);
-#endif
   args[argno++] = progname;
   while ((args[argno++] = va_arg (ap, char *)) != NULL)
     ;
@@ -77,6 +60,7 @@ writepipe (va_alist)
 	  close (fds[0]);	/* No longer needed. */
 	}
       execvp (args[0], args);
+      error (0, errno, _("failed to execute %s"), progname);
       _exit (2);		/* 2 for `cmp'. */
     case -1:			/* Error. */
       return 0;

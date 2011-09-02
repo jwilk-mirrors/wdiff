@@ -1,6 +1,6 @@
 /* wdiff -- front end to diff for comparing on a word per word basis.
    Copyright (C) 1992, 1997, 1998, 1999, 2009,
-                 2010 Free Software Foundation, Inc.
+                 2010, 2011 Free Software Foundation, Inc.
    Francois Pinard <pinard@iro.umontreal.ca>, 1992.
 
    This program is free software: you can redistribute it and/or modify
@@ -76,9 +76,9 @@
 #include <locale.h>
 #include <sys/wait.h>
 
-char *getenv ();
 FILE *readpipe (const char *, ...);
 FILE *writepipe (const char *, ...);
+static void complete_input_program (void);
 
 /* Declarations.  */
 
@@ -966,6 +966,9 @@ reformat_diff_output (void)
 	}
     }
 
+  complete_input_program ();
+  input_file = 0;
+
   /* Copy remainder of input.  Copy from left side if the user wanted to see
      only the common code and deleted words.  */
 
@@ -1021,8 +1024,22 @@ launch_input_program (void)
 static void
 complete_input_program (void)
 {
+  int status;
   fclose (input_file);
-  wait (NULL);
+  wait (&status);
+  if (WIFEXITED(status))
+    {
+      status = WEXITSTATUS(status);
+      if (status == 0 || status == 1)
+        return;
+      /* else assume the child printed an error message and exit below */
+    }
+  else if (WIFSIGNALED(status))
+    {
+      fprintf (stderr, _("%s: input program killed by signal %d\n"),
+               program_name, (int)WTERMSIG(status));
+    }
+  exit (EXIT_ERROR);
 }
 
 /*---------------------------------.
@@ -1129,8 +1146,15 @@ complete_output_program (void)
 
   if (output_file && output_file != stdout)
     {
+      int status;
       fclose (output_file);
-      wait (NULL);
+      wait (&status);
+      if (WIFSIGNALED(status))
+        {
+          fprintf (stderr, _("%s: output program killed by signal %d\n"),
+                   program_name, (int)WTERMSIG(status));
+          exit (EXIT_ERROR);
+        }
     }
 }
 
