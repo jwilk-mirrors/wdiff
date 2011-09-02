@@ -274,6 +274,7 @@ usage (int status)
 	     program_name);
   else
     {
+      /* *INDENT-OFF* */
       fputs (_("\
 unify - Transforms context diffs into unidiffs, or vice-versa.\n"),
 	     stdout);
@@ -296,6 +297,7 @@ Usage: %s [OPTION]... [FILE]\n"), program_name);
       fputs (_("If FILE is not specified, read standard input.\n"), stdout);
       fputs ("\n", stdout);
       fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
+      /* *INDENT-ON* */
     }
   exit (status);
 }

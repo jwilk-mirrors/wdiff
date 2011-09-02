@@ -178,6 +178,7 @@ usage (int status)
 	     program_name);
   else
     {
+      /* *INDENT-OFF* */
       fputs (_("\
 wdiff - Compute word differences by internally launching `mdiff -W'.\n\
 This program exists mainly to support the now oldish `wdiff' syntax.\n"),
@@ -212,6 +213,7 @@ Mandatory arguments to long options are mandatory for short options too.\n"),
       fputs (_("This program also tells how `mdiff' could have been called directly.\n"), stdout);
       fputs ("\n", stdout);
       fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
+      /* *INDENT-ON* */
     }
   exit (status);
 }

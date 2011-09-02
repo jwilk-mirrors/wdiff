@@ -3747,6 +3747,7 @@ usage (int status)
 	     program_name);
   else
     {
+      /* *INDENT-OFF* */
       fputs (_("\
 mdiff - Studies multiple files and searches for similar sequences, it then\n\
 produces possibly detailed lists of differences and similarities.\n"),
@@ -3972,6 +3973,7 @@ Either GFMT or LFMT may contain:\n\
       fputs (_("With no FILE, or when FILE is -, read standard input.\n"), stdout);
       fputs ("\n", stdout);
       fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
+      /* *INDENT-ON* */
     }
   exit (status);
 }

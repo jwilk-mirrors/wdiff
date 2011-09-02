@@ -1236,6 +1236,7 @@ usage (int status)
 	     program_name);
   else
     {
+      /* *INDENT-OFF* */
       fputs (_("\
 wdiff - Compares words in two files and report differences.\n"),
 	     stdout);
@@ -1268,6 +1269,7 @@ Mandatory arguments to long options are mandatory for short options too.\n"),
       fputs (_("  -z, --end-insert=STRING    string to mark end of insert region\n"), stdout);
       fputs ("\n", stdout);
       fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
+      /* *INDENT-ON* */
     }
   exit (status);
 }
