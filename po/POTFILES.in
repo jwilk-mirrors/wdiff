@@ -7,8 +7,7 @@
 
 # Package source files.
 src/mdiff.c
-src/readpipe.c
+src/pipes.c
 src/unify.c
 src/wdiff.c
 src/wdiff2.c
-src/writepipe.c
