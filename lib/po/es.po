@@ -1,183 +1,183 @@
-# Mensajes en espaÒol para gnulib 2.0.0.3462.e9796.
-# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+# Mensajes en espa√±ol para gnulib 3.0.0.6062.a6b16.
+# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
-# Cristian OthÛn MartÌnez Vera <cfuga@itam.mx>, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Cristian Oth√≥n Mart√≠nez Vera <cfuga@cfuga.mx>, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
 #
-# Los mensajes iniciales de esta traducciÛn provienen de la traducciÛn
+# Los mensajes iniciales de esta traducci√≥n provienen de la traducci√≥n
 # de mailutils.
 #
 # Un agradecimiento especial a Santiago Vila por sus atinados comentarios
-# sobre esta traducciÛn.
+# sobre esta traducci√≥n.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
+"Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
-"PO-Revision-Date: 2010-02-23 11:21-0600\n"
-"Last-Translator: Cristian OthÛn MartÌnez Vera <cfuga@itam.mx>\n"
+"POT-Creation-Date: 2011-09-05 11:34+0200\n"
+"PO-Revision-Date: 2011-08-24 11:23-0500\n"
+"Last-Translator: Cristian Oth√≥n Mart√≠nez Vera <cfuga@cfuga.mx>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/error.c:181
+#: lib/error.c:185
 msgid "Unknown system error"
 msgstr "Error desconocido de sistema"
 
-#: lib/getopt.c:527 lib/getopt.c:543
+#: lib/getopt.c:547 lib/getopt.c:576
 #, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: la opciÛn '%s' es ambigua\n"
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: la opci√≥n '%s' es ambigua; posibilidades:"
 
-#: lib/getopt.c:576 lib/getopt.c:580
+#: lib/getopt.c:624 lib/getopt.c:628
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: la opciÛn '--%s' no admite un argumento\n"
+msgstr "%s: la opci√≥n '--%s' no admite un argumento\n"
 
-#: lib/getopt.c:589 lib/getopt.c:594
+#: lib/getopt.c:637 lib/getopt.c:642
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: la opciÛn '%c%s' no admite un argumento\n"
+msgstr "%s: la opci√≥n '%c%s' no admite un argumento\n"
 
-#: lib/getopt.c:637 lib/getopt.c:656
-#, fuzzy, c-format
+#: lib/getopt.c:685 lib/getopt.c:704
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: la opciÛn '%s' requiere de un argumento\n"
+msgstr "%s: la opci√≥n '--%s' requiere de un argumento\n"
 
-#: lib/getopt.c:694 lib/getopt.c:697
+#: lib/getopt.c:742 lib/getopt.c:745
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
-msgstr "%s: no se reconoce la opciÛn '--%s'\n"
+msgstr "%s: no se reconoce la opci√≥n '--%s'\n"
 
-#: lib/getopt.c:705 lib/getopt.c:708
+#: lib/getopt.c:753 lib/getopt.c:756
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
-msgstr "%s: no se reconoce la opciÛn '%c%s'\n"
+msgstr "%s: no se reconoce la opci√≥n '%c%s'\n"
 
-#: lib/getopt.c:757 lib/getopt.c:760
+#: lib/getopt.c:805 lib/getopt.c:808
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: opciÛn inv·lida -- '%c'\n"
+msgstr "%s: opci√≥n inv√°lida -- '%c'\n"
 
-#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: la opciÛn requiere de un argumento -- '%c'\n"
+msgstr "%s: la opci√≥n requiere de un argumento -- '%c'\n"
 
-#: lib/getopt.c:883 lib/getopt.c:899
+#: lib/getopt.c:934 lib/getopt.c:950
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: la opciÛn '-W %s' es ambigua\n"
+msgstr "%s: la opci√≥n '-W %s' es ambigua\n"
 
-#: lib/getopt.c:923 lib/getopt.c:941
+#: lib/getopt.c:974 lib/getopt.c:992
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: la opciÛn '-W %s' no admite un argumento\n"
+msgstr "%s: la opci√≥n '-W %s' no admite un argumento\n"
 
-#: lib/getopt.c:962 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: la opciÛn '%s' requiere de un argumento\n"
+msgstr "%s: la opci√≥n '-W %s' requiere de un argumento\n"
 
-#: lib/regcomp.c:132
+#: lib/regcomp.c:131
 msgid "Success"
-msgstr "…xito"
+msgstr "√âxito"
 
-#: lib/regcomp.c:135
+#: lib/regcomp.c:134
 msgid "No match"
 msgstr "Sin coincidencia"
 
-#: lib/regcomp.c:138
+#: lib/regcomp.c:137
 msgid "Invalid regular expression"
-msgstr "ExpresiÛn regular inv·lida"
+msgstr "Expresi√≥n regular inv√°lida"
 
-#: lib/regcomp.c:141
+#: lib/regcomp.c:140
 msgid "Invalid collation character"
-msgstr "Car·cter de ordenamiento inv·lido"
+msgstr "Car√°cter de ordenamiento inv√°lido"
 
-#: lib/regcomp.c:144
+#: lib/regcomp.c:143
 msgid "Invalid character class name"
-msgstr "Nombre de clase de car·cter inv·lido"
+msgstr "Nombre de clase de car√°cter inv√°lido"
 
-#: lib/regcomp.c:147
+#: lib/regcomp.c:146
 msgid "Trailing backslash"
 msgstr "Barra invertida sobrante"
 
-#: lib/regcomp.c:150
+#: lib/regcomp.c:149
 msgid "Invalid back reference"
-msgstr "Referencia hacia atr·s inv·lida"
+msgstr "Referencia hacia atr√°s inv√°lida"
 
-#: lib/regcomp.c:153
+#: lib/regcomp.c:152
 msgid "Unmatched [ or [^"
 msgstr "[ o [^ sin pareja"
 
-#: lib/regcomp.c:156
+#: lib/regcomp.c:155
 msgid "Unmatched ( or \\("
 msgstr "( o \\( sin pareja"
 
-#: lib/regcomp.c:159
+#: lib/regcomp.c:158
 msgid "Unmatched \\{"
 msgstr "\\{ sin pareja"
 
-#: lib/regcomp.c:162
+#: lib/regcomp.c:161
 msgid "Invalid content of \\{\\}"
-msgstr "Contenido inv·lido de \\{\\}"
+msgstr "Contenido inv√°lido de \\{\\}"
 
-#: lib/regcomp.c:165
+#: lib/regcomp.c:164
 msgid "Invalid range end"
-msgstr "Fin de rango inv·lido"
+msgstr "Fin de rango inv√°lido"
 
-#: lib/regcomp.c:168
+#: lib/regcomp.c:167
 msgid "Memory exhausted"
 msgstr "Memoria agotada"
 
-#: lib/regcomp.c:171
+#: lib/regcomp.c:170
 msgid "Invalid preceding regular expression"
-msgstr "ExpresiÛn regular precedente inv·lida"
+msgstr "Expresi√≥n regular precedente inv√°lida"
 
-#: lib/regcomp.c:174
+#: lib/regcomp.c:173
 msgid "Premature end of regular expression"
-msgstr "Final prematuro de la expresiÛn regular"
+msgstr "Final prematuro de la expresi√≥n regular"
 
-#: lib/regcomp.c:177
+#: lib/regcomp.c:176
 msgid "Regular expression too big"
-msgstr "ExpresiÛn regular demasiado grande"
+msgstr "Expresi√≥n regular demasiado grande"
 
-#: lib/regcomp.c:180
+#: lib/regcomp.c:179
 msgid "Unmatched ) or \\)"
 msgstr ") o \\) sin pareja"
 
-#: lib/regcomp.c:701
+#: lib/regcomp.c:700
 msgid "No previous regular expression"
-msgstr "No hay una expresiÛn regular previa"
+msgstr "No hay una expresi√≥n regular previa"
 
 #: lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "memoria agotada"
 
 #~ msgid "invalid argument %s for %s"
-#~ msgstr "argumento %s inv·lido para %s"
+#~ msgstr "argumento %s inv√°lido para %s"
 
 #~ msgid "ambiguous argument %s for %s"
 #~ msgstr "argumento %s ambiguo para %s"
 
 #~ msgid "Valid arguments are:"
-#~ msgstr "Los argumentos v·lidos son:"
+#~ msgstr "Los argumentos v√°lidos son:"
 
 #~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
 #~ msgstr "ARGP_HELP_FMT: el valor %s es menor o igual a %s"
 
 #~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
-#~ msgstr "%.*s: El par·metro ARGP_HELP_FMT requiere de un valor"
+#~ msgstr "%.*s: El par√°metro ARGP_HELP_FMT requiere de un valor"
 
 #~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
-#~ msgstr "%.*s: El par·metro ARGP_HELP_FMT debe ser positivo"
+#~ msgstr "%.*s: El par√°metro ARGP_HELP_FMT debe ser positivo"
 
 #~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
-#~ msgstr "%.*s: Par·metro de ARGP_HELP_FMT desconocido"
+#~ msgstr "%.*s: Par√°metro de ARGP_HELP_FMT desconocido"
 
 #~ msgid "Garbage in ARGP_HELP_FMT: %s"
 #~ msgstr "Basura en ARGP_HELP_FMT: %s"
@@ -186,8 +186,8 @@ msgstr "memoria agotada"
 #~ "Mandatory or optional arguments to long options are also mandatory or "
 #~ "optional for any corresponding short options."
 #~ msgstr ""
-#~ "Los argumentos obligatorios u opcionales para las opciones largas tambiÈn "
-#~ "son obligatorios u opcionales para cualquier opciÛn corta correspondiente."
+#~ "Los argumentos obligatorios u opcionales para las opciones largas tambi√©n "
+#~ "son obligatorios u opcionales para cualquier opci√≥n corta correspondiente."
 
 #~ msgid "Usage:"
 #~ msgstr "Modo de empleo:"
@@ -196,10 +196,10 @@ msgstr "memoria agotada"
 #~ msgstr "  o:"
 
 #~ msgid " [OPTION...]"
-#~ msgstr " [OPCI”N...]"
+#~ msgstr " [OPCI√ìN...]"
 
 #~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
-#~ msgstr "Pruebe `%s --help' Û `%s --usage' para m·s informaciÛn.\n"
+#~ msgstr "Pruebe `%s --help' √≥ `%s --usage' para m√°s informaci√≥n.\n"
 
 #~ msgid "Report bugs to %s.\n"
 #~ msgstr "Reporte bichos a %s.\n"
@@ -223,16 +223,16 @@ msgstr "memoria agotada"
 #~ msgstr "espera por SECS segundos (3600 por defecto)"
 
 #~ msgid "print program version"
-#~ msgstr "muestra la versiÛn del programa"
+#~ msgstr "muestra la versi√≥n del programa"
 
 #~ msgid "(PROGRAM ERROR) No version known!?"
-#~ msgstr "(ERROR DEL PROGRAMA) ø°Sin versiÛn conocida!?"
+#~ msgstr "(ERROR DEL PROGRAMA) ¬ø¬°Sin versi√≥n conocida!?"
 
 #~ msgid "%s: Too many arguments\n"
 #~ msgstr "%s: Demasiados argumentos\n"
 
 #~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
-#~ msgstr "(ERROR DEL PROGRAMA) ø°La opciÛn deberÌa reconocerse!?"
+#~ msgstr "(ERROR DEL PROGRAMA) ¬ø¬°La opci√≥n deber√≠a reconocerse!?"
 
 #~ msgid "program error"
 #~ msgstr "error del programa"
@@ -275,22 +275,22 @@ msgstr "memoria agotada"
 #~ msgstr "error al escribir en \"%s\""
 
 #~ msgid "error after reading \"%s\""
-#~ msgstr "error despuÈs de leer \"%s\""
+#~ msgstr "error despu√©s de leer \"%s\""
 
 #~ msgid "fdopen() failed"
-#~ msgstr "fallÛ fdopen()"
+#~ msgstr "fall√≥ fdopen()"
 
 #~ msgid "C# compiler not found, try installing pnet"
-#~ msgstr "No se encontrÛ un compilador de C#, pruebe instalando pnet"
+#~ msgstr "No se encontr√≥ un compilador de C#, pruebe instalando pnet"
 
 #~ msgid "C# virtual machine not found, try installing pnet"
-#~ msgstr "No se encontrÛ una m·quina virtual de C#, pruebe instalando pnet"
+#~ msgstr "No se encontr√≥ una m√°quina virtual de C#, pruebe instalando pnet"
 
 #~ msgid "%s subprocess failed"
-#~ msgstr "%s: fallÛ el subproceso"
+#~ msgstr "%s: fall√≥ el subproceso"
 
 #~ msgid "regular empty file"
-#~ msgstr "fichero regular vacÌo"
+#~ msgstr "fichero regular vac√≠o"
 
 #~ msgid "regular file"
 #~ msgstr "fichero regular"
@@ -308,7 +308,7 @@ msgstr "memoria agotada"
 #~ msgstr "`fifo'"
 
 #~ msgid "symbolic link"
-#~ msgstr "enlace simbÛlico"
+#~ msgstr "enlace simb√≥lico"
 
 #~ msgid "socket"
 #~ msgstr "`socket'"
@@ -317,7 +317,7 @@ msgstr "memoria agotada"
 #~ msgstr "cola de mensajes"
 
 #~ msgid "semaphore"
-#~ msgstr "sem·foro"
+#~ msgstr "sem√°foro"
 
 #~ msgid "shared memory object"
 #~ msgstr "objeto de memoria compartida"
@@ -326,28 +326,28 @@ msgstr "memoria agotada"
 #~ msgstr "objeto de memoria con tipo"
 
 #~ msgid "weird file"
-#~ msgstr "fichero extraÒo"
+#~ msgstr "fichero extra√±o"
 
 #~ msgid "Address family for hostname not supported"
 #~ msgstr "No se admiten las familias de direcciones para hostname"
 
 #~ msgid "Temporary failure in name resolution"
-#~ msgstr "Fallo temporal en la resoluciÛn del nombre"
+#~ msgstr "Fallo temporal en la resoluci√≥n del nombre"
 
 #~ msgid "Bad value for ai_flags"
-#~ msgstr "Valor errÛneo para ai_flags"
+#~ msgstr "Valor err√≥neo para ai_flags"
 
 #~ msgid "Non-recoverable failure in name resolution"
-#~ msgstr "Falla irrecuperable en la resoluciÛn del nombre"
+#~ msgstr "Falla irrecuperable en la resoluci√≥n del nombre"
 
 #~ msgid "ai_family not supported"
 #~ msgstr "no se admite ai_family"
 
 #~ msgid "Memory allocation failure"
-#~ msgstr "FallÛ la llamada al sistema `malloc'"
+#~ msgstr "Fall√≥ la llamada al sistema `malloc'"
 
 #~ msgid "No address associated with hostname"
-#~ msgstr "No existe una direcciÛn asociada con el nombre de anfitriÛn"
+#~ msgstr "No existe una direcci√≥n asociada con el nombre de anfitri√≥n"
 
 #~ msgid "Name or service not known"
 #~ msgstr "Nombre o servicio desconocido"
@@ -362,34 +362,34 @@ msgstr "memoria agotada"
 #~ msgstr "Error del sistema"
 
 #~ msgid "Argument buffer too small"
-#~ msgstr "Almacenamiento temporal de argumentos demasiado pequeÒo"
+#~ msgstr "Almacenamiento temporal de argumentos demasiado peque√±o"
 
 #~ msgid "Processing request in progress"
-#~ msgstr "PeticiÛn de procesamiento en progreso"
+#~ msgstr "Petici√≥n de procesamiento en progreso"
 
 #~ msgid "Request canceled"
-#~ msgstr "Se cancelÛ la peticiÛn"
+#~ msgstr "Se cancel√≥ la petici√≥n"
 
 #~ msgid "Request not canceled"
-#~ msgstr "No se cancelÛ la peticiÛn"
+#~ msgstr "No se cancel√≥ la petici√≥n"
 
 #~ msgid "All requests done"
 #~ msgstr "Se completaron todas las peticiones"
 
 #~ msgid "Interrupted by a signal"
-#~ msgstr "InterrupciÛn por una seÒal"
+#~ msgstr "Interrupci√≥n por una se√±al"
 
 #~ msgid "Parameter string not correctly encoded"
-#~ msgstr "La cadena de par·metro no est· codificada correctamente"
+#~ msgstr "La cadena de par√°metro no est√° codificada correctamente"
 
 #~ msgid "Unknown error"
 #~ msgstr "Error desconocido"
 
 #~ msgid "invalid source_version argument to compile_java_class"
-#~ msgstr "argumento source_version inv·lido para compile_java_class"
+#~ msgstr "argumento source_version inv√°lido para compile_java_class"
 
 #~ msgid "invalid target_version argument to compile_java_class"
-#~ msgstr "argumento target_version inv·lido para compile_java_class"
+#~ msgstr "argumento target_version inv√°lido para compile_java_class"
 
 #~ msgid "failed to create \"%s\""
 #~ msgstr "no se puede crear \"%s\""
@@ -399,12 +399,12 @@ msgstr "memoria agotada"
 
 #~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
 #~ msgstr ""
-#~ "No se encontrÛ un compilador de Java, pruebe instalando gcj o definiendo "
+#~ "No se encontr√≥ un compilador de Java, pruebe instalando gcj o definiendo "
 #~ "$JAVAC"
 
 #~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
 #~ msgstr ""
-#~ "No se encontrÛ una m·quina virtual de Java, pruebe instalando gij o "
+#~ "No se encontr√≥ una m√°quina virtual de Java, pruebe instalando gij o "
 #~ "definiendo $JAVA"
 
 #~ msgid "%s subprocess I/O error"
@@ -423,44 +423,44 @@ msgstr "memoria agotada"
 #~ msgstr "no se puede volver al directorio de trabajo inicial"
 
 #~ msgid "Failed to open /dev/zero for read"
-#~ msgstr "FallÛ al abrir /dev/zero para lectura"
+#~ msgstr "Fall√≥ al abrir /dev/zero para lectura"
 
 #~ msgid "creation of reading thread failed"
-#~ msgstr "fallÛ la creaciÛn del hilo de lectura"
+#~ msgstr "fall√≥ la creaci√≥n del hilo de lectura"
 
 #~ msgid "cannot set up nonblocking I/O to %s subprocess"
 #~ msgstr "no se puede establecer E/S sin bloqueo para el subproceso %s"
 
 #~ msgid "communication with %s subprocess failed"
-#~ msgstr "fallÛ la comunicaciÛn con el subproceso %s"
+#~ msgstr "fall√≥ la comunicaci√≥n con el subproceso %s"
 
 #~ msgid "write to %s subprocess failed"
-#~ msgstr "fallÛ la escritura al subproceso %s"
+#~ msgstr "fall√≥ la escritura al subproceso %s"
 
 #~ msgid "read from %s subprocess failed"
-#~ msgstr "fallÛ la lectura del subproceso %s"
+#~ msgstr "fall√≥ la lectura del subproceso %s"
 
 #~ msgid "subprocess %s terminated with exit code %d"
-#~ msgstr "el subproceso %s terminÛ con el cÛdigo de salida %d"
+#~ msgstr "el subproceso %s termin√≥ con el c√≥digo de salida %d"
 
 #~ msgid "creation of threads failed"
-#~ msgstr "fallÛ la creaciÛn de hilos"
+#~ msgstr "fall√≥ la creaci√≥n de hilos"
 
 #~ msgid "%s subprocess terminated with exit code %d"
-#~ msgstr "subproceso %s terminado con el cÛdigo de salida %d"
+#~ msgstr "subproceso %s terminado con el c√≥digo de salida %d"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "no se puede una tuberÌa"
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "Fran√ßois Pinard"
 
-# Vamos a probar con el sÌmbolo de cita tradicional en espaÒol,
-# a ver quÈ tal queda la cosa.
+# Vamos a probar con el s√≠mbolo de cita tradicional en espa√±ol,
+# a ver qu√© tal queda la cosa.
 #~ msgid "`"
-#~ msgstr "´"
+#~ msgstr "¬´"
 
 #~ msgid "'"
-#~ msgstr "ª"
+#~ msgstr "¬ª"
 
-# Esto es para responder "sÌ" cuando nos pregunte.
+# Esto es para responder "s√≠" cuando nos pregunte.
 #~ msgid "^[yY]"
 #~ msgstr "^[sS]"
 
@@ -481,7 +481,7 @@ msgstr "memoria agotada"
 #~ msgstr "Salir"
 
 #~ msgid "Illegal instruction"
-#~ msgstr "InstrucciÛn ilegal"
+#~ msgstr "Instrucci√≥n ilegal"
 
 #~ msgid "Trace/breakpoint trap"
 #~ msgstr "Captura de rastreo/punto de quiebre"
@@ -490,7 +490,7 @@ msgstr "memoria agotada"
 #~ msgstr "Abortar"
 
 #~ msgid "Floating point exception"
-#~ msgstr "ExcepciÛn de coma flotante"
+#~ msgstr "Excepci√≥n de coma flotante"
 
 #~ msgid "Killed"
 #~ msgstr "Matar"
@@ -499,10 +499,10 @@ msgstr "memoria agotada"
 #~ msgstr "Error de bus"
 
 #~ msgid "Segmentation fault"
-#~ msgstr "Falta de segmentaciÛn"
+#~ msgstr "Falta de segmentaci√≥n"
 
 #~ msgid "Broken pipe"
-#~ msgstr "TuberÌa rota"
+#~ msgstr "Tuber√≠a rota"
 
 #~ msgid "Alarm clock"
 #~ msgstr "Reloj de alarma"
@@ -511,10 +511,10 @@ msgstr "memoria agotada"
 #~ msgstr "Terminar"
 
 #~ msgid "Urgent I/O condition"
-#~ msgstr "CondiciÛn de E/S urgente"
+#~ msgstr "Condici√≥n de E/S urgente"
 
 #~ msgid "Stopped (signal)"
-#~ msgstr "Detener (seÒal)"
+#~ msgstr "Detener (se√±al)"
 
 #~ msgid "Stopped"
 #~ msgstr "Detener"
@@ -523,7 +523,7 @@ msgstr "memoria agotada"
 #~ msgstr "Continuar"
 
 #~ msgid "Child exited"
-#~ msgstr "SaliÛ el hijo"
+#~ msgstr "Sali√≥ el hijo"
 
 #~ msgid "Stopped (tty input)"
 #~ msgstr "Detener (entrada de tty)"
@@ -535,61 +535,64 @@ msgstr "memoria agotada"
 #~ msgstr "Posible E/S"
 
 #~ msgid "CPU time limit exceeded"
-#~ msgstr "Excede el lÌmite de tiempo de CPU"
+#~ msgstr "Excede el l√≠mite de tiempo de CPU"
 
 #~ msgid "File size limit exceeded"
-#~ msgstr "Excede el lÌmite de tamaÒo de fichero"
+#~ msgstr "Excede el l√≠mite de tama√±o de fichero"
 
 #~ msgid "Virtual timer expired"
 #~ msgstr "Expira el temporizador virtual"
 
 #~ msgid "Profiling timer expired"
-#~ msgstr "Expira el temporizador de an·lisis de perfil"
+#~ msgstr "Expira el temporizador de an√°lisis de perfil"
 
 #~ msgid "Window changed"
 #~ msgstr "Cambio de ventana"
 
 #~ msgid "User defined signal 1"
-#~ msgstr "SeÒal 1 definida por el usuario"
+#~ msgstr "Se√±al 1 definida por el usuario"
 
 #~ msgid "User defined signal 2"
-#~ msgstr "SeÒal 2 definida por el usuario"
+#~ msgstr "Se√±al 2 definida por el usuario"
 
 #~ msgid "EMT trap"
 #~ msgstr "Captura EMT"
 
 #~ msgid "Bad system call"
-#~ msgstr "Llamada al sistema errÛnea"
+#~ msgstr "Llamada al sistema err√≥nea"
 
 #~ msgid "Stack fault"
 #~ msgstr "Falta en la pila"
 
 #~ msgid "Information request"
-#~ msgstr "PeticiÛn de informaciÛn"
+#~ msgstr "Petici√≥n de informaci√≥n"
 
 #~ msgid "Power failure"
-#~ msgstr "Falla de energÌa"
+#~ msgstr "Falla de energ√≠a"
 
 #~ msgid "Resource lost"
 #~ msgstr "Recurso perdido"
 
 #~ msgid "error writing to a closed pipe or socket"
-#~ msgstr "error al escribir a una tuberÌa o socket cerrados"
+#~ msgstr "error al escribir a una tuber√≠a o socket cerrados"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "no se puede una tuber√≠a"
 
 #~ msgid "Real-time signal %d"
-#~ msgstr "SeÒal de tiempo real %d"
+#~ msgstr "Se√±al de tiempo real %d"
 
 #~ msgid "Unknown signal %d"
-#~ msgstr "SeÒal %d desconocida"
+#~ msgstr "Se√±al %d desconocida"
 
 #~ msgid "iconv function not usable"
-#~ msgstr "la funciÛn iconv no es utilizable"
+#~ msgstr "la funci√≥n iconv no es utilizable"
 
 #~ msgid "iconv function not available"
-#~ msgstr "la funciÛn iconv no est· disponible"
+#~ msgstr "la funci√≥n iconv no est√° disponible"
 
 #~ msgid "character out of range"
-#~ msgstr "car·cter fuera de rango"
+#~ msgstr "car√°cter fuera de rango"
 
 #~ msgid "cannot convert U+%04X to local character set"
 #~ msgstr "no se puede convertir U+%04X al conjunto de caracteres local"
@@ -597,42 +600,42 @@ msgstr "memoria agotada"
 #~ msgid "cannot convert U+%04X to local character set: %s"
 #~ msgstr "no se puede convertir U+%04X al conjunto de caracteres local: %s"
 
-# Me niego a considerar "inv·lido" como palabra "polÌticamente incorrecta".
-# Si alg˙n "impedido fÌsico" lee este mensaje y se molesta por ello, entonces
-# es que adem·s de impedido fÌsico es tonto, pues todo el mundo sabe que,
-# *en el contexto inform·tico*, inv·lido e ilegal significan
+# Me niego a considerar "inv√°lido" como palabra "pol√≠ticamente incorrecta".
+# Si alg√∫n "impedido f√≠sico" lee este mensaje y se molesta por ello, entonces
+# es que adem√°s de impedido f√≠sico es tonto, pues todo el mundo sabe que,
+# *en el contexto inform√°tico*, inv√°lido e ilegal significan
 # "no permitido por la causa que sea".
-# Luego, que unas veces sea inv·lido y otras ilegal, son matices que el
-# original tiene y creo necesario respetar en la traducciÛn.
+# Luego, que unas veces sea inv√°lido y otras ilegal, son matices que el
+# original tiene y creo necesario respetar en la traducci√≥n.
 #
-# [ Tom·s Bautista sugiere "inexistente", y tambiÈn para grupo ]
+# [ Tom√°s Bautista sugiere "inexistente", y tambi√©n para grupo ]
 #
 # FIXME:
-# Eso sÌ, un dÌa tendrÈ que preguntar a los de GNU en quÈ se diferencia
+# Eso s√≠, un d√≠a tendr√© que preguntar a los de GNU en qu√© se diferencia
 # "invalid" de "not allowed" de "not recognized" y todo eso... sv
 #
 #~ msgid "invalid user"
-#~ msgstr "usuario inv·lido"
+#~ msgstr "usuario inv√°lido"
 
 #~ msgid "invalid group"
-#~ msgstr "grupo inv·lido"
+#~ msgstr "grupo inv√°lido"
 
-# Me niego a considerar "inv·lido" como palabra "polÌticamente incorrecta".
-# Si alg˙n "impedido fÌsico" lee este mensaje y se molesta por ello, entonces
-# es que adem·s de impedido fÌsico es tonto, pues todo el mundo sabe que,
-# *en el contexto inform·tico*, inv·lido e ilegal significan
+# Me niego a considerar "inv√°lido" como palabra "pol√≠ticamente incorrecta".
+# Si alg√∫n "impedido f√≠sico" lee este mensaje y se molesta por ello, entonces
+# es que adem√°s de impedido f√≠sico es tonto, pues todo el mundo sabe que,
+# *en el contexto inform√°tico*, inv√°lido e ilegal significan
 # "no permitido por la causa que sea".
-# Luego, que unas veces sea inv·lido y otras ilegal, son matices que el
-# original tiene y creo necesario respetar en la traducciÛn.
+# Luego, que unas veces sea inv√°lido y otras ilegal, son matices que el
+# original tiene y creo necesario respetar en la traducci√≥n.
 #
-# [ Tom·s Bautista sugiere "inexistente", y tambiÈn para grupo ]
+# [ Tom√°s Bautista sugiere "inexistente", y tambi√©n para grupo ]
 #
 # FIXME:
-# Eso sÌ, un dÌa tendrÈ que preguntar a los de GNU en quÈ se diferencia
+# Eso s√≠, un d√≠a tendr√© que preguntar a los de GNU en qu√© se diferencia
 # "invalid" de "not allowed" de "not recognized" y todo eso... sv
 #
 #~ msgid "invalid spec"
-#~ msgstr "especificaciÛn inv·lida"
+#~ msgstr "especificaci√≥n inv√°lida"
 
 #~ msgid "unable to display error message"
 #~ msgstr "no se puede mostrar el mensaje de error"
@@ -655,10 +658,10 @@ msgstr "memoria agotada"
 #~ "\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Licencia GPLv3+: GPL de GNU versiÛn 3 o posterior\n"
+#~ "Licencia GPLv3+: GPL de GNU versi√≥n 3 o posterior\n"
 #~ "<http://gnu.org/licenses/gpl.html>.\n"
 #~ "Esto es software libre: tiene la libertad de cambiarlo y redistribuirlo.\n"
-#~ "No tiene GARANTÕA, en la extensiÛn permitida por la ley.\n"
+#~ "No tiene GARANT√çA, en la extensi√≥n permitida por la ley.\n"
 #~ "\n"
 
 #~ msgid "Written by %s.\n"
@@ -731,50 +734,50 @@ msgstr "memoria agotada"
 #~ msgstr ""
 #~ "\n"
 #~ "Reporte bichos a: %s.\n"
-#~ "Reporte errores de traducciÛn a: es@li.org\n"
+#~ "Reporte errores de traducci√≥n a: es@li.org\n"
 
 #~ msgid "Report %s bugs to: %s\n"
 #~ msgstr "Reporte bichos de %s a: %s\n"
 
 #~ msgid "%s home page: <%s>\n"
-#~ msgstr "P·gina web de %s: <%s>\n"
+#~ msgstr "P√°gina web de %s: <%s>\n"
 
 #~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
-#~ msgstr "P·gina web de %s: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "P√°gina web de %s: <http://www.gnu.org/software/%s/>\n"
 
 #~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 #~ msgstr ""
 #~ "Ayuda general para usar software de GNU: <http://www.gnu.org/gethelp/>\n"
 
 #~ msgid "_open_osfhandle failed"
-#~ msgstr "fallÛ _open_osfhandle"
+#~ msgstr "fall√≥ _open_osfhandle"
 
 #~ msgid "cannot restore fd %d: dup2 failed"
-#~ msgstr "no se puede restaurar el df %d: fallÛ dup2"
+#~ msgstr "no se puede restaurar el df %d: fall√≥ dup2"
 
 #~ msgid "%s subprocess"
 #~ msgstr "subproceso %s"
 
 #~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "el subproceso %s recibiÛ la seÒal fatal %d"
+#~ msgstr "el subproceso %s recibi√≥ la se√±al fatal %d"
 
 #~ msgid "stdin"
-#~ msgstr "entrada est·ndard"
+#~ msgstr "entrada est√°ndard"
 
 #~ msgid "stdout"
-#~ msgstr "salida est·ndard"
+#~ msgstr "salida est√°ndard"
 
 #~ msgid "stderr"
-#~ msgstr "salida de error est·ndard"
+#~ msgstr "salida de error est√°ndard"
 
 #~ msgid "unknown stream"
 #~ msgstr "flujo desconocido"
 
 #~ msgid "failed to reopen %s with mode %s"
-#~ msgstr "fallÛ al reabrir %s con modo %s"
+#~ msgstr "fall√≥ al reabrir %s con modo %s"
 
 #~ msgid "string comparison failed"
-#~ msgstr "la comparaciÛn de cadenas fallÛ"
+#~ msgstr "la comparaci√≥n de cadenas fall√≥"
 
 #~ msgid "Set LC_ALL='C' to work around the problem."
 #~ msgstr ""
@@ -787,16 +790,16 @@ msgstr "memoria agotada"
 #~ msgstr "no se puede mostrar la salida con formato"
 
 #~ msgid "invalid %s%s argument `%s'"
-#~ msgstr "argumento `$3%s' inv·lido para $1%s$2%s"
+#~ msgstr "argumento `$3%s' inv√°lido para $1%s$2%s"
 
 #~ msgid "invalid suffix in %s%s argument `%s'"
-#~ msgstr "sufijo inv·lido en el argumento `$3%s' para $1%s$2%s"
+#~ msgstr "sufijo inv√°lido en el argumento `$3%s' para $1%s$2%s"
 
 #~ msgid "%s%s argument `%s' too large"
 #~ msgstr "el argumento `$3%s' es demasiado grande para $1%s$2%s"
 
 #~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: opciÛn ilegal -- %c\n"
+#~ msgstr "%s: opci√≥n ilegal -- %c\n"
 
 #~ msgid ""
 #~ "\n"
@@ -806,7 +809,7 @@ msgstr "memoria agotada"
 #~ "Reporte bichos a <%s>.\n"
 
 #~ msgid "block size"
-#~ msgstr "tamaÒo del bloque"
+#~ msgstr "tama√±o del bloque"
 
 #~ msgid "%s exists but is not a directory"
 #~ msgstr "%s existe pero no es un directorio"
@@ -818,7 +821,7 @@ msgstr "memoria agotada"
 #~ msgstr "no se puede cambiar al directorio %s"
 
 #~ msgid "cannot get the login group of a numeric UID"
-#~ msgstr "no se puede obtener el grupo de login de un UID numÈrico"
+#~ msgstr "no se puede obtener el grupo de login de un UID num√©rico"
 
 #~ msgid ""
 #~ "\n"
@@ -831,7 +834,7 @@ msgstr "memoria agotada"
 #~ "\n"
 #~ "Este programa es software libre; se pueden redistribuir copias del "
 #~ "mismo \n"
-#~ "bajo los tÈrminos de la Licencia P˙blica General de GNU\n"
+#~ "bajo los t√©rminos de la Licencia P√∫blica General de GNU\n"
 #~ "<http://www.gnu.org/licenses/gpl.html>.\n"
-#~ "NO HAY GARANTÕA, a la extensiÛn permitida por la ley.\n"
+#~ "NO HAY GARANT√çA, a la extensi√≥n permitida por la ley.\n"
 #~ "\n"

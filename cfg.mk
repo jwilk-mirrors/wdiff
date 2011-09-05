@@ -12,13 +12,18 @@ INDENT_STYLE = -gnu -ppi1 -ut
 INDENT_SOURCES = src/*.c src/*.h
 
 VC_LIST_ALWAYS_EXCLUDE_REGEX = ^(lib|m4)/
-VC_LIST_EXCEPT_sc_GPL_version = po/.*\.po
-VC_LIST_EXCEPT_sc_makefile_path_separator_check = po/Makefile\.in\.in
-VC_LIST_EXCEPT_sc_makefile_TAB_only_indentation = po/Makefile\.in\.in
-VC_LIST_EXCEPT_sc_po_check = lib/.*\.c
-VC_LIST_EXCEPT_sc_prohibit_empty_lines_at_EOF = ^(ABOUT-NLS)$$
-VC_LIST_EXCEPT_sc_prohibit_always-defined_macros = ^build-aux/
-VC_LIST_EXCEPT_sc_indent = ^build-aux/
+exclude_file_name_regexp--sc_GPL_version = po/.*\.po
+exclude_file_name_regexp--sc_makefile_path_separator_check = po/Makefile\.in\.in
+exclude_file_name_regexp--sc_makefile_TAB_only_indentation = po/Makefile\.in\.in
+exclude_file_name_regexp--sc_po_check = lib/.*\.c
+exclude_file_name_regexp--sc_prohibit_empty_lines_at_EOF = ^(ABOUT-NLS)$$
+exclude_file_name_regexp--sc_prohibit_always-defined_macros = ^build-aux/
+exclude_file_name_regexp--sc_indent = ^build-aux/
+
+# Work around bugs in maint.mk:
+exclude_file_name_regexp--sc_makefile_at_at_check = maint\.mk
+exclude_file_name_regexp--sc_prohibit_undesirable_word_seq = maint\.mk
+exclude_file_name_regexp--sc_prohibit_doubled_word = po/pt_BR\.po
 
 local-checks-to-skip += sc_program_name
 local-checks-to-skip += sc_prohibit_atoi_atof
