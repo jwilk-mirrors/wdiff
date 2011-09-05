@@ -84,7 +84,8 @@ long new_start, new_end, new_line;
 long line_number = 0;
 static enum type input_type = TYPE_UNDECIDED;
 static int found_index = 0;
-static char name[NAME_LENGTH + 1] = {'\0'};
+static char name[NAME_LENGTH + 1] = { '\0' };
+
 static char buffer[BUFFER_LENGTH];
 
 /*---------------------------------------------------------------.
@@ -176,7 +177,7 @@ generate_output (void)
 	  free (line);
 	}
     }
-  else /* if output_type == TYPE_CDIFF */
+  else				/* if output_type == TYPE_CDIFF */
     {
       struct line_object *scan;
       int found_plus = 1;
@@ -208,7 +209,7 @@ generate_output (void)
 		  scan = line;
 		  while (scan = scan->next,
 			 (scan != NULL && scan->type == '-'))
-		      ;
+		    ;
 		  if (scan && scan->type == '+')
 		    {
 		      do
@@ -274,6 +275,7 @@ usage (int status)
 	     program_name);
   else
     {
+      /* *INDENT-OFF* */
       fputs (_("\
 unify - Transforms context diffs into unidiffs, or vice-versa.\n"),
 	     stdout);
@@ -296,6 +298,7 @@ Usage: %s [OPTION]... [FILE]\n"), program_name);
       fputs (_("If FILE is not specified, read standard input.\n"), stdout);
       fputs ("\n", stdout);
       fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
+      /* *INDENT-ON* */
     }
   exit (status);
 }
@@ -306,8 +309,7 @@ Usage: %s [OPTION]... [FILE]\n"), program_name);
 `----------------------------------------------------------------------*/
 
 /* Long options equivalences.  */
-static const struct option long_options[] =
-{
+static const struct option long_options[] = {
   {"context-diffs", no_argument, NULL, 'c'},
   {"echo-comments", no_argument, NULL, 'e'},
   {"help", no_argument, &show_help, 1},
@@ -338,8 +340,7 @@ main (int argc, char *const *argv)
   /* Decode command options.  */
 
   while (option_char = getopt_long (argc, (char **) argv, "=ceopPsUu",
-				    long_options, NULL),
-	 option_char != EOF)
+				    long_options, NULL), option_char != EOF)
     switch (option_char)
       {
       default:
@@ -402,16 +403,13 @@ main (int argc, char *const *argv)
       printf ("unify (GNU %s) %s\n", PACKAGE, VERSION);
       fputs (_("\
 \n\
-Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"),
-	     stdout);
+Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"), stdout);
       fputs (_("\
 This is free software; see the source for copying conditions.  There is NO\n\
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"),
-	     stdout);
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"), stdout);
       fputs (_("\
 \n\
-Written by Wayne Davison <davison@borland.com>.\n"),
-	     stdout);
+Written by Wayne Davison <davison@borland.com>.\n"), stdout);
       exit (EXIT_SUCCESS);
     }
 
@@ -428,8 +426,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
       switch (state)
 	{
 	case FIND_NEXT:
-	  if (input_type != TYPE_CDIFF
-	      && string_equal (buffer, "@@ -", 4))
+	  if (input_type != TYPE_CDIFF && string_equal (buffer, "@@ -", 4))
 	    {
 	      input_type = TYPE_UNIDIFF;
 	      if (output_type == TYPE_UNDECIDED)
@@ -502,7 +499,8 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 		       || string_equal (buffer, "Binary files", 12)))
 	    {
 	      if (echo_comments)
-		fprintf (stderr, "%s%s", strip_comments ? "" : "!!! ", buffer);
+		fprintf (stderr, "%s%s", strip_comments ? "" : "!!! ",
+			 buffer);
 	    }
 	  else
 	    {
@@ -615,8 +613,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 	  star_in_cdiff = ' ';
 	  old_start = -1;
 	  if (sscanf (buffer, "*** %ld,%ld %c", &old_start, &old_end,
-		      &star_in_cdiff)
-	      < 2)
+		      &star_in_cdiff) < 2)
 	    {
 	      if (old_start < 0)
 		error (EXIT_FAILURE, 0,
@@ -683,8 +680,7 @@ Written by Wayne Davison <davison@borland.com>.\n"),
 
 	    default:
 	      error (EXIT_FAILURE, 0,
-		     _("malformed context diff at line %ld"),
-		     line_number);
+		     _("malformed context diff at line %ld"), line_number);
 	    }
 	  if (old_line > old_last)
 	    {

@@ -34,7 +34,7 @@ const char *program_name;	/* name of executing program */
 
 static int quiet = 0;		/* if inhibiting mdiff call message */
 
-static char **argument_list = NULL; /* constructed argument list */
+static char **argument_list = NULL;	/* constructed argument list */
 static int arguments = 0;	/* number of arguments in list */
 static int last_is_letters = 0;	/* if last argument is option letter(s) */
 
@@ -118,8 +118,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n\
 GNU General Public License for more details.\n\
 \n\
 You should have received a copy of the GNU General Public License\n\
-along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"),
-	 stdout);
+along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"), stdout);
 }
 
 static void
@@ -128,22 +127,18 @@ print_version (void)
   printf ("wdiff (GNU %s) %s\n", PACKAGE, VERSION);
   fputs (_("\
 \n\
-Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"),
-	 stdout);
+Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"), stdout);
   fputs (_("\
 This is free software; see the source for copying conditions.  There is NO\n\
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"),
-	 stdout);
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"), stdout);
   fputs (_("\
 \n\
-Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
-	 stdout);
+Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"), stdout);
 }
 
 /* Option variables.  */
 
-struct option const longopts[] =
-{
+struct option const longopts[] = {
   {"auto-pager", no_argument, NULL, 'a'},
   {"avoid-wraps", no_argument, NULL, 'n'},
   {"copyright", no_argument, NULL, 'C'},
@@ -154,7 +149,7 @@ struct option const longopts[] =
   {"less-mode", no_argument, NULL, 'l'},
   {"no-common", no_argument, NULL, '3'},
   {"no-deleted", no_argument, NULL, '1'},
-  {"no-init-term", no_argument, NULL, 'K'}, /* backwards compatibility */
+  {"no-init-term", no_argument, NULL, 'K'},	/* backwards compatibility */
   {"no-inserted", no_argument, NULL, '2'},
   {"quiet", no_argument, NULL, 'q'},
   {"printer", no_argument, NULL, 'p'},
@@ -178,6 +173,7 @@ usage (int status)
 	     program_name);
   else
     {
+      /* *INDENT-OFF* */
       fputs (_("\
 wdiff - Compute word differences by internally launching `mdiff -W'.\n\
 This program exists mainly to support the now oldish `wdiff' syntax.\n"),
@@ -212,6 +208,7 @@ Mandatory arguments to long options are mandatory for short options too.\n"),
       fputs (_("This program also tells how `mdiff' could have been called directly.\n"), stdout);
       fputs ("\n", stdout);
       fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
+      /* *INDENT-ON* */
     }
   exit (status);
 }
@@ -237,8 +234,7 @@ main (int argc, char *const argv[])
 
   while (option_char = getopt_long (argc, (char **) argv,
 				    "123CKachidlnpqstvw:x:y:z:", longopts,
-				    NULL),
-	 option_char != EOF)
+				    NULL), option_char != EOF)
     switch (option_char)
       {
       default:
@@ -269,7 +265,7 @@ main (int argc, char *const argv[])
       case 'h':
 	usage (EXIT_SUCCESS);
 
-      case 'c':			/* this was -c prior to wdiff 0.5 */
+      case 'c':		/* this was -c prior to wdiff 0.5 */
       case 'i':
 	add_simple_option ('i');
 	break;

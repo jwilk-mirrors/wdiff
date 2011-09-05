@@ -4,4 +4,5 @@
 # Francois Pinard <pinard@iro.umontreal.ca>, 1998.
 
 AT_INIT(wdiff)
+AT_COLOR_TESTS
 # The other tests will be appended here by the Makefile rule.

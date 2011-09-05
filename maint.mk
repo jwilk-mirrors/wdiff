@@ -137,11 +137,13 @@ sc_m_rules_ = $(patsubst %, %.m, $(syntax-check-rules))
 $(sc_m_rules_):
 	@echo $(patsubst sc_%.m, %, $@)
 	@date +%s.%N > .sc-start-$(basename $@)
+	@echo -ne '\e[31m'
 
 # Compute and print the elapsed time for each syntax-check rule.
 sc_z_rules_ = $(patsubst %, %.z, $(syntax-check-rules))
 .PHONY: $(sc_z_rules_)
 $(sc_z_rules_): %.z: %
+	@echo -ne '\e[0m'
 	@end=$$(date +%s.%N);						\
 	start=$$(cat .sc-start-$*);					\
 	rm -f .sc-start-$*;						\
@@ -284,6 +286,28 @@ sc_space_tab:
 	@prohibit='[ ]	'						\
 	halt='found SPACE-TAB sequence; remove the SPACE'		\
 	  $(_sc_search_regexp)
+
+INDENT_STYLE ?= -gnu
+
+sc_indent:
+ifneq ($(strip $(INDENT_STYLE)),)
+	@fail=0;							\
+	for file in $$($(VC_LIST_EXCEPT)); do				\
+	  case $$file in						\
+	    *.c|*.h)							\
+	      if ! indent $(INDENT_STYLE) -st "$$file" |		\
+		   diff -u --label "$$file" -p "$$file" -; then		\
+		fail=1;							\
+	      fi							\
+	      ;;							\
+	  esac								\
+	done;								\
+	test $$fail = 1 &&						\
+	  { echo '$(ME): the above changes should be applied'		\
+	    'in order to unify the coding style' 1>&2; exit 1; } || :
+else
+	@:
+endif
 
 # Don't use *scanf or the old ato* functions in `real' code.
 # They provide no error checking mechanism.
@@ -712,6 +736,7 @@ define def_sym_regex
 	gen_h=$(gl_generated_headers_);					\
 	(cd $(gnulib_dir)/lib;						\
 	  for f in *.in.h $(gl_other_headers_); do			\
+	    test -e $$f &&						\
 	    perl -lne '$(gl_extract_significant_defines_)' $$f;		\
 	  done;								\
 	) | sort -u							\
@@ -1249,8 +1274,8 @@ refresh-po:
 INDENT_SOURCES ?= $(C_SOURCES)
 .PHONY: indent
 indent:
-	indent $(INDENT_SOURCES)
-	indent $(INDENT_SOURCES)
+	indent $(INDENT_STYLE) $(INDENT_SOURCES)
+	indent $(INDENT_STYLE) $(INDENT_SOURCES)
 
 # If you want to set UPDATE_COPYRIGHT_* environment variables,
 # put the assignments in this variable.

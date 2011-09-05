@@ -1,7 +1,7 @@
 #							-*- shell-script -*-
 
 # wdiff test suite
-# Copyright (C) 2010 Free Software Foundation, Inc.
+# Copyright (C) 2010, 2011 Free Software Foundation, Inc.
 #
 # This file is part of GNU wdiff
 #
@@ -127,12 +127,41 @@ AT_CHECK([wdiff -123s wdiff-a.txt wdiff-b.txt], 1,
 wdiff-b.txt: 40 words  34 85% common  0 0% inserted  6 15% changed
 ])
 
+dnl ' let us quote this to keep emacs syntax highlighting happy
 AT_CHECK([wdiff -w\( -x\) -y\<\< -z\>\> wdiff-a.txt wdiff-b.txt], 1,
 [This is (input1) <<input2>>
 The quick brown fox jumps over the lazy dog.
 The (hurried orange) <<slow red>> fox jumps over the lazy dog.
 A (slow) <<slow, short>> green (panda) <<giraffe>> walks around a sleeping cat.
 The middling red fox jumps over the lazy dog.
+])
+dnl '
+
+AT_CLEANUP()
+
+AT_SETUP(report bad diff binary)
+dnl      ----------------------
+
+wdiff_bin="`which wdiff`"
+# wish I could use AC_CHECK_PROG([wdiff_bin], [wdiff]) instead
+AT_FAIL_IF([! test -x "$wdiff_bin"])
+AT_DATA([foo.txt], [foo
+])
+AT_DATA([bar.txt], [bar
+])
+LC_ALL=C
+export LC_ALL
+
+AT_CHECK([PATH="$PWD" "$wdiff_bin" foo.txt bar.txt], 2, [], [stderr])
+AT_CHECK([grep "wdiff: failed to execute diff" stderr], 0, [ignore-nolog], [])
+
+AT_DATA([diff], [#! /bin/sh
+echo "This diff is broken" >&2
+exit 27
+])
+chmod +x diff
+AT_CHECK([PATH="$PWD" "$wdiff_bin" foo.txt bar.txt], 2, [],
+[This diff is broken
 ])
 
 AT_CLEANUP()

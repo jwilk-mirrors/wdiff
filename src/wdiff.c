@@ -1,6 +1,6 @@
 /* wdiff -- front end to diff for comparing on a word per word basis.
    Copyright (C) 1992, 1997, 1998, 1999, 2009,
-                 2010 Free Software Foundation, Inc.
+                 2010, 2011 Free Software Foundation, Inc.
    Francois Pinard <pinard@iro.umontreal.ca>, 1992.
 
    This program is free software: you can redistribute it and/or modify
@@ -76,36 +76,35 @@
 #include <locale.h>
 #include <sys/wait.h>
 
-char *getenv ();
 FILE *readpipe (const char *, ...);
 FILE *writepipe (const char *, ...);
+static void complete_input_program (void);
 
 /* Declarations.  */
 
 /* Option variables.  */
 
-struct option const longopts[] =
-{
-  {"auto-pager"  , 0, NULL, 'a'},
-  {"avoid-wraps" , 0, NULL, 'n'},
-  {"copyright"   , 0, NULL, 'C'},
-  {"end-delete"  , 1, NULL, 'x'},
-  {"end-insert"  , 1, NULL, 'z'},
-  {"help"        , 0, NULL, 'h'},
-  {"ignore-case" , 0, NULL, 'i'},
-  {"less-mode"   , 0, NULL, 'l'},
-  {"no-common"   , 0, NULL, '3'},
-  {"no-deleted"  , 0, NULL, '1'},
-  {"no-init-term", 0, NULL, 'K'}, /* backwards compatibility */
-  {"no-inserted" , 0, NULL, '2'},
-  {"printer"     , 0, NULL, 'p'},
+struct option const longopts[] = {
+  {"auto-pager", 0, NULL, 'a'},
+  {"avoid-wraps", 0, NULL, 'n'},
+  {"copyright", 0, NULL, 'C'},
+  {"end-delete", 1, NULL, 'x'},
+  {"end-insert", 1, NULL, 'z'},
+  {"help", 0, NULL, 'h'},
+  {"ignore-case", 0, NULL, 'i'},
+  {"less-mode", 0, NULL, 'l'},
+  {"no-common", 0, NULL, '3'},
+  {"no-deleted", 0, NULL, '1'},
+  {"no-init-term", 0, NULL, 'K'},	/* backwards compatibility */
+  {"no-inserted", 0, NULL, '2'},
+  {"printer", 0, NULL, 'p'},
   {"start-delete", 1, NULL, 'w'},
   {"start-insert", 1, NULL, 'y'},
-  {"statistics"  , 0, NULL, 's'},
-  {"terminal"    , 0, NULL, 't'},
-  {"version"     , 0, NULL, 'v'},
-  {"diff-input"  , 0, NULL, 'd'},
-  {NULL          , 0, NULL, 0}
+  {"statistics", 0, NULL, 's'},
+  {"terminal", 0, NULL, 't'},
+  {"version", 0, NULL, 'v'},
+  {"diff-input", 0, NULL, 'd'},
+  {NULL, 0, NULL, 0}
 };
 
 const char *program_name;	/* name of executing program */
@@ -168,7 +167,7 @@ int character;			/* for reading input_file */
 char directive;			/* diff directive character */
 int argument[4];		/* four diff directive arguments */
 
-FILE *output_file;			/* file to which we write output */
+FILE *output_file;		/* file to which we write output */
 
 int count_total_left;		/* count of total words in left file */
 int count_total_right;		/* count of total words in right file */
@@ -365,7 +364,7 @@ end_of_insert (void)
 `--------------------------------*/
 
 static void
-skip_whitespace (SIDE *side)
+skip_whitespace (SIDE * side)
 {
   if (interrupted)
     longjmp (signal_label, 1);
@@ -379,7 +378,7 @@ skip_whitespace (SIDE *side)
 `------------------------------------*/
 
 static void
-skip_word (SIDE *side)
+skip_word (SIDE * side)
 {
   if (interrupted)
     longjmp (signal_label, 1);
@@ -394,7 +393,7 @@ skip_word (SIDE *side)
 `-------------------------------------*/
 
 static void
-copy_whitespace (SIDE *side, FILE *file)
+copy_whitespace (SIDE * side, FILE * file)
 {
   if (interrupted)
     longjmp (signal_label, 1);
@@ -543,10 +542,10 @@ create_template_filename ()
       && ((stat_buffer.st_mode & S_IFMT) == S_IFDIR))
     /* nothing */ ;
   else if ((stat (P_tmpdir, &stat_buffer) == 0)
-           && ((stat_buffer.st_mode & S_IFMT) == S_IFDIR))
+	   && ((stat_buffer.st_mode & S_IFMT) == S_IFDIR))
     dir = P_tmpdir;
   else if ((stat ("/tmp", &stat_buffer) == 0)
-           && ((stat_buffer.st_mode & S_IFMT) == S_IFDIR))
+	   && ((stat_buffer.st_mode & S_IFMT) == S_IFDIR))
     dir = "/tmp";
   else
     {
@@ -571,7 +570,7 @@ create_template_filename ()
 static void
 create_temporary_side (SIDE * side)
 {
-  int fd;	/* for file descriptors returned by mkstemp */
+  int fd;			/* for file descriptors returned by mkstemp */
 
   /* Select a file name, use it for opening a temporary file and
      unlink it right away. We do not need the file name itself
@@ -966,6 +965,9 @@ reformat_diff_output (void)
 	}
     }
 
+  complete_input_program ();
+  input_file = 0;
+
   /* Copy remainder of input.  Copy from left side if the user wanted to see
      only the common code and deleted words.  */
 
@@ -1021,8 +1023,22 @@ launch_input_program (void)
 static void
 complete_input_program (void)
 {
+  int status;
   fclose (input_file);
-  wait (NULL);
+  wait (&status);
+  if (WIFEXITED (status))
+    {
+      status = WEXITSTATUS (status);
+      if (status == 0 || status == 1)
+	return;
+      /* else assume the child printed an error message and exit below */
+    }
+  else if (WIFSIGNALED (status))
+    {
+      fprintf (stderr, _("%s: input program killed by signal %d\n"),
+	       program_name, (int) WTERMSIG (status));
+    }
+  exit (EXIT_ERROR);
 }
 
 /*---------------------------------.
@@ -1061,14 +1077,16 @@ launch_output_program (void)
       char *realprogram;	/* symlink-resolved path of the pager */
       char *basename;		/* basename of the pager */
 
-      if (program[0] == '/') {
-        realprogram = realpath(program, NULL);
-        if (realprogram == NULL)
-          realprogram = program;
-      }
-      else {
-        realprogram = program;
-      }
+      if (program[0] == '/')
+	{
+	  realprogram = realpath (program, NULL);
+	  if (realprogram == NULL)
+	    realprogram = program;
+	}
+      else
+	{
+	  realprogram = program;
+	}
       basename = mbsrchr (realprogram, '/');
       if (basename)
 	basename++;
@@ -1076,7 +1094,7 @@ launch_output_program (void)
 	basename = program;
       is_less = strstr (basename, "less") != NULL;
       if (realprogram != program)
-        free (realprogram);
+	free (realprogram);
 
       if (is_less)
 	output_file = writepipe (program, "-X", NULL);
@@ -1129,8 +1147,15 @@ complete_output_program (void)
 
   if (output_file && output_file != stdout)
     {
+      int status;
       fclose (output_file);
-      wait (NULL);
+      wait (&status);
+      if (WIFSIGNALED (status))
+	{
+	  fprintf (stderr, _("%s: output program killed by signal %d\n"),
+		   program_name, (int) WTERMSIG (status));
+	  exit (EXIT_ERROR);
+	}
     }
 }
 
@@ -1196,8 +1221,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n\
 GNU General Public License for more details.\n\
 \n\
 You should have received a copy of the GNU General Public License\n\
-along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"),
-         stdout);
+along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"), stdout);
 }
 
 /*-----------------------------.
@@ -1212,6 +1236,7 @@ usage (int status)
 	     program_name);
   else
     {
+      /* *INDENT-OFF* */
       fputs (_("\
 wdiff - Compares words in two files and report differences.\n"),
 	     stdout);
@@ -1244,6 +1269,7 @@ Mandatory arguments to long options are mandatory for short options too.\n"),
       fputs (_("  -z, --end-insert=STRING    string to mark end of insert region\n"), stdout);
       fputs ("\n", stdout);
       fputs (_("Report bugs to <wdiff-bugs@gnu.org>.\n"), stdout);
+      /* *INDENT-ON* */
     }
   exit (status);
 }
@@ -1295,8 +1321,8 @@ main (int argc, char *const argv[])
   count_changed_right = 0;
 
   while (option_char = getopt_long (argc, (char **) argv,
-				    "123CKadhilnpstvw:x:y:z:", longopts, NULL),
-	 option_char != EOF)
+				    "123CKadhilnpstvw:x:y:z:", longopts,
+				    NULL), option_char != EOF)
     switch (option_char)
       {
       case '1':
@@ -1367,16 +1393,13 @@ main (int argc, char *const argv[])
 	fputs (_("\
 \n\
 Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n\
-Foundation, Inc.\n"),
-	     stdout);
+Foundation, Inc.\n"), stdout);
 	fputs (_("\
 This is free software; see the source for copying conditions.  There is NO\n\
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"),
-	     stdout);
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"), stdout);
 	fputs (_("\
 \n\
-Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"),
-	     stdout);
+Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"), stdout);
 	exit (EXIT_SUCCESS);
 
       case 'w':
