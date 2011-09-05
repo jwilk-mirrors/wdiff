@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the gnulib package.
 #
 # Sergey Poznyakoff <gray@gnu.org>, 2003,2004,2005.
-# Yuri Kozlov <yuray@komyakino.ru>, 2010.
+# Yuri Kozlov <yuray@komyakino.ru>, 2010, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
+"Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
-"PO-Revision-Date: 2010-02-23 16:59+0300\n"
+"POT-Creation-Date: 2011-09-05 11:34+0200\n"
+"PO-Revision-Date: 2011-08-22 21:05+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
 "Language: ru\n"
@@ -18,136 +18,136 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.0\n"
 
-#: lib/error.c:181
+#: lib/error.c:185
 msgid "Unknown system error"
 msgstr "Неизвестная системная ошибка"
 
-#: lib/getopt.c:527 lib/getopt.c:543
+#: lib/getopt.c:547 lib/getopt.c:576
 #, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: двусмысленный параметр %s\n"
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: двусмысленный параметр «%s»; возможные варианты:"
 
-#: lib/getopt.c:576 lib/getopt.c:580
+#: lib/getopt.c:624 lib/getopt.c:628
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: для параметра --%s аргумент не разрешён\n"
+msgstr "%s: для параметра «--%s» аргумент не разрешён\n"
 
-#: lib/getopt.c:589 lib/getopt.c:594
+#: lib/getopt.c:637 lib/getopt.c:642
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: для параметра %c%s аргумент не разрешён\n"
+msgstr "%s: для параметра «%c%s» аргумент не разрешён\n"
 
-#: lib/getopt.c:637 lib/getopt.c:656
-#, fuzzy, c-format
+#: lib/getopt.c:685 lib/getopt.c:704
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: для параметра %s требуется аргумент\n"
+msgstr "%s: для параметра «--%s» требуется аргумент\n"
 
-#: lib/getopt.c:694 lib/getopt.c:697
+#: lib/getopt.c:742 lib/getopt.c:745
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
-msgstr "%s: нераспознанный параметр --%s\n"
+msgstr "%s: нераспознанный параметр «--%s»\n"
 
-#: lib/getopt.c:705 lib/getopt.c:708
+#: lib/getopt.c:753 lib/getopt.c:756
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
-msgstr "%s: нераспознанный параметр %c%s\n"
+msgstr "%s: нераспознанный параметр «%c%s»\n"
 
-#: lib/getopt.c:757 lib/getopt.c:760
+#: lib/getopt.c:805 lib/getopt.c:808
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: неправильный параметр -- %c\n"
+msgstr "%s: неправильный параметр -- «%c»\n"
 
-#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: для параметра требуется аргумент -- %c\n"
+msgstr "%s: для параметра требуется аргумент -- «%c»\n"
 
-#: lib/getopt.c:883 lib/getopt.c:899
+#: lib/getopt.c:934 lib/getopt.c:950
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: двусмысленный параметр -W %s\n"
+msgstr "%s: двусмысленный параметр «-W %s»\n"
 
-#: lib/getopt.c:923 lib/getopt.c:941
+#: lib/getopt.c:974 lib/getopt.c:992
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: для параметра -W %s аргумент не разрешён\n"
+msgstr "%s: у параметра «-W %s» не может быть аргумента\n"
 
-#: lib/getopt.c:962 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: для параметра %s требуется аргумент\n"
+msgstr "%s: для параметра «-W %s» требуется аргумент\n"
 
-#: lib/regcomp.c:132
+#: lib/regcomp.c:131
 msgid "Success"
 msgstr "Успешно"
 
-#: lib/regcomp.c:135
+#: lib/regcomp.c:134
 msgid "No match"
 msgstr "Нет совпадений"
 
-#: lib/regcomp.c:138
+#: lib/regcomp.c:137
 msgid "Invalid regular expression"
 msgstr "Неверное регулярное выражение"
 
-#: lib/regcomp.c:141
+#: lib/regcomp.c:140
 msgid "Invalid collation character"
 msgstr "Неверный символ сравнения"
 
-#: lib/regcomp.c:144
+#: lib/regcomp.c:143
 msgid "Invalid character class name"
 msgstr "Неверное имя класса символов"
 
-#: lib/regcomp.c:147
+#: lib/regcomp.c:146
 msgid "Trailing backslash"
 msgstr "Конечная обратная косая черта"
 
-#: lib/regcomp.c:150
+#: lib/regcomp.c:149
 msgid "Invalid back reference"
 msgstr "Неверная обратная ссылка"
 
-#: lib/regcomp.c:153
+#: lib/regcomp.c:152
 msgid "Unmatched [ or [^"
 msgstr "Непарная [ или [^"
 
-#: lib/regcomp.c:156
+#: lib/regcomp.c:155
 msgid "Unmatched ( or \\("
 msgstr "Непарная ( или \\("
 
-#: lib/regcomp.c:159
+#: lib/regcomp.c:158
 msgid "Unmatched \\{"
 msgstr "Непарная \\{"
 
-#: lib/regcomp.c:162
+#: lib/regcomp.c:161
 msgid "Invalid content of \\{\\}"
 msgstr "Недопустимое содержимое в \\{\\}"
 
-#: lib/regcomp.c:165
+#: lib/regcomp.c:164
 msgid "Invalid range end"
 msgstr "Неверный конец диапазона"
 
-#: lib/regcomp.c:168
+#: lib/regcomp.c:167
 msgid "Memory exhausted"
 msgstr "Закончилась память"
 
-#: lib/regcomp.c:171
+#: lib/regcomp.c:170
 msgid "Invalid preceding regular expression"
 msgstr "Недопустимое предшествующее регулярное выражение"
 
-#: lib/regcomp.c:174
+#: lib/regcomp.c:173
 msgid "Premature end of regular expression"
 msgstr "Преждевременное завершение регулярного выражения"
 
-#: lib/regcomp.c:177
+#: lib/regcomp.c:176
 msgid "Regular expression too big"
 msgstr "Слишком большое регулярное выражение"
 
-#: lib/regcomp.c:180
+#: lib/regcomp.c:179
 msgid "Unmatched ) or \\)"
 msgstr "Непарная ) или \\)"
 
-#: lib/regcomp.c:701
+#: lib/regcomp.c:700
 msgid "No previous regular expression"
 msgstr "Отсутствует предыдущее регулярное выражение"
 
@@ -197,8 +197,8 @@ msgstr "закончилась память"
 
 #~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
 #~ msgstr ""
-#~ "Попробуй `%s --help' или `%s --usage' для получения подробной "
-#~ "информации.\n"
+#~ "Попробуйте «%s --help» или «%s --usage» для получения более подробного "
+#~ "описания.\n"
 
 #~ msgid "Report bugs to %s.\n"
 #~ msgstr "Об ошибках сообщай по адресу %s.\n"
@@ -243,7 +243,7 @@ msgstr "закончилась память"
 #~ msgstr "не удалось найти временный каталог, попробуйте задать $TMPDIR"
 
 #~ msgid "cannot create a temporary directory using template \"%s\""
-#~ msgstr "не удалось создать временный каталог с помощью шаблона \"%s\""
+#~ msgstr "не удалось создать временный каталог с помощью шаблона «%s»"
 
 #~ msgid "cannot remove temporary file %s"
 #~ msgstr "не удалось удалить временный файл %s"
@@ -261,19 +261,19 @@ msgstr "закончилась память"
 #~ msgstr "сохраняются права доступа для %s"
 
 #~ msgid "error while opening \"%s\" for reading"
-#~ msgstr "ошибка при открытии %s для чтения"
+#~ msgstr "ошибка при открытии «%s» для чтения"
 
 #~ msgid "cannot open backup file \"%s\" for writing"
-#~ msgstr "не удалось открыть файл резервной копии %s для записи"
+#~ msgstr "не удалось открыть файл резервной копии «%s» для записи"
 
 #~ msgid "error reading \"%s\""
-#~ msgstr "ошибка чтения %s"
+#~ msgstr "ошибка чтения «%s»"
 
 #~ msgid "error writing \"%s\""
-#~ msgstr "ошибка записи %s"
+#~ msgstr "ошибка записи «%s»"
 
 #~ msgid "error after reading \"%s\""
-#~ msgstr "ошибка после чтения %s"
+#~ msgstr "ошибка после чтения «%s»"
 
 #~ msgid "fdopen() failed"
 #~ msgstr "ошибка при выполнении fdopen()"
@@ -327,7 +327,7 @@ msgstr "закончилась память"
 #~ msgstr "странный файл"
 
 #~ msgid "Address family for hostname not supported"
-#~ msgstr "Адресное семейство не поддерживается для имени хоста"
+#~ msgstr "Адресное семейство не поддерживается для имени узла"
 
 #~ msgid "Temporary failure in name resolution"
 #~ msgstr "Временная ошибка при определении имени"
@@ -345,7 +345,7 @@ msgstr "закончилась память"
 #~ msgstr "Ошибка при выделении памяти"
 
 #~ msgid "No address associated with hostname"
-#~ msgstr "Для имени хоста нет адреса"
+#~ msgstr "С именем узла не связано ни одного адреса"
 
 #~ msgid "Name or service not known"
 #~ msgstr "Неизвестное имя или служба"
@@ -390,10 +390,10 @@ msgstr "закончилась память"
 #~ msgstr "неверный аргумент target_version для compile_java_class"
 
 #~ msgid "failed to create \"%s\""
-#~ msgstr "не удалось создать %s"
+#~ msgstr "не удалось создать «%s»"
 
 #~ msgid "error while writing \"%s\" file"
-#~ msgstr "ошибка записи в файл %s"
+#~ msgstr "ошибка записи в файл «%s»"
 
 #~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
 #~ msgstr ""
@@ -446,8 +446,8 @@ msgstr "закончилась память"
 #~ msgid "%s subprocess terminated with exit code %d"
 #~ msgstr "подпроцесс %s завершился с кодом выхода %d"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "не удалось создать канал"
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "Френсис Пинард (Franc,ois Pinard)"
 
 #~ msgid "`"
 #~ msgstr "«"
@@ -568,6 +568,9 @@ msgstr "закончилась память"
 
 #~ msgid "error writing to a closed pipe or socket"
 #~ msgstr "ошибка записи в закрытый канал или сокет"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "не удалось создать канал"
 
 #~ msgid "Real-time signal %d"
 #~ msgstr "Сигнал реального времени %d"
@@ -749,10 +752,10 @@ msgstr "закончилась память"
 #~ msgstr "невозможно выполнить форматированный вывод"
 
 #~ msgid "invalid %s%s argument `%s'"
-#~ msgstr "неверный аргумент %s%s для %s"
+#~ msgstr "неверный аргумент %s%s для «%s»"
 
 #~ msgid "invalid suffix in %s%s argument `%s'"
-#~ msgstr "неверный суффикс %s%s в аргументе %s"
+#~ msgstr "неверный суффикс %s%s в аргументе «%s»"
 
 #~ msgid "%s%s argument `%s' too large"
-#~ msgstr "значение %s%s аргумента %s слишком велико"
+#~ msgstr "значение %s%s аргумента «%s» слишком велико"

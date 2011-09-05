@@ -6,13 +6,13 @@
 #  derived from the version by Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp> 1998.
 #                              Jun Nishii <jun@flatout.org> 1999.
 #                              Daisuke Yamashita <yamad@mb.infoweb.ne.jp> 1999.
-# Yasuaki Taniguchi <yasuakit@gmail.com>, 2010.
+# Yasuaki Taniguchi <yasuakit@gmail.com>, 2010, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
+"Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
-"PO-Revision-Date: 2010-10-20 16:40+0900\n"
+"POT-Creation-Date: 2011-09-05 11:34+0200\n"
+"PO-Revision-Date: 2011-09-02 18:39+0900\n"
 "Last-Translator: Yasuaki Taniguchi <yasuakit@gmail.com>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -21,134 +21,134 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: lib/error.c:181
+#: lib/error.c:185
 msgid "Unknown system error"
 msgstr "不明なシステムエラー"
 
-#: lib/getopt.c:527 lib/getopt.c:543
+#: lib/getopt.c:547 lib/getopt.c:576
 #, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: オプション '%s' は曖昧です\n"
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: オプション '%s' は曖昧です:次のものが可能です:"
 
-#: lib/getopt.c:576 lib/getopt.c:580
+#: lib/getopt.c:624 lib/getopt.c:628
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: オプション '--%s' は引数を取ることができません\n"
 
-#: lib/getopt.c:589 lib/getopt.c:594
+#: lib/getopt.c:637 lib/getopt.c:642
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: オプション '%c%s' は引数を取ることができません\n"
 
-#: lib/getopt.c:637 lib/getopt.c:656
-#, fuzzy, c-format
+#: lib/getopt.c:685 lib/getopt.c:704
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
 msgstr "%s: オプション '--%s' は引数が必要です\n"
 
-#: lib/getopt.c:694 lib/getopt.c:697
+#: lib/getopt.c:742 lib/getopt.c:745
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: オプション '--%s' を認識できません\n"
 
-#: lib/getopt.c:705 lib/getopt.c:708
+#: lib/getopt.c:753 lib/getopt.c:756
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: オプション '%c%s' を認識できません\n"
 
-#: lib/getopt.c:757 lib/getopt.c:760
+#: lib/getopt.c:805 lib/getopt.c:808
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: 無効なオプション -- '%c'\n"
 
-#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: オプションには引数が必要です -- '%c'\n"
 
-#: lib/getopt.c:883 lib/getopt.c:899
+#: lib/getopt.c:934 lib/getopt.c:950
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: オプション '-W %s' は曖昧です\n"
 
-#: lib/getopt.c:923 lib/getopt.c:941
+#: lib/getopt.c:974 lib/getopt.c:992
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: オプション '-W %s' は引数を取ることができません\n"
 
-#: lib/getopt.c:962 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: オプション '--%s' は引数が必要です\n"
+msgstr "%s: オプション '-W %s' は引数が必要です\n"
 
-#: lib/regcomp.c:132
+#: lib/regcomp.c:131
 msgid "Success"
 msgstr "成功です"
 
-#: lib/regcomp.c:135
+#: lib/regcomp.c:134
 msgid "No match"
 msgstr "一致しません"
 
-#: lib/regcomp.c:138
+#: lib/regcomp.c:137
 msgid "Invalid regular expression"
 msgstr "無効な正規表現です"
 
-#: lib/regcomp.c:141
+#: lib/regcomp.c:140
 msgid "Invalid collation character"
 msgstr "無効な照合文字です"
 
-#: lib/regcomp.c:144
+#: lib/regcomp.c:143
 msgid "Invalid character class name"
 msgstr "無効な文字クラス名です"
 
-#: lib/regcomp.c:147
+#: lib/regcomp.c:146
 msgid "Trailing backslash"
 msgstr "終端のバックスラッシュ"
 
-#: lib/regcomp.c:150
+#: lib/regcomp.c:149
 msgid "Invalid back reference"
 msgstr "無効な前方参照です"
 
-#: lib/regcomp.c:153
+#: lib/regcomp.c:152
 msgid "Unmatched [ or [^"
 msgstr "[ または [^ が不一致です"
 
-#: lib/regcomp.c:156
+#: lib/regcomp.c:155
 msgid "Unmatched ( or \\("
 msgstr "( または \\( が不一致です"
 
-#: lib/regcomp.c:159
+#: lib/regcomp.c:158
 msgid "Unmatched \\{"
 msgstr "\\{ が不一致です"
 
-#: lib/regcomp.c:162
+#: lib/regcomp.c:161
 msgid "Invalid content of \\{\\}"
 msgstr "\\{\\} の中身が無効です"
 
-#: lib/regcomp.c:165
+#: lib/regcomp.c:164
 msgid "Invalid range end"
 msgstr "無効な範囲終了です"
 
-#: lib/regcomp.c:168
+#: lib/regcomp.c:167
 msgid "Memory exhausted"
 msgstr "メモリを使い果たしました"
 
-#: lib/regcomp.c:171
+#: lib/regcomp.c:170
 msgid "Invalid preceding regular expression"
 msgstr "無効な前方正規表現です"
 
-#: lib/regcomp.c:174
+#: lib/regcomp.c:173
 msgid "Premature end of regular expression"
 msgstr "正規表現が途中で終了しました"
 
-#: lib/regcomp.c:177
+#: lib/regcomp.c:176
 msgid "Regular expression too big"
 msgstr "正規表現が大きすぎます"
 
-#: lib/regcomp.c:180
+#: lib/regcomp.c:179
 msgid "Unmatched ) or \\)"
 msgstr ") または \\) が不一致です"
 
-#: lib/regcomp.c:701
+#: lib/regcomp.c:700
 msgid "No previous regular expression"
 msgstr "以前に正規表現がありません"
 
@@ -399,8 +399,8 @@ msgstr "メモリを使い果たしました"
 
 #~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
 #~ msgstr ""
-#~ "Java コンパイラが見つかりません。 gcj をインストールするか、またはt "
-#~ "$JAVAC を設定してみてください"
+#~ "Java コンパイラが見つかりません。 gcj をインストールするか、または $JAVAC "
+#~ "を設定してみてください"
 
 #~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
 #~ msgstr ""
@@ -449,8 +449,8 @@ msgstr "メモリを使い果たしました"
 #~ msgid "%s subprocess terminated with exit code %d"
 #~ msgstr "%s 子プロセスが終了コード %d で終了しました"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "パイプを作成できません"
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "Franc,ois Pinard"
 
 #~ msgid "`"
 #~ msgstr "`"
@@ -572,6 +572,9 @@ msgstr "メモリを使い果たしました"
 #~ msgid "error writing to a closed pipe or socket"
 #~ msgstr "閉じたパイプまたはソケットへの書き込みでエラーが発生しました"
 
+#~ msgid "cannot create pipe"
+#~ msgstr "パイプを作成できません"
+
 #~ msgid "Real-time signal %d"
 #~ msgstr "リアルタイムシグナル %d"
 
@@ -591,7 +594,7 @@ msgstr "メモリを使い果たしました"
 #~ msgstr "U+%04X をローカル文字セットに変換できません"
 
 #~ msgid "cannot convert U+%04X to local character set: %s"
-#~ msgstr "U+%04X をローカル文字セット %s に変換できません"
+#~ msgstr "U+%04X をローカル文字セットに変換できません: %s "
 
 #~ msgid "invalid user"
 #~ msgstr "無効なユーザ"

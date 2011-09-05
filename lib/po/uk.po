@@ -1,15 +1,16 @@
 # Ukrainian messages for gnulib
 # This file is distributed under the same license as the gnulib package.
 # Copyright (C) 2010 Free Software Foundation, Inc.
-# Sergey Poznyakoff <gray@gnu.org>, 2010.
 #
+# Sergey Poznyakoff <gray@gnu.org>, 2010.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
+"Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
-"PO-Revision-Date: 2010-02-23 20:02+0200\n"
-"Last-Translator: Sergey Poznyakoff <gray@gnu.org>\n"
+"POT-Creation-Date: 2011-09-05 11:34+0200\n"
+"PO-Revision-Date: 2011-08-22 09:50+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -17,144 +18,145 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 1.1\n"
 
-#: lib/error.c:181
+#: lib/error.c:185
 msgid "Unknown system error"
 msgstr "Невідома системна помилка"
 
-#: lib/getopt.c:527 lib/getopt.c:543
+#: lib/getopt.c:547 lib/getopt.c:576
 #, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: опція '%s' неоднозначна\n"
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: параметр «%s» є неоднозначним, можливі варіанти:"
 
-#: lib/getopt.c:576 lib/getopt.c:580
+#: lib/getopt.c:624 lib/getopt.c:628
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: опція '--%s' не може мати аргументу\n"
+msgstr "%s: параметр '--%s' не може мати аргументу\n"
 
-#: lib/getopt.c:589 lib/getopt.c:594
+#: lib/getopt.c:637 lib/getopt.c:642
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: опція '%c%s' не може мати аргументу\n"
+msgstr "%s: параметр '%c%s' не може мати аргументу\n"
 
-#: lib/getopt.c:637 lib/getopt.c:656
-#, fuzzy, c-format
+#: lib/getopt.c:685 lib/getopt.c:704
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: опція '%s' вимагає аргументу\n"
+msgstr "%s: для використання параметра «--%s» слід вказати аргумент\n"
 
-#: lib/getopt.c:694 lib/getopt.c:697
+#: lib/getopt.c:742 lib/getopt.c:745
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
-msgstr "%s: невідома опція '--%s'\n"
+msgstr "%s: невідомий параметр '--%s'\n"
 
-#: lib/getopt.c:705 lib/getopt.c:708
+#: lib/getopt.c:753 lib/getopt.c:756
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
-msgstr "%s: невідома опція '%c%s'\n"
+msgstr "%s: невідомий параметр '%c%s'\n"
 
-#: lib/getopt.c:757 lib/getopt.c:760
+#: lib/getopt.c:805 lib/getopt.c:808
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: недійсна опція -- '%c'\n"
+msgstr "%s: Некоректний параметр -- '%c'\n"
 
-#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: опція вимагає аргументу -- '%c'\n"
+msgstr "%s: параметр вимагає аргументу -- '%c'\n"
 
-#: lib/getopt.c:883 lib/getopt.c:899
+#: lib/getopt.c:934 lib/getopt.c:950
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: опція '-W %s' неоднозначна\n"
+msgstr "%s: параметр '-W %s' неоднозначний\n"
 
-#: lib/getopt.c:923 lib/getopt.c:941
+#: lib/getopt.c:974 lib/getopt.c:992
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: опція '-W %s' не може мати аргументу\n"
+msgstr "%s: параметр '-W %s' не може мати аргументу\n"
 
-#: lib/getopt.c:962 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: опція '%s' вимагає аргументу\n"
+msgstr "%s: для використання параметра «-W %s» слід вказати аргумент\n"
 
-#: lib/regcomp.c:132
+#: lib/regcomp.c:131
 msgid "Success"
 msgstr "Успіх"
 
-#: lib/regcomp.c:135
+#: lib/regcomp.c:134
 msgid "No match"
 msgstr "Брак збігів"
 
-#: lib/regcomp.c:138
+#: lib/regcomp.c:137
 msgid "Invalid regular expression"
-msgstr "Недійсний регулярний вираз"
+msgstr "Некоректний формальний вираз"
 
-#: lib/regcomp.c:141
+#: lib/regcomp.c:140
 msgid "Invalid collation character"
-msgstr "Недійсний об'єднувальний символ"
+msgstr "Некоректний об'єднувальний символ"
 
-#: lib/regcomp.c:144
+#: lib/regcomp.c:143
 msgid "Invalid character class name"
-msgstr "Недійсна назва класу символів"
+msgstr "Некоректна назва класу символів"
 
-#: lib/regcomp.c:147
+#: lib/regcomp.c:146
 msgid "Trailing backslash"
-msgstr "Зворотна похила наприкінці виразу"
+msgstr "Зворотна похила риска наприкінці виразу"
 
-#: lib/regcomp.c:150
+#: lib/regcomp.c:149
 msgid "Invalid back reference"
 msgstr "Недійсне зворотнє посилання"
 
-#: lib/regcomp.c:153
+#: lib/regcomp.c:152
 msgid "Unmatched [ or [^"
 msgstr "Незакрита [ або [^"
 
-#: lib/regcomp.c:156
+#: lib/regcomp.c:155
 msgid "Unmatched ( or \\("
 msgstr "Незакрита ( або \\("
 
-#: lib/regcomp.c:159
+#: lib/regcomp.c:158
 msgid "Unmatched \\{"
 msgstr "Незакрита \\{"
 
-#: lib/regcomp.c:162
+#: lib/regcomp.c:161
 msgid "Invalid content of \\{\\}"
-msgstr "Недійсний вміст \\{\\}"
+msgstr "Некоректний вміст \\{\\}"
 
-#: lib/regcomp.c:165
+#: lib/regcomp.c:164
 msgid "Invalid range end"
-msgstr "Недійсний кінець діапазону"
+msgstr "Некоректний кінець діапазону"
 
-#: lib/regcomp.c:168
+#: lib/regcomp.c:167
 msgid "Memory exhausted"
 msgstr "Пам'ять вичерпана"
 
-#: lib/regcomp.c:171
+#: lib/regcomp.c:170
 msgid "Invalid preceding regular expression"
-msgstr "Попередній регулярний вираз не є дійсним"
+msgstr "Некоректний попередній формальний вираз"
 
-#: lib/regcomp.c:174
+#: lib/regcomp.c:173
 msgid "Premature end of regular expression"
-msgstr "Передчасне закінчення регулярного виразу"
+msgstr "Передчасне закінчення формального виразу"
 
-#: lib/regcomp.c:177
+#: lib/regcomp.c:176
 msgid "Regular expression too big"
-msgstr "За великий регулярний вираз"
+msgstr "Завеликий формальний вираз"
 
-#: lib/regcomp.c:180
+#: lib/regcomp.c:179
 msgid "Unmatched ) or \\)"
 msgstr "Неузгоджена ) або \\)"
 
-#: lib/regcomp.c:701
+#: lib/regcomp.c:700
 msgid "No previous regular expression"
-msgstr "Брак попереднього регулярного виразу"
+msgstr "Не вказано попереднього формального виразу"
 
 #: lib/xalloc-die.c:34
 msgid "memory exhausted"
-msgstr "пам'ять вичерпана"
+msgstr "пам'ять вичерпано"
 
 #~ msgid "invalid argument %s for %s"
-#~ msgstr "неправильний аргумент %s для %s"
+#~ msgstr "некоректний аргумент %s для %s"
 
 #~ msgid "ambiguous argument %s for %s"
 #~ msgstr "неоднозначний аргумент %s для %s"
@@ -190,7 +192,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr " чи: "
 
 #~ msgid " [OPTION...]"
-#~ msgstr " [ОПЦІЯ...]"
+#~ msgstr " [ПАРАМЕТР...]"
 
 #~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
 #~ msgstr ""
@@ -224,10 +226,10 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "(ПОМИЛКА ПРОГРАМУВАННЯ) Невідома версія!?"
 
 #~ msgid "%s: Too many arguments\n"
-#~ msgstr "%s: Забагато аргументів\n"
+#~ msgstr "%s: забагато аргументів\n"
 
 #~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
-#~ msgstr "(ПОМИЛКА ПРОГРАМУВАННЯ) Опція мала бути розпізнана!?"
+#~ msgstr "(ПОМИЛКА ПРОГРАМУВАННЯ) Параметр мала бути розпізнана!?"
 
 #~ msgid "program error"
 #~ msgstr "помилка програми"
@@ -255,7 +257,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "помилка запису"
 
 #~ msgid "preserving permissions for %s"
-#~ msgstr "заховання прав доступу до %s"
+#~ msgstr "збереження прав доступу до %s"
 
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "помилка під час відкриття \"%s\" для читання"
@@ -273,7 +275,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "помилка після читання \"%s\""
 
 #~ msgid "fdopen() failed"
-#~ msgstr "збій виконання fdopen()"
+#~ msgstr "помилка fdopen()"
 
 #~ msgid "C# compiler not found, try installing pnet"
 #~ msgstr "не знайдено компілятора C#, спробуйте встановити pnet"
@@ -285,7 +287,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "нащадок %s зазнав невдачі"
 
 #~ msgid "regular empty file"
-#~ msgstr "звичайний пустий файл"
+#~ msgstr "звичайний порожній файл"
 
 #~ msgid "regular file"
 #~ msgstr "звичайний файл"
@@ -339,16 +341,16 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "ai_family не підтримується"
 
 #~ msgid "Memory allocation failure"
-#~ msgstr "Помилка виділення пам'яті"
+#~ msgstr "Помилка розподілу пам'яті"
 
 #~ msgid "No address associated with hostname"
-#~ msgstr "Брак адреси пов'язаної з цією назвою вузла"
+#~ msgstr "З цією назвою вузла не пов’язано жодної адреси"
 
 #~ msgid "Name or service not known"
-#~ msgstr "Невідоме ім'я або сервіс"
+#~ msgstr "Невідоме ім'я або служба"
 
 #~ msgid "Servname not supported for ai_socktype"
-#~ msgstr "Сервіс не підтримується цим ai_socktype"
+#~ msgstr "Підтримки назв служб у ai_socktype не передбачено"
 
 #~ msgid "ai_socktype not supported"
 #~ msgstr "ai_socktype не підтримується"
@@ -357,7 +359,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "Системна помилка"
 
 #~ msgid "Argument buffer too small"
-#~ msgstr "За малий буфер для аргументів"
+#~ msgstr "Замалий буфер для аргументів"
 
 #~ msgid "Processing request in progress"
 #~ msgstr "Виконується обробка запиту"
@@ -421,7 +423,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "Не вдалося відкрити /dev/zero для читання"
 
 #~ msgid "creation of reading thread failed"
-#~ msgstr "не вдалося створити гілку читання"
+#~ msgstr "не вдалося створити потік читання"
 
 #~ msgid "cannot set up nonblocking I/O to %s subprocess"
 #~ msgstr "не вдається встановити неблокуючий ввід-вивід з підпроцесом %s"
@@ -439,13 +441,13 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "підпроцес %s закінчився кодом %d"
 
 #~ msgid "creation of threads failed"
-#~ msgstr "помилка створення гілок"
+#~ msgstr "помилка створення потоків"
 
 #~ msgid "%s subprocess terminated with exit code %d"
 #~ msgstr "підпроцес %s закінчився кодом %d"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "не вдається створити конвеєр"
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "Franc,ois Pinard"
 
 #~ msgid "`"
 #~ msgstr "`"
@@ -484,7 +486,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "Виняток операції з рухомою крапкою"
 
 #~ msgid "Killed"
-#~ msgstr "Знищення"
+#~ msgstr "Знищено"
 
 #~ msgid "Bus error"
 #~ msgstr "Помилка шини"
@@ -496,7 +498,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "Розімкнений конвеєр"
 
 #~ msgid "Alarm clock"
-#~ msgstr "Алярм"
+#~ msgstr "Таймер"
 
 #~ msgid "Terminated"
 #~ msgstr "Закінчено"
@@ -532,10 +534,10 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "Перевищення ліміту розміру файлів"
 
 #~ msgid "Virtual timer expired"
-#~ msgstr "Віртуальний таймер закінчився"
+#~ msgstr "Відлік віртуального таймера завершено"
 
 #~ msgid "Profiling timer expired"
-#~ msgstr "Таймер профілювання закінчився"
+#~ msgstr "Відлік таймера профілювання завершено"
 
 #~ msgid "Window changed"
 #~ msgstr "Вікно змінилося"
@@ -550,7 +552,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "Пастка EMT"
 
 #~ msgid "Bad system call"
-#~ msgstr "Недійсний системний виклик"
+#~ msgstr "Некоректний системний виклик"
 
 #~ msgid "Stack fault"
 #~ msgstr "Збій стосу"
@@ -566,6 +568,9 @@ msgstr "пам'ять вичерпана"
 
 #~ msgid "error writing to a closed pipe or socket"
 #~ msgstr "помилка запису у закритий конвеєр або гніздо"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "не вдається створити конвеєр"
 
 #~ msgid "Real-time signal %d"
 #~ msgstr "Сигнал реального часу %d"
@@ -589,7 +594,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "не вдається передати U+%04X у локальному зборі знаків: %s"
 
 #~ msgid "invalid user"
-#~ msgstr "недійсний користувач"
+#~ msgstr "Некоректний користувач"
 
 #~ msgid "invalid group"
 #~ msgstr "недійсна група"
@@ -620,9 +625,9 @@ msgstr "пам'ять вичерпана"
 #~ "\n"
 #~ "Ліцензія GPLv3+: GNU GPL версії 3 або пізнішої <http://gnu.org/licenses/"
 #~ "gpl.html>\n"
-#~ "Це є вільне програмне забезпечення: ви можете змінювати та "
-#~ "розповсюджувати його.\n"
-#~ "Немає ЖОДНИХ ГАРАНТІЙ, в межах дозволених правом.\n"
+#~ "Це вільне програмне забезпечення: ви можете змінювати та розповсюджувати "
+#~ "його.\n"
+#~ "Не надається ЖОДНИХ ГАРАНТІЙ в межах дозволених законодавством.\n"
 #~ "\n"
 
 #~ msgid "Written by %s.\n"
@@ -740,7 +745,7 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "невдале порівняння рядків"
 
 #~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "Встановить LC_ALL='C' щоб уникнути цієї помилки."
+#~ msgstr "Встановити LC_ALL='C', щоб уникнути цієї помилки."
 
 #~ msgid "The strings compared were %s and %s."
 #~ msgstr "Порівнювалися рядки: \"%s\" та \"%s\"."
@@ -749,10 +754,10 @@ msgstr "пам'ять вичерпана"
 #~ msgstr "неможливо здійснити форматований вивід"
 
 #~ msgid "invalid %s%s argument `%s'"
-#~ msgstr "неправильний аргумент для %s%s: `%s'"
+#~ msgstr "некоректний аргумент для %s%s: `%s'"
 
 #~ msgid "invalid suffix in %s%s argument `%s'"
-#~ msgstr "неправильний суфікс в аргументі для %s%s: `%s'"
+#~ msgstr "некоректний суфікс в аргументі для %s%s: `%s'"
 
 #~ msgid "%s%s argument `%s' too large"
-#~ msgstr "за великий аргумент для %s%s: `%s'"
+#~ msgstr "завеликий аргумент для %s%s: `%s'"

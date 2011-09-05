@@ -1,195 +1,195 @@
 # Polish messages for gnulib
-# Copyright (C) 2005, 2007, 2009, 2010 Free Software Foundation, Inc.
+# Copyright (C) 2005, 2007, 2009, 2010, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
 #
-# Jakub Bogusz <qboosh@pld-linux.org>, 2007-2010.
+# Jakub Bogusz <qboosh@pld-linux.org>, 2007-2011.
 # based on translation for GNU Mailutils by:
 # Sergey Poznyakoff <gray@gnu.org>, 2003,2004,2005.
 # corrections: Wojciech Polak <polak@gnu.org>, 2003 
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
+"Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
-"PO-Revision-Date: 2010-02-26 18:02+0100\n"
+"POT-Creation-Date: 2011-09-05 11:34+0200\n"
+"PO-Revision-Date: 2011-08-22 12:41+0200\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 
-#: lib/error.c:181
+#: lib/error.c:185
 msgid "Unknown system error"
-msgstr "Nieznany b³±d systemowy"
+msgstr "Nieznany bÅ‚Ä…d systemowy"
 
-#: lib/getopt.c:527 lib/getopt.c:543
+#: lib/getopt.c:547 lib/getopt.c:576
 #, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: opcja '%s' jest niejednoznaczna\n"
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: opcja '%s' jest niejednoznaczna; moÅ¼liwoÅ›ci:"
 
-#: lib/getopt.c:576 lib/getopt.c:580
+#: lib/getopt.c:624 lib/getopt.c:628
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: opcja '--%s' nie mo¿e mieæ argumentów\n"
+msgstr "%s: opcja '--%s' nie moÅ¼e mieÄ‡ argumentÃ³w\n"
 
-#: lib/getopt.c:589 lib/getopt.c:594
+#: lib/getopt.c:637 lib/getopt.c:642
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: opcja '%c%s' nie mo¿e mieæ argumentów\n"
+msgstr "%s: opcja '%c%s' nie moÅ¼e mieÄ‡ argumentÃ³w\n"
 
-#: lib/getopt.c:637 lib/getopt.c:656
-#, fuzzy, c-format
+#: lib/getopt.c:685 lib/getopt.c:704
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: opcja '%s' musi mieæ argument\n"
+msgstr "%s: opcja '--%s' musi mieÄ‡ argument\n"
 
-#: lib/getopt.c:694 lib/getopt.c:697
+#: lib/getopt.c:742 lib/getopt.c:745
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: nieznana opcja '--%s'\n"
 
-#: lib/getopt.c:705 lib/getopt.c:708
+#: lib/getopt.c:753 lib/getopt.c:756
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: nieznana opcja '%c%s'\n"
 
-#: lib/getopt.c:757 lib/getopt.c:760
+#: lib/getopt.c:805 lib/getopt.c:808
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: b³êdna opcja -- '%c'\n"
+msgstr "%s: bÅ‚Ä™dna opcja -- '%c'\n"
 
-#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: opcja musi mieæ argument -- '%c'\n"
+msgstr "%s: opcja musi mieÄ‡ argument -- '%c'\n"
 
-#: lib/getopt.c:883 lib/getopt.c:899
+#: lib/getopt.c:934 lib/getopt.c:950
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: opcja '-W %s' jest niejednoznaczna\n"
 
-#: lib/getopt.c:923 lib/getopt.c:941
+#: lib/getopt.c:974 lib/getopt.c:992
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: opcja '-W %s' nie mo¿e mieæ argumentów\n"
+msgstr "%s: opcja '-W %s' nie moÅ¼e mieÄ‡ argumentÃ³w\n"
 
-#: lib/getopt.c:962 lib/getopt.c:980
-#, fuzzy, c-format
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: opcja '%s' musi mieæ argument\n"
+msgstr "%s: opcja '-W %s' musi mieÄ‡ argument\n"
 
-#: lib/regcomp.c:132
+#: lib/regcomp.c:131
 msgid "Success"
 msgstr "Sukces"
 
-#: lib/regcomp.c:135
+#: lib/regcomp.c:134
 msgid "No match"
 msgstr "Nic nie pasuje"
 
-#: lib/regcomp.c:138
+#: lib/regcomp.c:137
 msgid "Invalid regular expression"
-msgstr "B³êdne wyra¿enie regularne"
+msgstr "BÅ‚Ä™dne wyraÅ¼enie regularne"
 
-#: lib/regcomp.c:141
+#: lib/regcomp.c:140
 msgid "Invalid collation character"
-msgstr "B³êdny znak sortowany"
+msgstr "BÅ‚Ä™dny znak sortowany"
 
-#: lib/regcomp.c:144
+#: lib/regcomp.c:143
 msgid "Invalid character class name"
-msgstr "B³êdna nazwa klasy znaków"
+msgstr "BÅ‚Ä™dna nazwa klasy znakÃ³w"
 
-#: lib/regcomp.c:147
+#: lib/regcomp.c:146
 msgid "Trailing backslash"
-msgstr "Koñcz±cy znak `\\'"
+msgstr "KoÅ„czÄ…cy znak `\\'"
 
-#: lib/regcomp.c:150
+#: lib/regcomp.c:149
 msgid "Invalid back reference"
-msgstr "B³êdne odniesienie wstecz"
+msgstr "BÅ‚Ä™dne odniesienie wstecz"
 
-#: lib/regcomp.c:153
+#: lib/regcomp.c:152
 msgid "Unmatched [ or [^"
 msgstr "Niesparowane [ lub [^"
 
-#: lib/regcomp.c:156
+#: lib/regcomp.c:155
 msgid "Unmatched ( or \\("
 msgstr "Niesparowane ( lub \\("
 
-#: lib/regcomp.c:159
+#: lib/regcomp.c:158
 msgid "Unmatched \\{"
 msgstr "Niesparowane \\{"
 
-#: lib/regcomp.c:162
+#: lib/regcomp.c:161
 msgid "Invalid content of \\{\\}"
-msgstr "B³êdna zawarto¶æ \\{\\}"
+msgstr "BÅ‚Ä™dna zawartoÅ›Ä‡ \\{\\}"
 
-#: lib/regcomp.c:165
+#: lib/regcomp.c:164
 msgid "Invalid range end"
-msgstr "B³êdny koniec zakresu"
+msgstr "BÅ‚Ä™dny koniec zakresu"
 
-#: lib/regcomp.c:168
+#: lib/regcomp.c:167
 msgid "Memory exhausted"
-msgstr "Pamiêæ wyczerpana"
+msgstr "PamiÄ™Ä‡ wyczerpana"
 
-#: lib/regcomp.c:171
+#: lib/regcomp.c:170
 msgid "Invalid preceding regular expression"
-msgstr "B³êdne poprzedzaj±ce wyra¿enie regularne"
+msgstr "BÅ‚Ä™dne poprzedzajÄ…ce wyraÅ¼enie regularne"
 
-#: lib/regcomp.c:174
+#: lib/regcomp.c:173
 msgid "Premature end of regular expression"
-msgstr "Przedwczesny koniec wyra¿enia regularnego"
+msgstr "Przedwczesny koniec wyraÅ¼enia regularnego"
 
-#: lib/regcomp.c:177
+#: lib/regcomp.c:176
 msgid "Regular expression too big"
-msgstr "Wyra¿enie regularne zbyt du¿e"
+msgstr "WyraÅ¼enie regularne zbyt duÅ¼e"
 
-#: lib/regcomp.c:180
+#: lib/regcomp.c:179
 msgid "Unmatched ) or \\)"
 msgstr "Niesparowane ) lub \\)"
 
-#: lib/regcomp.c:701
+#: lib/regcomp.c:700
 msgid "No previous regular expression"
-msgstr "Brak poprzedniego wyra¿enia regularnego"
+msgstr "Brak poprzedniego wyraÅ¼enia regularnego"
 
 #: lib/xalloc-die.c:34
 msgid "memory exhausted"
-msgstr "pamiêæ wyczerpana"
+msgstr "pamiÄ™Ä‡ wyczerpana"
 
 #~ msgid "invalid argument %s for %s"
-#~ msgstr "b³êdny argument %s opcji %s"
+#~ msgstr "bÅ‚Ä™dny argument %s opcji %s"
 
 #~ msgid "ambiguous argument %s for %s"
 #~ msgstr "niejednoznaczny argument %s opcji %s"
 
 #~ msgid "Valid arguments are:"
-#~ msgstr "Prawid³owe argumenty to:"
+#~ msgstr "PrawidÅ‚owe argumenty to:"
 
 #~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
-#~ msgstr "ARGP_HELP_FMT: warto¶æ %s jest mniejsza lub równa %s"
+#~ msgstr "ARGP_HELP_FMT: wartoÅ›Ä‡ %s jest mniejsza lub rÃ³wna %s"
 
 #~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
-#~ msgstr "%.*s: Parametr ARGP_HELP_FMT wymaga podania warto¶ci"
+#~ msgstr "%.*s: Parametr ARGP_HELP_FMT wymaga podania wartoÅ›ci"
 
 #~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
-#~ msgstr "%.*s: Parametr ARGP_HELP_FMT musi byæ dodatni"
+#~ msgstr "%.*s: Parametr ARGP_HELP_FMT musi byÄ‡ dodatni"
 
 #~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
 #~ msgstr "%.*s: Nieznany parametr ARGP_HELP_FMT"
 
 #~ msgid "Garbage in ARGP_HELP_FMT: %s"
-#~ msgstr "B³êdne dane w ARGP_HELP_FMT: %s"
+#~ msgstr "BÅ‚Ä™dne dane w ARGP_HELP_FMT: %s"
 
 #~ msgid ""
 #~ "Mandatory or optional arguments to long options are also mandatory or "
 #~ "optional for any corresponding short options."
 #~ msgstr ""
-#~ "Argumenty obowi±zkowe lub opcjonalne dla d³ugich opcji s± równie¿ "
-#~ "obowi±zkowe lub opcjonalne dla odpowiednich krótkich opcji."
+#~ "Argumenty obowiÄ…zkowe lub opcjonalne dla dÅ‚ugich opcji sÄ… rÃ³wnieÅ¼ "
+#~ "obowiÄ…zkowe lub opcjonalne dla odpowiednich krÃ³tkich opcji."
 
 #~ msgid "Usage:"
-#~ msgstr "Sk³adnia:"
+#~ msgstr "SkÅ‚adnia:"
 
 #~ msgid "  or: "
 #~ msgstr "    lub: "
@@ -199,103 +199,103 @@ msgstr "pamiêæ wyczerpana"
 
 #~ msgid "Try `%s --help' or `%s --usage' for more information.\n"
 #~ msgstr ""
-#~ "Polecenie `%s --help' lub `%s --usage' pozwoli uzyskaæ wiêcej "
+#~ "Polecenie `%s --help' lub `%s --usage' pozwoli uzyskaÄ‡ wiÄ™cej "
 #~ "informacji.\n"
 
 #~ msgid "Report bugs to %s.\n"
-#~ msgstr "Prosimy zg³aszaæ b³êdy na adres %s.\n"
+#~ msgstr "Prosimy zgÅ‚aszaÄ‡ bÅ‚Ä™dy na adres %s.\n"
 
 #~ msgid "give this help list"
-#~ msgstr "wy¶wietlenie tego tekstu pomocy"
+#~ msgstr "wyÅ›wietlenie tego tekstu pomocy"
 
 #~ msgid "give a short usage message"
-#~ msgstr "wy¶wietlenie krótkiej informacji o sk³adni polecenia"
+#~ msgstr "wyÅ›wietlenie krÃ³tkiej informacji o skÅ‚adni polecenia"
 
 #~ msgid "NAME"
 #~ msgstr "NAZWA"
 
 #~ msgid "set the program name"
-#~ msgstr "okre¶lenie nazwy programu"
+#~ msgstr "okreÅ›lenie nazwy programu"
 
 #~ msgid "SECS"
 #~ msgstr "SEK"
 
 #~ msgid "hang for SECS seconds (default 3600)"
-#~ msgstr "zatrzymanie na SEK sekund (domy¶lnie 3600)"
+#~ msgstr "zatrzymanie na SEK sekund (domyÅ›lnie 3600)"
 
 #~ msgid "print program version"
-#~ msgstr "wy¶wietlenie wersji programu"
+#~ msgstr "wyÅ›wietlenie wersji programu"
 
 #~ msgid "(PROGRAM ERROR) No version known!?"
-#~ msgstr "(B£¡D PROGRAMU) Nieznana wersja!?"
+#~ msgstr "(BÅÄ„D PROGRAMU) Nieznana wersja!?"
 
 #~ msgid "%s: Too many arguments\n"
-#~ msgstr "%s: Za du¿o argumentów\n"
+#~ msgstr "%s: Za duÅ¼o argumentÃ³w\n"
 
 #~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
-#~ msgstr "(B£¡D PROGRAMU) Opcja powinna zostaæ rozpoznana!?"
+#~ msgstr "(BÅÄ„D PROGRAMU) Opcja powinna zostaÄ‡ rozpoznana!?"
 
 #~ msgid "program error"
-#~ msgstr "b³±d programu"
+#~ msgstr "bÅ‚Ä…d programu"
 
 #~ msgid "stack overflow"
-#~ msgstr "przepe³nienie stosu"
+#~ msgstr "przepeÅ‚nienie stosu"
 
 #~ msgid "cannot find a temporary directory, try setting $TMPDIR"
 #~ msgstr ""
-#~ "nie mo¿na odnale¼æ katalogu tymczasowego, mo¿na spróbowaæ ustawiæ $TMPDIR"
+#~ "nie moÅ¼na odnaleÅºÄ‡ katalogu tymczasowego, moÅ¼na sprÃ³bowaÄ‡ ustawiÄ‡ $TMPDIR"
 
 #~ msgid "cannot create a temporary directory using template \"%s\""
-#~ msgstr "nie mo¿na utworzyæ katalogu typczasowego z u¿yciem szablonu \"%s\""
+#~ msgstr "nie moÅ¼na utworzyÄ‡ katalogu typczasowego z uÅ¼yciem szablonu \"%s\""
 
 #~ msgid "cannot remove temporary file %s"
-#~ msgstr "nie mo¿na usun±æ pliku tymczasowego %s"
+#~ msgstr "nie moÅ¼na usunÄ…Ä‡ pliku tymczasowego %s"
 
 #~ msgid "cannot remove temporary directory %s"
-#~ msgstr "nie mo¿na usun±æ katalogu tymczasowego %s"
+#~ msgstr "nie moÅ¼na usunÄ…Ä‡ katalogu tymczasowego %s"
 
 #~ msgid "error closing file"
-#~ msgstr "b³±d podczas zamykania pliku"
+#~ msgstr "bÅ‚Ä…d podczas zamykania pliku"
 
 #~ msgid "write error"
-#~ msgstr "b³±d zapisu"
+#~ msgstr "bÅ‚Ä…d zapisu"
 
 #~ msgid "preserving permissions for %s"
-#~ msgstr "zachowywanie uprawnieñ do %s"
+#~ msgstr "zachowywanie uprawnieÅ„ do %s"
 
 #~ msgid "error while opening \"%s\" for reading"
-#~ msgstr "b³±d podczas otwierania \"%s\" do odczytu"
+#~ msgstr "bÅ‚Ä…d podczas otwierania \"%s\" do odczytu"
 
 #~ msgid "cannot open backup file \"%s\" for writing"
-#~ msgstr "nie mo¿na otworzyæ pliku zapasowego \"%s\" do zapisu"
+#~ msgstr "nie moÅ¼na otworzyÄ‡ pliku zapasowego \"%s\" do zapisu"
 
 #~ msgid "error reading \"%s\""
-#~ msgstr "b³±d odczytu \"%s\""
+#~ msgstr "bÅ‚Ä…d odczytu \"%s\""
 
 #~ msgid "error writing \"%s\""
-#~ msgstr "b³±d zapisu \"%s\""
+#~ msgstr "bÅ‚Ä…d zapisu \"%s\""
 
 #~ msgid "error after reading \"%s\""
-#~ msgstr "b³±d po odczycie \"%s\""
+#~ msgstr "bÅ‚Ä…d po odczycie \"%s\""
 
 #~ msgid "fdopen() failed"
-#~ msgstr "fdopen() nie powiod³o siê"
+#~ msgstr "fdopen() nie powiodÅ‚o siÄ™"
 
 #~ msgid "C# compiler not found, try installing pnet"
-#~ msgstr "Nie znaleziono kompilatora C#, proszê spróbowaæ zainstalowaæ pnet"
+#~ msgstr "Nie znaleziono kompilatora C#, proszÄ™ sprÃ³bowaÄ‡ zainstalowaÄ‡ pnet"
 
 #~ msgid "C# virtual machine not found, try installing pnet"
 #~ msgstr ""
-#~ "Nie znaleziono maszyny wirtualnej C#, proszê spróbowaæ zainstalowaæ pnet"
+#~ "Nie znaleziono maszyny wirtualnej C#, proszÄ™ sprÃ³bowaÄ‡ zainstalowaÄ‡ pnet"
 
 #~ msgid "%s subprocess failed"
-#~ msgstr "podproces %s zawiód³"
+#~ msgstr "podproces %s zawiÃ³dÅ‚"
 
 #~ msgid "regular empty file"
-#~ msgstr "pusty zwyk³y plik"
+#~ msgstr "pusty zwykÅ‚y plik"
 
 #~ msgid "regular file"
-#~ msgstr "zwyk³y plik"
+#~ msgstr "zwykÅ‚y plik"
 
 #~ msgid "directory"
 #~ msgstr "katalog"
@@ -310,149 +310,149 @@ msgstr "pamiêæ wyczerpana"
 #~ msgstr "potok"
 
 #~ msgid "symbolic link"
-#~ msgstr "dowi±zanie symboliczne"
+#~ msgstr "dowiÄ…zanie symboliczne"
 
 #~ msgid "socket"
 #~ msgstr "gniazdo"
 
 #~ msgid "message queue"
-#~ msgstr "kolejka komunikatów"
+#~ msgstr "kolejka komunikatÃ³w"
 
 #~ msgid "semaphore"
 #~ msgstr "semafor"
 
 #~ msgid "shared memory object"
-#~ msgstr "obiekt w pamiêci wspó³dzielonej"
+#~ msgstr "obiekt w pamiÄ™ci wspÃ³Å‚dzielonej"
 
 #~ msgid "typed memory object"
-#~ msgstr "obiekt z typem w pamiêci"
+#~ msgstr "obiekt z typem w pamiÄ™ci"
 
 #~ msgid "weird file"
 #~ msgstr "dziwny plik"
 
 #~ msgid "Address family for hostname not supported"
-#~ msgstr "Rodzina adresów dla podanej nazwy hosta nie jest obs³ugiwana"
+#~ msgstr "Rodzina adresÃ³w dla podanej nazwy hosta nie jest obsÅ‚ugiwana"
 
 #~ msgid "Temporary failure in name resolution"
-#~ msgstr "Tymczasowy b³±d rozwi±zywania nazw"
+#~ msgstr "Tymczasowy bÅ‚Ä…d rozwiÄ…zywania nazw"
 
 #~ msgid "Bad value for ai_flags"
-#~ msgstr "B³êdna warto¶æ ai_flags"
+#~ msgstr "BÅ‚Ä™dna wartoÅ›Ä‡ ai_flags"
 
 #~ msgid "Non-recoverable failure in name resolution"
-#~ msgstr "Nienaprawialny b³±d w rozwi±zywaniu nazw"
+#~ msgstr "Nienaprawialny bÅ‚Ä…d w rozwiÄ…zywaniu nazw"
 
 #~ msgid "ai_family not supported"
-#~ msgstr "ai_family zawiera nie obs³ugiwan± rodzinê protoko³ów"
+#~ msgstr "ai_family zawiera nie obsÅ‚ugiwanÄ… rodzinÄ™ protokoÅ‚Ã³w"
 
 #~ msgid "Memory allocation failure"
-#~ msgstr "B³±d przydzielania pamiêci"
+#~ msgstr "BÅ‚Ä…d przydzielania pamiÄ™ci"
 
 #~ msgid "No address associated with hostname"
-#~ msgstr "Brak adresu zwi±zanego z nazw± hosta"
+#~ msgstr "Brak adresu zwiÄ…zanego z nazwÄ… hosta"
 
 #~ msgid "Name or service not known"
-#~ msgstr "Nieznana nazwa lub us³uga"
+#~ msgstr "Nieznana nazwa lub usÅ‚uga"
 
 #~ msgid "Servname not supported for ai_socktype"
-#~ msgstr "Us³uga nie obs³ugiwana dla danego ai_socktype"
+#~ msgstr "UsÅ‚uga nie obsÅ‚ugiwana dla danego ai_socktype"
 
 #~ msgid "ai_socktype not supported"
-#~ msgstr "ai_socktype zawiera nie obs³ugiwany typ gniazda"
+#~ msgstr "ai_socktype zawiera nie obsÅ‚ugiwany typ gniazda"
 
 #~ msgid "System error"
-#~ msgstr "B³±d systemowy"
+#~ msgstr "BÅ‚Ä…d systemowy"
 
 #~ msgid "Argument buffer too small"
-#~ msgstr "Bufor argumentu zbyt ma³y"
+#~ msgstr "Bufor argumentu zbyt maÅ‚y"
 
 #~ msgid "Processing request in progress"
-#~ msgstr "Przetwarzanie ¿±dania jest w toku"
+#~ msgstr "Przetwarzanie Å¼Ä…dania jest w toku"
 
 #~ msgid "Request canceled"
-#~ msgstr "¯±danie anulowane"
+#~ msgstr "Å»Ä…danie anulowane"
 
 #~ msgid "Request not canceled"
-#~ msgstr "¯±danie nie anulowane"
+#~ msgstr "Å»Ä…danie nie anulowane"
 
 #~ msgid "All requests done"
-#~ msgstr "Wszystkie ¿±dania wykonane"
+#~ msgstr "Wszystkie Å¼Ä…dania wykonane"
 
 #~ msgid "Interrupted by a signal"
-#~ msgstr "Przerwane przez sygna³"
+#~ msgstr "Przerwane przez sygnaÅ‚"
 
 #~ msgid "Parameter string not correctly encoded"
-#~ msgstr "£añcuch parametru niepoprawnie zakodowany"
+#~ msgstr "ÅaÅ„cuch parametru niepoprawnie zakodowany"
 
 #~ msgid "Unknown error"
-#~ msgstr "Nieznany b³±d"
+#~ msgstr "Nieznany bÅ‚Ä…d"
 
 #~ msgid "invalid source_version argument to compile_java_class"
-#~ msgstr "b³êdny argument source_version dla compile_java_class"
+#~ msgstr "bÅ‚Ä™dny argument source_version dla compile_java_class"
 
 #~ msgid "invalid target_version argument to compile_java_class"
-#~ msgstr "b³êdny argument target_version dla compile_java_class"
+#~ msgstr "bÅ‚Ä™dny argument target_version dla compile_java_class"
 
 #~ msgid "failed to create \"%s\""
-#~ msgstr "nie uda³o siê utworzyæ \"%s\""
+#~ msgstr "nie udaÅ‚o siÄ™ utworzyÄ‡ \"%s\""
 
 #~ msgid "error while writing \"%s\" file"
-#~ msgstr "b³±d podczas zapisu pliku \"%s\""
+#~ msgstr "bÅ‚Ä…d podczas zapisu pliku \"%s\""
 
 #~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
 #~ msgstr ""
-#~ "Nie znaleziono kompilatora Javy, proszê spróbowaæ zainstalowaæ gcj lub "
-#~ "ustawiæ $JAVAC"
+#~ "Nie znaleziono kompilatora Javy, proszÄ™ sprÃ³bowaÄ‡ zainstalowaÄ‡ gcj lub "
+#~ "ustawiÄ‡ $JAVAC"
 
 #~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
 #~ msgstr ""
-#~ "Nie znaleziono maszyny wirtualnej Javy, proszê spróbowaæ zainstalowaæ gij "
-#~ "lub ustawiæ $JAVA"
+#~ "Nie znaleziono maszyny wirtualnej Javy, proszÄ™ sprÃ³bowaÄ‡ zainstalowaÄ‡ gij "
+#~ "lub ustawiÄ‡ $JAVA"
 
 #~ msgid "%s subprocess I/O error"
-#~ msgstr "b³±d we/wy podprocesu %s"
+#~ msgstr "bÅ‚Ä…d we/wy podprocesu %s"
 
 #~ msgid "cannot change permissions of %s"
-#~ msgstr "nie mo¿na zmieniæ uprawnieñ do %s"
+#~ msgstr "nie moÅ¼na zmieniÄ‡ uprawnieÅ„ do %s"
 
 #~ msgid "cannot create directory %s"
-#~ msgstr "nie mo¿na utworzyæ katalogu %s"
+#~ msgstr "nie moÅ¼na utworzyÄ‡ katalogu %s"
 
 #~ msgid "unable to record current working directory"
-#~ msgstr "nie uda³o siê zapisaæ bie¿±cego katalogu roboczego"
+#~ msgstr "nie udaÅ‚o siÄ™ zapisaÄ‡ bieÅ¼Ä…cego katalogu roboczego"
 
 #~ msgid "failed to return to initial working directory"
-#~ msgstr "nie uda³o siê wróciæ do pocz±tkowego katalogu roboczego"
+#~ msgstr "nie udaÅ‚o siÄ™ wrÃ³ciÄ‡ do poczÄ…tkowego katalogu roboczego"
 
 #~ msgid "Failed to open /dev/zero for read"
-#~ msgstr "Nie uda³o siê otworzyæ /dev/zero do odczytu"
+#~ msgstr "Nie udaÅ‚o siÄ™ otworzyÄ‡ /dev/zero do odczytu"
 
 #~ msgid "creation of reading thread failed"
-#~ msgstr "tworzenie w±tku czytaj±cego nie powiod³o sie"
+#~ msgstr "tworzenie wÄ…tku czytajÄ…cego nie powiodÅ‚o sie"
 
 #~ msgid "cannot set up nonblocking I/O to %s subprocess"
-#~ msgstr "nie mo¿na ustawiæ nieblokuj±cego we/wy dla podprocesu %s"
+#~ msgstr "nie moÅ¼na ustawiÄ‡ nieblokujÄ…cego we/wy dla podprocesu %s"
 
 #~ msgid "communication with %s subprocess failed"
-#~ msgstr "komunikacja z podprocesem %s nie powiod³a siê"
+#~ msgstr "komunikacja z podprocesem %s nie powiodÅ‚a siÄ™"
 
 #~ msgid "write to %s subprocess failed"
-#~ msgstr "zapis do podprocesu %s nie powiód³ siê"
+#~ msgstr "zapis do podprocesu %s nie powiÃ³dÅ‚ siÄ™"
 
 #~ msgid "read from %s subprocess failed"
-#~ msgstr "odczyt z podprocesu %s nie powiód³ siê"
+#~ msgstr "odczyt z podprocesu %s nie powiÃ³dÅ‚ siÄ™"
 
 #~ msgid "subprocess %s terminated with exit code %d"
-#~ msgstr "podproces %s zakoñczy³ siê z kodem wyj¶cia %d"
+#~ msgstr "podproces %s zakoÅ„czyÅ‚ siÄ™ z kodem wyjÅ›cia %d"
 
 #~ msgid "creation of threads failed"
-#~ msgstr "tworzenie w±tków nie powiod³o siê"
+#~ msgstr "tworzenie wÄ…tkÃ³w nie powiodÅ‚o siÄ™"
 
 #~ msgid "%s subprocess terminated with exit code %d"
-#~ msgstr "podproces %s zakoñczy³ siê kodem wyj¶cia %d"
+#~ msgstr "podproces %s zakoÅ„czyÅ‚ siÄ™ kodem wyjÅ›cia %d"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "nie mo¿na utworzyæ potoku"
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "FranÃ§ois Pinard"
 
 #~ msgid "`"
 #~ msgstr "`"
@@ -467,37 +467,37 @@ msgstr "pamiêæ wyczerpana"
 #~ msgstr "^[nN]"
 
 #~ msgid "setting permissions for %s"
-#~ msgstr "ustawianie uprawnieñ %s"
+#~ msgstr "ustawianie uprawnieÅ„ %s"
 
 #~ msgid "Hangup"
-#~ msgstr "Roz³±czenie"
+#~ msgstr "RozÅ‚Ä…czenie"
 
 #~ msgid "Interrupt"
 #~ msgstr "Przerwanie"
 
 #~ msgid "Quit"
-#~ msgstr "Wyj¶cie"
+#~ msgstr "WyjÅ›cie"
 
 #~ msgid "Illegal instruction"
 #~ msgstr "Niedozwolona instrukcja"
 
 #~ msgid "Trace/breakpoint trap"
-#~ msgstr "Pu³apka debuggera/breakpoint"
+#~ msgstr "PuÅ‚apka debuggera/breakpoint"
 
 #~ msgid "Aborted"
 #~ msgstr "Przerwano"
 
 #~ msgid "Floating point exception"
-#~ msgstr "B³±d w obliczeniach zmiennoprzecinkowych"
+#~ msgstr "BÅ‚Ä…d w obliczeniach zmiennoprzecinkowych"
 
 #~ msgid "Killed"
 #~ msgstr "Unicestwiono"
 
 #~ msgid "Bus error"
-#~ msgstr "B³±d szyny"
+#~ msgstr "BÅ‚Ä…d szyny"
 
 #~ msgid "Segmentation fault"
-#~ msgstr "Naruszenie ochrony pamiêci"
+#~ msgstr "Naruszenie ochrony pamiÄ™ci"
 
 #~ msgid "Broken pipe"
 #~ msgstr "Przerwany potok"
@@ -506,13 +506,13 @@ msgstr "pamiêæ wyczerpana"
 #~ msgstr "Budzik"
 
 #~ msgid "Terminated"
-#~ msgstr "Zakoñczono"
+#~ msgstr "ZakoÅ„czono"
 
 #~ msgid "Urgent I/O condition"
-#~ msgstr "Nag³y stan we/wy"
+#~ msgstr "NagÅ‚y stan we/wy"
 
 #~ msgid "Stopped (signal)"
-#~ msgstr "Zatrzymano (sygna³)"
+#~ msgstr "Zatrzymano (sygnaÅ‚)"
 
 #~ msgid "Stopped"
 #~ msgstr "Zatrzymano"
@@ -521,16 +521,16 @@ msgstr "pamiêæ wyczerpana"
 #~ msgstr "Kontynuacja"
 
 #~ msgid "Child exited"
-#~ msgstr "Zakoñczenie procesu potomnego"
+#~ msgstr "ZakoÅ„czenie procesu potomnego"
 
 #~ msgid "Stopped (tty input)"
-#~ msgstr "Zatrzymano (wej¶cie z tty)"
+#~ msgstr "Zatrzymano (wejÅ›cie z tty)"
 
 #~ msgid "Stopped (tty output)"
-#~ msgstr "Zatrzymano (wyj¶cie na tty)"
+#~ msgstr "Zatrzymano (wyjÅ›cie na tty)"
 
 #~ msgid "I/O possible"
-#~ msgstr "Mo¿liwa operacja we/wy"
+#~ msgstr "MoÅ¼liwa operacja we/wy"
 
 #~ msgid "CPU time limit exceeded"
 #~ msgstr "Przekroczony limit czasu procesora"
@@ -539,79 +539,82 @@ msgstr "pamiêæ wyczerpana"
 #~ msgstr "Przekroczony limit rozmiaru pliku"
 
 #~ msgid "Virtual timer expired"
-#~ msgstr "Up³yn±³ czas stopera wirtualnego"
+#~ msgstr "UpÅ‚ynÄ…Å‚ czas stopera wirtualnego"
 
 #~ msgid "Profiling timer expired"
-#~ msgstr "Up³yn±³ czas stopera profiluj±cego"
+#~ msgstr "UpÅ‚ynÄ…Å‚ czas stopera profilujÄ…cego"
 
 #~ msgid "Window changed"
 #~ msgstr "Okno zmienione"
 
 #~ msgid "User defined signal 1"
-#~ msgstr "Sygna³ u¿ytkownika 1"
+#~ msgstr "SygnaÅ‚ uÅ¼ytkownika 1"
 
 #~ msgid "User defined signal 2"
-#~ msgstr "Sygna³ u¿ytkownika 2"
+#~ msgstr "SygnaÅ‚ uÅ¼ytkownika 2"
 
 #~ msgid "EMT trap"
-#~ msgstr "Pu³apka EMT"
+#~ msgstr "PuÅ‚apka EMT"
 
 #~ msgid "Bad system call"
-#~ msgstr "B³êdne wywo³anie systemowe"
+#~ msgstr "BÅ‚Ä™dne wywoÅ‚anie systemowe"
 
 #~ msgid "Stack fault"
-#~ msgstr "B³±d stosu"
+#~ msgstr "BÅ‚Ä…d stosu"
 
 #~ msgid "Information request"
-#~ msgstr "¯±danie informacji"
+#~ msgstr "Å»Ä…danie informacji"
 
 #~ msgid "Power failure"
 #~ msgstr "Awaria zasilania"
 
 #~ msgid "Resource lost"
-#~ msgstr "Utrata zasobów"
+#~ msgstr "Utrata zasobÃ³w"
 
 #~ msgid "error writing to a closed pipe or socket"
-#~ msgstr "b³±d zapisu do zamkniêtego potoku lub gniazda"
+#~ msgstr "bÅ‚Ä…d zapisu do zamkniÄ™tego potoku lub gniazda"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "nie moÅ¼na utworzyÄ‡ potoku"
 
 #~ msgid "Real-time signal %d"
-#~ msgstr "Sygna³ czasu rzeczywistego %d"
+#~ msgstr "SygnaÅ‚ czasu rzeczywistego %d"
 
 #~ msgid "Unknown signal %d"
-#~ msgstr "Nieznany sygna³ %d"
+#~ msgstr "Nieznany sygnaÅ‚ %d"
 
 #~ msgid "iconv function not usable"
-#~ msgstr "nie mo¿na u¿yæ funkcji iconv"
+#~ msgstr "nie moÅ¼na uÅ¼yÄ‡ funkcji iconv"
 
 #~ msgid "iconv function not available"
-#~ msgstr "funkcja iconv nie jest dostêpna"
+#~ msgstr "funkcja iconv nie jest dostÄ™pna"
 
 #~ msgid "character out of range"
 #~ msgstr "znak spoza zakresu"
 
 #~ msgid "cannot convert U+%04X to local character set"
-#~ msgstr "nie mo¿na przekszta³ciæ U+%04X do lokalnego zestawu znaków"
+#~ msgstr "nie moÅ¼na przeksztaÅ‚ciÄ‡ U+%04X do lokalnego zestawu znakÃ³w"
 
 #~ msgid "cannot convert U+%04X to local character set: %s"
-#~ msgstr "nie mo¿na przekszta³ciæ U+%04X do lokalnego zestawu znaków: %s"
+#~ msgstr "nie moÅ¼na przeksztaÅ‚ciÄ‡ U+%04X do lokalnego zestawu znakÃ³w: %s"
 
 #~ msgid "invalid user"
-#~ msgstr "b³êdny u¿ytkownik"
+#~ msgstr "bÅ‚Ä™dny uÅ¼ytkownik"
 
 #~ msgid "invalid group"
-#~ msgstr "b³êdna grupa"
+#~ msgstr "bÅ‚Ä™dna grupa"
 
 #~ msgid "invalid spec"
-#~ msgstr "b³êdna specyfikacja"
+#~ msgstr "bÅ‚Ä™dna specyfikacja"
 
 #~ msgid "unable to display error message"
-#~ msgstr "nie mo¿na wy¶wietliæ komunikatu b³êdu"
+#~ msgstr "nie moÅ¼na wyÅ›wietliÄ‡ komunikatu bÅ‚Ä™du"
 
 #~ msgid "Packaged by %s (%s)\n"
-#~ msgstr "Pakietuj±cy: %s (%s)\n"
+#~ msgstr "PakietujÄ…cy: %s (%s)\n"
 
 #~ msgid "Packaged by %s\n"
-#~ msgstr "Pakietuj±cy: %s\n"
+#~ msgstr "PakietujÄ…cy: %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "(C)"
@@ -625,11 +628,11 @@ msgstr "pamiêæ wyczerpana"
 #~ "\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Licencja GPLv3+: GNU GPL wersja 3 lub pó¼niejsza:\n"
+#~ "Licencja GPLv3+: GNU GPL wersja 3 lub pÃ³Åºniejsza:\n"
 #~ "<http://gnu.org/licenses/gpl.html>\n"
-#~ "To jest oprogramowanie wolnodostêpne: mo¿na je modyfikowaæ i "
-#~ "rozpowszechniaæ.\n"
-#~ "Nie ma ¯ADNEJ GWARANCJI w zakresie dopuszczalnym przez prawo.\n"
+#~ "To jest oprogramowanie wolnodostÄ™pne: moÅ¼na je modyfikowaÄ‡ i "
+#~ "rozpowszechniaÄ‡.\n"
+#~ "Nie ma Å»ADNEJ GWARANCJI w zakresie dopuszczalnym przez prawo.\n"
 
 #~ msgid "Written by %s.\n"
 #~ msgstr "Autor: %s.\n"
@@ -700,12 +703,12 @@ msgstr "pamiêæ wyczerpana"
 #~ "Report bugs to: %s\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Prosimy zg³aszaæ b³êdy na adres <%s>.\n"
-#~ "B³êdy w t³umaczeniu prosimy zg³aszaæ na adres <translation-team-pl@lists."
+#~ "Prosimy zgÅ‚aszaÄ‡ bÅ‚Ä™dy na adres <%s>.\n"
+#~ "BÅ‚Ä™dy w tÅ‚umaczeniu prosimy zgÅ‚aszaÄ‡ na adres <translation-team-pl@lists."
 #~ "sourceforge.net>.\n"
 
 #~ msgid "Report %s bugs to: %s\n"
-#~ msgstr "B³êdy pakietuj±cego (%s) prosimy zg³aszaæ na adres <%s>.\n"
+#~ msgstr "BÅ‚Ä™dy pakietujÄ…cego (%s) prosimy zgÅ‚aszaÄ‡ na adres <%s>.\n"
 
 #~ msgid "%s home page: <%s>\n"
 #~ msgstr "Strona domowa pakietu %s: <%s>\n"
@@ -715,53 +718,53 @@ msgstr "pamiêæ wyczerpana"
 
 #~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 #~ msgstr ""
-#~ "Ogólna pomoc przy u¿ywaniu oprogramowania GNU: <http://www.gnu.org/"
+#~ "OgÃ³lna pomoc przy uÅ¼ywaniu oprogramowania GNU: <http://www.gnu.org/"
 #~ "gethelp/>.\n"
 
 #~ msgid "_open_osfhandle failed"
-#~ msgstr "_open_osfhandle nie powiod³o siê"
+#~ msgstr "_open_osfhandle nie powiodÅ‚o siÄ™"
 
 #~ msgid "cannot restore fd %d: dup2 failed"
-#~ msgstr "nie mo¿na odtworzyæ fd %d: dup2 nie powiod³o siê"
+#~ msgstr "nie moÅ¼na odtworzyÄ‡ fd %d: dup2 nie powiodÅ‚o siÄ™"
 
 #~ msgid "%s subprocess"
 #~ msgstr "podproces %s"
 
 #~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "podproces %s dosta³ krytyczny sygna³ %d"
+#~ msgstr "podproces %s dostaÅ‚ krytyczny sygnaÅ‚ %d"
 
 #~ msgid "stdin"
-#~ msgstr "standardowego wej¶cia"
+#~ msgstr "standardowego wejÅ›cia"
 
 #~ msgid "stdout"
-#~ msgstr "standardowego wyj¶cia"
+#~ msgstr "standardowego wyjÅ›cia"
 
 #~ msgid "stderr"
-#~ msgstr "standardowego wyj¶cia diagnostycznego"
+#~ msgstr "standardowego wyjÅ›cia diagnostycznego"
 
 #~ msgid "unknown stream"
 #~ msgstr "nieznanego strumienia"
 
 #~ msgid "failed to reopen %s with mode %s"
-#~ msgstr "nie uda³o siê ponownie otworzyæ %s w trybie %s"
+#~ msgstr "nie udaÅ‚o siÄ™ ponownie otworzyÄ‡ %s w trybie %s"
 
 #~ msgid "string comparison failed"
-#~ msgstr "nie uda³o siê porównanie ³añcuchów znaków"
+#~ msgstr "nie udaÅ‚o siÄ™ porÃ³wnanie Å‚aÅ„cuchÃ³w znakÃ³w"
 
 #~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "Ustaw LC_ALL='C' ¿eby obej¶æ problem"
+#~ msgstr "Ustaw LC_ALL='C' Å¼eby obejÅ›Ä‡ problem"
 
 #~ msgid "The strings compared were %s and %s."
-#~ msgstr "Porównywane ³añcuchy znaków do %s i %s."
+#~ msgstr "PorÃ³wnywane Å‚aÅ„cuchy znakÃ³w do %s i %s."
 
 #~ msgid "cannot perform formatted output"
-#~ msgstr "nie mo¿na sformatowaæ wyj¶cia"
+#~ msgstr "nie moÅ¼na sformatowaÄ‡ wyjÅ›cia"
 
 #~ msgid "invalid %s%s argument `%s'"
-#~ msgstr "b³êdny argument %s%s opcji `%s'"
+#~ msgstr "bÅ‚Ä™dny argument %s%s opcji `%s'"
 
 #~ msgid "invalid suffix in %s%s argument `%s'"
-#~ msgstr "b³êdny przyrostek argumentu %s%s opcji `%s'"
+#~ msgstr "bÅ‚Ä™dny przyrostek argumentu %s%s opcji `%s'"
 
 #~ msgid "%s%s argument `%s' too large"
-#~ msgstr "argument %s%s `%s' zbyt du¿y"
+#~ msgstr "argument %s%s `%s' zbyt duÅ¼y"

@@ -14,6 +14,8 @@ lib/alloca.in.h
 lib/btowc.c
 lib/canonicalize-lgpl.c
 lib/config.charset
+lib/dosname.h
+lib/dup2.c
 lib/errno.in.h
 lib/error.c
 lib/error.h
@@ -42,6 +44,8 @@ lib/mbchar.h
 lib/mbrtowc.c
 lib/mbsinit.c
 lib/mbsrchr.c
+lib/mbtowc-impl.h
+lib/mbtowc.c
 lib/mbuiter.h
 lib/memchr.c
 lib/memchr.valgrind
@@ -61,11 +65,12 @@ lib/stat.c
 lib/stdbool.in.h
 lib/stddef.in.h
 lib/stdint.in.h
-lib/stdio-write.c
 lib/stdio.in.h
 lib/stdlib.in.h
 lib/str-two-way.h
 lib/streq.h
+lib/strerror-override.c
+lib/strerror-override.h
 lib/strerror.c
 lib/string.in.h
 lib/strnlen1.c
@@ -85,5 +90,6 @@ lib/wcrtomb.c
 lib/wctype.in.h
 lib/wcwidth.c
 lib/xalloc-die.c
+lib/xalloc-oversized.h
 lib/xalloc.h
 lib/xmalloc.c

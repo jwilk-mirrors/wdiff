@@ -132,7 +132,7 @@ stamp-po: $(srcdir)/$(DOMAIN).pot
 	}
 
 # Note: Target 'all' must not depend on target '$(DOMAIN).pot-update',
-# otherwise packages like GCC can not be built if only parts of the source
+# otherwise packages like GCC cannot be built if only parts of the source
 # have been downloaded.
 
 # This target rebuilds $(DOMAIN).pot; it is an expensive operation.
