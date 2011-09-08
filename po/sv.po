@@ -1,15 +1,15 @@
 # Swedish messages for wdiff
-# Copyright © 1996, 2001, 2008 Free Software Foundation, Inc.
+# Copyright © 1996, 2001, 2008, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
-# Jan Djärv <jan.h.d@swipnet.se>, 1996, 2001, 2008, 2010
-# Revision: 1.22
+# Jan Djärv <jan.h.d@swipnet.se>, 1996, 2001, 2008, 2010, 2011
+# Revision: 1.24
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.0.0\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2011-09-05 14:28+0200\n"
-"PO-Revision-Date: 2011-09-08 13:28+0200\n"
+"PO-Revision-Date: 2011-09-08 13:40+0200\n"
 "Last-Translator: Jan Djärv <jan.h.d@swipnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
