@@ -1172,27 +1172,35 @@ print_statistics (void)
   count_common_right
     = count_total_right - count_isolated_right - count_changed_right;
 
-  printf (_("%s: %d words"), left_side->filename, count_total_left);
+  printf (ngettext ("%s: %d word", "%s: %d words", count_total_left),
+	  left_side->filename, count_total_left);
   if (count_total_left > 0)
     {
-      printf (_("  %d %d%% common"), count_common_left,
-	      count_common_left * 100 / count_total_left);
-      printf (_("  %d %d%% deleted"), count_isolated_left,
-	      count_isolated_left * 100 / count_total_left);
-      printf (_("  %d %d%% changed"), count_changed_left,
-	      count_changed_left * 100 / count_total_left);
+      printf (ngettext ("  %d %.0f%% common", "  %d %.0f%% common",
+			count_common_left), count_common_left,
+	      count_common_left * 100. / count_total_left);
+      printf (ngettext ("  %d %.0f%% deleted", "  %d %.0f%% deleted",
+			count_isolated_left), count_isolated_left,
+	      count_isolated_left * 100. / count_total_left);
+      printf (ngettext ("  %d %.0f%% changed", "  %d %.0f%% changed",
+			count_changed_left), count_changed_left,
+	      count_changed_left * 100. / count_total_left);
     }
   printf ("\n");
 
-  printf (_("%s: %d words"), right_side->filename, count_total_right);
+  printf (ngettext ("%s: %d word", "%s: %d words", count_total_right),
+	  right_side->filename, count_total_right);
   if (count_total_right > 0)
     {
-      printf (_("  %d %d%% common"), count_common_right,
-	      count_common_right * 100 / count_total_right);
-      printf (_("  %d %d%% inserted"), count_isolated_right,
-	      count_isolated_right * 100 / count_total_right);
-      printf (_("  %d %d%% changed"), count_changed_right,
-	      count_changed_right * 100 / count_total_right);
+      printf (ngettext ("  %d %.0f%% common", "  %d %.0f%% common",
+			count_common_right), count_common_right,
+	      count_common_right * 100. / count_total_right);
+      printf (ngettext ("  %d %.0f%% inserted", "  %d %.0f%% inserted",
+			count_isolated_right), count_isolated_right,
+	      count_isolated_right * 100. / count_total_right);
+      printf (ngettext ("  %d %.0f%% changed", "  %d %.0f%% changed",
+			count_changed_right), count_changed_right,
+	      count_changed_right * 100. / count_total_right);
     }
   printf ("\n");
 }

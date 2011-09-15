@@ -123,7 +123,7 @@ AT_CHECK([wdiff -23 wdiff-a.txt wdiff-b.txt], 1,
 AT_CHECK([wdiff -123 wdiff-a.txt wdiff-b.txt], 1)
 
 AT_CHECK([wdiff -123s wdiff-a.txt wdiff-b.txt], 1,
-[wdiff-a.txt: 39 words  34 87% common  0 0% deleted  5 12% changed
+[wdiff-a.txt: 39 words  34 87% common  0 0% deleted  5 13% changed
 wdiff-b.txt: 40 words  34 85% common  0 0% inserted  6 15% changed
 ])
 
@@ -150,8 +150,6 @@ AT_DATA([foo.txt], [foo
 ])
 AT_DATA([bar.txt], [bar
 ])
-LC_ALL=C
-export LC_ALL
 
 AT_CHECK([env PATH="$PWD" "$wdiff_bin" foo.txt bar.txt], 2, [], [stderr])
 AT_CHECK([grep "wdiff: failed to execute diff" stderr], 0, [ignore-nolog], [])
@@ -172,7 +170,6 @@ dnl      ---------
 
 # Due to the istty call in the sources, we have to use screen here.
 
-LC_ALL=C
 AT_TESTED([wdiff diff screen env sed grep])
 AT_DATA([foo.txt], [start foo end
 ])
@@ -185,7 +182,7 @@ echo "Pager now done."
 ])
 chmod +x dummypager
 AT_CHECK([screen -D -m -L \
-env PAGER="$PWD/dummypager" TERM=dumb LC_ALL=C \
+env PAGER="$PWD/dummypager" TERM=dumb LC_ALL=C LANGUAGE=C \
 wdiff -wW -xX -yY -zZ -a foo.txt bar.txt
 :], 0, [ignore], [ignore])
 AT_SKIP_IF([test ! -f screenlog.0])
