@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-09-15 14:15+0200\n"
+"POT-Creation-Date: 2011-09-15 16:16+0200\n"
 "PO-Revision-Date: 2010-02-01 21:02+0100\n"
 "Last-Translator: Deniz Akkus Kanca <deniz@arayan.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (`%s' düzenli ifadesi için)"
 
-#: src/mdiff.c:886 src/wdiff.c:1473
+#: src/mdiff.c:886 src/wdiff.c:1481
 #, fuzzy, c-format
 msgid "only one file may be standard input"
 msgstr "Yalnızca bir dosya standart girdi olabilir."
@@ -38,91 +38,140 @@ msgid "Reading %s"
 msgstr "%s okunuyor"
 
 #: src/mdiff.c:1168
-#, c-format
-msgid ", %d items\n"
-msgstr ", %d öğe\n"
+#, fuzzy, c-format
+msgid ", %d item\n"
+msgid_plural ", %d items\n"
+msgstr[0] ", %d öğe\n"
+msgstr[1] ", %d öğe\n"
 
-#: src/mdiff.c:1246
+#: src/mdiff.c:1248
 #, c-format
-msgid "Read summary: %d files, %d items\n"
-msgstr "Okuma özeti: %d dosya, %d öğe\n"
+msgid "Read summary:"
+msgstr ""
 
-#: src/mdiff.c:1638
+#: src/mdiff.c:1249
+#, fuzzy, c-format
+msgid " %d file,"
+msgid_plural " %d files,"
+msgstr[0] ", %d öğe\n"
+msgstr[1] ", %d öğe\n"
+
+#: src/mdiff.c:1250
+#, fuzzy, c-format
+msgid " %d item\n"
+msgid_plural " %d items\n"
+msgstr[0] ", %d öğe\n"
+msgstr[1] ", %d öğe\n"
+
+#: src/mdiff.c:1643
 #, c-format
 msgid "Sorting"
 msgstr "Sıralanıyor"
 
-#: src/mdiff.c:1655
+#: src/mdiff.c:1660
 #, c-format
 msgid ", clustering"
 msgstr ", topaklanıyor"
 
-#: src/mdiff.c:1824 src/mdiff.c:1886
+#: src/mdiff.c:1829 src/mdiff.c:1891
 #, c-format
 msgid ", done\n"
 msgstr ", bitti\n"
 
-#: src/mdiff.c:1873
+#: src/mdiff.c:1878
 #, c-format
 msgid "Sorting members"
 msgstr "Üyeler sıralanıyor"
 
-#: src/mdiff.c:1905
+#: src/mdiff.c:1911 src/mdiff.c:2294
 #, c-format
-msgid "Work summary: %d clusters, %d members\n"
-msgstr "İş özeti: %d topak, %d üye\n"
+msgid "Work summary:"
+msgstr ""
 
-#: src/mdiff.c:2284
+#: src/mdiff.c:1912 src/mdiff.c:2295
+#, fuzzy, c-format
+msgid " %d cluster,"
+msgid_plural " %d clusters,"
+msgstr[0] ", topaklanıyor"
+msgstr[1] ", topaklanıyor"
+
+#: src/mdiff.c:1914
+#, fuzzy, c-format
+msgid " %d member\n"
+msgid_plural " %d members\n"
+msgstr[0] ", %d öğe\n"
+msgstr[1] ", %d öğe\n"
+
+#: src/mdiff.c:2297
 #, c-format
-msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "İş özeti: %d topak, %d üye, %d örtüşme\n"
+msgid " %d member,"
+msgid_plural " %d members,"
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/mdiff.c:2333 src/wdiff.c:224
+#: src/mdiff.c:2299
+#, c-format
+msgid " %d overlap\n"
+msgid_plural " %d overlaps\n"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/mdiff.c:2349 src/wdiff.c:224
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "TERM çevre değişkeni aracılığı ile bir terminal türü seçin."
 
-#: src/mdiff.c:2336 src/wdiff.c:227
+#: src/mdiff.c:2352 src/wdiff.c:227
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
 msgstr "Termcap veritabanına erişilemedi."
 
-#: src/mdiff.c:2338 src/wdiff.c:229
+#: src/mdiff.c:2354 src/wdiff.c:229
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "Terminal türü `%s' tanımlı değil."
 
-#: src/mdiff.c:3686 src/mdiff.c:3698 src/wdiff.c:1175 src/wdiff.c:1187
-#, c-format
-msgid "%s: %d words"
-msgstr "%s: %d sözcük"
+#: src/mdiff.c:3702 src/mdiff.c:3718 src/wdiff.c:1175 src/wdiff.c:1191
+#, fuzzy, c-format
+msgid "%s: %d word"
+msgid_plural "%s: %d words"
+msgstr[0] "%s: %d sözcük"
+msgstr[1] "%s: %d sözcük"
 
-#: src/mdiff.c:3689 src/mdiff.c:3701 src/wdiff.c:1178 src/wdiff.c:1190
-#, c-format
-msgid "  %d %d%% common"
-msgstr "  %d %d%% ortak"
+#: src/mdiff.c:3706 src/mdiff.c:3722 src/wdiff.c:1179 src/wdiff.c:1195
+#, fuzzy, c-format
+msgid "  %d %.0f%% common"
+msgid_plural "  %d %.0f%% common"
+msgstr[0] "  %d %d%% ortak"
+msgstr[1] "  %d %d%% ortak"
 
-#: src/mdiff.c:3691 src/wdiff.c:1180
-#, c-format
-msgid "  %d %d%% deleted"
-msgstr "  %d %d%% silindi"
+#: src/mdiff.c:3709 src/wdiff.c:1182
+#, fuzzy, c-format
+msgid "  %d %.0f%% deleted"
+msgid_plural "  %d %.0f%% deleted"
+msgstr[0] "  %d %d%% silindi"
+msgstr[1] "  %d %d%% silindi"
 
-#: src/mdiff.c:3693 src/mdiff.c:3705 src/wdiff.c:1182 src/wdiff.c:1194
-#, c-format
-msgid "  %d %d%% changed"
-msgstr "  %d %d%% değişti"
+#: src/mdiff.c:3712 src/mdiff.c:3728 src/wdiff.c:1185 src/wdiff.c:1201
+#, fuzzy, c-format
+msgid "  %d %.0f%% changed"
+msgid_plural "  %d %.0f%% changed"
+msgstr[0] "  %d %d%% değişti"
+msgstr[1] "  %d %d%% değişti"
 
-#: src/mdiff.c:3703 src/wdiff.c:1192
-#, c-format
-msgid "  %d %d%% inserted"
-msgstr "  %d %d%% yerleştirildi"
+#: src/mdiff.c:3725 src/wdiff.c:1198
+#, fuzzy, c-format
+msgid "  %d %.0f%% inserted"
+msgid_plural "  %d %.0f%% inserted"
+msgstr[0] "  %d %d%% yerleştirildi"
+msgstr[1] "  %d %d%% yerleştirildi"
 
-#: src/mdiff.c:3732 src/wdiff.c:1233 src/wdiff2.c:172
+#: src/mdiff.c:3756 src/wdiff.c:1241 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Daha fazla bilgi için `%s --help' yazın.\n"
 
-#: src/mdiff.c:3737
+#: src/mdiff.c:3761
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -130,12 +179,12 @@ msgstr ""
 "mdiff - birden fazla dosyayı inceler, benzeşen bölümleri arar, benzerlikler\n"
 "ve farklar hakkında detaylı rapor üretir.\n"
 
-#: src/mdiff.c:3742
+#: src/mdiff.c:3766
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Kullanım: %s [SEÇENEK]... [DOSYA]...\n"
 
-#: src/mdiff.c:3746
+#: src/mdiff.c:3770
 #, fuzzy
 msgid ""
 "\n"
@@ -144,27 +193,27 @@ msgstr ""
 "\n"
 "Kullanım kipleri:\n"
 
-#: src/mdiff.c:3747
+#: src/mdiff.c:3771
 #, fuzzy
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                    (yoksayılır)\n"
 
-#: src/mdiff.c:3748
+#: src/mdiff.c:3772
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose         standart hataya bazı istatistikleri yazdırır\n"
 
-#: src/mdiff.c:3749 src/unify.c:295
+#: src/mdiff.c:3773 src/unify.c:295
 #, fuzzy
 msgid "      --help             display this help then exit\n"
 msgstr "      --help            bu yardımı gösterir ve çıkar\n"
 
-#: src/mdiff.c:3750 src/unify.c:296
+#: src/mdiff.c:3774 src/unify.c:296
 #, fuzzy
 msgid "      --version          display program version then exit\n"
 msgstr "      --version         sürüm bilgisini gösterir ve çıkar\n"
 
-#: src/mdiff.c:3752
+#: src/mdiff.c:3776
 msgid ""
 "\n"
 "Formatting output:\n"
@@ -172,23 +221,23 @@ msgstr ""
 
 # ? "  -T, --initial-tab          başa bir sekme ekleyerek sekmeleri hizalar"
 # ? "  -T, --initial-tab        Başlangıçta boşluk yerine sekme kullanır"
-#: src/mdiff.c:3753
+#: src/mdiff.c:3777
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
 # ? "  -l, --paginate             çıktıyı `pr' komutundan geçirerek sayfalar"
 # ? "  -l, --paginate           `pr' komutu ile çıktıyı sayfalar"
-#: src/mdiff.c:3754
+#: src/mdiff.c:3778
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
-#: src/mdiff.c:3755
+#: src/mdiff.c:3779
 #, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr ""
 "  -S, --string[=DİZGE]     başka bir kullanıcı DİZGEsini değerlendirir\n"
 
-#: src/mdiff.c:3756
+#: src/mdiff.c:3780
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
@@ -197,11 +246,11 @@ msgstr ""
 
 # ? "  -t, --expand-tabs          çıktıda sekmeleri boşluğa dönüştürür"
 # ? "  -t, --expand-tabs        çıktıda sekmeler yerine boşluklar kullanır"
-#: src/mdiff.c:3757
+#: src/mdiff.c:3781
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
-#: src/mdiff.c:3760
+#: src/mdiff.c:3784
 #, fuzzy
 msgid ""
 "\n"
@@ -210,12 +259,12 @@ msgstr ""
 "\n"
 "Hata ayıklanması:\n"
 
-#: src/mdiff.c:3761
+#: src/mdiff.c:3785
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr "  -0, --debugging   ne yapıldığı hakkında detaylı bilgi gösterir\n"
 
-#: src/mdiff.c:3764
+#: src/mdiff.c:3788
 msgid ""
 "\n"
 "Word mode options:\n"
@@ -223,90 +272,90 @@ msgstr ""
 
 # ? "  -1, --no-deleted               silinen sözcükleri göstermez"
 # ? "  -1, --no-deleted           silinmiş sözcükleri göstermez"
-#: src/mdiff.c:3765 src/wdiff.c:1251 src/wdiff2.c:190
+#: src/mdiff.c:3789 src/wdiff.c:1259 src/wdiff2.c:190
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr ""
 
 # ? "  -2, --no-inserted              yerleştirilen sözcükleri göstermez"
 # ? "  -2, --no-inserted          yerleştirilmiş sözcükleri göstermez"
-#: src/mdiff.c:3766 src/wdiff.c:1252 src/wdiff2.c:191
+#: src/mdiff.c:3790 src/wdiff.c:1260 src/wdiff2.c:191
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 
-#: src/mdiff.c:3767 src/wdiff.c:1253 src/wdiff2.c:192
+#: src/mdiff.c:3791 src/wdiff.c:1261 src/wdiff2.c:192
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common                ortak sözcükleri göstermez\n"
 
-#: src/mdiff.c:3768
+#: src/mdiff.c:3792
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager               bir sayfalama programı kullanır\n"
 
-#: src/mdiff.c:3769
+#: src/mdiff.c:3793
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -k, --less-mode                \"less\" sayfalaması kipi\n"
 
-#: src/mdiff.c:3770
+#: src/mdiff.c:3794
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
 "  -m, --avoid-wraps              alanları satır sonlarını geçerek uzatmaz\n"
 
-#: src/mdiff.c:3771
+#: src/mdiff.c:3795
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr ""
 "  -o, --printer                  yazıcıya bastırmaya uygun çıktı üretir\n"
 
-#: src/mdiff.c:3772
+#: src/mdiff.c:3796
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr ""
 "  -z, --terminal                 ekranda göstermeye uygun çıktı üretir\n"
 
-#: src/mdiff.c:3773
+#: src/mdiff.c:3797
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
 "  -O, --item-regexp=DÜZENLİFADE  DÜZENLİFADE'de belirtilen şekilde öğeleri\n"
 "                                 karşılaştırır\n"
 
-#: src/mdiff.c:3774
+#: src/mdiff.c:3798
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr ""
 "  -W, --word-mode                satır yerine sözcükleri karşılaştırır\n"
 
-#: src/mdiff.c:3959
+#: src/mdiff.c:3983
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "DOSYA verilmemişse veya DOSYA - ise, standart girdi okunur.\n"
 
-#: src/mdiff.c:3961 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
+#: src/mdiff.c:3985 src/unify.c:300 src/wdiff.c:1277 src/wdiff2.c:210
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "Yazılım hatalarını <wdiff-bugs@gnu.org> adresine,\n"
 "çeviri hatalarını <gnu-tr@belgeler.org> adresine bildirin.\n"
 
-#: src/mdiff.c:3973
+#: src/mdiff.c:3997
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr ""
 
-#: src/mdiff.c:4269
+#: src/mdiff.c:4293
 #, fuzzy, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "-z kullanılamaz, termcap yok. "
 
-#: src/mdiff.c:4308
+#: src/mdiff.c:4332
 #, fuzzy, c-format
 msgid "word merging for two files only (so far)"
 msgstr "(şu ana kadar) yalnız iki dosyayı sözcük bazında birleştiriyor"
 
-#: src/mdiff.c:4324
+#: src/mdiff.c:4348
 #, fuzzy
 msgid ""
 "\n"
@@ -315,7 +364,7 @@ msgstr ""
 "\n"
 "Telif Hakkı (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4327 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
+#: src/mdiff.c:4351 src/unify.c:407 src/wdiff.c:1403 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -324,7 +373,7 @@ msgstr ""
 "Hiçbir garantisi yoktur; hatta SATILABİLİRLİĞİ veya HERHANGİ BİR AMACA\n"
 "UYGUNLUĞU için bile garanti verilmez.\n"
 
-#: src/mdiff.c:4330 src/wdiff.c:1398 src/wdiff2.c:134
+#: src/mdiff.c:4354 src/wdiff.c:1406 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -332,7 +381,7 @@ msgstr ""
 "\n"
 "François Pinard <pinard@iro.umontreal.ca> tarafından yazıldı.\n"
 
-#: src/mdiff.c:4365
+#: src/mdiff.c:4389
 #, fuzzy, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "-123RSYZ seçenekleri yalnız iki girdi olduğu zaman anlamlıdır."
@@ -488,7 +537,7 @@ msgstr ""
 msgid "%s: output program killed by signal %d\n"
 msgstr ""
 
-#: src/wdiff.c:1210 src/wdiff2.c:109
+#: src/wdiff.c:1218 src/wdiff2.c:109
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -518,12 +567,12 @@ msgstr ""
 "Eğer yoksa, Free Software Foundation, Inc., 59 Temple Place - Suite 330,\n"
 "Boston, MA 02111-1307, USA adresine yazınız.\n"
 
-#: src/wdiff.c:1238
+#: src/wdiff.c:1246
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr ""
 "wdiff - iki dosyadaki sözcükleri karşılaştırır ve farklarını gösterir.\n"
 
-#: src/wdiff.c:1242
+#: src/wdiff.c:1250
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
@@ -532,27 +581,27 @@ msgstr ""
 "Kullanım: %s [SEÇENEK]... DOSYA1 DOSYA2\n"
 "          %s -d [SEÇENEK]... [DOSYA]\n"
 
-#: src/wdiff.c:1247 src/wdiff2.c:186
+#: src/wdiff.c:1255 src/wdiff2.c:186
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
 
-#: src/wdiff.c:1250 src/wdiff2.c:189
+#: src/wdiff.c:1258 src/wdiff2.c:189
 #, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr ""
 "  -C, --copyright                telif hakkı bilgisini gösterir ve çıkar\n"
 
-#: src/wdiff.c:1254 src/wdiff2.c:193
+#: src/wdiff.c:1262 src/wdiff2.c:193
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
 msgstr "  -a, --auto-pager               bir sayfalama programı kullanır\n"
 
-#: src/wdiff.c:1255
+#: src/wdiff.c:1263
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1256 src/wdiff2.c:194
+#: src/wdiff.c:1264 src/wdiff2.c:194
 #, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                     bu yardımı gösterir ve çıkar\n"
@@ -560,28 +609,28 @@ msgstr "  -h, --help                     bu yardımı gösterir ve çıkar\n"
 # ? "  -i, --ignore-case                         büyük/küçük harf farklarını yoksayar"
 # ? "  -i, --ignore-case          büyük ve küçük harf farkını yoksayar"
 # ? "  -i, --ignore-case          karşılaştırma yaparken büyük/küçük harf farkı gözetmez"
-#: src/wdiff.c:1257 src/wdiff2.c:195
+#: src/wdiff.c:1265 src/wdiff2.c:195
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
 
-#: src/wdiff.c:1258 src/wdiff2.c:196
+#: src/wdiff.c:1266 src/wdiff2.c:196
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -l, --less-mode                \"less\" sayfalaması kipi\n"
 
-#: src/wdiff.c:1259 src/wdiff2.c:197
+#: src/wdiff.c:1267 src/wdiff2.c:197
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
 "  -n, --avoid-wraps              alanları satır sonlarını geçerek uzatmaz\n"
 
-#: src/wdiff.c:1260 src/wdiff2.c:198
+#: src/wdiff.c:1268 src/wdiff2.c:198
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr ""
 "  -p, --printer                  yazıcıya bastırmaya uygun çıktı üretir\n"
 
-#: src/wdiff.c:1261 src/wdiff2.c:200
+#: src/wdiff.c:1269 src/wdiff2.c:200
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
@@ -589,18 +638,18 @@ msgstr ""
 "  -s, --statistics               kaç sözcük silinmiş, yerleştirilmiş\n"
 "                                 vs. gösterir\n"
 
-#: src/wdiff.c:1262 src/wdiff2.c:201
+#: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr ""
 "  -t, --terminal                 ekranda göstermeye uygun çıktı üretir\n"
 
-#: src/wdiff.c:1263 src/wdiff2.c:202
+#: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
 msgstr "  -V, --version                  sürüm bilgisini gösterir ve çıkar\n"
 
-#: src/wdiff.c:1264 src/wdiff2.c:203
+#: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
@@ -608,13 +657,13 @@ msgstr ""
 "  -w, --start-delete=DİZGE       silinecek bölgenin başlangıcını belirten "
 "DİZGE\n"
 
-#: src/wdiff.c:1265 src/wdiff2.c:204
+#: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr ""
 "  -x, --end-delete=STRING        silinecek bölgenin sonunu belirten DİZGE\n"
 
-#: src/wdiff.c:1266 src/wdiff2.c:205
+#: src/wdiff.c:1274 src/wdiff2.c:205
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
@@ -622,19 +671,19 @@ msgstr ""
 "  -y, --start-insert=STRING      yerleştirilecek bölgenin başını belirten "
 "DİZGE\n"
 
-#: src/wdiff.c:1267 src/wdiff2.c:206
+#: src/wdiff.c:1275 src/wdiff2.c:206
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
 "  -z, --end-insert=STRING        yerleştirilecek bölgenin sonunu belirten "
 "DİZGE\n"
 
-#: src/wdiff.c:1386
+#: src/wdiff.c:1394
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "-t kullanılamıyor, termcap kullanımdışı"
 
-#: src/wdiff.c:1391
+#: src/wdiff.c:1399
 #, fuzzy
 msgid ""
 "\n"
@@ -644,12 +693,12 @@ msgstr ""
 "\n"
 "Telif Hakkı (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1436 src/wdiff.c:1454
+#: src/wdiff.c:1444 src/wdiff.c:1462
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Dosya argümanları eksik"
 
-#: src/wdiff.c:1449 src/wdiff2.c:320
+#: src/wdiff.c:1457 src/wdiff2.c:320
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Dosya argümanları eksik"
@@ -692,6 +741,15 @@ msgstr "%s okunuyor"
 #, c-format
 msgid "'\n"
 msgstr ""
+
+#~ msgid "Read summary: %d files, %d items\n"
+#~ msgstr "Okuma özeti: %d dosya, %d öğe\n"
+
+#~ msgid "Work summary: %d clusters, %d members\n"
+#~ msgstr "İş özeti: %d topak, %d üye\n"
+
+#~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
+#~ msgstr "İş özeti: %d topak, %d üye, %d örtüşme\n"
 
 #, fuzzy
 #~ msgid ""

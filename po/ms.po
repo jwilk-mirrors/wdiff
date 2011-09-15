@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5.93\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-09-15 14:15+0200\n"
+"POT-Creation-Date: 2011-09-15 16:16+0200\n"
 "PO-Revision-Date: 2010-02-01 20:45+0100\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "%s (for regexp `%s')"
 msgstr "%s (untuk regexp `%s')"
 
-#: src/mdiff.c:886 src/wdiff.c:1473
+#: src/mdiff.c:886 src/wdiff.c:1481
 #, fuzzy, c-format
 msgid "only one file may be standard input"
 msgstr "Hanya satu fail boleh dijadikan masukan piawai."
@@ -38,91 +38,140 @@ msgid "Reading %s"
 msgstr "Membaca %s"
 
 #: src/mdiff.c:1168
-#, c-format
-msgid ", %d items\n"
-msgstr ", %d perkara\n"
+#, fuzzy, c-format
+msgid ", %d item\n"
+msgid_plural ", %d items\n"
+msgstr[0] ", %d perkara\n"
+msgstr[1] ", %d perkara\n"
 
-#: src/mdiff.c:1246
+#: src/mdiff.c:1248
 #, c-format
-msgid "Read summary: %d files, %d items\n"
-msgstr "Ringkasan bacaan: %d fail, %d perkara\n"
+msgid "Read summary:"
+msgstr ""
 
-#: src/mdiff.c:1638
+#: src/mdiff.c:1249
+#, fuzzy, c-format
+msgid " %d file,"
+msgid_plural " %d files,"
+msgstr[0] ", %d perkara\n"
+msgstr[1] ", %d perkara\n"
+
+#: src/mdiff.c:1250
+#, fuzzy, c-format
+msgid " %d item\n"
+msgid_plural " %d items\n"
+msgstr[0] ", %d perkara\n"
+msgstr[1] ", %d perkara\n"
+
+#: src/mdiff.c:1643
 #, c-format
 msgid "Sorting"
 msgstr "Isihan"
 
-#: src/mdiff.c:1655
+#: src/mdiff.c:1660
 #, c-format
 msgid ", clustering"
 msgstr ", gugusan"
 
-#: src/mdiff.c:1824 src/mdiff.c:1886
+#: src/mdiff.c:1829 src/mdiff.c:1891
 #, c-format
 msgid ", done\n"
 msgstr ", selesai\n"
 
-#: src/mdiff.c:1873
+#: src/mdiff.c:1878
 #, c-format
 msgid "Sorting members"
 msgstr "Mengisih ahli"
 
-#: src/mdiff.c:1905
+#: src/mdiff.c:1911 src/mdiff.c:2294
 #, c-format
-msgid "Work summary: %d clusters, %d members\n"
-msgstr "Ringkasan kerja: %d gugusan, %d ahli\n"
+msgid "Work summary:"
+msgstr ""
 
-#: src/mdiff.c:2284
+#: src/mdiff.c:1912 src/mdiff.c:2295
+#, fuzzy, c-format
+msgid " %d cluster,"
+msgid_plural " %d clusters,"
+msgstr[0] ", gugusan"
+msgstr[1] ", gugusan"
+
+#: src/mdiff.c:1914
+#, fuzzy, c-format
+msgid " %d member\n"
+msgid_plural " %d members\n"
+msgstr[0] ", %d perkara\n"
+msgstr[1] ", %d perkara\n"
+
+#: src/mdiff.c:2297
 #, c-format
-msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Ringkasan kerja: %d gugusan, %d ahli, %d bertindih\n"
+msgid " %d member,"
+msgid_plural " %d members,"
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/mdiff.c:2333 src/wdiff.c:224
+#: src/mdiff.c:2299
+#, c-format
+msgid " %d overlap\n"
+msgid_plural " %d overlaps\n"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/mdiff.c:2349 src/wdiff.c:224
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "Pilih terminal daripada pembolehubah persekitaran TERM."
 
-#: src/mdiff.c:2336 src/wdiff.c:227
+#: src/mdiff.c:2352 src/wdiff.c:227
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
 msgstr "Tidak dapat mencapai pengkalan data termcap."
 
-#: src/mdiff.c:2338 src/wdiff.c:229
+#: src/mdiff.c:2354 src/wdiff.c:229
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "Jenis terminal `%s' tidak ditakrifkan."
 
-#: src/mdiff.c:3686 src/mdiff.c:3698 src/wdiff.c:1175 src/wdiff.c:1187
-#, c-format
-msgid "%s: %d words"
-msgstr "%s: %d perkataan"
+#: src/mdiff.c:3702 src/mdiff.c:3718 src/wdiff.c:1175 src/wdiff.c:1191
+#, fuzzy, c-format
+msgid "%s: %d word"
+msgid_plural "%s: %d words"
+msgstr[0] "%s: %d perkataan"
+msgstr[1] "%s: %d perkataan"
 
-#: src/mdiff.c:3689 src/mdiff.c:3701 src/wdiff.c:1178 src/wdiff.c:1190
-#, c-format
-msgid "  %d %d%% common"
-msgstr "  %d %d%% biasa"
+#: src/mdiff.c:3706 src/mdiff.c:3722 src/wdiff.c:1179 src/wdiff.c:1195
+#, fuzzy, c-format
+msgid "  %d %.0f%% common"
+msgid_plural "  %d %.0f%% common"
+msgstr[0] "  %d %d%% biasa"
+msgstr[1] "  %d %d%% biasa"
 
-#: src/mdiff.c:3691 src/wdiff.c:1180
-#, c-format
-msgid "  %d %d%% deleted"
-msgstr "  %d %d%% dipadam"
+#: src/mdiff.c:3709 src/wdiff.c:1182
+#, fuzzy, c-format
+msgid "  %d %.0f%% deleted"
+msgid_plural "  %d %.0f%% deleted"
+msgstr[0] "  %d %d%% dipadam"
+msgstr[1] "  %d %d%% dipadam"
 
-#: src/mdiff.c:3693 src/mdiff.c:3705 src/wdiff.c:1182 src/wdiff.c:1194
-#, c-format
-msgid "  %d %d%% changed"
-msgstr "  %d %d%% diubah"
+#: src/mdiff.c:3712 src/mdiff.c:3728 src/wdiff.c:1185 src/wdiff.c:1201
+#, fuzzy, c-format
+msgid "  %d %.0f%% changed"
+msgid_plural "  %d %.0f%% changed"
+msgstr[0] "  %d %d%% diubah"
+msgstr[1] "  %d %d%% diubah"
 
-#: src/mdiff.c:3703 src/wdiff.c:1192
-#, c-format
-msgid "  %d %d%% inserted"
-msgstr "  %d %d%% dimasukkan"
+#: src/mdiff.c:3725 src/wdiff.c:1198
+#, fuzzy, c-format
+msgid "  %d %.0f%% inserted"
+msgid_plural "  %d %.0f%% inserted"
+msgstr[0] "  %d %d%% dimasukkan"
+msgstr[1] "  %d %d%% dimasukkan"
 
-#: src/mdiff.c:3732 src/wdiff.c:1233 src/wdiff2.c:172
+#: src/mdiff.c:3756 src/wdiff.c:1241 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Cuba `%s --help' untuk lebih maklumat.\n"
 
-#: src/mdiff.c:3737
+#: src/mdiff.c:3761
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -130,12 +179,12 @@ msgstr ""
 "mdiff - Mengkaji beberapa fail dan mencari turutan yang sama, ia kemudian\n"
 "menghasilkan senarai terperinci mungkin tentang perbezaan dan kesamaan.\n"
 
-#: src/mdiff.c:3742
+#: src/mdiff.c:3766
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Penggunaan: %s [PILIHAN]... [FAIL]...\n"
 
-#: src/mdiff.c:3746
+#: src/mdiff.c:3770
 #, fuzzy
 msgid ""
 "\n"
@@ -144,27 +193,27 @@ msgstr ""
 "\n"
 "Mod operasi:\n"
 
-#: src/mdiff.c:3747
+#: src/mdiff.c:3771
 #, fuzzy
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (diabaikan)\n"
 
-#: src/mdiff.c:3748
+#: src/mdiff.c:3772
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          lapor beberapa statistik pada stderr\n"
 
-#: src/mdiff.c:3749 src/unify.c:295
+#: src/mdiff.c:3773 src/unify.c:295
 #, fuzzy
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             papar bantuan ini dan keluar\n"
 
-#: src/mdiff.c:3750 src/unify.c:296
+#: src/mdiff.c:3774 src/unify.c:296
 #, fuzzy
 msgid "      --version          display program version then exit\n"
 msgstr "      --version          keluarkan maklumat versi dan keluar\n"
 
-#: src/mdiff.c:3752
+#: src/mdiff.c:3776
 msgid ""
 "\n"
 "Formatting output:\n"
@@ -172,22 +221,22 @@ msgstr ""
 
 # ? "  -T, --initial-tab         jadikan tab berbaris dengan menambah awalan tab"
 # ? "  -T, --initial-tab        hasilkan TAB menggantikan ruang permulaan"
-#: src/mdiff.c:3753
+#: src/mdiff.c:3777
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr ""
 
 # ? "  -l, --paginate            hantar keluaran menerusi `pr' untuk paginate"
 # ? "  -l, --paginate           paginate keluaran menggunakan `pr'"
-#: src/mdiff.c:3754
+#: src/mdiff.c:3778
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr ""
 
-#: src/mdiff.c:3755
+#: src/mdiff.c:3779
 #, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=RENTETAN]  ambil perhatian RENTETAN pengguna lain\n"
 
-#: src/mdiff.c:3756
+#: src/mdiff.c:3780
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
@@ -196,11 +245,11 @@ msgstr ""
 
 # ? "  -t, --expand-tabs         kembangkan tab kepada ruang dalam keluaran"
 # ? "  -t, --expand-tabs        tukar tab kepada ruang dalam keluaran"
-#: src/mdiff.c:3757
+#: src/mdiff.c:3781
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 
-#: src/mdiff.c:3760
+#: src/mdiff.c:3784
 #, fuzzy
 msgid ""
 "\n"
@@ -209,13 +258,13 @@ msgstr ""
 "\n"
 "Nyahpepijat:\n"
 
-#: src/mdiff.c:3761
+#: src/mdiff.c:3785
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr ""
 "  -0, --debugging   keluarkan banyak perincian mengenai apa yang berlaku\n"
 
-#: src/mdiff.c:3764
+#: src/mdiff.c:3788
 #, fuzzy
 msgid ""
 "\n"
@@ -224,85 +273,85 @@ msgstr ""
 "\n"
 "Pilhan mod perkataan:\n"
 
-#: src/mdiff.c:3765 src/wdiff.c:1251 src/wdiff2.c:190
+#: src/mdiff.c:3789 src/wdiff.c:1259 src/wdiff2.c:190
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr "  -1, --no-deleted           halang keluaran bagi perkataan dipadam\n"
 
-#: src/mdiff.c:3766 src/wdiff.c:1252 src/wdiff2.c:191
+#: src/mdiff.c:3790 src/wdiff.c:1260 src/wdiff2.c:191
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 "  -2, --no-inserted          halang keluaran bagi perkataan dimasukkan\n"
 
-#: src/mdiff.c:3767 src/wdiff.c:1253 src/wdiff2.c:192
+#: src/mdiff.c:3791 src/wdiff.c:1261 src/wdiff2.c:192
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            halang keluaran bagi perkataan umum\n"
 
-#: src/mdiff.c:3768
+#: src/mdiff.c:3792
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager           panggil pager secara automatik\n"
 
-#: src/mdiff.c:3769
+#: src/mdiff.c:3793
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr ""
 "  -k, --less-mode            variasi untuk mod pencetak bagi \"less\"\n"
 
-#: src/mdiff.c:3770
+#: src/mdiff.c:3794
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -m, --avoid-wraps          jangan sambung medan melalui baris baru\n"
 
-#: src/mdiff.c:3771
+#: src/mdiff.c:3795
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr "  -o, --printer              overstrike seperti untuk pencetak\n"
 
-#: src/mdiff.c:3772
+#: src/mdiff.c:3796
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             guna termcap sebagai paparan terminal\n"
 
-#: src/mdiff.c:3773
+#: src/mdiff.c:3797
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
 "  -O, --item-regexp=REGEXP   banding perkara seperti dinyatakan oleh REGEXP\n"
 
-#: src/mdiff.c:3774
+#: src/mdiff.c:3798
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            banding perkataan selain daripada baris\n"
 
-#: src/mdiff.c:3959
+#: src/mdiff.c:3983
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "Dengan tiada FAIL, atau apabila FAILE adalah -, baca masukan piawai.\n"
 
-#: src/mdiff.c:3961 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
+#: src/mdiff.c:3985 src/unify.c:300 src/wdiff.c:1277 src/wdiff2.c:210
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr "Lapor pepijat kepada <wdiff-bugs@gnu.org>.\n"
 
-#: src/mdiff.c:3973
+#: src/mdiff.c:3997
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr ""
 
-#: src/mdiff.c:4269
+#: src/mdiff.c:4293
 #, fuzzy, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "Tidak boleh menggunakan -z, termcap tiada."
 
-#: src/mdiff.c:4308
+#: src/mdiff.c:4332
 #, fuzzy, c-format
 msgid "word merging for two files only (so far)"
 msgstr "Gabungan perkataan untuk dua fail sahaja (setakat ini)"
 
-#: src/mdiff.c:4324
+#: src/mdiff.c:4348
 #, fuzzy
 msgid ""
 "\n"
@@ -311,7 +360,7 @@ msgstr ""
 "\n"
 "Hakcipta (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4327 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
+#: src/mdiff.c:4351 src/unify.c:407 src/wdiff.c:1403 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -320,7 +369,7 @@ msgstr ""
 "jaminan disediakan; tidak juga untuk KEBOLEHDAGANGAN atau KEUPAYAAN UNTUK\n"
 "SESUATU TUJUAN KHUSUS.\n"
 
-#: src/mdiff.c:4330 src/wdiff.c:1398 src/wdiff2.c:134
+#: src/mdiff.c:4354 src/wdiff.c:1406 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -328,7 +377,7 @@ msgstr ""
 "\n"
 "Ditulis oleh Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4365
+#: src/mdiff.c:4389
 #, fuzzy, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "Pilihan -123RSYZ bermakna apabila hanya dua masukan."
@@ -478,7 +527,7 @@ msgstr ""
 msgid "%s: output program killed by signal %d\n"
 msgstr ""
 
-#: src/wdiff.c:1210 src/wdiff2.c:109
+#: src/wdiff.c:1218 src/wdiff2.c:109
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -508,12 +557,12 @@ msgstr ""
 "bersama program ini; jika tidak, tulis kepada Free Software Foundation,\n"
 "Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\n"
 
-#: src/wdiff.c:1238
+#: src/wdiff.c:1246
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr ""
 "wdiff - Membandingkan perkataan dalam dua fail dan melaporkan perbezaan.\n"
 
-#: src/wdiff.c:1242
+#: src/wdiff.c:1250
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
@@ -522,53 +571,53 @@ msgstr ""
 "Penggunaan: %s [PILIHAN]... FAIL1 FAIL2\n"
 "            %s -d [PILIHAN]... [FAIL]\n"
 
-#: src/wdiff.c:1247 src/wdiff2.c:186
+#: src/wdiff.c:1255 src/wdiff2.c:186
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
 "Hujah wajib kepada pilihan panjang adalah wajib kepada pilihan pendek juga.\n"
 
-#: src/wdiff.c:1250 src/wdiff2.c:189
+#: src/wdiff.c:1258 src/wdiff2.c:189
 #, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            papr hakcipta kemudian keluar\n"
 
-#: src/wdiff.c:1254 src/wdiff2.c:193
+#: src/wdiff.c:1262 src/wdiff2.c:193
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
 msgstr "  -a, --auto-pager           memanggil pager secara automatik\n"
 
-#: src/wdiff.c:1255
+#: src/wdiff.c:1263
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1256 src/wdiff2.c:194
+#: src/wdiff.c:1264 src/wdiff2.c:194
 #, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 papar bantuan ini\n"
 
-#: src/wdiff.c:1257 src/wdiff2.c:195
+#: src/wdiff.c:1265 src/wdiff2.c:195
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr "  -i, --ignore-case          abai bentuk aksara ketika membeza\n"
 
-#: src/wdiff.c:1258 src/wdiff2.c:196
+#: src/wdiff.c:1266 src/wdiff2.c:196
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -l, --less-mode            variasi mod pencetak untuk \"less\"\n"
 
-#: src/wdiff.c:1259 src/wdiff2.c:197
+#: src/wdiff.c:1267 src/wdiff2.c:197
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -n, --avoid-wraps          jangan sambung medan melalui baris baru\n"
 
-#: src/wdiff.c:1260 src/wdiff2.c:198
+#: src/wdiff.c:1268 src/wdiff2.c:198
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              overstrike seperti untuk pencetak\n"
 
-#: src/wdiff.c:1261 src/wdiff2.c:200
+#: src/wdiff.c:1269 src/wdiff2.c:200
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
@@ -577,17 +626,17 @@ msgstr ""
 "dimasukkan\n"
 "                             dsb.\n"
 
-#: src/wdiff.c:1262 src/wdiff2.c:201
+#: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             guna termcap sebagai paparan terminal\n"
 
-#: src/wdiff.c:1263 src/wdiff2.c:202
+#: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
 msgstr "  -v, --version              papar versi program kemudian keluar\n"
 
-#: src/wdiff.c:1264 src/wdiff2.c:203
+#: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
@@ -595,14 +644,14 @@ msgstr ""
 "  -w, --start-delete=STRING  rentetan untuk menanda permulaan kawasan "
 "pemadaman\n"
 
-#: src/wdiff.c:1265 src/wdiff2.c:204
+#: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr ""
 "  -x, --end-delete=STRING    rentetan untuk menanda pengakhiran kawasan\n"
 "                             pemadaman\n"
 
-#: src/wdiff.c:1266 src/wdiff2.c:205
+#: src/wdiff.c:1274 src/wdiff2.c:205
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
@@ -610,19 +659,19 @@ msgstr ""
 "  -y, --start-insert=STRING  rentetan untuk menanda permulaan kawasan "
 "masukan\n"
 
-#: src/wdiff.c:1267 src/wdiff2.c:206
+#: src/wdiff.c:1275 src/wdiff2.c:206
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
 "  -z, --end-insert=STRING    rentetan untuk menanda pengakhiran kawasan "
 "masukan\n"
 
-#: src/wdiff.c:1386
+#: src/wdiff.c:1394
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "Tidak boleh menggunakan -t, termcap tiada."
 
-#: src/wdiff.c:1391
+#: src/wdiff.c:1399
 #, fuzzy
 msgid ""
 "\n"
@@ -632,12 +681,12 @@ msgstr ""
 "\n"
 "Hakcipta (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1436 src/wdiff.c:1454
+#: src/wdiff.c:1444 src/wdiff.c:1462
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Hujah fail tiada"
 
-#: src/wdiff.c:1449 src/wdiff2.c:320
+#: src/wdiff.c:1457 src/wdiff2.c:320
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Hujah fail tiada"
@@ -686,6 +735,15 @@ msgstr "Melaksana `%s"
 #, c-format
 msgid "'\n"
 msgstr "'\n"
+
+#~ msgid "Read summary: %d files, %d items\n"
+#~ msgstr "Ringkasan bacaan: %d fail, %d perkara\n"
+
+#~ msgid "Work summary: %d clusters, %d members\n"
+#~ msgstr "Ringkasan kerja: %d gugusan, %d ahli\n"
+
+#~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
+#~ msgstr "Ringkasan kerja: %d gugusan, %d ahli, %d bertindih\n"
 
 #, fuzzy
 #~ msgid ""
