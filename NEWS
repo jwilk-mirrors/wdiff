@@ -2,6 +2,11 @@ GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
 2010, 2011 Free Software Foundation, Inc.
 
+* Version 1.0.2 - September 2011, by Martin von Gagern
+
+  * Unofficial beta release
+  * Introduces use of ngettext to allow correct handling of plural forms
+
 * Version 1.0.1 - September 2011, by Martin von Gagern
 
   * Updated Polish, Ukrainian, Slovenian, Dutch, Finnish, Swedish and
