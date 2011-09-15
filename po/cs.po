@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.0.0\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-09-05 14:28+0200\n"
+"POT-Creation-Date: 2011-09-15 14:15+0200\n"
 "PO-Revision-Date: 2011-09-11 22:45+0200\n"
 "Last-Translator: Petr Pisar <petr.pisar@atlas.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -160,7 +160,8 @@ msgstr " -h                      (ignoruje se)\n"
 
 #: src/mdiff.c:3748
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr " -v, --verbose           vypíše jednoduchou statistiku na chybový výstup\n"
+msgstr ""
+" -v, --verbose           vypíše jednoduchou statistiku na chybový výstup\n"
 
 #: src/mdiff.c:3749 src/unify.c:295
 msgid "      --help             display this help then exit\n"
@@ -191,7 +192,8 @@ msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=ŘETĚZEC]  vezme v úvahu další uživatelský ŘETĚZEC\n"
 
 #: src/mdiff.c:3756
-msgid "  -V, --show-links        give file and line references in annotations\n"
+msgid ""
+"  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        v popiscích uvede soubor a řádek\n"
 
 #: src/mdiff.c:3757
@@ -248,7 +250,8 @@ msgstr "  -o, --printer              přeškrtne jako pro tiskárny\n"
 
 #: src/mdiff.c:3772
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             použije termcap jako pro displeje terminálu\n"
+msgstr ""
+"  -z, --terminal             použije termcap jako pro displeje terminálu\n"
 
 #: src/mdiff.c:3773
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
@@ -268,7 +271,8 @@ msgstr "Bez SOUBORU nebo je-li SOUBOR -, čte ze standardního vstupu.\n"
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "Chyby v programu oznamujte na adrese <wdiff-bugs@gnu.org> (anglicky),\n"
-"připomínky k překladu zasílejte na <translation-team-cs@lists.sourceforge.net>\n"
+"připomínky k překladu zasílejte na <translation-team-cs@lists.sourceforge."
+"net>\n"
 "(česky).\n"
 
 #: src/mdiff.c:3973
@@ -300,7 +304,8 @@ msgid ""
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
 "Toto je volné programové vybavení; podmínky pro kopírování a rozšiřování\n"
-"naleznete ve zdrojových textech. Toto programové vybavení je zcela BEZ ZÁRUKY,\n"
+"naleznete ve zdrojových textech. Toto programové vybavení je zcela BEZ "
+"ZÁRUKY,\n"
 "a to i bez záruky PRODEJNOSTI nebo VHODNOSTI PRO NĚJAKÝ KONKRÉTNÍ ÚČEL.\n"
 
 #: src/mdiff.c:4330 src/wdiff.c:1398 src/wdiff2.c:134
@@ -355,7 +360,8 @@ msgstr "  -e, --echo-comments    komentáře vypisuje na chybový výstup\n"
 
 #: src/unify.c:288
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        výstup je ve starém formátu, v každém případě\n"
+msgstr ""
+"  -o, --old-diffs        výstup je ve starém formátu, v každém případě\n"
 
 #: src/unify.c:289
 msgid "  -p, --patch-format     generate patch format\n"
@@ -379,7 +385,8 @@ msgstr "  -U                     stejné jako -p a -u\n"
 
 #: src/unify.c:294
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       ve sjednoceném formátu nahradí mezery rovnítky\n"
+msgstr ""
+"  -=, --use-equals       ve sjednoceném formátu nahradí mezery rovnítky\n"
 
 #: src/unify.c:298
 msgid "If FILE is not specified, read standard input.\n"
@@ -466,16 +473,19 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"Tento program je volné programové vybavení; můžete jej šířit a/nebo upravovat\n"
+"Tento program je volné programové vybavení; můžete jej šířit a/nebo "
+"upravovat\n"
 "podle ustanovení Obecné veřejné licence GNU, vydávané Free Software\n"
 "Foundation, a to buď verze 3 této licence, nebo (podle vašeho uvážení)\n"
 "kterékoli pozdější verze.\n"
 "\n"
 "Tento program je rozšiřován v naději, že bude užitečný, avšak BEZ JAKÉKOLI\n"
 "ZÁRUKY; neposkytují se ani odvozené záruky PRODEJNOSTI anebo VHODNOSTI PRO\n"
-"NĚJAKÝ KONKRÉTNÍ ÚČEL. Další podrobnosti naleznete v Obecné veřejné licenci GNU.\n"
+"NĚJAKÝ KONKRÉTNÍ ÚČEL. Další podrobnosti naleznete v Obecné veřejné licenci "
+"GNU.\n"
 "\n"
-"Spolu s tímto programem byste měli obdržet kopii Obecné veřejné licence GNU.\n"
+"Spolu s tímto programem byste měli obdržet kopii Obecné veřejné licence "
+"GNU.\n"
 "Pokud se tak nestalo, vizte <http://www.gnu.org/licenses/>.\n"
 
 #: src/wdiff.c:1238
@@ -492,8 +502,10 @@ msgstr ""
 "         %s -d [PŘEPÍNAČE]… [SOUBOR]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
-msgid "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Povinné argumenty dlouhých přepínačů jsou též povinné pro krátké přepínače.\n"
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+"Povinné argumenty dlouhých přepínačů jsou též povinné pro krátké přepínače.\n"
 
 #: src/wdiff.c:1250 src/wdiff2.c:189
 msgid "  -C, --copyright            display copyright then exit\n"
@@ -505,7 +517,8 @@ msgstr "  -a, --auto-pager           automaticky zavolá stránkovač\n"
 
 #: src/wdiff.c:1255
 msgid "  -d, --diff-input           use single unified diff as input\n"
-msgstr "  -d, --diff-input           jako vstup použije jeden sjednocený diff\n"
+msgstr ""
+"  -d, --diff-input           jako vstup použije jeden sjednocený diff\n"
 
 #: src/wdiff.c:1256 src/wdiff2.c:194
 msgid "  -h, --help                 display this help then exit\n"
@@ -528,8 +541,11 @@ msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              přeškrtne jako pro tiskárny\n"
 
 #: src/wdiff.c:1261 src/wdiff2.c:200
-msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           sdělí, kolik slov bylo odstraněno, vloženo atd.\n"
+msgid ""
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr ""
+"  -s, --statistics           sdělí, kolik slov bylo odstraněno, vloženo "
+"atd.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:201
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
@@ -540,16 +556,21 @@ msgid "  -v, --version              display program version then exit\n"
 msgstr "  -v, --version              zobrazí verzi programu a skončí\n"
 
 #: src/wdiff.c:1264 src/wdiff2.c:203
-msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=ŘETĚZEC začátek odstraněné oblasti vyznačí ŘETĚZCEM\n"
+msgid ""
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr ""
+"  -w, --start-delete=ŘETĚZEC začátek odstraněné oblasti vyznačí ŘETĚZCEM\n"
 
 #: src/wdiff.c:1265 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=ŘETĚZEC   konec odstraněné oblasti vyznačí ŘETĚZCEM\n"
+msgstr ""
+"  -x, --end-delete=ŘETĚZEC   konec odstraněné oblasti vyznačí ŘETĚZCEM\n"
 
 #: src/wdiff.c:1266 src/wdiff2.c:205
-msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=ŘETĚZEC začátek vložené oblasti vyznačí ŘETĚZCEM\n"
+msgid ""
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr ""
+"  -y, --start-insert=ŘETĚZEC začátek vložené oblasti vyznačí ŘETĚZCEM\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
@@ -664,7 +685,8 @@ msgstr "“\n"
 #~ "Report bugs to <recode-bugs@gnu.ai.mit.edu>.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "  Chyby v programu oznamujte na adrese <recode-bugs@gnu.ai.mit.edu> (pouze\n"
+#~ "  Chyby v programu oznamujte na adrese <recode-bugs@gnu.ai.mit.edu> "
+#~ "(pouze\n"
 #~ "anglicky), připomínky k překladu zasílejte na <cs@li.org> (česky).\n"
 
 #~ msgid "Specify a terminal type with `setenv TERM <yourtype>'."

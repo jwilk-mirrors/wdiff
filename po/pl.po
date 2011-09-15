@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.0.0\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-09-05 14:28+0200\n"
+"POT-Creation-Date: 2011-09-15 14:15+0200\n"
 "PO-Revision-Date: 2011-09-06 21:30+0200\n"
 "Last-Translator: Rafał Maszkowski <rzm@icm.edu.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
@@ -16,7 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 
 #: src/mdiff.c:371
 #, c-format
@@ -78,7 +79,8 @@ msgstr "Podsumowanie pracy: %d złączeń, %d elementów\n"
 #: src/mdiff.c:2284
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Podsumowanie pracy: %d złączeń, %d elementów, %d zduplikowanych linii\n"
+msgstr ""
+"Podsumowanie pracy: %d złączeń, %d elementów, %d zduplikowanych linii\n"
 
 #: src/mdiff.c:2333 src/wdiff.c:224
 #, c-format
@@ -161,7 +163,8 @@ msgstr "      --help              wyświetlenie tego opisu i zakończenie\n"
 
 #: src/mdiff.c:3750 src/unify.c:296
 msgid "      --version          display program version then exit\n"
-msgstr "      --version           wypisanie informacji o wersji i zakończenie\n"
+msgstr ""
+"      --version           wypisanie informacji o wersji i zakończenie\n"
 
 #: src/mdiff.c:3752
 msgid ""
@@ -181,10 +184,13 @@ msgstr "  -l, --paginate          formatowanie wyników przez `pr'\n"
 
 #: src/mdiff.c:3755
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr "  -S, --string[=NAPIS]    informacja o użyciu NAPISU podanego przez użytkownika\n"
+msgstr ""
+"  -S, --string[=NAPIS]    informacja o użyciu NAPISU podanego przez "
+"użytkownika\n"
 
 #: src/mdiff.c:3756
-msgid "  -V, --show-links        give file and line references in annotations\n"
+msgid ""
+"  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        podawanie odnośników do plików i linii\n"
 
 #: src/mdiff.c:3757
@@ -241,11 +247,13 @@ msgstr "  -o, --printer              nadrukowanie znaków na siebie\n"
 
 #: src/mdiff.c:3772
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal            używanie termcapa do pisania na terminalu\n"
+msgstr ""
+"  -z, --terminal            używanie termcapa do pisania na terminalu\n"
 
 #: src/mdiff.c:3773
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=WYRREG   porównywanie elementów wg definicji WYRREG\n"
+msgstr ""
+"  -O, --item-regexp=WYRREG   porównywanie elementów wg definicji WYRREG\n"
 
 #: src/mdiff.c:3774
 msgid "  -W, --word-mode            compare words instead of lines\n"
@@ -302,7 +310,8 @@ msgstr ""
 #: src/mdiff.c:4365
 #, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
-msgstr "opcje -123RSYZ mają znaczenie tylko gdy są dwa zestawy danych wejściowych"
+msgstr ""
+"opcje -123RSYZ mają znaczenie tylko gdy są dwa zestawy danych wejściowych"
 
 #: src/pipes.c:47
 #, c-format
@@ -326,7 +335,8 @@ msgstr "napisz `%s --help' żeby otrzymać więcej informacji\n"
 
 #: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr "unify -  Przekształcenie diff-a kontekstowego w zunifikowany i odwrotnie.\n"
+msgstr ""
+"unify -  Przekształcenie diff-a kontekstowego w zunifikowany i odwrotnie.\n"
 
 #: src/unify.c:283
 #, c-format
@@ -339,7 +349,9 @@ msgstr "  -c, --context-diffs    wynik jako diff kontekstowy\n"
 
 #: src/unify.c:287
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    wypisywanie komentarzy na standardowym wyjściu błędu\n"
+msgstr ""
+"  -e, --echo-comments    wypisywanie komentarzy na standardowym wyjściu "
+"błędu\n"
 
 #: src/unify.c:288
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
@@ -367,7 +379,8 @@ msgstr "  -U                     to samo co -p i -u\n"
 
 #: src/unify.c:294
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       zamiana spacji na `=' w diffie zunifikowanym\n"
+msgstr ""
+"  -=, --use-equals       zamiana spacji na `=' w diffie zunifikowanym\n"
 
 #: src/unify.c:298
 msgid "If FILE is not specified, read standard input.\n"
@@ -481,8 +494,10 @@ msgstr ""
 "          %s -d [OPCJA]... [PLIK]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
-msgid "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Argumenty obowiązkowe dla długich opcji są obowiązkowe też dla krótkich.\n"
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+"Argumenty obowiązkowe dla długich opcji są obowiązkowe też dla krótkich.\n"
 
 #: src/wdiff.c:1250 src/wdiff2.c:189
 msgid "  -C, --copyright            display copyright then exit\n"
@@ -496,7 +511,9 @@ msgstr "  -a, --auto-pager           wywołanie programu do oglądania plików\n
 
 #: src/wdiff.c:1255
 msgid "  -d, --diff-input           use single unified diff as input\n"
-msgstr "  -d, --diff-input           użycie pojedyńczego diffa zunifikowanego na wejściu\n"
+msgstr ""
+"  -d, --diff-input           użycie pojedyńczego diffa zunifikowanego na "
+"wejściu\n"
 
 #: src/wdiff.c:1256 src/wdiff2.c:194
 msgid "  -h, --help                 display this help then exit\n"
@@ -521,32 +538,43 @@ msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              nadrukowanie znaków na siebie\n"
 
 #: src/wdiff.c:1261 src/wdiff2.c:200
-msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           podanie ile słów zostało usuniętych, dodanych itp.\n"
+msgid ""
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr ""
+"  -s, --statistics           podanie ile słów zostało usuniętych, dodanych "
+"itp.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:201
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             użycie termcapa do wyświetlania na terminalu\n"
+msgstr ""
+"  -t, --terminal             użycie termcapa do wyświetlania na terminalu\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:202
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -v, --version              wypisanie informacji o wersji i zakończenie\n"
+msgstr ""
+"  -v, --version              wypisanie informacji o wersji i zakończenie\n"
 
 #: src/wdiff.c:1264 src/wdiff2.c:203
-msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=NAPIS   NAPIS oznaczający początek obszaru kasowania\n"
+msgid ""
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr ""
+"  -w, --start-delete=NAPIS   NAPIS oznaczający początek obszaru kasowania\n"
 
 #: src/wdiff.c:1265 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=NAPIS     NAPIS oznaczający koniec obszaru kasowania\n"
+msgstr ""
+"  -x, --end-delete=NAPIS     NAPIS oznaczający koniec obszaru kasowania\n"
 
 #: src/wdiff.c:1266 src/wdiff2.c:205
-msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=NAPIS   NAPIS oznaczający początek obszaru dodanego\n"
+msgid ""
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr ""
+"  -y, --start-insert=NAPIS   NAPIS oznaczający początek obszaru dodanego\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=NAPIS     NAPIS oznaczający koniec obszaru dodanego\n"
+msgstr ""
+"  -z, --end-insert=NAPIS     NAPIS oznaczający koniec obszaru dodanego\n"
 
 #: src/wdiff.c:1386
 #, c-format
@@ -597,11 +625,13 @@ msgstr "Składnia: %s [OPCJA]... PLIK1 PLIK2\n"
 
 #: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr "  -q, --quiet                wyłączenie komunikatu o uruchomieniu `mdiff-a'\n"
+msgstr ""
+"  -q, --quiet                wyłączenie komunikatu o uruchomieniu `mdiff-a'\n"
 
 #: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr "Ten program pokazuje również jak `mdiff' mógł zostać wywołany bezpośrednio.\n"
+msgstr ""
+"Ten program pokazuje również jak `mdiff' mógł zostać wywołany bezpośrednio.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:332

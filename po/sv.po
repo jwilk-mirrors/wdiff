@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.0.0\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-09-05 14:28+0200\n"
+"POT-Creation-Date: 2011-09-15 14:15+0200\n"
 "PO-Revision-Date: 2011-09-08 13:40+0200\n"
 "Last-Translator: Jan Djärv <jan.h.d@swipnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -169,23 +169,27 @@ msgstr ""
 
 #: src/mdiff.c:3753
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr "  -T, --initial-tab       skriv TAB instället för inledande mellanslag\n"
+msgstr ""
+"  -T, --initial-tab       skriv TAB instället för inledande mellanslag\n"
 
 #: src/mdiff.c:3754
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr "  -l, --paginate          skicka resultatet genom \"pr\" för sidindelning\n"
+msgstr ""
+"  -l, --paginate          skicka resultatet genom \"pr\" för sidindelning\n"
 
 #: src/mdiff.c:3755
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=STRÄNG]   ta även hänsyn till STRÄNG\n"
 
 #: src/mdiff.c:3756
-msgid "  -V, --show-links        give file and line references in annotations\n"
+msgid ""
+"  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        ange fil- och radreferenser i annoteringar\n"
 
 #: src/mdiff.c:3757
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       ersätt tabulatortecken med mellanslag i reultatet\n"
+msgstr ""
+"  -t, --expand-tabs       ersätt tabulatortecken med mellanslag i reultatet\n"
 
 #: src/mdiff.c:3760
 msgid ""
@@ -255,7 +259,8 @@ msgstr "Utan FIL eller om FIL är -, läs standard in.\n"
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "Rapportera fel till <wdiff-bugs@gnu.org>\n"
-"Rapportera fel eller synpunkter på översättningen till <tp-sv@listor.tp-sv.se>.\n"
+"Rapportera fel eller synpunkter på översättningen till <tp-sv@listor.tp-sv."
+"se>.\n"
 
 #: src/mdiff.c:3973
 #, c-format
@@ -341,7 +346,9 @@ msgstr "  -e, --echo-comments    skriv kommentarer till standard fel\n"
 
 #: src/unify.c:288
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        visa under alla omständigheter skillnader på gammal stil\n"
+msgstr ""
+"  -o, --old-diffs        visa under alla omständigheter skillnader på gammal "
+"stil\n"
 
 #: src/unify.c:289
 msgid "  -p, --patch-format     generate patch format\n"
@@ -365,7 +372,9 @@ msgstr "  -U                     samma som -p och -u\n"
 
 #: src/unify.c:294
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr "  -=, --use-equals       ersätt mellanslag med likhetstecken i enad skillnad\n"
+msgstr ""
+"  -=, --use-equals       ersätt mellanslag med likhetstecken i enad "
+"skillnad\n"
 
 #: src/unify.c:298
 msgid "If FILE is not specified, read standard input.\n"
@@ -456,7 +465,8 @@ msgstr ""
 "informativt syfte. För alla juridiska tolkningar gäller den engelska\n"
 "originaltexten.\n"
 "\n"
-"Detta program är fri programvara.  Du kan distribuera det och/eller modifiera\n"
+"Detta program är fri programvara.  Du kan distribuera det och/eller "
+"modifiera\n"
 "det under villkoren i GNU General Public License, publicerad av\n"
 "Free Software Foundation, antingen version 2 eller (om du så vill)\n"
 "någon senare version.\n"
@@ -483,8 +493,10 @@ msgstr ""
 "            %s -d [FLAGGA]... [FIL]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
-msgid "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Obligatoriska argument för långa flaggor är obligatoriska för korta flaggor\n"
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+"Obligatoriska argument för långa flaggor är obligatoriska för korta flaggor\n"
 
 #: src/wdiff.c:1250 src/wdiff2.c:189
 msgid "  -C, --copyright            display copyright then exit\n"
@@ -519,8 +531,10 @@ msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              överskrivning som för skrivare\n"
 
 #: src/wdiff.c:1261 src/wdiff2.c:200
-msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr "  -s, --statistics           visa hur många ord borttagna, insatta etc.\n"
+msgid ""
+"  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr ""
+"  -s, --statistics           visa hur många ord borttagna, insatta etc.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:201
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
@@ -531,20 +545,28 @@ msgid "  -v, --version              display program version then exit\n"
 msgstr "  -v, --version              skriv programversion och avsluta\n"
 
 #: src/wdiff.c:1264 src/wdiff2.c:203
-msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=STRÄNG  sträng som markerar början av en borttagen region\n"
+msgid ""
+"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr ""
+"  -w, --start-delete=STRÄNG  sträng som markerar början av en borttagen "
+"region\n"
 
 #: src/wdiff.c:1265 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=STRÄNG    sträng som markerar slutet av en borttagen region\n"
+msgstr ""
+"  -x, --end-delete=STRÄNG    sträng som markerar slutet av en borttagen "
+"region\n"
 
 #: src/wdiff.c:1266 src/wdiff2.c:205
-msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=STRÄNG  sträng som markerar början av en insatt region\n"
+msgid ""
+"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr ""
+"  -y, --start-insert=STRÄNG  sträng som markerar början av en insatt region\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=STRÄNG    sträng som markerar slutet av en insatt region\n"
+msgstr ""
+"  -z, --end-insert=STRÄNG    sträng som markerar slutet av en insatt region\n"
 
 #: src/wdiff.c:1386
 #, c-format
@@ -585,7 +607,8 @@ msgid ""
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
 "wdiff - Beräkna ordskillnader genom att internt köra \"mdiff -W\".\n"
-"Detta program finns huvudsakligen för att stödja den nu gamla \"wdiff\"-syntaxen.\n"
+"Detta program finns huvudsakligen för att stödja den nu gamla \"wdiff\"-"
+"syntaxen.\n"
 
 #: src/wdiff2.c:182
 #, c-format
@@ -594,7 +617,8 @@ msgstr "Användning: %s [FLAGGA]... FIL1 FIL2\n"
 
 #: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr "  -q, --quiet                undertryck meddelandet för \"mdiff\"-anropet\n"
+msgstr ""
+"  -q, --quiet                undertryck meddelandet för \"mdiff\"-anropet\n"
 
 #: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
