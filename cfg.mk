@@ -30,5 +30,8 @@ local-checks-to-skip += sc_prohibit_atoi_atof
 local-checks-to-skip += sc_prohibit_strcmp
 local-checks-to-skip += sc_useless_cpp_parens
 
+# We're using neither git nor submodules, so no need to check this so often:
+gl_public_submodule_commit =
+
 # Stuff maintained by maint.mk:
 old_NEWS_hash = d41d8cd98f00b204e9800998ecf8427e
