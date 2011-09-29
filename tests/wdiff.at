@@ -170,7 +170,7 @@ dnl      ---------
 
 # Due to the istty call in the sources, we have to use screen here.
 
-AT_TESTED([wdiff diff screen env sed grep])
+AT_TESTED([wdiff diff screen env sed tr grep])
 AT_DATA([foo.txt], [start foo end
 ])
 AT_DATA([bar.txt], [start bar end
@@ -190,7 +190,7 @@ AT_CAPTURE_FILE([screenlog.0])
 AT_SKIP_IF([grep 'terminal type.*not defined' screenlog.0])
 # Need to work around a screen bug which might cause the first
 # character to be lost: https://savannah.gnu.org/bugs/index.php?34200
-AT_CHECK([sed 's/^ager/Pager/;s/\r//g;' screenlog.0], 0,
+AT_CHECK([tr -d '\r' < screenlog.0 | sed 's/^ager/Pager/'], 0,
 [Pager starting.
 Pager line start WfooX YbarZ end printed.
 Pager now done.
