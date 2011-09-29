@@ -2,6 +2,10 @@ GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
 2010, 2011 Free Software Foundation, Inc.
 
+* UNRELEASED
+
+  * Fix portability issue of sed command in testsuite on OS X.
+
 * Version 1.0.2 - September 2011, by Martin von Gagern
 
   * Unofficial beta release
