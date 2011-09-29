@@ -173,7 +173,7 @@ dnl      ---------
 # Due to the istty call in the sources, we have to use screen here.
 
 LC_ALL=C
-AT_TESTED([wdiff screen env sed tr grep])
+AT_TESTED([wdiff diff screen env sed tr grep])
 AT_DATA([foo.txt], [start foo end
 ])
 AT_DATA([bar.txt], [start bar end
@@ -197,6 +197,47 @@ AT_CHECK([tr -d '\r' < screenlog.0 | sed 's/^ager/Pager/'], 0,
 [Pager starting.
 Pager line start WfooX YbarZ end printed.
 Pager now done.
+], [])
+
+AT_CLEANUP()
+
+AT_SETUP(diff as input)
+dnl      -------------
+
+AT_TESTED([wdiff diff])
+AT_DATA([foo.txt], [one
+two
+three in a row
+four
+five
+six
+seven
+eight
+nine
+])
+AT_DATA([bar.txt], [one
+two
+three but not in a row
+four
+five
+six
+seven
+ate
+nine
+])
+AT_CHECK([diff -U1 foo.txt bar.txt | sed 's/\.txt.*/.txt/'], 0, [stdout], [])
+mv stdout foobar.diff
+AT_CHECK([wdiff -d -w"(" -x")" -y"{" -z"}" foobar.diff], 1,
+[(-- foo.txt){++ bar.txt}
+@@ -2,3 +2,3 @@
+two
+three {but not} in a row
+four
+@@ -7,3 +7,3 @@
+seven
+(eight)
+{ate}
+nine
 ], [])
 
 AT_CLEANUP()
