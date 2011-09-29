@@ -3,7 +3,7 @@
 ## notice and this notice are preserved.  This file is offered as-is,
 ## without any warranty.
 
-AC_INIT([GNU wdiff], [0.6.5], [wdiff-bugs@gnu.org])
+AC_INIT([GNU wdiff], [1.0.1], [wdiff-bugs@gnu.org])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE
 
@@ -34,7 +34,7 @@ else
 fi
 
 AM_GNU_GETTEXT_VERSION([0.18])
-AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT([external], [need-ngettext])
 
 AC_ARG_WITH([default-pager],
  AC_HELP_STRING([--with-default-pager=PATH],

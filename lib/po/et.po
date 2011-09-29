@@ -1,149 +1,150 @@
+# This file is distributed under the same license as the gnulib package.
 # Estonian translations for gnulib
 # Copyright (C) 2000 Free Software Foundation, Inc.
-# Toomas Soome <Toomas.Soome@microlink.ee>, 2006.
+# Toomas Soome <Toomas.Soome@microlink.ee>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 1.0\n"
+"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
-"PO-Revision-Date: 2006-07-28 09:50+0300\n"
+"POT-Creation-Date: 2011-09-15 14:15+0200\n"
+"PO-Revision-Date: 2011-05-19 15:10+0300\n"
 "Last-Translator: Toomas Soome <Toomas.Soome@microlink.ee>\n"
-"Language-Team: Estonian <et@li.org>\n"
+"Language-Team: Estonian <linux-ee@lists.eenet.ee>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-15\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/error.c:181
+#: lib/error.c:185
 msgid "Unknown system error"
 msgstr "Tundmatu süsteemne viga"
 
-#: lib/getopt.c:527 lib/getopt.c:543
+#: lib/getopt.c:547 lib/getopt.c:576
 #, fuzzy, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: võti `%s' on segane\n"
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: võti '%s' on segane\n"
 
-#: lib/getopt.c:576 lib/getopt.c:580
-#, fuzzy, c-format
+#: lib/getopt.c:624 lib/getopt.c:628
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: võti `--%s' ei luba kasutada argumenti\n"
+msgstr "%s: võti '--%s' ei luba kasutada argumenti\n"
 
-#: lib/getopt.c:589 lib/getopt.c:594
-#, fuzzy, c-format
+#: lib/getopt.c:637 lib/getopt.c:642
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: võti `%c%s' ei luba kasutada argumenti\n"
+msgstr "%s: võti '%c%s' ei luba kasutada argumenti\n"
 
-#: lib/getopt.c:637 lib/getopt.c:656
+#: lib/getopt.c:685 lib/getopt.c:704
 #, fuzzy, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: võti `%s' nõuab argumenti\n"
+msgstr "%s: võti '%s' nõuab argumenti\n"
 
-#: lib/getopt.c:694 lib/getopt.c:697
-#, fuzzy, c-format
+#: lib/getopt.c:742 lib/getopt.c:745
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
-msgstr "%s: tundmatu võti `--%s'\n"
+msgstr "%s: tundmatu võti '--%s'\n"
 
-#: lib/getopt.c:705 lib/getopt.c:708
-#, fuzzy, c-format
+#: lib/getopt.c:753 lib/getopt.c:756
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
-msgstr "%s: tundmatu võti `%c%s'\n"
+msgstr "%s: tundmatu võti '%c%s'\n"
 
-#: lib/getopt.c:757 lib/getopt.c:760
-#, fuzzy, c-format
+#: lib/getopt.c:805 lib/getopt.c:808
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: vigane võti -- %c\n"
+msgstr "%s: vigane võti -- '%c'\n"
 
-#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
-#, fuzzy, c-format
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: võti nõuab argumenti -- %c\n"
+msgstr "%s: võti nõuab argumenti -- '%c'\n"
 
-#: lib/getopt.c:883 lib/getopt.c:899
-#, fuzzy, c-format
+#: lib/getopt.c:934 lib/getopt.c:950
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: võti `-W %s' on segane\n"
+msgstr "%s: võti '-W %s' on segane\n"
 
-#: lib/getopt.c:923 lib/getopt.c:941
-#, fuzzy, c-format
+#: lib/getopt.c:974 lib/getopt.c:992
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: võti `-W %s' ei luba kasutada argumenti\n"
+msgstr "%s: võti '-W %s' ei luba kasutada argumenti\n"
 
-#: lib/getopt.c:962 lib/getopt.c:980
+#: lib/getopt.c:1013 lib/getopt.c:1031
 #, fuzzy, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: võti `%s' nõuab argumenti\n"
+msgstr "%s: võti '%s' nõuab argumenti\n"
 
-#: lib/regcomp.c:132
+#: lib/regcomp.c:131
 msgid "Success"
 msgstr ""
 
-#: lib/regcomp.c:135
+#: lib/regcomp.c:134
 msgid "No match"
 msgstr ""
 
-#: lib/regcomp.c:138
+#: lib/regcomp.c:137
 msgid "Invalid regular expression"
 msgstr "Vigane regulaaravaldis"
 
-#: lib/regcomp.c:141
+#: lib/regcomp.c:140
 msgid "Invalid collation character"
 msgstr "Vigane võrdlussümbol"
 
-#: lib/regcomp.c:144
+#: lib/regcomp.c:143
 msgid "Invalid character class name"
 msgstr "Vigane sümbolite klassi nimi"
 
-#: lib/regcomp.c:147
+#: lib/regcomp.c:146
 msgid "Trailing backslash"
 msgstr ""
 
-#: lib/regcomp.c:150
+#: lib/regcomp.c:149
 msgid "Invalid back reference"
 msgstr "Vigane tagasiviide"
 
-#: lib/regcomp.c:153
+#: lib/regcomp.c:152
 msgid "Unmatched [ or [^"
 msgstr ""
 
-#: lib/regcomp.c:156
+#: lib/regcomp.c:155
 msgid "Unmatched ( or \\("
 msgstr ""
 
-#: lib/regcomp.c:159
+#: lib/regcomp.c:158
 msgid "Unmatched \\{"
 msgstr ""
 
-#: lib/regcomp.c:162
+#: lib/regcomp.c:161
 msgid "Invalid content of \\{\\}"
 msgstr ""
 
-#: lib/regcomp.c:165
+#: lib/regcomp.c:164
 msgid "Invalid range end"
 msgstr "Vigane vahemiku lõpp"
 
-#: lib/regcomp.c:168
+#: lib/regcomp.c:167
 msgid "Memory exhausted"
 msgstr "Mälu on otsas"
 
-#: lib/regcomp.c:171
+#: lib/regcomp.c:170
 msgid "Invalid preceding regular expression"
 msgstr "Vigane eelnev regulaaravaldis"
 
-#: lib/regcomp.c:174
+#: lib/regcomp.c:173
 msgid "Premature end of regular expression"
 msgstr "Enneaegne regulaaravaldise lõpp"
 
-#: lib/regcomp.c:177
+#: lib/regcomp.c:176
 msgid "Regular expression too big"
 msgstr "Regulaaravaldis on liiga pikk"
 
-#: lib/regcomp.c:180
+#: lib/regcomp.c:179
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:701
+#: lib/regcomp.c:700
 msgid "No previous regular expression"
 msgstr "Eelmist regulaaravaldist pole"
 
@@ -160,12 +161,33 @@ msgstr "mälu on otsas"
 #~ msgid "Valid arguments are:"
 #~ msgstr "Lubatud argumendid on:"
 
+#~ msgid "ARGP_HELP_FMT: %s value is less than or equal to %s"
+#~ msgstr "ARGP_HELP_FMT: %s väärtus on väiksem või võrdne kui %s"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter requires a value"
+#~ msgstr "%.*s: ARGP_HELP_FMT parameeter nõuab väärtust"
+
+#~ msgid "%.*s: ARGP_HELP_FMT parameter must be positive"
+#~ msgstr "%.*s: ARGP_HELP_FMT parameeter peab olema positiivne"
+
+#~ msgid "%.*s: Unknown ARGP_HELP_FMT parameter"
+#~ msgstr "%.*s: Tundmatu ARGP_HELP_FMT parameeter"
+
+#~ msgid "Garbage in ARGP_HELP_FMT: %s"
+#~ msgstr "Prügi ARGP_HELP_FMT sees: %s"
+
 #~ msgid ""
 #~ "Mandatory or optional arguments to long options are also mandatory or "
 #~ "optional for any corresponding short options."
 #~ msgstr ""
 #~ "Kohustuslikud argumendid pikkadele võtmetele on kohustuslikud ka "
 #~ "lühikestele."
+
+#~ msgid "Usage:"
+#~ msgstr "Kasutamine:"
+
+#~ msgid "  or: "
+#~ msgstr "  või: "
 
 #~ msgid " [OPTION...]"
 #~ msgstr " [VÕTI]..."
@@ -176,21 +198,62 @@ msgstr "mälu on otsas"
 #~ msgid "Report bugs to %s.\n"
 #~ msgstr "Vigadest teatage palun aadressil %s.\n"
 
+#~ msgid "give this help list"
+#~ msgstr "anna see abiinfo"
+
+#~ msgid "give a short usage message"
+#~ msgstr "anna kasutamise lühikirjeldus"
+
 #~ msgid "NAME"
 #~ msgstr "NIMI"
 
-#, fuzzy
-#~ msgid "Print program version"
-#~ msgstr "programmi viga"
+#~ msgid "set the program name"
+#~ msgstr "sea programmi nimi"
+
+#~ msgid "SECS"
+#~ msgstr "SEK"
+
+#~ msgid "hang for SECS seconds (default 3600)"
+#~ msgstr "oota SEK sekundit (vaikimisi 3600)"
+
+#~ msgid "print program version"
+#~ msgstr "väljasta programmi versioon"
+
+#~ msgid "(PROGRAM ERROR) No version known!?"
+#~ msgstr "(PROGRAMMI VIGA) Versioon ei ole teada!?"
 
 #~ msgid "%s: Too many arguments\n"
 #~ msgstr "%s: Liiga palju argumente\n"
 
+#~ msgid "(PROGRAM ERROR) Option should have been recognized!?"
+#~ msgstr "(PROGRAMMI VIGA) Võti pidanuks olema teada!?"
+
 #~ msgid "program error"
 #~ msgstr "programmi viga"
 
+#~ msgid "stack overflow"
+#~ msgstr "pinu ületäitumine"
+
+#~ msgid "cannot find a temporary directory, try setting $TMPDIR"
+#~ msgstr "ei leia ajutist kataloogi, proovige seada $TMPDIR"
+
+#~ msgid "cannot create a temporary directory using template \"%s\""
+#~ msgstr "vormiga \"%s\" ei saa ajutist kataloogi luua"
+
+#~ msgid "cannot remove temporary file %s"
+#~ msgstr "ajutist faili %s ei õnnestu kustutada"
+
+#~ msgid "cannot remove temporary directory %s"
+#~ msgstr "ajutist kataloogi %s ei õnnestu kustutada"
+
+#~ msgid "error closing file"
+#~ msgstr "viga faili sulgemisel"
+
 #~ msgid "write error"
 #~ msgstr "viga kirjutamisel"
+
+#~ msgid "preserving permissions for %s"
+#~ msgstr "säilitan %s õiguseid"
 
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "viga \"%s\" lugemiseks avamisel"
@@ -209,6 +272,12 @@ msgstr "mälu on otsas"
 
 #~ msgid "fdopen() failed"
 #~ msgstr "fdopen() ebaõnnestus"
+
+#~ msgid "C# compiler not found, try installing pnet"
+#~ msgstr "C# kompilaatorit pole, proovige paigaldada pnet"
+
+#~ msgid "C# virtual machine not found, try installing pnet"
+#~ msgstr "C# virtuaalmasinat pole, proovige paigaldada pnet"
 
 #~ msgid "%s subprocess failed"
 #~ msgstr "%s: alamprotsess sai vea"
@@ -285,6 +354,9 @@ msgstr "mälu on otsas"
 #~ msgid "System error"
 #~ msgstr "Süsteemne viga"
 
+#~ msgid "Argument buffer too small"
+#~ msgstr "Argumentide puhver on liiga väike"
+
 #~ msgid "Processing request in progress"
 #~ msgstr "Päringu töötlemine käib"
 
@@ -306,26 +378,32 @@ msgstr "mälu on otsas"
 #~ msgid "Unknown error"
 #~ msgstr "Tundmatu viga"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: lubamatu võti -- %c\n"
+#~ msgid "invalid source_version argument to compile_java_class"
+#~ msgstr "funktsiooni compile_java_class argument source_version on vigane"
 
-#~ msgid "block size"
-#~ msgstr "bloki suurus"
+#~ msgid "invalid target_version argument to compile_java_class"
+#~ msgstr "funktsiooni compile_java_class argument target_version on vigane"
 
-#~ msgid "%s exists but is not a directory"
-#~ msgstr "`%s' on olemas, aga ei ole kataloog"
+#~ msgid "failed to create \"%s\""
+#~ msgstr "\"%s\" ei õnnestu luua"
 
-#~ msgid "cannot change owner and/or group of %s"
-#~ msgstr "%s omanikku ja/või gruppi ei õnnestu muuta"
+#~ msgid "error while writing \"%s\" file"
+#~ msgstr "viga faili \"%s\" kirjutamisel"
 
-#~ msgid "cannot create directory %s"
-#~ msgstr "kataloogi `%s' ei õnnestu luua"
+#~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
+#~ msgstr "Java kompilaatorit pole, proovige paigaldada gcj või seada $JAVAC"
 
-#~ msgid "cannot chdir to directory %s"
-#~ msgstr "ei saa minna kataloogi %s"
+#~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
+#~ msgstr "Java virtuaalmasinat pole, proovige paigaldada gcj või seada $JAVAC"
+
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "%s: alamprotsess sai S/V vea"
 
 #~ msgid "cannot change permissions of %s"
 #~ msgstr "ei õnnestu muuta %s õigusi"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "kataloogi `%s' ei õnnestu luua"
 
 #~ msgid "unable to record current working directory"
 #~ msgstr "ei õnnestu registreerida jooksvat töökataloogi"
@@ -335,6 +413,21 @@ msgstr "mälu on otsas"
 
 #~ msgid "Failed to open /dev/zero for read"
 #~ msgstr "Faili /dev/zero saa lugemiseks avada"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "lugemise lõime loomine ebaõnnestus"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "ühendus %s alamprotsessiga ebaõnnestus"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "kirjutamine %s alamprotsessi sai vea"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "lugemine %s alamprotsessist sai vea"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "lõimede loomine ebaõnnestus"
 
 #~ msgid "cannot create pipe"
 #~ msgstr "ei õnnestu luua toru"
@@ -350,6 +443,15 @@ msgstr "mälu on otsas"
 
 #~ msgid "^[nN]"
 #~ msgstr "^[eE]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "ei õnnestu seada %s õigusi"
+
+#~ msgid "Bus error"
+#~ msgstr "Siini viga"
+
+#~ msgid "Power failure"
+#~ msgstr "Toite viga"
 
 #~ msgid "iconv function not usable"
 #~ msgstr "iconv funktsioon ei ole kasutatav"
@@ -372,27 +474,11 @@ msgstr "mälu on otsas"
 #~ msgid "invalid group"
 #~ msgstr "vigane grupp"
 
-#~ msgid "cannot get the login group of a numeric UID"
-#~ msgstr "ei leia numbrilise UID login gruppi"
+#~ msgid "invalid spec"
+#~ msgstr "vigane spetsifikatsioon"
 
 #~ msgid "(C)"
 #~ msgstr "©"
-
-#~ msgid ""
-#~ "\n"
-#~ "This is free software.  You may redistribute copies of it under the terms "
-#~ "of\n"
-#~ "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
-#~ "There is NO WARRANTY, to the extent permitted by law.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "\n"
-#~ "Käesolev programm on vaba tarkvara. Te võite seda edasi levitada ja/või "
-#~ "muuta\n"
-#~ "vastavalt GNU Üldise Avaliku Litsentsi <http://www.gnu.org/licenses/gpl."
-#~ "html>\n"
-#~ "tingimustele.\n"
-#~ "Seadustega lubatud piirides GARANTII PUUDUB.\n"
 
 #~ msgid "Written by %s.\n"
 #~ msgstr "Kirjutanud %s.\n"
@@ -458,13 +544,52 @@ msgstr "mälu on otsas"
 #~ "%s, %s, %s, %s,\n"
 #~ "%s, %s ja teised.\n"
 
-#, fuzzy
-#~ msgid "%s subprocess"
-#~ msgstr "%s: alamprotsess sai vea"
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to: %s\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Vigadest teatage palun aadressil: %s.\n"
 
-#, fuzzy
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "%s vigadest teatage palun aadressil: %s\n"
+
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "%s koduleht: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#~ msgstr "%s koduleht: <http://www.gnu.org/software/%s/>\n"
+
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+#~ msgstr ""
+#~ "Üldine abiinfo GNU tarkvara kasutamisest: <http://www.gnu.org/gethelp/>\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle ebaõnnestus"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "failipidet %d ei õnnestu taastada: dup2 ebaõnnestus"
+
+#~ msgid "%s subprocess"
+#~ msgstr "%s alamprotsess"
+
 #~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "%s: alamprotsess sai vea"
+#~ msgstr "%s alamprotsess sai fataalse signaali %d"
+
+#~ msgid "stdin"
+#~ msgstr "standardsisend"
+
+#~ msgid "stdout"
+#~ msgstr "standardväljund"
+
+#~ msgid "stderr"
+#~ msgstr "standardvead"
+
+#~ msgid "unknown stream"
+#~ msgstr "undmatu voog"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "reopen %s moodiga %s ebaõnnestus"
 
 #~ msgid "string comparison failed"
 #~ msgstr "sõnede võrdlus ebaõnnestus"
@@ -474,3 +599,15 @@ msgstr "mälu on otsas"
 
 #~ msgid "The strings compared were %s and %s."
 #~ msgstr "Võrreldi sõnesid %s ja %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "ei õnnestu luua vormindatud väljundit"
+
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "vigane %s%s argument `%s'"
+
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "vigane sufiks %s%s argument `%s'"
+
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "%s%s argument `%s' on liiga suur"

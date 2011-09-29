@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
+"POT-Creation-Date: 2011-09-15 14:15+0200\n"
 "PO-Revision-Date: 2010-02-01 20:34+0100\n"
 "Last-Translator: Emese Kovács <emese@gnome.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
@@ -16,112 +16,112 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/mdiff.c:376
+#: src/mdiff.c:371
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (regexphez `%s')"
 
-#: src/mdiff.c:894 src/wdiff.c:1452
+#: src/mdiff.c:886 src/wdiff.c:1473
 #, fuzzy, c-format
 msgid "only one file may be standard input"
 msgstr "Csak egy fájl lehet szabványos bemenet."
 
-#: src/mdiff.c:909 src/wdiff.c:677
+#: src/mdiff.c:901 src/wdiff.c:674
 #, fuzzy, c-format
 msgid "directories not supported"
 msgstr "A könyvtárak nem támogatottak"
 
-#: src/mdiff.c:1053
+#: src/mdiff.c:1044
 #, c-format
 msgid "Reading %s"
 msgstr "%s olvasása"
 
-#: src/mdiff.c:1178
+#: src/mdiff.c:1168
 #, c-format
 msgid ", %d items\n"
 msgstr ", %d elem\n"
 
-#: src/mdiff.c:1256
+#: src/mdiff.c:1246
 #, c-format
 msgid "Read summary: %d files, %d items\n"
 msgstr "Olvasás összefoglalása: %d fájl, %d elem\n"
 
-#: src/mdiff.c:1652
+#: src/mdiff.c:1638
 #, c-format
 msgid "Sorting"
 msgstr "Rendezés"
 
-#: src/mdiff.c:1669
+#: src/mdiff.c:1655
 #, c-format
 msgid ", clustering"
 msgstr ", csoportosítás"
 
-#: src/mdiff.c:1837 src/mdiff.c:1900
+#: src/mdiff.c:1824 src/mdiff.c:1886
 #, c-format
 msgid ", done\n"
 msgstr ", kész\n"
 
-#: src/mdiff.c:1887
+#: src/mdiff.c:1873
 #, c-format
 msgid "Sorting members"
 msgstr "Tagok rendezése"
 
-#: src/mdiff.c:1919
+#: src/mdiff.c:1905
 #, c-format
 msgid "Work summary: %d clusters, %d members\n"
 msgstr "Munka összefoglalása: %d csoport, %d tag\n"
 
-#: src/mdiff.c:2299
+#: src/mdiff.c:2284
 #, c-format
 msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 msgstr "Munka összefoglalása: %d csoport, %d tag, %d átfedés\n"
 
-#: src/mdiff.c:2348 src/wdiff.c:227
+#: src/mdiff.c:2333 src/wdiff.c:224
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "Válassz terminált a TERM változó segítségével."
 
-#: src/mdiff.c:2351 src/wdiff.c:230
+#: src/mdiff.c:2336 src/wdiff.c:227
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
 msgstr "A termcap adatbázis nem elérhetõ."
 
-#: src/mdiff.c:2353 src/wdiff.c:232
+#: src/mdiff.c:2338 src/wdiff.c:229
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "`%s' típusú terminál nincs definiálva."
 
-#: src/mdiff.c:3700 src/mdiff.c:3712 src/wdiff.c:1152 src/wdiff.c:1164
+#: src/mdiff.c:3686 src/mdiff.c:3698 src/wdiff.c:1175 src/wdiff.c:1187
 #, c-format
 msgid "%s: %d words"
 msgstr "%s: %d szó"
 
-#: src/mdiff.c:3703 src/mdiff.c:3715 src/wdiff.c:1155 src/wdiff.c:1167
+#: src/mdiff.c:3689 src/mdiff.c:3701 src/wdiff.c:1178 src/wdiff.c:1190
 #, c-format
 msgid "  %d %d%% common"
 msgstr "  %d %d%% közös"
 
-#: src/mdiff.c:3705 src/wdiff.c:1157
+#: src/mdiff.c:3691 src/wdiff.c:1180
 #, c-format
 msgid "  %d %d%% deleted"
 msgstr "  %d %d%% törölve"
 
-#: src/mdiff.c:3707 src/mdiff.c:3719 src/wdiff.c:1159 src/wdiff.c:1171
+#: src/mdiff.c:3693 src/mdiff.c:3705 src/wdiff.c:1182 src/wdiff.c:1194
 #, c-format
 msgid "  %d %d%% changed"
 msgstr "  %d %d%% változott"
 
-#: src/mdiff.c:3717 src/wdiff.c:1169
+#: src/mdiff.c:3703 src/wdiff.c:1192
 #, c-format
 msgid "  %d %d%% inserted"
 msgstr "  %d %d%% beszúrva"
 
-#: src/mdiff.c:3746 src/wdiff.c:1211 src/wdiff2.c:177
+#: src/mdiff.c:3732 src/wdiff.c:1233 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Próbáld a `%s --help'-et.\n"
 
-#: src/mdiff.c:3750
+#: src/mdiff.c:3737
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -129,12 +129,12 @@ msgstr ""
 "mdiff - Több fájlt elemez, közös részek után kutatva, majd\n"
 "részletes listát ír ki a hasonlóságokról és a különbségekrõl.\n"
 
-#: src/mdiff.c:3755
+#: src/mdiff.c:3742
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Használat: %s [KAPCSOLÓ]... [FÁJL]...\n"
 
-#: src/mdiff.c:3759
+#: src/mdiff.c:3746
 #, fuzzy
 msgid ""
 "\n"
@@ -143,62 +143,62 @@ msgstr ""
 "\n"
 "Mûveletek:\n"
 
-#: src/mdiff.c:3760
+#: src/mdiff.c:3747
 #, fuzzy
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (figyelmen kívül hagyva)\n"
 
-#: src/mdiff.c:3761
+#: src/mdiff.c:3748
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          néhány statisztikát ír ki az stderr-re\n"
 
-#: src/mdiff.c:3762 src/unify.c:293
+#: src/mdiff.c:3749 src/unify.c:295
 #, fuzzy
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             emlékeztetõt ír ki\n"
 
-#: src/mdiff.c:3763 src/unify.c:294
+#: src/mdiff.c:3750 src/unify.c:296
 #, fuzzy
 msgid "      --version          display program version then exit\n"
 msgstr "      --version          kiírja a program nevét és változatát\n"
 
-#: src/mdiff.c:3765
+#: src/mdiff.c:3752
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
 
-#: src/mdiff.c:3766
+#: src/mdiff.c:3753
 #, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr "  -T, --initial-tab       TAB-ot kezdõ szóköz helyett\n"
 
-#: src/mdiff.c:3767
+#: src/mdiff.c:3754
 #, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr "  -l, --paginate          kimenet oldalszámozása a `pr' segítségével\n"
 
-#: src/mdiff.c:3768
+#: src/mdiff.c:3755
 #, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr ""
 "  -S, --string[=SZTRING]  másik felhasználói SZTRING-et is figyelembe vesz\n"
 
-#: src/mdiff.c:3769
+#: src/mdiff.c:3756
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        annotációban fájl- és sorszámhivatkozások\n"
 
-#: src/mdiff.c:3770
+#: src/mdiff.c:3757
 #, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 "  -t, --expand-tabs       tabulátor karaktert szóközzé alakítja a "
 "kimenetben\n"
 
-#: src/mdiff.c:3773
+#: src/mdiff.c:3760
 #, fuzzy
 msgid ""
 "\n"
@@ -207,12 +207,12 @@ msgstr ""
 "\n"
 "Hibakeresés:\n"
 
-#: src/mdiff.c:3774
+#: src/mdiff.c:3761
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr "  -0, --debugging   nagyon részletesen kiírja, hogy mi történik\n"
 
-#: src/mdiff.c:3777
+#: src/mdiff.c:3764
 #, fuzzy
 msgid ""
 "\n"
@@ -221,84 +221,84 @@ msgstr ""
 "\n"
 "Szó mód kapcsolói:\n"
 
-#: src/mdiff.c:3778 src/wdiff.c:1228 src/wdiff2.c:194
+#: src/mdiff.c:3765 src/wdiff.c:1251 src/wdiff2.c:190
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr "  -1, --no-deleted           megakadályozza a törölt szavak kiírását\n"
 
-#: src/mdiff.c:3779 src/wdiff.c:1229 src/wdiff2.c:195
+#: src/mdiff.c:3766 src/wdiff.c:1252 src/wdiff2.c:191
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr ""
 "  -2, --no-inserted          megakadályozza a beszúrt szavak kiírását\n"
 
-#: src/mdiff.c:3780 src/wdiff.c:1230 src/wdiff2.c:196
+#: src/mdiff.c:3767 src/wdiff.c:1253 src/wdiff2.c:192
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            megakadályozza a közös szavak kiírását\n"
 
-#: src/mdiff.c:3781
+#: src/mdiff.c:3768
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager           automatikusan lapozót indít\n"
 
-#: src/mdiff.c:3782
+#: src/mdiff.c:3769
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -k, --less-mode            kiírató mód a \"less-hez\"\n"
 
-#: src/mdiff.c:3783
+#: src/mdiff.c:3770
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
 "  -m, --avoid-wraps          a mezõket nem terjeszti az újsorokon túl\n"
 
-#: src/mdiff.c:3784
+#: src/mdiff.c:3771
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr "  -o, --printer              'overstrike' mint nyomtatóknál\n"
 
-#: src/mdiff.c:3785
+#: src/mdiff.c:3772
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             termcap mint terminál kiíratásnál\n"
 
-#: src/mdiff.c:3786
+#: src/mdiff.c:3773
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr "  -O, --item-regexp=REGEXP   elemek összehasonlítása REGEXP alapján\n"
 
-#: src/mdiff.c:3787
+#: src/mdiff.c:3774
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            szavakat hasonlít össze sorok helyett\n"
 
-#: src/mdiff.c:3972
+#: src/mdiff.c:3959
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "Szabványos bemenetrõl olvas, ha FÁJL nincs megadva vagy -. \n"
 
-#: src/mdiff.c:3974 src/unify.c:298 src/wdiff.c:1246 src/wdiff2.c:214
+#: src/mdiff.c:3961 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr "A hibákat jelentsd a <wdiff-bugs@gnu.org> címen.\n"
 
-#: src/mdiff.c:3985
+#: src/mdiff.c:3973
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr ""
 
-#: src/mdiff.c:4282
+#: src/mdiff.c:4269
 #, fuzzy, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "-z kapcsoló használata nem lehetséges, termcap nem elérhetõ."
 
-#: src/mdiff.c:4321
+#: src/mdiff.c:4308
 #, fuzzy, c-format
 msgid "word merging for two files only (so far)"
 msgstr "Szóösszefésülés csak két fájlal (egyelõre)"
 
-#: src/mdiff.c:4337
+#: src/mdiff.c:4324
 #, fuzzy
 msgid ""
 "\n"
@@ -307,7 +307,7 @@ msgstr ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4341 src/unify.c:407 src/wdiff.c:1372 src/wdiff2.c:133
+#: src/mdiff.c:4327 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -317,7 +317,7 @@ msgstr ""
 "SEMMILYEN garanciát nem vállalunk, még azt sem állítjuk, hogy ez a program\n"
 "KERESKEDELMI CÉLOKRA ALKALMAS vagy HASZNÁLHATÓ EGY ADOTT FELADATRA.\n"
 
-#: src/mdiff.c:4345 src/wdiff.c:1376 src/wdiff2.c:137
+#: src/mdiff.c:4330 src/wdiff.c:1398 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -325,93 +325,103 @@ msgstr ""
 "\n"
 "Írta Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4381
+#: src/mdiff.c:4365
 #, fuzzy, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "A -123RSYZ kapcsolók csak akkor értelmezettek, ha két bemenet van."
 
-#: src/unify.c:144
+#: src/pipes.c:47
+#, c-format
+msgid "error redirecting stream"
+msgstr ""
+
+#: src/pipes.c:51
+#, c-format
+msgid "failed to execute %s"
+msgstr ""
+
+#: src/unify.c:145
 #, fuzzy, c-format
 msgid "could not find a name for the diff at line %ld"
 msgstr "A megadott sornál a diff neve nem található. Sor: %ld"
 
-#: src/unify.c:273
+#: src/unify.c:274
 #, fuzzy, c-format
 msgid "try `%s --help' for more information\n"
 msgstr "Próbáld a `%s --help'-et.\n"
 
-#: src/unify.c:277
+#: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unify - Szövegkörnyezeti diffet alakít unidiffé, vagy fordítva.\n"
 
-#: src/unify.c:281
+#: src/unify.c:283
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
 msgstr "Használat: %s [KAPCSOLÓ]... [FÁJL]\n"
 
-#: src/unify.c:284
+#: src/unify.c:286
 #, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
 msgstr "  -c, --context-diffs    mindenképp szövegkörnyezeti diff kiírása\n"
 
-#: src/unify.c:285
+#: src/unify.c:287
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
 msgstr "  -e, --echo-comments    megjegyzéseket a szabványos hibakimentre\n"
 
-#: src/unify.c:286
+#: src/unify.c:288
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
 msgstr "  -o, --old-diffs        mindenképpen régi stílusú diffet kiírása\n"
 
-#: src/unify.c:287
+#: src/unify.c:289
 #, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
 msgstr "  -p, --patch-format     patch formátum generálása\n"
 
-#: src/unify.c:288
+#: src/unify.c:290
 #, fuzzy
 msgid "  -P                     same as -p\n"
 msgstr "  -P                     mint -p\n"
 
-#: src/unify.c:289
+#: src/unify.c:291
 #, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
 msgstr "  -s, --strip-comments   megjegyzések törlése\n"
 
-#: src/unify.c:290
+#: src/unify.c:292
 #, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
 msgstr "  -u, --unidiffs         mindenképp unidiff kiírása\n"
 
-#: src/unify.c:291
+#: src/unify.c:293
 #, fuzzy
 msgid "  -U                     same as -p and -u\n"
 msgstr "  -U                     mint -p és -u\n"
 
-#: src/unify.c:292
+#: src/unify.c:294
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr ""
 "  -=, --use-equals       szóközöket egyenlõségjelekre cseréli az "
 "unidiffekben\n"
 
-#: src/unify.c:296
+#: src/unify.c:298
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
 msgstr "Ha FÁJL nincs megadva, a szabványos bementrõl olvas.\n"
 
-#: src/unify.c:388
+#: src/unify.c:389
 #, fuzzy, c-format
 msgid "unable to open `%s'"
 msgstr "`%s' megnyitása sikertelen."
 
-#: src/unify.c:394
+#: src/unify.c:395
 #, fuzzy, c-format
 msgid "only one filename allowed"
 msgstr "Csak egy fájlnév megengedett"
 
-#: src/unify.c:403
+#: src/unify.c:404
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -419,7 +429,7 @@ msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:411
+#: src/unify.c:410
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -427,39 +437,49 @@ msgstr ""
 "\n"
 "Írta Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:550
+#: src/unify.c:548
 #, fuzzy, c-format
 msgid "invalid unified diff header at line %ld"
 msgstr "Érvénytelen unidiff fejléc a következõ sorban: %ld"
 
-#: src/unify.c:592
+#: src/unify.c:590
 #, fuzzy, c-format
 msgid "malformed unified diff at line %ld"
 msgstr "Rossz formátumú unidiff a következõ sorban: %ld"
 
-#: src/unify.c:623
+#: src/unify.c:620
 #, fuzzy, c-format
 msgid "context diff missing `old' header at line %ld"
 msgstr ""
 "A szövegkörnyezeti diffbõl hiányzik a `régi' fejléc a következõ sorban: %ld"
 
-#: src/unify.c:667 src/unify.c:686 src/unify.c:757 src/unify.c:775
+#: src/unify.c:664 src/unify.c:683 src/unify.c:753 src/unify.c:771
 #, fuzzy, c-format
 msgid "malformed context diff at line %ld"
 msgstr "Rossz formátumú szövegkörnyezeti diff a következõ sorban: %ld"
 
-#: src/unify.c:722
+#: src/unify.c:718
 #, fuzzy, c-format
 msgid "context diff missing `new' header at line %ld"
 msgstr ""
 "A szövegkörnyezeti diffbõl hiányzik az `új' fejléc a következõ sorban: %ld"
 
-#: src/wdiff.c:581 src/wdiff.c:700
+#: src/wdiff.c:578 src/wdiff.c:697
 #, c-format
 msgid "no suitable temporary directory exists"
 msgstr ""
 
-#: src/wdiff.c:1187 src/wdiff2.c:109
+#: src/wdiff.c:1036
+#, c-format
+msgid "%s: input program killed by signal %d\n"
+msgstr ""
+
+#: src/wdiff.c:1153
+#, c-format
+msgid "%s: output program killed by signal %d\n"
+msgstr ""
+
+#: src/wdiff.c:1210 src/wdiff2.c:109
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -489,12 +509,12 @@ msgstr ""
 "egy példányát. Ha mégsem így történt, írj a Free Software Foundation-nek:\n"
 "59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1215
+#: src/wdiff.c:1238
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr ""
 "wdiff - két fájl szavait hasonlítja össze és jelenti a különbségeket.\n"
 
-#: src/wdiff.c:1219
+#: src/wdiff.c:1242
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
@@ -503,97 +523,97 @@ msgstr ""
 "Használat: %s [KAPCSOLÓ]... FÁJL1 FÁJL2\n"
 "           %s -d [KAPCSOLÓ]... [FÁJL]\n"
 
-#: src/wdiff.c:1224 src/wdiff2.c:190
+#: src/wdiff.c:1247 src/wdiff2.c:186
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
 
-#: src/wdiff.c:1227 src/wdiff2.c:193
+#: src/wdiff.c:1250 src/wdiff2.c:189
 #, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            kiírja a copyright információkat\n"
 
-#: src/wdiff.c:1231 src/wdiff2.c:197
+#: src/wdiff.c:1254 src/wdiff2.c:193
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
 msgstr "  -a, --auto-pager           automatikusan lapozót indít\n"
 
-#: src/wdiff.c:1232
+#: src/wdiff.c:1255
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1233 src/wdiff2.c:198
+#: src/wdiff.c:1256 src/wdiff2.c:194
 #, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 emlékeztetõt ír ki\n"
 
-#: src/wdiff.c:1234 src/wdiff2.c:199
+#: src/wdiff.c:1257 src/wdiff2.c:195
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr "  -i, --ignore-case          kis- és nagybetû megegyezik\n"
 
-#: src/wdiff.c:1235 src/wdiff2.c:200
+#: src/wdiff.c:1258 src/wdiff2.c:196
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -l, --less-mode            kiírató mód a \"less-hez\"\n"
 
-#: src/wdiff.c:1236 src/wdiff2.c:201
+#: src/wdiff.c:1259 src/wdiff2.c:197
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
 "  -n, --avoid-wraps          a mezõket nem terjeszti az újsorokon túl\n"
 
-#: src/wdiff.c:1237 src/wdiff2.c:202
+#: src/wdiff.c:1260 src/wdiff2.c:198
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              'overstrike' mint nyomtatóknál\n"
 
-#: src/wdiff.c:1238 src/wdiff2.c:204
+#: src/wdiff.c:1261 src/wdiff2.c:200
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
 "  -s, --statistics           megmondja hány törölt, beszúrt stb. szó van\n"
 
-#: src/wdiff.c:1239 src/wdiff2.c:205
+#: src/wdiff.c:1262 src/wdiff2.c:201
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr ""
 "  -t, --terminal             termcap használata, mint terminál kiíratásnál\n"
 
-#: src/wdiff.c:1240 src/wdiff2.c:206
+#: src/wdiff.c:1263 src/wdiff2.c:202
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
 msgstr "  -V, --version              kiírja a program nevét és változatát\n"
 
-#: src/wdiff.c:1241 src/wdiff2.c:207
+#: src/wdiff.c:1264 src/wdiff2.c:203
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 msgstr "  -w, --start-delete=SZTRING SZTRING jelöli a törlendõ rész elejét\n"
 
-#: src/wdiff.c:1242 src/wdiff2.c:208
+#: src/wdiff.c:1265 src/wdiff2.c:204
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr "  -x, --end-delete=SZTRING   SZTRING jelöli a törlendõ rész végét\n"
 
-#: src/wdiff.c:1243 src/wdiff2.c:209
+#: src/wdiff.c:1266 src/wdiff2.c:205
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr "  -y, --start-insert=SZTRING SZTRING jelöli a beszúrandó rész elejét\n"
 
-#: src/wdiff.c:1244 src/wdiff2.c:210
+#: src/wdiff.c:1267 src/wdiff2.c:206
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr "  -z, --end-insert=SZTRING   SZTRING jelöli a beszúrandó rész végét\n"
 
-#: src/wdiff.c:1362
+#: src/wdiff.c:1386
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "-z kapcsoló használata nem lehetséges, termcap nem elérhetõ."
 
-#: src/wdiff.c:1367
+#: src/wdiff.c:1391
 #, fuzzy
 msgid ""
 "\n"
@@ -603,17 +623,17 @@ msgstr ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1415 src/wdiff.c:1433
+#: src/wdiff.c:1436 src/wdiff.c:1454
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Hiányzó fájlargumentumok"
 
-#: src/wdiff.c:1428 src/wdiff2.c:324
+#: src/wdiff.c:1449 src/wdiff2.c:320
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Hiányzó fájlargumentumok"
 
-#: src/wdiff2.c:129
+#: src/wdiff2.c:128
 #, fuzzy
 msgid ""
 "\n"
@@ -622,32 +642,32 @@ msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff2.c:181
+#: src/wdiff2.c:177
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
 
-#: src/wdiff2.c:186
+#: src/wdiff2.c:182
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
 msgstr "Használat: %s [KAPCSOLÓ]... FÁJL1 FÁJL2\n"
 
-#: src/wdiff2.c:203
+#: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
 msgstr ""
 
-#: src/wdiff2.c:212
+#: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:336
+#: src/wdiff2.c:332
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "%s olvasása"
 
-#: src/wdiff2.c:339
+#: src/wdiff2.c:335
 #, c-format
 msgid "'\n"
 msgstr ""

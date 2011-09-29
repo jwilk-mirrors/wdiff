@@ -45,6 +45,7 @@ doc/wdiff.ps
 doc/wdiff.toc
 doc/wdiff.tp
 doc/wdiff.vr
+lib/_Noreturn.h
 lib/alloca.h
 lib/arg-nonnull.h
 lib/c++defs.h
