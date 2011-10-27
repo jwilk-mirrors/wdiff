@@ -2,14 +2,14 @@
 # Copyright © 1996, 2001, 2008, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 # Jan Djärv <jan.h.d@swipnet.se>, 1996, 2001, 2008, 2010, 2011
-# Revision: 1.25
+# Revision: 1.26
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.0.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2011-09-15 16:16+0200\n"
-"PO-Revision-Date: 2011-09-19 07:53+0200\n"
+"PO-Revision-Date: 2011-10-27 19:01+0200\n"
 "Last-Translator: Jan Djärv <jan.h.d@swipnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -143,29 +143,29 @@ msgstr[1] "%s: %d ord"
 #, c-format
 msgid "  %d %.0f%% common"
 msgid_plural "  %d %.0f%% common"
-msgstr[0] "  %d %.0f%% gemensam"
-msgstr[1] "  %d %.0f%% gemensamma"
+msgstr[0] "  %d %.0f %% gemensam"
+msgstr[1] "  %d %.0f %% gemensamma"
 
 #: src/mdiff.c:3709 src/wdiff.c:1182
 #, c-format
 msgid "  %d %.0f%% deleted"
 msgid_plural "  %d %.0f%% deleted"
-msgstr[0] "  %d %.0f%% borttagen"
-msgstr[1] "  %d %.0f%% borttagna"
+msgstr[0] "  %d %.0f %% borttagen"
+msgstr[1] "  %d %.0f %% borttagna"
 
 #: src/mdiff.c:3712 src/mdiff.c:3728 src/wdiff.c:1185 src/wdiff.c:1201
 #, c-format
 msgid "  %d %.0f%% changed"
 msgid_plural "  %d %.0f%% changed"
-msgstr[0] "  %d %.0f%% ändrad"
-msgstr[1] "  %d %.0f%% ändrade"
+msgstr[0] "  %d %.0f %% ändrad"
+msgstr[1] "  %d %.0f %% ändrade"
 
 #: src/mdiff.c:3725 src/wdiff.c:1198
 #, c-format
 msgid "  %d %.0f%% inserted"
 msgid_plural "  %d %.0f%% inserted"
-msgstr[0] "  %d %.0f%% tillagd"
-msgstr[1] "  %d %.0f%% tillagda"
+msgstr[0] "  %d %.0f %% tillagd"
+msgstr[1] "  %d %.0f %% tillagda"
 
 #: src/mdiff.c:3756 src/wdiff.c:1241 src/wdiff2.c:172
 #, c-format
