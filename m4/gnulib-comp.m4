@@ -33,11 +33,13 @@ AC_DEFUN([gl_EARLY],
   # Code from module configmake:
   # Code from module dosname:
   # Code from module dup2:
+  # Code from module environ:
   # Code from module errno:
   # Code from module error:
   # Code from module exitfail:
   # Code from module extensions:
   AC_REQUIRE([gl_USE_SYSTEM_EXTENSIONS])
+  # Code from module float:
   # Code from module gendocs:
   # Code from module getdelim:
   # Code from module getline:
@@ -76,6 +78,8 @@ AC_DEFUN([gl_EARLY],
   # Code from module readlink:
   # Code from module realloc-posix:
   # Code from module regex:
+  # Code from module setenv:
+  # Code from module size_max:
   # Code from module snippet/_Noreturn:
   # Code from module snippet/arg-nonnull:
   # Code from module snippet/c++defs:
@@ -101,6 +105,8 @@ AC_DEFUN([gl_EARLY],
   # Code from module uniwidth/base:
   # Code from module uniwidth/width:
   # Code from module useless-if-before-free:
+  # Code from module vasnprintf:
+  # Code from module vasprintf:
   # Code from module vc-list-files:
   # Code from module verify:
   # Code from module wchar:
@@ -110,6 +116,7 @@ AC_DEFUN([gl_EARLY],
   # Code from module xalloc:
   # Code from module xalloc-die:
   # Code from module xalloc-oversized:
+  # Code from module xsize:
 ])
 
 # This macro should be invoked from ./configure.ac, in the section
@@ -148,6 +155,8 @@ if test $HAVE_DUP2 = 0 || test $REPLACE_DUP2 = 1; then
   AC_LIBOBJ([dup2])
 fi
 gl_UNISTD_MODULE_INDICATOR([dup2])
+gl_ENVIRON
+gl_UNISTD_MODULE_INDICATOR([environ])
 gl_HEADER_ERRNO_H
 gl_ERROR
 if test $ac_cv_lib_error_at_line = no; then
@@ -157,6 +166,10 @@ fi
 m4_ifdef([AM_XGETTEXT_OPTION],
   [AM_][XGETTEXT_OPTION([--flag=error:3:c-format])
    AM_][XGETTEXT_OPTION([--flag=error_at_line:5:c-format])])
+gl_FLOAT_H
+if test $REPLACE_FLOAT_LDBL = 1; then
+  AC_LIBOBJ([float])
+fi
 gl_FUNC_GETDELIM
 if test $HAVE_GETDELIM = 0 || test $REPLACE_GETDELIM = 1; then
   AC_LIBOBJ([getdelim])
@@ -280,6 +293,12 @@ if test $ac_use_included_regex = yes; then
   AC_LIBOBJ([regex])
   gl_PREREQ_REGEX
 fi
+gl_FUNC_SETENV
+if test $HAVE_SETENV = 0 || test $REPLACE_SETENV = 1; then
+  AC_LIBOBJ([setenv])
+fi
+gl_STDLIB_MODULE_INDICATOR([setenv])
+gl_SIZE_MAX
 gt_TYPE_SSIZE_T
 gl_FUNC_STAT
 if test $REPLACE_STAT = 1; then
@@ -319,6 +338,12 @@ gl_UNISTD_H
 gl_LIBUNISTRING_LIBHEADER([0.9], [unitypes.h])
 gl_LIBUNISTRING_LIBHEADER([0.9], [uniwidth.h])
 gl_LIBUNISTRING_MODULE([0.9.4], [uniwidth/width])
+gl_FUNC_VASNPRINTF
+gl_FUNC_VASPRINTF
+gl_STDIO_MODULE_INDICATOR([vasprintf])
+m4_ifdef([AM_XGETTEXT_OPTION],
+  [AM_][XGETTEXT_OPTION([--flag=asprintf:2:c-format])
+   AM_][XGETTEXT_OPTION([--flag=vasprintf:2:c-format])])
 gl_WCHAR_H
 gl_FUNC_WCRTOMB
 if test $HAVE_WCRTOMB = 0 || test $REPLACE_WCRTOMB = 1; then
@@ -333,6 +358,7 @@ if test $HAVE_WCWIDTH = 0 || test $REPLACE_WCWIDTH = 1; then
 fi
 gl_WCHAR_MODULE_INDICATOR([wcwidth])
 gl_XALLOC
+gl_XSIZE
   # End of code from modules
   m4_ifval(gl_LIBSOURCES_LIST, [
     m4_syscmd([test ! -d ]m4_defn([gl_LIBSOURCES_DIR])[ ||
@@ -483,6 +509,8 @@ AC_DEFUN([gl_FILE_LIST], [
   build-aux/vc-list-files
   doc/gendocs_template
   lib/alloca.in.h
+  lib/asnprintf.c
+  lib/asprintf.c
   lib/btowc.c
   lib/canonicalize-lgpl.c
   lib/config.charset
@@ -493,6 +521,9 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/error.h
   lib/exitfail.c
   lib/exitfail.h
+  lib/float+.h
+  lib/float.c
+  lib/float.in.h
   lib/getdelim.c
   lib/getline.c
   lib/getopt.c
@@ -523,6 +554,10 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/memchr.valgrind
   lib/nl_langinfo.c
   lib/pathmax.h
+  lib/printf-args.c
+  lib/printf-args.h
+  lib/printf-parse.c
+  lib/printf-parse.h
   lib/readlink.c
   lib/realloc.c
   lib/ref-add.sin
@@ -533,6 +568,8 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/regex_internal.c
   lib/regex_internal.h
   lib/regexec.c
+  lib/setenv.c
+  lib/size_max.h
   lib/stat.c
   lib/stdbool.in.h
   lib/stddef.in.h
@@ -556,6 +593,9 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/uniwidth.in.h
   lib/uniwidth/cjk.h
   lib/uniwidth/width.c
+  lib/vasnprintf.c
+  lib/vasnprintf.h
+  lib/vasprintf.c
   lib/verify.h
   lib/wchar.in.h
   lib/wcrtomb.c
@@ -565,6 +605,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/xalloc-oversized.h
   lib/xalloc.h
   lib/xmalloc.c
+  lib/xsize.h
   m4/00gnulib.m4
   m4/alloca.m4
   m4/btowc.m4
@@ -574,10 +615,12 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/double-slash-root.m4
   m4/dup2.m4
   m4/eealloc.m4
+  m4/environ.m4
   m4/errno_h.m4
   m4/error.m4
   m4/extensions.m4
   m4/fcntl-o.m4
+  m4/float_h.m4
   m4/getdelim.m4
   m4/getline.m4
   m4/getopt.m4
@@ -593,6 +636,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/intldir.m4
   m4/intlmacosx.m4
   m4/intmax.m4
+  m4/intmax_t.m4
   m4/inttypes-pri.m4
   m4/inttypes_h.m4
   m4/iswblank.m4
@@ -629,10 +673,12 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/pathmax.m4
   m4/po.m4
   m4/printf-posix.m4
+  m4/printf.m4
   m4/progtest.m4
   m4/readlink.m4
   m4/realloc.m4
   m4/regex.m4
+  m4/setenv.m4
   m4/size_max.m4
   m4/ssize_t.m4
   m4/stat.m4
@@ -652,6 +698,8 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/time_h.m4
   m4/uintmax_t.m4
   m4/unistd_h.m4
+  m4/vasnprintf.m4
+  m4/vasprintf.m4
   m4/visibility.m4
   m4/warn-on-use.m4
   m4/wchar_h.m4

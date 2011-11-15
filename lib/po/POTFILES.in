@@ -11,6 +11,8 @@
 
 # List of files which contain translatable strings.
 lib/alloca.in.h
+lib/asnprintf.c
+lib/asprintf.c
 lib/btowc.c
 lib/canonicalize-lgpl.c
 lib/config.charset
@@ -21,6 +23,9 @@ lib/error.c
 lib/error.h
 lib/exitfail.c
 lib/exitfail.h
+lib/float+.h
+lib/float.c
+lib/float.in.h
 lib/getdelim.c
 lib/getline.c
 lib/getopt.c
@@ -51,6 +56,10 @@ lib/memchr.c
 lib/memchr.valgrind
 lib/nl_langinfo.c
 lib/pathmax.h
+lib/printf-args.c
+lib/printf-args.h
+lib/printf-parse.c
+lib/printf-parse.h
 lib/readlink.c
 lib/realloc.c
 lib/ref-add.sin
@@ -61,6 +70,8 @@ lib/regex.h
 lib/regex_internal.c
 lib/regex_internal.h
 lib/regexec.c
+lib/setenv.c
+lib/size_max.h
 lib/stat.c
 lib/stdbool.in.h
 lib/stddef.in.h
@@ -84,6 +95,9 @@ lib/unitypes.in.h
 lib/uniwidth.in.h
 lib/uniwidth/cjk.h
 lib/uniwidth/width.c
+lib/vasnprintf.c
+lib/vasnprintf.h
+lib/vasprintf.c
 lib/verify.h
 lib/wchar.in.h
 lib/wcrtomb.c
@@ -93,3 +107,4 @@ lib/xalloc-die.c
 lib/xalloc-oversized.h
 lib/xalloc.h
 lib/xmalloc.c
+lib/xsize.h
