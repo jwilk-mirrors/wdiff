@@ -1,5 +1,5 @@
 /* Find similar sequences in multiple files and report differences.
-   Copyright (C) 1992, 1997, 1998, 1999 Free Software Foundation, Inc.
+   Copyright (C) 1992, 1997, 1998, 1999, 2011 Free Software Foundation, Inc.
    Francois Pinard <pinard@iro.umontreal.ca>, 1997.
 
    This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 
 */
 
-#include "system.h"
+#include "wdiff.h"
 
 /* Define to 1 to compile in a debugging option.  */
 #define DEBUGGING 1
@@ -33,8 +33,12 @@
 
 /* One may also, optionally, define a default PAGER_PROGRAM.  This
    might be done using the --with-default-pager=PAGER configure
-   switch.  If PAGER_PROGRAM is undefined and the PAGER environment
-   variable is not set, none will be used.  */
+   switch.  If PAGER_PROGRAM is undefined and neither the WDIFF_PAGER
+   nor the PAGER environment variable is set, none will be used.  */
+
+/* We do termcap init ourselves, so pass -X.
+   We might do coloring, so pass -R. */
+#define LESS_DEFAULT_OPTS "-X -R"
 
 /*-----------------------.
 | Library declarations.  |
@@ -78,10 +82,6 @@ char *strstr ();
 #include <getopt.h>
 #include <locale.h>
 #include <sys/wait.h>
-
-char *getenv ();
-FILE *readpipe (const char *, ...);
-FILE *writepipe (const char *, ...);
 
 #include "regex.h"
 #define CHAR_SET_SIZE 256
@@ -1169,7 +1169,8 @@ study_input (struct input *input)
   close_input (input);
 
   if (verbose)
-    fprintf (stderr, _(", %d items\n"), item_count);
+    fprintf (stderr, ngettext (", %d item\n", ", %d items\n", item_count),
+	     item_count);
 
 #undef ADJUST_CHECKSUM
 }
@@ -1247,8 +1248,12 @@ study_all_inputs (void)
     }
 
   if (verbose)
-    fprintf (stderr, _("Read summary: %d files, %d items\n"),
-	     inputs, items - inputs - 1);
+    {
+      fprintf (stderr, _("Read summary:"));
+      fprintf (stderr, ngettext (" %d file,", " %d files,", inputs), inputs);
+      fprintf (stderr, ngettext (" %d item\n", " %d items\n",
+				 items - inputs - 1), items - inputs - 1);
+    }
 
 #if DEBUGGING
   if (debugging)
@@ -1906,8 +1911,13 @@ prepare_indirects (void)
 #endif
 
   if (verbose)
-    fprintf (stderr, _("Work summary: %d clusters, %d members\n"),
-	     clusters, members);
+    {
+      fprintf (stderr, _("Work summary:"));
+      fprintf (stderr, ngettext (" %d cluster,", " %d clusters,", clusters),
+	       clusters);
+      fprintf (stderr, ngettext (" %d member\n", " %d members\n", members),
+	       members);
+    }
 }
 
 /* Mergings.  */
@@ -2284,9 +2294,15 @@ prepare_mergings (void)
   assert (mergings == indirects);
 
   if (verbose)
-    fprintf (stderr,
-	     _("Work summary: %d clusters, %d members, %d overlaps\n"),
-	     clusters, members, members - indirects);
+    {
+      fprintf (stderr, _("Work summary:"));
+      fprintf (stderr, ngettext (" %d cluster,", " %d clusters,", clusters),
+	       clusters);
+      fprintf (stderr, ngettext (" %d member,", " %d members,", members),
+	       members);
+      fprintf (stderr, ngettext (" %d overlap\n", " %d overlaps\n",
+				 members - indirects), members - indirects);
+    }
 }
 
 /* Terminal and pager support.  */
@@ -2724,7 +2740,9 @@ launch_output_program (struct input *input)
 #endif
 	)
 	{
-	  program = getenv ("PAGER");
+	  program = getenv ("WDIFF_PAGER");
+	  if (program == NULL)
+	    program = getenv ("PAGER");
 #ifdef PAGER_PROGRAM
 	  if (program == NULL)
 	    program = PAGER_PROGRAM;
@@ -2745,27 +2763,28 @@ launch_output_program (struct input *input)
 
       if (program && *program)
 	{
-	  int is_less;
+	  char *lessenv;
 
-	  if (basename = mbsrchr (program, '/'), basename)
-	    basename++;
-	  else
-	    basename = program;
-	  is_less = strstr (basename, "less") != NULL;
-
-	  /* If we are paging to less, use printer mode, not display mode.  */
-
-	  if (is_less)
+	  lessenv = getenv ("LESS");
+	  if (lessenv == NULL)
 	    {
-	      find_termcap = 0;
-	      overstrike = 1;
-	      overstrike_for_less = 1;
+	      setenv ("LESS", LESS_DEFAULT_OPTS, 0);
+	    }
+	  else
+	    {
+	      if (asprintf (&lessenv, "%s %s", LESS_DEFAULT_OPTS, lessenv) ==
+		  -1)
+		{
+		  xalloc_die ();
+		  return;
+		}
+	      else
+		{
+		  setenv ("LESS", lessenv, 1);
+		}
 	    }
 
-	  if (is_less)
-	    output_file = writepipe (program, "-X", NULL);
-	  else
-	    output_file = writepipe (program, NULL);
+	  output_file = writepipe (program, NULL);
 	  if (!output_file)
 	    error (EXIT_ERROR, errno, "%s", program);
 	}
@@ -3687,27 +3706,35 @@ relist_merged_words (void)
       count_common_right
 	= count_total_right - count_isolated_right - count_changed_right;
 
-      printf (_("%s: %d words"), left->file_name, count_total_left);
+      printf (ngettext ("%s: %d word", "%s: %d words", count_total_left),
+	      left->file_name, count_total_left);
       if (count_total_left > 0)
 	{
-	  printf (_("  %d %d%% common"), count_common_left,
-		  count_common_left * 100 / count_total_left);
-	  printf (_("  %d %d%% deleted"), count_isolated_left,
-		  count_isolated_left * 100 / count_total_left);
-	  printf (_("  %d %d%% changed"), count_changed_left,
-		  count_changed_left * 100 / count_total_left);
+	  printf (ngettext ("  %d %.0f%% common", "  %d %.0f%% common",
+			    count_common_left), count_common_left,
+		  count_common_left * 100. / count_total_left);
+	  printf (ngettext ("  %d %.0f%% deleted", "  %d %.0f%% deleted",
+			    count_isolated_left), count_isolated_left,
+		  count_isolated_left * 100. / count_total_left);
+	  printf (ngettext ("  %d %.0f%% changed", "  %d %.0f%% changed",
+			    count_changed_left), count_changed_left,
+		  count_changed_left * 100. / count_total_left);
 	}
       printf ("\n");
 
-      printf (_("%s: %d words"), right->file_name, count_total_right);
+      printf (ngettext ("%s: %d word", "%s: %d words", count_total_right),
+	      right->file_name, count_total_right);
       if (count_total_right > 0)
 	{
-	  printf (_("  %d %d%% common"), count_common_right,
-		  count_common_right * 100 / count_total_right);
-	  printf (_("  %d %d%% inserted"), count_isolated_right,
-		  count_isolated_right * 100 / count_total_right);
-	  printf (_("  %d %d%% changed"), count_changed_right,
-		  count_changed_right * 100 / count_total_right);
+	  printf (ngettext ("  %d %.0f%% common", "  %d %.0f%% common",
+			    count_common_right), count_common_right,
+		  count_common_right * 100. / count_total_right);
+	  printf (ngettext ("  %d %.0f%% inserted", "  %d %.0f%% inserted",
+			    count_isolated_right), count_isolated_right,
+		  count_isolated_right * 100. / count_total_right);
+	  printf (ngettext ("  %d %.0f%% changed", "  %d %.0f%% changed",
+			    count_changed_right), count_changed_right,
+		  count_changed_right * 100. / count_total_right);
 	}
       printf ("\n");
     }

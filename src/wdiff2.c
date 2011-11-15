@@ -16,7 +16,7 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "system.h"
+#include "wdiff.h"
 
 #ifndef MDIFF_PROGRAM
 # define MDIFF_PROGRAM "mdiff"

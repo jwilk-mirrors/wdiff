@@ -17,7 +17,7 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "system.h"
+#include "wdiff.h"
 
 /* Exit codes values.  */
 #define EXIT_DIFFERENCE 1	/* some differences found */
@@ -31,8 +31,12 @@
 
 /* One may also, optionally, define a default PAGER_PROGRAM.  This
    might be done using the --with-default-pager=PAGER configure
-   switch.  If PAGER_PROGRAM is undefined and the PAGER environment
-   variable is not set, none will be used.  */
+   switch.  If PAGER_PROGRAM is undefined and neither the WDIFF_PAGER
+   nor the PAGER environment variable is set, none will be used.  */
+
+/* We do termcap init ourselves, so pass -X.
+   We might do coloring, so pass -R. */
+#define LESS_DEFAULT_OPTS "-X -R"
 
 /* Define the separator lines when output is inhibited.  */
 #define SEPARATOR_LINE \
@@ -76,8 +80,6 @@
 #include <locale.h>
 #include <sys/wait.h>
 
-FILE *readpipe (const char *, ...);
-FILE *writepipe (const char *, ...);
 static void complete_input_program (void);
 
 /* Declarations.  */
@@ -1056,7 +1058,9 @@ launch_output_program (void)
   if (autopager && isatty (fileno (stdout))
       && !(inhibit_left && inhibit_right && inhibit_common))
     {
-      program = getenv ("PAGER");
+      program = getenv ("WDIFF_PAGER");
+      if (program == NULL)
+	program = getenv ("PAGER");
 #ifdef PAGER_PROGRAM
       if (program == NULL)
 	program = PAGER_PROGRAM;
@@ -1073,44 +1077,30 @@ launch_output_program (void)
 
   if (program && *program)
     {
-      int is_less;
-      char *realprogram;	/* symlink-resolved path of the pager */
-      char *basename;		/* basename of the pager */
+      char *lessenv;
 
-      if (program[0] == '/')
+      lessenv = getenv ("LESS");
+      if (lessenv == NULL)
 	{
-	  realprogram = realpath (program, NULL);
-	  if (realprogram == NULL)
-	    realprogram = program;
+	  setenv ("LESS", LESS_DEFAULT_OPTS, 0);
 	}
       else
 	{
-	  realprogram = program;
+	  if (asprintf (&lessenv, "%s %s", LESS_DEFAULT_OPTS, lessenv) == -1)
+	    {
+	      xalloc_die ();
+	      return;
+	    }
+	  else
+	    {
+	      setenv ("LESS", lessenv, 1);
+	    }
 	}
-      basename = mbsrchr (realprogram, '/');
-      if (basename)
-	basename++;
-      else
-	basename = program;
-      is_less = strstr (basename, "less") != NULL;
-      if (realprogram != program)
-	free (realprogram);
 
-      if (is_less)
-	output_file = writepipe (program, "-X", NULL);
-      else
-	output_file = writepipe (program, NULL);
+      output_file = writepipe (program, NULL);
       if (!output_file)
 	error (EXIT_ERROR, errno, "%s", program);
 
-      /* If we are paging to less, use printer mode, not display mode.  */
-
-      if (is_less)
-	{
-	  find_termcap = 0;
-	  overstrike = 1;
-	  overstrike_for_less = 1;
-	}
     }
 }
 
@@ -1174,27 +1164,35 @@ print_statistics (void)
   count_common_right
     = count_total_right - count_isolated_right - count_changed_right;
 
-  printf (_("%s: %d words"), left_side->filename, count_total_left);
+  printf (ngettext ("%s: %d word", "%s: %d words", count_total_left),
+	  left_side->filename, count_total_left);
   if (count_total_left > 0)
     {
-      printf (_("  %d %d%% common"), count_common_left,
-	      count_common_left * 100 / count_total_left);
-      printf (_("  %d %d%% deleted"), count_isolated_left,
-	      count_isolated_left * 100 / count_total_left);
-      printf (_("  %d %d%% changed"), count_changed_left,
-	      count_changed_left * 100 / count_total_left);
+      printf (ngettext ("  %d %.0f%% common", "  %d %.0f%% common",
+			count_common_left), count_common_left,
+	      count_common_left * 100. / count_total_left);
+      printf (ngettext ("  %d %.0f%% deleted", "  %d %.0f%% deleted",
+			count_isolated_left), count_isolated_left,
+	      count_isolated_left * 100. / count_total_left);
+      printf (ngettext ("  %d %.0f%% changed", "  %d %.0f%% changed",
+			count_changed_left), count_changed_left,
+	      count_changed_left * 100. / count_total_left);
     }
   printf ("\n");
 
-  printf (_("%s: %d words"), right_side->filename, count_total_right);
+  printf (ngettext ("%s: %d word", "%s: %d words", count_total_right),
+	  right_side->filename, count_total_right);
   if (count_total_right > 0)
     {
-      printf (_("  %d %d%% common"), count_common_right,
-	      count_common_right * 100 / count_total_right);
-      printf (_("  %d %d%% inserted"), count_isolated_right,
-	      count_isolated_right * 100 / count_total_right);
-      printf (_("  %d %d%% changed"), count_changed_right,
-	      count_changed_right * 100 / count_total_right);
+      printf (ngettext ("  %d %.0f%% common", "  %d %.0f%% common",
+			count_common_right), count_common_right,
+	      count_common_right * 100. / count_total_right);
+      printf (ngettext ("  %d %.0f%% inserted", "  %d %.0f%% inserted",
+			count_isolated_right), count_isolated_right,
+	      count_isolated_right * 100. / count_total_right);
+      printf (ngettext ("  %d %.0f%% changed", "  %d %.0f%% changed",
+			count_changed_right), count_changed_right,
+	      count_changed_right * 100. / count_total_right);
     }
   printf ("\n");
 }

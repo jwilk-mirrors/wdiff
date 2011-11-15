@@ -1,5 +1,5 @@
-/* Shared definitions for GNU wdiff.
-   Copyright (C) 1994, 1997, 1998 Free Software Foundation, Inc.
+/* Shared definitions for GNU wdiff (the package, not the program).
+   Copyright (C) 1994, 1997, 1998, 2011 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -50,3 +50,7 @@ extern int errno;
 # define MALLOC_FUNC_CHECK
 # include <dmalloc.h>
 #endif
+
+/* Function prototypes */
+FILE *readpipe (char *progname, ...);
+FILE *writepipe (char *progname, ...);

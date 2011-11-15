@@ -123,7 +123,7 @@ AT_CHECK([wdiff -23 wdiff-a.txt wdiff-b.txt], 1,
 AT_CHECK([wdiff -123 wdiff-a.txt wdiff-b.txt], 1)
 
 AT_CHECK([wdiff -123s wdiff-a.txt wdiff-b.txt], 1,
-[wdiff-a.txt: 39 words  34 87% common  0 0% deleted  5 12% changed
+[wdiff-a.txt: 39 words  34 87% common  0 0% deleted  5 13% changed
 wdiff-b.txt: 40 words  34 85% common  0 0% inserted  6 15% changed
 ])
 
@@ -150,8 +150,6 @@ AT_DATA([foo.txt], [foo
 ])
 AT_DATA([bar.txt], [bar
 ])
-LC_ALL=C
-export LC_ALL
 
 AT_CHECK([env PATH="$PWD" "$wdiff_bin" foo.txt bar.txt], 2, [], [stderr])
 AT_CHECK([grep "wdiff: failed to execute diff" stderr], 0, [ignore-nolog], [])
@@ -171,23 +169,72 @@ AT_SETUP(use pager)
 dnl      ---------
 
 # Due to the istty call in the sources, we have to use screen here.
-AT_TESTED([which])
-AT_SKIP_IF([! which screen])
-AT_TESTED([wdiff screen env grep])
+
+AT_TESTED([wdiff diff env sed tr grep])
 AT_DATA([foo.txt], [start foo end
 ])
 AT_DATA([bar.txt], [start bar end
 ])
 AT_DATA([dummypager], [#! /bin/sh
-echo "This is the pager."
-while read line; do echo "BB $line EE"; done
+echo "Pager starting."
+while read line; do echo "Pager line $line printed."; done
 echo "Pager now done."
 ])
 chmod +x dummypager
-AT_CAPTURE_FILE([screenlog.0])
-AT_CHECK([env PAGER="$PWD/dummypager" screen -D -m -L wdiff -a foo.txt bar.txt
+AT_CHECK([screen -D -m -L \
+env PAGER="$PWD/dummypager" PATH="$PATH" TERM=dumb LC_ALL=C LANGUAGE=C \
+wdiff -wW -xX -yY -zZ -a foo.txt bar.txt
 :], 0, [ignore], [ignore])
-AT_CHECK([grep 'BB start.*foo.*bar.*end EE' screenlog.0], 0,
-[ignore], [])
+AT_SKIP_IF([test ! -f screenlog.0])
+AT_CAPTURE_FILE([screenlog.0])
+AT_SKIP_IF([grep 'terminal type.*not defined' screenlog.0])
+# Need to work around a screen bug which might cause the first
+# character to be lost: https://savannah.gnu.org/bugs/index.php?34200
+AT_CHECK([tr -d '\r' < screenlog.0 | sed 's/^ager/Pager/'], 0,
+[Pager starting.
+Pager line start WfooX YbarZ end printed.
+Pager now done.
+], [])
+
+AT_CLEANUP()
+
+AT_SETUP(diff as input)
+dnl      -------------
+
+AT_TESTED([wdiff diff])
+AT_DATA([foo.txt], [one
+two
+three in a row
+four
+five
+six
+seven
+eight
+nine
+])
+AT_DATA([bar.txt], [one
+two
+three but not in a row
+four
+five
+six
+seven
+ate
+nine
+])
+AT_CHECK([diff -U1 foo.txt bar.txt | sed 's/\.txt.*/.txt/'], 0, [stdout], [])
+mv stdout foobar.diff
+AT_CHECK([wdiff -d -w"(" -x")" -y"{" -z"}" foobar.diff], 1,
+[(-- foo.txt){++ bar.txt}
+@@ -2,3 +2,3 @@
+two
+three {but not} in a row
+four
+@@ -7,3 +7,3 @@
+seven
+(eight)
+{ate}
+nine
+], [])
 
 AT_CLEANUP()

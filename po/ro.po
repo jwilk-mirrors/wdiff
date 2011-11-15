@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 0.5g\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
+"POT-Creation-Date: 2011-09-15 16:16+0200\n"
 "PO-Revision-Date: 2010-02-01 20:51+0100\n"
 "Last-Translator: Laurentiu Buzdugan <buzdugan@voyager.net>\n"
 "Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
@@ -19,112 +19,161 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/mdiff.c:376
+#: src/mdiff.c:371
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (pentru regexp `%s')"
 
-#: src/mdiff.c:894 src/wdiff.c:1452
+#: src/mdiff.c:886 src/wdiff.c:1481
 #, fuzzy, c-format
 msgid "only one file may be standard input"
 msgstr "Un singur fiºier poate fi intrare standard."
 
-#: src/mdiff.c:909 src/wdiff.c:677
+#: src/mdiff.c:901 src/wdiff.c:674
 #, fuzzy, c-format
 msgid "directories not supported"
 msgstr "Directoarele nu sunt suportate"
 
-#: src/mdiff.c:1053
+#: src/mdiff.c:1044
 #, c-format
 msgid "Reading %s"
 msgstr "Citesc %s"
 
-#: src/mdiff.c:1178
-#, c-format
-msgid ", %d items\n"
-msgstr ", %d elemente\n"
+#: src/mdiff.c:1168
+#, fuzzy, c-format
+msgid ", %d item\n"
+msgid_plural ", %d items\n"
+msgstr[0] ", %d elemente\n"
+msgstr[1] ", %d elemente\n"
 
-#: src/mdiff.c:1256
+#: src/mdiff.c:1248
 #, c-format
-msgid "Read summary: %d files, %d items\n"
-msgstr "Rezumat citire: %d fiºiere, %d elemente\n"
+msgid "Read summary:"
+msgstr ""
 
-#: src/mdiff.c:1652
+#: src/mdiff.c:1249
+#, fuzzy, c-format
+msgid " %d file,"
+msgid_plural " %d files,"
+msgstr[0] ", %d elemente\n"
+msgstr[1] ", %d elemente\n"
+
+#: src/mdiff.c:1250
+#, fuzzy, c-format
+msgid " %d item\n"
+msgid_plural " %d items\n"
+msgstr[0] ", %d elemente\n"
+msgstr[1] ", %d elemente\n"
+
+#: src/mdiff.c:1643
 #, c-format
 msgid "Sorting"
 msgstr "Sortez"
 
-#: src/mdiff.c:1669
+#: src/mdiff.c:1660
 #, c-format
 msgid ", clustering"
 msgstr ", clustering"
 
-#: src/mdiff.c:1837 src/mdiff.c:1900
+#: src/mdiff.c:1829 src/mdiff.c:1891
 #, c-format
 msgid ", done\n"
 msgstr ", terminat\n"
 
-#: src/mdiff.c:1887
+#: src/mdiff.c:1878
 #, c-format
 msgid "Sorting members"
 msgstr "Membrii sortare"
 
-#: src/mdiff.c:1919
+#: src/mdiff.c:1911 src/mdiff.c:2294
 #, c-format
-msgid "Work summary: %d clusters, %d members\n"
-msgstr "Rezumat lucru: %d clustere, %d membrii\n"
+msgid "Work summary:"
+msgstr ""
+
+#: src/mdiff.c:1912 src/mdiff.c:2295
+#, fuzzy, c-format
+msgid " %d cluster,"
+msgid_plural " %d clusters,"
+msgstr[0] ", clustering"
+msgstr[1] ", clustering"
+
+#: src/mdiff.c:1914
+#, fuzzy, c-format
+msgid " %d member\n"
+msgid_plural " %d members\n"
+msgstr[0] ", %d elemente\n"
+msgstr[1] ", %d elemente\n"
+
+#: src/mdiff.c:2297
+#, c-format
+msgid " %d member,"
+msgid_plural " %d members,"
+msgstr[0] ""
+msgstr[1] ""
 
 #: src/mdiff.c:2299
 #, c-format
-msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Rezumat lucru: %d clustere, %d membrii, %d suprapuneri\n"
+msgid " %d overlap\n"
+msgid_plural " %d overlaps\n"
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/mdiff.c:2348 src/wdiff.c:227
+#: src/mdiff.c:2349 src/wdiff.c:224
 #, fuzzy, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "Selectaþi un terminal setând variabila de mediu TERM."
 
-#: src/mdiff.c:2351 src/wdiff.c:230
+#: src/mdiff.c:2352 src/wdiff.c:227
 #, fuzzy, c-format
 msgid "could not access the termcap data base"
 msgstr "Nu pot accesa baza de date termcap."
 
-#: src/mdiff.c:2353 src/wdiff.c:232
+#: src/mdiff.c:2354 src/wdiff.c:229
 #, fuzzy, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "Tipul de terminal `%s' nu este definit."
 
-#: src/mdiff.c:3700 src/mdiff.c:3712 src/wdiff.c:1152 src/wdiff.c:1164
-#, c-format
-msgid "%s: %d words"
-msgstr "%s: %d cuvinte"
+#: src/mdiff.c:3702 src/mdiff.c:3718 src/wdiff.c:1175 src/wdiff.c:1191
+#, fuzzy, c-format
+msgid "%s: %d word"
+msgid_plural "%s: %d words"
+msgstr[0] "%s: %d cuvinte"
+msgstr[1] "%s: %d cuvinte"
 
-#: src/mdiff.c:3703 src/mdiff.c:3715 src/wdiff.c:1155 src/wdiff.c:1167
-#, c-format
-msgid "  %d %d%% common"
-msgstr "  %d %d%% comune"
+#: src/mdiff.c:3706 src/mdiff.c:3722 src/wdiff.c:1179 src/wdiff.c:1195
+#, fuzzy, c-format
+msgid "  %d %.0f%% common"
+msgid_plural "  %d %.0f%% common"
+msgstr[0] "  %d %d%% comune"
+msgstr[1] "  %d %d%% comune"
 
-#: src/mdiff.c:3705 src/wdiff.c:1157
-#, c-format
-msgid "  %d %d%% deleted"
-msgstr "  %d %d%% ºterse"
+#: src/mdiff.c:3709 src/wdiff.c:1182
+#, fuzzy, c-format
+msgid "  %d %.0f%% deleted"
+msgid_plural "  %d %.0f%% deleted"
+msgstr[0] "  %d %d%% ºterse"
+msgstr[1] "  %d %d%% ºterse"
 
-#: src/mdiff.c:3707 src/mdiff.c:3719 src/wdiff.c:1159 src/wdiff.c:1171
-#, c-format
-msgid "  %d %d%% changed"
-msgstr "  %d %d%% schimbate"
+#: src/mdiff.c:3712 src/mdiff.c:3728 src/wdiff.c:1185 src/wdiff.c:1201
+#, fuzzy, c-format
+msgid "  %d %.0f%% changed"
+msgid_plural "  %d %.0f%% changed"
+msgstr[0] "  %d %d%% schimbate"
+msgstr[1] "  %d %d%% schimbate"
 
-#: src/mdiff.c:3717 src/wdiff.c:1169
-#, c-format
-msgid "  %d %d%% inserted"
-msgstr "  %d %d%% inserate"
+#: src/mdiff.c:3725 src/wdiff.c:1198
+#, fuzzy, c-format
+msgid "  %d %.0f%% inserted"
+msgid_plural "  %d %.0f%% inserted"
+msgstr[0] "  %d %d%% inserate"
+msgstr[1] "  %d %d%% inserate"
 
-#: src/mdiff.c:3746 src/wdiff.c:1211 src/wdiff2.c:177
+#: src/mdiff.c:3756 src/wdiff.c:1241 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Încercaþi `%s --help' pentru informaþii suplimentare.\n"
 
-#: src/mdiff.c:3750
+#: src/mdiff.c:3761
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -132,12 +181,12 @@ msgstr ""
 "mdiff - Studiazã multiple fiºiere ºi cautã pentru secvenþe similare,\n"
 "iar apoi produce liste detaliate cu diferenþele ºi similaritãþile.\n"
 
-#: src/mdiff.c:3755
+#: src/mdiff.c:3766
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Folosire: %s [OPÞIUNE]... FIªIER...\n"
 
-#: src/mdiff.c:3759
+#: src/mdiff.c:3770
 #, fuzzy
 msgid ""
 "\n"
@@ -146,28 +195,28 @@ msgstr ""
 "\n"
 "Moduri de operare:\n"
 
-#: src/mdiff.c:3760
+#: src/mdiff.c:3771
 #, fuzzy
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (ignorat)\n"
 
-#: src/mdiff.c:3761
+#: src/mdiff.c:3772
 #, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          raporteazã câteva statistici la stderr\n"
 
-#: src/mdiff.c:3762 src/unify.c:293
+#: src/mdiff.c:3773 src/unify.c:295
 #, fuzzy
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             afiºeazã acest mesaj ºi terminã\n"
 
-#: src/mdiff.c:3763 src/unify.c:294
+#: src/mdiff.c:3774 src/unify.c:296
 #, fuzzy
 msgid "      --version          display program version then exit\n"
 msgstr ""
 "      --version          afiºeazã informaþii despre versiune ºi terminã\n"
 
-#: src/mdiff.c:3765
+#: src/mdiff.c:3776
 #, fuzzy
 msgid ""
 "\n"
@@ -176,22 +225,22 @@ msgstr ""
 "\n"
 "Formatting output:\n"
 
-#: src/mdiff.c:3766
+#: src/mdiff.c:3777
 #, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr "  -T, --initial-tab       pune TAB în loc de spaþiul iniþial\n"
 
-#: src/mdiff.c:3767
+#: src/mdiff.c:3778
 #, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr "  -l, --paginate          pagineazã ieºirea prin `pr'\n"
 
-#: src/mdiff.c:3768
+#: src/mdiff.c:3779
 #, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=STRING]   observã un alt ªIR definit de utilizator\n"
 
-#: src/mdiff.c:3769
+#: src/mdiff.c:3780
 #, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
@@ -199,12 +248,12 @@ msgstr ""
 "  -V, --show-links        aratã referinþe despre fiºier ºi linie în "
 "adnotãri\n"
 
-#: src/mdiff.c:3770
+#: src/mdiff.c:3781
 #, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr "  -t, --expand-tabs       expandeazã tab-urile ca spaþii în ieºire\n"
 
-#: src/mdiff.c:3773
+#: src/mdiff.c:3784
 #, fuzzy
 msgid ""
 "\n"
@@ -213,12 +262,12 @@ msgstr ""
 "\n"
 "Depanare:\n"
 
-#: src/mdiff.c:3774
+#: src/mdiff.c:3785
 #, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr "  -0, --debugging   afiºeazã mai multe detalii despre ce se întâmplã\n"
 
-#: src/mdiff.c:3777
+#: src/mdiff.c:3788
 #, fuzzy
 msgid ""
 "\n"
@@ -227,85 +276,85 @@ msgstr ""
 "\n"
 "Opþiuni modul cuvânt:\n"
 
-#: src/mdiff.c:3778 src/wdiff.c:1228 src/wdiff2.c:194
+#: src/mdiff.c:3789 src/wdiff.c:1259 src/wdiff2.c:190
 #, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr "  -1, --no-deleted           inhibit output of deleted words\n"
 
-#: src/mdiff.c:3779 src/wdiff.c:1229 src/wdiff2.c:195
+#: src/mdiff.c:3790 src/wdiff.c:1260 src/wdiff2.c:191
 #, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr "  -2, --no-inserted          inhibit output of inserted words\n"
 
-#: src/mdiff.c:3780 src/wdiff.c:1230 src/wdiff2.c:196
+#: src/mdiff.c:3791 src/wdiff.c:1261 src/wdiff2.c:192
 #, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            inhibit output of common words\n"
 
-#: src/mdiff.c:3781
+#: src/mdiff.c:3792
 #, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager           cheamã automat un paginator\n"
 
-#: src/mdiff.c:3782
+#: src/mdiff.c:3793
 #, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr ""
 "  -k, --less-mode            variaþia modului imprimantã pentru \"less\"\n"
 
-#: src/mdiff.c:3783
+#: src/mdiff.c:3794
 #, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
 "  -m, --avoid-wraps          nu extinde câmpurile prin caractere linie nouã\n"
 
-#: src/mdiff.c:3784
+#: src/mdiff.c:3795
 #, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr "  -o, --printer              suprascrie ca pentru imprimantã\n"
 
-#: src/mdiff.c:3785
+#: src/mdiff.c:3796
 #, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr ""
 "  -z, --terminal             foloseºte termcap ca pentru display terminal\n"
 
-#: src/mdiff.c:3786
+#: src/mdiff.c:3797
 #, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr "  -O, --item-regexp=REGEXP   comparã elemente ca definite de REGEXP\n"
 
-#: src/mdiff.c:3787
+#: src/mdiff.c:3798
 #, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            comparã cuvinte în loc de linii\n"
 
-#: src/mdiff.c:3972
+#: src/mdiff.c:3983
 #, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "Farã FIªIER, sau când FIªIER este -, citeºte intrarea standard.\n"
 
-#: src/mdiff.c:3974 src/unify.c:298 src/wdiff.c:1246 src/wdiff2.c:214
+#: src/mdiff.c:3985 src/unify.c:300 src/wdiff.c:1277 src/wdiff2.c:210
 #, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr "Raportaþi bug-uri la <wdiff-bugs@gnu.org>.\n"
 
-#: src/mdiff.c:3985
+#: src/mdiff.c:3997
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr ""
 
-#: src/mdiff.c:4282
+#: src/mdiff.c:4293
 #, fuzzy, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "Nu se poate folosi -z, termcap nu este disponibil."
 
-#: src/mdiff.c:4321
+#: src/mdiff.c:4332
 #, fuzzy, c-format
 msgid "word merging for two files only (so far)"
 msgstr "Cuvinte combinate pentru douã doar douã fiºiere (pânã acum)"
 
-#: src/mdiff.c:4337
+#: src/mdiff.c:4348
 #, fuzzy
 msgid ""
 "\n"
@@ -314,7 +363,7 @@ msgstr ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4341 src/unify.c:407 src/wdiff.c:1372 src/wdiff2.c:133
+#: src/mdiff.c:4351 src/unify.c:407 src/wdiff.c:1403 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -324,7 +373,7 @@ msgstr ""
 "Nu existã nici o garanþie; nici chiar pentru VANDABILITATE sau POTRIVIRE\n"
 "PENTRU UN SCOP ANUME.\n"
 
-#: src/mdiff.c:4345 src/wdiff.c:1376 src/wdiff2.c:137
+#: src/mdiff.c:4354 src/wdiff.c:1406 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -332,94 +381,104 @@ msgstr ""
 "\n"
 "Scris de Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4381
+#: src/mdiff.c:4389
 #, fuzzy, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "Opþiunile -123RSYZ au sens numai când sunt douã intrãri"
 
-#: src/unify.c:144
+#: src/pipes.c:47
+#, c-format
+msgid "error redirecting stream"
+msgstr ""
+
+#: src/pipes.c:51
+#, c-format
+msgid "failed to execute %s"
+msgstr ""
+
+#: src/unify.c:145
 #, fuzzy, c-format
 msgid "could not find a name for the diff at line %ld"
 msgstr "Nu am putut gãsi un nume pentru diff la linia %ld"
 
-#: src/unify.c:273
+#: src/unify.c:274
 #, fuzzy, c-format
 msgid "try `%s --help' for more information\n"
 msgstr "Încercaþi `%s --help' pentru informaþii suplimentare.\n"
 
-#: src/unify.c:277
+#: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unificã - Transformã contextele diff în unidiff, sau vice-versa.\n"
 
-#: src/unify.c:281
+#: src/unify.c:283
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
 msgstr "Folosire: %s [OPÞIUNE]... FIªIER\n"
 
-#: src/unify.c:284
+#: src/unify.c:286
 #, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
 msgstr "  -c, --context-diffs    forþeazã ieºire ca contexte diff\n"
 
-#: src/unify.c:285
+#: src/unify.c:287
 #, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
 msgstr ""
 "  -e, --echo-comments    trimite comentariile la disp. eroare standard\n"
 
-#: src/unify.c:286
+#: src/unify.c:288
 #, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
 msgstr ""
 "  -o, --old-diffs        afiºeazã diff-uri în vechiul stil, indiferent ce\n"
 
-#: src/unify.c:287
+#: src/unify.c:289
 #, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
 msgstr "  -p, --patch-format     genereazã format patch\n"
 
-#: src/unify.c:288
+#: src/unify.c:290
 #, fuzzy
 msgid "  -P                     same as -p\n"
 msgstr "  -P                     la fel ca -p\n"
 
-#: src/unify.c:289
+#: src/unify.c:291
 #, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
 msgstr "  -s, --strip-comments   eliminã liniile de comentariu\n"
 
-#: src/unify.c:290
+#: src/unify.c:292
 #, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
 msgstr "  -u, --unidiffs         forþeazã ieºire ca unidiff-uri\n"
 
-#: src/unify.c:291
+#: src/unify.c:293
 #, fuzzy
 msgid "  -U                     same as -p and -u\n"
 msgstr "  -U                     la fel ca -p ºi -u\n"
 
-#: src/unify.c:292
+#: src/unify.c:294
 #, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr ""
 "  -=, --use-equals       înlocuieºte spaþiile cu caractere egal în unidiff\n"
 
-#: src/unify.c:296
+#: src/unify.c:298
 #, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
 msgstr "Dacã FIªIER nu este specificat, citeºte intrarea standard.\n"
 
-#: src/unify.c:388
+#: src/unify.c:389
 #, fuzzy, c-format
 msgid "unable to open `%s'"
 msgstr "Nu pot deschide `%s'"
 
-#: src/unify.c:394
+#: src/unify.c:395
 #, fuzzy, c-format
 msgid "only one filename allowed"
 msgstr "Un singur nume de fiºier permis"
 
-#: src/unify.c:403
+#: src/unify.c:404
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -427,7 +486,7 @@ msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:411
+#: src/unify.c:410
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -435,37 +494,47 @@ msgstr ""
 "\n"
 "Scris de Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:550
+#: src/unify.c:548
 #, fuzzy, c-format
 msgid "invalid unified diff header at line %ld"
 msgstr "Header diff unificat invalid la linia %ld"
 
-#: src/unify.c:592
+#: src/unify.c:590
 #, fuzzy, c-format
 msgid "malformed unified diff at line %ld"
 msgstr "Diff unificat malformat la linia %ld"
 
-#: src/unify.c:623
+#: src/unify.c:620
 #, fuzzy, c-format
 msgid "context diff missing `old' header at line %ld"
 msgstr "Contextului diff îi lipseºte `vechiul' header la linia %ld"
 
-#: src/unify.c:667 src/unify.c:686 src/unify.c:757 src/unify.c:775
+#: src/unify.c:664 src/unify.c:683 src/unify.c:753 src/unify.c:771
 #, fuzzy, c-format
 msgid "malformed context diff at line %ld"
 msgstr "Context diff malformat la linia %ld"
 
-#: src/unify.c:722
+#: src/unify.c:718
 #, fuzzy, c-format
 msgid "context diff missing `new' header at line %ld"
 msgstr "Contextului diff îi lipseºte `noul' header la linia %ld"
 
-#: src/wdiff.c:581 src/wdiff.c:700
+#: src/wdiff.c:578 src/wdiff.c:697
 #, c-format
 msgid "no suitable temporary directory exists"
 msgstr ""
 
-#: src/wdiff.c:1187 src/wdiff2.c:109
+#: src/wdiff.c:1036
+#, c-format
+msgid "%s: input program killed by signal %d\n"
+msgstr ""
+
+#: src/wdiff.c:1153
+#, c-format
+msgid "%s: output program killed by signal %d\n"
+msgstr ""
+
+#: src/wdiff.c:1218 src/wdiff2.c:109
 #, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -495,11 +564,11 @@ msgstr ""
 "împreunã cu acest program; dacã nu, scrieþi la Free Software Foundation,\n"
 "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
 
-#: src/wdiff.c:1215
+#: src/wdiff.c:1246
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Comparã cuvinte din douã fiºiere ºi raporteazã diferenþele.\n"
 
-#: src/wdiff.c:1219
+#: src/wdiff.c:1250
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
@@ -508,7 +577,7 @@ msgstr ""
 "Folosire: %s [OPÞIUNE]... FIªIER1 FIªIER2\n"
 "          %s -d [OPÞIUNE]... [FIªIER]\n"
 
-#: src/wdiff.c:1224 src/wdiff2.c:190
+#: src/wdiff.c:1255 src/wdiff2.c:186
 #, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
@@ -516,93 +585,93 @@ msgstr ""
 "Argumentele obligatorii pentru opþiunile lungi sunt obligatorii ºi\n"
 "pentru opþiunile scurte.\n"
 
-#: src/wdiff.c:1227 src/wdiff2.c:193
+#: src/wdiff.c:1258 src/wdiff2.c:189
 #, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            afiºeazã copyright-ul ºi terminã\n"
 
-#: src/wdiff.c:1231 src/wdiff2.c:197
+#: src/wdiff.c:1262 src/wdiff2.c:193
 #, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
 msgstr "  -a, --auto-pager           automatically calls a pager\n"
 
-#: src/wdiff.c:1232
+#: src/wdiff.c:1263
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
 
-#: src/wdiff.c:1233 src/wdiff2.c:198
+#: src/wdiff.c:1264 src/wdiff2.c:194
 #, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 print this help\n"
 
-#: src/wdiff.c:1234 src/wdiff2.c:199
+#: src/wdiff.c:1265 src/wdiff2.c:195
 #, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr "  -i, --ignore-case          fold character case while comparing\n"
 
-#: src/wdiff.c:1235 src/wdiff2.c:200
+#: src/wdiff.c:1266 src/wdiff2.c:196
 #, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -l, --less-mode            variation of printer mode for \"less\"\n"
 
-#: src/wdiff.c:1236 src/wdiff2.c:201
+#: src/wdiff.c:1267 src/wdiff2.c:197
 #, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -n, --avoid-wraps          do not extend fields through newlines\n"
 
-#: src/wdiff.c:1237 src/wdiff2.c:202
+#: src/wdiff.c:1268 src/wdiff2.c:198
 #, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              overstrike as for printers\n"
 
-#: src/wdiff.c:1238 src/wdiff2.c:204
+#: src/wdiff.c:1269 src/wdiff2.c:200
 #, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 
-#: src/wdiff.c:1239 src/wdiff2.c:205
+#: src/wdiff.c:1270 src/wdiff2.c:201
 #, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             use termcap as for terminal displays\n"
 
-#: src/wdiff.c:1240 src/wdiff2.c:206
+#: src/wdiff.c:1271 src/wdiff2.c:202
 #, fuzzy
 msgid "  -v, --version              display program version then exit\n"
 msgstr ""
 "  -V, --version              afiºeazã versiunea programului ºi terminã\n"
 
-#: src/wdiff.c:1241 src/wdiff2.c:207
+#: src/wdiff.c:1272 src/wdiff2.c:203
 #, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 msgstr ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 
-#: src/wdiff.c:1242 src/wdiff2.c:208
+#: src/wdiff.c:1273 src/wdiff2.c:204
 #, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr "  -x, --end-delete=STRING    string to mark end of delete region\n"
 
-#: src/wdiff.c:1243 src/wdiff2.c:209
+#: src/wdiff.c:1274 src/wdiff2.c:205
 #, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 
-#: src/wdiff.c:1244 src/wdiff2.c:210
+#: src/wdiff.c:1275 src/wdiff2.c:206
 #, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr "  -z, --end-insert=STRING    string to mark end of insert region\n"
 
-#: src/wdiff.c:1362
+#: src/wdiff.c:1394
 #, fuzzy, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "Nu se poate folosi -t, termcap nu este disponibil"
 
-#: src/wdiff.c:1367
+#: src/wdiff.c:1399
 #, fuzzy
 msgid ""
 "\n"
@@ -612,17 +681,17 @@ msgstr ""
 "\n"
 "Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff.c:1415 src/wdiff.c:1433
+#: src/wdiff.c:1444 src/wdiff.c:1462
 #, fuzzy, c-format
 msgid "too many file arguments"
 msgstr "Lipsesc argumentele fiºier"
 
-#: src/wdiff.c:1428 src/wdiff2.c:324
+#: src/wdiff.c:1457 src/wdiff2.c:320
 #, fuzzy, c-format
 msgid "missing file arguments"
 msgstr "Lipsesc argumentele fiºier"
 
-#: src/wdiff2.c:129
+#: src/wdiff2.c:128
 #, fuzzy
 msgid ""
 "\n"
@@ -631,35 +700,44 @@ msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/wdiff2.c:181
+#: src/wdiff2.c:177
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
 
-#: src/wdiff2.c:186
+#: src/wdiff2.c:182
 #, fuzzy, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
 msgstr "Folosire: %s [OPÞIUNE]... FIªIER1 FIªIER2\n"
 
-#: src/wdiff2.c:203
+#: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
 msgstr ""
 
-#: src/wdiff2.c:212
+#: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:336
+#: src/wdiff2.c:332
 #, fuzzy, c-format
 msgid "Launching `%s"
 msgstr "Citesc %s"
 
-#: src/wdiff2.c:339
+#: src/wdiff2.c:335
 #, c-format
 msgid "'\n"
 msgstr ""
+
+#~ msgid "Read summary: %d files, %d items\n"
+#~ msgstr "Rezumat citire: %d fiºiere, %d elemente\n"
+
+#~ msgid "Work summary: %d clusters, %d members\n"
+#~ msgstr "Rezumat lucru: %d clustere, %d membrii\n"
+
+#~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
+#~ msgstr "Rezumat lucru: %d clustere, %d membrii, %d suprapuneri\n"
 
 #, fuzzy
 #~ msgid ""

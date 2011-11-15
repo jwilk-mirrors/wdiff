@@ -20,7 +20,7 @@
 
    Originally written by Wayne Davison <davison@borland.com>.  */
 
-#include "system.h"
+#include "wdiff.h"
 #include <getopt.h>
 #include <string.h>
 #include <locale.h>

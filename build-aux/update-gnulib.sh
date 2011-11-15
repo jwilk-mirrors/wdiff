@@ -8,7 +8,7 @@
 set -e
 
 bzr clean-tree --ignored
-rm -r lib/* m4/* build-aux/*.h build-aux/snippet
+rm -rf lib/* m4/* build-aux/*.h build-aux/snippet
 for i in build-aux/*; do
     [[ -L $i ]] && continue
     case "$i" in

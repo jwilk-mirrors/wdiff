@@ -52,6 +52,7 @@ lib/c++defs.h
 lib/charset.alias
 lib/configmake.h
 lib/errno.h
+lib/float.h
 lib/getopt.h
 lib/langinfo.h
 lib/locale.h

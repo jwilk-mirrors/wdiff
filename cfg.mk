@@ -5,7 +5,7 @@
 
 _autoreconf = $(srcdir)/autogen.sh
 
-config_h_header = ("system\.h"|<config\.h>)
+config_h_header = ("wdiff\.h"|<config\.h>)
 gnulib_dir = .
 
 INDENT_STYLE = -gnu -ppi1 -ut
@@ -29,6 +29,9 @@ local-checks-to-skip += sc_program_name
 local-checks-to-skip += sc_prohibit_atoi_atof
 local-checks-to-skip += sc_prohibit_strcmp
 local-checks-to-skip += sc_useless_cpp_parens
+
+# We're using neither git nor submodules, so no need to check this so often:
+gl_public_submodule_commit =
 
 # Stuff maintained by maint.mk:
 old_NEWS_hash = d41d8cd98f00b204e9800998ecf8427e
