@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2011-09-15 16:16+0200\n"
+"POT-Creation-Date: 2011-11-15 18:31+0100\n"
 "PO-Revision-Date: 2011-08-22 21:05+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: lib/error.c:185
+#: lib/error.c:187
 msgid "Unknown system error"
 msgstr "Неизвестная системная ошибка"
 

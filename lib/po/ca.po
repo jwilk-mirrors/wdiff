@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailutils 0.6.90\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2011-09-15 16:16+0200\n"
+"POT-Creation-Date: 2011-11-15 18:31+0100\n"
 "PO-Revision-Date: 2005-05-21 04:10+0200\n"
 "Last-Translator: Jordi Mallach <jordi@gnu.org>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
 
-#: lib/error.c:185
+#: lib/error.c:187
 msgid "Unknown system error"
 msgstr "S'ha produït un error desconegut del sistema"
 

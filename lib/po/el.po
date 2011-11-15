@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: textutils 2.1\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2011-09-15 16:16+0200\n"
+"POT-Creation-Date: 2011-11-15 18:31+0100\n"
 "PO-Revision-Date: 2002-08-11 11:25+0100\n"
 "Last-Translator: Simos Xenitellis <simos@hellug.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8-bit\n"
 
 #
-#: lib/error.c:185
+#: lib/error.c:187
 msgid "Unknown system error"
 msgstr "¶γνωστο σφάλμα συστήματος"
 
