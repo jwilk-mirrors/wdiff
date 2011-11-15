@@ -4,9 +4,9 @@ Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
 
 * UNRELEASED
 
-  * Fix portability issue of sed command in testsuite on OS X.
-  * Avoid testsuite failure when screen is not installed.
-  * Make sure to pass PATH to env inside screen.
+  * Updated Czech, German, Spanish, Finnish, Dutch, Polish, Slovenian,
+    Swedish and Ukrainian translations.
+  * Fix several issue with the use of screen in the test suite.
   * Allow WDIFF_PAGER to override PAGER environment variable.
   * Do not autodetect less, so we don't auto-enable less-mode.
     This should improve things for UTF8 text. (Savannah bug #34224)
