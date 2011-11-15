@@ -33,8 +33,12 @@
 
 /* One may also, optionally, define a default PAGER_PROGRAM.  This
    might be done using the --with-default-pager=PAGER configure
-   switch.  If PAGER_PROGRAM is undefined and the PAGER environment
-   variable is not set, none will be used.  */
+   switch.  If PAGER_PROGRAM is undefined and neither the WDIFF_PAGER
+   nor the PAGER environment variable is set, none will be used.  */
+
+/* We do termcap init ourselves, so pass -X.
+   We might do coloring, so pass -R. */
+#define LESS_DEFAULT_OPTS "-X -R"
 
 /*-----------------------.
 | Library declarations.  |
@@ -2736,7 +2740,9 @@ launch_output_program (struct input *input)
 #endif
 	)
 	{
-	  program = getenv ("PAGER");
+	  program = getenv ("WDIFF_PAGER");
+	  if (program == NULL)
+	    program = getenv ("PAGER");
 #ifdef PAGER_PROGRAM
 	  if (program == NULL)
 	    program = PAGER_PROGRAM;
@@ -2757,27 +2763,28 @@ launch_output_program (struct input *input)
 
       if (program && *program)
 	{
-	  int is_less;
+	  char *lessenv;
 
-	  if (basename = mbsrchr (program, '/'), basename)
-	    basename++;
-	  else
-	    basename = program;
-	  is_less = strstr (basename, "less") != NULL;
-
-	  /* If we are paging to less, use printer mode, not display mode.  */
-
-	  if (is_less)
+	  lessenv = getenv ("LESS");
+	  if (lessenv == NULL)
 	    {
-	      find_termcap = 0;
-	      overstrike = 1;
-	      overstrike_for_less = 1;
+	      setenv ("LESS", LESS_DEFAULT_OPTS, 0);
+	    }
+	  else
+	    {
+	      if (asprintf (&lessenv, "%s %s", LESS_DEFAULT_OPTS, lessenv) ==
+		  -1)
+		{
+		  xalloc_die ();
+		  return;
+		}
+	      else
+		{
+		  setenv ("LESS", lessenv, 1);
+		}
 	    }
 
-	  if (is_less)
-	    output_file = writepipe (program, "-X", NULL);
-	  else
-	    output_file = writepipe (program, NULL);
+	  output_file = writepipe (program, NULL);
 	  if (!output_file)
 	    error (EXIT_ERROR, errno, "%s", program);
 	}
