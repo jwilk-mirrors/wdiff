@@ -170,7 +170,7 @@ dnl      ---------
 
 # Due to the istty call in the sources, we have to use screen here.
 
-AT_TESTED([wdiff diff screen env sed tr grep])
+AT_TESTED([wdiff diff env sed tr grep])
 AT_DATA([foo.txt], [start foo end
 ])
 AT_DATA([bar.txt], [start bar end
@@ -182,7 +182,7 @@ echo "Pager now done."
 ])
 chmod +x dummypager
 AT_CHECK([screen -D -m -L \
-env PAGER="$PWD/dummypager" TERM=dumb LC_ALL=C LANGUAGE=C \
+env PAGER="$PWD/dummypager" PATH="$PATH" TERM=dumb LC_ALL=C LANGUAGE=C \
 wdiff -wW -xX -yY -zZ -a foo.txt bar.txt
 :], 0, [ignore], [ignore])
 AT_SKIP_IF([test ! -f screenlog.0])

@@ -4,7 +4,9 @@ Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
 
 * UNRELEASED
 
-  * Fix portability issue of sed command in testsuite on OS X.
+  * Fix portability issue of sed command in testsuite on OS X
+  * Avoid testsuite failure when screen is not installed
+  * Make sure to pass PATH to env inside screen
 
 * Version 1.0.2 - September 2011, by Martin von Gagern
 
