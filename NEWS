@@ -4,9 +4,14 @@ Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
 
 * UNRELEASED
 
-  * Fix portability issue of sed command in testsuite on OS X
-  * Avoid testsuite failure when screen is not installed
-  * Make sure to pass PATH to env inside screen
+  * Fix portability issue of sed command in testsuite on OS X.
+  * Avoid testsuite failure when screen is not installed.
+  * Make sure to pass PATH to env inside screen.
+  * Allow WDIFF_PAGER to override PAGER environment variable.
+  * Do not autodetect less, so we don't auto-enable less-mode.
+    This should improve things for UTF8 text. (Savannah bug #34224)
+    Less-mode is considered deprecated, as it isn't fit for multi-byte
+    encodings. Nevertheless it can still be enabled on the command line.
 
 * Version 1.0.2 - September 2011, by Martin von Gagern
 
