@@ -64,6 +64,7 @@ lib/stdint.h
 lib/stdio.h
 lib/stdlib.h
 lib/string.h
+lib/strings.h
 lib/sys
 lib/time.h
 lib/unistd.h
