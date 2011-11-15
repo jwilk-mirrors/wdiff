@@ -1,20 +1,21 @@
-# Mensajes en espaÒol para GNU wdiff.
-# Copyright (C) 1997, 2001, 2002, 2010 Free Software Foundation, Inc.
+# Mensajes en espa√±ol para GNU wdiff.
+# Copyright (C) 1997, 2001, 2002, 2010, 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
-# Santiago Vila Doncel <sanvila@unex.es>, 1997, 2001, 2002, 2010.
+# Santiago Vila Doncel <sanvila@unex.es>, 1997, 2001, 2002, 2010, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU wdiff 0.5.95\n"
+"Project-Id-Version: GNU wdiff 1.0.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2011-09-15 16:16+0200\n"
-"PO-Revision-Date: 2010-02-15 20:32+0100\n"
+"PO-Revision-Date: 2011-10-17 12:36+0200\n"
 "Last-Translator: Santiago Vila Doncel <sanvila@unex.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/mdiff.c:371
 #, c-format
@@ -24,7 +25,7 @@ msgstr "%s (para la expreg `%s')"
 #: src/mdiff.c:886 src/wdiff.c:1481
 #, c-format
 msgid "only one file may be standard input"
-msgstr "Solamente un fichero puede ser la entrada est·ndar"
+msgstr "Solamente un fichero puede ser la entrada est√°ndar"
 
 #: src/mdiff.c:901 src/wdiff.c:674
 #, c-format
@@ -37,30 +38,30 @@ msgid "Reading %s"
 msgstr "Leyendo %s"
 
 #: src/mdiff.c:1168
-#, fuzzy, c-format
+#, c-format
 msgid ", %d item\n"
 msgid_plural ", %d items\n"
-msgstr[0] ", %d elementos\n"
+msgstr[0] ", %d elemento\n"
 msgstr[1] ", %d elementos\n"
 
 #: src/mdiff.c:1248
 #, c-format
 msgid "Read summary:"
-msgstr ""
+msgstr "Resumen de lectura:"
 
 #: src/mdiff.c:1249
-#, fuzzy, c-format
+#, c-format
 msgid " %d file,"
 msgid_plural " %d files,"
-msgstr[0] ", %d elementos\n"
-msgstr[1] ", %d elementos\n"
+msgstr[0] " %d fichero,"
+msgstr[1] " %d ficheros,"
 
 #: src/mdiff.c:1250
-#, fuzzy, c-format
+#, c-format
 msgid " %d item\n"
 msgid_plural " %d items\n"
-msgstr[0] ", %d elementos\n"
-msgstr[1] ", %d elementos\n"
+msgstr[0] " %d elemento\n"
+msgstr[1] " %d elementos\n"
 
 #: src/mdiff.c:1643
 #, c-format
@@ -85,35 +86,35 @@ msgstr "Ordenando los miembros"
 #: src/mdiff.c:1911 src/mdiff.c:2294
 #, c-format
 msgid "Work summary:"
-msgstr ""
+msgstr "Resumen de trabajo:"
 
 #: src/mdiff.c:1912 src/mdiff.c:2295
-#, fuzzy, c-format
+#, c-format
 msgid " %d cluster,"
 msgid_plural " %d clusters,"
-msgstr[0] ", agrupando"
-msgstr[1] ", agrupando"
+msgstr[0] " %d grupo,"
+msgstr[1] " %d grupos,"
 
 #: src/mdiff.c:1914
-#, fuzzy, c-format
+#, c-format
 msgid " %d member\n"
 msgid_plural " %d members\n"
-msgstr[0] ", %d elementos\n"
-msgstr[1] ", %d elementos\n"
+msgstr[0] " %d miembro\n"
+msgstr[1] " %d miembros\n"
 
 #: src/mdiff.c:2297
 #, c-format
 msgid " %d member,"
 msgid_plural " %d members,"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] " %d miembro,"
+msgstr[1] " %d miembros,"
 
 #: src/mdiff.c:2299
 #, c-format
 msgid " %d overlap\n"
 msgid_plural " %d overlaps\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] " %d solapamiento\n"
+msgstr[1] " %d solapamientos\n"
 
 #: src/mdiff.c:2349 src/wdiff.c:224
 #, c-format
@@ -125,83 +126,83 @@ msgstr "seleccione una terminal mediante la variable de entorno TERM"
 msgid "could not access the termcap data base"
 msgstr "no se pudo acceder a la base de datos termcap"
 
-# øEs "la terminal" o "el terminal"? SV
-# Yo siempre lo llamÈ El terminal. La terminal es la del aeropuerto EM
+# ¬øEs "la terminal" o "el terminal"? SV
+# Yo siempre lo llam√© El terminal. La terminal es la del aeropuerto EM
 # El que la del aeropuerto sea "la" no quiere decir que ninguna otra
-# pueda ser "la". SerÌa m·s bien lo contrario: El ejemplo del aeropuerto
-# demostrarÌa que la palabra terminal es femenino. SV
-# ø CÛmo te suena `una terminal tonta' y `un terminal tonto' ? EM
+# pueda ser "la". Ser√≠a m√°s bien lo contrario: El ejemplo del aeropuerto
+# demostrar√≠a que la palabra terminal es femenino. SV
+# ¬ø C√≥mo te suena `una terminal tonta' y `un terminal tonto' ? EM
 # Igual. Me suena igual. (Y ninguno me suena mal). Por eso dudo.
-# Pero si la del aeropuerto es "la", la otra tambiÈn puede serlo. SV
-# Habr· que abrir una investigaciÛn...
+# Pero si la del aeropuerto es "la", la otra tambi√©n puede serlo. SV
+# Habr√° que abrir una investigaci√≥n...
 #
 # Yo me inclino por `el terminal' (Machixmo ante todo;) ipg
 #
 # El nombre proviene de Equipo Terminal de Datos, la abreviatura
-# debiera conservar el gÈnero, por lo que se tratarÌa de El ETD, el terminal
-# Los terminales, aunque me suena m·s familiar terminal boba, que terminal bobo
-# øser· porque soy varÛn? :-) CB
+# debiera conservar el g√©nero, por lo que se tratar√≠a de El ETD, el terminal
+# Los terminales, aunque me suena m√°s familiar terminal boba, que terminal bobo
+# ¬øser√° porque soy var√≥n? :-) CB
 #
 # Vale, pues ahora me salgo por la tangente y cambio la frase :-)
-# DespuÈs de leer el original varias veces, me parece que es m·s bien
-# el *tipo* de teminal lo que no est· definido.
-# (Antes decÌa "La terminal de tipo `%s' no est· definida"). sv
+# Despu√©s de leer el original varias veces, me parece que es m√°s bien
+# el *tipo* de teminal lo que no est√° definido.
+# (Antes dec√≠a "La terminal de tipo `%s' no est√° definida"). sv
 #
-# AsÌ queda mucho m·s claro. Lo prefiero :) ipg
+# As√≠ queda mucho m√°s claro. Lo prefiero :) ipg
 #
 #: src/mdiff.c:2354 src/wdiff.c:229
 #, c-format
 msgid "terminal type `%s' is not defined"
-msgstr "el tipo de terminal `%s' no est· definido"
+msgstr "el tipo de terminal `%s' no est√° definido"
 
 #: src/mdiff.c:3702 src/mdiff.c:3718 src/wdiff.c:1175 src/wdiff.c:1191
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %d word"
 msgid_plural "%s: %d words"
-msgstr[0] "%s: %d palabras"
+msgstr[0] "%s: %d palabra"
 msgstr[1] "%s: %d palabras"
 
 # Es plural, con un tanto por ciento:
 # el xxx % de las palabras han sido borradas.
 # Abreviadamente: xxx % borradas.
 #
-# " %d %d%% en com˙n" CB
+# " %d %d%% en com√∫n" CB
 # No veo bien la diferencia. sv
 #: src/mdiff.c:3706 src/mdiff.c:3722 src/wdiff.c:1179 src/wdiff.c:1195
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% common"
 msgid_plural "  %d %.0f%% common"
-msgstr[0] "  %d %d%% comunes"
-msgstr[1] "  %d %d%% comunes"
+msgstr[0] "  %d %.0f%% com√∫n"
+msgstr[1] "  %d %.0f%% comunes"
 
 # femenino, porque son `palabras'
 # plural otra vez, por ser tanto por ciento
 #
 #: src/mdiff.c:3709 src/wdiff.c:1182
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% deleted"
 msgid_plural "  %d %.0f%% deleted"
-msgstr[0] "  %d %d%% borradas"
-msgstr[1] "  %d %d%% borradas"
+msgstr[0] "  %d %.0f%% borrada"
+msgstr[1] "  %d %.0f%% borradas"
 
 #: src/mdiff.c:3712 src/mdiff.c:3728 src/wdiff.c:1185 src/wdiff.c:1201
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% changed"
 msgid_plural "  %d %.0f%% changed"
-msgstr[0] "  %d %d%% cambiadas"
-msgstr[1] "  %d %d%% cambiadas"
+msgstr[0] "  %d %.0f%% cambiada"
+msgstr[1] "  %d %.0f%% cambiadas"
 
 #: src/mdiff.c:3725 src/wdiff.c:1198
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% inserted"
 msgid_plural "  %d %.0f%% inserted"
-msgstr[0] "  %d %d%% insertadas"
-msgstr[1] "  %d %d%% insertadas"
+msgstr[0] "  %d %.0f%% insertada"
+msgstr[1] "  %d %.0f%% insertadas"
 
 #: src/mdiff.c:3756 src/wdiff.c:1241 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "Pruebe `%s --help' para m·s informaciÛn.\n"
+msgstr "Pruebe `%s --help' para m√°s informaci√≥n.\n"
 
 #: src/mdiff.c:3761
 msgid ""
@@ -214,7 +215,7 @@ msgstr ""
 #: src/mdiff.c:3766
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr "Modo de empleo: %s [OPCI”N]... [FICHERO]...\n"
+msgstr "Modo de empleo: %s [OPCI√ìN]... [FICHERO]...\n"
 
 #: src/mdiff.c:3770
 msgid ""
@@ -222,7 +223,7 @@ msgid ""
 "Operation modes:\n"
 msgstr ""
 "\n"
-"Modos de operaciÛn:\n"
+"Modos de operaci√≥n:\n"
 
 #: src/mdiff.c:3771
 msgid "  -h                     (ignored)\n"
@@ -230,9 +231,7 @@ msgstr "  -h                     (sin efecto)\n"
 
 #: src/mdiff.c:3772
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
-"  -v, --verbose          da algunas estadÌsticas en la salida de error "
-"est·ndar\n"
+msgstr "  -v, --verbose          da algunas estad√≠sticas en la salida de error est√°ndar\n"
 
 #: src/mdiff.c:3773 src/unify.c:295
 msgid "      --help             display this help then exit\n"
@@ -240,7 +239,7 @@ msgstr "      --help             muestra esta ayuda y finaliza\n"
 
 #: src/mdiff.c:3774 src/unify.c:296
 msgid "      --version          display program version then exit\n"
-msgstr "      --version          muestra la versiÛn y finaliza\n"
+msgstr "      --version          muestra la versi√≥n y finaliza\n"
 
 #: src/mdiff.c:3776
 msgid ""
@@ -252,23 +251,19 @@ msgstr ""
 
 #: src/mdiff.c:3777
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
-"  -T, --initial-tab       produce un TAB en lugar de un especio inicial\n"
+msgstr "  -T, --initial-tab       produce un TAB en lugar de un especio inicial\n"
 
 #: src/mdiff.c:3778
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr "  -l, --paginate          pagina el resultado a travÈs de `pr`\n"
+msgstr "  -l, --paginate          pagina el resultado a trav√©s de `pr`\n"
 
 #: src/mdiff.c:3779
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=CADENA]   toma nota de otra CADENA de usuario\n"
 
 #: src/mdiff.c:3780
-msgid ""
-"  -V, --show-links        give file and line references in annotations\n"
-msgstr ""
-"  -V, --show-links        da referencias de fichero y lÌnea en las "
-"anotaciones\n"
+msgid "  -V, --show-links        give file and line references in annotations\n"
+msgstr "  -V, --show-links        da referencias de fichero y l√≠nea en las anotaciones\n"
 
 #: src/mdiff.c:3781
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
@@ -280,7 +275,7 @@ msgid ""
 "Debugging:\n"
 msgstr ""
 "\n"
-"DepuraciÛn:\n"
+"Depuraci√≥n:\n"
 
 #: src/mdiff.c:3785
 msgid "  -0, --debugging   output many details about what is going on\n"
@@ -308,29 +303,25 @@ msgstr "  -3, --no-common            no muestra las palabras comunes\n"
 
 #: src/mdiff.c:3792
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager           llama a un paginador autom·ticamente\n"
+msgstr "  -A, --auto-pager           llama a un paginador autom√°ticamente\n"
 
 #: src/mdiff.c:3793
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
-"  -k, --less-mode            variante del modo de impresiÛn para \"less\"\n"
+msgstr "  -k, --less-mode            variante del modo de impresi√≥n para \"less\"\n"
 
 #: src/mdiff.c:3794
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
-"  -m, --avoid-wraps          impide que los campos se extiendan m·s all· "
-"del\n"
-"                             final de lÌnea\n"
+"  -m, --avoid-wraps          impide que los campos se extiendan m√°s all√° del\n"
+"                             final de l√≠nea\n"
 
 #: src/mdiff.c:3795
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
-"  -o, --printer              utiliza sobreimpresiÛn como en las impresoras\n"
+msgstr "  -o, --printer              utiliza sobreimpresi√≥n como en las impresoras\n"
 
 #: src/mdiff.c:3796
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -z, --terminal             utiliza termcap para mostrar por terminal\n"
+msgstr "  -z, --terminal             utiliza termcap para mostrar por terminal\n"
 
 #: src/mdiff.c:3797
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
@@ -338,32 +329,32 @@ msgstr "  -O, --item-regexp=EXPREG   compara elementos definidos por EXPREG\n"
 
 #: src/mdiff.c:3798
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode            compara palabras en lugar de lÌneas\n"
+msgstr "  -W, --word-mode            compara palabras en lugar de l√≠neas\n"
 
 #: src/mdiff.c:3983
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr "Si no hay FICHERO, o cuando FICHERO es -, lee la entrada est·ndar.\n"
+msgstr "Si no hay FICHERO, o cuando FICHERO es -, lee la entrada est√°ndar.\n"
 
 #: src/mdiff.c:3985 src/unify.c:300 src/wdiff.c:1277 src/wdiff2.c:210
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "Comunicar errores en el programa a <wdiff-bugs@gnu.org>.\n"
-"Comunicar errores de traducciÛn a <es@li.org> y al ˙ltimo traductor.\n"
+"Comunicar errores de traducci√≥n a <es@li.org> y al √∫ltimo traductor.\n"
 
 #: src/mdiff.c:3997
 #, c-format
 msgid "ignoring option %s (not implemented)"
-msgstr "se descarta la opciÛn %s (no implementada)"
+msgstr "se descarta la opci√≥n %s (no implementada)"
 
 #: src/mdiff.c:4293
 #, c-format
 msgid "cannot use -z, termcap not available"
-msgstr "no se puede usar -z, termcap no est· disponible."
+msgstr "no se puede usar -z, termcap no est√° disponible."
 
 #: src/mdiff.c:4332
 #, c-format
 msgid "word merging for two files only (so far)"
-msgstr "fusiÛn de palabras para dos ficheros solamente (hasta ahora)"
+msgstr "fusi√≥n de palabras para dos ficheros solamente (hasta ahora)"
 
 #: src/mdiff.c:4348
 msgid ""
@@ -379,8 +370,8 @@ msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Esto es software libre; vea el cÛdigo fuente para las condiciones de copia.\n"
-"No hay NINGUNA garantÌa; ni siquiera de COMERCIABILIDAD o IDONEIDAD PARA UN\n"
+"Esto es software libre; vea el c√≥digo fuente para las condiciones de copia.\n"
+"No hay NINGUNA garant√≠a; ni siquiera de COMERCIABILIDAD o IDONEIDAD PARA UN\n"
 "FIN DETERMINADO.\n"
 
 #: src/mdiff.c:4354 src/wdiff.c:1406 src/wdiff2.c:134
@@ -389,7 +380,7 @@ msgid ""
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 msgstr ""
 "\n"
-"Escrito por FranÁois Pinard <pinard@iro.umontreal.ca>.\n"
+"Escrito por Fran√ßois Pinard <pinard@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4389
 #, c-format
@@ -399,36 +390,35 @@ msgstr "las opciones -123RSYZ solamente tienen sentido cuando hay dos entradas"
 #: src/pipes.c:47
 #, c-format
 msgid "error redirecting stream"
-msgstr ""
+msgstr "error al redirigir el flujo"
 
 #: src/pipes.c:51
 #, c-format
 msgid "failed to execute %s"
-msgstr ""
+msgstr "fallo al ejecutar %s"
 
 # Pongo "la diferencia" y no "el diff" porque en este caso se refiere
-# a *una* diferencia concreta, la de la lÌnea %ld., y no se refiere al "diff"
-# genÈrico, es decir el fichero resultante de la orden diff.
+# a *una* diferencia concreta, la de la l√≠nea %ld., y no se refiere al "diff"
+# gen√©rico, es decir el fichero resultante de la orden diff.
 #
 #: src/unify.c:145
 #, c-format
 msgid "could not find a name for the diff at line %ld"
-msgstr "no se pudo encontrar un nombre para la diferencia en la lÌnea %ld"
+msgstr "no se pudo encontrar un nombre para la diferencia en la l√≠nea %ld"
 
 #: src/unify.c:274
 #, c-format
 msgid "try `%s --help' for more information\n"
-msgstr "pruebe `%s --help' para m·s informaciÛn.\n"
+msgstr "pruebe `%s --help' para m√°s informaci√≥n.\n"
 
 #: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr ""
-"unify - Transforma diffs de contexto en diffs unificados, o viceversa.\n"
+msgstr "unify - Transforma diffs de contexto en diffs unificados, o viceversa.\n"
 
 #: src/unify.c:283
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr "Modo de empleo: %s [OPCI”N]... [FICHERO]\n"
+msgstr "Modo de empleo: %s [OPCI√ìN]... [FICHERO]\n"
 
 #: src/unify.c:286
 msgid "  -c, --context-diffs    force output to context diffs\n"
@@ -436,14 +426,11 @@ msgstr "  -c, --context-diffs    genera el resultado como diffs de contexto\n"
 
 #: src/unify.c:287
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
-"  -e, --echo-comments    repite los comentarios por la salida de error "
-"est·ndar\n"
+msgstr "  -e, --echo-comments    repite los comentarios por la salida de error est√°ndar\n"
 
 #: src/unify.c:288
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr ""
-"  -o, --old-diffs        muestra diffs al viejo estilo, pase lo que pase\n"
+msgstr "  -o, --old-diffs        muestra diffs al viejo estilo, pase lo que pase\n"
 
 #: src/unify.c:289
 msgid "  -p, --patch-format     generate patch format\n"
@@ -455,7 +442,7 @@ msgstr "  -P                     lo mismo que -p\n"
 
 #: src/unify.c:291
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr "  -s, --strip-comments   elimina las lÌneas de comentarios\n"
+msgstr "  -s, --strip-comments   elimina las l√≠neas de comentarios\n"
 
 #: src/unify.c:292
 msgid "  -u, --unidiffs         force output to unidiffs\n"
@@ -473,7 +460,7 @@ msgstr ""
 
 #: src/unify.c:298
 msgid "If FILE is not specified, read standard input.\n"
-msgstr "Si no se especifica FICHERO, lee la entrada est·ndar.\n"
+msgstr "Si no se especifica FICHERO, lee la entrada est√°ndar.\n"
 
 #: src/unify.c:389
 #, c-format
@@ -483,7 +470,7 @@ msgstr "no se puede abrir `%s'"
 #: src/unify.c:395
 #, c-format
 msgid "only one filename allowed"
-msgstr "sÛlo se permite un nombre de fichero"
+msgstr "s√≥lo se permite un nombre de fichero"
 
 #: src/unify.c:404
 msgid ""
@@ -504,49 +491,49 @@ msgstr ""
 #: src/unify.c:548
 #, c-format
 msgid "invalid unified diff header at line %ld"
-msgstr "cabecera de diff unificado no v·lida en la lÌnea %ld"
+msgstr "cabecera de diff unificado no v√°lida en la l√≠nea %ld"
 
 #: src/unify.c:590
 #, c-format
 msgid "malformed unified diff at line %ld"
-msgstr "diff unificado errÛneo en la lÌnea %ld"
+msgstr "diff unificado err√≥neo en la l√≠nea %ld"
 
 #: src/unify.c:620
 #, c-format
 msgid "context diff missing `old' header at line %ld"
-msgstr "diff de contexto sin cabecera `old' en la lÌnea %ld"
+msgstr "diff de contexto sin cabecera `old' en la l√≠nea %ld"
 
 #: src/unify.c:664 src/unify.c:683 src/unify.c:753 src/unify.c:771
 #, c-format
 msgid "malformed context diff at line %ld"
-msgstr "diff de contexto errÛneo en la lÌnea %ld"
+msgstr "diff de contexto err√≥neo en la l√≠nea %ld"
 
 #: src/unify.c:718
 #, c-format
 msgid "context diff missing `new' header at line %ld"
-msgstr "diff de contexto sin cabecera `new' en la lÌnea %ld"
+msgstr "diff de contexto sin cabecera `new' en la l√≠nea %ld"
 
 #: src/wdiff.c:578 src/wdiff.c:697
 #, c-format
 msgid "no suitable temporary directory exists"
-msgstr "no existe ning˙n directorio temporal apropiado"
+msgstr "no existe ning√∫n directorio temporal apropiado"
 
 #: src/wdiff.c:1036
 #, c-format
 msgid "%s: input program killed by signal %d\n"
-msgstr ""
+msgstr "%s: programa de entrada terminado por la se√±al %d\n"
 
 #: src/wdiff.c:1153
 #, c-format
 msgid "%s: output program killed by signal %d\n"
-msgstr ""
+msgstr "%s: programa de salida terminado por la se√±al %d\n"
 
-# ø"Free software" -> "Software libre"? ipg
+# ¬ø"Free software" -> "Software libre"? ipg
 #
-# Vale, despuÈs de pensarlo un poco, me parece adecuado.
-# Usar y extender este tÈrmino (que ya usan los franceses)
-# ayudar· a evitar que le llamen "software gratis"
-# Adem·s, "free software" quedaba "demasiado en inglÈs".
+# Vale, despu√©s de pensarlo un poco, me parece adecuado.
+# Usar y extender este t√©rmino (que ya usan los franceses)
+# ayudar√° a evitar que le llamen "software gratis"
+# Adem√°s, "free software" quedaba "demasiado en ingl√©s".
 #: src/wdiff.c:1218 src/wdiff2.c:109
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
@@ -563,22 +550,21 @@ msgid ""
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
 "Este programa es software libre: puede ser redistribuido y/o modificado\n"
-"bajo los tÈrminos de la Licencia P˙blica General de GNU tal y como se\n"
-"publica por la Free Software Foundation; bien en la versiÛn 3 de la\n"
-"Licencia, o (a su elecciÛn) cualquier versiÛn posterior.\n"
+"bajo los t√©rminos de la Licencia P√∫blica General de GNU tal y como se\n"
+"publica por la Free Software Foundation; bien en la versi√≥n 3 de la\n"
+"Licencia, o (a su elecci√≥n) cualquier versi√≥n posterior.\n"
 "\n"
-"Este programa se distribuye con la esperanza de que sea ˙til,\n"
-"pero SIN NINGUNA GARANTÕA; ni siquiera la garantÌa implÌcita de\n"
-"COMERCIABILIDAD o IDONEIDAD PARA UN FIN DETERMINADO. VÈase la\n"
-"Licencia P˙blica General de GNU para m·s detalles.\n"
+"Este programa se distribuye con la esperanza de que sea √∫til,\n"
+"pero SIN NINGUNA GARANT√çA; ni siquiera la garant√≠a impl√≠cita de\n"
+"COMERCIABILIDAD o IDONEIDAD PARA UN FIN DETERMINADO. V√©ase la\n"
+"Licencia P√∫blica General de GNU para m√°s detalles.\n"
 "\n"
-"Usted deberÌa haber recibido una copia de la Licencia P˙blica General\n"
+"Usted deber√≠a haber recibido una copia de la Licencia P√∫blica General\n"
 "de GNU junto con este programa. Si no, vea <http://www.gnu.org/licenses/>.\n"
 
 #: src/wdiff.c:1246
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr ""
-"wdiff - Compara palabras en dos ficheros e informa de las diferencias.\n"
+msgstr "wdiff - Compara palabras en dos ficheros e informa de las diferencias.\n"
 
 #: src/wdiff.c:1250
 #, c-format
@@ -586,15 +572,13 @@ msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Modo de empleo: %s [OPCI”N]... FICHERO1 FICHERO2\n"
-"                %s -d [OPTI”N]... [FICHERO]\n"
+"Modo de empleo: %s [OPCI√ìN]... FICHERO1 FICHERO2\n"
+"                %s -d [OPTI√ìN]... [FICHERO]\n"
 
 #: src/wdiff.c:1255 src/wdiff2.c:186
-msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
+msgid "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
-"Los argumentos obligatorios para las opciones largas son tambiÈn "
-"obligatorios\n"
+"Los argumentos obligatorios para las opciones largas son tambi√©n obligatorios\n"
 "para las opciones cortas.\n"
 
 #: src/wdiff.c:1258 src/wdiff2.c:189
@@ -603,7 +587,7 @@ msgstr "  -C, --copyright            muestra el copyright y finaliza\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:193
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           llama a un paginador autom·ticamente\n"
+msgstr "  -a, --auto-pager           llama a un paginador autom√°ticamente\n"
 
 #: src/wdiff.c:1263
 msgid "  -d, --diff-input           use single unified diff as input\n"
@@ -617,73 +601,60 @@ msgstr "  -h, --help                 muestra esta ayuda\n"
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
 "  -i, --ignore-case                    no tiene en cuenta las diferencias\n"
-"                                       entre may˙sculas y min˙sculas\n"
+"                                       entre may√∫sculas y min√∫sculas\n"
 
 #: src/wdiff.c:1266 src/wdiff2.c:196
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
-"  -l, --less-mode            variante del modo de impresiÛn para \"less\"\n"
+msgstr "  -l, --less-mode            variante del modo de impresi√≥n para \"less\"\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:197
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr ""
-"  -n, --avoid-wraps          impide que los campos se extiendan m·s all· "
-"del\n"
-"                             final de lÌnea\n"
+"  -n, --avoid-wraps          impide que los campos se extiendan m√°s all√° del\n"
+"                             final de l√≠nea\n"
 
 #: src/wdiff.c:1268 src/wdiff2.c:198
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr ""
-"  -p, --printer              utiliza sobreimpresiÛn como en las impresoras\n"
+msgstr "  -p, --printer              utiliza sobreimpresi√≥n como en las impresoras\n"
 
 #: src/wdiff.c:1269 src/wdiff2.c:200
-msgid ""
-"  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
-"  -s, --statistics           indica cu·ntas palabras hay borradas, "
-"insertadas\n"
+"  -s, --statistics           indica cu√°ntas palabras hay borradas, insertadas\n"
 "                             y comunes\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -t, --terminal             utiliza termcap para mostrar por terminal\n"
+msgstr "  -t, --terminal             utiliza termcap para mostrar por terminal\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
-"  -v, --version              muestra la versiÛn del programa y finaliza\n"
+msgstr "  -v, --version              muestra la versi√≥n del programa y finaliza\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
-msgid ""
-"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
-"  -w, --start-delete=CADENA  cadena para marcar comienzo de la regiÛn "
-"borrada\n"
+msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr "  -w, --start-delete=CADENA  cadena para marcar comienzo de la regi√≥n borrada\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr ""
-"  -x, --end-delete=CADENA    cadena para marcar el final de la regiÛn "
-"borrada\n"
+msgstr "  -x, --end-delete=CADENA    cadena para marcar el final de la regi√≥n borrada\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:205
-msgid ""
-"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr ""
-"  -y, --start-insert=CADENA  cadena para marcar el comienzo de una regiÛn\n"
+"  -y, --start-insert=CADENA  cadena para marcar el comienzo de una regi√≥n\n"
 "                             insertada\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"  -z, --end-insert=CADENA    cadena para marcar el final de una regiÛn\n"
+"  -z, --end-insert=CADENA    cadena para marcar el final de una regi√≥n\n"
 "                             insertada\n"
 
 #: src/wdiff.c:1394
 #, c-format
 msgid "cannot use -t, termcap not available"
-msgstr "no se puede usar -t, termcap no est· disponible"
+msgstr "no se puede usar -t, termcap no est√° disponible"
 
 #: src/wdiff.c:1399
 msgid ""
@@ -695,33 +666,33 @@ msgstr ""
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
 "Foundation, Inc.\n"
 
-# No se referir· a que no se ha dado al menos un nombre de fichero ? EM
-# SÌ, pero hay que dar *dos*, si se da uno o ninguno, faltan argumentos. SV
-# Se debe especificar al menos un fichero, quedarÌa bien. EM
+# No se referir√° a que no se ha dado al menos un nombre de fichero ? EM
+# S√≠, pero hay que dar *dos*, si se da uno o ninguno, faltan argumentos. SV
+# Se debe especificar al menos un fichero, quedar√≠a bien. EM
 # Creo que "faltan argumentos" es suficiente.
-# Tras este mensaje, aparece lo de "Pruebe --help para m·s informaciÛn"
-# que es donde explica quÈ argumentos son los que faltan.
-# Otras posibilidades serÌan:
+# Tras este mensaje, aparece lo de "Pruebe --help para m√°s informaci√≥n"
+# que es donde explica qu√© argumentos son los que faltan.
+# Otras posibilidades ser√≠an:
 # Faltan ficheros
 # Faltan argumentos de tipo FICHERO.
 # Pero no me gusta ninguna de las anteriores SV
-# Al final he optado por una soluciÛn intermedia.
+# Al final he optado por una soluci√≥n intermedia.
 #: src/wdiff.c:1444 src/wdiff.c:1462
 #, c-format
 msgid "too many file arguments"
 msgstr "demasiados argumentos (ficheros)"
 
-# No se referir· a que no se ha dado al menos un nombre de fichero ? EM
-# SÌ, pero hay que dar *dos*, si se da uno o ninguno, faltan argumentos. SV
-# Se debe especificar al menos un fichero, quedarÌa bien. EM
+# No se referir√° a que no se ha dado al menos un nombre de fichero ? EM
+# S√≠, pero hay que dar *dos*, si se da uno o ninguno, faltan argumentos. SV
+# Se debe especificar al menos un fichero, quedar√≠a bien. EM
 # Creo que "faltan argumentos" es suficiente.
-# Tras este mensaje, aparece lo de "Pruebe --help para m·s informaciÛn"
-# que es donde explica quÈ argumentos son los que faltan.
-# Otras posibilidades serÌan:
+# Tras este mensaje, aparece lo de "Pruebe --help para m√°s informaci√≥n"
+# que es donde explica qu√© argumentos son los que faltan.
+# Otras posibilidades ser√≠an:
 # Faltan ficheros
 # Faltan argumentos de tipo FICHERO.
 # Pero no me gusta ninguna de las anteriores SV
-# Al final he optado por una soluciÛn intermedia.
+# Al final he optado por una soluci√≥n intermedia.
 #: src/wdiff.c:1457 src/wdiff2.c:320
 #, c-format
 msgid "missing file arguments"
@@ -747,18 +718,15 @@ msgstr ""
 #: src/wdiff2.c:182
 #, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "Modo de empleo: %s [OPCI”N]... FICHERO1 FICHERO2\n"
+msgstr "Modo de empleo: %s [OPCI√ìN]... FICHERO1 FICHERO2\n"
 
 #: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
-"  -q, --quiet                no muestra el mensaje de llamada a `mdiff'\n"
+msgstr "  -q, --quiet                no muestra el mensaje de llamada a `mdiff'\n"
 
 #: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"Este programa tambiÈn dice cÛmo se podrÌa haber llamado a `mdiff' "
-"directamente.\n"
+msgstr "Este programa tambi√©n dice c√≥mo se podr√≠a haber llamado a `mdiff' directamente.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:332
@@ -780,17 +748,11 @@ msgstr "'\n"
 #~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 #~ msgstr "Resumen: %d grupos, %d miembros, %d duplicaciones\n"
 
-#~ msgid ""
-#~ "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-#~ msgstr ""
-#~ "  -K, --no-init-term         como -z, pero sin cadenas de inicio/fin de "
-#~ "termcap\n"
+#~ msgid "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
+#~ msgstr "  -K, --no-init-term         como -z, pero sin cadenas de inicio/fin de termcap\n"
 
-#~ msgid ""
-#~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-#~ msgstr ""
-#~ "  -K, --no-init-term         como -t, pero sin cadenas de inicio/fin de "
-#~ "termcap\n"
+#~ msgid "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
+#~ msgstr "  -K, --no-init-term         como -t, pero sin cadenas de inicio/fin de termcap\n"
 
 #~ msgid ""
 #~ "\n"
@@ -801,12 +763,11 @@ msgstr "'\n"
 #~ "      --version          output version information and exit\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Modos de operaciÛn:\n"
+#~ "Modos de operaci√≥n:\n"
 #~ "  -h                     (sin efecto)\n"
-#~ "  -v, --verbose          da algunas estadÌsticas en la salida de error "
-#~ "est·ndar\n"
+#~ "  -v, --verbose          da algunas estad√≠sticas en la salida de error est√°ndar\n"
 #~ "      --help             muestra esta ayuda y finaliza\n"
-#~ "      --version          muestra la versiÛn y finaliza\n"
+#~ "      --version          muestra la versi√≥n y finaliza\n"
 
 #~ msgid ""
 #~ "\n"
@@ -820,39 +781,38 @@ msgstr "'\n"
 #~ "\n"
 #~ "Formato del resultado:\n"
 #~ "  -T, --initial-tab       produce un TAB en lugar de un especio inicial\n"
-#~ "  -l, --paginate          pagina el resultado a travÈs de `pr`\n"
+#~ "  -l, --paginate          pagina el resultado a trav√©s de `pr`\n"
 #~ "  -S, --string[=CADENA]   toma nota de otra CADENA de usuario\n"
-#~ "  -V, --show-links        da referencias de fichero y lÌnea en las "
-#~ "anotaciones\n"
+#~ "  -V, --show-links        da referencias de fichero y l√≠nea en las anotaciones\n"
 #~ "  -t, --expand-tabs       expande tabs a espacios en el resultado\n"
 
-# Para el --version, øquÈ tal usar la frasecita esa que ya es m·s o menos
-# est·ndar de `informa de la versiÛn y finaliza'?
+# Para el --version, ¬øqu√© tal usar la frasecita esa que ya es m√°s o menos
+# est√°ndar de `informa de la versi√≥n y finaliza'?
 #
-# No, porque esa es la traducciÛn de esto:
+# No, porque esa es la traducci√≥n de esto:
 # "    --version         output version information and exit\n"
-# La frase original que hay aquÌ es algo distinta, por eso me parece
+# La frase original que hay aqu√≠ es algo distinta, por eso me parece
 # apropiado traducirla de forma distinta (aparece la palabra "program",
 # por ejemplo). sv
 #
 # He puesto `termcap' entre comillas simples, ya que es un palabro guiri
 # (espero que te parezca bien). ipg
 #
-# Pues no del todo, porque es un nombre de fichero, m·s que un
-# "palabro guiri". øSe traducen los nombres de los ficheros?
+# Pues no del todo, porque es un nombre de fichero, m√°s que un
+# "palabro guiri". ¬øSe traducen los nombres de los ficheros?
 #
-# [ Lo de entrecomillar ciertas palabras se me ocurriÛ en alguna ocasiÛn
-# para dar a entender que idealmente habrÌa que usar una palabra espaÒola
-# pero no la hay, o la que hay no est· lo suficientemente difundida, es decir
-# para admitir abiertamente que no es una palabra espaÒola, o sea, que no
-# es nuestra intenciÛn ampliar el diccionario por ahÌ ]. sv
+# [ Lo de entrecomillar ciertas palabras se me ocurri√≥ en alguna ocasi√≥n
+# para dar a entender que idealmente habr√≠a que usar una palabra espa√±ola
+# pero no la hay, o la que hay no est√° lo suficientemente difundida, es decir
+# para admitir abiertamente que no es una palabra espa√±ola, o sea, que no
+# es nuestra intenci√≥n ampliar el diccionario por ah√≠ ]. sv
 #
-# øQuÈ te parecerÌa poner en lugar de `CADENA' `TEXTO'? Para remarcar que
+# ¬øQu√© te parecer√≠a poner en lugar de `CADENA' `TEXTO'? Para remarcar que
 # es una cadena de letras, vamos ... ipg
 #
-# Si eso fuera mejor, entonces el original habrÌa puesto "TEXT", que
-# tambiÈn existe. Supongo que si el original dice STRING, es porque admite
-# cualquier cadena, sin limitarse a caracteres alfanumÈricos o cosas asÌ. sv
+# Si eso fuera mejor, entonces el original habr√≠a puesto "TEXT", que
+# tambi√©n existe. Supongo que si el original dice STRING, es porque admite
+# cualquier cadena, sin limitarse a caracteres alfanum√©ricos o cosas as√≠. sv
 #~ msgid ""
 #~ "\n"
 #~ "Word mode options:\n"
@@ -873,79 +833,60 @@ msgstr "'\n"
 #~ "  -1, --no-deleted           no muestra las palabras borradas\n"
 #~ "  -2, --no-inserted          no muestra las palabras insertadas\n"
 #~ "  -3, --no-common            no muestra las palabras comunes\n"
-#~ "  -A, --auto-pager           llama a un paginador autom·ticamente\n"
-#~ "  -k, --less-mode            variante del modo de impresiÛn para \"less"
-#~ "\"\n"
-#~ "  -m, --avoid-wraps          impide que los campos se extiendan m·s all· "
-#~ "del\n"
-#~ "                             final de lÌnea\n"
-#~ "  -o, --printer              utiliza sobreimpresiÛn como en las "
-#~ "impresoras\n"
+#~ "  -A, --auto-pager           llama a un paginador autom√°ticamente\n"
+#~ "  -k, --less-mode            variante del modo de impresi√≥n para \"less\"\n"
+#~ "  -m, --avoid-wraps          impide que los campos se extiendan m√°s all√° del\n"
+#~ "                             final de l√≠nea\n"
+#~ "  -o, --printer              utiliza sobreimpresi√≥n como en las impresoras\n"
 #~ "  -z, --terminal             utiliza termcap para mostrar por terminal\n"
-#~ "  -K, --no-init-term         como -z, pero sin cadenas de inicio/fin de "
-#~ "termcap\n"
+#~ "  -K, --no-init-term         como -z, pero sin cadenas de inicio/fin de termcap\n"
 #~ "  -O, --item-regexp=EXPREG   compara elementos definidos por EXPREG\n"
-#~ "  -W, --word-mode            compara palabras en lugar de lÌneas\n"
+#~ "  -W, --word-mode            compara palabras en lugar de l√≠neas\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Comparing files:\n"
-#~ "*  -H, --speed-large-files     go faster, for when numerous small "
-#~ "changes\n"
-#~ "*  -a, --text                  report line differences (text file "
-#~ "default)\n"
+#~ "*  -H, --speed-large-files     go faster, for when numerous small changes\n"
+#~ "*  -a, --text                  report line differences (text file default)\n"
 #~ "*  -d, --minimal               try harder for a smaller set of changes\n"
-#~ "*  -q, --brief                 only says if files differ (binary "
-#~ "default)\n"
-#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/"
-#~ "suffixes\n"
+#~ "*  -q, --brief                 only says if files differ (binary default)\n"
+#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ComparaciÛn de ficheros:\n"
-#~ "*  -H, --speed-large-files     acelera el proceso, para cuando hay "
-#~ "muchos\n"
-#~ "                               cambios pero pequeÒos\n"
-#~ "*  -a, --text                  informa de las diferencias en las lÌneas\n"
-#~ "                               (como ficheros de texto de forma "
-#~ "predeterminada)\n"
-#~ "*  -q, --brief                 solamente dice si los ficheros son "
-#~ "distintos\n"
-#~ "                               (como ficheros binarios de forma "
-#~ "predeterminada)\n"
-#~ "*      --horizon-lines=LÕNEAS  mantiene LÕNEAS lÌneas en prefijos/"
-#~ "sufijos\n"
+#~ "Comparaci√≥n de ficheros:\n"
+#~ "*  -H, --speed-large-files     acelera el proceso, para cuando hay muchos\n"
+#~ "                               cambios pero peque√±os\n"
+#~ "*  -a, --text                  informa de las diferencias en las l√≠neas\n"
+#~ "                               (como ficheros de texto de forma predeterminada)\n"
+#~ "*  -q, --brief                 solamente dice si los ficheros son distintos\n"
+#~ "                               (como ficheros binarios de forma predeterminada)\n"
+#~ "*      --horizon-lines=L√çNEAS  mantiene L√çNEAS l√≠neas en prefijos/sufijos\n"
 #~ "                               comunes\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Comparing directories:\n"
 #~ "*  -N, --new-file                  consider missing files to be empty\n"
-#~ "*  -P, --unidirectional-new-file   consider missing old files to be "
-#~ "empty\n"
+#~ "*  -P, --unidirectional-new-file   consider missing old files to be empty\n"
 #~ "*  -S, --starting-file=FILE        resume directory comparison with FILE\n"
-#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from "
-#~ "FILE\n"
+#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from FILE\n"
 #~ "*  -r, --recursive                 recursively compare subdirectories\n"
 #~ "*  -s, --report-identical-files    report when two files are the same\n"
 #~ "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ComparaciÛn de directorios:\n"
-#~ "*  -N, --new-file                  considera vacÌos los ficheros "
-#~ "ausentes\n"
-#~ "*  -P, --unidirectional-new-file   considera vacÌos los ficheros "
-#~ "ausentes\n"
+#~ "Comparaci√≥n de directorios:\n"
+#~ "*  -N, --new-file                  considera vac√≠os los ficheros ausentes\n"
+#~ "*  -P, --unidirectional-new-file   considera vac√≠os los ficheros ausentes\n"
 #~ "                                   antiguos\n"
-#~ "*  -S, --starting-file=FICHERO     inicia la comparaciÛn de directorios\n"
+#~ "*  -S, --starting-file=FICHERO     inicia la comparaci√≥n de directorios\n"
 #~ "                                   con FICHERO\n"
 #~ "*  -X, --exclude-from=FICHERO      descarta los ficheros que encajen con\n"
 #~ "                                   los patrones de FICHERO\n"
 #~ "*  -r, --recursive                 compara subdirectorios recursivamente\n"
-#~ "*  -s, --report-identical-files    informa de cu·ndo dos ficheros son el "
-#~ "mismo\n"
-#~ "*  -x, --exclude=PATR”N            descarta ficheros (directorios) que "
-#~ "encajen\n"
-#~ "                                   con PATR”N\n"
+#~ "*  -s, --report-identical-files    informa de cu√°ndo dos ficheros son el mismo\n"
+#~ "*  -x, --exclude=PATR√ìN            descarta ficheros (directorios) que encajen\n"
+#~ "                                   con PATR√ìN\n"
 
 #~ msgid ""
 #~ "\n"
@@ -958,16 +899,14 @@ msgstr "'\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Soslayo de texto:\n"
-#~ "  -B, --ignore-blank-lines             descarta las lÌneas en blanco\n"
-#~ "*  -I, --ignore-matching-lines=EXPREG  descarta las lÌneas que encajen\n"
+#~ "  -B, --ignore-blank-lines             descarta las l√≠neas en blanco\n"
+#~ "*  -I, --ignore-matching-lines=EXPREG  descarta las l√≠neas que encajen\n"
 #~ "                                       con EXPREG\n"
 #~ "  -b, --ignore-space-change            no tiene en cuenta la cantidad de\n"
 #~ "                                       espacios en blanco\n"
-#~ "  -i, --ignore-case                    no tiene en cuentas las "
-#~ "diferencias\n"
-#~ "                                       entre may˙sculas y min˙sculas\n"
-#~ "  -w, --ignore-all-space               no tiene en cuenta los espacios "
-#~ "en\n"
+#~ "  -i, --ignore-case                    no tiene en cuentas las diferencias\n"
+#~ "                                       entre may√∫sculas y min√∫sculas\n"
+#~ "  -w, --ignore-all-space               no tiene en cuenta los espacios en\n"
 #~ "                                       blanco\n"
 
 #~ msgid ""
@@ -983,8 +922,7 @@ msgstr "'\n"
 #~ "                             anotaciones\n"
 #~ "  -J, --minimum-size=ELEMENTOS descarta los grupos que no tengan tantos\n"
 #~ "                               ELEMENTOS\n"
-#~ "  -j, --ignore-delimiters    no cuenta los elementos que solamente "
-#~ "tengan\n"
+#~ "  -j, --ignore-delimiters    no cuenta los elementos que solamente tengan\n"
 #~ "                             delimitadores\n"
 
 # FIXME: "for deleted lines" - "for deleted line". Which is the difference?
@@ -999,32 +937,25 @@ msgstr "'\n"
 #~ "*      --old-line-format=FORMAT          use FORMAT for deleted line\n"
 #~ "*      --unchanged-group-format=FORMAT   use FORMAT for unchanged lines\n"
 #~ "*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n"
-#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-"
-#~ "format\n"
+#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Formatos de salida detallados:\n"
-#~ "*  -D, --ifdef=NOMBRE                    utiliza el formato `#ifdef "
-#~ "NOMBRE'\n"
-#~ "*      --changed-group-format=FORMATO    utiliza FORMATO para las lÌneas "
-#~ "que\n"
+#~ "*  -D, --ifdef=NOMBRE                    utiliza el formato `#ifdef NOMBRE'\n"
+#~ "*      --changed-group-format=FORMATO    utiliza FORMATO para las l√≠neas que\n"
 #~ "                                         cambian\n"
-#~ "*      --new-group-format=FORMATO        utiliza FORMATO para las lÌneas\n"
+#~ "*      --new-group-format=FORMATO        utiliza FORMATO para las l√≠neas\n"
 #~ "                                         insertadas\n"
-#~ "*      --new-line-format=FORMATO         utiliza FORMATO para una lÌnea\n"
+#~ "*      --new-line-format=FORMATO         utiliza FORMATO para una l√≠nea\n"
 #~ "                                         insertada\n"
-#~ "*      --old-group-format=FORMATO        utiliza FORMATO para las lÌneas\n"
+#~ "*      --old-group-format=FORMATO        utiliza FORMATO para las l√≠neas\n"
 #~ "                                         eliminadas\n"
-#~ "*      --old-line-format=FORMATO         utiliza FORMATO para una lÌnea "
-#~ "borrada\n"
-#~ "*      --unchanged-group-format=FORMATO  utiliza FORMATO para lÌneas que "
-#~ "no\n"
+#~ "*      --old-line-format=FORMATO         utiliza FORMATO para una l√≠nea borrada\n"
+#~ "*      --unchanged-group-format=FORMATO  utiliza FORMATO para l√≠neas que no\n"
 #~ "                                         han cambiado\n"
-#~ "*      --unchanged-line-format=FORMATO   utiliza FORMATO para una lÌnea "
-#~ "que no\n"
+#~ "*      --unchanged-line-format=FORMATO   utiliza FORMATO para una l√≠nea que no\n"
 #~ "                                         ha cambiado\n"
-#~ "*      --line-format=FORMATO             --{old,new,unchanged}-line-"
-#~ "format\n"
+#~ "*      --line-format=FORMATO             --{old,new,unchanged}-line-format\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1037,52 +968,42 @@ msgstr "'\n"
 #~ "\n"
 #~ "Formatos estilo `script':\n"
 #~ "  (ninguno de entre -CDUcefnuy)  produce diffs normales\n"
-#~ "*  -e, --ed               produce un script `ed' v·lido\n"
-#~ "*  -f, --forward-ed       mezcla entre -e y -n (no muy ˙til)\n"
+#~ "*  -e, --ed               produce un script `ed' v√°lido\n"
+#~ "*  -f, --forward-ed       mezcla entre -e y -n (no muy √∫til)\n"
 #~ "*  -n, --rcs              formato RCS (usado internamente por RCS)\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Context and unified formats:\n"
-#~ "*  -F, --show-function-line=REGEXP   show previous context matching "
-#~ "REGEXP\n"
-#~ "*  -p, --show-c-function             show which C function for each "
-#~ "change\n"
+#~ "*  -F, --show-function-line=REGEXP   show previous context matching REGEXP\n"
+#~ "*  -p, --show-c-function             show which C function for each change\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Formatos de contexto y unificado:\n"
-#~ "*  -F, --show-function-line=EXPREG   muestra el contexto previo que "
-#~ "encaje con\n"
+#~ "*  -F, --show-function-line=EXPREG   muestra el contexto previo que encaje con\n"
 #~ "                                     EXPREG\n"
-#~ "*  -p, --show-c-function             muestra la funciÛn C a que "
-#~ "corresponde\n"
+#~ "*  -p, --show-c-function             muestra la funci√≥n C a que corresponde\n"
 #~ "                                     cada cambio\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "*  -C, --context=LINES         as -c, also select context size in lines\n"
-#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name "
-#~ "(twice)\n"
+#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
 #~ "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-#~ "*  -c, --context               output context diffs (default 3 context "
-#~ "lines)\n"
+#~ "*  -c, --context               output context diffs (default 3 context lines)\n"
 #~ "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 #~ "*  -LINES                      (obsolete: select context size in lines)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "*  -C, --context=LÕNEAS        como -c, tambiÈn selecciona el tamaÒo del\n"
+#~ "*  -C, --context=L√çNEAS        como -c, tambi√©n selecciona el tama√±o del\n"
 #~ "                               contexto\n"
-#~ "                               en lÌneas\n"
-#~ "*  -L, --label=ETIQUETA        utiliza una ETIQUETA from/to en vez del "
-#~ "nombre\n"
+#~ "                               en l√≠neas\n"
+#~ "*  -L, --label=ETIQUETA        utiliza una ETIQUETA from/to en vez del nombre\n"
 #~ "                               del fichero (por duplicado)\n"
-#~ "*  -U, --unified=LÕNEAS        produce diffs de contexto (por omisiÛn 3 "
-#~ "lÌneas)\n"
-#~ "*  -u, --unified               produce un diff unificado (por omisiÛn 3 "
-#~ "lÌneas)\n"
-#~ "   -LÕNEAS                     (obsoleta: selecciona el tamaÒo del "
-#~ "contexto\n"
-#~ "                               en lÌneas)\n"
+#~ "*  -U, --unified=L√çNEAS        produce diffs de contexto (por omisi√≥n 3 l√≠neas)\n"
+#~ "*  -u, --unified               produce un diff unificado (por omisi√≥n 3 l√≠neas)\n"
+#~ "   -L√çNEAS                     (obsoleta: selecciona el tama√±o del contexto\n"
+#~ "                               en l√≠neas)\n"
 
 # FUZZY: side by side?
 #~ msgid ""
@@ -1097,13 +1018,11 @@ msgstr "'\n"
 #~ "\n"
 #~ "Formato de lado a lado:\n"
 #~ "*  -W, --width=COLUMNAS          utiliza un ancho de COLUMNAS\n"
-#~ "*  -y, --side-by-side            produce el resultado en formato lado a "
-#~ "lado\n"
-#~ "*      --left-column             muestra sÛlo la columna izquierda cuando "
-#~ "es\n"
-#~ "                                 com˙n\n"
+#~ "*  -y, --side-by-side            produce el resultado en formato lado a lado\n"
+#~ "*      --left-column             muestra s√≥lo la columna izquierda cuando es\n"
+#~ "                                 com√∫n\n"
 #~ "*      --sdiff-merge-assist      (usado internamente por `sdiff')\n"
-#~ "*      --suppress-common-lines   no muestra las lÌneas comunes\n"
+#~ "*      --suppress-common-lines   no muestra las l√≠neas comunes\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1111,36 +1030,29 @@ msgstr "'\n"
 #~ "  %%%%           a single %%\n"
 #~ "  %%c'C'        quoted character C\n"
 #~ "  %%c'\\O'       character having value O, from 1 to 3 octal digits\n"
-#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E "
-#~ "FORMAT\n"
+#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E FORMAT\n"
 #~ "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 #~ "  %%<           [group] old, each line through --old-line-format\n"
 #~ "  %%>           [group] new, each line through --new-line-format\n"
-#~ "  %%=           [group] unchanged, each line through --unchanged-line-"
-#~ "format\n"
+#~ "  %%=           [group] unchanged, each line through --unchanged-line-format\n"
 #~ "  %%l           [line] without its possible trailing newline\n"
 #~ "  %%L           [line] with its possible trailing newline\n"
 #~ msgstr ""
 #~ "\n"
-#~ "FORMATO se compone de caracteres que se representan a sÌ mismos, "
-#~ "excepto:\n"
+#~ "FORMATO se compone de caracteres que se representan a s√≠ mismos, excepto:\n"
 #~ "  %%%%            un %%\n"
-#~ "  %%c'C'         el car·cter C entrecomillado\n"
-#~ "  %%c'\\O'        el car·cter que tiene valor O, de 1 a tres dÌgitos "
-#~ "octales\n"
-#~ "  %%(A=B?T:E)    si A es B entonces T y si no E; A y B son n˙meros o "
-#~ "variables,\n"
+#~ "  %%c'C'         el car√°cter C entrecomillado\n"
+#~ "  %%c'\\O'        el car√°cter que tiene valor O, de 1 a tres d√≠gitos octales\n"
+#~ "  %%(A=B?T:E)    si A es B entonces T y si no E; A y B son n√∫meros o variables,\n"
 #~ "                 T y E son FORMATOs\n"
-#~ "  %%FN           utiliza la especificaciÛn SPECIF F para mostrar el "
-#~ "valor\n"
+#~ "  %%FN           utiliza la especificaci√≥n SPECIF F para mostrar el valor\n"
 #~ "                 VARIABLE N\n"
-#~ "  %%<            [grupo] antiguo, cada lÌnea a travÈs de --old-line-"
-#~ "format\n"
-#~ "  %%>            [grupo] nuevo, cada lÌnea a travÈs de --new-line-format\n"
-#~ "  %%=            [grupo] no cambia, cada lÌnea a travÈs de\n"
+#~ "  %%<            [grupo] antiguo, cada l√≠nea a trav√©s de --old-line-format\n"
+#~ "  %%>            [grupo] nuevo, cada l√≠nea a trav√©s de --new-line-format\n"
+#~ "  %%=            [grupo] no cambia, cada l√≠nea a trav√©s de\n"
 #~ "                 --unchanged-line-format\n"
-#~ "  %%l            [lÌnea] sin su posible car·cter de nueva lÌnea final\n"
-#~ "  %%L            [lÌnea] con su posible car·cter de nueva lÌnea final\n"
+#~ "  %%l            [l√≠nea] sin su posible car√°cter de nueva l√≠nea final\n"
+#~ "  %%L            [l√≠nea] con su posible car√°cter de nueva l√≠nea final\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1160,17 +1072,16 @@ msgstr "'\n"
 #~ msgstr ""
 #~ "\n"
 #~ "VARIABLE es {eflmn} para un grupo antiguo o {EFLMN} para un grupo nuevo\n"
-#~ "  {eE}   n˙mero de lÌnea justo antes del grupo\n"
-#~ "  {fF}   primera lÌnea del grupo\n"
-#~ "  {lL}   ˙ltima lÌnea del grupo\n"
-#~ "  {mM}   n˙mero de lÌnea justo despuÈs del grupo\n"
-#~ "  {nN}   n˙mero de lÌneas dentro del grupo\n"
+#~ "  {eE}   n√∫mero de l√≠nea justo antes del grupo\n"
+#~ "  {fF}   primera l√≠nea del grupo\n"
+#~ "  {lL}   √∫ltima l√≠nea del grupo\n"
+#~ "  {mM}   n√∫mero de l√≠nea justo despu√©s del grupo\n"
+#~ "  {nN}   n√∫mero de l√≠neas dentro del grupo\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Standard diff options:\n"
-#~ "  -i, --ignore-case         consider upper- and lower-case to be the "
-#~ "same\n"
+#~ "  -i, --ignore-case         consider upper- and lower-case to be the same\n"
 #~ "  -w, --ignore-all-space    ignore all white space\n"
 #~ "  -b, --ignore-space-change ignore changes in the amount of white space\n"
 #~ "  -B, --ignore-blank-lines  ignore changes whose lines are all blank\n"
@@ -1187,26 +1098,25 @@ msgstr "'\n"
 #~ "  -F, --show-function-line=RE show the most recent line matching RE\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Opciones est·ndar de diff:\n"
-#~ "  -i, --ignore-case         considera iguales may˙sculas y min˙sculas\n"
+#~ "Opciones est√°ndar de diff:\n"
+#~ "  -i, --ignore-case         considera iguales may√∫sculas y min√∫sculas\n"
 #~ "  -w, --ignore-all-space    descarta los espacios en blanco\n"
 #~ "  -b, --ignore-space-change descarta cambios en la cantidad de espacio\n"
 #~ "                            en blanco\n"
-#~ "  -B, --ignore-blank-ines   descarta cambios cuyas lÌneas est·n en "
-#~ "blanco\n"
-#~ "  -I, --ignore-matching-lines=ER  descarta cambios cuyas lÌneas encajan\n"
+#~ "  -B, --ignore-blank-ines   descarta cambios cuyas l√≠neas est√°n en blanco\n"
+#~ "  -I, --ignore-matching-lines=ER  descarta cambios cuyas l√≠neas encajan\n"
 #~ "                                  con ER\n"
 #~ "  -a, --text                trata todos los ficheros como texto\n"
-#~ "  -c, --context[=N⁄MERO]    produce diffs de contexto normales,\n"
-#~ "                            cambiando a N⁄MERO lÌneas de contexto\n"
-#~ "  -u, --unified[=N⁄MERO]    produce diffs de contexto unificado\n"
-#~ "                            con N⁄MERO lÌneas de contexto\n"
-#~ "  -C, --context=N⁄M         produce N⁄M lÌneas de contexto copiado\n"
+#~ "  -c, --context[=N√öMERO]    produce diffs de contexto normales,\n"
+#~ "                            cambiando a N√öMERO l√≠neas de contexto\n"
+#~ "  -u, --unified[=N√öMERO]    produce diffs de contexto unificado\n"
+#~ "                            con N√öMERO l√≠neas de contexto\n"
+#~ "  -C, --context=N√öM         produce N√öM l√≠neas de contexto copiado\n"
 #~ "\n"
-#~ "  -U, --unified=N⁄M         produce N⁄M lÌneas de contexto unificado\n"
+#~ "  -U, --unified=N√öM         produce N√öM l√≠neas de contexto unificado\n"
 #~ "  -L, --label=ETIQUETA      usa ETIQUETA en lugar del nombre del fichero\n"
-#~ "  -p, --show-c-function     muestra en quÈ funciÛn C est· cada cambio\n"
-#~ "  -F, --show-function-line=ER  muestra la lÌnea m·s reciente que encaje\n"
+#~ "  -p, --show-c-function     muestra en qu√© funci√≥n C est√° cada cambio\n"
+#~ "  -F, --show-function-line=ER  muestra la l√≠nea m√°s reciente que encaje\n"
 #~ "                               con ER\n"
 
 #~ msgid ""
@@ -1214,36 +1124,31 @@ msgstr "'\n"
 #~ "  -e, --ed                  output an ed script\n"
 #~ "  -n, --rcs                 output an RCS format diff\n"
 #~ "  -y, --side-by-side        output in two columns\n"
-#~ "  -w, --width=NUM           output at most NUM (default 130) characters "
-#~ "per line\n"
+#~ "  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
 #~ "      --left-column         output only the left column of common lines\n"
 #~ "      --suppress-common-lines do not output common lines\n"
-#~ "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' "
-#~ "diffs\n"
+#~ "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
 #~ "      --GTYPE-group-format=GFMT GTYPE input groups with GFMT\n"
 #~ "      --line-format=LFMT    all input lines with LFMT\n"
 #~ "      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"
 #~ "  -l, --paginate            pass the output through `pr' to paginate it\n"
 #~ "  -t, --expand-tabs         expand tabs to spaces in output\n"
 #~ msgstr ""
-#~ "  -q, --brief               muestra sÛlo si los ficheros difieren o no\n"
+#~ "  -q, --brief               muestra s√≥lo si los ficheros difieren o no\n"
 #~ "  -e, --ed                  produce un script ed\n"
 #~ "  -n, --rcs                 produce un diff en formato RCS\n"
 #~ "  -y, --side-by-side        muestra en dos columnas\n"
-#~ "  -w, --width=N⁄M           muestra como mucho N⁄M (por omisiÛn 130)\n"
-#~ "                            caracteres por lÌnea\n"
-#~ "      --left-column         muestra sÛlo la columna izquiera de las "
-#~ "lÌneas\n"
+#~ "  -w, --width=N√öM           muestra como mucho N√öM (por omisi√≥n 130)\n"
+#~ "                            caracteres por l√≠nea\n"
+#~ "      --left-column         muestra s√≥lo la columna izquiera de las l√≠neas\n"
 #~ "                            comunes\n"
-#~ "      --suppress-common-lines  no muestra las lÌneas comunes\n"
-#~ "  -D, --ifdef=NOMBRE        muestra un fichero combinado con diffs de "
-#~ "tipo\n"
+#~ "      --suppress-common-lines  no muestra las l√≠neas comunes\n"
+#~ "  -D, --ifdef=NOMBRE        muestra un fichero combinado con diffs de tipo\n"
 #~ "                            `#ifdef NOMBRE'\n"
 #~ "      --GTYPE-group-format=GFMT  grupos de entrada GTYPE con GFMT\n"
-#~ "      --line-format=LFMT    todas las lÌneas de entrada con LFMT\n"
-#~ "      --LTYPE-line-format=LFMT  lÌneas de entrada LTYPE con LFMT\n"
-#~ "  -l, --paginate            pasa el resultado a travÈs de `pr' para "
-#~ "paginarlo\n"
+#~ "      --line-format=LFMT    todas las l√≠neas de entrada con LFMT\n"
+#~ "      --LTYPE-line-format=LFMT  l√≠neas de entrada LTYPE con LFMT\n"
+#~ "  -l, --paginate            pasa el resultado a trav√©s de `pr' para paginarlo\n"
 #~ "  -t, --expand-tabs         expande tabs a espacios en el resultado\n"
 
 #~ msgid ""
@@ -1255,41 +1160,32 @@ msgstr "'\n"
 #~ "  -x, --exclude=PAT         exclude files that match PAT\n"
 #~ "  -X, --exclude-from=FILE   exclude files that match any pattern in FILE\n"
 #~ "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
-#~ "      --horizon-lines=NUM   keep NUM lines of the common prefix and "
-#~ "suffix\n"
+#~ "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 #~ "  -d, --minimal             try hard to find a smaller set of changes\n"
-#~ "  -H, --speed-large-files   assume large files and many scattered small "
-#~ "changes\n"
+#~ "  -H, --speed-large-files   assume large files and many scattered small changes\n"
 #~ msgstr ""
-#~ "  -T, --initial-tab         alinea los tabs aÒadiendo un tab inicial\n"
-#~ "  -r, --recursive           compara recursivamente los directorios "
-#~ "encontrados\n"
-#~ "  -N, --new-file            trata los ficheros ausentes como vacÌos\n"
-#~ "  -P, --unidirectional-new-file trata los ficheros primeros ausentes como "
-#~ "vacÌos\n"
-#~ "  -s, --report-identical-files  informa de cu·ndo dos ficheros son el "
-#~ "mismo\n"
+#~ "  -T, --initial-tab         alinea los tabs a√±adiendo un tab inicial\n"
+#~ "  -r, --recursive           compara recursivamente los directorios encontrados\n"
+#~ "  -N, --new-file            trata los ficheros ausentes como vac√≠os\n"
+#~ "  -P, --unidirectional-new-file trata los ficheros primeros ausentes como vac√≠os\n"
+#~ "  -s, --report-identical-files  informa de cu√°ndo dos ficheros son el mismo\n"
 #~ "  -x, --exclude=PAT         excluye ficheros que encajan con PAT\n"
-#~ "  -X, --exclude-from=FICHERO excluye ficheros que encajan en cualquier "
-#~ "patrÛn\n"
+#~ "  -X, --exclude-from=FICHERO excluye ficheros que encajan en cualquier patr√≥n\n"
 #~ "                             de FICHERO\n"
 #~ "  -S, --starting-file=FICHERO comienza con FICHERO cuando se comparan\n"
 #~ "                              directorios\n"
-#~ "      --horizon-lines=N⁄M   mantiene N⁄M lÌneas del prefijo y sufijo "
-#~ "comunes\n"
-#~ "  -d, --minimal             se esfuerza por encontrar un conjunto de "
-#~ "cambios\n"
-#~ "                            m·s pequeÒo\n"
-#~ "  -H, --speed-large-files   supone que los ficheros son grandes y con "
-#~ "muchos\n"
-#~ "                            cambios pequeÒos y salteados\n"
+#~ "      --horizon-lines=N√öM   mantiene N√öM l√≠neas del prefijo y sufijo comunes\n"
+#~ "  -d, --minimal             se esfuerza por encontrar un conjunto de cambios\n"
+#~ "                            m√°s peque√±o\n"
+#~ "  -H, --speed-large-files   supone que los ficheros son grandes y con muchos\n"
+#~ "                            cambios peque√±os y salteados\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "By default, context diffs have an horizon of two lines.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Por omisiÛn, los diffs de contexto tienen un horizonte de dos lÌneas.\n"
+#~ "Por omisi√≥n, los diffs de contexto tienen un horizonte de dos l√≠neas.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1309,16 +1205,14 @@ msgstr "'\n"
 #~ "\n"
 #~ "LTYPE es `old', `new', o `unchanged'.  GTYPE es LTYPE o `changed'.\n"
 #~ "GFMT puede contener:\n"
-#~ "  %<  lÌneas del FICHERO1\n"
-#~ "  %>  lÌneas del FICHERO2\n"
-#~ "  %[-][ANCHO][.[PREC]]{doxX}LETRA  especificaciÛn estilo printf para "
-#~ "LETRA\n"
-#~ "    Las LETRAs son como sigue para un nuevo grupo, o min˙sculas para un "
-#~ "grupo\n"
+#~ "  %<  l√≠neas del FICHERO1\n"
+#~ "  %>  l√≠neas del FICHERO2\n"
+#~ "  %[-][ANCHO][.[PREC]]{doxX}LETRA  especificaci√≥n estilo printf para LETRA\n"
+#~ "    Las LETRAs son como sigue para un nuevo grupo, o min√∫sculas para un grupo\n"
 #~ "    antiguo:\n"
-#~ "     F  primer n˙mero de lÌnea\n"
-#~ "     L  ˙ltimo n˙mero de lÌnea\n"
-#~ "     N  n˙mero de lÌneas = L-F+1\n"
+#~ "     F  primer n√∫mero de l√≠nea\n"
+#~ "     L  √∫ltimo n√∫mero de l√≠nea\n"
+#~ "     N  n√∫mero de l√≠neas = L-F+1\n"
 #~ "     E  F-1\n"
 #~ "     M  L+1\n"
 
@@ -1333,26 +1227,23 @@ msgstr "'\n"
 #~ "  %c'\\OOO'  the character with octal code OOO\n"
 #~ msgstr ""
 #~ "LFMT puede contener:\n"
-#~ "  %L  contenido de la lÌnea\n"
-#~ "  %l  contenido de la lÌnea, excluyendo cualquier car·cter de nueva lÌnea "
-#~ "final\n"
-#~ "  %[-][ANCHO][.[PREC]]{doxX}n  especificaciÛn estilo printf para el "
-#~ "n˙mero\n"
-#~ "  de la lÌnea de entrada\n"
+#~ "  %L  contenido de la l√≠nea\n"
+#~ "  %l  contenido de la l√≠nea, excluyendo cualquier car√°cter de nueva l√≠nea final\n"
+#~ "  %[-][ANCHO][.[PREC]]{doxX}n  especificaci√≥n estilo printf para el n√∫mero\n"
+#~ "  de la l√≠nea de entrada\n"
 #~ "Tanto GFMT como LFMT pueden contener:\n"
 #~ "  %%  %\n"
-#~ "  %c'C'  el car·cter C\n"
-#~ "  %c'\\OOO'  el car·cter con cÛdigo octal OOO\n"
+#~ "  %c'C'  el car√°cter C\n"
+#~ "  %c'\\OOO'  el car√°cter con c√≥digo octal OOO\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Old mdiff options:\n"
-#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a "
-#~ "cluster\n"
+#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Opciones antiguas de mdiff:\n"
-#~ "*  -f, --fuzz-items=ELEMENTOS n˙mero m·ximo de ELEMENTOS que no encajen\n"
+#~ "*  -f, --fuzz-items=ELEMENTOS n√∫mero m√°ximo de ELEMENTOS que no encajen\n"
 #~ "                              en un grupo\n"
 
 #~ msgid ""
@@ -1362,8 +1253,8 @@ msgstr "'\n"
 #~ "\n"
 #~ "Copyright (C) 1997 Free Software Foundation, Inc.\n"
 
-# He puesto 'en' la salida est·ndar, por unificar em
-# Pues creo que no habÌa que unificar, porque aquÌ el original dice "to",
+# He puesto 'en' la salida est√°ndar, por unificar em
+# Pues creo que no hab√≠a que unificar, porque aqu√≠ el original dice "to",
 # no "in". No es lo mismo. sv+
 #~ msgid ""
 #~ "\n"
@@ -1383,48 +1274,47 @@ msgstr "'\n"
 #~ msgstr ""
 #~ "\n"
 #~ "  -c, --context-diffs    genera el resultado como diffs de contexto\n"
-#~ "  -e, --echo-comments    repite los comentarios por la salida de error "
-#~ "est·ndar\n"
+#~ "  -e, --echo-comments    repite los comentarios por la salida de error est√°ndar\n"
 #~ "  -o, --old-diffs        muestra diffs al viejo estilo, pase lo que pase\n"
 #~ "  -p, --patch-format     genera en formato de parche\n"
 #~ "  -P                     lo mismo que -p\n"
-#~ "  -s, --strip-comments   elimina las lÌneas de comentarios\n"
+#~ "  -s, --strip-comments   elimina las l√≠neas de comentarios\n"
 #~ "  -u, --unidiffs         genera el resultado como diffs unificados\n"
 #~ "  -U                     lo mismo que -p y -u\n"
 #~ "  -=, --use-equals       sustituye espacios por signos igual en diffs\n"
 #~ "                         unificados\n"
 #~ "      --help             muestra esta ayuda y finaliza\n"
-#~ "      --version          muestra la versiÛn y finaliza\n"
+#~ "      --version          muestra la versi√≥n y finaliza\n"
 #~ "\n"
-#~ "Si no se especifica FICHERO, se lee la entrada est·ndar.\n"
+#~ "Si no se especifica FICHERO, se lee la entrada est√°ndar.\n"
 
-# Para el --version, øquÈ tal usar la frasecita esa que ya es m·s o menos
-# est·ndar de `informa de la versiÛn y finaliza'?
+# Para el --version, ¬øqu√© tal usar la frasecita esa que ya es m√°s o menos
+# est√°ndar de `informa de la versi√≥n y finaliza'?
 #
-# No, porque esa es la traducciÛn de esto:
+# No, porque esa es la traducci√≥n de esto:
 # "    --version         output version information and exit\n"
-# La frase original que hay aquÌ es algo distinta, por eso me parece
+# La frase original que hay aqu√≠ es algo distinta, por eso me parece
 # apropiado traducirla de forma distinta (aparece la palabra "program",
 # por ejemplo). sv
 #
 # He puesto `termcap' entre comillas simples, ya que es un palabro guiri
 # (espero que te parezca bien). ipg
 #
-# Pues no del todo, porque es un nombre de fichero, m·s que un
-# "palabro guiri". øSe traducen los nombres de los ficheros?
+# Pues no del todo, porque es un nombre de fichero, m√°s que un
+# "palabro guiri". ¬øSe traducen los nombres de los ficheros?
 #
-# [ Lo de entrecomillar ciertas palabras se me ocurriÛ en alguna ocasiÛn
-# para dar a entender que idealmente habrÌa que usar una palabra espaÒola
-# pero no la hay, o la que hay no est· lo suficientemente difundida, es decir
-# para admitir abiertamente que no es una palabra espaÒola, o sea, que no
-# es nuestra intenciÛn ampliar el diccionario por ahÌ ]. sv
+# [ Lo de entrecomillar ciertas palabras se me ocurri√≥ en alguna ocasi√≥n
+# para dar a entender que idealmente habr√≠a que usar una palabra espa√±ola
+# pero no la hay, o la que hay no est√° lo suficientemente difundida, es decir
+# para admitir abiertamente que no es una palabra espa√±ola, o sea, que no
+# es nuestra intenci√≥n ampliar el diccionario por ah√≠ ]. sv
 #
-# øQuÈ te parecerÌa poner en lugar de `CADENA' `TEXTO'? Para remarcar que
+# ¬øQu√© te parecer√≠a poner en lugar de `CADENA' `TEXTO'? Para remarcar que
 # es una cadena de letras, vamos ... ipg
 #
-# Si eso fuera mejor, entonces el original habrÌa puesto "TEXT", que
-# tambiÈn existe. Supongo que si el original dice STRING, es porque admite
-# cualquier cadena, sin limitarse a caracteres alfanumÈricos o cosas asÌ. sv
+# Si eso fuera mejor, entonces el original habr√≠a puesto "TEXT", que
+# tambi√©n existe. Supongo que si el original dice STRING, es porque admite
+# cualquier cadena, sin limitarse a caracteres alfanum√©ricos o cosas as√≠. sv
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
 #~ "\n"
@@ -1447,58 +1337,48 @@ msgstr "'\n"
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 #~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Los argumentos obligatorios para las opciones largas son tambiÈn "
-#~ "obligatorios\n"
+#~ "Los argumentos obligatorios para las opciones largas son tambi√©n obligatorios\n"
 #~ "para las opciones cortas.\n"
 #~ "\n"
 #~ "  -C, --copyright            muestra el copyright y finaliza\n"
-#~ "  -K, --no-init-term         como -t, pero sin cadenas de inicio/fin de "
-#~ "termcap\n"
-#~ "  -V, --version              muestra la versiÛn del programa y finaliza\n"
+#~ "  -K, --no-init-term         como -t, pero sin cadenas de inicio/fin de termcap\n"
+#~ "  -V, --version              muestra la versi√≥n del programa y finaliza\n"
 #~ "  -1, --no-deleted           no muestra las palabras borradas\n"
 #~ "  -2, --no-inserted          no muestra las palabras insertadas\n"
 #~ "  -3, --no-common            no muestra las palabras comunes\n"
-#~ "  -a, --auto-pager           llama a un paginador autom·ticamente\n"
+#~ "  -a, --auto-pager           llama a un paginador autom√°ticamente\n"
 #~ "  -h, --help                 muestra esta ayuda\n"
-#~ "  -i, --ignore-case          no distingue may˙sculas de min˙sculas al "
-#~ "comparar\n"
-#~ "  -l, --less-mode            variaciÛn del modo de impresiÛn para \"less"
-#~ "\"\n"
-#~ "  -n, --avoid-wraps          impide que los campos se extiendan m·s all· "
-#~ "del\n"
-#~ "                             final de lÌnea\n"
-#~ "  -p, --printer              utiliza sobreimpresiÛn como en las "
-#~ "impresoras\n"
-#~ "  -s, --statistics           indica cu·ntas palabras hay borradas, "
-#~ "insertadas\n"
+#~ "  -i, --ignore-case          no distingue may√∫sculas de min√∫sculas al comparar\n"
+#~ "  -l, --less-mode            variaci√≥n del modo de impresi√≥n para \"less\"\n"
+#~ "  -n, --avoid-wraps          impide que los campos se extiendan m√°s all√° del\n"
+#~ "                             final de l√≠nea\n"
+#~ "  -p, --printer              utiliza sobreimpresi√≥n como en las impresoras\n"
+#~ "  -s, --statistics           indica cu√°ntas palabras hay borradas, insertadas\n"
 #~ "                             y comunes\n"
 #~ "  -t, --terminal             utiliza termcap para mostrar por terminal\n"
-#~ "  -w, --start-delete=CADENA  cadena para marcar el comienzo de la regiÛn "
-#~ "borrada\n"
-#~ "  -x, --end-delete=CADENA    cadena para marcar el final de la regiÛn "
-#~ "borrada\n"
-#~ "  -y, --start-insert=CADENA  cadena para marcar el comienzo de una "
-#~ "regiÛn\n"
+#~ "  -w, --start-delete=CADENA  cadena para marcar el comienzo de la regi√≥n borrada\n"
+#~ "  -x, --end-delete=CADENA    cadena para marcar el final de la regi√≥n borrada\n"
+#~ "  -y, --start-insert=CADENA  cadena para marcar el comienzo de una regi√≥n\n"
 #~ "                             insertada\n"
-#~ "  -z, --end-insert=CADENA    cadena para marcar el final de una regiÛn\n"
+#~ "  -z, --end-insert=CADENA    cadena para marcar el final de una regi√≥n\n"
 #~ "                             insertada\n"
 
-# [ Antes puse <su-tipo>, pero en espaÒol queda fatal ].
+# [ Antes puse <su-tipo>, pero en espa√±ol queda fatal ].
 #
 # FIXME.
-# A mÌ esto no me mola, porque queda muy bien para la gente de csh,
-# pero a los basheros (como yo :) no les llega ... øsugerencias? ipg
-# Pues yo sugiero tambiÈn poner los dos ...
+# A m√≠ esto no me mola, porque queda muy bien para la gente de csh,
+# pero a los basheros (como yo :) no les llega ... ¬øsugerencias? ipg
+# Pues yo sugiero tambi√©n poner los dos ...
 #
-# Tienes toda la razÛn, pero de momento hay que traducir la cadena dada.
-# (La fidelidad al original ante todo). Eso sÌ, en cuanto salga
-# la prÛxima versiÛn de prueba se lo decimos al autor.
+# Tienes toda la raz√≥n, pero de momento hay que traducir la cadena dada.
+# (La fidelidad al original ante todo). Eso s√≠, en cuanto salga
+# la pr√≥xima versi√≥n de prueba se lo decimos al autor.
 #
 # Translation: I dislike this, because it is ok for csh-people,
-# but not for bash people (like me :) ... øsuggestions?
+# but not for bash people (like me :) ... ¬øsuggestions?
 #
 #~ msgid "Specify a terminal type with `setenv TERM <yourtype>'."
 #~ msgstr "Especifique un tipo de terminal con `setenv TERM <tipo>'."
 
 #~ msgid "Both files cannot be standard input."
-#~ msgstr "Los dos ficheros no pueden ser la entrada est·ndar"
+#~ msgstr "Los dos ficheros no pueden ser la entrada est√°ndar"

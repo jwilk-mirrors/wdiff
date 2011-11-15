@@ -6,18 +6,17 @@
 # Paweł Krawczyk - tłumaczenie inf. o prawach aut.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 1.0.0\n"
+"Project-Id-Version: wdiff 1.0.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2011-09-15 16:16+0200\n"
-"PO-Revision-Date: 2011-09-06 21:30+0200\n"
+"PO-Revision-Date: 2011-09-17 18:01+0200\n"
 "Last-Translator: Rafał Maszkowski <rzm@icm.edu.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: src/mdiff.c:371
 #, c-format
@@ -39,36 +38,33 @@ msgstr "katalogi nie są obsługiwane"
 msgid "Reading %s"
 msgstr "Czytanie %s"
 
-# plural? - rzm
 #: src/mdiff.c:1168
-#, fuzzy, c-format
+#, c-format
 msgid ", %d item\n"
 msgid_plural ", %d items\n"
-msgstr[0] "%d elementów\n"
-msgstr[1] "%d elementów\n"
+msgstr[0] "%d element\n"
+msgstr[1] "%d elementy\n"
 msgstr[2] "%d elementów\n"
 
 #: src/mdiff.c:1248
 #, c-format
 msgid "Read summary:"
-msgstr ""
+msgstr "Podsumowanie czytania:"
 
-# plural? - rzm
 #: src/mdiff.c:1249
-#, fuzzy, c-format
+#, c-format
 msgid " %d file,"
 msgid_plural " %d files,"
-msgstr[0] "%d elementów\n"
-msgstr[1] "%d elementów\n"
-msgstr[2] "%d elementów\n"
+msgstr[0] "%d plik,"
+msgstr[1] "%d pliki,"
+msgstr[2] "%d plików,"
 
-# plural? - rzm
 #: src/mdiff.c:1250
-#, fuzzy, c-format
+#, c-format
 msgid " %d item\n"
 msgid_plural " %d items\n"
-msgstr[0] "%d elementów\n"
-msgstr[1] "%d elementów\n"
+msgstr[0] "%d element\n"
+msgstr[1] "%d elementy\n"
 msgstr[2] "%d elementów\n"
 
 #: src/mdiff.c:1643
@@ -94,40 +90,39 @@ msgstr "Sortowanie elementów"
 #: src/mdiff.c:1911 src/mdiff.c:2294
 #, c-format
 msgid "Work summary:"
-msgstr ""
+msgstr "Podsumowanie pracy:"
 
 #: src/mdiff.c:1912 src/mdiff.c:2295
-#, fuzzy, c-format
+#, c-format
 msgid " %d cluster,"
 msgid_plural " %d clusters,"
-msgstr[0] ", łączenie"
-msgstr[1] ", łączenie"
-msgstr[2] ", łączenie"
+msgstr[0] " %d złączenie,"
+msgstr[1] " %d złączenia,"
+msgstr[2] " %d złączeń,"
 
-# plural? - rzm
 #: src/mdiff.c:1914
-#, fuzzy, c-format
+#, c-format
 msgid " %d member\n"
 msgid_plural " %d members\n"
-msgstr[0] "%d elementów\n"
-msgstr[1] "%d elementów\n"
+msgstr[0] "%d element\n"
+msgstr[1] "%d elementy\n"
 msgstr[2] "%d elementów\n"
 
 #: src/mdiff.c:2297
 #, c-format
 msgid " %d member,"
 msgid_plural " %d members,"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d element,"
+msgstr[1] "%d elementy,"
+msgstr[2] "%d elementów,"
 
 #: src/mdiff.c:2299
 #, c-format
 msgid " %d overlap\n"
 msgid_plural " %d overlaps\n"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d zduplikowana linia\n"
+msgstr[1] "%d zduplikowane linie\n"
+msgstr[2] "%d zduplikowanych linii\n"
 
 #: src/mdiff.c:2349 src/wdiff.c:224
 #, c-format
@@ -146,44 +141,44 @@ msgstr "typ terminala `%s' nie jest zdefiniowany"
 
 # cases - rzm
 #: src/mdiff.c:3702 src/mdiff.c:3718 src/wdiff.c:1175 src/wdiff.c:1191
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %d word"
 msgid_plural "%s: %d words"
-msgstr[0] "%s: %d słów"
-msgstr[1] "%s: %d słów"
+msgstr[0] "%s: %d słowo"
+msgstr[1] "%s: %d słowa"
 msgstr[2] "%s: %d słów"
 
 #: src/mdiff.c:3706 src/mdiff.c:3722 src/wdiff.c:1179 src/wdiff.c:1195
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% common"
 msgid_plural "  %d %.0f%% common"
-msgstr[0] "  %d %d%% wspólne"
-msgstr[1] "  %d %d%% wspólne"
-msgstr[2] "  %d %d%% wspólne"
+msgstr[0] "  %d %.0f%% wspólny"
+msgstr[1] "  %d %.0f%% wspólne"
+msgstr[2] "  %d %.0f%% wspólnych"
 
 #: src/mdiff.c:3709 src/wdiff.c:1182
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% deleted"
 msgid_plural "  %d %.0f%% deleted"
-msgstr[0] "  %d %d%% usunięte"
-msgstr[1] "  %d %d%% usunięte"
-msgstr[2] "  %d %d%% usunięte"
+msgstr[0] "  %d %.0f%% usunięty"
+msgstr[1] "  %d %.0f%% usunięte"
+msgstr[2] "  %d %.0f%% usuniętych"
 
 #: src/mdiff.c:3712 src/mdiff.c:3728 src/wdiff.c:1185 src/wdiff.c:1201
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% changed"
 msgid_plural "  %d %.0f%% changed"
-msgstr[0] "  %d %d%% zmienione"
-msgstr[1] "  %d %d%% zmienione"
-msgstr[2] "  %d %d%% zmienione"
+msgstr[0] "  %d %.0f%% zmieniony"
+msgstr[1] "  %d %.0f%% zmienione"
+msgstr[2] "  %d %.0f%% zmienionych"
 
 #: src/mdiff.c:3725 src/wdiff.c:1198
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% inserted"
 msgid_plural "  %d %.0f%% inserted"
-msgstr[0] "  %d %d%% dodane"
-msgstr[1] "  %d %d%% dodane"
-msgstr[2] "  %d %d%% dodane"
+msgstr[0] "  %d %.0f%% dodany"
+msgstr[1] "  %d %.0f%% dodane"
+msgstr[2] "  %d %.0f%% dodanych"
 
 #: src/mdiff.c:3756 src/wdiff.c:1241 src/wdiff2.c:172
 #, c-format
@@ -225,8 +220,7 @@ msgstr "      --help              wyświetlenie tego opisu i zakończenie\n"
 
 #: src/mdiff.c:3774 src/unify.c:296
 msgid "      --version          display program version then exit\n"
-msgstr ""
-"      --version           wypisanie informacji o wersji i zakończenie\n"
+msgstr "      --version           wypisanie informacji o wersji i zakończenie\n"
 
 #: src/mdiff.c:3776
 msgid ""
@@ -246,13 +240,10 @@ msgstr "  -l, --paginate          formatowanie wyników przez `pr'\n"
 
 #: src/mdiff.c:3779
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
-"  -S, --string[=NAPIS]    informacja o użyciu NAPISU podanego przez "
-"użytkownika\n"
+msgstr "  -S, --string[=NAPIS]    informacja o użyciu NAPISU podanego przez użytkownika\n"
 
 #: src/mdiff.c:3780
-msgid ""
-"  -V, --show-links        give file and line references in annotations\n"
+msgid "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        podawanie odnośników do plików i linii\n"
 
 #: src/mdiff.c:3781
@@ -309,13 +300,11 @@ msgstr "  -o, --printer              nadrukowanie znaków na siebie\n"
 
 #: src/mdiff.c:3796
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -z, --terminal            używanie termcapa do pisania na terminalu\n"
+msgstr "  -z, --terminal            używanie termcapa do pisania na terminalu\n"
 
 #: src/mdiff.c:3797
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr ""
-"  -O, --item-regexp=WYRREG   porównywanie elementów wg definicji WYRREG\n"
+msgstr "  -O, --item-regexp=WYRREG   porównywanie elementów wg definicji WYRREG\n"
 
 #: src/mdiff.c:3798
 msgid "  -W, --word-mode            compare words instead of lines\n"
@@ -372,8 +361,7 @@ msgstr ""
 #: src/mdiff.c:4389
 #, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
-msgstr ""
-"opcje -123RSYZ mają znaczenie tylko gdy są dwa zestawy danych wejściowych"
+msgstr "opcje -123RSYZ mają znaczenie tylko gdy są dwa zestawy danych wejściowych"
 
 #: src/pipes.c:47
 #, c-format
@@ -397,8 +385,7 @@ msgstr "napisz `%s --help' żeby otrzymać więcej informacji\n"
 
 #: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr ""
-"unify -  Przekształcenie diff-a kontekstowego w zunifikowany i odwrotnie.\n"
+msgstr "unify -  Przekształcenie diff-a kontekstowego w zunifikowany i odwrotnie.\n"
 
 #: src/unify.c:283
 #, c-format
@@ -411,9 +398,7 @@ msgstr "  -c, --context-diffs    wynik jako diff kontekstowy\n"
 
 #: src/unify.c:287
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
-"  -e, --echo-comments    wypisywanie komentarzy na standardowym wyjściu "
-"błędu\n"
+msgstr "  -e, --echo-comments    wypisywanie komentarzy na standardowym wyjściu błędu\n"
 
 #: src/unify.c:288
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
@@ -441,8 +426,7 @@ msgstr "  -U                     to samo co -p i -u\n"
 
 #: src/unify.c:294
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
-"  -=, --use-equals       zamiana spacji na `=' w diffie zunifikowanym\n"
+msgstr "  -=, --use-equals       zamiana spacji na `=' w diffie zunifikowanym\n"
 
 #: src/unify.c:298
 msgid "If FILE is not specified, read standard input.\n"
@@ -556,10 +540,8 @@ msgstr ""
 "          %s -d [OPCJA]... [PLIK]\n"
 
 #: src/wdiff.c:1255 src/wdiff2.c:186
-msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
-"Argumenty obowiązkowe dla długich opcji są obowiązkowe też dla krótkich.\n"
+msgid "Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr "Argumenty obowiązkowe dla długich opcji są obowiązkowe też dla krótkich.\n"
 
 #: src/wdiff.c:1258 src/wdiff2.c:189
 msgid "  -C, --copyright            display copyright then exit\n"
@@ -573,9 +555,7 @@ msgstr "  -a, --auto-pager           wywołanie programu do oglądania plików\n
 
 #: src/wdiff.c:1263
 msgid "  -d, --diff-input           use single unified diff as input\n"
-msgstr ""
-"  -d, --diff-input           użycie pojedyńczego diffa zunifikowanego na "
-"wejściu\n"
+msgstr "  -d, --diff-input           użycie pojedyńczego diffa zunifikowanego na wejściu\n"
 
 #: src/wdiff.c:1264 src/wdiff2.c:194
 msgid "  -h, --help                 display this help then exit\n"
@@ -600,43 +580,32 @@ msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              nadrukowanie znaków na siebie\n"
 
 #: src/wdiff.c:1269 src/wdiff2.c:200
-msgid ""
-"  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr ""
-"  -s, --statistics           podanie ile słów zostało usuniętych, dodanych "
-"itp.\n"
+msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr "  -s, --statistics           podanie ile słów zostało usuniętych, dodanych itp.\n"
 
 #: src/wdiff.c:1270 src/wdiff2.c:201
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -t, --terminal             użycie termcapa do wyświetlania na terminalu\n"
+msgstr "  -t, --terminal             użycie termcapa do wyświetlania na terminalu\n"
 
 #: src/wdiff.c:1271 src/wdiff2.c:202
 msgid "  -v, --version              display program version then exit\n"
-msgstr ""
-"  -v, --version              wypisanie informacji o wersji i zakończenie\n"
+msgstr "  -v, --version              wypisanie informacji o wersji i zakończenie\n"
 
 #: src/wdiff.c:1272 src/wdiff2.c:203
-msgid ""
-"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
-"  -w, --start-delete=NAPIS   NAPIS oznaczający początek obszaru kasowania\n"
+msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr "  -w, --start-delete=NAPIS   NAPIS oznaczający początek obszaru kasowania\n"
 
 #: src/wdiff.c:1273 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr ""
-"  -x, --end-delete=NAPIS     NAPIS oznaczający koniec obszaru kasowania\n"
+msgstr "  -x, --end-delete=NAPIS     NAPIS oznaczający koniec obszaru kasowania\n"
 
 #: src/wdiff.c:1274 src/wdiff2.c:205
-msgid ""
-"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr ""
-"  -y, --start-insert=NAPIS   NAPIS oznaczający początek obszaru dodanego\n"
+msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr "  -y, --start-insert=NAPIS   NAPIS oznaczający początek obszaru dodanego\n"
 
 #: src/wdiff.c:1275 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr ""
-"  -z, --end-insert=NAPIS     NAPIS oznaczający koniec obszaru dodanego\n"
+msgstr "  -z, --end-insert=NAPIS     NAPIS oznaczający koniec obszaru dodanego\n"
 
 #: src/wdiff.c:1394
 #, c-format
@@ -687,13 +656,11 @@ msgstr "Składnia: %s [OPCJA]... PLIK1 PLIK2\n"
 
 #: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
-"  -q, --quiet                wyłączenie komunikatu o uruchomieniu `mdiff-a'\n"
+msgstr "  -q, --quiet                wyłączenie komunikatu o uruchomieniu `mdiff-a'\n"
 
 #: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
-"Ten program pokazuje również jak `mdiff' mógł zostać wywołany bezpośrednio.\n"
+msgstr "Ten program pokazuje również jak `mdiff' mógł zostać wywołany bezpośrednio.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:332
@@ -705,14 +672,3 @@ msgstr "Start `%s"
 #, c-format
 msgid "'\n"
 msgstr "'\n"
-
-# plural? - rzm
-#~ msgid "Read summary: %d files, %d items\n"
-#~ msgstr "Podsumowanie czytania: %d plików, %d elementów\n"
-
-#~ msgid "Work summary: %d clusters, %d members\n"
-#~ msgstr "Podsumowanie pracy: %d złączeń, %d elementów\n"
-
-#~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-#~ msgstr ""
-#~ "Podsumowanie pracy: %d złączeń, %d elementów, %d zduplikowanych linii\n"
