@@ -4,6 +4,8 @@ Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
 
 * UNRELEASED
 
+* Version 1.1.0 - November 2011, by Martin von Gagern
+
   * Updated Czech, German, Spanish, Finnish, Dutch, Polish, Slovenian,
     Swedish and Ukrainian translations.
   * Fix several issue with the use of screen in the test suite.
