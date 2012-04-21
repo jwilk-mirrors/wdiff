@@ -1257,7 +1257,7 @@ wdiff - Compares words in two files and report differences.\n"),
       printf (_("\
 \n\
 Usage: %s [OPTION]... FILE1 FILE2\n\
-       %s -d [OPTION]... [FILE]\n"),
+   or: %s -d [OPTION]... [FILE]\n"),
 	      program_name, program_name);
       printf (_("\
 Mandatory arguments to long options are mandatory for short options too.\n\
