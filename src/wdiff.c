@@ -1241,7 +1241,7 @@ wdiff - Compares words in two files and report differences.\n"),
       fputs ("\n", stdout);
       printf (_("\
 Usage: %s [OPTION]... FILE1 FILE2\n\
-       %s -d [OPTION]... [FILE]\n"),
+   or: %s -d [OPTION]... [FILE]\n"),
 	      program_name, program_name);
       fputs ("\n", stdout);
       fputs (_("\
