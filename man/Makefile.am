@@ -24,9 +24,12 @@ unify.1: $(top_srcdir)/src/unify.c $(common_mandeps)
 	test ../src/unify -nt $< || $(MAKE) -C ../src unify
 	$(path_help2man) unify -o $@
 
-wdiff.1: $(top_srcdir)/src/wdiff.c wdiff.h2m $(common_mandeps)
+wdiff.1: $(top_srcdir)/src/wdiff.c wdiff.h2m debian669340.patch $(common_mandeps)
 	test ../src/wdiff -nt $< || $(MAKE) -C ../src wdiff
-	$(path_help2man) -i wdiff.h2m wdiff -o $@
+	$(RM) $@
+	$(path_help2man) -i wdiff.h2m wdiff -o $@.tmp
+	patch --no-backup-if-mismatch --force $@.tmp < debian669340.patch
+	mv $@.tmp $@
 
 wdiff2.1: $(top_srcdir)/src/wdiff2.c $(common_mandeps)
 	test ../src/wdiff2 -nt $< || $(MAKE) -C ../src wdiff2

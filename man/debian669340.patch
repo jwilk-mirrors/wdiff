@@ -1,0 +1,36 @@
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+===================================================================
+
+This is a temporary solution to fix <http://bugs.debian.org/669340>.
+Currently help2man does not detect the continued usage line of the
+output from wdiff --help, leading to an error in the formatting of the
+man page.
+
+The proper solution is prefixing the continuation lines with "or:",
+but doing so would mark all translations of that string as fuzzy,
+leading to untranslated strings being presented to the users. While
+wdiff 1.2.0 will fix this issue, wdiff 1.1.x will use this patch to
+keep the translations valid.
+
+===================================================================
+--- man/wdiff.1
++++ man/wdiff.1
+@@ -5,10 +5,11 @@
+ .SH SYNOPSIS
+ .B wdiff
+ [\fIOPTION\fR]... \fIFILE1 FILE2\fR
++.br
++.B wdiff
++\fI-d \fR[\fIOPTION\fR]... [\fIFILE\fR]
+ .SH DESCRIPTION
+ wdiff \- Compares words in two files and report differences.
+-.IP
+-wdiff \fB\-d\fR [OPTION]... [FILE]
+ .PP
+ Mandatory arguments to long options are mandatory for short options too.
+ .TP
