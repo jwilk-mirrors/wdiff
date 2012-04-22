@@ -2,126 +2,177 @@
 # Copyright © 1996, 2001, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 # Jan Djärv <jan.h.d@swipnet.se>, 1996, 2001, 2008, 2010
-# Keld Simonsen <keld@keldix.com>, 2011
+# Keld Simonsen <keld@keldix.com>, 2011,2012
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.6.5\n"
+"Project-Id-Version: wdiff 1.1.0\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-12-05 20:23+0100\n"
-"PO-Revision-Date: 2011-01-11 17:23+0100\n"
+"POT-Creation-Date: 2011-11-15 18:31+0100\n"
+"PO-Revision-Date: 2012-02-07 17:23+0100\n"
 "Last-Translator: Keld Simonsen <keld@keldix.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/mdiff.c:376
+#: src/mdiff.c:375
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (for regulært udtryk '%s')"
 
-#: src/mdiff.c:894 src/wdiff.c:1452
+#: src/mdiff.c:890 src/wdiff.c:1473
 #, c-format
 msgid "only one file may be standard input"
 msgstr "kun én fil kan være standard ind"
 
-#: src/mdiff.c:909 src/wdiff.c:677
+#: src/mdiff.c:905 src/wdiff.c:678
 #, c-format
 msgid "directories not supported"
 msgstr "kataloger understøttes ikke"
 
-#: src/mdiff.c:1053
+#: src/mdiff.c:1048
 #, c-format
 msgid "Reading %s"
 msgstr "Læser %s"
 
-#: src/mdiff.c:1178
+#: src/mdiff.c:1172
 #, c-format
-msgid ", %d items\n"
-msgstr ", %d poster\n"
+msgid ", %d item\n"
+msgid_plural ", %d items\n"
+msgstr[0] ", %d poster\n"
+msgstr[1] ", %d post\n"
 
-#: src/mdiff.c:1256
+#: src/mdiff.c:1252
 #, c-format
-msgid "Read summary: %d files, %d items\n"
-msgstr "Læsesammendrag: %d filer, %d poster\n"
+msgid "Read summary:"
+msgstr "Læs sammendrag:"
 
-#: src/mdiff.c:1652
+#: src/mdiff.c:1253
+#, c-format
+msgid " %d file,"
+msgid_plural " %d files,"
+msgstr[0] ", %d poster"
+msgstr[1] ", %d post"
+
+#: src/mdiff.c:1254
+#, c-format
+msgid " %d item\n"
+msgid_plural " %d items\n"
+msgstr[0] ", %d poster\n"
+msgstr[1] ", %d post\n"
+
+#: src/mdiff.c:1647
 #, c-format
 msgid "Sorting"
 msgstr "Sorterer"
 
-#: src/mdiff.c:1669
+#: src/mdiff.c:1664
 #, c-format
 msgid ", clustering"
 msgstr ", grupperer"
 
-#: src/mdiff.c:1837 src/mdiff.c:1900
+#: src/mdiff.c:1833 src/mdiff.c:1895
 #, c-format
 msgid ", done\n"
 msgstr ", klar\n"
 
-#: src/mdiff.c:1887
+#: src/mdiff.c:1882
 #, c-format
 msgid "Sorting members"
 msgstr "Sorterer medlemmer"
 
-#: src/mdiff.c:1919
+#: src/mdiff.c:1915 src/mdiff.c:2298
 #, c-format
-msgid "Work summary: %d clusters, %d members\n"
-msgstr "Arbejdssummering: %d grupper, %d medlemmer\n"
+msgid "Work summary:"
+msgstr "Arbejdssammendrag:"
 
-#: src/mdiff.c:2299
+#: src/mdiff.c:1916 src/mdiff.c:2299
 #, c-format
-msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Arbejdssummering: %d grupper, %d medlemmer, %d overlapninger\n"
+msgid " %d cluster,"
+msgid_plural " %d clusters,"
+msgstr[0] " %d grupper"
+msgstr[1] " %d gruppe"
 
-#: src/mdiff.c:2348 src/wdiff.c:227
+#: src/mdiff.c:1918
+#, c-format
+msgid " %d member\n"
+msgid_plural " %d members\n"
+msgstr[0] ", %d medlemmer\n"
+msgstr[1] ", %d medlem\n"
+
+#: src/mdiff.c:2301
+#, c-format
+msgid " %d member,"
+msgid_plural " %d members,"
+msgstr[0] ", %d medlemmer,"
+msgstr[1] ", %d medlem,"
+
+#: src/mdiff.c:2303
+#, c-format
+msgid " %d overlap\n"
+msgid_plural " %d overlaps\n"
+msgstr[0] "%d overlappende\n"
+msgstr[1] "%d overlappende\n"
+
+#: src/mdiff.c:2353 src/wdiff.c:228
 #, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "vælg terminaltype ved at sætte miljøvariablen TERM"
 
-#: src/mdiff.c:2351 src/wdiff.c:230
+#: src/mdiff.c:2356 src/wdiff.c:231
 #, c-format
 msgid "could not access the termcap data base"
 msgstr "kan ikke læse termcap-databasen"
 
-#: src/mdiff.c:2353 src/wdiff.c:232
+#: src/mdiff.c:2358 src/wdiff.c:233
 #, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "terminaltype '%s' er ikke defineret"
 
-#: src/mdiff.c:3700 src/mdiff.c:3712 src/wdiff.c:1152 src/wdiff.c:1164
+#: src/mdiff.c:3709 src/mdiff.c:3725 src/wdiff.c:1167 src/wdiff.c:1183
 #, c-format
-msgid "%s: %d words"
-msgstr "%s: %d ord"
+msgid "%s: %d word"
+msgid_plural "%s: %d words"
+msgstr[0] "%s: %d ord"
+msgstr[1] "%s: %d ord"
 
-#: src/mdiff.c:3703 src/mdiff.c:3715 src/wdiff.c:1155 src/wdiff.c:1167
+#: src/mdiff.c:3713 src/mdiff.c:3729 src/wdiff.c:1171 src/wdiff.c:1187
 #, c-format
-msgid "  %d %d%% common"
-msgstr "  %d %d%% fælles"
+msgid "  %d %.0f%% common"
+msgid_plural "  %d %.0f%% common"
+msgstr[0] "  %d %.0f%% fælles"
+msgstr[1] "  %d %.0f%% fælles"
 
-#: src/mdiff.c:3705 src/wdiff.c:1157
+#: src/mdiff.c:3716 src/wdiff.c:1174
 #, c-format
-msgid "  %d %d%% deleted"
-msgstr "  %d %d%% slettet"
+msgid "  %d %.0f%% deleted"
+msgid_plural "  %d %.0f%% deleted"
+msgstr[0] "  %d %.0f%% slettede"
+msgstr[1] "  %d %.0f%% slettet"
 
-#: src/mdiff.c:3707 src/mdiff.c:3719 src/wdiff.c:1159 src/wdiff.c:1171
+#: src/mdiff.c:3719 src/mdiff.c:3735 src/wdiff.c:1177 src/wdiff.c:1193
 #, c-format
-msgid "  %d %d%% changed"
-msgstr "  %d %d%% ændret"
+msgid "  %d %.0f%% changed"
+msgid_plural "  %d %.0f%% changed"
+msgstr[0] "  %d %.0f%% ændrede"
+msgstr[1] "  %d %.0f%% ændret"
 
-#: src/mdiff.c:3717 src/wdiff.c:1169
+#: src/mdiff.c:3732 src/wdiff.c:1190
 #, c-format
-msgid "  %d %d%% inserted"
-msgstr "  %d %d%% tilføjet"
+msgid "  %d %.0f%% inserted"
+msgid_plural "  %d %.0f%% inserted"
+msgstr[0] "  %d %.0f%% tilføjede"
+msgstr[1] "  %d %.0f%% tilføjet"
 
-#: src/mdiff.c:3746 src/wdiff.c:1211 src/wdiff2.c:177
+#: src/mdiff.c:3763 src/wdiff.c:1233 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Forsøg med '%s --help' for mere information.\n"
 
-#: src/mdiff.c:3750
+#: src/mdiff.c:3768
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -129,12 +180,12 @@ msgstr ""
 "mdiff - Læser flere filer og leder efter lignende sekvenser, dærefter\n"
 "vises en muligvis detaljeret liste med forskelle og ligheder.\n"
 
-#: src/mdiff.c:3755
+#: src/mdiff.c:3773
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Brug: %s [FLAG]... [FIL]...\n"
 
-#: src/mdiff.c:3759
+#: src/mdiff.c:3777
 msgid ""
 "\n"
 "Operation modes:\n"
@@ -142,23 +193,23 @@ msgstr ""
 "\n"
 "Arbejdstilstande:\n"
 
-#: src/mdiff.c:3760
+#: src/mdiff.c:3778
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (ignoreret)\n"
 
-#: src/mdiff.c:3761
+#: src/mdiff.c:3779
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          rapportér en del statistik på standard fejl\n"
 
-#: src/mdiff.c:3762 src/unify.c:293
+#: src/mdiff.c:3780 src/unify.c:295
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             vis denne hjælpetekst og afslut\n"
 
-#: src/mdiff.c:3763 src/unify.c:294
+#: src/mdiff.c:3781 src/unify.c:296
 msgid "      --version          display program version then exit\n"
 msgstr "      --version          vis versionsinformation og afslut\n"
 
-#: src/mdiff.c:3765
+#: src/mdiff.c:3783
 msgid ""
 "\n"
 "Formatting output:\n"
@@ -166,27 +217,27 @@ msgstr ""
 "\n"
 "Formatering af resultat:\n"
 
-#: src/mdiff.c:3766
+#: src/mdiff.c:3784
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr "  -T, --initial-tab       skriv TAB i stedet for indledende mellemrum\n"
 
-#: src/mdiff.c:3767
+#: src/mdiff.c:3785
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr "  -l, --paginate          send resultatet gennem 'pr'\n"
 
-#: src/mdiff.c:3768
+#: src/mdiff.c:3786
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=STRENG]   tag hænsyn til endnu en STRENG\n"
 
-#: src/mdiff.c:3769
+#: src/mdiff.c:3787
 msgid "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        angiv fil- og linjereferencer i annoteringer\n"
 
-#: src/mdiff.c:3770
+#: src/mdiff.c:3788
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr "  -t, --expand-tabs       erstat tabulatortegn med mellemrum i reultatet\n"
 
-#: src/mdiff.c:3773
+#: src/mdiff.c:3791
 msgid ""
 "\n"
 "Debugging:\n"
@@ -194,11 +245,11 @@ msgstr ""
 "\n"
 "Fejlsøgning:\n"
 
-#: src/mdiff.c:3774
+#: src/mdiff.c:3792
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr "  -0, --debugging   udskriv mange detaljer om hvad som sker\n"
 
-#: src/mdiff.c:3777
+#: src/mdiff.c:3795
 msgid ""
 "\n"
 "Word mode options:\n"
@@ -206,72 +257,72 @@ msgstr ""
 "\n"
 "Flag for ordtilstand:\n"
 
-#: src/mdiff.c:3778 src/wdiff.c:1228 src/wdiff2.c:194
+#: src/mdiff.c:3796 src/wdiff.c:1251 src/wdiff2.c:190
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr "  -1, --no-deleted           vis ikke slettete ord\n"
 
-#: src/mdiff.c:3779 src/wdiff.c:1229 src/wdiff2.c:195
+#: src/mdiff.c:3797 src/wdiff.c:1252 src/wdiff2.c:191
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr "  -2, --no-inserted          vis ikke indsatte ord\n"
 
-#: src/mdiff.c:3780 src/wdiff.c:1230 src/wdiff2.c:196
+#: src/mdiff.c:3798 src/wdiff.c:1253 src/wdiff2.c:192
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            vis ikke fælles ord\n"
 
-#: src/mdiff.c:3781
+#: src/mdiff.c:3799
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager           videregiv resultatet til en sideviser\n"
 
-#: src/mdiff.c:3782
+#: src/mdiff.c:3800
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -k, --less-mode            speciel variant af -o for 'less'\n"
 
-#: src/mdiff.c:3783
+#: src/mdiff.c:3801
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -m, --avoid-wraps          lad ikke felter løbe over flere linjer\n"
 
-#: src/mdiff.c:3784
+#: src/mdiff.c:3802
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr "  -o, --printer              dobbeltskrift som for printere\n"
 
-#: src/mdiff.c:3785
+#: src/mdiff.c:3803
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             brug termcap til at markere ord\n"
 
-#: src/mdiff.c:3786
+#: src/mdiff.c:3804
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr "  -O, --item-regexp=REGEXP   sammenlign poster som defineres af REGEXP\n"
 
-#: src/mdiff.c:3787
+#: src/mdiff.c:3805
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            sammenlign ord i stedet for linjer\n"
 
-#: src/mdiff.c:3972
+#: src/mdiff.c:3990
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "Uden FIL eller hvis FIL er -, så læs standard ind.\n"
 
-#: src/mdiff.c:3974 src/unify.c:298 src/wdiff.c:1246 src/wdiff2.c:214
+#: src/mdiff.c:3992 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "Rapportere fejl til <wdiff-bugs@gnu.org>\n"
 "Rapportér fejl eller synspunkter på oversættelsen til <dansk@dansk-gruppen.dk>.\n"
 
-#: src/mdiff.c:3985
+#: src/mdiff.c:4004
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr "ignorerer flaget %s (ikke implementeret)"
 
-#: src/mdiff.c:4282
+#: src/mdiff.c:4300
 #, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "kan ikke bruge -z, termcap er ikke tilgængelig"
 
-#: src/mdiff.c:4321
+#: src/mdiff.c:4339
 #, c-format
 msgid "word merging for two files only (so far)"
 msgstr "ordsammenfletning findes kun for to filer (indtil videre)"
 
-#: src/mdiff.c:4337
+#: src/mdiff.c:4355
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
@@ -279,7 +330,7 @@ msgstr ""
 "\n"
 "Copyright © 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4341 src/unify.c:407 src/wdiff.c:1372 src/wdiff2.c:133
+#: src/mdiff.c:4358 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -288,7 +339,7 @@ msgstr ""
 "INGEN garanti; ikke engang for SALGBARHED eller EGNETHED FOR NOGET SPECIELT\n"
 "FORMÅL.\n"
 
-#: src/mdiff.c:4345 src/wdiff.c:1376 src/wdiff2.c:137
+#: src/mdiff.c:4361 src/wdiff.c:1398 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -296,81 +347,91 @@ msgstr ""
 "\n"
 "Skriven af François Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4381
+#: src/mdiff.c:4396
 #, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "flagene -123RSYZ er kun meningsfulde med to inddatakilder"
 
-#: src/unify.c:144
+#: src/pipes.c:47
+#, c-format
+msgid "error redirecting stream"
+msgstr "fejl ved omdirigering af strøm"
+
+#: src/pipes.c:51
+#, c-format
+msgid "failed to execute %s"
+msgstr "kunne ikke udføre %s"
+
+#: src/unify.c:145
 #, c-format
 msgid "could not find a name for the diff at line %ld"
 msgstr "kan ikke finde et navn for diff på linje %ld"
 
-#: src/unify.c:273
+#: src/unify.c:274
 #, c-format
 msgid "try `%s --help' for more information\n"
 msgstr "forsøg med '%s --help' for mere information.\n"
 
-#: src/unify.c:277
+#: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
 msgstr "unify - Konvertér sammenhængsforskelle til forenet, eller omvendt.\n"
 
-#: src/unify.c:281
+#: src/unify.c:283
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
 msgstr "Brug: %s [FLAG]... [FIL]\n"
 
-#: src/unify.c:284
+#: src/unify.c:286
 msgid "  -c, --context-diffs    force output to context diffs\n"
 msgstr "  -c, --context-diffs    vis resultatet som sammenhængsforskelle\n"
 
-#: src/unify.c:285
+#: src/unify.c:287
 msgid "  -e, --echo-comments    echo comments to standard error\n"
 msgstr "  -e, --echo-comments    skriv kommentarer til standard fejl\n"
 
-#: src/unify.c:286
+#: src/unify.c:288
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
 msgstr "  -o, --old-diffs        vis under alle omstændigheder forskelle i gammel stil\n"
 
-#: src/unify.c:287
+#: src/unify.c:289
 msgid "  -p, --patch-format     generate patch format\n"
 msgstr "  -p, --patch-format     generér format for 'patch'\n"
 
-#: src/unify.c:288
+#: src/unify.c:290
 msgid "  -P                     same as -p\n"
 msgstr "  -P                     samme som -p\n"
 
-#: src/unify.c:289
+#: src/unify.c:291
 msgid "  -s, --strip-comments   strip comment lines\n"
 msgstr "  -s, --strip-comments   fjern kommentarlinjer\n"
 
-#: src/unify.c:290
+#: src/unify.c:292
 msgid "  -u, --unidiffs         force output to unidiffs\n"
 msgstr "  -u, --unidiffs         vis resultatet som forenet forskelle\n"
 
-#: src/unify.c:291
+#: src/unify.c:293
 msgid "  -U                     same as -p and -u\n"
 msgstr "  -U                     samme som -p og -u\n"
 
-#: src/unify.c:292
+#: src/unify.c:294
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr "  -=, --use-equals       erstat mellemrum med lighedstegn i forenet forskelle\n"
 
-#: src/unify.c:296
+#: src/unify.c:298
 msgid "If FILE is not specified, read standard input.\n"
 msgstr "Uden FIL angivet læses standard ind.\n"
 
-#: src/unify.c:388
+#: src/unify.c:389
 #, c-format
 msgid "unable to open `%s'"
 msgstr "kan ikke åbne '%s'"
 
-#: src/unify.c:394
+#: src/unify.c:395
 #, c-format
 msgid "only one filename allowed"
 msgstr "kun et filnavn tilladt"
 
-#: src/unify.c:403
+#: src/unify.c:404
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -378,7 +439,7 @@ msgstr ""
 "\n"
 "Copyright © 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:411
+#: src/unify.c:410
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
@@ -386,37 +447,47 @@ msgstr ""
 "\n"
 "Skrevet af Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:550
+#: src/unify.c:548
 #, c-format
 msgid "invalid unified diff header at line %ld"
 msgstr "ugyldigt hoved for forenet forskelle på linje %ld"
 
-#: src/unify.c:592
+#: src/unify.c:590
 #, c-format
 msgid "malformed unified diff at line %ld"
-msgstr "fejlskabt forenet forskel på linje %ld"
+msgstr "misdannet forenet forskel på linje %ld"
 
-#: src/unify.c:623
+#: src/unify.c:620
 #, c-format
 msgid "context diff missing `old' header at line %ld"
 msgstr "sammenhængsforskel mangler 'gammelt' hoved på linje %ld"
 
-#: src/unify.c:667 src/unify.c:686 src/unify.c:757 src/unify.c:775
+#: src/unify.c:664 src/unify.c:683 src/unify.c:753 src/unify.c:771
 #, c-format
 msgid "malformed context diff at line %ld"
-msgstr "fejlskabt sammenhængsforskel på linje %ld"
+msgstr "sejlskabt sammenhængsforskel på linje %ld"
 
-#: src/unify.c:722
+#: src/unify.c:718
 #, c-format
 msgid "context diff missing `new' header at line %ld"
 msgstr "sammenhængsforskel mangler 'nyt' hoved på linje %ld"
 
-#: src/wdiff.c:581 src/wdiff.c:700
+#: src/wdiff.c:582 src/wdiff.c:701
 #, c-format
 msgid "no suitable temporary directory exists"
 msgstr "intet passende temporærkatalog eksisterer"
 
-#: src/wdiff.c:1187 src/wdiff2.c:109
+#: src/wdiff.c:1040
+#, c-format
+msgid "%s: input program killed by signal %d\n"
+msgstr "%s: inputprogram afbrudt med signal %d\n"
+
+#: src/wdiff.c:1145
+#, c-format
+msgid "%s: output program killed by signal %d\n"
+msgstr "%s: outputprogram afbrudt med signal %d\n"
+
+#: src/wdiff.c:1210 src/wdiff2.c:109
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -448,11 +519,11 @@ msgstr ""
 "Du bør have fået en kopi af GNU General Public License\n"
 "sammen med dette program. Hvis ikke, se <http://www.gnu.org/licenses/>.\n"
 
-#: src/wdiff.c:1215
+#: src/wdiff.c:1238
 msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Sammenlign ord i to filer og rapportér forskelle.\n"
 
-#: src/wdiff.c:1219
+#: src/wdiff.c:1242
 #, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
@@ -461,76 +532,76 @@ msgstr ""
 "Anvendning: %s [FLAG]... FIL1 FIL2\n"
 "            %s -d [FLAG]... [FIL]\n"
 
-#: src/wdiff.c:1224 src/wdiff2.c:190
+#: src/wdiff.c:1247 src/wdiff2.c:186
 msgid "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr "Obligatoriske argumenter for lange flag er også obligatoriske for korte flag\n"
 
-#: src/wdiff.c:1227 src/wdiff2.c:193
+#: src/wdiff.c:1250 src/wdiff2.c:189
 msgid "  -C, --copyright            display copyright then exit\n"
 msgstr "  -C, --copyright            skriv copyright og afslut\n"
 
-#: src/wdiff.c:1231 src/wdiff2.c:197
+#: src/wdiff.c:1254 src/wdiff2.c:193
 msgid "  -a, --auto-pager           automatically calls a pager\n"
 msgstr "  -a, --auto-pager           videregiv resultatet til en sideviser\n"
 
-#: src/wdiff.c:1232
+#: src/wdiff.c:1255
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr "  -d, --diff-input           brug forenet forskel som inddata\n"
 
-#: src/wdiff.c:1233 src/wdiff2.c:198
+#: src/wdiff.c:1256 src/wdiff2.c:194
 msgid "  -h, --help                 display this help then exit\n"
 msgstr "  -h, --help                 skriv denne hjælpetekst og afslut\n"
 
-#: src/wdiff.c:1234 src/wdiff2.c:199
+#: src/wdiff.c:1257 src/wdiff2.c:195
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr "  -i, --ignore-case          ignorér forskel på ståre og små bogstaver ved sammenligning\n"
 
-#: src/wdiff.c:1235 src/wdiff2.c:200
+#: src/wdiff.c:1258 src/wdiff2.c:196
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -l, --less-mode            variation af --printer for 'less'\n"
 
-#: src/wdiff.c:1236 src/wdiff2.c:201
+#: src/wdiff.c:1259 src/wdiff2.c:197
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -n, --avoid-wraps          ombryd ikke felter med nylinjer\n"
 
-#: src/wdiff.c:1237 src/wdiff2.c:202
+#: src/wdiff.c:1260 src/wdiff2.c:198
 msgid "  -p, --printer              overstrike as for printers\n"
 msgstr "  -p, --printer              overskrivning som for printere\n"
 
-#: src/wdiff.c:1238 src/wdiff2.c:204
+#: src/wdiff.c:1261 src/wdiff2.c:200
 msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr "  -s, --statistics           vis hvor mange ord slettet, indsat osv.\n"
 
-#: src/wdiff.c:1239 src/wdiff2.c:205
+#: src/wdiff.c:1262 src/wdiff2.c:201
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
 msgstr "  -t, --terminal             brug termcap for terminaler\n"
 
-#: src/wdiff.c:1240 src/wdiff2.c:206
+#: src/wdiff.c:1263 src/wdiff2.c:202
 msgid "  -v, --version              display program version then exit\n"
 msgstr "  -v, --version              skriv programversion og afslut\n"
 
-#: src/wdiff.c:1241 src/wdiff2.c:207
+#: src/wdiff.c:1264 src/wdiff2.c:203
 msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 msgstr "  -w, --start-delete=STRENG  streng som markerer begyndelsen af en slettet region\n"
 
-#: src/wdiff.c:1242 src/wdiff2.c:208
+#: src/wdiff.c:1265 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr "  -x, --end-delete=STRENG    streng som markerer slutningen af en slettet region\n"
 
-#: src/wdiff.c:1243 src/wdiff2.c:209
+#: src/wdiff.c:1266 src/wdiff2.c:205
 msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr "  -y, --start-insert=STRENG  streng som markerer begynden af en insdsat region\n"
 
-#: src/wdiff.c:1244 src/wdiff2.c:210
+#: src/wdiff.c:1267 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr "  -z, --end-insert=STRENG    streng som markerer slutningen af en indsat region\n"
 
-#: src/wdiff.c:1362
+#: src/wdiff.c:1386
 #, c-format
 msgid "cannot use -t, termcap not available"
 msgstr "kan ikke bruge -t, termcap er ikke tilgængelig"
 
-#: src/wdiff.c:1367
+#: src/wdiff.c:1391
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
@@ -540,17 +611,17 @@ msgstr ""
 "Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
 "Foundation, Inc.\n"
 
-#: src/wdiff.c:1415 src/wdiff.c:1433
+#: src/wdiff.c:1436 src/wdiff.c:1454
 #, c-format
 msgid "too many file arguments"
 msgstr "for mange filargumenter"
 
-#: src/wdiff.c:1428 src/wdiff2.c:324
+#: src/wdiff.c:1449 src/wdiff2.c:320
 #, c-format
 msgid "missing file arguments"
 msgstr "filargumenter mangler"
 
-#: src/wdiff2.c:129
+#: src/wdiff2.c:128
 msgid ""
 "\n"
 "Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
@@ -558,7 +629,7 @@ msgstr ""
 "\n"
 "Copyright © 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 
-#: src/wdiff2.c:181
+#: src/wdiff2.c:177
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
@@ -566,26 +637,35 @@ msgstr ""
 "wdiff - Beregn ordforskelle ved at internt køre \"mdiff -W\".\n"
 "Dette program findes hovedsageligt for at understøtte den nu gamle 'wdiff'-syntaks.\n"
 
-#: src/wdiff2.c:186
+#: src/wdiff2.c:182
 #, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
 msgstr "Brug: %s [FLAG]... FIL1 FIL2\n"
 
-#: src/wdiff2.c:203
+#: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
 msgstr "  -q, --quiet                undertryk meddelelse for 'mdiff'-kaldet\n"
 
-#: src/wdiff2.c:212
+#: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr "Dette program fortæller også hvordan 'mdiff' kunne kaldes direkte.\n"
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:336
+#: src/wdiff2.c:332
 #, c-format
 msgid "Launching `%s"
 msgstr "Starter '%s"
 
-#: src/wdiff2.c:339
+#: src/wdiff2.c:335
 #, c-format
 msgid "'\n"
 msgstr "'\n"
+
+#~ msgid "Read summary: %d files, %d items\n"
+#~ msgstr "Læsesammendrag: %d filer, %d poster\n"
+
+#~ msgid "Work summary: %d clusters, %d members\n"
+#~ msgstr "Arbejdssummering: %d grupper, %d medlemmer\n"
+
+#~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
+#~ msgstr "Arbejdssummering: %d grupper, %d medlemmer, %d overlapninger\n"
