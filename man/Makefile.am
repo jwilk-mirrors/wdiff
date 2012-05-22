@@ -5,7 +5,7 @@
 
 man_MANS = wdiff.1 $(EXPERIMENTAL_MANS)
 EXTRA_MANS = mdiff.1 unify.1 wdiff2.1
-EXTRA_DIST = mdiff.1 unify.1 wdiff.1 wdiff2.1 wdiff.h2m
+EXTRA_DIST = mdiff.1 unify.1 wdiff.1 wdiff2.1 wdiff.h2m debian669340.patch
 
 # The man pages depend on the --help strings and the version number.
 common_mandeps = $(top_srcdir)/configure.ac
