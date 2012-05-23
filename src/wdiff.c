@@ -1,6 +1,6 @@
 /* wdiff -- front end to diff for comparing on a word per word basis.
    Copyright (C) 1992, 1997, 1998, 1999, 2009,
-                 2010, 2011 Free Software Foundation, Inc.
+                 2010, 2011, 2012 Free Software Foundation, Inc.
    Francois Pinard <pinard@iro.umontreal.ca>, 1992.
 
    This program is free software: you can redistribute it and/or modify
@@ -1390,7 +1390,7 @@ main (int argc, char *const argv[])
 	printf ("wdiff (GNU %s) %s\n", PACKAGE, VERSION);
 	fputs (_("\
 \n\
-Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n\
+Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n\
 Foundation, Inc.\n"), stdout);
 	fputs (_("\
 This is free software; see the source for copying conditions.  There is NO\n\
