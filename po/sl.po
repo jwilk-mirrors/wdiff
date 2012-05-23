@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.0.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-11-15 18:31+0100\n"
+"POT-Creation-Date: 2012-05-23 11:58+0200\n"
 "PO-Revision-Date: 2011-09-17 21:36+0200\n"
 "Last-Translator: Primoz PETERLIN <primozz.peterlin@gmail.com>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -551,10 +551,10 @@ msgstr ""
 "wdiff - Primerjanje besed v dveh datotekah in izpis razlik med njima.\n"
 
 #: src/wdiff.c:1242
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
+"   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
 "Uporaba: %s [MOŽNOST]... DATOTEKA1 DATOTEKA2\n"
 "         %s -d [IZBIRA]... [DATOTEKA]\n"
@@ -644,9 +644,10 @@ msgid "cannot use -t, termcap not available"
 msgstr "izbire -t ni mogoče uporabiti, termcap ni na voljo"
 
 #: src/wdiff.c:1391
+#, fuzzy
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"

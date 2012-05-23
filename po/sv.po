@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.0.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-11-15 18:31+0100\n"
+"POT-Creation-Date: 2012-05-23 11:58+0200\n"
 "PO-Revision-Date: 2011-10-27 19:01+0200\n"
 "Last-Translator: Jan Djärv <jan.h.d@swipnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -534,10 +534,10 @@ msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Jämför ord i två filer och rapportera skillnader.\n"
 
 #: src/wdiff.c:1242
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
+"   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
 "Användning: %s [FLAGGA]... FIL1 FIL2\n"
 "            %s -d [FLAGGA]... [FIL]\n"
@@ -624,9 +624,10 @@ msgid "cannot use -t, termcap not available"
 msgstr "kan inte använda -t, termcap finns inte tillgängligt"
 
 #: src/wdiff.c:1391
+#, fuzzy
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"

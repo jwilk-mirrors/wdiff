@@ -2,6 +2,12 @@ GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
 2010, 2011, 2012 Free Software Foundation, Inc.
 
+* Version 1.2.0 - May 2012, by Martin von Gagern
+
+  * Unofficial beta release for translators only.
+  * Includes the proper fix for man page formatting.
+    (Debian bug #669340)
+
 * Version 1.1.1 - May 2012, by Martin von Gagern
 
   * Added Serbian translation.

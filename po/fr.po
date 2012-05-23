@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU wdiff 0.6.5\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-11-15 18:31+0100\n"
+"POT-Creation-Date: 2012-05-23 11:58+0200\n"
 "PO-Revision-Date: 2010-12-20 09:54+0100\n"
 "Last-Translator: Jean-Christophe Helary <jean.christophe.helary@gmail.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -533,10 +533,10 @@ msgstr ""
 "wdiff - comparer des mots de deux fichiers et lister les différences.\n"
 
 #: src/wdiff.c:1242
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
+"   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
 "Usage : %s [OPTION]... FICHIER1 FICHIER2\n"
 "      %s -d [OPTION]... [FICHIER]\n"
@@ -623,9 +623,10 @@ msgid "cannot use -t, termcap not available"
 msgstr "option -t inutilisable, « termcap » n'est pas disponible"
 
 #: src/wdiff.c:1391
+#, fuzzy
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"

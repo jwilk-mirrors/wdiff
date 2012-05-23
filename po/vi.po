@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff-1.1.0\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2012-04-21 11:55+0200\n"
+"POT-Creation-Date: 2012-05-23 11:58+0200\n"
 "PO-Revision-Date: 2012-03-01 07:15+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -536,10 +536,10 @@ msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff — So sánh các từ trong hai tập tin và thông báo khác biệt.\n"
 
 #: src/wdiff.c:1242
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
+"   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
 "Sử dụng: %s [TÙY_CHỌN]... TẬP_TIN1 TẬP_TIN2\n"
 "       %s -d [TÙY_CHỌN]... [TẬP_TIN]\n"
@@ -627,9 +627,10 @@ msgid "cannot use -t, termcap not available"
 msgstr "không thể dùng tùy chọn -t vì termcap không sẵn sàng"
 
 #: src/wdiff.c:1391
+#, fuzzy
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"

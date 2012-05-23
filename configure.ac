@@ -3,7 +3,7 @@
 ## notice and this notice are preserved.  This file is offered as-is,
 ## without any warranty.
 
-AC_INIT([GNU wdiff], [1.1.0], [wdiff-bugs@gnu.org])
+AC_INIT([GNU wdiff], [1.2.0], [wdiff-bugs@gnu.org])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE
 
