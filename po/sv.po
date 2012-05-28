@@ -1,15 +1,14 @@
 # Swedish messages for wdiff
-# Copyright © 1996, 2001, 2008, 2011 Free Software Foundation, Inc.
+# Copyright © 1996, 2001, 2008, 2011, 2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
-# Jan Djärv <jan.h.d@swipnet.se>, 1996, 2001, 2008, 2010, 2011
-# Revision: 1.26
+# Jan Djärv <jan.h.d@swipnet.se>, 1996, 2001, 2008, 2010, 2011, 2012
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.0.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2011-09-15 16:16+0200\n"
-"PO-Revision-Date: 2011-10-27 19:01+0200\n"
+"PO-Revision-Date: 2012-05-27 11:40+0200\n"
 "Last-Translator: Jan Djärv <jan.h.d@swipnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -524,13 +523,13 @@ msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Jämför ord i två filer och rapportera skillnader.\n"
 
 #: src/wdiff.c:1250
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "       %s -d [OPTION]... [FILE]\n"
 msgstr ""
 "Användning: %s [FLAGGA]... FIL1 FIL2\n"
-"            %s -d [FLAGGA]... [FIL]\n"
+"     eller: %s -d [FLAGGA]... [FIL]\n"
 
 #: src/wdiff.c:1255 src/wdiff2.c:186
 msgid "Mandatory arguments to long options are mandatory for short options too.\n"
@@ -602,14 +601,14 @@ msgid "cannot use -t, termcap not available"
 msgstr "kan inte använda -t, termcap finns inte tillgängligt"
 
 #: src/wdiff.c:1399
+#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
-"Foundation, Inc.\n"
+"Copyright © 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
 #: src/wdiff.c:1444 src/wdiff.c:1462
 #, c-format
@@ -660,3 +659,12 @@ msgstr "Startar \"%s"
 #, c-format
 msgid "'\n"
 msgstr "\"\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
+#~ "Foundation, Inc.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Copyright © 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
+#~ "Foundation, Inc.\n"
