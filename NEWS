@@ -2,6 +2,11 @@ GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
 2010, 2011, 2012 Free Software Foundation, Inc.
 
+* Version 1.1.2 - May 2012, by Martin von Gagern
+
+  * Backport gnulib change to deal with removal of gets function.
+    This is a build-time-only fix. (Mentioned in Fedora bug #821791)
+
 * Version 1.1.1 - May 2012, by Martin von Gagern
 
   * Added Serbian translation.
