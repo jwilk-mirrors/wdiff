@@ -4,10 +4,10 @@
 # Мирослав Николић <miroslavnikolic@rocketmail.com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff-1.1.0\n"
+"Project-Id-Version: wdiff-1.2.0-b1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2011-11-15 18:31+0100\n"
-"PO-Revision-Date: 2012-05-17 10:10+0200\n"
+"POT-Creation-Date: 2012-05-23 11:58+0200\n"
+"PO-Revision-Date: 2012-07-12 11:35+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnu@prevod.org>\n"
 "Language: sr\n"
@@ -15,6 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #: src/mdiff.c:375
 #, c-format
@@ -180,7 +181,7 @@ msgstr[2] "  %d %.0f%% уметнутих"
 #: src/mdiff.c:3763 src/wdiff.c:1233 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "Пробајте „%s --help“ за више информација.\n"
+msgstr "Пробајте „%s --help“ за више података.\n"
 
 #: src/mdiff.c:3768
 msgid ""
@@ -343,8 +344,8 @@ msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Ово је слободан софтвер; погледајте извор за услове умножавања.\n"
-"Нема НИКАКВЕ гаранције; чак ни ТРЖИШНЕ ВРЕДНОСТИ или ИСПУЊАВАЊЕ ОДРЕЂЕНЕ ПОТРЕБЕ.\n"
+"Ово је слободан софтвер; погледајте извор за услове умножавања.  Не постоји\n"
+"НИКАКВА гаранција; чак ни за ТРЖИШНУ ВРЕДНОСТ или за ИСПУЊАВАЊЕ ОДРЕЂЕНЕ ПОТРЕБЕ.\n"
 
 #: src/mdiff.c:4361 src/wdiff.c:1398 src/wdiff2.c:134
 msgid ""
@@ -530,10 +531,10 @@ msgstr "вдифф — Упоређује речи у две датотеке и
 #, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
+"   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Употреба: %s [ОПЦИЈА]... ДАТОТЕКА1 ДАТОТЕКА2\n"
-"       %s -d [ОПЦИЈА]... [ДАТОТЕКА]\n"
+"Употреба: %s    [ОПЦИЈА]... ДАТОТЕКА1 ДАТОТЕКА2\n"
+"     или: %s -d [ОПЦИЈА]... [ДАТОТЕКА]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
 msgid "Mandatory arguments to long options are mandatory for short options too.\n"
@@ -607,11 +608,11 @@ msgstr "не могу да користим „-t“, могућности те�
 #: src/wdiff.c:1391
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Ауторска права (C) 1992, 1997, 1998, 1999, 2009, 2010 Задужбина\n"
+"Ауторска права (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Задужбина\n"
 "слободног софтвера, Доо.\n"
 
 #: src/wdiff.c:1436 src/wdiff.c:1454
