@@ -26,28 +26,28 @@
 	readpipe.c, strstr.c, texinfo.tex, wdiff.c, writepipe.c, xmalloc.c:
 	Update license notices to reflect new FSF address.
 
-1999-07-05  François Pinard  <pinard@iro.umontreal.ca>
+1999-07-05  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Do not call fp_PROG_ECHO, as AT_CONFIG does it.
 
 	* Makefile.am, acconfig.h, configure.in: Prepare for fp_WITH_GETTEXT.
 
-1998-12-07  François Pinard  <pinard@iro.umontreal.ca>
+1998-12-07  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in (ALL_LINGUAS): Add Russian.
 
-1998-11-18  François Pinard  <pinard@iro.umontreal.ca>
+1998-11-18  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Version 0.5g.
-
-1998-11-16  François Pinard  <pinard@iro.umontreal.ca>
+
+1998-11-16  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Version 0.5e.
 
 	* configure.in: Use AT_CONFIG.
 	Substitute tests/atconfig rather than tests/preset.
 
-1998-11-13  François Pinard  <pinard@iro.umontreal.ca>
+1998-11-13  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.am (SUBDIRS): Add m4.  Use -I m4 on aclocal.
 
@@ -65,7 +65,7 @@
 
 	* configure.in: Version 0.5d.
 
-1997-02-12  François Pinard  <pinard@iro.umontreal.ca>
+1997-02-12  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Derive src/cbars from src/cbars.in.
 
@@ -79,86 +79,86 @@
 	termcap, termlib, curses and ncurses.
 	* acconfig.h: Add documentation for HAVE_TPUTS.
 
-1997-02-11  François Pinard  <pinard@iro.umontreal.ca>
+1997-02-11  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Adjusted for Automake, and latest PO files.
 	* Makefile.am: New files.
 	* acinclude.m4: New file, assembled from Jim's collection.
 	* acconfig.h: Adjusted for gettext.
 
-1996-09-06  François Pinard  <pinard@iro.umontreal.ca>
+1996-09-06  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in (ALL_LINGUAS): Add nl, pl.  Replace cz by cs.
 
-1995-06-22  François Pinard  <pinard@iro.umontreal.ca>
+1995-06-22  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Use AC_TYPE_SIZE_T.
 
-1995-03-26  François Pinard  <pinard@iro.umontreal.ca>
+1995-03-26  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Define SCRIPTS separately from PROGRAMS.  Use
 	fp_PROG_INSTALL instead of AC_PROG_INSTALL.
 	* Makefile.in: Adjusted accordingly.
 
-1995-03-19  François Pinard  <pinard@iro.umontreal.ca>
+1995-03-19  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Remove GLOCALE, add LINGUAS, use fp_WITH_CATALOGS.
 	* Makefile.in: Modify accordingly.
 	* acconfig.h: Add description for WITH_CATALOGS.
 
-1995-02-24  François Pinard  <pinard@iro.umontreal.ca>
+1995-02-24  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Put gdiff test in parentheses, because Bourne
 	shell otherwise complains about an inexisting program.
 	Reported by Kaveh R. Ghazi.
 
-1995-02-21  François Pinard  <pinard@iro.umontreal.ca>
+1995-02-21  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in, Makefile.in: Replace `date' by `echo timestamp'.
 	Reported by Greg McGary and Jim Meyering.
 
-1994-12-01  François Pinard  <pinard@iro.umontreal.ca>
+1994-12-01  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in, Makefile.in, acconfig.h: Rename PRODUCT to PACKAGE.
 
-1994-11-26  François Pinard  <pinard@iro.umontreal.ca>
+1994-11-26  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Check for <libintl.h> and <locale.h>.
 
-1994-11-11  François Pinard  <pinard@iro.umontreal.ca>
+1994-11-11  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Check libraries before functions, else there is
 	little chance that tputs will ever be found in -ltermcap.
 	Reported by Andreas Schwab.
 
-1994-11-05  François Pinard  <pinard@iro.umontreal.ca>
+1994-11-05  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Release 0.5.
 
-1994-11-02  François Pinard  <pinard@iro.umontreal.ca>
+1994-11-02  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Check for const only after having found possible
 	ANSIfying compiler flags, this is of no use to check it before.
 
-1994-11-01  François Pinard  <pinard@iro.umontreal.ca>
+1994-11-01  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: Clean up, following the one in shar utilities.
 	I will not detail all the changes here.
 	* configure.in: Likewise.
 	* acconfig.h: New file.
 
-1994-04-13  François Pinard  <pinard@iro.umontreal.ca>
+1994-04-13  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (Makefile, etc.): Adapt for Autoconf 1.8.
 
-1994-03-22  François Pinard  <pinard@iro.umontreal.ca>
+1994-03-22  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Use AC_PROGRAMS_PATH instead of AC_PROGRAMS_CHECK,
 	while defining DIFF and PAGER.  Add diff to the programs tested,
 	so its full path is saved.  Avoiding SGI gdiff, define DIFF to
 	non-pathed diff, instead of empty.
 
-1993-12-24  François Pinard  <pinard@iro.umontreal.ca>
+1993-12-24  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: General cleanup.  Handle .stamp-h.in,
 	mkinstalldirs, install.sh, FAQ and HINTS.
@@ -167,27 +167,27 @@
 
 	* FAQ, HINTS: New files, for alleviating README a little.
 
-1993-06-09  François Pinard  <pinard@iro.umontreal.ca>
+1993-06-09  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (dist): Replace "echo `pwd`" by a mere "pwd".
 	Create a gzip file.
 
-1993-02-27  François Pinard  <pinard@iro.umontreal.ca>
+1993-02-27  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Use AC_HAVE_LIBRARY for -lmalloc, instead of
 	explicit code.
 
-1993-02-06  François Pinard  <pinard@iro.umontreal.ca>
+1993-02-06  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: In dist goal, ensure 777 mode for directories, so
 	older tar's will restore file modes properly.
 
-1993-01-07  François Pinard  <pinard@iro.umontreal.ca>
+1993-01-07  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: Replace -DHAVE_CONFIG_H back to $(DEFS), since
 	Autoconf now handles this appropriately.
 
-1993-01-01  François Pinard  <pinard@iro.umontreal.ca>
+1993-01-01  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: Using autoheader, derive config.h.in from
 	configure.in.  Distribute config.h.in.
@@ -195,34 +195,34 @@
 	Remove config.h in distclean.
 	* configure.in: Create config.h from config.h.in.
 
-1992-12-30  François Pinard  <pinard@iro.umontreal.ca>
+1992-12-30  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Force xmalloc.o in whenever alloca.o is needed.
 	Reported by Nelson H.F. Beebe.
 
 	* configure.in: Use AC_VPRINTF, check for strerror().
 
-1992-12-23  François Pinard  <pinard@iro.umontreal.ca>
+1992-12-23  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Release 0.04.
 
 	* Makefile.in: Some cleanup before the release.
 
-1992-12-21  François Pinard  <pinard@iro.umontreal.ca>
+1992-12-21  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in: Distribute the THANKS file.
 
 	* Makefile.in: Do not distribute collate.el, which lacks the
 	required Copyright assignment to the FSF.
 
-1992-12-05  François Pinard  <pinard@iro.umontreal.ca>
+1992-12-05  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (realclean): Remove configure.
 
 	* configure.in: Use AC_ISC_POSIX for defining -posix if necessary.
 	Reported by Karl Berry.
 
-1992-11-23  François Pinard  <pinard@iro.umontreal.ca>
+1992-11-23  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (dist): Get .fname from the current directory name,
 	instead of from version.c.  I need updating many files manually,
@@ -231,7 +231,7 @@
 	* cbars.sh: New.  By default, cbars is not part of PROGS.
 	* Makefile.in: Prepare, install, and distribute it.
 
-1992-11-21  François Pinard  <pinard@iro.umontreal.ca>
+1992-11-21  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Use AC_CONST.
 
@@ -240,20 +240,20 @@
 	to be empty.
 	Reported by Jim Meyering.
 
-1992-11-13  François Pinard  <pinard@iro.umontreal.ca>
+1992-11-13  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Makefile.in (dist): chmod a+r before making the tar file.
 
 	* aclocal.m4: Update FP_STDC_CHECK, replacing by FP_PROTOTYPES.
 	* configure.in: Adjust accordingly.
 
-1992-08-23  François Pinard  <pinard@iro.umontreal.ca>
+1992-08-23  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Split FP_STDC_CHECK out into aclocal.m4.
 	* aclocal.m4: New.
 	* Makefile.in: Distribute aclocal.m4.
 
-1992-08-19  François Pinard  <pinard@iro.umontreal.ca>
+1992-08-19  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* collatew.el: New, generalizes Emacs LISP `compage-windows'.
 	* Makefile.in: Distribute collatew.el.
@@ -262,7 +262,7 @@
 	* configure.in: To define DIFF, also try gnudiff and diffgnu, not
 	only gdiff and diff.
 
-1992-08-18  François Pinard  <pinard@iro.umontreal.ca>
+1992-08-18  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Release 0.03 to alt.sources and ftp.uu.net:/tmp.
 
@@ -271,13 +271,13 @@
 	* Makefile.in: Various corrections for being truly able to make in
 	subdirectories.
 
-1992-08-17  François Pinard  <pinard@iro.umontreal.ca>
+1992-08-17  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* configure.in: Check for improper `const' support.
 
 	* configure.in: Check for alloca.
 
-1992-08-12  François Pinard  <pinard@iro.umontreal.ca>
+1992-08-12  FranÃ§ois Pinard  <pinard@iro.umontreal.ca>
 
 	* Release 0.01 to alt.sources and ftp.uu.net:/tmp.
 

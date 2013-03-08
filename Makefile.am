@@ -13,7 +13,8 @@ EXTRA_DIST =
 
 EXTRA_DIST += ChangeLog
 ChangeLog:
-	bzr log --gnu-changelog --include-merges > $@.tmp
+	LC_ALL=en_US.utf8 \
+	bzr log --gnu-changelog --include-merged --omit-merges > $@.tmp
 	cat $@.old >> $@.tmp
 	mv $@.tmp $@
 
