@@ -25,9 +25,11 @@ exclude_file_name_regexp--sc_makefile_at_at_check = maint\.mk
 exclude_file_name_regexp--sc_prohibit_undesirable_word_seq = maint\.mk
 exclude_file_name_regexp--sc_prohibit_doubled_word = po/pt_BR\.po
 
+local-checks-to-skip += sc_copyright_check
 local-checks-to-skip += sc_program_name
 local-checks-to-skip += sc_prohibit_atoi_atof
 local-checks-to-skip += sc_prohibit_strcmp
+local-checks-to-skip += sc_prohibit_strncpy
 local-checks-to-skip += sc_useless_cpp_parens
 
 # We're using neither git nor submodules, so no need to check this so often:
