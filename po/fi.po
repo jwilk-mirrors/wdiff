@@ -1,15 +1,15 @@
 # Finnish messages for wdiff.
-# Copyright © 2007, 2009, 2010, 2011 Free Software Foundation, Inc.
+# Copyright © 2007, 2009, 2010, 2011, 2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 # Jorma Karvonen <karvjorm@users.sf.net>, 2007.
-# Jorma Karvonen <karvonen.jorma@gmail.com>, 2009, 2010, 2011.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2009-2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 1.0.2\n"
+"Project-Id-Version: wdiff 1.2.0-b1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
-"PO-Revision-Date: 2011-09-18 15:00+0200\n"
+"POT-Creation-Date: 2012-05-30 22:32+0200\n"
+"PO-Revision-Date: 2012-05-26 17:34+0300\n"
 "Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -534,13 +534,11 @@ msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Vertailee sanoja kahdessa tiedostossa ja ilmoittaa eroista.\n"
 
 #: src/wdiff.c:1242
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"   or: %s -d [OPTION]... [FILE]\n"
+"       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
-"       %s -d [VALITSIN]... [TIEDOSTO]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
 msgid ""
@@ -628,14 +626,13 @@ msgid "cannot use -t, termcap not available"
 msgstr "ei voida käyttää valitsinta ”-t”, termcap ei ole käytettävissä"
 
 #: src/wdiff.c:1391
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright © 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 
 #: src/wdiff.c:1436 src/wdiff.c:1454
@@ -690,6 +687,13 @@ msgstr "Käynnistetään ”%s"
 #, c-format
 msgid "'\n"
 msgstr "”\n"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... FILE1 FILE2\n"
+#~ "   or: %s -d [OPTION]... [FILE]\n"
+#~ msgstr ""
+#~ "Käyttö: %s [VALITSIN]... TIEDOSTO1 TIEDOSTO2\n"
+#~ "   tai: %s -d [VALITSIN]... [TIEDOSTO]\n"
 
 #~ msgid "Read summary: %d files, %d items\n"
 #~ msgstr "Lukemisyhteenveto: %d tiedostoa, %d alkiota\n"
@@ -1223,3 +1227,14 @@ msgstr "”\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Copyright © 1997 Free Software Foundation, Inc.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012, 2013 Free "
+#~ "Software\n"
+#~ "Foundation, Inc.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Copyright © 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012, 2013 Free "
+#~ "Software\n"
+#~ "Foundation, Inc.\n"

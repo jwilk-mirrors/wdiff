@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the wdiff package.
 # Lukas Petrlik <luki@kiv.zcu.cz>, 1994.
 # Vladimir Michl <Vladimir.Michl@upol.cz>, 1998.
-# Petr Pisar <petr.pisar@atlas.cz>, 2011.
+# Petr Pisar <petr.pisar@atlas.cz>, 2011, 2012.
 #
 # cluster → seskupení
 # members → členy
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 1.0.2\n"
+"Project-Id-Version: wdiff 1.2.0-b1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
-"PO-Revision-Date: 2011-09-18 20:54+0200\n"
+"POT-Creation-Date: 2012-05-30 22:32+0200\n"
+"PO-Revision-Date: 2012-05-26 14:17+0200\n"
 "Last-Translator: Petr Pisar <petr.pisar@atlas.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "Language: cs\n"
@@ -553,13 +553,11 @@ msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff – Porovná slova ve dvou souborech a nahlásí rozdíly.\n"
 
 #: src/wdiff.c:1242
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"   or: %s -d [OPTION]... [FILE]\n"
+"       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Použití: %s [PŘEPÍNAČE]… SOUBOR1 SOUBOR2\n"
-"         %s -d [PŘEPÍNAČE]… [SOUBOR]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
 msgid ""
@@ -642,14 +640,13 @@ msgid "cannot use -t, termcap not available"
 msgstr "přepínač -t nelze použít, termcap není k dispozici"
 
 #: src/wdiff.c:1391
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright © 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 
 #: src/wdiff.c:1436 src/wdiff.c:1454
@@ -702,6 +699,13 @@ msgstr "Spouští se „%s"
 #, c-format
 msgid "'\n"
 msgstr "“\n"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... FILE1 FILE2\n"
+#~ "   or: %s -d [OPTION]... [FILE]\n"
+#~ msgstr ""
+#~ "Použití: %s [PŘEPÍNAČE]… SOUBOR1 SOUBOR2\n"
+#~ "   nebo: %s -d [PŘEPÍNAČE]… [SOUBOR]\n"
 
 #~ msgid ""
 #~ "\n"

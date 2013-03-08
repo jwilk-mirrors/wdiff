@@ -1,15 +1,15 @@
 # Polish translation of wdiff messages
-# Copyright (C) 1996, 1997, 2001, 2003, 2008, 2010, 2011 Free Software Foundation, Inc.
+# Copyright (C) 1996, 1997, 2001, 2003, 2008, 2010, 2011, 2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 # Contributions:
-# Rafał Maszkowski <rzm@icm.edu.pl>„ 1996-1997, 2001, 2003, 2008, 2010, 2011
+# Rafał Maszkowski <rzm@icm.edu.pl>„ 1996-1997, 2001, 2003, 2008, 2010-2012
 # Paweł Krawczyk - tłumaczenie inf. o prawach aut.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 1.0.2\n"
+"Project-Id-Version: wdiff 1.2.0-b1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
-"PO-Revision-Date: 2011-09-17 18:01+0200\n"
+"POT-Creation-Date: 2012-05-30 22:32+0200\n"
+"PO-Revision-Date: 2012-05-26 00:01+0200\n"
 "Last-Translator: Rafał Maszkowski <rzm@icm.edu.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
@@ -543,13 +543,11 @@ msgid "wdiff - Compares words in two files and report differences.\n"
 msgstr "wdiff - Porównuje słowa w dwóch plikach i informuje o różnicach.\n"
 
 #: src/wdiff.c:1242
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"   or: %s -d [OPTION]... [FILE]\n"
+"       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Składnia: %s [OPCJA]... PLIK1 PLIK2\n"
-"          %s -d [OPCJA]... [PLIK]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
 msgid ""
@@ -640,14 +638,13 @@ msgid "cannot use -t, termcap not available"
 msgstr "nie można użyć -t, nie ma termcapa"
 
 #: src/wdiff.c:1391
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 
 #: src/wdiff.c:1436 src/wdiff.c:1454
@@ -673,9 +670,9 @@ msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
-"wdiff - pokazuje różnice między słowami przez wewnętrzene wywołanie\n"
-"`mdiff -W'. Program ten istnieje głównie po to, żeby można było się nadal\n"
-"posługiwać przestrzałą składnią `wdiff'.\n"
+"wdiff - pokazuje różnice między słowami przez wewnętrzne wywołanie\n"
+"`mdiff -W'. Program ten istnieje głównie po to, żeby można było się\n"
+"nadal posługiwać przestrzałą składnią `wdiff'.\n"
 
 #: src/wdiff2.c:182
 #, c-format
@@ -702,3 +699,10 @@ msgstr "Start `%s"
 #, c-format
 msgid "'\n"
 msgstr "'\n"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... FILE1 FILE2\n"
+#~ "   or: %s -d [OPTION]... [FILE]\n"
+#~ msgstr ""
+#~ "Składnia: %s [OPCJA]... PLIK1 PLIK2\n"
+#~ "    albo: %s -d [OPCJA]... [PLIK]\n"

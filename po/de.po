@@ -2,15 +2,15 @@
 # Copyright (C) 1994 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 # Ulrich Drepper <drepper@gnu.ai.mit.edu>, 1994.
-# Michael Piefel <piefel@informatik.hu-berlin.de>, 2001, 2002, 2003, 2008, 2010, 2011.
+# Michael Piefel <piefel@informatik.hu-berlin.de>, 2001, 2002, 2003, 2008, 2010, 2011, 201.
 # Martin von Gagern <Martin.vGagern@gmx.net>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU wdiff 1.0.2\n"
+"Project-Id-Version: GNU wdiff 1.2.0-b1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
-"PO-Revision-Date: 2011-09-26 21:00+0200\n"
+"POT-Creation-Date: 2012-05-30 22:32+0200\n"
+"PO-Revision-Date: 2012-05-29 22:00+0200\n"
 "Last-Translator: Michael Piefel <piefel@informatik.hu-berlin.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -538,13 +538,11 @@ msgstr ""
 "wdiff – Vergleicht Wörter in zwei Dateien und führt Unterschiede auf.\n"
 
 #: src/wdiff.c:1242
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"   or: %s -d [OPTION]... [FILE]\n"
+"       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Aufruf: %s [OPTION]... DATEI1 DATEI2\n"
-"        %s -d [OPTION]... [DATEI]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
 msgid ""
@@ -636,15 +634,14 @@ msgid "cannot use -t, termcap not available"
 msgstr "kann -t nicht benutzen, da „termcap“ nicht verfügbar ist"
 
 #: src/wdiff.c:1391
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright © 1992, 1997, 1998, 1999, 2009, 2010 Free Software Foundation, "
-"Inc.\n"
+"Copyright © 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
+"Foundation, Inc.\n"
 
 #: src/wdiff.c:1436 src/wdiff.c:1454
 #, c-format
@@ -699,6 +696,13 @@ msgstr "Lese „%s"
 #, c-format
 msgid "'\n"
 msgstr "“\n"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... FILE1 FILE2\n"
+#~ "   or: %s -d [OPTION]... [FILE]\n"
+#~ msgstr ""
+#~ "Aufruf: %s [OPTION]... DATEI1 DATEI2\n"
+#~ "  oder: %s -d [OPTION]... [DATEI]\n"
 
 #~ msgid "Read summary: %d files, %d items\n"
 #~ msgstr "Zusammenfassung (Lesen): %d Dateien, %d Elemente\n"

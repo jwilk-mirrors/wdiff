@@ -1,16 +1,18 @@
 # Dutch translations for GNU wdiff.
-# Copyright (C) 2011 Free Software Foundation, Inc.
+# Copyright (C) 2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 #
-# Benno Schulenberg <benno@vertaalt.nl>, 2007, 2008, 2010, 2011.
+# Dauerkalender: "Heute".
+#
+# Benno Schulenberg <benno@vertaalt.nl>, 2007, 2008, 2010, 2011, 2012.
 # Erwin Poeze <erwin.poeze@yahoo.com>, 2010.
 # Erick Branderhorst <branderh@debian.org>, 1996.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff-1.0.2\n"
+"Project-Id-Version: wdiff-1.2.0-b1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
-"PO-Revision-Date: 2011-09-19 21:06+0200\n"
+"POT-Creation-Date: 2012-05-30 22:32+0200\n"
+"PO-Revision-Date: 2012-05-30 09:56+0200\n"
 "Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -546,13 +548,11 @@ msgstr ""
 "wdiff - Vergelijkt woorden in twee bestanden en rapporteert verschillen.\n"
 
 #: src/wdiff.c:1242
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"   or: %s -d [OPTION]... [FILE]\n"
+"       %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Gebruik:  %s [OPTIE...] BESTAND1 BESTAND2\n"
-"          %s -d [OPTIE...] [BESTAND]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
 msgid ""
@@ -638,14 +638,13 @@ msgid "cannot use -t, termcap not available"
 msgstr "kan optie '-t' niet honoreren; termcap is niet beschikbaar"
 
 #: src/wdiff.c:1391
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 
 #: src/wdiff.c:1436 src/wdiff.c:1454
@@ -701,6 +700,13 @@ msgstr "Starten van '%s"
 #, c-format
 msgid "'\n"
 msgstr "'\n"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... FILE1 FILE2\n"
+#~ "   or: %s -d [OPTION]... [FILE]\n"
+#~ msgstr ""
+#~ "Gebruik:  %s [OPTIE...] BESTAND1 BESTAND2\n"
+#~ "     of:  %s -d [OPTIE...] [BESTAND]\n"
 
 #~ msgid "Read summary: %d files, %d items\n"
 #~ msgstr "Leessamenvatting: %d bestanden, %d items\n"
