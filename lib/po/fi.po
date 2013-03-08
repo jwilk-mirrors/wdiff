@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the gnulib package.
 # Lauri Nurmi <lanurmi@iki.fi>, 2003, 2004.
 # Matti Koskimies <matti@apulanta.fi>, 2002.
-# Jorma Karvonen <karvonen.jorma@gmail.com>, 2009, 2010.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2009-2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
+"Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2011-09-15 16:16+0200\n"
-"PO-Revision-Date: 2010-02-23 16:51+0200\n"
+"POT-Creation-Date: 2013-03-08 15:00+0100\n"
+"PO-Revision-Date: 2011-12-10 19:05+0200\n"
 "Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -19,14 +19,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural= ( n!=1) ;\n"
 
-#: lib/error.c:185
+#: lib/error.c:188
 msgid "Unknown system error"
 msgstr "Tuntematon järjestelmävirhe"
 
 #: lib/getopt.c:547 lib/getopt.c:576
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '%s' is ambiguous; possibilities:"
-msgstr "%s: valitsin ’%s’ ei ole yksiselitteinen\n"
+msgstr "%s: valitsin ’%s’ ei ole yksiselitteinen; mahdollisuudet:"
 
 #: lib/getopt.c:624 lib/getopt.c:628
 #, c-format
@@ -39,9 +39,9 @@ msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: valitsin ’%c%s’ ei salli argumenttia\n"
 
 #: lib/getopt.c:685 lib/getopt.c:704
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: valitsin ’%s’ vaatii argumentin\n"
+msgstr "%s: valitsin ’--%s’ vaatii argumentin\n"
 
 #: lib/getopt.c:742 lib/getopt.c:745
 #, c-format
@@ -74,9 +74,9 @@ msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: valitsin ’-W %s’ ei salli argumenttia\n"
 
 #: lib/getopt.c:1013 lib/getopt.c:1031
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: valitsin ’%s’ vaatii argumentin\n"
+msgstr "%s: valitsin ’-W %s’ vaatii argumentin\n"
 
 #: lib/regcomp.c:131
 msgid "Success"
@@ -146,7 +146,7 @@ msgstr "Säännöllinen lauseke on liian iso"
 msgid "Unmatched ) or \\)"
 msgstr "Pariton ) tai \\)"
 
-#: lib/regcomp.c:700
+#: lib/regcomp.c:704
 msgid "No previous regular expression"
 msgstr "Ei edellistä säännöllistä lauseketta"
 
@@ -447,8 +447,8 @@ msgstr "muisti loppui"
 #~ msgid "%s subprocess terminated with exit code %d"
 #~ msgstr "%s-aliprosessi päättyi poistumiskoodilla %d"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "ei voida luoda putkea"
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "François Pinard"
 
 #~ msgid "`"
 #~ msgstr "”"
@@ -570,6 +570,9 @@ msgstr "muisti loppui"
 
 #~ msgid "error writing to a closed pipe or socket"
 #~ msgstr "virhe kirjoitettaessa suljettuun putkeen tai pistokkeeseen"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "ei voida luoda putkea"
 
 #~ msgid "Real-time signal %d"
 #~ msgstr "Tosiaikasignaali %d"

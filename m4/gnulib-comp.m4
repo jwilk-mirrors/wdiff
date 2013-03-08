@@ -1,5 +1,5 @@
 # DO NOT EDIT! GENERATED AUTOMATICALLY!
-# Copyright (C) 2002-2011 Free Software Foundation, Inc.
+# Copyright (C) 2002-2013 Free Software Foundation, Inc.
 #
 # This file is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -51,6 +51,7 @@ AC_DEFUN([gl_EARLY],
   # Code from module exitfail:
   # Code from module extensions:
   AC_REQUIRE([gl_USE_SYSTEM_EXTENSIONS])
+  # Code from module extern-inline:
   # Code from module float:
   # Code from module gendocs:
   # Code from module getdelim:
@@ -63,7 +64,6 @@ AC_DEFUN([gl_EARLY],
   # Code from module gnumakefile:
   # Code from module havelib:
   # Code from module include_next:
-  # Code from module inline:
   # Code from module intprops:
   # Code from module iswblank:
   # Code from module langinfo:
@@ -71,6 +71,7 @@ AC_DEFUN([gl_EARLY],
   AC_REQUIRE([AC_SYS_LARGEFILE])
   # Code from module localcharset:
   # Code from module locale:
+  # Code from module localeconv:
   # Code from module lstat:
   # Code from module maintainer-makefile:
   # Code from module malloc-gnu:
@@ -105,12 +106,10 @@ AC_DEFUN([gl_EARLY],
   # Code from module stdint:
   # Code from module stdio:
   # Code from module stdlib:
-  # Code from module strcase:
   # Code from module streq:
   # Code from module strerror:
   # Code from module strerror-override:
   # Code from module string:
-  # Code from module strings:
   # Code from module strnlen1:
   # Code from module strstr-simple:
   # Code from module sys_stat:
@@ -152,254 +151,257 @@ AC_DEFUN([gl_INIT],
   m4_pushdef([gl_LIBSOURCES_DIR], [])
   gl_COMMON
   gl_source_base='lib'
-gl_FUNC_ALLOCA
-gl_FUNC_BTOWC
-if test $HAVE_BTOWC = 0 || test $REPLACE_BTOWC = 1; then
-  AC_LIBOBJ([btowc])
-  gl_PREREQ_BTOWC
-fi
-gl_WCHAR_MODULE_INDICATOR([btowc])
-gl_CANONICALIZE_LGPL
-if test $HAVE_CANONICALIZE_FILE_NAME = 0 || test $REPLACE_CANONICALIZE_FILE_NAME = 1; then
-  AC_LIBOBJ([canonicalize-lgpl])
-fi
-gl_MODULE_INDICATOR([canonicalize-lgpl])
-gl_STDLIB_MODULE_INDICATOR([canonicalize_file_name])
-gl_STDLIB_MODULE_INDICATOR([realpath])
-gl_CONFIGMAKE_PREP
-gl_FUNC_DUP2
-if test $HAVE_DUP2 = 0 || test $REPLACE_DUP2 = 1; then
-  AC_LIBOBJ([dup2])
-  gl_PREREQ_DUP2
-fi
-gl_UNISTD_MODULE_INDICATOR([dup2])
-gl_ENVIRON
-gl_UNISTD_MODULE_INDICATOR([environ])
-gl_HEADER_ERRNO_H
-gl_ERROR
-if test $ac_cv_lib_error_at_line = no; then
-  AC_LIBOBJ([error])
-  gl_PREREQ_ERROR
-fi
-m4_ifdef([AM_XGETTEXT_OPTION],
-  [AM_][XGETTEXT_OPTION([--flag=error:3:c-format])
-   AM_][XGETTEXT_OPTION([--flag=error_at_line:5:c-format])])
-gl_FLOAT_H
-if test $REPLACE_FLOAT_LDBL = 1; then
-  AC_LIBOBJ([float])
-fi
-if test $REPLACE_ITOLD = 1; then
-  AC_LIBOBJ([itold])
-fi
-gl_FUNC_GETDELIM
-if test $HAVE_GETDELIM = 0 || test $REPLACE_GETDELIM = 1; then
-  AC_LIBOBJ([getdelim])
-  gl_PREREQ_GETDELIM
-fi
-gl_STDIO_MODULE_INDICATOR([getdelim])
-gl_FUNC_GETLINE
-if test $REPLACE_GETLINE = 1; then
-  AC_LIBOBJ([getline])
-  gl_PREREQ_GETLINE
-fi
-gl_STDIO_MODULE_INDICATOR([getline])
-gl_FUNC_GETOPT_GNU
-if test $REPLACE_GETOPT = 1; then
-  AC_LIBOBJ([getopt])
-  AC_LIBOBJ([getopt1])
-  gl_PREREQ_GETOPT
-fi
-gl_MODULE_INDICATOR_FOR_TESTS([getopt-gnu])
-gl_FUNC_GETOPT_POSIX
-if test $REPLACE_GETOPT = 1; then
-  AC_LIBOBJ([getopt])
-  AC_LIBOBJ([getopt1])
-  gl_PREREQ_GETOPT
-fi
-dnl you must add AM_GNU_GETTEXT([external]) or similar to configure.ac.
-AM_GNU_GETTEXT_VERSION([0.18.1])
-AC_SUBST([LIBINTL])
-AC_SUBST([LTLIBINTL])
-# Autoconf 2.61a.99 and earlier don't support linking a file only
-# in VPATH builds.  But since GNUmakefile is for maintainer use
-# only, it does not matter if we skip the link with older autoconf.
-# Automake 1.10.1 and earlier try to remove GNUmakefile in non-VPATH
-# builds, so use a shell variable to bypass this.
-GNUmakefile=GNUmakefile
-m4_if(m4_version_compare([2.61a.100],
-        m4_defn([m4_PACKAGE_VERSION])), [1], [],
-      [AC_CONFIG_LINKS([$GNUmakefile:$GNUmakefile], [],
-        [GNUmakefile=$GNUmakefile])])
-gl_INLINE
-gl_FUNC_ISWBLANK
-if test $HAVE_ISWCNTRL = 0 || test $REPLACE_ISWCNTRL = 1; then
-  :
-else
-  if test $HAVE_ISWBLANK = 0 || test $REPLACE_ISWBLANK = 1; then
-    AC_LIBOBJ([iswblank])
+  gl_FUNC_ALLOCA
+  gl_FUNC_BTOWC
+  if test $HAVE_BTOWC = 0 || test $REPLACE_BTOWC = 1; then
+    AC_LIBOBJ([btowc])
+    gl_PREREQ_BTOWC
   fi
-fi
-gl_WCTYPE_MODULE_INDICATOR([iswblank])
-gl_LANGINFO_H
-gl_LOCALCHARSET
-LOCALCHARSET_TESTS_ENVIRONMENT="CHARSETALIASDIR=\"\$(top_builddir)/$gl_source_base\""
-AC_SUBST([LOCALCHARSET_TESTS_ENVIRONMENT])
-gl_LOCALE_H
-gl_FUNC_LSTAT
-if test $REPLACE_LSTAT = 1; then
-  AC_LIBOBJ([lstat])
-  gl_PREREQ_LSTAT
-fi
-gl_SYS_STAT_MODULE_INDICATOR([lstat])
-AC_CONFIG_COMMANDS_PRE([m4_ifdef([AH_HEADER],
-  [AC_SUBST([CONFIG_INCLUDE], m4_defn([AH_HEADER]))])])
-gl_FUNC_MALLOC_GNU
-if test $REPLACE_MALLOC = 1; then
-  AC_LIBOBJ([malloc])
-fi
-gl_MODULE_INDICATOR([malloc-gnu])
-gl_FUNC_MALLOC_POSIX
-if test $REPLACE_MALLOC = 1; then
-  AC_LIBOBJ([malloc])
-fi
-gl_STDLIB_MODULE_INDICATOR([malloc-posix])
-gl_MALLOCA
-gl_MBCHAR
-gl_FUNC_MBRTOWC
-if test $HAVE_MBRTOWC = 0 || test $REPLACE_MBRTOWC = 1; then
-  AC_LIBOBJ([mbrtowc])
-  gl_PREREQ_MBRTOWC
-fi
-gl_WCHAR_MODULE_INDICATOR([mbrtowc])
-gl_FUNC_MBSINIT
-if test $HAVE_MBSINIT = 0 || test $REPLACE_MBSINIT = 1; then
-  AC_LIBOBJ([mbsinit])
-  gl_PREREQ_MBSINIT
-fi
-gl_WCHAR_MODULE_INDICATOR([mbsinit])
-gl_STRING_MODULE_INDICATOR([mbsrchr])
-gl_FUNC_MBTOWC
-if test $REPLACE_MBTOWC = 1; then
-  AC_LIBOBJ([mbtowc])
-  gl_PREREQ_MBTOWC
-fi
-gl_STDLIB_MODULE_INDICATOR([mbtowc])
-gl_MBITER
-gl_FUNC_MEMCHR
-if test $HAVE_MEMCHR = 0 || test $REPLACE_MEMCHR = 1; then
-  AC_LIBOBJ([memchr])
-  gl_PREREQ_MEMCHR
-fi
-gl_STRING_MODULE_INDICATOR([memchr])
-gl_MSVC_INVAL
-if test $HAVE_MSVC_INVALID_PARAMETER_HANDLER = 1; then
-  AC_LIBOBJ([msvc-inval])
-fi
-gl_MSVC_NOTHROW
-if test $HAVE_MSVC_INVALID_PARAMETER_HANDLER = 1; then
-  AC_LIBOBJ([msvc-nothrow])
-fi
-gl_MULTIARCH
-gl_FUNC_NL_LANGINFO
-if test $HAVE_NL_LANGINFO = 0 || test $REPLACE_NL_LANGINFO = 1; then
-  AC_LIBOBJ([nl_langinfo])
-fi
-gl_LANGINFO_MODULE_INDICATOR([nl_langinfo])
-gl_PATHMAX
-gl_FUNC_READLINK
-if test $HAVE_READLINK = 0 || test $REPLACE_READLINK = 1; then
-  AC_LIBOBJ([readlink])
-  gl_PREREQ_READLINK
-fi
-gl_UNISTD_MODULE_INDICATOR([readlink])
-gl_FUNC_REALLOC_POSIX
-if test $REPLACE_REALLOC = 1; then
-  AC_LIBOBJ([realloc])
-fi
-gl_STDLIB_MODULE_INDICATOR([realloc-posix])
-gl_REGEX
-if test $ac_use_included_regex = yes; then
-  AC_LIBOBJ([regex])
-  gl_PREREQ_REGEX
-fi
-gl_FUNC_SETENV
-if test $HAVE_SETENV = 0 || test $REPLACE_SETENV = 1; then
-  AC_LIBOBJ([setenv])
-fi
-gl_STDLIB_MODULE_INDICATOR([setenv])
-gl_SIZE_MAX
-gt_TYPE_SSIZE_T
-gl_FUNC_STAT
-if test $REPLACE_STAT = 1; then
-  AC_LIBOBJ([stat])
-  gl_PREREQ_STAT
-fi
-gl_SYS_STAT_MODULE_INDICATOR([stat])
-AM_STDBOOL_H
-gl_STDDEF_H
-gl_STDINT_H
-gl_STDIO_H
-gl_STDLIB_H
-gl_STRCASE
-if test $HAVE_STRCASECMP = 0; then
-  AC_LIBOBJ([strcasecmp])
-  gl_PREREQ_STRCASECMP
-fi
-if test $HAVE_STRNCASECMP = 0; then
-  AC_LIBOBJ([strncasecmp])
-  gl_PREREQ_STRNCASECMP
-fi
-gl_FUNC_STRERROR
-if test $REPLACE_STRERROR = 1; then
-  AC_LIBOBJ([strerror])
-fi
-gl_MODULE_INDICATOR([strerror])
-gl_STRING_MODULE_INDICATOR([strerror])
-AC_REQUIRE([gl_HEADER_ERRNO_H])
-AC_REQUIRE([gl_FUNC_STRERROR_0])
-if test -n "$ERRNO_H" || test $REPLACE_STRERROR_0 = 1; then
-  AC_LIBOBJ([strerror-override])
-  gl_PREREQ_SYS_H_WINSOCK2
-fi
-gl_HEADER_STRING_H
-gl_HEADER_STRINGS_H
-gl_FUNC_STRSTR_SIMPLE
-if test $REPLACE_STRSTR = 1; then
-  AC_LIBOBJ([strstr])
-fi
-gl_STRING_MODULE_INDICATOR([strstr])
-gl_HEADER_SYS_STAT_H
-AC_PROG_MKDIR_P
-gl_SYS_TYPES_H
-AC_PROG_MKDIR_P
-gl_SYS_WAIT_H
-AC_PROG_MKDIR_P
-gl_HEADER_TIME_H
-gl_UNISTD_H
-gl_LIBUNISTRING_LIBHEADER([0.9], [unitypes.h])
-gl_LIBUNISTRING_LIBHEADER([0.9], [uniwidth.h])
-gl_LIBUNISTRING_MODULE([0.9.4], [uniwidth/width])
-gl_FUNC_VASNPRINTF
-gl_FUNC_VASPRINTF
-gl_STDIO_MODULE_INDICATOR([vasprintf])
-m4_ifdef([AM_XGETTEXT_OPTION],
-  [AM_][XGETTEXT_OPTION([--flag=asprintf:2:c-format])
-   AM_][XGETTEXT_OPTION([--flag=vasprintf:2:c-format])])
-gl_WCHAR_H
-gl_FUNC_WCRTOMB
-if test $HAVE_WCRTOMB = 0 || test $REPLACE_WCRTOMB = 1; then
-  AC_LIBOBJ([wcrtomb])
-  gl_PREREQ_WCRTOMB
-fi
-gl_WCHAR_MODULE_INDICATOR([wcrtomb])
-gl_WCTYPE_H
-gl_FUNC_WCWIDTH
-if test $HAVE_WCWIDTH = 0 || test $REPLACE_WCWIDTH = 1; then
-  AC_LIBOBJ([wcwidth])
-fi
-gl_WCHAR_MODULE_INDICATOR([wcwidth])
-gl_XALLOC
-gl_XSIZE
+  gl_WCHAR_MODULE_INDICATOR([btowc])
+  gl_CANONICALIZE_LGPL
+  if test $HAVE_CANONICALIZE_FILE_NAME = 0 || test $REPLACE_CANONICALIZE_FILE_NAME = 1; then
+    AC_LIBOBJ([canonicalize-lgpl])
+  fi
+  gl_MODULE_INDICATOR([canonicalize-lgpl])
+  gl_STDLIB_MODULE_INDICATOR([canonicalize_file_name])
+  gl_STDLIB_MODULE_INDICATOR([realpath])
+  gl_CONFIGMAKE_PREP
+  gl_FUNC_DUP2
+  if test $HAVE_DUP2 = 0 || test $REPLACE_DUP2 = 1; then
+    AC_LIBOBJ([dup2])
+    gl_PREREQ_DUP2
+  fi
+  gl_UNISTD_MODULE_INDICATOR([dup2])
+  gl_ENVIRON
+  gl_UNISTD_MODULE_INDICATOR([environ])
+  gl_HEADER_ERRNO_H
+  gl_ERROR
+  if test $ac_cv_lib_error_at_line = no; then
+    AC_LIBOBJ([error])
+    gl_PREREQ_ERROR
+  fi
+  m4_ifdef([AM_XGETTEXT_OPTION],
+    [AM_][XGETTEXT_OPTION([--flag=error:3:c-format])
+     AM_][XGETTEXT_OPTION([--flag=error_at_line:5:c-format])])
+  AC_REQUIRE([gl_EXTERN_INLINE])
+  gl_FLOAT_H
+  if test $REPLACE_FLOAT_LDBL = 1; then
+    AC_LIBOBJ([float])
+  fi
+  if test $REPLACE_ITOLD = 1; then
+    AC_LIBOBJ([itold])
+  fi
+  gl_FUNC_GETDELIM
+  if test $HAVE_GETDELIM = 0 || test $REPLACE_GETDELIM = 1; then
+    AC_LIBOBJ([getdelim])
+    gl_PREREQ_GETDELIM
+  fi
+  gl_STDIO_MODULE_INDICATOR([getdelim])
+  gl_FUNC_GETLINE
+  if test $REPLACE_GETLINE = 1; then
+    AC_LIBOBJ([getline])
+    gl_PREREQ_GETLINE
+  fi
+  gl_STDIO_MODULE_INDICATOR([getline])
+  gl_FUNC_GETOPT_GNU
+  if test $REPLACE_GETOPT = 1; then
+    AC_LIBOBJ([getopt])
+    AC_LIBOBJ([getopt1])
+    gl_PREREQ_GETOPT
+    dnl Arrange for unistd.h to include getopt.h.
+    GNULIB_GL_UNISTD_H_GETOPT=1
+  fi
+  AC_SUBST([GNULIB_GL_UNISTD_H_GETOPT])
+  gl_MODULE_INDICATOR_FOR_TESTS([getopt-gnu])
+  gl_FUNC_GETOPT_POSIX
+  if test $REPLACE_GETOPT = 1; then
+    AC_LIBOBJ([getopt])
+    AC_LIBOBJ([getopt1])
+    gl_PREREQ_GETOPT
+    dnl Arrange for unistd.h to include getopt.h.
+    GNULIB_GL_UNISTD_H_GETOPT=1
+  fi
+  AC_SUBST([GNULIB_GL_UNISTD_H_GETOPT])
+  dnl you must add AM_GNU_GETTEXT([external]) or similar to configure.ac.
+  AM_GNU_GETTEXT_VERSION([0.18.1])
+  AC_SUBST([LIBINTL])
+  AC_SUBST([LTLIBINTL])
+  # Autoconf 2.61a.99 and earlier don't support linking a file only
+  # in VPATH builds.  But since GNUmakefile is for maintainer use
+  # only, it does not matter if we skip the link with older autoconf.
+  # Automake 1.10.1 and earlier try to remove GNUmakefile in non-VPATH
+  # builds, so use a shell variable to bypass this.
+  GNUmakefile=GNUmakefile
+  m4_if(m4_version_compare([2.61a.100],
+          m4_defn([m4_PACKAGE_VERSION])), [1], [],
+        [AC_CONFIG_LINKS([$GNUmakefile:$GNUmakefile], [],
+          [GNUmakefile=$GNUmakefile])])
+  gl_FUNC_ISWBLANK
+  if test $HAVE_ISWCNTRL = 0 || test $REPLACE_ISWCNTRL = 1; then
+    :
+  else
+    if test $HAVE_ISWBLANK = 0 || test $REPLACE_ISWBLANK = 1; then
+      AC_LIBOBJ([iswblank])
+    fi
+  fi
+  gl_WCTYPE_MODULE_INDICATOR([iswblank])
+  gl_LANGINFO_H
+  AC_REQUIRE([gl_LARGEFILE])
+  gl_LOCALCHARSET
+  LOCALCHARSET_TESTS_ENVIRONMENT="CHARSETALIASDIR=\"\$(abs_top_builddir)/$gl_source_base\""
+  AC_SUBST([LOCALCHARSET_TESTS_ENVIRONMENT])
+  gl_LOCALE_H
+  gl_FUNC_LOCALECONV
+  if test $REPLACE_LOCALECONV = 1; then
+    AC_LIBOBJ([localeconv])
+    gl_PREREQ_LOCALECONV
+  fi
+  gl_LOCALE_MODULE_INDICATOR([localeconv])
+  gl_FUNC_LSTAT
+  if test $REPLACE_LSTAT = 1; then
+    AC_LIBOBJ([lstat])
+    gl_PREREQ_LSTAT
+  fi
+  gl_SYS_STAT_MODULE_INDICATOR([lstat])
+  AC_CONFIG_COMMANDS_PRE([m4_ifdef([AH_HEADER],
+    [AC_SUBST([CONFIG_INCLUDE], m4_defn([AH_HEADER]))])])
+  gl_FUNC_MALLOC_GNU
+  if test $REPLACE_MALLOC = 1; then
+    AC_LIBOBJ([malloc])
+  fi
+  gl_MODULE_INDICATOR([malloc-gnu])
+  gl_FUNC_MALLOC_POSIX
+  if test $REPLACE_MALLOC = 1; then
+    AC_LIBOBJ([malloc])
+  fi
+  gl_STDLIB_MODULE_INDICATOR([malloc-posix])
+  gl_MALLOCA
+  gl_MBCHAR
+  gl_FUNC_MBRTOWC
+  if test $HAVE_MBRTOWC = 0 || test $REPLACE_MBRTOWC = 1; then
+    AC_LIBOBJ([mbrtowc])
+    gl_PREREQ_MBRTOWC
+  fi
+  gl_WCHAR_MODULE_INDICATOR([mbrtowc])
+  gl_FUNC_MBSINIT
+  if test $HAVE_MBSINIT = 0 || test $REPLACE_MBSINIT = 1; then
+    AC_LIBOBJ([mbsinit])
+    gl_PREREQ_MBSINIT
+  fi
+  gl_WCHAR_MODULE_INDICATOR([mbsinit])
+  gl_STRING_MODULE_INDICATOR([mbsrchr])
+  gl_FUNC_MBTOWC
+  if test $REPLACE_MBTOWC = 1; then
+    AC_LIBOBJ([mbtowc])
+    gl_PREREQ_MBTOWC
+  fi
+  gl_STDLIB_MODULE_INDICATOR([mbtowc])
+  gl_MBITER
+  gl_FUNC_MEMCHR
+  if test $HAVE_MEMCHR = 0 || test $REPLACE_MEMCHR = 1; then
+    AC_LIBOBJ([memchr])
+    gl_PREREQ_MEMCHR
+  fi
+  gl_STRING_MODULE_INDICATOR([memchr])
+  gl_MSVC_INVAL
+  if test $HAVE_MSVC_INVALID_PARAMETER_HANDLER = 1; then
+    AC_LIBOBJ([msvc-inval])
+  fi
+  gl_MSVC_NOTHROW
+  if test $HAVE_MSVC_INVALID_PARAMETER_HANDLER = 1; then
+    AC_LIBOBJ([msvc-nothrow])
+  fi
+  gl_MULTIARCH
+  gl_FUNC_NL_LANGINFO
+  if test $HAVE_NL_LANGINFO = 0 || test $REPLACE_NL_LANGINFO = 1; then
+    AC_LIBOBJ([nl_langinfo])
+  fi
+  gl_LANGINFO_MODULE_INDICATOR([nl_langinfo])
+  gl_PATHMAX
+  gl_FUNC_READLINK
+  if test $HAVE_READLINK = 0 || test $REPLACE_READLINK = 1; then
+    AC_LIBOBJ([readlink])
+    gl_PREREQ_READLINK
+  fi
+  gl_UNISTD_MODULE_INDICATOR([readlink])
+  gl_FUNC_REALLOC_POSIX
+  if test $REPLACE_REALLOC = 1; then
+    AC_LIBOBJ([realloc])
+  fi
+  gl_STDLIB_MODULE_INDICATOR([realloc-posix])
+  gl_REGEX
+  if test $ac_use_included_regex = yes; then
+    AC_LIBOBJ([regex])
+    gl_PREREQ_REGEX
+  fi
+  gl_FUNC_SETENV
+  if test $HAVE_SETENV = 0 || test $REPLACE_SETENV = 1; then
+    AC_LIBOBJ([setenv])
+  fi
+  gl_STDLIB_MODULE_INDICATOR([setenv])
+  gl_SIZE_MAX
+  gt_TYPE_SSIZE_T
+  gl_FUNC_STAT
+  if test $REPLACE_STAT = 1; then
+    AC_LIBOBJ([stat])
+    gl_PREREQ_STAT
+  fi
+  gl_SYS_STAT_MODULE_INDICATOR([stat])
+  AM_STDBOOL_H
+  gl_STDDEF_H
+  gl_STDINT_H
+  gl_STDIO_H
+  gl_STDLIB_H
+  gl_FUNC_STRERROR
+  if test $REPLACE_STRERROR = 1; then
+    AC_LIBOBJ([strerror])
+  fi
+  gl_MODULE_INDICATOR([strerror])
+  gl_STRING_MODULE_INDICATOR([strerror])
+  AC_REQUIRE([gl_HEADER_ERRNO_H])
+  AC_REQUIRE([gl_FUNC_STRERROR_0])
+  if test -n "$ERRNO_H" || test $REPLACE_STRERROR_0 = 1; then
+    AC_LIBOBJ([strerror-override])
+    gl_PREREQ_SYS_H_WINSOCK2
+  fi
+  gl_HEADER_STRING_H
+  gl_FUNC_STRSTR_SIMPLE
+  if test $REPLACE_STRSTR = 1; then
+    AC_LIBOBJ([strstr])
+  fi
+  gl_STRING_MODULE_INDICATOR([strstr])
+  gl_HEADER_SYS_STAT_H
+  AC_PROG_MKDIR_P
+  gl_SYS_TYPES_H
+  AC_PROG_MKDIR_P
+  gl_SYS_WAIT_H
+  AC_PROG_MKDIR_P
+  gl_HEADER_TIME_H
+  gl_UNISTD_H
+  gl_LIBUNISTRING_LIBHEADER([0.9], [unitypes.h])
+  gl_LIBUNISTRING_LIBHEADER([0.9], [uniwidth.h])
+  gl_LIBUNISTRING_MODULE([0.9.4], [uniwidth/width])
+  gl_FUNC_VASNPRINTF
+  gl_FUNC_VASPRINTF
+  gl_STDIO_MODULE_INDICATOR([vasprintf])
+  m4_ifdef([AM_XGETTEXT_OPTION],
+    [AM_][XGETTEXT_OPTION([--flag=asprintf:2:c-format])
+     AM_][XGETTEXT_OPTION([--flag=vasprintf:2:c-format])])
+  gl_WCHAR_H
+  gl_FUNC_WCRTOMB
+  if test $HAVE_WCRTOMB = 0 || test $REPLACE_WCRTOMB = 1; then
+    AC_LIBOBJ([wcrtomb])
+    gl_PREREQ_WCRTOMB
+  fi
+  gl_WCHAR_MODULE_INDICATOR([wcrtomb])
+  gl_WCTYPE_H
+  gl_FUNC_WCWIDTH
+  if test $HAVE_WCWIDTH = 0 || test $REPLACE_WCWIDTH = 1; then
+    AC_LIBOBJ([wcwidth])
+  fi
+  gl_WCHAR_MODULE_INDICATOR([wcwidth])
+  gl_XALLOC
+  gl_XSIZE
   # End of code from modules
   m4_ifval(gl_LIBSOURCES_LIST, [
     m4_syscmd([test ! -d ]m4_defn([gl_LIBSOURCES_DIR])[ ||
@@ -579,6 +581,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/localcharset.c
   lib/localcharset.h
   lib/locale.in.h
+  lib/localeconv.c
   lib/lstat.c
   lib/malloc.c
   lib/malloca.c
@@ -591,6 +594,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/mbsrchr.c
   lib/mbtowc-impl.h
   lib/mbtowc.c
+  lib/mbuiter.c
   lib/mbuiter.h
   lib/memchr.c
   lib/memchr.valgrind
@@ -623,14 +627,11 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/stdio.in.h
   lib/stdlib.in.h
   lib/str-two-way.h
-  lib/strcasecmp.c
   lib/streq.h
   lib/strerror-override.c
   lib/strerror-override.h
   lib/strerror.c
   lib/string.in.h
-  lib/strings.in.h
-  lib/strncasecmp.c
   lib/strnlen1.c
   lib/strnlen1.h
   lib/strstr.c
@@ -638,6 +639,7 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/sys_types.in.h
   lib/sys_wait.in.h
   lib/time.in.h
+  lib/unistd.c
   lib/unistd.in.h
   lib/unitypes.in.h
   lib/uniwidth.in.h
@@ -649,12 +651,14 @@ AC_DEFUN([gl_FILE_LIST], [
   lib/verify.h
   lib/wchar.in.h
   lib/wcrtomb.c
+  lib/wctype-h.c
   lib/wctype.in.h
   lib/wcwidth.c
   lib/xalloc-die.c
   lib/xalloc-oversized.h
   lib/xalloc.h
   lib/xmalloc.c
+  lib/xsize.c
   lib/xsize.h
   m4/00gnulib.m4
   m4/alloca.m4
@@ -670,6 +674,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/error.m4
   m4/exponentd.m4
   m4/extensions.m4
+  m4/extern-inline.m4
   m4/fcntl-o.m4
   m4/float_h.m4
   m4/getdelim.m4
@@ -681,7 +686,6 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/gnulib-common.m4
   m4/iconv.m4
   m4/include_next.m4
-  m4/inline.m4
   m4/intdiv0.m4
   m4/intl.m4
   m4/intldir.m4
@@ -703,6 +707,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/locale-ja.m4
   m4/locale-zh.m4
   m4/locale_h.m4
+  m4/localeconv.m4
   m4/lock.m4
   m4/longlong.m4
   m4/lstat.m4
@@ -723,6 +728,7 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/nl_langinfo.m4
   m4/nls.m4
   m4/nocrash.m4
+  m4/off_t.m4
   m4/onceonly.m4
   m4/pathmax.m4
   m4/po.m4
@@ -742,10 +748,8 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/stdint_h.m4
   m4/stdio_h.m4
   m4/stdlib_h.m4
-  m4/strcase.m4
   m4/strerror.m4
   m4/string_h.m4
-  m4/strings_h.m4
   m4/strstr.m4
   m4/sys_socket_h.m4
   m4/sys_stat_h.m4

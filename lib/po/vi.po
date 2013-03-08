@@ -1,15 +1,16 @@
 # Vietnamese translation for GNU Lib.
-# Copyright © 2010 Free Software Foundation, Inc.
+# Copyright © 2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
 # Clytie Siddall <clytie@riverland.net.au>, 2006-2010.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib 2.0.0.3462.e9796\n"
+"Project-Id-Version: gnulib-3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2011-09-15 16:16+0200\n"
-"PO-Revision-Date: 2010-03-06 20:21+0930\n"
-"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"POT-Creation-Date: 2013-03-08 15:00+0100\n"
+"PO-Revision-Date: 2012-03-30 14:47+0700\n"
+"Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -17,15 +18,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.8\n"
+"X-Poedit-Language: Vietnamese\n"
+"X-Poedit-Country: VIET NAM\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
-#: lib/error.c:185
+#: lib/error.c:188
 msgid "Unknown system error"
 msgstr "Gặp lỗi hệ thống lạ"
 
 #: lib/getopt.c:547 lib/getopt.c:576
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '%s' is ambiguous; possibilities:"
-msgstr "%s: tùy chọn « %s » vẫn mơ hồ\n"
+msgstr "%s: tùy chọn '%s' chưa rõ ràng; khả năng là:"
 
 #: lib/getopt.c:624 lib/getopt.c:628
 #, c-format
@@ -38,9 +42,9 @@ msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: tùy chọn « %c%s » không cho phép đối số\n"
 
 #: lib/getopt.c:685 lib/getopt.c:704
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: tùy chọn « %s » yêu cầu một đối số\n"
+msgstr "%s: tùy chọn '--%s' yêu cầu một đối số\n"
 
 #: lib/getopt.c:742 lib/getopt.c:745
 #, c-format
@@ -73,9 +77,9 @@ msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: tùy chọn « -W %s » không cho phép đối số\n"
 
 #: lib/getopt.c:1013 lib/getopt.c:1031
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: tùy chọn « %s » yêu cầu một đối số\n"
+msgstr "%s: tùy chọn '-W %s' yêu cầu một đối số\n"
 
 #: lib/regcomp.c:131
 msgid "Success"
@@ -145,7 +149,7 @@ msgstr "Biểu thức chính quy quá lớn"
 msgid "Unmatched ) or \\)"
 msgstr "Chưa khớp ký tự « ) » hay « \\) »"
 
-#: lib/regcomp.c:700
+#: lib/regcomp.c:704
 msgid "No previous regular expression"
 msgstr "Không có biểu thức chính quy đi trước"
 
@@ -257,10 +261,10 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ msgstr "lỗi ghi"
 
 #~ msgid "preserving permissions for %s"
-#~ msgstr "đang bảo tồn quyền hạn về %s"
+#~ msgstr "đang bảo tồn quyền hạn cho %s"
 
 #~ msgid "error while opening \"%s\" for reading"
-#~ msgstr "gặp lỗi khi mở « %s » để ghi"
+#~ msgstr "gặp lỗi khi mở « %s » để đọc"
 
 #~ msgid "cannot open backup file \"%s\" for writing"
 #~ msgstr "không thể mở tập tin sao lưu « %s » để ghi"
@@ -287,10 +291,10 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ msgstr "Tiến trình con %s bị lỗi"
 
 #~ msgid "regular empty file"
-#~ msgstr "tập tin rỗng chuẩn"
+#~ msgstr "tập tin rỗng kiểu thường"
 
 #~ msgid "regular file"
-#~ msgstr "tập tin chuẩn"
+#~ msgstr "tập tin thông thường"
 
 #~ msgid "directory"
 #~ msgstr "thư mục"
@@ -326,7 +330,7 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ msgstr "tập tin lạ"
 
 #~ msgid "Address family for hostname not supported"
-#~ msgstr "Không hỗ trợ nhóm địa chỉ đối với tên máy"
+#~ msgstr "Họ địa chỉ dành cho tên máy không được hỗ trợ"
 
 #~ msgid "Temporary failure in name resolution"
 #~ msgstr "Tạm thời không thể quyết định tên"
@@ -450,8 +454,8 @@ msgstr "hết bộ nhớ hoàn toàn"
 #~ msgid "%s subprocess terminated with exit code %d"
 #~ msgstr "tiến trình con %s đã kết thúc với mã thoát %d"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "không thể tạo ống dẫn"
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "Franc,ois Pinard"
 
 #~ msgid "`"
 #~ msgstr "« "
@@ -572,6 +576,9 @@ msgstr "hết bộ nhớ hoàn toàn"
 
 #~ msgid "error writing to a closed pipe or socket"
 #~ msgstr "lỗi ghi vào một đường ống hay ổ cắm bị đóng"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "không thể tạo ống dẫn"
 
 #~ msgid "Real-time signal %d"
 #~ msgstr "Tín hiệu thời gian thật %d"

@@ -7,10 +7,10 @@
 # David Prévot <david@tilapin.org>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnulib-2.0.0.3462.e9796\n"
+"Project-Id-Version: gnulib-3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2011-09-15 16:16+0200\n"
-"PO-Revision-Date: 2011-05-26 07:43-0400\n"
+"POT-Creation-Date: 2013-03-08 15:00+0100\n"
+"PO-Revision-Date: 2011-12-07 20:41-0400\n"
 "Last-Translator: David Prévot <david@tilapin.org>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -18,16 +18,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.2\n"
 
-#: lib/error.c:185
+#: lib/error.c:188
 msgid "Unknown system error"
 msgstr "Erreur système inconnue"
 
 #: lib/getopt.c:547 lib/getopt.c:576
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '%s' is ambiguous; possibilities:"
-msgstr "%s : l'option « %s » est ambiguë\n"
+msgstr "%s : l'option « %s » est ambiguë, possibilités :"
 
 #: lib/getopt.c:624 lib/getopt.c:628
 #, c-format
@@ -40,9 +40,9 @@ msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s : l'option « %c%s » ne prend pas d'argument\n"
 
 #: lib/getopt.c:685 lib/getopt.c:704
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s : l'option « %s » nécessite un argument\n"
+msgstr "%s : l'option « --%s » nécessite un argument\n"
 
 #: lib/getopt.c:742 lib/getopt.c:745
 #, c-format
@@ -75,9 +75,9 @@ msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s : l'option « -W %s » ne prend pas d'argument\n"
 
 #: lib/getopt.c:1013 lib/getopt.c:1031
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s : l'option « %s » nécessite un argument\n"
+msgstr "%s : l'option « -W %s » nécessite un argument\n"
 
 #: lib/regcomp.c:131
 msgid "Success"
@@ -147,7 +147,7 @@ msgstr "Expression rationnelle trop grande"
 msgid "Unmatched ) or \\)"
 msgstr ") ou \\) non appairée"
 
-#: lib/regcomp.c:700
+#: lib/regcomp.c:704
 msgid "No previous regular expression"
 msgstr "Pas d'expression rationnelle précédente"
 
@@ -451,8 +451,8 @@ msgstr "mémoire épuisée"
 #~ msgid "%s subprocess terminated with exit code %d"
 #~ msgstr "le sous-processus de %s s'est terminé avec le code de retour %d"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "impossible de créer un tube (« pipe »)"
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "François Pinard"
 
 #~ msgid "`"
 #~ msgstr "« "
@@ -573,6 +573,9 @@ msgstr "mémoire épuisée"
 
 #~ msgid "error writing to a closed pipe or socket"
 #~ msgstr "Erreur d'écriture vers un tube ou un socket fermé"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "impossible de créer un tube (« pipe »)"
 
 #~ msgid "Real-time signal %d"
 #~ msgstr "Signal %d en temps réel"
