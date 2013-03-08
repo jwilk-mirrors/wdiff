@@ -1,11 +1,12 @@
 # German translation of gnulib messages.
-# Copyright © 2008 Free Software Foundation, Inc.
+# Copyright © 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnulib package.
 # Karl Eichwalder <ke@suse.de>, 2001-2002.
 # Lutz Behnke <lutz.behnke@gmx.de>, 1996, 1997, 1998, 1999, 2000, 2001.
 # Michael Schmidt <michael@guug.de>, 1996, 1997, 1998, 1999, 2000.
 # Michael Piefel <piefel@informatik.hu-berlin.de>, 2001, 2002, 2003, 2009.
 # Kai Wasserbäch <debian@carbon-project.org>, 2009.
+# Arun Persaud <arun@nubati.net>, 2012
 #
 # TAB: spell it out („Tabulatoren“). -ke-
 # Don't use obscure abbreviations, please.  -ke-
@@ -31,11 +32,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU gnulib-1.0.0.1991.dbebf\n"
+"Project-Id-Version: GNU gnulib-3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
-"PO-Revision-Date: 2009-04-16 10:26+0100\n"
-"Last-Translator: Michael Piefel <piefel@informatik.hu-berlin.de>\n"
+"POT-Creation-Date: 2013-03-08 15:00+0100\n"
+"PO-Revision-Date: 2012-06-03 12:41-0700\n"
+"Last-Translator: Arun Persaud <arun@nubati.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -43,64 +44,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/error.c:187
+#: lib/error.c:188
 msgid "Unknown system error"
 msgstr "Unbekannter Systemfehler"
 
 #: lib/getopt.c:547 lib/getopt.c:576
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '%s' is ambiguous; possibilities:"
-msgstr "%s: Option »%s« ist mehrdeutig\n"
+msgstr "%s: Option »%s« ist mehrdeutig; Möglichkeiten:"
 
 #: lib/getopt.c:624 lib/getopt.c:628
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: Option »--%s« erlaubt kein Argument\n"
 
 #: lib/getopt.c:637 lib/getopt.c:642
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: Option »%c%s« erlaubt kein Argument\n"
 
 #: lib/getopt.c:685 lib/getopt.c:704
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: Option »%s« erfordert ein Argument\n"
+msgstr "%s: Option »--%s« erfordert ein Argument\n"
 
 #: lib/getopt.c:742 lib/getopt.c:745
-#, fuzzy, c-format
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: unbekannte Option »--%s«\n"
 
 #: lib/getopt.c:753 lib/getopt.c:756
-#, fuzzy, c-format
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: unbekannte Option »%c%s«\n"
 
 #: lib/getopt.c:805 lib/getopt.c:808
-#, fuzzy, c-format
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s: ungültige Option -- %c\n"
+msgstr "%s: ungültige Option -- »%c«\n"
 
 #: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s: Option erfordert ein Argument -- %c\n"
+msgstr "%s: Option erfordert ein Argument -- »%c«\n"
 
 #: lib/getopt.c:934 lib/getopt.c:950
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: Option »-W %s« ist mehrdeutig\n"
 
 #: lib/getopt.c:974 lib/getopt.c:992
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: Option »-W %s« erlaubt kein Argument\n"
 
 #: lib/getopt.c:1013 lib/getopt.c:1031
-#, fuzzy, c-format
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: Option »%s« erfordert ein Argument\n"
+msgstr "%s: Option »-W %s« erfordert ein Argument\n"
 
 #: lib/regcomp.c:131
 msgid "Success"
@@ -170,7 +171,7 @@ msgstr "Der reguläre Ausdruck ist zu groß"
 msgid "Unmatched ) or \\)"
 msgstr "Keine Übereinstimmung für ) oder \\)"
 
-#: lib/regcomp.c:700
+#: lib/regcomp.c:704
 msgid "No previous regular expression"
 msgstr "Kein vorhergehender regulärer Ausdruck"
 
@@ -278,6 +279,9 @@ msgstr "Speicher ausgeschöpft"
 
 #~ msgid "write error"
 #~ msgstr "Schreibfehler"
+
+#~ msgid "preserving permissions for %s"
+#~ msgstr "erhalte Zugriffsrechte von %s"
 
 #~ msgid "error while opening \"%s\" for reading"
 #~ msgstr "Fehler beim Versuch, „%s“ zum Lesen zu öffnen"
@@ -402,12 +406,6 @@ msgstr "Speicher ausgeschöpft"
 #~ msgid "Unknown error"
 #~ msgstr "Unbekannter Fehler"
 
-#~ msgid "%s: illegal option -- %c\n"
-#~ msgstr "%s: ungültige Option -- %c\n"
-
-#~ msgid "%s subprocess I/O error"
-#~ msgstr "%s-Unterprozess-E/A-Fehler"
-
 #~ msgid "invalid source_version argument to compile_java_class"
 #~ msgstr "ungültiges Argument source_version für compile_java_class"
 
@@ -430,8 +428,14 @@ msgstr "Speicher ausgeschöpft"
 #~ "Java-VM nicht gefunden, versuchen Sie, gij zu installieren oder setzen "
 #~ "Sie $JAVA"
 
-#~ msgid "cannot create pipe"
-#~ msgstr "kann Pipe nicht erzeugen"
+#~ msgid "%s subprocess I/O error"
+#~ msgstr "%s-Unterprozess-E/A-Fehler"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "kann Zugriffsrechte von %s nicht ändern"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "kann Verzeichnis %s nicht anlegen"
 
 #~ msgid "unable to record current working directory"
 #~ msgstr "aktuelles Arbeitsverzeichnisses kann nicht aufgezeichnet werden"
@@ -440,14 +444,36 @@ msgstr "Speicher ausgeschöpft"
 #~ msgstr ""
 #~ "es konnte nicht ins ursprüngliche Arbeitsverzeichnis zurückgekehrt werden"
 
-#~ msgid "cannot change permissions of %s"
-#~ msgstr "kann Zugriffsrechte von %s nicht ändern"
-
-#~ msgid "cannot create directory %s"
-#~ msgstr "kann Verzeichnis %s nicht anlegen"
-
 #~ msgid "Failed to open /dev/zero for read"
 #~ msgstr "Konnte /dev/zero nicht zum Lesen öffnen"
+
+#~ msgid "creation of reading thread failed"
+#~ msgstr "Erstellen des Lese-Threads fehlgeschlagen"
+
+#~ msgid "cannot set up nonblocking I/O to %s subprocess"
+#~ msgstr ""
+#~ "Nicht-blockierendes I/O zu Teilprozess %s kann nicht hergestellt werden"
+
+#~ msgid "communication with %s subprocess failed"
+#~ msgstr "Kommunikation mit Teilprozess %s fehlgeschlagen"
+
+#~ msgid "write to %s subprocess failed"
+#~ msgstr "Schreiben zu Teilprozess %s fehlgeschlagen"
+
+#~ msgid "read from %s subprocess failed"
+#~ msgstr "Lesen von Teilprozess %s fehlgeschlagen"
+
+#~ msgid "subprocess %s terminated with exit code %d"
+#~ msgstr "Teilprozess %s beendet mit Exitcode %d"
+
+#~ msgid "creation of threads failed"
+#~ msgstr "Erstellen von Threads fehlgeschlagen"
+
+#~ msgid "%s subprocess terminated with exit code %d"
+#~ msgstr "Teilprozess %s beendet mit Exitcode %d"
+
+#~ msgid "Franc,ois Pinard"
+#~ msgstr "François Pinard"
 
 #~ msgid "`"
 #~ msgstr "„"
@@ -460,6 +486,123 @@ msgstr "Speicher ausgeschöpft"
 
 #~ msgid "^[nN]"
 #~ msgstr "^[nN]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "setze Zugriffsrechte von %s"
+
+#~ msgid "Hangup"
+#~ msgstr "Aufgehängt"
+
+#~ msgid "Interrupt"
+#~ msgstr "Unterbrechung"
+
+#~ msgid "Quit"
+#~ msgstr "Beendet"
+
+#~ msgid "Illegal instruction"
+#~ msgstr "Ungültige Anweisung"
+
+#~ msgid "Trace/breakpoint trap"
+#~ msgstr "Trace-/Breakpoint-Falle"
+
+#~ msgid "Aborted"
+#~ msgstr "Abgebrochen"
+
+#~ msgid "Floating point exception"
+#~ msgstr "Fließkomma-Ausnahme"
+
+#~ msgid "Killed"
+#~ msgstr "Getötet"
+
+#~ msgid "Bus error"
+#~ msgstr "Busfehler"
+
+#~ msgid "Segmentation fault"
+#~ msgstr "Speicheraufteilungsfehler"
+
+#~ msgid "Broken pipe"
+#~ msgstr "Unterbrochene Weiterleitung"
+
+#~ msgid "Alarm clock"
+#~ msgstr "Alarmuhr"
+
+#~ msgid "Terminated"
+#~ msgstr "Terminiert"
+
+#~ msgid "Urgent I/O condition"
+#~ msgstr "Dringende I/O-Bedingung"
+
+#~ msgid "Stopped (signal)"
+#~ msgstr "Gestoppt (Signal)"
+
+#~ msgid "Stopped"
+#~ msgstr "Gestoppt"
+
+#~ msgid "Continued"
+#~ msgstr "Fortgesetzt"
+
+#~ msgid "Child exited"
+#~ msgstr "Kind verlassen"
+
+#~ msgid "Stopped (tty input)"
+#~ msgstr "Gestoppt (tty-Eingabe)"
+
+#~ msgid "Stopped (tty output)"
+#~ msgstr "Gestoppt (tty-Ausgabe)"
+
+#~ msgid "I/O possible"
+#~ msgstr "I/O möglich"
+
+#~ msgid "CPU time limit exceeded"
+#~ msgstr "CPU-Zeitbegrenzung überschritten"
+
+#~ msgid "File size limit exceeded"
+#~ msgstr "Dateigrößenbegrenzung überschritten"
+
+#~ msgid "Virtual timer expired"
+#~ msgstr "Virtueller Zeitgeber abgelaufen"
+
+#~ msgid "Profiling timer expired"
+#~ msgstr "Zeitmesser zur Leistungsmessung abgelaufen"
+
+#~ msgid "Window changed"
+#~ msgstr "Fenster geändert"
+
+#~ msgid "User defined signal 1"
+#~ msgstr "Benutzerdefiniertes Signal 1"
+
+#~ msgid "User defined signal 2"
+#~ msgstr "Benutzerdefiniertes Signal 2"
+
+#~ msgid "EMT trap"
+#~ msgstr "EMT-Falle"
+
+#~ msgid "Bad system call"
+#~ msgstr "Fehlerhafter Systemaufruf"
+
+#~ msgid "Stack fault"
+#~ msgstr "Stapelfehler"
+
+#~ msgid "Information request"
+#~ msgstr "Informationsanfrage"
+
+#~ msgid "Power failure"
+#~ msgstr "Stromausfall"
+
+#~ msgid "Resource lost"
+#~ msgstr "Ressource verloren"
+
+#~ msgid "error writing to a closed pipe or socket"
+#~ msgstr "Fehler beim Schreiben in geschlossene Pipe oder Socket"
+
+#~ msgid "cannot create pipe"
+#~ msgstr "kann Pipe nicht erzeugen"
+
+#~ msgid "Real-time signal %d"
+#~ msgstr "Echtzeitsignal %d"
+
+#~ msgid "Unknown signal %d"
+#~ msgstr "Unbekanntes Signal %d"
 
 #~ msgid "iconv function not usable"
 #~ msgstr "iconv-Funktion nicht benutzbar"
@@ -488,20 +631,11 @@ msgstr "Speicher ausgeschöpft"
 #~ msgid "unable to display error message"
 #~ msgstr "kann Fehlermeldung nicht anzeigen"
 
-#~ msgid "preserving permissions for %s"
-#~ msgstr "erhalte Zugriffsrechte von %s"
+#~ msgid "Packaged by %s (%s)\n"
+#~ msgstr "Paket erstellt von %s (%s)\n"
 
-#~ msgid "string comparison failed"
-#~ msgstr "Zeichenkettenvergleich fehlgeschlagen"
-
-#~ msgid "Set LC_ALL='C' to work around the problem."
-#~ msgstr "Setzen Sie LC_ALL=C, um das Problem zu umgehen."
-
-#~ msgid "The strings compared were %s and %s."
-#~ msgstr "Die verglichenen Zeichenketten waren %s und %s."
-
-#~ msgid "cannot perform formatted output"
-#~ msgstr "kann keine formatierte Ausgabe durchführen"
+#~ msgid "Packaged by %s\n"
+#~ msgstr "Paket erstellt von %s\n"
 
 #~ msgid "(C)"
 #~ msgstr "©"
@@ -587,20 +721,65 @@ msgstr "Speicher ausgeschöpft"
 
 #~ msgid ""
 #~ "\n"
-#~ "Report bugs to <%s>.\n"
+#~ "Report bugs to: %s\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Melden Sie Fehler (auf Englisch, mit LC_ALL=C) an <%s>.\n"
-#~ "Melden Sie Übersetzungsfehler an <translation-team-de@lists.sourceforge."
-#~ "net>\n"
+#~ "Melden Sie Fehler im Program (auf Englisch, mit LC_ALL=C) an <%s>.\n"
+#~ "Melden Sie Fehler in der Übersetzung an <translation-team-de@lists."
+#~ "sourceforge.net>.\n"
 
-#~ msgid "%s home page: <http://www.gnu.org/software/%s/>.\n"
+#~ msgid "Report %s bugs to: %s\n"
+#~ msgstr "Melden Sie %s-Fehler (auf Englisch, mit LC_ALL=C) an <%s>.\n"
+
+#~ msgid "%s home page: <%s>\n"
+#~ msgstr "%s Homepage: <%s>\n"
+
+#~ msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
 #~ msgstr "Heimatseite von %s: <http://www.gnu.org/software/%s/>.\n"
 
-#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>.\n"
+#~ msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 #~ msgstr ""
 #~ "Allgemeine Hilfe zur Benutzung von GNU-Software: <http://www.gnu.org/"
-#~ "gethelp/>.\n"
+#~ "gethelp/>\n"
+
+#~ msgid "_open_osfhandle failed"
+#~ msgstr "_open_osfhandle fehlgeschlagen"
+
+#~ msgid "cannot restore fd %d: dup2 failed"
+#~ msgstr "Kann Fd %d nicht wiederherstellen: dup2 fehlgeschlagen"
+
+#~ msgid "%s subprocess"
+#~ msgstr "%s-Unterprozess"
+
+#~ msgid "%s subprocess got fatal signal %d"
+#~ msgstr "%s-Unterprozess bekam tödliches Signal %d"
+
+#~ msgid "stdin"
+#~ msgstr "Standardeingabe (stdin)"
+
+#~ msgid "stdout"
+#~ msgstr "Standardausgabe (stdout)"
+
+#~ msgid "stderr"
+#~ msgstr "Standardfehlerausgabe (stderr)"
+
+#~ msgid "unknown stream"
+#~ msgstr "Unbekannter Datenstrom"
+
+#~ msgid "failed to reopen %s with mode %s"
+#~ msgstr "Erneutes Öffnen von %s mit Mode %s fehlgeschlagen"
+
+#~ msgid "string comparison failed"
+#~ msgstr "Zeichenkettenvergleich fehlgeschlagen"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Setzen Sie LC_ALL=C, um das Problem zu umgehen."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Die verglichenen Zeichenketten waren %s und %s."
+
+#~ msgid "cannot perform formatted output"
+#~ msgstr "kann keine formatierte Ausgabe durchführen"
 
 #~ msgid "invalid %s%s argument `%s'"
 #~ msgstr "ungültiges %s%s-Argument „%s“"
@@ -611,119 +790,17 @@ msgstr "Speicher ausgeschöpft"
 #~ msgid "%s%s argument `%s' too large"
 #~ msgstr "%s%s-Argument „%s“ zu groß"
 
-#~ msgid "setting permissions for %s"
-#~ msgstr "setze Zugriffsrechte von %s"
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: ungültige Option -- %c\n"
 
-#~ msgid "Real-time signal %d"
-#~ msgstr "Echtzeitsignal %d"
-
-#~ msgid "Unknown signal %d"
-#~ msgstr "Unbekanntes Signal %d"
-
-#~ msgid "%s subprocess"
-#~ msgstr "%s-Unterprozess"
-
-#~ msgid "%s subprocess got fatal signal %d"
-#~ msgstr "%s-Unterprozess bekam tödliches Signal %d"
-
-#~ msgid "error writing to a closed pipe or socket"
-#~ msgstr "Fehler beim Schreiben in geschlossene Pipe oder Socket"
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to <%s>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Melden Sie Fehler (auf Englisch, mit LC_ALL=C) an <%s>.\n"
+#~ "Melden Sie Übersetzungsfehler an <translation-team-de@lists.sourceforge."
+#~ "net>\n"
 
 #~ msgid "block size"
 #~ msgstr "Blockgröße"
-
-#~ msgid "Hangup"
-#~ msgstr "Aufgehängt"
-
-#~ msgid "Interrupt"
-#~ msgstr "Unterbrechung"
-
-#~ msgid "Quit"
-#~ msgstr "Beendet"
-
-#~ msgid "Illegal instruction"
-#~ msgstr "Ungültige Anweisung"
-
-#~ msgid "Trace/breakpoint trap"
-#~ msgstr "Trace-/Breakpoint-Falle"
-
-#~ msgid "Aborted"
-#~ msgstr "Abgebrochen"
-
-#~ msgid "Floating point exception"
-#~ msgstr "Fließkomma-Ausnahme"
-
-#~ msgid "Killed"
-#~ msgstr "Getötet"
-
-#~ msgid "Segmentation fault"
-#~ msgstr "Speicheraufteilungsfehler"
-
-#~ msgid "Broken pipe"
-#~ msgstr "Unterbrochene Weiterleitung"
-
-#~ msgid "Alarm clock"
-#~ msgstr "Alarmuhr"
-
-#~ msgid "Terminated"
-#~ msgstr "Terminiert"
-
-#~ msgid "Urgent I/O condition"
-#~ msgstr "Dringende I/O-Bedingung"
-
-#~ msgid "Stopped (signal)"
-#~ msgstr "Gestoppt (Signal)"
-
-#~ msgid "Stopped"
-#~ msgstr "Gestoppt"
-
-#~ msgid "Continued"
-#~ msgstr "Fortgesetzt"
-
-#~ msgid "Child exited"
-#~ msgstr "Kind verlassen"
-
-#~ msgid "Stopped (tty input)"
-#~ msgstr "Gestoppt (tty-Eingabe)"
-
-#~ msgid "Stopped (tty output)"
-#~ msgstr "Gestoppt (tty-Ausgabe)"
-
-#~ msgid "I/O possible"
-#~ msgstr "I/O möglich"
-
-#~ msgid "CPU time limit exceeded"
-#~ msgstr "CPU-Zeitbegrenzung überschritten"
-
-#~ msgid "File size limit exceeded"
-#~ msgstr "Dateigrößenbegrenzung überschritten"
-
-#~ msgid "Virtual timer expired"
-#~ msgstr "Virtueller Zeitgeber abgelaufen"
-
-#~ msgid "Profiling timer expired"
-#~ msgstr "Zeitmesser zur Leistungsmessung abgelaufen"
-
-#~ msgid "Window changed"
-#~ msgstr "Fenster geändert"
-
-#~ msgid "User defined signal 1"
-#~ msgstr "Benutzerdefiniertes Signal 1"
-
-#~ msgid "User defined signal 2"
-#~ msgstr "Benutzerdefiniertes Signal 2"
-
-#~ msgid "EMT trap"
-#~ msgstr "EMT-Falle"
-
-#~ msgid "Bad system call"
-#~ msgstr "Fehlerhafter Systemaufruf"
-
-#~ msgid "Stack fault"
-#~ msgstr "Stapelfehler"
-
-#~ msgid "Information request"
-#~ msgstr "Informationsanfrage"
-
-#~ msgid "Resource lost"
-#~ msgstr "Ressource verloren"

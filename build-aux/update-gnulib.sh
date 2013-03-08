@@ -27,12 +27,16 @@ build-aux/regen-ignore.sh
 ./configure --enable-experimental
 make -s check
 bzr revert po
+torevert=()
 for i in lib/po/*.po; do
-    if [[ $( bzr diff $i | grep '^[+-]' | \
+    if [[ -z $(bzr status -S -V "$i") ]]; then
+        bzr add "$i"
+    elif [[ $( bzr diff "$i" | grep '^[+-]' | \
              grep -vE '^[+-]#: |POT-Creation-Date' | wc -l ) -lt 3 ]]; then
-        bzr revert $i
+        torevert+=("$i")
     else
         echo "$i updated."
     fi
 done
+[[ -n "${torevert[*]}" ]] && bzr revert "${torevert[@]}"
 bzr status
