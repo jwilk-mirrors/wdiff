@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
+"POT-Creation-Date: 2013-03-09 02:55+0100\n"
 "PO-Revision-Date: 2011-08-24 11:23-0500\n"
 "Last-Translator: Cristian Othón Martínez Vera <cfuga@cfuga.mx>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/error.c:187
+#: lib/error.c:188
 msgid "Unknown system error"
 msgstr "Error desconocido de sistema"
 
@@ -150,7 +150,7 @@ msgstr "Expresión regular demasiado grande"
 msgid "Unmatched ) or \\)"
 msgstr ") o \\) sin pareja"
 
-#: lib/regcomp.c:700
+#: lib/regcomp.c:704
 msgid "No previous regular expression"
 msgstr "No hay una expresión regular previa"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff-1.2.0-b1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2012-05-30 22:32+0200\n"
+"POT-Creation-Date: 2013-03-09 02:55+0100\n"
 "PO-Revision-Date: 2012-05-26 07:44+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <translation-team-vi@lists.sourceforge.net>\n"
@@ -539,8 +539,10 @@ msgstr "wdiff — So sánh các từ trong hai tập tin và thông báo khác b
 #, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
+"   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
+"Sử dụng: %s [TÙY_CHỌN]... TẬP_TIN_1 TẬP_TIN_2\n"
+"  hoặc:  %s -d [TÙY_CHỌN]... [TẬP_TIN]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
 msgid ""
@@ -684,13 +686,6 @@ msgstr "Đang khởi chạy `%s"
 #, c-format
 msgid "'\n"
 msgstr "'\n"
-
-#~ msgid ""
-#~ "Usage: %s [OPTION]... FILE1 FILE2\n"
-#~ "   or: %s -d [OPTION]... [FILE]\n"
-#~ msgstr ""
-#~ "Sử dụng: %s [TÙY_CHỌN]... TẬP_TIN_1 TẬP_TIN_2\n"
-#~ "  hoặc:  %s -d [TÙY_CHỌN]... [TẬP_TIN]\n"
 
 #~ msgid "Read summary: %d files, %d items\n"
 #~ msgstr "Tóm tắt đọc: %d tập tin, %d mục\n"

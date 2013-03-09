@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: coreutils 5.3.0\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
+"POT-Creation-Date: 2013-03-09 02:55+0100\n"
 "PO-Revision-Date: 2005-07-02 04:13+0800\n"
 "Last-Translator: Abel Cheung <abelcheung@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: lib/error.c:187
+#: lib/error.c:188
 msgid "Unknown system error"
 msgstr "不明的系統錯誤"
 
@@ -159,7 +159,7 @@ msgstr "%s：無效的正規表示式：%s"
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:700
+#: lib/regcomp.c:704
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "在正規運算式搜尋時發生錯誤"

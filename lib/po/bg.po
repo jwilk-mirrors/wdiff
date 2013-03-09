@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: coreutils 5.90\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
+"POT-Creation-Date: 2013-03-09 02:55+0100\n"
 "PO-Revision-Date: 2005-10-12 21:41+0300\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/error.c:187
+#: lib/error.c:188
 msgid "Unknown system error"
 msgstr "Непозната системна грешка"
 
@@ -154,7 +154,7 @@ msgstr "грешка при пасването на регулярния изр�
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:700
+#: lib/regcomp.c:704
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "грешка при търсене на регулярен израз"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU textutils 2.0.20\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2012-05-23 11:58+0200\n"
+"POT-Creation-Date: 2013-03-09 02:55+0100\n"
 "PO-Revision-Date: 2002-01-27 21:35+0100\n"
 "Last-Translator: Eivind Tagseth <eivindt@multinet.no>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: lib/error.c:187
+#: lib/error.c:188
 msgid "Unknown system error"
 msgstr "Ukjent systemfeil"
 
@@ -150,7 +150,7 @@ msgstr "%s: ugyldig regulært uttrykk: %s"
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:700
+#: lib/regcomp.c:704
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "feil i søk med regulært uttrykk"
