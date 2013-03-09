@@ -339,7 +339,16 @@ if test -z "$use_texi2html"; then
   mv $PACKAGE.html "$outdir/"
   ls -l "$outdir/$PACKAGE.html" "$outdir/$PACKAGE.html.gz"
 
-  opt="--html -o $PACKAGE.html --split=$split $commonarg $htmlarg"
+  # Before Texinfo 5.0, makeinfo did not accept a --split=HOW option,
+  # it just always split by node.  So if we're splitting by node anyway,
+  # leave it out.
+  if test "x$split" = xnode; then
+    split_arg=
+  else
+    split_arg=--split=$split
+  fi
+  #
+  opt="--html -o $PACKAGE.html $split_arg $commonarg $htmlarg"
   cmd="$SETLANG $MAKEINFO $opt \"$srcfile\""
   printf "\nGenerating html by $split... ($cmd)\n"
   eval "$cmd"
