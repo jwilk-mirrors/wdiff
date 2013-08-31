@@ -103,6 +103,7 @@ char *strstr ();
 #define LINE_FORMAT_OPTION		13
 #define LTYPE_LINE_FORMAT_OPTION	14
 #define SUPPRESS_COMMON_LINES_OPTION	15
+#define TOLERANCE_OPTION		16
 
 /* The name this program was run with. */
 const char *program_name;
@@ -176,7 +177,7 @@ static const struct option long_options[] = {
   {"suppress-common-lines", no_argument, NULL, SUPPRESS_COMMON_LINES_OPTION},
   {"terminal", no_argument, NULL, 'z'},
   {"text", no_argument, NULL, 'a'},
-  {"tolerance", required_argument, NULL, 't'},
+  {"tolerance", required_argument, NULL, TOLERANCE_OPTION},
   {"unidirectional-new-file", no_argument, NULL, 'P'},
   {"unified", optional_argument, NULL, 'u'},
   {"verbose", no_argument, NULL, 'v'},
@@ -4242,17 +4243,15 @@ main (int argc, char *const *argv)
 	break;
 #endif
 
-      case 't':		/* mdiff draft */
+      case TOLERANCE_OPTION:		/* mdiff draft */
 	UNIMPLEMENTED ("--tolerance");
 	tolerance = atoi (optarg);
 	break;
 
-#if FIXME
       case 't':
 	expand_tabs = 1;
 	UNIMPLEMENTED ("--expand-tabs");
 	break;
-#endif
 
       case 'U':
       case 'u':

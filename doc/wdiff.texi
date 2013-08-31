@@ -737,12 +737,6 @@ doing anything else.
 Merely prints a page of help on standard output, and exits without doing
 anything else.
 
-@item --threshold=@var{number}
-@itemx -t @var{number}
-Specifies the minimum number of non-ignorable lines which are required for
-two runs of lines to compare as equal.  No cluster member may ever have
-less than @var{number} lines.  By default, clusters have 4 lines or more.
-
 @item --no-deleted
 @itemx -1
 Avoid producing deleted words on the output.  If neither @option{-1} or
