@@ -26,7 +26,7 @@ unify.1: $(top_srcdir)/src/unify.c $(common_mandeps)
 
 wdiff.1: $(top_srcdir)/src/wdiff.c wdiff.h2m $(common_mandeps)
 	test ../src/wdiff -nt $< || $(MAKE) -C ../src wdiff
-	$(path_help2man) -i wdiff.h2m wdiff -o $@
+	$(path_help2man) -i $(srcdir)/wdiff.h2m wdiff -o $@
 
 wdiff2.1: $(top_srcdir)/src/wdiff2.c $(common_mandeps)
 	test ../src/wdiff2 -nt $< || $(MAKE) -C ../src wdiff2
