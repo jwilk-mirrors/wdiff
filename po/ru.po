@@ -1,431 +1,452 @@
-# Перевод сообщений для wdiff
+# п÷п╣я─п╣п╡п╬п╢ я│п╬п╬п╠я┴п╣п╫п╦п╧ п╢п╩я▐ wdiff
 # Copyright (C) 1998 Free Software Foundation, Inc.
-# Oleg S. Tihonov <tihonov@ffke-campus.mipt.ru>, 1998, 2001.
 #
+# This file is distributed under the same license as the wdiff package.
+#
+# Oleg S. Tihonov <tihonov@ffke-campus.mipt.ru>, 1998, 2001.
+# Yuri Kozlov <yuray@komyakino.ru>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5g\n"
+"Project-Id-Version: wdiff 1.2.1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 20:54+0100\n"
-"Last-Translator: Oleg S. Tihonov <tihonov@ffke-campus.mipt.ru>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"PO-Revision-Date: 2013-12-21 10:25+0400\n"
+"Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
+"Language-Team: Russian <gnu@mx.ru>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=koi8-r\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 1.4\n"
 
-#: src/mdiff.c:387
+#: src/mdiff.c:375
 #, c-format
 msgid "%s (for regexp `%s')"
-msgstr "%s (для регулярного выражения `%s')"
+msgstr "%s (п╢п╩я▐ я─п╣пЁя┐п╩я▐я─п╫п╬пЁп╬ п╡я▀я─п╟п╤п╣п╫п╦я▐ б╚%sб╩)"
 
-#: src/mdiff.c:905 src/wdiff.c:1488
-#, fuzzy, c-format
+#: src/mdiff.c:890 src/wdiff.c:1473
+#, c-format
 msgid "only one file may be standard input"
-msgstr "Только один файл может быть стандартным вводом."
+msgstr "я┌п╬п╩я▄п╨п╬ п╬п╢п╦п╫ я└п╟п╧п╩ п╪п╬п╤п╣я┌ п╠я▀я┌я▄ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╪ п╡п╡п╬п╢п╬п╪"
 
-#: src/mdiff.c:920 src/wdiff.c:702
-#, fuzzy, c-format
+#: src/mdiff.c:905 src/wdiff.c:678
+#, c-format
 msgid "directories not supported"
-msgstr "Каталоги не поддерживаются"
+msgstr "п╨п╟я┌п╟п╩п╬пЁп╦ п╫п╣ п©п╬п╢п╢п╣я─п╤п╦п╡п╟я▌я┌я│я▐"
 
-#: src/mdiff.c:1064
+#: src/mdiff.c:1048
 #, c-format
 msgid "Reading %s"
-msgstr "Чтение %s"
+msgstr "п╖я┌п╣п╫п╦п╣ %s"
 
-#: src/mdiff.c:1189
+#: src/mdiff.c:1172
 #, c-format
-msgid ", %d items\n"
-msgstr ", %d элементов\n"
+msgid ", %d item\n"
+msgid_plural ", %d items\n"
+msgstr[0] ", %d я█п╩п╣п╪п╣п╫я┌\n"
+msgstr[1] ", %d я█п╩п╣п╪п╣п╫я┌п╬п╡\n"
+msgstr[2] ", %d я█п╩п╣п╪п╣п╫я┌п╬п╡\n"
 
-#: src/mdiff.c:1267
+#: src/mdiff.c:1252
 #, c-format
-msgid "Read summary: %d files, %d items\n"
-msgstr "Всего прочитано: файлов: %d, элементов: %d\n"
+msgid "Read summary:"
+msgstr "п≤я┌п╬пЁ п©п╬ я┤я┌п╣п╫п╦я▌:"
 
-#: src/mdiff.c:1663
+#: src/mdiff.c:1253
+#, c-format
+msgid " %d file,"
+msgid_plural " %d files,"
+msgstr[0] " %d я└п╟п╧п╩,"
+msgstr[1] " %d я└п╟п╧п╩п╟,"
+msgstr[2] " %d я└п╟п╧п╩п╬п╡,"
+
+#: src/mdiff.c:1254
+#, c-format
+msgid " %d item\n"
+msgid_plural " %d items\n"
+msgstr[0] " %d я█п╩п╣п╪п╣п╫я┌\n"
+msgstr[1] " %d я█п╩п╣п╪п╣п╫я┌п╟\n"
+msgstr[2] " %d я█п╩п╣п╪п╣п╫я┌п╬п╡\n"
+
+#: src/mdiff.c:1647
 #, c-format
 msgid "Sorting"
-msgstr "Сортировка"
+msgstr "п║п╬я─я┌п╦я─п╬п╡п╨п╟"
 
-#: src/mdiff.c:1680
+#: src/mdiff.c:1664
 #, c-format
 msgid ", clustering"
-msgstr ", кластеризация"
+msgstr ", п╨п╩п╟я│я┌п╣я─п╦п╥п╟я├п╦я▐"
 
-#: src/mdiff.c:1848 src/mdiff.c:1911
+#: src/mdiff.c:1833 src/mdiff.c:1895
 #, c-format
 msgid ", done\n"
-msgstr ", завершено\n"
+msgstr ", п╥п╟п╡п╣я─я┬п╣п╫п╬\n"
 
-#: src/mdiff.c:1898
+#: src/mdiff.c:1882
 #, c-format
 msgid "Sorting members"
-msgstr "Сортировка членов"
+msgstr "п║п╬я─я┌п╦я─п╬п╡п╨п╟ я┤п╩п╣п╫п╬п╡"
 
-#: src/mdiff.c:1930
+#: src/mdiff.c:1915 src/mdiff.c:2298
 #, c-format
-msgid "Work summary: %d clusters, %d members\n"
-msgstr "Всего найдено: кластеров: %d, членов: %d\n"
+msgid "Work summary:"
+msgstr "п≤я┌п╬пЁ п©п╬ я─п╟п╠п╬я┌п╣:"
 
-#: src/mdiff.c:2310
+#: src/mdiff.c:1916 src/mdiff.c:2299
 #, c-format
-msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Всего найдено: кластеров: %d, членов: %d, перекрытий: %d\n"
+msgid " %d cluster,"
+msgid_plural " %d clusters,"
+msgstr[0] " %d п╨п╩п╟я│я┌п╣я─,"
+msgstr[1] " %d п╨п╩п╟я│я┌п╣я─п╟,"
+msgstr[2] " %d п╨п╩п╟я│я┌п╣я─п╬п╡,"
 
-#: src/mdiff.c:2365 src/wdiff.c:242
-#, fuzzy, c-format
+#: src/mdiff.c:1918
+#, c-format
+msgid " %d member\n"
+msgid_plural " %d members\n"
+msgstr[0] " %d я┤п╩п╣п╫\n"
+msgstr[1] " %d я┤п╩п╣п╫п╟\n"
+msgstr[2] " %d я┤п╩п╣п╫п╬п╡\n"
+
+#: src/mdiff.c:2301
+#, c-format
+msgid " %d member,"
+msgid_plural " %d members,"
+msgstr[0] " %d я┤п╩п╣п╫,"
+msgstr[1] " %d я┤п╩п╣п╫п╟,"
+msgstr[2] " %d я┤п╩п╣п╫п╬п╡,"
+
+#: src/mdiff.c:2303
+#, c-format
+msgid " %d overlap\n"
+msgid_plural " %d overlaps\n"
+msgstr[0] " %d п©п╣я─п╣п╨я─я▀я┌п╦п╣\n"
+msgstr[1] " %d п©п╣я─п╣п╨я─я▀я┌п╦я▐\n"
+msgstr[2] " %d п©п╣я─п╣п╨я─я▀я┌п╦п╧\n"
+
+#: src/mdiff.c:2353 src/wdiff.c:228
+#, c-format
 msgid "select a terminal through the TERM environment variable"
-msgstr "Укажите тип терминала через переменную среды TERM."
+msgstr "я┐п╨п╟п╤п╦я┌п╣ я┌п╦п© я┌п╣я─п╪п╦п╫п╟п╩п╟ я┤п╣я─п╣п╥ п©п╣я─п╣п╪п╣п╫п╫я┐я▌ п╬п╨я─я┐п╤п╣п╫п╦я▐ TERM"
 
-#: src/mdiff.c:2368 src/wdiff.c:245
-#, fuzzy, c-format
+#: src/mdiff.c:2356 src/wdiff.c:231
+#, c-format
 msgid "could not access the termcap data base"
-msgstr "Невозможно получить доступ к базе данных termcap."
+msgstr "п╫п╣п╡п╬п╥п╪п╬п╤п╫п╬ п©п╬п╩я┐я┤п╦я┌я▄ п╢п╬я│я┌я┐п© п╨ п╠п╟п╥п╣ п╢п╟п╫п╫я▀я┘ termcap"
 
-#: src/mdiff.c:2370 src/wdiff.c:247
-#, fuzzy, c-format
+#: src/mdiff.c:2358 src/wdiff.c:233
+#, c-format
 msgid "terminal type `%s' is not defined"
-msgstr "Тип терминала `%s' не определен."
+msgstr "я┌п╦п© я┌п╣я─п╪п╦п╫п╟п╩п╟ б╚%sб╩ п╫п╣ п╬п©я─п╣п╢п╣п╩я▒п╫"
 
-#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
+#: src/mdiff.c:3709 src/mdiff.c:3725 src/wdiff.c:1167 src/wdiff.c:1183
 #, c-format
-msgid "%s: %d words"
-msgstr "%s: %d слов"
+msgid "%s: %d word"
+msgid_plural "%s: %d words"
+msgstr[0] "%s: %d я│п╩п╬п╡п╬"
+msgstr[1] "%s: %d я│п╩п╬п╡п╟"
+msgstr[2] "%s: %d я│п╩п╬п╡"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1190 src/wdiff.c:1202
+#: src/mdiff.c:3713 src/mdiff.c:3729 src/wdiff.c:1171 src/wdiff.c:1187
 #, c-format
-msgid "  %d %d%% common"
-msgstr "  %d %d%% общих"
+msgid "  %d %.0f%% common"
+msgid_plural "  %d %.0f%% common"
+msgstr[0] "  %d %.0f%% п╬п╠я┴п╦я┘"
+msgstr[1] "  %d %.0f%% п╬п╠я┴п╦я┘"
+msgstr[2] "  %d %.0f%% п╬п╠я┴п╦я┘"
 
-#: src/mdiff.c:3754 src/wdiff.c:1192
+#: src/mdiff.c:3716 src/wdiff.c:1174
 #, c-format
-msgid "  %d %d%% deleted"
-msgstr "  %d %d%% удалено"
+msgid "  %d %.0f%% deleted"
+msgid_plural "  %d %.0f%% deleted"
+msgstr[0] "  %d %.0f%% я┐п╢п╟п╩п╣п╫п╬"
+msgstr[1] "  %d %.0f%% я┐п╢п╟п╩п╣п╫п╬"
+msgstr[2] "  %d %.0f%% я┐п╢п╟п╩п╣п╫п╬"
 
-#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3719 src/mdiff.c:3735 src/wdiff.c:1177 src/wdiff.c:1193
 #, c-format
-msgid "  %d %d%% changed"
-msgstr "  %d %d%% изменено"
+msgid "  %d %.0f%% changed"
+msgid_plural "  %d %.0f%% changed"
+msgstr[0] "  %d %.0f%% п╦п╥п╪п╣п╫п╣п╫п╬"
+msgstr[1] "  %d %.0f%% п╦п╥п╪п╣п╫п╣п╫п╬"
+msgstr[2] "  %d %.0f%% п╦п╥п╪п╣п╫п╣п╫п╬"
 
-#: src/mdiff.c:3766 src/wdiff.c:1204
+#: src/mdiff.c:3732 src/wdiff.c:1190
 #, c-format
-msgid "  %d %d%% inserted"
-msgstr "  %d %d%% вставлено"
+msgid "  %d %.0f%% inserted"
+msgid_plural "  %d %.0f%% inserted"
+msgstr[0] "  %d %.0f%% п╡я│я┌п╟п╡п╩п╣п╫п╬"
+msgstr[1] "  %d %.0f%% п╡я│я┌п╟п╡п╩п╣п╫п╬"
+msgstr[2] "  %d %.0f%% п╡я│я┌п╟п╡п╩п╣п╫п╬"
 
-#: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
+#: src/mdiff.c:3763 src/wdiff.c:1233 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "Попробуйте `%s --help' для получения более подробного описания.\n"
+msgstr "п÷п╬ п╨п╬п╪п╟п╫п╢п╣ б╚%s --helpб╩ п╪п╬п╤п╫п╬ п©п╬п╩я┐я┤п╦я┌я▄ п╢п╬п©п╬п╩п╫п╦я┌п╣п╩я▄п╫я┐я▌ п╦п╫я└п╬я─п╪п╟я├п╦я▌.\n"
 
-#: src/mdiff.c:3799
+#: src/mdiff.c:3768
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff - Исследует несколько файлов и находит в них повторяющиеся\n"
-"последовательности, выводя затем список (возможно, подробный) различий\n"
-"и схожестей.\n"
+"mdiff Б─■ п≤я│я│п╩п╣п╢я┐п╣я┌ п╫п╣я│п╨п╬п╩я▄п╨п╬ я└п╟п╧п╩п╬п╡ п╦ п╫п╟я┘п╬п╢п╦я┌ п╡ п╫п╦я┘ п©п╬п╡я┌п╬я─я▐я▌я┴п╦п╣я│я▐\n"
+"п©п╬я│п╩п╣п╢п╬п╡п╟я┌п╣п╩я▄п╫п╬я│я┌п╦, п╡я▀п╡п╬п╢я▐ п╥п╟я┌п╣п╪ я│п©п╦я│п╬п╨ (п╡п╬п╥п╪п╬п╤п╫п╬, п©п╬п╢я─п╬п╠п╫я▀п╧) я─п╟п╥п╩п╦я┤п╦п╧\n"
+"п╦ я│я┘п╬п╢я│я┌п╡.\n"
 
-#: src/mdiff.c:3804
-#, fuzzy, c-format
+#: src/mdiff.c:3773
+#, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr "Использование: %s [КЛЮЧ]... [ФАЙЛ]...\n"
+msgstr "п≤я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣: %s [п п⌡п╝п╖]Б─╕ [п╓п░п≥п⌡]Б─╕\n"
 
-#: src/mdiff.c:3808
-#, fuzzy
+#: src/mdiff.c:3777
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
 "\n"
-"Режимы работы:\n"
+"п═п╣п╤п╦п╪я▀ я─п╟п╠п╬я┌я▀:\n"
 
-#: src/mdiff.c:3809
-#, fuzzy
+#: src/mdiff.c:3778
 msgid "  -h                     (ignored)\n"
-msgstr "  -h                      (игнорируется)\n"
+msgstr "  -h                     (п╦пЁп╫п╬я─п╦я─я┐п╣я┌я│я▐)\n"
 
-#: src/mdiff.c:3810
-#, fuzzy
+#: src/mdiff.c:3779
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr ""
-"  -v, --verbose           печатать промежуточные результаты в стандартный "
-"поток\n"
-"                          ошибок\n"
+msgstr "  -v, --verbose          п╡я▀п╡п╬п╢ п╨я─п╟я┌п╨п╬п╧ я│я┌п╟я┌п╦я│я┌п╦п╨п╦ п╡ stderr\n"
 
-#: src/mdiff.c:3811 src/unify.c:293
-#, fuzzy
+#: src/mdiff.c:3780 src/unify.c:295
 msgid "      --help             display this help then exit\n"
-msgstr "      --help              показать эту справку и выйти\n"
+msgstr "      --help             п©п╬п╨п╟п╥ я█я┌п╬п╧ я│п©я─п╟п╡п╨п╦ п╦ п╡я▀я┘п╬п╢\n"
 
-#: src/mdiff.c:3812 src/unify.c:294
-#, fuzzy
+#: src/mdiff.c:3781 src/unify.c:296
 msgid "      --version          display program version then exit\n"
-msgstr "      --version           показать информацию о версии и выйти\n"
+msgstr "      --version          п©п╬п╨п╟п╥ п╡п╣я─я│п╦п╦ п©я─п╬пЁя─п╟п╪п╪я▀ п╦ п╡я▀я┘п╬п╢\n"
 
-#: src/mdiff.c:3814
-#, fuzzy
+#: src/mdiff.c:3783
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
 "\n"
-"Форматирование вывода:\n"
+"п╓п╬я─п╪п╟я┌п╦я─п╬п╡п╟п╫п╦п╣ п╡я▀п╡п╬п╢п╟:\n"
 
-#: src/mdiff.c:3815
-#, fuzzy
+#: src/mdiff.c:3784
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr ""
-"  -T, --initial-tab       выводить TAB вместо пробела в начале строки\n"
+msgstr "  -T, --initial-tab       п╡я│я┌п╟п╡п╩я▐я┌я▄ TAB п╡п╪п╣я│я┌п╬ п╫п╟я┤п╟п╩я▄п╫п╬пЁп╬ п©я─п╬п╠п╣п╩п╟\n"
 
-#: src/mdiff.c:3816
-#, fuzzy
+#: src/mdiff.c:3785
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr "  -l, --paginate          разбивать вывод на страницы с помощью `pr'\n"
+msgstr "  -l, --paginate          п╢п╣п╩п╦я┌я▄ п╫п╟ я│я┌я─п╟п╫п╦я├я▀ я│ п©п╬п╪п╬я┴я▄я▌ б╚prб╩\n"
 
-#: src/mdiff.c:3817
-#, fuzzy
+#: src/mdiff.c:3786
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr "  -S, --string[=STRING]   take note of another user STRING\n"
+msgstr "  -S, --string[=п║п╒п═п·п п░]   п╠я─п╟я┌я▄ п╥п╟п╪п╣я┤п╟п╫п╦п╣ п╦п╥ п╢я─я┐пЁп╬п╧ п©п╬п╩я▄п╥п╬п╡п╟я┌п╣п╩я▄я│п╨п╬п╧ п║п╒п═п·п п≤\n"
 
-#: src/mdiff.c:3818
-#, fuzzy
-msgid ""
-"  -V, --show-links        give file and line references in annotations\n"
-msgstr ""
-"  -V, --show-links        писать в аннотациях ссылки на файлы и строки\n"
+#: src/mdiff.c:3787
+msgid "  -V, --show-links        give file and line references in annotations\n"
+msgstr "  -V, --show-links        я┐п╨п╟п╥я▀п╡п╟я┌я▄ я└п╟п╧п╩ п╦ я│я│я▀п╩п╨п╦ п╫п╟ я│я┌я─п╬п╨п╦ п╦п╥ п╟п╫п╫п╬я┌п╟я├п╦я▐я┘\n"
 
-#: src/mdiff.c:3819
-#, fuzzy
+#: src/mdiff.c:3788
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       раскрывать при выводе табуляцию в пробелы\n"
+msgstr "  -t, --expand-tabs       п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ п©я─п╬п╠п╣п╩я▀ п╡п╪п╣я│я┌п╬ я┌п╟п╠я┐п╩я▐я├п╦п╧ п╡ п╡я▀п╡п╬п╢п╣\n"
 
-#: src/mdiff.c:3822
-#, fuzzy
+#: src/mdiff.c:3791
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
 "\n"
-"Отладка:\n"
+"п·я┌п╩п╟п╢п╨п╟:\n"
 
-#: src/mdiff.c:3823
-#, fuzzy
+#: src/mdiff.c:3792
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr ""
-"  -0, --debugging   печатать множество подробностей о том, что происходит\n"
+msgstr "  -0, --debugging   п©п╬п╨п╟п╥я▀п╡п╟я┌я▄ п╪п╫п╬п╤п╣я│я┌п╡п╬ п©п╬п╢я─п╬п╠п╫п╬я│я┌п╣п╧ п╬ я┌п╬п╪, я┤я┌п╬ п©я─п╬п╦я│я┘п╬п╢п╦я┌\n"
 
-#: src/mdiff.c:3826
+#: src/mdiff.c:3795
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"п п╩я▌я┤п╦ п╢п╩я▐ я─п╣п╤п╦п╪п╟ я│я─п╟п╡п╫п╣п╫п╦я▐ п©п╬ я│п╩п╬п╡п╟п╪:\n"
 
-#: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
-#, fuzzy
+#: src/mdiff.c:3796 src/wdiff.c:1251 src/wdiff2.c:190
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted           не выводить удаленные слова\n"
+msgstr "  -1, --no-deleted           п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ я┐п╢п╟п╩я▒п╫п╫я▀п╣ я│п╩п╬п╡п╟\n"
 
-#: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
-#, fuzzy
+#: src/mdiff.c:3797 src/wdiff.c:1252 src/wdiff2.c:191
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          не выводить вставленные слова\n"
+msgstr "  -2, --no-inserted          п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ п╡я│я┌п╟п╡п╩п╣п╫п╫я▀п╣ я│п╩п╬п╡п╟\n"
 
-#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
-#, fuzzy
+#: src/mdiff.c:3798 src/wdiff.c:1253 src/wdiff2.c:192
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            не выводить общие слова\n"
+msgstr "  -3, --no-common            п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ п╬п╠я┴п╦п╣ я│п╩п╬п╡п╟\n"
 
-#: src/mdiff.c:3830
-#, fuzzy
+#: src/mdiff.c:3799
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr ""
-"  -A, --auto-pager           автоматически вызывать программу просмотра\n"
+msgstr "  -A, --auto-pager           п╟п╡я┌п╬п╪п╟я┌п╦я┤п╣я│п╨п╦ п╡я▀п╥я▀п╡п╟я┌я▄ п©я─п╬пЁя─п╟п╪п╪я┐ п©я─п╬я│п╪п╬я┌я─п╟\n"
 
-#: src/mdiff.c:3831
-#, fuzzy
+#: src/mdiff.c:3800
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
-"  -k, --less-mode            режим вывода, удобный при использовании \"less"
-"\"\n"
+msgstr "  -k, --less-mode            я─п╣п╤п╦п╪ п╡я▀п╡п╬п╢п╟ б╚lessб╩\n"
 
-#: src/mdiff.c:3832
-#, fuzzy
+#: src/mdiff.c:3801
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -m, --avoid-wraps          не продолжать поля через новую строку\n"
+msgstr "  -m, --avoid-wraps          п╫п╣ п©я─п╬п╢п╬п╩п╤п╟я┌я▄ п©п╬п╩я▐ я┤п╣я─п╣п╥ п╫п╬п╡я┐я▌ я│я┌я─п╬п╨я┐\n"
 
-#: src/mdiff.c:3833
-#, fuzzy
+#: src/mdiff.c:3802
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr ""
-"  -o, --printer              выделять перечеркиванием, как для принтера\n"
+msgstr "  -o, --printer              п╡я▀п╢п╣п╩я▐я┌я▄ п©п╣я─п╣я┤п╣я─п╨п╦п╡п╟п╫п╦п╣п╪, п╨п╟п╨ п╢п╩я▐ п©я─п╦п╫я┌п╣я─п╟\n"
 
-#: src/mdiff.c:3834
-#, fuzzy
+#: src/mdiff.c:3803
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             выводить с использованием termcap\n"
+msgstr "  -z, --terminal             п╡я▀п╡п╬п╢п╦я┌я▄ я│ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣п╪ termcap\n"
 
-#: src/mdiff.c:3835
-#, fuzzy
-msgid ""
-"  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr "  -K, --no-init-term         как -z, но без строк termcap init/term\n"
-
-#: src/mdiff.c:3836
-#, fuzzy
+#: src/mdiff.c:3804
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
-"  -O, --item-regexp=РВ       сравнивать элементы, определенные регулярным \n"
-"                             выражением РВ\n"
+"  -O, --item-regexp=п═п∙п⌠п▓п╚п═   я│я─п╟п╡п╫п╦п╡п╟я┌я▄ я█п╩п╣п╪п╣п╫я┌я▀, п╬п©я─п╣п╢п╣п╩я▒п╫п╫я▀п╣\n"
+"                             я─п╣пЁя┐п╩я▐я─п╫я▀п╪ п╡я▀я─п╟п╤п╣п╫п╦п╣п╪ п═п∙п⌠п▓п╚п═\n"
 
-#: src/mdiff.c:3837
-#, fuzzy
+#: src/mdiff.c:3805
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode            сравнивать слова, а не строки\n"
+msgstr "  -W, --word-mode            я│я─п╟п╡п╫п╦п╡п╟я┌я▄ я│п╩п╬п╡п╟, п╟ п╫п╣ я│я┌я─п╬п╨п╦\n"
 
-#: src/mdiff.c:4022
-#, fuzzy
+#: src/mdiff.c:3990
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr "Если ФАЙЛ не задан, или задан как -, читает стандартный ввод.\n"
+msgstr "п∙я│п╩п╦ п╓п░п≥п⌡ п╫п╣ п╥п╟п╢п╟п╫, п╦п╩п╦ п╥п╟п╢п╟п╫ п╨п╟п╨ -, я┤п╦я┌п╟п╣я┌я│я▐ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╧ п╡п╡п╬п╢.\n"
 
-#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
-#, fuzzy
+#: src/mdiff.c:3992 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr "Об ошибках сообщайте по адресу <wdiff-bugs@gnu.org>.\n"
+msgstr "п·п╠ п╬я┬п╦п╠п╨п╟я┘ я│п╬п╬п╠я┴п╟п╧я┌п╣ п©п╬ п╟п╢я─п╣я│я┐ <wdiff-bugs@gnu.org>.\n"
 
-#: src/mdiff.c:4035
+#: src/mdiff.c:4004
 #, c-format
 msgid "ignoring option %s (not implemented)"
-msgstr ""
+msgstr "п╨п╩я▌я┤ %s п╦пЁп╫п╬я─п╦я─я┐п╣я┌я│я▐ (п╫п╣ я─п╣п╟п╩п╦п╥п╬п╡п╟п╫)"
 
-#: src/mdiff.c:4332
-#, fuzzy, c-format
+#: src/mdiff.c:4300
+#, c-format
 msgid "cannot use -z, termcap not available"
-msgstr "Невозможно применить -z, termcap недоступна."
+msgstr "п╫п╣п╡п╬п╥п╪п╬п╤п╫п╬ п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ -z, termcap п╫п╣п╢п╬я│я┌я┐п©п╫п╟"
 
-#: src/mdiff.c:4371
-#, fuzzy, c-format
+#: src/mdiff.c:4339
+#, c-format
 msgid "word merging for two files only (so far)"
-msgstr "Объединение по словам работает только для двух файлов (пока)."
+msgstr "п╬п╠я┼п╣п╢п╦п╫п╣п╫п╦п╣ п©п╬ я│п╩п╬п╡п╟п╪ я─п╟п╠п╬я┌п╟п╣я┌ я┌п╬п╩я▄п╨п╬ п╢п╩я▐ п╢п╡я┐я┘ я└п╟п╧п╩п╬п╡ (п©п╬п╨п╟)"
 
-#: src/mdiff.c:4387
-#, fuzzy
+#: src/mdiff.c:4355
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:134
+#: src/mdiff.c:4358 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Это свободная программа; подробности об условиях распространения смотрите\n"
-"в исходном тексте.  Мы НЕ предоставляем гарантий; даже гарантий\n"
-"КОММЕРЧЕСКОЙ ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.\n"
+"п╜я┌п╬ я│п╡п╬п╠п╬п╢п╫п╟я▐ п©я─п╬пЁя─п╟п╪п╪п╟; п©п╬п╢я─п╬п╠п╫п╬я│я┌п╦ п╬п╠ я┐я│п╩п╬п╡п╦я▐я┘ я─п╟я│п©я─п╬я│я┌я─п╟п╫п╣п╫п╦я▐ я│п╪п╬я┌я─п╦я┌п╣\n"
+"п╡ п╦я│я┘п╬п╢п╫п╬п╪ я┌п╣п╨я│я┌п╣.  п°я▀ п²п∙ п©я─п╣п╢п╬я│я┌п╟п╡п╩я▐п╣п╪ пЁп╟я─п╟п╫я┌п╦п╧; п╢п╟п╤п╣ пЁп╟я─п╟п╫я┌п╦п╧\n"
+"п п·п°п°п∙п═п╖п∙п║п п·п≥ п╕п∙п²п²п·п║п╒п≤ п╦п╩п╦ п÷п═п≤п⌠п·п■п²п·п║п╒п≤ п■п⌡п╞ п п·п²п п═п∙п╒п²п·п≥ п╕п∙п⌡п≤.\n"
 
-#: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
+#: src/mdiff.c:4361 src/wdiff.c:1398 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 msgstr ""
 "\n"
-"Автор программы -- Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+"п░п╡я┌п╬я─ п©я─п╬пЁя─п╟п╪п╪я▀ -- Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4431
-#, fuzzy, c-format
+#: src/mdiff.c:4396
+#, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
-msgstr "Ключи -123RSYZ имеют смысл, только если заданы два входных файла."
+msgstr "п╨п╩я▌я┤п╦ -123RSYZ п╦п╪п╣я▌я┌ я│п╪я▀я│п╩, я┌п╬п╩я▄п╨п╬ п╣я│п╩п╦ п╥п╟п╢п╟п╫я▀ п╢п╡п╟ п╡я┘п╬п╢п╫я▀я┘ я└п╟п╧п╩п╟"
 
-#: src/unify.c:144
-#, fuzzy, c-format
+#: src/pipes.c:47
+#, c-format
+msgid "error redirecting stream"
+msgstr "п╬я┬п╦п╠п╨п╟ п©п╣я─п╣п╫п╟п©я─п╟п╡п╩п╣п╫п╦я▐ п©п╬я┌п╬п╨п╟"
+
+#: src/pipes.c:51
+#, c-format
+msgid "failed to execute %s"
+msgstr "п╬я┬п╦п╠п╨п╟ п©я─п╦ п╡я▀п©п╬п╩п╫п╣п╫п╦п╦ %s"
+
+#: src/unify.c:145
+#, c-format
 msgid "could not find a name for the diff at line %ld"
-msgstr "Невозможно найти имя файла в строке %ld"
+msgstr "п╫п╣п╡п╬п╥п╪п╬п╤п╫п╬ п╫п╟п╧я┌п╦ п╦п╪я▐ я└п╟п╧п╩п╟ я─п╟п╥п╩п╦я┤п╦п╧ п╡ я│я┌я─п╬п╨п╣ %ld"
 
-#: src/unify.c:273
-#, fuzzy, c-format
+#: src/unify.c:274
+#, c-format
 msgid "try `%s --help' for more information\n"
-msgstr "Попробуйте `%s --help' для получения более подробного описания.\n"
+msgstr "п©п╬ п╨п╬п╪п╟п╫п╢п╣ б╚%s --helpб╩ п╪п╬п╤п╫п╬ п©п╬п╩я┐я┤п╦я┌я▄ п╢п╬п©п╬п╩п╫п╦я┌п╣п╩я▄п╫я┐я▌ п╦п╫я└п╬я─п╪п╟я├п╦я▌\n"
 
-#: src/unify.c:277
+#: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr ""
-"unify - Преобразует вывод diff из контекстного формата в объединенный и\n"
-"наоборот.\n"
+msgstr "unify Б─■ п÷я─п╣п╬п╠я─п╟п╥я┐п╣я┌ п╡я▀п╡п╬п╢ diff п╦п╥ п╨п╬п╫я┌п╣п╨я│я┌п╫п╬пЁп╬ я└п╬я─п╪п╟я┌п╟ п╡ п╬п╠я┼п╣п╢п╦п╫я▒п╫п╫я▀п╧ п╦ п╫п╟п╬п╠п╬я─п╬я┌.\n"
 
-#: src/unify.c:281
-#, fuzzy, c-format
+#: src/unify.c:283
+#, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr "Использование: %s [КЛЮЧ]... [ФАЙЛ]\n"
-
-#: src/unify.c:284
-#, fuzzy
-msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr "  -c, --context-diffs     выводить контекстные различия\n"
-
-#: src/unify.c:285
-#, fuzzy
-msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr ""
-"  -e, --echo-comments     выводить комментарии в стандартный поток ошибок\n"
+msgstr "п≤я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣: %s [п п⌡п╝п╖]Б─╕ [п╓п░п≥п⌡]\n"
 
 #: src/unify.c:286
-#, fuzzy
-msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs         выводить в различия устаревшей форме\n"
+msgid "  -c, --context-diffs    force output to context diffs\n"
+msgstr "  -c, --context-diffs    п╡я▀п╡п╬п╢п╦я┌я▄ п╨п╬п╫я┌п╣п╨я│я┌п╫я▀п╣ я─п╟п╥п╩п╦я┤п╦я▐\n"
 
 #: src/unify.c:287
-#, fuzzy
-msgid "  -p, --patch-format     generate patch format\n"
-msgstr "  -p, --patch-format      выводить в формате patch\n"
+msgid "  -e, --echo-comments    echo comments to standard error\n"
+msgstr "  -e, --echo-comments    п╡я▀п╡п╬п╢п╦я┌я▄ п╨п╬п╪п╪п╣п╫я┌п╟я─п╦п╦ п╡ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╧ п©п╬я┌п╬п╨ п╬я┬п╦п╠п╬п╨\n"
 
 #: src/unify.c:288
-#, fuzzy
-msgid "  -P                     same as -p\n"
-msgstr "  -P                      синоним -p\n"
+msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
+msgstr "  -o, --old-diffs        п╡я▀п╡п╬п╢п╦я┌я▄ п╡ я─п╟п╥п╩п╦я┤п╦я▐ я┐я│я┌п╟я─п╣п╡я┬п╣п╧ я└п╬я─п╪п╣\n"
 
 #: src/unify.c:289
-#, fuzzy
-msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr "  -s, --strip-comments    удалять строки комментариев\n"
+msgid "  -p, --patch-format     generate patch format\n"
+msgstr "  -p, --patch-format     п╡я▀п╡п╬п╢п╦я┌я▄ п╡ я└п╬я─п╪п╟я┌п╣ patch\n"
 
 #: src/unify.c:290
-#, fuzzy
-msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr "  -u, --unidiffs          выводить объединенные различия\n"
+msgid "  -P                     same as -p\n"
+msgstr "  -P                     я│п╦п╫п╬п╫п╦п╪ -p\n"
 
 #: src/unify.c:291
-#, fuzzy
-msgid "  -U                     same as -p and -u\n"
-msgstr "  -U                      синоним -p -u\n"
+msgid "  -s, --strip-comments   strip comment lines\n"
+msgstr "  -s, --strip-comments   я┐п╢п╟п╩я▐я┌я▄ я│я┌я─п╬п╨п╦ п╨п╬п╪п╪п╣п╫я┌п╟я─п╦п╣п╡\n"
 
 #: src/unify.c:292
-#, fuzzy
+msgid "  -u, --unidiffs         force output to unidiffs\n"
+msgstr "  -u, --unidiffs         п╡я▀п╡п╬п╢п╦я┌я▄ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫я▀п╣ я─п╟п╥п╩п╦я┤п╦я▐\n"
+
+#: src/unify.c:293
+msgid "  -U                     same as -p and -u\n"
+msgstr "  -U                     я│п╦п╫п╬п╫п╦п╪ -p п╦ -u\n"
+
+#: src/unify.c:294
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
-"  -=, --use-equals        заменять пробелы в объединенных различиях знаками\n"
-"                          равенства\n"
+msgstr "  -=, --use-equals       п╥п╟п╪п╣п╫я▐я┌я▄ п©я─п╬п╠п╣п╩я▀ п╡ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫я▀я┘ я─п╟п╥п╩п╦я┤п╦я▐я┘ п╥п╫п╟п╨п╬п╪ =\n"
 
-#: src/unify.c:296
-#, fuzzy
+#: src/unify.c:298
 msgid "If FILE is not specified, read standard input.\n"
-msgstr "Если ФАЙЛ не задан или задан как -, читает стандартный ввод\n"
+msgstr "п∙я│п╩п╦ п╓п░п≥п⌡ п╫п╣ п╥п╟п╢п╟п╫, я┤п╦я┌п╟п╣я┌я│я▐ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╧ п╡п╡п╬п╢.\n"
 
-#: src/unify.c:388
-#, fuzzy, c-format
+#: src/unify.c:389
+#, c-format
 msgid "unable to open `%s'"
-msgstr "Невозможно открыть `%s'"
+msgstr "п╫п╣п╡п╬п╥п╪п╬п╤п╫п╬ п╬я┌п╨я─я▀я┌я▄ б╚%sб╩"
 
-#: src/unify.c:394
-#, fuzzy, c-format
+#: src/unify.c:395
+#, c-format
 msgid "only one filename allowed"
-msgstr "Можно задать только один файл"
+msgstr "п╪п╬п╤п╫п╬ п╥п╟п╢п╟я┌я▄ я┌п╬п╩я▄п╨п╬ п╬п╢п╫п╬ п╦п╪я▐ я└п╟п╧п╩п╟"
 
-#: src/unify.c:403
+#: src/unify.c:404
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -433,49 +454,55 @@ msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:411
+#: src/unify.c:410
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
 msgstr ""
 "\n"
-"Автор программы -- Wayne Davison <davison@borland.com>.\n"
+"п░п╡я┌п╬я─ п©я─п╬пЁя─п╟п╪п╪я▀ Б─■ пёя█п╧п╫ п■я█п╡п╦я│п╬п╫ (Wayne Davison) <davison@borland.com>.\n"
 
-#: src/unify.c:550
-#, fuzzy, c-format
+#: src/unify.c:548
+#, c-format
 msgid "invalid unified diff header at line %ld"
-msgstr "Неверный заголовок объединенного фрагмента различия в строке %ld"
+msgstr "п╫п╣п╡п╣я─п╫я▀п╧ п╥п╟пЁп╬п╩п╬п╡п╬п╨ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫п╬пЁп╬ я└я─п╟пЁп╪п╣п╫я┌п╟ я─п╟п╥п╩п╦я┤п╦я▐ п╡ я│я┌я─п╬п╨п╣ %ld"
 
-#: src/unify.c:592
-#, fuzzy, c-format
+#: src/unify.c:590
+#, c-format
 msgid "malformed unified diff at line %ld"
-msgstr "Неправильная объединенная запись различия в строке %ld"
+msgstr "п╫п╣п©я─п╟п╡п╦п╩я▄п╫п╟я▐ п╥п╟п©п╦я│я▄ п╬п╠я┼п╣п╢п╦п╫я▒п╫п╫п╬пЁп╬ я─п╟п╥п╩п╦я┤п╦я▐ п╡ я│я┌я─п╬п╨п╣ %ld"
 
-#: src/unify.c:623
-#, fuzzy, c-format
+#: src/unify.c:620
+#, c-format
 msgid "context diff missing `old' header at line %ld"
-msgstr ""
-"Пропущен заголовок `старой части' контекстного фрагмента различия в строке %"
-"ld"
+msgstr "п©я─п╬п©я┐я┴п╣п╫ п╥п╟пЁп╬п╩п╬п╡п╬п╨ б╚я│я┌п╟я─п╬п╧ я┤п╟я│я┌п╦б╩ п╨п╬п╫я┌п╣п╨я│я┌п╫п╬пЁп╬ я└я─п╟пЁп╪п╣п╫я┌п╟ я─п╟п╥п╩п╦я┤п╦я▐ п╡ я│я┌я─п╬п╨п╣ %ld"
 
-#: src/unify.c:667 src/unify.c:686 src/unify.c:757 src/unify.c:775
-#, fuzzy, c-format
+#: src/unify.c:664 src/unify.c:683 src/unify.c:753 src/unify.c:771
+#, c-format
 msgid "malformed context diff at line %ld"
-msgstr "Неправильная контекстная запись различия в строке %ld"
+msgstr "п╫п╣п©я─п╟п╡п╦п╩я▄п╫п╟я▐ п╥п╟п©п╦я│я▄ п╨п╬п╫я┌п╣п╨я│я┌п╫п╬пЁп╬ я─п╟п╥п╩п╦я┤п╦я▐ п╡ я│я┌я─п╬п╨п╣ %ld"
 
-#: src/unify.c:722
-#, fuzzy, c-format
+#: src/unify.c:718
+#, c-format
 msgid "context diff missing `new' header at line %ld"
-msgstr ""
-"Пропущен заголовок `новой части' контекстного фрагмента различия в строке %ld"
+msgstr "п©я─п╬п©я┐я┴п╣п╫ п╥п╟пЁп╬п╩п╬п╡п╬п╨ б╚п╫п╬п╡п╬п╧ я┤п╟я│я┌п╦б╩ я└я─п╟пЁп╪п╣п╫я┌п╟ п╨п╬п╫я┌п╣п╨я│я┌п╫п╬пЁп╬ я─п╟п╥п╩п╦я┤п╦я▐ п╡ я│я┌я─п╬п╨п╣ %ld"
 
-#: src/wdiff.c:606 src/wdiff.c:725
+#: src/wdiff.c:582 src/wdiff.c:701
 #, c-format
 msgid "no suitable temporary directory exists"
-msgstr ""
+msgstr "п©п╬п╢я┘п╬п╢я▐я┴п╦п╧ п╡я─п╣п╪п╣п╫п╫я▀п╧ п╨п╟я┌п╟п╩п╬пЁ п╫п╣ я│я┐я┴п╣я│я┌п╡я┐п╣я┌"
 
-#: src/wdiff.c:1222 src/wdiff2.c:110
-#, fuzzy
+#: src/wdiff.c:1040
+#, c-format
+msgid "%s: input program killed by signal %d\n"
+msgstr "%s: п©я─п╬пЁя─п╟п╪п╪п╟ п╡п╡п╬п╢п╟ п╢п╟п╫п╫я▀я┘ я┐п╠п╦я┌п╟ п©п╬ я│п╦пЁп╫п╟п╩я┐ %d\n"
+
+#: src/wdiff.c:1145
+#, c-format
+msgid "%s: output program killed by signal %d\n"
+msgstr "%s: п©я─п╬пЁя─п╟п╪п╪п╟ п╡я▀п╡п╬п╢п╟ п╢п╟п╫п╫я▀я┘ я┐п╠п╦я┌п╟ п©п╬ я│п╦пЁп╫п╟п╩я┐ %d\n"
+
+#: src/wdiff.c:1210 src/wdiff2.c:109
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -490,202 +517,173 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"Это свободная программа; вы можете распространять и/или изменять ее при\n"
-"соблюдении условий Универсальной Общественной Лицензии GNU, опубликованной\n"
-"Фондом Свободного Программного Обеспечения, версии 2 или любой более "
-"поздней\n"
-"(по вашему усмотрению).\n"
+"п╜я┌п╬ я│п╡п╬п╠п╬п╢п╫п╟я▐ п©я─п╬пЁя─п╟п╪п╪п╟; п╡я▀ п╪п╬п╤п╣я┌п╣ я─п╟я│п©я─п╬я│я┌я─п╟п╫я▐я┌я▄ п╦/п╦п╩п╦ п╦п╥п╪п╣п╫я▐я┌я▄ п╣я▒ п©я─п╦\n"
+"я│п╬п╠п╩я▌п╢п╣п╫п╦п╦ я┐я│п╩п╬п╡п╦п╧ пёп╫п╦п╡п╣я─я│п╟п╩я▄п╫п╬п╧ п·п╠я┴п╣я│я┌п╡п╣п╫п╫п╬п╧ п⌡п╦я├п╣п╫п╥п╦п╦ GNU, п╬п©я┐п╠п╩п╦п╨п╬п╡п╟п╫п╫п╬п╧\n"
+"п╓п╬п╫п╢п╬п╪ п║п╡п╬п╠п╬п╢п╫п╬пЁп╬ п÷я─п╬пЁя─п╟п╪п╪п╫п╬пЁп╬ п·п╠п╣я│п©п╣я┤п╣п╫п╦я▐, п╡п╣я─я│п╦п╦ 3 п╦п╩п╦ п╩я▌п╠п╬п╧ п╠п╬п╩п╣п╣ п©п╬п╥п╢п╫п╣п╧\n"
+"(п©п╬ п╡п╟я┬п╣п╪я┐ я┐я│п╪п╬я┌я─п╣п╫п╦я▌).\n"
 "\n"
-"Эта программа распространяется в надежде, что она будет полезной, но БЕЗ\n"
-"КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий КОММЕРЧЕСКОЙ "
-"ЦЕННОСТИ\n"
-"или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.  Для получения более подробной "
-"информации\n"
-"смотрите Универсальную Общественную Лицензию GNU.\n"
+"п╜я┌п╟ п©я─п╬пЁя─п╟п╪п╪п╟ я─п╟я│п©я─п╬я│я┌я─п╟п╫я▐п╣я┌я│я▐ п╡ п╫п╟п╢п╣п╤п╢п╣, я┤я┌п╬ п╬п╫п╟ п╠я┐п╢п╣я┌ п©п╬п╩п╣п╥п╫п╬п╧, п╫п╬ п▒п∙п≈\n"
+"п п░п п≤п╔-п⌡п≤п▒п· п⌠п░п═п░п²п╒п≤п≥; п╢п╟п╤п╣ п╠п╣п╥ п©п╬п╢я─п╟п╥я┐п╪п╣п╡п╟п╣п╪я▀я┘ пЁп╟я─п╟п╫я┌п╦п╧ п п·п°п°п∙п═п╖п∙п║п п·п≥ п╕п∙п²п²п·п║п╒п≤\n"
+"п╦п╩п╦ п÷п═п≤п⌠п·п■п²п·п║п╒п≤ п■п⌡п╞ п п·п²п п═п∙п╒п²п·п≥ п╕п∙п⌡п≤. п■п╩я▐ п©п╬п╩я┐я┤п╣п╫п╦я▐ п╠п╬п╩п╣п╣ п©п╬п╢я─п╬п╠п╫п╬п╧ п╦п╫я└п╬я─п╪п╟я├п╦п╦\n"
+"я│п╪п╬я┌я─п╦я┌п╣ пёп╫п╦п╡п╣я─я│п╟п╩я▄п╫я┐я▌ п·п╠я┴п╣я│я┌п╡п╣п╫п╫я┐я▌ п⌡п╦я├п╣п╫п╥п╦я▌ GNU.\n"
 "\n"
-"Вы должны были получить копию Универсальной Общественной Лицензии GNU вместе "
-"с\n"
-"этой программой, если нет, напишите Free Software Foundation, Inc., 59 "
-"Temple\n"
-"Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"п▓я▀ п╢п╬п╩п╤п╫я▀ п╠я▀п╩п╦ п©п╬п╩я┐я┤п╦я┌я▄ п╨п╬п©п╦я▌ пёп╫п╦п╡п╣я─я│п╟п╩я▄п╫п╬п╧ п·п╠я┴п╣я│я┌п╡п╣п╫п╫п╬п╧ п⌡п╦я├п╣п╫п╥п╦п╦ GNU п╡п╪п╣я│я┌п╣ я│\n"
+"я█я┌п╬п╧ п©я─п╬пЁя─п╟п╪п╪п╬п╧; п╣я│п╩п╦ п╫п╣я┌, я┌п╬ я│п╪п╬я┌я─п╦я┌п╣ <http://www.gnu.org/licenses/>.\n"
 
-#: src/wdiff.c:1250
+#: src/wdiff.c:1238
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr "wdiff - Сравнивает слова в двух файлах и сообщает о различиях.\n"
+msgstr "wdiff Б─■ п║я─п╟п╡п╫п╦п╡п╟п╣я┌ я│п╩п╬п╡п╟ п╡ п╢п╡я┐я┘ я└п╟п╧п╩п╟я┘ п╦ я│п╬п╬п╠я┴п╟п╣я┌ п╬ я─п╟п╥п╩п╦я┤п╦я▐я┘.\n"
 
-#: src/wdiff.c:1254
-#, fuzzy, c-format
+#: src/wdiff.c:1242
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
+"   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Использование: %s [КЛЮЧ]... ФАЙЛ1 ФАЙЛ2\n"
-"               %s -d [КЛЮЧ]... [ФАЙЛ]\n"
+"п≤я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣: %s [п п⌡п╝п╖]Б─╕ п╓п░п≥п⌡1 п╓п░п≥п⌡2\n"
+"   п╦п╩п╦: %s -d [п п⌡п╝п╖]Б─╕ [п╓п░п≥п⌡]\n"
 
-#: src/wdiff.c:1259 src/wdiff2.c:191
-msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+#: src/wdiff.c:1247 src/wdiff2.c:186
+msgid "Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr "п░я─пЁя┐п╪п╣п╫я┌я▀, п╬п╠я▐п╥п╟я┌п╣п╩я▄п╫я▀п╣ п╢п╩я▐ п╢п╩п╦п╫п╫я▀я┘ п╨п╩я▌я┤п╣п╧, п╬п╠я▐п╥п╟я┌п╣п╩я▄п╫я▀ п╦ п╢п╩я▐ п╨п╬я─п╬я┌п╨п╦я┘.\n"
 
-#: src/wdiff.c:1262 src/wdiff2.c:194
-#, fuzzy
+#: src/wdiff.c:1250 src/wdiff2.c:189
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr ""
-"  -C, --copyright            показать информацию об авторских правах и "
-"выйти\n"
+msgstr "  -C, --copyright            п©п╬п╨п╟п╥п╟я┌я▄ п╦п╫я└п╬я─п╪п╟я├п╦я▌ п╬п╠ п╟п╡я┌п╬я─я│п╨п╦я┘ п©я─п╟п╡п╟я┘ п╦ п╡я▀п╧я┌п╦\n"
 
-# ? "  -K, --no-init-term          как -z, но без строк termcap init/term"
-# ? "  -K, --no-init-term         как -t, но без строк termcap init/term"
-#: src/wdiff.c:1263 src/wdiff2.c:195
-msgid ""
-"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
-
-#: src/wdiff.c:1267 src/wdiff2.c:199
-#, fuzzy
+#: src/wdiff.c:1254 src/wdiff2.c:193
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr ""
-"  -a, --auto-pager           автоматически вызывать программу просмотра\n"
+msgstr "  -a, --auto-pager           п╟п╡я┌п╬п╪п╟я┌п╦я┤п╣я│п╨п╦ п╡я▀п╥я▀п╡п╟я┌я▄ п©я─п╬пЁя─п╟п╪п╪я┐ п©я─п╬я│п╪п╬я┌я─п╟\n"
 
-#: src/wdiff.c:1268
+#: src/wdiff.c:1255
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
+"  -d, --diff-input           п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ п╬п╢п╦п╫п╬я┤п╫я▀п╧ п╬п╠я┼п╣п╢п╦п╫я▒п╫п╫я▀п╧\n"
+"                             я└я─п╟пЁп╪п╣п╫я┌ я─п╟п╥п╩п╦я┤п╦я▐ п╡ п╡п╡п╬п╢п╣\n"
 
-#: src/wdiff.c:1269 src/wdiff2.c:200
-#, fuzzy
+#: src/wdiff.c:1256 src/wdiff2.c:194
 msgid "  -h, --help                 display this help then exit\n"
-msgstr "  -h, --help                 показать эту справку и выйти\n"
+msgstr "  -h, --help                 п©п╬п╨п╟п╥п╟я┌я▄ я█я┌я┐ я│п©я─п╟п╡п╨я┐ п╦ п╡я▀п╧я┌п╦\n"
 
-# ? "  -i, --ignore-case                    игнорировать различия в регистре букв"
-# ? "  -i, --ignore-case          игнорировать регистр букв"
-# ? "  -i, --ignore-case         не различать заглавные и строчные буквы"
-#: src/wdiff.c:1270 src/wdiff2.c:201
+#: src/wdiff.c:1257 src/wdiff2.c:195
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr ""
+msgstr "  -i, --ignore-case          п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я─п╣пЁп╦я│я┌я─ п╠я┐п╨п╡ п©я─п╦ я│я─п╟п╡п╫п╣п╫п╦п╦\n"
 
-#: src/wdiff.c:1271 src/wdiff2.c:202
-#, fuzzy
+#: src/wdiff.c:1258 src/wdiff2.c:196
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr ""
-"  -l, --less-mode            режим вывода, удобный при использовании less\n"
+msgstr "  -l, --less-mode            я─п╣п╤п╦п╪ п╡я▀п╡п╬п╢п╟ б╚lessб╩\n"
 
-#: src/wdiff.c:1272 src/wdiff2.c:203
-#, fuzzy
+#: src/wdiff.c:1259 src/wdiff2.c:197
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr "  -n, --avoid-wraps          не продолжать поля через новую строку\n"
+msgstr "  -n, --avoid-wraps          п╫п╣ п©я─п╬п╢п╬п╩п╤п╟я┌я▄ п©п╬п╩я▐ я┤п╣я─п╣п╥ п╫п╬п╡я┐я▌ я│я┌я─п╬п╨я┐\n"
 
-#: src/wdiff.c:1273 src/wdiff2.c:204
-#, fuzzy
+#: src/wdiff.c:1260 src/wdiff2.c:198
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              выделять подчеркиванием части вывода\n"
+msgstr "  -p, --printer              п╡я▀п╢п╣п╩я▐я┌я▄ п©п╣я─п╣я┤п╣я─п╨п╦п╡п╟п╫п╦п╣п╪, п╨п╟п╨ п╢п╩я▐ п©я─п╦п╫я┌п╣я─п╟\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:206
-#, fuzzy
-msgid ""
-"  -s, --statistics           say how many words deleted, inserted etc.\n"
+#: src/wdiff.c:1261 src/wdiff2.c:200
+msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
-"  -s, --statistics           показать сколько слов было удалено, вставлено и "
-"т.д\n"
+"  -s, --statistics           п©п╬п╨п╟п╥п╟я┌я▄ я│п╨п╬п╩я▄п╨п╬ я│п╩п╬п╡ п╠я▀п╩п╬ я┐п╢п╟п╩п╣п╫п╬,\n"
+"                             п╡я│я┌п╟п╡п╩п╣п╫п╬ п╦ я┌.п╢.\n"
 
-#: src/wdiff.c:1275 src/wdiff2.c:207
-#, fuzzy
+#: src/wdiff.c:1262 src/wdiff2.c:201
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr "  -t, --terminal             выводить с использованием termcap\n"
+msgstr "  -t, --terminal             п╡я▀п╡п╬п╢п╦я┌я▄ я│ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣п╪ termcap\n"
 
-#: src/wdiff.c:1276 src/wdiff2.c:208
-#, fuzzy
+#: src/wdiff.c:1263 src/wdiff2.c:202
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version              показать информацию о версии и выйти\n"
+msgstr "  -v, --version              п©п╬п╨п╟п╥ п╡п╣я─я│п╦п╦ п©я─п╬пЁя─п╟п╪п╪я▀ п╦ п╡я▀я┘п╬п╢\n"
 
-#: src/wdiff.c:1277 src/wdiff2.c:209
-#, fuzzy
-msgid ""
-"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr ""
-"  -w, --start-delete=СТРОКА  СТРОКА, задающая начало удаляемой области\n"
+#: src/wdiff.c:1264 src/wdiff2.c:203
+msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr "  -w, --start-delete=п║п╒п═п·п п░  п║п╒п═п·п п░, п╥п╟п╢п╟я▌я┴п╟я▐ п╫п╟я┤п╟п╩п╬ я┐п╢п╟п╩я▐п╣п╪п╬п╧ п╬п╠п╩п╟я│я┌п╦\n"
 
-#: src/wdiff.c:1278 src/wdiff2.c:210
-#, fuzzy
+#: src/wdiff.c:1265 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr ""
-"  -x, --end-delete=СТРОКА    СТРОКА, задающая конец удаляемой области\n"
+msgstr "  -x, --end-delete=п║п╒п═п·п п░    п║п╒п═п·п п░, п╥п╟п╢п╟я▌я┴п╟я▐ п╨п╬п╫п╣я├ я┐п╢п╟п╩я▐п╣п╪п╬п╧ п╬п╠п╩п╟я│я┌п╦\n"
 
-#: src/wdiff.c:1279 src/wdiff2.c:211
-#, fuzzy
-msgid ""
-"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr ""
-"  -y, --start-insert=СТРОКА  СТРОКА, задающая начало вставляемой области\n"
+#: src/wdiff.c:1266 src/wdiff2.c:205
+msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr "  -y, --start-insert=п║п╒п═п·п п░  п║п╒п═п·п п░, п╥п╟п╢п╟я▌я┴п╟я▐ п╫п╟я┤п╟п╩п╬ п╡я│я┌п╟п╡п╩я▐п╣п╪п╬п╧ п╬п╠п╩п╟я│я┌п╦\n"
 
-#: src/wdiff.c:1280 src/wdiff2.c:212
-#, fuzzy
+#: src/wdiff.c:1267 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr ""
-"  -z, --end-insert=СТРОКА    СТРОКА, задающая конец вставляемой области\n"
+msgstr "  -z, --end-insert=п║п╒п═п·п п░    п║п╒п═п·п п░, п╥п╟п╢п╟я▌я┴п╟я▐ п╨п╬п╫п╣я├ п╡я│я┌п╟п╡п╩я▐п╣п╪п╬п╧ п╬п╠п╩п╟я│я┌п╦\n"
 
-#: src/wdiff.c:1398
-#, fuzzy, c-format
+#: src/wdiff.c:1386
+#, c-format
 msgid "cannot use -t, termcap not available"
-msgstr "Невозможно применить -t, termcap недоступна."
+msgstr "п╫п╣п╡п╬п╥п╪п╬п╤п╫п╬ п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ -t, termcap п╫п╣п╢п╬я│я┌я┐п©п╫п╟"
 
-#: src/wdiff.c:1403
-#, fuzzy
+#: src/wdiff.c:1391
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
+"Foundation, Inc.\n"
 
-#: src/wdiff.c:1451 src/wdiff.c:1469
-#, fuzzy, c-format
+#: src/wdiff.c:1436 src/wdiff.c:1454
+#, c-format
 msgid "too many file arguments"
-msgstr "Пропущены аргументы, задающие файлы"
+msgstr "я│п╩п╦я┬п╨п╬п╪ п╪п╫п╬пЁп╬ п╟я─пЁя┐п╪п╣п╫я┌п╬п╡, п╥п╟п╢п╟я▌я┴п╦я┘ я└п╟п╧п╩я▀"
 
-#: src/wdiff.c:1464 src/wdiff2.c:323
-#, fuzzy, c-format
+#: src/wdiff.c:1449 src/wdiff2.c:320
+#, c-format
 msgid "missing file arguments"
-msgstr "Пропущены аргументы, задающие файлы"
+msgstr "п©я─п╬п©я┐я┴п╣п╫я▀ п╟я─пЁя┐п╪п╣п╫я┌я▀, п╥п╟п╢п╟я▌я┴п╦п╣ я└п╟п╧п╩я▀"
 
-#: src/wdiff2.c:130
-#, fuzzy
+#: src/wdiff2.c:128
 msgid ""
 "\n"
 "Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 
-#: src/wdiff2.c:182
+#: src/wdiff2.c:177
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
+"wdiff Б─■ п▓я▀я┤п╦я│п╩я▐п╣я┌ я─п╟п╥п╫п╦я├я┐ п╡ я│п╩п╬п╡п╟я┘ п©п╬я│я─п╣п╢я│я┌п╡п╬п╪ п╡п╫я┐я┌я─п╣п╫п╫п╣пЁп╬ п╥п╟п©я┐я│п╨п╟ б╚mdiff -Wб╩.\n"
+"п╜я┌п╟ п©я─п╬пЁя─п╟п╪п╪п╟ я│я┐я┴п╣я│я┌п╡я┐п╣я┌ я┌п╬п╩я▄п╨п╬ п╢п╩я▐ п©п╬п╢п╢п╣я─п╤п╨п╦ я┐я│я┌п╟я─п╣п╡я┬п╣пЁп╬ я│п╦п╫я┌п╟п╨я│п╦я│п╟ б╚wdiffб╩.\n"
 
-#: src/wdiff2.c:187
-#, fuzzy, c-format
+#: src/wdiff2.c:182
+#, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "Использование: %s [КЛЮЧ]... ФАЙЛ1 ФАЙЛ2\n"
+msgstr "п≤я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣: %s [п п⌡п╝п╖]Б─╕ п╓п░п≥п⌡1 п╓п░п≥п⌡2\n"
 
-#: src/wdiff2.c:205
+#: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
+msgstr "  -q, --quiet                п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ я│п╬п╬п╠я┴п╣п╫п╦п╣ п╬ п╡я▀п╥п╬п╡п╣ б╚mdiffб╩\n"
 
-#: src/wdiff2.c:214
+#: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
+msgstr "п╜я┌п╟ п©я─п╬пЁя─п╟п╪п╪п╟ я┌п╟п╨п╤п╣ п©п╬п╨п╟п╥я▀п╡п╟п╣я┌ п╨п╟п╨ п╪п╬п╤п╫п╬ п╡я▀п╥п╡п╟я┌я▄ б╚mdiffб╩ я│п╟п╪п╬я│я┌п╬я▐я┌п╣п╩я▄п╫п╬.\n"
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:335
-#, fuzzy, c-format
+#: src/wdiff2.c:332
+#, c-format
 msgid "Launching `%s"
-msgstr "Чтение %s"
+msgstr "п≈п╟п©я┐я│п╨п╟п╣я┌я│я▐ б╚%s"
 
-#: src/wdiff2.c:338
+#: src/wdiff2.c:335
 #, c-format
 msgid "'\n"
-msgstr ""
+msgstr "б╩\n"
+
+#~ msgid "Read summary: %d files, %d items\n"
+#~ msgstr "п▓я│п╣пЁп╬ п©я─п╬я┤п╦я┌п╟п╫п╬: я└п╟п╧п╩п╬п╡: %d, я█п╩п╣п╪п╣п╫я┌п╬п╡: %d\n"
+
+#~ msgid "Work summary: %d clusters, %d members\n"
+#~ msgstr "п▓я│п╣пЁп╬ п╫п╟п╧п╢п╣п╫п╬: п╨п╩п╟я│я┌п╣я─п╬п╡: %d, я┤п╩п╣п╫п╬п╡: %d\n"
+
+#~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
+#~ msgstr "п▓я│п╣пЁп╬ п╫п╟п╧п╢п╣п╫п╬: п╨п╩п╟я│я┌п╣я─п╬п╡: %d, я┤п╩п╣п╫п╬п╡: %d, п©п╣я─п╣п╨я─я▀я┌п╦п╧: %d\n"
 
 #~ msgid ""
 #~ "\n"
@@ -696,13 +694,12 @@ msgstr ""
 #~ "      --version          output version information and exit\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Режимы работы:\n"
-#~ "  -h                      (игнорируется)\n"
-#~ "  -v, --verbose           печатать промежуточные результаты в стандартный "
-#~ "поток\n"
-#~ "                          ошибок\n"
-#~ "      --help              показать эту справку и выйти\n"
-#~ "      --version           показать информацию о версии и выйти\n"
+#~ "п═п╣п╤п╦п╪я▀ я─п╟п╠п╬я┌я▀:\n"
+#~ "  -h                      (п╦пЁп╫п╬я─п╦я─я┐п╣я┌я│я▐)\n"
+#~ "  -v, --verbose           п©п╣я┤п╟я┌п╟я┌я▄ п©я─п╬п╪п╣п╤я┐я┌п╬я┤п╫я▀п╣ я─п╣п╥я┐п╩я▄я┌п╟я┌я▀ п╡ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╧ п©п╬я┌п╬п╨\n"
+#~ "                          п╬я┬п╦п╠п╬п╨\n"
+#~ "      --help              п©п╬п╨п╟п╥п╟я┌я▄ я█я┌я┐ я│п©я─п╟п╡п╨я┐ п╦ п╡я▀п╧я┌п╦\n"
+#~ "      --version           п©п╬п╨п╟п╥п╟я┌я▄ п╦п╫я└п╬я─п╪п╟я├п╦я▌ п╬ п╡п╣я─я│п╦п╦ п╦ п╡я▀п╧я┌п╦\n"
 
 #   -S, --string[=STRING]   take note of another user STRING???
 #~ msgid ""
@@ -715,12 +712,12 @@ msgstr ""
 #~ "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Форматирование вывода:\n"
-#~ "  -T, --initial-tab       выводить TAB вместо пробела в начале строки\n"
-#~ "  -l, --paginate          разбивать вывод на страницы с помощью `pr'\n"
+#~ "п╓п╬я─п╪п╟я┌п╦я─п╬п╡п╟п╫п╦п╣ п╡я▀п╡п╬п╢п╟:\n"
+#~ "  -T, --initial-tab       п╡я▀п╡п╬п╢п╦я┌я▄ TAB п╡п╪п╣я│я┌п╬ п©я─п╬п╠п╣п╩п╟ п╡ п╫п╟я┤п╟п╩п╣ я│я┌я─п╬п╨п╦\n"
+#~ "  -l, --paginate          я─п╟п╥п╠п╦п╡п╟я┌я▄ п╡я▀п╡п╬п╢ п╫п╟ я│я┌я─п╟п╫п╦я├я▀ я│ п©п╬п╪п╬я┴я▄я▌ `pr'\n"
 #~ "  -S, --string[=STRING]   take note of another user STRING\n"
-#~ "  -V, --show-links        писать в аннотациях ссылки на файлы и строки\n"
-#~ "  -t, --expand-tabs       раскрывать при выводе табуляцию в пробелы\n"
+#~ "  -V, --show-links        п©п╦я│п╟я┌я▄ п╡ п╟п╫п╫п╬я┌п╟я├п╦я▐я┘ я│я│я▀п╩п╨п╦ п╫п╟ я└п╟п╧п╩я▀ п╦ я│я┌я─п╬п╨п╦\n"
+#~ "  -t, --expand-tabs       я─п╟я│п╨я─я▀п╡п╟я┌я▄ п©я─п╦ п╡я▀п╡п╬п╢п╣ я┌п╟п╠я┐п╩я▐я├п╦я▌ п╡ п©я─п╬п╠п╣п╩я▀\n"
 
 #~ msgid ""
 #~ "\n"
@@ -738,80 +735,62 @@ msgstr ""
 #~ "  -W, --word-mode             compare words instead of lines\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Ключи для режима сравнения по словам:\n"
-#~ "  -1, --no-deleted            не выводить удаленные слова\n"
-#~ "  -2, --no-inserted           не выводить вставленные слова\n"
-#~ "  -3, --no-common             не выводить общие слова\n"
-#~ "  -A, --auto-pager            автоматически вызывать программу просмотра\n"
-#~ "  -k, --less-mode             режим вывода, удобный при использовании "
-#~ "\"less\"\n"
-#~ "  -m, --avoid-wraps           не продолжать поля через новую строку\n"
-#~ "  -o, --printer               выделять перечеркиванием, как для принтера\n"
-#~ "  -z, --terminal              выводить с использованием termcap\n"
-#~ "  -K, --no-init-term          как -z, но без строк termcap init/term\n"
-#~ "  -O, --item-regexp=РВ        сравнивать элементы, определенные "
-#~ "регулярным \n"
-#~ "                              выражением РВ\n"
-#~ "  -W, --word-mode             сравнивать слова, а не строки\n"
+#~ "п п╩я▌я┤п╦ п╢п╩я▐ я─п╣п╤п╦п╪п╟ я│я─п╟п╡п╫п╣п╫п╦я▐ п©п╬ я│п╩п╬п╡п╟п╪:\n"
+#~ "  -1, --no-deleted            п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ я┐п╢п╟п╩п╣п╫п╫я▀п╣ я│п╩п╬п╡п╟\n"
+#~ "  -2, --no-inserted           п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ п╡я│я┌п╟п╡п╩п╣п╫п╫я▀п╣ я│п╩п╬п╡п╟\n"
+#~ "  -3, --no-common             п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ п╬п╠я┴п╦п╣ я│п╩п╬п╡п╟\n"
+#~ "  -A, --auto-pager            п╟п╡я┌п╬п╪п╟я┌п╦я┤п╣я│п╨п╦ п╡я▀п╥я▀п╡п╟я┌я▄ п©я─п╬пЁя─п╟п╪п╪я┐ п©я─п╬я│п╪п╬я┌я─п╟\n"
+#~ "  -k, --less-mode             я─п╣п╤п╦п╪ п╡я▀п╡п╬п╢п╟, я┐п╢п╬п╠п╫я▀п╧ п©я─п╦ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╦ \"less\"\n"
+#~ "  -m, --avoid-wraps           п╫п╣ п©я─п╬п╢п╬п╩п╤п╟я┌я▄ п©п╬п╩я▐ я┤п╣я─п╣п╥ п╫п╬п╡я┐я▌ я│я┌я─п╬п╨я┐\n"
+#~ "  -o, --printer               п╡я▀п╢п╣п╩я▐я┌я▄ п©п╣я─п╣я┤п╣я─п╨п╦п╡п╟п╫п╦п╣п╪, п╨п╟п╨ п╢п╩я▐ п©я─п╦п╫я┌п╣я─п╟\n"
+#~ "  -z, --terminal              п╡я▀п╡п╬п╢п╦я┌я▄ я│ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣п╪ termcap\n"
+#~ "  -K, --no-init-term          п╨п╟п╨ -z, п╫п╬ п╠п╣п╥ я│я┌я─п╬п╨ termcap init/term\n"
+#~ "  -O, --item-regexp=п═п▓        я│я─п╟п╡п╫п╦п╡п╟я┌я▄ я█п╩п╣п╪п╣п╫я┌я▀, п╬п©я─п╣п╢п╣п╩п╣п╫п╫я▀п╣ я─п╣пЁя┐п╩я▐я─п╫я▀п╪ \n"
+#~ "                              п╡я▀я─п╟п╤п╣п╫п╦п╣п╪ п═п▓\n"
+#~ "  -W, --word-mode             я│я─п╟п╡п╫п╦п╡п╟я┌я▄ я│п╩п╬п╡п╟, п╟ п╫п╣ я│я┌я─п╬п╨п╦\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Comparing files:\n"
-#~ "*  -H, --speed-large-files     go faster, for when numerous small "
-#~ "changes\n"
-#~ "*  -a, --text                  report line differences (text file "
-#~ "default)\n"
+#~ "*  -H, --speed-large-files     go faster, for when numerous small changes\n"
+#~ "*  -a, --text                  report line differences (text file default)\n"
 #~ "*  -d, --minimal               try harder for a smaller set of changes\n"
-#~ "*  -q, --brief                 only says if files differ (binary "
-#~ "default)\n"
-#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/"
-#~ "suffixes\n"
+#~ "*  -q, --brief                 only says if files differ (binary default)\n"
+#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Сравнение:\n"
-#~ "*  -H, --speed-large-files     работать быстрее, для случая большого "
-#~ "количества\n"
-#~ "                               мелких различий\n"
-#~ "*  -a, --text                  сообщать о различиях строк (по умолчанию "
-#~ "для \n"
-#~ "                               текстовых файлов)\n"
-#~ "*  -d, --minimal               стараться найти наименьшее множество "
-#~ "различий\n"
-#~ "*  -q, --brief                 печатать только, различаются ли файлы "
-#~ "(по \n"
-#~ "                               умолчанию для двоичных файлов)\n"
-#~ "*      --horizon-lines=ЧИСЛО   сохранять указанное ЧИСЛО общих префиксов/"
-#~ "постфиксов\n"
+#~ "п║я─п╟п╡п╫п╣п╫п╦п╣:\n"
+#~ "*  -H, --speed-large-files     я─п╟п╠п╬я┌п╟я┌я▄ п╠я▀я│я┌я─п╣п╣, п╢п╩я▐ я│п╩я┐я┤п╟я▐ п╠п╬п╩я▄я┬п╬пЁп╬ п╨п╬п╩п╦я┤п╣я│я┌п╡п╟\n"
+#~ "                               п╪п╣п╩п╨п╦я┘ я─п╟п╥п╩п╦я┤п╦п╧\n"
+#~ "*  -a, --text                  я│п╬п╬п╠я┴п╟я┌я▄ п╬ я─п╟п╥п╩п╦я┤п╦я▐я┘ я│я┌я─п╬п╨ (п©п╬ я┐п╪п╬п╩я┤п╟п╫п╦я▌ п╢п╩я▐ \n"
+#~ "                               я┌п╣п╨я│я┌п╬п╡я▀я┘ я└п╟п╧п╩п╬п╡)\n"
+#~ "*  -d, --minimal               я│я┌п╟я─п╟я┌я▄я│я▐ п╫п╟п╧я┌п╦ п╫п╟п╦п╪п╣п╫я▄я┬п╣п╣ п╪п╫п╬п╤п╣я│я┌п╡п╬ я─п╟п╥п╩п╦я┤п╦п╧\n"
+#~ "*  -q, --brief                 п©п╣я┤п╟я┌п╟я┌я▄ я┌п╬п╩я▄п╨п╬, я─п╟п╥п╩п╦я┤п╟я▌я┌я│я▐ п╩п╦ я└п╟п╧п╩я▀ (п©п╬ \n"
+#~ "                               я┐п╪п╬п╩я┤п╟п╫п╦я▌ п╢п╩я▐ п╢п╡п╬п╦я┤п╫я▀я┘ я└п╟п╧п╩п╬п╡)\n"
+#~ "*      --horizon-lines=п╖п≤п║п⌡п·   я│п╬я┘я─п╟п╫я▐я┌я▄ я┐п╨п╟п╥п╟п╫п╫п╬п╣ п╖п≤п║п⌡п· п╬п╠я┴п╦я┘ п©я─п╣я└п╦п╨я│п╬п╡/п©п╬я│я┌я└п╦п╨я│п╬п╡\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Comparing directories:\n"
 #~ "*  -N, --new-file                  consider missing files to be empty\n"
-#~ "*  -P, --unidirectional-new-file   consider missing old files to be "
-#~ "empty\n"
+#~ "*  -P, --unidirectional-new-file   consider missing old files to be empty\n"
 #~ "*  -S, --starting-file=FILE        resume directory comparison with FILE\n"
-#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from "
-#~ "FILE\n"
+#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from FILE\n"
 #~ "*  -r, --recursive                 recursively compare subdirectories\n"
 #~ "*  -s, --report-identical-files    report when two files are the same\n"
 #~ "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Сравнение каталогов:\n"
-#~ "*  -N, --new-file                  считать несуществующие файлы пустыми\n"
-#~ "*  -P, --unidirectional-new-file   считать несуществующие старые файлы "
-#~ "пустыми\n"
-#~ "*  -S, --starting-file=ФАЙЛ        продолжить сравнение каталогов с "
-#~ "ФАЙЛА\n"
-#~ "*  -X, --exclude-from=ФАЙЛ         игнорировать файлы, чьи имена "
-#~ "соответствуют\n"
-#~ "                                   образцам из ФАЙЛА\n"
-#~ "*  -r, --recursive                 рекурсивно сравнивать подкаталоги\n"
-#~ "*  -s, --report-identical-files    сообщать, когда два файла не "
-#~ "отличаются\n"
-#~ "*  -x, --exclude=ОБРАЗЕЦ           игнорировать файлы (каталоги), чьи "
-#~ "имена \n"
-#~ "                                   соответствуют указанному ОБРАЗЦУ\n"
+#~ "п║я─п╟п╡п╫п╣п╫п╦п╣ п╨п╟я┌п╟п╩п╬пЁп╬п╡:\n"
+#~ "*  -N, --new-file                  я│я┤п╦я┌п╟я┌я▄ п╫п╣я│я┐я┴п╣я│я┌п╡я┐я▌я┴п╦п╣ я└п╟п╧п╩я▀ п©я┐я│я┌я▀п╪п╦\n"
+#~ "*  -P, --unidirectional-new-file   я│я┤п╦я┌п╟я┌я▄ п╫п╣я│я┐я┴п╣я│я┌п╡я┐я▌я┴п╦п╣ я│я┌п╟я─я▀п╣ я└п╟п╧п╩я▀ п©я┐я│я┌я▀п╪п╦\n"
+#~ "*  -S, --starting-file=п╓п░п≥п⌡        п©я─п╬п╢п╬п╩п╤п╦я┌я▄ я│я─п╟п╡п╫п╣п╫п╦п╣ п╨п╟я┌п╟п╩п╬пЁп╬п╡ я│ п╓п░п≥п⌡п░\n"
+#~ "*  -X, --exclude-from=п╓п░п≥п⌡         п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я└п╟п╧п╩я▀, я┤я▄п╦ п╦п╪п╣п╫п╟ я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┌\n"
+#~ "                                   п╬п╠я─п╟п╥я├п╟п╪ п╦п╥ п╓п░п≥п⌡п░\n"
+#~ "*  -r, --recursive                 я─п╣п╨я┐я─я│п╦п╡п╫п╬ я│я─п╟п╡п╫п╦п╡п╟я┌я▄ п©п╬п╢п╨п╟я┌п╟п╩п╬пЁп╦\n"
+#~ "*  -s, --report-identical-files    я│п╬п╬п╠я┴п╟я┌я▄, п╨п╬пЁп╢п╟ п╢п╡п╟ я└п╟п╧п╩п╟ п╫п╣ п╬я┌п╩п╦я┤п╟я▌я┌я│я▐\n"
+#~ "*  -x, --exclude=п·п▒п═п░п≈п∙п╕           п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я└п╟п╧п╩я▀ (п╨п╟я┌п╟п╩п╬пЁп╦), я┤я▄п╦ п╦п╪п╣п╫п╟ \n"
+#~ "                                   я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┌ я┐п╨п╟п╥п╟п╫п╫п╬п╪я┐ п·п▒п═п░п≈п╕пё\n"
 
 #~ msgid ""
 #~ "\n"
@@ -823,16 +802,13 @@ msgstr ""
 #~ "  -w, --ignore-all-space               ignore white space\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Игнорирование текста:\n"
-#~ "  -B, --ignore-blank-lines             игнорировать пустые строки\n"
-#~ "*  -I, --ignore-matching-lines=РВ      игнорировать строки, "
-#~ "соответствующие \n"
-#~ "                                       регулярному выражению РВ\n"
-#~ "  -b, --ignore-space-change            игнорировать количество пробельных "
-#~ "знаков\n"
-#~ "  -i, --ignore-case                    игнорировать различия в регистре "
-#~ "букв\n"
-#~ "  -w, --ignore-all-space               игнорировать пробельные знаки\n"
+#~ "п≤пЁп╫п╬я─п╦я─п╬п╡п╟п╫п╦п╣ я┌п╣п╨я│я┌п╟:\n"
+#~ "  -B, --ignore-blank-lines             п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ п©я┐я│я┌я▀п╣ я│я┌я─п╬п╨п╦\n"
+#~ "*  -I, --ignore-matching-lines=п═п▓      п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я│я┌я─п╬п╨п╦, я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┴п╦п╣ \n"
+#~ "                                       я─п╣пЁя┐п╩я▐я─п╫п╬п╪я┐ п╡я▀я─п╟п╤п╣п╫п╦я▌ п═п▓\n"
+#~ "  -b, --ignore-space-change            п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ п╨п╬п╩п╦я┤п╣я│я┌п╡п╬ п©я─п╬п╠п╣п╩я▄п╫я▀я┘ п╥п╫п╟п╨п╬п╡\n"
+#~ "  -i, --ignore-case                    п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я─п╟п╥п╩п╦я┤п╦я▐ п╡ я─п╣пЁп╦я│я┌я─п╣ п╠я┐п╨п╡\n"
+#~ "  -w, --ignore-all-space               п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ п©я─п╬п╠п╣п╩я▄п╫я▀п╣ п╥п╫п╟п╨п╦\n"
 
 #~ msgid ""
 #~ "\n"
@@ -842,13 +818,11 @@ msgstr ""
 #~ "  -j, --ignore-delimiters    do not count items having only delimiters\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Кластеризация:\n"
-#~ "  -G, --relist-files         перечислить все входные файлы с аннотациями\n"
-#~ "  -J, --minimum-size=ЧИСЛО   игнорировать кластеры, в которых меньше "
-#~ "указанного\n"
-#~ "                             ЧИСЛА элементов\n"
-#~ "  -j, --ignore-delimiters    не считать элементы, содержащие только "
-#~ "разделители\n"
+#~ "п п╩п╟я│я┌п╣я─п╦п╥п╟я├п╦я▐:\n"
+#~ "  -G, --relist-files         п©п╣я─п╣я┤п╦я│п╩п╦я┌я▄ п╡я│п╣ п╡я┘п╬п╢п╫я▀п╣ я└п╟п╧п╩я▀ я│ п╟п╫п╫п╬я┌п╟я├п╦я▐п╪п╦\n"
+#~ "  -J, --minimum-size=п╖п≤п║п⌡п·   п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ п╨п╩п╟я│я┌п╣я─я▀, п╡ п╨п╬я┌п╬я─я▀я┘ п╪п╣п╫я▄я┬п╣ я┐п╨п╟п╥п╟п╫п╫п╬пЁп╬\n"
+#~ "                             п╖п≤п║п⌡п░ я█п╩п╣п╪п╣п╫я┌п╬п╡\n"
+#~ "  -j, --ignore-delimiters    п╫п╣ я│я┤п╦я┌п╟я┌я▄ я█п╩п╣п╪п╣п╫я┌я▀, я│п╬п╢п╣я─п╤п╟я┴п╦п╣ я┌п╬п╩я▄п╨п╬ я─п╟п╥п╢п╣п╩п╦я┌п╣п╩п╦\n"
 
 #~ msgid ""
 #~ "\n"
@@ -861,28 +835,19 @@ msgstr ""
 #~ "*      --old-line-format=FORMAT          use FORMAT for deleted line\n"
 #~ "*      --unchanged-group-format=FORMAT   use FORMAT for unchanged lines\n"
 #~ "*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n"
-#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-"
-#~ "format\n"
+#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Форматы подробного вывода:\n"
-#~ "*  -D, --ifdef=ИМЯ                       выводить в формате `#ifdef ИМЯ'\n"
-#~ "*      --changed-group-format=ФОРМАТ     задает ФОРМАТ для измененных "
-#~ "строк\n"
-#~ "*      --new-group-format=ФОРМАТ         задает ФОРМАТ для вставленных "
-#~ "строк\n"
-#~ "*      --new-line-format=ФОРМАТ          задает ФОРМАТ для вставленной "
-#~ "строки\n"
-#~ "*      --old-group-format=ФОРМАТ         задает ФОРМАТ для удаленных "
-#~ "строк\n"
-#~ "*      --old-line-format=ФОРМАТ          задает ФОРМАТ для удаленной "
-#~ "строки\n"
-#~ "*      --unchanged-group-format=ФОРМАТ   задает ФОРМАТ для неизмененных "
-#~ "строк\n"
-#~ "*      --unchanged-line-format=ФОРМАТ    задает ФОРМАТ для неизмененной "
-#~ "строки\n"
-#~ "*      --line-format=ФОРМАТ              --{old,new,unchanged}-line-"
-#~ "format\n"
+#~ "п╓п╬я─п╪п╟я┌я▀ п©п╬п╢я─п╬п╠п╫п╬пЁп╬ п╡я▀п╡п╬п╢п╟:\n"
+#~ "*  -D, --ifdef=п≤п°п╞                       п╡я▀п╡п╬п╢п╦я┌я▄ п╡ я└п╬я─п╪п╟я┌п╣ `#ifdef п≤п°п╞'\n"
+#~ "*      --changed-group-format=п╓п·п═п°п░п╒     п╥п╟п╢п╟п╣я┌ п╓п·п═п°п░п╒ п╢п╩я▐ п╦п╥п╪п╣п╫п╣п╫п╫я▀я┘ я│я┌я─п╬п╨\n"
+#~ "*      --new-group-format=п╓п·п═п°п░п╒         п╥п╟п╢п╟п╣я┌ п╓п·п═п°п░п╒ п╢п╩я▐ п╡я│я┌п╟п╡п╩п╣п╫п╫я▀я┘ я│я┌я─п╬п╨\n"
+#~ "*      --new-line-format=п╓п·п═п°п░п╒          п╥п╟п╢п╟п╣я┌ п╓п·п═п°п░п╒ п╢п╩я▐ п╡я│я┌п╟п╡п╩п╣п╫п╫п╬п╧ я│я┌я─п╬п╨п╦\n"
+#~ "*      --old-group-format=п╓п·п═п°п░п╒         п╥п╟п╢п╟п╣я┌ п╓п·п═п°п░п╒ п╢п╩я▐ я┐п╢п╟п╩п╣п╫п╫я▀я┘ я│я┌я─п╬п╨\n"
+#~ "*      --old-line-format=п╓п·п═п°п░п╒          п╥п╟п╢п╟п╣я┌ п╓п·п═п°п░п╒ п╢п╩я▐ я┐п╢п╟п╩п╣п╫п╫п╬п╧ я│я┌я─п╬п╨п╦\n"
+#~ "*      --unchanged-group-format=п╓п·п═п°п░п╒   п╥п╟п╢п╟п╣я┌ п╓п·п═п°п░п╒ п╢п╩я▐ п╫п╣п╦п╥п╪п╣п╫п╣п╫п╫я▀я┘ я│я┌я─п╬п╨\n"
+#~ "*      --unchanged-line-format=п╓п·п═п°п░п╒    п╥п╟п╢п╟п╣я┌ п╓п·п═п°п░п╒ п╢п╩я▐ п╫п╣п╦п╥п╪п╣п╫п╣п╫п╫п╬п╧ я│я┌я─п╬п╨п╦\n"
+#~ "*      --line-format=п╓п·п═п°п░п╒              --{old,new,unchanged}-line-format\n"
 
 #~ msgid ""
 #~ "\n"
@@ -893,54 +858,45 @@ msgstr ""
 #~ "*  -n, --rcs              output RCS format (internally used by RCS)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Форматы, подобные языкам сценариев:\n"
-#~ "  (ничего из -CDUcefnuy)  выводить в обычном формате diff\n"
-#~ "*  -e, --ed               выводить верные сценарии `ed'\n"
-#~ "*  -f, --forward-ed       помесь -e и -n (не очень полезно)\n"
-#~ "*  -n, --rcs              выводить в формате RCS (который внутренне \n"
-#~ "                          используется в RCS)\n"
+#~ "п╓п╬я─п╪п╟я┌я▀, п©п╬п╢п╬п╠п╫я▀п╣ я▐п╥я▀п╨п╟п╪ я│я├п╣п╫п╟я─п╦п╣п╡:\n"
+#~ "  (п╫п╦я┤п╣пЁп╬ п╦п╥ -CDUcefnuy)  п╡я▀п╡п╬п╢п╦я┌я▄ п╡ п╬п╠я▀я┤п╫п╬п╪ я└п╬я─п╪п╟я┌п╣ diff\n"
+#~ "*  -e, --ed               п╡я▀п╡п╬п╢п╦я┌я▄ п╡п╣я─п╫я▀п╣ я│я├п╣п╫п╟я─п╦п╦ `ed'\n"
+#~ "*  -f, --forward-ed       п©п╬п╪п╣я│я▄ -e п╦ -n (п╫п╣ п╬я┤п╣п╫я▄ п©п╬п╩п╣п╥п╫п╬)\n"
+#~ "*  -n, --rcs              п╡я▀п╡п╬п╢п╦я┌я▄ п╡ я└п╬я─п╪п╟я┌п╣ RCS (п╨п╬я┌п╬я─я▀п╧ п╡п╫я┐я┌я─п╣п╫п╫п╣ \n"
+#~ "                          п╦я│п©п╬п╩я▄п╥я┐п╣я┌я│я▐ п╡ RCS)\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Context and unified formats:\n"
-#~ "*  -F, --show-function-line=REGEXP   show previous context matching "
-#~ "REGEXP\n"
-#~ "*  -p, --show-c-function             show which C function for each "
-#~ "change\n"
+#~ "*  -F, --show-function-line=REGEXP   show previous context matching REGEXP\n"
+#~ "*  -p, --show-c-function             show which C function for each change\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Контекстные и объединенные форматы:\n"
-#~ "*  -F, --show-function-line=РВ       показать контекст сверху. "
-#~ "соответствующий\n"
-#~ "                                     регулярному выражению РВ\n"
-#~ "*  -p, --show-c-function             показать функцию Си, которой "
-#~ "принадлежит\n"
-#~ "                                     каждое изменение\n"
+#~ "п п╬п╫я┌п╣п╨я│я┌п╫я▀п╣ п╦ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫я▀п╣ я└п╬я─п╪п╟я┌я▀:\n"
+#~ "*  -F, --show-function-line=п═п▓       п©п╬п╨п╟п╥п╟я┌я▄ п╨п╬п╫я┌п╣п╨я│я┌ я│п╡п╣я─я┘я┐. я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┴п╦п╧\n"
+#~ "                                     я─п╣пЁя┐п╩я▐я─п╫п╬п╪я┐ п╡я▀я─п╟п╤п╣п╫п╦я▌ п═п▓\n"
+#~ "*  -p, --show-c-function             п©п╬п╨п╟п╥п╟я┌я▄ я└я┐п╫п╨я├п╦я▌ п║п╦, п╨п╬я┌п╬я─п╬п╧ п©я─п╦п╫п╟п╢п╩п╣п╤п╦я┌\n"
+#~ "                                     п╨п╟п╤п╢п╬п╣ п╦п╥п╪п╣п╫п╣п╫п╦п╣\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "*  -C, --context=LINES         as -c, also select context size in lines\n"
-#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name "
-#~ "(twice)\n"
+#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
 #~ "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-#~ "*  -c, --context               output context diffs (default 3 context "
-#~ "lines)\n"
+#~ "*  -c, --context               output context diffs (default 3 context lines)\n"
 #~ "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 #~ "*  -LINES                      (obsolete: select context size in lines)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "*  -C, --context=ЧИСЛО         как -c, также задает число строк "
-#~ "контекста\n"
-#~ "*  -L, --label=МЕТКА           использовать МЕТКУ принадлежности, вместо "
-#~ "имени \n"
-#~ "                               файла (дважды)\n"
-#~ "*  -U, --unified=ЧИСЛО         как -u, также задает число строк "
-#~ "контекста\n"
-#~ "*  -c, --context               выводить в контекстном формате diff (по \n"
-#~ "                               умолчанию 3 строки контекста)\n"
-#~ "*  -u, --unified               выводить в объединенном формате diff (по\n"
-#~ "                               умолчанию 3 строки контекста)\n"
-#~ "*  -LINES                      (устарел: задает число строк контекста)\n"
+#~ "*  -C, --context=п╖п≤п║п⌡п·         п╨п╟п╨ -c, я┌п╟п╨п╤п╣ п╥п╟п╢п╟п╣я┌ я┤п╦я│п╩п╬ я│я┌я─п╬п╨ п╨п╬п╫я┌п╣п╨я│я┌п╟\n"
+#~ "*  -L, --label=п°п∙п╒п п░           п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ п°п∙п╒п пё п©я─п╦п╫п╟п╢п╩п╣п╤п╫п╬я│я┌п╦, п╡п╪п╣я│я┌п╬ п╦п╪п╣п╫п╦ \n"
+#~ "                               я└п╟п╧п╩п╟ (п╢п╡п╟п╤п╢я▀)\n"
+#~ "*  -U, --unified=п╖п≤п║п⌡п·         п╨п╟п╨ -u, я┌п╟п╨п╤п╣ п╥п╟п╢п╟п╣я┌ я┤п╦я│п╩п╬ я│я┌я─п╬п╨ п╨п╬п╫я┌п╣п╨я│я┌п╟\n"
+#~ "*  -c, --context               п╡я▀п╡п╬п╢п╦я┌я▄ п╡ п╨п╬п╫я┌п╣п╨я│я┌п╫п╬п╪ я└п╬я─п╪п╟я┌п╣ diff (п©п╬ \n"
+#~ "                               я┐п╪п╬п╩я┤п╟п╫п╦я▌ 3 я│я┌я─п╬п╨п╦ п╨п╬п╫я┌п╣п╨я│я┌п╟)\n"
+#~ "*  -u, --unified               п╡я▀п╡п╬п╢п╦я┌я▄ п╡ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫п╬п╪ я└п╬я─п╪п╟я┌п╣ diff (п©п╬\n"
+#~ "                               я┐п╪п╬п╩я┤п╟п╫п╦я▌ 3 я│я┌я─п╬п╨п╦ п╨п╬п╫я┌п╣п╨я│я┌п╟)\n"
+#~ "*  -LINES                      (я┐я│я┌п╟я─п╣п╩: п╥п╟п╢п╟п╣я┌ я┤п╦я│п╩п╬ я│я┌я─п╬п╨ п╨п╬п╫я┌п╣п╨я│я┌п╟)\n"
 
 #~ msgid ""
 #~ "\n"
@@ -952,14 +908,12 @@ msgstr ""
 #~ "*      --suppress-common-lines   do not print common lines\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Двусторонний формат:\n"
-#~ "*  -W, --width=ЧИСЛО             задает ширину в столбцах\n"
-#~ "*  -y, --side-by-side            использовать двусторонний выходной "
-#~ "формат\n"
-#~ "*      --left-column             печатать только левую колонку для общих "
-#~ "строк\n"
-#~ "*      --sdiff-merge-assist      (внутренне используется в `sdiff')\n"
-#~ "*      --suppress-common-lines   не печатать общие строки\n"
+#~ "п■п╡я┐я│я┌п╬я─п╬п╫п╫п╦п╧ я└п╬я─п╪п╟я┌:\n"
+#~ "*  -W, --width=п╖п≤п║п⌡п·             п╥п╟п╢п╟п╣я┌ я┬п╦я─п╦п╫я┐ п╡ я│я┌п╬п╩п╠я├п╟я┘\n"
+#~ "*  -y, --side-by-side            п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ п╢п╡я┐я│я┌п╬я─п╬п╫п╫п╦п╧ п╡я▀я┘п╬п╢п╫п╬п╧ я└п╬я─п╪п╟я┌\n"
+#~ "*      --left-column             п©п╣я┤п╟я┌п╟я┌я▄ я┌п╬п╩я▄п╨п╬ п╩п╣п╡я┐я▌ п╨п╬п╩п╬п╫п╨я┐ п╢п╩я▐ п╬п╠я┴п╦я┘ я│я┌я─п╬п╨\n"
+#~ "*      --sdiff-merge-assist      (п╡п╫я┐я┌я─п╣п╫п╫п╣ п╦я│п©п╬п╩я▄п╥я┐п╣я┌я│я▐ п╡ `sdiff')\n"
+#~ "*      --suppress-common-lines   п╫п╣ п©п╣я┤п╟я┌п╟я┌я▄ п╬п╠я┴п╦п╣ я│я┌я─п╬п╨п╦\n"
 
 #~ msgid ""
 #~ "\n"
@@ -967,40 +921,34 @@ msgstr ""
 #~ "  %%%%           a single %%\n"
 #~ "  %%c'C'        quoted character C\n"
 #~ "  %%c'\\O'       character having value O, from 1 to 3 octal digits\n"
-#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E "
-#~ "FORMAT\n"
+#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E FORMAT\n"
 #~ "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 #~ "  %%<           [group] old, each line through --old-line-format\n"
 #~ "  %%>           [group] new, each line through --new-line-format\n"
-#~ "  %%=           [group] unchanged, each line through --unchanged-line-"
-#~ "format\n"
+#~ "  %%=           [group] unchanged, each line through --unchanged-line-format\n"
 #~ "  %%l           [line] without its possible trailing newline\n"
 #~ "  %%L           [line] with its possible trailing newline\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ФОРМАТ состоит из знаков, обозначающих самих себя, за исключением:\n"
-#~ "  %%%%           один знак %%\n"
-#~ "  %%c'C'        экранированный знак C\n"
-#~ "  %%c'\\O'       знак со значением O, от 1 до 3 восьмеричных цифр\n"
-#~ "  %%(A=B?T:E)   если A есть B, то T, иначе E; A B -- это числа или "
-#~ "ПЕРЕМЕННЫЕ;\n"
-#~ "                T E -- это ФОРМАТЫ\n"
-#~ "  %%FN          использовать для печати значения ПЕРЕМЕННОЙ N "
-#~ "спецификацию F\n"
-#~ "  %%<           [группа] старое, каждая строка через --old-line-format\n"
-#~ "  %%>           [группа] новое, каждая строка через --new-line-format\n"
-#~ "  %%=           [группа] неизмененное, каждая строка через --unchanged-"
-#~ "line-format\n"
-#~ "  %%l           [строка] без необязательного завершающего перевода "
-#~ "строки\n"
-#~ "  %%L           [строка] возможно, с завершающим переводом строки\n"
+#~ "п╓п·п═п°п░п╒ я│п╬я│я┌п╬п╦я┌ п╦п╥ п╥п╫п╟п╨п╬п╡, п╬п╠п╬п╥п╫п╟я┤п╟я▌я┴п╦я┘ я│п╟п╪п╦я┘ я│п╣п╠я▐, п╥п╟ п╦я│п╨п╩я▌я┤п╣п╫п╦п╣п╪:\n"
+#~ "  %%%%           п╬п╢п╦п╫ п╥п╫п╟п╨ %%\n"
+#~ "  %%c'C'        я█п╨я─п╟п╫п╦я─п╬п╡п╟п╫п╫я▀п╧ п╥п╫п╟п╨ C\n"
+#~ "  %%c'\\O'       п╥п╫п╟п╨ я│п╬ п╥п╫п╟я┤п╣п╫п╦п╣п╪ O, п╬я┌ 1 п╢п╬ 3 п╡п╬я│я▄п╪п╣я─п╦я┤п╫я▀я┘ я├п╦я└я─\n"
+#~ "  %%(A=B?T:E)   п╣я│п╩п╦ A п╣я│я┌я▄ B, я┌п╬ T, п╦п╫п╟я┤п╣ E; A B -- я█я┌п╬ я┤п╦я│п╩п╟ п╦п╩п╦ п÷п∙п═п∙п°п∙п²п²п╚п∙;\n"
+#~ "                T E -- я█я┌п╬ п╓п·п═п°п░п╒п╚\n"
+#~ "  %%FN          п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ п╢п╩я▐ п©п╣я┤п╟я┌п╦ п╥п╫п╟я┤п╣п╫п╦я▐ п÷п∙п═п∙п°п∙п²п²п·п≥ N я│п©п╣я├п╦я└п╦п╨п╟я├п╦я▌ F\n"
+#~ "  %%<           [пЁя─я┐п©п©п╟] я│я┌п╟я─п╬п╣, п╨п╟п╤п╢п╟я▐ я│я┌я─п╬п╨п╟ я┤п╣я─п╣п╥ --old-line-format\n"
+#~ "  %%>           [пЁя─я┐п©п©п╟] п╫п╬п╡п╬п╣, п╨п╟п╤п╢п╟я▐ я│я┌я─п╬п╨п╟ я┤п╣я─п╣п╥ --new-line-format\n"
+#~ "  %%=           [пЁя─я┐п©п©п╟] п╫п╣п╦п╥п╪п╣п╫п╣п╫п╫п╬п╣, п╨п╟п╤п╢п╟я▐ я│я┌я─п╬п╨п╟ я┤п╣я─п╣п╥ --unchanged-line-format\n"
+#~ "  %%l           [я│я┌я─п╬п╨п╟] п╠п╣п╥ п╫п╣п╬п╠я▐п╥п╟я┌п╣п╩я▄п╫п╬пЁп╬ п╥п╟п╡п╣я─я┬п╟я▌я┴п╣пЁп╬ п©п╣я─п╣п╡п╬п╢п╟ я│я┌я─п╬п╨п╦\n"
+#~ "  %%L           [я│я┌я─п╬п╨п╟] п╡п╬п╥п╪п╬п╤п╫п╬, я│ п╥п╟п╡п╣я─я┬п╟я▌я┴п╦п╪ п©п╣я─п╣п╡п╬п╢п╬п╪ я│я┌я─п╬п╨п╦\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "SPECIF is [-][W[.D]]{doxX} as in C printf\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Спецификация -- это [-][W[.D]]{doxX} как в Си-функции printf\n"
+#~ "п║п©п╣я├п╦я└п╦п╨п╟я├п╦я▐ -- я█я┌п╬ [-][W[.D]]{doxX} п╨п╟п╨ п╡ п║п╦-я└я┐п╫п╨я├п╦п╦ printf\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1012,18 +960,17 @@ msgstr ""
 #~ "  {nN}   number of lines in the group\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ПЕРЕМЕННАЯ -- это {eflmn} для старой группы или {EFLMN} для новой группы\n"
-#~ "  {eE}   номер строки, стоящей непосредственно перед группой\n"
-#~ "  {fF}   номер первой строки группы\n"
-#~ "  {lL}   номер последней строки группы\n"
-#~ "  {mM}   номер строки, стоящей непосредственно после группы\n"
-#~ "  {nN}   число строк в группе\n"
+#~ "п÷п∙п═п∙п°п∙п²п²п░п╞ -- я█я┌п╬ {eflmn} п╢п╩я▐ я│я┌п╟я─п╬п╧ пЁя─я┐п©п©я▀ п╦п╩п╦ {EFLMN} п╢п╩я▐ п╫п╬п╡п╬п╧ пЁя─я┐п©п©я▀\n"
+#~ "  {eE}   п╫п╬п╪п╣я─ я│я┌я─п╬п╨п╦, я│я┌п╬я▐я┴п╣п╧ п╫п╣п©п╬я│я─п╣п╢я│я┌п╡п╣п╫п╫п╬ п©п╣я─п╣п╢ пЁя─я┐п©п©п╬п╧\n"
+#~ "  {fF}   п╫п╬п╪п╣я─ п©п╣я─п╡п╬п╧ я│я┌я─п╬п╨п╦ пЁя─я┐п©п©я▀\n"
+#~ "  {lL}   п╫п╬п╪п╣я─ п©п╬я│п╩п╣п╢п╫п╣п╧ я│я┌я─п╬п╨п╦ пЁя─я┐п©п©я▀\n"
+#~ "  {mM}   п╫п╬п╪п╣я─ я│я┌я─п╬п╨п╦, я│я┌п╬я▐я┴п╣п╧ п╫п╣п©п╬я│я─п╣п╢я│я┌п╡п╣п╫п╫п╬ п©п╬я│п╩п╣ пЁя─я┐п©п©я▀\n"
+#~ "  {nN}   я┤п╦я│п╩п╬ я│я┌я─п╬п╨ п╡ пЁя─я┐п©п©п╣\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Standard diff options:\n"
-#~ "  -i, --ignore-case         consider upper- and lower-case to be the "
-#~ "same\n"
+#~ "  -i, --ignore-case         consider upper- and lower-case to be the same\n"
 #~ "  -w, --ignore-all-space    ignore all white space\n"
 #~ "  -b, --ignore-space-change ignore changes in the amount of white space\n"
 #~ "  -B, --ignore-blank-lines  ignore changes whose lines are all blank\n"
@@ -1040,70 +987,55 @@ msgstr ""
 #~ "  -F, --show-function-line=RE show the most recent line matching RE\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Стандартные ключи diff:\n"
-#~ "  -i, --ignore-case         не различать заглавные и строчные буквы\n"
-#~ "  -w, --ignore-all-space    игнорировать все пробельные знаки\n"
-#~ "  -b, --ignore-space-change игнорировать различие в количестве пробельных "
-#~ "знаков\n"
-#~ "  -B, --ignore-blank-lines  игнорировать различия, состоящие из пустых "
-#~ "строк\n"
-#~ "  -I, --ignore-matching-lines=РВ игнорировать различия, чьи строки "
-#~ "соответствуют\n"
-#~ "                            регулярному выражению РВ\n"
-#~ "  -a, --text                считать все файлы текстовыми\n"
-#~ "  -c, --context[=ЧИСЛО]     выводить в обычном контекстном формате diff,\n"
-#~ "                            с указанным ЧИСЛОМ строк контекста\n"
-#~ "  -u, --unified[=ЧИСЛО]     выводить в обычном объединенном формате "
-#~ "diff,\n"
-#~ "                            с указанным ЧИСЛОМ строк контекста\n"
-#~ "  -C, --context=ЧИСЛО       выводить ЧИСЛО строк скопированного "
-#~ "контекста\n"
-#~ "  -U, --unified=ЧИСЛО       выводить ЧИСЛО строк объединенного контекста\n"
-#~ "  -L, --label=МЕТКА         использовать МЕТКУ вместо имени файла\n"
-#~ "  -p, --show-c-function     показывать, какой Си-функции принадлежит "
-#~ "каждое\n"
-#~ "                            изменение\n"
-#~ "  -F, --show-function-line=РВ показывать последнюю строку, "
-#~ "соответствующую\n"
-#~ "                            регулярному выражению РВ\n"
+#~ "п║я┌п╟п╫п╢п╟я─я┌п╫я▀п╣ п╨п╩я▌я┤п╦ diff:\n"
+#~ "  -i, --ignore-case         п╫п╣ я─п╟п╥п╩п╦я┤п╟я┌я▄ п╥п╟пЁп╩п╟п╡п╫я▀п╣ п╦ я│я┌я─п╬я┤п╫я▀п╣ п╠я┐п╨п╡я▀\n"
+#~ "  -w, --ignore-all-space    п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ п╡я│п╣ п©я─п╬п╠п╣п╩я▄п╫я▀п╣ п╥п╫п╟п╨п╦\n"
+#~ "  -b, --ignore-space-change п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я─п╟п╥п╩п╦я┤п╦п╣ п╡ п╨п╬п╩п╦я┤п╣я│я┌п╡п╣ п©я─п╬п╠п╣п╩я▄п╫я▀я┘ п╥п╫п╟п╨п╬п╡\n"
+#~ "  -B, --ignore-blank-lines  п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я─п╟п╥п╩п╦я┤п╦я▐, я│п╬я│я┌п╬я▐я┴п╦п╣ п╦п╥ п©я┐я│я┌я▀я┘ я│я┌я─п╬п╨\n"
+#~ "  -I, --ignore-matching-lines=п═п▓ п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я─п╟п╥п╩п╦я┤п╦я▐, я┤я▄п╦ я│я┌я─п╬п╨п╦ я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┌\n"
+#~ "                            я─п╣пЁя┐п╩я▐я─п╫п╬п╪я┐ п╡я▀я─п╟п╤п╣п╫п╦я▌ п═п▓\n"
+#~ "  -a, --text                я│я┤п╦я┌п╟я┌я▄ п╡я│п╣ я└п╟п╧п╩я▀ я┌п╣п╨я│я┌п╬п╡я▀п╪п╦\n"
+#~ "  -c, --context[=п╖п≤п║п⌡п·]     п╡я▀п╡п╬п╢п╦я┌я▄ п╡ п╬п╠я▀я┤п╫п╬п╪ п╨п╬п╫я┌п╣п╨я│я┌п╫п╬п╪ я└п╬я─п╪п╟я┌п╣ diff,\n"
+#~ "                            я│ я┐п╨п╟п╥п╟п╫п╫я▀п╪ п╖п≤п║п⌡п·п° я│я┌я─п╬п╨ п╨п╬п╫я┌п╣п╨я│я┌п╟\n"
+#~ "  -u, --unified[=п╖п≤п║п⌡п·]     п╡я▀п╡п╬п╢п╦я┌я▄ п╡ п╬п╠я▀я┤п╫п╬п╪ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫п╬п╪ я└п╬я─п╪п╟я┌п╣ diff,\n"
+#~ "                            я│ я┐п╨п╟п╥п╟п╫п╫я▀п╪ п╖п≤п║п⌡п·п° я│я┌я─п╬п╨ п╨п╬п╫я┌п╣п╨я│я┌п╟\n"
+#~ "  -C, --context=п╖п≤п║п⌡п·       п╡я▀п╡п╬п╢п╦я┌я▄ п╖п≤п║п⌡п· я│я┌я─п╬п╨ я│п╨п╬п©п╦я─п╬п╡п╟п╫п╫п╬пЁп╬ п╨п╬п╫я┌п╣п╨я│я┌п╟\n"
+#~ "  -U, --unified=п╖п≤п║п⌡п·       п╡я▀п╡п╬п╢п╦я┌я▄ п╖п≤п║п⌡п· я│я┌я─п╬п╨ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫п╬пЁп╬ п╨п╬п╫я┌п╣п╨я│я┌п╟\n"
+#~ "  -L, --label=п°п∙п╒п п░         п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ п°п∙п╒п пё п╡п╪п╣я│я┌п╬ п╦п╪п╣п╫п╦ я└п╟п╧п╩п╟\n"
+#~ "  -p, --show-c-function     п©п╬п╨п╟п╥я▀п╡п╟я┌я▄, п╨п╟п╨п╬п╧ п║п╦-я└я┐п╫п╨я├п╦п╦ п©я─п╦п╫п╟п╢п╩п╣п╤п╦я┌ п╨п╟п╤п╢п╬п╣\n"
+#~ "                            п╦п╥п╪п╣п╫п╣п╫п╦п╣\n"
+#~ "  -F, --show-function-line=п═п▓ п©п╬п╨п╟п╥я▀п╡п╟я┌я▄ п©п╬я│п╩п╣п╢п╫я▌я▌ я│я┌я─п╬п╨я┐, я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┴я┐я▌\n"
+#~ "                            я─п╣пЁя┐п╩я▐я─п╫п╬п╪я┐ п╡я▀я─п╟п╤п╣п╫п╦я▌ п═п▓\n"
 
 #~ msgid ""
 #~ "  -q, --brief               output only whether files differ\n"
 #~ "  -e, --ed                  output an ed script\n"
 #~ "  -n, --rcs                 output an RCS format diff\n"
 #~ "  -y, --side-by-side        output in two columns\n"
-#~ "  -w, --width=NUM           output at most NUM (default 130) characters "
-#~ "per line\n"
+#~ "  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
 #~ "      --left-column         output only the left column of common lines\n"
 #~ "      --suppress-common-lines do not output common lines\n"
-#~ "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' "
-#~ "diffs\n"
+#~ "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
 #~ "      --GTYPE-group-format=GFMT GTYPE input groups with GFMT\n"
 #~ "      --line-format=LFMT    all input lines with LFMT\n"
 #~ "      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"
 #~ "  -l, --paginate            pass the output through `pr' to paginate it\n"
 #~ "  -t, --expand-tabs         expand tabs to spaces in output\n"
 #~ msgstr ""
-#~ "  -q, --brief               напечать только, отличаются ли файлы\n"
-#~ "  -e, --ed                  выводить сценарий ed\n"
-#~ "  -n, --rcs                 выводить в формате RCS\n"
-#~ "  -y, --side-by-side        выводить в две колонки\n"
-#~ "  -w, --width=ЧИСЛО         выводить не более ЧИСЛА (по умолчанию 130) "
-#~ "знаков\n"
-#~ "                            на строку\n"
-#~ "      --left-column         выводить только левую колонку для общих "
-#~ "строк\n"
-#~ "      --suppress-common-lines не выводить общие строки\n"
-#~ "  -D, --ifdef=ИМЯ           output merged file to show `#ifdef NAME' "
-#~ "diffs\n"
-#~ "      --ТИПГ-group-format=ФМТГ печатать входные группы ТИПГ в формате "
-#~ "ФМТГ\n"
-#~ "      --line-format=ФМТС    печатать все входные строки в формате ФМТС\n"
-#~ "      --ТИПС-line-format=ФМТС печатать входные строки ТИПС в формате "
-#~ "ФМТС\n"
-#~ "  -l, --paginate            прогнать вывод через `pr' для разбиения на "
-#~ "страницы\n"
-#~ "  -t, --expand-tabs         раскрывать при выводе табуляцию в пробелы\n"
+#~ "  -q, --brief               п╫п╟п©п╣я┤п╟я┌я▄ я┌п╬п╩я▄п╨п╬, п╬я┌п╩п╦я┤п╟я▌я┌я│я▐ п╩п╦ я└п╟п╧п╩я▀\n"
+#~ "  -e, --ed                  п╡я▀п╡п╬п╢п╦я┌я▄ я│я├п╣п╫п╟я─п╦п╧ ed\n"
+#~ "  -n, --rcs                 п╡я▀п╡п╬п╢п╦я┌я▄ п╡ я└п╬я─п╪п╟я┌п╣ RCS\n"
+#~ "  -y, --side-by-side        п╡я▀п╡п╬п╢п╦я┌я▄ п╡ п╢п╡п╣ п╨п╬п╩п╬п╫п╨п╦\n"
+#~ "  -w, --width=п╖п≤п║п⌡п·         п╡я▀п╡п╬п╢п╦я┌я▄ п╫п╣ п╠п╬п╩п╣п╣ п╖п≤п║п⌡п░ (п©п╬ я┐п╪п╬п╩я┤п╟п╫п╦я▌ 130) п╥п╫п╟п╨п╬п╡\n"
+#~ "                            п╫п╟ я│я┌я─п╬п╨я┐\n"
+#~ "      --left-column         п╡я▀п╡п╬п╢п╦я┌я▄ я┌п╬п╩я▄п╨п╬ п╩п╣п╡я┐я▌ п╨п╬п╩п╬п╫п╨я┐ п╢п╩я▐ п╬п╠я┴п╦я┘ я│я┌я─п╬п╨\n"
+#~ "      --suppress-common-lines п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ п╬п╠я┴п╦п╣ я│я┌я─п╬п╨п╦\n"
+#~ "  -D, --ifdef=п≤п°п╞           output merged file to show `#ifdef NAME' diffs\n"
+#~ "      --п╒п≤п÷п⌠-group-format=п╓п°п╒п⌠ п©п╣я┤п╟я┌п╟я┌я▄ п╡я┘п╬п╢п╫я▀п╣ пЁя─я┐п©п©я▀ п╒п≤п÷п⌠ п╡ я└п╬я─п╪п╟я┌п╣ п╓п°п╒п⌠\n"
+#~ "      --line-format=п╓п°п╒п║    п©п╣я┤п╟я┌п╟я┌я▄ п╡я│п╣ п╡я┘п╬п╢п╫я▀п╣ я│я┌я─п╬п╨п╦ п╡ я└п╬я─п╪п╟я┌п╣ п╓п°п╒п║\n"
+#~ "      --п╒п≤п÷п║-line-format=п╓п°п╒п║ п©п╣я┤п╟я┌п╟я┌я▄ п╡я┘п╬п╢п╫я▀п╣ я│я┌я─п╬п╨п╦ п╒п≤п÷п║ п╡ я└п╬я─п╪п╟я┌п╣ п╓п°п╒п║\n"
+#~ "  -l, --paginate            п©я─п╬пЁп╫п╟я┌я▄ п╡я▀п╡п╬п╢ я┤п╣я─п╣п╥ `pr' п╢п╩я▐ я─п╟п╥п╠п╦п╣п╫п╦я▐ п╫п╟ я│я┌я─п╟п╫п╦я├я▀\n"
+#~ "  -t, --expand-tabs         я─п╟я│п╨я─я▀п╡п╟я┌я▄ п©я─п╦ п╡я▀п╡п╬п╢п╣ я┌п╟п╠я┐п╩я▐я├п╦я▌ п╡ п©я─п╬п╠п╣п╩я▀\n"
 
 #~ msgid ""
 #~ "  -T, --initial-tab         make tabs line up by prepending a tab\n"
@@ -1114,36 +1046,30 @@ msgstr ""
 #~ "  -x, --exclude=PAT         exclude files that match PAT\n"
 #~ "  -X, --exclude-from=FILE   exclude files that match any pattern in FILE\n"
 #~ "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
-#~ "      --horizon-lines=NUM   keep NUM lines of the common prefix and "
-#~ "suffix\n"
+#~ "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 #~ "  -d, --minimal             try hard to find a smaller set of changes\n"
-#~ "  -H, --speed-large-files   assume large files and many scattered small "
-#~ "changes\n"
+#~ "  -H, --speed-large-files   assume large files and many scattered small changes\n"
 #~ msgstr ""
-#~ "  -T, --initial-tab         выравнивать табуляцию, добавляя TAB в начало\n"
-#~ "  -r, --recursive           рекурсивно сравнивать подкаталоги\n"
-#~ "  -N, --new-file            считать несуществующие файлы пустыми\n"
-#~ "  -P, --unidirectional-new-file считать несуществующие первые файлы "
-#~ "пустыми\n"
-#~ "  -s, --report-identical-files сообщать, когда файлы не различаются\n"
-#~ "  -x, --exclude=ОБРАЗЕЦ     исключить файлы, соответствующие ОБРАЗЦУ\n"
-#~ "  -X, --exclude-from=ФАЙЛ   исключить файлы, соответствующие какому-либо\n"
-#~ "                            образцу из ФАЙЛА\n"
-#~ "  -S, --starting-file=ФАЙЛ  при сравнении каталогов начать с ФАЙЛА\n"
-#~ "      --horizon-lines=ЧИСЛО сохранять ЧИСЛО строк общих префиксов/"
-#~ "постфиксов\n"
-#~ "  -d, --minimal             стараться найти наименьшее множество "
-#~ "различий\n"
-#~ "  -H, --speed-large-files   предполагать, что файлы велики и содержат "
-#~ "большое\n"
-#~ "                            количество мелких различий\n"
+#~ "  -T, --initial-tab         п╡я▀я─п╟п╡п╫п╦п╡п╟я┌я▄ я┌п╟п╠я┐п╩я▐я├п╦я▌, п╢п╬п╠п╟п╡п╩я▐я▐ TAB п╡ п╫п╟я┤п╟п╩п╬\n"
+#~ "  -r, --recursive           я─п╣п╨я┐я─я│п╦п╡п╫п╬ я│я─п╟п╡п╫п╦п╡п╟я┌я▄ п©п╬п╢п╨п╟я┌п╟п╩п╬пЁп╦\n"
+#~ "  -N, --new-file            я│я┤п╦я┌п╟я┌я▄ п╫п╣я│я┐я┴п╣я│я┌п╡я┐я▌я┴п╦п╣ я└п╟п╧п╩я▀ п©я┐я│я┌я▀п╪п╦\n"
+#~ "  -P, --unidirectional-new-file я│я┤п╦я┌п╟я┌я▄ п╫п╣я│я┐я┴п╣я│я┌п╡я┐я▌я┴п╦п╣ п©п╣я─п╡я▀п╣ я└п╟п╧п╩я▀ п©я┐я│я┌я▀п╪п╦\n"
+#~ "  -s, --report-identical-files я│п╬п╬п╠я┴п╟я┌я▄, п╨п╬пЁп╢п╟ я└п╟п╧п╩я▀ п╫п╣ я─п╟п╥п╩п╦я┤п╟я▌я┌я│я▐\n"
+#~ "  -x, --exclude=п·п▒п═п░п≈п∙п╕     п╦я│п╨п╩я▌я┤п╦я┌я▄ я└п╟п╧п╩я▀, я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┴п╦п╣ п·п▒п═п░п≈п╕пё\n"
+#~ "  -X, --exclude-from=п╓п░п≥п⌡   п╦я│п╨п╩я▌я┤п╦я┌я▄ я└п╟п╧п╩я▀, я│п╬п╬я┌п╡п╣я┌я│я┌п╡я┐я▌я┴п╦п╣ п╨п╟п╨п╬п╪я┐-п╩п╦п╠п╬\n"
+#~ "                            п╬п╠я─п╟п╥я├я┐ п╦п╥ п╓п░п≥п⌡п░\n"
+#~ "  -S, --starting-file=п╓п░п≥п⌡  п©я─п╦ я│я─п╟п╡п╫п╣п╫п╦п╦ п╨п╟я┌п╟п╩п╬пЁп╬п╡ п╫п╟я┤п╟я┌я▄ я│ п╓п░п≥п⌡п░\n"
+#~ "      --horizon-lines=п╖п≤п║п⌡п· я│п╬я┘я─п╟п╫я▐я┌я▄ п╖п≤п║п⌡п· я│я┌я─п╬п╨ п╬п╠я┴п╦я┘ п©я─п╣я└п╦п╨я│п╬п╡/п©п╬я│я┌я└п╦п╨я│п╬п╡\n"
+#~ "  -d, --minimal             я│я┌п╟я─п╟я┌я▄я│я▐ п╫п╟п╧я┌п╦ п╫п╟п╦п╪п╣п╫я▄я┬п╣п╣ п╪п╫п╬п╤п╣я│я┌п╡п╬ я─п╟п╥п╩п╦я┤п╦п╧\n"
+#~ "  -H, --speed-large-files   п©я─п╣п╢п©п╬п╩п╟пЁп╟я┌я▄, я┤я┌п╬ я└п╟п╧п╩я▀ п╡п╣п╩п╦п╨п╦ п╦ я│п╬п╢п╣я─п╤п╟я┌ п╠п╬п╩я▄я┬п╬п╣\n"
+#~ "                            п╨п╬п╩п╦я┤п╣я│я┌п╡п╬ п╪п╣п╩п╨п╦я┘ я─п╟п╥п╩п╦я┤п╦п╧\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "By default, context diffs have an horizon of two lines.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "По умолчанию, контекстный формат diffs имеет горизонт в две строки.\n"
+#~ "п÷п╬ я┐п╪п╬п╩я┤п╟п╫п╦я▌, п╨п╬п╫я┌п╣п╨я│я┌п╫я▀п╧ я└п╬я─п╪п╟я┌ diffs п╦п╪п╣п╣я┌ пЁп╬я─п╦п╥п╬п╫я┌ п╡ п╢п╡п╣ я│я┌я─п╬п╨п╦.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1161,18 +1087,17 @@ msgstr ""
 #~ "      M  L+1\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ТИПС -- это `old', `new' или `unchanged' (что обозначает старое, новое\n"
-#~ "или неизмененное, соответственно).  ТИПГ -- как ТИПС или `changed'.\n"
-#~ "ФМТГ может содержать:\n"
-#~ "  %<  строки из ФАЙЛА1\n"
-#~ "  %>  строки из ФАЙЛА2\n"
-#~ "  %=  строки, общие для ФАЙЛА1 и ФАЙЛА2\n"
-#~ "  %[-][ШИРИНА][.[ТОЧНОСТЬ]]{doxX}БУКВА  спецификация для БУКВЫ в стиле "
-#~ "printf\n"
-#~ "    далее показаны БУКВЫ для новой группы, для старой те же, но строчные\n"
-#~ "      F  номер первой строки\n"
-#~ "      L  номер последней строки\n"
-#~ "      N  число строк = L-F+1\n"
+#~ "п╒п≤п÷п║ -- я█я┌п╬ `old', `new' п╦п╩п╦ `unchanged' (я┤я┌п╬ п╬п╠п╬п╥п╫п╟я┤п╟п╣я┌ я│я┌п╟я─п╬п╣, п╫п╬п╡п╬п╣\n"
+#~ "п╦п╩п╦ п╫п╣п╦п╥п╪п╣п╫п╣п╫п╫п╬п╣, я│п╬п╬я┌п╡п╣я┌я│я┌п╡п╣п╫п╫п╬).  п╒п≤п÷п⌠ -- п╨п╟п╨ п╒п≤п÷п║ п╦п╩п╦ `changed'.\n"
+#~ "п╓п°п╒п⌠ п╪п╬п╤п╣я┌ я│п╬п╢п╣я─п╤п╟я┌я▄:\n"
+#~ "  %<  я│я┌я─п╬п╨п╦ п╦п╥ п╓п░п≥п⌡п░1\n"
+#~ "  %>  я│я┌я─п╬п╨п╦ п╦п╥ п╓п░п≥п⌡п░2\n"
+#~ "  %=  я│я┌я─п╬п╨п╦, п╬п╠я┴п╦п╣ п╢п╩я▐ п╓п░п≥п⌡п░1 п╦ п╓п░п≥п⌡п░2\n"
+#~ "  %[-][п╗п≤п═п≤п²п░][.[п╒п·п╖п²п·п║п╒п╛]]{doxX}п▒пёп п▓п░  я│п©п╣я├п╦я└п╦п╨п╟я├п╦я▐ п╢п╩я▐ п▒пёп п▓п╚ п╡ я│я┌п╦п╩п╣ printf\n"
+#~ "    п╢п╟п╩п╣п╣ п©п╬п╨п╟п╥п╟п╫я▀ п▒пёп п▓п╚ п╢п╩я▐ п╫п╬п╡п╬п╧ пЁя─я┐п©п©я▀, п╢п╩я▐ я│я┌п╟я─п╬п╧ я┌п╣ п╤п╣, п╫п╬ я│я┌я─п╬я┤п╫я▀п╣\n"
+#~ "      F  п╫п╬п╪п╣я─ п©п╣я─п╡п╬п╧ я│я┌я─п╬п╨п╦\n"
+#~ "      L  п╫п╬п╪п╣я─ п©п╬я│п╩п╣п╢п╫п╣п╧ я│я┌я─п╬п╨п╦\n"
+#~ "      N  я┤п╦я│п╩п╬ я│я┌я─п╬п╨ = L-F+1\n"
 #~ "      E  F-1\n"
 #~ "      M  L+1\n"
 
@@ -1186,26 +1111,24 @@ msgstr ""
 #~ "  %c'C'  the single character C\n"
 #~ "  %c'\\OOO'  the character with octal code OOO\n"
 #~ msgstr ""
-#~ "ФМТС может содержать:\n"
-#~ "  %L  содержимое строки\n"
-#~ "  %l  содержимое строки без завершающего перевода строки\n"
-#~ "  %[-][ШИРИНА][.[ТОЧНОСТЬ]]{doxX}n  \n"
-#~ "                 спецификация номера входной строки в стиле printf\n"
-#~ "ФМТГ или ФМТС могут содержать:\n"
+#~ "п╓п°п╒п║ п╪п╬п╤п╣я┌ я│п╬п╢п╣я─п╤п╟я┌я▄:\n"
+#~ "  %L  я│п╬п╢п╣я─п╤п╦п╪п╬п╣ я│я┌я─п╬п╨п╦\n"
+#~ "  %l  я│п╬п╢п╣я─п╤п╦п╪п╬п╣ я│я┌я─п╬п╨п╦ п╠п╣п╥ п╥п╟п╡п╣я─я┬п╟я▌я┴п╣пЁп╬ п©п╣я─п╣п╡п╬п╢п╟ я│я┌я─п╬п╨п╦\n"
+#~ "  %[-][п╗п≤п═п≤п²п░][.[п╒п·п╖п²п·п║п╒п╛]]{doxX}n  \n"
+#~ "                 я│п©п╣я├п╦я└п╦п╨п╟я├п╦я▐ п╫п╬п╪п╣я─п╟ п╡я┘п╬п╢п╫п╬п╧ я│я┌я─п╬п╨п╦ п╡ я│я┌п╦п╩п╣ printf\n"
+#~ "п╓п°п╒п⌠ п╦п╩п╦ п╓п°п╒п║ п╪п╬пЁя┐я┌ я│п╬п╢п╣я─п╤п╟я┌я▄:\n"
 #~ "  %%  %\n"
-#~ "  %c'C'  один знак C\n"
-#~ "  %c'\\OOO'  знак с восьмеричным кодом OOO\n"
+#~ "  %c'C'  п╬п╢п╦п╫ п╥п╫п╟п╨ C\n"
+#~ "  %c'\\OOO'  п╥п╫п╟п╨ я│ п╡п╬я│я▄п╪п╣я─п╦я┤п╫я▀п╪ п╨п╬п╢п╬п╪ OOO\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Old mdiff options:\n"
-#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a "
-#~ "cluster\n"
+#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Старые ключи mdiff:\n"
-#~ "*  -f, --fuzz-items=ЧИСЛО     не более ЧИСЛА не совпадающих элементов на "
-#~ "кластер\n"
+#~ "п║я┌п╟я─я▀п╣ п╨п╩я▌я┤п╦ mdiff:\n"
+#~ "*  -f, --fuzz-items=п╖п≤п║п⌡п·     п╫п╣ п╠п╬п╩п╣п╣ п╖п≤п║п⌡п░ п╫п╣ я│п╬п╡п©п╟п╢п╟я▌я┴п╦я┘ я█п╩п╣п╪п╣п╫я┌п╬п╡ п╫п╟ п╨п╩п╟я│я┌п╣я─\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1231,21 +1154,20 @@ msgstr ""
 #~ "If FILE is not specified, read standard input.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "  -c, --context-diffs    выводить контекстные различия\n"
-#~ "  -e, --echo-comments    выводить комментарии в стандартный поток ошибок\n"
-#~ "  -o, --old-diffs        выводить в различия устаревшей форме\n"
-#~ "  -p, --patch-format     выводить в формате patch\n"
-#~ "  -P                     синоним -p\n"
-#~ "  -s, --strip-comments   удалять строки комментариев\n"
-#~ "  -u, --unidiffs         выводить объединенные различия\n"
-#~ "  -U                     синоним -p -u\n"
-#~ "  -=, --use-equals       заменять пробелы в объединенных различиях "
-#~ "знаками\n"
-#~ "                         равенства\n"
-#~ "      --help             показать эту справку и выйти\n"
-#~ "      --version          показать информацию о версии и выйти\n"
+#~ "  -c, --context-diffs    п╡я▀п╡п╬п╢п╦я┌я▄ п╨п╬п╫я┌п╣п╨я│я┌п╫я▀п╣ я─п╟п╥п╩п╦я┤п╦я▐\n"
+#~ "  -e, --echo-comments    п╡я▀п╡п╬п╢п╦я┌я▄ п╨п╬п╪п╪п╣п╫я┌п╟я─п╦п╦ п╡ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╧ п©п╬я┌п╬п╨ п╬я┬п╦п╠п╬п╨\n"
+#~ "  -o, --old-diffs        п╡я▀п╡п╬п╢п╦я┌я▄ п╡ я─п╟п╥п╩п╦я┤п╦я▐ я┐я│я┌п╟я─п╣п╡я┬п╣п╧ я└п╬я─п╪п╣\n"
+#~ "  -p, --patch-format     п╡я▀п╡п╬п╢п╦я┌я▄ п╡ я└п╬я─п╪п╟я┌п╣ patch\n"
+#~ "  -P                     я│п╦п╫п╬п╫п╦п╪ -p\n"
+#~ "  -s, --strip-comments   я┐п╢п╟п╩я▐я┌я▄ я│я┌я─п╬п╨п╦ п╨п╬п╪п╪п╣п╫я┌п╟я─п╦п╣п╡\n"
+#~ "  -u, --unidiffs         п╡я▀п╡п╬п╢п╦я┌я▄ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫я▀п╣ я─п╟п╥п╩п╦я┤п╦я▐\n"
+#~ "  -U                     я│п╦п╫п╬п╫п╦п╪ -p -u\n"
+#~ "  -=, --use-equals       п╥п╟п╪п╣п╫я▐я┌я▄ п©я─п╬п╠п╣п╩я▀ п╡ п╬п╠я┼п╣п╢п╦п╫п╣п╫п╫я▀я┘ я─п╟п╥п╩п╦я┤п╦я▐я┘ п╥п╫п╟п╨п╟п╪п╦\n"
+#~ "                         я─п╟п╡п╣п╫я│я┌п╡п╟\n"
+#~ "      --help             п©п╬п╨п╟п╥п╟я┌я▄ я█я┌я┐ я│п©я─п╟п╡п╨я┐ п╦ п╡я▀п╧я┌п╦\n"
+#~ "      --version          п©п╬п╨п╟п╥п╟я┌я▄ п╦п╫я└п╬я─п╪п╟я├п╦я▌ п╬ п╡п╣я─я│п╦п╦ п╦ п╡я▀п╧я┌п╦\n"
 #~ "\n"
-#~ "Если ФАЙЛ не задан или задан как -, читает стандартный ввод\n"
+#~ "п∙я│п╩п╦ п╓п░п≥п⌡ п╫п╣ п╥п╟п╢п╟п╫ п╦п╩п╦ п╥п╟п╢п╟п╫ п╨п╟п╨ -, я┤п╦я┌п╟п╣я┌ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╧ п╡п╡п╬п╢\n"
 
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
@@ -1269,26 +1191,23 @@ msgstr ""
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 #~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Аргументы, обязательные для длинных ключей, обязательны и для коротких.\n"
+#~ "п░я─пЁя┐п╪п╣п╫я┌я▀, п╬п╠я▐п╥п╟я┌п╣п╩я▄п╫я▀п╣ п╢п╩я▐ п╢п╩п╦п╫п╫я▀я┘ п╨п╩я▌я┤п╣п╧, п╬п╠я▐п╥п╟я┌п╣п╩я▄п╫я▀ п╦ п╢п╩я▐ п╨п╬я─п╬я┌п╨п╦я┘.\n"
 #~ "\n"
-#~ "  -C, --copyright            показать информацию об авторских правах и "
-#~ "выйти\n"
-#~ "  -K, --no-init-term         как -t, но без строк termcap init/term\n"
-#~ "  -V, --version              показать информацию о версии и выйти\n"
-#~ "  -1, --no-deleted           не выводить удаленные слова\n"
-#~ "  -2, --no-inserted          не выводить вставленные слова\n"
-#~ "  -3, --no-common            не выводить общие слова\n"
-#~ "  -a, --auto-pager           автоматически вызывать программу просмотра\n"
-#~ "  -h, --help                 показать эту справку и выйти\n"
-#~ "  -i, --ignore-case          игнорировать регистр букв\n"
-#~ "  -l, --less-mode            режим вывода, удобный при использовании "
-#~ "less\n"
-#~ "  -n, --avoid-wraps          не продолжать поля через новую строку\n"
-#~ "  -p, --printer              выделять подчеркиванием части вывода\n"
-#~ "  -s, --statistics           показать сколько слов было удалено, "
-#~ "вставлено и т.д\n"
-#~ "  -t, --terminal             выводить с использованием termcap\n"
-#~ "  -w, --start-delete=СТРОКА  СТРОКА, задающая начало удаляемой области\n"
-#~ "  -x, --end-delete=СТРОКА    СТРОКА, задающая конец удаляемой области\n"
-#~ "  -y, --start-insert=СТРОКА  СТРОКА, задающая начало вставляемой области\n"
-#~ "  -z, --end-insert=СТРОКА    СТРОКА, задающая конец вставляемой области\n"
+#~ "  -C, --copyright            п©п╬п╨п╟п╥п╟я┌я▄ п╦п╫я└п╬я─п╪п╟я├п╦я▌ п╬п╠ п╟п╡я┌п╬я─я│п╨п╦я┘ п©я─п╟п╡п╟я┘ п╦ п╡я▀п╧я┌п╦\n"
+#~ "  -K, --no-init-term         п╨п╟п╨ -t, п╫п╬ п╠п╣п╥ я│я┌я─п╬п╨ termcap init/term\n"
+#~ "  -V, --version              п©п╬п╨п╟п╥п╟я┌я▄ п╦п╫я└п╬я─п╪п╟я├п╦я▌ п╬ п╡п╣я─я│п╦п╦ п╦ п╡я▀п╧я┌п╦\n"
+#~ "  -1, --no-deleted           п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ я┐п╢п╟п╩п╣п╫п╫я▀п╣ я│п╩п╬п╡п╟\n"
+#~ "  -2, --no-inserted          п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ п╡я│я┌п╟п╡п╩п╣п╫п╫я▀п╣ я│п╩п╬п╡п╟\n"
+#~ "  -3, --no-common            п╫п╣ п╡я▀п╡п╬п╢п╦я┌я▄ п╬п╠я┴п╦п╣ я│п╩п╬п╡п╟\n"
+#~ "  -a, --auto-pager           п╟п╡я┌п╬п╪п╟я┌п╦я┤п╣я│п╨п╦ п╡я▀п╥я▀п╡п╟я┌я▄ п©я─п╬пЁя─п╟п╪п╪я┐ п©я─п╬я│п╪п╬я┌я─п╟\n"
+#~ "  -h, --help                 п©п╬п╨п╟п╥п╟я┌я▄ я█я┌я┐ я│п©я─п╟п╡п╨я┐ п╦ п╡я▀п╧я┌п╦\n"
+#~ "  -i, --ignore-case          п╦пЁп╫п╬я─п╦я─п╬п╡п╟я┌я▄ я─п╣пЁп╦я│я┌я─ п╠я┐п╨п╡\n"
+#~ "  -l, --less-mode            я─п╣п╤п╦п╪ п╡я▀п╡п╬п╢п╟, я┐п╢п╬п╠п╫я▀п╧ п©я─п╦ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╦ less\n"
+#~ "  -n, --avoid-wraps          п╫п╣ п©я─п╬п╢п╬п╩п╤п╟я┌я▄ п©п╬п╩я▐ я┤п╣я─п╣п╥ п╫п╬п╡я┐я▌ я│я┌я─п╬п╨я┐\n"
+#~ "  -p, --printer              п╡я▀п╢п╣п╩я▐я┌я▄ п©п╬п╢я┤п╣я─п╨п╦п╡п╟п╫п╦п╣п╪ я┤п╟я│я┌п╦ п╡я▀п╡п╬п╢п╟\n"
+#~ "  -s, --statistics           п©п╬п╨п╟п╥п╟я┌я▄ я│п╨п╬п╩я▄п╨п╬ я│п╩п╬п╡ п╠я▀п╩п╬ я┐п╢п╟п╩п╣п╫п╬, п╡я│я┌п╟п╡п╩п╣п╫п╬ п╦ я┌.п╢\n"
+#~ "  -t, --terminal             п╡я▀п╡п╬п╢п╦я┌я▄ я│ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣п╪ termcap\n"
+#~ "  -w, --start-delete=п║п╒п═п·п п░  п║п╒п═п·п п░, п╥п╟п╢п╟я▌я┴п╟я▐ п╫п╟я┤п╟п╩п╬ я┐п╢п╟п╩я▐п╣п╪п╬п╧ п╬п╠п╩п╟я│я┌п╦\n"
+#~ "  -x, --end-delete=п║п╒п═п·п п░    п║п╒п═п·п п░, п╥п╟п╢п╟я▌я┴п╟я▐ п╨п╬п╫п╣я├ я┐п╢п╟п╩я▐п╣п╪п╬п╧ п╬п╠п╩п╟я│я┌п╦\n"
+#~ "  -y, --start-insert=п║п╒п═п·п п░  п║п╒п═п·п п░, п╥п╟п╢п╟я▌я┴п╟я▐ п╫п╟я┤п╟п╩п╬ п╡я│я┌п╟п╡п╩я▐п╣п╪п╬п╧ п╬п╠п╩п╟я│я┌п╦\n"
+#~ "  -z, --end-insert=п║п╒п═п·п п░    п║п╒п═п·п п░, п╥п╟п╢п╟я▌я┴п╟я▐ п╨п╬п╫п╣я├ п╡я│я┌п╟п╡п╩я▐п╣п╪п╬п╧ п╬п╠п╩п╟я│я┌п╦\n"
