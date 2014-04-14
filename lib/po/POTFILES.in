@@ -1,5 +1,5 @@
 ## DO NOT EDIT! GENERATED AUTOMATICALLY!
-# Copyright (C) 2002-2013 Free Software Foundation, Inc.
+# Copyright (C) 2002-2014 Free Software Foundation, Inc.
 #
 # This file is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -45,6 +45,10 @@ lib/getopt.in.h
 lib/getopt1.c
 lib/getopt_int.h
 lib/gettext.h
+lib/gettimeofday.c
+lib/glthread/lock.c
+lib/glthread/lock.h
+lib/glthread/threadlib.c
 lib/intprops.h
 lib/iswblank.c
 lib/itold.c
@@ -107,6 +111,7 @@ lib/strnlen1.c
 lib/strnlen1.h
 lib/strstr.c
 lib/sys_stat.in.h
+lib/sys_time.in.h
 lib/sys_types.in.h
 lib/sys_wait.in.h
 lib/time.in.h

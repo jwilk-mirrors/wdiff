@@ -1,4 +1,4 @@
-# Copyright (C) 2002-2013 Free Software Foundation, Inc.
+# Copyright (C) 2002-2014 Free Software Foundation, Inc.
 #
 # This file is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@
 
 
 # Specification in the form of a command-line invocation:
-#   gnulib-tool --import --dir=. --lib=libgnu --source-base=lib --m4-base=m4 --po-base=lib/po --doc-base=doc --tests-base=tests --aux-dir=build-aux --no-conditional-dependencies --no-libtool --macro-prefix=gl --po-domain=wdiff canonicalize-lgpl dup2 error gendocs getline getopt gettext locale maintainer-makefile mbsrchr regex setenv strstr-simple sys_stat sys_wait unistd vasprintf xalloc xmalloc
+#   gnulib-tool --import --dir=. --lib=libgnu --source-base=lib --m4-base=m4 --po-base=lib/po --doc-base=doc --tests-base=tests --aux-dir=build-aux --no-conditional-dependencies --no-libtool --macro-prefix=gl --po-domain=wdiff canonicalize-lgpl dup2 error gendocs getline getopt gettext locale maintainer-makefile mbsrchr regex setenv strstr-simple sys_stat sys_wait unistd vasprintf xalloc
 
 # Specification in the form of a few gnulib-tool.m4 macro invocations:
 gl_LOCAL_DIR([])
@@ -50,7 +50,6 @@ gl_MODULES([
   unistd
   vasprintf
   xalloc
-  xmalloc
 ])
 gl_AVOID([])
 gl_SOURCE_BASE([lib])
