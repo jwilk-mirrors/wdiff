@@ -1,35 +1,39 @@
-# wdiff: Translation to Brazilian Portuguese (pt_BR).
-# Copyright (C) 2002 Free Software Foundation, Inc.
+# Brazilian Portuguese translation for wdiff
+# Copyright (C) 2013 Free Software Foundation, Inc.
+# This file is distributed under the same license as the wdiff package.
 # Halley Pacheco de Oliveira <halleypo@ig.com.br>, 2002.
+# Rafael Ferreira <rafael.f.f1@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5g\n"
+"Project-Id-Version: wdiff 1.2.1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
 "POT-Creation-Date: 2013-03-09 02:55+0100\n"
-"PO-Revision-Date: 2010-02-01 20:49+0100\n"
-"Last-Translator: Halley Pacheco de Oliveira <halleypo@ig.com.br>\n"
-"Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
+"PO-Revision-Date: 2013-11-27 01:49-0300\n"
+"Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
+"net>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
+"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/mdiff.c:375
 #, c-format
 msgid "%s (for regexp `%s')"
-msgstr "%s (para a express„o regular `%s')"
+msgstr "%s (para a express√£o regular \"%s\")"
 
 #: src/mdiff.c:890 src/wdiff.c:1473
-#, fuzzy, c-format
+#, c-format
 msgid "only one file may be standard input"
-msgstr "Somente um arquivo pode ser a entrada padr„o."
+msgstr "apenas um arquivo pode ser a entrada padr√£o"
 
 #: src/mdiff.c:905 src/wdiff.c:678
-#, fuzzy, c-format
+#, c-format
 msgid "directories not supported"
-msgstr "DiretÛrios n„o suportados"
+msgstr "diret√≥rios sem suporte"
 
 #: src/mdiff.c:1048
 #, c-format
@@ -37,30 +41,30 @@ msgid "Reading %s"
 msgstr "Lendo %s"
 
 #: src/mdiff.c:1172
-#, fuzzy, c-format
+#, c-format
 msgid ", %d item\n"
 msgid_plural ", %d items\n"
-msgstr[0] ", %d itens\n"
+msgstr[0] ", %d item\n"
 msgstr[1] ", %d itens\n"
 
 #: src/mdiff.c:1252
 #, c-format
 msgid "Read summary:"
-msgstr ""
+msgstr "Resumo da leitura:"
 
 #: src/mdiff.c:1253
-#, fuzzy, c-format
+#, c-format
 msgid " %d file,"
 msgid_plural " %d files,"
-msgstr[0] ", %d itens\n"
-msgstr[1] ", %d itens\n"
+msgstr[0] " %d arquivo,"
+msgstr[1] " %d arquivos,"
 
 #: src/mdiff.c:1254
-#, fuzzy, c-format
+#, c-format
 msgid " %d item\n"
 msgid_plural " %d items\n"
-msgstr[0] ", %d itens\n"
-msgstr[1] ", %d itens\n"
+msgstr[0] " %d item\n"
+msgstr[1] " %d itens\n"
 
 #: src/mdiff.c:1647
 #, c-format
@@ -85,290 +89,261 @@ msgstr "Ordenando membros"
 #: src/mdiff.c:1915 src/mdiff.c:2298
 #, c-format
 msgid "Work summary:"
-msgstr ""
+msgstr "Resumo do trabalho:"
 
 #: src/mdiff.c:1916 src/mdiff.c:2299
-#, fuzzy, c-format
+#, c-format
 msgid " %d cluster,"
 msgid_plural " %d clusters,"
-msgstr[0] ", agregando (clustering)"
-msgstr[1] ", agregando (clustering)"
+msgstr[0] " %d cluster,"
+msgstr[1] " %d clusters,"
 
 #: src/mdiff.c:1918
-#, fuzzy, c-format
+#, c-format
 msgid " %d member\n"
 msgid_plural " %d members\n"
-msgstr[0] ", %d itens\n"
-msgstr[1] ", %d itens\n"
+msgstr[0] " %d membro\n"
+msgstr[1] " %d membros\n"
 
 #: src/mdiff.c:2301
 #, c-format
 msgid " %d member,"
 msgid_plural " %d members,"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] " %d membro,"
+msgstr[1] " %d membros,"
 
 #: src/mdiff.c:2303
 #, c-format
 msgid " %d overlap\n"
 msgid_plural " %d overlaps\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] " %d sobreposi√ß√£o\n"
+msgstr[1] " %d sobreposi√ß√µes\n"
 
 #: src/mdiff.c:2353 src/wdiff.c:228
-#, fuzzy, c-format
+#, c-format
 msgid "select a terminal through the TERM environment variable"
-msgstr "Selecione o terminal atravÈs da vari·vel de ambiente TERM"
+msgstr "selecione um terminal atrav√©s da vari√°vel de ambiente TERM"
 
 #: src/mdiff.c:2356 src/wdiff.c:231
-#, fuzzy, c-format
+#, c-format
 msgid "could not access the termcap data base"
-msgstr "ImpossÌvel acessar a base de dados `termcap'"
+msgstr "n√£o foi poss√≠vel acessar a base de dados de termcap"
 
 #: src/mdiff.c:2358 src/wdiff.c:233
-#, fuzzy, c-format
+#, c-format
 msgid "terminal type `%s' is not defined"
-msgstr "O terminal tipo `%s' n„o est· definido."
+msgstr "o terminal de tipo \"%s\" n√£o est√° definido"
 
 #: src/mdiff.c:3709 src/mdiff.c:3725 src/wdiff.c:1167 src/wdiff.c:1183
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %d word"
 msgid_plural "%s: %d words"
-msgstr[0] "%s: %d palavras"
+msgstr[0] "%s: %d palavra"
 msgstr[1] "%s: %d palavras"
 
 #: src/mdiff.c:3713 src/mdiff.c:3729 src/wdiff.c:1171 src/wdiff.c:1187
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% common"
 msgid_plural "  %d %.0f%% common"
-msgstr[0] "  %d %d%% comum"
-msgstr[1] "  %d %d%% comum"
+msgstr[0] "  %d %.0f%% comum"
+msgstr[1] "  %d %.0f%% comuns"
 
 #: src/mdiff.c:3716 src/wdiff.c:1174
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% deleted"
 msgid_plural "  %d %.0f%% deleted"
-msgstr[0] "  %d %d%% excluÌdo"
-msgstr[1] "  %d %d%% excluÌdo"
+msgstr[0] "  %d %.0f%% exclu√≠da"
+msgstr[1] "  %d %.0f%% exclu√≠das"
 
 #: src/mdiff.c:3719 src/mdiff.c:3735 src/wdiff.c:1177 src/wdiff.c:1193
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% changed"
 msgid_plural "  %d %.0f%% changed"
-msgstr[0] "  %d %d%% modificado"
-msgstr[1] "  %d %d%% modificado"
+msgstr[0] "  %d %.0f%% modificada"
+msgstr[1] "  %d %.0f%% modificadas"
 
 #: src/mdiff.c:3732 src/wdiff.c:1190
-#, fuzzy, c-format
+#, c-format
 msgid "  %d %.0f%% inserted"
 msgid_plural "  %d %.0f%% inserted"
-msgstr[0] "  %d %d%% inserido"
-msgstr[1] "  %d %d%% inserido"
+msgstr[0] "  %d %.0f%% inserida"
+msgstr[1] "  %d %.0f%% inseridas"
 
 #: src/mdiff.c:3763 src/wdiff.c:1233 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "Utilize `%s --help' para obter mais informaÁıes.\n"
+msgstr "Utilize \"%s --help\" para obter mais informa√ß√µes.\n"
 
 #: src/mdiff.c:3768
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff - Estuda m˙ltiplos arquivos procurando seq¸Íncias similares e\n"
-"produzindo, ent„o, listas detalhadas de diferenÁas e similaridades.\n"
+"mdiff - Estuda m√∫ltiplos arquivos procurando sequ√™ncias similares e\n"
+"produzindo, ent√£o, listas detalhadas de diferen√ßas e similaridades.\n"
 
 #: src/mdiff.c:3773
-#, fuzzy, c-format
+#, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr "UtilizaÁ„o: %s [OP«√O]... [ARQUIVO]...\n"
+msgstr "Uso: %s [OP√á√ÉO]... [ARQUIVO]...\n"
 
 #: src/mdiff.c:3777
-#, fuzzy
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
 "\n"
-"Modos de OperaÁ„o:\n"
+"Modos de opera√ß√£o:\n"
 
 #: src/mdiff.c:3778
-#, fuzzy
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (ignorado)\n"
 
 #: src/mdiff.c:3779
-#, fuzzy
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose          exibe umas poucas estatÌsticas na stderr.\n"
+msgstr ""
+"  -v, --verbose          relata algumas estat√≠sticas na sa√≠da de erro\n"
 
-# ? "      --help             Exibe esta ajuda e termina."
-# ? "      --help             exibe esta ajuda e termina."
 #: src/mdiff.c:3780 src/unify.c:295
 msgid "      --help             display this help then exit\n"
-msgstr ""
+msgstr "      --help             exibe esta mensagem de ajuda e sai\n"
 
-# ? "      --version          Exibe a informaÁ„o da vers„o e termina."
-# ? "      --version          exibe as informaÁıes da vers„o e termina."
 #: src/mdiff.c:3781 src/unify.c:296
 msgid "      --version          display program version then exit\n"
-msgstr ""
+msgstr "      --version          exibe a vers√£o do programa e, ent√£o, sai\n"
 
 #: src/mdiff.c:3783
-#, fuzzy
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
 "\n"
-"FormataÁ„o da SaÌda:\n"
+"Formata√ß√£o da sa√≠da:\n"
 
 #: src/mdiff.c:3784
-#, fuzzy
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr "  -T, --initial-tab       colocar TAB em vez de espaÁo inicial.\n"
+msgstr "  -T, --initial-tab       produz TAB em vez de espa√ßo inicial\n"
 
 #: src/mdiff.c:3785
-#, fuzzy
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr "  -l, --paginate          paginar a saÌda atravÈs da `pr'.\n"
+msgstr "  -l, --paginate          pagina a sa√≠da por meio de \"pr\"\n"
 
 #: src/mdiff.c:3786
-#, fuzzy
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr "  -S, --string[=STRING]   anotar outra STRING do usu·rio.\n"
+msgstr "  -S, --string[=TEXTO]   Toma nota de outro TEXTO de usu√°rio\n"
 
 #: src/mdiff.c:3787
-#, fuzzy
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr ""
-"  -V, --show-links        fornecer referÍncias de arquivo.\n"
-"                          e de linha nas anotaÁıes.\n"
+"  -V, --show-links        fornece refer√™ncias de linha e arquivo em\n"
+"                          anota√ß√µes\n"
 
 #: src/mdiff.c:3788
-#, fuzzy
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr "  -t, --expand-tabs       expandir tabulaÁıes em espaÁos na saÌda.\n"
+msgstr "  -t, --expand-tabs       expande tabs para espa√ßos na sa√≠da\n"
 
 #: src/mdiff.c:3791
-#, fuzzy
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
 "\n"
-"DepuraÁ„o:\n"
+"Depura√ß√£o:\n"
 
 #: src/mdiff.c:3792
-#, fuzzy
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr ""
-"  -0, --debugging   exibe muitos detalhes sobre o que est· acontecendo\n"
+"  -0, --debugging   exibe muitos detalhes sobre o que est√° acontecendo\n"
 
 #: src/mdiff.c:3795
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
+"\n"
+"Op√ß√µes de modo de op√ß√µes:\n"
 
 #: src/mdiff.c:3796 src/wdiff.c:1251 src/wdiff2.c:190
-#, fuzzy
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted           Inibir a exibiÁ„o das linhas excluÌdas.\n"
+msgstr "  -1, --no-deleted           inibe a sa√≠da de palavras exclu√≠das\n"
 
 #: src/mdiff.c:3797 src/wdiff.c:1252 src/wdiff2.c:191
-#, fuzzy
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr "  -2, --no-inserted          Inibir a exibiÁ„o das linhas inseridas.\n"
+msgstr "  -2, --no-inserted          exibe a sa√≠da de palavras inseridas\n"
 
 #: src/mdiff.c:3798 src/wdiff.c:1253 src/wdiff2.c:192
-#, fuzzy
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            Inibir a exibiÁ„o das palavras comuns.\n"
+msgstr "  -3, --no-common            inibe a sa√≠da de palavras comuns\n"
 
 #: src/mdiff.c:3799
-#, fuzzy
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager           Chama automaticamente o paginador.\n"
+msgstr "  -A, --auto-pager           chama automaticamente um paginador\n"
 
 #: src/mdiff.c:3800
-#, fuzzy
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr ""
-"  -k, --less-mode            VariaÁ„o do modo de impress„o para \"less.\"\n"
+"  -k, --less-mode            varia√ß√£o do modo de impressora para \"less\"\n"
 
 #: src/mdiff.c:3801
-#, fuzzy
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
-"  -m, --avoid-wraps          N„o extender campos atravÈs de novas linhas.\n"
+msgstr "  -m, --avoid-wraps          n√£o estende campos por novas linhas\n"
 
 #: src/mdiff.c:3802
-#, fuzzy
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer              Sobrepor para impressora.\n"
+msgstr "  -o, --printer              usa tachado como nas impressoras\n"
 
 #: src/mdiff.c:3803
-#, fuzzy
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -z, --terminal             Usar `termcap' para exibiÁ„o em terminal.\n"
+msgstr "  -z, --terminal             usa termcap para telas de terminal\n"
 
 #: src/mdiff.c:3804
-#, fuzzy
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr ""
-"  -O, --item-regexp=EXPREG   Comparar itens conforme definido em EXPREG.\n"
-"                             (EXPREG = express„o regular)\n"
+msgstr "  -O, --item-regexp=REGEXP   compara itens como definido por REGEXP\n"
 
 #: src/mdiff.c:3805
-#, fuzzy
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode            Comparar palavras em vez de linhas.\n"
+msgstr "  -W, --word-mode            compara palavras em vez de linhas\n"
 
 #: src/mdiff.c:3990
-#, fuzzy
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr "Sem nenhum ARQUIVO, ou quando ARQUIVO for -, ler da entrada padr„o.\n"
+msgstr "Sem nenhum ARQUIVO, ou quando ARQUIVO for -, ler da entrada padr√£o.\n"
 
 #: src/mdiff.c:3992 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
-#, fuzzy
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr "Relate problemas para <wdiff-bugs@gnu.org>.\n"
 
 #: src/mdiff.c:4004
 #, c-format
 msgid "ignoring option %s (not implemented)"
-msgstr ""
+msgstr "ignorando a op√ß√£o %s (n√£o implementada)"
 
 #: src/mdiff.c:4300
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use -z, termcap not available"
-msgstr "ImpossÌvel utilizar -z, 'termcap' n„o est· disponÌvel."
+msgstr "n√£o foi poss√≠vel usar -z, termcap n√£o est√° dispon√≠vel"
 
 #: src/mdiff.c:4339
-#, fuzzy, c-format
+#, c-format
 msgid "word merging for two files only (so far)"
-msgstr "Mescla de palavras para dois arquivos apenas (por enquanto)"
+msgstr "mescla de palavras para dois arquivos apenas (por enquanto)"
 
 #: src/mdiff.c:4355
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Direitos Autorais (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
 #: src/mdiff.c:4358 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Este È um programa livre; veja no fonte as condiÁıes para copiar.\n"
-"N„o existe nenhuma garantia, nem mesmo de COMERCIALIZA«√O  ou de\n"
-"ADEQUA«√O PARA ALGUMA FINALIDADE PARTICULAR.\n"
+"Este √© um programa livre; veja no fonte as condi√ß√µes para copiar.\n"
+"H√° NENHUMA GARANTIA; nem mesmo de COMERCIALIZA√á√ÉO ou de ADEQUA√á√ÉO\n"
+"A UM FIM ESPEC√çFICO.\n"
 
 #: src/mdiff.c:4361 src/wdiff.c:1398 src/wdiff2.c:134
 msgid ""
@@ -376,104 +351,92 @@ msgid ""
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 msgstr ""
 "\n"
-"Escrito por FranÁois Pinard <pinard@iro.umontreal.ca>.\n"
+"Escrito por Fran√ßois Pinard <pinard@iro.umontreal.ca>.\n"
 
 #: src/mdiff.c:4396
-#, fuzzy, c-format
+#, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
-msgstr "OpÁıes -123RSYZ somente fazem sentido quando existem duas entradas."
+msgstr "op√ß√µes -123RSYZ somente fazem sentido quando existem duas entradas"
 
 #: src/pipes.c:47
 #, c-format
 msgid "error redirecting stream"
-msgstr ""
+msgstr "erro ao redirecionar o fluxo"
 
 #: src/pipes.c:51
 #, c-format
 msgid "failed to execute %s"
-msgstr ""
+msgstr "falha ao executar %s"
 
 #: src/unify.c:145
-#, fuzzy, c-format
+#, c-format
 msgid "could not find a name for the diff at line %ld"
-msgstr "ImpossÌvel encontrar o nome para a diferenÁa na linha %ld"
+msgstr "n√£o foi poss√≠vel encontrar um nome para a diferen√ßa na linha %ld"
 
 #: src/unify.c:274
-#, fuzzy, c-format
+#, c-format
 msgid "try `%s --help' for more information\n"
-msgstr "Utilize `%s --help' para obter mais informaÁıes.\n"
+msgstr "utilize \"%s --help\" para obter mais informa√ß√µes\n"
 
 #: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr "unify - Transforma contexto `diffs' em `unidiffs', ou vice-versa.\n"
+msgstr "unify - Transforma contexto de diffs em unidiffs, e vice-versa.\n"
 
 #: src/unify.c:283
-#, fuzzy, c-format
+#, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr "UtilizaÁ„o: %s [OP«√O]... [ARQUIVO]\n"
+msgstr "Uso: %s [OP√á√ÉO]... [ARQUIVO]\n"
 
 #: src/unify.c:286
-#, fuzzy
 msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr ""
-"  -c, --context-diffs    ForÁar a saÌda para contexto das diferenÁas.\n"
+msgstr "  -c, --context-diffs    for√ßa a sa√≠da para diferen√ßas de contexto\n"
 
 #: src/unify.c:287
-#, fuzzy
 msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    Enviar os coment·rios para a saÌda padr„o.\n"
+msgstr "  -e, --echo-comments    ecoa coment√°rios para sa√≠da de erro padr√£o\n"
 
 #: src/unify.c:288
-#, fuzzy
 msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        Exibir as diferenÁas no estilo antigo.\n"
+msgstr "  -o, --old-diffs        exibe diferen√ßas em estilo antigo, sempre\n"
 
 #: src/unify.c:289
-#, fuzzy
 msgid "  -p, --patch-format     generate patch format\n"
-msgstr "  -p, --patch-format     Gerar formato de correÁ„o.\n"
+msgstr "  -p, --patch-format     gera um formato patch\n"
 
 #: src/unify.c:290
-#, fuzzy
 msgid "  -P                     same as -p\n"
-msgstr "  -P                     O mesmo que -p.\n"
+msgstr "  -P                     o mesmo que -p\n"
 
 #: src/unify.c:291
-#, fuzzy
 msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr "  -s, --strip-comments   Remover linhas de coment·rios.\n"
+msgstr "  -s, --strip-comments   descarta linhas de coment√°rios\n"
 
 #: src/unify.c:292
-#, fuzzy
 msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr "  -u, --unidiffs         ForÁar a saÌda no contexto unificado.\n"
+msgstr "  -u, --unidiffs         for√ßa sa√≠da para unidiffs\n"
 
 #: src/unify.c:293
-#, fuzzy
 msgid "  -U                     same as -p and -u\n"
-msgstr "  -U                     O mesmo que -p e -u.\n"
+msgstr "  -U                     o mesmo que -p e -u\n"
 
 #: src/unify.c:294
-#, fuzzy
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
 msgstr ""
-"  -=, --use-equals       Substituir espaÁos pelo sinal de igual\n"
-"                         no contexto unificado.\n"
+"  -=, --use-equals       substitui espa√ßos por sinais de igual no unidiffs\n"
 
 #: src/unify.c:298
-#, fuzzy
 msgid "If FILE is not specified, read standard input.\n"
-msgstr "Se ARQUIVO n„o for especificado, ler da entrada padr„o.\n"
+msgstr "Se ARQUIVO n√£o tiver sido especificado, l√™ da entrada padr√£o.\n"
 
 #: src/unify.c:389
-#, fuzzy, c-format
+#, c-format
 msgid "unable to open `%s'"
-msgstr "ImpossÌvel abrir `%s'"
+msgstr "n√£o foi poss√≠vel abrir \"%s\""
 
 #: src/unify.c:395
-#, fuzzy, c-format
+#, c-format
 msgid "only one filename allowed"
-msgstr "Somente o nome de um arquivo È permitido"
+msgstr "apenas um nome de arquivo √© permitido"
 
 #: src/unify.c:404
 msgid ""
@@ -481,7 +444,7 @@ msgid ""
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Direitos Autorais (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
 #: src/unify.c:410
 msgid ""
@@ -492,47 +455,46 @@ msgstr ""
 "Escrito por Wayne Davison <davison@borland.com>.\n"
 
 #: src/unify.c:548
-#, fuzzy, c-format
+#, c-format
 msgid "invalid unified diff header at line %ld"
-msgstr "CabeÁalho de diferenÁa unificada inv·lido na linha %ld"
+msgstr "cabe√ßalho de diferen√ßa unificada inv√°lido na linha %ld"
 
 #: src/unify.c:590
-#, fuzzy, c-format
+#, c-format
 msgid "malformed unified diff at line %ld"
-msgstr "DiferenÁa unificada mal formada na linha %ld"
+msgstr "diferen√ßa unificada mal formada na linha %ld"
 
 #: src/unify.c:620
-#, fuzzy, c-format
+#, c-format
 msgid "context diff missing `old' header at line %ld"
-msgstr "Contexto das diferenÁas sem o cabeÁalho `old' na linha %ld"
+msgstr "contexto das diferen√ßas sem o cabe√ßalho \"old\" na linha %ld"
 
 #: src/unify.c:664 src/unify.c:683 src/unify.c:753 src/unify.c:771
-#, fuzzy, c-format
+#, c-format
 msgid "malformed context diff at line %ld"
-msgstr "Contexto das diferenÁas mal formado na linha %ld"
+msgstr "contexto das diferen√ßas mal formado na linha %ld"
 
 #: src/unify.c:718
-#, fuzzy, c-format
+#, c-format
 msgid "context diff missing `new' header at line %ld"
-msgstr "Contexto das diferenÁas sem o cabeÁalho `new' na linha %ld"
+msgstr "contexto das diferen√ßas sem o cabe√ßalho \"new\" na linha %ld"
 
 #: src/wdiff.c:582 src/wdiff.c:701
 #, c-format
 msgid "no suitable temporary directory exists"
-msgstr ""
+msgstr "n√£o existe um diret√≥rio tempor√°rio adequado"
 
 #: src/wdiff.c:1040
 #, c-format
 msgid "%s: input program killed by signal %d\n"
-msgstr ""
+msgstr "%s: programa de entrada morto pelo sinal %d\n"
 
 #: src/wdiff.c:1145
 #, c-format
 msgid "%s: output program killed by signal %d\n"
-msgstr ""
+msgstr "%s: programa de sa√≠da morto pelo sinal %d\n"
 
 #: src/wdiff.c:1210 src/wdiff2.c:109
-#, fuzzy
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -547,212 +509,198 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"Este programa È um software livre; vocÍ pode redistribuir e/ou modificar\n"
-"sob os termos da LicenÁa P˙blica Geral GNU conforme publicado pela\n"
-"Free Software Foundation, utilizando a vers„o 2, ou (se preferir)\n"
-"qualquer vers„o posterior.\n"
+"Este programa √© um software livre; voc√™ pode redistribu√≠-lo e/ou modific√°-"
+"lo\n"
+"sob os termos da Licen√ßa P√∫blica Geral GNU publicada pela Free Software\n"
+"Foundation; qualquer vers√£o 3 da Licen√ßa, ou (a seu crit√©rio)\n"
+"outra vers√£o posterior.\n"
 "\n"
-"Este programa È distribuÌdo na esperanÁa de que ser· ˙til,\n"
-"mas SEM NENHUMA GARANTIA; mesmo sem a garantia implicita de\n"
-"COMERCIALIZA«√O ou de ADEQUA«√O PARA ALGUMA FINALIDADE PARTICULAR.\n"
-"Veja a LicenÁa P˙blica Geral GNU para mais informaÁıes.\n"
+"Este programa √© distribu√≠do na expectativa de que seja √∫til, mas SEM "
+"NENHUMA\n"
+"GARANTIA; sem mesmo implicar garantias de COMERCIALIZA√á√ÉO ou ADEQUA√á√ÉO\n"
+"A UM FIM ESPEC√çFICO. Veja a Licen√ßa P√∫blica Geral GNU (GPL) para mais\n"
+"detalhes.\n"
+"\n"
+"Voc√™ deve ter recebido uma c√≥pia da Licen√ßa P√∫blica Geral GNU junto com "
+"este\n"
+"programa; caso contr√°rio, veja <http://www.gnu.org/licenses/>.\n"
 
 #: src/wdiff.c:1238
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr "wdiff - Compara palavras em dois arquivos e relata as diferenÁas.\n"
+msgstr "wdiff - Compara palavras em dois arquivos e relata as diferen√ßas.\n"
 
 #: src/wdiff.c:1242
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
 "   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"UtilizaÁ„o: %s [OP«√O]... ARQUIVO1 ARQUIVO2\n"
-"            %s -d [OP«√O]... [ARQUIVO]\n"
+"Uso: %s [OP√á√ÉO]... ARQUIVO1 ARQUIVO2\n"
+" ou: %s -d [OP√á√ÉO]... [ARQUIVO]\n"
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
-#, fuzzy
 msgid ""
 "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
+"Argumentos obrigat√≥rios para op√ß√µes longas s√£o obrigat√≥rios para as op√ß√µes "
+"curtas tamb√©m.\n"
 
 #: src/wdiff.c:1250 src/wdiff2.c:189
-#, fuzzy
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr "  -C, --copyright            Exibir os direitos autorais e terminar.\n"
+msgstr "  -C, --copyright            exibe os direitos autorais e sai\n"
 
 #: src/wdiff.c:1254 src/wdiff2.c:193
-#, fuzzy
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           Chamar o paginador automaticamente.\n"
+msgstr "  -a, --auto-pager           chama automaticamente um paginador\n"
 
 #: src/wdiff.c:1255
 msgid "  -d, --diff-input           use single unified diff as input\n"
 msgstr ""
+"  -d, --diff-input           usa diferencial unificado singular como "
+"entrada\n"
 
 #: src/wdiff.c:1256 src/wdiff2.c:194
-#, fuzzy
 msgid "  -h, --help                 display this help then exit\n"
-msgstr "  -h, --help                 Exibir esta ajuda.\n"
+msgstr "  -h, --help                 exibe esta mensagem de ajuda e sai\n"
 
 #: src/wdiff.c:1257 src/wdiff2.c:195
-#, fuzzy
 msgid "  -i, --ignore-case          fold character case while comparing\n"
 msgstr ""
-"  -i, --ignore-case          Ignorar mai˙sculas/min˙sculas ao comparar.\n"
+"  -i, --ignore-case          ignora caracteres mai√∫sculos na compara√ß√£o\n"
 
 #: src/wdiff.c:1258 src/wdiff2.c:196
-#, fuzzy
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
 msgstr ""
-"  -l, --less-mode            VariaÁ„o do modo de exibiÁ„o para \"less\".\n"
+"  -l, --less-mode            varia√ß√£o do modo de impressora para \"less\"\n"
 
 #: src/wdiff.c:1259 src/wdiff2.c:197
-#, fuzzy
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
-"  -n, --avoid-wraps          N„o estender campos atravÈs de novas linhas.\n"
+msgstr "  -n, --avoid-wraps          n√£o estende campos por novas linhas\n"
 
 #: src/wdiff.c:1260 src/wdiff2.c:198
-#, fuzzy
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              Sobrepor para exibiÁ„o.\n"
+msgstr "  -p, --printer              usa tachado como nas impressoras\n"
 
 #: src/wdiff.c:1261 src/wdiff2.c:200
-#, fuzzy
 msgid ""
 "  -s, --statistics           say how many words deleted, inserted etc.\n"
 msgstr ""
-"  -s, --statistics           Informar quantas linhas excluÌdas, inseridas "
+"  -s, --statistics           fala quantas palavras exclu√≠das, inseridas, "
 "etc.\n"
 
 #: src/wdiff.c:1262 src/wdiff2.c:201
-#, fuzzy
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -t, --terminal             Usar termcap para exibiÁ„o em terminais.\n"
+msgstr "  -t, --terminal             usa termcap para telas de terminal\n"
 
 #: src/wdiff.c:1263 src/wdiff2.c:202
-#, fuzzy
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version              Exibir a vers„o do programa e terminar.\n"
+msgstr ""
+"  -v, --version              exibe a vers√£o do programa e, ent√£o, sai\n"
 
 #: src/wdiff.c:1264 src/wdiff2.c:203
-#, fuzzy
 msgid ""
 "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
 msgstr ""
-"  -w, --start-delete=STRING  String para marcar o inÌcio da regi„o "
-"excluÌda.\n"
+"  -w, --start-delete=TEXTO   texto para marcar o in√≠cio da regi√£o de "
+"exclus√£o\n"
 
 #: src/wdiff.c:1265 src/wdiff2.c:204
-#, fuzzy
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
 msgstr ""
-"  -x, --end-delete=STRING    String para marcar o final da regi„o excluÌda.\n"
+"  -x, --end-delete=TEXTO     texto para marcar o fim da regi√£o de exclus√£o\n"
 
 #: src/wdiff.c:1266 src/wdiff2.c:205
-#, fuzzy
 msgid ""
 "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 msgstr ""
-"  -y, --start-insert=STRING  String para marcar o inÌcio da regi„o "
-"inserida.\n"
+"  -y, --start-insert=TEXTO   texto para marcar o in√≠cio da regi√£o de "
+"inser√ß√£o\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:206
-#, fuzzy
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
 msgstr ""
-"  -z, --end-insert=STRING    String para marcar o final da regi„o inserida.\n"
+"  -z, --end-insert=TEXTO     texto para marcar o fim da regi√£o de inser√ß√£o\n"
 
 #: src/wdiff.c:1386
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use -t, termcap not available"
-msgstr "ImpossÌvel utilizar -t, `termcap' n„o est· disponÌvel."
+msgstr "n√£o foi poss√≠vel usar -t, termcap n√£o est√° dispon√≠vel"
 
 #: src/wdiff.c:1391
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Direitos Autorais (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
+"Foundation, Inc.\n"
 
 #: src/wdiff.c:1436 src/wdiff.c:1454
-#, fuzzy, c-format
+#, c-format
 msgid "too many file arguments"
-msgstr "Faltando os argumentos de arquivo"
+msgstr "excesso de argumentos de arquivo"
 
 #: src/wdiff.c:1449 src/wdiff2.c:320
-#, fuzzy, c-format
+#, c-format
 msgid "missing file arguments"
-msgstr "Faltando os argumentos de arquivo"
+msgstr "faltando os argumentos de arquivo"
 
 #: src/wdiff2.c:128
-#, fuzzy
 msgid ""
 "\n"
 "Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Direitos Autorais (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 
 #: src/wdiff2.c:177
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
+"wdiff - Computa diferen√ßas de palavras executando internamente \"mdiff -W"
+"\".\n"
+"Este programa existe principalmente para dar suporte √† sintaxe antiga do "
+"wdiff.\n"
 
 #: src/wdiff2.c:182
-#, fuzzy, c-format
+#, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "UtilizaÁ„o: %s [OP«√O]... ARQUIVO1 ARQUIVO2\n"
+msgstr "Uso: %s [OP√á√ÉO]... ARQUIVO1 ARQUIVO2\n"
 
 #: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
 msgstr ""
+"  -q, --quiet                inibe a mensagem de chamada do \"mdiff\"\n"
 
 #: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
 msgstr ""
+"Este programa tamb√©m diz como \"mdiff\" poderia ter sido chamado "
+"diretamente.\n"
 
 #. TRANSLATORS: This and the next string are one message.
 #: src/wdiff2.c:332
-#, fuzzy, c-format
+#, c-format
 msgid "Launching `%s"
-msgstr "Lendo %s"
+msgstr "Executando \"%s"
 
 #: src/wdiff2.c:335
 #, c-format
 msgid "'\n"
-msgstr ""
+msgstr "\"\n"
 
 #~ msgid "Read summary: %d files, %d items\n"
 #~ msgstr "Resumo da leitura: %d arquivos, %d itens\n"
 
 #~ msgid "Work summary: %d clusters, %d members\n"
-#~ msgstr "Resumo do trabalho: %d agregaÁıes (clusters), %d membros\n"
+#~ msgstr "Resumo do trabalho: %d agrega√ß√µes (clusters), %d membros\n"
 
 #~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
 #~ msgstr ""
 #~ "Resumo do trabalho:\n"
-#~ "    %d agregaÁıes (clusters), %d membros, %d sobreposiÁıes\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-#~ msgstr ""
-#~ "  -K, --no-init-term         Como -z, mas sem as strings `init/term'.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-#~ msgstr ""
-#~ "  -K, --no-init-term         Como -t, mas sem strings init/term do "
-#~ "termcap.\n"
+#~ "    %d agrega√ß√µes (clusters), %d membros, %d sobreposi√ß√µes\n"
 
 #~ msgid ""
 #~ "\n"
@@ -763,11 +711,11 @@ msgstr ""
 #~ "      --version          output version information and exit\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Modos de OperaÁ„o:\n"
+#~ "Modos de Opera√ß√£o:\n"
 #~ "  -h                     (ignorado)\n"
-#~ "  -v, --verbose          exibe umas poucas estatÌsticas na stderr.\n"
+#~ "  -v, --verbose          exibe umas poucas estat√≠sticas na stderr.\n"
 #~ "      --help             exibe esta ajuda e termina.\n"
-#~ "      --version          exibe as informaÁıes da vers„o e termina.\n"
+#~ "      --version          exibe as informa√ß√µes da vers√£o e termina.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -779,13 +727,13 @@ msgstr ""
 #~ "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 #~ msgstr ""
 #~ "\n"
-#~ "FormataÁ„o da SaÌda:\n"
-#~ "  -T, --initial-tab       colocar TAB em vez de espaÁo inicial.\n"
-#~ "  -l, --paginate          paginar a saÌda atravÈs da `pr'.\n"
-#~ "  -S, --string[=STRING]   anotar outra STRING do usu·rio.\n"
-#~ "  -V, --show-links        fornecer referÍncias de arquivo.\n"
-#~ "                          e de linha nas anotaÁıes.\n"
-#~ "  -t, --expand-tabs       expandir tabulaÁıes em espaÁos na saÌda.\n"
+#~ "Formata√ß√£o da Sa√≠da:\n"
+#~ "  -T, --initial-tab       colocar TAB em vez de espa√ßo inicial.\n"
+#~ "  -l, --paginate          paginar a sa√≠da atrav√©s da `pr'.\n"
+#~ "  -S, --string[=STRING]   anotar outra STRING do usu√°rio.\n"
+#~ "  -V, --show-links        fornecer refer√™ncias de arquivo.\n"
+#~ "                          e de linha nas anota√ß√µes.\n"
+#~ "  -t, --expand-tabs       expandir tabula√ß√µes em espa√ßos na sa√≠da.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -803,21 +751,21 @@ msgstr ""
 #~ "  -W, --word-mode             compare words instead of lines\n"
 #~ msgstr ""
 #~ "\n"
-#~ "OpÁıes do Modo Palavra:\n"
-#~ "  -1, --no-deleted            Inibe a exibiÁ„o das palavras removidas.\n"
-#~ "  -2, --no-inserted           Inibe a exibiÁ„o das palavras inseridas.\n"
-#~ "  -3, --no-common             Inibe a exibiÁ„o das palavras comuns.\n"
+#~ "Op√ß√µes do Modo Palavra:\n"
+#~ "  -1, --no-deleted            Inibe a exibi√ß√£o das palavras removidas.\n"
+#~ "  -2, --no-inserted           Inibe a exibi√ß√£o das palavras inseridas.\n"
+#~ "  -3, --no-common             Inibe a exibi√ß√£o das palavras comuns.\n"
 #~ "  -A, --auto-pager            Chama automaticamente o paginador.\n"
-#~ "  -k, --less-mode             VariaÁ„o do modo de impress„o para \"less."
+#~ "  -k, --less-mode             Varia√ß√£o do modo de impress√£o para \"less."
 #~ "\"\n"
-#~ "  -m, --avoid-wraps           N„o extender campos atravÈs de novas "
+#~ "  -m, --avoid-wraps           N√£o extender campos atrav√©s de novas "
 #~ "linhas.\n"
 #~ "  -o, --printer               Sobrepor para impressora.\n"
-#~ "  -z, --terminal              Usar `termcap' para exibiÁ„o em terminal.\n"
+#~ "  -z, --terminal              Usar `termcap' para exibi√ß√£o em terminal.\n"
 #~ "  -K, --no-init-term          Como -z, mas sem as strings `init/term'.\n"
 #~ "  -O, --item-regexp=EXPREG    Comparar itens conforme definido em "
 #~ "EXPREG.\n"
-#~ "                              (EXPREG = express„o regular)  -W, --word-"
+#~ "                              (EXPREG = express√£o regular)  -W, --word-"
 #~ "mode             Comparar palavras em vez de linhas.\n"
 
 #~ msgid ""
@@ -834,17 +782,17 @@ msgstr ""
 #~ "suffixes\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ComparaÁ„o de Arquivos:\n"
-#~ "*  -H, --speed-large-files     Acelera no caso de muitas alteraÁıes "
+#~ "Compara√ß√£o de Arquivos:\n"
+#~ "*  -H, --speed-large-files     Acelera no caso de muitas altera√ß√µes "
 #~ "pequenas.\n"
-#~ "*  -a, --text                  Exibe diferenÁas de linha.\n"
-#~ "                               (padr„o para arquivo de texto)\n"
-#~ "*  -d, --minimal               Se esforÁar para encontrar o menor "
+#~ "*  -a, --text                  Exibe diferen√ßas de linha.\n"
+#~ "                               (padr√£o para arquivo de texto)\n"
+#~ "*  -d, --minimal               Se esfor√ßar para encontrar o menor "
 #~ "conjunto\n"
-#~ "                               de diferenÁas.\n"
-#~ "*  -q, --brief                 Diz apenas se os arquivos s„o diferentes.\n"
-#~ "                               (padr„o para arquivos bin·rios)\n"
-#~ "*      --horizon-lines=LINHAS  Exibe o n˙mero de LINHAS em comum\n"
+#~ "                               de diferen√ßas.\n"
+#~ "*  -q, --brief                 Diz apenas se os arquivos s√£o diferentes.\n"
+#~ "                               (padr√£o para arquivos bin√°rios)\n"
+#~ "*      --horizon-lines=LINHAS  Exibe o n√∫mero de LINHAS em comum\n"
 #~ "                               no prefixo e no sufixo.\n"
 
 #~ msgid ""
@@ -861,23 +809,23 @@ msgstr ""
 #~ "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ComparaÁ„o de DiretÛrios:\n"
+#~ "Compara√ß√£o de Diret√≥rios:\n"
 #~ "*  -N, --new-file                  Considerar arquivos faltando como "
 #~ "vazios.\n"
 #~ "*  -P, --unidirectional-new-file   Considerar arquivos antigos faltando\n"
 #~ "                                   como vazios.\n"
-#~ "*  -S, --starting-file=ARQUIVO     Prosseguir a comparaÁ„o dos "
-#~ "diretÛrios\n"
+#~ "*  -S, --starting-file=ARQUIVO     Prosseguir a compara√ß√£o dos "
+#~ "diret√≥rios\n"
 #~ "                                   a partir do ARQUIVO.\n"
 #~ "*  -X, --exclude-from=ARQUIVO      Ignorar os arquivos que correspondam "
 #~ "aos\n"
-#~ "                                   padrıes contidos em ARQUIVO.\n"
-#~ "*  -r, --recursive                 Comparar os subdiretÛrios "
+#~ "                                   padr√µes contidos em ARQUIVO.\n"
+#~ "*  -r, --recursive                 Comparar os subdiret√≥rios "
 #~ "recursivamente.\n"
 #~ "*  -s, --report-identical-files    Relatar quando dois arquivos forem\n"
-#~ "                                   idÍnticos.\n"
-#~ "*  -x, --exclude=PADR√O            Ignorar arquivos (diretÛrios) que\n"
-#~ "                                   correspondem ao PADR√O.\n"
+#~ "                                   id√™nticos.\n"
+#~ "*  -x, --exclude=PADR√ÉO            Ignorar arquivos (diret√≥rios) que\n"
+#~ "                                   correspondem ao PADR√ÉO.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -893,13 +841,13 @@ msgstr ""
 #~ "  -B, --ignore-blank-lines             Ignorar as linhas em branco.\n"
 #~ "* -I, --ignore-matching-lines=EXPREG   Ignorar as linhas que "
 #~ "correspondem\n"
-#~ "                                       ‡ express„o regular EXPREG.\n"
-#~ "  -b, --ignore-space-change            Ignorar a quantidade de espaÁos\n"
+#~ "                                       √† express√£o regular EXPREG.\n"
+#~ "  -b, --ignore-space-change            Ignorar a quantidade de espa√ßos\n"
 #~ "                                       em branco.\n"
-#~ "  -i, --ignore-case                    Ignorar as diferenÁas entre "
+#~ "  -i, --ignore-case                    Ignorar as diferen√ßas entre "
 #~ "letras\n"
-#~ "                                       mai˙sculas e min˙sculas.\n"
-#~ "  -w, --ignore-all-space               Ignorar espaÁos em branco.\n"
+#~ "                                       mai√∫sculas e min√∫sculas.\n"
+#~ "  -w, --ignore-all-space               Ignorar espa√ßos em branco.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -909,12 +857,12 @@ msgstr ""
 #~ "  -j, --ignore-delimiters    do not count items having only delimiters\n"
 #~ msgstr ""
 #~ "\n"
-#~ "AgregaÁ„o (cluster):\n"
+#~ "Agrega√ß√£o (cluster):\n"
 #~ "  -G, --relist-files        Listar todos os arquivos de entrada\n"
-#~ "                            com anotaÁıes.\n"
-#~ "  -J, --minimum-size=ITENS  Ignorar as agregaÁıes (clusters) que n„o\n"
+#~ "                            com anota√ß√µes.\n"
+#~ "  -J, --minimum-size=ITENS  Ignorar as agrega√ß√µes (clusters) que n√£o\n"
 #~ "                            tiverem ao menos tantos ITENS.\n"
-#~ "  -j, --ignore-delimiters   N„o contar itens que possuirem apenas\n"
+#~ "  -j, --ignore-delimiters   N√£o contar itens que possuirem apenas\n"
 #~ "                            delimitadores.\n"
 
 #~ msgid ""
@@ -932,14 +880,14 @@ msgstr ""
 #~ "format\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Formatos de saÌda detalhados:\n"
+#~ "Formatos de sa√≠da detalhados:\n"
 #~ "*  -D, --ifdef=NOME                      Exibe no formato `#ifdef NOME'.\n"
 #~ "*      --changed-group-format=FORMATO    Usar FORMATO para linhas "
 #~ "modificadas.\n"
 #~ "*      --new-group-format=FORMATO        Usar FORMATO para grupos "
-#~ "incluÌdos.\n"
+#~ "inclu√≠dos.\n"
 #~ "*      --new-line-format=FORMATO         Usar FORMATO para linhas "
-#~ "incluÌdas.\n"
+#~ "inclu√≠das.\n"
 #~ "*      --old-group-format=FORMATO        Usar FORMATO para grupos "
 #~ "eliminados.\n"
 #~ "*      --old-line-format=FORMATO         Usar FORMATO para linhas "
@@ -961,9 +909,9 @@ msgstr ""
 #~ msgstr ""
 #~ "\n"
 #~ "Formatos tipo Script:\n"
-#~ "  (nenhum de -CDUcefnuy)  Exibe as diferenÁas da forma normal.\n"
-#~ "*  -e, --ed               Produz um script v·lido para o `ed'.\n"
-#~ "*  -f, --forward-ed       Mistura entre -e e -n (n„o muito ˙til).\n"
+#~ "  (nenhum de -CDUcefnuy)  Exibe as diferen√ßas da forma normal.\n"
+#~ "*  -e, --ed               Produz um script v√°lido para o `ed'.\n"
+#~ "*  -f, --forward-ed       Mistura entre -e e -n (n√£o muito √∫til).\n"
 #~ "*  -n, --rcs              Produz um formato RCS.\n"
 #~ "                          (internamente usado pelo RCS)\n"
 
@@ -978,9 +926,9 @@ msgstr ""
 #~ "\n"
 #~ "Formatos de contexto e unificados:\n"
 #~ "*  -F, --show-function-line=EXPREG   Exibir a linha mais recente que\n"
-#~ "                                     corresponde ‡ EXPress„o REGular.\n"
-#~ "*  -p, --show-c-function             Mostrar em qual funÁ„o C (ed)\n"
-#~ "                                     est· cada diferenÁa.\n"
+#~ "                                     corresponde √† EXPress√£o REGular.\n"
+#~ "*  -p, --show-c-function             Mostrar em qual fun√ß√£o C (ed)\n"
+#~ "                                     est√° cada diferen√ßa.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -994,16 +942,16 @@ msgstr ""
 #~ "*  -LINES                      (obsolete: select context size in lines)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "*  -C, --context=LINHAS        Como -c, tambÈm seleciona o tamanho\n"
+#~ "*  -C, --context=LINHAS        Como -c, tamb√©m seleciona o tamanho\n"
 #~ "                               do contexto em linhas.\n"
-#~ "*  -L, --label=R”TULO          Usar de/para R”TULO em vez do nome\n"
+#~ "*  -L, --label=R√ìTULO          Usar de/para R√ìTULO em vez do nome\n"
 #~ "                               do arquivo (dobrado).\n"
-#~ "*  -U, --unified=LINHAS        Como -u, tambÈm seleciona o tamanho\n"
+#~ "*  -U, --unified=LINHAS        Como -u, tamb√©m seleciona o tamanho\n"
 #~ "                               do contexto em linhas.\n"
-#~ "*  -c, --context               Exibe o contexto das diferenÁas.\n"
-#~ "                               (padr„o de 3 linhas de contexto)\n"
+#~ "*  -c, --context               Exibe o contexto das diferen√ßas.\n"
+#~ "                               (padr√£o de 3 linhas de contexto)\n"
 #~ "*  -u, --unified               Exibe o contexto unificado.\n"
-#~ "                               (padr„o de 3 linhas de contexto)\n"
+#~ "                               (padr√£o de 3 linhas de contexto)\n"
 #~ "*  -LINHAS                     (obsoleto: seleciona o tamanho do\n"
 #~ "                               contexto em linhas))\n"
 
@@ -1019,11 +967,11 @@ msgstr ""
 #~ "\n"
 #~ "Formato lado a lado:\n"
 #~ "*  -W, --width=COLUNAS           Usar a largura de COLUNAS.\n"
-#~ "*  -y, --side-by-side            Usar o formato de saÌda lado a lado.\n"
+#~ "*  -y, --side-by-side            Usar o formato de sa√≠da lado a lado.\n"
 #~ "*      --left-column             Exibir somente a coluna da esquerda\n"
-#~ "                                 quando forem idÍnticas.\n"
+#~ "                                 quando forem id√™nticas.\n"
 #~ "*      --sdiff-merge-assist      (usado internamente por `sdiff')\n"
-#~ "*      --suppress-common-lines   N„o exibir as linhas idÍnticas.\n"
+#~ "*      --suppress-common-lines   N√£o exibir as linhas id√™nticas.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1042,16 +990,16 @@ msgstr ""
 #~ "  %%L           [line] with its possible trailing newline\n"
 #~ msgstr ""
 #~ "\n"
-#~ "FORMATO È constituÌdo por caracteres representando a si prÛprios, "
+#~ "FORMATO √© constitu√≠do por caracteres representando a si pr√≥prios, "
 #~ "exceto:\n"
-#~ "  %%%%         um ˙nico %%\n"
-#~ "  %%c'C'       C entre apÛstrofos\n"
+#~ "  %%%%         um √∫nico %%\n"
+#~ "  %%c'C'       C entre ap√≥strofos\n"
 #~ "  %%c'\\O'     caracter com valor O, de 1 a 3 digitos octais\n"
-#~ "  %%(A=B?T:E)  se A for igual a B ent„o T sen„o E;\n"
-#~ "               A e B n˙meros ou VARI¡VEIS;\n"
+#~ "  %%(A=B?T:E)  se A for igual a B ent√£o T sen√£o E;\n"
+#~ "               A e B n√∫meros ou VARI√ÅVEIS;\n"
 #~ "               T e E FORMATOS\n"
-#~ "  %%FN         usar a especificaÁ„o ESPEC F para exibir o valor da "
-#~ "vari·vel N\n"
+#~ "  %%FN         usar a especifica√ß√£o ESPEC F para exibir o valor da "
+#~ "vari√°vel N\n"
 #~ "  %%<          [grupo] antigo, cada linha segundo --old-line-format\n"
 #~ "  %%>          [grupo] novo, cada linha segundo --new-line-format\n"
 #~ "  %%=          [grupo] inalterado, cada linha segundo --unchanged-line-"
@@ -1064,7 +1012,7 @@ msgstr ""
 #~ "SPECIF is [-][W[.D]]{doxX} as in C printf\n"
 #~ msgstr ""
 #~ "\n"
-#~ "ESPEC È [-][W[.D]]{doxX} como na funÁ„o `printf' da linguagem C\n"
+#~ "ESPEC √© [-][W[.D]]{doxX} como na fun√ß√£o `printf' da linguagem C\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1076,12 +1024,12 @@ msgstr ""
 #~ "  {nN}   number of lines in the group\n"
 #~ msgstr ""
 #~ "\n"
-#~ "VARI¡VEL È {eflmn} para grupo antigo ou {EFLMN} para grupo novo\n"
-#~ "  {eE}   n˙mero da linha logo antes do grupo\n"
-#~ "  {fF}   n˙mero da primeira linha do grupo\n"
-#~ "  {lL}   n˙mero da ˙ltima linha do grupo\n"
-#~ "  {mM}   n˙mero da linha logo apÛs o grupo\n"
-#~ "  {nN}   n˙mero de linhas no grupo\n"
+#~ "VARI√ÅVEL √© {eflmn} para grupo antigo ou {EFLMN} para grupo novo\n"
+#~ "  {eE}   n√∫mero da linha logo antes do grupo\n"
+#~ "  {fF}   n√∫mero da primeira linha do grupo\n"
+#~ "  {lL}   n√∫mero da √∫ltima linha do grupo\n"
+#~ "  {mM}   n√∫mero da linha logo ap√≥s o grupo\n"
+#~ "  {nN}   n√∫mero de linhas no grupo\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1104,33 +1052,33 @@ msgstr ""
 #~ "  -F, --show-function-line=RE show the most recent line matching RE\n"
 #~ msgstr ""
 #~ "\n"
-#~ "OpÁıes padr„o do `diff':\n"
-#~ "  -i, --ignore-case         N„o fazer distinÁ„o entre letras mai˙sculas "
+#~ "Op√ß√µes padr√£o do `diff':\n"
+#~ "  -i, --ignore-case         N√£o fazer distin√ß√£o entre letras mai√∫sculas "
 #~ "e\n"
-#~ "                            min˙sculas no conte˙do do arquivo.\n"
-#~ "  -w, --ignore-all-space    Ignorar todos os espaÁos em branco.\n"
-#~ "  -b, --ignore-space-change Ignorar a diferenÁa na quantidade de espaÁos\n"
+#~ "                            min√∫sculas no conte√∫do do arquivo.\n"
+#~ "  -w, --ignore-all-space    Ignorar todos os espa√ßos em branco.\n"
+#~ "  -b, --ignore-space-change Ignorar a diferen√ßa na quantidade de espa√ßos\n"
 #~ "                            em branco.\n"
-#~ "  -B, --ignore-blank-lines  Ignorar diferenÁas nas linhas somente com "
+#~ "  -B, --ignore-blank-lines  Ignorar diferen√ßas nas linhas somente com "
 #~ "brancos.\n"
 #~ "  -I, --ignore-matching-lines=EXPREG\n"
-#~ "                            Ignorar as diferenÁas nas linhas que "
+#~ "                            Ignorar as diferen√ßas nas linhas que "
 #~ "correspondem\n"
-#~ "                            ‡ EXPress„o REGular.\n"
+#~ "                            √† EXPress√£o REGular.\n"
 #~ "  -a, --text                Considerar todos os arquivos como sendo de "
 #~ "texto.\n"
-#~ "  -c, --context[=N]         Exibir o contexto regular das diferenÁas\n"
+#~ "  -c, --context[=N]         Exibir o contexto regular das diferen√ßas\n"
 #~ "                            (diffs) usando N linhas d contexto.\n"
-#~ "  -u, --unified[=N]         Exibir o contexto unificado das diferenÁas\n"
+#~ "  -u, --unified[=N]         Exibir o contexto unificado das diferen√ßas\n"
 #~ "                            (unidiffs) usando N linhas de contexto.\n"
 #~ "  -C, --context=N           Exibir N linhas do contexto copiado.\n"
 #~ "  -U, --unified=N           Exibir N linhas do contexto unificado.\n"
-#~ "  -L, --label=R”TULO        Usar R”TULO em vez do nome do arquivo.\n"
-#~ "  -p, --show-c-function     Mostrar qual funÁ„o C (ed) est· cada "
-#~ "diferenÁa.\n"
+#~ "  -L, --label=R√ìTULO        Usar R√ìTULO em vez do nome do arquivo.\n"
+#~ "  -p, --show-c-function     Mostrar qual fun√ß√£o C (ed) est√° cada "
+#~ "diferen√ßa.\n"
 #~ "  -F, --show-function-line=EXPREG\n"
 #~ "                            Exibir a linha mais recente que corresponde\n"
-#~ "                            ‡ EXPress„o REGular.\n"
+#~ "                            √† EXPress√£o REGular.\n"
 
 #~ msgid ""
 #~ "  -q, --brief               output only whether files differ\n"
@@ -1149,28 +1097,28 @@ msgstr ""
 #~ "  -l, --paginate            pass the output through `pr' to paginate it\n"
 #~ "  -t, --expand-tabs         expand tabs to spaces in output\n"
 #~ msgstr ""
-#~ "  -q, --brief               Indicar apenas se os arquivos s„o diferentes\n"
+#~ "  -q, --brief               Indicar apenas se os arquivos s√£o diferentes\n"
 #~ "  -e, --ed                  Criar um script para o editor ed\n"
 #~ "  -n, --rcs                 Criar o diff no formato RCS\n"
 #~ "  -y, --side-by-side        Exibir em duas colunas\n"
-#~ "  -w, --width=NUM           Exibir no m·ximo N colunas. (N=130 por "
-#~ "padr„o)\n"
+#~ "  -w, --width=NUM           Exibir no m√°ximo N colunas. (N=130 por "
+#~ "padr√£o)\n"
 #~ "      --left-column         Exibir apenas a coluna da esquerda nas "
 #~ "linhas\n"
-#~ "                            idÍnticas\n"
+#~ "                            id√™nticas\n"
 #~ "      --suppress-common-lines\n"
-#~ "                            N„o exibir as linhas idÍnticas\n"
+#~ "                            N√£o exibir as linhas id√™nticas\n"
 #~ "  -D, --ifdef=NAME          Exibir o arquivo mesclado incluindo\n"
 #~ "                            `#ifndef NOME original #else modificado'\n"
-#~ "                            nas diferenÁas.\n"
+#~ "                            nas diferen√ßas.\n"
 #~ "      --GTYPE-group-format=GFMT\n"
 #~ "                            Formata grupos de entrada GTYPE com GFMT\n"
 #~ "      --line-format=LFMT    Formata todas as linhas de entrada com LFMT\n"
 #~ "      --LTYPE-line-format=LFMT\n"
 #~ "                            Formata todas as linhas de entrada LTYPE com "
 #~ "LFMT\n"
-#~ "  -l, --paginate            Passar a saÌda atravÈs da `pr' para paginar\n"
-#~ "  -t, --expand-tabs         Expandir as tabulaÁıes para espaÁos na saÌda\n"
+#~ "  -l, --paginate            Passar a sa√≠da atrav√©s da `pr' para paginar\n"
+#~ "  -t, --expand-tabs         Expandir as tabula√ß√µes para espa√ßos na sa√≠da\n"
 
 #~ msgid ""
 #~ "  -T, --initial-tab         make tabs line up by prepending a tab\n"
@@ -1187,31 +1135,31 @@ msgstr ""
 #~ "  -H, --speed-large-files   assume large files and many scattered small "
 #~ "changes\n"
 #~ msgstr ""
-#~ "  -T, --initial-tab         Alinhar as diferenÁas introduzindo um\n"
-#~ "                            caracter de tabulaÁ„o no inÌcio.\n"
+#~ "  -T, --initial-tab         Alinhar as diferen√ßas introduzindo um\n"
+#~ "                            caracter de tabula√ß√£o no in√≠cio.\n"
 #~ "  -r, --recursive           Comparar recursivamente todos os\n"
-#~ "                            subdiretÛrios encontrados.\n"
+#~ "                            subdiret√≥rios encontrados.\n"
 #~ "  -N, --new-file            Considerar arquivos ausentes como vazios.\n"
 #~ "  -P, --unidirectional-new-file\n"
 #~ "                            Considerar os primeiros arquivos\n"
 #~ "                            ausentes como vazios.\n"
 #~ "  -s, --report-identical-files\n"
 #~ "                            Indicar quando dois arquivos forem o "
-#~ "idÍnticos.\n"
-#~ "  -x, --exclude=PADR√O      N„o comparar os arquivos cujos nomes\n"
-#~ "                            correspondem ao PADR√O.\n"
+#~ "id√™nticos.\n"
+#~ "  -x, --exclude=PADR√ÉO      N√£o comparar os arquivos cujos nomes\n"
+#~ "                            correspondem ao PADR√ÉO.\n"
 #~ "  -X, --exclude-from=ARQUIVO\n"
 #~ "                            Excluir os arquivos com nomes que "
 #~ "correspondem\n"
-#~ "                            a qualquer padr„o contido no ARQUIVO.\n"
+#~ "                            a qualquer padr√£o contido no ARQUIVO.\n"
 #~ "  -S, --starting-file=ARQUIVO\n"
 #~ "                            Iniciar por ARQUIVO ao comparar dois "
-#~ "diretÛrios.\n"
+#~ "diret√≥rios.\n"
 #~ "      --horizon-lines=N     Manter N linhas de prefixo e sufixo "
-#~ "idÍnticos.\n"
-#~ "  -d, --minimal             Se esforÁar para encontrar o menor conjunto\n"
-#~ "                            de diferenÁas.\n"
-#~ "  -H, --speed-large-files   Assumir arquivos grandes e muitas alteraÁıes\n"
+#~ "id√™nticos.\n"
+#~ "  -d, --minimal             Se esfor√ßar para encontrar o menor conjunto\n"
+#~ "                            de diferen√ßas.\n"
+#~ "  -H, --speed-large-files   Assumir arquivos grandes e muitas altera√ß√µes\n"
 #~ "                            pequenas espalhadas.\n"
 
 #~ msgid ""
@@ -1219,7 +1167,7 @@ msgstr ""
 #~ "By default, context diffs have an horizon of two lines.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Por padr„o, o contexto das diferenÁas possui um horizonte de duas "
+#~ "Por padr√£o, o contexto das diferen√ßas possui um horizonte de duas "
 #~ "linhas.\n"
 
 #~ msgid ""
@@ -1245,11 +1193,11 @@ msgstr ""
 #~ "  %>  linhas do ARQUIVO2\n"
 #~ "  %=  linhas comuns ao ARQUIVO1 e ao ARQUIVO2\n"
 #~ "  %[-][WIDTH][.[PREC]]{doxX}LETRA\n"
-#~ "    especificaÁ„o no estilo `printf' para LETRA\n"
-#~ "    LETRAS abaixo para grupos novos, min˙sculas para grupos antigos:\n"
-#~ "      F  n˙mero da primeira linha\n"
-#~ "      L  n˙mero da ˙ltima linha\n"
-#~ "      N  n˙mero de linhas = L-F+1\n"
+#~ "    especifica√ß√£o no estilo `printf' para LETRA\n"
+#~ "    LETRAS abaixo para grupos novos, min√∫sculas para grupos antigos:\n"
+#~ "      F  n√∫mero da primeira linha\n"
+#~ "      L  n√∫mero da √∫ltima linha\n"
+#~ "      N  n√∫mero de linhas = L-F+1\n"
 #~ "      E  F-1\n"
 #~ "      M  L+1\n"
 
@@ -1264,13 +1212,13 @@ msgstr ""
 #~ "  %c'\\OOO'  the character with octal code OOO\n"
 #~ msgstr ""
 #~ "LFMT pode conter:\n"
-#~ "  %L  conte˙do da linha\n"
-#~ "  %l  conte˙do da linha, excluindo qualquer caracter final de nova linha\n"
-#~ "  %[-][WIDTH][.[PREC]]{doxX}n  especificaÁ„o no estilo `printf'\n"
-#~ "                               para o n˙mero da linha de entrada\n"
+#~ "  %L  conte√∫do da linha\n"
+#~ "  %l  conte√∫do da linha, excluindo qualquer caracter final de nova linha\n"
+#~ "  %[-][WIDTH][.[PREC]]{doxX}n  especifica√ß√£o no estilo `printf'\n"
+#~ "                               para o n√∫mero da linha de entrada\n"
 #~ "Tanto GFMT quanto LFMT podem conter:\n"
 #~ "  %%  %\n"
-#~ "  %c'C'  o ˙nico caracter C\n"
+#~ "  %c'C'  o √∫nico caracter C\n"
 #~ "  %c'\\OOO'  o caracter com valor octal OOO\n"
 
 #~ msgid ""
@@ -1280,9 +1228,9 @@ msgstr ""
 #~ "cluster\n"
 #~ msgstr ""
 #~ "\n"
-#~ "OpÁıes mdiff antigas:\n"
-#~ "*  -f, --fuzz-items=ITENS     n„o mais do que ITENS sem correspondencia\n"
-#~ "                              em uma agregaÁ„o (cluster)\n"
+#~ "Op√ß√µes mdiff antigas:\n"
+#~ "*  -f, --fuzz-items=ITENS     n√£o mais do que ITENS sem correspondencia\n"
+#~ "                              em uma agrega√ß√£o (cluster)\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1308,20 +1256,20 @@ msgstr ""
 #~ "If FILE is not specified, read standard input.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "  -c, --context-diffs    ForÁar a saÌda para contexto das diferenÁas.\n"
-#~ "  -e, --echo-comments    Enviar os coment·rios para a saÌda padr„o.\n"
-#~ "  -o, --old-diffs        Exibir as diferenÁas no estilo antigo.\n"
-#~ "  -p, --patch-format     Gerar formato de correÁ„o.\n"
+#~ "  -c, --context-diffs    For√ßar a sa√≠da para contexto das diferen√ßas.\n"
+#~ "  -e, --echo-comments    Enviar os coment√°rios para a sa√≠da padr√£o.\n"
+#~ "  -o, --old-diffs        Exibir as diferen√ßas no estilo antigo.\n"
+#~ "  -p, --patch-format     Gerar formato de corre√ß√£o.\n"
 #~ "  -P                     O mesmo que -p.\n"
-#~ "  -s, --strip-comments   Remover linhas de coment·rios.\n"
-#~ "  -u, --unidiffs         ForÁar a saÌda no contexto unificado.\n"
+#~ "  -s, --strip-comments   Remover linhas de coment√°rios.\n"
+#~ "  -u, --unidiffs         For√ßar a sa√≠da no contexto unificado.\n"
 #~ "  -U                     O mesmo que -p e -u.\n"
-#~ "  -=, --use-equals       Substituir espaÁos pelo sinal de igual\n"
+#~ "  -=, --use-equals       Substituir espa√ßos pelo sinal de igual\n"
 #~ "                         no contexto unificado.\n"
 #~ "      --help             Exibe esta ajuda e termina.\n"
-#~ "      --version          Exibe a informaÁ„o da vers„o e termina.\n"
+#~ "      --version          Exibe a informa√ß√£o da vers√£o e termina.\n"
 #~ "\n"
-#~ "Se ARQUIVO n„o for especificado, ler da entrada padr„o.\n"
+#~ "Se ARQUIVO n√£o for especificado, ler da entrada padr√£o.\n"
 
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
@@ -1350,25 +1298,25 @@ msgstr ""
 #~ "  -C, --copyright            Exibir os direitos autorais e terminar.\n"
 #~ "  -K, --no-init-term         Como -t, mas sem strings init/term do "
 #~ "termcap.\n"
-#~ "  -V, --version              Exibir a vers„o do programa e terminar.\n"
-#~ "  -1, --no-deleted           Inibir a exibiÁ„o das linhas excluÌdas.\n"
-#~ "  -2, --no-inserted          Inibir a exibiÁ„o das linhas inseridas.\n"
-#~ "  -3, --no-common            Inibir a exibiÁ„o das palavras comuns.\n"
+#~ "  -V, --version              Exibir a vers√£o do programa e terminar.\n"
+#~ "  -1, --no-deleted           Inibir a exibi√ß√£o das linhas exclu√≠das.\n"
+#~ "  -2, --no-inserted          Inibir a exibi√ß√£o das linhas inseridas.\n"
+#~ "  -3, --no-common            Inibir a exibi√ß√£o das palavras comuns.\n"
 #~ "  -a, --auto-pager           Chamar o paginador automaticamente.\n"
 #~ "  -h, --help                 Exibir esta ajuda.\n"
-#~ "  -i, --ignore-case          Ignorar mai˙sculas/min˙sculas ao comparar.\n"
-#~ "  -l, --less-mode            VariaÁ„o do modo de exibiÁ„o para \"less\".\n"
-#~ "  -n, --avoid-wraps          N„o estender campos atravÈs de novas "
+#~ "  -i, --ignore-case          Ignorar mai√∫sculas/min√∫sculas ao comparar.\n"
+#~ "  -l, --less-mode            Varia√ß√£o do modo de exibi√ß√£o para \"less\".\n"
+#~ "  -n, --avoid-wraps          N√£o estender campos atrav√©s de novas "
 #~ "linhas.\n"
-#~ "  -p, --printer              Sobrepor para exibiÁ„o.\n"
-#~ "  -s, --statistics           Informar quantas linhas excluÌdas, inseridas "
+#~ "  -p, --printer              Sobrepor para exibi√ß√£o.\n"
+#~ "  -s, --statistics           Informar quantas linhas exclu√≠das, inseridas "
 #~ "etc.\n"
-#~ "  -t, --terminal             Usar termcap para exibiÁ„o em terminais.\n"
-#~ "  -w, --start-delete=STRING  String para marcar o inÌcio da regi„o "
-#~ "excluÌda.\n"
-#~ "  -x, --end-delete=STRING    String para marcar o final da regi„o "
-#~ "excluÌda.\n"
-#~ "  -y, --start-insert=STRING  String para marcar o inÌcio da regi„o "
+#~ "  -t, --terminal             Usar termcap para exibi√ß√£o em terminais.\n"
+#~ "  -w, --start-delete=STRING  String para marcar o in√≠cio da regi√£o "
+#~ "exclu√≠da.\n"
+#~ "  -x, --end-delete=STRING    String para marcar o final da regi√£o "
+#~ "exclu√≠da.\n"
+#~ "  -y, --start-insert=STRING  String para marcar o in√≠cio da regi√£o "
 #~ "inserida.\n"
-#~ "  -z, --end-insert=STRING    String para marcar o final da regi„o "
+#~ "  -z, --end-insert=STRING    String para marcar o final da regi√£o "
 #~ "inserida.\n"
