@@ -4243,7 +4243,7 @@ main (int argc, char *const *argv)
 	break;
 #endif
 
-      case TOLERANCE_OPTION:		/* mdiff draft */
+      case TOLERANCE_OPTION:	/* mdiff draft */
 	UNIMPLEMENTED ("--tolerance");
 	tolerance = atoi (optarg);
 	break;

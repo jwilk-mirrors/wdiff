@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: coreutils 5.90\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
 "PO-Revision-Date: 2005-10-12 21:41+0300\n"
 "Last-Translator: Anton Zinoviev <zinoviev@debian.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -154,7 +154,7 @@ msgstr "грешка при пасването на регулярния изр�
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:704
+#: lib/regcomp.c:707
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "грешка при търсене на регулярен израз"

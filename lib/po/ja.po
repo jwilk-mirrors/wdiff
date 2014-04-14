@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
 "PO-Revision-Date: 2011-09-02 18:39+0900\n"
 "Last-Translator: Yasuaki Taniguchi <yasuakit@gmail.com>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
@@ -148,7 +148,7 @@ msgstr "正規表現が大きすぎます"
 msgid "Unmatched ) or \\)"
 msgstr ") または \\) が不一致です"
 
-#: lib/regcomp.c:704
+#: lib/regcomp.c:707
 msgid "No previous regular expression"
 msgstr "以前に正規表現がありません"
 

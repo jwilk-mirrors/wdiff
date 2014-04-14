@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnulib 3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
 "PO-Revision-Date: 2012-03-11 11:25+0100\n"
 "Last-Translator: Simos Xenitellis <simos.lists@googlemail.com>\n"
 "Language-Team: Greek <team@lists.gnome.gr>\n"
@@ -172,7 +172,7 @@ msgid "Unmatched ) or \\)"
 msgstr ""
 
 #
-#: lib/regcomp.c:704
+#: lib/regcomp.c:707
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "σφάλμα στην ανεύρεση μέσω κανονικής έκφρασης"

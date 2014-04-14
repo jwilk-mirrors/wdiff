@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  coreutils 5.0.90\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
 "PO-Revision-Date: 2003-08-10 16:00+0800\n"
 "Last-Translator: Hasbullah Bin Pit <sebol@ikhlas.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
@@ -150,7 +150,7 @@ msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:704
+#: lib/regcomp.c:707
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "ralat pada carian ungkapan biasa (regexp)"

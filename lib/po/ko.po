@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU textutils 2.0.22\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
 "PO-Revision-Date: 2002-07-22 20:02+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <translation-team-ko@lists.sourceforge.net>\n"
@@ -151,7 +151,7 @@ msgstr "%s: 부적절한 정규식: %s"
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:704
+#: lib/regcomp.c:707
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "정규식 탐색에 오류 발생"

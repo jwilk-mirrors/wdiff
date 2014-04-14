@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU gnulib-3.0.0.6062.a6b16\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
 "PO-Revision-Date: 2012-06-03 12:41-0700\n"
 "Last-Translator: Arun Persaud <arun@nubati.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -171,7 +171,7 @@ msgstr "Der reguläre Ausdruck ist zu groß"
 msgid "Unmatched ) or \\)"
 msgstr "Keine Übereinstimmung für ) oder \\)"
 
-#: lib/regcomp.c:704
+#: lib/regcomp.c:707
 msgid "No previous regular expression"
 msgstr "Kein vorhergehender regulärer Ausdruck"
 

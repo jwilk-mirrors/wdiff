@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: coreutils 5.3.0\n"
 "Report-Msgid-Bugs-To: bug-gnulib@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
 "PO-Revision-Date: 2005-07-02 04:13+0800\n"
 "Last-Translator: Abel Cheung <abelcheung@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -159,7 +159,7 @@ msgstr "%s：無效的正規表示式：%s"
 msgid "Unmatched ) or \\)"
 msgstr ""
 
-#: lib/regcomp.c:704
+#: lib/regcomp.c:707
 #, fuzzy
 msgid "No previous regular expression"
 msgstr "在正規運算式搜尋時發生錯誤"

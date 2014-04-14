@@ -1,6 +1,13 @@
 GNU wdiff NEWS - User visible changes.  -*- outline -*-
 Copyright (C) 1992, 1994, 1997, 1998, 1999, 2007,
-2010, 2011, 2012, 2013 Free Software Foundation, Inc.
+2010, 2011, 2012, 2013, 2014 Free Software Foundation, Inc.
+
+* Version 1.2.2 - April 2014, by Martin von Gagern
+
+  * Updated Vietnamese, Swedish, Estonian, Chinese (traditional),
+    Brazilian Portuguese and Russian translations.
+  * Updated gnulib.
+  * Used more recent autotools: autoconf 2.69 and automake 1.14.1.
 
 * Version 1.2.1 - March 2013, by Martin von Gagern
 

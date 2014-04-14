@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wdiff 1.2.1\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
 "PO-Revision-Date: 2013-12-21 10:25+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
@@ -21,27 +21,27 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.4\n"
 
-#: src/mdiff.c:375
+#: src/mdiff.c:376
 #, c-format
 msgid "%s (for regexp `%s')"
 msgstr "%s (для регулярного выражения «%s»)"
 
-#: src/mdiff.c:890 src/wdiff.c:1473
+#: src/mdiff.c:891 src/wdiff.c:1473
 #, c-format
 msgid "only one file may be standard input"
 msgstr "только один файл может быть стандартным вводом"
 
-#: src/mdiff.c:905 src/wdiff.c:678
+#: src/mdiff.c:906 src/wdiff.c:678
 #, c-format
 msgid "directories not supported"
 msgstr "каталоги не поддерживаются"
 
-#: src/mdiff.c:1048
+#: src/mdiff.c:1049
 #, c-format
 msgid "Reading %s"
 msgstr "Чтение %s"
 
-#: src/mdiff.c:1172
+#: src/mdiff.c:1173
 #, c-format
 msgid ", %d item\n"
 msgid_plural ", %d items\n"
@@ -49,12 +49,12 @@ msgstr[0] ", %d элемент\n"
 msgstr[1] ", %d элементов\n"
 msgstr[2] ", %d элементов\n"
 
-#: src/mdiff.c:1252
+#: src/mdiff.c:1253
 #, c-format
 msgid "Read summary:"
 msgstr "Итог по чтению:"
 
-#: src/mdiff.c:1253
+#: src/mdiff.c:1254
 #, c-format
 msgid " %d file,"
 msgid_plural " %d files,"
@@ -62,7 +62,7 @@ msgstr[0] " %d файл,"
 msgstr[1] " %d файла,"
 msgstr[2] " %d файлов,"
 
-#: src/mdiff.c:1254
+#: src/mdiff.c:1255
 #, c-format
 msgid " %d item\n"
 msgid_plural " %d items\n"
@@ -70,32 +70,32 @@ msgstr[0] " %d элемент\n"
 msgstr[1] " %d элемента\n"
 msgstr[2] " %d элементов\n"
 
-#: src/mdiff.c:1647
+#: src/mdiff.c:1648
 #, c-format
 msgid "Sorting"
 msgstr "Сортировка"
 
-#: src/mdiff.c:1664
+#: src/mdiff.c:1665
 #, c-format
 msgid ", clustering"
 msgstr ", кластеризация"
 
-#: src/mdiff.c:1833 src/mdiff.c:1895
+#: src/mdiff.c:1834 src/mdiff.c:1896
 #, c-format
 msgid ", done\n"
 msgstr ", завершено\n"
 
-#: src/mdiff.c:1882
+#: src/mdiff.c:1883
 #, c-format
 msgid "Sorting members"
 msgstr "Сортировка членов"
 
-#: src/mdiff.c:1915 src/mdiff.c:2298
+#: src/mdiff.c:1916 src/mdiff.c:2299
 #, c-format
 msgid "Work summary:"
 msgstr "Итог по работе:"
 
-#: src/mdiff.c:1916 src/mdiff.c:2299
+#: src/mdiff.c:1917 src/mdiff.c:2300
 #, c-format
 msgid " %d cluster,"
 msgid_plural " %d clusters,"
@@ -103,7 +103,7 @@ msgstr[0] " %d кластер,"
 msgstr[1] " %d кластера,"
 msgstr[2] " %d кластеров,"
 
-#: src/mdiff.c:1918
+#: src/mdiff.c:1919
 #, c-format
 msgid " %d member\n"
 msgid_plural " %d members\n"
@@ -111,7 +111,7 @@ msgstr[0] " %d член\n"
 msgstr[1] " %d члена\n"
 msgstr[2] " %d членов\n"
 
-#: src/mdiff.c:2301
+#: src/mdiff.c:2302
 #, c-format
 msgid " %d member,"
 msgid_plural " %d members,"
@@ -119,7 +119,7 @@ msgstr[0] " %d член,"
 msgstr[1] " %d члена,"
 msgstr[2] " %d членов,"
 
-#: src/mdiff.c:2303
+#: src/mdiff.c:2304
 #, c-format
 msgid " %d overlap\n"
 msgid_plural " %d overlaps\n"
@@ -127,22 +127,22 @@ msgstr[0] " %d перекрытие\n"
 msgstr[1] " %d перекрытия\n"
 msgstr[2] " %d перекрытий\n"
 
-#: src/mdiff.c:2353 src/wdiff.c:228
+#: src/mdiff.c:2354 src/wdiff.c:228
 #, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "укажите тип терминала через переменную окружения TERM"
 
-#: src/mdiff.c:2356 src/wdiff.c:231
+#: src/mdiff.c:2357 src/wdiff.c:231
 #, c-format
 msgid "could not access the termcap data base"
 msgstr "невозможно получить доступ к базе данных termcap"
 
-#: src/mdiff.c:2358 src/wdiff.c:233
+#: src/mdiff.c:2359 src/wdiff.c:233
 #, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "тип терминала «%s» не определён"
 
-#: src/mdiff.c:3709 src/mdiff.c:3725 src/wdiff.c:1167 src/wdiff.c:1183
+#: src/mdiff.c:3710 src/mdiff.c:3726 src/wdiff.c:1167 src/wdiff.c:1183
 #, c-format
 msgid "%s: %d word"
 msgid_plural "%s: %d words"
@@ -150,7 +150,7 @@ msgstr[0] "%s: %d слово"
 msgstr[1] "%s: %d слова"
 msgstr[2] "%s: %d слов"
 
-#: src/mdiff.c:3713 src/mdiff.c:3729 src/wdiff.c:1171 src/wdiff.c:1187
+#: src/mdiff.c:3714 src/mdiff.c:3730 src/wdiff.c:1171 src/wdiff.c:1187
 #, c-format
 msgid "  %d %.0f%% common"
 msgid_plural "  %d %.0f%% common"
@@ -158,7 +158,7 @@ msgstr[0] "  %d %.0f%% общих"
 msgstr[1] "  %d %.0f%% общих"
 msgstr[2] "  %d %.0f%% общих"
 
-#: src/mdiff.c:3716 src/wdiff.c:1174
+#: src/mdiff.c:3717 src/wdiff.c:1174
 #, c-format
 msgid "  %d %.0f%% deleted"
 msgid_plural "  %d %.0f%% deleted"
@@ -166,7 +166,7 @@ msgstr[0] "  %d %.0f%% удалено"
 msgstr[1] "  %d %.0f%% удалено"
 msgstr[2] "  %d %.0f%% удалено"
 
-#: src/mdiff.c:3719 src/mdiff.c:3735 src/wdiff.c:1177 src/wdiff.c:1193
+#: src/mdiff.c:3720 src/mdiff.c:3736 src/wdiff.c:1177 src/wdiff.c:1193
 #, c-format
 msgid "  %d %.0f%% changed"
 msgid_plural "  %d %.0f%% changed"
@@ -174,7 +174,7 @@ msgstr[0] "  %d %.0f%% изменено"
 msgstr[1] "  %d %.0f%% изменено"
 msgstr[2] "  %d %.0f%% изменено"
 
-#: src/mdiff.c:3732 src/wdiff.c:1190
+#: src/mdiff.c:3733 src/wdiff.c:1190
 #, c-format
 msgid "  %d %.0f%% inserted"
 msgid_plural "  %d %.0f%% inserted"
@@ -182,12 +182,12 @@ msgstr[0] "  %d %.0f%% вставлено"
 msgstr[1] "  %d %.0f%% вставлено"
 msgstr[2] "  %d %.0f%% вставлено"
 
-#: src/mdiff.c:3763 src/wdiff.c:1233 src/wdiff2.c:172
+#: src/mdiff.c:3764 src/wdiff.c:1233 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "По команде «%s --help» можно получить дополнительную информацию.\n"
 
-#: src/mdiff.c:3768
+#: src/mdiff.c:3769
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -196,12 +196,12 @@ msgstr ""
 "последовательности, выводя затем список (возможно, подробный) различий\n"
 "и сходств.\n"
 
-#: src/mdiff.c:3773
+#: src/mdiff.c:3774
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Использование: %s [КЛЮЧ]… [ФАЙЛ]…\n"
 
-#: src/mdiff.c:3777
+#: src/mdiff.c:3778
 msgid ""
 "\n"
 "Operation modes:\n"
@@ -209,23 +209,23 @@ msgstr ""
 "\n"
 "Режимы работы:\n"
 
-#: src/mdiff.c:3778
+#: src/mdiff.c:3779
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (игнорируется)\n"
 
-#: src/mdiff.c:3779
+#: src/mdiff.c:3780
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          вывод краткой статистики в stderr\n"
 
-#: src/mdiff.c:3780 src/unify.c:295
+#: src/mdiff.c:3781 src/unify.c:295
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             показ этой справки и выход\n"
 
-#: src/mdiff.c:3781 src/unify.c:296
+#: src/mdiff.c:3782 src/unify.c:296
 msgid "      --version          display program version then exit\n"
 msgstr "      --version          показ версии программы и выход\n"
 
-#: src/mdiff.c:3783
+#: src/mdiff.c:3784
 msgid ""
 "\n"
 "Formatting output:\n"
@@ -233,31 +233,31 @@ msgstr ""
 "\n"
 "Форматирование вывода:\n"
 
-#: src/mdiff.c:3784
+#: src/mdiff.c:3785
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr "  -T, --initial-tab       вставлять TAB вместо начального пробела\n"
 
-#: src/mdiff.c:3785
+#: src/mdiff.c:3786
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr "  -l, --paginate          делить на страницы с помощью «pr»\n"
 
-#: src/mdiff.c:3786
+#: src/mdiff.c:3787
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr ""
 "  -S, --string[=СТРОКА]   брать замечание из другой пользовательской СТРОКИ\n"
 
-#: src/mdiff.c:3787
+#: src/mdiff.c:3788
 msgid ""
 "  -V, --show-links        give file and line references in annotations\n"
 msgstr ""
 "  -V, --show-links        указывать файл и ссылки на строки из аннотациях\n"
 
-#: src/mdiff.c:3788
+#: src/mdiff.c:3789
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr ""
 "  -t, --expand-tabs       использовать пробелы вместо табуляций в выводе\n"
 
-#: src/mdiff.c:3791
+#: src/mdiff.c:3792
 msgid ""
 "\n"
 "Debugging:\n"
@@ -265,12 +265,12 @@ msgstr ""
 "\n"
 "Отладка:\n"
 
-#: src/mdiff.c:3792
+#: src/mdiff.c:3793
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr ""
 "  -0, --debugging   показывать множество подробностей о том, что происходит\n"
 
-#: src/mdiff.c:3795
+#: src/mdiff.c:3796
 msgid ""
 "\n"
 "Word mode options:\n"
@@ -278,74 +278,74 @@ msgstr ""
 "\n"
 "Ключи для режима сравнения по словам:\n"
 
-#: src/mdiff.c:3796 src/wdiff.c:1251 src/wdiff2.c:190
+#: src/mdiff.c:3797 src/wdiff.c:1251 src/wdiff2.c:190
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr "  -1, --no-deleted           не выводить удалённые слова\n"
 
-#: src/mdiff.c:3797 src/wdiff.c:1252 src/wdiff2.c:191
+#: src/mdiff.c:3798 src/wdiff.c:1252 src/wdiff2.c:191
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr "  -2, --no-inserted          не выводить вставленные слова\n"
 
-#: src/mdiff.c:3798 src/wdiff.c:1253 src/wdiff2.c:192
+#: src/mdiff.c:3799 src/wdiff.c:1253 src/wdiff2.c:192
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            не выводить общие слова\n"
 
-#: src/mdiff.c:3799
+#: src/mdiff.c:3800
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr ""
 "  -A, --auto-pager           автоматически вызывать программу просмотра\n"
 
-#: src/mdiff.c:3800
+#: src/mdiff.c:3801
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -k, --less-mode            режим вывода «less»\n"
 
-#: src/mdiff.c:3801
+#: src/mdiff.c:3802
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -m, --avoid-wraps          не продолжать поля через новую строку\n"
 
-#: src/mdiff.c:3802
+#: src/mdiff.c:3803
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr ""
 "  -o, --printer              выделять перечеркиванием, как для принтера\n"
 
-#: src/mdiff.c:3803
+#: src/mdiff.c:3804
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             выводить с использованием termcap\n"
 
-#: src/mdiff.c:3804
+#: src/mdiff.c:3805
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr ""
 "  -O, --item-regexp=РЕГВЫР   сравнивать элементы, определённые\n"
 "                             регулярным выражением РЕГВЫР\n"
 
-#: src/mdiff.c:3805
+#: src/mdiff.c:3806
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            сравнивать слова, а не строки\n"
 
-#: src/mdiff.c:3990
+#: src/mdiff.c:3991
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "Если ФАЙЛ не задан, или задан как -, читается стандартный ввод.\n"
 
-#: src/mdiff.c:3992 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
+#: src/mdiff.c:3993 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr "Об ошибках сообщайте по адресу <wdiff-bugs@gnu.org>.\n"
 
-#: src/mdiff.c:4004
+#: src/mdiff.c:4005
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr "ключ %s игнорируется (не реализован)"
 
-#: src/mdiff.c:4300
+#: src/mdiff.c:4299
 #, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "невозможно использовать -z, termcap недоступна"
 
-#: src/mdiff.c:4339
+#: src/mdiff.c:4338
 #, c-format
 msgid "word merging for two files only (so far)"
 msgstr "объединение по словам работает только для двух файлов (пока)"
 
-#: src/mdiff.c:4355
+#: src/mdiff.c:4354
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
@@ -353,7 +353,7 @@ msgstr ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4358 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
+#: src/mdiff.c:4357 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -362,7 +362,7 @@ msgstr ""
 "в исходном тексте.  Мы НЕ предоставляем гарантий; даже гарантий\n"
 "КОММЕРЧЕСКОЙ ЦЕННОСТИ или ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ.\n"
 
-#: src/mdiff.c:4361 src/wdiff.c:1398 src/wdiff2.c:134
+#: src/mdiff.c:4360 src/wdiff.c:1398 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -370,7 +370,7 @@ msgstr ""
 "\n"
 "Автор программы -- Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4396
+#: src/mdiff.c:4395
 #, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "ключи -123RSYZ имеют смысл, только если заданы два входных файла"
