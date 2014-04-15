@@ -1,181 +1,169 @@
 # Vietnamese translation for wdiff.
-# Copyright © 2013 Free Software Foundation, Inc.
+# Copyright © 2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the wdiff package.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2010.
-# Trần Ngọc Quân <vnwildman@gmail.com>, 2012-2013.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2012-2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff-1.2.1\n"
+"Project-Id-Version: wdiff-1.2.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2013-03-09 02:55+0100\n"
-"PO-Revision-Date: 2013-03-10 07:37+0700\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
+"PO-Revision-Date: 2014-04-15 15:02+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <translation-team-vi@lists.sourceforge.net>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team-Website: <http://translationproject.org/team/vi.html>\n"
-"Plural-Forms: nplurals=2; plural=1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Language-Team-Website: <http://translationproject.org/team/vi.html>\n"
 "X-Generator: LocFactoryEditor 1.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: src/mdiff.c:375
+#: src/mdiff.c:376
 #, c-format
 msgid "%s (for regexp `%s')"
-msgstr "%s (cho biểu thức chính quy “%s”."
+msgstr "%s (cho biểu thức chính quy “%s”)"
 
-#: src/mdiff.c:890 src/wdiff.c:1473
+#: src/mdiff.c:891 src/wdiff.c:1473
 #, c-format
 msgid "only one file may be standard input"
 msgstr "chỉ cho phép một tập tin là đầu vào tiêu chuẩn"
 
-#: src/mdiff.c:905 src/wdiff.c:678
+#: src/mdiff.c:906 src/wdiff.c:678
 #, c-format
 msgid "directories not supported"
 msgstr "không hỗ trợ thư mục"
 
-#: src/mdiff.c:1048
+#: src/mdiff.c:1049
 #, c-format
 msgid "Reading %s"
 msgstr "Đang đọc %s"
 
-#: src/mdiff.c:1172
+#: src/mdiff.c:1173
 #, c-format
 msgid ", %d item\n"
 msgid_plural ", %d items\n"
 msgstr[0] ", %d mục tin\n"
-msgstr[1] ", %d mục tin\n"
 
-#: src/mdiff.c:1252
+#: src/mdiff.c:1253
 #, c-format
 msgid "Read summary:"
 msgstr "Đọc tóm tắt:"
 
-#: src/mdiff.c:1253
+#: src/mdiff.c:1254
 #, c-format
 msgid " %d file,"
 msgid_plural " %d files,"
 msgstr[0] " %d tập tin,"
-msgstr[1] " %d tập tin,"
 
-#: src/mdiff.c:1254
+#: src/mdiff.c:1255
 #, c-format
 msgid " %d item\n"
 msgid_plural " %d items\n"
 msgstr[0] " %d mục tin\n"
-msgstr[1] " %d mục tin\n"
 
-#: src/mdiff.c:1647
+#: src/mdiff.c:1648
 #, c-format
 msgid "Sorting"
 msgstr "Đang sắp xếp"
 
-#: src/mdiff.c:1664
+#: src/mdiff.c:1665
 #, c-format
 msgid ", clustering"
 msgstr ", đang xếp nhóm"
 
-#: src/mdiff.c:1833 src/mdiff.c:1895
+#: src/mdiff.c:1834 src/mdiff.c:1896
 #, c-format
 msgid ", done\n"
 msgstr ", hoàn tất\n"
 
-#: src/mdiff.c:1882
+#: src/mdiff.c:1883
 #, c-format
 msgid "Sorting members"
-msgstr "Đang sắp xếp các bộ phạn"
+msgstr "Đang sắp xếp các thành viên"
 
-#: src/mdiff.c:1915 src/mdiff.c:2298
+#: src/mdiff.c:1916 src/mdiff.c:2299
 #, c-format
 msgid "Work summary:"
 msgstr "Tóm tắt công việc:"
 
-#: src/mdiff.c:1916 src/mdiff.c:2299
+#: src/mdiff.c:1917 src/mdiff.c:2300
 #, c-format
 msgid " %d cluster,"
 msgid_plural " %d clusters,"
 msgstr[0] " %d bó,"
-msgstr[1] " %d bó,"
 
-#: src/mdiff.c:1918
+#: src/mdiff.c:1919
 #, c-format
 msgid " %d member\n"
 msgid_plural " %d members\n"
 msgstr[0] " %d thành viên\n"
-msgstr[1] " %d thành viên\n"
 
-#: src/mdiff.c:2301
+#: src/mdiff.c:2302
 #, c-format
 msgid " %d member,"
 msgid_plural " %d members,"
 msgstr[0] " %d thành viên,"
-msgstr[1] " %d thành viên,"
 
-#: src/mdiff.c:2303
+#: src/mdiff.c:2304
 #, c-format
 msgid " %d overlap\n"
 msgid_plural " %d overlaps\n"
 msgstr[0] " %d đè lên nhau\n"
-msgstr[1] " %d đè lên nhau\n"
 
-#: src/mdiff.c:2353 src/wdiff.c:228
+#: src/mdiff.c:2354 src/wdiff.c:228
 #, c-format
 msgid "select a terminal through the TERM environment variable"
 msgstr "chọn thiết bị cuối dùng biến môi trường TERM"
 
-#: src/mdiff.c:2356 src/wdiff.c:231
+#: src/mdiff.c:2357 src/wdiff.c:231
 #, c-format
 msgid "could not access the termcap data base"
 msgstr "không thể truy cập đến cơ sở dữ liệu termcap"
 
-#: src/mdiff.c:2358 src/wdiff.c:233
+#: src/mdiff.c:2359 src/wdiff.c:233
 #, c-format
 msgid "terminal type `%s' is not defined"
 msgstr "thiết bị cuối kiểu “%s” chưa được định nghĩa"
 
-#: src/mdiff.c:3709 src/mdiff.c:3725 src/wdiff.c:1167 src/wdiff.c:1183
+#: src/mdiff.c:3710 src/mdiff.c:3726 src/wdiff.c:1167 src/wdiff.c:1183
 #, c-format
 msgid "%s: %d word"
 msgid_plural "%s: %d words"
 msgstr[0] "%s: %d từ"
-msgstr[1] "%s: %d từ"
 
-#: src/mdiff.c:3713 src/mdiff.c:3729 src/wdiff.c:1171 src/wdiff.c:1187
+#: src/mdiff.c:3714 src/mdiff.c:3730 src/wdiff.c:1171 src/wdiff.c:1187
 #, c-format
 msgid "  %d %.0f%% common"
 msgid_plural "  %d %.0f%% common"
 msgstr[0] "  %d %.0f%% chung"
-msgstr[1] "  %d %.0f%% chung"
 
-#: src/mdiff.c:3716 src/wdiff.c:1174
+#: src/mdiff.c:3717 src/wdiff.c:1174
 #, c-format
 msgid "  %d %.0f%% deleted"
 msgid_plural "  %d %.0f%% deleted"
 msgstr[0] "  %d %.0f%% đã xóa"
-msgstr[1] "  %d %.0f%% đã xóa"
 
-#: src/mdiff.c:3719 src/mdiff.c:3735 src/wdiff.c:1177 src/wdiff.c:1193
+#: src/mdiff.c:3720 src/mdiff.c:3736 src/wdiff.c:1177 src/wdiff.c:1193
 #, c-format
 msgid "  %d %.0f%% changed"
 msgid_plural "  %d %.0f%% changed"
 msgstr[0] "  %d %.0f%% đã thay đổi"
-msgstr[1] "  %d %.0f%% đã thay đổi"
 
-#: src/mdiff.c:3732 src/wdiff.c:1190
+#: src/mdiff.c:3733 src/wdiff.c:1190
 #, c-format
 msgid "  %d %.0f%% inserted"
 msgid_plural "  %d %.0f%% inserted"
 msgstr[0] "  %d %.0f%% được chèn vào"
-msgstr[1] "  %d %.0f%% được chèn vào"
 
-#: src/mdiff.c:3763 src/wdiff.c:1233 src/wdiff2.c:172
+#: src/mdiff.c:3764 src/wdiff.c:1233 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Hãy thử chạy câu lệnh trợ giúp “%s --help” để xem thêm thông tin.\n"
 
-#: src/mdiff.c:3768
+#: src/mdiff.c:3769
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
@@ -183,12 +171,12 @@ msgstr ""
 "mdiff — xử lý nhiều tập tin và tìm kiếm các chuỗi tương tự,\n"
 "sau đó xuất danh sách có thể chi tiết chứa các mục khác biệt và tượng tự.\n"
 
-#: src/mdiff.c:3773
+#: src/mdiff.c:3774
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Cách dùng: %s [TÙY_CHỌN]... [TẬP_TIN]...\n"
 
-#: src/mdiff.c:3777
+#: src/mdiff.c:3778
 msgid ""
 "\n"
 "Operation modes:\n"
@@ -196,23 +184,23 @@ msgstr ""
 "\n"
 "Chế độ thao tác:\n"
 
-#: src/mdiff.c:3778
+#: src/mdiff.c:3779
 msgid "  -h                     (ignored)\n"
 msgstr "  -h                     (bị bỏ qua)\n"
 
-#: src/mdiff.c:3779
+#: src/mdiff.c:3780
 msgid "  -v, --verbose          report a few statistics on stderr\n"
 msgstr "  -v, --verbose          thông báo vài thống kê trên stderr\n"
 
-#: src/mdiff.c:3780 src/unify.c:295
+#: src/mdiff.c:3781 src/unify.c:295
 msgid "      --help             display this help then exit\n"
 msgstr "      --help             hiển thị trợ giúp này, sau đó thoát\n"
 
-#: src/mdiff.c:3781 src/unify.c:296
+#: src/mdiff.c:3782 src/unify.c:296
 msgid "      --version          display program version then exit\n"
 msgstr "      --version          hiển thị phiên bản đang chạy, sau đó thoát\n"
 
-#: src/mdiff.c:3783
+#: src/mdiff.c:3784
 msgid ""
 "\n"
 "Formatting output:\n"
@@ -220,27 +208,27 @@ msgstr ""
 "\n"
 "Định dạng kết xuất:\n"
 
-#: src/mdiff.c:3784
+#: src/mdiff.c:3785
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
 msgstr "  -T, --initial-tab       xuất cột tab thay cho khoảng cách đầu tiên\n"
 
-#: src/mdiff.c:3785
+#: src/mdiff.c:3786
 msgid "  -l, --paginate          paginate output through `pr'\n"
 msgstr "  -l, --paginate          đánh số trang kết xuất qua “pr”\n"
 
-#: src/mdiff.c:3786
+#: src/mdiff.c:3787
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
 msgstr "  -S, --string[=CHUỖI]    lưu ý đến chuỗi của người dùng khác\n"
 
-#: src/mdiff.c:3787
+#: src/mdiff.c:3788
 msgid "  -V, --show-links        give file and line references in annotations\n"
 msgstr "  -V, --show-links        phụ chú cũng chứa tham chiếu đến tập tin và số thứ tự dòng\n"
 
-#: src/mdiff.c:3788
+#: src/mdiff.c:3789
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 msgstr "  -t, --expand-tabs       mở rộng cột tab ra các khoảng cách trong kết xuất\n"
 
-#: src/mdiff.c:3791
+#: src/mdiff.c:3792
 msgid ""
 "\n"
 "Debugging:\n"
@@ -248,11 +236,11 @@ msgstr ""
 "\n"
 "Gỡ rối:\n"
 
-#: src/mdiff.c:3792
+#: src/mdiff.c:3793
 msgid "  -0, --debugging   output many details about what is going on\n"
 msgstr "  -0, --debugging   xuất thông tin chi tiết về tiến trình gỡ rối\n"
 
-#: src/mdiff.c:3795
+#: src/mdiff.c:3796
 msgid ""
 "\n"
 "Word mode options:\n"
@@ -260,72 +248,72 @@ msgstr ""
 "\n"
 "Tuỳ chọn về chế độ từng từ:\n"
 
-#: src/mdiff.c:3796 src/wdiff.c:1251 src/wdiff2.c:190
+#: src/mdiff.c:3797 src/wdiff.c:1251 src/wdiff2.c:190
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
 msgstr "  -1, --no-deleted           thu hồi xuất từ bị xoá\n"
 
-#: src/mdiff.c:3797 src/wdiff.c:1252 src/wdiff2.c:191
+#: src/mdiff.c:3798 src/wdiff.c:1252 src/wdiff2.c:191
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
 msgstr "  -2, --no-inserted          thu hồi xuất từ bị chèn\n"
 
-#: src/mdiff.c:3798 src/wdiff.c:1253 src/wdiff2.c:192
+#: src/mdiff.c:3799 src/wdiff.c:1253 src/wdiff2.c:192
 msgid "  -3, --no-common            inhibit output of common words\n"
 msgstr "  -3, --no-common            thu hồi xuất từ chung\n"
 
-#: src/mdiff.c:3799
+#: src/mdiff.c:3800
 msgid "  -A, --auto-pager           automatically calls a pager\n"
 msgstr "  -A, --auto-pager           tự động gọi trình dàn trang\n"
 
-#: src/mdiff.c:3800
+#: src/mdiff.c:3801
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
 msgstr "  -k, --less-mode            biến dạng chế độ máy in cho \"less\"\n"
 
-#: src/mdiff.c:3801
+#: src/mdiff.c:3802
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
 msgstr "  -m, --avoid-wraps          không nên kéo dài trường qua ký tự dòng mới\n"
 
-#: src/mdiff.c:3802
+#: src/mdiff.c:3803
 msgid "  -o, --printer              overstrike as for printers\n"
 msgstr "  -o, --printer              gạch đè lên chữ, như trên máy in\n"
 
-#: src/mdiff.c:3803
+#: src/mdiff.c:3804
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
 msgstr "  -z, --terminal             dùng termcap như trên trình bày thiết bị cuối\n"
 
-#: src/mdiff.c:3804
+#: src/mdiff.c:3805
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
 msgstr "  -O, --item-regexp=BTCQ   so sánh các mục tùy theo biểu thức chính quy này\n"
 
-#: src/mdiff.c:3805
+#: src/mdiff.c:3806
 msgid "  -W, --word-mode            compare words instead of lines\n"
 msgstr "  -W, --word-mode            so sánh theo từng từ thay cho toàn dòng\n"
 
-#: src/mdiff.c:3990
+#: src/mdiff.c:3991
 msgid "With no FILE, or when FILE is -, read standard input.\n"
 msgstr "Không có TẬP_TIN hoặc khi TẬP_TIN là - thì đọc đầu vào thiết bị vào stdin tiêu chuẩn.\n"
 
-#: src/mdiff.c:3992 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
+#: src/mdiff.c:3993 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
 msgstr ""
 "Hãy thông báo lỗi cho địa chỉ <wdiff-bugs@gnu.org>.\n"
-"Thông báo lỗi dịch nào cho <translation-team-vi@lists.sourceforge.net>.\n"
+"Thông báo lỗi dịch cho <translation-team-vi@lists.sourceforge.net>.\n"
 
-#: src/mdiff.c:4004
+#: src/mdiff.c:4005
 #, c-format
 msgid "ignoring option %s (not implemented)"
 msgstr "đang bỏ qua tuỳ chọn %s (chức năng chưa được viết)"
 
-#: src/mdiff.c:4300
+#: src/mdiff.c:4299
 #, c-format
 msgid "cannot use -z, termcap not available"
 msgstr "không thể dùng tùy chọn -z, termcap hiện thời không sẵn dùng"
 
-#: src/mdiff.c:4339
+#: src/mdiff.c:4338
 #, c-format
 msgid "word merging for two files only (so far)"
 msgstr "chỉ hòa trộn từ cho hai tập tin (ít nhất là đến lúc này)"
 
-#: src/mdiff.c:4355
+#: src/mdiff.c:4354
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
@@ -333,7 +321,7 @@ msgstr ""
 "\n"
 "Tác quyền (C) năm 1992, 1997, 1999, 2010 của Tổ Chức Phần Mềm Tự Do.\n"
 
-#: src/mdiff.c:4358 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
+#: src/mdiff.c:4357 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
@@ -342,7 +330,7 @@ msgstr ""
 "KHÔNG CÓ BẢO HÀNH GÌ CẢ, THẬM CHÍ KHÔNG CÓ BẢO ĐẢM ĐƯỢC NGỤ Ý\n"
 "KHẢ NĂNG BÁN HAY KHẢ NĂNG LÀM ĐƯỢC VIỆC DỨT KHOÁT.\n"
 
-#: src/mdiff.c:4361 src/wdiff.c:1398 src/wdiff2.c:134
+#: src/mdiff.c:4360 src/wdiff.c:1398 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
@@ -350,7 +338,7 @@ msgstr ""
 "\n"
 "Viết bởi Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4396
+#: src/mdiff.c:4395
 #, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
 msgstr "những tùy chọn -123RSYZ chỉ có nghĩa khi có hai đầu vào"
@@ -373,7 +361,7 @@ msgstr "không tìm thấy tên cho khác biệt trên dòng %ld"
 #: src/unify.c:274
 #, c-format
 msgid "try `%s --help' for more information\n"
-msgstr "hãy thử chạy câu lệnh trợ giúp “%s --help” để xem thêm thông tin\n"
+msgstr "hãy thử chạy câu lệnh trợ giúp “%s --help” để biết thêm thông tin\n"
 
 #: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
@@ -478,7 +466,7 @@ msgstr "khác biệt ngữ cảnh còn thiếu đầu trang “mới” trên d�
 #: src/wdiff.c:582 src/wdiff.c:701
 #, c-format
 msgid "no suitable temporary directory exists"
-msgstr "không có thư mục tạm thời thích hợp"
+msgstr "không có thư mục tạm thời sẵn có nào thích hợp"
 
 #: src/wdiff.c:1040
 #, c-format
@@ -533,7 +521,7 @@ msgstr ""
 
 #: src/wdiff.c:1247 src/wdiff2.c:186
 msgid "Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr "Mọi đối số bắt buộc phải sử dụng với tùy chọn dài cũng bắt buộc với tùy chọn ngắn.\n"
+msgstr "Mọi đối số bắt buộc phải có khi dùng tùy chọn dài thì cũng bắt buộc với tùy chọn ngắn.\n"
 
 #: src/wdiff.c:1250 src/wdiff2.c:189
 msgid "  -C, --copyright            display copyright then exit\n"
@@ -581,15 +569,15 @@ msgstr "  -v, --version              hiển thị phiên bản đang chạy sau 
 
 #: src/wdiff.c:1264 src/wdiff2.c:203
 msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=CHUỖI  chuỗi đánh dấu đầu của vùng xoá\n"
+msgstr "  -w, --start-delete=CHUỖI   chuỗi đánh dấu đầu của vùng xoá\n"
 
 #: src/wdiff.c:1265 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=CHUỖI  chuỗi đánh dấu cuối của vùng xoá\n"
+msgstr "  -x, --end-delete=CHUỖI     chuỗi đánh dấu cuối của vùng xoá\n"
 
 #: src/wdiff.c:1266 src/wdiff2.c:205
 msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=CHUỖI  chuỗi đánh dấu đầu của vùng chèn\n"
+msgstr "  -y, --start-insert=CHUỖI   chuỗi đánh dấu đầu của vùng chèn\n"
 
 #: src/wdiff.c:1267 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
@@ -658,16 +646,16 @@ msgstr "Đang khởi chạy “%s"
 #: src/wdiff2.c:335
 #, c-format
 msgid "'\n"
-msgstr "“\n"
+msgstr "”\n"
 
 #~ msgid "Read summary: %d files, %d items\n"
 #~ msgstr "Tóm tắt đọc: %d tập tin, %d mục\n"
 
 #~ msgid "Work summary: %d clusters, %d members\n"
-#~ msgstr "Tóm tắt làm việc: %d nhóm, %d bộ phạn\n"
+#~ msgstr "Tóm tắt làm việc: %d nhóm, %d thành viên\n"
 
 #~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-#~ msgstr "Tóm tắt làm việc: %d nhóm, %d bộ phạn, %d lần chồng lấp\n"
+#~ msgstr "Tóm tắt làm việc: %d nhóm, %d bộ phận, %d lần chồng lấp\n"
 
 #~ msgid "  -K, --no-init-term         like -z, but no termcap init/term strings\n"
 #~ msgstr "  -K, --no-init-term         giống -z, nhưng không có chuỗi kiểu termcap init/term\n"
