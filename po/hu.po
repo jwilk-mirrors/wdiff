@@ -1,423 +1,438 @@
 # Hungarian translation for wdiff.
 # Copyright (C) 2002 Free Software Foundation, Inc.
-# Emese Kov·cs <emese@gnome.hu>, 2002.
-# Translated using gnu.twm
+# This file is distributed under the same license as the wdiff package.
 #
+# Emese Kov√°cs <emese@gnome.hu>, 2002.
+# Bal√°zs √ör <urbalazs@gmail.com>, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: wdiff 0.5g\n"
+"Project-Id-Version: wdiff 1.2.2\n"
 "Report-Msgid-Bugs-To: wdiff-bugs@gnu.org\n"
-"POT-Creation-Date: 2010-02-01 08:59+0100\n"
-"PO-Revision-Date: 2010-02-01 20:34+0100\n"
-"Last-Translator: Emese Kov·cs <emese@gnome.hu>\n"
+"POT-Creation-Date: 2014-04-14 22:15+0200\n"
+"PO-Revision-Date: 2014-06-28 00:43+0200\n"
+"Last-Translator: Bal√°zs √ör <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: src/mdiff.c:387
+#: src/mdiff.c:376
 #, c-format
 msgid "%s (for regexp `%s')"
-msgstr "%s (regexphez `%s')"
+msgstr "%s (‚Äû%s‚Äù regul√°ris kifejez√©shez)"
 
-#: src/mdiff.c:905 src/wdiff.c:1488
-#, fuzzy, c-format
+#: src/mdiff.c:891 src/wdiff.c:1473
+#, c-format
 msgid "only one file may be standard input"
-msgstr "Csak egy f·jl lehet szabv·nyos bemenet."
+msgstr "csak egy f√°jl lehet szabv√°nyos bemenet"
 
-#: src/mdiff.c:920 src/wdiff.c:702
-#, fuzzy, c-format
+#: src/mdiff.c:906 src/wdiff.c:678
+#, c-format
 msgid "directories not supported"
-msgstr "A kˆnyvt·rak nem t·mogatottak"
+msgstr "k√∂nyvt√°rak nem t√°mogatottak"
 
-#: src/mdiff.c:1064
+#: src/mdiff.c:1049
 #, c-format
 msgid "Reading %s"
-msgstr "%s olvas·sa"
+msgstr "%s olvas√°sa"
 
-#: src/mdiff.c:1189
+#: src/mdiff.c:1173
 #, c-format
-msgid ", %d items\n"
-msgstr ", %d elem\n"
+msgid ", %d item\n"
+msgid_plural ", %d items\n"
+msgstr[0] ", %d elem\n"
+msgstr[1] ", %d elem\n"
 
-#: src/mdiff.c:1267
+#: src/mdiff.c:1253
 #, c-format
-msgid "Read summary: %d files, %d items\n"
-msgstr "Olvas·s ˆsszefoglal·sa: %d f·jl, %d elem\n"
+msgid "Read summary:"
+msgstr "Olvas√°s √∂sszegz√©se:"
 
-#: src/mdiff.c:1663
+#: src/mdiff.c:1254
+#, c-format
+msgid " %d file,"
+msgid_plural " %d files,"
+msgstr[0] " %d f√°jl,"
+msgstr[1] " %d f√°jl,"
+
+#: src/mdiff.c:1255
+#, c-format
+msgid " %d item\n"
+msgid_plural " %d items\n"
+msgstr[0] " %d elem\n"
+msgstr[1] " %d elem\n"
+
+#: src/mdiff.c:1648
 #, c-format
 msgid "Sorting"
-msgstr "RendezÈs"
+msgstr "Rendez√©s"
 
-#: src/mdiff.c:1680
+#: src/mdiff.c:1665
 #, c-format
 msgid ", clustering"
-msgstr ", csoportosÌt·s"
+msgstr ", f√ºrt√∂z√©s"
 
-#: src/mdiff.c:1848 src/mdiff.c:1911
+#: src/mdiff.c:1834 src/mdiff.c:1896
 #, c-format
 msgid ", done\n"
-msgstr ", kÈsz\n"
+msgstr ", k√©sz\n"
 
-#: src/mdiff.c:1898
+#: src/mdiff.c:1883
 #, c-format
 msgid "Sorting members"
-msgstr "Tagok rendezÈse"
+msgstr "Tagok rendez√©se"
 
-#: src/mdiff.c:1930
+#: src/mdiff.c:1916 src/mdiff.c:2299
 #, c-format
-msgid "Work summary: %d clusters, %d members\n"
-msgstr "Munka ˆsszefoglal·sa: %d csoport, %d tag\n"
+msgid "Work summary:"
+msgstr "Munka √∂sszegz√©se:"
 
-#: src/mdiff.c:2310
+#: src/mdiff.c:1917 src/mdiff.c:2300
 #, c-format
-msgid "Work summary: %d clusters, %d members, %d overlaps\n"
-msgstr "Munka ˆsszefoglal·sa: %d csoport, %d tag, %d ·tfedÈs\n"
+msgid " %d cluster,"
+msgid_plural " %d clusters,"
+msgstr[0] " %d f√ºrt,"
+msgstr[1] " %d f√ºrt,"
 
-#: src/mdiff.c:2365 src/wdiff.c:242
-#, fuzzy, c-format
+#: src/mdiff.c:1919
+#, c-format
+msgid " %d member\n"
+msgid_plural " %d members\n"
+msgstr[0] " %d tag\n"
+msgstr[1] " %d tag\n"
+
+#: src/mdiff.c:2302
+#, c-format
+msgid " %d member,"
+msgid_plural " %d members,"
+msgstr[0] " %d tag,"
+msgstr[1] " %d tag,"
+
+#: src/mdiff.c:2304
+#, c-format
+msgid " %d overlap\n"
+msgid_plural " %d overlaps\n"
+msgstr[0] " %d √°tfed√©s\n"
+msgstr[1] " %d √°tfed√©s\n"
+
+#: src/mdiff.c:2354 src/wdiff.c:228
+#, c-format
 msgid "select a terminal through the TERM environment variable"
-msgstr "V·lassz termin·lt a TERM v·ltozÛ segÌtsÈgÈvel."
+msgstr "v√°lasszon egy termin√°lt a TERM k√∂rnyezeti v√°ltoz√≥ seg√≠ts√©g√©vel"
 
-#: src/mdiff.c:2368 src/wdiff.c:245
-#, fuzzy, c-format
+#: src/mdiff.c:2357 src/wdiff.c:231
+#, c-format
 msgid "could not access the termcap data base"
-msgstr "A termcap adatb·zis nem elÈrhetı."
+msgstr "nem siker√ºlt hozz√°f√©rni a termcap adatb√°zishoz"
 
-#: src/mdiff.c:2370 src/wdiff.c:247
-#, fuzzy, c-format
+#: src/mdiff.c:2359 src/wdiff.c:233
+#, c-format
 msgid "terminal type `%s' is not defined"
-msgstr "`%s' tÌpus˙ termin·l nincs defini·lva."
+msgstr "a(z) ‚Äû%s‚Äù termin√°lt√≠pus nincs meghat√°rozva"
 
-#: src/mdiff.c:3749 src/mdiff.c:3761 src/wdiff.c:1187 src/wdiff.c:1199
+#: src/mdiff.c:3710 src/mdiff.c:3726 src/wdiff.c:1167 src/wdiff.c:1183
 #, c-format
-msgid "%s: %d words"
-msgstr "%s: %d szÛ"
+msgid "%s: %d word"
+msgid_plural "%s: %d words"
+msgstr[0] "%s: %d sz√≥"
+msgstr[1] "%s: %d sz√≥"
 
-#: src/mdiff.c:3752 src/mdiff.c:3764 src/wdiff.c:1190 src/wdiff.c:1202
+#: src/mdiff.c:3714 src/mdiff.c:3730 src/wdiff.c:1171 src/wdiff.c:1187
 #, c-format
-msgid "  %d %d%% common"
-msgstr "  %d %d%% kˆzˆs"
+msgid "  %d %.0f%% common"
+msgid_plural "  %d %.0f%% common"
+msgstr[0] "  %d %.0f%% k√∂z√∂s"
+msgstr[1] "  %d %.0f%% k√∂z√∂s"
 
-#: src/mdiff.c:3754 src/wdiff.c:1192
+#: src/mdiff.c:3717 src/wdiff.c:1174
 #, c-format
-msgid "  %d %d%% deleted"
-msgstr "  %d %d%% tˆrˆlve"
+msgid "  %d %.0f%% deleted"
+msgid_plural "  %d %.0f%% deleted"
+msgstr[0] "  %d %.0f%% t√∂r√∂lve"
+msgstr[1] "  %d %.0f%% t√∂r√∂lve"
 
-#: src/mdiff.c:3756 src/mdiff.c:3768 src/wdiff.c:1194 src/wdiff.c:1206
+#: src/mdiff.c:3720 src/mdiff.c:3736 src/wdiff.c:1177 src/wdiff.c:1193
 #, c-format
-msgid "  %d %d%% changed"
-msgstr "  %d %d%% v·ltozott"
+msgid "  %d %.0f%% changed"
+msgid_plural "  %d %.0f%% changed"
+msgstr[0] "  %d %.0f%% m√≥dos√≠tva"
+msgstr[1] "  %d %.0f%% m√≥dos√≠tva"
 
-#: src/mdiff.c:3766 src/wdiff.c:1204
+#: src/mdiff.c:3733 src/wdiff.c:1190
 #, c-format
-msgid "  %d %d%% inserted"
-msgstr "  %d %d%% besz˙rva"
+msgid "  %d %.0f%% inserted"
+msgid_plural "  %d %.0f%% inserted"
+msgstr[0] "  %d %.0f%% besz√∫rva"
+msgstr[1] "  %d %.0f%% besz√∫rva"
 
-#: src/mdiff.c:3795 src/wdiff.c:1246 src/wdiff2.c:178
+#: src/mdiff.c:3764 src/wdiff.c:1233 src/wdiff2.c:172
 #, c-format
 msgid "Try `%s --help' for more information.\n"
-msgstr "PrÛb·ld a `%s --help'-et.\n"
+msgstr "Tov√°bbi inform√°ci√≥k√©rt pr√≥b√°lja a(z) ‚Äû%s --help‚Äù parancsot.\n"
 
-#: src/mdiff.c:3799
+#: src/mdiff.c:3769
 msgid ""
 "mdiff - Studies multiple files and searches for similar sequences, it then\n"
 "produces possibly detailed lists of differences and similarities.\n"
 msgstr ""
-"mdiff - Tˆbb f·jlt elemez, kˆzˆs rÈszek ut·n kutatva, majd\n"
-"rÈszletes list·t Ìr ki a hasonlÛs·gokrÛl Ès a k¸lˆnbsÈgekrıl.\n"
+"mdiff - T√∂bb f√°jlt elemez, k√∂z√∂s r√©szek ut√°n kutatva, majd\n"
+"r√©szletes list√°t √≠r ki a hasonl√≥s√°gokr√≥l √©s a k√ºl√∂nbs√©gekr≈ël.\n"
 
-#: src/mdiff.c:3804
-#, fuzzy, c-format
+#: src/mdiff.c:3774
+#, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
-msgstr "Haszn·lat: %s [KAPCSOL”]... [F¡JL]...\n"
+msgstr "Haszn√°lat: %s [KAPCSOL√ì]‚Ä¶ [F√ÅJL]‚Ä¶\n"
 
-#: src/mdiff.c:3808
-#, fuzzy
+#: src/mdiff.c:3778
 msgid ""
 "\n"
 "Operation modes:\n"
 msgstr ""
 "\n"
-"M˚veletek:\n"
+"M≈±k√∂d√©si m√≥dok:\n"
 
-#: src/mdiff.c:3809
-#, fuzzy
+#: src/mdiff.c:3779
 msgid "  -h                     (ignored)\n"
-msgstr "  -h                     (figyelmen kÌv¸l hagyva)\n"
+msgstr "  -h                     (mell≈ëzve)\n"
 
-#: src/mdiff.c:3810
-#, fuzzy
+#: src/mdiff.c:3780
 msgid "  -v, --verbose          report a few statistics on stderr\n"
-msgstr "  -v, --verbose          nÈh·ny statisztik·t Ìr ki az stderr-re\n"
+msgstr ""
+"  -v, --verbose          n√©h√°ny statisztika jelent√©se a szabv√°nyos\n"
+"                         hibakimenetre\n"
 
-#: src/mdiff.c:3811 src/unify.c:293
-#, fuzzy
+#: src/mdiff.c:3781 src/unify.c:295
 msgid "      --help             display this help then exit\n"
-msgstr "      --help             emlÈkeztetıt Ìr ki\n"
+msgstr "      --help             ezen s√∫g√≥ megjelen√≠t√©se √©s kil√©p√©s\n"
 
-#: src/mdiff.c:3812 src/unify.c:294
-#, fuzzy
+#: src/mdiff.c:3782 src/unify.c:296
 msgid "      --version          display program version then exit\n"
-msgstr "      --version          kiÌrja a program nevÈt Ès v·ltozat·t\n"
+msgstr "      --version          programverzi√≥ megjelen√≠t√©se √©s kil√©p√©s\n"
 
-#: src/mdiff.c:3814
+#: src/mdiff.c:3784
 msgid ""
 "\n"
 "Formatting output:\n"
 msgstr ""
+"\n"
+"Kimenet form√°z√°sa:\n"
 
-#: src/mdiff.c:3815
-#, fuzzy
+#: src/mdiff.c:3785
 msgid "  -T, --initial-tab       produce TAB instead of initial space\n"
-msgstr "  -T, --initial-tab       TAB-ot kezdı szÛkˆz helyett\n"
+msgstr "  -T, --initial-tab       TABUL√ÅTOR l√©trehoz√°sa a kezdeti sz√≥k√∂z√∂k helyett\n"
 
-#: src/mdiff.c:3816
-#, fuzzy
+#: src/mdiff.c:3786
 msgid "  -l, --paginate          paginate output through `pr'\n"
-msgstr "  -l, --paginate          kimenet oldalsz·moz·sa a `pr' segÌtsÈgÈvel\n"
+msgstr "  -l, --paginate          kimenet lapsz√°moz√°sa a ‚Äûpr‚Äù paranccsal\n"
 
-#: src/mdiff.c:3817
-#, fuzzy
+#: src/mdiff.c:3787
 msgid "  -S, --string[=STRING]   take note of another user STRING\n"
-msgstr ""
-"  -S, --string[=SZTRING]  m·sik felhaszn·lÛi SZTRING-et is figyelembe vesz\n"
+msgstr "  -S, --string[=SZ√ñVEG]   figyeljen egy m√°sik felhaszn√°l√≥i SZ√ñVEGRE\n"
 
-#: src/mdiff.c:3818
-#, fuzzy
-msgid ""
-"  -V, --show-links        give file and line references in annotations\n"
-msgstr "  -V, --show-links        annot·ciÛban f·jl- Ès sorsz·mhivatkoz·sok\n"
+#: src/mdiff.c:3788
+msgid "  -V, --show-links        give file and line references in annotations\n"
+msgstr "  -V, --show-links        f√°jl √©s sor hivatkoz√°sok megad√°sa a magyar√°zatokban\n"
 
-#: src/mdiff.c:3819
-#, fuzzy
+#: src/mdiff.c:3789
 msgid "  -t, --expand-tabs       expand tabs to spaces in the output\n"
-msgstr ""
-"  -t, --expand-tabs       tabul·tor karaktert szÛkˆzzÈ alakÌtja a "
-"kimenetben\n"
+msgstr "  -t, --expand-tabs       tabul√°torok b≈ëv√≠t√©se sz√≥k√∂z√∂kk√© a kimeneten\n"
 
-#: src/mdiff.c:3822
-#, fuzzy
+#: src/mdiff.c:3792
 msgid ""
 "\n"
 "Debugging:\n"
 msgstr ""
 "\n"
-"HibakeresÈs:\n"
+"Hibakeres√©s:\n"
 
-#: src/mdiff.c:3823
-#, fuzzy
+#: src/mdiff.c:3793
 msgid "  -0, --debugging   output many details about what is going on\n"
-msgstr "  -0, --debugging   nagyon rÈszletesen kiÌrja, hogy mi tˆrtÈnik\n"
+msgstr "  -0, --debugging   r√©szletes kimenet arr√≥l, hogy mi t√∂rt√©nik\n"
 
-#: src/mdiff.c:3826
-#, fuzzy
+#: src/mdiff.c:3796
 msgid ""
 "\n"
 "Word mode options:\n"
 msgstr ""
 "\n"
-"SzÛ mÛd kapcsolÛi:\n"
+"Sz√≥ m√≥d kapcsol√≥k:\n"
 
-#: src/mdiff.c:3827 src/wdiff.c:1264 src/wdiff2.c:196
-#, fuzzy
+#: src/mdiff.c:3797 src/wdiff.c:1251 src/wdiff2.c:190
 msgid "  -1, --no-deleted           inhibit output of deleted words\n"
-msgstr "  -1, --no-deleted           megakad·lyozza a tˆrˆlt szavak kiÌr·s·t\n"
+msgstr "  -1, --no-deleted           t√∂r√∂lt szavak ki√≠r√°s√°nak megtilt√°sa\n"
 
-#: src/mdiff.c:3828 src/wdiff.c:1265 src/wdiff2.c:197
-#, fuzzy
+#: src/mdiff.c:3798 src/wdiff.c:1252 src/wdiff2.c:191
 msgid "  -2, --no-inserted          inhibit output of inserted words\n"
-msgstr ""
-"  -2, --no-inserted          megakad·lyozza a besz˙rt szavak kiÌr·s·t\n"
+msgstr "  -2, --no-inserted          besz√∫rt szavak ki√≠r√°s√°nak megtilt√°sa\n"
 
-#: src/mdiff.c:3829 src/wdiff.c:1266 src/wdiff2.c:198
-#, fuzzy
+#: src/mdiff.c:3799 src/wdiff.c:1253 src/wdiff2.c:192
 msgid "  -3, --no-common            inhibit output of common words\n"
-msgstr "  -3, --no-common            megakad·lyozza a kˆzˆs szavak kiÌr·s·t\n"
+msgstr "  -3, --no-common            k√∂z√∂s szavak ki√≠r√°s√°nak megtilt√°sa\n"
 
-#: src/mdiff.c:3830
-#, fuzzy
+#: src/mdiff.c:3800
 msgid "  -A, --auto-pager           automatically calls a pager\n"
-msgstr "  -A, --auto-pager           automatikusan lapozÛt indÌt\n"
+msgstr "  -A, --auto-pager           egy lapoz√≥ automatikus h√≠v√°sa\n"
 
-#: src/mdiff.c:3831
-#, fuzzy
+#: src/mdiff.c:3801
 msgid "  -k, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -k, --less-mode            kiÌratÛ mÛd a \"less-hez\"\n"
+msgstr "  -k, --less-mode            a nyomtat√≥ m√≥d v√°ltozata a ‚Äûless‚Äù parancshoz\n"
 
-#: src/mdiff.c:3832
-#, fuzzy
+#: src/mdiff.c:3802
 msgid "  -m, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
-"  -m, --avoid-wraps          a mezıket nem terjeszti az ˙jsorokon t˙l\n"
+msgstr "  -m, --avoid-wraps          ne terjessze ki a mez≈ëket az √∫j sorokon √°t\n"
 
-#: src/mdiff.c:3833
-#, fuzzy
+#: src/mdiff.c:3803
 msgid "  -o, --printer              overstrike as for printers\n"
-msgstr "  -o, --printer              'overstrike' mint nyomtatÛkn·l\n"
+msgstr "  -o, --printer              √°th√∫z√°s mint a nyomtat√≥khoz\n"
 
-#: src/mdiff.c:3834
-#, fuzzy
+#: src/mdiff.c:3804
 msgid "  -z, --terminal             use termcap as for terminal displays\n"
-msgstr "  -z, --terminal             termcap mint termin·l kiÌrat·sn·l\n"
+msgstr "  -z, --terminal             termcap haszn√°lata termin√°los megjelen√≠t≈ëkh√∂z\n"
 
-#: src/mdiff.c:3835
-#, fuzzy
-msgid ""
-"  -K, --no-init-term         like -z, but no termcap init/term strings\n"
-msgstr ""
-"  -K, --no-init-term         mint -z, de init/termcap karakterl·ncok nÈlk¸l\n"
-
-#: src/mdiff.c:3836
-#, fuzzy
+#: src/mdiff.c:3805
 msgid "  -O, --item-regexp=REGEXP   compare items as defined by REGEXP\n"
-msgstr "  -O, --item-regexp=REGEXP   elemek ˆsszehasonlÌt·sa REGEXP alapj·n\n"
+msgstr "  -O, --item-regexp=REGKIF   elemek √∂sszehasonl√≠t√°sa a REGKIF √°ltal megadottan\n"
 
-#: src/mdiff.c:3837
-#, fuzzy
+#: src/mdiff.c:3806
 msgid "  -W, --word-mode            compare words instead of lines\n"
-msgstr "  -W, --word-mode            szavakat hasonlÌt ˆssze sorok helyett\n"
+msgstr "  -W, --word-mode            szavak √∂sszehasonl√≠t√°sa a sorok helyett\n"
 
-#: src/mdiff.c:4022
-#, fuzzy
+#: src/mdiff.c:3991
 msgid "With no FILE, or when FILE is -, read standard input.\n"
-msgstr "Szabv·nyos bemenetrıl olvas, ha F¡JL nincs megadva vagy -. \n"
+msgstr "Ha nincs F√ÅJL vagy ha a F√ÅJL -, akkor a szabv√°nyos bemenetr≈ël olvasson.\n"
 
-#: src/mdiff.c:4024 src/unify.c:298 src/wdiff.c:1282 src/wdiff2.c:216
-#, fuzzy
+#: src/mdiff.c:3993 src/unify.c:300 src/wdiff.c:1269 src/wdiff2.c:210
 msgid "Report bugs to <wdiff-bugs@gnu.org>.\n"
-msgstr "A hib·kat jelentsd a <wdiff-bugs@gnu.org> cÌmen.\n"
+msgstr "A hib√°kat ezen a c√≠men jelentse: <wdiff-bugs@gnu.org>.\n"
 
-#: src/mdiff.c:4035
+#: src/mdiff.c:4005
 #, c-format
 msgid "ignoring option %s (not implemented)"
-msgstr ""
+msgstr "%s kapcsol√≥ mell≈ëz√©se (nincs megval√≥s√≠tva)"
 
-#: src/mdiff.c:4332
-#, fuzzy, c-format
+#: src/mdiff.c:4299
+#, c-format
 msgid "cannot use -z, termcap not available"
-msgstr "-z kapcsolÛ haszn·lata nem lehetsÈges, termcap nem elÈrhetı."
+msgstr "a -z kapcsol√≥ nem haszn√°lhat√≥, a termcap nem √©rhet≈ë el"
 
-#: src/mdiff.c:4371
-#, fuzzy, c-format
+#: src/mdiff.c:4338
+#, c-format
 msgid "word merging for two files only (so far)"
-msgstr "SzÛˆsszefÈs¸lÈs csak kÈt f·jlal (egyelıre)"
+msgstr "sz√≥egyes√≠t√©s csak k√©t f√°jlal (egyel≈ëre)"
 
-#: src/mdiff.c:4387
-#, fuzzy
+#: src/mdiff.c:4354
 msgid ""
 "\n"
 "Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2010 Free Software Foundation, Inc.\n"
 
-#: src/mdiff.c:4391 src/unify.c:407 src/wdiff.c:1408 src/wdiff2.c:134
+#: src/mdiff.c:4357 src/unify.c:407 src/wdiff.c:1395 src/wdiff2.c:131
 msgid ""
 "This is free software; see the source for copying conditions.  There is NO\n"
 "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 msgstr ""
-"Ez szabad szoftver; a sokszorosÌt·sra vonatkozÛ feltÈteleket l·sd a "
-"forr·sban.\n"
-"SEMMILYEN garanci·t nem v·llalunk, mÈg azt sem ·llÌtjuk, hogy ez a program\n"
-"KERESKEDELMI C…LOKRA ALKALMAS vagy HASZN¡LHAT” EGY ADOTT FELADATRA.\n"
+"Ez szabad szoftver; a sokszoros√≠t√°sra vonatkoz√≥ felt√©teleket l√°sd a forr√°sban.\n"
+"SEMMILYEN garanci√°t nem v√°llalunk, m√©g azt sem √°ll√≠tjuk, hogy ez a program\n"
+"KERESKEDELMI C√âLOKRA ALKALMAS vagy HASZN√ÅLHAT√ì EGY ADOTT FELADATRA.\n"
 
-#: src/mdiff.c:4395 src/wdiff.c:1412 src/wdiff2.c:138
+#: src/mdiff.c:4360 src/wdiff.c:1398 src/wdiff2.c:134
 msgid ""
 "\n"
 "Written by Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 msgstr ""
 "\n"
-"Õrta Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
+"√çrta Franc,ois Pinard <pinard@iro.umontreal.ca>.\n"
 
-#: src/mdiff.c:4431
-#, fuzzy, c-format
+#: src/mdiff.c:4395
+#, c-format
 msgid "options -123RSYZ meaningful only when two inputs"
-msgstr "A -123RSYZ kapcsolÛk csak akkor Èrtelmezettek, ha kÈt bemenet van."
+msgstr "A -123RSYZ kapcsol√≥ csak k√©t bemenet eset√©n √©rtelmes"
 
-#: src/unify.c:144
-#, fuzzy, c-format
+#: src/pipes.c:47
+#, c-format
+msgid "error redirecting stream"
+msgstr "hiba a folyam √°tir√°ny√≠t√°sakor"
+
+#: src/pipes.c:51
+#, c-format
+msgid "failed to execute %s"
+msgstr "nem siker√ºlt a(z) %s v√©grehajt√°sa"
+
+#: src/unify.c:145
+#, c-format
 msgid "could not find a name for the diff at line %ld"
-msgstr "A megadott sorn·l a diff neve nem tal·lhatÛ. Sor: %ld"
+msgstr "nem tal√°lhat√≥ egy n√©v a diff parancshoz a(z) %ld. sorban"
 
-#: src/unify.c:273
-#, fuzzy, c-format
+#: src/unify.c:274
+#, c-format
 msgid "try `%s --help' for more information\n"
-msgstr "PrÛb·ld a `%s --help'-et.\n"
+msgstr "Tov√°bbi inform√°ci√≥k√©rt pr√≥b√°lja a(z) ‚Äû%s --help‚Äù parancsot\n"
 
-#: src/unify.c:277
+#: src/unify.c:279
 msgid "unify - Transforms context diffs into unidiffs, or vice-versa.\n"
-msgstr "unify - Szˆvegkˆrnyezeti diffet alakÌt unidiffÈ, vagy fordÌtva.\n"
+msgstr "unify - K√∂rnyezeti diffeket alak√≠t √°t unidiffekk√©, vagy ford√≠tva.\n"
 
-#: src/unify.c:281
-#, fuzzy, c-format
+#: src/unify.c:283
+#, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
-msgstr "Haszn·lat: %s [KAPCSOL”]... [F¡JL]\n"
-
-#: src/unify.c:284
-#, fuzzy
-msgid "  -c, --context-diffs    force output to context diffs\n"
-msgstr "  -c, --context-diffs    mindenkÈpp szˆvegkˆrnyezeti diff kiÌr·sa\n"
-
-#: src/unify.c:285
-#, fuzzy
-msgid "  -e, --echo-comments    echo comments to standard error\n"
-msgstr "  -e, --echo-comments    megjegyzÈseket a szabv·nyos hibakimentre\n"
+msgstr "Haszn√°lat: %s [KAPCSOL√ì]‚Ä¶ [F√ÅJL]\n"
 
 #: src/unify.c:286
-#, fuzzy
-msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
-msgstr "  -o, --old-diffs        mindenkÈppen rÈgi stÌlus˙ diffet kiÌr·sa\n"
+msgid "  -c, --context-diffs    force output to context diffs\n"
+msgstr "  -c, --context-diffs    kimenet k√©nyszer√≠t√©se k√∂rnyezeti diffekre\n"
 
 #: src/unify.c:287
-#, fuzzy
-msgid "  -p, --patch-format     generate patch format\n"
-msgstr "  -p, --patch-format     patch form·tum gener·l·sa\n"
+msgid "  -e, --echo-comments    echo comments to standard error\n"
+msgstr "  -e, --echo-comments    megjegyz√©sek ki√≠r√°sa a szabv√°nyos hibakimenetre\n"
 
 #: src/unify.c:288
-#, fuzzy
-msgid "  -P                     same as -p\n"
-msgstr "  -P                     mint -p\n"
+msgid "  -o, --old-diffs        output old-style diffs, no matter what\n"
+msgstr "  -o, --old-diffs        r√©gi st√≠lus√∫ diffek ki√≠r√°sa, nem sz√°m√≠t, hogy mi az\n"
 
 #: src/unify.c:289
-#, fuzzy
-msgid "  -s, --strip-comments   strip comment lines\n"
-msgstr "  -s, --strip-comments   megjegyzÈsek tˆrlÈse\n"
+msgid "  -p, --patch-format     generate patch format\n"
+msgstr "  -p, --patch-format     patch form√°tum el≈ë√°ll√≠t√°sa\n"
 
 #: src/unify.c:290
-#, fuzzy
-msgid "  -u, --unidiffs         force output to unidiffs\n"
-msgstr "  -u, --unidiffs         mindenkÈpp unidiff kiÌr·sa\n"
+msgid "  -P                     same as -p\n"
+msgstr "  -P                     ugyanaz mint a -p\n"
 
 #: src/unify.c:291
-#, fuzzy
-msgid "  -U                     same as -p and -u\n"
-msgstr "  -U                     mint -p Ès -u\n"
+msgid "  -s, --strip-comments   strip comment lines\n"
+msgstr "  -s, --strip-comments   megjegyz√©s sorok lev√°g√°sa\n"
 
 #: src/unify.c:292
-#, fuzzy
+msgid "  -u, --unidiffs         force output to unidiffs\n"
+msgstr "  -u, --unidiffs         kimenet k√©nyszer√≠t√©se unidiffekre\n"
+
+#: src/unify.c:293
+msgid "  -U                     same as -p and -u\n"
+msgstr "  -U                     ugyanaz mint a -p √©s a -u\n"
+
+#: src/unify.c:294
 msgid "  -=, --use-equals       replace spaces by equal signs in unidiffs\n"
-msgstr ""
-"  -=, --use-equals       szÛkˆzˆket egyenlısÈgjelekre cserÈli az "
-"unidiffekben\n"
+msgstr "  -=, --use-equals       sz√≥k√∂z√∂k cser√©je egyenl≈ës√©gjelekre az unidiffekben\n"
 
-#: src/unify.c:296
-#, fuzzy
+#: src/unify.c:298
 msgid "If FILE is not specified, read standard input.\n"
-msgstr "Ha F¡JL nincs megadva, a szabv·nyos bementrıl olvas.\n"
+msgstr "Ha a F√ÅJL nincs megadva, olvas√°s a szabv√°nyos bemenetr≈ël.\n"
 
-#: src/unify.c:388
-#, fuzzy, c-format
+#: src/unify.c:389
+#, c-format
 msgid "unable to open `%s'"
-msgstr "`%s' megnyit·sa sikertelen."
+msgstr "‚Äû%s‚Äù nem nyithat√≥ meg"
 
-#: src/unify.c:394
-#, fuzzy, c-format
+#: src/unify.c:395
+#, c-format
 msgid "only one filename allowed"
-msgstr "Csak egy f·jlnÈv megengedett"
+msgstr "csak egy f√°jln√©v enged√©lyezett"
 
-#: src/unify.c:403
+#: src/unify.c:404
 msgid ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
@@ -425,48 +440,55 @@ msgstr ""
 "\n"
 "Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
 
-#: src/unify.c:411
+#: src/unify.c:410
 msgid ""
 "\n"
 "Written by Wayne Davison <davison@borland.com>.\n"
 msgstr ""
 "\n"
-"Õrta Wayne Davison <davison@borland.com>.\n"
+"√çrta Wayne Davison <davison@borland.com>.\n"
 
-#: src/unify.c:550
-#, fuzzy, c-format
+#: src/unify.c:548
+#, c-format
 msgid "invalid unified diff header at line %ld"
-msgstr "…rvÈnytelen unidiff fejlÈc a kˆvetkezı sorban: %ld"
+msgstr "√©rv√©nytelen egys√©ges diff fejl√©c a(z) %ld. sorban"
 
-#: src/unify.c:592
-#, fuzzy, c-format
+#: src/unify.c:590
+#, c-format
 msgid "malformed unified diff at line %ld"
-msgstr "Rossz form·tum˙ unidiff a kˆvetkezı sorban: %ld"
+msgstr "helytelen√ºl form√°zott egys√©ges diff a(z) %ld. sorban"
 
-#: src/unify.c:623
-#, fuzzy, c-format
+#: src/unify.c:620
+#, c-format
 msgid "context diff missing `old' header at line %ld"
-msgstr ""
-"A szˆvegkˆrnyezeti diffbıl hi·nyzik a `rÈgi' fejlÈc a kˆvetkezı sorban: %ld"
+msgstr "a k√∂rnyezeti diffb≈ël hi√°nyzik a ‚Äûr√©gi‚Äù fejl√©c a(z) %ld. sorban"
 
-#: src/unify.c:667 src/unify.c:686 src/unify.c:757 src/unify.c:775
-#, fuzzy, c-format
+#: src/unify.c:664 src/unify.c:683 src/unify.c:753 src/unify.c:771
+#, c-format
 msgid "malformed context diff at line %ld"
-msgstr "Rossz form·tum˙ szˆvegkˆrnyezeti diff a kˆvetkezı sorban: %ld"
+msgstr "helytelen√ºl form√°zott k√∂rnyezeti diff a(z) %ld. sorban"
 
-#: src/unify.c:722
-#, fuzzy, c-format
+#: src/unify.c:718
+#, c-format
 msgid "context diff missing `new' header at line %ld"
-msgstr ""
-"A szˆvegkˆrnyezeti diffbıl hi·nyzik az `˙j' fejlÈc a kˆvetkezı sorban: %ld"
+msgstr "a k√∂rnyezeti diffb≈ël hi√°nyzik az ‚Äû√∫j‚Äù fejl√©c a(z) %ld. sorban"
 
-#: src/wdiff.c:606 src/wdiff.c:725
+#: src/wdiff.c:582 src/wdiff.c:701
 #, c-format
 msgid "no suitable temporary directory exists"
-msgstr ""
+msgstr "nem l√©tezik megfelel≈ë √°tmeneti k√∂nyvt√°r"
 
-#: src/wdiff.c:1222 src/wdiff2.c:110
-#, fuzzy
+#: src/wdiff.c:1040
+#, c-format
+msgid "%s: input program killed by signal %d\n"
+msgstr "%s: a bemeneti programot kil≈ëtte a(z) %d. szign√°l\n"
+
+#: src/wdiff.c:1145
+#, c-format
+msgid "%s: output program killed by signal %d\n"
+msgstr "%s: a kimeneti programot kil≈ëtte a(z) %d. szign√°l\n"
+
+#: src/wdiff.c:1210 src/wdiff2.c:109
 msgid ""
 "This program is free software: you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -481,189 +503,172 @@ msgid ""
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
-"Ez a program szabad szoftver; tov·bbadhatod Ès/vagy mÛdosÌthatod\n"
-"a Free Software Foundation ·ltal kiadott GNU General Public License\n"
-"2. (vagy kÈsıbbi) v·ltozat·ban foglaltak betart·s·val.\n"
+"Ez a program szabad szoftver; terjeszthet≈ë illetve m√≥dos√≠that√≥ a\n"
+"Free Software Foundation √°ltal kiadott GNU General Public License\n"
+"dokumentum√°ban le√≠rtak; ak√°r a licenc 3-as, ak√°r (tetsz≈ëleges) k√©s≈ëbbi\n"
+"v√°ltozata szerint.\n"
 "\n"
-"Ezt a programot annak remÈnyÈben terjesztj¸k, hogy hasznos\n"
-"de SEMMYILEN GARANCI¡T nem v·llalunk. MÈg azt sem ·llÌtjuk, hogy\n"
-"ez a program KERESKEDELMI C…LOKRA ALKALMAS vagy\n"
-"HASZN¡LHAT” EGY ADOTT FELADATRA. Tov·bbi rÈszletekÈrt\n"
-"olvasd el a GNU General Public License-t.\n"
+"Ez a program abban a rem√©nyben ker√ºl k√∂zread√°sra, hogy hasznos lesz,\n"
+"de minden egy√©b GARANCIA N√âLK√úL, az ELADHAT√ìS√ÅGRA vagy VALAMELY C√âLRA\n"
+"VAL√ì ALKALMAZHAT√ìS√ÅGRA val√≥ sz√°rmaztatott garanci√°t is bele√©rtve.\n"
+"Tov√°bbi r√©szleteket a GNU General Public License tartalmaz.\n"
 "\n"
-"Ezzel a programmal meg kellett kapnod a GNU General Public License\n"
-"egy pÈld·ny·t. Ha mÈgsem Ìgy tˆrtÈnt, Ìrj a Free Software Foundation-nek:\n"
-"59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+"A felhaszn√°l√≥nak a programmal egy√ºtt meg kell kapnia a GNU General\n"
+"Public License egy p√©ld√°ny√°t; ha m√©gsem kapta meg, akkor\n"
+"tekintse meg a <http://www.gnu.org/licenses/> oldalon.\n"
 
-#: src/wdiff.c:1250
+#: src/wdiff.c:1238
 msgid "wdiff - Compares words in two files and report differences.\n"
-msgstr ""
-"wdiff - kÈt f·jl szavait hasonlÌtja ˆssze Ès jelenti a k¸lˆnbsÈgeket.\n"
+msgstr "wdiff - K√©t f√°jlban l√©v≈ë szavakat hasonl√≠t √∂ssze, √©s jelenti a k√ºl√∂nbs√©geket.\n"
 
-#: src/wdiff.c:1254
-#, fuzzy, c-format
+#: src/wdiff.c:1242
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... FILE1 FILE2\n"
-"       %s -d [OPTION]... [FILE]\n"
+"   or: %s -d [OPTION]... [FILE]\n"
 msgstr ""
-"Haszn·lat: %s [KAPCSOL”]... F¡JL1 F¡JL2\n"
-"           %s -d [KAPCSOL”]... [F¡JL]\n"
+"Haszn√°lat: %s [KAPCSOL√ì]‚Ä¶ F√ÅJL1 F√ÅJL2\n"
+"   vagy: %s -d [KAPCSOL√ì]‚Ä¶ [F√ÅJL]\n"
 
-#: src/wdiff.c:1259 src/wdiff2.c:191
-msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
-msgstr ""
+#: src/wdiff.c:1247 src/wdiff2.c:186
+msgid "Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr "A hossz√∫ kapcsol√≥k k√∂telez≈ë argumentumai a r√∂vid kapcsol√≥khoz is k√∂telez≈ëek.\n"
 
-#: src/wdiff.c:1262 src/wdiff2.c:194
-#, fuzzy
+#: src/wdiff.c:1250 src/wdiff2.c:189
 msgid "  -C, --copyright            display copyright then exit\n"
-msgstr "  -C, --copyright            kiÌrja a copyright inform·ciÛkat\n"
+msgstr "  -C, --copyright            szerz≈ëi jogi inform√°ci√≥k megjelen√≠t√©se √©s kil√©p√©s\n"
 
-# ? "  -K, --no-init-term          mint -z, de init/termcap karakterl·ncok nÈlk¸l"
-# ? "  -K, --no-init-term         mint -t, de init/termcap karakterl·ncok nÈlk¸l"
-#: src/wdiff.c:1263 src/wdiff2.c:195
-msgid ""
-"  -K, --no-init-term         like -t, but no termcap init/term strings\n"
-msgstr ""
-
-#: src/wdiff.c:1267 src/wdiff2.c:199
-#, fuzzy
+#: src/wdiff.c:1254 src/wdiff2.c:193
 msgid "  -a, --auto-pager           automatically calls a pager\n"
-msgstr "  -a, --auto-pager           automatikusan lapozÛt indÌt\n"
+msgstr "  -a, --auto-pager           egy lapoz√≥ automatikus h√≠v√°sa\n"
 
-#: src/wdiff.c:1268
+#: src/wdiff.c:1255
 msgid "  -d, --diff-input           use single unified diff as input\n"
-msgstr ""
+msgstr "  -d, --diff-input           egyed√ºli egys√©ges diff haszn√°lata bemenetk√©nt\n"
 
-#: src/wdiff.c:1269 src/wdiff2.c:200
-#, fuzzy
+#: src/wdiff.c:1256 src/wdiff2.c:194
 msgid "  -h, --help                 display this help then exit\n"
-msgstr "  -h, --help                 emlÈkeztetıt Ìr ki\n"
+msgstr "  -h, --help                 ezen s√∫g√≥ megjelen√≠t√©se √©s kil√©p√©s\n"
 
-#: src/wdiff.c:1270 src/wdiff2.c:201
-#, fuzzy
+#: src/wdiff.c:1257 src/wdiff2.c:195
 msgid "  -i, --ignore-case          fold character case while comparing\n"
-msgstr "  -i, --ignore-case          kis- Ès nagybet˚ megegyezik\n"
+msgstr ""
+"  -i, --ignore-case          kis- √©s nagybet≈±k figyelmen k√≠v√ºl hagy√°sa\n"
+"                             √∂sszehasonl√≠t√°skor\n"
 
-#: src/wdiff.c:1271 src/wdiff2.c:202
-#, fuzzy
+#: src/wdiff.c:1258 src/wdiff2.c:196
 msgid "  -l, --less-mode            variation of printer mode for \"less\"\n"
-msgstr "  -l, --less-mode            kiÌratÛ mÛd a \"less-hez\"\n"
+msgstr "  -l, --less-mode            a nyomtat√≥ m√≥d v√°ltozata a ‚Äûless‚Äù parancshoz\n"
 
-#: src/wdiff.c:1272 src/wdiff2.c:203
-#, fuzzy
+#: src/wdiff.c:1259 src/wdiff2.c:197
 msgid "  -n, --avoid-wraps          do not extend fields through newlines\n"
-msgstr ""
-"  -n, --avoid-wraps          a mezıket nem terjeszti az ˙jsorokon t˙l\n"
+msgstr "  -n, --avoid-wraps          ne terjessze ki a mez≈ëket az √∫j sorokon √°t\n"
 
-#: src/wdiff.c:1273 src/wdiff2.c:204
-#, fuzzy
+#: src/wdiff.c:1260 src/wdiff2.c:198
 msgid "  -p, --printer              overstrike as for printers\n"
-msgstr "  -p, --printer              'overstrike' mint nyomtatÛkn·l\n"
+msgstr "  -p, --printer              √°th√∫z√°s mint a nyomtat√≥khoz\n"
 
-#: src/wdiff.c:1274 src/wdiff2.c:206
-#, fuzzy
-msgid ""
-"  -s, --statistics           say how many words deleted, inserted etc.\n"
-msgstr ""
-"  -s, --statistics           megmondja h·ny tˆrˆlt, besz˙rt stb. szÛ van\n"
+#: src/wdiff.c:1261 src/wdiff2.c:200
+msgid "  -s, --statistics           say how many words deleted, inserted etc.\n"
+msgstr "  -s, --statistics           mondja meg, h√°ny sz√≥ lett t√∂r√∂lve, besz√∫rva, stb.\n"
 
-#: src/wdiff.c:1275 src/wdiff2.c:207
-#, fuzzy
+#: src/wdiff.c:1262 src/wdiff2.c:201
 msgid "  -t, --terminal             use termcap as for terminal displays\n"
-msgstr ""
-"  -t, --terminal             termcap haszn·lata, mint termin·l kiÌrat·sn·l\n"
+msgstr "  -t, --terminal             termcap haszn√°lata termin√°los megjelen√≠t≈ëkh√∂z\n"
 
-#: src/wdiff.c:1276 src/wdiff2.c:208
-#, fuzzy
+#: src/wdiff.c:1263 src/wdiff2.c:202
 msgid "  -v, --version              display program version then exit\n"
-msgstr "  -V, --version              kiÌrja a program nevÈt Ès v·ltozat·t\n"
+msgstr "  -v, --version              programverzi√≥ megjelen√≠t√©se √©s kil√©p√©s\n"
 
-#: src/wdiff.c:1277 src/wdiff2.c:209
-#, fuzzy
-msgid ""
-"  -w, --start-delete=STRING  string to mark beginning of delete region\n"
-msgstr "  -w, --start-delete=SZTRING SZTRING jelˆli a tˆrlendı rÈsz elejÈt\n"
+#: src/wdiff.c:1264 src/wdiff2.c:203
+msgid "  -w, --start-delete=STRING  string to mark beginning of delete region\n"
+msgstr "  -w, --start-delete=SZ√ñVEG  a t√∂rl√©si ter√ºlet kezdet√©t jel√∂l≈ë sz√∂veg\n"
 
-#: src/wdiff.c:1278 src/wdiff2.c:210
-#, fuzzy
+#: src/wdiff.c:1265 src/wdiff2.c:204
 msgid "  -x, --end-delete=STRING    string to mark end of delete region\n"
-msgstr "  -x, --end-delete=SZTRING   SZTRING jelˆli a tˆrlendı rÈsz vÈgÈt\n"
+msgstr "  -x, --end-delete=SZ√ñVEG    a t√∂rl√©si ter√ºlet v√©g√©t jel√∂l≈ë sz√∂veg\n"
 
-#: src/wdiff.c:1279 src/wdiff2.c:211
-#, fuzzy
-msgid ""
-"  -y, --start-insert=STRING  string to mark beginning of insert region\n"
-msgstr "  -y, --start-insert=SZTRING SZTRING jelˆli a besz˙randÛ rÈsz elejÈt\n"
+#: src/wdiff.c:1266 src/wdiff2.c:205
+msgid "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
+msgstr "  -y, --start-insert=SZ√ñVEG  a besz√∫r√°si ter√ºlet kezdet√©t jel√∂l≈ë sz√∂veg\n"
 
-#: src/wdiff.c:1280 src/wdiff2.c:212
-#, fuzzy
+#: src/wdiff.c:1267 src/wdiff2.c:206
 msgid "  -z, --end-insert=STRING    string to mark end of insert region\n"
-msgstr "  -z, --end-insert=SZTRING   SZTRING jelˆli a besz˙randÛ rÈsz vÈgÈt\n"
+msgstr "  -z, --end-insert=SZ√ñVEG    a besz√∫r√°si ter√ºlet v√©g√©t jel√∂l≈ë sz√∂veg\n"
 
-#: src/wdiff.c:1398
-#, fuzzy, c-format
+#: src/wdiff.c:1386
+#, c-format
 msgid "cannot use -t, termcap not available"
-msgstr "-z kapcsolÛ haszn·lata nem lehetsÈges, termcap nem elÈrhetı."
+msgstr "a -t kapcsol√≥ nem haszn√°lhat√≥, a termcap nem √©rhet≈ë el"
 
-#: src/wdiff.c:1403
-#, fuzzy
+#: src/wdiff.c:1391
 msgid ""
 "\n"
-"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010 Free Software\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
 "Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1992, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1992, 1997, 1998, 1999, 2009, 2010, 2011, 2012 Free Software\n"
+"Foundation, Inc.\n"
 
-#: src/wdiff.c:1451 src/wdiff.c:1469
-#, fuzzy, c-format
+#: src/wdiff.c:1436 src/wdiff.c:1454
+#, c-format
 msgid "too many file arguments"
-msgstr "Hi·nyzÛ f·jlargumentumok"
+msgstr "t√∫l sok f√°jl argumentum"
 
-#: src/wdiff.c:1464 src/wdiff2.c:323
-#, fuzzy, c-format
+#: src/wdiff.c:1449 src/wdiff2.c:320
+#, c-format
 msgid "missing file arguments"
-msgstr "Hi·nyzÛ f·jlargumentumok"
+msgstr "hi√°nyz√≥ f√°jl argumentumok"
 
-#: src/wdiff2.c:130
-#, fuzzy
+#: src/wdiff2.c:128
 msgid ""
 "\n"
 "Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 msgstr ""
 "\n"
-"Copyright (C) 1994, 1997 Free Software Foundation, Inc.\n"
+"Copyright (C) 1997, 1998, 1999 Free Software Foundation, Inc.\n"
 
-#: src/wdiff2.c:182
+#: src/wdiff2.c:177
 msgid ""
 "wdiff - Compute word differences by internally launching `mdiff -W'.\n"
 "This program exists mainly to support the now oldish `wdiff' syntax.\n"
 msgstr ""
+"wdiff - Sz√≥k√ºl√∂nbs√©gek kisz√°m√≠t√°sa a bels≈ëleg ind√≠tott ‚Äûmdiff -W‚Äù paranccsal.\n"
+"Ez a program f≈ëleg a most √∂reges ‚Äûwdiff‚Äù szintaxis t√°mogat√°s√°hoz l√©tezik.\n"
 
-#: src/wdiff2.c:187
-#, fuzzy, c-format
+#: src/wdiff2.c:182
+#, c-format
 msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
-msgstr "Haszn·lat: %s [KAPCSOL”]... F¡JL1 F¡JL2\n"
+msgstr "Haszn√°lat: %s [KAPCSOL√ì]‚Ä¶ F√ÅJL1 F√ÅJL2\n"
 
-#: src/wdiff2.c:205
+#: src/wdiff2.c:199
 msgid "  -q, --quiet                inhibit the `mdiff' call message\n"
-msgstr ""
+msgstr "  -q, --quiet                az ‚Äûmdiff‚Äù h√≠v√°si √ºzenet megtilt√°sa\n"
 
-#: src/wdiff2.c:214
+#: src/wdiff2.c:208
 msgid "This program also tells how `mdiff' could have been called directly.\n"
-msgstr ""
+msgstr "Ez a program azt is megmondja, hogyan lehetett volna k√∂zvetlen√ºl megh√≠vni az ‚Äûmdiff‚Äù parancsot.\n"
 
 #. TRANSLATORS: This and the next string are one message.
-#: src/wdiff2.c:335
-#, fuzzy, c-format
+#: src/wdiff2.c:332
+#, c-format
 msgid "Launching `%s"
-msgstr "%s olvas·sa"
+msgstr "‚Äû%s‚Äù ind√≠t√°sa"
 
-#: src/wdiff2.c:338
+#: src/wdiff2.c:335
 #, c-format
 msgid "'\n"
-msgstr ""
+msgstr "'\n"
+
+#~ msgid "Read summary: %d files, %d items\n"
+#~ msgstr "Olvas√°s √∂sszefoglal√°sa: %d f√°jl, %d elem\n"
+
+#~ msgid "Work summary: %d clusters, %d members\n"
+#~ msgstr "Munka √∂sszefoglal√°sa: %d csoport, %d tag\n"
+
+#~ msgid "Work summary: %d clusters, %d members, %d overlaps\n"
+#~ msgstr "Munka √∂sszefoglal√°sa: %d csoport, %d tag, %d √°tfed√©s\n"
 
 #~ msgid ""
 #~ "\n"
@@ -674,11 +679,11 @@ msgstr ""
 #~ "      --version          output version information and exit\n"
 #~ msgstr ""
 #~ "\n"
-#~ "M˚veletek:\n"
-#~ "  -h                     (figyelmen kÌv¸l hagyva)\n"
-#~ "  -v, --verbose          nÈh·ny statisztik·t Ìr ki az stderr-re\n"
-#~ "      --help             emlÈkeztetıt Ìr ki\n"
-#~ "      --version          kiÌrja a program nevÈt Ès v·ltozat·t\n"
+#~ "M≈±veletek:\n"
+#~ "  -h                     (figyelmen k√≠v√ºl hagyva)\n"
+#~ "  -v, --verbose          n√©h√°ny statisztik√°t √≠r ki az stderr-re\n"
+#~ "      --help             eml√©keztet≈ët √≠r ki\n"
+#~ "      --version          ki√≠rja a program nev√©t √©s v√°ltozat√°t\n"
 
 #~ msgid ""
 #~ "\n"
@@ -690,14 +695,12 @@ msgstr ""
 #~ "  -t, --expand-tabs       expand tabs to spaces in the output\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Kimenet form·z·sa:\n"
-#~ "  -T, --initial-tab       TAB-ot kezdı szÛkˆz helyett\n"
-#~ "  -l, --paginate          kimenet oldalsz·moz·sa a `pr' segÌtsÈgÈvel\n"
-#~ "  -S, --string[=SZTRING]  m·sik felhaszn·lÛi SZTRING-et is figyelembe "
-#~ "vesz\n"
-#~ "  -V, --show-links        annot·ciÛban f·jl- Ès sorsz·mhivatkoz·sok\n"
-#~ "  -t, --expand-tabs       tabul·tor karaktert szÛkˆzzÈ alakÌtja a "
-#~ "kimenetben\n"
+#~ "Kimenet form√°z√°sa:\n"
+#~ "  -T, --initial-tab       TAB-ot kezd≈ë sz√≥k√∂z helyett\n"
+#~ "  -l, --paginate          kimenet oldalsz√°moz√°sa a `pr' seg√≠ts√©g√©vel\n"
+#~ "  -S, --string[=SZTRING]  m√°sik felhaszn√°l√≥i SZTRING-et is figyelembe vesz\n"
+#~ "  -V, --show-links        annot√°ci√≥ban f√°jl- √©s sorsz√°mhivatkoz√°sok\n"
+#~ "  -t, --expand-tabs       tabul√°tor karaktert sz√≥k√∂zz√© alak√≠tja a kimenetben\n"
 
 #~ msgid ""
 #~ "\n"
@@ -715,72 +718,59 @@ msgstr ""
 #~ "  -W, --word-mode             compare words instead of lines\n"
 #~ msgstr ""
 #~ "\n"
-#~ "SzÛ mÛd kapcsolÛi:\n"
-#~ "  -1, --no-deleted            megakad·lyozza a tˆrˆlt szavak kiÌr·s·t\n"
-#~ "  -2, --no-inserted           megakad·lyozza a besz˙rt szavak kiÌr·s·t\n"
-#~ "  -3, --no-common             megakad·lyozza a kˆzˆs szavak kiÌr·s·t\n"
-#~ "  -A, --auto-pager            automatikusan lapozÛt indÌt\n"
-#~ "  -k, --less-mode             kiÌratÛ mÛd a \"less-hez\"\n"
-#~ "  -m, --avoid-wraps           a mezıket nem terjeszti az ˙jsorokon t˙l\n"
-#~ "  -o, --printer               'overstrike' mint nyomtatÛkn·l\n"
-#~ "  -z, --terminal              termcap mint termin·l kiÌrat·sn·l\n"
-#~ "  -K, --no-init-term          mint -z, de init/termcap karakterl·ncok "
-#~ "nÈlk¸l\n"
-#~ "  -O, --item-regexp=REGEXP    elemek ˆsszehasonlÌt·sa REGEXP alapj·n\n"
-#~ "  -W, --word-mode             szavakat hasonlÌt ˆssze sorok helyett\n"
+#~ "Sz√≥ m√≥d kapcsol√≥i:\n"
+#~ "  -1, --no-deleted            megakad√°lyozza a t√∂r√∂lt szavak ki√≠r√°s√°t\n"
+#~ "  -2, --no-inserted           megakad√°lyozza a besz√∫rt szavak ki√≠r√°s√°t\n"
+#~ "  -3, --no-common             megakad√°lyozza a k√∂z√∂s szavak ki√≠r√°s√°t\n"
+#~ "  -A, --auto-pager            automatikusan lapoz√≥t ind√≠t\n"
+#~ "  -k, --less-mode             ki√≠rat√≥ m√≥d a \"less-hez\"\n"
+#~ "  -m, --avoid-wraps           a mez≈ëket nem terjeszti az √∫jsorokon t√∫l\n"
+#~ "  -o, --printer               'overstrike' mint nyomtat√≥kn√°l\n"
+#~ "  -z, --terminal              termcap mint termin√°l ki√≠rat√°sn√°l\n"
+#~ "  -K, --no-init-term          mint -z, de init/termcap karakterl√°ncok n√©lk√ºl\n"
+#~ "  -O, --item-regexp=REGEXP    elemek √∂sszehasonl√≠t√°sa REGEXP alapj√°n\n"
+#~ "  -W, --word-mode             szavakat hasonl√≠t √∂ssze sorok helyett\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Comparing files:\n"
-#~ "*  -H, --speed-large-files     go faster, for when numerous small "
-#~ "changes\n"
-#~ "*  -a, --text                  report line differences (text file "
-#~ "default)\n"
+#~ "*  -H, --speed-large-files     go faster, for when numerous small changes\n"
+#~ "*  -a, --text                  report line differences (text file default)\n"
 #~ "*  -d, --minimal               try harder for a smaller set of changes\n"
-#~ "*  -q, --brief                 only says if files differ (binary "
-#~ "default)\n"
-#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/"
-#~ "suffixes\n"
+#~ "*  -q, --brief                 only says if files differ (binary default)\n"
+#~ "*      --horizon-lines=LINES   keep LINES lines in common prefixes/suffixes\n"
 #~ msgstr ""
 #~ "\n"
-#~ "F·jlok ˆsszehasonlÌt·sa:\n"
-#~ "*  -H, --speed-large-files     gyorsabb, sok, kis k¸lˆnbsÈg esetÈn\n"
-#~ "*  -a, --text                  sork¸lˆnbsÈg jelzÈse (szˆvegf·jln·l "
-#~ "alapÈrtelmezett)\n"
-#~ "*  -d, --minimal               prÛb·l kevesebb k¸lˆnbsÈget tal·lni\n"
-#~ "*  -q, --brief                 csak azt jelenti, hogy a f·jlok "
-#~ "k¸lˆnbˆznek\n"
-#~ "                                (bin·ris f·jln·l alapÈrtelmezett)\n"
-#~ "*      --horizon-lines=SOR     SOR sor megtart·sa a kˆzˆs elı- Ès "
-#~ "utÛtagokban\n"
+#~ "F√°jlok √∂sszehasonl√≠t√°sa:\n"
+#~ "*  -H, --speed-large-files     gyorsabb, sok, kis k√ºl√∂nbs√©g eset√©n\n"
+#~ "*  -a, --text                  sork√ºl√∂nbs√©g jelz√©se (sz√∂vegf√°jln√°l alap√©rtelmezett)\n"
+#~ "*  -d, --minimal               pr√≥b√°l kevesebb k√ºl√∂nbs√©get tal√°lni\n"
+#~ "*  -q, --brief                 csak azt jelenti, hogy a f√°jlok k√ºl√∂nb√∂znek\n"
+#~ "                                (bin√°ris f√°jln√°l alap√©rtelmezett)\n"
+#~ "*      --horizon-lines=SOR     SOR sor megtart√°sa a k√∂z√∂s el≈ë- √©s ut√≥tagokban\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Comparing directories:\n"
 #~ "*  -N, --new-file                  consider missing files to be empty\n"
-#~ "*  -P, --unidirectional-new-file   consider missing old files to be "
-#~ "empty\n"
+#~ "*  -P, --unidirectional-new-file   consider missing old files to be empty\n"
 #~ "*  -S, --starting-file=FILE        resume directory comparison with FILE\n"
-#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from "
-#~ "FILE\n"
+#~ "*  -X, --exclude-from=FILE         ignore files matching patterns from FILE\n"
 #~ "*  -r, --recursive                 recursively compare subdirectories\n"
 #~ "*  -s, --report-identical-files    report when two files are the same\n"
 #~ "*  -x, --exclude=PATTERN           ignore files (dirs) matching PATTERN\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Kˆnyvt·rak ˆsszehasonlÌt·sa:\n"
-#~ "*  -N, --new-file                  hi·nyzÛ f·jlt ¸resnek veszi\n"
-#~ "*  -P, --unidirectional-new-file   hi·nyzÛ rÈgi f·jlt ¸resnek veszi\n"
-#~ "*  -S, --starting-file=F¡JL        kˆnyvt·r-ˆsszehasonlÌt·s folytat·sa "
-#~ "F¡JLT”L\n"
-#~ "*  -X, --exclude-from=F¡JL         F¡JLBAN tal·lhatÛ mint·kra illeszkedı\n"
-#~ "                                    f·jlok kihagy·sa\n"
-#~ "*  -r, --recursive                 alkˆnyvt·rak rekurzÌv "
-#~ "ˆsszehasonlÌt·sa\n"
-#~ "*  -s, --report-identical-files    azonos f·jlok jelzÈse\n"
-#~ "*  -x, --exclude=MINTA             MINT¡RA illeszkedı f·jlok "
-#~ "(kˆnyvt·rak)\n"
-#~ "                                    kihagy·sa\n"
+#~ "K√∂nyvt√°rak √∂sszehasonl√≠t√°sa:\n"
+#~ "*  -N, --new-file                  hi√°nyz√≥ f√°jlt √ºresnek veszi\n"
+#~ "*  -P, --unidirectional-new-file   hi√°nyz√≥ r√©gi f√°jlt √ºresnek veszi\n"
+#~ "*  -S, --starting-file=F√ÅJL        k√∂nyvt√°r-√∂sszehasonl√≠t√°s folytat√°sa F√ÅJLT√ìL\n"
+#~ "*  -X, --exclude-from=F√ÅJL         F√ÅJLBAN tal√°lhat√≥ mint√°kra illeszked≈ë\n"
+#~ "                                    f√°jlok kihagy√°sa\n"
+#~ "*  -r, --recursive                 alk√∂nyvt√°rak rekurz√≠v √∂sszehasonl√≠t√°sa\n"
+#~ "*  -s, --report-identical-files    azonos f√°jlok jelz√©se\n"
+#~ "*  -x, --exclude=MINTA             MINT√ÅRA illeszked≈ë f√°jlok (k√∂nyvt√°rak)\n"
+#~ "                                    kihagy√°sa\n"
 
 #~ msgid ""
 #~ "\n"
@@ -792,18 +782,14 @@ msgstr ""
 #~ "  -w, --ignore-all-space               ignore white space\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Szˆveg figyelmen kÌv¸l hagy·sa:\n"
-#~ "  -B, --ignore-blank-lines             ‹res sorok figyelmen kÌv¸l "
-#~ "hagy·sa\n"
-#~ "  -I, --ignore-matching-lines=REGEXP   REGEXP-re illeszkedı sorok "
-#~ "kihagy·sa\n"
-#~ "  -b, --ignore-space-change            szÛkˆz, tabul·tor Ès sortˆrÈs\n"
-#~ "                                        v·ltoz·s·nak figyelmen kÌv¸l "
-#~ "hagy·sa\n"
-#~ "  -i, --ignore-case                    kis- Ès nagybet˚ megegyezik\n"
-#~ "  -w, --ignore-all-space               minden szÛkˆz, tabul·tor Ès "
-#~ "sortˆrÈs\n"
-#~ "                                        figyelmen kÌv¸l hagy·sa\n"
+#~ "Sz√∂veg figyelmen k√≠v√ºl hagy√°sa:\n"
+#~ "  -B, --ignore-blank-lines             √úres sorok figyelmen k√≠v√ºl hagy√°sa\n"
+#~ "  -I, --ignore-matching-lines=REGEXP   REGEXP-re illeszked≈ë sorok kihagy√°sa\n"
+#~ "  -b, --ignore-space-change            sz√≥k√∂z, tabul√°tor √©s sort√∂r√©s\n"
+#~ "                                        v√°ltoz√°s√°nak figyelmen k√≠v√ºl hagy√°sa\n"
+#~ "  -i, --ignore-case                    kis- √©s nagybet≈± megegyezik\n"
+#~ "  -w, --ignore-all-space               minden sz√≥k√∂z, tabul√°tor √©s sort√∂r√©s\n"
+#~ "                                        figyelmen k√≠v√ºl hagy√°sa\n"
 
 #~ msgid ""
 #~ "\n"
@@ -813,13 +799,12 @@ msgstr ""
 #~ "  -j, --ignore-delimiters    do not count items having only delimiters\n"
 #~ msgstr ""
 #~ "\n"
-#~ "CsoportosÌt·s:\n"
-#~ "  -G, --relist-files         minden bemeneti f·jl list·z·sa "
-#~ "annot·ciÛkkal\n"
-#~ "  -J, --minimum-size=ELEM    olyan csoportok figyelmen kÌv¸l hagy·sa,\n"
-#~ "                              melyekben nincs legal·bb ELEM elem\n"
-#~ "  -j, --ignore-delimiters    csak elv·lasztÛkkal rendelkezı elemek\n"
-#~ "                              figyelmen kÌv¸l hagy·sa\n"
+#~ "Csoportos√≠t√°s:\n"
+#~ "  -G, --relist-files         minden bemeneti f√°jl list√°z√°sa annot√°ci√≥kkal\n"
+#~ "  -J, --minimum-size=ELEM    olyan csoportok figyelmen k√≠v√ºl hagy√°sa,\n"
+#~ "                              melyekben nincs legal√°bb ELEM elem\n"
+#~ "  -j, --ignore-delimiters    csak elv√°laszt√≥kkal rendelkez≈ë elemek\n"
+#~ "                              figyelmen k√≠v√ºl hagy√°sa\n"
 
 #~ msgid ""
 #~ "\n"
@@ -832,28 +817,22 @@ msgstr ""
 #~ "*      --old-line-format=FORMAT          use FORMAT for deleted line\n"
 #~ "*      --unchanged-group-format=FORMAT   use FORMAT for unchanged lines\n"
 #~ "*      --unchanged-line-format=FORMAT    use FORMAT for unchanged line\n"
-#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-"
-#~ "format\n"
+#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 #~ msgstr ""
 #~ "\n"
-#~ "RÈszletes kimenet form·tumok:\n"
-#~ "*  -D, --ifdef=N…V                       `#ifdef N…V' form·tum kiÌr·sa\n"
-#~ "*      --changed-group-format=FORMAT     FORMAT haszn·lata megv·ltozott\n"
-#~ "                                          sor esetÈn\n"
-#~ "*      --new-group-format=FORMAT         FORMAT haszn·lata besz˙rt sor "
-#~ "esetÈn\n"
-#~ "*      --new-line-format=FORMAT          FORMAT haszn·lata besz˙rt sor "
-#~ "esetÈn\n"
-#~ "*      --old-group-format=FORMAT         FORMAT haszn·lata tˆrˆlt sor "
-#~ "esetÈn\n"
-#~ "*      --old-line-format=FORMAT          FORMAT haszn·lata tˆrˆlt sor "
-#~ "esetÈn\n"
-#~ "*      --unchanged-group-format=FORMAT   FORMAT haszn·lata v·ltozatlan\n"
-#~ "                                          sor esetÈn\n"
-#~ "*      --unchanged-line-format=FORMAT    FORMAT haszn·lata v·ltozatlan\n"
-#~ "                                          sor esetÈn\n"
-#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-"
-#~ "format\n"
+#~ "R√©szletes kimenet form√°tumok:\n"
+#~ "*  -D, --ifdef=N√âV                       `#ifdef N√âV' form√°tum ki√≠r√°sa\n"
+#~ "*      --changed-group-format=FORMAT     FORMAT haszn√°lata megv√°ltozott\n"
+#~ "                                          sor eset√©n\n"
+#~ "*      --new-group-format=FORMAT         FORMAT haszn√°lata besz√∫rt sor eset√©n\n"
+#~ "*      --new-line-format=FORMAT          FORMAT haszn√°lata besz√∫rt sor eset√©n\n"
+#~ "*      --old-group-format=FORMAT         FORMAT haszn√°lata t√∂r√∂lt sor eset√©n\n"
+#~ "*      --old-line-format=FORMAT          FORMAT haszn√°lata t√∂r√∂lt sor eset√©n\n"
+#~ "*      --unchanged-group-format=FORMAT   FORMAT haszn√°lata v√°ltozatlan\n"
+#~ "                                          sor eset√©n\n"
+#~ "*      --unchanged-line-format=FORMAT    FORMAT haszn√°lata v√°ltozatlan\n"
+#~ "                                          sor eset√©n\n"
+#~ "*      --line-format=FORMAT              --{old,new,unchanged}-line-format\n"
 
 #~ msgid ""
 #~ "\n"
@@ -864,51 +843,43 @@ msgstr ""
 #~ "*  -n, --rcs              output RCS format (internally used by RCS)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Szkriptszer˚ form·tumon:\n"
-#~ "  (-CDUcefnuy kˆz¸l egyik sem)   norm·lis diff kiÌr·sa\n"
-#~ "*  -e, --ed               ÈrvÈnyes `ed' szkript kiÌr·sa\n"
-#~ "*  -f, --forward-ed       -e Ès -n keverÈke (nem t˙l hasznos)\n"
-#~ "*  -n, --rcs              RCS form·tum kiÌr·sa (RCS belsı form·tuma)\n"
+#~ "Szkriptszer≈± form√°tumon:\n"
+#~ "  (-CDUcefnuy k√∂z√ºl egyik sem)   norm√°lis diff ki√≠r√°sa\n"
+#~ "*  -e, --ed               √©rv√©nyes `ed' szkript ki√≠r√°sa\n"
+#~ "*  -f, --forward-ed       -e √©s -n kever√©ke (nem t√∫l hasznos)\n"
+#~ "*  -n, --rcs              RCS form√°tum ki√≠r√°sa (RCS bels≈ë form√°tuma)\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Context and unified formats:\n"
-#~ "*  -F, --show-function-line=REGEXP   show previous context matching "
-#~ "REGEXP\n"
-#~ "*  -p, --show-c-function             show which C function for each "
-#~ "change\n"
+#~ "*  -F, --show-function-line=REGEXP   show previous context matching REGEXP\n"
+#~ "*  -p, --show-c-function             show which C function for each change\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Szˆvegkˆrnyezeti Ès egyesÌtett (unified) form·tumok:\n"
-#~ "*  -F, --show-function-line=REGEXP   REGEXP-re illeszkedı elızı "
-#~ "kˆrnyezet\n"
-#~ "                                      muatat·sa\n"
-#~ "*  -p, --show-c-function             megmutatja, melyik C f¸ggvÈny "
-#~ "v·ltozott\n"
+#~ "Sz√∂vegk√∂rnyezeti √©s egyes√≠tett (unified) form√°tumok:\n"
+#~ "*  -F, --show-function-line=REGEXP   REGEXP-re illeszked≈ë el≈ëz≈ë k√∂rnyezet\n"
+#~ "                                      muatat√°sa\n"
+#~ "*  -p, --show-c-function             megmutatja, melyik C f√ºggv√©ny v√°ltozott\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "*  -C, --context=LINES         as -c, also select context size in lines\n"
-#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name "
-#~ "(twice)\n"
+#~ "*  -L, --label=LABEL           use from/to LABEL instead of file name (twice)\n"
 #~ "*  -U, --unified=LINES         as -u, also select context size in lines\n"
-#~ "*  -c, --context               output context diffs (default 3 context "
-#~ "lines)\n"
+#~ "*  -c, --context               output context diffs (default 3 context lines)\n"
 #~ "*  -u, --unified               output unidiffs (default 3 context lines)\n"
 #~ "*  -LINES                      (obsolete: select context size in lines)\n"
 #~ msgstr ""
 #~ "\n"
-#~ "*  -C, --context=SOR         mint -c, kˆrnyezethossz be·llÌt·sa (sorok "
-#~ "sz·ma)\n"
-#~ "*  -L, --label=CÕMKE         forr·s Ès cÈl CÕMKE haszn·lata f·jlnÈv\n"
-#~ "                              helyett (kÈtszer)\n"
-#~ "*  -U, --unified=SOR         mint -u, kˆrnyezethossz be·llÌt·sa (sorok "
-#~ "sz·ma)\n"
-#~ "*  -c, --context             diff kiÌr·sa szˆvegkˆrnyezettel\n"
-#~ "                              (alapÈrtelmezÈsben 3 sor)\n"
-#~ "*  -u, --unified             unidiff kiÌr·sa szˆvegkˆrnyezettel\n"
-#~ "                              (alapÈrtelmezÈsben 3 sor)\n"
-#~ "*  -SOR                      (elavult: szˆvegkˆrnyezet mÈrete sorokban)\n"
+#~ "*  -C, --context=SOR         mint -c, k√∂rnyezethossz be√°ll√≠t√°sa (sorok sz√°ma)\n"
+#~ "*  -L, --label=C√çMKE         forr√°s √©s c√©l C√çMKE haszn√°lata f√°jln√©v\n"
+#~ "                              helyett (k√©tszer)\n"
+#~ "*  -U, --unified=SOR         mint -u, k√∂rnyezethossz be√°ll√≠t√°sa (sorok sz√°ma)\n"
+#~ "*  -c, --context             diff ki√≠r√°sa sz√∂vegk√∂rnyezettel\n"
+#~ "                              (alap√©rtelmez√©sben 3 sor)\n"
+#~ "*  -u, --unified             unidiff ki√≠r√°sa sz√∂vegk√∂rnyezettel\n"
+#~ "                              (alap√©rtelmez√©sben 3 sor)\n"
+#~ "*  -SOR                      (elavult: sz√∂vegk√∂rnyezet m√©rete sorokban)\n"
 
 #~ msgid ""
 #~ "\n"
@@ -920,12 +891,12 @@ msgstr ""
 #~ "*      --suppress-common-lines   do not print common lines\n"
 #~ msgstr ""
 #~ "\n"
-#~ "KÈtpaneles form·tum:\n"
-#~ "*  -W, --width=OSZLOP           OSZLOP szÈlessÈg\n"
-#~ "*  -y, --side-by-side            kimenet kÈt oszlopban egym·s mellett\n"
-#~ "*      --left-column             kˆzˆs sor esetÈn csak bal olszlop\n"
-#~ "*      --sdiff-merge-assist      (`sdiff' belsı form·tuma)\n"
-#~ "*      --suppress-common-lines   kˆzˆs sorok elhagy·sa\n"
+#~ "K√©tpaneles form√°tum:\n"
+#~ "*  -W, --width=OSZLOP           OSZLOP sz√©less√©g\n"
+#~ "*  -y, --side-by-side            kimenet k√©t oszlopban egym√°s mellett\n"
+#~ "*      --left-column             k√∂z√∂s sor eset√©n csak bal olszlop\n"
+#~ "*      --sdiff-merge-assist      (`sdiff' bels≈ë form√°tuma)\n"
+#~ "*      --suppress-common-lines   k√∂z√∂s sorok elhagy√°sa\n"
 
 #~ msgid ""
 #~ "\n"
@@ -933,41 +904,35 @@ msgstr ""
 #~ "  %%%%           a single %%\n"
 #~ "  %%c'C'        quoted character C\n"
 #~ "  %%c'\\O'       character having value O, from 1 to 3 octal digits\n"
-#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E "
-#~ "FORMAT\n"
+#~ "  %%(A=B?T:E)   if A is B then T else E; A B number or VARIABLE; T E FORMAT\n"
 #~ "  %%FN          use SPECIF specification F to print VARIABLE value N\n"
 #~ "  %%<           [group] old, each line through --old-line-format\n"
 #~ "  %%>           [group] new, each line through --new-line-format\n"
-#~ "  %%=           [group] unchanged, each line through --unchanged-line-"
-#~ "format\n"
+#~ "  %%=           [group] unchanged, each line through --unchanged-line-format\n"
 #~ "  %%l           [line] without its possible trailing newline\n"
 #~ "  %%L           [line] with its possible trailing newline\n"
 #~ msgstr ""
 #~ "\n"
-#~ "A FORMAT ˆn·llÛ karakterekbıl ·ll, kivÈve:\n"
+#~ "A FORMAT √∂n√°ll√≥ karakterekb≈ël √°ll, kiv√©ve:\n"
 #~ "  %%%%           egy darab %%\n"
-#~ "  %%c'C'        idÈzett C karakter\n"
-#~ "  %%c'\\O'       O ÈrtÈk˚ karakter, 1-tıl 3 okt·lis sz·mjegy\n"
-#~ "  %%(A=B?T:E)   ha A egyenlı B-vel akkor T k¸lˆnben E; A B sz·m vagy "
-#~ "V¡LTOZ”;\n"
-#~ "                 T Ès E FORMAT tÌpus˙\n"
-#~ "  %%FN          F SPECIF specifik·ciÛ haszn·lata N ÈrtÈk˚ V¡LTOZ” "
-#~ "kiÌr·s·hoz\n"
-#~ "  %%<           [csoport] rÈgi, minden sort --old-line-format "
-#~ "kapcsolÛval\n"
-#~ "  %%>           [csoport] ˙j, minden sort --new-line-format kapcsolÛval\n"
-#~ "  %%=           [csoport] v·ltozatlan, minden sort --unchanged-line-"
-#~ "format\n"
-#~ "                 kapcsolÛval\n"
-#~ "  %%l           [sor] befejezı ˙jsor nÈlk¸l\n"
-#~ "  %%L           [sor] befejezı ˙jsorral\n"
+#~ "  %%c'C'        id√©zett C karakter\n"
+#~ "  %%c'\\O'       O √©rt√©k≈± karakter, 1-t≈ël 3 okt√°lis sz√°mjegy\n"
+#~ "  %%(A=B?T:E)   ha A egyenl≈ë B-vel akkor T k√ºl√∂nben E; A B sz√°m vagy V√ÅLTOZ√ì;\n"
+#~ "                 T √©s E FORMAT t√≠pus√∫\n"
+#~ "  %%FN          F SPECIF specifik√°ci√≥ haszn√°lata N √©rt√©k≈± V√ÅLTOZ√ì ki√≠r√°s√°hoz\n"
+#~ "  %%<           [csoport] r√©gi, minden sort --old-line-format kapcsol√≥val\n"
+#~ "  %%>           [csoport] √∫j, minden sort --new-line-format kapcsol√≥val\n"
+#~ "  %%=           [csoport] v√°ltozatlan, minden sort --unchanged-line-format\n"
+#~ "                 kapcsol√≥val\n"
+#~ "  %%l           [sor] befejez≈ë √∫jsor n√©lk√ºl\n"
+#~ "  %%L           [sor] befejez≈ë √∫jsorral\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "SPECIF is [-][W[.D]]{doxX} as in C printf\n"
 #~ msgstr ""
 #~ "\n"
-#~ "SPECIF lehet [-][W[.D]]{doxX} mint a C printf f¸ggvÈnyben\n"
+#~ "SPECIF lehet [-][W[.D]]{doxX} mint a C printf f√ºggv√©nyben\n"
 
 #~ msgid ""
 #~ "\n"
@@ -979,18 +944,17 @@ msgstr ""
 #~ "  {nN}   number of lines in the group\n"
 #~ msgstr ""
 #~ "\n"
-#~ "V¡LTOZ” lehet {eflmn} rÈgi csoportn·l vagy {EFLMN} ˙j csoportn·l\n"
-#~ "  {eE}   sorsz·m kˆzvetlen¸l a csoport elıtt\n"
-#~ "  {fF}   sorsz·m a csoport elsı sor·n·l\n"
-#~ "  {1L}   sorsz·m a csoport utolsÛ sor·n·l\n"
-#~ "  {mM}   sorsz·m kˆzvetlen¸l a csoport ut·n\n"
-#~ "  {nN}   a csoport sorainak sz·ma\n"
+#~ "V√ÅLTOZ√ì lehet {eflmn} r√©gi csoportn√°l vagy {EFLMN} √∫j csoportn√°l\n"
+#~ "  {eE}   sorsz√°m k√∂zvetlen√ºl a csoport el≈ëtt\n"
+#~ "  {fF}   sorsz√°m a csoport els≈ë sor√°n√°l\n"
+#~ "  {1L}   sorsz√°m a csoport utols√≥ sor√°n√°l\n"
+#~ "  {mM}   sorsz√°m k√∂zvetlen√ºl a csoport ut√°n\n"
+#~ "  {nN}   a csoport sorainak sz√°ma\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Standard diff options:\n"
-#~ "  -i, --ignore-case         consider upper- and lower-case to be the "
-#~ "same\n"
+#~ "  -i, --ignore-case         consider upper- and lower-case to be the same\n"
 #~ "  -w, --ignore-all-space    ignore all white space\n"
 #~ "  -b, --ignore-space-change ignore changes in the amount of white space\n"
 #~ "  -B, --ignore-blank-lines  ignore changes whose lines are all blank\n"
@@ -1007,60 +971,56 @@ msgstr ""
 #~ "  -F, --show-function-line=RE show the most recent line matching RE\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Szabv·nyos diff kapcsolÛk\n"
-#~ "  -i, --ignore-case         kis- Ès nagybet˚ megegyezik\n"
-#~ "  -w, --ignore-all-space    minden szÛkˆz, tabul·tor Ès ˙jsor\n"
-#~ "                             figyelmen kÌv¸l hagy·sa\n"
-#~ "  -b, --ignore-space-change szÛkˆz, tabul·tor Ès ˙jsor v·ltoz·s·nak\n"
-#~ "                             figyelmen kÌv¸l hagy·sa\n"
-#~ "  -B, --ignore-blank-lines  teljesen ¸res sorok figyelmen kÌv¸l hagy·sa\n"
-#~ "  -I, --ignore-matching-lines=RK RK-ra illeszkedı sorok kihagy·sa\n"
-#~ "  -a, --text                minden f·jlt szˆvegf·jlkÈnt kezel\n"
-#~ "  -c, --context[=SZ¡M]      szab·lyos szˆvegkˆrnyezeti diff kiÌr·sa,\n"
-#~ "                            SZ¡M sz·m˙ sor a kˆrnyezet\n"
-#~ "  -u, --unified[=SZ¡M]      egysÈgesÌtett szˆvegkˆrnyezeti diff vagy\n"
-#~ "                             unidiff kiÌr·sa, SZ¡M sz·m˙ sor a kˆrnyezet\n"
-#~ "  -C, -- context=SZ¡M       SZ¡M sort Ìr ki a kˆrnyezetbıl\n"
-#~ "  -U, --unified=SZ¡M        SZ¡M sort Ìr ki az egysÈgesÌtett\n"
-#~ "                             szˆvegkˆrnyezetbıl\n"
-#~ "  -L, --label=CÕMKE         CÕMKE haszn·lata f·jlnÈv helyett\n"
-#~ "  -p, --show-c-function     megmutatja, melyik C f¸ggvÈny v·ltozott\n"
-#~ "  -F, --show-function-line=RK RK-ra illeszkedı legkˆzelebbi elızı\n"
-#~ "                              kˆrnyezet mutat·sa\n"
+#~ "Szabv√°nyos diff kapcsol√≥k\n"
+#~ "  -i, --ignore-case         kis- √©s nagybet≈± megegyezik\n"
+#~ "  -w, --ignore-all-space    minden sz√≥k√∂z, tabul√°tor √©s √∫jsor\n"
+#~ "                             figyelmen k√≠v√ºl hagy√°sa\n"
+#~ "  -b, --ignore-space-change sz√≥k√∂z, tabul√°tor √©s √∫jsor v√°ltoz√°s√°nak\n"
+#~ "                             figyelmen k√≠v√ºl hagy√°sa\n"
+#~ "  -B, --ignore-blank-lines  teljesen √ºres sorok figyelmen k√≠v√ºl hagy√°sa\n"
+#~ "  -I, --ignore-matching-lines=RK RK-ra illeszked≈ë sorok kihagy√°sa\n"
+#~ "  -a, --text                minden f√°jlt sz√∂vegf√°jlk√©nt kezel\n"
+#~ "  -c, --context[=SZ√ÅM]      szab√°lyos sz√∂vegk√∂rnyezeti diff ki√≠r√°sa,\n"
+#~ "                            SZ√ÅM sz√°m√∫ sor a k√∂rnyezet\n"
+#~ "  -u, --unified[=SZ√ÅM]      egys√©ges√≠tett sz√∂vegk√∂rnyezeti diff vagy\n"
+#~ "                             unidiff ki√≠r√°sa, SZ√ÅM sz√°m√∫ sor a k√∂rnyezet\n"
+#~ "  -C, -- context=SZ√ÅM       SZ√ÅM sort √≠r ki a k√∂rnyezetb≈ël\n"
+#~ "  -U, --unified=SZ√ÅM        SZ√ÅM sort √≠r ki az egys√©ges√≠tett\n"
+#~ "                             sz√∂vegk√∂rnyezetb≈ël\n"
+#~ "  -L, --label=C√çMKE         C√çMKE haszn√°lata f√°jln√©v helyett\n"
+#~ "  -p, --show-c-function     megmutatja, melyik C f√ºggv√©ny v√°ltozott\n"
+#~ "  -F, --show-function-line=RK RK-ra illeszked≈ë legk√∂zelebbi el≈ëz≈ë\n"
+#~ "                              k√∂rnyezet mutat√°sa\n"
 
 #~ msgid ""
 #~ "  -q, --brief               output only whether files differ\n"
 #~ "  -e, --ed                  output an ed script\n"
 #~ "  -n, --rcs                 output an RCS format diff\n"
 #~ "  -y, --side-by-side        output in two columns\n"
-#~ "  -w, --width=NUM           output at most NUM (default 130) characters "
-#~ "per line\n"
+#~ "  -w, --width=NUM           output at most NUM (default 130) characters per line\n"
 #~ "      --left-column         output only the left column of common lines\n"
 #~ "      --suppress-common-lines do not output common lines\n"
-#~ "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' "
-#~ "diffs\n"
+#~ "  -D, --ifdef=NAME          output merged file to show `#ifdef NAME' diffs\n"
 #~ "      --GTYPE-group-format=GFMT GTYPE input groups with GFMT\n"
 #~ "      --line-format=LFMT    all input lines with LFMT\n"
 #~ "      --LTYPE-line-format=LFMT LTYPE input lines with LFMT\n"
 #~ "  -l, --paginate            pass the output through `pr' to paginate it\n"
 #~ "  -t, --expand-tabs         expand tabs to spaces in output\n"
 #~ msgstr ""
-#~ "  -q, --brief               csak a k¸lˆnbˆzı f·jlokat Ìrja ki\n"
-#~ "  -e, --ed                  ÈrvÈnyes `ed' szkript kiÌr·sa\n"
-#~ "  -n, --rcs                 RCS form·tum˙ diff-et Ìr ki\n"
-#~ "  -y, --side-by-side        kÈt oszlopot Ìr ki\n"
-#~ "  -w, --width=SZ¡M          legfeljebb SZ¡M (alapÈrtelmezÈsben 130) "
-#~ "karakter\n"
-#~ "                             soronkÈnt\n"
-#~ "      --left-column         kˆzˆs sor esetÈn csak bal olszlop\n"
-#~ "      --suppress-common-lines   kˆzˆs sorok elhagy·sa\n"
-#~ "  -D, --ifdef=N…V               `#ifdef N…V' form·tum˙ diff kiÌr·sa\n"
+#~ "  -q, --brief               csak a k√ºl√∂nb√∂z≈ë f√°jlokat √≠rja ki\n"
+#~ "  -e, --ed                  √©rv√©nyes `ed' szkript ki√≠r√°sa\n"
+#~ "  -n, --rcs                 RCS form√°tum√∫ diff-et √≠r ki\n"
+#~ "  -y, --side-by-side        k√©t oszlopot √≠r ki\n"
+#~ "  -w, --width=SZ√ÅM          legfeljebb SZ√ÅM (alap√©rtelmez√©sben 130) karakter\n"
+#~ "                             soronk√©nt\n"
+#~ "      --left-column         k√∂z√∂s sor eset√©n csak bal olszlop\n"
+#~ "      --suppress-common-lines   k√∂z√∂s sorok elhagy√°sa\n"
+#~ "  -D, --ifdef=N√âV               `#ifdef N√âV' form√°tum√∫ diff ki√≠r√°sa\n"
 #~ "      --GTYPE-group-format=GFMT GTYPE bemeneti csoportok GFMT-vel\n"
 #~ "      --line-format=LFMT    minden bemeneti sor LFMT-vel\n"
-#~ "      --LTYPE-line-format=LFMT  LTYPE bemeneti f·jlok LFMT-vel\n"
-#~ "  -l, --paginate            kimenet oldalsz·moz·sa a `pr' segÌtsÈgÈvel\n"
-#~ "  -t, --expand-tabs         tabul·tor karaktert szÛkˆzzÈ alakÌtja a "
-#~ "kimenetben\n"
+#~ "      --LTYPE-line-format=LFMT  LTYPE bemeneti f√°jlok LFMT-vel\n"
+#~ "  -l, --paginate            kimenet oldalsz√°moz√°sa a `pr' seg√≠ts√©g√©vel\n"
+#~ "  -t, --expand-tabs         tabul√°tor karaktert sz√≥k√∂zz√© alak√≠tja a kimenetben\n"
 
 #~ msgid ""
 #~ "  -T, --initial-tab         make tabs line up by prepending a tab\n"
@@ -1071,34 +1031,30 @@ msgstr ""
 #~ "  -x, --exclude=PAT         exclude files that match PAT\n"
 #~ "  -X, --exclude-from=FILE   exclude files that match any pattern in FILE\n"
 #~ "  -S, --starting-file=FILE  start with FILE when comparing directories\n"
-#~ "      --horizon-lines=NUM   keep NUM lines of the common prefix and "
-#~ "suffix\n"
+#~ "      --horizon-lines=NUM   keep NUM lines of the common prefix and suffix\n"
 #~ "  -d, --minimal             try hard to find a smaller set of changes\n"
-#~ "  -H, --speed-large-files   assume large files and many scattered small "
-#~ "changes\n"
+#~ "  -H, --speed-large-files   assume large files and many scattered small changes\n"
 #~ msgstr ""
-#~ "  -T, --initial-tab         TAB-ot kezdı szÛkˆz helyett\n"
-#~ "  -r, --recursive           alkˆnyvt·rak rekurzÌv ˆsszehasonlÌt·sa\n"
-#~ "  -N, --new-file            hi·nyzÛ f·jlt ¸resnek veszi\n"
-#~ "  -P, --unidirectional-new-file  hi·nyzÛ elsı f·jlt ¸resnek veszi\n"
-#~ "  -s, --report-identical-files   azonos f·jlok jelzÈse\n"
-#~ "  -x, --exclude=MINTA       a MINT¡RA illeszkedı f·jlokat kihagyja\n"
-#~ "  -X, --exclude-from=F¡JL   a F¡JL-ban tal·lhatÛ mint·kra illeszkedı\n"
-#~ "                             f·jlokat ·tugorja\n"
-#~ "  -S, --starting-file=F¡JL  kˆnyvt·r-ˆsszehasonlÌt·s kezdÈse F¡JLT”L \n"
-#~ "      --horizon-lines=SOR   SOR sor megtart·sa a kˆzˆs elı- Ès "
-#~ "utÛtagokban\n"
-#~ "  -d, --minimal             prÛb·l kevesebb k¸lˆnbsÈget tal·lni\n"
-#~ "  -H, --speed-large-files   nagy f·jlokra sz·mÌt, gyorsabb, sok, "
-#~ "elszÛrt,\n"
-#~ "                             kis k¸lˆnbsÈg esetÈn\n"
+#~ "  -T, --initial-tab         TAB-ot kezd≈ë sz√≥k√∂z helyett\n"
+#~ "  -r, --recursive           alk√∂nyvt√°rak rekurz√≠v √∂sszehasonl√≠t√°sa\n"
+#~ "  -N, --new-file            hi√°nyz√≥ f√°jlt √ºresnek veszi\n"
+#~ "  -P, --unidirectional-new-file  hi√°nyz√≥ els≈ë f√°jlt √ºresnek veszi\n"
+#~ "  -s, --report-identical-files   azonos f√°jlok jelz√©se\n"
+#~ "  -x, --exclude=MINTA       a MINT√ÅRA illeszked≈ë f√°jlokat kihagyja\n"
+#~ "  -X, --exclude-from=F√ÅJL   a F√ÅJL-ban tal√°lhat√≥ mint√°kra illeszked≈ë\n"
+#~ "                             f√°jlokat √°tugorja\n"
+#~ "  -S, --starting-file=F√ÅJL  k√∂nyvt√°r-√∂sszehasonl√≠t√°s kezd√©se F√ÅJLT√ìL \n"
+#~ "      --horizon-lines=SOR   SOR sor megtart√°sa a k√∂z√∂s el≈ë- √©s ut√≥tagokban\n"
+#~ "  -d, --minimal             pr√≥b√°l kevesebb k√ºl√∂nbs√©get tal√°lni\n"
+#~ "  -H, --speed-large-files   nagy f√°jlokra sz√°m√≠t, gyorsabb, sok, elsz√≥rt,\n"
+#~ "                             kis k√ºl√∂nbs√©g eset√©n\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "By default, context diffs have an horizon of two lines.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "AlapÈrtelmezÈsben a szˆvegkˆrnyezetes diff elı- Ès utÛtagja kÈt sor.\n"
+#~ "Alap√©rtelmez√©sben a sz√∂vegk√∂rnyezetes diff el≈ë- √©s ut√≥tagja k√©t sor.\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1116,17 +1072,16 @@ msgstr ""
 #~ "      M  L+1\n"
 #~ msgstr ""
 #~ "\n"
-#~ "LTYPE lehet `old', `new', vagy `unchanged'. GTYPE lehet LTYPE vagy "
-#~ "`changed'.\n"
+#~ "LTYPE lehet `old', `new', vagy `unchanged'. GTYPE lehet LTYPE vagy `changed'.\n"
 #~ "GFMT tartalmazhat:\n"
-#~ "  %<  sorok F¡JL1-bıl\n"
-#~ "  %>  sorok F¡JL2-bıl\n"
-#~ "  %=  kˆzˆs sorok F¡JL1-ben Ès F¡JL2-ben\n"
-#~ "  %[-][SZ…LESS…G][.[PREC]]{doxX}BET€  printf-stÌlus˙ spec BET€-hˆz\n"
-#~ "    BET€K a kˆvetkezık lehetnek, rÈgi csoporthoz kisbet˚:\n"
-#~ "      F  elsı sor sz·ma\n"
-#~ "      L  utolsÛ sor sz·ma\n"
-#~ "      N  sorok sz·ma = L-F+1\n"
+#~ "  %<  sorok F√ÅJL1-b≈ël\n"
+#~ "  %>  sorok F√ÅJL2-b≈ël\n"
+#~ "  %=  k√∂z√∂s sorok F√ÅJL1-ben √©s F√ÅJL2-ben\n"
+#~ "  %[-][SZ√âLESS√âG][.[PREC]]{doxX}BET≈∞  printf-st√≠lus√∫ spec BET≈∞-h√∂z\n"
+#~ "    BET≈∞K a k√∂vetkez≈ëk lehetnek, r√©gi csoporthoz kisbet≈±:\n"
+#~ "      F  els≈ë sor sz√°ma\n"
+#~ "      L  utols√≥ sor sz√°ma\n"
+#~ "      N  sorok sz√°ma = L-F+1\n"
 #~ "      E  F-1\n"
 #~ "      M  L+1\n"
 
@@ -1142,23 +1097,21 @@ msgstr ""
 #~ msgstr ""
 #~ "LFMT tartalmazhat:\n"
 #~ "  %L  sor tartalma\n"
-#~ "  %l  sor tartalma befejezı ˙jsor nÈlk¸l\n"
-#~ "  %[-][SZ…LESS…G][.[PREC]]{doxX}n  printf-stÌlus˙ spec bemeneti sorsz·m\n"
+#~ "  %l  sor tartalma befejez≈ë √∫jsor n√©lk√ºl\n"
+#~ "  %[-][SZ√âLESS√âG][.[PREC]]{doxX}n  printf-st√≠lus√∫ spec bemeneti sorsz√°m\n"
 #~ "GFMT vagy LFMT tartalmazhat:\n"
 #~ "  %%  %\n"
 #~ "  %c'C'  egy C karakter\n"
-#~ "  %c'\\OOO'  a karakter okt·lis OOO  kÛddal\n"
+#~ "  %c'\\OOO'  a karakter okt√°lis OOO  k√≥ddal\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Old mdiff options:\n"
-#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a "
-#~ "cluster\n"
+#~ "*  -f, --fuzz-items=ITEMS     no more than ITEMS non matching in a cluster\n"
 #~ msgstr ""
 #~ "\n"
-#~ "RÈgi mdiff kapcsolÛk:\n"
-#~ "*  -f, --fuzz-items=ELEM      egy csoporton bel¸l, nem tˆbb mint ELEM "
-#~ "elem,\n"
+#~ "R√©gi mdiff kapcsol√≥k:\n"
+#~ "*  -f, --fuzz-items=ELEM      egy csoporton bel√ºl, nem t√∂bb mint ELEM elem,\n"
 #~ "                               amely nem illeszkedik\n"
 
 #~ msgid ""
@@ -1185,20 +1138,19 @@ msgstr ""
 #~ "If FILE is not specified, read standard input.\n"
 #~ msgstr ""
 #~ "\n"
-#~ "  -c, --context-diffs    mindenkÈpp szˆvegkˆrnyezeti diff kiÌr·sa\n"
-#~ "  -e, --echo-comments    megjegyzÈseket a szabv·nyos hibakimentre\n"
-#~ "  -o, --old-diffs        mindenkÈppen rÈgi stÌlus˙ diffet kiÌr·sa\n"
-#~ "  -p, --patch-format     patch form·tum gener·l·sa\n"
+#~ "  -c, --context-diffs    mindenk√©pp sz√∂vegk√∂rnyezeti diff ki√≠r√°sa\n"
+#~ "  -e, --echo-comments    megjegyz√©seket a szabv√°nyos hibakimentre\n"
+#~ "  -o, --old-diffs        mindenk√©ppen r√©gi st√≠lus√∫ diffet ki√≠r√°sa\n"
+#~ "  -p, --patch-format     patch form√°tum gener√°l√°sa\n"
 #~ "  -P                     mint -p\n"
-#~ "  -s, --strip-comments   megjegyzÈsek tˆrlÈse\n"
-#~ "  -u, --unidiffs         mindenkÈpp unidiff kiÌr·sa\n"
-#~ "  -U                     mint -p Ès -u\n"
-#~ "  -=, --use-equals       szÛkˆzˆket egyenlısÈgjelekre cserÈli az "
-#~ "unidiffekben\n"
-#~ "      --help             emlÈkeztetıt Ìr ki\n"
-#~ "      --version          kiÌrja a program nevÈt Ès v·ltozat·t\n"
+#~ "  -s, --strip-comments   megjegyz√©sek t√∂rl√©se\n"
+#~ "  -u, --unidiffs         mindenk√©pp unidiff ki√≠r√°sa\n"
+#~ "  -U                     mint -p √©s -u\n"
+#~ "  -=, --use-equals       sz√≥k√∂z√∂ket egyenl≈ës√©gjelekre cser√©li az unidiffekben\n"
+#~ "      --help             eml√©keztet≈ët √≠r ki\n"
+#~ "      --version          ki√≠rja a program nev√©t √©s v√°ltozat√°t\n"
 #~ "\n"
-#~ "Ha F¡JL nincs megadva, a szabv·nyos bementrıl olvas.\n"
+#~ "Ha F√ÅJL nincs megadva, a szabv√°nyos bementr≈ël olvas.\n"
 
 #~ msgid ""
 #~ "Mandatory arguments to long options are mandatory for short options too.\n"
@@ -1222,27 +1174,24 @@ msgstr ""
 #~ "  -y, --start-insert=STRING  string to mark beginning of insert region\n"
 #~ "  -z, --end-insert=STRING    string to mark end of insert region\n"
 #~ msgstr ""
-#~ "Ha egy hossz˙ kapcsolÛhoz kˆtelezı argumentumot megadni, akkor ez a "
-#~ "megfelelı\n"
-#~ "rˆvid kapcsolÛn·l is kˆtelezı.\n"
+#~ "Ha egy hossz√∫ kapcsol√≥hoz k√∂telez≈ë argumentumot megadni, akkor ez a megfelel≈ë\n"
+#~ "r√∂vid kapcsol√≥n√°l is k√∂telez≈ë.\n"
 #~ "\n"
-#~ "  -C, --copyright            kiÌrja a copyright inform·ciÛkat\n"
-#~ "  -K, --no-init-term         mint -t, de init/termcap karakterl·ncok "
-#~ "nÈlk¸l\n"
-#~ "  -V, --version              kiÌrja a program nevÈt Ès v·ltozat·t\n"
-#~ "  -1, --no-deleted           megakad·lyozza a tˆrˆlt szavak kiÌr·s·t\n"
-#~ "  -2, --no-inserted          megakad·lyozza a besz˙rt szavak kiÌr·s·t\n"
-#~ "  -3, --no-common            megakad·lyozza a kˆzˆs szavak kiÌr·s·t\n"
-#~ "  -a, --auto-pager           automatikusan lapozÛt indÌt\n"
-#~ "  -h, --help                 emlÈkeztetıt Ìr ki\n"
-#~ "  -i, --ignore-case          kis- Ès nagybet˚ megegyezik\n"
-#~ "  -l, --less-mode            kiÌratÛ mÛd a \"less-hez\"\n"
-#~ "  -n, --avoid-wraps          a mezıket nem terjeszti az ˙jsorokon t˙l\n"
-#~ "  -p, --printer              'overstrike' mint nyomtatÛkn·l\n"
-#~ "  -s, --statistics           megmondja h·ny tˆrˆlt, besz˙rt stb. szÛ van\n"
-#~ "  -t, --terminal             termcap haszn·lata, mint termin·l "
-#~ "kiÌrat·sn·l\n"
-#~ "  -w, --start-delete=SZTRING SZTRING jelˆli a tˆrlendı rÈsz elejÈt\n"
-#~ "  -x, --end-delete=SZTRING   SZTRING jelˆli a tˆrlendı rÈsz vÈgÈt\n"
-#~ "  -y, --start-insert=SZTRING SZTRING jelˆli a besz˙randÛ rÈsz elejÈt\n"
-#~ "  -z, --end-insert=SZTRING   SZTRING jelˆli a besz˙randÛ rÈsz vÈgÈt\n"
+#~ "  -C, --copyright            ki√≠rja a copyright inform√°ci√≥kat\n"
+#~ "  -K, --no-init-term         mint -t, de init/termcap karakterl√°ncok n√©lk√ºl\n"
+#~ "  -V, --version              ki√≠rja a program nev√©t √©s v√°ltozat√°t\n"
+#~ "  -1, --no-deleted           megakad√°lyozza a t√∂r√∂lt szavak ki√≠r√°s√°t\n"
+#~ "  -2, --no-inserted          megakad√°lyozza a besz√∫rt szavak ki√≠r√°s√°t\n"
+#~ "  -3, --no-common            megakad√°lyozza a k√∂z√∂s szavak ki√≠r√°s√°t\n"
+#~ "  -a, --auto-pager           automatikusan lapoz√≥t ind√≠t\n"
+#~ "  -h, --help                 eml√©keztet≈ët √≠r ki\n"
+#~ "  -i, --ignore-case          kis- √©s nagybet≈± megegyezik\n"
+#~ "  -l, --less-mode            ki√≠rat√≥ m√≥d a \"less-hez\"\n"
+#~ "  -n, --avoid-wraps          a mez≈ëket nem terjeszti az √∫jsorokon t√∫l\n"
+#~ "  -p, --printer              'overstrike' mint nyomtat√≥kn√°l\n"
+#~ "  -s, --statistics           megmondja h√°ny t√∂r√∂lt, besz√∫rt stb. sz√≥ van\n"
+#~ "  -t, --terminal             termcap haszn√°lata, mint termin√°l ki√≠rat√°sn√°l\n"
+#~ "  -w, --start-delete=SZTRING SZTRING jel√∂li a t√∂rlend≈ë r√©sz elej√©t\n"
+#~ "  -x, --end-delete=SZTRING   SZTRING jel√∂li a t√∂rlend≈ë r√©sz v√©g√©t\n"
+#~ "  -y, --start-insert=SZTRING SZTRING jel√∂li a besz√∫rand√≥ r√©sz elej√©t\n"
+#~ "  -z, --end-insert=SZTRING   SZTRING jel√∂li a besz√∫rand√≥ r√©sz v√©g√©t\n"
